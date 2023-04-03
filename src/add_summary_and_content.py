@@ -17,7 +17,7 @@ with open(os.path.join(os.getcwd(),'..','data','literature','pupikofer.txt'), 'r
 letters = text.split('#')
 # drop empty first item in letters list
 letters = letters[1:]
-
+"""
 # open and read 'final_register.csv' to get date and letter number
 df = pd.read_csv(os.path.join(os.getcwd(),'..','data','register','final_register.csv'), sep=';')
 # join 'date' and 'year' to get a single string
@@ -27,7 +27,7 @@ df = df[['Nummer','date','Name_voll']]
 df['date_iso'] = pd.to_datetime(df['date'], format='%d.%m.%Y', errors='coerce')
 df = df.drop(columns=['date'])
 print(df)
-
+"""
 # create dictionary for logging
 log = {}
 
@@ -44,7 +44,7 @@ objects = "Extract a list of objects mentioned in the letter: "
 tei = "Encode the letter in TEI using the elements <opener>, <salute>, <p> and <closer>, where apropriate: "
 
 # Loop through letters and get chatGPT responses
-for letter in letters:
+for letter in letters[1]:
     print(letter)
     try:
         content = summary_en + letter
