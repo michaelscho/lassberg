@@ -37,7 +37,7 @@ for letter in letters:
 
 
 # 2.1: Use chatgpt 3.5 via openai api (English)
-"""
+
 def summarize_letter_gpt_3_5_English(letter_text, max_summary_length=150):
     content = f"Summarize the following correspondence between Joseph von Laßberg and Johan Adam Pupikofer in English in {max_summary_length} words:\n\n{letter_text}\n\nSummary:"
     message = [{"role": "user", "content": content}]
@@ -51,17 +51,18 @@ def summarize_letter_gpt_3_5_English(letter_text, max_summary_length=150):
     summary = response.choices[0].message.content
     return summary
 
-summaries = []
+def evaluate_gpt_3_5_English():
+    summaries = []
 
-for letter in letters:
-    summary = summarize_letter_gpt_3_5_English(letter)
-    print(summary)
-    summaries.append(summary)
-text = "\n".join(summaries)
+    for letter in letters:
+        summary = summarize_letter_gpt_3_5_English(letter)
+        print(summary)
+        summaries.append(summary)
+    text = "\n".join(summaries)
 
-# Save the summaries to file
-with open(os.path.join(os.getcwd(), "..", "analysis", "gpt3","test_summary_letters_gpt_3_5_English.txt"), "w", encoding="utf-8") as file:
-    file.write(text)
+    # Save the summaries to file
+    with open(os.path.join(os.getcwd(), "..", "analysis", "gpt3","test_summary_letters_gpt_3_5_English.txt"), "w", encoding="utf-8") as file:
+        file.write(text)
 
 # 2.2: Use chatgpt 3.5 via openai api (German)
 def summarize_letter_gpt_3_5_German(letter_text, max_summary_length=150):
@@ -77,19 +78,19 @@ def summarize_letter_gpt_3_5_German(letter_text, max_summary_length=150):
     summary = response.choices[0].message.content
     return summary
 
-summaries = []
+def evaluate_gpt_3_5_German():
 
-for letter in letters:
-    summary = summarize_letter_gpt_3_5_German(letter)
-    print(summary)
-    summaries.append(summary)
-text = "\n".join(summaries)
+    summaries = []
 
-# Save the summaries to file
-with open(os.path.join(os.getcwd(), "..", "analysis", "gpt3", "test_summary_letters_gpt_3_5_German.txt"), "w", encoding="utf-8") as file:
-    file.write(text)
+    for letter in letters:
+        summary = summarize_letter_gpt_3_5_German(letter)
+        print(summary)
+        summaries.append(summary)
+    text = "\n".join(summaries)
 
-"""
+    # Save the summaries to file
+    with open(os.path.join(os.getcwd(), "..", "analysis", "gpt3", "test_summary_letters_gpt_3_5_German.txt"), "w", encoding="utf-8") as file:
+        file.write(text)
     
 # Use chatgpt 4 via openai api
 # Done using chatGPT given lack of api access
@@ -97,7 +98,7 @@ with open(os.path.join(os.getcwd(), "..", "analysis", "gpt3", "test_summary_lett
 # Hugging Face GPT-2
 from transformers import GPT2LMHeadModel, GPT2Tokenizer
 
-def gpt2_summarize(text, model_name='gpt2', max_length=450):
+def gpt2_summarize(text, model_name='gpt2', max_length=150):
     tokenizer = GPT2Tokenizer.from_pretrained(model_name)
     model = GPT2LMHeadModel.from_pretrained(model_name)
 
@@ -106,10 +107,20 @@ def gpt2_summarize(text, model_name='gpt2', max_length=450):
 
     summary = tokenizer.decode(outputs[0])
     return summary.strip()
+def evaluate_gpt2():
+    summaries = []
 
-# Usage example:
-text = "Eppishausen am 25. April 1838. Hier mein vererter freund und nachbar! erhalten Sie zuerst den catalog der frau Hofrátin von Thaleppe zu Stockach, in welchem Sie viel schónes und gutes finden werden. laßen Sie sich durch die darinne befindlichen Randzeichen + & > nicht irre machen und wenn Sie etwas damit bezeichnetes wúnschen sollten, sich nicht davon abhalten: nur muß ich bitten mir den catalog spátestens in 8 tagen wieder zurúkzusenden, damit ich selben kann nach Stokach abgehen laßen. da die besizerin es mir úberlaßen hat, die preise selbst zu bestimmen ; so werde ich bei denselben die gewónl: Auctions Catalog-preise zu grunde legen. Mit vielem danke für Sie lege ich noch die Ida von Tokenburg hier wieder bei, aber mit wenig dank gegen den Verfasser. was hat doch der nárrische mann, mit zurúkstoßung aller geschichte, fúr ein lácherliches unding aus dem schonen romantischen stoffe dieser sage gemacht, und wie oft verrát er die meister, nach welchen er die studien zu seinem bilde [: crassa et invita Minerva!: ] gemacht hat, Gott beware kúnftig die vaterländische geschichte vor solchen úberlieferungen, deren verfaßer man mit recht, wie jener italienische Abbate, und vielleicht mit mer recht: Traditore nennen könnte. - Nun lieber freund? soll ich es sagen? es will mir vorkommen, als wenn unsere Bischofszeller freunde uns das scheiden dadurch erleichtern wollten, daß sie in den lezten zeiten uns immer sparsamer mit irem besuche erfreuen; aber es wird inen nicht gelingen! wie konnten wir, besonders ich, ie vergeßen, ie aufhóren mich wieder danach zu senen, wie oft in einer so langen reihe von iaren, ir freundschaftlicher umgang mich erheitert hat, und zu wúnschen, daß auch in der zukunft, der kleine arm des schwábischen meeres inen nicht zu breit sein und Sie nicht abhalten möchte, die alten dankbaren freunde zuweilen durch lre gegenwart zu erfreuen, ubi Aliquando dextrae conjungere dextram Fas erit & notas audire et reddere voces! Damit gott befolen von Irem ergebensten freunde JvLaßberg. Darf ich bitten H Praes. Scherb die Inlage samt meinem besten danke zustellen zu lassen?"
-print(gpt2_summarize(text))
+    for letter in letters:
+        summary = gpt2_summarize(letter)
+        print(summary)
+        summaries.append(summary)
+    text = "\n".join(summaries)
+
+    # Save the summaries to file
+    with open(os.path.join(os.getcwd(), "..", "analysis", "gpt2","test_summary_letters_gpt_2_English.txt"), "w", encoding="utf-8") as file:
+        file.write(text)
+
+
 
 # Hugging Face T5.
 from transformers import T5ForConditionalGeneration, T5Tokenizer
@@ -124,10 +135,18 @@ def t5_summarize(text, model_name='t5-base', max_length=450):
     summary = tokenizer.decode(outputs[0])
     return summary.strip()
 
-# Usage example:
-text = "Eppishausen am 25. April 1838. Hier mein vererter freund und nachbar! erhalten Sie zuerst den catalog der frau Hofrátin von Thaleppe zu Stockach, in welchem Sie viel schónes und gutes finden werden. laßen Sie sich durch die darinne befindlichen Randzeichen + & > nicht irre machen und wenn Sie etwas damit bezeichnetes wúnschen sollten, sich nicht davon abhalten: nur muß ich bitten mir den catalog spátestens in 8 tagen wieder zurúkzusenden, damit ich selben kann nach Stokach abgehen laßen. da die besizerin es mir úberlaßen hat, die preise selbst zu bestimmen ; so werde ich bei denselben die gewónl: Auctions Catalog-preise zu grunde legen. Mit vielem danke für Sie lege ich noch die Ida von Tokenburg hier wieder bei, aber mit wenig dank gegen den Verfasser. was hat doch der nárrische mann, mit zurúkstoßung aller geschichte, fúr ein lácherliches unding aus dem schonen romantischen stoffe dieser sage gemacht, und wie oft verrát er die meister, nach welchen er die studien zu seinem bilde [: crassa et invita Minerva!: ] gemacht hat, Gott beware kúnftig die vaterländische geschichte vor solchen úberlieferungen, deren verfaßer man mit recht, wie jener italienische Abbate, und vielleicht mit mer recht: Traditore nennen könnte. - Nun lieber freund? soll ich es sagen? es will mir vorkommen, als wenn unsere Bischofszeller freunde uns das scheiden dadurch erleichtern wollten, daß sie in den lezten zeiten uns immer sparsamer mit irem besuche erfreuen; aber es wird inen nicht gelingen! wie konnten wir, besonders ich, ie vergeßen, ie aufhóren mich wieder danach zu senen, wie oft in einer so langen reihe von iaren, ir freundschaftlicher umgang mich erheitert hat, und zu wúnschen, daß auch in der zukunft, der kleine arm des schwábischen meeres inen nicht zu breit sein und Sie nicht abhalten möchte, die alten dankbaren freunde zuweilen durch lre gegenwart zu erfreuen, ubi Aliquando dextrae conjungere dextram Fas erit & notas audire et reddere voces! Damit gott befolen von Irem ergebensten freunde JvLaßberg. Darf ich bitten H Praes. Scherb die Inlage samt meinem besten danke zustellen zu lassen?"
-print(t5_summarize(text))
+def evaluate_t5():
+    summaries = []
 
+    for letter in letters:
+        summary = t5_summarize(letter)
+        print(summary)
+        summaries.append(summary)
+    text = "\n".join(summaries)
+
+    # Save the summaries to file
+    with open(os.path.join(os.getcwd(), "..", "analysis", "t5","test_summary_letters_t5_English.txt"), "w", encoding="utf-8") as file:
+        file.write(text)
 
 
 # Hugging Face Bart
@@ -144,15 +163,24 @@ def bart_summarize(text, model_name='facebook/bart-large-cnn', max_length=450):
     summary = tokenizer.decode(outputs[0], skip_special_tokens=True)
     return summary.strip()
 
-# Usage example:
-text = "Eppishausen am 25. April 1838. Hier mein vererter freund und nachbar! erhalten Sie zuerst den catalog der frau Hofrátin von Thaleppe zu Stockach, in welchem Sie viel schónes und gutes finden werden. laßen Sie sich durch die darinne befindlichen Randzeichen + & > nicht irre machen und wenn Sie etwas damit bezeichnetes wúnschen sollten, sich nicht davon abhalten: nur muß ich bitten mir den catalog spátestens in 8 tagen wieder zurúkzusenden, damit ich selben kann nach Stokach abgehen laßen. da die besizerin es mir úberlaßen hat, die preise selbst zu bestimmen ; so werde ich bei denselben die gewónl: Auctions Catalog-preise zu grunde legen. Mit vielem danke für Sie lege ich noch die Ida von Tokenburg hier wieder bei, aber mit wenig dank gegen den Verfasser. was hat doch der nárrische mann, mit zurúkstoßung aller geschichte, fúr ein lácherliches unding aus dem schonen romantischen stoffe dieser sage gemacht, und wie oft verrát er die meister, nach welchen er die studien zu seinem bilde [: crassa et invita Minerva!: ] gemacht hat, Gott beware kúnftig die vaterländische geschichte vor solchen úberlieferungen, deren verfaßer man mit recht, wie jener italienische Abbate, und vielleicht mit mer recht: Traditore nennen könnte. - Nun lieber freund? soll ich es sagen? es will mir vorkommen, als wenn unsere Bischofszeller freunde uns das scheiden dadurch erleichtern wollten, daß sie in den lezten zeiten uns immer sparsamer mit irem besuche erfreuen; aber es wird inen nicht gelingen! wie konnten wir, besonders ich, ie vergeßen, ie aufhóren mich wieder danach zu senen, wie oft in einer so langen reihe von iaren, ir freundschaftlicher umgang mich erheitert hat, und zu wúnschen, daß auch in der zukunft, der kleine arm des schwábischen meeres inen nicht zu breit sein und Sie nicht abhalten möchte, die alten dankbaren freunde zuweilen durch lre gegenwart zu erfreuen, ubi Aliquando dextrae conjungere dextram Fas erit & notas audire et reddere voces! Damit gott befolen von Irem ergebensten freunde JvLaßberg. Darf ich bitten H Praes. Scherb die Inlage samt meinem besten danke zustellen zu lassen?"
-print(bart_summarize(text))
+def evaluate_bart():
+    summaries = []
+
+    for letter in letters:
+        summary = bart_summarize(letter)
+        print(summary)
+        summaries.append(summary)
+    text = "\n".join(summaries)
+
+    # Save the summaries to file
+    with open(os.path.join(os.getcwd(), "..", "analysis", "bart","test_summary_letters_bart_English.txt"), "w", encoding="utf-8") as file:
+        file.write(text)
 
 
 # Hugging Face Pegasus (German)
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM, pipeline
 # GermanT5/t5-efficient-gc4-german-base-nl36 Einmalumdiewelt/PegasusXSUM_GNAD
-def summarize_german_text(text: str, model_name="GermanT5/t5-efficient-gc4-german-base-nl36"):
+def pegasus_summarize(text: str, model_name="GermanT5/t5-efficient-gc4-german-base-nl36"):
     tokenizer = AutoTokenizer.from_pretrained(model_name)
     model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
 
@@ -161,10 +189,25 @@ def summarize_german_text(text: str, model_name="GermanT5/t5-efficient-gc4-germa
     summary = summarizer(text, max_length=150, min_length=40, do_sample=False)
     return summary[0]['summary_text']
 
-# Example usage
-text = "Eppishausen am 25. April 1838. Hier mein vererter freund und nachbar! erhalten Sie zuerst den catalog der frau Hofrátin von Thaleppe zu Stockach, in welchem Sie viel schónes und gutes finden werden. laßen Sie sich durch die darinne befindlichen Randzeichen + & > nicht irre machen und wenn Sie etwas damit bezeichnetes wúnschen sollten, sich nicht davon abhalten: nur muß ich bitten mir den catalog spátestens in 8 tagen wieder zurúkzusenden, damit ich selben kann nach Stokach abgehen laßen. da die besizerin es mir úberlaßen hat, die preise selbst zu bestimmen ; so werde ich bei denselben die gewónl: Auctions Catalog-preise zu grunde legen. Mit vielem danke für Sie lege ich noch die Ida von Tokenburg hier wieder bei, aber mit wenig dank gegen den Verfasser. was hat doch der nárrische mann, mit zurúkstoßung aller geschichte, fúr ein lácherliches unding aus dem schonen romantischen stoffe dieser sage gemacht, und wie oft verrát er die meister, nach welchen er die studien zu seinem bilde [: crassa et invita Minerva!: ] gemacht hat, Gott beware kúnftig die vaterländische geschichte vor solchen úberlieferungen, deren verfaßer man mit recht, wie jener italienische Abbate, und vielleicht mit mer recht: Traditore nennen könnte. - Nun lieber freund? soll ich es sagen? es will mir vorkommen, als wenn unsere Bischofszeller freunde uns das scheiden dadurch erleichtern wollten, daß sie in den lezten zeiten uns immer sparsamer mit irem besuche erfreuen; aber es wird inen nicht gelingen! wie konnten wir, besonders ich, ie vergeßen, ie aufhóren mich wieder danach zu senen, wie oft in einer so langen reihe von iaren, ir freundschaftlicher umgang mich erheitert hat, und zu wúnschen, daß auch in der zukunft, der kleine arm des schwábischen meeres inen nicht zu breit sein und Sie nicht abhalten möchte, die alten dankbaren freunde zuweilen durch lre gegenwart zu erfreuen, ubi Aliquando dextrae conjungere dextram Fas erit & notas audire et reddere voces! Damit gott befolen von Irem ergebensten freunde JvLaßberg. Darf ich bitten H Praes. Scherb die Inlage samt meinem besten danke zustellen zu lassen?"
-summary = summarize_german_text(text)
-print(summary)
+def evaluate_pegasus():
+    summaries = []
+
+    for letter in letters:
+        summary = pegasus_summarize(letter)
+        print(summary)
+        summaries.append(summary)
+    text = "\n".join(summaries)
+
+    # Save the summaries to file
+    with open(os.path.join(os.getcwd(), "..", "analysis", "pegasus","test_summary_letters_pegasus_English.txt"), "w", encoding="utf-8") as file:
+        file.write(text)
 
 
+# Evaluate the models
 
+#evaluate_gpt_3_5_English()
+#evaluate_gpt_3_5_German()
+#evaluate_gpt2()
+#evaluate_t5()
+#evaluate_bart()
+evaluate_pegasus()
