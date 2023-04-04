@@ -1,4 +1,5 @@
 # Automated Analysis and Summarization of Joseph von Laßberg's Correspondence: A Comparative Study of NLP Techniques
+*Disclaimer: This living article is a work in progress and might change substantially.*
 
 ## Introduction
 
@@ -158,6 +159,18 @@ In this chapter, I tested four methods of summarizing historical letters using G
 * and GPT-4 German (115/120).
 
 Both models demonstrated an exceptional ability to summarize content concisely and accurately, with English summaries slightly surpassing their German counterparts. Notably, the models effectively handled antiquated orthography and complex linguistic nuances, possibly performing better than untrained humans in terms of speed and accuracy. Despite its overall satisfactory performance, GPT-3.5 exhibited two limitations: 1. occasional misattribution of letter authorship, and 2. returning English summaries when German was requested. It can be expected, that  providing additional contextual information, such as the metadata already collected for the letters, might mitigate these issues, however, this was not tested at this point. In conclusion, automatic summarization of large datasets is feasible with both GPT-3.5 and GPT-4, especially once GPT-4 becomes available via API. While GPT-4 is the preferred choice due to its superior performance, GPT-3.5 may still yield reliable results with prompt optimization, offering a more cost-effective solution.
+
+### GPT-2
+Todo
+
+### T5
+Todo
+
+### BART
+Todo
+
+### PEGASUS
+Todo
 
 ## Named Entity Recognition (NER) Methods
 
