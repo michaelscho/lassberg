@@ -129,7 +129,7 @@ def t5_summarize(text, model_name='t5-base', max_length=450):
     tokenizer = T5Tokenizer.from_pretrained(model_name)
     model = T5ForConditionalGeneration.from_pretrained(model_name)
 
-    inputs = tokenizer.encode("Summarize the following correspondence between Joseph von Laßberg and Johan Adam Pupikofer English in 150 words: " + text, return_tensors="pt", max_length=512, truncation=True)
+    inputs = tokenizer.encode(text, return_tensors="pt", max_length=512, truncation=True)
     outputs = model.generate(inputs, max_length=max_length, num_return_sequences=1, early_stopping=True)
 
     summary = tokenizer.decode(outputs[0])
@@ -203,6 +203,35 @@ def evaluate_pegasus():
         file.write(text)
 
 
+# Hugging Face BloomZ
+from transformers import AutoTokenizer, AutoModelForCausalLM
+
+def bloomz_summarize(text, model_name='bigscience/bloomz', max_length=150):
+    tokenizer = AutoTokenizer.from_pretrained(model_name)
+    model = AutoModelForCausalLM.from_pretrained(model_name)
+
+    inputs = tokenizer.encode("Summarize the following correspondence between Joseph von Laßberg and Johan Adam Pupikofer English in 150 words: " + text, return_tensors="pt", max_length=512, truncation=True)
+    outputs = model.generate(inputs, max_length=max_length, num_return_sequences=1, early_stopping=True, no_repeat_ngram_size=3)
+
+    summary = tokenizer.decode(outputs[0])
+    return summary.strip()
+def evaluate_bloomz():
+    summaries = []
+
+    for letter in letters:
+        summary = bloomz_summarize(letter)
+        print(summary)
+        summaries.append(summary)
+    text = "\n".join(summaries)
+
+    # Save the summaries to file
+    with open(os.path.join(os.getcwd(), "..", "analysis", "bloomz","test_summary_letters_bloomz_English.txt"), "w", encoding="utf-8") as file:
+        file.write(text)
+
+
+
+
+
 # Evaluate the models
 
 #evaluate_gpt_3_5_English()
@@ -210,4 +239,5 @@ def evaluate_pegasus():
 #evaluate_gpt2()
 #evaluate_t5()
 #evaluate_bart()
-evaluate_pegasus()
+#evaluate_pegasus()
+evaluate_bloomz()
