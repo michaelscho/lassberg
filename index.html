@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Lassberg Letters</title>
+  <script src="https://unpkg.com/vue@2.x/dist/vue.js"></script>
+</head>
+<body>
+  <div id="app">
+    <!-- Vue.js components and templates will be placed here -->
+    <h1>The Lassberg Letters</h1>
+    <h2>Enriched Register</h2>
+    <ul>
+      <li v-for="item in csvData" :key="item.id">
+        {{ item }}
+      </li>
+    </ul>
+  </div>
+  <script src="main.js"></script>
+  <!-- for http requests -->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <!-- for csv parsing -->
+  <script src="https://unpkg.com/papaparse@5.3.0/papaparse.min.js"></script>
+
+</body>
+</html>
