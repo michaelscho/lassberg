@@ -4,7 +4,7 @@ Vue.use(VueRouter);
 
 // Define your components here
 const WelcomePage = {
-    template: `
+  template: `
     <div>
     <h1 class="my-4">The Laßberg Letters</h1>
     <h2 class="my-4">Introduction</h2>
@@ -13,70 +13,162 @@ const WelcomePage = {
     <p>Laßberg's scholarly pursuits focused primarily on German medieval literature, and his efforts to preserve, edit, and disseminate these works had a lasting impact on the emerging field of Medieval Studies in Germany, by providing access to his library (and brokering access to others) for other scholars. By sharing his extensive collection, he facilitated the study and dissemination of medieval literature, contributing significantly to the development and growth of Medieval Studies during the 19th century. Thus, it is not surprising, that his correspondence (<router-link to="/repository">data/register/final_register.csv</router-link>, <router-link to="/literature#Harris1991">Harris 1991</router-link>) unveils an extensive network of connections with distinguished scholars, writers, and cultural figures of his time. Among Laßberg's most prominent correspondents were the Brothers Grimm, Jacob and Wilhelm, who shared his passion for the preservation of Germany's cultural heritage. Other notable figures in Laßberg's network included the historian and philologist Karl Lachmann, the writer and collector Achim von Arnim, and the poet Clemens Brentano. Together, his letters offer a rare insight into a dynamic and influential intellectual community that contributed significantly to the development of German Romanticism and the resurgence of interest in the nation's presumed medieval past.</p>
     </div>
     
-                ` };
-const LettersPage = { 
-    template: `
+                `,
+};
+const LettersPage = {
+  props: ["csvData"],
+  template: `
   <div>
     <h1 class="my-4">The Lassberg Letters</h1>
-    <h2 class="my-4">Enriched Register</h2>
+    <h2 class="my-4">Register</h2>
+    <p>{{ filteredDataCount }} letters selected. Click on date for further information.</p>
     <table class="table table-striped">
       <thead>
         <tr>
-          <th scope="col">Number</th>
-          <th scope="col">Date</th>
-          <th scope="col">Place</th>
-          <th scope="col">Name (GND)</th>
-          <th scope="col">Provenance</th>
-          <th scope="col">From/To Lassberg</th>
+          <th scope="col">Date<input v-model="filters.date" type="text"/></th>
+
+          <th scope="col">Name (GND)<input v-model="filters.name" type="text"/></th>
+          
+          <th scope="col">Place<input v-model="filters.place" type="text"/></th>
+
+          <th scope="col">Provenance<input v-model="filters.provenance" type="text"/></th>
+
+          <th scope="col">From/To Laßberg<input v-model="filters.fromTo" type="text"/></th>
         </tr>
       </thead>
+
       <tbody>
-        <tr v-for="item in csvData" :key="item.id">
-          <td>{{ item.Nummer }}</td>
-          <td>{{ item.date }}</td>
-          <td>{{ item.Ort }}</td>
-          <td v-if="item.Wiki !== '-'">
-            <a :href="item.Wiki">{{ item.Name_voll }}</a>
-            <span v-if="item.GND !== '-'" class="ml-2">
-              <a :href="'https://lobid.org/gnd/' + item.GND"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a>
+      <tr v-for="(item, id) in filteredData" :key="id" >
+
+          <td><router-link :to="'/letter/' + item.ID">{{ item.Datum }}</router-link></td>
+          
+          <td>
+          <!-- Case 1: Name has a wiki URL and a GND number -->
+          <template v-if="item.Wiki !== '-' && item.GND !== '-'">
+            <a :href="item.Wiki">{{ item.Name }}</a>
+            <span class="ml-2">
+              <a :href="'https://lobid.org/gnd/' + item.GND">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12">
+              </a>
             </span>
-          </td>
-          <td v-else>
-            {{ item.Name_voll }} ({{ item.GND }})
-          </td>
-          <td>{{ item.Aufbewahrungsort }}, {{ item.Aufbewahrungsinstitution }}</td>
-          <td>{{ item['VON/AN'] }}</td>
-        </tr>
+          </template>
+        
+          <!-- Case 2: Name has no wiki page but a GND number -->
+          <template v-else-if="item.Wiki === '-' && item.GND !== '-'">
+            {{ item.Name }}
+            <span class="ml-2">
+              <a :href="'https://lobid.org/gnd/' + item.GND">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12">
+              </a>
+            </span>
+          </template>
+        
+          <!-- Case 3: Name has no wiki page and no GND number -->
+          <template v-else>
+            {{ item.Name }}
+          </template>
+        </td>
+        
+          
+          <td>{{ item.Ort }}</td>
+          
+          <td>{{ item.Aufbewahrungsort || '' }}, {{ item.Aufbewahrungsinstitution  || '' }}</td>
+          
+          <td>{{ item['VON/AN'] === 'VON' ? 'from Laßberg' : 'to Laßberg' }}</td>
+          </tr>
       </tbody>
     </table>
+
   </div>
-`,
-data() {
+  
+  `,
+  data() {
     return {
-        csvData: []
+      filters: {
+        date: "",
+        place: "",
+        name: "",
+        provenance: "",
+        fromTo: "",
+      },
     };
-},
-methods: {
-    loadData() {
-        axios.get('data/register/final_register.csv')
-            .then(response => {
-                this.csvData = Papa.parse(response.data, { header: true }).data;
-                console.log(this.csvData);
-            })
-            .catch(error => {
-                console.error('Error fetching CSV data:', error);
-            });
-    }
-},
-mounted() {
-    this.loadData();
-},
+  },
+  methods: {
+    
 
-     };
+  },
 
-const LetterView = { /* ... */ };
-const LiteraturePage = { 
-    template: `
+  computed: {
+    filteredData() {
+      if (!this.csvData) {
+        return [];
+      }
+      return this.csvData.filter((item) => {
+        return (
+          item.Datum &&
+          item.Datum.toLowerCase().includes(this.filters.date.toLowerCase()) &&
+          item.Ort.toLowerCase().includes(this.filters.place.toLowerCase()) &&
+          item.Name.toLowerCase().includes(this.filters.name.toLowerCase()) &&
+          (item.Aufbewahrungsort + ", " + item.Aufbewahrungsinstitution)
+            .toLowerCase()
+            .includes(this.filters.provenance.toLowerCase()) &&
+          item["VON/AN"]
+            .toLowerCase()
+            .includes(this.filters.fromTo.toLowerCase())
+        );
+      });
+    },
+
+    filteredDataCount() {
+      return this.filteredData.length;
+    },
+
+    filteredDataIds() {
+      return this.filteredData.map((_, index) => `filteredItem-${index}`);
+    },
+  },
+
+  mounted() {
+  },
+};
+
+const LetterView = {
+  props: ["id", "csvData"],
+  data() {
+    return {
+      letter: {},
+    };
+  },
+  mounted() {
+    this.findLetterById();
+  },
+  methods: {
+    findLetterById() {
+      this.letter = this.csvData.find(item => item.ID === this.id);
+      if (!this.letter) {
+        console.error('Letter not found with ID:', this.id);
+      }
+    },
+  },
+  template: `
+    <div>
+      <h1 class="my-4">{{ letter['VON/AN'] === 'VON' ?  'Joseph von Laßberg': letter.Name }} to {{ letter['VON/AN'] === 'VON' ? letter.Name : 'Joseph von Laßberg' }} ({{ letter.Datum === "Unbekannt" ? "Unknown" : new Date(letter.Datum).toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' }) }})</h1>
+      <p><strong>Date:</strong> {{ letter.Datum }}</p>
+      <p><strong>Name:</strong> {{ letter.Name }}</p>
+      <p><strong>Place:</strong> {{ letter.Ort }}</p>
+      <p><strong>Journal:</strong> {{ letter.Journalnummer }}</p>
+      <p><strong>Harris 1991:</strong> {{ letter.Nummer_Harris }}</p>
+      <p><strong>Provenance:</strong> {{ letter.Aufbewahrungsort || '' }}, {{ letter.Aufbewahrungsinstitution  || '' }}</p>
+      <p><strong>Printed:</strong> <a :href="letter.url">{{ letter.text }}</a></p>
+      <p><strong>Summary:</strong> {{ letter.summary }}</p>
+      <p><strong>Text:</strong> {{ letter.letter_text }}</p>
+      <p><router-link to="/letters">Back to Letters</router-link></p>
+      </div>
+  `,
+};
+
+const LiteraturePage = {
+  template: `
     <div>
     <h1 class="my-4">Literature</h1>
     <ul class="list-group">
@@ -96,37 +188,79 @@ const LiteraturePage = {
         <li class="list-group-item" id="Sprague2011">(Sprague 2011) William Maurice Sprague: Lassberg, Joseph Maria Christoph, Freiherr von. In: Albrecht Classen (ed.): Handbook of Medieval Studies: Terms - Methods - Trends. Berlin 2011 (DOI: https://doi.org/10.1515/9783110215588.2450), pp. 2450-2454.</li>
         <li class="list-group-item" id="Weidhase2002">(Weidhase 2002) Helmut Weidhase: Freiherr von Lassberg oder die fruchtbringende Gelehrsamkeit: ‚Des letzten Ritters Bibliothek‘ - in Frauenfeld und Gottlieben. In: Librarium: Zeitschrift der Schweizerischen Bibliophilen Gesellschaft 45 (2002) (DOI: https://dx.doi.org/10.5169/seals-388718), pp. 31–37.</li>
     </ul>
-    </div>`
+    </div>`,
+};
 
-    };
+const AnalysisPage = {
+  /* ... */
+};
 
-const AnalysisPage = { /* ... */ };
-
-// Define your routes
 const routes = [
-    { path: '/', component: WelcomePage },
-    { path: '/letters', component: LettersPage },
-    { path: '/letters/:id', component: LetterView },
-    { path: '/literature', component: LiteraturePage },
-    { path: '/analysis', component: AnalysisPage },
-    { path: '/repository', beforeEnter() { location.href = 'https://github.com/michaelscho/lassberg' } }
+  { path: "/", component: WelcomePage },
+  {
+    path: "/letters",
+    component: LettersPage,
+    props: () => app.getData(),
+  },
+  { path: "/letter/:id", component: LetterView, props: (route) => ({ id: route.params.id, csvData: app.csvData }) },
+  { path: "/literature", component: LiteraturePage },
+  { path: "/analysis", component: AnalysisPage },
+  {
+    path: "/repository",
+    beforeEnter() {
+      location.href = "https://github.com/michaelscho/lassberg";
+    },
+  },
 ];
 
 // Create the router instance
 const router = new VueRouter({
-    routes
+  routes,
 });
 
 // Initialize the Vue app
 const app = new Vue({
-    el: '#app',
-    router,
-    data: {
-    },
-    methods: {
+  el: "#app",
+  router,
+  data: {
+    csvData: [],
+    isLoading: true,
+  },
+  methods: {
+    loadData() {
+      axios
+        .get("data/register/register_for_web.csv")
+        .then((response) => {
+          this.csvData = Papa.parse(response.data, { header: true }).data;
 
+          // sort by date, 'Unbekannt' last
+          this.csvData.sort((a, b) => {
+            if (a.Datum === "Unbekannt" && b.Datum === "Unbekannt") {
+              return 0;
+            } else if (a.Datum === "Unbekannt") {
+              return 1;
+            } else if (b.Datum === "Unbekannt") {
+              return -1;
+            } else {
+              return new Date(a.Datum) - new Date(b.Datum);
+            }
+          });
+
+          console.log(this.csvData);
+          this.isLoading = false;
+        })
+        .catch((error) => {
+          console.error("Error fetching CSV data:", error);
+        });
     },
-    mounted() {
-        // Lifecycle hook to load data when the app is mounted
+    getData() {
+      return {
+        csvData: this.csvData,
+        isLoading: this.isLoading,
+      };
     },
+  },
+  mounted() {
+    this.loadData();
+  },
 });
