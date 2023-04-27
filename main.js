@@ -27,21 +27,32 @@ const LettersPage = {
         <tr>
           <th scope="col">Date<input v-model="filters.date" type="text"/></th>
 
+          <th scope="col">From/To Laßberg<input v-model="filters.fromTo" type="text"/></th>
+
           <th scope="col">Name (GND)<input v-model="filters.name" type="text"/></th>
           
           <th scope="col">Place<input v-model="filters.place" type="text"/></th>
 
           <th scope="col">Provenance<input v-model="filters.provenance" type="text"/></th>
 
-          <th scope="col">From/To Laßberg<input v-model="filters.fromTo" type="text"/></th>
+          <th scope="col">Persons<input v-model="filters.persons" type="text"/></th>
+
+          <th scope="col">Topics<input v-model="filters.topics" type="text"/></th>
+
+  
         </tr>
       </thead>
 
       <tbody>
       <tr v-for="(item, id) in filteredData" :key="id" >
 
-          <td><router-link :to="'/letter/' + item.ID">{{ item.Datum }}</router-link></td>
-          
+          <td><router-link :to="'/letter/' + item.ID">{{ item.Datum }}</router-link><template v-if="item.normalized_text !== ''"><img
+          src="img/green_checkmark.svg"
+          height="12"
+          width="12"/>
+        </template></td>
+          <td>{{ item['VON/AN'] === 'VON' ? 'from Laßberg' : 'to Laßberg' }}</td>
+
           <td>
           <!-- Case 1: Name has a wiki URL and a GND number -->
           <template v-if="item.Wiki !== '-' && item.GND !== '-'">
@@ -73,8 +84,11 @@ const LettersPage = {
           <td>{{ item.Ort }}</td>
           
           <td>{{ item.Aufbewahrungsort || '' }}, {{ item.Aufbewahrungsinstitution  || '' }}</td>
+
+          <td>{{ item.persons_mentioned }}</td>
+
+          <td>{{ item.topics_mentioned }}</td>
           
-          <td>{{ item['VON/AN'] === 'VON' ? 'from Laßberg' : 'to Laßberg' }}</td>
           </tr>
       </tbody>
     </table>
@@ -89,6 +103,8 @@ const LettersPage = {
         place: "",
         name: "",
         provenance: "",
+        persons: "",
+        topics: "",
         fromTo: "",
       },
     };
@@ -109,6 +125,8 @@ const LettersPage = {
           item.Datum.toLowerCase().includes(this.filters.date.toLowerCase()) &&
           item.Ort.toLowerCase().includes(this.filters.place.toLowerCase()) &&
           item.Name.toLowerCase().includes(this.filters.name.toLowerCase()) &&
+          item.persons_mentioned.toLowerCase().includes(this.filters.persons.toLowerCase()) &&
+          item.topics_mentioned.toLowerCase().includes(this.filters.topics.toLowerCase()) &&
           (item.Aufbewahrungsort + ", " + item.Aufbewahrungsinstitution)
             .toLowerCase()
             .includes(this.filters.provenance.toLowerCase()) &&
@@ -160,8 +178,10 @@ const LetterView = {
       <p><strong>Harris 1991:</strong> {{ letter.Nummer_Harris }}</p>
       <p><strong>Provenance:</strong> {{ letter.Aufbewahrungsort || '' }}, {{ letter.Aufbewahrungsinstitution  || '' }}</p>
       <p><strong>Printed:</strong> <a :href="letter.url">{{ letter.text }}</a></p>
-      <p><strong>Summary:</strong> {{ letter.summary }}</p>
+      <p><strong>Summary:</strong> {{ letter.summary_en }} (<i>This summary was automatically created using GPT 4.</i>)</p>
       <p><strong>Text:</strong> {{ letter.letter_text }}</p>
+      <p><strong>Normalized Text:</strong> {{ letter.normalized_text }}</p>
+
       <p><router-link to="/letters">Back to Letters</router-link></p>
       </div>
   `,

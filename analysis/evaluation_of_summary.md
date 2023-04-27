@@ -5,14 +5,7 @@
 
 The study of historical correspondence provides valuable insights into the lives, ideas, and networks of prominent individuals, offering a unique window into the past (Boran et. al 2019, Schulte and von Tippelskirch 2004). Joseph von Laßberg (Bader 1955, Graf 2010, Schupp 1982, Sprague 2011), a distinguished German literary scholar and collector, is renowned for his extensive correspondence throughout the 19th century. With around 3,250 letters, both from and to Laßberg, this significant collection constitutes a rich source of information for scholars in various fields, including literature, history, and cultural studies (Harris 1991).
 
-The primary objective of this project is to analyze Laßberg's correspondence, with a particular focus on extracting topics, named entities, and generating summaries in both German and English. Given the sheer size of the correspondence, automating this process is crucial to facilitate efficient analysis and make the information more accessible to researchers. To achieve this, I employ and evaluate state-of-the-art natural language processing (NLP) techniques, specifically:
-
-* ChatGPT-3.5 via OpenAI API
-* ChatGPT-4 via OpenAI API
-* GPT-2 (via Hugging Face)
-* T5 (via Hugging Face)
-* BART (via Hugging Face)
-* PEGASUS (via Hugging Face)
+The primary objective of this project is to analyze Laßberg's correspondence, with a particular focus on extracting topics, named entities, and generating summaries in both German and English. Given the sheer size of the correspondence, automating this process is crucial to facilitate efficient analysis and make the information more accessible to researchers. To achieve this, several state-of-the-art natural language processing (NLP) techniques have been tested
 
 This paper presents an extensive comparison of these methods, assessing their effectiveness in generating accurate and coherent summaries, extracting relevant topics, and identifying named entities. Thus, we aim to contribute valuable insights for the field of Correspondence Studies by demonstrating the potential of these advanced NLP techniques in enhancing the understanding of historical texts.
 
@@ -42,7 +35,7 @@ To achieve these goals, I will focus on three key tasks:
 
 In this paper, I will evaluate the performance of various methods for each task based on a sample of 10 letters taken from the correspondence between Joseph von Laßberg and his close friend [Johan Adam Pupikofer](https://en.wikipedia.org/wiki/Johann_Adam_Pupikofer). This selection of letters, presented in ther *Appendix* encompasses both personal exchanges and scholarly discussions, providing a representative sample for our analysis. The letters have been taken directly from the ocred pdf of their printed source via Google Books. No postprocessing was applied, except deletion of `\n` and whitespaces. Some of them, particularily letters written by Laßberg, rely heavily on an oldfashined style of German, including non standard orthography and characters. Other,s mainly written by Pupikofer are more standardized. Errors in OCR have not been corrected, as this would not be feasable to do for 3250 letters at this point. However, the quality of the digitized text is high.
 
-Based on this dataset, a number of methods will be evaluated regarding the forementioned tasks. As this paper is dedicated to test methods suitable for small projects, that do not have the resources to apply these tasks manually or devote substantial time to train or even finetune models, the methods evaluated here will be used as they are provided out-of-the-box. If these mthods are further trained or finetuned, substantially better results might be possible.   
+Based on this dataset, a number of methods will be evaluated regarding the aforementioned tasks. As this paper is dedicated to test methods suitable for small projects, that do not have the resources to apply these tasks manually or devote substantial time to train or even finetune models, the methods evaluated here will be used as they are provided out-of-the-box. If these methods are further trained or finetuned, substantially better results might be possible.   
 
 The paper is structured in three main sections, each dedicated to the evaluation of methods for one of the aforementioned tasks:
 
@@ -57,17 +50,19 @@ By evaluating these methods, I hope to identify the most effective techniques fo
 ## Summarization Methods
 Automatic text summarization is the process of generating a concise and coherent summary of a given text while preserving its most important information. The main challenge in automatic text summarization lies in the ability to extract and condense the most relevant content from the source material, while maintaining a natural language flow and structure. In the context of Joseph von Laßberg's correspondence, the task is to generate summaries of the letters that allow researchers to quickly grasp the main topics, events, and ideas discussed, without having to read the entire text.
 
-In this paper, the following text summarization methods are evaluated, which utilize various natural language processing (NLP) techniques to generate summaries: First, I rely on commercial products using OpenAI API. Then, I employ an OA approach, using models hosted on Hugging Face, an open-source library for natural language processing and machine learning:
-
-* GPT-4 and GPT-3.5 via OpenAI API: GPT-4 (and GPT-3.5) is a large-scale language model developed by OpenAI based on the GPT architecture. It is trained on diverse web text and is designed to generate coherent and contextually relevant responses in a conversational setting. Although not specifically designed for summarization, GPT-3.5 and GPT-4 can be adapted for this purpose by framing the summarization task as a conversation or by using appropriate prompts using the paid service [OpenAI API](https://openai.com/blog/openai-api).
-
-* GPT-2 via Hugging Face: [GPT-2](https://huggingface.co/docs/transformers/model_doc/gpt2), developed by OpenAI, is a predecessor to GPT-3.5 and GPT-4 and uses a similar architecture. While it is smaller in scale compared to GPT-4, GPT-2 has demonstrated promising results in various NLP tasks, including text summarization. Hugging Face's Transformers library provides an accessible implementation of GPT-2. The architecture is not made specifically for summarization tasks, but will be vealuated given the capabilities of its successors.
+The following common language models have been used to generate summaries: 
 
 * T5 via Hugging Face: [T5](https://huggingface.co/docs/transformers/model_doc/t5) is a language model developed by Google Research that is designed to perform multiple NLP tasks by converting them into a text-to-text format. This approach allows T5 to handle tasks like translation, summarization, and question answering using a unified framework. The Hugging Face Transformers library provides an implementation of T5 that can be utilized for summarization tasks.
 
 * BART via Hugging Face: [BART](https://huggingface.co/docs/transformers/model_doc/bart) is a language model developed by Facebook AI, which combines the strengths of auto-regressive models like GPT-2 and auto-encoding models like BERT. BART has demonstrated strong performance in text generation tasks, including summarization.
 
 * PEGASUS via Hugging Face: [PEGASUS](https://huggingface.co/docs/transformers/model_doc/pegasus) (Pre-training with Extracted Gap-sentences for Abstractive Summarization) is a model developed by Google Research, specifically designed for abstractive text summarization. It employs a novel pre-training technique, where important sentences are removed from the input text, and the model is tasked with predicting these missing sentences.
+
+* GPT-2 via Hugging Face: [GPT-2](https://huggingface.co/docs/transformers/model_doc/gpt2), developed by OpenAI, is a predecessor to GPT-3.5 and GPT-4 and uses a similar architecture. While it is smaller in scale compared to GPT-4, GPT-2 has demonstrated promising results in various NLP tasks, including text summarization. Hugging Face's Transformers library provides an accessible implementation of GPT-2. The architecture is not made specifically for summarization tasks, but will be evaluated given the capabilities of its successors.
+
+* GPT-4 and GPT-3.5 via OpenAI API: GPT-4 (and GPT-3.5) is a large-scale language model developed by OpenAI based on the GPT architecture. It is trained on diverse web text and is designed to generate coherent and contextually relevant responses in a conversational setting. Although not specifically designed for summarization, GPT-3.5 and GPT-4 can be adapted for this purpose by framing the summarization task as a conversation or by using appropriate prompts using the paid service [OpenAI API](https://openai.com/blog/openai-api).
+
+All models have been given the same 10 letters that can be found in the appendix to summarize. Interestingly, although not designed specifically for text summarization, only the large Generative pre-trained transformer models were able to handle this task even remotely as expected. All other models produced outcome that was so unusable in this context, that it makes no sense to include it in a further evaluation (see data in this directory), that will be based entirely on GPT models.
 
 In my evaluation, I will compare these methods based on their ability to generate accurate, concise, and coherent summaries of the selected letters from Joseph von Laßberg's correspondence. The summaries will be evaluated using the following criteria and marked from 0 to 3, with 0 being the worst outcome.
 
@@ -160,17 +155,7 @@ In this chapter, I tested four methods of summarizing historical letters using G
 
 Both models demonstrated an exceptional ability to summarize content concisely and accurately, with English summaries slightly surpassing their German counterparts. Notably, the models effectively handled antiquated orthography and complex linguistic nuances, possibly performing better than untrained humans in terms of speed and accuracy. Despite its overall satisfactory performance, GPT-3.5 exhibited two limitations: 1. occasional misattribution of letter authorship, and 2. returning English summaries when German was requested. It can be expected, that  providing additional contextual information, such as the metadata already collected for the letters, might mitigate these issues, however, this was not tested at this point. In conclusion, automatic summarization of large datasets is feasible with both GPT-3.5 and GPT-4, especially once GPT-4 becomes available via API. While GPT-4 is the preferred choice due to its superior performance, GPT-3.5 may still yield reliable results with prompt optimization, offering a more cost-effective solution.
 
-### GPT-2
-Todo
-
-### T5
-Todo
-
-### BART
-Todo
-
-### PEGASUS
-Todo
+At first glance, it is surprising that Generative Pre-trained Transformers (GPTs) were the only methods that produced usable and even quite impressive results since other methods were specifically designed for summarization. However, strictly speaking, the task at hand was not a straightforward summary, but rather a concise reformulation of the orthographically and grammatically unusual historical text into both modern German and a foreign language. This essentially makes it a text understanding and formulation task, which is precisely what GPTs were designed and trained for. Also, as models pre-trained on a massive amount of data, it makes sense that these methods would work out of the box, making it plausible that other methods as well could do the task in a similar way, if trained with a similar amount of data or finetuned sufficiantly, something beyond the scope of the project at hand. 
 
 ## Named Entity Recognition (NER) Methods
 

@@ -240,4 +240,4 @@ def evaluate_bloomz():
 #evaluate_t5()
 #evaluate_bart()
 #evaluate_pegasus()
-evaluate_bloomz()
+#evaluate_bloomz()
