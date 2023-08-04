@@ -47,7 +47,7 @@ def evaluate_spacy(letters):
     # Load the German model
     nlp = spacy.load("de_core_news_lg")
     
-    for letter in letters:
+    for letter in letters[:1]:
 
         # Process the text with the model
         doc = nlp(letter)
@@ -81,7 +81,7 @@ def evaluate_nltk(letters):
 from HanTa import HanoverTagger as ht
 
 def evaluate_hanta(letters):
-    for letter in letters:
+    for letter in letters[:1]:
         sentences = nltk.sent_tokenize(letter,language='german')
         #print(sentences)
         for sentence in sentences:
@@ -102,7 +102,7 @@ def evaluate_bert(letters):
     model = AutoModelForTokenClassification.from_pretrained("Davlan/bert-base-multilingual-cased-ner-hrl")
     nlp = pipeline("ner", model=model, tokenizer=tokenizer)
     
-    for letter in letters:
+    for letter in letters[:1]:
         ner_results = nlp(letter)
         for result in ner_results:
             print(result)
@@ -111,30 +111,39 @@ def evaluate_bert(letters):
 # NER using Flair
 from flair.data import Sentence
 from flair.models import SequenceTagger
-def evaluate_flair(letters):
-    # load tagger
-    tagger = SequenceTagger.load("flair/ner-multi")
-    for letter in letters:
-    # make example sentence in any of the four languages
-    
-    # predict NER tags
-        tagger.predict(letter)
+from flair.nn import Classifier
+from flair.data import Label
 
-    # print predicted NER spans
-    print('The following NER tags are found:')
-    # iterate over entities and print
-    for entity in letter.get_spans('ner'):
-        print(entity)
+def evaluate_flair(letters):
+    # load model
+    tagger = Classifier.load('de-ner-large')
+    tagger.to('cpu')
+    for letter in letters[:1]:
+        # make example sentence in any of the four languages
+        sentence = Sentence(letter)
+
+        # predict NER tags
+        tagger.predict(sentence)
+
+        # print predicted NER spans
+        print('The following NER tags are found:')
+        # iterate over entities and print
+        #for entity in letter.get_spans('ner'):
+        #    print(entity)
+        for entity in sentence.get_spans('ner'):
+            tag: Label = entity.labels[0]
+            print(f'{entity.text} [{tag.value}] ({tag.score:.4f})')
+
 
 
 
 # Evaluation
 
-evaluate_spacy(letters)
-evaluate_nltk(letters)
-evaluate_hanta(letters)
-evaluate_bert(letters) # maybe try using another model? Also, try to normalize letters using gpt first
-#evaluate_flair(letters)
+#evaluate_spacy(letters)
+#evaluate_nltk(letters)
+#evaluate_hanta(letters)
+#evaluate_bert(letters) # maybe try using another model? Also, try to normalize letters using gpt first
+evaluate_flair(letters)
 
 #https://www.researchgate.net/publication/336926568_BERT_for_Named_Entity_Recognition_in_Contemporary_and_Historical_German
 

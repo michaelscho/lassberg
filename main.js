@@ -180,7 +180,7 @@ const LetterView = {
       <p><strong>Printed:</strong> <a :href="letter.url">{{ letter.text }}</a></p>
       <p><strong>Summary:</strong> {{ letter.summary_en }} (<i>This summary was automatically created using GPT 4.</i>)</p>
       <p><strong>Text:</strong> {{ letter.letter_text }}</p>
-      <p><strong>Normalized Text:</strong> {{ letter.normalized_text }}</p>
+      <p><strong>Normalized Text:</strong> {{ letter.normalized_text }} (<i>This normalization was automatically created using GPT 4.</i>)</p>
 
       <p><router-link to="/letters">Back to Letters</router-link></p>
       </div>
