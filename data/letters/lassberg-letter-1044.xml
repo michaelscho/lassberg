@@ -4,59 +4,108 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Brief von Joseph von Laßberg an Johann Caspar Zellweger (05.03.1839).</title>
+                <title>Brief von Joseph von Laßberg an Johann Adam Pupikofer (04.11.1825).</title>
                 <respStmt>
                     <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
                     <name>Michael Schonhardt</name>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
-                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 normalisiert.</p>
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
                     <msIdentifier>
-                        <settlement>Trogen</settlement>
-                        <repository>Kantonsbibliothek Appenzell A.Rh.</repository>
-                        <idno type="signature"/>
-                        <idno type="register-harris">1044</idno>
-                        <idno type="register-lassberg">63</idno>
+                        <settlement>Winterthur</settlement>
+                        <repository>Stadtbibliothek</repository>
+                        <idno type="signature"></idno>
+                        <idno type="register-harris">523</idno>
+                        <idno type="register-lassberg">nan</idno>
                     </msIdentifier>
                     <additional>
                         <surrogates>
-                            <bibl type="printed">Carl Ritter, Briefwechsel zwischen Joseph Freiherrn von Lassberg und Johann Caspar Zellweger. St.Gallen 1889, S. 172/t
-                            <ref>https://books.google.de/books?id=KIHHQBvr1nkC</ref>
-                            </bibl>
+                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 15 (1887), S. 231-88, S. 232<ref>https://books.google.de/books?id=dXkKAAAAIAAJ</ref></bibl>
                         </surrogates>
                     </additional>
                 </msDesc>
             </sourceDesc>
         </fileDesc>
         <profileDesc>
-            <correspDesc xml:id="correspDesc-1044">
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1044">
                 <correspAction type="sent">
-                    <persName ref="lassberg-correspondent-0373">Joseph von Laßberg</persName>
-                    <placeName ref="lassberg-place-0101">Meersburg</placeName>
-                    <date when="1839-03-05">05.03.1839</date>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1825-11-04">04.11.1825</date>
                 </correspAction>
                 <correspAction type="received">
-                    <persName ref="lassberg-correspondent-0193">Johann Caspar Zellweger</persName>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X"
+                        >Johann Adam Pupikofer</persName>
+                    
                 </correspAction>
-                <noteGrp type="chatgpt">
-                    <note type="chatgpt-summary"/>
-                    <note type="chatgpt-keytopics"/>
-                    <note type="chatgpt-persons"/>
-                    <note type="chatgpt-texts"/>
-                    <note type="chatgpt-objects"/>
-                    <note type="chatgpt-manuscripts"/>
-                </noteGrp>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0043"><rs>Eppishausen</rs></ref>
+<ref type="cmif:mentionsBibl" target=""><rs>Myller'sche Sammlung</rs></ref>
+<ref type="cmif:mentionsBibl" target=""><rs>Krieg von Troja</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs>Wolfram von Eschilbach</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0119"><rs>Hagen</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Büsching</rs></ref>
+<ref type="cmif:mentionsBibl" target=""><rs>Tristan</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs>Gottfried von Straßburg</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs>Hartmann von Aue</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs>von</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Ow</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Schwaben</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0196"><rs>Hartmann</rs></ref>
+<ref type="cmif:mentionsOrganisation" target=""><rs>Heinrich</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Ow</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Scherzingen</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs>Hartmann von Ow</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Grimms</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Deutschland</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Ulfilas</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Asien</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Villa Epponis</rs></ref>
+<ref type="cmif:mentionsBibl" target=""><rs>Episcopatus Constanc.</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Schwaben</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Schweiz</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Berthold</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Berthold</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs>Johann von Winterthur</rs></ref>
+<ref type="cmif:mentionsOrganisation" target=""><rs>Ekhardts Corp</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0163"><rs>Winterthur</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Berthold</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0066"><rs>Heiligenberg</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Schlossberg</rs></ref>
+<ref type="cmif:mentionsBibl" target=""><rs>Liedersaales</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0373"><rs>J. v. Laßberg</rs></ref>
+                </note>
             </correspDesc>
         </profileDesc>
     </teiHeader>
     <text>
         <body>
-            <p/>
+            <div type="original" resp="ocr">
+                <p><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs> am 4. Nov. 1825.
+Mein verertester Herr!
+Ir erst heute erhaltenes Schreiben vom 29. Weinmonat hat mir viele Freude gemacht: es tut einem alten Manne immer wol, wenn man an jn denkt; noch mer, wenn man seiner mit Liebe gedenkt. Ich bitte Sie zu glauben, daß ich einen nicht kleinen Wert auf Ir freundschaftliches Wolwollen seze und selbes auf alle Weise zu erwiedern und zu verdienen streben werde. Ich sende Inen hier nach Irem Verlangen die Myller'sche Sammlung; es ist auch ein dritter Teil vorhanden der nie in den Buchhandel gekommen ist und den ich nicht besize; er enthält den <rs type="misc" key="">Krieg von Troja</rs> des <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">Wolfram von Eschilbach</rs>. Es freut mich ungemein, daß sie sich mit der teutchen Literatur des Mittelalters näher bekannt machen wollen; die Sache kann nicht anderst als dabei gewinnen, und mich würde es ganz glüklich machen, so nahe bei mir einen Mitarbeiter zu gewinnen. Als Introduktion zu diesem Studium würde ich raten, den Grundriß der altdeutschen poët. Literatur von v. Dr <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0119">Hagen</rs> und <rs type="person" key="">Búsching</rs> zu lesen. So unvollkommen das Buch ist, so unentbehrlich ist es, da wir kein anderes dieser Art besizen. Sie finden es bei mir. Den <rs type="misc" key="">Tristan</rs> des <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">Gottfried von Straßburg</rs> würde ich spáter zu lesen raten. Jede, auch die dunkelste und entfernteste Spur zu Auffindung des Vaterlandes von <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0093"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0196">Hartmann</rs> v. Au</rs> ist hochst wichtig, da man über seine Herkunft gar nichts weiss: allein der Name fúrt uns zu nichts! es gibt noch Edelleute des Namens von <rs type="person" key=""><rs type="person" key="">Owe</rs></rs> in <rs type="place" key=""><rs type="place" key="">Schwaben</rs></rs>, sie sind aber mit dem Sånger <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0196">Hartmann</rs> auf keine Weise verwandt, welcher, wie ich gute Spur habe, einen Hasen in dem Schilde oder doch wenigstens auf dem Helme fúrte. Das schlimmste ist, dass wir seinen Geschlechtsnamen nicht einmal kennen; denn er selbst sagt blos im armen <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0150">Heinrich</rs>, daß er ein Dienstmann (:Ministerialis:) zu <rs type="person" key=""><rs type="person" key="">Owe</rs></rs> sei. Es ist also bei Verfolgung irer Spur hauptsächlich das Wappen oder Siegel des Pfarrers von <rs type="place" key="">Scherzingen</rs> zu entdeken, ob es mit jenem des <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0196">Hartmann</rs> von <rs type="person" key=""><rs type="person" key="">Owe</rs></rs> Aenlichkeit hat. Was Sie über <rs type="person" key="">Grimms</rs> Grammatik sagen, habe ich zum Teile oft schon selbst gefunden; aber dieser Mann hat eine große Auctoritát im nördlichen <rs type="place" key="">Deutschland</rs>; wir sind ser gute Bekannte und Freunde, aber füren oft abweichende Meinungen in unserm epistolarischen Verkere. Was Sie aber von Umwandlung der Selbstlaute in unserer Sprache sagen, ist nicht ganz begründet; denn das Gegentheil ist viel mer factisch erwiesen; wol aber bin ich darin Irer Meinung, daß diese Mundarten (:Dialecte:) nicht erst aus dieser Umwandlung entsprungen seien. Es kommt bei diesen Dingen viel, ja das Meiste auf Zeit, Volk und Land an, von denen gerade die Rede ist. Meine alte sich immer mer bevestigende Meinung ist, daß schon vor <rs type="person" key="">Ulfilas</rs> Zeit, ja bei der Einwanderung aus <rs type="place" key="">Asien</rs>, bei den germanischen Stámmen zwei Hauptdialecte gewesen, sowie sie noch sind; der ober-(deutsche) und niederdeutsche. Darúber sprechen wir beßer einmal in der <rs type="place" key="">Villa Epponis</rs>. Sie sollen sowohl von meinem Nibelungenliede, als von dem III. Bande des Liedersaals haben; allein erstes muß ich erst herauspaken und von lezterem sind die Exemplare in <rs type="place" key="">Constanz</rs>. Von Bezalung kann hier keine Rede sein und [Sie] kónnen glauben, daß jeder Anlaß Inen einen Dienst zu erweisen, mir allezeit ser willkommen ist. Es tut mir leid, daß ich bei meinem lezten Abgang die Dauer meiner Abwesenheit von hier nicht wußte, sonst hátte ich Inen den Episcopatus Constanc. des <rs type="place" key="">Neugart</rs> geschickt, um jn meiner Abwesenheit jn zu benuzen. Ich schreibe wirklich das Breviarium dieser Handschrift ab, welche wol so bald noch nicht im Druk erscheinen wird. Es ist ein sehr wichtiges Werk fúr <rs type="place" key=""><rs type="place" key="">Schwaben</rs></rs> und <rs type="place" key="">Schweiz</rs>: aber wer will jezt gerne latein lesen? Laßen Sie sich ja nicht abhalten die Antirecension der Predigten des Bruders <rs type="person" key=""><rs type="person" key=""><rs type="person" key="">Berthold</rs></rs></rs> zu schreiben; es ist eine verdienstliche Sache und alle Freunde der altteutschen Literatur werden es jnen Dank wissen. Der Recensent kannte und verstund wahrscheinlich diese Sprache nicht. Úber <rs type="person" key=""><rs type="person" key=""><rs type="person" key="">Berthold</rs></rs></rs> selbst und seine Zeit finden Sie gute Nachricht bei dem <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">Johann von <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0163">Winterthur</rs></rs> in ab <rs type="organisation" key="">Ekhardts Corp</rs>. histor: med: aevi. Tom: I. Der Mónch von <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0163">Winterthur</rs> kannte noch Leute, die den Bruder <rs type="person" key=""><rs type="person" key=""><rs type="person" key="">Berthold</rs></rs></rs> predigen gehórt hatten. Könnten Sie mir wohl eine Abschrift der Urkunde verschaffen, in welcher so viele Minnesånger oder doch deren Verwandte als Zeugen vorkommen? ich glaube, Sie haben sie im Kantons Archiv gefunden. Gerne würde ich die Gebúr bezalen; aber die Copia músste collationirt sein. Die Villa und Urbs sind so nahe beisammen, daß sie wol dieser Tage einen Spaziergang herúber machen und bei mir nachtlagern könnten, der Abend ist im Winter vortrefflich zu wissenschaftlicher Unterhaltung, und am Morgen sind Sie ja so frúh Sie wollen wieder zu Hause. Es tut mir leide, daß Sie diesen Herbst so oft fortgegangen sind; aber ich hatte unverschiebliche Geschäfte in <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0066">Heiligenberg</rs>, unter andern die Pflanzung von 8000 jungen Eichen um den <rs type="place" key="">Schloßberg</rs> herum. In hundert Jaren wird das ein schöner Wald sein und niemand mehr wissen durch wen sie hergekommen sind. Ich sende Inen das einzige Exemplar vom III. Bande des Liedersaales das ich bei Handen habe, denn es ist beßer. daß es jre Lesebegierde befriedige als unbenuzt bei mir liege, behalten Sie es als Andenken an 
+Iren ergebensten <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0373">J. v. Laßberg</rs></p>
+            </div>
+            <div type="normalized" resp="GPT3.5">
+                <p><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs> am 4. Nov. 1825.
+Mein verehrtester Herr!
+Ihr erst heute erhaltenes Schreiben vom 29. Weinmonat hat mir viele Freude gemacht: es tut einem alten Manne immer wohl, wenn man an ihn denkt; noch mehr, wenn man seiner mit Liebe gedenkt. Ich bitte Sie zu glauben, dass ich einen nicht kleinen Wert auf Ihr freundschaftliches Wohlwollen setze und selbiges auf alle Weise zu erwidern und zu verdienen streben werde. Ich sende Ihnen hier nach Ihrem Verlangen die <rs type="misc" key="">Myller'sche Sammlung</rs>; es ist auch ein dritter Teil vorhanden, der nie in den Buchhandel gekommen ist und den ich nicht besitze; er enthält den <rs type="misc" key="">Krieg <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">von</rs> Troja</rs> des <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">Wolfram <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">von</rs> Eschilbach</rs>. Es freut mich ungemein, dass Sie sich mit der deutschen Literatur des Mittelalters näher bekannt machen wollen; die Sache kann nicht anders als dabei gewinnen, und mich würde es ganz glücklich machen, so nahe bei mir einen Mitarbeiter zu gewinnen. Als Einführung zu diesem Studium würde ich raten, den Grundriss der alten deutschen poetischen Literatur <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">von</rs> <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">von</rs> Dr <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0119">Hagen</rs> und <rs type="person" key="">Büsching</rs> zu lesen. So unvollkommen das Buch ist, so unentbehrlich ist es, da wir kein anderes dieser Art besitzen. Sie finden es bei mir. Den <rs type="misc" key="">Tristan</rs> des <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">Gottfried <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">von</rs> Straßburg</rs> würde ich später zu lesen raten. Jede, auch die dunkelste und entfernteste Spur zur Auffindung des Vaterlandes <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">von</rs> <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0196">Hartmann</rs> <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">von</rs> Aue</rs> ist höchst wichtig, da man über seine Herkunft gar nichts weiß: allein der Name führt uns zu nichts! Es gibt noch Edelleute des Namens <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">von</rs> <rs type="person" key=""><rs type="person" key="">Ow</rs></rs> in <rs type="place" key=""><rs type="place" key="">Schwaben</rs></rs>, sie sind aber mit dem Sänger <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0196">Hartmann</rs> auf keine Weise verwandt, welcher, wie ich gute Spur habe, einen Hasen im Wappen oder doch zumindest auf dem Helm führte. Das Schlimmste ist, dass wir seinen Geschlechtsnamen nicht einmal kennen; denn er selbst sagt bloß im "armen <rs type="organisation" key="">Heinrich</rs>", dass er ein Dienstmann (Ministerialis) zu <rs type="person" key=""><rs type="person" key="">Ow</rs></rs> sei. Es ist also bei der Verfolgung ihrer Spur hauptsächlich das Wappen oder Siegel des Pfarrers <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">von</rs> <rs type="place" key="">Scherzingen</rs> zu entdecken, ob es mit jenem des <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0196">Hartmann</rs> <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">von</rs> <rs type="person" key=""><rs type="person" key="">Ow</rs></rs> Ähnlichkeit hat. Was Sie über <rs type="person" key="">Grimms</rs> Grammatik sagen, habe ich zum Teil schon selbst gefunden; aber dieser Mann hat eine große Autorität im nördlichen <rs type="place" key="">Deutschland</rs>; wir sind sehr gute Bekannte und Freunde, aber führen oft abweichende Meinungen in unserem epistolarischen Verkehr. Was Sie aber <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">von</rs> Umwandlung der Selbstlaute in unserer Sprache sagen, ist nicht ganz begründet; denn das Gegenteil ist viel mehr faktisch erwiesen; wohl aber bin ich darin Ihrer Meinung, dass diese Mundarten (Dialekte) nicht erst aus dieser Umwandlung entsprungen sind. Es kommt bei diesen Dingen viel, ja das Meiste auf Zeit, Volk und Land an, <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">von</rs> denen gerade die Rede ist. Meine alte, sich immer mehr befestigende Meinung ist, dass schon vor <rs type="person" key="">Ulfilas</rs> Zeit, ja bei der Einwanderung aus <rs type="place" key="">Asien</rs>, bei den germanischen Stämmen zwei Hauptdialekte gewesen sind, sowie sie noch sind; der ober- (deutsche) und niederdeutsche. Darüber sprechen wir besser einmal in der <rs type="place" key="">Villa Epponis</rs>. Sie sollen sowohl <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">von</rs> meinem Nibelungenlied, als auch <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">von</rs> dem III. Band des Liedersaals haben; allerdings muss ich erstes erst heraussuchen und <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">von</rs> letzterem sind die Exemplare in Konstanz. Von Bezahlung kann hier keine Rede sein und [Sie] können glauben, dass jeder Anlass Ihnen einen Dienst zu erweisen, mir jederzeit sehr willkommen ist. Es tut mir leid, dass ich bei meinem letzten Abgang die Dauer meiner Abwesenheit <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">von</rs> hier nicht wusste, sonst hätte ich Ihnen den "<rs type="misc" key="">Episcopatus Constanc.</rs>" des Neugart geschickt, um ihn meiner Abwesenheit zu nutzen. Ich schreibe wirklich das Breviarium dieser Handschrift ab, welche wohl so bald noch nicht im Druck erscheinen wird. Es ist ein sehr wichtiges Werk für <rs type="place" key=""><rs type="place" key="">Schwaben</rs></rs> und <rs type="place" key="">Schweiz</rs>: aber wer will jetzt gerne Latein lesen? Lassen Sie sich ja nicht abhalten, die Antirezension der Predigten des Bruders <rs type="person" key=""><rs type="person" key=""><rs type="person" key="">Berthold</rs></rs></rs> zu schreiben; es ist eine verdienstliche Sache und alle Freunde der altdeutschen Literatur werden es Ihnen danken. Der Rezensent kannte und verstand wahrscheinlich diese Sprache nicht. Über <rs type="person" key=""><rs type="person" key=""><rs type="person" key="">Berthold</rs></rs></rs> selbst und seine Zeit finden Sie gute Nachrichten bei dem Johann <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">von</rs> <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0163">Winterthur</rs> in ab <rs type="organisation" key="">Ekhardts Corp</rs>. histor: med: aevi. Tom: I. Der Mönch <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">von</rs> <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0163">Winterthur</rs> kannte noch Leute, die den Bruder <rs type="person" key=""><rs type="person" key=""><rs type="person" key="">Berthold</rs></rs></rs> predigen gehört hatten. Könnten Sie mir wohl eine Abschrift der Urkunde verschaffen, in welcher so viele Minnesänger oder doch deren Verwandte als Zeugen vorkommen? Ich glaube, Sie haben sie im Kantonsarchiv gefunden. Gerne würde ich die Gebühr bezahlen; aber die Kopie müsste kollationiert sein. Die Villa und Stadt sind so nahe beieinander, dass Sie wohl dieser Tage einen Spaziergang herüber machen und bei mir übernachten könnten, der Abend ist im Winter vorzüglich zu wissenschaftlicher Unterhaltung, und am Morgen sind Sie ja so früh Sie wollen wieder zu Hause. Es tut mir leid, dass Sie diesen Herbst so oft fortgegangen sind; aber ich hatte unverschiebbare Geschäfte in <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0066">Heiligenberg</rs>, unter anderem die Pflanzung <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">von</rs> 8000 jungen Eichen um den <rs type="place" key="">Schlossberg</rs> herum. In hundert Jahren wird das ein schöner Wald sein und niemand mehr wissen, durch wen sie hergekommen sind. Ich sende Ihnen das einzige Exemplar vom III. Bande des <rs type="misc" key="">Liedersaales</rs>, das ich bei Händen habe, denn es ist besser, dass es Ihre Lesebegierde befriedigt, als unbenutzt bei mir liegt. Behalten Sie es als Andenken an 
+Ihren ergebensten <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0373">J. v. Laßberg</rs></p>
+            </div>
         </body>
     </text>
 </TEI>
-    

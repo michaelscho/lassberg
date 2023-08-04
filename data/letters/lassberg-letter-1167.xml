@@ -4,59 +4,85 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Brief von Joseph von Laßberg an Karl Freiherr von Gaugreben (04.04.1842).</title>
+                <title>Brief von Johann Adam Pupikofer an Joseph von Laßberg (05.04.1827).</title>
                 <respStmt>
                     <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
                     <name>Michael Schonhardt</name>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
-                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 normalisiert.</p>
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
                     <msIdentifier>
-                        <settlement>Bruchhausen</settlement>
-                        <repository>Archiv der Freiherren von FÃ¼rstenberg</repository>
-                        <idno type="signature"/>
-                        <idno type="register-harris">1167</idno>
-                        <idno type="register-lassberg">51</idno>
+                        <settlement>Frauenfeld</settlement>
+                        <repository>Thurgauische Kantonsbibliothek</repository>
+                        <idno type="signature"></idno>
+                        <idno type="register-harris">2167</idno>
+                        <idno type="register-lassberg">nan</idno>
                     </msIdentifier>
                     <additional>
                         <surrogates>
-                            <bibl type="printed">nan
-                            <ref>nan</ref>
-                            </bibl>
+                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 16 (1888), S.  1-32 und 97-154, S. 11<ref>https://books.google.de/books?id=XWY5AAAAMAAJ</ref></bibl>
                         </surrogates>
                     </additional>
                 </msDesc>
             </sourceDesc>
         </fileDesc>
         <profileDesc>
-            <correspDesc xml:id="correspDesc-1167">
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1167">
                 <correspAction type="sent">
-                    <persName ref="lassberg-correspondent-0373">Joseph von Laßberg</persName>
-                    <placeName ref="lassberg-place-0101">Meersburg</placeName>
-                    <date when="1842-04-04">04.04.1842</date>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X"
+                        >Johann Adam Pupikofer</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-{PLACE_FROM_NUMBER}" ref="{PLACE_FROM_METADATA}">{PLACE_SENT_FROM}</placeName>
+                    <date when="1827-04-05">05.04.1827</date>
                 </correspAction>
                 <correspAction type="received">
-                    <persName ref="lassberg-correspondent-0254">Karl Freiherr von Gaugreben</persName>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-{PLACE_TO_NUMBER}" ref="{PLACE_TO_METADATA}">{PLACE_SENT_TO}</placeName>
                 </correspAction>
-                <noteGrp type="chatgpt">
-                    <note type="chatgpt-summary"/>
-                    <note type="chatgpt-keytopics"/>
-                    <note type="chatgpt-persons"/>
-                    <note type="chatgpt-texts"/>
-                    <note type="chatgpt-objects"/>
-                    <note type="chatgpt-manuscripts"/>
-                </noteGrp>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <ref type="cmif:mentionsPlace" target=""><rs>Schwabs Bodensee</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Gonzenbach</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0043"><rs>Eppishausen</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0082"><rs>Konstanz</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Neugart</rs></ref>
+<ref type="cmif:mentionsBibl" target=""><rs>crecingarius</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Carolus</rs></ref>
+<ref type="cmif:mentionsBibl" target=""><rs>Ligurinus</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Dümgé</rs></ref>
+<ref type="cmif:mentionsBibl" target=""><rs>Chartas</rs></ref>
+<ref type="cmif:mentionsBibl" target=""><rs>Dertonenses</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Bischofzell</rs></ref>
+                </note>
             </correspDesc>
         </profileDesc>
     </teiHeader>
     <text>
         <body>
-            <p/>
+            <div type="original" resp="ocr">
+                <p>Hochwohlgeborner, verehrtester Herr!
+So geht es, wenn man der Wahrheit nicht ganz treu bleibt! Ich übergab <rs type="place" key="">Schwabs Bodensee</rs> dem Buchbinder, als wenn das Buch mein wäre, mit allen von Ihnen bemerkten Vorschriften. Wie ich aber gestern Mittag wissen will, wie es damit stehe, sagt mir Mstr. <rs type="person" key="">Gonzenbach</rs>, er habe das Buch nicht planiert, in der Voraussetzung, daß mir so viel daran nicht liegen werde, da ich schon Bücher hätte durchschießen lassen, ohne daß sie hätten planiert werden müssen, nun könne er es nicht mehr planieren, da es bereits geschnitten sei und überdies wenigstens 2-3 Tage zum Trocknen erfordern würde. Nun ist der Fehler gemacht; wie er gebessert werden könne, weiß ich nicht. Was der Einband koste, hat mir der Buchbinder nicht anzeigen lassen, und selbst gesehen habe ich ihn heute nicht. Die eintretende milde Witterung hätte mich nach <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs> verlockt, wenn ich nicht noch medicinieren müßte. Doch geht es jetzt zum Schlusse, und ich hoffe, diese Woche ganz hergestellt zu endigen. Sie hier zu sehen, wäre mir sehr erfreulich. Zu Ihnen könnte ich künftige Woche nur am Montag kommen oder am Freitag; doch ist der Freitag der himmlischen, nicht der profanen Minne geweiht, und Sie verreisen wohl nach <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0082">Konstanz</rs>? Das Leucojum vernum hat bald verblüht. Für die übersandte Urkunde vergaß ich Ihnen vorgestern in der Eile zu danken. Ich hatte mir dieselbe in meinen Excerpten aus <rs type="misc" key="">Neugart</rs> ad. a. 844 (Nr. 306) angemerkt, aber nur flüchtig ausgezogen, und so ist mir die größere Vollständigkeit sehr willkommen. Den § vom <rs type="misc" key="">crecingarius</rs> habe ich ganz abgeschrieben, da die Wirkungen desselben so weitgreifend waren, als kaum je ein Trunk Wein; man sieht aber daraus die geniale Despotic des Herrn <rs type="person" key="">Carolus</rs>. Ob ich die Erwiderung im Appenzeller Blatt recht abgefaßt habe und ob die Duplik besser sei als die Proposition und die Replik, muß ich Ihnen zur Beurtheilung überlassen. Ich halte übrigens den Streit für geendigt. Ich fieng diese Woche den <rs type="misc" key="">Ligurinus</rs> zu lesen an; aber Herr <rs type="person" key="">Dümgé</rs> hat, besonders in seiner Dedication, ein verdammtes Latein! In der Dissertation wird es etwas leichter, wenn nicht mein Gefühl von der Angewöhnung herkam. Ich bin sehr aufmerksam, ob ich in dem Dichter keine Beziehung auf die <rs type="misc" key="">Chartas Dertonenses</rs> fände. 
+Genehmigen Sie die Versicherung unveränderlicher Hoch achtung und Ergebenheit von Ihrem Pupikofer.
+<rs type="place" key="">Bischofzell</rs>, den 5. April 1827.</p>
+            </div>
+            <div type="normalized" resp="GPT3.5">
+                <p>Hochwohlgeborener, verehrter Herr!
+So geht es, wenn man der Wahrheit nicht ganz treu bleibt! Ich übergab <rs type="place" key="">Schwabs Bodensee</rs> dem Buchbinder, als wenn das Buch mein wäre, mit allen von Ihnen bemerkten Vorschriften. Wie ich aber gestern Mittag wissen will, wie es damit stehe, sagt mir Mstr. <rs type="person" key="">Gonzenbach</rs>, er habe das Buch nicht planiert, in der Voraussetzung, dass mir so viel daran nicht liegen werde, da ich schon Bücher hätte durchschießen lassen, ohne dass sie hätten planiert werden müssen, nun könne er es nicht mehr planieren, da es bereits geschnitten sei und überdies wenigstens 2-3 Tage zum Trocknen erfordern würde. Nun ist der Fehler gemacht; wie er verbessert werden könne, weiß ich nicht. Was der Einband koste, hat mir der Buchbinder nicht anzeigen lassen, und selbst gesehen habe ich ihn heute nicht. Die eintretende milde Witterung hätte mich nach <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs> verlockt, wenn ich nicht noch medizinieren müsste. Doch geht es jetzt zum Schluss, und ich hoffe, diese Woche ganz hergestellt zu endigen. Sie hier zu sehen, wäre mir sehr erfreulich. Zu Ihnen könnte ich nächste Woche nur am Montag kommen oder am Freitag; doch ist der Freitag der himmlischen, nicht der profanen Minne geweiht, und Sie verreisen wohl nach <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0082">Konstanz</rs>? Das Leucojum vernum hat bald verblüht. Für die übersandte Urkunde vergaß ich Ihnen vorgestern in der Eile zu danken. Ich hatte mir dieselbe in meinen Exzerpten aus <rs type="place" key="">Neugart</rs> ad. a. 844 (Nr. 306) angemerkt, aber nur flüchtig ausgezogen, und so ist mir die größere Vollständigkeit sehr willkommen. Den § vom <rs type="misc" key="">crecingarius</rs> habe ich ganz abgeschrieben, da die Wirkungen desselben so weitgreifend waren, als kaum je ein Trunk Wein; man sieht aber daraus die geniale Despotie des Herrn <rs type="person" key="">Carolus</rs>. Ob ich die Erwiderung im Appenzeller Blatt recht abgefasst habe und ob die Duplik besser sei als die Proposition und die Replik, muss ich Ihnen zur Beurteilung überlassen. Ich halte übrigens den Streit für geendet. Ich fing diese Woche den <rs type="misc" key="">Ligurinus</rs> zu lesen an; aber Herr <rs type="person" key="">Dümgé</rs> hat, besonders in seiner Dedication, ein verdammtes Latein! In der Dissertation wird es etwas leichter, wenn nicht mein Gefühl von der Angewöhnung herkam. Ich bin sehr aufmerksam, ob ich in dem Dichter keine Beziehung auf die <rs type="misc" key="">Chartas</rs> <rs type="misc" key="">Dertonenses</rs> fände.
+Genehmigen Sie die Versicherung unveränderlicher Hochachtung und Ergebenheit von Ihrem Pupikofer.
+<rs type="place" key="">Bischofzell</rs>, den 5. April 1827.</p>
+            </div>
         </body>
     </text>
 </TEI>
-    

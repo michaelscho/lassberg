@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-0993">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Johann Adam Pupikofer an Joseph von Laßberg (26.05.1825).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 normalisiert.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Frauenfeld</settlement>
+                        <repository>Thurgauische Kantonsbibliothek</repository>
+                        <idno type="signature"></idno>
+                        <idno type="register-harris">2061</idno>
+                        <idno type="register-lassberg">nan</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 15 (1887), S. 231-88, S. 285<ref>https://books.google.de/books?id=dXkKAAAAIAAJ</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-0993">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X"
+                        >Johann Adam Pupikofer</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-{PLACE_FROM_NUMBER}" ref="{PLACE_FROM_METADATA}">{PLACE_SENT_FROM}</placeName>
+                    <date when="1825-05-26">26.05.1825</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-{PLACE_TO_NUMBER}" ref="{PLACE_TO_METADATA}">{PLACE_SENT_TO}</placeName>
+                </correspAction>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <ref type="cmif:mentionsPlace" target=""><rs>Ittner</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0043"><rs>Eppishausen</rs></ref>
+<ref type="cmif:mentionsBibl" target=""><rs>Historia</rs></ref>
+<ref type="cmif:mentionsBibl" target=""><rs>Waltharii</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Dalp</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Chur</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Schweiz</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Schweiz</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0139"><rs>Thurgau</rs></ref>
+<ref type="cmif:mentionsBibl" target=""><rs>Peterhusanum</rs></ref>
+<ref type="cmif:mentionsBibl" target=""><rs>Prodromus Germani sacra</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0082"><rs>Konstanz</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Rügers</rs></ref>
+<ref type="cmif:mentionsBibl" target=""><rs>Schaffhauser Chronik</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Allerheiligen</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0179"><rs>Pupikofer</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0025"><rs>Bischofszell</rs></ref>
+                </note>
+            </correspDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="original" resp="ocr">
+                <p>Hochwohlgeborner, verehrtester Herr <rs type="person" key="">Freyherr</rs>!
+Obschon ich Ihnen durch keine förmliche Beyleidsbezeugung meine herzliche Theilnahme an Ihrer Trauer über den Hinschied Ihres trefflichen, so allgemein hochgeschäzten Freundes des Staatsrathes von <rs type="place" key="">Ittner</rs> bewiesen habe, kann ich Sie dennoch versichern, daß auch mich jene Trauerbotschaft, und zwar um so mer geschmerzt hat, da ich den edlen Mann lezten Herbst wenigstens für einige Augenblicke zu sehen bei Ihnen das Vergnügen hatte, und aus Ihren eigenen Aeußerungen wußte, welch' großen Werth Sie auf die Freundschaft desselben setzen. Möge Sein Verlust Ihnen die Gegend um Konstanz nicht gleichgültig machen, und somit auch mich des Glücks berauben, in Ihnen einen Gönner und Beförderer meiner historischen Studien, und einen edelmüthigen Gastfreund zu verlieren! Die gütige Vorsehung möge Ihnen jenen Verlust durch ein anderes Gut wenigstens auch erträglicher machen! Da ich voraussetzen darf, daß Sie die Fortsetzung des Raumerschen Werkes nicht ungerne lesen werden, wenn Sie nicht schon damit bekannt geworden sind, erlaube ich mir das Vergnügen, Ihnen hiermit den fünften Band zu übersenden. Den sechsten Band wünschte ich Ihnen bald selbst in <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs> zu überreichen. Zwar bin ich in die deutschen Alterthümer nicht so eingeweiht, daß ich ein kompetentes Urtheil über diesen Theil des Raumerschen Werkes ablegen könnte; aber das muß ich wenigstens gestehen, daß es meinen Erwartungen und Wünschen am wenigsten entsprochen hat. Ob vielleicht nicht mehr zu leisten war, mögen Sie beurtheilen. Ganz auffallend war mir die endlich erfolgte Ankündigung der Herausgeber der Quellenschriftsteller der deutschen Geschichte und der Umstand, daß nun die St. Gallischen Schriftsteller schon in den ersten Band kommen, die Sammlung selbst nicht über die Jare 500 zurück gehen soll. Ich glaubte, Ihre Bearbeitung der <rs type="misc" key="">Historia</rs> <rs type="person" key="">Waltharii</rs> werde die Reihe eröffnen. Ein Herr <rs type="person" key="">Dalp</rs> aus <rs type="place" key="">Chur</rs>, Buchführer in einer Gießischen Buchandlung hat mich letzthin um Beiträge zur Herausgabe einer Beschreibung aller Ritterburgen der <rs type="place" key=""><rs type="place" key="">Schweiz</rs></rs> aufgefordert, und er macht sich Hoffnung auf eine günstige Aufnahme dieses Werkes. Ich zweifle aber, daß der Absatz in der <rs type="place" key=""><rs type="place" key="">Schweiz</rs></rs> groß sein werde; die Deutschen müßten sich mehr dafür interessiren, wenn der Erfolg Gewinn bringen sollte. Unterdessen verweigere ich dem Herausgeber meine Beiträge nicht, in der Hoffnung, durch Ihre Unterstützug einiges nicht unwichtiges aus dem <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0139">Thurgau</rs> liefern zu können. Letzthin war ich so frei, Sie um Mittheilung des Chron. <rs type="misc" key="">Peterhusanum</rs> zu bitten, das in dem Prodromus <rs type="misc" key="">Germani sacra</rs> stehen soll. Haben Sie dieses Werk gerade in Ihrer Bibliothek und ist es Ihnen entbehrlich, so wiederhole ich hiermit meine Bitte, indem ich die in <rs type="misc" key="">Neugarti</rs> episcopatu Const. über die Kyburger angeführten Stellen nachzusehen wünschte. Unter dem Titel von <rs type="person" key="">Rügers</rs> Chronik, wie derselbe im Verzeichniß angegeben war, kaufte ich unlängst eine Schaffhauser Chronik, in welcher Auszüge aus dem Archive des Klosters <rs type="place" key="">Allerheiligen</rs> vorkommen, die, wenn sie, was ich noch nicht vergleichen konnte, unbenutzt sind, manches Interesse gewähren möchten. Genehmigen Sie, Hochwohlgeborner, hochverehrter Herr! die Versicherung unveränderlicher Hochachtung und Ergebenheit von
+Ihrem Diac. <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0179">Pupikofer</rs>,
+<rs type="place" key="">Bischofzell</rs>, den 26. May 1825.</p>
+            </div>
+            <div type="normalized" resp="GPT3.5">
+                <p>Hochwohlgeborener, verehrtester Herr Freiherr!
+Obschon ich Ihnen durch keine förmliche Beileidsbezeugung meine herzliche Teilnahme an Ihrer Trauer über den Hinschied Ihres trefflichen, so allgemein hochgeschätzten Freundes des Staatsrates von <rs type="place" key="">Ittner</rs> bewiesen habe, kann ich Sie dennoch versichern, dass auch mich jene Trauerbotschaft, und zwar umso mehr geschmerzt hat, da ich den edlen Mann letzten Herbst zumindest für einige Augenblicke bei Ihnen das Vergnügen hatte, und aus Ihren eigenen Äußerungen wusste, welch großen Wert Sie auf die Freundschaft desselben setzen. Möge sein Verlust Ihnen die Gegend um <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0082">Konstanz</rs> nicht gleichgültig machen, und somit auch mich des Glücks berauben, in Ihnen einen Gönner und Förderer meiner historischen Studien, und einen edelmutigen Gastfreund zu verlieren! Die gütige Vorsehung möge Ihnen jenen Verlust durch ein anderes Gut zumindest erträglicher machen! Da ich voraussetzen darf, dass Sie die Fortsetzung des Raumerschen Werkes nicht ungern lesen werden, wenn Sie nicht schon damit bekannt geworden sind, erlaube ich mir das Vergnügen, Ihnen hiermit den fünften Band zu übersenden. Den sechsten Band wünschte ich Ihnen bald selbst in <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs> zu überreichen. Zwar bin ich in die deutschen Altertümer nicht so eingeweiht, dass ich ein kompetentes Urteil über diesen Teil des Raumerschen Werkes ablegen könnte; aber das muss ich zumindest gestehen, dass es meinen Erwartungen und Wünschen am wenigsten entsprochen hat. Ob vielleicht nicht mehr zu leisten war, mögen Sie beurteilen. Ganz auffallend war mir die endlich erfolgte Ankündigung der Herausgeber der Quellenschriftsteller der deutschen Geschichte und der Umstand, dass nun die St. Gallischen Schriftsteller schon im ersten Band kommen, die Sammlung selbst nicht über die Jahre 500 zurückgehen soll. Ich glaubte, Ihre Bearbeitung der <rs type="misc" key="">Historia</rs> <rs type="misc" key="">Waltharii</rs> werde die Reihe eröffnen. Ein Herr <rs type="person" key="">Dalp</rs> aus <rs type="place" key="">Chur</rs>, Buchführer in einer Gießischen Buchhandlung hat mich letztens um Beiträge zur Herausgabe einer Beschreibung aller Ritterburgen der <rs type="place" key=""><rs type="place" key="">Schweiz</rs></rs> aufgefordert, und er macht sich Hoffnung auf eine günstige Aufnahme dieses Werkes. Ich zweifle aber, dass der Absatz in der <rs type="place" key=""><rs type="place" key="">Schweiz</rs></rs> groß sein werde; die Deutschen müssten sich mehr dafür interessieren, wenn der Erfolg Gewinn bringen sollte. Unterdessen verweigere ich dem Herausgeber meine Beiträge nicht, in der Hoffnung, durch Ihre Unterstützung einiges nicht Unwichtiges aus dem <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0139">Thurgau</rs> liefern zu können. Letztens war ich so frei, Sie um Mitteilung des Chron. <rs type="misc" key="">Peterhusanum</rs> zu bitten, das in dem <rs type="misc" key="">Prodromus Germani sacra</rs> stehen soll. Haben Sie dieses Werk gerade in Ihrer Bibliothek und ist es Ihnen entbehrlich, so wiederhole ich hiermit meine Bitte, indem ich die in Neu-Garten über das Bistum <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0082">Konstanz</rs> angeführten Stellen nachzusehen wünschte. Unter dem Titel von <rs type="person" key="">Rügers</rs> Chronik, wie derselbe im Verzeichnis angegeben war, kaufte ich unlängst eine <rs type="misc" key="">Schaffhauser Chronik</rs>, in welcher Auszüge aus dem Archiv des Klosters <rs type="place" key="">Allerheiligen</rs> vorkommen, die, wenn sie, was ich noch nicht vergleichen konnte, unbenutzt sind, manches Interesse gewähren möchten. Genehmigen Sie, Hochwohlgeborener, hochverehrter Herr! die Versicherung unveränderlicher Hochachtung und Ergebenheit von
+Ihrem Diakon <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0179">Pupikofer</rs>,
+<rs type="place" key="../register/lassberg-places.xml#lassberg-place-0025">Bischofszell</rs>, den 26. Mai 1825.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

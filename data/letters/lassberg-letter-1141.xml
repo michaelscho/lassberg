@@ -4,59 +4,97 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Brief von Joseph von Laßberg an Hermann von Liebenau (31.08.1841).</title>
+                <title>Brief von Joseph von Laßberg an Johann Adam Pupikofer (03.02.1827).</title>
                 <respStmt>
                     <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
                     <name>Michael Schonhardt</name>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
-                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 normalisiert.</p>
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
                     <msIdentifier>
-                        <settlement>Donaueschingen</settlement>
-                        <repository>FÃ¼rstlich FÃ¼rstenbergisches Archiv</repository>
-                        <idno type="signature"/>
-                        <idno type="register-harris">1141</idno>
-                        <idno type="register-lassberg">219</idno>
+                        <settlement>Winterthur</settlement>
+                        <repository>Stadtbibliothek</repository>
+                        <idno type="signature"></idno>
+                        <idno type="register-harris">570</idno>
+                        <idno type="register-lassberg">28</idno>
                     </msIdentifier>
                     <additional>
                         <surrogates>
-                            <bibl type="printed">nan
-                            <ref>nan</ref>
-                            </bibl>
+                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 15 (1887), S. 231-88, S. 235<ref>https://books.google.de/books?id=dXkKAAAAIAAJ</ref></bibl>
                         </surrogates>
                     </additional>
                 </msDesc>
             </sourceDesc>
         </fileDesc>
         <profileDesc>
-            <correspDesc xml:id="correspDesc-1141">
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1141">
                 <correspAction type="sent">
-                    <persName ref="lassberg-correspondent-0373">Joseph von Laßberg</persName>
-                    <placeName ref="lassberg-place-0101">Meersburg</placeName>
-                    <date when="1841-08-31">31.08.1841</date>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1827-02-03">03.02.1827</date>
                 </correspAction>
                 <correspAction type="received">
-                    <persName ref="lassberg-correspondent-0160">Hermann von Liebenau</persName>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X"
+                        >Johann Adam Pupikofer</persName>
+                    
                 </correspAction>
-                <noteGrp type="chatgpt">
-                    <note type="chatgpt-summary"/>
-                    <note type="chatgpt-keytopics"/>
-                    <note type="chatgpt-persons"/>
-                    <note type="chatgpt-texts"/>
-                    <note type="chatgpt-objects"/>
-                    <note type="chatgpt-manuscripts"/>
-                </noteGrp>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <ref type="cmif:mentionsPlace" target=""><rs>Epishausen</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Bucelinus</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0043"><rs>Eppishausen</rs></ref>
+<ref type="cmif:mentionsOrganisation" target=""><rs>Ruggen von Tannek</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0067"><rs>Helmsdorf</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs>Heinrich von Rugge</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Laßbergius</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Diaconus Pupicofer</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Bischofszelle</rs></ref>
+                </note>
             </correspDesc>
         </profileDesc>
     </teiHeader>
     <text>
         <body>
-            <p/>
+            <div type="original" resp="ocr">
+                <p><rs type="place" key="">Epishausen</rs>. 3. Febr. 1827.
+Mit meinem herzlichen Danke für Iren lezten Besuch folget nun auch der lezthin vergeßene <rs type="person" key="">Bucelinus</rs>: im lezten Bande werden Sie vererter Freund finden, daß <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs> im xv. iahrhunderte den <rs type="organisation" key="">Ruggen</rs> <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">von</rs> <rs type="person" key="">Tannek</rs> gehórte und sie sich da<rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">von</rs> schrieben. Ich ware begierig zu wißen, wie das zugieng? sollten es die <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">von</rs> <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0067">Helmsdorf</rs> <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">von</rs> inen bekommen haben? das wåre lustig, wenn Hr. Heinrich <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">von</rs> Rugge einmal sollte hier gesungen haben!
+"der winter kan nicht anders sin,
+wan swere vnd ane masze lanc:
+mir were lieb, wolt er zergan,:
+was guoter froede ich uf den sumer han, 
+des gistuond nie hoher mir der muot, 
+das ist ein zit, die minen ougen senfte tuot."
+das singe ich <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">von</rs> ganzem Herzen mit; aber der auster dux inquietae turpidus adriae bringt uns heute wieder so fúrchterliches Schneegestóber, dass ich sobald noch keinem Frúling entgegen sehe. Ich habe es diese ganze nacht schon in meinen Schultern gefúlt und fúle es noch in meinem steifen arm. Vergeßen Sie nicht daß Krankenbesuch, náchst dem predigen, die erste pflicht eines guten seelenhirten ist. 
+Vale et fave <rs type="person" key="">Laßbergius</rs>
+Seiner Hocherwürden dem Herren <rs type="person" key="">Diaconus Pupicofer</rs> zu <rs type="place" key="">Bischofszelle</rs> mit einem paket Bücher</p>
+            </div>
+            <div type="normalized" resp="GPT3.5">
+                <p><rs type="place" key="">Epishausen</rs>, 3. Februar 1827.
+
+Mit meinem herzlichen Dank für Ihren letzten Besuch folgt nun auch der kürzlich vergessene <rs type="person" key="">Bucelinus</rs>: Im letzten Band werden Sie verehrter Freund finden, dass <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs> im 15. Jahrhundert den <rs type="organisation" key="">Ruggen von Tannek</rs> gehörte und sie sich davon schrieben. Ich war begierig zu wissen, wie das zuging? Sollten es die von <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0067">Helmsdorf</rs> von ihnen bekommen haben? Das wäre lustig, wenn Herr <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">Heinrich von Rugge</rs> einmal hier gesungen haben sollte!
+"Der Winter kann nicht anders sein,
+wenn schwer und ohne Maß lang:
+Mir wäre lieb, wollt er vergehen,
+was guter Freude ich auf den Sommer hät,
+dessen Gunst nie höher mir den Mut erhebt,
+das ist eine Zeit, die meinen Augen Sanftmut tut."
+Das singe ich von ganzem Herzen mit; aber der Auster, dux inquietae turpidus adriae, bringt uns heute wieder so furchterliches Schneegestöber, dass ich sobald noch keinem Frühling entgegensehe. Ich habe es diese ganze Nacht schon in meinen Schultern gefühlt und fühle es noch in meinem steifen Arm. Vergessen Sie nicht, dass Krankenbesuch, neben dem Predigen, die erste Pflicht eines guten Seelenhirten ist.
+Vale et fave <rs type="person" key="">Laßbergius</rs>
+Seiner Hocherwürden dem Herrn <rs type="person" key="">Diaconus Pupicofer</rs> zu <rs type="place" key="">Bischofszelle</rs> mit einem Paket Bücher</p>
+            </div>
         </body>
     </text>
 </TEI>
-    

@@ -4,59 +4,87 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Brief von Joseph von Laßberg an Franz Viktor Pfeiffer (13.08.1841).</title>
+                <title>Brief von Johann Adam Pupikofer an Joseph von Laßberg (08.01.1827).</title>
                 <respStmt>
                     <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
                     <name>Michael Schonhardt</name>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
-                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 normalisiert.</p>
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
                     <msIdentifier>
-                        <settlement>Donaueschingen</settlement>
-                        <repository>Privatbesitz Rechtsanwalt Willi E. Krebs</repository>
-                        <idno type="signature"/>
-                        <idno type="register-harris">1138</idno>
-                        <idno type="register-lassberg">205</idno>
+                        <settlement>Frauenfeld</settlement>
+                        <repository>Thurgauische Kantonsbibliothek</repository>
+                        <idno type="signature"></idno>
+                        <idno type="register-harris">2147</idno>
+                        <idno type="register-lassberg">nan</idno>
                     </msIdentifier>
                     <additional>
                         <surrogates>
-                            <bibl type="printed">nan
-                            <ref>nan</ref>
-                            </bibl>
+                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 16 (1888), S.  1-32 und 97-154, S. 4<ref>https://books.google.de/books?id=XWY5AAAAMAAJ</ref></bibl>
                         </surrogates>
                     </additional>
                 </msDesc>
             </sourceDesc>
         </fileDesc>
         <profileDesc>
-            <correspDesc xml:id="correspDesc-1138">
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1138">
                 <correspAction type="sent">
-                    <persName ref="lassberg-correspondent-0373">Joseph von Laßberg</persName>
-                    <placeName ref="lassberg-place-0101">Meersburg</placeName>
-                    <date when="1841-08-13">13.08.1841</date>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X"
+                        >Johann Adam Pupikofer</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-{PLACE_FROM_NUMBER}" ref="{PLACE_FROM_METADATA}">{PLACE_SENT_FROM}</placeName>
+                    <date when="1827-01-08">08.01.1827</date>
                 </correspAction>
                 <correspAction type="received">
-                    <persName ref="lassberg-correspondent-0109">Franz Viktor Pfeiffer</persName>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-{PLACE_TO_NUMBER}" ref="{PLACE_TO_METADATA}">{PLACE_SENT_TO}</placeName>
                 </correspAction>
-                <noteGrp type="chatgpt">
-                    <note type="chatgpt-summary"/>
-                    <note type="chatgpt-keytopics"/>
-                    <note type="chatgpt-persons"/>
-                    <note type="chatgpt-texts"/>
-                    <note type="chatgpt-objects"/>
-                    <note type="chatgpt-manuscripts"/>
-                </noteGrp>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <ref type="cmif:mentionsPlace" target=""><rs>Bischofzell</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Schweiz</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0025"><rs>Bischofszell</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Laßbergs</rs></ref>
+                </note>
             </correspDesc>
         </profileDesc>
     </teiHeader>
     <text>
         <body>
-            <p/>
+            <div type="original" resp="ocr">
+                <p>Hochwohlgeborner Herr und Gönner!
+Daß Sie gestern in <rs type="place" key="">Bischofzell</rs> und in meiner Hütte waren, ohne daß ich das Vergnügen haben konnte, Sie zu sehen, trübte mein Vergnügen über die Nachricht von Ihrem Wohlbefinden. Die gütige Mittheilung der hier zurückkommenden Kataloge verdanke ich Ihnen sehr; es wäre mir sehr angenehm, wenn Sie mit Ihren Bestellungen zugleich für mich den Neugart, Schilter und Haltaus kommen ließen. In der <rs type="place" key="">Schweiz</rs> bekommt man diese Sachen fast gar nicht. Auf andere Schriften, die ich wohl auch brauchen könnte, verzichte ich, da der Transport so ferne her geht. 
+Mit der Bitte, Ihrer Gewogenheit mich ferner zu würdigen, bin ich Hochdero Ergebenster Diac. Pupikofer
+<rs type="place" key="../register/lassberg-places.xml#lassberg-place-0025">Bischofszell</rs>, den 8. Jan. 1827.
+(Von <rs type="person" key="">Laßbergs</rs> Hand mit Bleistift:)
+Schilter 22
+Neugart - 2 = 48
+Haltaus - 11 = -
+x 35 f. 48 x</p>
+            </div>
+            <div type="normalized" resp="GPT3.5">
+                <p>Hochwohlgeborener Herr und Gönner!
+Dass Sie gestern in <rs type="place" key="">Bischofzell</rs> und in meiner Hütte waren, ohne dass ich das Vergnügen haben konnte, Sie zu sehen, trübte mein Vergnügen über die Nachricht von Ihrem Wohlbefinden. Die gütige Mitteilung der hier zurückkommenden Kataloge verdanke ich Ihnen sehr; es wäre mir sehr angenehm, wenn Sie mit Ihren Bestellungen zugleich für mich den Neugart, Schilter und Haltaus kommen ließen. In der <rs type="place" key="">Schweiz</rs> bekommt man diese Sachen fast gar nicht. Auf andere Schriften, die ich wohl auch brauchen könnte, verzichte ich, da der Transport so ferne her geht. 
+Mit der Bitte, Ihrer Gewogenheit mich ferner zu würdigen, bin ich Hoch der Ergebenster Diakon Pupikofer
+<rs type="place" key="../register/lassberg-places.xml#lassberg-place-0025">Bischofszell</rs>, den 8. Januar 1827.
+(Von <rs type="person" key="">Laßbergs</rs> Hand mit Bleistift:)
+Schilter 22
+Neugart - 2 = 48
+Haltaus - 11 = -
+x 35 f. 48 x</p>
+            </div>
         </body>
     </text>
 </TEI>
-    

@@ -4,59 +4,90 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Brief von Joseph von Laßberg an Christoph Friedrich von StÃ¤lin (01.06.1842).</title>
+                <title>Brief von Johann Adam Pupikofer an Joseph von Laßberg (19.05.1827).</title>
                 <respStmt>
                     <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
                     <name>Michael Schonhardt</name>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
-                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 normalisiert.</p>
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
                     <msIdentifier>
-                        <settlement>Stuttgart</settlement>
-                        <repository>WÃ¼rttembergische Landesbibliothek</repository>
-                        <idno type="signature"/>
-                        <idno type="register-harris">1175</idno>
-                        <idno type="register-lassberg">85</idno>
+                        <settlement>Frauenfeld</settlement>
+                        <repository>Thurgauische Kantonsbibliothek</repository>
+                        <idno type="signature"></idno>
+                        <idno type="register-harris">2172</idno>
+                        <idno type="register-lassberg">nan</idno>
                     </msIdentifier>
                     <additional>
                         <surrogates>
-                            <bibl type="printed">nan
-                            <ref>nan</ref>
-                            </bibl>
+                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 16 (1888), S.  1-32 und 97-154, S. 13<ref>https://books.google.de/books?id=XWY5AAAAMAAJ</ref></bibl>
                         </surrogates>
                     </additional>
                 </msDesc>
             </sourceDesc>
         </fileDesc>
         <profileDesc>
-            <correspDesc xml:id="correspDesc-1175">
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1175">
                 <correspAction type="sent">
-                    <persName ref="lassberg-correspondent-0373">Joseph von Laßberg</persName>
-                    <placeName ref="lassberg-place-0101">Meersburg</placeName>
-                    <date when="1842-06-01">01.06.1842</date>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X"
+                        >Johann Adam Pupikofer</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-{PLACE_FROM_NUMBER}" ref="{PLACE_FROM_METADATA}">{PLACE_SENT_FROM}</placeName>
+                    <date when="1827-05-19">19.05.1827</date>
                 </correspAction>
                 <correspAction type="received">
-                    <persName ref="lassberg-correspondent-0067">Christoph Friedrich von StÃ¤lin</persName>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-{PLACE_TO_NUMBER}" ref="{PLACE_TO_METADATA}">{PLACE_SENT_TO}</placeName>
                 </correspAction>
-                <noteGrp type="chatgpt">
-                    <note type="chatgpt-summary"/>
-                    <note type="chatgpt-keytopics"/>
-                    <note type="chatgpt-persons"/>
-                    <note type="chatgpt-texts"/>
-                    <note type="chatgpt-objects"/>
-                    <note type="chatgpt-manuscripts"/>
-                </noteGrp>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <ref type="cmif:mentionsPlace" target=""><rs>Hummelberg</rs></ref>
+<ref type="cmif:mentionsBibl" target=""><rs>Dasypod</rs></ref>
+<ref type="cmif:mentionsBibl" target=""><rs>Corpus iuris</rs></ref>
+<ref type="cmif:mentionsBibl" target=""><rs>Gebhardi</rs></ref>
+<ref type="cmif:mentionsBibl" target=""><rs>Gregorii</rs></ref>
+<ref type="cmif:mentionsBibl" target=""><rs>Anniversario Sulgensi</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0181"><rs>Johann</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Junio</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Theobaldi</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs>Eberhard von Mettlen</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Eberhard</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Mettlen</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Hütlingen</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Monumentum Guelficum</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Ouingens</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0179"><rs>Pupikofer</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Bischofzell</rs></ref>
+                </note>
             </correspDesc>
         </profileDesc>
     </teiHeader>
     <text>
         <body>
-            <p/>
+            <div type="original" resp="ocr">
+                <p>Hochwohlgeborner Herr und Gönner!
+Es wollte mir gestern nicht gelingen, von Hause noch zu rechter Zeit wegzugehen und über den <rs type="place" key="">Hummelberg</rs> zu steigen, und so blieb denn auch Ihr Ulmer Catalog zurück. Damit indessen Ihre Bestellungen nicht zu sehr verspätet werden, sende ich denselben nun durch den Boten, und bitte Sie, Ihren Bestellungen noch die Nummern: 7294 <rs type="misc" key="">Dasypod</rs>, 7869 <rs type="misc" key="">Corpus iuris</rs>, 8935 <rs type="misc" key="">Gebhardi</rs>, 8948 <rs type="misc" key="">Gregorii</rs> beizufügen. Wohl möchte ich noch manches wünschen; aber man muß sich mäßigen. Ueberdies vertröste ich mich immer auf Sie, daß Sie ohnehin das beste für Sich anschaffen und dasselbe mir zu benutzen vergönnen. Verzeihen Sie doch, daß ich Ihnen den Betrag für die Constanzer Bücher letzthin zu geben vergaß. Zu solchen Geschäften war ja gar keine Zeit. So viel ich mich erinnere, besteht Ihr Guthaben in f. 6. 16 xr, die ich hier beilege. Im anniversario Sulgensi habe ich wohl einiges, aber nur weniges gefunden; u. a. auch Herren von St. <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0181">Johann</rs>, Edelknechte <rs type="person" key="">Junio</rs> die <rs type="person" key="">Theobaldi</rs> episc. Der <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="">Eberhard</rs> von <rs type="place" key="">Mettlen</rs></rs> ist kein adélicher, sondern ein bürgerlicher, da das Geschlecht <rs type="person" key="">Eberhard</rs> zu <rs type="place" key="">Mettlen</rs> und in der Umgegend noch häufig ist. Das Anniversarium Hütlingense würde ich beifügen, wenn es nicht ein so großes Format und so schwere Deckel hätte, daß der Inhalt damit in gar keinem Verhältnisse steht. Ich habe alles herausgeschrieben, und übersende Ihnen somit meine Auszüge, in denen Sie gleichwohl einiges finden werden. Was ich im <rs type="place" key="">Monumentum Guelficum</rs> gefunden habe, will ich Ihnen das nächste Mal sagen und dann zugleich das lange behaltene Buch, aus dem ich noch einiges ausschreiben möchte, zurückstellen. Ich bemerke nur, daß ich eine von Ihnen nicht angestrichene Stelle bemerkt habe, welche die Schenkung <rs type="place" key="">Ouingens</rs> an das Bisthum aus einer Mersburgischen Urkunde bezeugt.
+Mit herzlicher Ergebenheit Ihr Diac. <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0179">Pupikofer</rs>.
+<rs type="place" key="">Bischofzell</rs> den 19. Mai 27.</p>
+            </div>
+            <div type="normalized" resp="GPT3.5">
+                <p>Hochwohlgeborener Herr und Gönner!
+Es wollte mir gestern nicht gelingen, von zu Hause noch zu rechter Zeit wegzugehen und über den <rs type="place" key="">Hummelberg</rs> zu steigen, und so blieb dann auch Ihr Ulmer Catalog zurück. Damit jedoch Ihre Bestellungen nicht zu sehr verspätet werden, sende ich denselben nun durch den Boten und bitte Sie, Ihren Bestellungen noch die Nummern: 7294 <rs type="misc" key="">Dasypod</rs>, 7869 <rs type="misc" key="">Corpus iuris</rs>, 8935 <rs type="misc" key="">Gebhardi</rs>, 8948 <rs type="misc" key="">Gregorii</rs> beizufügen. Wohl möchte ich noch manches wünschen, aber man muss sich mäßigen. Überdies vertröste ich mich immer auf Sie, dass Sie ohnehin das Beste für sich anschaffen und dasselbe mir zu nutzen gestatten. Verzeihen Sie doch, dass ich Ihnen den Betrag für die Konstanzer Bücher letztens nicht geben vergaß. Zu solchen Geschäften war ja gar keine Zeit. So viel ich mich erinnere, besteht Ihr Guthaben in f. 6. 16 xr, die ich hier beilege. Im <rs type="misc" key="">Anniversario Sulgensi</rs> habe ich wohl einiges, aber nur weniges gefunden, unter anderem auch Herren von St. <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0181">Johann</rs>, Edelknechte <rs type="person" key="">Junio</rs> die <rs type="person" key="">Theobaldi</rs> episc. Der <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="">Eberhard</rs> von <rs type="place" key="">Mettlen</rs></rs> ist kein adliger, sondern ein bürgerlicher, da das Geschlecht <rs type="person" key="">Eberhard</rs> zu <rs type="place" key="">Mettlen</rs> und in der Umgebung noch häufig ist. Das Anniversarium <rs type="place" key="">Hütlingen</rs> würde ich beifügen, wenn es nicht ein so großes Format und so schwere Deckel hätte, dass der Inhalt damit in keinem Verhältnis steht. Ich habe alles herausgeschrieben und übersende Ihnen somit meine Auszüge, in denen Sie dennoch einiges finden werden. Was ich im <rs type="place" key="">Monumentum Guelficum</rs> gefunden habe, werde ich Ihnen beim nächsten Mal sagen und dann zugleich das lange behaltene Buch, aus dem ich noch einiges abschreiben möchte, zurückstellen. Ich bemerke nur, dass ich eine von Ihnen nicht angestrichene Stelle bemerkt habe, welche die Schenkung <rs type="place" key="">Ouingens</rs> an das Bistum aus einer Meßburgischen Urkunde bezeugt.
+Mit herzlicher Ergebenheit Ihr Diac. <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0179">Pupikofer</rs>.
+<rs type="place" key="">Bischofzell</rs>, den 19. Mai 27.</p>
+            </div>
         </body>
     </text>
 </TEI>
-    

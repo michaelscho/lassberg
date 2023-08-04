@@ -4,59 +4,98 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Brief von Joseph von Laßberg an Justinus Kerner (05.02.1855).</title>
+                <title>Brief von Joseph von Laßberg an Johann Adam Pupikofer (15.02.1831).</title>
                 <respStmt>
                     <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
                     <name>Michael Schonhardt</name>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
-                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 normalisiert.</p>
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
                     <msIdentifier>
-                        <settlement>Marbach am Neckar</settlement>
-                        <repository>Schiller Nationalmuseum</repository>
-                        <idno type="signature"/>
-                        <idno type="register-harris">1521</idno>
-                        <idno type="register-lassberg">nan</idno>
+                        <settlement>Winterthur</settlement>
+                        <repository>Stadtbibliothek</repository>
+                        <idno type="signature"></idno>
+                        <idno type="register-harris">761</idno>
+                        <idno type="register-lassberg">52</idno>
                     </msIdentifier>
                     <additional>
                         <surrogates>
-                            <bibl type="printed">Theobald Kerner, Justinus Kerners Briefwechsel mit seinen Freunden. Bd. 2. Stuttgart/Leipzig 1897, S. 435/t
-                            <ref>https://books.google.de/books?id=WUk4AQAAIAAJ</ref>
-                            </bibl>
+                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 15 (1887), S. 231-88, S. 267<ref>https://books.google.de/books?id=dXkKAAAAIAAJ</ref></bibl>
                         </surrogates>
                     </additional>
                 </msDesc>
             </sourceDesc>
         </fileDesc>
         <profileDesc>
-            <correspDesc xml:id="correspDesc-1521">
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1521">
                 <correspAction type="sent">
-                    <persName ref="lassberg-correspondent-0373">Joseph von Laßberg</persName>
-                    <placeName ref="lassberg-place-0101">Meersburg</placeName>
-                    <date when="1855-02-05">05.02.1855</date>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1831-02-15">15.02.1831</date>
                 </correspAction>
                 <correspAction type="received">
-                    <persName ref="lassberg-correspondent-0242">Justinus Kerner</persName>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X"
+                        >Johann Adam Pupikofer</persName>
+                    
                 </correspAction>
-                <noteGrp type="chatgpt">
-                    <note type="chatgpt-summary"/>
-                    <note type="chatgpt-keytopics"/>
-                    <note type="chatgpt-persons"/>
-                    <note type="chatgpt-texts"/>
-                    <note type="chatgpt-objects"/>
-                    <note type="chatgpt-manuscripts"/>
-                </noteGrp>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <ref type="cmif:mentionsBibl" target=""><rs>Schultheiss:</rs></ref>
+<ref type="cmif:mentionsBibl" target=""><rs>Collectaneen</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Kato</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Karthago</rs></ref>
+<ref type="cmif:mentionsOrganisation" target=""><rs>HH</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Klingen</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>H. Fehr zu</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0049"><rs>Frauenfeld</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0019"><rs>Basel</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>H. Antistes Falkeisen</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>H Diacon N.</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0319"><rs>Walter v. K.</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs>Hauptmann v</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Besserer</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0151"><rs>Ulm</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Schwabens</rs></ref>
+<ref type="cmif:mentionsOrganisation" target=""><rs>Episcopalis Cella</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Laßbergius</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Karl Schönthut</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0319"><rs>I.</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0319"><rs>P.</rs></ref>
+                </note>
             </correspDesc>
         </profileDesc>
     </teiHeader>
     <text>
         <body>
-            <p/>
+            <div type="original" resp="ocr">
+                <p>E: am 15. Hornung 1831.
+P: P:
+Ungeachtet Sie mein vererter Herr und Freund! eben kein großes verlangen nach den Schultheiss: collectaneen sehen liessen; sende ich sie Inen dennoch; weil ich mich beim durchgehen derselben überzeugt habe, daß dieselben manches enthalten, was Sie bei einer neuen bearbeitung Irer Thurgauer geschichte, zu vermissen bereuen würden. ich habe es versucht in beiligendem muster zu zeigen, wie man ein brauchbares register über den vorliegenden band anfertigen könnte; wollten Sie sich dieser bemühung unterziehen; so konnte ich nach und nach alle bånde von <rs type="person" key="">Constanz</rs> kommen lassen, und wir hatten dann ein vollständiges repertorium über die ganze scházbare sammlung; welche für die Thurgauische geschichte eine ergiebige fundgrube zu sein scheint. Manche bånde, welche ziemlich aphoristisch geschrieben sind, müsste man freilich zum großen teile ausziehen; aber das würde ja bei benuzung derselben zu irgend einer literar: arbeit onehin der fall sein. Ich komme wieder wie der alte <rs type="person" key="">Kato</rs> mit seinem <rs type="place" key="">Karthago</rs>, auf die Basler grabsteine der <rs type="organisation" key="">HH</rs> und frauen von <rs type="place" key="">Klingen</rs> zurük. Mein staats und kabinets Spion <rs type="person" key="">H Fehr</rs> zu <rs type="place" key="">frauenfeld</rs> teilt mir aus seiner hóchst wichtigen privatcorrespondenz die kunde mit, daß die gute stadt <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0019">Basel</rs> sich wieder in vollkommenstem friedenszustande befinde, woraus ich schließe, daß sowol der originalbesizer H antistes <rs type="person" key="">Falkeisen</rs>, als auch der andere copialische geistliche <rs type="person" key="">H Diacon N.</rs> nicht mer auf feld- und lager-reden zu studiren brauchen und wage daher die bitte, wenn es one unbescheidenheit sein kann, in betreff der fraglichen copien wieder einmal nachfrage zu halten und sollicitando meine angelegenheit und mit derselben jene des alten Minnesängers <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0319">Walter v. K.</rs> befördern zu helfen. Heute habe ich einen brief von dem H. <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">Hauptmann v</rs>. <rs type="person" key="">Besserer</rs> zu <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0151">Ulm</rs> erhalten, der mich einladet, dem dortigen vereine, welcher die alten Lieder und Sagen <rs type="place" key="">Schwabens</rs> sammeln will, beizutretten. Die leute meinen; weil ich einen Liedersaal herausgebe, so kónne ich die Lieder nur aus dem Ermel schütteln. Die zeit ist vorbei, wo man solche sammlungen machen konnte, unsere våter, zu deren zeit noch nicht alles verschollen war, håtten es noch gekonnt: aber die hatten anderes zu tun, und de mortuis, non nisi bene! Morgen ist mittwoche, vor zeiten erhielt ich an diesem tage besuch aus der Episcopalis cella ach! vor zeiten, waren gute zeiten! aber alles nimmt ein ende und somit auch die besuche! Adieu, und viele grüße an weib und kind von Irem
+Laßbergius.
+Dem hrn. Decan bitte ich, nebst meinem verbindichsten Dank die morgenblåtter wieder zurückzustellen und In meinen bittlichsten wunsch wissen zu lassen: auch mit der andern hálfte des jargangs 1830 erfreut zu werden. Noch eins soll ich Inen melden, näml: den binnen 11 tagen erfolgten hintritt des <rs type="person" key="">Karl Schónhut</rs> zu hohen Twiel an den folgen einer erkältung. R. I. <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0319">P.</rs>!</p>
+            </div>
+            <div type="normalized" resp="GPT3.5">
+                <p>Am 15. Februar 1831.
+
+Sehr geehrter Herr und Freund!
+
+Obwohl Sie kein besonderes Interesse an den <rs type="misc" key="">Schultheiss:</rs> <rs type="misc" key="">Collectaneen</rs> zu haben scheinen, schicke ich sie Ihnen dennoch, da ich beim Durchgehen derselben festgestellt habe, dass sie manches enthalten, was Sie bei einer neuen Bearbeitung Ihrer Thurgauer Geschichte vermissen würden. Ich habe versucht, in der beiliegenden Muster zu zeigen, wie man ein brauchbares Register über den vorliegenden Band anfertigen könnte. Wenn Sie sich dieser Mühe unterziehen würden, könnte ich nach und nach alle Bände von Konstanz kommen lassen und wir hätten dann ein vollständiges Repertorium über die ganze schätzbare Sammlung, die für die Thurgauische Geschichte eine ergiebige Fundgrube zu sein scheint. Manche Bände, die ziemlich aphoristisch geschrieben sind, müsste man allerdings größtenteils ausschließen, aber das würde ja ohnehin der Fall sein, wenn man sie für irgendeine literarische Arbeit nutzen würde. Ich komme wieder wie der alte <rs type="person" key="">Kato</rs> mit seinem <rs type="place" key="">Karthago</rs> auf die Basler Grabsteine der <rs type="organisation" key="">HH</rs> und Frauen von <rs type="place" key="">Klingen</rs> zurück. Mein Staats- und Kabinetsspion <rs type="person" key="">H. Fehr zu</rs> <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0049">Frauenfeld</rs> teilt mir aus seiner höchst wichtigen Privatkorrespondenz mit, dass die gute Stadt <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0019">Basel</rs> sich wieder in vollkommenstem Friedenszustand befindet, woraus ich schließe, dass sowohl der Originalbesitzer <rs type="person" key="">H. Antistes Falkeisen</rs> als auch der andere kopiische geistliche <rs type="person" key="">H Diacon N.</rs> nicht mehr Feld- und Lagerreden studieren brauchen. Daher wage ich die Bitte, wenn es nicht unbescheiden ist, bezüglich der fraglichen Kopien wieder einmal nachzufassen und sollicitando meine Angelegenheit und mit derselben jene des alten Minnesängers <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0319">Walter v. K.</rs> zu fördern. Heute habe ich einen Brief von dem H. <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">Hauptmann v</rs>. <rs type="person" key="">Besserer</rs> in <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0151">Ulm</rs> erhalten, der mich einlädt, dem dortigen Verein beizutreten, der die alten Lieder und Sagen <rs type="place" key="">Schwabens</rs> sammeln will. Die Leute meinen, weil ich einen Liedersaal herausgebe, könne ich die Lieder nur aus dem Ärmel schütteln. Die Zeit ist vorbei, wo man solche Sammlungen machen konnte, unsere Väter, zu deren Zeit noch nicht alles verschollen war, hätten es noch gekonnt, aber die hatten anderes zu tun, und De mortuis, non nisi bene! Morgen ist Mittwoch, früh bekam ich früher an diesem Tage Besuch aus der <rs type="organisation" key="">Episcopalis Cella</rs>, ach! Früher waren gute Zeiten! Aber alles nimmt ein Ende und somit auch die Besuche! Adieu, und viele Grüße an Frau und Kind von Ihrem <rs type="person" key="">Laßbergius</rs>.
+
+Dem Herrn Decan bitte ich, nebst meinem verbindlichsten Dank die Morgenblätter wieder zurückzustellen und mir meinen bittlichsten Wunsch wissen zu lassen: auch mit der anderen Hälfte des Jahrgangs 1830 erfreut zu werden. Noch eins soll ich Ihnen mitteilen, nämlich den binnen 11 Tagen erfolgten Hinschied des <rs type="person" key="">Karl Schönthut</rs> zu hohen Twiel an den Folgen einer Erkältung. R. <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0319">I.</rs> <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0319">P.</rs>!</p>
+            </div>
         </body>
     </text>
 </TEI>
-    

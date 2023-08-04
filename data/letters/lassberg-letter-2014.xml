@@ -4,59 +4,132 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Brief von Ludwig Uhland an Joseph von Laßberg (13.06.1824).</title>
+                <title>Brief von Joseph von Laßberg an Johann Adam Pupikofer (01.05.1838).</title>
                 <respStmt>
                     <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
                     <name>Michael Schonhardt</name>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
-                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 normalisiert.</p>
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
                     <msIdentifier>
-                        <settlement>Marbach am Neckar</settlement>
-                        <repository>Schiller Nationalmuseum</repository>
-                        <idno type="signature"/>
-                        <idno type="register-harris">2014</idno>
-                        <idno type="register-lassberg">nan</idno>
+                        <settlement>Winterthur</settlement>
+                        <repository>Stadtbibliothek</repository>
+                        <idno type="signature"></idno>
+                        <idno type="register-harris">986</idno>
+                        <idno type="register-lassberg">117</idno>
                     </msIdentifier>
                     <additional>
                         <surrogates>
-                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von LaÃŸberg und Ludwig Uhland. Wien 1870, S. 42-45
-                            <ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref>
-                            </bibl>
+                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 15 (1887), S. 231-88, S. 275<ref>https://books.google.de/books?id=dXkKAAAAIAAJ</ref></bibl>
                         </surrogates>
                     </additional>
                 </msDesc>
             </sourceDesc>
         </fileDesc>
         <profileDesc>
-            <correspDesc xml:id="correspDesc-2014">
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-2014">
                 <correspAction type="sent">
-                    <persName ref="lassberg-correspondent-0288">Ludwig Uhland</persName>
-                    <placeName ref="lassberg-place-0147">Stuttgart</placeName>
-                    <date when="1824-06-13">13.06.1824</date>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1838-05-01">01.05.1838</date>
                 </correspAction>
                 <correspAction type="received">
-                    <persName ref="lassberg-correspondent-0373">Joseph von Laßberg</persName>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X"
+                        >Johann Adam Pupikofer</persName>
+                    
                 </correspAction>
-                <noteGrp type="chatgpt">
-                    <note type="chatgpt-summary"/>
-                    <note type="chatgpt-keytopics"/>
-                    <note type="chatgpt-persons"/>
-                    <note type="chatgpt-texts"/>
-                    <note type="chatgpt-objects"/>
-                    <note type="chatgpt-manuscripts"/>
-                </noteGrp>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0043"><rs>Eppishausen</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Sonderegger</rs></ref>
+<ref type="cmif:mentionsOrganisation" target=""><rs>Bischöflichen Archives</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0101"><rs>Meersburg</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Helle-spont</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Dagoberts Burg</rs></ref>
+<ref type="cmif:mentionsOrganisation" target=""><rs>Constanzer Zeitung</rs></ref>
+<ref type="cmif:mentionsOrganisation" target=""><rs>Provincial Archives</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0101"><rs>Meersburg</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Imhoff</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Stokach</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Waser</rs></ref>
+<ref type="cmif:mentionsBibl" target=""><rs>Jahrzeitenbuch</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Goldast</rs></ref>
+<ref type="cmif:mentionsBibl" target=""><rs>Catholicon</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Eytenbenz</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Bietingen</rs></ref>
+<ref type="cmif:mentionsBibl" target=""><rs>Chronicon Gotwicense</rs></ref>
+<ref type="cmif:mentionsBibl" target=""><rs>Chronikon</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Wakernagel</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0022"><rs>Berlin</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0053"><rs>Göttingen</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0170"><rs>Wilh. Grimm</rs></ref>
+<ref type="cmif:mentionsBibl" target=""><rs>Rolandslied</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0260"><rs>Lachmann</rs></ref>
+<ref type="cmif:mentionsOrganisation" target=""><rs>Akademie der Wissenschaften</rs></ref>
+<ref type="cmif:mentionsBibl" target=""><rs>Nibelungenlied</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs>Gregorius von dem Steine</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Greuth</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0260"><rs>Lachmann</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Greuth</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0319"><rs>Hartmanns v. A.</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0260"><rs>Lachmann</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0170"><rs>Jacob Grimm</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Dahlmann</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0086"><rs>Leipzig</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0147"><rs>Stuttgart</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0019"><rs>Basel</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0319"><rs>Jacob Gr.</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0101"><rs>Meersburg</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0373"><rs>J. Laßberg</rs></ref>
+                </note>
             </correspDesc>
         </profileDesc>
     </teiHeader>
     <text>
         <body>
-            <p/>
+            <div type="original" resp="ocr">
+                <p><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs> am 1. May 1838.
+Vererter freund und nachbar!
+Ich danke <rs type="person" key="">Inen</rs> herzlich für den lieben freundlichen brief, den Sie mir durch <rs type="person" key="">Sonderegger</rs> gesendet haben; obschon ich weit entfernt bin zu glauben, daß Sie ie so tief in meiner schuld staken, als Sie darinne ausgesprochen haben; so tut es doch meinem alten, aber nichts weniger als veralteten herzen, ser wol; ich werde in aufbehalten in dem archive meines herzens, und wenn ich aus den fenstern des ehemaligen bischófi. Archives zu <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0101"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0101"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0101">Meersburg</rs></rs></rs>, wo als meiner búcherkammer, doch mein meister aufenthalt sein wird & hinúber schaue in den herrlichen garten der <rs type="place" key="">Pomona</rs> und des <rs type="place" key="">Vertumnus</rs>; so will ich denken und mir selbst sagen: da drúben, rechts am fuße des Tannenbergs, wonet doch noch ein mann, von dem ich gewiß weiß, daß er mir wol will und dann wird auch der gedanke meinem alten herzen wieder wol tun: ia ich wage es zu hoffen, daß Sie mer als einmal im laufe des iares úber den hellespont faren und den alten einsiedler in der <rs type="place" key="">Dagoberts burg</rs> freundlich úberraschen und mit der gewonten altváterischen hausmannskost vorlieb nemen werden. 
+At mihi seu longum post tempus venerat hospes, 
+Sive operum vacuo gratus conviva per imbrem 
+Vicinus, bene erat, non piscibus urbe petistis, 
+Sed pullo, atque hoedo &c - und dann : 
+Aliquando dextrae conjungere dextram 
+Fas erit et notas audire ac reddere voces. 
+Sie sehen, ich kann noch immer, wie ein alter magister, das citiren nicht lassen. aber ohe! jam satis! Ich lese heute in der <rs type="organisation" key="">Constanzer zeitung</rs>, daß am elften May die alte Maculatur des ehemaligen <rs type="organisation" key="">Provincial Archives</rs> im alten Schlosse zu <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0101"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0101"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0101">Meersburg</rs></rs></rs> versteigert wird. wie ware es wenn Sie am 10. frühe mit mir dahin gingen, um am nachmittage noch einsicht von dem vorhandenen zu nemen, und den folgenden tag selbst zu kauffen was Sie glauben brauchen zu können. angeblich sollen es einige 30 Zentner sein, und ich glaube nicht, daß der Zentner über 20 bazen, vielleicht noch geringer zu stehen kommen wird. Sie wurden dann am abend des 9. hierher kommen, damit wir den folgenden tag recht frúhe aufbrechen konnten. Ob ich aber Sie auch wieder nach hause begleiten könnte? kann ich freilich nicht für gewiß versichern. Vielleicht wurde freund <rs type="person" key="">Imhoff</rs> sich entschliessen die kleine reise bei dem schónen wetter mitzumachen, wenn Sie die gúte haben wollten mit im davon zu sprechen. Die bucher werde ich in <rs type="place" key="">Stokach</rs> bestens besorgen; wenn Sie aber ein par der aufgeschriebenen nicht erhalten sollten; so denken Sie nur, ich habe Sie als mir mangelnd, fúr mich behalten. z. B. <rs type="person" key="">Wasers</rs> Jahrzeitenbuch und vielleicht <rs type="misc" key="">Goldast Catholicon</rs>. <rs type="person" key="">Manessen Minnesánger</rs> wird <rs type="person" key="">Inen</rs> warscheinl. Decan <rs type="person" key="">Eytenbenz</rs> zu <rs type="place" key="">Bietingen</rs> wegschnappen, welcher schon lange darauf gespannt hat. Dafs Sie das sonst so allgemein brauchbare <rs type="misc" key="">Chronicon Gotwicense</rs>, welches eigentlich keine Chronik; sondern eine gescházte sammlung diplomatischer abhandlungen ist, welche als Prodromus zu dem nicht erschienenen Chronikon dienen sollten, nicht aufgeschrieben haben wundert mich. Durch <rs type="person" key="">Wakernagel</rs> habe ich ser angeneme geschenke aus <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0022">Berlin</rs> und <rs type="place" key="">Góttingen</rs> erhalten. <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0170">Wilh. Grimm</rs> schikt mir sein <rs type="misc" key="">Rolandslied</rs> mit den dazu gehörigen bildern aus dem cod. palat. <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0260"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0260"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0260">Lachmann</rs></rs></rs> 2 in der academie der Wißenschaften vorgelesene abhandlungen, seine anmerkungen zum <rs type="misc" key="">Nibelungenliede</rs>, und einen neuen <rs type="person" key="">Gregorius vf dem Steine</rs>, vor welchem freilich <rs type="person" key=""><rs type="person" key="">Greuth</rs></rs> zurúktretten mufs. Man kann nicht alles sein und machen! hátte ich gewusst, dafs <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0260"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0260"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0260">Lachmann</rs></rs></rs> Lust zur herausgabe habe; ich wúrde <rs type="person" key=""><rs type="person" key="">Greuth</rs></rs> nicht dazu angetrieben haben; allein mir lag daran, dafs das schónste Gedicht <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0319">Hartmanns v. A.</rs> einmal herauskomme, und wäre es nicht herausgekommen; so wurde <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0260"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0260"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0260">Lachmann</rs></rs></rs> vielleicht noch lange damit gezaudert haben: so hángt im menschlichen leben so vieles vom zufall ab. Zugleich mit den <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0022">Berlin</rs>er und Góttinger búchern erhielt ich 2 schriften von <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0170">Jacob Grimm</rs> und <rs type="person" key="">Dahlmann</rs>, worinne sie die geschichte irer Landesverweisung erzálen. beide konnten weder in <rs type="place" key="">Leibzig</rs>, noch in <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0147">Stuttgart</rs> das imprimatur erhalten, wurden daher in <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0019">Basel</rs> gedrukt. also ist die Schweizer freiheit doch noch zu etwas gut. die eine schrift, lásst mich einen blik in meines so lieben freundes <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0319">Jacob Gr.</rs> herze tun, welches tief betrübt zu sein scheint, und das tut mir ser leide; denn ein solcher mann sollte úber aussere begebenheiten in soweit erhaben bleiben, dafs er den innern gleichmut darúber nicht verliert: auch one haus und heimat, hat er am felde der wissenschaften einen reichen aker, und an seiner feder einen wakern pflug; aber mit bekümmertem herzen ist nicht gut akern. Leben Sie wol und geben Sie mir gute antwort wegen <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0101"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0101"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0101">Meersburg</rs></rs></rs>; sonst kaufe ich den ganzen plunder, dann mufsen Sie doch kommen und auslesen; den úberrest aber muß ich der <rs type="misc" key="">Dea</rs> cloacina opfern. Viele grüße von uns allen an die Irigen von 
+<rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0373">Irem J. Laßberg</rs>.</p>
+            </div>
+            <div type="normalized" resp="GPT3.5">
+                <p><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs> am 1. Mai 1838.
+Verehrter Freund und Nachbar!
+
+Ich danke Ihnen herzlich für den lieben freundlichen Brief, den Sie mir durch <rs type="person" key="">Sonderegger</rs> gesendet haben; obschon ich weit entfernt bin zu glauben, dass Sie je so tief in meiner Schuld staken, wie Sie darin ausgesprochen haben; so tut es doch meinem alten, aber nichts weniger als veralteten Herzen, sehr wohl; ich werde ihn aufbewahren in dem Archiv meines Herzens, und wenn ich aus den Fenstern des ehemaligen <rs type="organisation" key="">Bischöflichen Archives</rs> zu <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0101"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0101"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0101">Meersburg</rs></rs></rs>, wo als meiner Bücherkammer, doch mein meister Aufenthalt sein wird & hinüber schaue in den herrlichen Garten der Pomona und des Vertumnus; so will ich denken und mir selbst sagen: da drüben, rechts am Fuße des Tannenbergs, wohnt doch noch ein Mann, von dem ich gewiss weiß, dass er mir wohlwill und dann wird auch der Gedanke meinem alten Herzen wieder wohl tun: ja ich wage es zu hoffen, dass Sie mehr als einmal im Laufe des Jahres über den <rs type="place" key="">Helle-spont</rs> fahren und den alten Einsiedler in der <rs type="place" key="">Dagoberts Burg</rs> freundlich überraschen und mit der gewohnten altväterischen Hausmannskost vorlieb nehmen werden.
+
+"At mihi seu longum post tempus venerat hospes,
+Sive operum vacuo gratus conviva per imbrem
+Vicinus, bene erat, non piscibus urbe petistis,
+Sed pullo, atque hoedo etc." - und dann:
+
+Aliquando dextrae conjungere dextram
+Fas erit et notas audire ac reddere voces.
+
+Sie sehen, ich kann noch immer, wie ein alter Magister, das Zitieren nicht lassen. Aber ohe! Jam satis! Ich lese heute in der <rs type="organisation" key="">Constanzer Zeitung</rs>, dass am elften Mai die alte Makulatur des ehemaligen <rs type="organisation" key="">Provincial Archives</rs> im alten Schlosse zu <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0101"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0101"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0101">Meersburg</rs></rs></rs> versteigert wird. Wie wäre es, wenn Sie am 10. früh mit mir dahin gingen, um am Nachmittag noch Einsicht von dem Vorhandenen zu nehmen, und den folgenden Tag selbst zu kaufen, was Sie glauben brauchen zu können. Angeblich sollen es einige 30 Zentner sein, und ich glaube nicht, dass der Zentner über 20 Pf. Zustand kommen wird. Sie würden dann am Abend des 9. hierher kommen, damit wir den folgenden Tag recht früh aufbrechen könnten. Ob ich aber Sie auch wieder nach Hause begleiten könnte? Kann ich freilich nicht für gewiss versichern. Vielleicht würde Freund <rs type="person" key="">Imhoff</rs> sich entschließen die kleine Reise bei dem schönen Wetter mitzumachen, wenn Sie die Güte hätten, mit ihm davon zu sprechen. Die Bücher werde ich in <rs type="place" key="">Stokach</rs> besten besorgen; wenn Sie aber ein paar der aufgeschriebenen nicht erhalten sollten, so denken Sie nur, ich habe sie als mir mangelnd, für mich behalten. Zum Beispiel <rs type="person" key="">Waser</rs>'s <rs type="misc" key="">Jahrzeitenbuch</rs> und vielleicht <rs type="person" key="">Goldast</rs>'s <rs type="misc" key="">Catholicon</rs>. Manessen Minnesänger wird Ihnen wahrscheinlich Decan <rs type="person" key="">Eytenbenz</rs> zu <rs type="place" key="">Bietingen</rs> wegschnappen, welcher schon lange darauf gespannt hat. Dass Sie das sonst so allgemein brauchbare <rs type="misc" key="">Chronicon Gotwicense</rs>, welches eigentlich keine Chronik, sondern eine geschätzte Sammlung diplomatischer Abhandlungen ist, welche als Prodromus zu dem nicht erschienenen <rs type="misc" key="">Chronikon</rs> dienen sollten, nicht aufgeschrieben haben, wundert mich. Durch <rs type="person" key="">Wakernagel</rs> habe ich sehr angenehme Geschenke aus <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0022">Berlin</rs> und <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0053">Göttingen</rs> erhalten. <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0170">Wilh. Grimm</rs> schickt mir sein <rs type="misc" key="">Rolandslied</rs> mit den dazu gehörigen Bildern aus dem cod. palat. <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0260"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0260"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0260">Lachmann</rs></rs></rs> 2 in der <rs type="organisation" key="">Akademie der Wissenschaften</rs> vorgelesene Abhandlungen, seine Anmerkungen zum <rs type="misc" key="">Nibelungenlied</rs> und einen neuen <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">Gregorius von dem Steine</rs>, vor welchem freilich <rs type="person" key=""><rs type="person" key="">Greuth</rs></rs> zurücktreten muss. Man kann nicht alles sein und machen! Hätte ich gewusst, dass <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0260"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0260"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0260">Lachmann</rs></rs></rs> Lust zur Herausgabe habe; ich würde <rs type="person" key=""><rs type="person" key="">Greuth</rs></rs> nicht dazu angetrieben haben; allein mir lag daran, dass das schönste Gedicht <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0319">Hartmanns v. A.</rs> einmal herauskomme, und wäre es nicht herausgekommen, so würde <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0260"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0260"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0260">Lachmann</rs></rs></rs> vielleicht noch lange damit gezögert haben: so hängt im menschlichen Leben so vieles vom Zufall ab. Zugleich mit den <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0022">Berlin</rs>er und Göttinger Büchern erhielt ich 2 Schriften von <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0170">Jacob Grimm</rs> und <rs type="person" key="">Dahlmann</rs>, worin sie die Geschichte ihrer Landesverweisung erzählen. Beide konnten weder in <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0086">Leipzig</rs>, noch in <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0147">Stuttgart</rs> das Imprimatur erhalten, wurden daher in <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0019">Basel</rs> gedruckt. Also ist die Schweizer Freiheit doch noch zu etwas gut. Die eine Schrift lässt mich einen Blick in meines so lieben Freundes <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0319">Jacob Gr.</rs> Herz tun, welches tief betrübt zu sein scheint, und das tut mir sehr leid; denn ein solcher Mann sollte über äußere Begebenheiten in soweit erhaben bleiben, dass er den inneren Gleichmut darüber nicht verliert: auch ohne Haus und Heimat hat er am Felde der Wissenschaften einen reichen Acker und an seiner Feder einen wackern Pflug; aber mit bekümmertem Herzen ist nicht gut ackern. Leben Sie wohl und geben Sie mir gute Antwort wegen <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0101"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0101"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0101">Meersburg</rs></rs></rs>; sonst kaufe ich den ganzen Plunder, dann müssen Sie doch kommen und auslesen; den Überrest aber muss ich der Dea cloacina opfern. Viele Grüße von uns allen an die Ihrigen von 
+Ihrem <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0373">J. Laßberg</rs>.</p>
+            </div>
         </body>
     </text>
 </TEI>
-    

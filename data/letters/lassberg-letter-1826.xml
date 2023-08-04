@@ -4,59 +4,85 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Brief von Ildefons von Arx an Joseph von Laßberg (06.11.1819).</title>
+                <title>Brief von Joseph von Laßberg an Johann Adam Pupikofer (01.01.1836).</title>
                 <respStmt>
                     <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
                     <name>Michael Schonhardt</name>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
-                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 normalisiert.</p>
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
                     <msIdentifier>
-                        <settlement>St.Gallen</settlement>
-                        <repository>Stiftsbibliothek</repository>
-                        <idno type="signature"/>
-                        <idno type="register-harris">1826</idno>
-                        <idno type="register-lassberg">nan</idno>
+                        <settlement>Winterthur</settlement>
+                        <repository>Stadtbibliothek</repository>
+                        <idno type="signature"></idno>
+                        <idno type="register-harris">888</idno>
+                        <idno type="register-lassberg">1</idno>
                     </msIdentifier>
                     <additional>
                         <surrogates>
-                            <bibl type="printed">nan
-                            <ref>nan</ref>
-                            </bibl>
+                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 15 (1887), S. 231-88, S. 273<ref>https://books.google.de/books?id=dXkKAAAAIAAJ</ref></bibl>
                         </surrogates>
                     </additional>
                 </msDesc>
             </sourceDesc>
         </fileDesc>
         <profileDesc>
-            <correspDesc xml:id="correspDesc-1826">
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1826">
                 <correspAction type="sent">
-                    <persName ref="lassberg-correspondent-0169">Ildefons von Arx</persName>
-                    <placeName ref="lassberg-place-0141">St. Gallen</placeName>
-                    <date when="1819-11-06">06.11.1819</date>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1836-01-01">01.01.1836</date>
                 </correspAction>
                 <correspAction type="received">
-                    <persName ref="lassberg-correspondent-0373">Joseph von Laßberg</persName>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X"
+                        >Johann Adam Pupikofer</persName>
+                    
                 </correspAction>
-                <noteGrp type="chatgpt">
-                    <note type="chatgpt-summary"/>
-                    <note type="chatgpt-keytopics"/>
-                    <note type="chatgpt-persons"/>
-                    <note type="chatgpt-texts"/>
-                    <note type="chatgpt-objects"/>
-                    <note type="chatgpt-manuscripts"/>
-                </noteGrp>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0179"><rs>Pupikofer</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0025"><rs>Bischofszell</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0043"><rs>Eppishausen</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0043"><rs>Eppishausen</rs></ref>
+<ref type="cmif:mentionsBibl" target=""><rs>Episcopicellenses</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Berthold</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Sadrach</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Mysach</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Abdenago</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Scherb</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0179"><rs>Pupikofer</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Laßbergius</rs></ref>
+                </note>
             </correspDesc>
         </profileDesc>
     </teiHeader>
     <text>
         <body>
-            <p/>
+            <div type="original" resp="ocr">
+                <p>Seiner Wolerwürden Herrn Diacon <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0179">Pupikofer</rs> zu <rs type="place" key="">Bischofszelle</rs>.
+<rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs></rs> am 1. Januar 1836.
+Prosit <rs type="person" key="">Neujar</rs>! Da bekanntlich das castrum doloris, sonst auch ofen genannt, in dem hintern und respective obern speisezimmer, lange zuvor geheizt werden muß, ehe er eine warme stube macht; so geschiehet andurch im namen des frommen und loeblichen gynaecáums zu <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs></rs> die geziemende anfrage: ob unsere liebe nachbarn, die <rs type="misc" key="">Episcopicellenses</rs> morgen kommen werden, das fest des heiligen <rs type="person" key="">Berthold</rs> in unserm armen Klósterlein mit uns zu feiern? In erwartung erfreulicher antwort, hat meine frau bereits ein halb klaffter holz in den fornax werfen lassen, auf daß <rs type="person" key="">Sadrach</rs>, <rs type="person" key="">Mysach</rs> und <rs type="person" key="">Abdenago</rs> morgen lobsingend darinne herum spazieren können. In frólicher Erwartung die beiden háuser <rs type="person" key="">Scherb</rs> & <rs type="person" key="">Pupicofer</rs> morgen persónlich grüßen zu können. Semper idem
+<rs type="person" key="">Laßbergius</rs>.</p>
+            </div>
+            <div type="normalized" resp="GPT3.5">
+                <p>Seiner Wohlwürden Herrn Diacon <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0179"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0179">Pupikofer</rs></rs> zu <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0025">Bischofszell</rs>.
+<rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs></rs> am 1. Januar 1836.
+Prosit Neujahr! Da bekanntlich das castrum doloris, sonst auch Ofen genannt, in dem hinteren und respektiven oberen Speisezimmer, lange zuvor geheizt werden muss, ehe es eine warme Stube macht; so geschieht an dieser Stelle im Namen des frommen und löblichen Gynäcáums zu <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs></rs> die geziemende Anfrage: ob unsere lieben Nachbarn, die <rs type="misc" key="">Episcopicellenses</rs>, morgen kommen werden, das Fest des heiligen <rs type="person" key="">Berthold</rs> in unserem armen Klösterlein mit uns zu feiern? In Erwartung einer erfreulichen Antwort, hat meine Frau bereits ein halb Klafter Holz in den Fornax werfen lassen, auf dass <rs type="person" key="">Sadrach</rs>, <rs type="person" key="">Mysach</rs> und <rs type="person" key="">Abdenago</rs> morgen lobsingend darin herumspazieren können. In fröhlicher Erwartung die beiden Häuser <rs type="person" key="">Scherb</rs> & <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0179"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0179">Pupikofer</rs></rs> morgen persönlich grüßen zu dürfen. Semper idem
+<rs type="person" key="">Laßbergius</rs>.</p>
+            </div>
         </body>
     </text>
 </TEI>
-    

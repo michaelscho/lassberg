@@ -4,59 +4,105 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Brief von Joseph von Laßberg an Wilhelm FÃ¼ssli (25.11.1844).</title>
+                <title>Brief von Joseph von Laßberg an Johann Adam Pupikofer (30.09.1828).</title>
                 <respStmt>
                     <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
                     <name>Michael Schonhardt</name>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
-                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 normalisiert.</p>
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
                     <msIdentifier>
-                        <settlement>ZÃ¼rich</settlement>
-                        <repository>Zentralbibliothek</repository>
-                        <idno type="signature"/>
-                        <idno type="register-harris">1247</idno>
-                        <idno type="register-lassberg">82</idno>
+                        <settlement>Winterthur</settlement>
+                        <repository>Stadtbibliothek</repository>
+                        <idno type="signature"></idno>
+                        <idno type="register-harris">611</idno>
+                        <idno type="register-lassberg">190</idno>
                     </msIdentifier>
                     <additional>
                         <surrogates>
-                            <bibl type="printed">nan
-                            <ref>nan</ref>
-                            </bibl>
+                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 15 (1887), S. 231-88, S. 243<ref>https://books.google.de/books?id=dXkKAAAAIAAJ</ref></bibl>
                         </surrogates>
                     </additional>
                 </msDesc>
             </sourceDesc>
         </fileDesc>
         <profileDesc>
-            <correspDesc xml:id="correspDesc-1247">
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1247">
                 <correspAction type="sent">
-                    <persName ref="lassberg-correspondent-0373">Joseph von Laßberg</persName>
-                    <placeName ref="lassberg-place-0101">Meersburg</placeName>
-                    <date when="1844-11-25">25.11.1844</date>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1828-09-30">30.09.1828</date>
                 </correspAction>
                 <correspAction type="received">
-                    <persName ref="lassberg-correspondent-0361">Wilhelm FÃ¼ssli</persName>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X"
+                        >Johann Adam Pupikofer</persName>
+                    
                 </correspAction>
-                <noteGrp type="chatgpt">
-                    <note type="chatgpt-summary"/>
-                    <note type="chatgpt-keytopics"/>
-                    <note type="chatgpt-persons"/>
-                    <note type="chatgpt-texts"/>
-                    <note type="chatgpt-objects"/>
-                    <note type="chatgpt-manuscripts"/>
-                </noteGrp>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0043"><rs>Eppishausen</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Thurgaus</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0148"><rs>Tübingen</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs>v</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Múlinen</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Thurgaus</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0020"><rs>Bern</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs>Friedrich von Múlinen</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Mülheim</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs>v</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Múlinen</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Wasserburg</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0090"><rs>Lindau</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0090"><rs>Lindau</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Wasserburg</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Lyrers</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0161"><rs>Wien</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Balkan</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Bulgarien</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Benkendorf</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0147"><rs>Stuttgart</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Schiumla</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Silistria</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs>v</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Múlinen</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs>v</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Rampach</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Peter v. Raperschwil</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0150"><rs>Heinrich</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Raperschwil</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Bodmer</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Seppe</rs></ref>
+                </note>
             </correspDesc>
         </profileDesc>
     </teiHeader>
     <text>
         <body>
-            <p/>
+            <div type="original" resp="ocr">
+                <p><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs> am 30. Sept. 1828.
+Verertester Freund!
+Soeben erhalte ich die inliegende handschrift, welche, da sie offenbar noch ins XIV. iarhundert gehört, wol verdiente, noch in Irer urkundensammlung zum ersten teile der geschichte, des <rs type="place" key="">Thurgaues</rs> abgedrukt zu werden. Gerne würde ich Inen die mühe des abschreibens erspart haben, wenn nicht die begierde, Inen die membrane so schnell als móglich zukommen zu laßen, es verhindert hátte. Es ist mir diese gewiss merkwürdige urkunde diesen morgen aus <rs type="place" key="">Túbingen</rs> zugekommen. Gr v. <rs type="person" key="">Múlinen</rs> schrieb mir vor kurzem und bat mich, jm doch ein exemplar der gesch.: des <rs type="place" key="">Thurgaus</rs>, die noch immer nicht im buchhandel sei, zu verschaffen Sie würden mich ser verbinden, wenn Sie die güte haben wollten, sogleich mit dem ersten abgehenden warenwagen, ein exemplar an den würdigen mann nach <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0020">Bern</rs> abzusenden, die adresse ist: An den Altschultheißen graven Friederich von <rs type="person" key="">Múlinen</rs>. Den betrag werde ich Inen mit dem besten danke erstatten. Ich wünsche daß Sie gestern wolbehalten von der gemeinnüzigen versammlung in <rs type="place" key="">Múlheim</rs> zurükgekommen seien, und daß die diesmaligen verhandlungen etwas gehaltvoller móchten gewesen sein, als die lezten; dabei wünsche ich noch etwas, was ich aber nicht sage. Gr. v. <rs type="person" key="">Múlinen</rs> hat kürzlich von einem reisenden vernommen, daß zu <rs type="place" key=""><rs type="place" key="">Wasserburg</rs></rs> bei <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0090"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0090">Lindau</rs></rs> derselbe bei dem dortigen pfarrer einen uralten codex altteutscher gedichte gesehen. Wie könnte man an diesen mann kommen? haben Sie keine bekannte in <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0090"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0090">Lindau</rs></rs>, die den codex recognosciren konnten? Ich habe jezt keine ruhe mer bis ich weiß, wie es damit stehet? aber warscheinlich ist es nichts damit; sonst wäre eine handschrift die man reisenden zeigt schon lange bekannt. <rs type="place" key=""><rs type="place" key="">Wasserburg</rs></rs> hatte ein ser altes schloß, gehörte einst den Montfortern und dann den Fuggern; es wáre also immer móglich, daß sich dort noch eine vergeßene alte handschrift erhalten hátte; ich würde aber eher auf eine handschrift von <rs type="person" key="">Lyrers</rs> fabelhaften geschichten raten, als auf gedichte. Heraus muß ich es kriegen was daran ist, und zwar diesen herbst noch. aus <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0161">Wien</rs> schreibt man, daß die ruß: armée im <rs type="place" key="">Balkan</rs> den bittersten mangel leide, fürchterlichers als die erschópfung von <rs type="place" key="">Bulgarien</rs> soll man sich gar nichts denken können. Der ruß. General <rs type="person" key="">Benkendorf</rs>, der früher gesandter in <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0147">Stuttgart</rs> war, starb auf der reise von <rs type="place" key="">Schiumla</rs> nach <rs type="place" key="">Silistria</rs> mer vor elend als an Krankheit. also giebts warscheinlich bald frieden und taußende sind abermal zwecklos hingeopfert. Es ist doch bequem ex alto litore diese Schifbrüche anzuschauen; aber sie tun einem darum nicht weniger leide. Als allzeit fertiger stammbaummacher, schikt mir der gute gr. v. <rs type="person" key="">Múlinen</rs> eine ganze genealogie der Herren v. <rs type="place" key="">Rampach</rs>; sie wollen von einem <rs type="person" key="">Peter v. <rs type="place" key="">Raperschwil</rs></rs> (:1232:) abstammen. Die belege dazu bleibt er aber wie gewönlich schuldig. Er hat auch einen <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0150">Heinrich</rs> : 1277 welcher also mit dem marschalken von <rs type="place" key="">Raperschwil</rs> bei <rs type="place" key="">Bodmer</rs> gleichnamig wáre. Leben Sie wol und besuchen Sie bald wieder an den alten meister Seppe.
+Viele grüße an die Irigen von mir und meinen Luzerner gästen.</p>
+            </div>
+            <div type="normalized" resp="GPT3.5">
+                <p><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs> am 30. Sept. 1828.
+Verehrtester Freund!
+Soeben erhalte ich die beiliegende Handschrift, welche, da sie offensichtlich noch ins 14. Jahrhundert gehört, wohl <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">v</rs></rs></rs></rs>erdiente, noch in Ihrer Urkundensammlung zum ersten Teil der Geschichte des <rs type="place" key=""><rs type="place" key="">Thurgaus</rs></rs> abgedruckt zu werden. Gerne hätte ich Ihnen die Mühe des Abschreibens erspart, wenn nicht die Begierde, Ihnen die Membrane so schnell wie möglich zukommen zu lassen, es <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">v</rs></rs></rs></rs>erhindert hätte. Diese gewiss bemerkenswerte Urkunde ist mir heute Morgen aus <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0148">Tübingen</rs> zugekommen. Graf <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">v</rs></rs></rs></rs>. <rs type="person" key=""><rs type="person" key=""><rs type="person" key="">Múlinen</rs></rs></rs> schrieb mir <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">v</rs></rs></rs></rs>or kurzem und bat mich, ihm doch ein Exemplar der Geschichte des <rs type="place" key=""><rs type="place" key="">Thurgaus</rs></rs>, die noch immer nicht im Buchhandel ist, zu <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">v</rs></rs></rs></rs>erschaffen. Sie würden mich sehr <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">v</rs></rs></rs></rs>erbinden, wenn Sie die Güte haben wollten, sofort mit dem ersten Warenwagen, der abgeht, ein Exemplar an den würdigen Mann nach <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0020">Bern</rs> zu senden. Die Adresse ist: An den Altschultheißen Grafen Friedrich <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">v</rs></rs></rs></rs>on <rs type="person" key=""><rs type="person" key=""><rs type="person" key="">Múlinen</rs></rs></rs>. Den Betrag werde ich Ihnen mit dem besten Dank erstatten. Ich wünsche, dass Sie gestern wohlbehalten <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">v</rs></rs></rs></rs>on der gemeinnützigen Versammlung in <rs type="place" key="">Mülheim</rs> zurückgekommen sind und dass die diesmaligen Verhandlungen etwas gehalt<rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">v</rs></rs></rs></rs>oller gewesen sein mögen als die letzten. Dabei wünsche ich noch etwas, was ich aber nicht sage. Graf <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">v</rs></rs></rs></rs>. <rs type="person" key=""><rs type="person" key=""><rs type="person" key="">Múlinen</rs></rs></rs> hat kürzlich <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">v</rs></rs></rs></rs>on einem Reisenden <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">v</rs></rs></rs></rs>ernommen, dass in <rs type="place" key=""><rs type="place" key="">Wasserburg</rs></rs> bei <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0090"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0090">Lindau</rs></rs> dieser bei dem dortigen Pfarrer einen uralten Codex altdeutscher Gedichte gesehen hat. Wie könnte man an diesen Mann kommen? Haben Sie keine Bekannte in <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0090"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0090">Lindau</rs></rs>, die den Codex untersuchen könnten? Ich habe jetzt keine Ruhe mehr, bis ich weiß, wie es damit steht. Aber wahrscheinlich ist es nichts damit; sonst wäre eine Handschrift, die man Reisenden zeigt, schon lange bekannt. <rs type="place" key=""><rs type="place" key="">Wasserburg</rs></rs> hatte ein sehr altes Schloss, gehörte einst den Montfortern und dann den Fuggern. Es wäre also immer möglich, dass sich dort noch eine <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">v</rs></rs></rs></rs>ergessene alte Handschrift erhalten hat. Ich würde aber eher auf eine Handschrift <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">v</rs></rs></rs></rs>on <rs type="person" key="">Lyrers</rs> fabelhaften Geschichten raten als auf Gedichte. Herausbekommen muss ich, was daran ist, und zwar noch diesen Herbst. Aus <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0161">Wien</rs> schreibt man, dass die russische Armee im <rs type="place" key="">Balkan</rs> den bittersten Mangel leidet, schlimmer als die Erschöpfung <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">v</rs></rs></rs></rs>on <rs type="place" key="">Bulgarien</rs>. Der russische General <rs type="person" key="">Benkendorf</rs>, der früher Gesandter in <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0147">Stuttgart</rs> war, starb auf der Reise <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">v</rs></rs></rs></rs>on <rs type="place" key="">Schiumla</rs> nach <rs type="place" key="">Silistria</rs> eher <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">v</rs></rs></rs></rs>or Elend als an Krankheit. Also gibt es wahrscheinlich bald Frieden und tausende sind abermals zwecklos hingeopfert. Es ist doch bequem ex alto litore diese Schiffbrüche anzuschauen, aber sie tun einem darum nicht weniger leid. Als allzeit fertiger Stammbaummacher schickt mir der gute Graf <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">v</rs></rs></rs></rs>. <rs type="person" key=""><rs type="person" key=""><rs type="person" key="">Múlinen</rs></rs></rs> eine ganze Genealogie der Herren <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">v</rs></rs></rs></rs>. <rs type="person" key="">Rampach</rs>; sie sollen <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">v</rs></rs></rs></rs>on einem Peter <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">v</rs></rs></rs></rs>. <rs type="place" key="">Raperschwil</rs> (1232) abstammen. Die Belege dazu bleibt er aber wie gewöhnlich schuldig. Er hat auch einen <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0150">Heinrich</rs> (1277), welcher also mit dem Marschall <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">v</rs></rs></rs></rs>on <rs type="place" key="">Raperschwil</rs> bei <rs type="place" key="">Bodmer</rs> gleichnamig wäre. Leben Sie wohl und besuchen Sie bald wieder den alten Meister <rs type="person" key="">Seppe</rs>.
+Viele Grüße an die Ihren <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">v</rs></rs></rs></rs>on mir und meinen Luzerner Gästen.</p>
+            </div>
         </body>
     </text>
 </TEI>
-    

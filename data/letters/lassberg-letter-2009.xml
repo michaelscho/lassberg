@@ -4,59 +4,79 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Brief von Johann Caspar Zellweger an Joseph von Laßberg (27.04.1824).</title>
+                <title>Brief von Joseph von Laßberg an Johann Adam Pupikofer (25.04.1838).</title>
                 <respStmt>
                     <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
                     <name>Michael Schonhardt</name>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
-                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 normalisiert.</p>
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
                     <msIdentifier>
                         <settlement>Winterthur</settlement>
                         <repository>Stadtbibliothek</repository>
-                        <idno type="signature"/>
-                        <idno type="register-harris">2009</idno>
+                        <idno type="signature"></idno>
+                        <idno type="register-harris">984</idno>
                         <idno type="register-lassberg">nan</idno>
                     </msIdentifier>
                     <additional>
                         <surrogates>
-                            <bibl type="printed">nan
-                            <ref>nan</ref>
-                            </bibl>
+                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 15 (1887), S. 231-88, S. 274<ref>https://books.google.de/books?id=dXkKAAAAIAAJ</ref></bibl>
                         </surrogates>
                     </additional>
                 </msDesc>
             </sourceDesc>
         </fileDesc>
         <profileDesc>
-            <correspDesc xml:id="correspDesc-2009">
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-2009">
                 <correspAction type="sent">
-                    <persName ref="lassberg-correspondent-0193">Johann Caspar Zellweger</persName>
-                    <placeName ref="lassberg-place-0150">Trogen (Appenzell Ausserrhoden)</placeName>
-                    <date when="1824-04-27">27.04.1824</date>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1838-04-25">25.04.1838</date>
                 </correspAction>
                 <correspAction type="received">
-                    <persName ref="lassberg-correspondent-0373">Joseph von Laßberg</persName>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X"
+                        >Johann Adam Pupikofer</persName>
+                    
                 </correspAction>
-                <noteGrp type="chatgpt">
-                    <note type="chatgpt-summary"/>
-                    <note type="chatgpt-keytopics"/>
-                    <note type="chatgpt-persons"/>
-                    <note type="chatgpt-texts"/>
-                    <note type="chatgpt-objects"/>
-                    <note type="chatgpt-manuscripts"/>
-                </noteGrp>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <ref type="cmif:mentionsPlace" target=""><rs>Thaleppe</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Stockach</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Stockach</rs></ref>
+<ref type="cmif:mentionsBibl" target=""><rs>Ida von Tötenburg</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Minerva</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>JvLaßberg</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0319"><rs>H.</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Praes</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Scherb</rs></ref>
+                </note>
             </correspDesc>
         </profileDesc>
     </teiHeader>
     <text>
         <body>
-            <p/>
+            <div type="original" resp="ocr">
+                <p><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs> am 25 April 1838.
+Hier mein vererter freund und nachbar! erhalten Sie zuerst den catalog der frau <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">Hofrátin von Thaleppe</rs> zu <rs type="place" key="">Stockach</rs>, in welchem Sie viel schónes und gutes finden werden. laßen Sie sich durch die darinne befindlichen Randzeichen + &> nicht irre machen und wenn Sie etwas damit bezeichnetes wúnschen sollten, sich nicht davon abhalten: nur muß ich bitten mir den catalog spátestens in 8 tagen wieder zurúkzusenden, damit ich selben kann nach <rs type="place" key="">Stokach</rs> abgehen laßen. da die besizerin es mir úberlaßen hat, die preise selbst zu bestimmen; so werde ich bei denselben die gewónl: Auctions Catalog-preise zu grunde legen. Mit vielem danke für Sie lege ich noch die <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">Ida von Tokenburg</rs> hier wieder bei, aber mit wenig dank gegen den Verfasser. was hat doch der nárrische mann, mit zurúkstoßung aller geschichte, fúr ein lácherliches unding aus dem schonen romantischen stoffe dieser sage gemacht, und wie oft verrát er die meister, nach welchen er die studien zu seinem bilde [:<rs type="misc" key="">crassa</rs> et invita <rs type="person" key="">Minerva</rs>!:] gemacht hat, Gott beware kúnftig die vaterländische geschichte vor solchen úberlieferungen, deren verfaßer man mit recht, wie jener italienische Abbate, und vielleicht mit mer recht: Traditore nennen könnte. Nun lieber freund? soll ich es sagen? es will mir vorkommen, als wenn unsere Bischofszeller freunde uns das scheiden dadurch erleichtern wollten, daß sie in den lezten zeiten uns immer sparsamer mit irem besuche erfreuen; aber es wird inen nicht gelingen! wie konnten wir, besonders ich, ie vergeßen, ie aufhóren mich wieder danach zu senen, wie oft in einer so langen reihe von iaren, ir freundschaftlicher umgang mich erheitert hat, und zu wúnschen, daß auch in der zukunft, der kleine arm des schwábischen meeres inen nicht zu breit sein und Sie nicht abhalten möchte, die alten dankbaren freunde zuweilen durch lre gegenwart zu erfreuen, ubi    Aliquando dextrae conjungere dextram Fas erit & notas audire et reddere voces! Damit gott befolen von 
+Irem ergebensten freunde <rs type="place" key="">JvLaßberg</rs>.
+Darf ich bitten H <rs type="person" key="">Praes</rs>. <rs type="person" key="">Scherb</rs> die Inlage samt meinem besten danke zustellen zu lassen?</p>
+            </div>
+            <div type="normalized" resp="GPT3.5">
+                <p>Hier, mein verehrter Freund und Nachbar! Erhalten Sie zuerst den Katalog der Frau Hofrätin von <rs type="place" key="">Thaleppe</rs> zu <rs type="place" key=""><rs type="place" key="">Stockach</rs></rs>, in welchem Sie viel Schönes und Gutes finden werden. Lassen Sie sich durch die darin befindlichen Randzeichen + &> nicht irritieren und wenn Sie etwas damit Bezeichnetes wünschen sollten, lassen Sie sich nicht davon abhalten: nur muss ich bitten, mir den Katalog spätestens in 8 Tagen wieder zurückzusenden, damit ich denselben nach <rs type="place" key=""><rs type="place" key="">Stockach</rs></rs> schicken kann. Da die Besitzerin es mir überlassen hat, die Preise selbst zu bestimmen, werde ich bei denselben die gewöhnlichen Auktionskatalog-Preise zugrunde legen. Mit vielem Dank für Sie lege ich noch die "<rs type="misc" key="">Ida von Tötenburg</rs>" hier wieder bei, aber mit wenig Dank gegen den Verfasser. Was hat doch der närrische Mann, mit Zurückstoßung aller Geschichte, für ein lächerliches Unding aus dem schönen romantischen Stoff dieser Sage gemacht, und wie oft verrät er die Meister, nach welchen er die Studien zu seinem Bilde [:crassa et invita <rs type="person" key="">Minerva</rs>!:] gemacht hat. Gott bewahre künftig die vaterländische Geschichte vor solchen Überlieferungen, deren Verfasser man mit Recht, wie jener italienische Abbate, und vielleicht mit noch mehr Recht: "Traditore" nennen könnte. Nun, lieber Freund? Soll ich es sagen? Es will mir vorkommen, als wenn unsere Bischofszeller Freunde uns das Scheiden dadurch erleichtern wollen, dass sie uns in den letzten Zeiten immer sparsamer mit ihrem Besuch erfreuen; aber es wird ihnen nicht gelingen! Wie konnten wir, besonders ich, euch vergessen, euch aufhören mich wieder danach zu sehnen, wie oft in einer so langen Reihe von Jahren euer freundschaftlicher Umgang mich erheitert hat, und zu wünschen, dass auch in der Zukunft der kleine Arm des schwäbischen Meeres euch nicht zu breit sein und euch nicht abhalten möge, die alten dankbaren Freunde zuweilen durch eure Gegenwart zu erfreuen, "ubi Aliquando dextrae conjungere dextram Fas erit & notas audire et reddere voces!" Damit Gott befohlen von Ihrem ergebensten Freund <rs type="person" key="">JvLaßberg</rs>. Darf ich bitten, <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0319">H.</rs> <rs type="person" key="">Praes</rs>. <rs type="person" key="">Scherb</rs> die Beilage samt meinem besten Dank zuzustellen zu lassen?</p>
+            </div>
         </body>
     </text>
 </TEI>
-    

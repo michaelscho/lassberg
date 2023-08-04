@@ -4,59 +4,79 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Brief von Joseph von Laßberg an Adelbert von Keller (28.07.1842).</title>
+                <title>Brief von Johann Adam Pupikofer an Joseph von Laßberg (04.08.1827).</title>
                 <respStmt>
                     <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
                     <name>Michael Schonhardt</name>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
-                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 normalisiert.</p>
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
                     <msIdentifier>
-                        <settlement>Krakau</settlement>
-                        <repository>Jagiellonische Bibliothek</repository>
-                        <idno type="signature"/>
-                        <idno type="register-harris">1186</idno>
-                        <idno type="register-lassberg">129</idno>
+                        <settlement>Frauenfeld</settlement>
+                        <repository>Thurgauische Kantonsbibliothek</repository>
+                        <idno type="signature"></idno>
+                        <idno type="register-harris">2181</idno>
+                        <idno type="register-lassberg">nan</idno>
                     </msIdentifier>
                     <additional>
                         <surrogates>
-                            <bibl type="printed">nan
-                            <ref>nan</ref>
-                            </bibl>
+                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 16 (1888), S.  1-32 und 97-154, S. 14<ref>https://books.google.de/books?id=XWY5AAAAMAAJ</ref></bibl>
                         </surrogates>
                     </additional>
                 </msDesc>
             </sourceDesc>
         </fileDesc>
         <profileDesc>
-            <correspDesc xml:id="correspDesc-1186">
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1186">
                 <correspAction type="sent">
-                    <persName ref="lassberg-correspondent-0373">Joseph von Laßberg</persName>
-                    <placeName ref="lassberg-place-0101">Meersburg</placeName>
-                    <date when="1842-07-28">28.07.1842</date>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X"
+                        >Johann Adam Pupikofer</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-{PLACE_FROM_NUMBER}" ref="{PLACE_FROM_METADATA}">{PLACE_SENT_FROM}</placeName>
+                    <date when="1827-08-04">04.08.1827</date>
                 </correspAction>
                 <correspAction type="received">
-                    <persName ref="lassberg-correspondent-0002">Adelbert von Keller</persName>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-{PLACE_TO_NUMBER}" ref="{PLACE_TO_METADATA}">{PLACE_SENT_TO}</placeName>
                 </correspAction>
-                <noteGrp type="chatgpt">
-                    <note type="chatgpt-summary"/>
-                    <note type="chatgpt-keytopics"/>
-                    <note type="chatgpt-persons"/>
-                    <note type="chatgpt-texts"/>
-                    <note type="chatgpt-objects"/>
-                    <note type="chatgpt-manuscripts"/>
-                </noteGrp>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <ref type="cmif:mentionsPerson" target=""><rs>Maßmanns</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Lachmanns</rs></ref>
+<ref type="cmif:mentionsBibl" target=""><rs>Walthers von der Vogelweide</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Geijers</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Schweden</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Bischofzell</rs></ref>
+                </note>
             </correspDesc>
         </profileDesc>
     </teiHeader>
     <text>
         <body>
-            <p/>
+            <div type="original" resp="ocr">
+                <p>Hochwohlgeborner Herr und Gönner!
+Die paar Tage, die sie für Ihre Abwesenheit bestimmt hatten, sind zu Monaten geworden, und ich hatte bald eigentliches Heimweh zu Ihnen. Dennoch kann ich so schnell nicht kommen, als ich wünschte. Ein rheumatisches Uebel, das mir seit bald zwei Monaten im Körper, besonders in der linken Seite des Kopfes herumzieht, und wogegen ich jetzt Ptisane schlucke, hält mich bei Hause gefangen. An meinen gewöhnlichen Geschäften werde ich indessen nur periodisch gehindert. Als Vorläufer meines auf den Anfang der künftigen Woche verschobenen Besuchs sende ich einige Ihrer Bücher voraus. Bevor ich wußte, daß Sie zu Hause seien, wollte ich dieselben nicht schicken, da ich mir die Möglichkeit dachte, unterdessen davon Gebrauch machen zu können. <rs type="person" key="">Maßmanns</rs> Aufsatz las ich recht gerne und danke Ihnen sehr dafür. Vor einigen Tagen habe ich <rs type="person" key="">Lachmanns</rs> Ausgabe <rs type="misc" key="">Walthers von der Vogelweide</rs> erhalten, einiges darin auch gelesen. Als Vorrath ist das Ding recht brav, aber die neue Recension des Textes und die Auswahl der Lesearten gefiel mir nicht ganz. Sie wissen wohl, wie wenig Gewicht mein Tadel hat; ich spreche meinen Zweifel blos aus, um Sie um Belehrung zu bitten. <rs type="person" key="">Geijers</rs> Urgeschichte von <rs type="place" key="">Schweden</rs> ist Ihnen vielleicht auf der Reise entgangen. Ich lese dieselben mit vielem Vergnügen und lege sie Ihnen bei. Der Andeutungen auf altdeutsche Dichtung mangelt es darin nicht. Meine liebe Frau freut sich Ihrer Wiederkunft gar sehr. 
+Wir beide empfehlen uns Ihrer ferneren Gewogenheit. <rs type="person" key="">Diac</rs>. Pupikofer.
+<rs type="place" key="">Bischofzell</rs> den 4. August 1827.</p>
+            </div>
+            <div type="normalized" resp="GPT3.5">
+                <p>Hochwohlgeborner Herr und Gönner!
+Die paar Tage, die Sie für Ihre Abwesenheit bestimmt hatten, sind zu Monaten geworden, und ich hatte bald eigentliches Heimweh nach Ihnen. Dennoch kann ich so schnell nicht kommen, wie ich wünschte. Ein rheumatisches Uebel, das mir seit bald zwei Monaten im Körper, besonders in der linken Seite des Kopfes herumzieht, und wogegen ich jetzt Ptisane schlucke, hält mich bei Hause gefangen. An meinen gewöhnlichen Geschäften werde ich indessen nur periodisch gehindert. Als Vorläufer meines auf den Anfang der künftigen Woche verschobenen Besuchs sende ich einige Ihrer Bücher voraus. Bevor ich wusste, dass Sie zu Hause seien, wollte ich dieselben nicht schicken, da ich mir die Möglichkeit dachte, unterdessen davon Gebrauch machen zu können. <rs type="person" key="">Maßmanns</rs> Aufsatz las ich recht gerne und danke Ihnen sehr dafür. Vor einigen Tagen habe ich <rs type="person" key="">Lachmanns</rs> Ausgabe <rs type="misc" key="">Walthers von der Vogelweide</rs> erhalten, einiges darin auch gelesen. Als Vorrat ist das Ding recht brav, aber die neue Rezension des Textes und die Auswahl der Lesearten gefiel mir nicht ganz. Sie wissen wohl, wie wenig Gewicht mein Tadel hat; ich spreche meinen Zweifel bloß aus, um Sie um Belehrung zu bitten. <rs type="person" key="">Geijers</rs> Urgeschichte von <rs type="place" key="">Schweden</rs> ist Ihnen vielleicht auf der Reise entgangen. Ich lese dieselben mit vielem Vergnügen und lege sie Ihnen bei. Der Andeutungen auf altdeutsche Dichtung mangelt es darin nicht. Meine liebe Frau freut sich Ihrer Wiederkunft gar sehr.
+Wir beide empfehlen uns Ihrer weiteren Gewogenheit. Diac. Pupikofer.
+<rs type="place" key="">Bischofzell</rs> den 4. August 1827.</p>
+            </div>
         </body>
     </text>
 </TEI>
-    

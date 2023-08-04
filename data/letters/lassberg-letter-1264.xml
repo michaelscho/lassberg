@@ -4,59 +4,84 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Brief von Joseph von Laßberg an Franz Karl Grieshaber (28.05.1845).</title>
+                <title>Brief von Johann Adam Pupikofer an Joseph von Laßberg (04.12.1828).</title>
                 <respStmt>
                     <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
                     <name>Michael Schonhardt</name>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
-                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 normalisiert.</p>
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
                     <msIdentifier>
-                        <settlement>Freiburg i.Br.</settlement>
-                        <repository>UniversitÃ¤tsbibliothek</repository>
-                        <idno type="signature"/>
-                        <idno type="register-harris">1264</idno>
-                        <idno type="register-lassberg">?</idno>
+                        <settlement>Frauenfeld</settlement>
+                        <repository>Thurgauische Kantonsbibliothek</repository>
+                        <idno type="signature"></idno>
+                        <idno type="register-harris">2225</idno>
+                        <idno type="register-lassberg">nan</idno>
                     </msIdentifier>
                     <additional>
                         <surrogates>
-                            <bibl type="printed">nan
-                            <ref>nan</ref>
-                            </bibl>
+                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 16 (1888), S.  1-32 und 97-154, S. 27<ref>https://books.google.de/books?id=XWY5AAAAMAAJ</ref></bibl>
                         </surrogates>
                     </additional>
                 </msDesc>
             </sourceDesc>
         </fileDesc>
         <profileDesc>
-            <correspDesc xml:id="correspDesc-1264">
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1264">
                 <correspAction type="sent">
-                    <persName ref="lassberg-correspondent-0373">Joseph von Laßberg</persName>
-                    <placeName ref="lassberg-place-0101">Meersburg</placeName>
-                    <date when="1845-05-28">28.05.1845</date>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X"
+                        >Johann Adam Pupikofer</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-{PLACE_FROM_NUMBER}" ref="{PLACE_FROM_METADATA}">{PLACE_SENT_FROM}</placeName>
+                    <date when="1828-12-04">04.12.1828</date>
                 </correspAction>
                 <correspAction type="received">
-                    <persName ref="lassberg-correspondent-0105">Franz Karl Grieshaber</persName>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-{PLACE_TO_NUMBER}" ref="{PLACE_TO_METADATA}">{PLACE_SENT_TO}</placeName>
                 </correspAction>
-                <noteGrp type="chatgpt">
-                    <note type="chatgpt-summary"/>
-                    <note type="chatgpt-keytopics"/>
-                    <note type="chatgpt-persons"/>
-                    <note type="chatgpt-texts"/>
-                    <note type="chatgpt-objects"/>
-                    <note type="chatgpt-manuscripts"/>
-                </noteGrp>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0170"><rs>Grimm</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0141"><rs>St. Gallen</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Schinzens</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0150"><rs>J. Heinrich</rs></ref>
+<ref type="cmif:mentionsBibl" target=""><rs>Anelago</rs></ref>
+<ref type="cmif:mentionsBibl" target=""><rs>Andilag</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0170"><rs>Grimm</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0170"><rs>Grimm</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0252"><rs>Haltaus</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Ducange</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0205"><rs>Mörikofer</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Bischofzell</rs></ref>
+                </note>
             </correspDesc>
         </profileDesc>
     </teiHeader>
     <text>
         <body>
-            <p/>
+            <div type="original" resp="ocr">
+                <p>Hochverehrtester Herr Baron!
+Letzten Samstag wurde es mir nicht zu gute, zu den Ihnen übersandten Büchern auch nur ein Wort außer flüchtigen Notizen zu <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0170"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0170"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0170">Grimm</rs></rs></rs> beifügen zu können. Ich hoffte, Sie bald zu sehen und Ihnen mündlich zu sagen, wie viel Freude die deutschen Rechts Alterthümer mir gemacht haben: allein ich wurde am Sonntage aufgefordert, für zwei Tage in häuslichen Angelegenheiten mich zu entfernen, und Morgen soll dieß nun geschehen; ich kann also am Freitag keine Schwabenknöpfle und Baierische Knödel mit Ihnen essen. Letzten Montag war ich in <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0141">St. Gallen</rs>, um seit drei Jahren zum ersten Male wieder der naturforschenden Gesellschaft, deren unwürdiges Mitglied ich bin, ein Zeichen meines Lebens zu geben. Ich habe aus der Vadianischen Bucherei <rs type="person" key="">Schinzens</rs> Beiträge, die Sie einst zu sehen wünschten mitgenommen. Es scheint mir, es sei manches lesenswürdige darin; das aber, was Sie erwarteten, wohl nicht; denn dieser Schinz ist nicht der <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0150">J. Heinrich</rs>, der über die Geschichte der Welfen, Toggenburger, Regensberger geforscht hat. Ich weiß nicht, ist es mir im Traume oder im Wachen eingefallen, daß die <rs type="misc" key="">Anelago</rs>, <rs type="misc" key="">Andilag</rs> etc. worüber <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0170"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0170"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0170">Grimm</rs></rs></rs> sich den Kopf zerstößt, nichts anders, als die investitura sei; wir sagen ja jetzt noch statt ankleiden nur anlegen; Ankleidung würde also bei uns Anlage heißen und dadurch gar wohl jene gerichtliche Formel bezeichnet werden können. Ich erinnere mich nicht, ob <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0170"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0170"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0170">Grimm</rs></rs></rs> von der Investur besonders handle. Den Haltaus und <rs type="person" key="">Ducange</rs> habe ich leider nur einmal gesehen in meinem Leben. <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0205">Mörikofer</rs> wird Ihnen die deutsche Marschalken Urkunde nächstens senden. Ihren freundlichen Hausgenossen, die bei der kalten Witterung ohne Zweifel alles Reisen vergessen, wünsche ich einen recht warmen Ofen, und Sie bitte ich um die Fortsetzung Ihrer gütigen Gesinnungen gegen
+Ihren Pupikofer.
+<rs type="place" key="">Bischofzell</rs>, den 4. Dec. 1828.</p>
+            </div>
+            <div type="normalized" resp="GPT3.5">
+                <p>Hochverehrtester Herr Baron!
+Letzten Samstag wurde es mir nicht zu gute, zu den Ihnen übersandten Büchern auch nur ein Wort außer flüchtigen Notizen zu <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0170"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0170"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0170">Grimm</rs></rs></rs> beifügen zu können. Ich hoffte, Sie bald zu sehen und Ihnen mündlich zu sagen, wie viel Freude die deutschen Rechts Altertümer mir gemacht haben: allein ich wurde am Sonntag aufgefordert, für zwei Tage in häuslichen Angelegenheiten mich zu entfernen, und Morgen soll dies nun geschehen; ich kann also am Freitag keine Schwabenknöpfle und Bayerische Knödel mit Ihnen essen. Letzten Montag war ich in <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0141">St. Gallen</rs>, um seit drei Jahren zum ersten Mal wieder der naturforschenden Gesellschaft, deren unwürdiges Mitglied ich bin, ein Zeichen meines Lebens zu geben. Ich habe aus der Vadianischen Bucherei <rs type="person" key="">Schinzens</rs> Beiträge, die Sie einst zu sehen wünschten, mitgenommen. Es scheint mir, es sei manches lesenswürdige darin; das aber, was Sie erwarteten, wohl nicht; denn dieser Schinz ist nicht der <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0150">J. Heinrich</rs>, der über die Geschichte der Welfen, Toggenburger, Regensberger geforscht hat. Ich weiß nicht, ist es mir im Traume oder im Wachen eingefallen, dass die <rs type="misc" key="">Anelago</rs>, <rs type="misc" key="">Andilag</rs> etc. worüber <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0170"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0170"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0170">Grimm</rs></rs></rs> sich den Kopf zerstößt, nichts anderes als die Investitur sei; wir sagen ja jetzt noch statt ankleiden nur anlegen; Ankleidung würde also bei uns Anlage heißen und dadurch gar wohl jene gerichtliche Formel bezeichnet werden können. Ich erinnere mich nicht, ob <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0170"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0170"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0170">Grimm</rs></rs></rs> von der Investur besonders handle. Den <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0252">Haltaus</rs> und <rs type="person" key="">Ducange</rs> habe ich leider nur einmal gesehen in meinem Leben. <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0205">Mörikofer</rs> wird Ihnen die deutsche Marschalken Urkunde nächstens senden. Ihren freundlichen Hausgenossen, die bei der kalten Witterung ohne Zweifel alles Reisen vergessen, wünsche ich einen recht warmen Ofen, und Sie bitte ich um die Fortsetzung Ihrer gütigen Gesinnungen gegen Ihren Pupikofer.
+<rs type="place" key="">Bischofzell</rs>, den 4. Dez. 1828.</p>
+            </div>
         </body>
     </text>
 </TEI>
-    

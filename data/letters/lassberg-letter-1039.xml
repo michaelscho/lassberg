@@ -4,59 +4,101 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Brief von Joseph von Laßberg an August Ludwig Reyscher (07.02.1839).</title>
+                <title>Brief von Johann Adam Pupikofer an Joseph von Laßberg (29.10.1825).</title>
                 <respStmt>
                     <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
                     <name>Michael Schonhardt</name>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
-                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 normalisiert.</p>
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
                     <msIdentifier>
-                        <settlement>Stuttgart</settlement>
-                        <repository>WÃ¼rttembergische Landesbibliothek</repository>
-                        <idno type="signature"/>
-                        <idno type="register-harris">1039</idno>
-                        <idno type="register-lassberg">30</idno>
+                        <settlement>Frauenfeld</settlement>
+                        <repository>Thurgauische Kantonsbibliothek</repository>
+                        <idno type="signature"></idno>
+                        <idno type="register-harris">2092</idno>
+                        <idno type="register-lassberg">nan</idno>
                     </msIdentifier>
                     <additional>
                         <surrogates>
-                            <bibl type="printed">nan
-                            <ref>nan</ref>
-                            </bibl>
+                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 15 (1887), S. 231-88, S. 287<ref>https://books.google.de/books?id=dXkKAAAAIAAJ</ref></bibl>
                         </surrogates>
                     </additional>
                 </msDesc>
             </sourceDesc>
         </fileDesc>
         <profileDesc>
-            <correspDesc xml:id="correspDesc-1039">
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1039">
                 <correspAction type="sent">
-                    <persName ref="lassberg-correspondent-0373">Joseph von Laßberg</persName>
-                    <placeName ref="lassberg-place-0043">Eppishausen</placeName>
-                    <date when="1839-02-07">07.02.1839</date>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X"
+                        >Johann Adam Pupikofer</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-{PLACE_FROM_NUMBER}" ref="{PLACE_FROM_METADATA}">{PLACE_SENT_FROM}</placeName>
+                    <date when="1825-10-29">29.10.1825</date>
                 </correspAction>
                 <correspAction type="received">
-                    <persName ref="lassberg-correspondent-0025">August Ludwig Reyscher</persName>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-{PLACE_TO_NUMBER}" ref="{PLACE_TO_METADATA}">{PLACE_SENT_TO}</placeName>
                 </correspAction>
-                <noteGrp type="chatgpt">
-                    <note type="chatgpt-summary"/>
-                    <note type="chatgpt-keytopics"/>
-                    <note type="chatgpt-persons"/>
-                    <note type="chatgpt-texts"/>
-                    <note type="chatgpt-objects"/>
-                    <note type="chatgpt-manuscripts"/>
-                </noteGrp>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0043"><rs>Eppishausen</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0043"><rs>Eppishausen</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0288"><rs>Uhland</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs>Hartmann von Owe</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs>Walter von der Vogelweide</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Reichenau</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Kefsweil</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Scherzingen</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Owe</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0166"><rs>Zürich</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Grimms</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Bodmers</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Bayern</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Müllers</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs>Gottfried von Strassburg</rs></ref>
+<ref type="cmif:mentionsBibl" target=""><rs>Liedersaales</rs></ref>
+<ref type="cmif:mentionsBibl" target=""><rs>Nibelungenlied</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0036"><rs>Darmstadt</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Berthold</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Ungarn</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Frankreich</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs>Peter von Savoyen</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs>Rudolf von Habsburg</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs>Hermann von Heimberg</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0155"><rs>Würzburg</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0363"><rs>Prinz</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Konradin</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0043"><rs>Eppishausen</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0179"><rs>Pupikofer</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Bischofzell</rs></ref>
+                </note>
             </correspDesc>
         </profileDesc>
     </teiHeader>
     <text>
         <body>
-            <p/>
+            <div type="original" resp="ocr">
+                <p>Hochwohlgeborner Herr!
+Schon zum dritten Male suchte ich Sie umsonst auf Ihrem Musensitze zu <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs></rs></rs> in den drei letzten Wochen auf; und immer umsonst, so daß ich nun fast die Hoffnung aufgeben muß, Sie vor Anbruch des Winters noch sehen zu können; denn rauh weht schon der Wind über die Berge her, nicht geeignet, Sie lange in <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs></rs></rs> zu fesseln. Ich nehme daher die Freiheit, Ihnen schriftlich mitzutheilen, was ich lieber mündlich gesagt hätte. Allervorderst sage ich Ihnen herzlichen Dank für die gütige Mittheilung der Notitia imperii; ich habe das ganze Werk durchblättert, vieles gelesen, einiges excerpirt, und mich überzeugt, daß die Combination in diesem Werke noch vieles auffinden möchte, was der bloß das einzelne auffassende Blick so leicht übersieht. Wenn ich mich recht erinnere, glaube ich einmal von Ihnen vernommen zu haben, dafs Herr <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0288">Uhland</rs> den Dichter <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">Hartmann von <rs type="person" key="">Owe</rs></rs> auf ähnliche Weise wie den <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">Walter von der Vogelweide</rs> zum Gegenstand einer Abhandlung machen wolle, aber die Heimath desselben nicht kenne, und auf <rs type="place" key="">Reichenau</rs> rathe. Nun finde ich im Jahr 1610 einen Pfarrer zu <rs type="place" key="">Kefsweil</rs> und 1611 zu <rs type="place" key="">Scherzingen</rs> des Geschlechts von <rs type="person" key="">Owe</rs>. Es möchte dieses eine Spur sein, dem Wohnsitze dieses Geschlechtes näher zu kommen, und ich werde nicht unterlassen, in <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0166">Zürich</rs> über die Lebensverhältnisse jenes Mannes Nachfrage zu halten. Je mehr ich <rs type="person" key="">Grimms</rs> deutsche Grammatik lese, desto weniger kann ich mich in seine Ansichten finden. Ich kann nicht recht begreifen, wie im Laufe der Zeiten die gothischen Vokale und Konsonanten in andere Töne übergegangen seien, und sich somit die Dialekte der verschiedenen Jahrhunderte auseinander entwickelt haben. Ich glaube bisher im Gegentheil, dafs bald der baierisch, bald der schwäbische, bald der fränkische Dialekt sich in der Schriftsprache geltend gemacht, und über andere Dialekte erhoben habe, je nachdem in diesem oder jenem Lande mehr Liebe zur Literatur herrschte. So läfst sich ja in <rs type="person" key="">Bodmers</rs> Sammlung der Minnesänger bei gleichzeitigen Verfassern Verschiedenheit des Dialektcs nachweisen, und in <rs type="place" key="">Bayern</rs> ertönen jetzt noch die gothischen Laute. Sollte ich in meiner Ansicht irren, so unterziehe ich mich gerne Ihrem hierin kompetenten Urtheile; möchte indess, weil mich die Sache interessirt, doch etwas weiter nachforschen, als ich bisher gethan, und zu diesem Ende hin die Denkmäler der altdeutschen Sprache bei meinen Forschungen über die Landesgeschichte, zum Gegenstand meiner Nebenstudien machen. Aus diesem Grunde bitte ich Sie um Mittheilung von <rs type="person" key="">Müllers</rs> Sammlung und des <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">Gottfried von Strassburg</rs> Werke, oder um anderes, was noch förderlicher für meinen Zweck oder für Sie entbehrlicher ist. Wenn ich dieser Bitte noch diejenige um den dritten Band des <rs type="misc" key="">Liedersaales</rs> und das <rs type="misc" key="">Nibelungenlied</rs> Ihrer Ausgabe beifüge, so thue ich das nur in der Erwartung, dafs Sie mir den Preis derselben ansetzen; denn ich wüsste nicht, wie ich Sie auf andere Weise entschädigen könnte. Auch nehme ich Ihre Güte sonst so sehr in Anspruch, dass ich schon lange der Unbescheidenheit mich anzuklagen Ursache hätte. Ein Recensent der Kirchenzeitung, die in <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0036">Darmstadt</rs> herauskommt, hat die Predigten des Franciskaners <rs type="person" key="">Berthold</rs> ganz verlästert: Der Inhalt derselben sei werthlos, die Sprache abscheulich. Ich hätte wohl Lust etwas zu entgegnen, wenn ich denken könnte, dadurch etwas zu nützen, und vielleicht thue ich's dennoch. Uebrigens bin ich bei nochmaligem Durchlesen jener Predigten auf eine Stelle aufmerksam gemacht geworden, aus welcher sich das Zeitalter des Verfassers ziemlich genau bestimmen lässt. Er sagt p. 391 „Sie werden sich am Ende der Welt so untereinander schlagen, dass ihr Blut untereinander fliesst. Das hat nun angehoben, da der von <rs type="place" key="">Ungarn</rs> und der von <rs type="place" key="">Böheim</rs> stritten und der König von <rs type="place" key="">Frankreich</rs>, der auch einen grossen Streit jenseifs des Meeres hat, und der Graf <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">Peter von Savoyen</rs>, und Graf <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">Rudolf von Habsburg</rs> und Graf <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">Hermann von Heimberg</rs> und der Bischof von <rs type="place" key="">Würzberg</rs> und König <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0363">Prinz</rs> mit deutschem Volke." Ob der letztere nicht selbst <rs type="person" key="">Konradin</rs> gewesen sein möchte? Sollte ich Sie, Hochwohlgeborner, hochverehrter Herr, nicht mehr in diesem Herbste in <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs></rs></rs> zu sehen das Vergnügen haben, so wünsche ich Ihnen von Herzen einen recht angenehmen Winteraufenthalt und reiche Fundgruben für Ihre verdienstlichen Forschungen. Möge der Lenz Sie denn wieder mit den Schwalben herführen und Ihre Gewogenheit mir ferner Aufmunteruug und Stärkung geben. Genehmigen Sie die Versicherung, dass ich mit unbeschränkter Hochachtung und Freundschaftlichkeit verbleibe Ihr ergebenster Diac. <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0179">Pupikofer</rs>.
+<rs type="place" key="">Bischofzell</rs>, den 29. Weinmonat 1825.</p>
+            </div>
+            <div type="normalized" resp="GPT3.5">
+                <p>Hochwohlgeborener Herr!
+Schon zum dritten Male suchte ich Sie umsonst auf Ihrem Musensitz zu <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs></rs></rs> in den drei letzten Wochen auf; und immer umsonst, so dass ich nun fast die Hoffnung aufgeben muss, Sie vor Anbruch des Winters noch sehen zu können; denn rauh weht schon der Wind über die Berge her, nicht geeignet, Sie lange in <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs></rs></rs> zu fesseln. Ich nehme daher die Freiheit, Ihnen schriftlich mitzuteilen, was ich lieber mündlich gesagt hätte. Allervorderst sage ich Ihnen herzlichen Dank für die gütige Mitteilung der Notitia imperii; ich habe das ganze Werk durchgeblättert, vieles gelesen, einiges exzerpiert, und mich überzeugt, dass die Kombination in diesem Werk noch vieles auffinden möchte, was der bloß das einzelne auffassende Blick so leicht übersieht. Wenn ich mich recht erinnere, glaube ich einmal von Ihnen vernommen zu haben, dass Herr <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0288">Uhland</rs> den Dichter <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">Hartmann von <rs type="person" key="">Owe</rs></rs> auf ähnliche Weise wie den <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">Walter von der Vogelweide</rs> zum Gegenstand einer Abhandlung machen wolle, aber die Heimat desselben nicht kenne, und auf <rs type="place" key="">Reichenau</rs> rate. Nun finde ich im Jahr 1610 einen Pfarrer zu <rs type="place" key="">Kefsweil</rs> und 1611 zu <rs type="place" key="">Scherzingen</rs> des Geschlechts von <rs type="person" key="">Owe</rs>. Es könnte dies eine Spur sein, dem Wohnsitz dieses Geschlechtes näher zu kommen, und ich werde nicht unterlassen, in <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0166">Zürich</rs> über die Lebensverhältnisse jenes Mannes Nachfrage zu halten. Je mehr ich <rs type="person" key="">Grimms</rs> deutsche Grammatik lese, desto weniger kann ich mich in seine Ansichten finden. Ich kann nicht recht begreifen, wie im Laufe der Zeiten die gotischen Vokale und Konsonanten in andere Töne übergegangen sind, und sich somit die Dialekte der verschiedenen Jahrhunderte auseinander entwickelt haben. Ich glaube bisher im Gegenteil, dass bald der bayerisch, bald der schwäbische, bald der fränkische Dialekt sich in der Schriftsprache geltend gemacht, und über andere Dialekte erhoben hat, je nachdem in diesem oder jenem Lande mehr Liebe zur Literatur herrschte. So lässt sich ja in <rs type="person" key="">Bodmers</rs> Sammlung der Minnesänger bei gleichzeitigen Verfassern Verschiedenheit des Dialekts nachweisen, und in <rs type="place" key="">Bayern</rs> erklingen jetzt noch die gotischen Laute. Sollte ich in meiner Ansicht irren, so unterziehe ich mich gerne Ihrem hierin kompetenten Urteil; möchte indes, weil mich die Sache interessiert, doch etwas weiter nachforschen, als ich bisher getan, und zu diesem Ende hin die Denkmäler der altdeutschen Sprache bei meinen Forschungen über die Landesgeschichte, zum Gegenstand meiner Nebenstudien machen. Aus diesem Grund bitte ich Sie um Mitteilung von <rs type="person" key="">Müllers</rs> Sammlung und des <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">Gottfried von Strassburg</rs> Werke, oder um anderes, was noch förderlicher für meinen Zweck oder für Sie entbehrlicher ist. Wenn ich dieser Bitte noch diejenige um den dritten Band des <rs type="misc" key="">Liedersaales</rs> und das <rs type="misc" key="">Nibelungenlied</rs> Ihrer Ausgabe beifüge, so tue ich das nur in der Erwartung, dass Sie mir den Preis derselben ansetzen; denn ich wüsste nicht, wie ich Sie auf andere Weise entschädigen könnte. Auch nehme ich Ihre Güte sonst so sehr in Anspruch, dass ich schon lange der Unbescheidenheit mich anzuklagen Ursache hätte. Ein Rezensent der Kirchenzeitung, die in <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0036">Darmstadt</rs> herauskommt, hat die Predigten des Franziskaners <rs type="person" key="">Berthold</rs> ganz verlästert: Der Inhalt derselben sei wertlos, die Sprache abscheulich. Ich hätte wohl Lust etwas zu entgegnen, wenn ich denken könnte, dadurch etwas zu nützen, und vielleicht tue ich es dennoch. Überdies bin ich bei nochmaligem Durchlesen jener Predigten auf eine Stelle aufmerksam gemacht worden, aus welcher sich das Zeitalter des Verfassers ziemlich genau bestimmen lässt. Er sagt S. 391: "Sie werden sich am Ende der Welt so untereinander schlagen, dass ihr Blut untereinander fließt. Das hat nun angehoben, da der von <rs type="place" key="">Ungarn</rs> und der von Böhmen stritten und der König von <rs type="place" key="">Frankreich</rs>, der auch einen großen Streit jenseits des Meeres hat, und der Graf <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">Peter von Savoyen</rs>, und Graf <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">Rudolf von Habsburg</rs> und Graf <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">Hermann von Heimberg</rs> und der Bischof von <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0155">Würzburg</rs> und König <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0363">Prinz</rs> mit deutschem Volke." Ob der letztere nicht selbst <rs type="person" key="">Konradin</rs> gewesen sein möchte? Sollte ich Sie, Hochwohlgeborener, hochverehrter Herr, nicht mehr in diesem Herbst in <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs></rs></rs> zu sehen das Vergnügen haben, so wünsche ich Ihnen von Herzen einen recht angenehmen Winteraufenthalt und reiche Fundgruben für Ihre verdienstlichen Forschungen. Möge der Frühling Sie dann wieder mit den Schwalben herführen und Ihre Gewogenheit mir weiterhin Aufmunterung und Stärkung geben. Genehmigen Sie die Versicherung, dass ich mit unbeschränkter Hochachtung und Freundschaftlichkeit verbleibe Ihr ergebenster Diac. <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0179">Pupikofer</rs>.
+<rs type="place" key="">Bischofzell</rs>, den 29. Weinmonat 1825.</p>
+            </div>
         </body>
     </text>
 </TEI>
-    

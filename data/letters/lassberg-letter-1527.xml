@@ -4,59 +4,86 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Brief von Joseph von Laßberg an Johann Franz Freiherr von Bodman (unbekanntes Datum).</title>
+                <title>Brief von Joseph von Laßberg an Johann Adam Pupikofer (01.03.1831).</title>
                 <respStmt>
                     <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
                     <name>Michael Schonhardt</name>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
-                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 normalisiert.</p>
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
                     <msIdentifier>
-                        <settlement>Bodman</settlement>
-                        <repository>Archiv der Grafen von Bodman</repository>
-                        <idno type="signature"/>
-                        <idno type="register-harris">1527</idno>
-                        <idno type="register-lassberg">nan</idno>
+                        <settlement>Winterthur</settlement>
+                        <repository>Stadtbibliothek</repository>
+                        <idno type="signature"></idno>
+                        <idno type="register-harris">764</idno>
+                        <idno type="register-lassberg">71</idno>
                     </msIdentifier>
                     <additional>
                         <surrogates>
-                            <bibl type="printed">nan
-                            <ref>nan</ref>
-                            </bibl>
+                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 15 (1887), S. 231-88, S. 268<ref>https://books.google.de/books?id=dXkKAAAAIAAJ</ref></bibl>
                         </surrogates>
                     </additional>
                 </msDesc>
             </sourceDesc>
         </fileDesc>
         <profileDesc>
-            <correspDesc xml:id="correspDesc-1527">
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1527">
                 <correspAction type="sent">
-                    <persName ref="lassberg-correspondent-0373">Joseph von Laßberg</persName>
-                    <placeName ref="lassberg-place-0152">Unbekannt</placeName>
-                    <date when="unknown">unbekanntes Datum</date>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1831-03-01">01.03.1831</date>
                 </correspAction>
                 <correspAction type="received">
-                    <persName ref="lassberg-correspondent-0197">Johann Franz Freiherr von Bodman</persName>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X"
+                        >Johann Adam Pupikofer</persName>
+                    
                 </correspAction>
-                <noteGrp type="chatgpt">
-                    <note type="chatgpt-summary"/>
-                    <note type="chatgpt-keytopics"/>
-                    <note type="chatgpt-persons"/>
-                    <note type="chatgpt-texts"/>
-                    <note type="chatgpt-objects"/>
-                    <note type="chatgpt-manuscripts"/>
-                </noteGrp>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <ref type="cmif:mentionsPerson" target=""><rs>Fridericus Ahenobarbus</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0136"><rs>Sigmaringen</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Ludens</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Richelieu</rs></ref>
+<ref type="cmif:mentionsOrganisation" target=""><rs>Schweden</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0082"><rs>Konstanz</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Kesselring</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Sancho Pansa</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0373"><rs>J. Laßberg</rs></ref>
+                </note>
             </correspDesc>
         </profileDesc>
     </teiHeader>
     <text>
         <body>
-            <p/>
+            <div type="original" resp="ocr">
+                <p>E. am 1. márz 1831.
+Lieber Herr und Nachbar!
+Da mein Son <rs type="person" key="">Fridericus Ahenobarbus</rs> laut einem heute von jm erhaltenen schreiben, sich in soweit besser fület, daß er zu seiner zerstreuung wieder arbeiten kann; so verlangt er von mir die urkunden, die ich aus seinen archivalischen sendungen abgeschrieben habe, um sie auch für sich zu copiren; ich ersuche Sie daher mir diejenigen, welche Sie lezthin von hier mitgenommen haben, umgehend zu übermachen, damit ich sie mit merern andern übermorgen durch den <rs type="place" key="">Constanz</rs>er boten nach <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0136">Sigmaringen</rs> verschiken kann. Sie wissen wol, den kranken muss man iren willen tun. Sollten bei dieser gelegenheit einige morgenblåtter mit spazieren können; so wáre dieses futter für Sonntag, welchen ich immer dem: dolce far niente, zu schenken pflege. Ludens gesch: habe ich mit großem vergnügen gelesen und verdanke Inen gerne diesen nicht allzutáglichen genuß. In den mcmoires du <rs type="person" key="">cardinal</rs> <rs type="person" key="">de Richelieu</rs>, Tome VIII. habe ich auch ein langes und breites über das von den <rs type="organisation" key="">Schweden</rs> bei belagerung von <rs type="place" key="">Constanz</rs> betrettene Schweizer gebiet funden, wobei der bekannte <rs type="person" key="">Kesselring</rs> ófters erwánt und bald colonel, bald sergent major genannt wird. der artikel gehet von Seite 263 bis S. 269. Der márz stellt sich bei uns mit sturm- und schneegestóber ein; ist er ein vorbote der heute abend ankommenden constituzion? gestern hatten wir in unserm muldenförmigen tale eine totale überschwemmung, heute ist die schüssel wieder leer und aller schnee weg, et veterem in limo ranae cecinere querelam! Idas ist wol auch eher das schiksal mancher konstituzion gewesen. was haben wir nicht schon alles erlebt, und was werden wir noch erleben? indessen tempora labuntur, tacitisque senescimus annis! Ich komme mir mit meinen sentenzen vor, wie der erliche <rs type="person" key="">Sancho Pansa</rs> mit seinen sprichwörtern.
+Viele grüße an die Irigen von Irem ergebensten
+<rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0373">J.Laßberg</rs>.
+(Das halbe Blat ist abgeschnitten.)</p>
+            </div>
+            <div type="normalized" resp="GPT3.5">
+                <p>E. am 1. März 1831.
+Lieber Herr und Nachbar!
+Da mein Sohn <rs type="person" key="">Fridericus Ahenobarbus</rs> laut einem heute von ihm erhaltenen Schreiben, sich in soweit besser fühlt, dass er zu seiner Zerstreuung wieder arbeiten kann; so verlangt er von mir die Urkunden, die ich aus seinen archivischen Sendungen abgeschrieben habe, um sie auch für sich zu kopieren; ich ersuche Sie daher mir diejenigen, welche Sie neulich von hier mitgenommen haben, umgehend zu übermachen, damit ich sie mit mehreren anderen übermorgen durch den <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0082">Konstanz</rs>er Boten nach <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0136">Sigmaringen</rs> verschicken kann. Sie wissen wohl, den Kranken muss man ihren Willen tun. Sollten bei dieser Gelegenheit einige Morgenblätter mitgenommen werden können; so wäre dies Futter für Sonntag, welchen ich immer dem dolce far niente zu schenken pflege. <rs type="person" key="">Ludens</rs> Geschichte habe ich mit großem Vergnügen gelesen und danke Ihnen gerne für diesen nicht allzu alltäglichen Genuss. In den Memoires du cardinal de <rs type="person" key="">Richelieu</rs>, Tome VIII. habe ich auch ausführlich über das von den <rs type="organisation" key="">Schweden</rs> beim Belagerung von <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0082">Konstanz</rs> betretene Schweizer Gebiet gefunden, wobei der bekannte <rs type="person" key="">Kesselring</rs> oft erwähnt wird und mal als Colonel, mal als Sergent Major bezeichnet wird. Der Artikel geht von Seite 263 bis S. 269. Der März stellt sich bei uns mit Sturm- und Schneegestöber ein; ist er ein Vorbote der heute Abend ankommenden Konstitution? Gestern hatten wir in unserem muldenförmigen Tale eine totale Überschwemmung, heute ist die Schüssel wieder leer und aller Schnee weg, et veterem in limo ranae cecinere querelam! Das ist wohl auch öfter das Schicksal mancher Konstitution gewesen. Was haben wir nicht schon alles erlebt, und was werden wir noch erleben? Indessen tempora labuntur, tacitisque senescimus annis! Ich komme mir mit meinen Sentenzen vor, wie der ehrliche <rs type="person" key="">Sancho Pansa</rs> mit seinen Sprichwörtern.
+Viele Grüße an die Ihren von Ihrem ergebensten
+<rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0373">J. Laßberg</rs>.
+(Das halbe Blatt ist abgeschnitten.)</p>
+            </div>
         </body>
     </text>
 </TEI>
-    

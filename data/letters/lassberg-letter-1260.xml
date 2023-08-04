@@ -4,59 +4,97 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Brief von Joseph von Laßberg an Franz Viktor Pfeiffer (12.04.1845).</title>
+                <title>Brief von Joseph von Laßberg an Johann Adam Pupikofer (22.11.1828).</title>
                 <respStmt>
                     <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
                     <name>Michael Schonhardt</name>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
-                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 normalisiert.</p>
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
                     <msIdentifier>
-                        <settlement>Stuttgart</settlement>
-                        <repository>WÃ¼rttembergische Landesbibliothek</repository>
-                        <idno type="signature"/>
-                        <idno type="register-harris">1260</idno>
-                        <idno type="register-lassberg">40</idno>
+                        <settlement>nan</settlement>
+                        <repository>nan</repository>
+                        <idno type="signature"></idno>
+                        <idno type="register-harris">616</idno>
+                        <idno type="register-lassberg">?</idno>
                     </msIdentifier>
                     <additional>
                         <surrogates>
-                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von LaÃŸberg und Ludwig Uhland. Wien 1870, S. 292
-                            <ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref>
-                            </bibl>
+                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 15 (1887), S. 231-88, S. 244<ref>https://books.google.de/books?id=dXkKAAAAIAAJ</ref></bibl>
                         </surrogates>
                     </additional>
                 </msDesc>
             </sourceDesc>
         </fileDesc>
         <profileDesc>
-            <correspDesc xml:id="correspDesc-1260">
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1260">
                 <correspAction type="sent">
-                    <persName ref="lassberg-correspondent-0373">Joseph von Laßberg</persName>
-                    <placeName ref="lassberg-place-0101">Meersburg</placeName>
-                    <date when="1845-04-12">12.04.1845</date>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1828-11-22">22.11.1828</date>
                 </correspAction>
                 <correspAction type="received">
-                    <persName ref="lassberg-correspondent-0109">Franz Viktor Pfeiffer</persName>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X"
+                        >Johann Adam Pupikofer</persName>
+                    
                 </correspAction>
-                <noteGrp type="chatgpt">
-                    <note type="chatgpt-summary"/>
-                    <note type="chatgpt-keytopics"/>
-                    <note type="chatgpt-persons"/>
-                    <note type="chatgpt-texts"/>
-                    <note type="chatgpt-objects"/>
-                    <note type="chatgpt-manuscripts"/>
-                </noteGrp>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0025"><rs>Bischofszell</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Berthold</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Johannes Vitoduranus</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Berthold</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Hotzenwald</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0037"><rs>Donau</rs></ref>
+<ref type="cmif:mentionsBibl" target=""><rs>Liedersaals</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Hofmann</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0031"><rs>Breslau</rs></ref>
+<ref type="cmif:mentionsBibl" target=""><rs>Willeram</rs></ref>
+<ref type="cmif:mentionsBibl" target=""><rs>Hohen Liedes</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Perz</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Hannover</rs></ref>
+<ref type="cmif:mentionsOrganisation" target=""><rs>Archives</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Italien</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>von Raumer</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0082"><rs>Konstanz</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Dänniker</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Johannes Damascenus</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs>J</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0373"><rs>Laßberg</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0043"><rs>Eppishausen</rs></ref>
+                </note>
             </correspDesc>
         </profileDesc>
     </teiHeader>
     <text>
         <body>
-            <p/>
+            <div type="original" resp="ocr">
+                <p>Hochgeertester Herr!
+Ich sende <rs type="person" key=""><rs type="person" key=""><rs type="person" key="">Inen</rs></rs></rs> hier fürs Erste die bodmerische ausgabe der Pariser Hdschrft der Minnesänger; der Nauclerus ist so schwer und groß, daß ich mich nicht getraue ihn mitzuschiken, und deshalb auf eine freie Gelegenheit warte. Sollten Sie bei Irem heurigen Neujarsblatt (:über <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0025">Bischofszell</rs>:) irgend einen Gegenstand finden, bei welchem Sie vermuthen konnten daß ich im Stande wäre Auskunft zu geben; so stehe ich von ganzem Herzen zu Dienste. Ob der Franziskaner <rs type="person" key="">Berthold</rs> schon um das <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">J</rs>ar 1255 in unsern Gegenden gepredigt hat? muß ich schon darum in Zweifel ziehen; weil <rs type="person" key=""><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">J</rs>oh. Vitoduranus</rs> ausdrücklich sagt, daß er Leute gekannt habe, welche ihn predigen hórten. Indessen sind seine Predigten als Teutsche mir allerdings hóchst wichtig; weil sie in der Volkssprache gehalten worden sind. da <rs type="person" key="">Bertold</rs> selbst sie: orationes rusticanas nannte, und ich neme mit dem verbindlichsten Danke den gütigen Antrag an, den Sie mir machen, mir solche ad statum legendi z. übermachen, wozu sich eben jetzt eine Gelegenheit darbietet. Haben Sie die Güte mir zu bemerken, wie bald ich sie zurúksenden soll? Ich habe in diesem Spätherbst eine Ausflucht in den <rs type="place" key="">Hówgau</rs> und einige Gegenden der <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0037">Donau</rs> gemacht, wo mir einige intereßante Notizen über Minnesänger und selbst urkundliche darunter, zur Ausbeute geworden sind. Habe ich <rs type="person" key=""><rs type="person" key=""><rs type="person" key="">Inen</rs></rs></rs> den II. Band des Liedersaales noch nicht überschickt, so kann ich es nun sobald nicht thun; denn von allen noch vorhandenen Exemplaren sind die 12 ersten Bogen verloren gegangen, und werden wol neu gedrukt werden müssen. Indessen glaube ich, daß <rs type="person" key=""><rs type="person" key=""><rs type="person" key="">Inen</rs></rs></rs> lieb sein konnte, die vorrede zu demselben zu kennen und lege sie daher bei. Dr. <rs type="person" key="">Hofmann</rs> in <rs type="place" key="">Breßlau</rs> gibt den <rs type="misc" key="">Willeram</rs>, teutsche Uebersetzung und Auslegung des Hohen liedes auf Subscription neu heraus, das Exemplar kostet 18 <rs type="misc" key="">Bazen</rs>. Archivar <rs type="person" key="">Perz</rs> in <rs type="place" key="">Hannover</rs> hat den V. Band unseres Gesellschafts <rs type="organisation" key="">Archives</rs> herausgegeben, welcher seine auf Kosten der Gesellschaft unternommene Reise nach <rs type="place" key="">Italien</rs> enthält und voll wichtiger Notizen ist. Ser viele Quellen hat er für die Geschichte der Staufen entdekt, die dem bequemen (:ich móchte lieber sagen faulen :) <rs type="person" key="">H. v. Raumer</rs> am Wege lagen und von ihm unbeachtet blieben. Wollen Sie jn lesen, so steht er jnen zu Dienste. Künftigen Samstag gehe ich auf einige Tage nach <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0082">Konstanz</rs>, wenn Sie mir das Vergnügen Ires Besuches gónnen wollten; so würde es im Verlauf dieser Woche mir besonders angenem sein. Empfelen Sie mich dem H. Dekan <rs type="person" key="">Dänniker</rs>, dem ich für seine Notiz über <rs type="person" key=""><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">J</rs>ohannes Damascenus</rs> vielmal danke.
+Mit vollkommener Hochachtung
+Dero ergebenster <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">J</rs>. <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0373">Laßberg</rs>
+<rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs> am 22. Nov. 1828</p>
+            </div>
+            <div type="normalized" resp="GPT3.5">
+                <p>Hochgeehrtester Herr!
+Ich sende Ihnen hier fürs Erste die bodmerische Ausgabe der Pariser Handschrift der Minnesänger; der Nauclerus ist so schwer und groß, dass ich mich nicht traue, ihn mitzuschicken, und deshalb auf eine freie Gelegenheit warte. Sollten Sie bei Ihrem heurigen Neujahrsblatt (:über <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0025">Bischofszell</rs>:) irgend einen Gegenstand finden, bei dem Sie vermuten könnten, dass ich dazu Auskunft geben könnte; so stehe ich Ihnen von ganzem Herzen zu Diensten. Ob der Franziskaner <rs type="person" key=""><rs type="person" key="">Berthold</rs></rs> schon um das <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">J</rs>ahr 1255 in unseren Gegenden gepredigt hat? Muss ich schon deshalb in Zweifel ziehen; weil <rs type="person" key=""><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">J</rs>ohannes Vitoduranus</rs> ausdrücklich sagt, dass er Leute kannte, welche ihn predigen hörten. Indessen sind seine Predigten als Deutsche mir allerdings höchst wichtig; weil sie in der Volkssprache gehalten wurden. Da <rs type="person" key=""><rs type="person" key="">Berthold</rs></rs> selbst sie "orationes rusticanas" nannte, nehme ich mit dem verbindlichsten Dank Ihren Vorschlag an, mir solche zum Lesen zu überlassen, wozu sich gerade jetzt eine Gelegenheit bietet. Haben Sie die Güte mir zu bemerken, wie bald ich sie zurückschicken soll? Ich habe in diesem Spätherbst einen Ausflug in den <rs type="place" key="">Hotzenwald</rs> und einige Gegenden der <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0037">Donau</rs> gemacht, wo mir einige interessante Notizen über Minnesänger und selbst urkundliche darunter, zur Ausbeute geworden sind. Habe ich Ihnen den II. Band des <rs type="misc" key="">Liedersaals</rs> noch nicht überschickt, so kann ich es nun erst einmal nicht tun; denn von allen noch vorhandenen Exemplaren sind die 12 ersten Bogen verloren gegangen, und werden wohl neu gedruckt werden müssen. Indessen glaube ich, dass es Ihnen lieb sein könnte, die Vorrede dazu zu kennen und lege sie daher bei. Dr. <rs type="person" key="">Hofmann</rs> in <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0031">Breslau</rs> gibt den <rs type="misc" key="">Willeram</rs>, deutsche Übersetzung und Auslegung des <rs type="misc" key="">Hohen Liedes</rs>, auf Subscription neu heraus, das Exemplar kostet 18 Batzen. Archivar <rs type="person" key="">Perz</rs> in <rs type="place" key="">Hannover</rs> hat den V. Band unseres Gesellschafts <rs type="organisation" key="">Archives</rs> herausgegeben, welcher seine auf Kosten der Gesellschaft unternommene Reise nach <rs type="place" key="">Italien</rs> enthält und voll wichtiger Notizen ist. Sehr viele Quellen hat er für die Geschichte der Staufen entdeckt, die dem bequemen (:ich wollte lieber sagen: faulen :) Herrn <rs type="person" key="">von Raumer</rs> am Wege lagen und von ihm unbeachtet blieben. Wollen Sie ihn lesen, so steht er Ihnen zu Diensten. Nächsten Samstag gehe ich für einige Tage nach <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0082">Konstanz</rs>, wenn Sie mir das Vergnügen Ihres Besuches gönnen wollten; so würde es im Verlauf dieser Woche für mich besonders angenehm sein. Empfehlen Sie mich dem Herrn Dekan <rs type="person" key="">Dänniker</rs>, dem ich für seine Notiz über <rs type="person" key=""><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">J</rs>ohannes Damascenus</rs> vielmals danke.
+Mit vollkommener Hochachtung
+Ihr ergebenster <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">J</rs>. <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0373">Laßberg</rs>
+<rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs> am 22. Nov. 1828</p>
+            </div>
         </body>
     </text>
 </TEI>
-    

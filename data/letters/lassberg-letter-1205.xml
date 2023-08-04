@@ -4,59 +4,76 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Brief von Joseph von Laßberg an Johann Leonhard Hug (30.12.1842).</title>
+                <title>Brief von Johann Adam Pupikofer an Joseph von Laßberg (22.11.1827).</title>
                 <respStmt>
                     <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
                     <name>Michael Schonhardt</name>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
-                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 normalisiert.</p>
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
                     <msIdentifier>
-                        <settlement>Karlsruhe</settlement>
-                        <repository>Badische Landesbibliothek</repository>
-                        <idno type="signature"/>
-                        <idno type="register-harris">1205</idno>
-                        <idno type="register-lassberg">271</idno>
+                        <settlement>Frauenfeld</settlement>
+                        <repository>Thurgauische Kantonsbibliothek</repository>
+                        <idno type="signature"></idno>
+                        <idno type="register-harris">2192</idno>
+                        <idno type="register-lassberg">nan</idno>
                     </msIdentifier>
                     <additional>
                         <surrogates>
-                            <bibl type="printed">nan
-                            <ref>nan</ref>
-                            </bibl>
+                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 16 (1888), S.  1-32 und 97-154, S. 17<ref>https://books.google.de/books?id=XWY5AAAAMAAJ</ref></bibl>
                         </surrogates>
                     </additional>
                 </msDesc>
             </sourceDesc>
         </fileDesc>
         <profileDesc>
-            <correspDesc xml:id="correspDesc-1205">
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1205">
                 <correspAction type="sent">
-                    <persName ref="lassberg-correspondent-0373">Joseph von Laßberg</persName>
-                    <placeName ref="lassberg-place-0101">Meersburg</placeName>
-                    <date when="1842-12-30">30.12.1842</date>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X"
+                        >Johann Adam Pupikofer</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-{PLACE_FROM_NUMBER}" ref="{PLACE_FROM_METADATA}">{PLACE_SENT_FROM}</placeName>
+                    <date when="1827-11-22">22.11.1827</date>
                 </correspAction>
                 <correspAction type="received">
-                    <persName ref="lassberg-correspondent-0206">Johann Leonhard Hug</persName>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-{PLACE_TO_NUMBER}" ref="{PLACE_TO_METADATA}">{PLACE_SENT_TO}</placeName>
                 </correspAction>
-                <noteGrp type="chatgpt">
-                    <note type="chatgpt-summary"/>
-                    <note type="chatgpt-keytopics"/>
-                    <note type="chatgpt-persons"/>
-                    <note type="chatgpt-texts"/>
-                    <note type="chatgpt-objects"/>
-                    <note type="chatgpt-manuscripts"/>
-                </noteGrp>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0043"><rs>Eppishausen</rs></ref>
+<ref type="cmif:mentionsBibl" target=""><rs>Helvetia</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Cäcilie</rs></ref>
+                </note>
             </correspDesc>
         </profileDesc>
     </teiHeader>
     <text>
         <body>
-            <p/>
+            <div type="original" resp="ocr">
+                <p>Hochwohlgeborner Herr und Gönner!
+Die Witterung ist zu streng, als daß ich mit meinen halb kranken Zähnen an <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs> denken und durch den Schnee waten dürfte. Wie sehr mir dieß leid thut, können Sie am besten erwägen, da auch Sie wohl schon das unangenehme Gefühl empfunden, Ihre Gedanken über Lieblingsbeschäftigungen nicht mittheilen zu können. Für einige früher gebundene Schriften und für die hier mitfolgenden fordert der Buchbinder 53 xr. Das mitkommende Heft der <rs type="misc" key="">Helvetia</rs> hat manche interessante Notiz, doch freilich mehr über die neuere Geschichte. Der Waldmannsche Handel und seine Folgen liegt nun ziemlich offen da. In der Hoffnung, daß Sie mir mein langes Ausbleiben nicht übel deuten, und Ihrem gütigen Andenken mich empfehlend bin ich
+Ihr Diac. Pupikofer.
+Am Tage der Sängerin <rs type="person" key="">Cäcilie</rs> 27.</p>
+            </div>
+            <div type="normalized" resp="GPT3.5">
+                <p>Hochwohlgeborener Herr und Gönner!
+Die Witterung ist zu streng, als dass ich mit meinen halb kranken Zähnen an <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs> denken und durch den Schnee waten dürfte. Wie sehr mir dies leid tut, können Sie am besten erwägen, da auch Sie wohl schon das unangenehme Gefühl empfunden haben, Ihre Gedanken über Lieblingsbeschäftigungen nicht mitteilen zu können. Für einige früher gebundene Schriften und für die hier mitfolgenden fordert der Buchbinder 53 xr. Das mitkommende Heft der <rs type="misc" key="">Helvetia</rs> hat manche interessante Notiz, doch freilich mehr über die neuere Geschichte. Der Waldmannsche Handel und seine Folgen liegen nun ziemlich offen da. In der Hoffnung, dass Sie mir mein langes Ausbleiben nicht übel deuten, und Ihrem gütigen Andenken mich empfehlend, bin ich
+Ihr Diac. Pupikofer.
+Am Tage der Sängerin <rs type="person" key="">Cäcilie</rs> 27.</p>
+            </div>
         </body>
     </text>
 </TEI>
-    

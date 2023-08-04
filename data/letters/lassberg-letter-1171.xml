@@ -4,59 +4,84 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Brief von Joseph von Laßberg an Franz Viktor Pfeiffer (23.04.1842).</title>
+                <title>Brief von Joseph von Laßberg an Johann Adam Pupikofer (03.05.1827).</title>
                 <respStmt>
                     <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
                     <name>Michael Schonhardt</name>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
-                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 normalisiert.</p>
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
                     <msIdentifier>
-                        <settlement>Stuttgart</settlement>
-                        <repository>WÃ¼rttembergische Landesbibliothek</repository>
-                        <idno type="signature"/>
-                        <idno type="register-harris">1171</idno>
-                        <idno type="register-lassberg">61</idno>
+                        <settlement>Winterthur</settlement>
+                        <repository>Stadtbibliothek</repository>
+                        <idno type="signature"></idno>
+                        <idno type="register-harris">579</idno>
+                        <idno type="register-lassberg">90</idno>
                     </msIdentifier>
                     <additional>
                         <surrogates>
-                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von LaÃŸberg und Ludwig Uhland. Wien 1870, S. 275
-                            <ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref>
-                            </bibl>
+                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 15 (1887), S. 231-88, S. 241<ref>https://books.google.de/books?id=dXkKAAAAIAAJ</ref></bibl>
                         </surrogates>
                     </additional>
                 </msDesc>
             </sourceDesc>
         </fileDesc>
         <profileDesc>
-            <correspDesc xml:id="correspDesc-1171">
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1171">
                 <correspAction type="sent">
-                    <persName ref="lassberg-correspondent-0373">Joseph von Laßberg</persName>
-                    <placeName ref="lassberg-place-0101">Meersburg</placeName>
-                    <date when="1842-04-23">23.04.1842</date>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1827-05-03">03.05.1827</date>
                 </correspAction>
                 <correspAction type="received">
-                    <persName ref="lassberg-correspondent-0109">Franz Viktor Pfeiffer</persName>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X"
+                        >Johann Adam Pupikofer</persName>
+                    
                 </correspAction>
-                <noteGrp type="chatgpt">
-                    <note type="chatgpt-summary"/>
-                    <note type="chatgpt-keytopics"/>
-                    <note type="chatgpt-persons"/>
-                    <note type="chatgpt-texts"/>
-                    <note type="chatgpt-objects"/>
-                    <note type="chatgpt-manuscripts"/>
-                </noteGrp>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <ref type="cmif:mentionsPlace" target=""><rs>Exvilla</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Weinfelden</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Rheinhart</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Weinfelden</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Dánnikon</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0082"><rs>Konstanz</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Schwaben</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Epiktet</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0373"><rs>J. v. Laßberg</rs></ref>
+                </note>
             </correspDesc>
         </profileDesc>
     </teiHeader>
     <text>
         <body>
-            <p/>
+            <div type="original" resp="ocr">
+                <p>Ex villa 3. Mey 1827.
+Als ich lezthin den Boten zu <rs type="person" key=""><rs type="person" key="">Inen</rs></rs> sandte zu fragen: ob Sie zu hause seien? geschah es in der absicht, den folgenden tag freitags Sie zu besuchen: allein der Bote brachte mir keine antwort zurúk und so vermuthete ich Sie abwesend. Freitag nachmittags fur ich nach <rs type="place" key="">Weinfelden</rs>, wo ich die glasgemålde des h. Oberamtmanns <rs type="person" key="">Rheinhart</rs> sahe; sie verdienen keiner erwánung; denn was auch früher gutes mag daran gewesen sein, der liebe mann hat sie jámmerlich massakrirt und ware hieroglyphen daraus gemacht. Auch sah ich noch die unter dem namen Burg dort bekannte ruine; und mochte wol iren eigentúmlichen namen wißen, welcher, wie es so heisst, außer der gránze des <rs type="place" key="">Weinfelder</rs> erinnerungs vermógens liegt. Recht gerne wáre ich Irer freundl. einladung zu folge, lezten montag zu den Sanctimonialibus nach <rs type="place" key="">Dánnikon</rs> gereiset: allein unerwarteter besuch von <rs type="person" key="">Constanz</rs> nam nicht nur meine zeit, sondern auch mein pferde mein pferde in beschlag. Gestern wollte ich dem Brunschwilerschen Tentamen beiwohnen, da kam schon in aller frúhe ein junger edelmann aus <rs type="place" key="">Schwaben</rs> zu mir angefaren, der mich de instituendo vitae genere consultiren wollte und bis abends blieb; Sie sehen also mein vererter Freund! daß nach dem epiktet. ausspruche, res quaedam in potestate nostra sunt, aliae non sunt und daß es nichts hilft vorsáze zu machen. Aus der auction haben wir nur wenige búcher bekommen und ich bin nicht mit meinen acquisitionen zufrieden. Soll ich <rs type="person" key=""><rs type="person" key="">Inen</rs></rs> die Irigen durch den Boten senden? Der Bote wartet; vielleicht sehe ich Sie morgen? 
+Raptim wie die alten juristen sagten, 
+Ir ergebenster <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0373">J. v. Laßberg</rs>
+Haben Sie doch die gúte, mir auf die zwei bodenseebúcher weiße titel sezen zu laßen, es wird in einer minute geschehen sein.</p>
+            </div>
+            <div type="normalized" resp="GPT3.5">
+                <p><rs type="place" key="">Exvilla</rs>, 3. Mai 1827.
+Als ich neulich den Boten zu Ihnen sandte, um zu fragen, ob Sie zu Hause sind, geschah es in der Absicht, Sie am folgenden Tag, Freitag, zu besuchen. Allein der Bote brachte mir keine Antwort zurück, und so vermutete ich, dass Sie abwesend sind. Freitagnachmittags fuhr ich nach <rs type="place" key=""><rs type="place" key="">Weinfelden</rs></rs>, wo ich die Glasgemälde des Herrn Oberamtmanns <rs type="person" key="">Rheinhart</rs> sah. Sie verdienen keiner Erwähnung; denn was auch früher gut daran war, hat der liebe Mann jämmerlich massakriert und daraus Hieroglyphen gemacht. Auch sah ich noch die Ruine, die dort unter dem Namen Burg bekannt ist; und ich möchte gerne ihren eigentümlichen Namen wissen, der, wie es heißt, außerhalb der Erinnerungskraft von <rs type="place" key=""><rs type="place" key="">Weinfelden</rs></rs> liegt. Sehr gerne wäre ich Ihrer freundlichen Einladung gefolgt und hätte letzten Montag die Sanctimonialibus in <rs type="place" key="">Dánnikon</rs> besucht. Aber unerwarteter Besuch aus <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0082">Konstanz</rs> beanspruchte nicht nur meine Zeit, sondern auch mein Pferd. Gestern wollte ich am Brunschwilerschen Tentamen teilnehmen, als schon frühmorgens ein junger Edelmann aus <rs type="place" key="">Schwaben</rs> zu mir kam, der mich über den Lebensstil konsultieren wollte und bis abends blieb. Sie sehen also, mein verehrter Freund, dass nach dem Ausspruch von <rs type="person" key="">Epiktet</rs>, "res quaedam in potestate nostra sunt, aliae non sunt" (Einige Dinge liegen in unserer Macht, andere nicht), und dass es nichts hilft, Vorsätze zu machen. Aus der Auktion haben wir nur wenige Bücher bekommen und ich bin mit meinen Akquisitionen nicht zufrieden. Soll ich Ihnen Ihre Bücher durch den Boten senden? Der Bote wartet; vielleicht sehe ich Sie morgen?
+Raptim, wie die alten Juristen sagten,
+Ihr ergebenster <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0373">J. v. Laßberg</rs>
+Haben Sie doch die Güte, mir auf die zwei Bodenseebücher weiße Titel setzen zu lassen; es wird in einer Minute geschehen sein.</p>
+            </div>
         </body>
     </text>
 </TEI>
-    

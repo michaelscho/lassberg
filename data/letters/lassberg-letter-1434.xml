@@ -4,59 +4,91 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Brief von Joseph von Laßberg an Leonhard Hohbach (15.11.1849).</title>
+                <title>Brief von Joseph von Laßberg an Johann Adam Pupikofer (07.04.1830).</title>
                 <respStmt>
                     <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
                     <name>Michael Schonhardt</name>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
-                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 normalisiert.</p>
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
                     <msIdentifier>
-                        <settlement>Karlsruhe</settlement>
-                        <repository>Badische Landesbibliothek</repository>
-                        <idno type="signature"/>
-                        <idno type="register-harris">1434</idno>
-                        <idno type="register-lassberg">177</idno>
+                        <settlement>Winterthur</settlement>
+                        <repository>Stadtbibliothek</repository>
+                        <idno type="signature"></idno>
+                        <idno type="register-harris">715</idno>
+                        <idno type="register-lassberg">120</idno>
                     </msIdentifier>
                     <additional>
                         <surrogates>
-                            <bibl type="printed">nan
-                            <ref>nan</ref>
-                            </bibl>
+                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 15 (1887), S. 231-88, S. 256<ref>https://books.google.de/books?id=dXkKAAAAIAAJ</ref></bibl>
                         </surrogates>
                     </additional>
                 </msDesc>
             </sourceDesc>
         </fileDesc>
         <profileDesc>
-            <correspDesc xml:id="correspDesc-1434">
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1434">
                 <correspAction type="sent">
-                    <persName ref="lassberg-correspondent-0373">Joseph von Laßberg</persName>
-                    <placeName ref="lassberg-place-0101">Meersburg</placeName>
-                    <date when="1849-11-15">15.11.1849</date>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1830-04-07">07.04.1830</date>
                 </correspAction>
                 <correspAction type="received">
-                    <persName ref="lassberg-correspondent-0275">Leonhard Hohbach</persName>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X"
+                        >Johann Adam Pupikofer</persName>
+                    
                 </correspAction>
-                <noteGrp type="chatgpt">
-                    <note type="chatgpt-summary"/>
-                    <note type="chatgpt-keytopics"/>
-                    <note type="chatgpt-persons"/>
-                    <note type="chatgpt-texts"/>
-                    <note type="chatgpt-objects"/>
-                    <note type="chatgpt-manuscripts"/>
-                </noteGrp>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <ref type="cmif:mentionsPlace" target=""><rs>Villa Eponis</rs></ref>
+<ref type="cmif:mentionsBibl" target=""><rs>Jupiter</rs></ref>
+<ref type="cmif:mentionsBibl" target=""><rs>Codex Traditionum Galliae</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Sepp</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Waldklause</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0258"><rs>von Lang</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0006"><rs>Ansbach</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Rätien</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0139"><rs>Thurgau</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Bayern</rs></ref>
+<ref type="cmif:mentionsBibl" target=""><rs>Monumenta Boica</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Marcha Sumbrina</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Scherb</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0373"><rs>J. v. Laßberg</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0179"><rs>Pupikofer</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Bischofszelle</rs></ref>
+                </note>
             </correspDesc>
         </profileDesc>
     </teiHeader>
     <text>
         <body>
-            <p/>
+            <div type="original" resp="ocr">
+                <p>E. am 7. april 1830.
+Ich bin gestern glúklich zwischen zwei regen durchlaufend in der villa <rs type="place" key="">Eponis</rs> angekommen; habe aber unter wege viel beschwerde von dem durch den <rs type="misc" key="">Jupiter</rs> pluvius ser schlúpferig gemachten boden auszustehen gehabt; so daß ich verwundert bin, nie die erde gekússt zu haben: hingegen muß ich gestehen ser ermüdet meine stube wieder betreten zu haben: nichts desto weniger wurde noch bis 12 ur im cod-trad. Sgall. gelesen, er ist mir wieder ganz neu vorgekommen, und ich verspreche mir eine große erndte darin zu machen. Nun aber, womit ich freilich hätte anfangen sollen, empfangen Sie meinen besten Dank für die gastfreie aufname und Behandlung welche Sie dem alten meister <rs type="person" key="">Sepp</rs> haben angedeihen lassen; kommen Sie jezt nur bald, mit weib und kindern in die <rs type="place" key="">waldklause</rs>, damit ich es wett machen kann. Wenn Sie mir hatten sagen wollen, was das Bier kostet; so hätte ich Inen heute mit dem karren [:karrada in d. alten urkunden:] auch das geld senden können; lassen Sie michs also wissen, damit ich nicht zu lange in Irer Schuld bleibe. Bei meiner zuhausekunft fand ich einen interessanten brief von dem lustigen ritter <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0258">von Lang</rs> aus <rs type="place" key="">Anspach</rs>, welcher mir sein buch von den Bairischen [:im sinne der heutigen Geographie:] gauen sendet, und worin auch einiges von <rs type="place" key="">Rhätien</rs> und <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0139">Thurgau</rs> vorkommt. auch eine abhandlung über die in <rs type="place" key="">Baiern</rs> verehrten heiligen [:kirchen patronen:] und eine ditto gegen die monumenta Boica, von denen er behauptet, daß auch nicht eine einzige urkunde richtig abgedrukt seie. Ich komme morgen nicht zu Inen; sondern werde in der marcha Sumbrina meine Andacht halten. Empfelen Sie mich aufs beste den Irigen, und in dem hause des H. oberamtmanns <rs type="person" key="">Scherb</rs>. Da es sonst nichts neues giebt; so bleibt alles beim alten, so auch
+Ir ergebenster <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0373">J. v. Laßberg</rs>.
+Seiner Hocherwürden Dem Herren Pfarrer <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0179">Pupikofer</rs> zu <rs type="place" key="">Bischofszelle</rs></p>
+            </div>
+            <div type="normalized" resp="GPT3.5">
+                <p>E. am 7. April 1830.
+
+Ich bin gestern glücklich zwischen zwei Regen durchlaufend in der <rs type="place" key="">Villa Eponis</rs> angekommen; habe aber unterwegs viel Beschwerde von dem durch den <rs type="misc" key="">Jupiter</rs> Pluvius sehr schlüpfrig gemachten Boden auszustehen gehabt; so dass ich verwundert bin, nie die Erde geküsst zu haben: hingegen muss ich gestehen sehr ermüdet meine Stube wieder betreten zu haben: nichtsdestotrotz wurde noch bis 12 Uhr im <rs type="misc" key="">Codex Traditionum Galliae</rs> gelesen, er ist mir wieder ganz neu vorgekommen, und ich verspreche mir eine große Ernte darin zu machen. Nun jedoch, womit ich freilich hätte anfangen sollen, empfangen Sie meinen besten Dank für die gastfreie Aufnahme und Behandlung, welche Sie dem alten Meister <rs type="person" key="">Sepp</rs> haben angedeihen lassen; kommen Sie jetzt nur bald, mit Weib und Kindern in die <rs type="place" key="">Waldklause</rs>, damit ich es wettmachen kann. Wenn Sie mir hätten sagen wollen, was das Bier kostet; so hätte ich Ihnen heute mit dem Karren auch das Geld senden können; lassen Sie miches also wissen, damit ich nicht zu lange in Ihrer Schuld bleibe. Bei meiner Rückkehr nach Hause fand ich einen interessanten Brief von dem lustigen Ritter <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0258">von Lang</rs> aus <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0006">Ansbach</rs>, welcher mir sein Buch von den bayerischen Gaue sendet, und worin auch einiges von <rs type="place" key="">Rätien</rs> und <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0139">Thurgau</rs> vorkommt. Auch eine Abhandlung über die in <rs type="place" key="">Bayern</rs> verehrten Heiligen und eine dito gegen die <rs type="misc" key="">Monumenta Boica</rs>, von denen er behauptet, dass auch nicht eine einzige Urkunde richtig abgedruckt sei. Ich komme morgen nicht zu Ihnen; sondern werde in der <rs type="place" key="">Marcha Sumbrina</rs> meine Andacht halten. Empfehlen Sie mich aufs Beste den Ihren, und in dem Hause des Herrn Oberamtmanns <rs type="person" key="">Scherb</rs>. Da es sonst nichts Neues gibt; so bleibt alles beim Alten, so auch
+Ihr ergebenster <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0373">J. v. Laßberg</rs>.
+
+Seiner Hocherwürden dem Herrn Pfarrer <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0179">Pupikofer</rs> zu <rs type="place" key="">Bischofszelle</rs></p>
+            </div>
         </body>
     </text>
 </TEI>
-    

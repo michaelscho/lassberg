@@ -4,59 +4,92 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Brief von Elisabeth zu FÃ¼rstenberg an Joseph von Laßberg (23.02.1808).</title>
+                <title>Brief von Joseph von Laßberg an Johann Adam Pupikofer (17.02.1832).</title>
                 <respStmt>
                     <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
                     <name>Michael Schonhardt</name>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
-                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 normalisiert.</p>
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
                     <msIdentifier>
-                        <settlement>Donaueschingen</settlement>
-                        <repository>FÃ¼rstlich FÃ¼rstenbergisches Archiv</repository>
-                        <idno type="signature"/>
-                        <idno type="register-harris">1626</idno>
-                        <idno type="register-lassberg">nan</idno>
+                        <settlement>Winterthur</settlement>
+                        <repository>Stadtbibliothek</repository>
+                        <idno type="signature"></idno>
+                        <idno type="register-harris">809</idno>
+                        <idno type="register-lassberg">47</idno>
                     </msIdentifier>
                     <additional>
                         <surrogates>
-                            <bibl type="printed">nan
-                            <ref>nan</ref>
-                            </bibl>
+                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 15 (1887), S. 231-88, S. 270<ref>https://books.google.de/books?id=dXkKAAAAIAAJ</ref></bibl>
                         </surrogates>
                     </additional>
                 </msDesc>
             </sourceDesc>
         </fileDesc>
         <profileDesc>
-            <correspDesc xml:id="correspDesc-1626">
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1626">
                 <correspAction type="sent">
-                    <persName ref="lassberg-correspondent-0076">Elisabeth zu FÃ¼rstenberg</persName>
-                    <placeName ref="lassberg-place-0152">Unbekannt</placeName>
-                    <date when="1808-02-23">23.02.1808</date>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1832-02-17">17.02.1832</date>
                 </correspAction>
                 <correspAction type="received">
-                    <persName ref="lassberg-correspondent-0373">Joseph von Laßberg</persName>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X"
+                        >Johann Adam Pupikofer</persName>
+                    
                 </correspAction>
-                <noteGrp type="chatgpt">
-                    <note type="chatgpt-summary"/>
-                    <note type="chatgpt-keytopics"/>
-                    <note type="chatgpt-persons"/>
-                    <note type="chatgpt-texts"/>
-                    <note type="chatgpt-objects"/>
-                    <note type="chatgpt-manuscripts"/>
-                </noteGrp>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <ref type="cmif:mentionsPlace" target=""><rs>Waldklause</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0193"><rs>H. Zellweger</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0351"><rs>H. Tobler</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0049"><rs>Frauenfeld</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Baiae</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Neapel</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0049"><rs>Frauenfeld</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0351"><rs>H. Tobler</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Bárpayos</rs></ref>
+<ref type="cmif:mentionsBibl" target=""><rs>Merkur</rs></ref>
+<ref type="cmif:mentionsOrganisation" target=""><rs>Hallischen L. Zeitung</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Grimms</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>H. Decan</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0049"><rs>Frauenfeld</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0225"><rs>H. H. Anderwert</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Mórikofer</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0373"><rs>J. Laßberg</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Vogler</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0351"><rs>Tobler</rs></ref>
+                </note>
             </correspDesc>
         </profileDesc>
     </teiHeader>
     <text>
         <body>
-            <p/>
+            <div type="original" resp="ocr">
+                <p>E am 17 Hornung 1832.
+als ich heute in meinem nebenzimmer nach den im vorigen herbste verraumten analectis Fischingensibus suchte, fand ich statt derselben, einen schon am St. Silvester tage ein gepakten und für Sie pro strôna bestimmten kupferstich; den ich auch wirklich abgesandt glaubte. So gehet es den alten und vergesslichen leuten! mit denen man am ende am besten tun würde, sie wie unsere heidnischen vorfaren, hinunter zu schaufeln, damit sie keine dumme streiche mer machen können. Nemen Sie mein lieber nachbar! die kleine gabe auch jezt noch an, als wenn sie zu rechter zeit gekommen wåre und wenn Sie das Bild in Irer stube aufhángen und manchmal ansehen; so denken Sie dabei auch ein oder das andere mal an den alten einsiedler in der <rs type="place" key="">waldklause</rs>, der <rs type="person" key=""><rs type="person" key="">Inen</rs></rs> und den Irigen nicht nur am neuen jare, sondern alle wochen und tage darin gutes wünscht. Die Fischingischen excerpte habe ich noch nicht gefunden, bin aber gewiss, daß sie nur untergeschoben und nicht verloren sind: der gute <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0193">H Zellweger</rs> wurde doch in seinem gegenwärtigen zustande keinen gebrauch davon machen kónnen, und in einigen tagen bin ich versichert sie wieder aufzuspüren. Über eine andere und neuere vergesslichkeit muß ich mich vor <rs type="person" key=""><rs type="person" key="">Inen</rs></rs> anklagen. <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0351"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0351">H. Tobler</rs></rs> in <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0049"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0049">Frauenfeld</rs></rs> sandte mir 3 sogenannte hetrurische gefasse, welche zu <rs type="misc" key="">Baiae</rs> bei <rs type="place" key="">Neapel</rs> durch schweizer soldaten ausgegraben wurden, zum ansehen. ich wollte sie nicht zurüksenden, one sie <rs type="person" key=""><rs type="person" key="">Inen</rs></rs> gezeigt zu haben; allein, Ir kurzer aufenthalt am mittwoche, ließ mich nicht daran denken. ich sende sie <rs type="person" key=""><rs type="person" key="">Inen</rs></rs> also jezt zu, damit sie dieselben betrachten können, und bitte Sie nachste woche, wenn Sie nach <rs type="place" key="">frauenfeld</rs> gehen, dieselben dem <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0351"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0351">H. Tobler</rs></rs> wieder zuzustellen. der kopf auf der lampe schien mir anfangs ein Frosch zu sein, weil ich das gefáß verkert in die hand nam, ich hielt es für das zeichen des tópfers der <rs type="misc" key="">Bárpayos</rs> geheissen habe; allein da ich es umkerte, fand ich einen Perseuskopf, den wol manche andere für einen Mercur, was er nicht ist, halten werden. Das ware so ein kleiner anfang; oder besser beitrag zu einem künftigen Thurgauischen Museum. adde parvum parvo, magnus acervus erit. Der artikel in der <rs type="organisation" key="">Hallischen L. zeitung</rs> úber <rs type="person" key="">Grimms</rs> rechts altertúmer hat mich nicht befriedigt; es ist doch mer inhalts anzeige, als wirkliche recension. Ich sende <rs type="person" key=""><rs type="person" key="">Inen</rs></rs> auch die 2 hefte morgenblåtter mit, und bitte mich bei H <rs type="person" key="">Decan</rs> zu entschuldigen, daß ich sie so lange behalten habe. Wenn Sie wieder von <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0049"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0049">Frauenfeld</rs></rs> zurükkommen; so hoffe ich auf einen besuch von <rs type="person" key=""><rs type="person" key="">Inen</rs></rs> und freue mich zu vernemen was die våter des vaterlandes gutes machen. H H <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0225">Anderwert</rs> und <rs type="person" key="">Mórikofer</rs> bitte ich freundlich von mir zu grússen.
+Indessen <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0340">Gott</rs> befolen! von Irem ergebensten <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0373">J. Laßberg</rs>. 
+Erratum. pag. 271 linea 21. lege Vogler statt Tobler.</p>
+            </div>
+            <div type="normalized" resp="GPT3.5">
+                <p>E am 17. Februar 1832.
+Als ich heute in meinem Nebenzimmer nach den im vorigen Herbst verräumten Analectis Fischingensibus suchte, fand ich statt derselben einen schon am Silvestertag eingepackten und für Sie pro Strona bestimmten Kupferstich, den ich auch wirklich abgesandt glaubte. So geht es den alten und vergesslichen Leuten! Mit denen man am Ende am besten tun würde, sie wie unsere heidnischen Vorfahren hinunter zu schaufeln, damit sie keine dummen Streiche mehr machen können. Nehmen Sie, mein lieber Nachbar, die kleine Gabe auch jetzt noch an, als wenn sie zu rechter Zeit gekommen wäre, und wenn Sie das Bild in Ihrer Stube aufhängen und manchmal ansehen, so denken Sie dabei auch ein oder das andere Mal an den alten Einsiedler in der <rs type="place" key="">Waldklause</rs>, der Ihnen und den Ihren nicht nur am neuen Jahr, sondern alle Wochen und Tage darin Gutes wünscht. Die Fischingischen Exzerpte habe ich noch nicht gefunden, bin aber gewiss, dass sie nur untergeschoben und nicht verloren sind: Der gute <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0193">H. Zellweger</rs> konnte doch in seinem gegenwärtigen Zustand keinen Gebrauch davon machen, und in einigen Tagen bin ich versichert, sie wieder aufzuspüren. Über eine andere und neuere Vergesslichkeit muss ich mich bei Ihnen anklagen. <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0351"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0351">H. <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0351">Tobler</rs></rs></rs> in <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0049"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0049"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0049">Frauenfeld</rs></rs></rs> sandte mir 3 sogenannte etruskische Gefäße, welche zu <rs type="place" key="">Baiae</rs> bei <rs type="place" key="">Neapel</rs> durch Schweizer Soldaten ausgegraben wurden, zum Ansehen. Ich wollte sie nicht zurückschicken, ohne sie Ihnen gezeigt zu haben; allein, Ihr kurzer Aufenthalt am Mittwoch ließ mich nicht daran denken. Ich sende sie Ihnen also jetzt zu, damit Sie dieselben betrachten können, und bitte Sie nächste Woche, wenn Sie nach <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0049"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0049"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0049">Frauenfeld</rs></rs></rs> gehen, dieselben dem <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0351"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0351">H. <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0351">Tobler</rs></rs></rs> wieder zuzustellen. Der Kopf auf der Lampe schien mir anfangs ein Frosch zu sein, weil ich das Gefäß verkehrt in die Hand nahm, ich hielt es für das Zeichen des Töpfers, den ich <rs type="person" key="">Bárpayos</rs> geheißen habe; allein da ich es umkehrte, fand ich einen Perseuskopf, den wohl manche andere für einen <rs type="misc" key="">Merkur</rs>, was er nicht ist, halten werden. Das wäre so ein kleiner Anfang oder besser Beitrag zu einem künftigen Thurgauischen Museum. Adde parvum parvo, magnus acervus erit. Der Artikel in der <rs type="organisation" key="">Hallischen L. Zeitung</rs> über <rs type="person" key="">Grimms</rs> Rechtsaltertümer hat mich nicht befriedigt; es ist doch mehr Inhaltsanzeige als wirkliche Rezension. Ich sende Ihnen auch die 2 Hefte Morgenblätter mit und bitte mich bei <rs type="person" key="">H. Decan</rs> zu entschuldigen, dass ich sie so lange behalten habe. Wenn Sie wieder von <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0049"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0049"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0049">Frauenfeld</rs></rs></rs> zurückkommen, so hoffe ich auf einen Besuch von Ihnen und freue mich zu erfahren, was die Väter des Vaterlandes Gutes machen. <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0225">H. H. Anderwert</rs> und <rs type="person" key="">Mórikofer</rs> bitte ich freundlich von mir zu grüßen.
+Indessen Gott befohlen! Von Ihrem ergebensten <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0373">J. Laßberg</rs>.
+Erratum. S. 271, Zeile 21. Lese <rs type="person" key="">Vogler</rs> statt <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0351">Tobler</rs>.</p>
+            </div>
         </body>
     </text>
 </TEI>
-    

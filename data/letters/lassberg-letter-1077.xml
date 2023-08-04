@@ -4,59 +4,78 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Brief von Joseph von Laßberg an Johann Caspar Zellweger (01.03.1840).</title>
+                <title>Brief von Johann Adam Pupikofer an Joseph von Laßberg (11.03.1826).</title>
                 <respStmt>
                     <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
                     <name>Michael Schonhardt</name>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
-                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 normalisiert.</p>
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
                     <msIdentifier>
-                        <settlement>Trogen</settlement>
-                        <repository>Kantonsbibliothek Appenzell A.Rh.</repository>
-                        <idno type="signature"/>
-                        <idno type="register-harris">1077</idno>
-                        <idno type="register-lassberg">46</idno>
+                        <settlement>Frauenfeld</settlement>
+                        <repository>Thurgauische Kantonsbibliothek</repository>
+                        <idno type="signature"></idno>
+                        <idno type="register-harris">2116</idno>
+                        <idno type="register-lassberg">nan</idno>
                     </msIdentifier>
                     <additional>
                         <surrogates>
-                            <bibl type="printed">Carl Ritter, Briefwechsel zwischen Joseph Freiherrn von Lassberg und Johann Caspar Zellweger. St.Gallen 1889, S. 174
-                            <ref>https://books.google.de/books?id=KIHHQBvr1nkC</ref>
-                            </bibl>
+                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 16 (1888), S.  1-32 und 97-154, S. 1<ref>https://books.google.de/books?id=XWY5AAAAMAAJ</ref></bibl>
                         </surrogates>
                     </additional>
                 </msDesc>
             </sourceDesc>
         </fileDesc>
         <profileDesc>
-            <correspDesc xml:id="correspDesc-1077">
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1077">
                 <correspAction type="sent">
-                    <persName ref="lassberg-correspondent-0373">Joseph von Laßberg</persName>
-                    <placeName ref="lassberg-place-0101">Meersburg</placeName>
-                    <date when="1840-03-01">01.03.1840</date>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X"
+                        >Johann Adam Pupikofer</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-{PLACE_FROM_NUMBER}" ref="{PLACE_FROM_METADATA}">{PLACE_SENT_FROM}</placeName>
+                    <date when="1826-03-11">11.03.1826</date>
                 </correspAction>
                 <correspAction type="received">
-                    <persName ref="lassberg-correspondent-0193">Johann Caspar Zellweger</persName>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-{PLACE_TO_NUMBER}" ref="{PLACE_TO_METADATA}">{PLACE_SENT_TO}</placeName>
                 </correspAction>
-                <noteGrp type="chatgpt">
-                    <note type="chatgpt-summary"/>
-                    <note type="chatgpt-keytopics"/>
-                    <note type="chatgpt-persons"/>
-                    <note type="chatgpt-texts"/>
-                    <note type="chatgpt-objects"/>
-                    <note type="chatgpt-manuscripts"/>
-                </noteGrp>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <ref type="cmif:mentionsPerson" target=""><rs>Müllers</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Gallus Öhem</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs>Marquart von Chemenat</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0179"><rs>Daniel Pupikofer</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Bischofzell</rs></ref>
+                </note>
             </correspDesc>
         </profileDesc>
     </teiHeader>
     <text>
         <body>
-            <p/>
+            <div type="original" resp="ocr">
+                <p>Hochwohlgeborner, verehrtester Herr!
+Mit herzlichem Danke sende ich Ihnen hier <rs type="person" key="">Myllers</rs> Sammlung von Minneliedern zurück. Ich muss nochmals um Verzeihung bitten, dieselben so lange behalten zu haben. Dem <rs type="place" key="">Gallus Öhem</rs> habe ich gestern zwei Kopien von Arboner Urkunden beigelegt; dieselben sollten genau sein; selbst einige Nachläßigkeiten und Auslaßungen des Textes wollte ich nicht verbessern. von <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">Marquart von Chemenat</rs> werde ich Ihnen nächstens gleichfalls zustellen. Meinen Besuch bei Ihnen werde ich, wenn Sie es gütigst erlauben, künftigen Mittwoch oder Donnerstag wiederhohlen. Doch nein, am Mittwoch kan es nicht sein! Also am Donnerstag. 
+Unterdessen habe ich die Ehre zu verharren Dero ergebenster Diac. Pupikofer.
+<rs type="place" key="">Bischofzell</rs>, den 11. März 1826.</p>
+            </div>
+            <div type="normalized" resp="GPT3.5">
+                <p>Hochwohlgeborner, verehrtester Herr!
+Mit herzlichem Dank sende ich Ihnen hier <rs type="person" key="">Müllers</rs> Sammlung von Minneliedern zurück. Ich muss nochmals um Verzeihung bitten, dieselben so lange behalten zu haben. Dem <rs type="place" key="">Gallus Öhem</rs> habe ich gestern zwei Kopien von Arboner Urkunden beigelegt; dieselben sollten genau sein; selbst einige Nachlässigkeiten und Auslassungen des Textes wollte ich nicht verbessern. Von <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">Marquart von Chemenat</rs> werde ich Ihnen nächstens gleichfalls zustellen. Meinen Besuch bei Ihnen werde ich, wenn Sie es gütigst erlauben, künftigen Mittwoch oder Donnerstag wiederholen. Doch nein, am Mittwoch kann es nicht sein! Also am Donnerstag. 
+Unterdessen habe ich die Ehre zu verharren Dero ergebenster <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0179">Daniel Pupikofer</rs>.
+<rs type="place" key="">Bischofzell</rs>, den 11. März 1826.</p>
+            </div>
         </body>
     </text>
 </TEI>
-    

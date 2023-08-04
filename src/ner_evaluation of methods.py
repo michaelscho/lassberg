@@ -139,7 +139,8 @@ def evaluate_flair(letters):
 
 # Evaluation
 
-#evaluate_spacy(letters)
+evaluate_spacy(letters)
+print("\n\n")
 #evaluate_nltk(letters)
 #evaluate_hanta(letters)
 #evaluate_bert(letters) # maybe try using another model? Also, try to normalize letters using gpt first

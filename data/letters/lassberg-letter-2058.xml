@@ -4,59 +4,84 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Brief von Ludwig Uhland an Joseph von Laßberg (11.05.1825).</title>
+                <title>Brief von Joseph von Laßberg an Johann Adam Pupikofer (13.08.1838).</title>
                 <respStmt>
                     <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
                     <name>Michael Schonhardt</name>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
-                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 normalisiert.</p>
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
                     <msIdentifier>
-                        <settlement>Marbach am Neckar</settlement>
-                        <repository>Schiller Nationalmuseum</repository>
-                        <idno type="signature"/>
-                        <idno type="register-harris">2058</idno>
-                        <idno type="register-lassberg">nan</idno>
+                        <settlement>Winterthur</settlement>
+                        <repository>Stadtbibliothek</repository>
+                        <idno type="signature"></idno>
+                        <idno type="register-harris">1011</idno>
+                        <idno type="register-lassberg">218</idno>
                     </msIdentifier>
                     <additional>
                         <surrogates>
-                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von LaÃŸberg und Ludwig Uhland. Wien 1870, S. 54
-                            <ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref>
-                            </bibl>
+                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 15 (1887), S. 231-88, S. 278<ref>https://books.google.de/books?id=dXkKAAAAIAAJ</ref></bibl>
                         </surrogates>
                     </additional>
                 </msDesc>
             </sourceDesc>
         </fileDesc>
         <profileDesc>
-            <correspDesc xml:id="correspDesc-2058">
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-2058">
                 <correspAction type="sent">
-                    <persName ref="lassberg-correspondent-0288">Ludwig Uhland</persName>
-                    <placeName ref="lassberg-place-0147">Stuttgart</placeName>
-                    <date when="1825-05-11">11.05.1825</date>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1838-08-13">13.08.1838</date>
                 </correspAction>
                 <correspAction type="received">
-                    <persName ref="lassberg-correspondent-0373">Joseph von Laßberg</persName>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X"
+                        >Johann Adam Pupikofer</persName>
+                    
                 </correspAction>
-                <noteGrp type="chatgpt">
-                    <note type="chatgpt-summary"/>
-                    <note type="chatgpt-keytopics"/>
-                    <note type="chatgpt-persons"/>
-                    <note type="chatgpt-texts"/>
-                    <note type="chatgpt-objects"/>
-                    <note type="chatgpt-manuscripts"/>
-                </noteGrp>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0179"><rs>Pupikofer</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Bischofszelle</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0043"><rs>Eppishausen</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Hanswurst</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Fritz</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0101"><rs>Meersburg</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0373"><rs>Laßberg</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Scherbs</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Imhoff</rs></ref>
+                </note>
             </correspDesc>
         </profileDesc>
     </teiHeader>
     <text>
         <body>
-            <p/>
+            <div type="original" resp="ocr">
+                <p>Seiner Wolerwürden Herren Camerer und Diacon <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0179">Pupikofer</rs>, zu <rs type="place" key="">Bischofszelle</rs> sam einer kiste Bücher enthaltend (frei.)
+<rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs>, am 13 August 1838.
+Hier mein hochgescházter Freund! kommen endlich die búcher; welche ich gerne früher geschikt hatte, wenn nicht die beinahe täglichen farten an das Seeufer die pferde ununterbrechlich in beschlag nåmen: heute haben sie rasttag, also schadet inen die kurze promenade in der abendkúle nichts. Ich komme mir vor, wie eine garnison welche aus einer capitulirten vestung abziehet, ie náher der lezte tag rúkt, ie mer straubt man sich; allein, es muß nun einmal sein und da hilft, wie <rs type="person" key="">Hanswurst</rs> sagt, kein zittern für den frost! Einen schónen, vielleicht den schónsten meiner plane für die zukunft, hat vor kurzem der tod zerstórt! mein guter Friz wollte noch 4 iare dienen und dann an einem der ufer des <rs type="place" key="">Bodensee</rs>'s ganz der wissenschaft leben. unsere vereinte búchersammlungen würden uns vielleicht zu gleichen arbeiten vereinigt haben. Cur, quos jungit amor, fatum disjungis iniquum? Nun ist mir die alte <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0101">Meersburg</rs> auch viel weniger wert; denn der mit mir gearbeitet, der mich fortgesezt hátte, für den ich gesammelt und gearbeitet hatte, ist nicht mer! móge denn <rs type="person" key="">Inen</rs> mein freund! mit Irem Ernst ein fróhlicheres geschik bewaret sein. Leben Sie wol und grúßen Sie die Irigen, von
+Irem nun an leib und seele hinkenden <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0373">Jv. Laßberg</rs>.
+Sehen Sie <rs type="person" key="">Scherbs</rs> und <rs type="person" key="">Imhoff</rs>, so bitte ich sie von uns allen zu grüßen.</p>
+            </div>
+            <div type="normalized" resp="GPT3.5">
+                <p>Seiner Wohlwürden Herren Camerer und Diacon <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0179">Pupikofer</rs>, zu <rs type="place" key="">Bischofszelle</rs> samt einer Kiste Bücher enthaltend (frei.)
+<rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs>, am 13. August 1838.
+Hier mein hochgeschätzter Freund! kommen endlich die Bücher; welche ich gerne früher geschickt hätte, wenn nicht die beinahe täglichen Fahrten an das Seeufer die Pferde ununterbrochen in Beschlag nähmen: heute haben sie Rasttag, also schadet ihnen die kurze Promenade in der Abendkühle nichts. Ich komme mir vor, wie eine Garnison, welche aus einer kapitulierten Festung abzieht, je näher der letzte Tag rückt, je mehr sträubt man sich; allein, es muss nun einmal sein und da hilft, wie <rs type="person" key="">Hanswurst</rs> sagt, kein Zittern für den Frost! Einen schönen, vielleicht den schönsten meiner Pläne für die Zukunft, hat vor kurzem der Tod zerstört! Mein guter <rs type="person" key="">Fritz</rs> wollte noch 4 Jahre dienen und dann an einem der Ufer des Bodensees ganz der Wissenschaft leben. Unsere vereinten Büchersammlungen würden uns vielleicht zu gleichen Arbeiten vereinigt haben. Cur, quos jungit amor, fatum disjungis iniquum? Nun ist mir die alte <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0101">Meersburg</rs> auch viel weniger wert; denn der mit mir gearbeitet, der mich fortgesetzt hätte, für den ich gesammelt und gearbeitet hatte, ist nicht mehr! Möge denn Ihnen, mein Freund! mit Ihrem Ernst ein fröhlicheres Schicksal bewahrt sein. Leben Sie wohl und grüßen Sie die Ihren, von
+Ihrem nun an leib und Seele hinkenden Jv. <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0373">Laßberg</rs>.
+Sehen Sie <rs type="person" key="">Scherbs</rs> und <rs type="person" key="">Imhoff</rs>, so bitte ich sie von uns allen zu grüßen.</p>
+            </div>
         </body>
     </text>
 </TEI>
-    

@@ -4,59 +4,84 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Brief von Johann Caspar Zellweger an Joseph von Laßberg (10.07.1824).</title>
+                <title>Brief von Joseph von Laßberg an Johann Adam Pupikofer (18.05.1838).</title>
                 <respStmt>
                     <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
                     <name>Michael Schonhardt</name>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
-                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 normalisiert.</p>
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
                     <msIdentifier>
                         <settlement>Winterthur</settlement>
                         <repository>Stadtbibliothek</repository>
-                        <idno type="signature"/>
-                        <idno type="register-harris">2019</idno>
-                        <idno type="register-lassberg">nan</idno>
+                        <idno type="signature"></idno>
+                        <idno type="register-harris">989</idno>
+                        <idno type="register-lassberg">129</idno>
                     </msIdentifier>
                     <additional>
                         <surrogates>
-                            <bibl type="printed">Carl Ritter, Briefwechsel zwischen Joseph Freiherrn von Lassberg und Johann Caspar Zellweger. St.Gallen 1889, S. 49
-                            <ref>https://books.google.de/books?id=KIHHQBvr1nkC</ref>
-                            </bibl>
+                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 15 (1887), S. 231-88, S. 277/t<ref>https://books.google.de/books?id=dXkKAAAAIAAJ</ref></bibl>
                         </surrogates>
                     </additional>
                 </msDesc>
             </sourceDesc>
         </fileDesc>
         <profileDesc>
-            <correspDesc xml:id="correspDesc-2019">
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-2019">
                 <correspAction type="sent">
-                    <persName ref="lassberg-correspondent-0193">Johann Caspar Zellweger</persName>
-                    <placeName ref="lassberg-place-0150">Trogen (Appenzell Ausserrhoden)</placeName>
-                    <date when="1824-07-10">10.07.1824</date>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1838-05-18">18.05.1838</date>
                 </correspAction>
                 <correspAction type="received">
-                    <persName ref="lassberg-correspondent-0373">Joseph von Laßberg</persName>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X"
+                        >Johann Adam Pupikofer</persName>
+                    
                 </correspAction>
-                <noteGrp type="chatgpt">
-                    <note type="chatgpt-summary"/>
-                    <note type="chatgpt-keytopics"/>
-                    <note type="chatgpt-persons"/>
-                    <note type="chatgpt-texts"/>
-                    <note type="chatgpt-objects"/>
-                    <note type="chatgpt-manuscripts"/>
-                </noteGrp>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0043"><rs>Eppishausen</rs></ref>
+<ref type="cmif:mentionsBibl" target=""><rs>Die Ritterburgen der Schweiz</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0043"><rs>Eppishausen</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Brokhaus</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Dalps</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Schweiz</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0043"><rs>Eppishausen</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0043"><rs>Eppishausen</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0139"><rs>Thurgau</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Schweiz</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Lafsbergius</rs></ref>
+                </note>
             </correspDesc>
         </profileDesc>
     </teiHeader>
     <text>
         <body>
-            <p/>
+            <div type="original" resp="ocr">
+                <p><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs></rs></rs></rs> 18 Mai 1838.
+Mein lieber Freund und Nachbar!
+Was mir schon lange im Kopf herumgieng und mir auch nicht leicht auf dem Herzen lag, muß ich denn nun schriftlich sagen, weil ich unterließ es Ihnen auf unsrer kleinen Reise anzuvertrauen. Sie werden über das Dalpische Werk die Ritterburgen der <rs type="place" key=""><rs type="place" key=""><rs type="place" key="">Schweiz</rs></rs></rs> eine Beschreibung von <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs></rs></rs></rs> liefern und nicht nur meine Person soll darinnen in einer biographischen Scizze auftretten, sondern auch meine Handschriften in einem vollständigen Verzeichniße. Sie wißen nicht, welch ein homo inglorius ich bin und wie wenig das digito monstrari von jeher mich angefochten hat, Sie glauben vielleicht nicht, wie herzlich ich es Hrn <rs type="person" key="">Brokhaus</rs> Dank weiß, daß er nicht wie er anfangs wollte meine Individualität in sein Conversationslexikon aufgenommen hat, und doch ist es so, und so wünsche ich nun auch, daß in <rs type="person" key="">Dalps</rs> Werke so wenig als möglich über meine Wenigkeit gesagt werde. Ich höre ja nun bald auf der <rs type="place" key=""><rs type="place" key=""><rs type="place" key="">Schweiz</rs></rs></rs> anzugehören. Was die Handschriften betrift, so habe ich schon oft mich gefragt: ob es auch so ganz fadenredlich sei, den Leuten zu sagen: in <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs></rs></rs></rs> findet man diese und diese Handschriften, die dann wann sie hinkommeu hören múßen: ja sie waren einmal da, jetzt aber muß du sie jenseits des Wassers suchen. Ich traue es Ihrem eigenen Zartgefühl zu, daß Sie nicht gerne für irgend jemanden die Veranlassung zu einem solchen mezasritte werden möchten. Was ist also zu thun? ich denke, den artikel <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs></rs></rs></rs> blos historisch zu bearbeiten und die neueste Zeit entweder ganz zu umgehen oder blos zu sagen: es war einmal ein Mann da, der hieß so und so und hatte gute Bücher u. Handschriften und andere antiquitäten u. theilte sie gerne andern mit, jetzt aber wohnt er auf der schwäbischen Erde und ist und bleibt da derselbe der er durch 26 Jahre in dem schönen <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0139">Thurgau</rs> war. Ich weiß es daß ich in der <rs type="place" key=""><rs type="place" key=""><rs type="place" key="">Schweiz</rs></rs></rs> einige wenige Männer zurüklasse, deren freundschaftliches Wohlwollen mir auch über die blauen Fluten des <rs type="place" key="">Bodensee</rs>'s folgen wird, und dieses Bewahrtsein genügt meiner ganzen Ruhmbegierde. Also zum Schlusse! Wenn Sie werthester Freund es verlangen, so muss ich das Handschriften Verzeichnifs allerdings vollenden, weil ich es versprochen habe, wenn Sie mich aber dessen erlassen, so werde ich es Inen herzlieh danken. Wir grüfsen Sie und die Ihrigen.
+<rs type="person" key="">Lafsbergius</rs>.</p>
+            </div>
+            <div type="normalized" resp="GPT3.5">
+                <p><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs></rs></rs></rs>, 18. Mai 1838.
+Mein lieber Freund und Nachbar!
+Was mir schon lange im Kopf herumging und mir auch nicht leicht auf dem Herzen lag, muss ich denn nun schriftlich sagen, weil ich unterlassen habe, es Ihnen auf unserer kleinen Reise anzuvertrauen. Sie werden über das <rs type="person" key="">Dalps</rs>che Werk "<rs type="misc" key="">Die Ritterburgen der <rs type="place" key=""><rs type="place" key="">Schweiz</rs></rs></rs>" eine Beschreibung von <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs></rs></rs></rs> liefern und nicht nur meine Person soll darin in einer biographischen Skizze auftreten, sondern auch meine Handschriften in einem vollständigen Verzeichnis. Sie wissen nicht, welch ein homo inglorius ich bin und wie wenig das "digito monstrari" von jeher mich angefochten hat, Sie glauben vielleicht nicht, wie herzlich ich es Herrn <rs type="person" key="">Brokhaus</rs> danke, dass er nicht, wie er anfangs wollte, meine Individualität in sein "Conversationslexikon" aufgenommen hat, und doch ist es so, und so wünsche ich nun auch, dass in <rs type="person" key="">Dalps</rs> Werk so wenig wie möglich über meine Wenigkeit gesagt werde. Ich höre ja nun bald auf der <rs type="place" key=""><rs type="place" key="">Schweiz</rs></rs> anzugehören. Was die Handschriften betrifft, so habe ich schon oft mich gefragt: ob es auch so ganz fadenredlich sei, den Leuten zu sagen: in <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs></rs></rs></rs> findet man diese und diese Handschriften, die dann, wenn sie hinkommen, hören müssen: ja, sie waren einmal da, jetzt aber muss du sie jenseits des Wassers suchen. Ich traue es Ihrem eigenen Zartgefühl zu, dass Sie nicht gerne für irgendjemanden die Veranlassung zu einem solchen Mezzesitze werden möchten. Was ist also zu tun? Ich denke, den Artikel <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs></rs></rs></rs> bloß historisch zu bearbeiten und die neueste Zeit entweder ganz zu umgehen oder bloß zu sagen: es war einmal ein Mann da, der hieß so und so und hatte gute Bücher und Handschriften und andere Antiquitäten und teilte sie gerne anderen mit, jetzt aber wohnt er auf der schwäbischen Erde und ist und bleibt der gleiche, der er durch 26 Jahre in dem schönen <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0139">Thurgau</rs> war. Ich weiß, dass ich in der <rs type="place" key=""><rs type="place" key="">Schweiz</rs></rs> einige wenige Männer zurücklasse, deren freundschaftliches Wohlwollen mir auch über die blauen Fluten des Bodensees folgen wird, und dieses Bewahrtsein genügt meiner ganzen Ruhmbegierde. Also zum Schluss! Wenn Sie, werter Freund, es verlangen, so muss ich das Handschriften-Verzeichnis allerdings vollenden, weil ich es versprochen habe, wenn Sie mich aber dessen erlassen, so werde ich es Ihnen herzlich danken. Wir grüßen Sie und die Ihrigen.
+<rs type="person" key="">Lafsbergius</rs>.</p>
+            </div>
         </body>
     </text>
 </TEI>
-    

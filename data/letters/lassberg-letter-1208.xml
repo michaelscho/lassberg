@@ -4,59 +4,80 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Brief von Joseph von Laßberg an Unbekannt (08.02.1843).</title>
+                <title>Brief von Johann Adam Pupikofer an Joseph von Laßberg (11.12.1827).</title>
                 <respStmt>
                     <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
                     <name>Michael Schonhardt</name>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
-                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 normalisiert.</p>
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
                     <msIdentifier>
-                        <settlement>Luzern</settlement>
-                        <repository>Staatsarchiv</repository>
-                        <idno type="signature"/>
-                        <idno type="register-harris">1208</idno>
-                        <idno type="register-lassberg">16</idno>
+                        <settlement>Frauenfeld</settlement>
+                        <repository>Thurgauische Kantonsbibliothek</repository>
+                        <idno type="signature"></idno>
+                        <idno type="register-harris">2195</idno>
+                        <idno type="register-lassberg">nan</idno>
                     </msIdentifier>
                     <additional>
                         <surrogates>
-                            <bibl type="printed">nan
-                            <ref>nan</ref>
-                            </bibl>
+                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 16 (1888), S.  1-32 und 97-154, S. 18<ref>https://books.google.de/books?id=XWY5AAAAMAAJ</ref></bibl>
                         </surrogates>
                     </additional>
                 </msDesc>
             </sourceDesc>
         </fileDesc>
         <profileDesc>
-            <correspDesc xml:id="correspDesc-1208">
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1208">
                 <correspAction type="sent">
-                    <persName ref="lassberg-correspondent-0373">Joseph von Laßberg</persName>
-                    <placeName ref="lassberg-place-0101">Meersburg</placeName>
-                    <date when="1843-02-08">08.02.1843</date>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X"
+                        >Johann Adam Pupikofer</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-{PLACE_FROM_NUMBER}" ref="{PLACE_FROM_METADATA}">{PLACE_SENT_FROM}</placeName>
+                    <date when="1827-12-11">11.12.1827</date>
                 </correspAction>
                 <correspAction type="received">
-                    <persName ref="lassberg-correspondent-0354">Unbekannt</persName>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-{PLACE_TO_NUMBER}" ref="{PLACE_TO_METADATA}">{PLACE_SENT_TO}</placeName>
                 </correspAction>
-                <noteGrp type="chatgpt">
-                    <note type="chatgpt-summary"/>
-                    <note type="chatgpt-keytopics"/>
-                    <note type="chatgpt-persons"/>
-                    <note type="chatgpt-texts"/>
-                    <note type="chatgpt-objects"/>
-                    <note type="chatgpt-manuscripts"/>
-                </noteGrp>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <ref type="cmif:mentionsBibl" target=""><rs>rerum Suevicarum</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Hertensteins</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Bremi</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Hormayrs</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Schwabens</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0179"><rs>Pupikofer</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Bischofzell</rs></ref>
+                </note>
             </correspDesc>
         </profileDesc>
     </teiHeader>
     <text>
         <body>
-            <p/>
+            <div type="original" resp="ocr">
+                <p>Hochwohlgeborner Herr und Gönner!
+Mit herzlichem Danke sende ich Ihnen den T. II und III der <rs type="misc" key="">rerum Suevicarum</rs> zurück. Ich habe denselben mit Vergnügen durchgeblättert, und großen Theils, besonders den 2. Band und den Anfang des dritten Bandes gelesen und dadurch manche dunkle Begriffe aufgestellt. <rs type="person" key="">Hertensteins</rs> Abhandlungen haben mich vorzüglich angezogen. Es ist schon sehr lange, seit ich bei Ihnen war; allein kaum waren meine Rheumatismen ein wenig aus den Zähnen gewichen, so erkrankte meine gute Frau, so daß ich, nun noch überdies mit einem neuen Zögling belästigt, bis über die Ohren in Geschäften stecke und manchmal, bald von den Kindern, bald vom Amte, bald von der Schulmeisterei und Schriftstellerei, bald von allen zugleich in Anspruch genommen, nicht weiß, wo mir der Kopf steht. Indessen mit meiner Frau geht es wieder besser, und dann wird wohl alles erträglichere Gestalt bekommen. Es könnte sogar geschehen, daß ich diese Woche noch für einige Nachmittagsstunden zu Ihnen käme. Die vom Buchbinder gefertigten Broschüren mit der Helvetia und der Abschrift der Tobelschen AnniversarienBruchstücke werden Sie doch empfangen haben? Dem Suterschen Catalog lasse ich einen andern folgen, in welchem einige interessante Stücke sind. Ein sehr geschätzter Zürcherscher Lehrer, Herr Chorherr <rs type="person" key="">Bremi</rs>, hat mir die Verbreitung dieses Catalogs sehr empfohlen, da der Wittwe des jüngst verstorbenen Besitzers der Bibliothek eine Wohlthat dadurch erwiesen werde. Aber meiner Bitte um die Tyrolischen Beiträge <rs type="person" key="">Hormayrs</rs> haben Sie mir nicht entsprechen wollen, zu gerechter Strafe, daß ich Ihnen meine Aufwartung so lange nicht mehr mache? Daß ich nicht konnte, that mir sehr leid; daß Sie mich noch strafen, schmerzt mich doppelt. Tantaene in coelestibus irae! Doch Sie werden gedacht haben, so lange die halbe Schatzkammer <rs type="place" key="">Schwabens</rs> in meinen Händen sei, bedürfe ich der Tyrolischen kaum. Allerdings! Und jetzt kommen bald die natales Redemtoris nostri und die heiligen Genealogien werden mir die profanen Untersuchungen und Grübeleien schon aus dem Kopfe jagen. sic tempora labuntur. Neues oder, was bei Ihnen gleichbedeutend ist, Altes habe ich durchaus nichts mehr aufgetrieben; desto mehr wahrscheinlich Sie. Indem ich mich neugierig nach Ihren Relationen sehne, verbleibe ich mit herzlicher Ergebenheit und Hochachtung
+Ihr Diac. <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0179">Pupikofer</rs>.
+<rs type="place" key="">Bischofzell</rs> den 11. Dec. 1827.</p>
+            </div>
+            <div type="normalized" resp="GPT3.5">
+                <p>Hochwohlgeborner Herr und Gönner!
+Mit herzlichem Dank sende ich Ihnen den T. II und III der <rs type="misc" key="">rerum Suevicarum</rs> zurück. Ich habe denselben mit Vergnügen durchgeblättert, und großen Teils, besonders den 2. Band und den Anfang des dritten Bandes gelesen und dadurch manche dunkle Begriffe aufgestellt. <rs type="person" key="">Hertensteins</rs> Abhandlungen haben mich vorzüglich angezogen. Es ist schon sehr lange, seit ich bei Ihnen war; allein kaum waren meine Rheumatismen ein wenig aus den Zähnen gewichen, so erkrankte meine gute Frau, so dass ich, nun noch überdies mit einem neuen Zögling belästigt, bis über die Ohren in Geschäften stecke und manchmal, bald von den Kindern, bald vom Amt, bald von der Schulmeisterei und Schriftstellerei, bald von allen zugleich in Anspruch genommen, nicht weiß, wo mir der Kopf steht. Indessen mit meiner Frau geht es wieder besser, und dann wird wohl alles erträglichere Gestalt bekommen. Es könnte sogar geschehen, dass ich diese Woche noch für einige Nachmittagsstunden zu Ihnen käme. Die vom Buchbinder gefertigten Broschüren mit der Helvetia und der Abschrift der Tobelschen Anniversarien-Bruchstücke werden Sie doch empfangen haben? Dem Suterschen Katalog lasse ich einen anderen folgen, in welchem einige interessante Stücke sind. Ein sehr geschätzter Zürcher Lehrer, Herr Chorherr <rs type="person" key="">Bremi</rs>, hat mir die Verbreitung dieses Katalogs sehr empfohlen, da der Witwe des jüngst verstorbenen Besitzers der Bibliothek eine Wohltat dadurch erwiesen werde. Aber meiner Bitte um die Tirolischen Beiträge <rs type="person" key="">Hormayrs</rs> haben Sie mir nicht entsprechen wollen, zu gerechter Strafe, dass ich Ihnen meine Aufwartung so lange nicht mehr mache? Dass ich nicht konnte, tat mir sehr leid; dass Sie mich noch strafen, schmerzt mich doppelt. Tantane in coelestibus irae! Doch Sie werden gedacht haben, so lange die halbe Schatzkammer <rs type="place" key="">Schwabens</rs> in meinen Händen sei, bedürfe ich der Tirolischen kaum. Allerdings! Und jetzt kommen bald die natales Redemtoris nostri und die heiligen Genealogien werden mir die profanen Untersuchungen und Grübeleien schon aus dem Kopfe jagen. Sic tempora labuntur. Neues oder, was bei Ihnen gleichbedeutend ist, Altes habe ich durchaus nichts mehr aufgetrieben; desto mehr wahrscheinlich Sie. Indem ich mich neugierig nach Ihren Relationen sehne, verbleibe ich mit herzlicher Ergebenheit und Hochachtung
+Ihr Diakon <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0179">Pupikofer</rs>.
+<rs type="place" key="">Bischofzell</rs> den 11. Dez. 1827.</p>
+            </div>
         </body>
     </text>
 </TEI>
-    

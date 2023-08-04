@@ -4,59 +4,85 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Brief von Joseph von Laßberg an Albert Lucian Constans Schott (28.06.1841).</title>
+                <title>Brief von Joseph von Laßberg an Johann Adam Pupikofer (12.12.1826).</title>
                 <respStmt>
                     <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
                     <name>Michael Schonhardt</name>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
-                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 normalisiert.</p>
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
                     <msIdentifier>
-                        <settlement>Stuttgart</settlement>
-                        <repository>WÃ¼rttembergische Landesbibliothek</repository>
-                        <idno type="signature"/>
-                        <idno type="register-harris">1131</idno>
-                        <idno type="register-lassberg">165</idno>
+                        <settlement>Winterthur</settlement>
+                        <repository>Stadtbibliothek</repository>
+                        <idno type="signature"></idno>
+                        <idno type="register-harris">566</idno>
+                        <idno type="register-lassberg">322</idno>
                     </msIdentifier>
                     <additional>
                         <surrogates>
-                            <bibl type="printed">nan
-                            <ref>nan</ref>
-                            </bibl>
+                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 15 (1887), S. 231-88, S. 234<ref>https://books.google.de/books?id=dXkKAAAAIAAJ</ref></bibl>
                         </surrogates>
                     </additional>
                 </msDesc>
             </sourceDesc>
         </fileDesc>
         <profileDesc>
-            <correspDesc xml:id="correspDesc-1131">
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1131">
                 <correspAction type="sent">
-                    <persName ref="lassberg-correspondent-0373">Joseph von Laßberg</persName>
-                    <placeName ref="lassberg-place-0007">Ãœberlingen</placeName>
-                    <date when="1841-06-28">28.06.1841</date>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1826-12-12">12.12.1826</date>
                 </correspAction>
                 <correspAction type="received">
-                    <persName ref="lassberg-correspondent-0005">Albert Lucian Constans Schott</persName>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X"
+                        >Johann Adam Pupikofer</persName>
+                    
                 </correspAction>
-                <noteGrp type="chatgpt">
-                    <note type="chatgpt-summary"/>
-                    <note type="chatgpt-keytopics"/>
-                    <note type="chatgpt-persons"/>
-                    <note type="chatgpt-texts"/>
-                    <note type="chatgpt-objects"/>
-                    <note type="chatgpt-manuscripts"/>
-                </noteGrp>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0043"><rs>Eppishausen</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs>v</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>String</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0082"><rs>Konstanz</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0082"><rs>Konstanz</rs></ref>
+<ref type="cmif:mentionsBibl" target=""><rs>Monumenta histor. Germaniae</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0168"><rs>Wessenberg</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0078"><rs>Elise</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0025"><rs>Bischofszell</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0373"><rs>I. v. Laßberg</rs></ref>
+                </note>
             </correspDesc>
         </profileDesc>
     </teiHeader>
     <text>
         <body>
-            <p/>
+            <div type="original" resp="ocr">
+                <p><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs> am 12. Beity (December?) 1826.
+P: P:
+Die Inlage mit f. 22 stellte mir gestern abends Herr <rs type="person" key="">v. String</rs> zur Besorgung zu. Ich war wegen einem Sterbefalle drei Tage in <rs type="place" key=""><rs type="place" key="">Constanz</rs></rs> und bin erst vorgestern heimgekommen. In <rs type="place" key=""><rs type="place" key="">Constanz</rs></rs> traf ich endlich den I. Band der <rs type="misc" key="">Monumenta histor. germaniae</rs> an; mein exemplar soll ich nächsten Samstag früh vom Buchbinder erhalten. Die Bosheit, die fromme Bosheit hatte ausgesprengt <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0168">Wessenberg</rs> sei in Folge einer lezten Krankheit ganz kindisch geworden; es geschahen sogar deshalb aus der Ferne anfragen an mich; ich brachte lezthin einen ganzen Abend bei ihm zu und fand in völlig unverándert. O Zelotypia! quo non <rs type="organisation" key="">mortalia</rs> cogis. Künftigen Donnerstag auf Mittag bekomme ich Gäste, da möchte mein Nichte <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0078">Elise</rs> als zeitliche Haus- und Küchen Regentin die Frau Pfarrerin freundlich bitten, Ir wo möglich eine oder zwei Schnüre trokene Morcheln, vulgo Morauchen zu verschaffen; auch wünschte sie etwa ein halb Viertel Reinetteápfel und etwas Spalierbirnen zu erhalten; wir haben heuer gar kein Obst gemacht. Könnte man in <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0025">Bischofszell</rs> vielleicht einen schönen Fisch, oder ein par Rebhüner haben, so würde dem Gastmahl damit die Krone aufgesezt werden. Verzeihen Sie mein vererter Freund! diese gastronomica, sie sind manchmal vom Landleben gar nicht zu trennen; verfügen Sie vorkommenden Falls auch über meine Dienste. Unter vielen Grüßen an die Irigen
+Ir aufrichtiger Diener und Freund <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0373">I. v. Laßberg</rs>.
+Ex mandato speziali soll ich obigen bitten auch die um so viel Endiviensalat beifügen, als ein halb Duzend Menschen über eine Mahlzeit zu verzehren pflegen, Ich meine, es sei fast lang, das Sie nicht in meine Klause gekommen sind.</p>
+            </div>
+            <div type="normalized" resp="GPT3.5">
+                <p><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs> am 12. Beity (Dezember?) 1826.
+P: P:
+Die Anlage mit 22 Schillingen stellte mir gestern Abend Herr <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">v</rs>. <rs type="person" key="">String</rs> zur Besorgung zu. Ich war wegen eines Sterbefalls drei Tage in <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0082"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0082">Konstanz</rs></rs> und bin erst <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">v</rs>orgestern nach Hause gekommen. In <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0082"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0082">Konstanz</rs></rs> traf ich endlich den 1. Band der <rs type="misc" key="">Monumenta histor. Germaniae</rs> an; mein Exemplar soll ich nächsten Samstag früh <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">v</rs>om Buchbinder erhalten. Die Bosheit, die fromme Bosheit hatte ausgesprengt, <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0168">Wessenberg</rs> sei infolge einer letzten Krankheit ganz kindisch geworden; es geschahen sogar deshalb aus der Ferne Anfragen an mich; ich brachte letztlich einen ganzen Abend bei ihm zu und fand ihn in <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">v</rs>öllig un<rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">v</rs>erändert. O Eifersucht! Wozu zwingst du nicht alles Menschliche. Nächsten Donnerstag zu Mittag bekomme ich Gäste, da möchte meine Nichte <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0078">Elise</rs> als zeitliche Haus- und Küchenregentin die Frau Pfarrerin freundlich bitten, ihr, wenn möglich, eine oder zwei Schnüre trockene Morcheln, <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">v</rs>ulgo Morauchen zu besorgen; auch wünschte sie etwa ein halbes Viertel Reinette-Äpfel und etwas Spalierbirnen zu erhalten; wir haben dieses Jahr gar kein Obst gemacht. Könnte man in <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0025">Bischofszell</rs> <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">v</rs>ielleicht einen schönen Fisch oder ein paar Rebhühner haben, dann würde dem Gastmahl damit die Krone aufgesetzt werden. Verzeihen Sie, mein <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">v</rs>erehrter Freund! Diese gastronomica, sie sind manchmal <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">v</rs>om Landleben gar nicht zu trennen; <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">v</rs>erfügen Sie, falls nötig, auch über meine Dienste. Unter <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">v</rs>ielen Grüßen an die Ihren
+Ihr aufrichtiger Diener und Freund I. <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">v</rs>. Laßberg.
+Ex mandato speziale soll ich die oben genannte Bitte auch um so <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">v</rs>iel Endi<rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">v</rs>iensalat erweitern, wie ein halbes Dutzend Menschen für eine Mahlzeit zu <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">v</rs>erzehren pflegen. Ich meine, es ist schon lange her, dass Sie in meine Klause gekommen sind.</p>
+            </div>
         </body>
     </text>
 </TEI>
-    

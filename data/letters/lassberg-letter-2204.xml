@@ -4,59 +4,91 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Brief von Johann Adam Pupikofer an Joseph von Laßberg (19.02.1828).</title>
+                <title>Brief von Joseph von Laßberg an Johann Adam Pupikofer (10.09.1840).</title>
                 <respStmt>
                     <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
                     <name>Michael Schonhardt</name>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
-                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 normalisiert.</p>
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
                     <msIdentifier>
-                        <settlement>Frauenfeld</settlement>
-                        <repository>Thurgauische Kantonsbibliothek</repository>
-                        <idno type="signature"/>
-                        <idno type="register-harris">2204</idno>
-                        <idno type="register-lassberg">nan</idno>
+                        <settlement>Münster</settlement>
+                        <repository>Universitätsbibliothek</repository>
+                        <idno type="signature"></idno>
+                        <idno type="register-harris">1106</idno>
+                        <idno type="register-lassberg">?</idno>
                     </msIdentifier>
                     <additional>
                         <surrogates>
-                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 16 (1888), S.  1-32 und 97-154, S. 22
-                            <ref>https://books.google.de/books?id=XWY5AAAAMAAJ</ref>
-                            </bibl>
+                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 15 (1887), S. 231-88, S. 281<ref>https://books.google.de/books?id=dXkKAAAAIAAJ</ref></bibl>
                         </surrogates>
                     </additional>
                 </msDesc>
             </sourceDesc>
         </fileDesc>
         <profileDesc>
-            <correspDesc xml:id="correspDesc-2204">
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-2204">
                 <correspAction type="sent">
-                    <persName ref="lassberg-correspondent-0179">Johann Adam Pupikofer</persName>
-                    <placeName ref="lassberg-place-0152">Unbekannt</placeName>
-                    <date when="1828-02-19">19.02.1828</date>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-lassberg-place-0101">Meersburg</placeName>
+                    <date when="1840-09-10">10.09.1840</date>
                 </correspAction>
                 <correspAction type="received">
-                    <persName ref="lassberg-correspondent-0373">Joseph von Laßberg</persName>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X"
+                        >Johann Adam Pupikofer</persName>
+                    
                 </correspAction>
-                <noteGrp type="chatgpt">
-                    <note type="chatgpt-summary"/>
-                    <note type="chatgpt-keytopics"/>
-                    <note type="chatgpt-persons"/>
-                    <note type="chatgpt-texts"/>
-                    <note type="chatgpt-objects"/>
-                    <note type="chatgpt-manuscripts"/>
-                </noteGrp>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0025"><rs>Bischofszell</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0082"><rs>Konstanz</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0049"><rs>Frauenfeld</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0101"><rs>Meersburg</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0082"><rs>Konstanz</rs></ref>
+<ref type="cmif:mentionsBibl" target=""><rs>Canissii Lectiones antiquae</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Westphalen-Land</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0113"><rs>Brenken</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0311"><rs>Guido Haxthausen</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0176"><rs>Jenny</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Mamma</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0349"><rs>Droste</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Nette</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0099"><rs>Mainz</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs>Joseph von Laßberg</rs></ref>
+                </note>
             </correspDesc>
         </profileDesc>
     </teiHeader>
     <text>
         <body>
-            <p/>
+            <div type="original" resp="ocr">
+                <p>Seiner Wolerwürden <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">H</rs>erren Capitels Camerer Diacon Pupikofer zu <rs type="place" key="">Bischofszelle</rs> per <rs type="place" key=""><rs type="place" key="">Constanz</rs></rs> & <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0049">Frauenfeld</rs>
+Auf der alten <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0101">Meersburg</rs> am 10. Septembr 1840. 
+Am 5. August sandte ich durch das ordináre Botenschif von hier zur Abgabe an den Bischofzeller Boten in <rs type="place" key=""><rs type="place" key="">Constanz</rs></rs>, einen großen quartband: <rs type="misc" key="">Canissii lectiones antiquae</rs> Tom: I. da nun schon ein monat verflossen ist; so neme ich die freiheit Sie vererter freund zu fragen, ob Inen diese sendung zugekommen; oder ob ich deshalb nachfrage bei der hiesigen Botenanstalt machen soll. Wenn es nach unseren wünschen gehet; so befinden Sie und die Irigen sich ganz wol und dasselbe kann ich Inen gottlob! auch von uns allen sagen. Seit Irer anwesenheit war unsere alte burg nie von gásten leer und seit ein paar wochen hat <rs type="place" key="">Westphalenland</rs> eine menge von bekannten und verwandten, vettern und basen über uns ausgeschüttet; und noch haben wir die <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">H</rs>. <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">H</rs>. von Brenken vater und son und Guido <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">H</rs>axthausen, nahe verwandte meiner lieben <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0176">Jenny</rs>, bei uns. Ende dieses monats erwarten wir <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0349">Mamma Droste</rs> und meine schwágerin <rs type="person" key="">Nette</rs>, in begleitung meines Sones aus <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0099">Mainz</rs>; wir werden also auch den winter hindurch nicht allein sein. Leben Sie wol, samt den Scherbischen, aufs herzlichste gegrüßet von
+Irem aufrichtigen freunde: <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">Joseph von Laßberg</rs>.</p>
+            </div>
+            <div type="normalized" resp="GPT3.5">
+                <p>Seiner Wohlwürden Herrn Capitels Kammerer Diacon Pupikofer zu <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0025">Bischofszell</rs>, per <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0082"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0082">Konstanz</rs></rs> & <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0049">Frauenfeld</rs>.
+
+Auf der alten <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0101">Meersburg</rs>, am 10. September 1840.
+
+Am 5. August sandte ich durch das ordinäre Botenschiff von hier zur Abgabe an den Bischofzeller Boten in <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0082"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0082">Konstanz</rs></rs> einen großen Quartband: <rs type="misc" key="">Canissii Lectiones antiquae</rs>, Tom: I. Da nun schon ein Monat vergangen ist, so nehme ich die Freiheit, Sie verehrter Freund, zu fragen, ob Ihnen diese Sendung zugekommen ist, oder ob ich deshalb bei der hiesigen Botenanstalt nachfragen soll. Wenn es nach unseren Wünschen geht, so befinden Sie und die Ihren sich ganz wohl und dasselbe kann ich Ihnen, Gottlob! auch von uns allen sagen. Seit Ihrer Anwesenheit war unsere alte Burg nie von Gästen leer und seit ein paar Wochen hat das <rs type="place" key="">Westphalen-Land</rs> eine Menge von Bekannten und Verwandten, Vettern und Basen über uns ausgeschüttet. Und noch haben wir die Herren von <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0113">Brenken</rs>, Vater und Sohn, und <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0311">Guido Haxthausen</rs>, nahe verwandt meiner lieben <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0176">Jenny</rs>, bei uns. Ende dieses Monats erwarten wir <rs type="person" key="">Mamma</rs> <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0349">Droste</rs> und meine Schwägerin <rs type="person" key="">Nette</rs>, in Begleitung meines Sohns aus <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0099">Mainz</rs>; wir werden also auch den Winter hindurch nicht allein sein. Leben Sie wohl, samt den Scherbenbergern, aufs herzlichste gegrüßt von
+
+Ihrem aufrichtigen Freund: <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">Joseph von Laßberg</rs>.</p>
+            </div>
         </body>
     </text>
 </TEI>
-    

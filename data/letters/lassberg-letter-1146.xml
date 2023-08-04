@@ -4,59 +4,90 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Brief von Joseph von Laßberg an Hermann von Liebenau (22.10.1841).</title>
+                <title>Brief von Johann Adam Pupikofer an Joseph von Laßberg (23.02.1827).</title>
                 <respStmt>
                     <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
                     <name>Michael Schonhardt</name>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
-                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 normalisiert.</p>
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
                     <msIdentifier>
-                        <settlement>Donaueschingen</settlement>
-                        <repository>FÃ¼rstlich FÃ¼rstenbergisches Archiv</repository>
-                        <idno type="signature"/>
-                        <idno type="register-harris">1146</idno>
-                        <idno type="register-lassberg">270</idno>
+                        <settlement>Frauenfeld</settlement>
+                        <repository>Thurgauische Kantonsbibliothek</repository>
+                        <idno type="signature"></idno>
+                        <idno type="register-harris">2153</idno>
+                        <idno type="register-lassberg">nan</idno>
                     </msIdentifier>
                     <additional>
                         <surrogates>
-                            <bibl type="printed">nan
-                            <ref>nan</ref>
-                            </bibl>
+                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 16 (1888), S.  1-32 und 97-154, S. 4<ref>https://books.google.de/books?id=XWY5AAAAMAAJ</ref></bibl>
                         </surrogates>
                     </additional>
                 </msDesc>
             </sourceDesc>
         </fileDesc>
         <profileDesc>
-            <correspDesc xml:id="correspDesc-1146">
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1146">
                 <correspAction type="sent">
-                    <persName ref="lassberg-correspondent-0373">Joseph von Laßberg</persName>
-                    <placeName ref="lassberg-place-0101">Meersburg</placeName>
-                    <date when="1841-10-22">22.10.1841</date>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X"
+                        >Johann Adam Pupikofer</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-{PLACE_FROM_NUMBER}" ref="{PLACE_FROM_METADATA}">{PLACE_SENT_FROM}</placeName>
+                    <date when="1827-02-23">23.02.1827</date>
                 </correspAction>
                 <correspAction type="received">
-                    <persName ref="lassberg-correspondent-0160">Hermann von Liebenau</persName>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-{PLACE_TO_NUMBER}" ref="{PLACE_TO_METADATA}">{PLACE_SENT_TO}</placeName>
                 </correspAction>
-                <noteGrp type="chatgpt">
-                    <note type="chatgpt-summary"/>
-                    <note type="chatgpt-keytopics"/>
-                    <note type="chatgpt-persons"/>
-                    <note type="chatgpt-texts"/>
-                    <note type="chatgpt-objects"/>
-                    <note type="chatgpt-manuscripts"/>
-                </noteGrp>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <ref type="cmif:mentionsBibl" target=""><rs>Kreuzer</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0205"><rs>Mörikofer</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0049"><rs>Frauenfeld</rs></ref>
+<ref type="cmif:mentionsOrganisation" target=""><rs>Schaffhauser Zeitung</rs></ref>
+<ref type="cmif:mentionsOrganisation" target=""><rs>Thurgauer</rs></ref>
+<ref type="cmif:mentionsOrganisation" target=""><rs>Schaffhauser Blatt</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0145"><rs>Schwab</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Hohbach</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Aurbachers</rs></ref>
+<ref type="cmif:mentionsOrganisation" target=""><rs>Schweizerischen naturforschenden Gesellschaft</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0179"><rs>Pupikofer</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Bischofzell</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0166"><rs>Zürich</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Murers</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Langs</rs></ref>
+                </note>
             </correspDesc>
         </profileDesc>
     </teiHeader>
     <text>
         <body>
-            <p/>
+            <div type="original" resp="ocr">
+                <p>Hochwohlgeborner Herr und Gönner!
+Gestern hätte ich gerne Ihrer Fräulein Nichte einige Worte an Sie mitgegeben; allein so schlecht die Witterung war, scheint sie doch für die Leute gut genug gewesen zu sein, die mir lange Weile machen sollten. Bei der Bezahlung der drei Contos, die Sie mir zu berichtigen auftrugen, zeigten sich 10 xr Ueberschuß, die ich beilege. Herr Provisor <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0205">Mörikofer</rs> schreibt, daß die Druckerpresse, die in <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0049">Frauenfeld</rs> ausgeboten worden sei, eine Steindruckpresse sei; hingegen in der <rs type="organisation" key="">Schaffhauser Zeitung</rs> glaube er die Anzeige einer feilgebotenen Buchdruckerpresse gelesen zu haben. Ich besitze weder das <rs type="organisation" key="">Thurgauer</rs> noch das <rs type="organisation" key="">Schaffhauser Blatt</rs>, um nachsehen zu können; doch stand ich in derselben Meinung wie Sie. Das Reisewerk des Herrn <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0145">Schwab</rs> habe ich mit Vergnügen gelesen; doch glaube ich, dasselbe hätte noch belehrender gemacht werden können. Unter den Gedichten scheinen mir die beiden von <rs type="place" key="">Hohbach</rs> den Vorzug vor den meisten andern zu verdienen, obschon ich hierin mir kein Urtheil anmaße. Schade, daß in der Carte nicht alle Burgruinen angezeigt sind. Von <rs type="person" key="">Aurbachers</rs> Volksbüchlein erwarte ich viel angenehmes und ich bin Ihnen für diese neue Bekanntschaft sehr dankbar. Mir ist unterdessen gar nichts neues oder altes eingegangen, als der Jahresbericht der <rs type="organisation" key="">Schweizerischen</rs> naturforschenden <rs type="organisation" key="">Gesellschaft</rs>, der wirklich sehr gehaltreich ist. Im Anfange der künftigen Woche werde ich mir das Vergnügen machen, Sie zu besuchen. Unterdessen wünsche ich Ihrem Rheumatismus aufthauende Frühlingswitterung, damit er ein Vorbote für die baldige willkommene Abreise des Winters sei.
+<rs type="person" key="">Diac</rs>. <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0179">Pupikofer</rs>.
+<rs type="place" key="">Bischofzell</rs>, den 23. Febr. 1827.
+Noch darf ich nicht vergessen, Sie aufmerksam zu machen, daß in dem Wüstischen Katalog von <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0166">Zürich</rs> unter Nr. 912 <rs type="person" key="">Murers</rs> <rs type="misc" key="">Helvetia</rs> s., und <rs type="person" key="">Langs</rs> Abriß feilgeboten ist. Das erstere Werk ist auf f. 4; das letzere auf f. 1, 30 B angesetzt. Ist die Einsiedler Chronik auch etwas von <rs type="place" key="">Werth</rs>? Mein Msc. <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0291">von der Thurg</rs>. Geschichte übergebe ich Ihnen zur gütigen Beurtheilung. Es wird mich freuen, wenn Sie sich die Mühe geben wollen, dasselbe durchzugehen, und mir das fehlerhafte anzumerken. Was ich in der Geschichte thun kann, ist ohnedieß, nur durch Ihre Gewogenheit aufgemuntert, zum Keime geworden und in Stengel und Laub aufgestiegen; durch Ihre fortgesetzte Pflege könnte wohl auch noch die Blüthe und Frucht hervortreiben. In herzlicher Ergebenheit der Obige.</p>
+            </div>
+            <div type="normalized" resp="GPT3.5">
+                <p>Hochwohlgeborener Herr und Gönner!
+Gestern hätte ich gerne Ihrer Fräulein Nichte einige Worte an Sie mitgegeben; allein so schlecht die Witterung war, scheint sie doch für die Leute gut genug gewesen zu sein, die mir lange Weile machen sollten. Bei der Bezahlung der drei Kontos, die Sie mir zu berichtigen auftrugen, zeigten sich 10 <rs type="misc" key="">Kreuzer</rs> Überschuss, die ich beilege. Herr Provisor <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0205">Mörikofer</rs> schreibt, dass die Druckerpresse, die in <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0049">Frauenfeld</rs> ausgeboten worden sei, eine Steindruckpresse sei; hingegen in der <rs type="organisation" key="">Schaffhauser Zeitung</rs> glaube er die Anzeige einer feilgebotenen Buchdruckerpresse gelesen zu haben. Ich besitze weder das <rs type="organisation" key="">Thurgauer</rs> noch das <rs type="organisation" key="">Schaffhauser Blatt</rs>, um nachsehen zu können; doch stand ich in derselben Meinung wie Sie. Das Reisewerk des Herrn <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0145">Schwab</rs> habe ich mit Vergnügen gelesen; doch glaube ich, dasselbe hätte noch belehrender gemacht werden können. Unter den Gedichten scheinen mir die beiden von <rs type="place" key="">Hohbach</rs> den Vorzug vor den meisten anderen zu verdienen, obschon ich hierin mir kein Urteil anmaße. Schade, dass in der Karte nicht alle Burgruinen angezeigt sind. Von <rs type="person" key="">Aurbachers</rs> Volksbüchlein erwarte ich viel Angenehmes und ich bin Ihnen für diese neue Bekanntschaft sehr dankbar. Mir ist unterdessen gar nichts Neues oder Altes eingegangen, als der Jahresbericht der <rs type="organisation" key="">Schweizerischen naturforschenden Gesellschaft</rs>, der wirklich sehr gehaltreich ist. Im Anfang der künftigen Woche werde ich mir das Vergnügen machen, Sie zu besuchen. Unterdessen wünsche ich Ihrem Rheumatismus auftauende Frühlingswitterung, damit er ein Vorbote für die baldige willkommene Abreise des Winters sei.
+Diakon <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0179">Pupikofer</rs>.
+<rs type="place" key="">Bischofzell</rs>, den 23. Februar 1827.
+Noch darf ich nicht vergessen, Sie aufmerksam zu machen, dass in dem Wüstischen Katalog von <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0166">Zürich</rs> unter Nr. 912 <rs type="person" key="">Murers</rs> Helvetia s., und <rs type="person" key="">Langs</rs> Abriß feilgeboten ist. Das erstere Werk ist auf f. 4; das letzere auf f. 1, 30 B angesetzt. Ist die Einsiedler Chronik auch etwas von Wert? Mein Manuskript von der <rs type="organisation" key="">Thurgauer</rs> Geschichte übergebe ich Ihnen zur gütigen Beurteilung. Es wird mich freuen, wenn Sie sich die Mühe geben wollen, dasselbe durchzugehen, und mir das fehlerhafte anzumerken. Was ich in der Geschichte tun kann, ist ohnehin, nur durch Ihre Gewogenheit aufgemuntert, zum Keim geworden und in Stengel und Laub aufgestiegen; durch Ihre fortgesetzte Pflege könnte wohl auch noch die Blüte und Frucht hervortreiben. In herzlicher Ergebenheit der Obige.</p>
+            </div>
         </body>
     </text>
 </TEI>
-    

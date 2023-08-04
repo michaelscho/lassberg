@@ -4,59 +4,89 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Brief von Joseph von Laßberg an Adelbert von Keller (16.02.1849).</title>
+                <title>Brief von Joseph von Laßberg an Johann Adam Pupikofer (26.01.1830).</title>
                 <respStmt>
                     <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
                     <name>Michael Schonhardt</name>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
-                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 normalisiert.</p>
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
                     <msIdentifier>
-                        <settlement>TÃ¼bingen</settlement>
-                        <repository>UniversitÃ¤tsbibliothek</repository>
-                        <idno type="signature"/>
-                        <idno type="register-harris">1400</idno>
-                        <idno type="register-lassberg">nan</idno>
+                        <settlement>Winterthur</settlement>
+                        <repository>Stadtbibliothek</repository>
+                        <idno type="signature"></idno>
+                        <idno type="register-harris">695</idno>
+                        <idno type="register-lassberg">35</idno>
                     </msIdentifier>
                     <additional>
                         <surrogates>
-                            <bibl type="printed">nan
-                            <ref>nan</ref>
-                            </bibl>
+                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 15 (1887), S. 231-88, S. 250<ref>https://books.google.de/books?id=dXkKAAAAIAAJ</ref></bibl>
                         </surrogates>
                     </additional>
                 </msDesc>
             </sourceDesc>
         </fileDesc>
         <profileDesc>
-            <correspDesc xml:id="correspDesc-1400">
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1400">
                 <correspAction type="sent">
-                    <persName ref="lassberg-correspondent-0373">Joseph von Laßberg</persName>
-                    <placeName ref="lassberg-place-0101">Meersburg</placeName>
-                    <date when="1849-02-16">16.02.1849</date>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1830-01-26">26.01.1830</date>
                 </correspAction>
                 <correspAction type="received">
-                    <persName ref="lassberg-correspondent-0002">Adelbert von Keller</persName>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X"
+                        >Johann Adam Pupikofer</persName>
+                    
                 </correspAction>
-                <noteGrp type="chatgpt">
-                    <note type="chatgpt-summary"/>
-                    <note type="chatgpt-keytopics"/>
-                    <note type="chatgpt-persons"/>
-                    <note type="chatgpt-texts"/>
-                    <note type="chatgpt-objects"/>
-                    <note type="chatgpt-manuscripts"/>
-                </noteGrp>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0196"><rs>Hartmann</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0141"><rs>St. Gallen</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Scheitlin</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0199"><rs>v. Cotta</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0147"><rs>Stuttgart</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Herisau</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Waldklause</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0141"><rs>St. Gallen</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0234"><rs>Benedikt</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Josef Eremita</rs></ref>
+<ref type="cmif:mentionsBibl" target=""><rs>Monumenta Boica</rs></ref>
+                </note>
             </correspDesc>
         </profileDesc>
     </teiHeader>
     <text>
         <body>
-            <p/>
+            <div type="original" resp="ocr">
+                <p>Eppish. am 26. Januar 1830.
+Vortreflichster οὐκάλεγων!
+Hofentlich sind Sie samstag abends wol bei Iren penaten und bei Iren alten postillen angekommen, aus welehen Sie für den folgenden morgen doch eine oratio pro aris et focis zusamenlesen konnten; was mich anbetrift; so fand ich bei meiner ankunft eine merkwürdige kleine sammlung von zeichnungen und gemålden alter wappen und siegel, welche mir hr. Kupferstecher <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0196">Hartmann</rs>, wie er sagt, auf Ire bestellung zugesendet hat. Da sie mir blos ad videndum mitgeteilt sind; so werde ich sie wol bald zurúksenden múßen; kommen Sie also, wenn auch Sie sie sehen wollen, es ist wol der múhe wert, denn sie sind recht brav und characteristisch gezeichnet es sind lauter schweiz. wappen und Sie werden darunter welche finden, welche wir schon lángst zu kennen wünschten. Die verhandlungen des großen rates zu <rs type="place" key="">St. gallen</rs> habe ich mit vergnügen gelesen, es scheint man will auch dort jede staatsgewalt in die ir gebúrende stellung sezen. Das Neujarsblatt finde ich erbármlich wie aus dem aermel geschüttelt und in aller eile herabgeleiert. soll ich mich irren, wenn ich den etwas schnellen und oft faulen h. Pfrer. <rs type="person" key="">Scheitlin</rs> für den verfasser halte? Heute erhalte ich die nachricht, daß einer meiner áltesten freunde [: von den knabenjaren an:] plózlich und one krank zu sein, verstorben ist. Wol jm, er war ein gerechter und woltátiger mann und gewiß ruhet er sanft in der alten erde. Zugleich erhalte ich einen brief von dem <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0199">H. v. Cotta</rs> aus <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0147">Stuttgart</rs>, welcher alles was ich in betref des epicopatus const. vorgeschlagen habe, genemiget. es wird also ernst mit der sache, und ich für lange an die hobelbank gespannt. Seit 2 tagen hat die vépe iren siz unbeweglich bei uns aufgeschlagen; ich denke also, daß Sie Ihre reise nach <rs type="place" key="">Herisau</rs> auch vertagt haben, und wol auf einen sprung in die waldklause kommen können. Sobald wieder heller himmel. håtte ich lust eine fart ad <rs type="place" key="">st. gallonem</rs> vorzunemen. ich hóre gar nichts mer von meinem guten und lieben Arxius, ob er schon in das große coenobium des heiligen vaters <rs type="person" key="">Benedictus</rs> abgereist oder gegen alle erwartung, wieder auf der besserung ist. Viele grüße an die Irigen und H. Oberamtmanns von <rs type="place" key="">Irem</rs>
+<rs type="person" key="">Josefus Eremita</rs>.
+Die winkelmänner bitte ich zum buchbinder zu schiken, und sich auch ein wenig um die monumenta boica erkundigen zu lassen.</p>
+            </div>
+            <div type="normalized" resp="GPT3.5">
+                <p>Eppish, am 26. Januar 1830.
+Vortrefflichster Unbekannter!
+
+Hoffentlich sind Sie Samstag abends wohlbehalten bei Ihren Penaten und bei Ihren alten Postillen angekommen, aus welchen Sie für den folgenden Morgen doch eine Oration pro aris et focis zusammengestellt konnten. Was mich betrifft, so fand ich bei meiner Ankunft eine merkwürdige kleine Sammlung von Zeichnungen und Gemälden alter Wappen und Siegel, welche mir Herr Kupferstecher <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0196">Hartmann</rs>, wie er sagt, auf Ihre Bestellung zugesendet hat. Da sie mir bloß zur Ansicht mitgeteilt sind, werde ich sie wohl bald zurückschicken müssen; kommen Sie also, wenn auch Sie sie sehen wollen, es ist wohl der Mühe wert, denn sie sind recht gut und charakteristisch gezeichnet. Es sind lauter Schweizer Wappen und Sie werden darunter welche finden, die wir schon lange zu kennen wünschten. Die Verhandlungen des großen Rates zu <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0141"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0141">St. Gallen</rs></rs> habe ich mit Vergnügen gelesen, es scheint man will auch dort jede Staatsgewalt in die ihr gebührende Stellung setzen. Das Neujarsblatt finde ich erbärmlich wie aus dem Ärmel geschüttelt und in aller Eile herabgeleiert. Soll ich mich irren, wenn ich den etwas schnellen und oft faulen Herrn Pfarrer <rs type="person" key="">Scheitlin</rs> für den Verfasser halte? Heute erhalte ich die Nachricht, dass einer meiner ältesten Freunde (von den Knabenjahren an) plötzlich und ohne krank zu sein, verstorben ist. Wohl ihm, er war ein gerechter und wohltätiger Mann und gewiss ruhet er sanft in der alten Erde. Zugleich erhalte ich einen Brief von dem Herrn <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0199">v. Cotta</rs> aus <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0147">Stuttgart</rs>, welcher alles, was ich in Bezug auf den Episkopatus Const. vorgeschlagen habe, genehmigt. Es wird also ernst mit der Sache, und ich bin gespannt. Seit 2 Tagen hat die Kälte Ihren Sitz unbeweglich bei uns aufgeschlagen; ich denke also, dass Sie Ihre Reise nach <rs type="place" key="">Herisau</rs> auch vertagt haben und wohl auf einen Sprung in die <rs type="place" key="">Waldklause</rs> kommen können. Sobald wieder Heller Himmel ist, hätte ich Lust, einen Ausflug nach <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0141"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0141">St. Gallen</rs></rs> zu unternehmen. Ich höre gar nichts mehr von meinem guten und lieben Arxius, ob er schon ins große Kloster des heiligen Vaters <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0234">Benedikt</rs> abgereist oder gegen alle Erwartung wieder auf dem Weg der Besserung ist. Viele Grüße an Ihre Lieben und den Herrn Oberamtmann von Ihnen
+
+<rs type="person" key="">Josef Eremita</rs>.
+
+Die Winkelmänner bitte ich zum Buchbinder zu schicken und sich auch ein wenig nach den <rs type="misc" key="">Monumenta Boica</rs> zu erkundigen.</p>
+            </div>
         </body>
     </text>
 </TEI>
-    

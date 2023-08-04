@@ -4,59 +4,114 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Brief von Melchior Kirchhofer an Joseph von Laßberg (29.12.1832).</title>
+                <title>Brief von Joseph von Laßberg an Johann Adam Pupikofer (02.11.1843).</title>
                 <respStmt>
                     <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
                     <name>Michael Schonhardt</name>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
-                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 normalisiert.</p>
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
                     <msIdentifier>
-                        <settlement>Freiburg i.Br.</settlement>
-                        <repository>UniversitÃ¤tsbibliothek</repository>
-                        <idno type="signature"/>
-                        <idno type="register-harris">2455</idno>
-                        <idno type="register-lassberg">nan</idno>
+                        <settlement>Winterthur</settlement>
+                        <repository>Stadtbibliothek</repository>
+                        <idno type="signature"></idno>
+                        <idno type="register-harris">1235</idno>
+                        <idno type="register-lassberg">7134</idno>
                     </msIdentifier>
                     <additional>
                         <surrogates>
-                            <bibl type="printed">nan
-                            <ref>nan</ref>
-                            </bibl>
+                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 15 (1887), S. 231-88, S. 282<ref>https://books.google.de/books?id=dXkKAAAAIAAJ</ref></bibl>
                         </surrogates>
                     </additional>
                 </msDesc>
             </sourceDesc>
         </fileDesc>
         <profileDesc>
-            <correspDesc xml:id="correspDesc-2455">
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-2455">
                 <correspAction type="sent">
-                    <persName ref="lassberg-correspondent-0307">Melchior Kirchhofer</persName>
-                    <placeName ref="lassberg-place-0144">Stein</placeName>
-                    <date when="1832-12-29">29.12.1832</date>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-lassberg-place-0101">Meersburg</placeName>
+                    <date when="1843-11-02">02.11.1843</date>
                 </correspAction>
                 <correspAction type="received">
-                    <persName ref="lassberg-correspondent-0373">Joseph von Laßberg</persName>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X"
+                        >Johann Adam Pupikofer</persName>
+                    
                 </correspAction>
-                <noteGrp type="chatgpt">
-                    <note type="chatgpt-summary"/>
-                    <note type="chatgpt-keytopics"/>
-                    <note type="chatgpt-persons"/>
-                    <note type="chatgpt-texts"/>
-                    <note type="chatgpt-objects"/>
-                    <note type="chatgpt-manuscripts"/>
-                </noteGrp>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0101"><rs>Meersburg</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Bottenhusen</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Ernsberge</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Säldenhofen</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Waltstaige</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Lender</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0082"><rs>Konstanz</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0066"><rs>Heiligenberg</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Berchtold</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Berchtold</rs></ref>
+<ref type="cmif:mentionsOrganisation" target=""><rs>Hochstift Konstanz</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Buchhorn</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Heinrichs</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>von Klingenberg</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0082"><rs>Konstanz</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0082"><rs>Konstanz</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0161"><rs>Wien</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Prag</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0074"><rs>Karlsruhe</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0065"><rs>Heidelberg</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0166"><rs>Zürich</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0147"><rs>Stuttgart</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Deutschlands</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Sepp</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0100"><rs>Mone</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0074"><rs>Karlsruhe</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Baumgartner</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs>Graf von Karajan</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0161"><rs>Wien</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0182"><rs>Schmeller</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0097"><rs>München</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0101"><rs>Meersburg</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Prag</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Nette</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Westfalen</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Scherbs</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Hauptwil</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0193"><rs>J. C. Zellweger</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Marikofer</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0373"><rs>Irem Jv.Laßberg</rs></ref>
+                </note>
             </correspDesc>
         </profileDesc>
     </teiHeader>
     <text>
         <body>
-            <p/>
+            <div type="original" resp="ocr">
+                <p>Auf der alten <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0101"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0101">Meersburg</rs></rs> am tage aller Selen 1843.
+Lieber freund!
+anbei folgt eine urkunde, deren inhalt wie ich glaube, Sie interessiren móchte; besonders wegen der zeugen, von welchen ich die von <rs type="place" key="">Bottenhusen</rs>, <rs type="place" key="">Ernsberge</rs>, <rs type="place" key="">Saeldenhofen</rs>, <rs type="place" key="">Waltstaige</rs>, deren wonorten ich diesseits des <rs type="place" key="">Bodensee</rs>'s vergeblich nachspúrte und demnach auf der Schweizer seite vermuten muß. koennen Sie mir über einen oder andern dieser namen auskunft geben, so verbinden Sie mich. Nach gemachtem gebrauche bitte ich die abschrift an Herrn Lyceumsdirector <rs type="person" key="">Lender</rs> nach <rs type="place" key=""><rs type="place" key=""><rs type="person" key=""><rs type="place" key="">Constanz</rs></rs></rs></rs> zu senden. mir ist die urkunde wegen der graven von <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0066">Heiligenberg</rs> wichtig, da der in derselben handelnde gr. <rs type="person" key=""><rs type="person" key="">Berchtold</rs></rs> der vorlezte seines geschlechtes war, welches 1306 mit seinem áltesten sone <rs type="person" key=""><rs type="person" key="">Berchtold</rs></rs> erlosch. der ursprung dieses alten gravengeschlechtes das schon im elften Jarh. die advocatie über das hochstift <rs type="place" key=""><rs type="place" key=""><rs type="person" key=""><rs type="place" key="">Constanz</rs></rs></rs></rs> besaß, liegt noch immer im dunkeln; mir ist warscheinlich, daß sie ein zweig der alten Linzgauer graven gewesen sein múßen, da diese Gaugravschaft, nach dem erlöschen der graven von <rs type="place" key="">Buchhorn</rs>, in der ersten haelfte des XII. iarhunderts an sie überging. meine urkunden abschriften wachsen nachgerade zu einem beträchtlichen Volumen an, und der gedanke, sie nach und nach in einzelnen bogen gedrukt erscheinen zu lassen, und sie so meinen freunden mit zu teilen, beschaeftigt mich fortwaerend; sed vitae summa brevis spem vetat inchoare longam. In einer urkunde bischof <rs type="person" key="">Heinrichs</rs> [:<rs type="person" key="">von Klingenberg</rs>:], zu <rs type="place" key=""><rs type="place" key=""><rs type="person" key=""><rs type="place" key="">Constanz</rs></rs></rs></rs> kommt als Datum: der vnbehugte Sonntag, vor: vergebens suchte ich darúber auskunft in meinem diplomatischen aparate. unbehugt heisst: unbeschúzt, unbesorgt; denn aus hugen, huegen in acht nemen, ist unser heutiges hegen entstanden; sollte wol dieser Sonntag eine historische Beziehung haben? und ein dem Bistume <rs type="place" key=""><rs type="place" key=""><rs type="person" key=""><rs type="place" key="">Constanz</rs></rs></rs></rs> eigentúmliches fest sein? die urkunde ist von 1303. si quid novisti rectius istis, affer! Diesen herbst sind wir mit besuchen aus <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0161"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0161">Wien</rs></rs>, <rs type="place" key=""><rs type="place" key="">Prag</rs></rs>, <rs type="place" key=""><rs type="place" key="">Carlsruhe</rs></rs>, <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0065">Heidelberg</rs>, <rs type="place" key="">Zúrich</rs>, <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0147">Stuttgart</rs>, und aus dem Norden <rs type="place" key="">Teutschlands</rs> úberhaúft worden, meistens prophetenjúnger, wie meine schwiegermutter sie nennt, welche dem alten meister <rs type="person" key="">Sepp</rs> iren literarischen gruß brachten und in seinem búchersaale arbeiteten. binnen 24 stunden kamen <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0100">Mone</rs> aus <rs type="place" key=""><rs type="place" key="">Carlsruhe</rs></rs>, Archivar <rs type="person" key="">Baumgartner</rs> und Bibliothecar gr. <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0346">von Karajan</rs> aus <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0161"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0161">Wien</rs></rs>, und der gute <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0182">Schmeller</rs> aus <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0097">München</rs> in der alten <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0101"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0101">Meersburg</rs></rs> an. Sie koennen denken mein vererter freund! daß bei solchem andrange mir gar keine zeit etwas für mich zu arbeiten gewaeret wurde. ich troeste mich nun damit, daß wenigstens der winter mir so viel muße bringen werde, um einige laengst begonnene arbeiten zu vollenden. bei uns hat vor ein par tagen die weinlese angefangen; aber man weiß noch nicht, ob die trauben sich werden druken lassen, das heißt: ob sie irgend eine brühe geben werden; indessen hat man schon von rotem gewachse zu 12 fl. den Ohm verkauft. wol bekomms denen, die den sauren saft trinken mússen! Wir sind jezt zahlreicher als gewónlich bei tische. mein son ist aus <rs type="place" key=""><rs type="place" key="">Prag</rs></rs> zu uns in urlaub gekommen, meine Schwiegermutter mit irer tochter <rs type="person" key="">Nette</rs> aus <rs type="place" key="">Westphalen</rs>, leztere bleiben úber den winter bei uns. Sonst ist alles wol und grúßet mit mir Sie und die Irigen auf das freundschaftlichste, wir bitten auch unsere grúße bei H. Dr. <rs type="person" key="">Scherbs</rs> und in <rs type="place" key="">Hauptwil</rs> auszurichten. Sehen Sie <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0193">J. C. Zellweger</rs>, Rector <rs type="place" key="">Marikofer</rs>; so richten Sie auch da meine grúße aus. und hiemit gott befolen!
+von <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0373">Irem Jv.Laßberg</rs>.</p>
+            </div>
+            <div type="normalized" resp="GPT3.5">
+                <p>Auf der alten <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0101"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0101">Meersburg</rs></rs> am Tage aller Seelen 1843.
+
+Lieber Freund!
+Anbei folgt eine Urkunde, deren Inhalt, wie ich glaube, Sie interessieren möchte; besonders wegen der Zeugen, von welchen ich die von <rs type="place" key="">Bottenhusen</rs>, <rs type="place" key="">Ernsberge</rs>, <rs type="place" key="">Säldenhofen</rs>, <rs type="place" key="">Waltstaige</rs>, deren Wohnorte ich diesseits des Bodensees vergeblich nachspürte und demnach auf der Schweizer Seite vermuten muss. Können Sie mir über einen oder anderen dieser Namen Auskunft geben, so verbinden Sie mich. Nach gemachtem Gebrauche bitte ich die Abschrift an Herrn Lyzeumsdirektor <rs type="person" key="">Lender</rs> nach <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0082"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0082"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0082">Konstanz</rs></rs></rs> zu senden. Mir ist die Urkunde wegen der Grafen von <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0066">Heiligenberg</rs> wichtig, da der in derselben handelnde Graf <rs type="person" key=""><rs type="person" key="">Berchtold</rs></rs> der Vorletzte seines Geschlechts war, welches 1306 mit seinem ältesten Sohn <rs type="person" key=""><rs type="person" key="">Berchtold</rs></rs> erlosch. Der Ursprung dieses alten Grafengeschlechts, das schon im elften Jahrhundert die Advocatie über das Hochstift <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0082"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0082"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0082">Konstanz</rs></rs></rs> besaß, liegt noch immer im Dunkeln; mir ist wahrscheinlich, dass sie ein Zweig der alten Linzgauer Grafen gewesen sein müssen, da diese Gaugrafenschaft, nach dem Erlöschen der Grafen von <rs type="place" key="">Buchhorn</rs>, in der ersten Hälfte des zwölften Jahrhunderts an sie überging. Meine Urkundenabschriften wachsen nach und nach zu einem beträchtlichen Volumen an, und der Gedanke, sie nach und nach in einzelnen Bogen gedruckt erscheinen zu lassen und sie so meinen Freunden mitzuteilen, beschäftigt mich fortwährend; sed vitae summa brevis spem vetat inchoare longam. In einer Urkunde Bischof <rs type="person" key="">Heinrichs</rs> [:<rs type="person" key="">von Klingenberg</rs>:], zu <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0082"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0082"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0082">Konstanz</rs></rs></rs> kommt als Datum: der unbehütete Sonntag, vor: vergebens suchte ich darüber Auskunft in meinem diplomatischen Apparat. Unbehütet heißt: unbeschützt, unbesorgt; denn aus "hugen", "huegen" in Acht nehmen, ist unser heutiges "hegen" entstanden; sollte wohl dieser Sonntag eine historische Beziehung haben? Und ein dem Bistum <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0082"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0082"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0082">Konstanz</rs></rs></rs> eigentümliches Fest sein? Die Urkunde ist von 1303. Si quid novisti rectius istis, affer! Diesen Herbst sind wir mit Besuchen aus <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0161"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0161">Wien</rs></rs>, <rs type="place" key=""><rs type="place" key="">Prag</rs></rs>, <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0074"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0074">Karlsruhe</rs></rs>, <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0065">Heidelberg</rs>, <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0166">Zürich</rs>, <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0147">Stuttgart</rs> und aus dem Norden <rs type="place" key="">Deutschlands</rs> überhäuft worden, meistens Prophetenjünger, wie meine Schwiegermutter sie nennt, welche dem alten Meister <rs type="person" key="">Sepp</rs> ihren literarischen Gruß brachten und in seinem Büchersaal arbeiteten. Binnen 24 Stunden kamen <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0100">Mone</rs> aus <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0074"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0074">Karlsruhe</rs></rs>, Archivar <rs type="person" key="">Baumgartner</rs> und Bibliothekar <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">Graf von Karajan</rs> aus <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0161"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0161">Wien</rs></rs> und der gute <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0182">Schmeller</rs> aus <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0097">München</rs> in der alten <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0101"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0101">Meersburg</rs></rs> an. Sie können denken, mein verehrter Freund! dass bei solchem Andrang mir gar keine Zeit etwas für mich zu arbeiten gewährt wurde. Ich tröste mich nun damit, dass wenigstens der Winter mir so viel Muße bringen werde, um einige längst begonnene Arbeiten zu vollenden. Bei uns hat vor ein paar Tagen die Weinlese angefangen; aber man weiß noch nicht, ob die Trauben sich werden trunken lassen, das heißt: ob sie irgend eine Brühe geben werden; indessen hat man schon von rotem Gewächse zu 12 fl. den Ohm verkauft. Wohl bekomms denen, die den sauren Saft trinken müssen! Wir sind jetzt zahlreicher als gewöhnlich bei Tische. Mein Sohn ist aus <rs type="place" key=""><rs type="place" key="">Prag</rs></rs> zu uns in Urlaub gekommen, meine Schwiegermutter mit ihrer Tochter <rs type="person" key="">Nette</rs> aus <rs type="place" key="">Westfalen</rs>, letztere bleiben über den Winter bei uns. Sonst ist alles wohl und grüßt mit mir Sie und die Ihren auf das freundschaftlichste, wir bitten auch unsere Grüße bei Herrn Dr. <rs type="person" key="">Scherbs</rs> und in <rs type="place" key="">Hauptwil</rs> auszurichten. Sehen Sie <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0193">J. C. Zellweger</rs>, Rektor <rs type="person" key="">Marikofer</rs>; so richten Sie auch da meine Grüße aus. Und hiemit Gott befohlen!
+von <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0373">Irem Jv.Laßberg</rs>.</p>
+            </div>
         </body>
     </text>
 </TEI>
-    

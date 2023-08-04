@@ -4,59 +4,82 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Brief von Joseph von Laßberg an Levin SchÃ¼cking (08.10.1843).</title>
+                <title>Brief von Johann Adam Pupikofer an Joseph von Laßberg (30.05.1828).</title>
                 <respStmt>
                     <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
                     <name>Michael Schonhardt</name>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
-                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 normalisiert.</p>
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
                     <msIdentifier>
-                        <settlement>nan</settlement>
-                        <repository>nan</repository>
-                        <idno type="signature"/>
-                        <idno type="register-harris">1231</idno>
-                        <idno type="register-lassberg">?</idno>
+                        <settlement>Frauenfeld</settlement>
+                        <repository>Thurgauische Kantonsbibliothek</repository>
+                        <idno type="signature"></idno>
+                        <idno type="register-harris">2210</idno>
+                        <idno type="register-lassberg">nan</idno>
                     </msIdentifier>
                     <additional>
                         <surrogates>
-                            <bibl type="printed">Ewald Reinhard, Neu aufgefundene LaÃŸbergbriefe. In: Bodenseebuch 31 (1944), S. 71-77, S. 75
-                            <ref>https://www.digishelf.de/piresolver?id=bsz407525408</ref>
-                            </bibl>
+                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 16 (1888), S.  1-32 und 97-154, S. 23<ref>https://books.google.de/books?id=XWY5AAAAMAAJ</ref></bibl>
                         </surrogates>
                     </additional>
                 </msDesc>
             </sourceDesc>
         </fileDesc>
         <profileDesc>
-            <correspDesc xml:id="correspDesc-1231">
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1231">
                 <correspAction type="sent">
-                    <persName ref="lassberg-correspondent-0373">Joseph von Laßberg</persName>
-                    <placeName ref="lassberg-place-0101">Meersburg</placeName>
-                    <date when="1843-10-08">08.10.1843</date>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X"
+                        >Johann Adam Pupikofer</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-{PLACE_FROM_NUMBER}" ref="{PLACE_FROM_METADATA}">{PLACE_SENT_FROM}</placeName>
+                    <date when="1828-05-30">30.05.1828</date>
                 </correspAction>
                 <correspAction type="received">
-                    <persName ref="lassberg-correspondent-0277">Levin SchÃ¼cking</persName>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-{PLACE_TO_NUMBER}" ref="{PLACE_TO_METADATA}">{PLACE_SENT_TO}</placeName>
                 </correspAction>
-                <noteGrp type="chatgpt">
-                    <note type="chatgpt-summary"/>
-                    <note type="chatgpt-keytopics"/>
-                    <note type="chatgpt-persons"/>
-                    <note type="chatgpt-texts"/>
-                    <note type="chatgpt-objects"/>
-                    <note type="chatgpt-manuscripts"/>
-                </noteGrp>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0274"><rs>Lambert</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Frithiofsaga</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Herrad</rs></ref>
+<ref type="cmif:mentionsBibl" target=""><rs>Codex Probat</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Thurgovia</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0196"><rs>Hartmann</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Hüllmann</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Jean List</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Bonstettens</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Matthisson</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Bischofzell</rs></ref>
+                </note>
             </correspDesc>
         </profileDesc>
     </teiHeader>
     <text>
         <body>
-            <p/>
+            <div type="original" resp="ocr">
+                <p>Wenn mein angekündigter Besuch sich nicht bis heute verspätet hätte, wollte ich zu Ihnen kommen: da ich nun dem Triebe meines Herzens nicht folgen kann, so soll wenigstens ein Papierstreifchen mich bei Ihnen in Erinnerung bringen. Für <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0274">Lambert</rs>, für die <rs type="person" key="">Frithiofsaga</rs> und für <rs type="person" key="">Herrad</rs> vielen Dank; Ihr Merk ist immer noch bei mir; Sie werden ihn aber wohl nicht gerade brauchen; ich möchte etwas ausschreiben. Ich habe einige Seiten des <rs type="misc" key="">codex probat</rs>. für die <rs type="place" key="">Thurgovia</rs> zusammengeschrieben, und mich dabei entschlossen, auch die Dießenhofer Urkunden, die ich Ihnen letzthin nicht als dazu gehörig vorwies, dazu zu nehmen; es sind derselben zwar nur drei, eine von 1251, eine andere von 1258 und eine von 1260; aber die letztere enthält ein Convolut von wieder vier Urkunden, unter welchen diejenige von 1178 die Stiftungsurkunde von dem alten Grafen <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0196">Hartmann</rs>, einen nicht unwichtigen Beitrag zu <rs type="person" key="">Hüllmann</rs> gibt. Vielleicht gebe ich auch noch Auszüge aus dem alten Dießenhoferschen Stadtbuch, damit die Litteratoren Gelegenheit bekommen, uns zu sagen, wer der episcopus Cassalensis sei. Wollen Sie mir durch <rs type="person" key="">Jean List</rs> wissen lassen, ob Sie im Anfange der künftigen Woche noch zu Hause sind? Ich stehe immer in Sorgen, Sie möchten einmal den Reißaus nehmen, ohne daß ich mich vorher bei Ihnen verabschiedet hätte, und es liegt in meiner Sorge neben der Liebe zu Ihnen noch etwas Eigennutz; ich möchte nämlich, damit ich bei Ihrer wahrscheinlich langen Abwesenheit nicht hungern müsse, Ihre Bibliothek noch ein wenig in Anspruch nehmen. Kennen Sie <rs type="person" key="">Bonstettens</rs> Briefe an <rs type="person" key="">Matthisson</rs>? Ich las dieselben sehr gerne und lege sie bei. Meine Frau und Kinder tragen mir Grüße an Sie auf. Bleiben Sie gewogen
+Ihrem Ergebensten Pupikofer
+<rs type="place" key="">Bischofzell</rs>, den 30. Mai 1828.</p>
+            </div>
+            <div type="normalized" resp="GPT3.5">
+                <p>Wenn mein angekündigter Besuch sich nicht bis heute verspätet hätte, wollte ich zu Ihnen kommen: da ich nun dem Triebe meines Herzens nicht folgen kann, so soll wenigstens ein Papierstreifchen mich bei Ihnen in Erinnerung bringen. Für <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0274">Lambert</rs>, für die <rs type="person" key="">Frithiofsaga</rs> und für <rs type="person" key="">Herrad</rs> vielen Dank; Ihr Merk ist immer noch bei mir; Sie werden ihn aber wohl nicht gerade brauchen; ich möchte etwas ausschreiben. Ich habe einige Seiten des <rs type="misc" key="">Codex Probat</rs> für die <rs type="place" key="">Thurgovia</rs> zusammengeschrieben, und mich dabei entschlossen, auch die Dießenhofer Urkunden, die ich Ihnen letzthin nicht als dazu gehörig vorwies, dazu zu nehmen; es sind dieselben zwar nur drei, eine von 1251, eine andere von 1258 und eine von 1260; aber die letztere enthält ein Convolut von wieder vier Urkunden, unter welchen diejenige von 1178 die Stiftungsurkunde von dem alten Grafen <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0196">Hartmann</rs>, einen nicht unwichtigen Beitrag zu <rs type="person" key="">Hüllmann</rs> gibt. Vielleicht gebe ich auch noch Auszüge aus dem alten Dießenhoferschen Stadtbuch, damit die Literatoren Gelegenheit bekommen, uns zu sagen, wer der Episcopus Cassalensis sei. Wollen Sie mir durch <rs type="person" key="">Jean List</rs> wissen lassen, ob Sie im Anfang der künftigen Woche noch zu Hause sind? Ich stehe immer in Sorgen, Sie möchten einmal den Reißaus nehmen, ohne dass ich mich vorher bei Ihnen verabschiedet hätte, und es liegt in meiner Sorge neben der Liebe zu Ihnen noch etwas Eigennutz; ich möchte nämlich, damit ich bei Ihrer wahrscheinlich langen Abwesenheit nicht hungern müsse, Ihre Bibliothek noch ein wenig in Anspruch nehmen. Kennen Sie <rs type="person" key="">Bonstettens</rs> Briefe an <rs type="person" key="">Matthisson</rs>? Ich las dieselben sehr gerne und lege sie bei. Meine Frau und Kinder tragen mir Grüße an Sie auf. Bleiben Sie gewogen
+Ihrem Ergebensten Pupikofer
+<rs type="person" key="">Bischofzell</rs>, den 30. Mai 1828.</p>
+            </div>
         </body>
     </text>
 </TEI>
-    

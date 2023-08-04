@@ -4,59 +4,99 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Brief von Joseph von Laßberg an Theodor Georg von Karajan (03.04.1843).</title>
+                <title>Brief von Johann Adam Pupikofer an Joseph von Laßberg (17.01.1828).</title>
                 <respStmt>
                     <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
                     <name>Michael Schonhardt</name>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
-                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 normalisiert.</p>
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
                     <msIdentifier>
-                        <settlement>Marbach am Neckar</settlement>
-                        <repository>Schiller Nationalmuseum</repository>
-                        <idno type="signature"/>
-                        <idno type="register-harris">1214</idno>
-                        <idno type="register-lassberg">34</idno>
+                        <settlement>Frauenfeld</settlement>
+                        <repository>Thurgauische Kantonsbibliothek</repository>
+                        <idno type="signature"></idno>
+                        <idno type="register-harris">2200</idno>
+                        <idno type="register-lassberg">nan</idno>
                     </msIdentifier>
                     <additional>
                         <surrogates>
-                            <bibl type="printed">nan
-                            <ref>nan</ref>
-                            </bibl>
+                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 16 (1888), S.  1-32 und 97-154, S. 20<ref>https://books.google.de/books?id=XWY5AAAAMAAJ</ref></bibl>
                         </surrogates>
                     </additional>
                 </msDesc>
             </sourceDesc>
         </fileDesc>
         <profileDesc>
-            <correspDesc xml:id="correspDesc-1214">
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1214">
                 <correspAction type="sent">
-                    <persName ref="lassberg-correspondent-0373">Joseph von Laßberg</persName>
-                    <placeName ref="lassberg-place-0101">Meersburg</placeName>
-                    <date when="1843-04-03">03.04.1843</date>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X"
+                        >Johann Adam Pupikofer</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-{PLACE_FROM_NUMBER}" ref="{PLACE_FROM_METADATA}">{PLACE_SENT_FROM}</placeName>
+                    <date when="1828-01-17">17.01.1828</date>
                 </correspAction>
                 <correspAction type="received">
-                    <persName ref="lassberg-correspondent-0346">Theodor Georg von Karajan</persName>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-{PLACE_TO_NUMBER}" ref="{PLACE_TO_METADATA}">{PLACE_SENT_TO}</placeName>
                 </correspAction>
-                <noteGrp type="chatgpt">
-                    <note type="chatgpt-summary"/>
-                    <note type="chatgpt-keytopics"/>
-                    <note type="chatgpt-persons"/>
-                    <note type="chatgpt-texts"/>
-                    <note type="chatgpt-objects"/>
-                    <note type="chatgpt-manuscripts"/>
-                </noteGrp>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <ref type="cmif:mentionsPerson" target=""><rs>Hormayrs</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0188"><rs>Müller</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Müllinen</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Heceliscell</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs>Wirnt von</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs>Heinrich von Sonnenberg</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Rotenburg</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0150"><rs>Heinrich</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0224"><rs>Albrecht</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs>Berthold von Nifen</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs>Soboto von Tanhausen</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs>Friedrich</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs>Wilhelm von Toggenburg</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Diethelm</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs>Friedrich</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0285"><rs>Kraft</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs>H. von Heitnau</rs></ref>
+<ref type="cmif:mentionsOrganisation" target=""><rs>Comthurei Tobel</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0291"><rs>Eppo de Cecinkon</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0291"><rs>C. de Schonowe</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0291"><rs>Diethelm de Windegge</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0291"><rs>Johanes de Deinberch</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0291"><rs>hiltebr. de Woenstein</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0291"><rs>Ulr. de Goldelinge</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Hormayrs</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Bischofzell</rs></ref>
+                </note>
             </correspDesc>
         </profileDesc>
     </teiHeader>
     <text>
         <body>
-            <p/>
+            <div type="original" resp="ocr">
+                <p>Hochwohlgeborner Herr und Gönner!
+Wie gerne käme ich heute wieder zu Ihnen, um zu hören, was Sie in Irer französischen Alexandreis aufgefunden haben, und nochmals die gaukelhaften Zeichnungen derselben zu durchblättern: allein statt dieser Freude hält mich ein Rheumatismus so am Schmerze gefesselt, daß ich nur seufzen, und kaum noch in einzelnen Zwischenstunden etwas lesen und den Geist erfrischen kann. Wenn das ora pro nobis in der Litanei nur auch unser einem Hülfe brächte! Ich sende Ihnen hier <rs type="person" key=""><rs type="person" key="">Hormayrs</rs></rs> Schriften mit Dank zurück. Ich habe darin gefunden, was <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0188">Müller</rs> in den Tirolischen Beiträgen fand, nämlich die Stammtafeln der Rhätischen, Istrischen und Thurgauischen Grafen; auch die Herleitung der Herren von <rs type="person" key="">Müllinen</rs> oder <rs type="person" key="">Heceliscell</rs>. Im dritten Bande las ich den Abschnitt über die Meranischen Helden und ihre Verherrlichung im altdeutschen Gesange besonders gerne. In der zweiten Hälfte des dritten Bandes fand ich indessen manches für die Geschichte des deutschen Gesanges merkwürdige von Ihnen nicht angezeichnet z. B. p. 319 <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">Wirnt von</rs> Gravenberg; p. 407 und 454 <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0150">Heinrich</rs> von Sonnenberg</rs> als Vasall der gesangliebenden Meraner und vielleicht Vetter des Dichters; p.397 die von <rs type="place" key="">Rotenburg</rs> in ähnlichen Verhältnissen; p. 440. ff. <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0150">Heinrich</rs> und <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0224">Albrecht</rs> und <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">Berthold von Nifen</rs>; <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">Soboto von Tanhausen</rs>; collat. p. 255 not. Unser B. dictus Gast ist Zeuge, als 1266 die Brüder <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">Friedrich</rs></rs> und <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">Wilhelm von Toggenburg</rs>, und <rs type="person" key="">Diethelm</rs> und <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">Friedrich</rs></rs> ihre Neffen, Söhne des Grafen <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0285">Kraft</rs> (des Dichters?) dem <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">H. von Heitnau</rs>, ihrem Vasallen gestatten, das Gut zu Allenwinden und im Haige, samt dem Hügel, worauf er eine Burg gebaut hatte, an die <rs type="organisation" key="">Comthurei Tobel</rs> zu verkaufen. Andere Zeugen sind <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0291">Eppo de Cecinkon</rs>, <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0291">C. de Schonowe</rs>, <rs type="person" key="">Diethelm</rs> de Windegge, <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0291">Johanes de Deinberch</rs>, frater <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0291">hiltebr. de Woenstein</rs>, <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0291">Ulr. de Goldelinge</rs>. Der Gast ist der letzte. Wollen Sie die Güte haben, mir einige folgende Bände <rs type="person" key=""><rs type="person" key="">Hormayrs</rs></rs> zu senden, so verrichten Sie meiner geängsteten Seele eine Wohlthat, die mehr erfrischt, als alle remedia hypocratica. In der Hoffnung daß Sie und ich von unsern Uebeln befreit bald wieder heiterer die Welt anschauen, bin ich
+Ihr mit Liebe Ergebener Diac. Pupikofer.
+<rs type="place" key="">Bischofzell</rs>, den 17. Jan. 1828.</p>
+            </div>
+            <div type="normalized" resp="GPT3.5">
+                <p>Hochwohlgeborener Herr und Gönner!
+Wie gerne käme ich heute wieder zu Ihnen, um zu hören, was Sie in Ihrer französischen Alexandreis gefunden haben, und nochmals die gaukelhaften Zeichnungen derselben zu durchblättern: allein statt dieser Freude hält mich ein Rheumatismus so am Schmerz gefesselt, dass ich nur seufzen, und kaum noch in einzelnen Zwischenstunden etwas lesen und den Geist erfrischen kann. Wenn das "ora pro nobis" in der Litanei nur auch unserem eine Hilfe brächte! Ich sende Ihnen hier <rs type="person" key=""><rs type="person" key="">Hormayrs</rs></rs> Schriften mit Dank zurück. Ich habe darin gefunden, was <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0188">Müller</rs> in den Tirolischen Beiträgen fand, nämlich die Stammtafeln der Rhätischen, Istrischen und Thurgauischen Grafen; auch die Herleitung der Herren von <rs type="place" key="">Müllinen</rs> oder <rs type="place" key="">Heceliscell</rs>. Im dritten Bande las ich den Abschnitt über die Meranischen Helden und ihre Verherrlichung im altdeutschen Gesange besonders gerne. In der zweiten Hälfte des dritten Bandes fand ich indessen manches für die Geschichte des deutschen Gesanges merkwürdige von Ihnen nicht angezeichnet z. B. p. 319 <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">Wirnt von</rs> Gravenberg; p. 407 und 454 <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0150">Heinrich</rs> von Sonnenberg</rs> als Vasall der gesangliebenden Meraner und vielleicht Vetter des Dichters; p.397 die von <rs type="place" key="">Rotenburg</rs> in ähnlichen Verhältnissen; p. 440. ff. <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0150">Heinrich</rs> und <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0224">Albrecht</rs> und <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">Berthold von Nifen</rs>; <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">Soboto von Tanhausen</rs>; collat. p. 255 not. Unser B. dictus Gast ist Zeuge, als 1266 die Brüder <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">Friedrich</rs></rs> und <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">Wilhelm von Toggenburg</rs>, und <rs type="person" key="">Diethelm</rs> und <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">Friedrich</rs></rs> ihre Neffen, Söhne des Grafen <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0285">Kraft</rs> (des Dichters?) dem <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">H. von Heitnau</rs>, ihrem Vasallen gestatten, das Gut zu Allenwinden und im Haige, samt dem Hügel, worauf er eine Burg gebaut hatte, an die <rs type="organisation" key="">Comthurei Tobel</rs> zu verkaufen. Andere Zeugen sind <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0291">Eppo de Cecinkon</rs>, <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0291">C. de Schonowe</rs>, <rs type="person" key="">Diethelm</rs> de Windegge, <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0291">Johanes de Deinberch</rs>, frater <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0291">hiltebr. de Woenstein</rs>, <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0291">Ulr. de Goldelinge</rs>. Der Gast ist der letzte. Wollen Sie die Güte haben, mir einige folgende Bände <rs type="person" key=""><rs type="person" key="">Hormayrs</rs></rs> zu senden, so verrichten Sie meiner geängsteten Seele eine Wohltat, die mehr erfrischt, als alle remedia hypocratica. In der Hoffnung, dass Sie und ich von unseren Übeln befreit bald wieder heiterer die Welt anschauen, bin ich
+Ihr mit Liebe Ergebener Diac. Pupikofer.
+<rs type="place" key="">Bischofzell</rs>, den 17. Jan. 1828.</p>
+            </div>
         </body>
     </text>
 </TEI>
-    

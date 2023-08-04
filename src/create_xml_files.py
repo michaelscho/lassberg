@@ -2,141 +2,272 @@ import os
 import pandas as pd
 from datetime import datetime
 import calendar
+import re
+from flair.data import Sentence
+from flair.models import SequenceTagger
+from flair.nn import Classifier
+from flair.data import Label
+from bertopic import BERTopic
+
 
 """ Create letters as xml files
 """
-debug = []
-e = ""
 
-data = pd.read_csv(os.path.join(os.getcwd(), '..', 'data', 'register', 'final_register.csv'), sep=';')
+def load_letters_from_file(file):
+    with open(file, 'r', encoding='utf8') as f:
+        # split file into letters using '#' as delimitor
+        letters = f.read().split('#')
+        split_letters = []
+        # for each item in letters list, extract text, metadata insinde '{}' and normalised text inside '[[]]' as sublist
+        for letter in letters:
+            braces_content = re.findall(r"(\{.*?\})", letter)  # content between braces
+            brackets_content = re.findall(r"\[\[(.*?)\]\]", letter, re.DOTALL)  # content between brackets
 
+            # remove content between braces and brackets from original string
+            remaining_text = re.sub(r"(\{.*?\})", "", letter, flags=re.DOTALL)
+            remaining_text = re.sub(r"\[\[(.*?)\]\]", "", remaining_text, flags=re.DOTALL)
+            
 
-# Create xml file for each letter
+            # append extracted content to split_items list
+            split_letters.append([braces_content[0] if braces_content else "", 
+                            brackets_content[0] if brackets_content else "", 
+                            remaining_text.strip()])
 
-def create_letter(row):
-
-    register_harris = row['Nummer']
-    register_lassberg = row['Journalnummer']
-    date = row['Datum']
-    place_from_id = row['place_id']
-    place_from = row['Ort']
-    journal = row['Journalnummer']
-    place_bib = row['Aufbewahrungsort']
-    name_bib = row['Aufbewahrungsinstitution']
-    print = row['text']
-    scan_print = row['url']
-    year = row['Jahr']
-    from_to = row['VON/AN']
-    #text = row['text']
-    #summary = row['chatgpt-summary']
-    try:
-        if year == '-':
-            date_format = 'unknown'
-            date_print = 'unbekanntes Datum'
-        elif date == '-' and year != '-':
-            date_format = datetime.strptime(year, '%Y').strftime('%Y')
-            date_print = year
-        elif date == '-' and year == '-':
-            date_format = 'unknown'
-            date_print = 'unbekanntes Datum'
-        elif date.count('.') == 1:
-            date_format =  datetime.strptime(date + year, '%m.%Y').strftime('%Y-%m')
-            date_print = calendar.month_name[int(date.replace('.',''))] + ' ' + year
-        else:
-            date_format = datetime.strptime(date + year, '%d.%m.%Y').strftime('%Y-%m-%d')
-            date_print = date + year
-    except Exception as i:
-        e = i
-        date_format = 'error'
-        date_print = 'error'
-        debug.append([date,year,register_harris])
-        
-    if from_to == 'VON':
-        name_to = row['Name_voll']
-        gnd_to = row['GND']
-        name_from = 'Joseph von Laßberg'
-        gnd_from = '118778862'
-        person_id_from = 'lassberg-correspondent-0373'
-        person_id_to = row['person_id']
-    else:
-        name_from = row['Name_voll']
-        gnd_from = row['GND']
-        name_to = 'Joseph von Laßberg'
-        gnd_to = '118778862'
-        person_id_to = 'lassberg-correspondent-0373'
-        person_id_from = row['person_id']
+    return split_letters
 
 
-    xml_snippet = f"""<?xml version="1.0" encoding="utf-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-{str(register_harris)}">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title>Brief von {name_from} an {name_to} ({date_print}).</title>
-                <respStmt>
-                    <resp>Encoding to TEI</resp>
-                    <name>Michael Schonhardt</name>
-                </respStmt>
-            </titleStmt>
-            <publicationStmt>
-                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
-            </publicationStmt>
-            <sourceDesc>
-                <msDesc>
-                    <msIdentifier>
-                        <settlement>{place_bib}</settlement>
-                        <repository>{name_bib}</repository>
-                        <idno type="signature"/>
-                        <idno type="register-harris">{register_harris}</idno>
-                        <idno type="register-lassberg">{register_lassberg}</idno>
-                    </msIdentifier>
-                    <additional>
-                        <surrogates>
-                            <bibl type="printed">{print}
-                            <ref>{scan_print}</ref>
-                            </bibl>
-                        </surrogates>
-                    </additional>
-                </msDesc>
-            </sourceDesc>
-        </fileDesc>
-        <profileDesc>
-            <correspDesc xml:id="correspDesc-{str(register_harris)}">
-                <correspAction type="sent">
-                    <persName ref="{person_id_from}">{name_from}</persName>
-                    <placeName ref="{place_from_id}">{place_from}</placeName>
-                    <date when="{date_format}">{date_print}</date>
-                </correspAction>
-                <correspAction type="received">
-                    <persName ref="{person_id_to}">{name_to}</persName>
-                </correspAction>
-                <noteGrp type="chatgpt">
-                    <note type="chatgpt-summary"/>
-                    <note type="chatgpt-keytopics"/>
-                    <note type="chatgpt-persons"/>
-                    <note type="chatgpt-texts"/>
-                    <note type="chatgpt-objects"/>
-                    <note type="chatgpt-manuscripts"/>
-                </noteGrp>
-            </correspDesc>
-        </profileDesc>
-    </teiHeader>
-    <text>
-        <body>
-            <p/>
-        </body>
-    </text>
-</TEI>
-    """
+def save_letter(letter, id):
+    with open(os.path.join(os.getcwd(), '..', 'data', 'letters', f'{id}.xml'), 'w', encoding='utf8') as f:
+        f.write(letter)
 
-    filename = f"lassberg-letter-{register_harris}.xml"
+def string_to_dict(input_string):
+    # Remove the braces and split the string into key-value pairs
+    pairs = input_string.replace("{", "").replace("}", "").split(";")
+    # Split each pair into a key and value and strip whitespace
+    pairs = [pair.split(":") for pair in pairs if pair.strip()]
+    # Create a dictionary from the pairs
+    dictionary = {key.strip(): value.strip() for key, value in pairs}
+    return dictionary
 
-    # save xml to file
-    with open(os.path.join(os.getcwd(), '..', 'data', 'letters', filename), 'w', encoding='utf8') as xml_file:
-        xml_file.write(xml_snippet)
+def query_gpt(prompt, string):
+    # TODO
+    answer = "Todo"
+    return answer
 
-# create letters
-data.apply(create_letter, axis=1)
-print(debug)
-print(e)
+def named_entity_recognition(letter):
+
+    # NER using Flair
+    # load model
+    tagger = Classifier.load('de-ner-large')
+    tagger.to('cpu')
+    
+    # make example sentence in any of the four languages
+    sentence = Sentence(letter)
+
+    # predict NER tags
+    tagger.predict(sentence)
+
+    list_of_entities = []
+
+    # print predicted NER spans
+    for entity in sentence.get_spans('ner'):
+        tag: Label = entity.labels[0]
+        print(f'{entity.text} [{tag.value}] ({tag.score:.4f})')
+        list_of_entities.append([entity.text, tag.value])
+    
+    return list_of_entities
+
+"""
+def topic_extraction(letters):
+    # Creating the BERTopic model
+    topic_model = BERTopic(language="german", 
+                       calculate_probabilities=True, 
+                       embedding_model="deepset/bert-base-german-cased-oldvocab")
+
+    # Fit the model on your letters
+    topics, _ = topic_model.fit_transform(letters)
+
+    # Get the topics for each letter
+    letter_topics = [topic_model.get_topic(topic) for topic in topics]
+    print(letter_topics)
+"""
+
+# Function to create a reference based on entity type
+def create_reference(entity, unique_persons, unique_places):
+    if entity[1] == 'PER':
+        normalized_name = re.sub(r'\b\w+\.','',entity[0])
+        normalized_name = re.sub('  ',' ', normalized_name)
+        normalized_names = normalized_name.split(' ')
+        if len(normalized_names) > 1:
+            normalized_name = normalized_names[1]
+        print(normalized_name)
+
+        is_present = unique_persons['PersonName'].str.contains(normalized_name)
+        filtered_df = unique_persons[is_present]
+        if not filtered_df.empty:
+            person_name = filtered_df['PersonName'].iloc[0] 
+            person_id = filtered_df['person_id'].iloc[0] 
+            ref = f'../register/lassberg-persons.xml#{person_id}'
+            return ref, person_name
+    elif entity[1] == 'LOC':
+        is_present = unique_places['Ort'].str.contains(entity[0])
+        filtered_df = unique_places[is_present]
+        if not filtered_df.empty:
+            place_id = filtered_df['place_id'].iloc[0]
+            place_name = filtered_df['Ort'].iloc[0] 
+            ref = f'../register/lassberg-places.xml#{place_id}'
+            return ref, place_name
+    return None, None
+
+
+def create_letter(letters, xml_template):
+    # read in xml template as string
+    with open(xml_template, 'r', encoding='utf8') as f:
+        xml_template = f.read()
+        #print(xml_template)
+
+    # read in register.csv as dataframe
+    register = pd.read_csv(os.path.join(os.getcwd(), '..', 'data', 'register', 'register.csv'), sep=';')
+
+    # read in unique_places.csv as dataframe
+    unique_places = pd.read_csv(os.path.join(os.getcwd(), '..', 'data', 'register', 'unique_places.csv'), sep=';')
+
+    # read in unique_persons.csv as dataframe
+    unique_persons = pd.read_csv(os.path.join(os.getcwd(), '..', 'data', 'register', 'unique_persons.csv'), sep=';')
+
+    for letter in letters:
+        try:
+            xml_file = xml_template
+            # extract metadata from braces as dictionary
+            metadata = string_to_dict(letter[0])
+            # get additionaL metadata from register.csv by marching metadata["ID"] with register["ID"] and safe as new df
+            metadata_df = register[register['ID'] == metadata['ID']]
+            # get item with metadata_df["place_id"].values[0]
+            place_from_metadata = unique_places[unique_places['place_id'] == metadata_df["place_id"].values[0]]
+
+            # replace placeholders in xml template with content from letters list
+            # replace xml:id
+            xml_file = xml_file.replace('xml:id="lassberg-letter-{XML_ID}"', f'xml:id="{metadata["ID"]}"')
+            xml_file = xml_file.replace('{XML_ID}', f'{metadata["ID"]}')
+            # get date from metadata
+            date = metadata_df['Datum'].values[0]
+            # replace {SENT_DATE_ISO}
+            xml_file = xml_file.replace('{SENT_DATE_ISO}', date)
+            # format date from yyy-mm-dd to dd.mm.yyyy
+            date = datetime.strptime(date, '%Y-%m-%d').strftime('%d.%m.%Y')
+            xml_file = xml_file.replace('{SENT_DATE}', date)
+            # determine if letter was send to or from Lassberg
+            if metadata_df['VON/AN'].values[0] == 'VON':
+                xml_file = xml_file.replace('{SENT_BY}','Joseph von Laßberg')
+                xml_file = xml_file.replace('{SENT_TO}', metadata_df['Name'].values[0])
+                xml_file = xml_file.replace('{PERS_TO_NUMBER}\" ref=\"{GND}\"', f'{metadata_df["person_id"].values[0]}\" ref=\"https://d-nb.info/gnd/{metadata_df["GND"].values[0]}\"')
+                xml_file = xml_file.replace('{PERS_FROM_NUMBER}\" ref=\"{GND}\"', f'lassberg-correspondent-0373\" ref=\"https://d-nb.info/gnd/118778862\"')
+                xml_file = xml_file.replace('{PLACE_FROM_NUMBER}" ref="{PLACE_FROM_METADATA}">{PLACE_SENT_FROM}</placeName>', f'{metadata_df["place_id"].values[0]}\">{place_from_metadata["Ort"].values[0]}</placeName>')
+                xml_file = xml_file.replace('<placeName key="../register/lassberg-places.xml#lassberg-place-{PLACE_TO_NUMBER}" ref="{PLACE_TO_METADATA}">{PLACE_SENT_TO}</placeName>', '')
+                sent_from = 'Joseph von Laßberg'
+                sent_to = metadata_df['Name'].values[0]
+
+            else:
+                xml_file = xml_file.replace('{SENT_TO}','Joseph von Laßberg')
+                xml_file = xml_file.replace('{SENT_BY}', metadata_df['Name'].values[0])
+                xml_file = xml_file.replace('{PERS_FROM_NUMBER}\" ref=\"{GND}\"', f'{metadata_df["person_id"].values[0]}\" ref=\"https://d-nb.info/gnd/{metadata_df["GND"].values[0]}\"')
+                xml_file = xml_file.replace('{PERS_TO_NUMBER}\" ref=\"{GND}\"', f'lassberg-correspondent-0373\" ref=\"https://d-nb.info/gnd/118778862\"')
+                sent_to = 'Joseph von Laßberg'
+                sent_from = metadata_df['Name'].values[0]
+
+            # replace {REPOSITORY_PLACE}, {REPOSITORY_INSTITUTION}, {REPOSITORY_SIGNATURE}, {REGISTER_HARRIS}, {REGISTER_LASSBERG}, {PRINTED_IN}, {PRINTED_IN_URL} with value from metadata_df
+            xml_file = xml_file.replace('{REPOSITORY_PLACE}', str(metadata_df['Aufbewahrungsort'].values[0]))
+            xml_file = xml_file.replace('{REPOSITORY_INSTITUTION}', str(metadata_df['Aufbewahrungsinstitution'].values[0]))
+            xml_file = xml_file.replace('{REPOSITORY_SIGNATURE}', '')
+            xml_file = xml_file.replace('{REGISTER_HARRIS}', str(metadata_df['Nummer_Harris'].values[0]))
+            xml_file = xml_file.replace('{REGISTER_LASSBERG}', str(metadata_df['Journalnummer'].values[0]))
+            xml_file = xml_file.replace('{PRINTED_IN}', str(metadata_df['text'].values[0]))
+            xml_file = xml_file.replace('{PRINTED_IN_URL}', str(metadata_df['url'].values[0]))
+
+            # add abstract German and English
+            abstract_en = query_gpt("Summarize the following letter sent from {sent_from} to {SENT_TO} in English: ", letter[1])
+            xml_file = xml_file.replace('{ABSTRACT_ENGLISH}', abstract_en)
+            abstract_de = query_gpt("Summarize the following letter sent from {sent_from} to {SENT_TO} in German: ", letter[1])
+            xml_file = xml_file.replace('{ABSTRACT_GERMAN}', abstract_de)
+
+            original_text = letter[2]
+            normalized_text = letter[1]
+
+            list_of_entities_normalized = named_entity_recognition(normalized_text)
+            list_of_entities_original = named_entity_recognition(original_text)
+            print(list_of_entities_original)
+            print(list_of_entities_normalized)
+
+            list_of_mentioned_entities = []
+
+            # put entities into <rs> element in xml file
+            for entity in list_of_entities_normalized:
+
+
+                ref, entity_name = create_reference(entity, unique_persons, unique_places)
+                if ref:
+                    print(ref, entity_name)
+                else:
+                    ref=""
+
+                normalized_text = normalized_text.replace(entity[0], f'<rs type="{entity[1]}" key="{ref}">{entity[0]}</rs>')
+                normalized_text = normalized_text.replace('MISC', 'misc')
+                normalized_text = normalized_text.replace('PER','person')
+                normalized_text = normalized_text.replace('LOC','place')
+                normalized_text = normalized_text.replace('ORG','organisation')
+
+                ref_element = f'<ref type="cmif:mentions{entity[1]}" target="{ref}"><rs>{entity[0]}</rs></ref>'
+                ref_element = ref_element.replace('PER', 'Person')
+                ref_element = ref_element.replace('LOC', 'Place')
+                ref_element = ref_element.replace('ORG', 'Organisation')
+                ref_element = ref_element.replace('MISC', 'Bibl')
+
+                list_of_mentioned_entities.append(ref_element)
+
+
+            for entity in list_of_entities_original:
+                ref, entity_name = create_reference(entity, unique_persons, unique_places)
+                if ref:
+                    print(ref, entity_name)
+                else:
+                    ref=""
+
+                original_text = original_text.replace(entity[0], f'<rs type="{entity[1]}" key="{ref}">{entity[0]}</rs>')
+                original_text = original_text.replace('MISC', 'misc')
+                original_text = original_text.replace('PER','person')
+                original_text = original_text.replace('LOC','place')
+                original_text = original_text.replace('ORG','organisation')
+
+                ref_element = f'<ref type="cmif:mentions{entity[1]}" target="{ref}"><rs>{entity[0]}</rs></ref>'
+                ref_element = ref_element.replace('PER', 'Person')
+                ref_element = ref_element.replace('LOC', 'Place')
+                ref_element = ref_element.replace('ORG', 'Organisation')
+                ref_element = ref_element.replace('MISC', 'Bibl')
+
+            # replace list of mentioned entities by joined list
+            xml_file = xml_file.replace('<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-{PERS_NUMBER}"><rs>{ORIGINAL_STRING_MENTION}</rs></ref>', '\n'.join(list_of_mentioned_entities))
+            # replace {ORIGINAL_TEXT} and {NORMALIZED_TEXT} with value from letters list
+            xml_file = xml_file.replace('{ORIGINAL_TEXT}', original_text)
+            xml_file = xml_file.replace('{NORMALIZED_TEXT}', normalized_text)
+
+            save_letter(xml_file, metadata["ID"])
+        except Exception as e:
+            print(e)
+            try:
+                print(letter[0])
+            except:
+                pass
+            
+
+def process_letters(letters):
+    for letter in letters:
+        create_letter(letter)
+        save_letter(letter)
+    
+# textfile containing letters and metadata in {} as well as normalisation of text in [[]]
+xml_template = os.path.join(os.getcwd(), '..', 'data', 'letter_template.xml')
+
+file_with_letters = os.path.join(os.getcwd(), '..', 'data', 'temp', 'pupikofer_normalized.txt')
+
+split_letters = load_letters_from_file(file_with_letters)
+create_letter(split_letters, xml_template)
