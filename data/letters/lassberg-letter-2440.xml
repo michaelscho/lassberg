@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-2440">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Johann Adam Pupikofer an Joseph von Laßberg (15.08.1843).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 normalisiert.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Frauenfeld</settlement>
+                        <repository>Thurgauische Kantonsbibliothek</repository>
+                        <idno type="signature"></idno>
+                        <idno type="register-harris">2809</idno>
+                        <idno type="register-lassberg">nan</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 16 (1888), S.  1-32 und 97-154, S. 147<ref>https://books.google.de/books?id=XWY5AAAAMAAJ</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-2440">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X"
+                        >Johann Adam Pupikofer</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-{PLACE_FROM_NUMBER}" ref="{PLACE_FROM_METADATA}">{PLACE_SENT_FROM}</placeName>
+                    <date when="1843-08-15">15.08.1843</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-{PLACE_TO_NUMBER}" ref="{PLACE_TO_METADATA}">{PLACE_SENT_TO}</placeName>
+                </correspAction>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <ref type="cmif:mentionsOrganisation" target=""><rs>Johannisberger</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Bornhausers</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Bischofzell</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Imhof</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0373"><rs>von Laßberg</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0193"><rs>Zellweger</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Toggenburg</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Bruderwald</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Schweiz</rs></ref>
+<ref type="cmif:mentionsBibl" target=""><rs>Gulden</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0066"><rs>Heiligenberg</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Idda</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Fischingen</rs></ref>
+<ref type="cmif:mentionsBibl" target=""><rs>Louisd'or</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0101"><rs>Meersburg</rs></ref>
+                </note>
+            </correspDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="original" resp="ocr">
+                <p>Sr. Hochwohlgeboren Herrn <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0373">Baron v. Laßberg</rs> in <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0101"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0101">Meersburg</rs></rs>.
+Mein hochverehrter Herr und Freund!
+Ihren Auftrag in Betreff des Kästchens der alten Müllerin habe ich nicht vergessen; aber ich hätte Ihnen den Bericht darüber lieber selbst überbracht. Da das nun nicht sein kann, so nehme ich die Feder zu Hülfe, um Ihnen zu sagen, was mein in Kunstwerken unerfahrenes Auge an dem Dinge beobachtet habe: das Kästchen ist c. 1% Fuß hoch, 11⁄2 breit und 1% lang, von leichtem Holze, ähnlich dem Feigenholze, fein geglättet, schwarz. Die andere Seite des Kästchens ist so eingerichtet, daß sie nach auswärts sich öffnet, wie die Klappe eines Schreibtisches; sie läuft dabei in feinen Fischbändern, mit denen sie an die Bodenseite des Kästchens befestigt ist. Das Schloß ist in die Klappe eingelassen und wird durch einen Haken, der an der obern Seite des Kästchens festgemacht ist, zum Schlusse eingelegt. Das Innere besteht aus drei übereinander geordneten Abtheilungen. In der obersten und untersten Abtheilung ist eine ganze Schublade. Die mittlere Abtheilung ist in zwei Hälften geschieden, von denen jede eine eigene Schublade hat. Fünf Seiten des Kästchens sind mit Perlmutterblumen, die durch goldfarbene Blätter und Stiele verbunden sind, verziert; doch die obere Seite, welche zudem am meisten in's Auge fällt, scheint Beschädigungen erlitten zu haben; denn in einer Ecke ist die Perlmutter gleichsam massenhaft, so daß der Charakter der Blätterbildung verwischt ist. Die Vorderseiten der Schubladen innerhalb sind ebenfalls mit Blumenranken verziert. Zur Befestigung und Sicherung sind endlich die Ecken des Kästchens mit messingenen Beschlägen versehen, welche ehemals vergoldet sein mochten. Dies ist alles, was ich Ihnen von der antiquarischen Merkwürdigkeit schreiben kann. Um 2 <rs type="misc" key="">Louisd'or</rs> könnte man jetzt das Ding haben, obgleich Sie selbst, nach den Angaben der Besitzerin, dasselbe 40 <rs type="misc" key="">Gulden</rs> gewerthet haben sollen. Geben Sie mir den Auftrag, es zu kaufen, so stehe ich ganz zu Ihrem Befehle. Unser Freund <rs type="person" key="">Imhof</rs> ist zwar noch am Leben, aber nicht besser. Er wird in dieser Woche zum dritten Male durch Abzapfung der Wasseransammluug wieder etwas Erleichterung finden, aber leider nur auf Kosten seiner wenigen noch übrigen Kräfte. Ein Glück für ihn, daß er keine acuten Schmerzen und freien Kopf hat. Die Lectüre hilft ihm immer noch den bleiernen Gang der Zeit vergessen. Wenn das Laub fällt, wird wohl auch seine müde Hülle sich zum ewigen Schlummer legen. Gedenken Sie seiner im Gebete, daß er nicht zu lange harren müsse. Er seufzt nach dem letzten Stündlein und kann doch nicht vergessen, daß die alte Herrlichkeit des deutschen Reiches zu seiner Zeit zerfallen sei. Auch <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0193">Zellweger</rs> habe ich vor einigen Wochen gesehen. Eine der ersten Neuigkeiten, die er mir mittheilte, war die, daß er aus einem Wassertrinker wieder ein Weintrinker geworden sei und sich dabei ungemein wohl befinde. Bei dieser Nachricht steigt in Ihnen gewiß der Wunsch auf, einen Humpen mit ihm zu leeren. Allein er treibt es noch nicht weiter als auf drei Löffel <rs type="organisation" key="">Johannisberger</rs> täglich, steht also kaum in Gefahr, des Ordens der Mäßigkeitsvereine verlustig erklärt zu werden. Dagegen arbeitet er immer noch rüstig an seiner Geschichte der französischen Gesandtschaft in der <rs type="place" key="">Schweiz</rs> und ihrer Intriguen im XVIII. Jahrhundert. Ich habe einige Bruchstücke davon gesehen, die wirklich ungemein interessant sind. Gerne möchte auch ich mich rühmen, fleißig zu sein. Allein die administrativen Arbeiten, die ich zu verrichten habe, gleichen den Frohnen, die im freien Reiche der Wissenschaft auf keine Stimme Anspruch haben. Wohl gibt es einzelne Erholungsstunden, in denen ich geschichtliche Notizen sammle; was ist aber das im Vergleiche zu dem, was erfordert würde, um Schritt zu halten mit Fachmännern? Ich werde ein GroBes geleistet zu haben glauben, wenn ich diesen Herbst noch die Regesta des Stiftes <rs type="place" key="">Fischingen</rs> zu Stande bringe, Die Besteigung der alten <rs type="place" key="">Toggenburg</rs> hat mich sehr dazu aufgemuntert. Es war ein gar herrlicher Tag, als ich, auf den noch wenigen Trümmern stehend, nach <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0066">Heiligenberg</rs> hinüber schaute und wiewohl vergeblich, auch die Thürme von <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0101"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0101">Meersburg</rs></rs> suchte. Wären Sie bei mir gewesen, gewiß, sie hätten ebenfalls mit großem Interesse die kühnen Nagelfluhwände, auf denen die alten Grafen ihre Veste gebaut, bestiegen, und nicht mit weniger Interesse in den <rs type="place" key="">Bruderwald</rs> hinunter geblickt, in welchen die Legende den Sturz der frommen <rs type="person" key="">Idda</rs> verlegt hat. Wir <rs type="place" key="">Schweiz</rs>er müssen wirklich unpoetische Naturen sein; sonst hätte jene Stelle bessere Schildereien geweckt als wir z. B. in <rs type="person" key="">Bornhausers</rs> <rs type="person" key="">Idda</rs> finden. Ohne Zweifel haben Sie das Haus voll Gäste, und solcher Gäste, die Ihnen besseres bieten, als ich vermag. Ich erlaube mir daher nur noch die Bitte, der gnädigen Frau und den kleinen Fräulein mich in empfehlende Erinnerung zu bringen und Ihre freundschaftliche Gesinnung ferner zu erhalten 
+Ihrem Ergebensten Pupikofer.
+<rs type="place" key="">Bischofzell</rs>, 15. August 1843.</p>
+            </div>
+            <div type="normalized" resp="GPT3.5">
+                <p>Sehr geehrter Herr Baron <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0373">von Laßberg</rs> in <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0101"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0101">Meersburg</rs></rs>,
+Mein hochverehrter Herr und Freund!
+Ihren Auftrag in Bezug auf das Kästchen der alten Müllerin habe ich nicht vergessen; aber ich hätte Ihnen den Bericht darüber lieber persönlich überbracht. Da das nun nicht möglich ist, nehme ich die Feder zur Hilfe, um Ihnen zu sagen, was mein unerfahrenes Auge in Kunstwerken an dem Gegenstand beobachtet hat: das Kästchen ist ca. 1% Fuß hoch, 1 ½ breit und 1% lang, aus leichtem Holz, ähnlich dem Feigenholz, fein geglättet, schwarz. Die andere Seite des Kästchens ist so eingerichtet, dass sie nach außen aufgeklappt wird, ähnlich der Klappe eines Schreibtisches; sie läuft dabei in feinen Fischbändern, mit denen sie an die Bodenseite des Kästchens befestigt ist. Das Schloss ist in die Klappe eingelassen und wird durch einen Haken, der an der oberen Seite des Kästchens befestigt ist, geschlossen. Das Innere besteht aus drei übereinander angeordneten Abteilen. In der obersten und untersten Abteilung befindet sich jeweils eine ganze Schublade. Die mittlere Abteilung ist in zwei Hälften geteilt, von denen jede eine eigene Schublade hat. Fünf Seiten des Kästchens sind mit Perlmutterblumen verziert, die durch goldfarbene Blätter und Stiele verbunden sind; jedoch scheint die obere Seite, die zudem am meisten auffällt, Beschädigungen erlitten zu haben; denn in einer Ecke ist die Perlmutter sozusagen massenhaft, sodass der Charakter der Blätterbildung verwischt ist. Die Vorderseiten der Schubladen im Inneren sind ebenfalls mit Blumenranken verziert. Zur Befestigung und Sicherung sind schließlich die Ecken des Kästchens mit messingenen Beschlägen versehen, die früher vergoldet gewesen sein mögen. Das ist alles, was ich Ihnen von der antiquarischen Merkwürdigkeit berichten kann. Für 2 <rs type="misc" key="">Louisd'or</rs> könnte man das Stück jetzt haben, obwohl Sie selbst, laut Angaben der Besitzerin, es mit 40 <rs type="misc" key="">Gulden</rs> bewertet haben sollen. Wenn Sie mir den Auftrag geben, es zu kaufen, stehe ich Ihnen voll zur Verfügung. Unser Freund <rs type="person" key="">Imhof</rs> ist zwar noch am Leben, aber nicht besser. Diese Woche wird er zum dritten Mal das Wasser ablassen lassen, um etwas Erleichterung zu finden, leider jedoch auf Kosten seiner immer weniger werdenden Kräfte. Glücklicherweise hat er keine akuten Schmerzen und einen klaren Kopf. Das Lesen hilft ihm immer noch, die langsame Zeit zu vergessen. Wenn das Laub fällt, wird auch seine müde Hülle in den ewigen Schlaf fallen. Denken Sie in Ihrem Gebet an ihn, dass er nicht zu lange warten muss. Er sehnt sich nach der letzten Stunde und kann doch nicht vergessen, dass die alte Größe des deutschen Reiches zu seiner Zeit zerfallen ist. Auch <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0193">Zellweger</rs> habe ich vor einigen Wochen gesehen. Eine der ersten Neuigkeiten, die er mir mitteilte, war, dass er wieder vom Wassertrinken zum Weintrinken übergegangen ist und sich dabei sehr wohl fühlt. Bei dieser Nachricht werden Sie sicherlich den Wunsch verspüren, mit ihm anzustoßen. Allerdings beschränkt er sich noch auf drei Löffel <rs type="organisation" key="">Johannisberger</rs> täglich und läuft daher kaum Gefahr, den Orden der Mäßigkeitsvereine zu verlieren. Dagegen arbeitet er immer noch fleißig an seiner Geschichte der französischen Gesandtschaft in der <rs type="place" key="">Schweiz</rs> und ihren Intrigen im 18. Jahrhundert. Ich habe einige Bruchstücke davon gesehen, die wirklich äußerst interessant sind. Gerne würde auch ich behaupten, fleißig zu sein. Aber die administrativen Arbeiten, die ich erledigen muss, gleichen den Frondiensten, die in der freien Welt der Wissenschaft nicht geschätzt werden. Es gibt zwar vereinzelt Erholungsstunden, in denen ich geschichtliche Notizen sammle; was ist das aber im Vergleich dazu, was nötig wäre, um mit Fachleuten Schritt zu halten? Ich werde mich schon ziemlich glücklich schätzen, wenn ich diesen Herbst noch die Regesten des Stiftes <rs type="place" key="">Fischingen</rs> fertigstellen kann. Die Besteigung der alten <rs type="place" key="">Toggenburg</rs> hat mich sehr dazu ermutigt. Es war ein wunderschöner Tag, als ich auf den wenigen noch stehenden Ruinen stand und nach <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0066">Heiligenberg</rs> hinüberschaute und erfolglos nach den Türmen von <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0101"><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0101">Meersburg</rs></rs> suchte. Wären Sie bei mir gewesen, hätten Sie sicherlich ebenfalls mit großem Interesse die steilen Nagelfluhwände erklimmt, auf denen die alten Grafen ihre Burg erbauten, und nicht weniger interessiert in den <rs type="place" key="">Bruderwald</rs> hinuntergeblickt, wo die Legende den Sturz der frommen <rs type="person" key=""><rs type="person" key="">Idda</rs></rs> verortet. Wir <rs type="place" key="">Schweiz</rs>er müssen wirklich unpoetische Naturen sein; sonst hätte dieser Ort bessere Beschreibungen geweckt, als wir sie zum Beispiel in <rs type="person" key="">Bornhausers</rs> <rs type="person" key=""><rs type="person" key="">Idda</rs></rs> finden. Zweifellos haben Sie das Haus voller Gäste, und solcher Gäste, die Ihnen besseres bieten als ich es kann. Deshalb erlaube ich mir nur noch die Bitte, die gnädige Frau und die kleinen Fräulein in freundlicher Erinnerung an mich zu grüßen und Ihre freundschaftliche Gesinnung weiterhin zu bewahren.
+Ihr Ergebenster Pupikofer.
+<rs type="place" key="">Bischofzell</rs>, 15. August 1843.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

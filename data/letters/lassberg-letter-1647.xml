@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1647">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Johann Adam Pupikofer an Joseph von Laßberg (01.04.1832).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 normalisiert.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Frauenfeld</settlement>
+                        <repository>Thurgauische Kantonsbibliothek</repository>
+                        <idno type="signature"></idno>
+                        <idno type="register-harris">2414</idno>
+                        <idno type="register-lassberg">nan</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 16 (1888), S.  1-32 und 97-154, S. 137<ref>https://books.google.de/books?id=XWY5AAAAMAAJ</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1647">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X"
+                        >Johann Adam Pupikofer</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-{PLACE_FROM_NUMBER}" ref="{PLACE_FROM_METADATA}">{PLACE_SENT_FROM}</placeName>
+                    <date when="1832-04-01">01.04.1832</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-{PLACE_TO_NUMBER}" ref="{PLACE_TO_METADATA}">{PLACE_SENT_TO}</placeName>
+                </correspAction>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <ref type="cmif:mentionsPerson" target=""><rs>Dalp</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0043"><rs>Eppishausen</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Bischofzell</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Neukirch</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Buwyl</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Wärtbühl</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Kenzenau</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>von Imhof</rs></ref>
+                </note>
+            </correspDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="original" resp="ocr">
+                <p>Mein hochverehrter Herr!
+Das kleine Bild von <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs> wünschen Sie? Aber ich habe dasselbe nicht mehr. Ich sandte es an Herrn <rs type="person" key="">Dalp</rs>, und ich versprach auch einen Text dazu, sobald die Platte fertig sei. Das letztere ist noch nicht erfolgt; des Textes wegen aber ist es mir lieb, daß ich nun gezwungen bin, Ihnen ein halbes Geheimniß zu verrathen; denn nun darf ich Sie offen um Mittheilungen und Kritiken angehen. Das Bild selbst betreffend, will ich Herrn <rs type="person" key="">von Imhof</rs> fragen, ob er nicht die Skizze noch besitze; doch ohne Ihren besonderen Auftrag werde ich Ihren Wunsch ihm nicht verrathen dürfen? Ich weiß, das es ihm lieb wäre, Ihnen eine Gefälligkeit erweisen zu können, und daß er dann um so öfter es wagen würde, Sie zu besuchen. Wie mich doch das Glück einmal von Ihnen aus begünstigt! Schon vor acht Tagen erhielt ich die zweite Lieferung des Anzeigers, und da Sie dieselbe so wenig als die erste empfangen haben, sende ich Sie ebenfalls Ihnen zu, und zwar ungelesen: denn die ganze letzte Woche gieng mir in Amtsgeschäften auf, und von der angefangenen sind schon wieder 4 Tage zum voraus subscribirt. Es macht mich manchmal fast traurig, daß meine Muße so enge beschränkt ist; aber was thut nicht die vanitas publica, wie man unser jetziges Staatswesen nennen möchte, und die, welche daran arbeiten? Es war heute ein herrlicher Frühlingstag. Warum sind Sie nicht herüber gefahren? Es hätte Ihnen gewiß gut gethan. Oder fürchteten Sie den ersten April? Man sagte mir, der Gugguck habe sich schon hören lassen, und Andere denen ich das erzählte, meinten, man habe mich in den April geschickt. Nun, er wird schon noch kommen, wenn nicht heute, doch am 10. April, seinem termino ultimo bei uns. Leben Sie wohl. Am Montag inspicire ich in <rs type="place" key="">Buwyl</rs> und gehe bei dieser Gelegenheit nach <rs type="place" key="">Wärtbühl</rs>, am Dienstag in <rs type="place" key="">Neukirch</rs>, am Mittwoch in <rs type="place" key="">Kenzenau</rs>, am Donnerstag vielleicht bei Ihnen.
+Von Herzen Ihr Pupikofer.
+<rs type="place" key="">Bischofzell</rs>, 1. April 1832.</p>
+            </div>
+            <div type="normalized" resp="GPT3.5">
+                <p>Mein hochverehrter Herr!
+Das kleine Bild von <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs> wünschen Sie? Aber ich habe dasselbe nicht mehr. Ich sandte es an Herrn <rs type="person" key="">Dalp</rs>, und ich versprach auch einen Text dazu, sobald die Platte fertig sei. Das letztere ist noch nicht erfolgt; des Textes wegen aber ist es mir lieb, dass ich nun gezwungen bin, Ihnen ein halbes Geheimnis zu verraten; denn nun darf ich Sie offen um Mitteilungen und Kritiken angehen. Das Bild selbst betreffend, will ich Herrn <rs type="person" key="">von Imhof</rs> fragen, ob er nicht die Skizze noch besitze; doch ohne Ihren besonderen Auftrag werde ich Ihren Wunsch ihm nicht verraten dürfen? Ich weiß, das es ihm lieb wäre, Ihnen eine Gefälligkeit erweisen zu können, und dass er dann um so öfter es wagen würde, Sie zu besuchen. Wie mich doch das Glück einmal von Ihnen aus begünstigt! Schon vor acht Tagen erhielt ich die zweite Lieferung des Anzeigers, und da Sie dieselbe so wenig wie die erste empfangen haben, sende ich Sie ebenfalls Ihnen zu, und zwar ungelesen: denn die ganze letzte Woche ging mir in Amtsgeschäften auf, und von der angefangenen sind schon wieder 4 Tage zum voraus subscribiert. Es macht mich manchmal fast traurig, dass meine Muße so enge beschränkt ist; aber was tut nicht die Vanitas publica, wie man unser jetziges Staatswesen nennen möchte, und die, welche daran arbeiten? Es war heute ein herrlicher Frühlingstag. Warum sind Sie nicht herüber gefahren? Es hätte Ihnen gewiss gut getan. Oder fürchteten Sie den ersten April? Man sagte mir, der Kuckuck habe sich schon hören lassen, und Andere denen ich das erzählte, meinten, man habe mich in den April geschickt. Nun, er wird schon noch kommen, wenn nicht heute, doch am 10. April, seinem termino ultimo bei uns. Leben Sie wohl. Am Montag inspizierte ich in <rs type="place" key="">Buwyl</rs> und gehe bei dieser Gelegenheit nach <rs type="place" key="">Wärtbühl</rs>, am Dienstag in <rs type="place" key="">Neukirch</rs>, am Mittwoch in <rs type="place" key="">Kenzenau</rs>, am Donnerstag vielleicht bei Ihnen.
+Von Herzen Ihr Pupikofer.
+<rs type="place" key="">Bischofzell</rs>, 1. April 1832.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

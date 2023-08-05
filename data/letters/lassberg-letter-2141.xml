@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-2141">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Johann Adam Pupikofer an Joseph von Laßberg (26.09.1839).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 normalisiert.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Frauenfeld</settlement>
+                        <repository>Thurgauische Kantonsbibliothek</repository>
+                        <idno type="signature"></idno>
+                        <idno type="register-harris">2669</idno>
+                        <idno type="register-lassberg">nan</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 16 (1888), S.  1-32 und 97-154, S. 145<ref>https://books.google.de/books?id=XWY5AAAAMAAJ</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-2141">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X"
+                        >Johann Adam Pupikofer</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-{PLACE_FROM_NUMBER}" ref="{PLACE_FROM_METADATA}">{PLACE_SENT_FROM}</placeName>
+                    <date when="1839-09-26">26.09.1839</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-{PLACE_TO_NUMBER}" ref="{PLACE_TO_METADATA}">{PLACE_SENT_TO}</placeName>
+                </correspAction>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <ref type="cmif:mentionsPlace" target=""><rs>Bischofzell</rs></ref>
+<ref type="cmif:mentionsBibl" target=""><rs>Taciti</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>von Muralt</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Hauptwyl</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0319"><rs>v. M.</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Scherbs</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Kreuzlingen</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Gemahlin</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Imhof</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0049"><rs>Frauenfeld</rs></ref>
+                </note>
+            </correspDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="original" resp="ocr">
+                <p><rs type="place" key="">Bischofzell</rs>, 26. Sept. 1839.
+Mein hochverehrtester Herr Baron!
+Soeben von <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0049">Frauenfeld</rs> zurückgekehrt, vernehme ich, daß Herr <rs type="person" key=""><rs type="person" key="">von Muralt</rs></rs> Ihnen die 10 Fässer Kalk über Konstanz übermacht und Ihnen zugleich zu dem Dienste sich bereit erklärt habe, Ihnen einen mit der Verfertigung der Kalkgüsse vertrauten Mann zu senden; es liege ihm nämlich daran, daß die Arbeit gelinge, und so wäre es ihm selbst lieb, dieselbe durch technische Kunstfertigkeit gesichert zu wissen. Sie mögen also gefälligst disponiren, und Ihre Befehle entweder mittelbar durch mich oder unmittelbar an Herrn <rs type="person" key=""><rs type="person" key="">von Muralt</rs></rs> ertheilen. Zu näherer Aufklärung über die Spedition des Kalkes muß ich indessen nachtragen, daß ich zwar mit den Utwyler Fuhrleuten unterhandelte, aber von einem Tage zum andern aufgezögert wurde, und daher zuletzt nichts besseres zu thun wußte, als Herrn <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0319"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0319">v. M.</rs></rs> selbst die Spedition zu übertragen, in der Meinung, daß, wenn Sie vielleicht auch 15 xr mehr Gebühr für das Faß zahlen, dies weniger wichtig sei als eine Verzögerung bis zum Frühjahre. Auch glaubt Herr <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0319"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0319">v. M.</rs></rs>, da der Kalkguß überdeckt werde mit Erde, so sei keine Bedenklichkeit, denselben diesen Herbst noch zu fertigen. Etwas anderes wäre, wenn er der freien Luft über den Winter ausgesetzt wäre. Dies wissen Sie freilich schon längst; allein als gewissenhafter Diener berichte ich alles, was zur Sache gehört. General <rs type="person" key=""><rs type="person" key=""><rs type="person" key="">Imhof</rs></rs></rs> ist seit 10 Tagen in <rs type="place" key=""><rs type="place" key="">Hauptwyl</rs></rs>, und unser lieber <rs type="person" key=""><rs type="person" key=""><rs type="person" key="">Imhof</rs></rs></rs> hat seine letzte Willenserklärung nach seinem Beirathe unterzeichnen lassen. Es war mir bei dem Akte ganz wehmüthig; aber <rs type="person" key=""><rs type="person" key=""><rs type="person" key="">Imhof</rs></rs></rs> selbst blieb so ruhig, wie er immer ist, im Gegentheile, er schien freudig in dem Bewußtsein, einmal mit der Welt abgeschlossen zu haben. Das wird ihn aber nicht hindern, seinen Bruder über den See zu Ihnen zu geleiten. Noch weiß ich indessen den Tag nicht. Da wir aber auf morgen Abend zu einem Abendessen mit Herrn <rs type="person" key="">Scherbs</rs> nach <rs type="place" key=""><rs type="place" key="">Hauptwyl</rs></rs> eingeladen sind, so schließe ich daraus, daß die Abreise nahe sei, und daß Sie der Ankunft der lieben Gäste im Anfange der künftigen Woche entgegensehen dürfen. Ich würde sie gerne begleiten; aber Amtsgeschäfte machen Dienstag bis Freitag meine Anwesenheit in hier unerläßlich, und ob ich bei Gelegenheit des Seminar Examens in <rs type="place" key="">Kreuzlingen</rs> am 14. oder 21. Oct. und den darauf folgenden Tagen zu Ihnen hinüberschwimmen könne, ist sehr zweifelhaft. Gebundene schwimmen schlecht, selbst wenn sie die Hexerei verstehen. Soll ich Ihnen noch etwas von der Politik schreiben und von der Regierungs Liederlichkeit und dem heiligen Eifer des Unverstandes der Volks Souveränität? O nein! <rs type="misc" key="">Taciti</rs> deploremus vanitatem. Gott befohlen seien Sie mit Ihrer Frau Gemahlin und Ihren lieblichen Kindern; das ungesehene mit eingeschlossen! Mit der innigsten Verehrung bleiben Ihre <rs type="place" key="">Bischofzell</rs>ischen Freunde Ihnen zugethan, besonders 
+Ihr Pupikofer.</p>
+            </div>
+            <div type="normalized" resp="GPT3.5">
+                <p><rs type="place" key="">Bischofzell</rs>, 26. September 1839.
+Mein hochverehrtester Herr Baron!
+Soeben von <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0049">Frauenfeld</rs> zurückgekehrt, vernehme ich, dass Herr <rs type="person" key=""><rs type="person" key="">von Muralt</rs></rs> Ihnen die 10 Fässer Kalk über Konstanz übermacht und Ihnen zugleich zu dem Dienste sich bereit erklärt habe, Ihnen einen mit der Verfertigung der Kalkgüsse vertrauten Mann zu senden; es liege ihm nämlich daran, dass die Arbeit gelinge, und so wäre es ihm selbst lieb, dieselbe durch technische Kunstfertigkeit gesichert zu wissen. Sie mögen also gefälligst disponieren, und Ihre Befehle entweder mittelbar durch mich oder unmittelbar an Herrn <rs type="person" key=""><rs type="person" key="">von Muralt</rs></rs> erteilen. Zu näherer Aufklärung über die Spedition des Kalkes muss ich indessen nachtragen, dass ich zwar mit den Utwyler Fuhrleuten unterhandelte, aber von einem Tage zum anderen aufgezögert wurde, und daher zuletzt nichts Besseres zu tun wusste, als Herrn <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0319"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0319">v. M.</rs></rs> selbst die Spedition zu übertragen, in der Meinung, dass, wenn Sie vielleicht auch 15 xr mehr Gebühr für das Fass zahlen, dies weniger wichtig sei als eine Verzögerung bis zum Frühjahr. Auch glaubt Herr <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0319"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0319">v. M.</rs></rs>, da der Kalkguss überdeckt werde mit Erde, so sei keine Bedenklichkeit, denselben diesen Herbst noch zu fertigen. Etwas anderes wäre, wenn er der freien Luft über den Winter ausgesetzt wäre. Dies wissen Sie freilich schon längst; allein als gewissenhafter Diener berichte ich alles, was zur Sache gehört. General <rs type="person" key=""><rs type="person" key=""><rs type="person" key="">Imhof</rs></rs></rs> ist seit 10 Tagen in <rs type="place" key=""><rs type="place" key="">Hauptwyl</rs></rs>, und unser lieber <rs type="person" key=""><rs type="person" key=""><rs type="person" key="">Imhof</rs></rs></rs> hat seine letzte Willenserklärung nach seinem Beirat unterzeichnen lassen. Es war mir bei dem Akt ganz wehmütig; aber <rs type="person" key=""><rs type="person" key=""><rs type="person" key="">Imhof</rs></rs></rs> selbst blieb so ruhig, wie er immer ist, im Gegenteil, er schien freudig in dem Bewusstsein, einmal mit der Welt abgeschlossen zu haben. Das wird ihn aber nicht hindern, seinen Bruder über den See zu Ihnen zu begleiten. Noch weiß ich indessen den Tag nicht. Da wir aber auf morgen Abend zu einem Abendessen mit Herrn <rs type="person" key="">Scherbs</rs> nach <rs type="place" key=""><rs type="place" key="">Hauptwyl</rs></rs> eingeladen sind, so schließe ich daraus, dass die Abreise nahe sei, und dass Sie der Ankunft der lieben Gäste im Anfange der künftigen Woche entgegensehen dürfen. Ich würde sie gerne begleiten; aber Amtsgeschäfte machen Dienstag bis Freitag meine Anwesenheit hier unerlässlich, und ob ich bei Gelegenheit des Seminar Examens in <rs type="place" key="">Kreuzlingen</rs> am 14. oder 21. Oktober und den darauf folgenden Tagen zu Ihnen hinüberschwimmen könnte, ist sehr zweifelhaft. Gebundene schwimmen schlecht, selbst wenn sie die Hexerei verstehen. Soll ich Ihnen noch etwas von der Politik schreiben und von der Regierungsliederlichkeit und dem heiligen Eifer des Unverstandes der Volkssouveränität? O nein! <rs type="misc" key="">Taciti</rs> deploremus vanitatem. Gott befohlen seien Sie mit Ihrer Frau <rs type="person" key="">Gemahlin</rs> und Ihren lieblichen Kindern; das Ungesehene mit eingeschlossen! Mit der innigsten Verehrung bleiben Ihre <rs type="place" key="">Bischofzell</rs>ischen Freunde Ihnen zugetan, besonders 
+Ihr Pupikofer.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

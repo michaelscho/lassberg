@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1551">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Johann Adam Pupikofer an Joseph von Laßberg (26.04.1831).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 normalisiert.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Frauenfeld</settlement>
+                        <repository>Thurgauische Kantonsbibliothek</repository>
+                        <idno type="signature"></idno>
+                        <idno type="register-harris">2362</idno>
+                        <idno type="register-lassberg">nan</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 16 (1888), S.  1-32 und 97-154, S. 129<ref>https://books.google.de/books?id=XWY5AAAAMAAJ</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1551">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X"
+                        >Johann Adam Pupikofer</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-{PLACE_FROM_NUMBER}" ref="{PLACE_FROM_METADATA}">{PLACE_SENT_FROM}</placeName>
+                    <date when="1831-04-26">26.04.1831</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-{PLACE_TO_NUMBER}" ref="{PLACE_TO_METADATA}">{PLACE_SENT_TO}</placeName>
+                </correspAction>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <ref type="cmif:mentionsPlace" target=""><rs>Waldkirch</rs></ref>
+<ref type="cmif:mentionsOrganisation" target=""><rs>Merkur</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Bockstorf</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Blumenegg</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Bischofzell</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Bruti</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0043"><rs>Eppishausen</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Clet</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>K. Rath Allispach</rs></ref>
+<ref type="cmif:mentionsBibl" target=""><rs>Kreuzer</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Henking</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Marc</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs>Hermann von Muolen</rs></ref>
+                </note>
+            </correspDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="original" resp="ocr">
+                <p>Mein hochverehrter Herr und Nachbar!
+Es sind hier keine Abdrücke der neuen Verfassung zum Verkaufe ausgeboten worden; daher konnte ich Ihnen letzten Samstag auch kein Exemplar senden. Herr Oberamtmann hat mir nun aus der Verlegenheit geholfen, indem er einige der unter die Beamten zu vertheilenden Exemplare übrig behielt und mir somit eines zu Ihren Händen abtrat. Nehmen Sie dasselbe als eine kleine Entschädigung des Staats dafür an, daß derselbe Ihrem Stande jeden Anspruch auf ein Amt entzogen hat. Heute Vormittag waren von 468 Stimmfähigen unsers Kreises 315 bei der Abstimmung anwesend; 18 weigerten sich gegen die Annahme der Verfassung; 297 aber stimmten ihr zu. Ein Produkt eigener Art ist der Catalogus der <rs type="organisation" key="">St. Gall</rs>. Verfassungsräthe. Selbst mit Gefahr, daß sie denselben schon durch Herrn <rs type="person" key="">K. Rath Allispach</rs> kennen, sende ich Ihnen das merkwürdige Aktenstück, doch unter der Bedingung, daß Sie dasselbe nicht aus dem Lande senden, indem die Ausgabe vergriffen sein soll und ich sonst kein Exemplar besitze. Ich wünsche sehr, daß unser Verfassungsrath einen ähnlichen Censor finde. Ein solcher <rs type="person" key="">Merkurius</rs> ist wohl im Stande, faulende Stoffe wegzuschaffen. Am besten gefiel mir <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">Hermann von Muolen</rs>! Doch sind noch andere Charaktere vielleicht treffender gezeichnet. Von den Römermünzen sollen auch Ihnen einige Dutzende zum Ankaufe angeboten worden sein, und wirklich sollen Sie mehrere Stücke gekauft haben. Es war mir diese Nachricht ein Trost, als ich von anderer Seite hörte, der ganze Schatz sei bereits verkauft. Ich war gestern auf der Stelle, wo gefunden wurde. Viele Arbeiter waren noch beschäftigt, den Grund umzuwühlen und fanden zuweilen noch einige Stücke. Übrigens ist der Boden gelblichter Thon, der keine Spur von früherem Anbau zeigt; erst seit 10 Jahren ist jenes Stück Feld gereutet worden, und noch liegt es im Schatten des südlich neben demselben sich ausdehnenden Waldes, von dem vielleicht <rs type="place" key="">Waldkirch</rs> den Namen hat. Ankäufe habe ich seither keine mehr gemacht, da man das Stück nur zu 12 Pfg. verkaufen will, unser Hausirer aber gar 40 <rs type="misc" key="">xr.</rs> dafür fordert. Herr <rs type="person" key="">Henking</rs> hat mich durch meinen Bruder einladen lassen, doch recht bald mit Ihnen in <rs type="place" key=""><rs type="place" key="">Blumenegg</rs></rs> einen Besuch zu machen. Da er mit Bauen beschäftigt ist, entfernt er sich selten vom Hause, so daß wir ziemliche Gewißheit hätten, ihn anzutreffen. Ich meinerseits bin aber morgen und Freitag mit Schulexamen, und künftigen Montag mit dem Jugendfest beschäftigt, so daß ich diese Woche nicht einmal <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs>, geschweige denn <rs type="place" key=""><rs type="place" key="">Blumenegg</rs></rs> sehen kann. Wollen Sie Montag Nachmittag unsere junge Welt vor dem obern Thore tanzen und wettlaufen und schießen und schaukeln sehen und mit uns und Herrn Oberamtmanns Familie ein Abendessen in der Remise verzehren helfen, so werden Sie uns herzlich willkommen sein. Mit Bedauern läßt Ihnen meine Frau sagen, daß Ihre Unterbeinkleider von dem Strumpfwirker <rs type="person" key=""><rs type="person" key="">Bockstorf</rs></rs> noch nicht gefertigt seien. Eines kranken, nun gestorbenen Kindes halb durfte derselbe seit einigen Wochen seinen Webstuhl nicht mehr schwirren lassen, und so blieb denn auch Ihre Bestellung hängen; dagegen will sich Meister <rs type="person" key=""><rs type="person" key="">Bockstorf</rs></rs> verpflichten, die von Ihnen gewünschte Arbeit, von jetzt an gerechnet, in möglichst kurzer Frist zu liefern. Indem ich mich und die Menigen Ihrer freundschaftlichen Gewogenheit empfehle, bin ich 
+Ihr Ergebenster Diak. Pupikofer.
+<rs type="place" key="">Bischofzell</rs>, die <rs type="person" key="">Bruti</rs>, alias <rs type="person" key="">Clet</rs>. & <rs type="person" key="">Marc</rs>. 1831 (26. April).</p>
+            </div>
+            <div type="normalized" resp="GPT3.5">
+                <p>Mein hochverehrter Herr und Nachbar!
+Es sind hier keine Abdrücke der neuen Verfassung zum Verkauf angeboten worden; daher konnte ich Ihnen letzten Samstag auch kein Exemplar senden. Herr Oberamtmann hat mir nun aus der Verlegenheit geholfen, indem er einige der unter die Beamten zu verteilenden Exemplare übrig behielt und mir somit eines zu Ihren Händen abtrat. Nehmen Sie dasselbe als eine kleine Entschädigung des Staats dafür an, dass derselbe Ihrem Stande jeden Anspruch auf ein Amt entzogen hat. Heute Vormittag waren von 468 Stimmfähigen unseres Kreises 315 bei der Abstimmung anwesend; 18 weigerten sich gegen die Annahme der Verfassung; 297 aber stimmten ihr zu. Ein Produkt eigener Art ist der Katalogus der St. Galler Verfassungsräte. Selbst mit Gefahr, dass sie denselben schon durch Herrn <rs type="person" key="">K. Rath Allispach</rs> kennen, sende ich Ihnen das merkwürdige Aktenstück, doch unter der Bedingung, dass Sie dasselbe nicht aus dem Lande senden, indem die Ausgabe vergriffen sein soll und ich sonst kein Exemplar besitze. Ich wünsche sehr, dass unser Verfassungsrat einen ähnlichen Zensor finde. Ein solcher <rs type="organisation" key="">Merkur</rs> ist wohl im Stande, faulende Stoffe wegzuschaffen. Am besten gefiel mir <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">Hermann von Muolen</rs>! Doch sind noch andere Charaktere vielleicht treffender gezeichnet. Von den Römermünzen sollen auch Ihnen einige Dutzend zum Ankauf angeboten worden sein, und wirklich sollen Sie mehrere Stücke gekauft haben. Es war mir diese Nachricht ein Trost, als ich von anderer Seite hörte, der ganze Schatz sei bereits verkauft. Ich war gestern auf der Stelle, wo gefunden wurde. Viele Arbeiter waren noch beschäftigt, den Grund umzuwühlen und fanden zuweilen noch einige Stücke. Übrigens ist der Boden gelblicher Ton, der keine Spur von früherem Anbau zeigt; erst seit 10 Jahren ist jenes Stück Feld gerödet worden, und noch liegt es im Schatten des südlich neben demselben sich ausdehnenden Waldes, von dem vielleicht <rs type="place" key="">Waldkirch</rs> den Namen hat. Ankäufe habe ich seither keine mehr gemacht, da man das Stück nur zu 12 Pfennig verkaufen will, unser Hausierer aber schon 40 <rs type="misc" key="">Kreuzer</rs> dafür fordert. Herr <rs type="person" key="">Henking</rs> hat mich durch meinen Bruder einladen lassen, doch recht bald mit Ihnen in <rs type="place" key=""><rs type="place" key="">Blumenegg</rs></rs> einen Besuch zu machen. Da er mit Bauen beschäftigt ist, entfernt er sich selten vom Haus, sodass wir ziemliche Gewissheit hätten, ihn anzutreffen. Ich meinerseits bin aber morgen und Freitag mit Schulexamen und kommenden Montag mit dem Jugendfest beschäftigt, sodass ich diese Woche nicht einmal <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs>, geschweige denn <rs type="place" key=""><rs type="place" key="">Blumenegg</rs></rs> sehen kann. Wollen Sie Montag Nachmittag unsere junge Welt vor dem oberen Tor tanzen und Wettkämpfe austragen sehen und mit uns und Herrn Oberamtmanns Familie ein Abendessen in der Remise genießen, so werden Sie uns herzlich willkommen sein. Mit Bedauern lässt Ihnen meine Frau sagen, dass Ihre Unterhosen von dem Strumpfwirker <rs type="person" key=""><rs type="person" key="">Bockstorf</rs></rs> noch nicht fertiggestellt worden sind. Eines kranken, nun gestorbenen Kindes halber durfte derselbe seit einigen Wochen seinen Webstuhl nicht mehr schwirren lassen, und so blieb dann auch Ihre Bestellung hängen; dagegen will sich Meister <rs type="person" key=""><rs type="person" key="">Bockstorf</rs></rs> verpflichten, die von Ihnen gewünschte Arbeit, von jetzt an gerechnet, in möglichst kurzer Frist zu liefern. Indem ich mich und die Meinen Ihrer freundschaftlichen Verbundenheit empfehle, bin ich
+Ihr ergebenster Diakon Pupikofer.
+<rs type="person" key="">Bischofzell</rs>, die <rs type="person" key="">Bruti</rs>, alias <rs type="person" key="">Clet</rs>. & <rs type="person" key="">Marc</rs>. 1831 (26. April).</p>
+            </div>
+        </body>
+    </text>
+</TEI>

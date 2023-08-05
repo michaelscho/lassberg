@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1327">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Johann Adam Pupikofer an Joseph von Laßberg (27.06.1829).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 normalisiert.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Frauenfeld</settlement>
+                        <repository>Thurgauische Kantonsbibliothek</repository>
+                        <idno type="signature"></idno>
+                        <idno type="register-harris">2251</idno>
+                        <idno type="register-lassberg">nan</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 16 (1888), S.  1-32 und 97-154, S. 97<ref>https://books.google.de/books?id=XWY5AAAAMAAJ</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1327">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X"
+                        >Johann Adam Pupikofer</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-{PLACE_FROM_NUMBER}" ref="{PLACE_FROM_METADATA}">{PLACE_SENT_FROM}</placeName>
+                    <date when="1829-06-27">27.06.1829</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-{PLACE_TO_NUMBER}" ref="{PLACE_TO_METADATA}">{PLACE_SENT_TO}</placeName>
+                </correspAction>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <ref type="cmif:mentionsPlace" target=""><rs>Bischofzell</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Scherb</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0307"><rs>Kirchhofer</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Steckborn</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Eschenz</rs></ref>
+                </note>
+            </correspDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="original" resp="ocr">
+                <p>Mein verehrtester Herr und Nachbar!
+Herr Oberamtmann <rs type="person" key="">Scherb</rs> wünscht Sie morgen zu sehen, und wird Nachmittag um 3 oder 4 Uhr bei Ihnen eintreffen. Ist Ihnen dieser Besuch nicht gelegen, oder sind Sie nicht zu Hause, so erwarte ich keine Empfangsbescheinigung für dieses Billet; sind Sie für gute Freunde zu Hause, so lassen Sie mir dies gütigst wissen. Ihr Zahnschmerz und Ihr einseitiges Gesicht sind seit mehreren Tagen zur alten Norm zurückgekehrt, wie ich hoffe, und haben für immer Abschied genommen. Auch ich hatte diese Woche einen Schmerz, nämlich die Abwesenheit des Herrn Pfarrer <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0307">Kirchhofer</rs>, tief empfunden. Für dieses Leiden waren indessen Wein und Bier und flotte Freunde und eine einschläfernde Hitze gute Heilmittel. Von <rs type="place" key="">Steckborn</rs> habe ich einen ganzen Korb Urkunden mitgenommen, aber leider findet sich darin wenig für Sie. Die römischen Alterthümer in <rs type="place" key="">Eschenz</rs> habe ich gesehen und werde Ihnen davon erzählen; aber von einer Stecknadel weiß man nichts; der Spiegel des Rings hat diese Gestalt: (Zeichnung) in Mosaik. Die Aufschrift der Steine ist ungefähr so: (Zeichnung). Es ist alle Wahrscheinlichkeit, daß dies gedankenlose Phantasien eines Kindes sind, das sich im Schreiben übte; denn die Schriftzüge selbst sind so, daß man aus den doppelten unbeholfenen Strichen das stumpfe, nur abgebrochene Werkzeug, Rüthchen, Schwefelholz u. dgl. wohl erkennen kann. In Hoffnung, Sie gesund und im Besitze neuer Entdeckungen zu finden, sehe ich über meine Amtsgeschäfte hinaus fröhlich auf morgen Abend hinüber, um von Ihnen sagen zu hören, was der junge Römer auf den Ziegeln durch sein quid ei 3 VIII und durch seine Griechischen u. s. w. habe sagen wollen, und was vor zweitausend Jahren bei dieser Spielerei sein Gemüth belebte, das jetzt schon so lange verstorben ist.
+So lange ich lebe, bin ich Ihr Pupikofer.
+<rs type="place" key="">Bischofzell</rs>, Samstag den 27. Juni 1829.</p>
+            </div>
+            <div type="normalized" resp="GPT3.5">
+                <p>Mein verehrtester Herr und Nachbar!
+Herr Oberamtmann <rs type="person" key="">Scherb</rs> wünscht Sie morgen zu sehen, und wird Nachmittag um 3 oder 4 Uhr bei Ihnen eintreffen. Ist Ihnen dieser Besuch nicht gelegen, oder sind Sie nicht zu Hause, so erwarte ich keine Empfangsbescheinigung für dieses Billet; sind Sie für gute Freunde zu Hause, so lassen Sie mir dies gütigst wissen. Ihr Zahnschmerz und Ihr einseitiges Gesicht sind seit mehreren Tagen zur alten Norm zurückgekehrt, wie ich hoffe, und haben für immer Abschied genommen. Auch ich hatte diese Woche einen Schmerz, nämlich die Abwesenheit des Herrn Pfarrer <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0307">Kirchhofer</rs>, tief empfunden. Für dieses Leiden waren indessen Wein und Bier und flotte Freunde und eine einschläfernde Hitze gute Heilmittel. Von <rs type="place" key="">Steckborn</rs> habe ich einen ganzen Korb Urkunden mitgenommen, aber leider findet sich darin wenig für Sie. Die römischen Altertümer in <rs type="place" key="">Eschenz</rs> habe ich gesehen und werde Ihnen davon erzählen; aber von einer Stecknadel weiß man nichts; der Spiegel des Rings hat diese Gestalt: (Zeichnung) in Mosaik. Die Aufschrift der Steine ist ungefähr so: (Zeichnung). Es ist alle Wahrscheinlichkeit, dass dies gedankenlose Phantasien eines Kindes sind, das sich im Schreiben übte; denn die Schriftzüge selbst sind so, dass man aus den doppelten unbeholfenen Strichen das stumpfe, nur abgebrochene Werkzeug, Rüthchen, Schwefelholz u. dgl. wohl erkennen kann. In Hoffnung, Sie gesund und im Besitz neuer Entdeckungen zu finden, sehe ich über meine Amtsgeschäfte hinaus fröhlich auf morgen Abend hinüber, um von Ihnen sagen zu hören, was der junge Römer auf den Ziegeln durch sein quid ei 3 VIII und durch seine Griechischen u. s. w. habe sagen wollen, und was vor zweitausend Jahren bei dieser Spielerei sein Gemüt belebte, das jetzt schon so lange verstorben ist.
+So lange ich lebe, bin ich Ihr Pupikofer.
+<rs type="place" key="">Bischofzell</rs>, Samstag den 27. Juni 1829.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

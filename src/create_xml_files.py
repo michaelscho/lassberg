@@ -72,7 +72,7 @@ def named_entity_recognition(letter):
     # print predicted NER spans
     for entity in sentence.get_spans('ner'):
         tag: Label = entity.labels[0]
-        print(f'{entity.text} [{tag.value}] ({tag.score:.4f})')
+        #print(f'{entity.text} [{tag.value}] ({tag.score:.4f})')
         list_of_entities.append([entity.text, tag.value])
     
     return list_of_entities
@@ -100,7 +100,7 @@ def create_reference(entity, unique_persons, unique_places):
         normalized_names = normalized_name.split(' ')
         if len(normalized_names) > 1:
             normalized_name = normalized_names[1]
-        print(normalized_name)
+        #print(normalized_name)
 
         is_present = unique_persons['PersonName'].str.contains(normalized_name)
         filtered_df = unique_persons[is_present]
@@ -195,8 +195,8 @@ def create_letter(letters, xml_template):
 
             list_of_entities_normalized = named_entity_recognition(normalized_text)
             list_of_entities_original = named_entity_recognition(original_text)
-            print(list_of_entities_original)
-            print(list_of_entities_normalized)
+            #print(list_of_entities_original)
+            #print(list_of_entities_normalized)
 
             list_of_mentioned_entities = []
 
@@ -206,7 +206,8 @@ def create_letter(letters, xml_template):
 
                 ref, entity_name = create_reference(entity, unique_persons, unique_places)
                 if ref:
-                    print(ref, entity_name)
+                    pass
+                    #print(ref, entity_name)
                 else:
                     ref=""
 
@@ -223,6 +224,9 @@ def create_letter(letters, xml_template):
                 ref_element = ref_element.replace('MISC', 'Bibl')
 
                 list_of_mentioned_entities.append(ref_element)
+
+            list_of_mentioned_entities = list(set(list_of_mentioned_entities)) 
+
 
 
             for entity in list_of_entities_original:

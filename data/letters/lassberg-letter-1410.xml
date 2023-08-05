@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1410">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Johann Adam Pupikofer an Joseph von Laßberg (09.02.1830).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 normalisiert.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Frauenfeld</settlement>
+                        <repository>Thurgauische Kantonsbibliothek</repository>
+                        <idno type="signature"></idno>
+                        <idno type="register-harris">2290</idno>
+                        <idno type="register-lassberg">nan</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 16 (1888), S.  1-32 und 97-154, S. 105<ref>https://books.google.de/books?id=XWY5AAAAMAAJ</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1410">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X"
+                        >Johann Adam Pupikofer</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-{PLACE_FROM_NUMBER}" ref="{PLACE_FROM_METADATA}">{PLACE_SENT_FROM}</placeName>
+                    <date when="1830-02-09">09.02.1830</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-{PLACE_TO_NUMBER}" ref="{PLACE_TO_METADATA}">{PLACE_SENT_TO}</placeName>
+                </correspAction>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <ref type="cmif:mentionsBibl" target=""><rs>Swobodas</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Arau</rs></ref>
+<ref type="cmif:mentionsBibl" target=""><rs>Boreas</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0271"><rs>Wenzel</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Bischofzell</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Agathias</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0170"><rs>W. Grimm</rs></ref>
+<ref type="cmif:mentionsBibl" target=""><rs>Ζαμόλξιδος</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0193"><rs>Zellweger</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Vok</rs></ref>
+<ref type="cmif:mentionsBibl" target=""><rs>Agathias</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Follens</rs></ref>
+<ref type="cmif:mentionsBibl" target=""><rs>Maneßschen Codex</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Utwyl</rs></ref>
+                </note>
+            </correspDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="original" resp="ocr">
+                <p>Mein verehrtester Herr und Meister!
+Aus Auftrag meiner lieben Frau sende ich Ihnen hier zwei gestrickte Panzer, die gegen den <rs type="misc" key="">Boreas</rs> und alle seine Verbündete treffliche Dienste thun und für die krystallischen Lanzenspitzen der Glacies allen möglichen Schutz gewähren sollen. Der Preis des einen ist 26, der des andern 34 Batzen; über Ihre Wahl zwischen beiden geben Sie uns gefälligst Nachricht. Eine Anzahl Knöpfe läßt meine Frau beilegen, indem sie, auf ungefähre Schätzung Ihres Körperinhaltes hin, dieselben einzunähen nicht wagte. Es ist zu hoffen, daß Ihre Köchin in der Nähterei so viel verstehe, als zur Einreihung der Knöpfe nöthig ist. Da ich die Königinhofer Handschrift und <rs type="person" key="">Follens</rs> Bildersaal so weich betten kann, so will ich denselben länger hier zu bleiben nicht zumuthen. Für die erstere besonders danke ich Ihnen gar sehr. Das Lied des Königs <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0271">Wenzel</rs> mag in der böhmischen Sprache wirklich schön sein, da die Uebersetzung <rs type="misc" key="">Swobodas</rs> schon so hoch über der älteren deutschen des <rs type="misc" key="">Maneßschen Codex</rs> steht. Es scheint, auch die Minnesänger haben mit mehr Glück selbst componirt, als fremdes sich angeeignet. Schade, daß die schöne Blüthe der ältern böhmischen Litteratur und Bildung von so fürcherlichen Ungewittern so ganz zerknickt wurde. Ich war gestern erst wenige Schritte von Ihrer Wohnung entfernt, als es mich zu reuen anfing, Sie verlassen zu haben; denn so weich war der Schnee, daß ich keinen festen Tritt thun konnte und nur mit Mühe mich endlich durcharbeitete. Vom Hummelberge herunter war ein stehender Sumpf von halb geschmolzenem Schnee, und ich wunderte mich, daß das Eis mich nie zum Falle brachte. Von der Zehe bis zum Scheitel mit Schweiß übergossen, kam ich nach Hause. Indessen blieb ich munter, verlor sogar einen Theil meiner rheumatischen Schmerzen, und freute mich zuletzt der fortitudo, die ich Ihrer Einladung und dem Ungewitter, zwei sehr gefährlichen Potenzen der Versuchung, entgegengesetzt hatte. Damit ich Sie desto eher überzeuge, daß mich wirklich nicht der Eigensinn hintrieb, so sage ich Ihnen, daß ich diesen Vormittag schon einige Seiten schriftlich aus dem <rs type="misc" key=""><rs type="person" key=""><rs type="person" key="">Agathias</rs></rs></rs> übersetzt habe und entschlossen bin, das ganze Werk in unsere Sprache überzutragen, Wenn <rs type="misc" key=""><rs type="person" key=""><rs type="person" key="">Agathias</rs></rs></rs> in seinem prooemium von der unsterblich machenden Kraft der Geschichte spricht und dabei sagt: eine <rs type="misc" key="">historia</rs> τὰ <rs type="misc" key="">Ζαμόλξιδος</rs> νόμιμα καὶ ἡ Γετική <rs type="misc" key="">παραφροσύνη</rs> so ist mit dieser Gothischen Verschrobenheit wohl nichts anders als die germanische Heldensage gemeint, die alle Thaten der Helden ins Ungeheuere vergrößerte und wol auch entstellte, aber doch in so hohen und würdigen Tönen besang, daß sie Bis auf die spätesten Zeiten wiederhallten. Hat <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0170">W. Grimm</rs> obige Stelle in seiner Heldensage schon angeführt? Im übrigen gefällt mir des <rs type="misc" key=""><rs type="person" key=""><rs type="person" key="">Agathias</rs></rs></rs> Styl wenigstens in der Vorrede nicht. Seine copia verborum besteht meistens in Synonymen, die neben einander gestellt sind, ohne daß ein Grund dazu vorhanden ist, und wenn die Tautologie auch nur in einzelnen Adjektiven und Participien, nicht in ganzen Sätzen besteht, so ist sie doch um so unangenehmer, je öfter solche Pleonasmen wiederkehren. Der Rechtsanwalt scheint seinen Styl auf zerstreute oder übel hörende Richter berechnet. zu haben, die einzelne Ausdrücke und Sätze nicht immer beachten und daher durch Wiederholungen entschädigt werden müssen. Wenn in Reden so etwas hingehen mag, oft sogar Bedürfniß ist, so findet im Schreiben das Gegentheil statt: Tautologien zerstreuen! Mit dem größten Vergnügen erinnere ich mich des Abenteuers unserer Seefahrt. Ich kann sagen, daß mir lange nichts so viele Freude gemacht hat. Bei der Wanderung über die Eisbrücke war ich zwar nicht eigentlich lustig, wie ich denn überhaupt selten mich geräuschvoll freuen kann; aber seither zaubert mir die Phantasie die Streifparthie immer schöner vor, und besonders seit der Frost gewichen ist, fühle ich mich ganz glücklich, daß ich genossen und gesehen habe, was so vielen jetzt zu Wasser geworden ist. In <rs type="place" key=""><rs type="place" key="">Bischofzell</rs></rs> hält man für Helden und Tollköpfe: denn stellen Sie sich vor, der Hauptmann <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0193">Zellweger</rs>, der mit seiner Frau in <rs type="place" key="">Utwyl</rs> war, wagte sich mit keinem Fuß auf das Eis, und seine Frau wurde von ihm in das Gelübde genommen, daß sie das Eis ebenfalls meide! In der Helvetia, die ich Ihnen hier beilege, waren die Aktenstücke des Wigoldinger Handels für mich merkwürdig; doch sind sie nicht vollständig. Daß das erste Gedicht schon gedruckt sei, wußte ich nicht, sonst hätte ich es nicht unter meine Urkundensammlung aufgenommen. Aber welch ein Zelot muß der jetzige Herausgeber (so viel ich höre Pfarrer <rs type="person" key="">Vok</rs> in <rs type="place" key="">Arau</rs>) sein, daß er die kirchliche Animosität wieder so recht giftig in Gang zu bringen sucht. Sein Vorbericht und einige Noten (besonders die elende auf S. 397) beweisen doch gar zu sehr seine Vergangenheit. Wie würde er wohl die Geschichte selbst beschreiben? Ich denke im Geiste eines Henne oder Geiger. Vergessen Sie Ihre Bärentatzen und Leibhosen nicht, damit alles reparirt werden könne, bis ein neuer Frost kömmt. Leben Sie wohl, und bleiben Sie versichert, daß ich mit herzlicher Zuneigung bin 
+Ihr Ergebenster Diak. Pupikofer.
+<rs type="place" key=""><rs type="place" key="">Bischofzell</rs></rs>, 9. Febr. 1830.</p>
+            </div>
+            <div type="normalized" resp="GPT3.5">
+                <p>Mein verehrtester Herr und Meister!
+Aus Auftrag meiner lieben Frau sende ich Ihnen hier zwei gestrickte Panzer, die gegen den <rs type="misc" key="">Boreas</rs> und alle seine Verbündeten treffliche Dienste tun und für die kristallischen Lanzenspitzen der Glacies allen möglichen Schutz gewähren sollen. Der Preis des einen ist 26, der des anderen 34 Batzen; über Ihre Wahl zwischen beiden geben Sie uns bitte Nachricht. Eine Anzahl Knöpfe lässt meine Frau beilegen, indem sie, auf ungefähre Schätzung Ihres Körperinhaltes hin, dieselben einzunähen nicht wagte. Es ist zu hoffen, dass Ihre Köchin in der Näherei so viel versteht, wie zur Einreihung der Knöpfe nötig ist. Da ich die Königinhofer Handschrift und <rs type="person" key="">Follens</rs> Bildersaal so weich betten kann, so will ich denselben länger hier zu bleiben nicht zumuten. Für die erstere besonders danke ich Ihnen sehr. Das Lied des Königs <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0271">Wenzel</rs> mag in der böhmischen Sprache wirklich schön sein, da die Übersetzung <rs type="misc" key="">Swobodas</rs> schon so hoch über der älteren deutschen des <rs type="misc" key="">Maneßschen Codex</rs> steht. Es scheint, auch die Minnesänger haben mit mehr Glück selbst komponiert, als fremdes sich angeeignet. Schade, dass die schöne Blüte der ältern böhmischen Literatur und Bildung von so furchtbaren Unwettern so ganz zerknickt wurde. Ich war gestern erst wenige Schritte von Ihrer Wohnung entfernt, als es mich zu bereuen anfing, Sie verlassen zu haben; denn so weich war der Schnee, dass ich keinen festen Tritt tun konnte und nur mit Mühe mich endlich durcharbeitete. Vom Hummelberge herunter war ein stehender Sumpf von halb geschmolzenem Schnee, und ich wunderte mich, dass das Eis mich nie zum Fall brachte. Von der Zehe bis zum Scheitel mit Schweiß übergossen, kam ich nach Hause. Indessen blieb ich munter, verlor sogar einen Teil meiner rheumatischen Schmerzen, und freute mich zuletzt der Fortitudo, die ich Ihrer Einladung und dem Unwetter, zwei sehr gefährlichen Potenzen der Versuchung, entgegengesetzt hatte. Damit ich Sie desto eher überzeuge, dass mich wirklich nicht der Eigensinn hintrieb, so sage ich Ihnen, dass ich diesen Vormittag schon einige Seiten schriftlich aus dem <rs type="misc" key=""><rs type="person" key=""><rs type="person" key="">Agathias</rs></rs></rs> übersetzt habe und entschlossen bin, das ganze Werk in unsere Sprache zu übertragen. Wenn <rs type="misc" key=""><rs type="person" key=""><rs type="person" key="">Agathias</rs></rs></rs> in seinem Prooemium von der unsterblich machenden Kraft der Geschichte spricht und dabei sagt: eine historia τὰ <rs type="misc" key="">Ζαμόλξιδος</rs> νόμιμα καὶ ἡ Γετική παραφροσύνη, so ist mit dieser Gothic Verschrobenheit wohl nichts anders als die germanische Heldensage gemeint, die alle Taten der Helden ins Ungeheuere vergrößerte und wohl auch entstellte, aber doch in so hohen und würdigen Tönen besang, dass sie bis auf die spätesten Zeiten widerhallten. Hat <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0170">W. Grimm</rs> obige Stelle in seiner Heldensage schon angeführt? Im Übrigen gefällt mir des <rs type="misc" key=""><rs type="person" key=""><rs type="person" key="">Agathias</rs></rs></rs> Stil wenigstens in der Vorrede nicht. Seine copia verborum besteht meistens in Synonymen, die nebeneinander gestellt sind, ohne dass ein Grund dazu vorhanden ist, und wenn die Tautologie auch nur in einzelnen Adjektiven und Partizipien, nicht in ganzen Sätzen besteht, so ist sie doch umso unangenehmer, je öfter solche Pleonasmen wiederkehren. Der Rechtsanwalt scheint seinen Stil auf zerstreute oder übel hörende Richter berechnet zu haben, die einzelne Ausdrücke und Sätze nicht immer beachten und daher durch Wiederholungen entschädigt werden müssen. Wenn in Reden so etwas hingehen mag, oft sogar Bedürfnis ist, so findet im Schreiben das Gegenteil statt: Tautologien zerstreuen! Mit dem größten Vergnügen erinnere ich mich des Abenteuers unserer Seefahrt. Ich kann sagen, dass mir lange nichts so viel Freude gemacht hat. Bei der Wanderung über die Eisbrücke war ich zwar nicht eigentlich lustig, wie ich denn überhaupt selten mich geräuschvoll freuen kann; aber seither zaubert mir die Phantasie die Streifparthie immer schöner vor, und besonders seit der Frost gewichen ist, fühle ich mich ganz glücklich, dass ich genossen und gesehen habe, was so vielen jetzt zu Wasser geworden ist. In <rs type="place" key=""><rs type="place" key="">Bischofzell</rs></rs> hält man für Helden und Tollköpfe: denn stellen Sie sich vor, der Hauptmann <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0193">Zellweger</rs>, der mit seiner Frau in <rs type="place" key="">Utwyl</rs> war, wagte sich mit keinem Fuß auf das Eis, und seine Frau wurde von ihm in das Gelübde genommen, dass sie das Eis ebenfalls meide! In der Helvetia, die ich Ihnen hier beilege, waren die Aktenstücke des Wigoldinger Handels für mich merkwürdig; doch sind sie nicht vollständig. Dass das erste Gedicht schon gedruckt sei, wusste ich nicht, sonst hätte ich es nicht unter meine Urkundensammlung aufgenommen. Aber welch ein Zelot muss der jetzige Herausgeber (so viel ich höre Pfarrer <rs type="person" key="">Vok</rs> in <rs type="place" key="">Arau</rs>) sein, dass er die kirchliche Animosität wieder so recht giftig in Gang zu bringen sucht. Sein Vorbericht und einige Noten (besonders die elende auf S. 397) beweisen doch allzu sehr seine Vergangenheit. Wie würde er wohl die Geschichte selbst beschreiben? Ich denke im Geiste eines Henne oder Geiger. Vergessen Sie Ihre Bärentatzen und Leibhosen nicht, damit alles repariert werden kann, bis ein neuer Frost kommt. Leben Sie wohl, und bleiben Sie versichert, dass ich mit herzlicher Zuneigung bin
+Ihr Ergebenster Diak. Pupikofer.
+<rs type="place" key=""><rs type="place" key="">Bischofzell</rs></rs>, 9. Februar 1830.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

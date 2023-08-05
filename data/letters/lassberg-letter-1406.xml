@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1406">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Johann Adam Pupikofer an Joseph von Laßberg (02.02.1830).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 normalisiert.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Frauenfeld</settlement>
+                        <repository>Thurgauische Kantonsbibliothek</repository>
+                        <idno type="signature"></idno>
+                        <idno type="register-harris">2287</idno>
+                        <idno type="register-lassberg">nan</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 16 (1888), S.  1-32 und 97-154, S. 104<ref>https://books.google.de/books?id=XWY5AAAAMAAJ</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1406">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X"
+                        >Johann Adam Pupikofer</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-{PLACE_FROM_NUMBER}" ref="{PLACE_FROM_METADATA}">{PLACE_SENT_FROM}</placeName>
+                    <date when="1830-02-02">02.02.1830</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-{PLACE_TO_NUMBER}" ref="{PLACE_TO_METADATA}">{PLACE_SENT_TO}</placeName>
+                </correspAction>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <ref type="cmif:mentionsPerson" target=""><rs>Dalp</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Bischofzell</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Sulgen</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Gonzenbach</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Herisau</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0196"><rs>Hartmann</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Alpenrosen</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Neapel</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Steinach</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Bavaria</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Münsterlingen</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Nürnberg</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Mörswyl</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Dalps</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Bürglen</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Mariä Lichtmess</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0166"><rs>Zürich</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Steckborn</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Speicher</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Steiners</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0127"><rs>Rom</rs></ref>
+                </note>
+            </correspDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="original" resp="ocr">
+                <p>Mein hochverehrter Herr und Meister!
+Allerdings bin ich von der Winterreise, auf welcher ich so manche warme Freude genoß, glücklich wieder in meine Wohnung eingetreten, und so gut es sich thun ließ, habe ich den Mangel an Meditation am Sonntage durch die heimgebrachte Geistesfrische ersetzt; aber zu Ihnen über den Berg wandern, um Ihnen zu sagen, wie sehr mich der Besuch bei Follen erquickt habe, konnte ich noch nicht; denn ich mußte den versprochenen Stelldichein in <rs type="place" key=""><rs type="place" key="">Herisau</rs></rs> in Ausführung bringen und durch Schnee, Eis und finstern Nebel zur warmen Suppe des Kürbsenpfarrers eilen. Seither sitze ich in meiner Stube und lecke an einigen von <rs type="place" key=""><rs type="place" key="">Herisau</rs></rs> mitgebrachten Confitüren, u. a. an <rs type="person" key="">Steiners</rs> curiosem Tändelmarkt (<rs type="place" key="">Nürnberg</rs> 1748); auch werden Versuche gemacht, die Stiftung von <rs type="place" key="">Münsterlingen</rs> für die <rs type="place" key="">Alpenrosen</rs> zu erzählen. Gestern und heute war auch mein lieber Schwager von <rs type="place" key="">Speicher</rs> mit seiner Frau bei mir, und da gab es wieder mancherlei winterliche Erzählungen, und Pläne für den Sommer, so daß die Stunden verflossen, wie der Reif im Glanze der Aprilsonne. Was sonst kann man bei dieser grimmen Kälte (sie war gestern morgen 17") in einem so prosaischen Städtchen anfangen? Die Wappensammlung des Herrn <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0196"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0196"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0196">Hartmann</rs></rs></rs> habe ich schon bei ihm selbst gesehen; doch hätte ich sie gerne unter Ihrer Leitung nochmals durchwandert, denn Ihre Critiken und Ergänzungen sind immer unterrichtend; allein die bereits erwähnte Kälte und die Besuche hielten mich ab. Ich weiß nicht, ob ich diese Woche noch zu Ihnen kommen kann; denn ein Fraubasen- und Wochenbett-Besuch in <rs type="place" key="">Bürglen</rs> und <rs type="place" key="">Sulgen</rs> werden mir diese Woche wohl noch einen guten Tag kosten. Herrn <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0196"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0196"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0196">Hartmann</rs></rs></rs> habe ich nicht eigentlich aufgetragen, Ihnen seine Wappensammlung zu senden, sondern nur geäußert, daß Sie Vergnügen finden würden, dieselbe zu sehen, und Herr <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0196"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0196"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0196">Hartmann</rs></rs></rs> bei Ihnen noch manche Ergänzung finden dürfte. Es freut mich indessen, daß er meine Andeutung für sie so günstig erklärt hat. Er hat mir auch eine Zeichnung vom Schlosse <rs type="place" key="">Steinach</rs>, vom Walde bei <rs type="place" key="">Mörswyl</rs> her aufgenommen, zu Handen Herrn <rs type="person" key=""><rs type="person" key="">Dalp</rs>s</rs> übermacht; sie gefiel mir nicht; gleichwohl habe ich sie Herrn <rs type="person" key="">Dalp</rs> überschickt und ihm überlassen, damit nach Belieben zu schalten. Meine Erwiderung an die Stadt <rs type="place" key="">Steckborn</rs> werden Sie wohl auch gelesen haben. Obgleich mir die Sache nicht sehr angenehm ist, so machte sie mir doch Spaß. Raufereien haben ihren eigenen Reiz; darum gibt es wahrscheinlich auch so viel Streit. Nur ist's wunderlich, wenn so alte Herren, wie seine Heiligkeit zu <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0127">Rom</rs> und seine Majestät zu <rs type="place" key="">Neapel</rs> sind, sich noch vor dem Volke herumzanken. Der Schweizerische Beobachter in <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0166">Zürich</rs> hat auch schon von meinem Kriege vernommen und erinnert an einen ähnlichen Streit, den letzthin die Dorfzeitung erzählt habe. Die Besitzer des verdächtigten Weines sandten dem Gegner ein Duzend der besten Bouteillen, und dieser Beweis ward überwiegend gefunden. Erhalte ich das Duzend Flaschen nicht ebenfalls, so fehlt es entweder an der Stadt oder am Wein! Herr Stadtschreiber <rs type="person" key="">Gonzenbach</rs>, der Ihren Gelehrten die Negligés zuzuschneiden pflegt, war vor acht Tagen mit der heiligen <rs type="place" key="">Bavaria</rs> nicht zu Ende gekommen. Er verhieß, sie auf heute zu fertigen, und ich hoffe, daß er Wort halten wird. Von dem alten Arxius habe ich nichts gehört. Wäre er gestorben, so hätte wohl der Erzähler davon etwas gesagt; es müßte denn die letzte Feuersbrunst die Köpfe so verwirrt haben, daß man sogar die Todten zu ehren vergessen hätte. Sobald der Thermometer wieder unter 8° steht, komme ich wieder zu Ihnen; sonst wäre es, meint meine gute Frau, so viel als Gott versucht. Unterdessen wünsche ich Ihnen und mir einen so warmen Ofen, als warm die Liebe ist, mit welcher Ihnen zugethan bleibt 
+Ihr Pupikofer.
+<rs type="place" key="">Bischofzell</rs> an <rs type="person" key="">Mariä Lichtmeß</rs> 1830.</p>
+            </div>
+            <div type="normalized" resp="GPT3.5">
+                <p>Mein hochverehrter Herr und Meister!
+Allerdings bin ich von der Winterreise, auf welcher ich so manche warme Freude genoss, glücklich wieder in meine Wohnung eingetreten, und so gut es sich tun ließ, habe ich den Mangel an Meditation am Sonntag durch die heimgebrachte Geistesfrische ersetzt; aber zu Ihnen über den Berg wandern, um Ihnen zu sagen, wie sehr mich der Besuch bei Follen erquickt hat, konnte ich noch nicht; denn ich musste den versprochenen Stelldichein in <rs type="place" key=""><rs type="place" key="">Herisau</rs></rs> in Ausführung bringen und durch Schnee, Eis und finstern Nebel zur warmen Suppe des Kürbispfarrers eilen. Seither sitze ich in meiner Stube und lecke an einigen von <rs type="place" key=""><rs type="place" key="">Herisau</rs></rs> mitgebrachten Konfitüren, u. a. an <rs type="person" key="">Steiners</rs> kuriosem Tändelmarkt (<rs type="place" key="">Nürnberg</rs> 1748); auch werden Versuche gemacht, die Stiftung von <rs type="place" key="">Münsterlingen</rs> für die <rs type="place" key="">Alpenrosen</rs> zu erzählen. Gestern und heute war auch mein lieber Schwager von <rs type="person" key="">Speicher</rs> mit seiner Frau bei mir, und da gab es wieder mancherlei winterliche Erzählungen, und Pläne für den Sommer, so dass die Stunden verflossen, wie der Reif im Glanze der Aprilsonne. Was sonst kann man bei dieser grimmigen Kälte (sie war gestern morgen 17") in einem so prosaischen Städtchen anfangen? Die Wappensammlung des Herrn <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0196"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0196"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0196">Hartmann</rs></rs></rs> habe ich schon bei ihm selbst gesehen; doch hätte ich sie gerne unter Ihrer Leitung nochmals durchwandert, denn Ihre Kritiken und Ergänzungen sind immer unterrichtend; allein die bereits erwähnte Kälte und die Besuche hielten mich ab. Ich weiß nicht, ob ich diese Woche noch zu Ihnen kommen kann; denn ein Fraubasen- und Wochenbett-Besuch in <rs type="place" key="">Bürglen</rs> und <rs type="place" key="">Sulgen</rs> werden mir diese Woche wohl noch einen guten Tag kosten. Herrn <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0196"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0196"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0196">Hartmann</rs></rs></rs> habe ich nicht eigentlich aufgetragen, Ihnen seine Wappensammlung zu senden, sondern nur geäußert, dass Sie Vergnügen finden würden, dieselbe zu sehen, und Herr <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0196"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0196"><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0196">Hartmann</rs></rs></rs> bei Ihnen noch manche Ergänzung finden dürfte. Es freut mich indessen, dass er meine Andeutung für sie so günstig erklärt hat. Er hat mir auch eine Zeichnung vom Schlosse <rs type="place" key="">Steinach</rs>, vom Walde bei <rs type="place" key="">Mörswyl</rs> her aufgenommen, zu Handen Herrn <rs type="person" key=""><rs type="person" key="">Dalp</rs>s</rs> übermacht; sie gefiel mir nicht; gleichwohl habe ich sie Herrn <rs type="person" key="">Dalp</rs> überschickt und ihm überlassen, damit nach Belieben zu schalten. Meine Erwiderung an die Stadt <rs type="place" key="">Steckborn</rs> werden Sie wohl auch gelesen haben. Obgleich mir die Sache nicht sehr angenehm ist, so machte sie mir doch Spaß. Raufereien haben ihren eigenen Reiz; darum gibt es wahrscheinlich auch so viel Streit. Nur ist's wunderlich, wenn so alte Herren, wie seine Heiligkeit zu <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0127">Rom</rs> und seine Majestät zu <rs type="place" key="">Neapel</rs> sind, sich noch vor dem Volke herumzanken. Der Schweizerische Beobachter in <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0166">Zürich</rs> hat auch schon von meinem Kriege vernommen und erinnert an einen ähnlichen Streit, den letztlich die Dorfzeitung erzählt hat. Die Besitzer des verdächtigten Weines sandten dem Gegner ein Dutzend der besten Flaschen, und dieser Beweis ward überwiegend gefunden. Erhalte ich das Dutzend Flaschen nicht ebenfalls, so fehlt es entweder an der Stadt oder am Wein! Herr Stadtschreiber <rs type="person" key="">Gonzenbach</rs>, der Ihren Gelehrten die Negligés zuschneiden pflegt, war vor acht Tagen mit der heiligen <rs type="place" key="">Bavaria</rs> nicht zu Ende gekommen. Er verhieß, sie auf heute zu fertigen, und ich hoffe, dass er Wort halten wird. Von dem alten Arxius habe ich nichts gehört. Wäre er gestorben, so hätte wohl der Erzähler davon etwas gesagt; es müsste denn die letzte Feuersbrunst die Köpfe so verwirrt haben, dass man sogar die Toten zu ehren vergessen hätte. Sobald der Thermometer wieder unter 8° steht, komme ich wieder zu Ihnen; sonst wäre es, meint meine gute Frau, so viel als Gott versucht. Unterdessen wünsche ich Ihnen und mir einen so warmen Ofen, als warm die Liebe ist, mit welcher Ihnen zugetan bleibt 
+Ihr Pupikofer.
+<rs type="place" key="">Bischofzell</rs> an <rs type="person" key="">Mariä Lichtmess</rs> 1830.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

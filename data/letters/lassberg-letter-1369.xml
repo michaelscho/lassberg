@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1369">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Johann Adam Pupikofer an Joseph von Laßberg (19.11.1829).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 normalisiert.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Frauenfeld</settlement>
+                        <repository>Thurgauische Kantonsbibliothek</repository>
+                        <idno type="signature"></idno>
+                        <idno type="register-harris">2274</idno>
+                        <idno type="register-lassberg">nan</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 16 (1888), S.  1-32 und 97-154, S. 101<ref>https://books.google.de/books?id=XWY5AAAAMAAJ</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1369">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X"
+                        >Johann Adam Pupikofer</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-{PLACE_FROM_NUMBER}" ref="{PLACE_FROM_METADATA}">{PLACE_SENT_FROM}</placeName>
+                    <date when="1829-11-19">19.11.1829</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-{PLACE_TO_NUMBER}" ref="{PLACE_TO_METADATA}">{PLACE_SENT_TO}</placeName>
+                </correspAction>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <ref type="cmif:mentionsPerson" target=""><rs>Crivcelinensis</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Legis</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Thurgovia</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0043"><rs>Eppishausen</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Bischofzell</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Dietericus Crwcelinensis</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0139"><rs>Thurg</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs>Friedrich von Schönenberg</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Hagens</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Lüthert</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Schweiz</rs></ref>
+<ref type="cmif:mentionsOrganisation" target=""><rs>Thurg</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Hallers</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0303"><rs>von Lassberg</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Luterachhusen</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs>Heinrichs von Klingenberg</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0049"><rs>Frauenfeld</rs></ref>
+                </note>
+            </correspDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="original" resp="ocr">
+                <p>Dem hochwohlgebornen Herrn Baron <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0373">von Laßberg</rs> in <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs>. 
+Verehrtester Herr und Gönner!
+Der gestrige Tag war für meine <rs type="place" key=""><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0139"><rs type="organisation" key=""><rs type="organisation" key="">Thurg</rs></rs></rs>ovia</rs> ein wahrer Glückstag. Wie ich erfreut über die schöne Ausbeute, die ich bei Ihnen gemacht habe, nach Hause zurück komme, finde ich eine Schachtel mit einem Schock Urkunden angefüllt, unter denen, neben mehreren ganz unbedeutenden, einige sich vorfanden, die auch für Sie Interesse haben mögen. Diejenige von 1175 erwähnt eines <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">Friedrich von Schönenberg</rs>, der wohl 100 Jahre jünger sein mochte als der Sänger, aber doch für das Dasein des Vornamens in diesem Geschlechte zeugt. An der Urkunde von <rs type="place" key="">Luterachhusen</rs> hängt das Siegel <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">Heinrichs von Klingenberg</rs>, ganz dasselbe, das ich in No. 27 der <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0139"><rs type="organisation" key=""><rs type="organisation" key="">Thurg</rs></rs></rs>. Urkunden beschrieben habe. Die Urkunde von 1222, ein Doppelexemplar der No. 3, zeigt uns, daß der abbas <rs type="person" key="">Dietericus Crwcelinensis</rs> kein anderer als der <rs type="person" key="">Crivcelinensis</rs> in unserer Nähe ist. So kommt eines um das andere ans Licht. Wollen Sie die Güte haben, mir diese Urkunden bis zum Anfange der künftigen Woche wieder zurück zu senden, so liefere ich die Schachtel wieder nach <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0049">Frauenfeld</rs>, um wo möglich einen neuen Transport kommen zu lassen. Für andere mitkommende Schriften <rs type="person" key="">Hagens</rs> und <rs type="person" key="">Legis</rs> (?) danke ich nochmals. Ich hoffe, daß Sie Ihre gestrigen Versäumnisse bald wieder eingeholt haben, und jetzt Ihre Augen, nach der kurzen Ruhe, nur desto wackerer seien. Indem ich mich und die Meinigen Ihrer Gewogenheit ferner empfehle und Frau Doktor <rs type="person" key="">Lüthert</rs> von meiner Frau und mir zu grüßen bitte, bleibe ich 
+Ihr ergebenster Nachbar Pupikofer.
+<rs type="place" key=""><rs type="place" key="">Bischofzell</rs></rs>, 19. Nov. 1829.
+Noch eins! Ich möchte zur <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0139"><rs type="organisation" key=""><rs type="organisation" key="">Thurg</rs></rs></rs>. Geschichte ein Verzeichniß der Quellen der <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0139"><rs type="organisation" key=""><rs type="organisation" key="">Thurg</rs></rs></rs>. Geschichte beifügen und sollte dazu <rs type="person" key="">Hallers</rs> Bibliothek der <rs type="place" key="">Schweiz</rs>. Geschichte benutzen. Wenn Sie also in den nächsten 14 Tagen Ihren Wagen einmal nach <rs type="place" key=""><rs type="place" key="">Bischofzell</rs></rs> senden, so lassen Sie das Buch doch gütigst mitlaufen.</p>
+            </div>
+            <div type="normalized" resp="GPT3.5">
+                <p>Dem hochwohlgeborenen Herrn Baron <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0303">von Lassberg</rs> in <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs>. 
+Verehrtester Herr und Gönner!
+Der gestrige Tag war für meine <rs type="place" key=""><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0139"><rs type="organisation" key=""><rs type="organisation" key="">Thurg</rs></rs></rs>ovia</rs> ein wahrer Glückstag. Wie ich erfreut über die schöne Ausbeute, die ich bei Ihnen gemacht habe, nach Hause zurückkomme, finde ich eine Schachtel mit einem Schock Urkunden angefüllt, unter denen, neben mehreren ganz unbedeutenden, einige sich vorfanden, die auch für Sie Interesse haben mögen. Diejenige von 1175 erwähnt eines <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">Friedrich von Schönenberg</rs>, der wohl 100 Jahre jünger sein mochte als der Sänger, aber doch für das Dasein des Vornamens in diesem Geschlechte zeugt. An der Urkunde von <rs type="place" key="">Luterachhusen</rs> hängt das Siegel <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">Heinrichs von Klingenberg</rs>, ganz dasselbe, das ich in Nr. 27 der <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0139"><rs type="organisation" key=""><rs type="organisation" key="">Thurg</rs></rs></rs>. Urkunden beschrieben habe. Die Urkunde von 1222, ein Doppelpexemplar der Nr. 3, zeigt uns, dass der abbas <rs type="person" key="">Dietericus Crwcelinensis</rs> kein anderer als der <rs type="person" key="">Crivcelinensis</rs> in unserer Nähe ist. So kommt eines um das andere ans Licht. Wollen Sie die Güte haben, mir diese Urkunden bis zum Anfang der künftigen Woche wieder zurückzusenden, so liefere ich die Schachtel wieder nach <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0049">Frauenfeld</rs>, um wohlmöglich einen neuen Transport kommen zu lassen. Für andere mitkommende Schriften <rs type="person" key="">Hagens</rs> und <rs type="person" key="">Legis</rs>(?) danke ich nochmals. Ich hoffe, dass Sie Ihre gestrigen Versäumnisse bald wieder eingeholt haben, und jetzt Ihre Augen, nach der kurzen Ruhe, nur desto wackerer sind. Indem ich mich und die Meinigen Ihrer Gewogenheit ferner empfehle und Frau Doktor <rs type="person" key="">Lüthert</rs> von meiner Frau und mir zu grüßen bitte, bleibe ich 
+Ihr ergebenster Nachbar Pupikofer.
+<rs type="place" key=""><rs type="place" key="">Bischofzell</rs></rs>, 19. Nov. 1829.
+Noch eins! Ich möchte zur <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0139"><rs type="organisation" key=""><rs type="organisation" key="">Thurg</rs></rs></rs>. Geschichte ein Verzeichnis der Quellen der <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0139"><rs type="organisation" key=""><rs type="organisation" key="">Thurg</rs></rs></rs>. Geschichte beifügen und sollte dazu <rs type="person" key="">Hallers</rs> Bibliothek der <rs type="place" key="">Schweiz</rs>. Geschichte benutzen. Wenn Sie also in den nächsten 14 Tagen Ihren Wagen einmal nach <rs type="place" key=""><rs type="place" key="">Bischofzell</rs></rs> senden, so lassen Sie das Buch doch gütigst mitlaufen.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1424">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Johann Adam Pupikofer an Joseph von Laßberg (05.03.1830).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 normalisiert.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Frauenfeld</settlement>
+                        <repository>Thurgauische Kantonsbibliothek</repository>
+                        <idno type="signature"></idno>
+                        <idno type="register-harris">2297</idno>
+                        <idno type="register-lassberg">nan</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 16 (1888), S.  1-32 und 97-154, S. 111<ref>https://books.google.de/books?id=XWY5AAAAMAAJ</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1424">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X"
+                        >Johann Adam Pupikofer</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-{PLACE_FROM_NUMBER}" ref="{PLACE_FROM_METADATA}">{PLACE_SENT_FROM}</placeName>
+                    <date when="1830-03-05">05.03.1830</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-{PLACE_TO_NUMBER}" ref="{PLACE_TO_METADATA}">{PLACE_SENT_TO}</placeName>
+                </correspAction>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0141"><rs>St. Gallen</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Bischofzell</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0169"><rs>von Arx</rs></ref>
+<ref type="cmif:mentionsBibl" target=""><rs>Chiemseensia</rs></ref>
+<ref type="cmif:mentionsBibl" target=""><rs>Boica</rs></ref>
+<ref type="cmif:mentionsBibl" target=""><rs>Baumburgensia</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Knöpfel</rs></ref>
+                </note>
+            </correspDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="original" resp="ocr">
+                <p>Mein hochverehrter Herr und Meister!
+Der Herr <rs type="person" key="">Knöpfel</rs> von <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0141">St. Gallen</rs> hat mir für Sie ein Pfund von seinem berühmten Siegellack gesandt und zugleich von dem Befinden des Herrn <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0169">von Arx</rs> Nachricht gegeben. Lesen Sie seinen ausführlichen Bericht selbst; ich glaube, Sie werden sich überzeugen, daß mit dem armen Arxius nicht mehr viel anzufangen ist, und somit werden Sie wohl auch nicht Lust haben, ihn zu besuchen. Morgen muß ich einige Arbeiten in meinem Gärtchen dirigiren, und werde also nicht zu Ihnen kommen. Was macht Ihr Husten? Bei dem jetzigen scharfen Winde wird er sich wahrscheinlich besser befinden, als Sie. Ich habe diese Woche wieder einige Anfälle von Zahnschmerzen gehabt, und, wenn ich sie als Zeichen des Frühlings ansehen darf, habe ich nicht Ursache, mich darüber zu grämen. Die Herbipolana sind gebunden, die <rs type="misc" key="">Boica</rs> restaurirt. Aber mit den letztern ging es sonderbar. Ich lies nach Ihrem Verlangen die Tafeln des Bandes II, die im elften Bande waren, in den zweiten versetzen; wie ich nun aber nochmals vergleiche, so sehe ich, daß sie doch in den elften gehören und das Zeichen II als arabische Ziffer gelte. Die Kupfer des zweiten Bandes, die <rs type="misc" key="">Baumburgensia</rs> und <rs type="misc" key="">Chiemseensia</rs>, bei denen wohl die pagina, nicht aber der Band angegeben ist, mußte ich aus dem 5., 6., 9. und 10. Bande zusammensuchen. Sehen Sie nun zu, ob ich recht gethan habe, oder nicht.
+Hochachtungsvoll bin ich Ihr Ergebenster Pupikofer.
+<rs type="place" key="">Bischofzell</rs>, 5. Mart. 1830.</p>
+            </div>
+            <div type="normalized" resp="GPT3.5">
+                <p>Mein hochverehrter Herr und Meister!
+Der Herr <rs type="person" key="">Knöpfel</rs> von <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0141">St. Gallen</rs> hat mir für Sie ein Pfund von seinem berühmten Siegellack gesandt und zugleich von dem Befinden des Herrn <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0169">von Arx</rs> Nachricht gegeben. Lesen Sie seinen ausführlichen Bericht selbst; ich glaube, Sie werden sich überzeugen, dass mit dem armen Arxius nicht mehr viel anzufangen ist, und somit werden Sie wohl auch nicht Lust haben, ihn zu besuchen. Morgen muss ich einige Arbeiten in meinem Gärtchen dirigieren, und werde also nicht zu Ihnen kommen. Was macht Ihr Husten? Bei dem jetzigen scharfen Winde wird er sich wahrscheinlich besser befinden, als Sie. Ich habe diese Woche wieder einige Anfälle von Zahnschmerzen gehabt, und, wenn ich sie als Zeichen des Frühlings ansehen darf, habe ich nicht Ursache, mich darüber zu grämen. Die Herbipolana sind gebunden, die <rs type="misc" key="">Boica</rs> restauriert. Aber mit den Letztern ging es sonderbar. Ich lies nach Ihrem Verlangen die Tafeln des Bandes II, die im elften Bande waren, in den zweiten versetzen; wie ich nun aber nochmals vergleiche, so sehe ich, dass sie doch in den elften gehören und das Zeichen II als arabische Ziffer gelte. Die Kupfer des zweiten Bandes, die <rs type="misc" key="">Baumburgensia</rs> und <rs type="misc" key="">Chiemseensia</rs>, bei denen wohl die pagina, nicht aber der Band angegeben ist, musste ich aus dem 5., 6., 9. und 10. Bande zusammensuchen. Sehen Sie nun zu, ob ich recht getan habe, oder nicht.
+Hochachtungsvoll bin ich Ihr Ergebenster Pupikofer.
+<rs type="place" key="">Bischofzell</rs>, 5. März 1830.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

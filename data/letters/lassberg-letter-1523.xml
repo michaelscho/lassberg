@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1523">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Johann Adam Pupikofer an Joseph von Laßberg (17.02.1831).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 normalisiert.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Frauenfeld</settlement>
+                        <repository>Thurgauische Kantonsbibliothek</repository>
+                        <idno type="signature"></idno>
+                        <idno type="register-harris">2347</idno>
+                        <idno type="register-lassberg">nan</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 16 (1888), S.  1-32 und 97-154, S. 126<ref>https://books.google.de/books?id=XWY5AAAAMAAJ</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1523">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X"
+                        >Johann Adam Pupikofer</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-{PLACE_FROM_NUMBER}" ref="{PLACE_FROM_METADATA}">{PLACE_SENT_FROM}</placeName>
+                    <date when="1831-02-17">17.02.1831</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-{PLACE_TO_NUMBER}" ref="{PLACE_TO_METADATA}">{PLACE_SENT_TO}</placeName>
+                </correspAction>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <ref type="cmif:mentionsPlace" target=""><rs>Blumenegg</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0043"><rs>Eppishausen</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Bischofzell</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Trachsler</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0314"><rs>Rosenlächer</rs></ref>
+<ref type="cmif:mentionsOrganisation" target=""><rs>Thurgovia</rs></ref>
+<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0166"><rs>Zürich</rs></ref>
+<ref type="cmif:mentionsOrganisation" target=""><rs>Kollektaneen</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0205"><rs>Mörikofer</rs></ref>
+<ref type="cmif:mentionsPlace" target=""><rs>Villa Epponis</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0284"><rs>Karl den Großen</rs></ref>
+<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0270"><rs>Schulth</rs></ref>
+<ref type="cmif:mentionsPerson" target=""><rs>Ludens</rs></ref>
+                </note>
+            </correspDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="original" resp="ocr">
+                <p>Mein hochverehrter Herr und Nachbar!
+Indem ich heute nach Hause kam, lag schon ein Paket für Sie bereit, in welchem wahrscheinlich Morgenblätter enthalten sind. Die Gelegenheit benutzend, schließe ich <rs type="person" key="">Ludens</rs> Geschichte des deutschen Volkes bei und füge die Bemerkung bei, daß der Eigenthümer derselben, Herr Provisor <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0205">Mörikofer</rs>, nur bis zu den einliegenden Zeichen gelesen und daher zur Befriedigung seiner Neugierde den Wunsch geäußert habe, das Werk bald wieder zu erhalten. Vierzehn Tage Zeit dürfen Sie sich indessen, wie ich denke, doch wohl nehmen. Ungeachtet mit dem zweiten Bande der Subscriptions - Preis geschlossen wurde, ist doch noch bei <rs type="person" key="">Trachsler</rs> in <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0166">Zürich</rs> ein Exemplar um den Subscriptions - Preis erhältlich, wenn nicht seit dem Julius verkauft wurde. Der letzthin erschienene fünfte Band geht bis auf <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0284">Karl den Großen</rs>. Das freundschaftliche Schreiben, mit welchem Sie gestern den übersandten Band <rs type="organisation" key=""><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0270">Schulth</rs>eß Kollektaneen</rs> begleiteten, hat mir, nachdem Sie mich bereits mündlich von desselben Inhalt benachrichtigt hatten, einen angenehmen Nachgenuß gewährt, mich aber auch zugleich etwas scharf berührt. Sie scheinen mir vorzuwerfen, daß ich wenig Interesse für eine Schrift gezeigt habe, von der Sie doch voraussetzen zu dürfen glaubten, sie werde mich sehr ansprechen. Sie scheinen mir abermals vorzuwerfen, daß ich nicht wie früher in meinen Besuchen zu <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs> fleißig sei. Der letztere Vorwurf ist insofern sehr schmeichelhaft für mich, als er mir ein Beweis ist, daß Ihnen meine Besuche angenehm seien; aber wenn derselbe aus der Meinung hervorgegangen wäre, daß ich an Interesse für historische Gegenstände und somit wohl auch an Interesse für die villa <rs type="place" key="">Epponis</rs> abgenommen habe, so würden Sie mir zum Theil Unrecht thun -; ich sage zum Theil, wie fern nämlich allerdings körperliche Leiden, denen ich seit mehreren Monaten anheim gegeben war, meine wissenschaftliche Thätigkeit etwas gelähmt haben und selbst meine Besuche bei Ihnen seltener machten. Dagen kann ich Sie versichern, daß mir diese an mir von mir selbst wahrgenommene Erscheinung schon schmerzhaft genug war, und ich wohl eher des Trostes, als eines Vorwurfes bedurft hätte. Doch auch dieser Vorwurf ist zu spät gekommen, da ich wieder neue Lust und Kraft fühle und selbst meine Besuche bei Ihnen wieder fleißiger zu wiederholen angefangen habe. Wenn es mit meiner Gesundheit nun so fort geht, so sollen Sie keine Ursache haben, weiter über mich und mein Wegbleiben zu klagen; denn jedermann weiß ja, daß ich meine Freistunden nirgends lieber zubringe, als bei Ihnen, und was in <rs type="place" key=""><rs type="place" key="">Bischofzell</rs></rs> selbst die Kinder wissen, das werden Sie doch wohl selbt auch glauben! Das Register über <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0270">Schulth</rs>. Kollektaneen will ich schon machen, und ich hoffe, es werde ganz nach Ihrem Sinne ausfallen. Allerdings wird der Gewinn für die <rs type="place" key="">Thurgovia</rs> nicht unbedeutend sein, wenn auch die übrigen Bände von mir benutzt werden können, und damit Herr <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0314">Rosenlächer</rs> nicht in Verlegenheit komme, will ich eilen, so viel Zeit und Arbeit gestattet. Meine Frau trägt mir ihre Empfehlungen an Sie auf. Sie behauptet, letzte Nacht gar nicht wohl geschlafen zu haben; so ungewohnt ist ihr meine Abwesenheit. Dagegen wünscht sie, daß Sie ihr einen Platz in Ihrem Wagen gestatten, wenn wir einmal nach <rs type="place" key="">Blumenegg</rs> wallfahren. Der Bote wartet, und so schließe ich mit der Versicherung, daß ich mit herzlicher Ergebenheit bin 
+Ihr Pupikofer.
+<rs type="place" key=""><rs type="place" key="">Bischofzell</rs></rs>, 17. Feb. 1831.</p>
+            </div>
+            <div type="normalized" resp="GPT3.5">
+                <p>Mein hochverehrter Herr und Nachbar!
+Indem ich heute nach Hause kam, lag schon ein Paket für Sie bereit, in welchem wahrscheinlich Morgenblätter enthalten sind. Die Gelegenheit benutzend, schließe ich <rs type="person" key="">Ludens</rs> Geschichte des deutschen Volkes bei und füge die Bemerkung bei, dass der Eigentümer derselben, Herr Provisor <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0205">Mörikofer</rs>, nur bis zu den einliegenden Zeichen gelesen und daher zur Befriedigung seiner Neugierde den Wunsch geäußert habe, das Werk bald wieder zu erhalten. Vierzehn Tage Zeit dürfen Sie sich indessen, wie ich denke, doch wohl nehmen. Ungeachtet mit dem zweiten Bande der Subscriptions - Preis geschlossen wurde, ist doch noch bei <rs type="person" key="">Trachsler</rs> in <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0166">Zürich</rs> ein Exemplar um den Subscriptions - Preis erhältlich, wenn nicht seit dem Juli verkauft wurde. Der letzthin erschienene fünfte Band geht bis auf <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0284">Karl den Großen</rs>. Das freundschaftliche Schreiben, mit welchem Sie gestern den übersandten Band <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0270">Schulth</rs>eß '<rs type="organisation" key="">Kollektaneen</rs>' begleiteten, hat mir, nachdem Sie mich bereits mündlich von desselben Inhalt benachrichtigt hatten, einen angenehmen Nachgenuß gewährt, mich aber auch zugleich etwas scharf berührt. Sie scheinen mir vorzuwerfen, dass ich wenig Interesse für eine Schrift gezeigt habe, von der Sie doch voraussetzen zu dürfen glaubten, sie werde mich sehr ansprechen. Sie scheinen mir abermals vorzuwerfen, dass ich nicht wie früher in meinen Besuchen zu <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs> fleißig sei. Der letztere Vorwurf ist insofern sehr schmeichelhaft für mich, als er mir ein Beweis ist, dass Ihnen meine Besuche angenehm seien; aber wenn derselbe aus der Meinung hervorgegangen wäre, dass ich an Interesse für historische Gegenstände und somit auch an Interesse für die <rs type="place" key="">Villa Epponis</rs> abgenommen habe, so würden Sie mir zum Teil Unrecht tun -; ich sage zum Teil, weil nämlich allerdings körperliche Leiden, denen ich seit mehreren Monaten anheim gegeben war, meine wissenschaftliche Tätigkeit etwas gelähmt haben und selbst meine Besuche bei Ihnen seltener machten. Dagegen kann ich Sie versichern, dass mir diese an mir von mir selbst wahrgenommene Erscheinung schon schmerzhaft genug war, und ich wohl eher des Trostes, als eines Vorwurfes bedurft hätte. Doch auch dieser Vorwurf ist zu spät gekommen, da ich wieder neue Lust und Kraft fühle und selbst meine Besuche bei Ihnen wieder fleißiger zu wiederholen angefangen habe. Wenn es mit meiner Gesundheit nun so weitergeht, so sollen Sie keine Ursache haben, weiter über mich und mein Wegbleiben zu klagen; denn jedermann weiß ja, dass ich meine Freistunden nirgends lieber zubringe, als bei Ihnen, und was in <rs type="place" key=""><rs type="place" key="">Bischofzell</rs></rs> selbst die Kinder wissen, das werden Sie doch wohl selbst auch glauben! Das Register über <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0270">Schulth</rs>. <rs type="organisation" key="">Kollektaneen</rs> will ich schon machen, und ich hoffe, es werde ganz nach Ihrem Sinn ausfallen. Allerdings wird der Gewinn für die <rs type="organisation" key="">Thurgovia</rs> nicht unbedeutend sein, wenn auch die übrigen Bände von mir benutzt werden können, und damit Herr <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0314">Rosenlächer</rs> nicht in Verlegenheit komme, will ich eilen, so viel Zeit und Arbeit gestattet. Meine Frau trägt mir ihre Empfehlungen an Sie auf. Sie behauptet, letzte Nacht gar nicht wohl geschlafen zu haben; so ungewohnt ist ihr meine Abwesenheit. Dagegen wünscht sie, dass Sie ihr einen Platz in Ihrem Wagen gestatten, wenn wir einmal nach <rs type="place" key="">Blumenegg</rs> wallfahren. Der Bote wartet, und so schließe ich mit der Versicherung, dass ich mit herzlicher Ergebenheit bin 
+Ihr Pupikofer.
+<rs type="place" key=""><rs type="place" key="">Bischofzell</rs></rs>, 17. Feb. 1831.</p>
+            </div>
+        </body>
+    </text>
+</TEI>
