@@ -42,7 +42,7 @@
                 <correspAction type="sent">
                     <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
                         >Joseph von Laßberg</persName>
-                    <placeName key="../register/lassberg-places.xml#lassberg-place-lassberg-place-0043">Eppishausen</placeName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</placeName>
                     <date when="1827-02-03">03.02.1827</date>
                 </correspAction>
                 <correspAction type="received">
@@ -53,15 +53,7 @@
                 
                 <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
                 <note type="mentioned">
-                    <ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0043"><rs>Eppishausen</rs></ref>
-<ref type="cmif:mentionsPerson" target=""><rs>Bucelinus</rs></ref>
-<ref type="cmif:mentionsPerson" target=""><rs>Diaconus Pupicofer</rs></ref>
-<ref type="cmif:mentionsPlace" target=""><rs>Epishausen</rs></ref>
-<ref type="cmif:mentionsPlace" target=""><rs>Bischofszelle</rs></ref>
-<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0067"><rs>Helmsdorf</rs></ref>
-<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0220"><rs>Heinrich von Rugge</rs></ref>
-<ref type="cmif:mentionsOrganisation" target=""><rs>Ruggen von Tannek</rs></ref>
-<ref type="cmif:mentionsPerson" target=""><rs>Laßbergius</rs></ref>
+                    <!--<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-{PERS_NUMBER}"><rs>{ORIGINAL_STRING_MENTION}</rs></ref>-->
                 </note>
             </correspDesc>
         </profileDesc>
@@ -70,21 +62,21 @@
         <body>
             <div type="original" resp="ocr">
                 <p><rs type="place" key="">Epishausen</rs>. 3. Febr. 1827.
-Mit meinem herzlichen Danke für Iren lezten Besuch folget nun auch der lezthin vergeßene <rs type="person" key="">Bucelinus</rs>: im lezten Bande werden Sie vererter Freund finden, daß <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs> im xv. iahrhunderte den <rs type="organisation" key="">Ruggen</rs> <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">von</rs> <rs type="person" key="">Tannek</rs> gehórte und sie sich da<rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">von</rs> schrieben. Ich ware begierig zu wißen, wie das zugieng? sollten es die <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">von</rs> <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0067">Helmsdorf</rs> <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">von</rs> inen bekommen haben? das wåre lustig, wenn Hr. Heinrich <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">von</rs> Rugge einmal sollte hier gesungen haben!
+Mit meinem herzlichen Danke für Iren lezten Besuch folget nun auch der lezthin vergeßene <rs type="person" key="">Bucelinus</rs>: im lezten Bande werden Sie vererter Freund finden, daß <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs> im xv. iahrhunderte den <rs type="organisation" key="">Ruggen</rs> <rs type="person" key="">von</rs> <rs type="person" key="">Tannek</rs> gehórte und sie sich da<rs type="person" key="">von</rs> schrieben. Ich ware begierig zu wißen, wie das zugieng? sollten es die <rs type="person" key="">von</rs> <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0067">Helmsdorf</rs> <rs type="person" key="">von</rs> inen bekommen haben? das wåre lustig, wenn Hr. <rs type="person" key="">Heinrich <rs type="person" key="">von</rs> Rugge</rs> einmal sollte hier gesungen haben!
 "der winter kan nicht anders sin,
 wan swere vnd ane masze lanc:
 mir were lieb, wolt er zergan,:
 was guoter froede ich uf den sumer han, 
 des gistuond nie hoher mir der muot, 
 das ist ein zit, die minen ougen senfte tuot."
-das singe ich <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">von</rs> ganzem Herzen mit; aber der auster dux inquietae turpidus adriae bringt uns heute wieder so fúrchterliches Schneegestóber, dass ich sobald noch keinem Frúling entgegen sehe. Ich habe es diese ganze nacht schon in meinen Schultern gefúlt und fúle es noch in meinem steifen arm. Vergeßen Sie nicht daß Krankenbesuch, náchst dem predigen, die erste pflicht eines guten seelenhirten ist. 
+das singe ich <rs type="person" key="">von</rs> ganzem Herzen mit; aber der auster dux inquietae turpidus adriae bringt uns heute wieder so fúrchterliches Schneegestóber, dass ich sobald noch keinem Frúling entgegen sehe. Ich habe es diese ganze nacht schon in meinen Schultern gefúlt und fúle es noch in meinem steifen arm. Vergeßen Sie nicht daß Krankenbesuch, náchst dem predigen, die erste pflicht eines guten seelenhirten ist. 
 Vale et fave <rs type="person" key="">Laßbergius</rs>
 Seiner Hocherwürden dem Herren <rs type="person" key="">Diaconus Pupicofer</rs> zu <rs type="place" key="">Bischofszelle</rs> mit einem paket Bücher</p>
             </div>
             <div type="normalized" resp="GPT3.5">
                 <p><rs type="place" key="">Epishausen</rs>, 3. Februar 1827.
 
-Mit meinem herzlichen Dank für Ihren letzten Besuch folgt nun auch der kürzlich vergessene <rs type="person" key="">Bucelinus</rs>: Im letzten Band werden Sie verehrter Freund finden, dass <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs> im 15. Jahrhundert den <rs type="organisation" key="">Ruggen von Tannek</rs> gehörte und sie sich davon schrieben. Ich war begierig zu wissen, wie das zuging? Sollten es die von <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0067">Helmsdorf</rs> von ihnen bekommen haben? Das wäre lustig, wenn Herr <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0220">Heinrich von Rugge</rs> einmal hier gesungen haben sollte!
+Mit meinem herzlichen Dank für Ihren letzten Besuch folgt nun auch der kürzlich vergessene <rs type="person" key="">Bucelinus</rs>: Im letzten Band werden Sie verehrter Freund finden, dass <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs> im 15. Jahrhundert den <rs type="organisation" key="">Ruggen von Tannek</rs> gehörte und sie sich davon schrieben. Ich war begierig zu wissen, wie das zuging? Sollten es die von <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0067">Helmsdorf</rs> von ihnen bekommen haben? Das wäre lustig, wenn Herr <rs type="person" key="">Heinrich von Rugge</rs> einmal hier gesungen haben sollte!
 "Der Winter kann nicht anders sein,
 wenn schwer und ohne Maß lang:
 Mir wäre lieb, wollt er vergehen,

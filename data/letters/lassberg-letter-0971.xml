@@ -42,7 +42,7 @@
                 <correspAction type="sent">
                     <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
                         >Joseph von Laßberg</persName>
-                    <placeName key="../register/lassberg-places.xml#lassberg-place-lassberg-place-0043">Eppishausen</placeName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</placeName>
                     <date when="1825-03-11">11.03.1825</date>
                 </correspAction>
                 <correspAction type="received">
@@ -53,23 +53,7 @@
                 
                 <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
                 <note type="mentioned">
-                    <ref type="cmif:mentionsBibl" target=""><rs>Episcopatus Constantiensis</rs></ref>
-<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0169"><rs>v. Arx</rs></ref>
-<ref type="cmif:mentionsBibl" target=""><rs>Zapfs Monument</rs></ref>
-<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0075"><rs>Graven Mülinen</rs></ref>
-<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0224"><rs>v. Ittner</rs></ref>
-<ref type="cmif:mentionsPerson" target=""><rs>Trutpert Neugarts</rs></ref>
-<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0043"><rs>Eppishausen</rs></ref>
-<ref type="cmif:mentionsBibl" target=""><rs>Raumers Geschichte der Hohenstaufen</rs></ref>
-<ref type="cmif:mentionsPerson" target=""><rs>Justinger</rs></ref>
-<ref type="cmif:mentionsPlace" target=""><rs>Rozmital</rs></ref>
-<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-0373"><rs>Joseph v. Laßberg</rs></ref>
-<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0012"><rs>Augsburg</rs></ref>
-<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0082"><rs>Konstanz</rs></ref>
-<ref type="cmif:mentionsPerson" target=""><rs>Tschachtlan</rs></ref>
-<ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0020"><rs>Bern</rs></ref>
-<ref type="cmif:mentionsBibl" target=""><rs>Appenzeller Krieges</rs></ref>
-<ref type="cmif:mentionsPerson" target=""><rs>Anshelms</rs></ref>
+                    <!--<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-{PERS_NUMBER}"><rs>{ORIGINAL_STRING_MENTION}</rs></ref>-->
                 </note>
             </correspDesc>
         </profileDesc>
@@ -77,10 +61,48 @@
     <text>
         <body>
             <div type="original" resp="ocr">
-                <p><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs>, den 11. März 1825.
-Vererter Herr!
-Mit der angelegensten Bitte es mir zu gute zu halten, daß ich Jr Buch so lange behielt und mit dem besten Dank für dessen mir gestatteten Gebrauch, sende ich Inen den IV. Band von <rs type="misc" key="">Raumers Geschichte der Hohenstaufen</rs> hier zurük: die anhaltende Krankheit meines Freundes <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0224">v. Ittner</rs>, welche vorgestern mit dessen Hinscheiden endete, erlaubte mir nicht, an Etwas anderes zu denken. Seit gestern Abends bin ich mit seiner Wittwe und Tochter hier angekommen; sie wollen die ersten Tage der Trauer in dieser Einsamkeit zubringen. Gerne würde ich Irem Wunsche entsprechen und Inen den II. Band von <rs type="misc" key="">Zapfs Monument</rs>: anecdot: übermachen; allein, ich habe jn nicht und zweifle, ob ein solcher herausgekommen ist; doch habe ich in <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0012">Augsburg</rs> deshalb Erkundigungen anstellen lassen. Die Handschrift <rs type="person" key="">Trutpert Neugarts</rs> zum II. Band des <rs type="misc" key="">Episcopatus Constantiensis</rs> liegt schon im zweiten Jare bei dem H. <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0075">Graven Mülinen</rs> zu <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0020">Bern</rs>, welchem der Verfasser sie zur Herausgabe überlaßen hat; aber bei der geschwächten Gesundheit dieses würdigen Mannes, ist wol keine Hofnung zu Bewerkstelligung dieser Herausgabe. Das Gedicht, welches eigentlich nur bis zum Anfange des <rs type="misc" key="">Appenzeller Krieges</rs> reicht, hat weder geschichtlichen noch poët. Werth und würde wol eben so gut ungedruckt geblieben sein, was ich mir die Freiheit nam, dem <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0169">H. v. Arx</rs> schon vor mer als drei Jaren zu äußern. Auch aus dem I. Bande von <rs type="person" key="">Anshelms</rs> <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0020">Bern</rs>erchronik habe ich wenig Trost geschöpft, und ziehe <rs type="person" key="">Justinger</rs> und <rs type="person" key="">Tschachtlan</rs> weit vor. Eine nicht uninteressante Geschichte eines böhmischen Freyherren von <rs type="place" key="">Rozmital</rs> aus dem xv. Jarhundert sende ich Inen <rs type="person" key="">von Constanz</rs> aus. Indeßen leben Sie wol und gedenken Sie zuweilen mit Liebe Ires herzlich betrübten, gehorsamen Dieners.
-<rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0373">Joseph v. Laßberg</rs>.</p>
+                <p><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043"
+                    >Eppishausen</rs>, den 11. März 1825. Vererter Herr! Mit der angelegensten Bitte
+                    es mir zu gute zu halten, daß ich Jr Buch so lange behielt und mit dem besten
+                    Dank für dessen mir gestatteten Gebrauch, sende ich Inen den IV. Band von <rs
+                    type="bibl" key="">Raumers Geschichte der Hohenstaufen</rs> hier zurük: die
+                    anhaltende Krankheit meines Freundes <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0224">v.
+                    Ittner</rs>, welche vorgestern mit dessen Hinscheiden endete, erlaubte mir
+                    nicht, an Etwas anderes zu denken. Seit gestern Abends bin ich mit seiner Wittwe
+                    und Tochter hier angekommen; sie wollen die ersten Tage der Trauer in dieser
+                    Einsamkeit zubringen. Gerne würde ich Irem Wunsche entsprechen und Inen den II.
+                    Band von <rs type="misc" key="">Zapfs Monument</rs>: anecdot: übermachen;
+                    allein, ich habe jn nicht und zweifle, ob ein solcher herausgekommen ist; doch
+                    habe ich in <rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0012">Augsburg</rs> deshalb
+                    Erkundigungen anstellen lassen. Die Handschrift <rs type="person" key=""
+                    >Trutpert Neugarts</rs> zum II. Band des <rs type="misc" key="">Episcopatus
+                    Constantiensis</rs> liegt schon im zweiten Jare bei dem H. <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0075">Graven
+                    Mülinen</rs> zu <rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0020">Bern</rs>, welchem der
+                    Verfasser sie zur Herausgabe überlaßen hat; aber bei der geschwächten Gesundheit
+                    dieses würdigen Mannes, ist wol keine Hofnung zu Bewerkstelligung dieser
+                    Herausgabe. Das Gedicht, welches eigentlich nur bis zum Anfange des <rs
+                    type="misc" key="">Appenzeller Krieges</rs> reicht, hat weder geschichtlichen
+                    noch poët. Werth und würde wol eben so gut ungedruckt geblieben sein, was ich
+                    mir die Freiheit nam, dem <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0169">H. v.
+                    Arx</rs> schon vor mer als drei Jaren zu äußern. Auch aus dem I. Bande von <rs
+                    type="person" key="">Anshelms</rs> <rs type="bibl"
+                    key="../register/lassberg-places.xml#lassberg-place-0020">Bernerchronik</rs>
+                    habe ich wenig Trost geschöpft, und ziehe <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0377"
+                    >Justinger</rs> und <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0378"
+                    >Tschachtlan</rs> weit vor. Eine nicht uninteressante Geschichte eines
+                    böhmischen Freyherren von <rs type="place" key="">Rozmital</rs> aus dem xv.
+                    Jarhundert sende ich Inen <rs type="person" key="">von Constanz</rs> aus.
+                    Indeßen leben Sie wol und gedenken Sie zuweilen mit Liebe Ires herzlich
+                    betrübten, gehorsamen Dieners. <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0373">Joseph v.
+                    Laßberg</rs>.</p>
             </div>
             <div type="normalized" resp="GPT3.5">
                 <p><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs>, den 11. März 1825.

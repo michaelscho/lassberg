@@ -8,6 +8,7 @@ from flair.models import SequenceTagger
 from flair.nn import Classifier
 from flair.data import Label
 from bertopic import BERTopic
+import itertools
 
 
 """ Create letters as xml files
@@ -96,11 +97,23 @@ def topic_extraction(letters):
 def create_reference(entity, unique_persons, unique_places):
     if entity[1] == 'PER':
         normalized_name = re.sub(r'\b\w+\.','',entity[0])
-        normalized_name = re.sub('  ',' ', normalized_name)
+        normalized_name = re.sub('\s+',' ', normalized_name)
+        normalized_name = ' '.join(normalized_name.split(' '))
         normalized_names = normalized_name.split(' ')
         if len(normalized_names) > 1:
-            normalized_name = normalized_names[1]
-        #print(normalized_name)
+            normalized_name = normalized_names[-1]
+
+        if len(normalized_name) < 3:
+            return None, None
+        elif len(normalized_name) == 3 and (normalized_name == 'von' or normalized_name == 'vom'):
+            return None, None
+        elif normalized_name.isspace():
+            return None, None
+        elif normalized_name == '\n':
+            return None, None
+
+        print(normalized_name)
+
 
         is_present = unique_persons['PersonName'].str.contains(normalized_name)
         filtered_df = unique_persons[is_present]
@@ -162,7 +175,7 @@ def create_letter(letters, xml_template):
                 xml_file = xml_file.replace('{SENT_TO}', metadata_df['Name'].values[0])
                 xml_file = xml_file.replace('{PERS_TO_NUMBER}\" ref=\"{GND}\"', f'{metadata_df["person_id"].values[0]}\" ref=\"https://d-nb.info/gnd/{metadata_df["GND"].values[0]}\"')
                 xml_file = xml_file.replace('{PERS_FROM_NUMBER}\" ref=\"{GND}\"', f'lassberg-correspondent-0373\" ref=\"https://d-nb.info/gnd/118778862\"')
-                xml_file = xml_file.replace('{PLACE_FROM_NUMBER}" ref="{PLACE_FROM_METADATA}">{PLACE_SENT_FROM}</placeName>', f'{metadata_df["place_id"].values[0]}\">{place_from_metadata["Ort"].values[0]}</placeName>')
+                xml_file = xml_file.replace('<placeName key="../register/lassberg-places.xml#lassberg-place-{PLACE_FROM_NUMBER}" ref="{PLACE_FROM_METADATA}">{PLACE_SENT_FROM}</placeName>', f'<placeName key="../register/lassberg-places.xml#{metadata_df["place_id"].values[0]}\">{place_from_metadata["Ort"].values[0]}</placeName>')
                 xml_file = xml_file.replace('<placeName key="../register/lassberg-places.xml#lassberg-place-{PLACE_TO_NUMBER}" ref="{PLACE_TO_METADATA}">{PLACE_SENT_TO}</placeName>', '')
                 sent_from = 'Joseph von Laßberg'
                 sent_to = metadata_df['Name'].values[0]
@@ -172,6 +185,8 @@ def create_letter(letters, xml_template):
                 xml_file = xml_file.replace('{SENT_BY}', metadata_df['Name'].values[0])
                 xml_file = xml_file.replace('{PERS_FROM_NUMBER}\" ref=\"{GND}\"', f'{metadata_df["person_id"].values[0]}\" ref=\"https://d-nb.info/gnd/{metadata_df["GND"].values[0]}\"')
                 xml_file = xml_file.replace('{PERS_TO_NUMBER}\" ref=\"{GND}\"', f'lassberg-correspondent-0373\" ref=\"https://d-nb.info/gnd/118778862\"')
+                xml_file = xml_file.replace('<placeName key="../register/lassberg-places.xml#lassberg-place-{PLACE_FROM_NUMBER}" ref="{PLACE_FROM_METADATA}">{PLACE_SENT_FROM}</placeName>', '')
+                xml_file = xml_file.replace('<placeName key="../register/lassberg-places.xml#lassberg-place-{PLACE_TO_NUMBER}" ref="{PLACE_TO_METADATA}">{PLACE_SENT_TO}</placeName>', f'<placeName key="../register/lassberg-places.xml#{metadata_df["place_id"].values[0]}\">{place_from_metadata["Ort"].values[0]}</placeName>')
                 sent_to = 'Joseph von Laßberg'
                 sent_from = metadata_df['Name'].values[0]
 
@@ -198,6 +213,14 @@ def create_letter(letters, xml_template):
             #print(list_of_entities_original)
             #print(list_of_entities_normalized)
 
+            # Removing duplicates when order doesn't matter
+            list_of_entities_normalized = list(k for k,_ in itertools.groupby(sorted(list_of_entities_normalized)))
+            list_of_entities_original = list(k for k,_ in itertools.groupby(sorted(list_of_entities_original)))
+
+            print(list_of_entities_normalized)
+            print(list_of_entities_original)
+
+
             list_of_mentioned_entities = []
 
             # put entities into <rs> element in xml file
@@ -211,11 +234,13 @@ def create_letter(letters, xml_template):
                 else:
                     ref=""
 
-                normalized_text = normalized_text.replace(entity[0], f'<rs type="{entity[1]}" key="{ref}">{entity[0]}</rs>')
+                normalized_text = normalized_text.replace(entity[0], f'<rs type="{entity[1]}" key="{ref}">{str(entity[0])[:1] + "#+#" + str(entity[0])[1:]}</rs>')
                 normalized_text = normalized_text.replace('MISC', 'misc')
                 normalized_text = normalized_text.replace('PER','person')
                 normalized_text = normalized_text.replace('LOC','place')
                 normalized_text = normalized_text.replace('ORG','organisation')
+
+                """
 
                 ref_element = f'<ref type="cmif:mentions{entity[1]}" target="{ref}"><rs>{entity[0]}</rs></ref>'
                 ref_element = ref_element.replace('PER', 'Person')
@@ -224,6 +249,10 @@ def create_letter(letters, xml_template):
                 ref_element = ref_element.replace('MISC', 'Bibl')
 
                 list_of_mentioned_entities.append(ref_element)
+
+                """
+
+            normalized_text = normalized_text.replace('#+#','')
 
             list_of_mentioned_entities = list(set(list_of_mentioned_entities)) 
 
@@ -236,12 +265,14 @@ def create_letter(letters, xml_template):
                 else:
                     ref=""
 
-                original_text = original_text.replace(entity[0], f'<rs type="{entity[1]}" key="{ref}">{entity[0]}</rs>')
+                original_text = original_text.replace(entity[0], f'<rs type="{entity[1]}" key="{ref}">{str(entity[0])[:1] + "#+#" + str(entity[0])[1:]}</rs>')
                 original_text = original_text.replace('MISC', 'misc')
                 original_text = original_text.replace('PER','person')
                 original_text = original_text.replace('LOC','place')
                 original_text = original_text.replace('ORG','organisation')
 
+                
+                """
                 ref_element = f'<ref type="cmif:mentions{entity[1]}" target="{ref}"><rs>{entity[0]}</rs></ref>'
                 ref_element = ref_element.replace('PER', 'Person')
                 ref_element = ref_element.replace('LOC', 'Place')
@@ -250,6 +281,11 @@ def create_letter(letters, xml_template):
 
             # replace list of mentioned entities by joined list
             xml_file = xml_file.replace('<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-{PERS_NUMBER}"><rs>{ORIGINAL_STRING_MENTION}</rs></ref>', '\n'.join(list_of_mentioned_entities))
+            
+            """
+            original_text = original_text.replace('#+#','')
+
+                
             # replace {ORIGINAL_TEXT} and {NORMALIZED_TEXT} with value from letters list
             xml_file = xml_file.replace('{ORIGINAL_TEXT}', original_text)
             xml_file = xml_file.replace('{NORMALIZED_TEXT}', normalized_text)

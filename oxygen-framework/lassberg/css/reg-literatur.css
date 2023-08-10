@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background-color: #f5f5f5;
+}
+
+TEI {
+    display: block;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+    max-width: 800px;
+    margin: 0 auto; /* centering */
+}
+
+titleStmt > title {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+publicationStmt, sourceDesc {
+    margin-top: 15px;
+    font-style: italic;
+}
+
+listBibl {
+    margin-top: 30px;
+}
+
+listBibl:before {
+    content: oxy_button(
+        actionID, 'lassberg-add-bib',
+        showIcon, true)
+}
+
+bibl {
+    display: block;
+    margin-top: 10px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+idno {
+    display: block;
+    margin-top: 5px;
+    color: #0074d9;
+    text-decoration: underline;
+    cursor: pointer;
+}

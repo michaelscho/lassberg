@@ -1,0 +1,105 @@
+/* Generic styling */
+TEI {
+    display: block;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f4f4f4; /* Light gray background */
+    font-family: Arial, sans-serif;
+}
+
+teiHeader, text {
+    display: block;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+/* Styling for the header section */
+teiHeader > fileDesc {
+    display: block;
+}
+
+titleStmt > title {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+titleStmt > respStmt {
+    display: block;
+    margin-top: 10px;
+}
+
+titleStmt > respStmt > name {
+    font-weight: bold;
+    display: inline-block;
+    color: #444;
+}
+
+titleStmt > respStmt > resp {
+    font-style: italic;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+publicationStmt > p, sourceDesc > p {
+    display:block;
+    margin-top: 10px;
+}
+
+/* Styling for the list of places */
+listPlace {
+    display: block;
+    border-top: 2px solid #aaa;
+    padding-top: 20px;
+}
+
+listPlace:before {
+    content: oxy_button(
+        actionID, 'lassberg-add-place',
+        showIcon, true)
+}
+
+
+place {
+    display: block;
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #aaa;
+    border-radius: 5px; /* Rounded corners */
+    background-color: #e0e0e0; /* Stronger gray background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds shadow to give depth */
+}
+
+place:after {
+    content: oxy_button(
+        actionID, 'lassberg-get-data-from-wikidata',
+        showIcon, true)
+}
+
+place > placeName {
+    display: block;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+place > location {
+    display: block;
+    margin-top: 5px;
+    padding-left: 10px; /* Indentation */
+}
+
+place > location > geo {
+    display: block;
+    font-style: italic;
+    color: #666;
+}
+
+
+placeName:after {
+  -oxy-link:attr(ref);
+  content: " (Wiki: " oxy_textfield(
+            edit, "@ref") ") ";
+          
+}
