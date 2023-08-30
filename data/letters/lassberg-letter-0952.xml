@@ -120,6 +120,13 @@
                 </note>
             </correspDesc>
         </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2023-08-01" who="#MiS" status="draft">File created and preprocessed automatically</change>
+                <change when="2023-08-29" who="#MiS" status="draft">Manual markup and proofreading</change>
+                <!-- <change when="" who="" status="puplished">Final proofreading</change> -->
+            </listChange>
+        </revisionDesc>
     </teiHeader>
     <text>
         <body>
@@ -135,7 +142,7 @@
                     key="../register/lassberg-literature.xml#lassberg-literature-0003">thurgauische
                     Neujahrsblatt</rs>, besonders rücksichtlich der Erzählung der Erbauung <rs
                     type="place" key="../register/lassberg-places.xml#lassberg-place-0025"
-                    >Bischofszell</rs>s, bitte ich um Nachsicht. Ungelehrten Lesern dürfte manches
+                    >Bischofszells</rs>, bitte ich um Nachsicht. Ungelehrten Lesern dürfte manches
                     noch zweifelhafte nicht als unzuverlässig dargeboten werden, und die
                     Hindeutungen auf den damaligen Zustand des Volkes hätten vielleicht entweder
                     ganz weggelassen oder mehr ausgeführt werden sollen. Ihre Belehrungen werden mir
@@ -146,8 +153,8 @@
                     dritten Male und wieder vergeblich geschehe, bemerke ich Ihnen folgende Notiz in
                     <rs type="bibl"
                     key="../register/lassberg-literature.xml#lassberg-literature-0005">Tschudis
-                    Chronik. Tom. I. p. 104</rs>. a. „Anno Domini 1206 im Hornung haben die drei
-                    Waldstätte: <rs type="place"
+                    Chronik. Tom. I. p. 104</rs>. a. „Anno Domini <date when="1206">1206</date> im
+                    Hornung haben die drei Waldstätte: <rs type="place"
                     key="../register/lassberg-places.xml#lassberg-place-0172">Uri</rs>, <rs
                     type="place" key="../register/lassberg-places.xml#lassberg-place-0173"
                     >Schwyz</rs> und <rs type="place"
@@ -156,9 +163,10 @@
                     key="../register/lassberg-persons.xml#lassberg-correspondent-0374">Johannes von
                     Klingenberg</rs>, Ritter, der Alte us dem <rs type="place"
                     key="../register/lassberg-places.xml#lassberg-place-0175">Turgöw</rs> beschribt,
-                    der anno 1240 und darnach gelebt hat, wie das bezügt sin Urenkel, auch Herr <rs
-                    type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0375"
-                    >Johannes von Klingenberg</rs> Ritter genannt, der zu <rs type="place"
+                    der anno <date when="1240">1240</date> und darnach gelebt hat, wie das bezügt sin Urenkel,
+                    auch Herr <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0375">Johannes von
+                    Klingenberg</rs> Ritter genannt, der zu <rs type="place"
                     key="../register/lassberg-places.xml#lassberg-place-0176">Näfels</rs> in <rs
                     type="place" key="../register/lassberg-places.xml#lassberg-place-0177"
                     >Glarus</rs> umkam, auch er und sin Sun, <rs type="person"
@@ -173,13 +181,15 @@
                     daß in <rs type="bibl"
                     key="../register/lassberg-literature.xml#lassberg-literature-0008">J. Langhans:
                     Von Auf- und Abgang der Herzogen von Zähringen</rs>, ein Stück der <rs
-                    type="bibl" key="lassberg-literature-0004">Klingenbergischen, 1388 geschriebenen
-                    Chronik</rs> vorkomme. Wo nun wohl diese Chronik sich befinden möge? Von der <rs
-                    type="bibl" key="../register/lassberg-literature.xml#lassberg-literature-0009"
-                    >Chronik Heinrichs von Klingenberg</rs> scheint sie bestimmt verschieden zu
-                    sein. Genehmigen Sie, hochwohlgeborner, geehrtester Herr, die Versicherung
-                    wahrer Hochachtung und steter Dienstfertigkeit, mit der ich die Ehre habe zu
-                    sein Ihr ergebenster Pupikofer. Bischofszell, den 20 Dec. 1824.</p>
+                    type="bibl" key="lassberg-literature-0004">Klingenbergischen, <date when="1388"
+                    >1388</date> geschriebenen Chronik</rs> vorkomme. Wo nun wohl diese Chronik sich
+                    befinden möge? Von der <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0009">Chronik
+                    Heinrichs von Klingenberg</rs> scheint sie bestimmt verschieden zu sein.
+                    Genehmigen Sie, hochwohlgeborner, geehrtester Herr, die Versicherung wahrer
+                    Hochachtung und steter Dienstfertigkeit, mit der ich die Ehre habe zu sein Ihr
+                    ergebenster Pupikofer. Bischofszell, den <date when="1824">20 Dec.
+                    1824</date>.</p>
             </div>
             <div type="normalized" resp="GPT3.5">
                 <p>Hochwohlgeborner Herr! Indem ich Ihnen <rs type="bibl"
@@ -190,7 +200,7 @@
                     für den Fußboten zu schwer sein sollte, mit erster günstiger Gelegenheit
                     übermachen. Für das thurgauische Neujahrsblatt, besonders rücksichtlich der
                     Erzählung der Erbauung <rs type="place" key="lassberg-place-0025"
-                    >Bischofszell</rs>s, bitte ich um Nachsicht. Ungelehrten Lesern dürfte manches
+                    >Bischofszells</rs>, bitte ich um Nachsicht. Ungelehrten Lesern dürfte manches
                     noch zweifelhafte nicht als unzuverlässig dargeboten werden, und die
                     Hindeutungen auf den damaligen Zustand des Volkes hätten vielleicht entweder
                     ganz weggelassen oder mehr ausgeführt werden sollen. Ihre Belehrungen werden mir
@@ -199,31 +209,32 @@
                     >Klingenbergischen Chronik</rs> zum Nachschlagen veranlasst. Damit das nicht zum
                     dritten Male und wieder vergeblich geschehe, bemerke ich Ihnen folgende Notiz in
                     <rs type="bibl" key="lassberg-literature-0005">Tschudis Chronik</rs>. Tom. I. p.
-                    104. a. „Anno Domini 1206 im Hornung haben die drei Waldstätte: <rs type="place"
-                    key="lassberg-place-0172">Uri</rs>, <rs type="place" key="lassberg-place-0173"
-                    >Schwyz</rs> und <rs type="place" key="lassberg-place-0174">Unterwalden</rs>
-                    sich 10 Jahre lang zusammen verbunden, als Herr <rs type="person"
-                    key="lassberg-correspondent-0374">Johannes von Klingenberg</rs>, Ritter, der
-                    Alte aus dem <rs type="place" key="lassberg-place-0175">Turgöw</rs> beschrieben,
-                    der anno 1240 und danach gelebt hat, wie das bezügt sin Urenkel, auch Herr <rs
-                    type="person" key="lassberg-correspondent-0375">Johannes von Klingenberg </rs>
-                    Ritter genannt, der zu <rs type="place" key="lassberg-place-0176">Näfels</rs> in
-                    <rs type="place" key="lassberg-place-0177">Glarus</rs> umkam, auch er und sin
-                    Sun, <rs type="person" key="lassberg-correspondent-0376">Johannes</rs> genannt,
-                    ihrer Ziten Geschichten beschrieben habend." In <rs type="bibl"
+                    104. a. „Anno Domini <date when="1206">1206</date> im Hornung haben die drei Waldstätte: <rs
+                    type="place" key="lassberg-place-0172">Uri</rs>, <rs type="place"
+                    key="lassberg-place-0173">Schwyz</rs> und <rs type="place"
+                    key="lassberg-place-0174">Unterwalden</rs> sich 10 Jahre lang zusammen
+                    verbunden, als Herr <rs type="person" key="lassberg-correspondent-0374">Johannes
+                    von Klingenberg</rs>, Ritter, der Alte aus dem <rs type="place"
+                    key="lassberg-place-0175">Turgöw</rs> beschrieben, der anno <date when="1240">1240</date>
+                    und danach gelebt hat, wie das bezügt sin Urenkel, auch Herr <rs type="person"
+                    key="lassberg-correspondent-0375">Johannes von Klingenberg </rs> Ritter genannt,
+                    der zu <rs type="place" key="lassberg-place-0176">Näfels</rs> in <rs
+                    type="place" key="lassberg-place-0177">Glarus</rs> umkam, auch er und sin Sun,
+                    <rs type="person" key="lassberg-correspondent-0376">Johannes</rs> genannt, ihrer
+                    Ziten Geschichten beschrieben habend." In <rs type="bibl"
                     key="lassberg-literature-0006">Hallers kritischem Verzeichnis aller
                     Schriften</rs>, welche die <rs type="place" key="lassberg-place-0178"
                     >Schweiz</rs> betreffen (seine <rs type="bibl" key="lassberg-literature-0007"
                     >Bibliothek der Schweizergeschichte</rs> besitze ich nicht) heißt es Bd. IV; p.
                     158 und 160, dass in <rs type="bibl" key="lassberg-literature-0008">J. Langhans:
                     Von Auf- und Abgang der Herzogen von Zähringen</rs>, ein Stück der <rs
-                    type="bibl" key="lassberg-literature-0004">Klingenbergischen, 1388 geschriebenen
-                    Chronik</rs> vorkomme. Wo nun wohl diese Chronik sich befinden möge? Von der <rs
-                    type="bibl" key="lassberg-literature-0009">Chronik Heinrichs von
-                    Klingenberg</rs> scheint sie bestimmt verschieden zu sein. Genehmigen Sie,
+                    type="bibl" key="lassberg-literature-0004">Klingenbergischen, <date when="1388">1388</date>
+                    geschriebenen Chronik</rs> vorkomme. Wo nun wohl diese Chronik sich befinden
+                    möge? Von der <rs type="bibl" key="lassberg-literature-0009">Chronik Heinrichs
+                    von Klingenberg</rs> scheint sie bestimmt verschieden zu sein. Genehmigen Sie,
                     hochwohlgeborner, geehrte Herr, die Versicherung wahrer Hochachtung und steter
                     Dienstfertigkeit, mit der ich die Ehre habe zu sein Ihr ergebenster Pupikofer.
-                    Bischofszell, den 20. Dez. 1824.</p>
+                    Bischofszell, den <date when="1824">20. Dez. 1824</date>.</p>
             </div>
         </body>
     </text>
