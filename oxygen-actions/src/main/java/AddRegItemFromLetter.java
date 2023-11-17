@@ -104,7 +104,7 @@ public class AddRegItemFromLetter implements AuthorOperation {
 	        
 	        if (elementToBeQueried.equals("listPerson")) {
 	        
-	        xmlFragment = "<person xml:id=\"" + xmlID + "\" gender=\"\" ref=\"\" xmlns=\"http://www.tei-c.org/ns/1.0\">\n<persName type=\"main\">" + currentElementText 
+	        xmlFragment = "<person xml:id=\"" + xmlID + "\" gender=\"\" ref=\"\" xmlns=\"http://www.tei-c.org/ns/1.0\" type=\"\">\n<persName type=\"main\">" + currentElementText 
 	        		+ "</persName>\n<occupation></occupation>\n<birth when=\"\"></birth>\n<education></education>\n"
 	        		+ "<ref target=\"\"></ref>\n</person>";
 	        } 
@@ -116,14 +116,17 @@ public class AddRegItemFromLetter implements AuthorOperation {
 	        			+ "    <location>\n"
 	        			+ "        <geo ana=\"wgs84\"></geo>\n"
 	        			+ "    </location>\n"
-	        			+ "</place>\\n";
+	        			+ "</place>";
 	        }
 	        
 	        if (elementToBeQueried.equals("listBibl")) {
 		        
 		        
 	        xmlFragment = "<bibl xml:id=\"" + xmlID + "\" xmlns=\"http://www.tei-c.org/ns/1.0\">\n"
+	        			+ "    <author key=\"\"></author>"
 	        			+ "	   <title>" + currentElementText +"</title>"
+	        			+ "	   <pubPlace></pubPlace>"
+	        			+ "	   <date></date>"
 	        			+ "	   <idno type=\"\"></idno>"
 	        			+ "</bibl>";
 	        

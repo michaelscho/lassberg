@@ -87,6 +87,12 @@ person:before {
             values, "male, female, CorporateBody, none",
             labels, "male, female, Körperschaft, none")
             
+            oxy_combobox(           
+            edit, "@type",
+            editable, true,
+            values, "contemporary, historical",
+            labels, "contemporary, historical")
+            
             oxy_button(
         actionID, 'lassberg-get-data-from-lobid',
         showIcon, true)

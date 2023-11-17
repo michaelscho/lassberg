@@ -50,3 +50,38 @@ idno {
     text-decoration: underline;
     cursor: pointer;
 }
+
+
+bibl:before {
+ content: oxy_combobox(           
+            edit, "@type",
+            editable, true,
+            values, "historicalSource, contemporaryPublication",
+            labels, "historicalSource, contemporaryPublication");
+}
+
+author:before {
+ content: oxy_buttonGroup(
+icon, '${framework}/img/account-box-outline-16.png', 
+actions, 
+oxy_action_list(
+oxy_action(id, 'lassberg-query-persReg'), 
+oxy_action(id, 'lassberg-add-reg-person-from-letter'), 
+oxy_action(id, 'lassberg-removeregister')
+)
+);
+}
+
+pubPlace:before {
+    content: oxy_buttonGroup(
+icon, '${framework}/img/database-marker-16.png', 
+actions, 
+oxy_action_list(
+oxy_action(id, 'lassberg-query-placeReg'), 
+oxy_action(id, 'lassberg-add-reg-place-from-letter'), 
+oxy_action(id, 'lassberg-removeregister')
+
+))
+
+    ;
+}

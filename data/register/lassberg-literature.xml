@@ -1,176 +1,334 @@
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type="text/css" href="../../oxygen-framework/lassberg/css/reg-literatur.css"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-register-literature"><teiHeader><fileDesc>
     <titleStmt> <title>Literature, sources and manuscripts mentioned in lassberg
     correspondence</title> </titleStmt> <publicationStmt> <p>In preparation.</p> </publicationStmt>
     <sourceDesc> <p>Born digital. Collected by Michael Schonhardt </p> </sourceDesc>
     </fileDesc></teiHeader><text> <body> <listBibl>
-    <bibl xml:id="lassberg-literature-0014"><title>Anshelm, Valerius: Die Berner Chronik. Bern (1884
-        - 1901)</title><idno type=""> http://opac.regesta-imperii.de/id/26220</idno></bibl>
-    <bibl xml:id="lassberg-literature-0013"><title>Unbekannt</title><idno type=""/></bibl>
-    <bibl xml:id="lassberg-literature-0012"><title>Neugart, Trudpertus. Mone, Franz Joseph:
-        Episcopatus Constantiensis Alemannicus sub metropoli Moguntina chronologice et diplomatice
-        illustratus (Vol. 1-2)</title><idno type=""
+    <bibl xml:id="lassberg-literature-0014" type="contemporaryPublication"><author
+        key="../register/lassberg-persons.xml#lassberg-correspondent-0418">Anshelm,
+        Valerius</author><title>Die Berner Chronik.</title><pubPlace key="lassberg-place-0020"
+        >Bern</pubPlace><date>1884-1901</date><idno type="contemporaryPublication">
+        http://opac.regesta-imperii.de/id/26220</idno></bibl>
+    <bibl xml:id="lassberg-literature-0013" type="unknown"><author key="lassberg-correspondent-0354"
+        >Unbekannt</author><title>Unbekannt</title><pubPlace key="lassberg-place-0152"
+        >Unbekannt</pubPlace><date>Unbekannt</date><idno type="contemporaryPublication"/></bibl>
+    <bibl xml:id="lassberg-literature-0012" type="contemporaryPublication"><author
+        key="lassberg-correspondent-0379">Neugart, Trudpertus</author><author
+        key="lassberg-correspondent-0100">Mone, Franz Joseph</author><title>Episcopatus
+        Constantiensis Alemannicus sub metropoli Moguntina chronologice et diplomatice
+        illustratus</title><pubPlace key="../register/lassberg-places.xml#lassberg-place-0200">St.
+        Blasien</pubPlace><date>1803</date><idno type="contemporaryPublication"
         >http://opac.regesta-imperii.de/id/62260</idno></bibl>
-    <bibl xml:id="lassberg-literature-0011"><title>Zapf, Georg W.: Monumenta Anecdota Historiam
-        Germaniae Illustrantia</title><idno type="">VD18-90029372</idno></bibl>
-    <bibl xml:id="lassberg-literature-0010"><title>Raumer, Friedrich von: Geschichte der
-        Hohenstaufen und ihrer Zeit.</title><idno type=""/></bibl>
-    <bibl xml:id="lassberg-literature-0001"> <title>Fabeln aus den Zeiten der Minnesinger</title>
-        <idno type="vd18">VD18-11146354</idno> </bibl>
-    <bibl xml:id="lassberg-literature-0002"> <title>Memorabilium omnis aetatis et omnium gentium
-        chronici commentarii</title> <idno type="geschichtsquellen"
+    <bibl xml:id="lassberg-literature-0011" type="contemporaryPublication"><author
+        key="../register/lassberg-persons.xml#lassberg-correspondent-0419">Zapf, Georg
+        W.</author><title>Monumenta Anecdota Historiam Germaniae Illustrantia</title><pubPlace
+        key="lassberg-place-0012">Augsburg</pubPlace><date>1785</date><idno
+        type="contemporaryPublication">VD18-90029372</idno></bibl>
+    <bibl xml:id="lassberg-literature-0010" type="contemporaryPublication"><author
+        key="../register/lassberg-persons.xml#lassberg-correspondent-0420">Raumer, Friedrich
+        von</author><title>Geschichte der Hohenstaufen und ihrer Zeit.</title><pubPlace
+        key="lassberg-place-0086">Leipzig</pubPlace><date>1823</date><idno
+        type="contemporaryPublication">http://opac.regesta-imperii.de/id/40301</idno></bibl>
+    <bibl xml:id="lassberg-literature-0001" type="contemporaryPublication"><author
+        key="../register/lassberg-persons.xml#lassberg-correspondent-0421">Bodmer, Johann
+        Jakob</author><title>Fabeln aus den Zeiten der Minnesinger</title><pubPlace
+        key="lassberg-place-0166">Zürich </pubPlace><date>1757</date> <idno type="vd18"
+        >VD18-11146354</idno> </bibl>
+    <bibl xml:id="lassberg-literature-0002" type="historicalSource"> <author
+        key="../register/lassberg-persons.xml#lassberg-correspondent-0422">Nauclerus,
+        Johannes</author><title>Memorabilium omnis aetatis et omnium gentium chronici
+        commentarii</title><pubPlace key=""/><date>1501-1514</date> <idno type="geschichtsquellen"
         >https://www.geschichtsquellen.de/werk/3584</idno> </bibl>
-    <bibl xml:id="lassberg-literature-0003"> <title>Bischofzell: dargestellt nach seinem
-        gegenwärtigen Zustande und seinen bisherigen Schicksalen. Thurgauer Neujahrsblatt 2
-        1825</title> <idno type="riopac">http://opac.regesta-imperii.de/id/892798</idno> </bibl>
-    <bibl xml:id="lassberg-literature-0004"> <title>Chronik, Klingenberger</title> <idno
-        type="geschichtsquellen">https://www.geschichtsquellen.de/werk/1096</idno> </bibl>
-    <bibl xml:id="lassberg-literature-0005"> <title>Chronicon Helveticum</title> <idno type="vd18"
+    <bibl xml:id="lassberg-literature-0003" type="contemporaryPublication"> <author
+        key="lassberg-correspondent-0179">Pupikofer, Johann Adam</author><title>Bischofzell:
+        dargestellt nach seinem gegenwärtigen Zustande und seinen bisherigen Schicksalen. Thurgauer
+        Neujahrsblatt 2</title><pubPlace key="lassberg-place-0049"
+        >Frauenfeld</pubPlace><date>1825</date> <idno type="riopac"
+        >http://opac.regesta-imperii.de/id/892798</idno> </bibl>
+    <bibl xml:id="lassberg-literature-0004" type="historicalSource"> <author key=""/><title>Chronik,
+        Klingenberger</title><pubPlace key=""/><date>1460</date> <idno type="geschichtsquellen"
+        >https://www.geschichtsquellen.de/werk/1096</idno> </bibl>
+    <bibl xml:id="lassberg-literature-0005" type="contemporaryPublication"> <author
+        key="../register/lassberg-persons.xml#lassberg-correspondent-0423">Tschudi,
+        Aegidius</author><author key="../register/lassberg-persons.xml#lassberg-correspondent-0424"
+        >Iselin, Johann Rudolf</author><title>Chronicon Helveticum</title><pubPlace
+        key="lassberg-place-0019">Basel</pubPlace><date>1734</date> <idno type="vd18"
         >VD18-80117279</idno> </bibl>
-    <bibl xml:id="lassberg-literature-0006"> <title>Hallers kritischem Verzeichnisse aller
-        Schriften</title> <idno type="sonstiges"
+    <bibl xml:id="lassberg-literature-0006" type="contemporaryPublication"> <author
+        key="../register/lassberg-persons.xml#lassberg-correspondent-0425">Haller, Gottlieb
+        Emanuel</author><title>Hallers kritischem Verzeichnisse aller Schriften</title><pubPlace
+        key="lassberg-place-0020">Bern</pubPlace><date>1759–1770</date> <idno type="sonstiges"
         >https://hallernet.org/data/publication/15002</idno></bibl>
-    <bibl xml:id="lassberg-literature-0007"> <title>Bibliothek der Schweizergeschichte</title> <idno
-        type="vd18">VD18-80175228</idno></bibl>
-    <bibl xml:id="lassberg-literature-0008"> <title>J. Langhans: Von Auf- und Abgang der Herzogen
-        von Zähringen. Bern 1642</title> <idno type=""/></bibl>
-    <bibl xml:id="lassberg-literature-0009"> <title>Habsburger-Chronik</title> <idno
-        type="geschichtsquellen">http://www.geschichtsquellen.de/werk/2711</idno></bibl>
-    <bibl xml:id="lassberg-literature-0015"> <title>Geschichte eines böhmischen Freyherren von
-        Rozmital</title> <idno type="">https://www.geschichtsquellen.de/werk/4467</idno></bibl>
-    <bibl xml:id="lassberg-literature-0016"> <title>Chron. Peterhusanum</title> <idno type=""
-        >https://www.geschichtsquellen.de/werk/812</idno></bibl>
-    <bibl xml:id="lassberg-literature-0017"> <title>Ussermann, Aemilian: (Germaniae Sacrae
-        Prodromus. Seu Collectio Monumentorum Res Alemannicas Illustrantium). St. Blasien
-        1790.</title> <idno type=""> VD18-8047859X</idno></bibl>
-    <bibl xml:id="lassberg-literature-0018"> <title>Rüegersche Chronik</title> <idno type=""
+    <bibl xml:id="lassberg-literature-0007" type="contemporaryPublication"> <author
+        key="lassberg-correspondent-0425"> Haller, Gottlieb Emanuel</author><title>Bibliothek der
+        Schweizergeschichte</title><pubPlace key="lassberg-place-0020"
+        >Bern</pubPlace><date>1785</date> <idno type="vd18">VD18-80175228</idno></bibl>
+    <bibl xml:id="lassberg-literature-0008" type="contemporaryPublication"> <author
+        key="../register/lassberg-persons.xml#lassberg-correspondent-0426">Johannes
+        Langhans</author><title>Von Auf- und Abgang der Herzogen von Zähringen.</title><pubPlace
+        key="lassberg-place-0020">Bern</pubPlace><date>1642</date> <idno
+        type="contemporaryPublication"/></bibl>
+    <bibl xml:id="lassberg-literature-0009" type="historicalSource"> <author
+        key="../register/lassberg-persons.xml#lassberg-correspondent-0427">Heinrich von
+        Klingenberg</author><title>Habsburger-Chronik</title><pubPlace key=""
+        /><date>1260-1306</date> <idno type="geschichtsquellen"
+        >http://www.geschichtsquellen.de/werk/2711</idno></bibl>
+    <bibl xml:id="lassberg-literature-0015" type="historicalSource"> <author
+        key="../register/lassberg-persons.xml#lassberg-correspondent-0428">Gabriel
+        Tetzel</author><title>Geschichte eines böhmischen Freyherren von Rozmital</title><pubPlace
+        key=""/><date>1465-1479</date> <idno type="contemporaryPublication"
+        >https://www.geschichtsquellen.de/werk/4467</idno></bibl>
+    <bibl xml:id="lassberg-literature-0016" type="historicalSource"> <author key=""/><title>Casus
+        monasterii Petrishusensis</title><pubPlace key=""/><date>976</date> <idno
+        type="contemporaryPublication">https://www.geschichtsquellen.de/werk/812</idno></bibl>
+    <bibl xml:id="lassberg-literature-0017" type="contemporaryPublication"> <author
+        key="../register/lassberg-persons.xml#lassberg-correspondent-0429">Ussermann,
+        Aemilian</author><title>Germaniae Sacrae Prodromus. Seu Collectio Monumentorum Res
+        Alemannicas Illustrantium.</title><pubPlace key="lassberg-place-0200">St.
+        Blasien</pubPlace><date>1790</date> <idno type="contemporaryPublication">
+        VD18-8047859X</idno></bibl>
+    <bibl xml:id="lassberg-literature-0018" type="historicalSource"> <author
+        key="../register/lassberg-persons.xml#lassberg-correspondent-0430">Johann Jakob
+        Rüeger</author><title>Chronik der Stadt und Landschaft Schaffhausen</title><pubPlace key=""
+        /><date/> <idno type="contemporaryPublication"
         >https://de.wikipedia.org/wiki/Johann_Jakob_R%C3%BCeger</idno></bibl>
-    <bibl xml:id="lassberg-literature-0019"> <title>Notitia dignitatum</title> <idno type=""
+    <bibl xml:id="lassberg-literature-0019" type="historicalSource"> <author key=""/><title>Notitia
+        dignitatum</title><pubPlace key=""/><date/> <idno type="contemporaryPublication"
         >https://de.wikipedia.org/wiki/Notitia_dignitatum</idno></bibl>
-    <bibl xml:id="lassberg-literature-0020"> <title>Grimm, Jacob: Deutsche Grammatik. Göttingen
-        1822-1836.</title> <idno type="">urn:nbn:de:kobv:b4-200905191939</idno></bibl>
-    <bibl xml:id="lassberg-literature-0021"> <title>Friedrich Heinrich (Hrsg.): Gottfrieds von
-        Straßburg Werke aus den beßten Handschriften mit Einleitung und Wörterbuch herausgegeben
-        durch F.H.v.d.H. Breslau 1823.</title> <idno type=""
+    <bibl xml:id="lassberg-literature-0020" type="contemporaryPublication"> <author
+        key="lassberg-correspondent-0170">Grimm, Jacob</author><title>Deutsche
+        Grammatik.</title><pubPlace key="lassberg-place-0053"
+        >Göttingen</pubPlace><date>1822-1836</date> <idno type="contemporaryPublication"
+        >urn:nbn:de:kobv:b4-200905191939</idno></bibl>
+    <bibl xml:id="lassberg-literature-0021" type="contemporaryPublication"> <author
+        key="../register/lassberg-persons.xml#lassberg-correspondent-0431">Friedrich Heinrich von
+        der Hagen</author><title><author
+        key="../register/lassberg-persons.xml#lassberg-correspondent-0432">Gottfrieds von
+        Straßburg</author> Werke aus den beßten Handschriften mit Einleitung und Wörterbuch
+        herausgegeben durch F.H.v.d.H.</title><pubPlace key="lassberg-place-0031">Breslau
+        </pubPlace><date>1823</date>. <idno type="contemporaryPublication"
         >https://books.google.dk/books?id=aUEJAAAAQAAJ&amp;hl</idno></bibl>
-    <bibl xml:id="lassberg-literature-0022"> <title>Joseph von Laßberg (Hrsg): Lieder-Saal, das ist:
-        Sammelung altteutscher Gedichte, Bd. 3, Konstanz 1825.</title> <idno type=""
+    <bibl xml:id="lassberg-literature-0022" type="contemporaryPublication"> <author
+        key="lassberg-correspondent-0373">Joseph von Laßberg</author><title>Lieder-Saal, das ist:
+        Sammelung altteutscher Gedichte, Bd. 3,</title><pubPlace key="lassberg-place-0082"
+        >Konstanz</pubPlace><date>1825</date>. <idno type="contemporaryPublication"
         >http://dl.ub.uni-freiburg.de/diglit/liedersaal1825-3/0075</idno></bibl>
-    <bibl xml:id="lassberg-literature-0023"> <title>Karl Simrock: Das Nibelungenlied. Berlin
-        1827</title> <idno type=""/></bibl>
-    <bibl xml:id="lassberg-literature-0024"> <title>Allgemeine Kirchenzeitung. Will,
-        Darmstadt.</title> <idno type=""/></bibl>
-    <bibl xml:id="lassberg-literature-0025"> <title>Berthold von Regensburg: Sermones in lingua
-        vulgari.</title> <idno type="">https://www.geschichtsquellen.de/werk/640</idno></bibl>
-    <bibl xml:id="lassberg-literature-0026"> <title>Christoph Heinrich Myller: Samlung deutscher
-        Gedichte aus dem XII., XIII. und XIV. Jahrhundert. 3 Bde. Berlin 1784-1787.</title> <idno
-        type=""/></bibl>
-    <bibl xml:id="lassberg-literature-0027"> <title>Friedrich Heinrich von der Hagen und Johann
-        Gustav Büsching: Literarischer Grundriß zur Geschichte der deutschen Poesie: von der
-        ältesten Zeit bis in das sechzehnte Jahrhundert. Berlin 1812.</title> <idno type=""/></bibl>
-    <bibl xml:id="lassberg-literature-0028"> <title>Tristan des Gottfried von Straßburg.</title>
-        <idno type=""
+    <bibl xml:id="lassberg-literature-0023" type="contemporaryPublication"> <author
+        key="../register/lassberg-persons.xml#lassberg-correspondent-0433">Karl
+        Simrock</author><title>Das Nibelungenlied.</title><pubPlace key="lassberg-place-0022"
+        >Berlin</pubPlace><date>1827</date> <idno type="contemporaryPublication"/></bibl>
+    <bibl xml:id="lassberg-literature-0024" type="contemporaryPublication"> <author key=""
+        /><title>Allgemeine Kirchenzeitung. Will,</title><pubPlace key="lassberg-place-0185"
+        >Darmstadt</pubPlace><date/>.<idno type="contemporaryPublication"/></bibl>
+    <bibl xml:id="lassberg-literature-0025" type="historicalSource"> <author
+        key="lassberg-correspondent-0385">Berthold von Regensburg</author><title>Sermones in lingua
+        vulgari.</title><pubPlace key=""/><date>um 1275</date> <idno type="contemporaryPublication"
+        >https://www.geschichtsquellen.de/werk/640</idno></bibl>
+    <bibl xml:id="lassberg-literature-0026" type="contemporaryPublication"> <author
+        key="../register/lassberg-persons.xml#lassberg-correspondent-0434">Christoph Heinrich
+        Myller</author><title>Samlung deutscher Gedichte aus dem XII., XIII. und XIV. Jahrhundert. 3
+        Bde.</title><pubPlace key="">Berlin</pubPlace><date>1784-1787</date> <idno
+        type="contemporaryPublication"/></bibl>
+    <bibl xml:id="lassberg-literature-0027" type="contemporaryPublication"> <author
+        key="lassberg-correspondent-0431">Friedrich Heinrich von der Hagen</author><author
+        key="../register/lassberg-persons.xml#lassberg-correspondent-0435">Johann Gustav
+        Büsching</author><title>Literarischer Grundriß zur Geschichte der deutschen Poesie: von der
+        ältesten Zeit bis in das sechzehnte Jahrhundert</title>.<pubPlace key="lassberg-place-0022"
+        /> Berlin<date>1812</date> <idno type="contemporaryPublication"/></bibl>
+    <bibl xml:id="lassberg-literature-0028" type="historicalSource"> <author
+        key="lassberg-correspondent-0432">Gottfried von
+        Straßburg</author><title>Tristan</title><pubPlace key=""/><date>um 1210</date> <idno
+        type="contemporaryPublication"
         >https://de.wikipedia.org/wiki/Tristan_(Gottfried_von_Stra%C3%9Fburg)</idno></bibl>
-    <bibl xml:id="lassberg-literature-0029"> <title>Der arme Heinrich.</title> <idno type=""
+    <bibl xml:id="lassberg-literature-0029" type="historicalSource"> <author
+        key="lassberg-correspondent-0382">Hartmann von Aue</author><title>Der arme
+        Heinrich.</title><pubPlace key=""/><date>um 1190</date> <idno type="contemporaryPublication"
         >https://de.wikipedia.org/wiki/Der_arme_Heinrich</idno></bibl>
-    <bibl xml:id="lassberg-literature-0030"> <title>Eccard, Johann Georg: Corpus historicum medii
-        aevi sive Scriptores res.. . praecipue in Germania.. . illustrantes (Vol. 1-2). Leipzig
-        1723.</title> <idno type="">http://opac.regesta-imperii.de/id/1240506</idno></bibl>
-    <bibl xml:id="lassberg-literature-0031"> <title>Kopp, Ulrich Friedrich: Bilder und Schriften der
-        Vorzeit. Mannheim 1819.</title> <idno type=""
-        >https://doi.org/10.11588/diglit.4807</idno></bibl>
-    <bibl xml:id="lassberg-literature-0032"> <title>Gallus Öhem: Cronick des gotzhuses
-        Rychenowe.</title> <idno type="">https://www.geschichtsquellen.de/werk/3828</idno></bibl>
-    <bibl xml:id="lassberg-literature-0033"> <title>Continuatio Chronici Hermanni Contracti</title>
-        <idno type="">https://www.geschichtsquellen.de/werk/5753</idno></bibl>
-    <bibl xml:id="lassberg-literature-0034"> <title>Genealogia diplomatica augustae gentis
-        Habsburgicae (Vol. 1-3) Herrgott, Marquard. Wien 1737.</title> <idno type="">
-        http://opac.regesta-imperii.de/id/47167</idno></bibl>
-    <bibl xml:id="lassberg-literature-0035"> <title> Stumpf, Johannes: Gemeiner loblicher
-        Eidgenossenschaft Städten, Landen und Völkern Chronik würdiger Taten beschreibung. Zürich
-        1548.</title> <idno type="">VD16 S 9864</idno></bibl>
-    <bibl xml:id="lassberg-literature-0036"> <title>Annales et chronica aevi Carolini, hg. von Georg
-        Heinrich Pertz (Monumenta Germaniae Historica. Scriptores in Folio, 1) Hannover
-        1826.</title> <idno type="">http://opac.regesta-imperii.de/id/114578</idno></bibl>
-    <bibl xml:id="lassberg-literature-0037"> <title>Johann Schilter: Thesaurus Antiquitatum
-        Tevtonicarum, Ecclesiasticarum, Civilium, Litterariarum. 3, Glossarium Ad Scriptores Linguae
-        Francicae Et Alemannicae Veteris... Ulm 1728.</title> <idno type="">VD18:
-        80333109-001</idno></bibl>
-    <bibl xml:id="lassberg-literature-0038"> <title>Friedrich Adolph Ebert: Ueberlieferungen zur
-        Geschichte, Literatur und Kunst der Vor- und Mitwelt. Dresden 1826.</title> <idno type=""
-        >urn:nbn:de:bvb:12-bsb10539124-7</idno></bibl>
-    <bibl xml:id="lassberg-literature-0039"> <title>Vulcans Jornandes (?)</title> <idno type=""
-        /></bibl>
-    <bibl xml:id="lassberg-literature-0040"> <title>Gräter, Friedrich David: Idunna und Hermode: ein
-        alterthumszeitung. Breslau 1812.</title> <idno type=""/></bibl>
-    <bibl xml:id="lassberg-literature-0041"> <title>Chronik Fredegars (unbekannte Ausgabe)</title>
-        <idno type=""/></bibl>
-    <bibl xml:id="lassberg-literature-0042"> <title>Aimoin von Fleury: Historia Francorum
-        (unbekannte Ausgabe)</title> <idno type=""/></bibl>
-    <bibl xml:id="lassberg-literature-0043"> <title>Notkeri Balbuli vita Caroli M. (unbekannte
-        Ausgabe)</title> <idno type=""/></bibl>
-    <bibl xml:id="lassberg-literature-0044"> <title>Johann Adam Pupikofer: Geschichte des Thurgaus.
-        Bischofzell und Zürich 1828–1830.</title> <idno type=""/></bibl>
-    <bibl xml:id="lassberg-literature-0045"> <title>Tagebuch einer zweiten Reise [im Jahr 1825] über
-        Paris nach London und einigen Fabrikstädten Englands vorzüglich in technologischer Hinsicht
-        / von Johann Conrad Fischer, Oberstlieutenant der Artillerie / Aarau : Sauerländer,
-        1826.</title> <idno type="">https://doi.org/10.3931/e-rara-61119</idno></bibl>
-    <bibl xml:id="lassberg-literature-0046"> <title>Haltaus, Christian Gottlob: Glossarium
-        Germanicum medii aevi, maximam partem e diplomatibus multis praeterea aliis monumentis ...
-        adornatum in 1 Bd. (Vol. 1-2) Leipzig 1758.</title> <idno type=""
-        >http://opac.regesta-imperii.de/id/60354</idno></bibl>
-    <bibl xml:id="lassberg-literature-0047"> <title>Annales des Sciences Naturelles
-        (Zeitschrift)</title> <idno type=""
+    <bibl xml:id="lassberg-literature-0030" type="contemporaryPublication"> <author
+        key="../register/lassberg-persons.xml#lassberg-correspondent-0436">Eccard, Johann
+        Georg</author><title>Corpus historicum medii aevi sive Scriptores res.. . praecipue in
+        Germania.. . illustrantes (Vol. 1-2).</title><pubPlace key="lassberg-place-0086"
+        >Leipzig</pubPlace><date>1723</date> <idno type="contemporaryPublication"
+        >http://opac.regesta-imperii.de/id/1240506</idno></bibl>
+    <bibl xml:id="lassberg-literature-0031" type="contemporaryPublication"> <author
+        key="../register/lassberg-persons.xml#lassberg-correspondent-0437">Kopp, Ulrich
+        Friedrich</author><title>Bilder und Schriften der Vorzeit.</title><pubPlace
+        key="lassberg-place-0100">Mannheim</pubPlace><date>1819</date> <idno
+        type="contemporaryPublication">https://doi.org/10.11588/diglit.4807</idno></bibl>
+    <bibl xml:id="lassberg-literature-0032" type="historicalSource"> <author
+        key="../register/lassberg-persons.xml#lassberg-correspondent-0438">Gallus
+        Öhem</author><title>Cronick des gotzhuses Rychenowe.</title><pubPlace
+        key="lassberg-place-0181">Reichenau</pubPlace><date>1480-1505</date> <idno
+        type="contemporaryPublication">https://www.geschichtsquellen.de/werk/3828</idno></bibl>
+    <bibl xml:id="lassberg-literature-0033" type="historicalSource"> <author key=""
+        /><title>Continuatio Chronici Hermanni Contracti</title><pubPlace key="lassberg-place-0181"
+        >Reichenau</pubPlace><date>1070-1102</date> <idno type="contemporaryPublication"
+        >https://www.geschichtsquellen.de/werk/5753</idno></bibl>
+    <bibl xml:id="lassberg-literature-0034" type="contemporaryPublication"> <author
+        key="../register/lassberg-persons.xml#lassberg-correspondent-0439">Herrgott,
+        Marquard</author><title>Genealogia diplomatica augustae gentis Habsburgicae (Vol.
+        1-3).</title><pubPlace key="lassberg-place-0161">Wien </pubPlace><date>1737</date>. <idno
+        type="contemporaryPublication"> http://opac.regesta-imperii.de/id/47167</idno></bibl>
+    <bibl xml:id="lassberg-literature-0035" type="contemporaryPublication"> <author
+        key="../register/lassberg-persons.xml#lassberg-correspondent-0440">Stumpf,
+        Johannes</author><title>Gemeiner loblicher Eidgenossenschaft Städten, Landen und Völkern
+        Chronik würdiger Taten beschreibung.</title><pubPlace key="lassberg-place-0166">Zürich
+        </pubPlace><date>1548</date> <idno type="contemporaryPublication">VD16 S 9864</idno></bibl>
+    <bibl xml:id="lassberg-literature-0036" type="contemporaryPublication"> <author
+        key="lassberg-correspondent-0137">Georg Heinrich Pertz</author><title>Annales et chronica
+        aevi Carolini. (Monumenta Germaniae Historica. Scriptores in Folio, 1).</title><pubPlace
+        key="../register/lassberg-places.xml#lassberg-place-0201"
+        >Hannover</pubPlace><date>1826</date> <idno type="contemporaryPublication"
+        >http://opac.regesta-imperii.de/id/114578</idno></bibl>
+    <bibl xml:id="lassberg-literature-0037" type="contemporaryPublication"> <author
+        key="../register/lassberg-persons.xml#lassberg-correspondent-0441">Johann
+        Schilter</author><title>Thesaurus Antiquitatum Tevtonicarum, Ecclesiasticarum, Civilium,
+        Litterariarum. 3, Glossarium Ad Scriptores Linguae Francicae Et Alemannicae Veteris...
+        .</title><pubPlace key="lassberg-place-0151">Ulm</pubPlace><date>1728</date> <idno
+        type="contemporaryPublication">VD18: 80333109-001</idno></bibl>
+    <bibl xml:id="lassberg-literature-0038" type="contemporaryPublication"> <author
+        key="../register/lassberg-persons.xml#lassberg-correspondent-0442">Friedrich Adolph
+        Ebert</author><title>Ueberlieferungen zur Geschichte, Literatur und Kunst der Vor- und
+        Mitwelt.</title><pubPlace key="lassberg-place-0040">Dresden</pubPlace><date>1826</date>
+        <idno type="contemporaryPublication">urn:nbn:de:bvb:12-bsb10539124-7</idno></bibl>
+    <bibl xml:id="lassberg-literature-0039" type="historicalSource"> <author key=""/><title>Vulcans
+        Jornandes (?)</title><pubPlace key=""/><date/> <idno type="contemporaryPublication"/></bibl>
+    <bibl xml:id="lassberg-literature-0040" type="contemporaryPublication"> <author
+        key="../register/lassberg-persons.xml#lassberg-correspondent-0443">Gräter, Friedrich
+        David</author><title>Idunna und Hermode: ein alterthumszeitung.</title><pubPlace
+        key="lassberg-place-0031">Breslau </pubPlace><date>1812</date> <idno
+        type="contemporaryPublication"/></bibl>
+    <bibl xml:id="lassberg-literature-0041" type="historicalSource"> <author
+        key="../register/lassberg-persons.xml#lassberg-correspondent-0444"
+        >Pseudo-Fredegar</author><title>Chronicarum libri IV (unbekannte Ausgabe)</title><pubPlace
+        key=""/><date>613-770</date> <idno type="contemporaryPublication"
+        >https://www.geschichtsquellen.de/werk/2355</idno></bibl>
+    <bibl xml:id="lassberg-literature-0042" type="historicalSource"> <author
+        key="../register/lassberg-persons.xml#lassberg-correspondent-0445">Aimoin von
+        Fleury</author><title>Historia Francorum (unbekannte Ausgabe)</title><pubPlace key=""
+        /><date>um 965-1000</date> <idno type="contemporaryPublication"/></bibl>
+    <bibl xml:id="lassberg-literature-0043" type="historicalSource"> <author
+        key="lassberg-correspondent-0407">Notkerus Balbulus</author><title>Notkeri Balbuli vita
+        Caroli M. (unbekannte Ausgabe)</title><pubPlace key=""/><date> 883-887</date> <idno
+        type="contemporaryPublication">https://www.geschichtsquellen.de/werk/3792</idno></bibl>
+    <bibl xml:id="lassberg-literature-0044" type="contemporaryPublication"> <author
+        key="lassberg-correspondent-0179">Johann Adam Pupikofer</author><title>Geschichte des
+        Thurgaus.</title><pubPlace key="lassberg-place-0025">Bischofzell</pubPlace><pubPlace
+        key="lassberg-place-0166">Zürich</pubPlace><date>1828–1830</date> <idno
+        type="contemporaryPublication"/></bibl>
+    <bibl xml:id="lassberg-literature-0045" type="contemporaryPublication"> <author
+        key="../register/lassberg-persons.xml#lassberg-correspondent-0446">Johann Conrad
+        Fischer</author><title>Tagebuch einer zweiten Reise [im Jahr 1825] über Paris nach London
+        und einigen Fabrikstädten Englands vorzüglich in technologischer Hinsicht / von Johann
+        Conrad Fischer, Oberstlieutenant der Artillerie.</title><pubPlace key="lassberg-place-0001"
+        >Aarau</pubPlace><date>1826</date> <idno type="contemporaryPublication"
+        >https://doi.org/10.3931/e-rara-61119</idno></bibl>
+    <bibl xml:id="lassberg-literature-0046" type="contemporaryPublication"> <author
+        key="../register/lassberg-persons.xml#lassberg-correspondent-0447">Haltaus, Christian
+        Gottlob</author><title>Glossarium Germanicum medii aevi, maximam partem e diplomatibus
+        multis praeterea aliis monumentis ... adornatum in 1 Bd. (Vol. 1-2).</title><pubPlace
+        key="lassberg-place-0086">Leipzig</pubPlace><date>1758</date> <idno
+        type="contemporaryPublication">http://opac.regesta-imperii.de/id/60354</idno></bibl>
+    <bibl xml:id="lassberg-literature-0047" type="contemporaryPublication"> <author key=""
+        /><title>Annales des Sciences Naturelles (Zeitschrift)</title><pubPlace key=""/><date/>
+        <idno type="contemporaryPublication"
         >https://en.wikipedia.org/wiki/Annales_des_Sciences_Naturelles</idno></bibl>
-    <bibl xml:id="lassberg-literature-0048"> <title>Isis (Zeitschrift)</title> <idno type=""
+    <bibl xml:id="lassberg-literature-0048" type="contemporaryPublication"> <author key=""
+        /><title>Isis (Zeitschrift)</title><pubPlace key=""/><date/> <idno
+        type="contemporaryPublication"
         >https://de.wikipedia.org/wiki/Isis_(Zeitschrift,_1816)</idno></bibl>
-    <bibl xml:id="lassberg-literature-0049"> <title>Bucelinus (genaues Werk unbekannt)</title> <idno
-        type=""/></bibl>
-    <bibl xml:id="lassberg-literature-0050"> <title>Schaffhauser Zeitung (Unbekannt)</title> <idno
-        type=""/></bibl>
-    <bibl xml:id="lassberg-literature-0051"> <title>Thurgauer Zeitung</title> <idno type=""
-        >https://de.wikipedia.org/wiki/Thurgauer_Zeitung</idno></bibl>
-    <bibl xml:id="lassberg-literature-0052"> <title>Reisewerk des Herrn Schwab (Unbekannt)</title>
-        <idno type=""/></bibl>
-    <bibl xml:id="lassberg-literature-0053"> <title>Ludwig Aurbacher: Ein Volksbüchlein. Band 1,
-        München 1827.</title> <idno type=""/></bibl>
-    <bibl xml:id="lassberg-literature-0054"> <title>Jahresbericht der Schweizerischen
-        naturforschenden Gesellschaft 12, Chur 1826.</title> <idno type=""
+    <bibl xml:id="lassberg-literature-0049" type="contemporaryPublication"> <author
+        key="../register/lassberg-persons.xml#lassberg-correspondent-0448">Gabriel
+        Bucelinus</author><title>Bucelinus (genaues Werk unbekannt)</title><pubPlace key=""/><date/>
+        <idno type="contemporaryPublication"/></bibl>
+    <bibl xml:id="lassberg-literature-0050" type="contemporaryPublication"> <author key=""
+        /><title>Schaffhauser Zeitung (Unbekannt)</title><pubPlace key=""/><date/> <idno
+        type="contemporaryPublication"/></bibl>
+    <bibl xml:id="lassberg-literature-0051" type="contemporaryPublication"> <author key=""
+        /><title>Thurgauer Zeitung</title><pubPlace key=""/><date/> <idno
+        type="contemporaryPublication">https://de.wikipedia.org/wiki/Thurgauer_Zeitung</idno></bibl>
+    <bibl xml:id="lassberg-literature-0052" type="contemporaryPublication"> <author key=""
+        /><title>Reisewerk des Herrn Schwab (Unbekannt)</title><pubPlace key=""/><date/> <idno
+        type="contemporaryPublication"/></bibl>
+    <bibl xml:id="lassberg-literature-0053" type="contemporaryPublication"> <author
+        key="../register/lassberg-persons.xml#lassberg-correspondent-0449">Ludwig
+        Aurbacher</author><title>Ludwig Aurbacher: Ein Volksbüchlein. Band 1, </title><pubPlace
+        key="lassberg-place-0097">München</pubPlace><date>1827</date>. <idno
+        type="contemporaryPublication"/></bibl>
+    <bibl xml:id="lassberg-literature-0054" type="contemporaryPublication"> <author key=""
+        >Schweizerischen naturforschende Gesellschaft</author><title>Jahresbericht der
+        Schweizerischen naturforschenden Gesellschaft 12, 1826.</title><pubPlace
+        key="lassberg-place-0179">Chur</pubPlace><date>1826</date> <idno
+        type="contemporaryPublication"
         >https://www.e-periodica.ch/digbib/view?pid=sng-004%3A1826%3A12#3</idno></bibl>
-    <bibl xml:id="lassberg-literature-0055"> <title>Wüstischen Katalog von Zürich (Unbekannter
-        Verkaufskatalog)</title> <idno type=""/></bibl>
-    <bibl xml:id="lassberg-literature-0056"> <title> Murer, Heinrich: Helvetia Sancta. Lucern
-        1648.</title> <idno type="">VD17 12:118604L</idno></bibl>
-    <bibl xml:id="lassberg-literature-0057"> <title> Lang, Carl: Abriß der Sitten und Gebräuche
-        aller Nazionen oder kurze Darstellungen der merkwürdigsten menschlichen Wohnplätze,
-        Beschäftigungen und Gewohnheiten in den fünf Theilen der Welt. Nürnberg 1809.</title> <idno
-        type=""/></bibl>
-    <bibl xml:id="lassberg-literature-0058"> <title>P. Joseph Tschudi: Einsiedlische Chronik oder
-        Geschichte des Stiftes und der Wallfahrt zu Maria Einsiedeln. Vorzüglich für
-        Wallfahrter.Einsiedeln 1823.</title> <idno type=""/></bibl>
-    <bibl xml:id="lassberg-literature-0059"><title>Heinrich Canisius: Antiquae Lectionis Tomus...
-        Teil: 1: In Quo XVI. Antiqua Monumenta Ad Historiam Mediae Aetatis Illustrandam, Nunquam
-        Edita Ingolstadiensi. Ingolstadt 1601.</title> <idno type=""> VD17 23:233688E</idno></bibl>
-    <bibl xml:id="lassberg-literature-0060"> <title>Gesta Karoli</title> <idno type=""
+    <bibl xml:id="lassberg-literature-0055" type="contemporaryPublication"> <author key=""
+        /><title>Wüstischen Katalog von Zürich (Unbekannter Verkaufskatalog)</title><pubPlace key=""
+        /><date/> <idno type="contemporaryPublication"/></bibl>
+    <bibl xml:id="lassberg-literature-0056" type="contemporaryPublication"> <author
+        key="../register/lassberg-persons.xml#lassberg-correspondent-0450">Murer,
+        Heinrich</author><title>Helvetia Sancta.</title><pubPlace key="lassberg-place-0093"
+        >Luzern</pubPlace><date>1648</date> <idno type="contemporaryPublication">VD17
+        12:118604L</idno></bibl>
+    <bibl xml:id="lassberg-literature-0057" type="contemporaryPublication"> <author
+        key="../register/lassberg-persons.xml#lassberg-correspondent-0451">Lang,
+        Carl</author><title>Abriß der Sitten und Gebräuche aller Nazionen oder kurze Darstellungen
+        der merkwürdigsten menschlichen Wohnplätze, Beschäftigungen und Gewohnheiten in den fünf
+        Theilen der Welt.</title><pubPlace key="../register/lassberg-places.xml#lassberg-place-0202"
+        >Nürnberg </pubPlace><date>1809</date>. <idno type="contemporaryPublication"/></bibl>
+    <bibl xml:id="lassberg-literature-0058" type="contemporaryPublication"> <author
+        key="../register/lassberg-persons.xml#lassberg-correspondent-0452">P. Joseph
+        Tschudi</author><title>Einsiedlische Chronik oder Geschichte des Stiftes und der Wallfahrt
+        zu Maria Einsiedeln. Vorzüglich für Wallfahrter.</title><pubPlace
+        key="../register/lassberg-places.xml#lassberg-place-0203"
+        >Einsiedeln</pubPlace><date>1823</date> <idno type="contemporaryPublication"/></bibl>
+    <bibl xml:id="lassberg-literature-0059" type="contemporaryPublication"><author
+        key="lassberg-correspondent-0409">Heinrich Canisius</author><title>Antiquae Lectionis
+        Tomus... Teil: 1: In Quo XVI. Antiqua Monumenta Ad Historiam Mediae Aetatis Illustrandam,
+        Nunquam Edita Ingolstadiensi.</title><pubPlace
+        key="../register/lassberg-places.xml#lassberg-place-0204"
+        >Ingolstadt</pubPlace><date>1601</date> <idno type="contemporaryPublication"> VD17
+        23:233688E</idno></bibl>
+    <bibl xml:id="lassberg-literature-0060" type="historicalSource"> <author key=""/><title>Gesta
+        Karoli</title><pubPlace key=""/><date/> <idno type="contemporaryPublication"
         >https://www.geschichtsquellen.de/werk/3792</idno></bibl>
-    <bibl xml:id="lassberg-literature-0061"> <title>Ferdinand Steinkopf: Antiquarischer Katalog
-        (Jahr unbekannt).</title> <idno type=""/></bibl>
-    <bibl xml:id="lassberg-literature-0062"> <title>Der Bär, als Wappen des Kantons Appenzell. In:
-        Appenzellisches Monatsblatt 3 Heft 2 (1827), S. 21-26.</title> <idno type=""
+    <bibl xml:id="lassberg-literature-0061" type="contemporaryPublication"> <author
+        key="../register/lassberg-persons.xml#lassberg-correspondent-0453">Ferdinand
+        Steinkopf</author><title>Antiquarischer Katalog (Jahr unbekannt).</title><pubPlace key=""
+        /><date/> <idno type="contemporaryPublication"/></bibl>
+    <bibl xml:id="lassberg-literature-0062" type="contemporaryPublication"> <author key=""
+        /><title>Der Bär, als Wappen des Kantons Appenzell. In: Appenzellisches Monatsblatt 3 Heft 2
+        (1827), S. 21-26.</title><pubPlace key="lassberg-place-0049"
+        >Frauenfeld</pubPlace><date>1827</date> <idno type="contemporaryPublication"
         >https://doi.org/10.5169/seals-542143</idno></bibl>
-    <bibl xml:id="lassberg-literature-0063"> <title>Jacob Basnage / Heinrich Canisius: Thesaurus
-        monumentorum ecclesiasticorum et historicorum, sive Henrici Canisii lectiones antiquae.
-        Band: 2,2, Antwerpen 1725.</title> <idno type=""
+    <bibl xml:id="lassberg-literature-0063" type="contemporaryPublication"> <author
+        key="lassberg-correspondent-0408">Jacob Basnage</author><author
+        key="lassberg-correspondent-0409">Heinrich Canisius</author><title>Thesaurus monumentorum
+        ecclesiasticorum et historicorum, sive Henrici Canisii lectiones antiquae. Band:
+        2,2.</title><pubPlace key="../register/lassberg-places.xml#lassberg-place-0205"
+        >Antwerpen</pubPlace><date>1725</date>. <idno type="contemporaryPublication"
         >https://gateway-bayern.de/BV011139785</idno></bibl>
-    <bibl xml:id="lassberg-literature-0064"> <title>Thierry Ruinart, Sancti Georgii Florentii
-        Gregorii Episcopi Turonensis Opera Omnia, Luteciae Parisiorum 1699.</title> <idno type=""
-        /></bibl>
-    <bibl xml:id="lassberg-literature-0065"> <title>Helvetia: Denkwürdigkeiten für die XXII
-        Freistaaten der Schweizerischen Eidgenossenschaft</title> <idno type=""
+    <bibl xml:id="lassberg-literature-0064" type="contemporaryPublication"> <author
+        key="../register/lassberg-persons.xml#lassberg-correspondent-0454">Thierry
+        Ruinart</author><title>Sancti Georgii Florentii Gregorii Episcopi Turonensis Opera Omnia,
+        Luteciae Parisiorum 1699.</title><pubPlace key="lassberg-place-0113"
+        >Paris</pubPlace><date>1699</date>. <idno type="contemporaryPublication"/></bibl>
+    <bibl xml:id="lassberg-literature-0065" type="contemporaryPublication"> <author key=""
+        /><title>Helvetia: Denkwürdigkeiten für die XXII Freistaaten der Schweizerischen
+        Eidgenossenschaft</title><pubPlace key=""/><date/> <idno type="contemporaryPublication"
         >https://swisscollections.ch/Record/991086841629705501</idno></bibl>
-    <bibl xml:id="lassberg-literature-0066"><title>Gerbert, Martin: Historia Nigrae Silvae Ordinis
-        Sancti Benedicti Coloniae. Teil: 3: Codex Diplomaticus Distoriae Silvae Nigrae. St. Blasien
-        1793.</title> <idno type=""> VD18 80050301</idno></bibl>
-    <bibl xml:id="lassberg-literature-0067"> <title>Gerbert, Martin: Codex Epistolaris Rudolphi I.
-        Romanorum Regis. St. Blasien 1772.</title> <idno type=""> VD18 1105820X</idno></bibl>
+    <bibl xml:id="lassberg-literature-0066" type="contemporaryPublication"><author
+        key="../register/lassberg-persons.xml#lassberg-correspondent-0455">Gerbert,
+        Martin</author><title>Historia Nigrae Silvae Ordinis Sancti Benedicti Coloniae. Teil: 3:
+        Codex Diplomaticus Distoriae Silvae Nigrae.</title><pubPlace key="lassberg-place-0200">St.
+        Blasien</pubPlace><date>1793</date>. <idno type="contemporaryPublication"> VD18
+        80050301</idno></bibl>
+    <bibl xml:id="lassberg-literature-0067" type="contemporaryPublication"> <author
+        key="lassberg-correspondent-0455">Gerbert, Martin</author><title>Codex Epistolaris Rudolphi
+        I. Romanorum Regis.</title><pubPlace key="lassberg-place-0200">St.
+        Blasien</pubPlace><date>1772</date>. <idno type="contemporaryPublication"> VD18
+        1105820X</idno></bibl>
+    <bibl xml:id="lassberg-literature-0068" type="historicalSource"> <author key=""/>
+        <title>Reimchronik vom Appenzeller Krieg</title> <pubPlace/> <date>1404-1405</date> <idno
+        type="">https://www.geschichtsquellen.de/werk/4132</idno></bibl>
     </listBibl> </body> </text></TEI>

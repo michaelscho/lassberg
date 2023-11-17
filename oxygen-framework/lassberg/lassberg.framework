@@ -576,7 +576,7 @@
 														<serializableOrderedMap>
 															<entry>
 																<String>fragment</String>
-																<String>&lt;person xml:id="${xpath_eval(concat('lassberg-correspondent-', format-number(count(//person) + 1, '0000')))}" xmlns="http://www.tei-c.org/ns/1.0" gender="" ref="">
+																<String>&lt;person xml:id="${xpath_eval(concat('lassberg-correspondent-', format-number(count(//person) + count(//personGrp) + 1, '0000')))}" xmlns="http://www.tei-c.org/ns/1.0" gender="" ref="">
         &lt;persName type="main">&lt;/persName>
         &lt;occupation>&lt;/occupation>
         &lt;birth when="">&lt;/birth>
@@ -1043,6 +1043,81 @@ ref</String>
 													</field>
 													<field name="operationID">
 														<String>QueryLobidGnd</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
+									</action>
+									<action>
+										<field name="id">
+											<String>addType</String>
+										</field>
+										<field name="name">
+											<String>addType</String>
+										</field>
+										<field name="description">
+											<String></String>
+										</field>
+										<field name="largeIconPath">
+											<String></String>
+										</field>
+										<field name="smallIconPath">
+											<String></String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<String>M1 M2 A</String>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String></String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>action</String>
+																<String>Replace</String>
+															</entry>
+															<entry>
+																<String>script</String>
+																<String>&lt;xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:tei="http://www.tei-c.org/ns/1.0"
+  exclude-result-prefixes="tei">
+
+    &lt;xsl:template match="@*|node()">
+        &lt;xsl:copy>
+            &lt;xsl:apply-templates select="@*|node()"/>
+        &lt;/xsl:copy>
+    &lt;/xsl:template>
+
+    &lt;xsl:template match="//tei:person">
+        &lt;person type="">
+            &lt;xsl:apply-templates select="@*|node()"/>
+        &lt;/person>
+    &lt;/xsl:template>
+
+&lt;/xsl:stylesheet>
+</String>
+															</entry>
+															<entry>
+																<String>sourceLocation</String>
+																<String>//listPerson</String>
+															</entry>
+															<entry>
+																<String>targetLocation</String>
+																<String>//listPerson</String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.XSLTOperation</String>
 													</field>
 												</actionMode>
 											</actionMode-array>
