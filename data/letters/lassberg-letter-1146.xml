@@ -53,16 +53,66 @@
                 
                 <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
                 <note type="mentioned">
-                    <!--<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-{PERS_NUMBER}"><rs>{ORIGINAL_STRING_MENTION}</rs></ref>-->
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0050"
+                        ><rs>Schaffhauser Zeitung (Unbekannt)</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0051"
+                        ><rs>Thurgauer Zeitung</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0052"
+                        ><rs>Reisewerk des Herrn Schwab (Unbekannt)</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0053"
+                        ><rs>Ludwig Aurbacher: Ein Volksbüchlein. Band 1, </rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0054"
+                        ><rs>Jahresbericht der Schweizerischen naturforschenden Gesellschaft 12,
+                        1826.</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0055"
+                        ><rs>Wüstischen Katalog von Zürich (Unbekannter Verkaufskatalog)</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0056"
+                        ><rs>Helvetia Sancta.</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0057"
+                        ><rs>Abriß der Sitten und Gebräuche aller Nazionen oder kurze Darstellungen
+                        der merkwürdigsten menschlichen Wohnplätze, Beschäftigungen und Gewohnheiten
+                        in den fünf Theilen der Welt.</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0058"
+                        ><rs>Einsiedlische Chronik oder Geschichte des Stiftes und der Wallfahrt zu
+                        Maria Einsiedeln. Vorzüglich für Wallfahrter.</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0456"
+                        ><rs>Elise (Nichte)</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0205"
+                        ><rs>Johann Kaspar Mörikofer</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0398"
+                        ><rs>Hohbach</rs></ref>
+                    <ref type="cmif:mentionsPlace"
+                        target="../register/lassberg-places.xml#lassberg-place-0049"
+                        ><rs>Frauenfeld</rs></ref>
                 </note>
             </correspDesc>
         </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2023-08-01" who="#MiS" status="draft">File created and preprocessed automatically</change>
+                <change when="2023-08-29" who="#MiS" status="draft">Manual markup and proofreading</change>
+                <change when="2023-11-22" who="#MiS" status="draft">Finished markup</change>
+                <!-- <change when="" who="" status="puplished">Final proofreading</change> -->
+            </listChange>
+        </revisionDesc>
     </teiHeader>
     <text>
         <body>
             <div type="original" resp="ocr">
                 <p>Hochwohlgeborner Herr und Gönner! Gestern hätte ich gerne Ihrer <rs type="person"
-                    key="lassberg-correspondent-0456">Fräulein Nichte</rs> einige Worte an Sie
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0456">Fräulein Nichte</rs> einige Worte an Sie
                     mitgegeben; allein so schlecht die Witterung war, scheint sie doch für die Leute
                     gut genug gewesen zu sein, die mir lange Weile machen sollten. Bei der Bezahlung
                     der drei Contos, die Sie mir zu berichtigen auftrugen, zeigten sich 10 xr
@@ -76,7 +126,7 @@
                     >Schaffhauser Zeitung</rs> glaube er die Anzeige einer feilgebotenen
                     Buchdruckerpresse gelesen zu haben. Ich besitze weder das <rs type="bibl"
                     key="../register/lassberg-literature.xml#lassberg-literature-0051"
-                    >Thurgauer</rs> noch das <rs type="bibl" key="lassberg-literature-0050"
+                        >Thurgauer</rs> noch das <rs type="bibl" key="../register/lassberg-literature.xml#lassberg-literature-0050"
                     >Schaffhauser Blatt</rs>, um nachsehen zu können; doch stand ich in derselben
                     Meinung wie Sie. Das <rs type="bibl"
                     key="../register/lassberg-literature.xml#lassberg-literature-0052">Reisewerk des

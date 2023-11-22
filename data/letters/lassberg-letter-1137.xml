@@ -53,10 +53,37 @@
                 
                 <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
                 <note type="mentioned">
-                    <!--<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-{PERS_NUMBER}"><rs>{ORIGINAL_STRING_MENTION}</rs></ref>-->
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0012"
+                        ><rs>Episcopatus Constantiensis Alemannicus sub metropoli Moguntina
+                        chronologice et diplomatice illustratus</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0013"
+                        ><rs>Unbekannt</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0046"
+                        ><rs>Glossarium Germanicum medii aevi, maximam partem e diplomatibus multis
+                        praeterea aliis monumentis ... adornatum in 1 Bd. (Vol. 1-2).</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0047"
+                        ><rs>Annales des Sciences Naturelles (Zeitschrift)</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0048"
+                        ><rs>Isis (Zeitschrift)</rs></ref>
+                    <ref type="cmif:mentionsPlace"
+                        target="../register/lassberg-places.xml#lassberg-place-0187"
+                        ><rs>Deutschland</rs></ref>
                 </note>
             </correspDesc>
         </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2023-08-01" who="#MiS" status="draft">File created and preprocessed automatically</change>
+                <change when="2023-08-29" who="#MiS" status="draft">Manual markup and proofreading</change>
+                <change when="2023-11-22" who="#MiS" status="draft">Finished markup</change>
+                <!-- <change when="" who="" status="puplished">Final proofreading</change> -->
+            </listChange>
+        </revisionDesc>
     </teiHeader>
     <text>
         <body>
@@ -66,8 +93,8 @@
                     Bitte, in mir bald wieder zurük zusenden; indem ich auch einiges daraus
                     bestellen móchte; stossen Sie sich nicht an meinen Zeichen; wenn Sie etwas zu
                     bestellen wúnschen; so tue ich vorhinein Verzicht darauf. <rs type="bibl"
-                    key="lassberg-literature-0012">Neugart</rs> scheint mir ser wolfeil, so wie auch
-                    <rs type="bibl" key="lassberg-literature-0013">Schiller</rs> der nun gewöhnlich
+                        key="../register/lassberg-literature.xml#lassberg-literature-0012">Neugart</rs> scheint mir ser wolfeil, so wie auch
+                    <rs type="bibl" key="../register/lassberg-literature.xml#lassberg-literature-0013">Schiller</rs> der nun gewöhnlich
                     3 Ldrs. kostet. auch das seltene <rs type="bibl"
                     key="../register/lassberg-literature.xml#lassberg-literature-0046">Gloßar: v.
                     Haltaus</rs>. Die mir geliehenen Búcher, sende ich mit vielem Danke zurúk: die
@@ -78,10 +105,10 @@
                     sind, auch nur einen einzigen teutschen Namen richtig zu schreiben, und
                     dieselben meistens so jámmerlich entstellen, daß es unmöglich wird die
                     angegebenen geolog. oryktolog. und mineralog. Fundorte in unserm eignen <rs
-                    type="place" key="lassberg-place-0187">Teutschland</rs> zu entdeken. Diese
+                        type="place" key="../register/lassberg-places.xml#lassberg-place-0187">Teutschland</rs> zu entdeken. Diese
                     beiden guten Zeitschriften, die <rs type="bibl"
                     key="../register/lassberg-literature.xml#lassberg-literature-0048">Isis</rs> und
-                    die <rs type="bibl" key="lassberg-literature-0047">Annales</rs> námlich, haben
+                    die <rs type="bibl" key="../register/lassberg-literature.xml#lassberg-literature-0047">Annales</rs> námlich, haben
                     mich einen Augenblick bedauren gemacht, daß ich mich der naturgeschichte, welche
                     in der ersten Hälfte meines lebens mein Hauptstudium war, so gänzlich
                     entschlagen habe; allein ich will nun in der epoche des weniger beweglichen

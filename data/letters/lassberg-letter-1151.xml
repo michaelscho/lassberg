@@ -53,10 +53,76 @@
                 
                 <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
                 <note type="mentioned">
-                    <!--<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-{PERS_NUMBER}"><rs>{ORIGINAL_STRING_MENTION}</rs></ref>-->
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0059"
+                        ><rs>Antiquae Lectionis Tomus... Teil: 1: In Quo XVI. Antiqua Monumenta Ad
+                        Historiam Mediae Aetatis Illustrandam, Nunquam Edita
+                        Ingolstadiensi.</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0043"
+                        ><rs>Notkeri Balbuli vita Caroli M. (unbekannte Ausgabe)</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0063"
+                        ><rs>Thesaurus monumentorum ecclesiasticorum et historicorum, sive Henrici
+                        Canisii lectiones antiquae. Band: 2,2.</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0064"
+                        ><rs>Sancti Georgii Florentii Gregorii Episcopi Turonensis Opera Omnia,
+                        Luteciae Parisiorum 1699.</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0062"
+                        ><rs>Der Bär, als Wappen des Kantons Appenzell. In: Appenzellisches
+                        Monatsblatt 3 Heft 2 (1827), S. 21-26.</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0061"
+                        ><rs>Antiquarischer Katalog (Jahr unbekannt).</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0399"
+                        ><rs>Karl der Große</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0354"
+                        ><rs>Unbekannt</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0402"
+                        ><rs>Walafrid Strabo</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0401"
+                        ><rs>Salomon III</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0400"
+                        ><rs>Nibelungus</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0193"
+                        ><rs>Johann Caspar Zellweger</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0456"
+                        ><rs>Elise (Nichte)</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0465"
+                        ><rs>Herr Pfr. Bischof</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0393"
+                        ><rs>Maria Elisabetha Pupikofer, geborene Rüsch</rs></ref>
+                    <ref type="cmif:mentionsPlace"
+                        target="../register/lassberg-places.xml#lassberg-place-0141"><rs>St.
+                        Gallen</rs></ref>
+                    <ref type="cmif:mentionsPlace"
+                        target="../register/lassberg-places.xml#lassberg-place-0191"
+                        ><rs>Weinfelden</rs></ref>
+                    <ref type="cmif:mentionsPlace"
+                        target="../register/lassberg-places.xml#lassberg-place-0192"
+                        ><rs>Wertbühl</rs></ref>
                 </note>
             </correspDesc>
         </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2023-08-01" who="#MiS" status="draft">File created and preprocessed automatically</change>
+                <change when="2023-08-29" who="#MiS" status="draft">Manual markup and proofreading</change>
+                <change when="2023-11-22" who="#MiS" status="draft">Finished markup</change>
+                <!-- <change when="" who="" status="puplished">Final proofreading</change> -->
+            </listChange>
+        </revisionDesc>
     </teiHeader>
     <text>
         <body>
@@ -69,26 +135,29 @@
                     >monachus s. Galli de gestis Caroli M.</rs> so fabelhaft nicht vor, als man hat
                     behaupten wollen. Allerdings sind manche unwahrscheinliche Begebenheiten
                     erzählt, die sich durch die Sage und das <rs type="place"
-                    key="lassberg-place-0141">Kloster</rs> so gestalten mochten; allein die
-                    Barschheit, mit welcher der <rs type="person"
+                    key="../register/lassberg-places.xml#lassberg-place-0141">Kloster</rs> so
+                    gestalten mochten; allein die Barschheit, mit welcher der <rs type="person"
                     key="../register/lassberg-persons.xml#lassberg-correspondent-0399">König</rs>
                     hier zu handeln gewohnt ist, geben mir ein besseres Bild von seinem Charakter,
                     als z. B. das <rs type="object" key="">historische Gemälde</rs> von J. N. v. v.
                     S. F. II. P. III. In l. 1. § 35 (p. 70) kommt ein Liederdichter sehr übel weg.
-                    Ich möchte fragen, ob der <rs type="person" key="lassberg-correspondent-0354"
-                    >Gerardus</rs> in der praef. 1. II (p. 71) derselbe sei wie 1. II. § 3. 1. II. §
-                    11 ist der Hosentausch und Anfangs-§ 13 der Krezer; § 20 der Thurgauer Riese. Es
-                    scheint mir fast, daß <rs type="bibl"
+                    Ich möchte fragen, ob der <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0354">Gerardus</rs>
+                    in der praef. 1. II (p. 71) derselbe sei wie 1. II. § 3. 1. II. § 11 ist der
+                    Hosentausch und Anfangs-§ 13 der Krezer; § 20 der Thurgauer Riese. Es scheint
+                    mir fast, daß <rs type="bibl"
                     key="../register/lassberg-literature.xml#lassberg-literature-0063">Walafridus
                     Strabo T. II. P. I. (p. 233) im Epigramm de Einharto Magno</rs> denselben Riesen
                     meine, nur verstehe ich die zwei letzten Verse nicht recht: Magnorum quis enim
                     maiora receperat unquam Quam radiare brevi nimium miramur homullo. Unter den
-                    übrigen <rs type="bibl" key="lassberg-literature-0063">Gedichten des
+                    übrigen <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0063">Gedichten des
                     Walafridus</rs> fiel mir die „enumeratio abbatum Augiae“ auf (p. 206. f.) und
                     das epigramm ad Amicam p. 245. Letzteres wäre des Verfassers der
-                    Klostergeschichte oder <rs type="person" key="lassberg-correspondent-0354"
-                    >Sigwards</rs> nicht unwürdig. Nur sind die drei letzten Verse nicht mehr recht
-                    gemüthlich. Ueberhaupt möchte ich den <rs type="person"
+                    Klostergeschichte oder <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0354">Sigwards</rs>
+                    nicht unwürdig. Nur sind die drei letzten Verse nicht mehr recht gemüthlich.
+                    Ueberhaupt möchte ich den <rs type="person"
                     key="../register/lassberg-persons.xml#lassberg-correspondent-0402">Walafrid</rs>
                     ein wenig studieren; seine Dichtung gefällt mir besser als die des gelehrten <rs
                     type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0401"
@@ -115,16 +184,19 @@
                     ausschließlich anwenden. Künftigen Sonntag Abend wird hier ein Feuerwerk
                     abgebrannt, das ungefähr 1% Stunden dauern und artige Sachen zur Schau bringen
                     soll; wenn Sie nicht selbst, so möchte doch Ihre Fräulein <rs type="person"
-                    key="lassberg-correspondent-0456">Nichte</rs> Vergnügen daran finden; mein
-                    Häuschen steht als freundliche Herberge offen. Die Reise nach <rs type="place"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0456">Nichte</rs>
+                    Vergnügen daran finden; mein Häuschen steht als freundliche Herberge offen. Die
+                    Reise nach <rs type="place"
                     key="../register/lassberg-places.xml#lassberg-place-0191">Weinfelden</rs> habe
                     ich auf künftige Woche verschoben, um das Vergnügen zu haben, mit Ihnen zu
                     reisen. Wenn es trocken wird, so können wir gar schön auf dem <rs type="place"
                     key="../register/lassberg-places.xml#lassberg-place-0192">Wärtbühl</rs>, wo der
-                    <rs type="person" key="">Herr Pfr. Bischof</rs> selbst Gastwirth ist, den Mittag
-                    zubringen. Doch am Montag ist es mir, am Donnerstag Ihnen nicht gelegen; ich
-                    schlage daher den Mittwoch oder Freitag vor und komme am Abend vorher zu Ihnen,
-                    oder am Morgen in der Frühe. <rs type="person" key="lassberg-correspondent-0393"
+                    <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0465">Herr Pfr.
+                    Bischof</rs> selbst Gastwirth ist, den Mittag zubringen. Doch am Montag ist es
+                    mir, am Donnerstag Ihnen nicht gelegen; ich schlage daher den Mittwoch oder
+                    Freitag vor und komme am Abend vorher zu Ihnen, oder am Morgen in der Frühe. <rs
+                    type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0393"
                     >Meine Frau</rs> läßt Ihnen noch herzlich für den schönen Fastnachtskuchen
                     danken, Mit ausgezeichneter Hochachtung und Ergebenheit Ihr Diac. Pupikofer.
                     Bischofzell, den 1. März 1827.</p>

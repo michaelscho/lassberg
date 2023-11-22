@@ -53,10 +53,64 @@
                 
                 <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
                 <note type="mentioned">
-                    <!--<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-{PERS_NUMBER}"><rs>{ORIGINAL_STRING_MENTION}</rs></ref>-->
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0037"
+                        ><rs>Thesaurus Antiquitatum Tevtonicarum, Ecclesiasticarum, Civilium,
+                        Litterariarum. 3, Glossarium Ad Scriptores Linguae Francicae Et Alemannicae
+                        Veteris... .</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0038"
+                        ><rs>Ueberlieferungen zur Geschichte, Literatur und Kunst der Vor- und
+                        Mitwelt.</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0039"
+                        ><rs>Vulcans Jornandes (?)</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0040"
+                        ><rs>Idunna und Hermode: ein alterthumszeitung.</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0041"
+                        ><rs>Chronicarum libri IV (unbekannte Ausgabe)</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0042"
+                        ><rs>Historia Francorum (unbekannte Ausgabe)</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0059"
+                        ><rs>Antiquae Lectionis Tomus... Teil: 1: In Quo XVI. Antiqua Monumenta Ad
+                        Historiam Mediae Aetatis Illustrandam, Nunquam Edita
+                        Ingolstadiensi.</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0044"
+                        ><rs>Geschichte des Thurgaus.</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0045"
+                        ><rs>Tagebuch einer zweiten Reise [im Jahr 1825] über Paris nach London und
+                        einigen Fabrikstädten Englands vorzüglich in technologischer Hinsicht / von
+                        Johann Conrad Fischer, Oberstlieutenant der Artillerie.</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0394"
+                        ><rs>Jakob Christoph Scherb</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0457"
+                        ><rs>Neffe</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0047"
+                        ><rs>Brunschweiler</rs></ref>
+                    <ref type="cmif:mentionsPlace"
+                        target="../register/lassberg-places.xml#lassberg-place-0025"
+                        ><rs>Bischofszell</rs></ref>
                 </note>
             </correspDesc>
         </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2023-08-01" who="#MiS" status="draft">File created and preprocessed automatically</change>
+                <change when="2023-08-29" who="#MiS" status="draft">Manual markup and proofreading</change>
+                <change when="2023-11-22" who="#MiS" status="draft">Finished markup</change>
+                <!-- <change when="" who="" status="puplished">Final proofreading</change> -->
+            </listChange>
+        </revisionDesc>    
+    
     </teiHeader>
     <text>
         <body>
@@ -99,9 +153,9 @@
                     Oberstl. Fischer</rs> zu durchgehen, die ich deshalb beilege. <rs type="person"
                     key="../register/lassberg-persons.xml#lassberg-correspondent-0457">Ihr
                     Neffe</rs> befindet sich bei Herrn <rs type="person"
-                    key="lassberg-correspondent-0047">Brunschwyler</rs> wohl. Jedoch hat Herr <rs
-                    type="person" key="lassberg-correspondent-0047">Brunschwyler</rs>, in der
-                    Erwartung, daß Sie bald selbst nach <rs type="place" key="lassberg-place-0025"
+                        key="../register/lassberg-persons.xml#lassberg-correspondent-0047">Brunschwyler</rs> wohl. Jedoch hat Herr <rs
+                            type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0047">Brunschwyler</rs>, in der
+                    Erwartung, daß Sie bald selbst nach <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0025"
                     >Bischofzell</rs> kommen, noch für keinen Religions oder Musikunterricht
                     gesorgt, wird Ihnen aber darüber Vorschläge machen. Genehmigen Sie,
                     Hochwohlgeborner, hochzuverehrender Herr und Gönner, die Versicherung meiner

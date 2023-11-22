@@ -53,19 +53,50 @@
                 
                 <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
                 <note type="mentioned">
-                    <!--<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-{PERS_NUMBER}"><rs>{ORIGINAL_STRING_MENTION}</rs></ref>-->
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0036"
+                        ><rs>Annales et chronica aevi Carolini. (Monumenta Germaniae Historica.
+                        Scriptores in Folio, 1).</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0466"
+                        ><rs>Herr v. String</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0168"
+                        ><rs>Ignaz Heinrich von Wessenberg</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0456"
+                        ><rs>Elise (Nichte)</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0393"
+                        ><rs>Maria Elisabetha Pupikofer, geborene Rüsch</rs></ref>
+                    <ref type="cmif:mentionsPlace"
+                        target="../register/lassberg-places.xml#lassberg-place-0082"
+                        ><rs>Konstanz</rs></ref>
+                    <ref type="cmif:mentionsPlace"
+                        target="../register/lassberg-places.xml#lassberg-place-0025"
+                        ><rs>Bischofszell</rs></ref>
                 </note>
             </correspDesc>
         </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2023-08-01" who="#MiS" status="draft">File created and preprocessed automatically</change>
+                <change when="2023-08-29" who="#MiS" status="draft">Manual markup and proofreading</change>
+                <change when="2023-11-22" who="#MiS" status="draft">Finished markup</change>
+                <!-- <change when="" who="" status="puplished">Final proofreading</change> -->
+            </listChange>
+        </revisionDesc>
+        
     </teiHeader>
     <text>
         <body>
             <div type="original" resp="ocr">
                 <p>Eppishausen am 12. Beity (December?) 1826. P: P: Die Inlage mit f. 22 stellte mir
-                    gestern abends <rs type="person" key="lassberg-correspondent-0354">Herr v.
+                    gestern abends <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0466">Herr v.
                     String</rs> zur Besorgung zu. Ich war wegen einem Sterbefalle drei Tage in <rs
-                    type="place" key="lassberg-place-0082">Constanz</rs> und bin erst vorgestern
-                    heimgekommen. In <rs type="place" key="lassberg-place-0082">Constanz</rs> traf
+                        type="place" key="../register/lassberg-places.xml#lassberg-place-0082">Constanz</rs> und bin erst vorgestern
+                    heimgekommen. In <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0082">Constanz</rs> traf
                     ich endlich den I. Band der <rs type="bibl"
                     key="../register/lassberg-literature.xml#lassberg-literature-0036">Monumenta
                     histor. germaniae</rs> an; mein exemplar soll ich nächsten Samstag früh vom
@@ -76,8 +107,8 @@
                     einen ganzen Abend bei ihm zu und fand in völlig unverándert. O Zelotypia! quo
                     non mortalia cogis. Künftigen Donnerstag auf Mittag bekomme ich Gäste, da möchte
                     mein Nichte <rs type="person"
-                    key="../register/lassberg-persons.xml#lassberg-correspondent-0456"
-                    >Elise</rs> als zeitliche Haus- und Küchen Regentin die <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0456">Elise</rs>
+                    als zeitliche Haus- und Küchen Regentin die <rs type="person"
                     key="../register/lassberg-persons.xml#lassberg-correspondent-0393">Frau
                     Pfarrerin</rs> freundlich bitten, Ir wo möglich eine oder zwei Schnüre trokene
                     Morcheln, vulgo Morauchen zu verschaffen; auch wünschte sie etwa ein halb

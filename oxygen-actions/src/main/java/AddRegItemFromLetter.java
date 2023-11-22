@@ -97,9 +97,22 @@ public class AddRegItemFromLetter implements AuthorOperation {
 
 	        String xmlFragment = null;
 	        String xmlID = null;
+	        int idNumber = 0;
+	        
+	        // if element is person, personGrp should be included
+	        if (subElementToBeQueried.equals("person")) {
+	        	AuthorNode[] existingElementsPerson = documentControllerForRegisterFile.findNodesByXPath("//" + subElementToBeQueried, false, false, false);
+	        	AuthorNode[] existingElementsPersonGrp = documentControllerForRegisterFile.findNodesByXPath("//personGrp", false, false, false);
+	        	idNumber = existingElementsPerson.length + existingElementsPersonGrp.length + 1;
+		            	
+	        } else {
+	        
 	        
 	        AuthorNode[] existingElements = documentControllerForRegisterFile.findNodesByXPath("//" + subElementToBeQueried, false, false, false);
-	        int idNumber = existingElements.length + 1;
+	        idNumber = existingElements.length + 1;
+	        
+	        }
+	        
 	        xmlID = idBase + String.format("%04d", idNumber);
 	        
 	        if (elementToBeQueried.equals("listPerson")) {

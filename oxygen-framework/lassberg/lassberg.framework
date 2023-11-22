@@ -232,6 +232,10 @@
 																<String>Subelement to be queried (such as 'persName', 'placeName' or 'bibl' as string)</String>
 																<String>persName</String>
 															</entry>
+															<entry>
+																<String>path to register as prefix (such as '../../path/to/file#')</String>
+																<String>../register/lassberg-persons.xml#</String>
+															</entry>
 														</serializableOrderedMap>
 													</field>
 													<field name="operationID">
@@ -285,6 +289,10 @@
 															<entry>
 																<String>Subelement to be queried (such as 'persName', 'placeName' or 'bibl' as string)</String>
 																<String>placeName</String>
+															</entry>
+															<entry>
+																<String>path to register as prefix (such as '../../path/to/file#')</String>
+																<String>../register/lassberg-places.xml#</String>
 															</entry>
 														</serializableOrderedMap>
 													</field>
@@ -426,6 +434,10 @@
 															<entry>
 																<String>Subelement to be queried (such as 'persName', 'placeName' or 'bibl' as string)</String>
 																<String>none</String>
+															</entry>
+															<entry>
+																<String>path to register as prefix (such as '../../path/to/file#')</String>
+																<String>../register/lassberg-literature.xml#</String>
 															</entry>
 														</serializableOrderedMap>
 													</field>
@@ -694,8 +706,7 @@
 														<serializableOrderedMap>
 															<entry>
 																<String>attributeNames</String>
-																<String>key
-ref</String>
+																<String>key</String>
 															</entry>
 															<entry>
 																<String>elementLocations</String>
@@ -924,14 +935,21 @@ ref</String>
                 &lt;xsl:variable name="content">
                     &lt;xsl:choose>
                         &lt;xsl:when test="@type='person'">
-                            &lt;xsl:value-of select="$targetDocument//tei:person[@xml:id=$docID]/tei:persName"/>
+                                      &lt;xsl:choose>
+                                              &lt;xsl:when test="$targetDocument//tei:personGrp[@xml:id=$docID]">
+                                                    &lt;xsl:value-of select="$targetDocument//tei:personGrp[@xml:id=$docID]/tei:persName"/>
+                                              &lt;/xsl:when>
+                                              &lt;xsl:otherwise>
+                                                   &lt;xsl:value-of select="$targetDocument//tei:person[@xml:id=$docID]/tei:persName"/>
+                                              &lt;/xsl:otherwise>
+                                        &lt;/xsl:choose>
                         &lt;/xsl:when>
                         &lt;xsl:when test="@type='place'">
                             &lt;xsl:value-of select="$targetDocument//tei:place[@xml:id=$docID]/tei:placeName"/>
                         &lt;/xsl:when>
                         &lt;xsl:when test="@type='bibl'">
                             &lt;xsl:value-of select="$targetDocument//tei:bibl[@xml:id=$docID]/tei:title"/>
-                        &lt;/xsl:when>
+                             &lt;/xsl:when>
                         &lt;xsl:otherwise>Unknown&lt;/xsl:otherwise>
                     &lt;/xsl:choose>
                 &lt;/xsl:variable>

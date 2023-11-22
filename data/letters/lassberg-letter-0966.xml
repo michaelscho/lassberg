@@ -53,7 +53,25 @@
                 
                 <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
                 <note type="mentioned">
-                    <!--<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-{PERS_NUMBER}"><rs>{ORIGINAL_STRING_MENTION}</rs></ref>-->
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0012"
+                        ><rs>Episcopatus Constantiensis Alemannicus sub metropoli Moguntina
+                        chronologice et diplomatice illustratus</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0011"
+                        ><rs>Monumenta Anecdota Historiam Germaniae Illustrantia</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0016"
+                        ><rs>Casus monasterii Petrishusensis</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0068"
+                        ><rs>Reimchronik vom Appenzeller Krieg</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0307"
+                        ><rs>Melchior Kirchhofer</rs></ref>
+                    <ref type="cmif:mentionsPlace"
+                        target="../register/lassberg-places.xml#lassberg-place-0025"
+                        ><rs>Bischofszell</rs></ref>
                 </note>
             </correspDesc>
         </profileDesc>
@@ -61,6 +79,7 @@
             <listChange>
                 <change when="2023-08-01" who="#MiS" status="done">File created and preprocessed automatically</change>
                 <change when="2023-08-29" who="#MiS" status="inProgress">Manual markup and proofreading</change>
+                <change when="2023-11-22" who="#MiS" status="draft">Finished markup</change>
                 <!-- <change when="" who="" status="puplished">Final proofreading</change> -->
             </listChange>
         </revisionDesc>
@@ -70,16 +89,20 @@
         <body>
             <div type="original" resp="ocr">
                 <p>Hochwohlgeborner Herr! Mit herzlichem Danke sende ich Ihnen hiermit <rs
-                    type="bibl" key="lassberg-literature-0012">Neugarti episc. Const</rs>. und <rs
-                    type="bibl" key="lassberg-literature-0011">Zapfii Monum.</rs> zurück; ich fand
-                    sehr viele Belehrung, besonders in dem erstern Werke, und möchte mit so vielen
-                    Freunden der alten Geschichte wünschen, daß auch der zweite Theil gedruckt
-                    würde. Von <rs type="bibl" key="lassberg-literature-0011">Zapfii Monum.</rs>
-                    bitte ich Sie um den zweiten Theil, sowie auch um das <rs type="bibl"
-                    key="lassberg-literature-0016">Chronicon Peterhusanum</rs>. Von alterthümlichen
-                    Neuigkeiten gelangt, wenn sie so entfernt sind, wenig in des <rs type="place"
-                    key="lassberg-place-0025">Bischofs Celle</rs>. Doch hatte Herr Pfarrer <rs
-                    type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0307"
+                    type="bibl" key="../register/lassberg-literature.xml#lassberg-literature-0012"
+                    >Neugarti episc. Const</rs>. und <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0011">Zapfii
+                    Monum.</rs> zurück; ich fand sehr viele Belehrung, besonders in dem erstern
+                    Werke, und möchte mit so vielen Freunden der alten Geschichte wünschen, daß auch
+                    der zweite Theil gedruckt würde. Von <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0011">Zapfii
+                    Monum.</rs> bitte ich Sie um den zweiten Theil, sowie auch um das <rs
+                    type="bibl" key="../register/lassberg-literature.xml#lassberg-literature-0016"
+                    >Chronicon Peterhusanum</rs>. Von alterthümlichen Neuigkeiten gelangt, wenn sie
+                    so entfernt sind, wenig in des <rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0025">Bischofs Celle</rs>.
+                    Doch hatte Herr Pfarrer <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0307"
                     >Kirchhofer</rs> die Gefälligkeit, mir ein Heft seiner Auszüge mitzutheilen,
                     worin manches werthvolle aus dem <date notBefore="1300" notAfter="1500">14. und
                     15. Jahrhundert</date> vorkommt. Die <rs type="bibl"
@@ -87,9 +110,8 @@
                     vom Appenzeller Krieg</rs> ist ihnen wahrscheinlich durch den Herausgeber
                     bekannt geworden. Indem ich Sie, hochwohlgeborner, verehrtester Herr! meiner
                     ausgezeichneten Hochachtung versichere und Sie um Ihre fernere Gewogenheit
-                    bitte, habe ich die Ehre zu sein Hochdero ergebenster Diac. Pupikofer <rs
-                    type="place" key="lassberg-place-0025">Bischofzell</rs>, den <date when="1825"
-                    >24. Febr. 1825</date>.</p>
+                    bitte, habe ich die Ehre zu sein Hochdero ergebenster Diac. Pupikofer
+                    Bischofzell, den <date when="1825">24. Febr. 1825</date>.</p>
             </div>
             <div type="normalized" resp="GPT3.5">
                 <p>Hochwohlgeborener Herr! Mit herzlichem Dank sende ich Ihnen hiermit Neugart'sches

@@ -53,17 +53,75 @@
                 
                 <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
                 <note type="mentioned">
-                    <!--<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-{PERS_NUMBER}"><rs>{ORIGINAL_STRING_MENTION}</rs></ref>-->
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0043"
+                        ><rs>Notkeri Balbuli vita Caroli M. (unbekannte Ausgabe)</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0069"
+                        ><rs>Weingartner Kaiserchronik</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0070"
+                        ><rs>Historia Welforum</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0059"
+                        ><rs>Antiquae Lectionis Tomus... Teil: 1: In Quo XVI. Antiqua Monumenta Ad
+                        Historiam Mediae Aetatis Illustrandam, Nunquam Edita
+                        Ingolstadiensi.</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0071"
+                        ><rs>Annales</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0013"
+                        ><rs>Unbekannt</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0073"
+                        ><rs>Annales</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0458"
+                        ><rs>Liggenstorfer</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0459"
+                        ><rs>Heldenagger</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0460"
+                        ><rs>Papst Clemens IV.</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0384"
+                        ><rs>Konradin</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0385"
+                        ><rs>Berthold von Regensburg</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0462"
+                        ><rs>Otto von Bayern</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0179"
+                        ><rs>Johann Adam Pupikofer</rs></ref>
+                    <ref type="cmif:mentionsPlace"
+                        target="../register/lassberg-places.xml#lassberg-place-0043"
+                        ><rs>Eppishausen</rs></ref>
+                    <ref type="cmif:mentionsPlace"
+                        target="../register/lassberg-places.xml#lassberg-place-0019"
+                        ><rs>Basel</rs></ref>
                 </note>
             </correspDesc>
         </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2023-08-01" who="#MiS" status="draft">File created and preprocessed automatically</change>
+                <change when="2023-08-29" who="#MiS" status="draft">Manual markup and proofreading</change>
+                <change when="2023-11-22" who="#MiS" status="draft">Finished markup</change>
+                <!-- <change when="" who="" status="puplished">Final proofreading</change> -->
+            </listChange>
+        </revisionDesc>
+        
     </teiHeader>
     <text>
         <body>
             <div type="original" resp="ocr">
                 <p>Hochwohlgeborner Herr und Gönner! Gestern war ich schon im Begriffe, über den
                     Berg zu steigen, um zu sehen, wie es zu <rs type="place"
-                    key="lassberg-place-0043">Tusculum</rs> stehe, als der Wind ein Heer von
+                        key="../register/lassberg-places.xml#lassberg-place-0043">Tusculum</rs> stehe, als der Wind ein Heer von
                     Regenwolken daherführte, und mich daheim zu bleiben nöthigte. Sollte es die
                     ganze Woche so anhalten, so wäre es mir angenehm, wenn Donnerstag Abend Ihr
                     Wagen mich der Mühe, durch die Sümpfe des Waldes zu waten, überhöbe; doch hoffe
@@ -78,7 +136,7 @@
                     auch wünschen. Ich werde ihm morgen schreiben, daß er bis nächsten Sonntag einer
                     bestimmten Antwort gewärtig sein könne. Herrlibergers Topographie mögen Sie
                     einige Wochen behalten; daß sie nicht besser conditionirt ist, habe nicht ich
-                    verursacht. Für die <rs type="bibl" key="lassberg-literature-0043">vita
+                    verursacht. Für die <rs type="bibl" key="../register/lassberg-literature.xml#lassberg-literature-0043">vita
                     Caroli</rs> meinen herzlichen Dank. In den letzten Tagen las ich u. a. das <rs
                     type="bibl" key="../register/lassberg-literature.xml#lassberg-literature-0069"
                     >Chron. Weingartense</rs> und <rs type="bibl"
@@ -90,21 +148,21 @@
                     Sie um die Mittheilung. Die <rs type="bibl"
                     key="../register/lassberg-literature.xml#lassberg-literature-0071">Annales
                     Steronis</rs> eben daselbst, sonst auch von <rs type="bibl"
-                    key="lassberg-literature-0013">Velser</rs> herausgegeben, sind artig, geben aber
+                        key="../register/lassberg-literature.xml#lassberg-literature-0013">Velser</rs> herausgegeben, sind artig, geben aber
                     für unsere Gegenden wenig Ausbeute. Noch besser haben mir die <rs type="bibl"
                     key="../register/lassberg-literature.xml#lassberg-literature-0073">Annales
                     Eberhardi de inferiori Altaich</rs> zugesagt; man sieht es dem Verfasser überall
                     an, daß er, wie er im kurzen Vorworte sagt, iuxta Hismenium sibimet ipsi canens
                     geschrieben hat. <rs type="person"
                     key="../register/lassberg-persons.xml#lassberg-correspondent-0460">Papste
-                    Clemens</rs>, der den <rs type="person" key="lassberg-correspondent-0384"
+                        Clemens</rs>, der den <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0384"
                     >Conradinus</rs> so unglücklich machte, schreibt <rs type="bibl"
-                    key="lassberg-literature-0071">Stero</rs> ad. a. <date when="1265">1265</date>:
+                        key="../register/lassberg-literature.xml#lassberg-literature-0071">Stero</rs> ad. a. <date when="1265">1265</date>:
                     <quote>„Dominus Guido quondam miles uxoratus habens duas filias per uxorem
                     postea factus episcopus Podiensis eligitur in Romanum pontificem."</quote> Er
                     scheint das Soldatenherz nicht ganz ausgezogen zu haben! Derselbe <rs
-                    type="bibl" key="lassberg-literature-0071">Stero</rs> berichtet, daß der
-                    Franziskaner <rs type="person" key="lassberg-correspondent-0385">Bertold</rs>
+                        type="bibl" key="../register/lassberg-literature.xml#lassberg-literature-0071">Stero</rs> berichtet, daß der
+                    Franziskaner <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0385">Bertold</rs>
                     <date when="1250">1250</date> durch seine Predigten berühmt worden sei und <date
                     when="1253">1253</date> sich Mühe gegeben habe, den Herzog <rs type="person"
                     key="../register/lassberg-persons.xml#lassberg-correspondent-0462">Otto von

@@ -53,10 +53,75 @@
                 
                 <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
                 <note type="mentioned">
-                    <!--<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-{PERS_NUMBER}"><rs>{ORIGINAL_STRING_MENTION}</rs></ref>-->
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0031"
+                        ><rs>Bilder und Schriften der Vorzeit.</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0032"
+                        ><rs>Cronick des gotzhuses Rychenowe.</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0005"
+                        ><rs>Chronicon Helveticum</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0012"
+                        ><rs>Episcopatus Constantiensis Alemannicus sub metropoli Moguntina
+                        chronologice et diplomatice illustratus</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0033"
+                        ><rs>Continuatio Chronici Hermanni Contracti</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0034"
+                        ><rs>Genealogia diplomatica augustae gentis Habsburgicae (Vol.
+                        1-3).</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0035"
+                        ><rs>Gemeiner loblicher Eidgenossenschaft Städten, Landen und Völkern
+                        Chronik würdiger Taten beschreibung.</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0026"
+                        ><rs>Samlung deutscher Gedichte aus dem XII., XIII. und XIV. Jahrhundert. 3
+                        Bde.</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0354"
+                        ><rs>Unbekannt</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0388"
+                        ><rs>Zähringer (Geschlecht)</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0392"
+                        ><rs>Üsenberger (Geschlecht)</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0389"
+                        ><rs>Habsburger (Geschlecht)</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0390"
+                        ><rs>Jacobus von Vrowenfeld</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0391"
+                        ><rs>Edeln von Wiesendangen</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0381"
+                        ><rs>Kyburger (Adelsgeschlecht)</rs></ref>
+                    <ref type="cmif:mentionsPlace"
+                        target="../register/lassberg-places.xml#lassberg-place-0190"
+                        ><rs>Kenzingen</rs></ref>
+                    <ref type="cmif:mentionsPlace"
+                        target="../register/lassberg-places.xml#lassberg-place-0126"
+                        ><rs>Riegel</rs></ref>
+                    <ref type="cmif:mentionsPlace"
+                        target="../register/lassberg-places.xml#lassberg-place-0049"
+                        ><rs>Frauenfeld</rs></ref>
                 </note>
             </correspDesc>
         </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2023-08-01" who="#MiS" status="draft">File created and preprocessed automatically</change>
+                <change when="2023-08-29" who="#MiS" status="draft">Manual markup and proofreading</change>
+                <change when="2023-11-22" who="#MiS" status="draft">Finished markup</change>
+                <!-- <change when="" who="" status="puplished">Final proofreading</change> -->
+            </listChange>
+        </revisionDesc>
     </teiHeader>
     <text>
         <body>
@@ -68,17 +133,17 @@
                     gelesen und werde Sie mit Gelegenheit auch um Mittheilung der Fortsetzung
                     bitten. Ebenso dankbar bin ich Ihnen für die Auszüge aus <rs type="bibl"
                     key="../register/lassberg-literature.xml#lassberg-literature-0032">Öhms
-                    Chronik</rs>. Schon <rs type="bibl" key="lassberg-literature-0005">Tschudi</rs>
-                    erzählt vom Tode Graf <rs type="person" key="lassberg-correspondent-0354">Wezels
+                        Chronik</rs>. Schon <rs type="bibl" key="../register/lassberg-literature.xml#lassberg-literature-0005">Tschudi</rs>
+                    erzählt vom Tode Graf <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0354">Wezels
                     von Bürglen</rs> ad. a. <date when="1074">1074</date> und auch <rs type="bibl"
-                    key="lassberg-literature-0012">Neugart episc. I. p. 412</rs> bezieht sich
+                        key="../register/lassberg-literature.xml#lassberg-literature-0012">Neugart episc. I. p. 412</rs> bezieht sich
                     darauf, ohne nähere Aufklärung zu geben, so daß allerdings die Umstände, welche
-                    <rs type="bibl" key="lassberg-literature-0032">Öhm</rs> angibt, wichtig sind.
+                    <rs type="bibl" key="../register/lassberg-literature.xml#lassberg-literature-0032">Öhm</rs> angibt, wichtig sind.
                     Aber der <rs type="bibl"
                     key="../register/lassberg-literature.xml#lassberg-literature-0033">Continuator
                     Hermanni</rs> berichtet ad. a. <date when="1061">1061</date>, daß <rs
-                    type="person" key="lassberg-correspondent-0354">Burchardus</rs> und <rs
-                    type="person" key="lassberg-correspondent-0354">Wezilo Zollerani</rs> umgekommen
+                        type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0354">Burchardus</rs> und <rs
+                            type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0354">Wezilo Zollerani</rs> umgekommen
                     seien im Kampfe gegen den <rs type="person"
                     key="../register/lassberg-persons.xml#lassberg-correspondent-0388"
                     >Zähringer</rs>. Wäre hier nicht eine Verwechslung möglich? Wie ich den <rs
@@ -96,14 +161,14 @@
                     >Jacobus von Vrowenfeld</rs> mit dem <rs type="person"
                     key="../register/lassberg-persons.xml#lassberg-correspondent-0391">Edeln von
                     Wiesendangen</rs> verwandt gewesen zu sein. Die <rs type="person"
-                    key="lassberg-correspondent-0391">Edeln von Wiesendangen</rs> aber waren <rs
-                    type="person" key="lassberg-correspondent-0381">Dienstleute zu Kyburg</rs>. Das
+                        key="../register/lassberg-persons.xml#lassberg-correspondent-0391">Edeln von Wiesendangen</rs> aber waren <rs
+                            type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0381">Dienstleute zu Kyburg</rs>. Das
                     Wappen der Hofmeister zu <rs type="place"
                     key="../register/lassberg-places.xml#lassberg-place-0049">Frauenfeld</rs> und
-                    der <rs type="person" key="lassberg-correspondent-0391">Edeln zu
+                    der <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0391">Edeln zu
                     Wiesendangen</rs> ist bei <rs type="bibl"
                     key="../register/lassberg-literature.xml#lassberg-literature-0035">Stumpf</rs>
-                    fast übereinstimmend. Mit <rs type="bibl" key="lassberg-literature-0026">Myllers
+                    fast übereinstimmend. Mit <rs type="bibl" key="../register/lassberg-literature.xml#lassberg-literature-0026">Myllers
                     Sammlung altdeutscher Gedichte</rs> bin ich leider noch nicht zu Ende gekommen.
                     Sollten Sie derselben bedürfen, so belieben Sie zu befehlen; wo nicht, so
                     erlauben Sie mir dieselben noch einige Wochen zu behalten. Im Anfange dieser

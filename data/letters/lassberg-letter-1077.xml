@@ -53,23 +53,40 @@
                 
                 <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
                 <note type="mentioned">
-                    <!--<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-{PERS_NUMBER}"><rs>{ORIGINAL_STRING_MENTION}</rs></ref>-->
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0026"
+                        ><rs>Samlung deutscher Gedichte aus dem XII., XIII. und XIV. Jahrhundert. 3
+                        Bde.</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0032"
+                        ><rs>Cronick des gotzhuses Rychenowe.</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0354"
+                        ><rs>Unbekannt</rs></ref>
                 </note>
             </correspDesc>
         </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2023-08-01" who="#MiS" status="draft">File created and preprocessed automatically</change>
+                <change when="2023-08-29" who="#MiS" status="draft">Manual markup and proofreading</change>
+                <change when="2023-11-22" who="#MiS" status="draft">Finished markup</change>
+                <!-- <change when="" who="" status="puplished">Final proofreading</change> -->
+            </listChange>
+        </revisionDesc>
     </teiHeader>
     <text>
         <body>
             <div type="original" resp="ocr">
                 <p>Hochwohlgeborner, verehrtester Herr! Mit herzlichem Danke sende ich Ihnen hier
-                    <rs type="bibl" key="lassberg-literature-0026">Myllers Sammlung von
+                    <rs type="bibl" key="../register/lassberg-literature.xml#lassberg-literature-0026">Myllers Sammlung von
                     Minneliedern</rs> zurück. Ich muss nochmals um Verzeihung bitten, dieselben so
-                    lange behalten zu haben. Dem <rs type="bibl" key="lassberg-literature-0032"
+                    lange behalten zu haben. Dem <rs type="bibl" key="../register/lassberg-literature.xml#lassberg-literature-0032"
                     >Gallus Öhem</rs> habe ich gestern zwei Kopien von <rs type="object" key=""
                     >Arboner Urkunden</rs> beigelegt; dieselben sollten genau sein; selbst einige
                     Nachläßigkeiten und Auslaßungen des Textes wollte ich nicht verbessern. Die
                     dritte, wichtigere Urkunde von <rs type="person"
-                    key="lassberg-correspondent-0354">Marquart von Chemenat</rs> werde ich Ihnen
+                        key="../register/lassberg-persons.xml#lassberg-correspondent-0354">Marquart von Chemenat</rs> werde ich Ihnen
                     nächstens gleichfalls zustellen. Meinen Besuch bei Ihnen werde ich, wenn Sie es
                     gütigst erlauben, künftigen Mittwoch oder Donnerstag wiederhohlen. Doch nein, am
                     Mittwoch kan es nicht sein! Also am Donnerstag. Unterdessen habe ich die Ehre zu

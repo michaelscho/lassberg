@@ -53,24 +53,50 @@
                 
                 <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
                 <note type="mentioned">
-                    <!--<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-{PERS_NUMBER}"><rs>{ORIGINAL_STRING_MENTION}</rs></ref>-->
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0012"
+                        ><rs>Episcopatus Constantiensis Alemannicus sub metropoli Moguntina
+                        chronologice et diplomatice illustratus</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0037"
+                        ><rs>Thesaurus Antiquitatum Tevtonicarum, Ecclesiasticarum, Civilium,
+                        Litterariarum. 3, Glossarium Ad Scriptores Linguae Francicae Et Alemannicae
+                        Veteris... .</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0046"
+                        ><rs>Glossarium Germanicum medii aevi, maximam partem e diplomatibus multis
+                        praeterea aliis monumentis ... adornatum in 1 Bd. (Vol. 1-2).</rs></ref>
+                    <ref type="cmif:mentionsPlace"
+                        target="../register/lassberg-places.xml#lassberg-place-0025"
+                        ><rs>Bischofszell</rs></ref>
+                    <ref type="cmif:mentionsPlace"
+                        target="../register/lassberg-places.xml#lassberg-place-0178"
+                        ><rs>Schweiz</rs></ref>
                 </note>
             </correspDesc>
         </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2023-08-01" who="#MiS" status="draft">File created and preprocessed automatically</change>
+                <change when="2023-08-29" who="#MiS" status="draft">Manual markup and proofreading</change>
+                <change when="2023-11-22" who="#MiS" status="draft">Finished markup</change>
+                <!-- <change when="" who="" status="puplished">Final proofreading</change> -->
+            </listChange>
+        </revisionDesc>
     </teiHeader>
     <text>
         <body>
             <div type="original" resp="ocr">
                 <p>Hochwohlgeborner Herr und Gönner! Daß Sie gestern in <rs type="place"
-                    key="lassberg-place-0025">Bischofzell</rs> und in meiner Hütte waren, ohne daß
+                    key="../register/lassberg-places.xml#lassberg-place-0025">Bischofzell</rs> und in meiner Hütte waren, ohne daß
                     ich das Vergnügen haben konnte, Sie zu sehen, trübte mein Vergnügen über die
                     Nachricht von Ihrem Wohlbefinden. Die gütige Mittheilung der hier
                     zurückkommenden Kataloge verdanke ich Ihnen sehr; es wäre mir sehr angenehm,
                     wenn Sie mit Ihren Bestellungen zugleich für mich den <rs type="bibl"
-                    key="lassberg-literature-0012">Neugart</rs>, <rs type="bibl"
-                    key="lassberg-literature-0037">Schilter</rs> und <rs type="bibl"
-                    key="lassberg-literature-0046">Haltaus</rs> kommen ließen. In der <rs
-                    type="place" key="lassberg-place-0178">Schweiz</rs> bekommt man diese Sachen
+                        key="../register/lassberg-literature.xml#lassberg-literature-0012">Neugart</rs>, <rs type="bibl"
+                            key="../register/lassberg-literature.xml#lassberg-literature-0037">Schilter</rs> und <rs type="bibl"
+                                key="../register/lassberg-literature.xml#lassberg-literature-0046">Haltaus</rs> kommen ließen. In der <rs
+                                    type="place" key="../register/lassberg-places.xml#lassberg-place-0178">Schweiz</rs> bekommt man diese Sachen
                     fast gar nicht. Auf andere Schriften, die ich wohl auch brauchen könnte,
                     verzichte ich, da der Transport so ferne her geht. Mit der Bitte, Ihrer
                     Gewogenheit mich ferner zu würdigen, bin ich Hochdero Ergebenster Diac.

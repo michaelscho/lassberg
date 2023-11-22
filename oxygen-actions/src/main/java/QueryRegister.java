@@ -29,12 +29,15 @@ public class QueryRegister implements AuthorOperation {
 	private static final String REGISTER_FILE = "Path to register file";
 	private static final String ROOT_ELEMENT = "Element to be queried (such as 'person', 'place' as string)";
 	private static final String SUB_ELEMENT = "Subelement to be queried (such as 'persName', 'placeName' or 'bibl' as string)";
+	private static final String ID_PREFIX = "path to register as prefix (such as '../../path/to/file#')";
+
 
 	// validation of arguments passed from OxygenXML action tab
 	private static final ArgumentDescriptor[] ARGUMENTS = new ArgumentDescriptor[] {
 			new ArgumentDescriptor(REGISTER_FILE, ArgumentDescriptor.TYPE_STRING, "Path to register file."),
 			new ArgumentDescriptor(ROOT_ELEMENT, ArgumentDescriptor.TYPE_STRING, "Element to be queried (such as 'person', 'place' as string)."),
-			new ArgumentDescriptor(SUB_ELEMENT, ArgumentDescriptor.TYPE_STRING, "Wrong element."),};
+			new ArgumentDescriptor(SUB_ELEMENT, ArgumentDescriptor.TYPE_STRING, "Wrong element."),
+			new ArgumentDescriptor(ID_PREFIX, ArgumentDescriptor.TYPE_STRING, "No prefix given."),};
 
 	public void doOperation(AuthorAccess authorAccess, ArgumentsMap args)
 			throws IllegalArgumentException, AuthorOperationException {
@@ -44,6 +47,8 @@ public class QueryRegister implements AuthorOperation {
 		String pathToRegisterFile = LassbergArgumentValidator.validateStringArgument(REGISTER_FILE, args);
 		String elementToBeQueried = LassbergArgumentValidator.validateStringArgument(ROOT_ELEMENT, args);
 		String subElementToBeQueried = LassbergArgumentValidator.validateStringArgument(SUB_ELEMENT, args);
+		String prefixId = LassbergArgumentValidator.validateStringArgument(ID_PREFIX, args);
+
 
 		
 
@@ -107,12 +112,12 @@ public class QueryRegister implements AuthorOperation {
 		
 		// Create attribute string
 		String indexString = register.getSelectedID();
-		String correspondingItem = "";
+		String correspondingItem = prefixId;
 		for(int i=0;i<listOfEntries.size();i++)
 			{
 			if (listOfEntries.get(i).startsWith(indexString))
 			    {
-					correspondingItem = listOfEntries.get(i).split("##")[1];
+					correspondingItem = correspondingItem + listOfEntries.get(i).split("##")[1];
 			    }
 			}
 								
