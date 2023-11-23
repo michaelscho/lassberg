@@ -54,7 +54,7 @@ SET p.name = [x IN place._children WHERE x._type = "placeName" | x._text][0],
 RETURN p.name, p.wikidata, p.latitude, p.longitude;
 
 // Add texts
-CALL apoc.load.xml('https://raw.githubusercontent.com/michaelscho/lassberg/main/data/register/lassberg-literature.xml', '//bibl') 
+CALL apoc.load.xml('https://raw.githubusercontent.com/michaelscho/lassberg/main/data/register/lassberg-literature.xml') 
 YIELD value
 UNWIND value._children AS child
 WITH child
