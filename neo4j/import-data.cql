@@ -54,7 +54,7 @@ SET p.name = [x IN place._children WHERE x._type = "placeName" | x._text][0],
 RETURN p.name, p.wikidata, p.latitude, p.longitude;
 
 // Add texts
-CALL apoc.load.xml('https://raw.githubusercontent.com/michaelscho/lassberg/main/data/register/lassberg-literature.xml') 
+CALL apoc.load.xml('https://raw.githubusercontent.com/michaelscho/lassberg/main/data/register/lassberg-literature.xml')
 YIELD value
 UNWIND value._children AS child
 WITH child
@@ -68,13 +68,12 @@ WHERE greatGrandChild._type = "listBibl"
 UNWIND greatGrandChild._children AS bibl
 WITH bibl
 WHERE bibl._type = "bibl"
+CREATE (b:Bibl {id: bibl.xml:id, type: bibl.type})
+SET b.title = head([x IN bibl._children WHERE apoc.meta.cypher.type(x)='MAP' AND x._text IS NOT NULL AND x._type = "title" | x._text]),
+    b.date = head([x IN bibl._children WHERE apoc.meta.cypher.type(x)='MAP' AND x._text IS NOT NULL AND x._type = "date" | x._text]),
+    b.idno = head([x IN bibl._children WHERE apoc.meta.cypher.type(x)='MAP' AND x._text IS NOT NULL AND x._type = "idno" | x._text])
 
-MERGE (b:Bibl {id: bibl.`xml:id`, type: bibl.`type`})
-SET b.title = [x IN bibl._children WHERE x._type = "title" | x._text],
-    b.date = [x IN bibl._children WHERE x._type = "date" | x._text],
-    b.idno = [x IN bibl._children WHERE x._type = "idno" | x._text]
-    
-RETURN b.title, b.date, b.idno;  
+RETURN b.title, b.date, b.idno LIMIT 10;
 
 // Create letters
 LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/michaelscho/lassberg/main/data/register/register.csv' AS row FIELDTERMINATOR ';'
