@@ -71,9 +71,12 @@ WHERE bibl._type = "bibl"
 CREATE (b:Bibl {id: bibl.xml:id, type: bibl.type})
 SET b.title = head([x IN bibl._children WHERE apoc.meta.cypher.type(x)='MAP' AND x._text IS NOT NULL AND x._type = "title" | x._text]),
     b.date = head([x IN bibl._children WHERE apoc.meta.cypher.type(x)='MAP' AND x._text IS NOT NULL AND x._type = "date" | x._text]),
-    b.idno = head([x IN bibl._children WHERE apoc.meta.cypher.type(x)='MAP' AND x._text IS NOT NULL AND x._type = "idno" | x._text])
+    b.idno = head([x IN bibl._children WHERE apoc.meta.cypher.type(x)='MAP' AND x._text IS NOT NULL AND x._type = "idno" | x._text]),
+    b.author = [x IN bibl._children WHERE apoc.meta.cypher.type(x)='MAP' AND x._text IS NOT NULL AND x._type = "author" | x._text][0],
+    b.pubPlace = [x IN bibl._children WHERE apoc.meta.cypher.type(x)='MAP' AND x._text IS NOT NULL AND x._type = "pubPlace" | x._text][0]
 
-RETURN b.title, b.date, b.idno LIMIT 10;
+RETURN b.title, b.date, b.idno, b.author, b.pubPlace LIMIT 10;
+
 
 // Create letters
 LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/michaelscho/lassberg/main/data/register/register.csv' AS row FIELDTERMINATOR ';'
