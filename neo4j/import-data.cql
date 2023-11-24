@@ -73,9 +73,24 @@ SET b.title = head([x IN bibl._children WHERE apoc.meta.cypher.type(x)='MAP' AND
     b.date = head([x IN bibl._children WHERE apoc.meta.cypher.type(x)='MAP' AND x._text IS NOT NULL AND x._type = "date" | x._text]),
     b.idno = head([x IN bibl._children WHERE apoc.meta.cypher.type(x)='MAP' AND x._text IS NOT NULL AND x._type = "idno" | x._text]),
     b.author = [x IN bibl._children WHERE apoc.meta.cypher.type(x)='MAP' AND x._text IS NOT NULL AND x._type = "author" | x._text][0],
+    b.authorID = [x IN bibl._children WHERE apoc.meta.cypher.type(x)='MAP' AND x._text IS NOT NULL AND x._type = "author" | x.key],	  
     b.pubPlace = [x IN bibl._children WHERE apoc.meta.cypher.type(x)='MAP' AND x._text IS NOT NULL AND x._type = "pubPlace" | x._text][0]
+RETURN b.title, b.date, b.idno, b.author, b.authorID, b.pubPlace LIMIT 10;
 
-RETURN b.title, b.date, b.idno, b.author, b.pubPlace LIMIT 10;
+
+// Replace path in ID
+MATCH (b:Bibl)
+WHERE b.authorID IS NOT NULL
+SET b.authorID = [x IN b.authorID | apoc.text.replace(x, '../register/lassberg-persons.xml#', '')]
+RETURN b;
+
+// Create connections between Bibl and Person nodes
+MATCH (b:Bibl)
+WHERE b.authorID IS NOT NULL
+UNWIND b.authorID AS authorID
+MATCH (p:Person {id: authorID})
+
+CREATE (p)-[:HAS_AUTHORED]->(b);
 
 
 // Create letters
