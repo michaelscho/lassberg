@@ -53,6 +53,7 @@ SET p.name = [x IN place._children WHERE x._type = "placeName" | x._text][0],
 
 RETURN p.name, p.wikidata, p.latitude, p.longitude;
 
+
 // Add texts
 CALL apoc.load.xml('https://raw.githubusercontent.com/michaelscho/lassberg/main/data/register/lassberg-literature.xml')
 YIELD value
@@ -83,6 +84,7 @@ MATCH (b:Bibl)
 WHERE b.authorID IS NOT NULL
 SET b.authorID = [x IN b.authorID | apoc.text.replace(x, '../register/lassberg-persons.xml#', '')]
 RETURN b;
+
 
 // Create connections between Bibl and Person nodes
 MATCH (b:Bibl)
@@ -119,3 +121,40 @@ MERGE (l)-[:RECEIVES]->(receiver)
 MERGE (l)-[:SENT_FROM]->(sendingPlace)
 
 RETURN l;
+
+// Load in mentiones in letters
+// Iterate through each letter
+MATCH (l:Letter)
+WITH l, 'https://raw.githubusercontent.com/michaelscho/lassberg/main/data/letters/' + l.id + '.xml' AS url
+
+// Attempt to load the XML file
+CALL apoc.load.xml(url, null, {failOnError: false}) 
+YIELD value AS xmlFile
+WITH l, url, xmlFile, xmlFile IS NOT NULL AS fileExists
+SET l.processed = fileExists
+
+// Proceed only if the XML file exists
+WITH l, url, xmlFile
+WHERE l.processed AND xmlFile IS NOT NULL
+UNWIND xmlFile._children AS child
+WITH l, child
+WHERE child._type = "note" AND child.type = "mentioned"
+UNWIND child._children AS ref
+WITH l, ref
+WHERE ref._type IN ["cmif:mentionsPerson", "cmif:mentionsPlace", "cmif:mentionsBibl"]
+
+// Create or find the mentioned nodes and link them to the letter
+FOREACH (item IN CASE WHEN ref._type = "cmif:mentionsPerson" THEN [1] ELSE [] END |
+    MERGE (p:Person {id: apoc.text.replace(ref.target, '../register/lassberg-persons.xml#', '')})
+    MERGE (l)-[:MENTIONS]->(p)
+)
+FOREACH (item IN CASE WHEN ref._type = "cmif:mentionsPlace" THEN [1] ELSE [] END |
+    MERGE (place:Place {id: apoc.text.replace(ref.target, '../register/lassberg-places.xml#', '')})
+    MERGE (l)-[:MENTIONS]->(place)
+)
+FOREACH (item IN CASE WHEN ref._type = "cmif:mentionsBibl" THEN [1] ELSE [] END |
+    MERGE (b:Bibl {id: apoc.text.replace(ref.target, '../register/lassberg-literature.xml#', '')})
+    MERGE (l)-[:MENTIONS]->(b)
+)
+RETURN l;
+
