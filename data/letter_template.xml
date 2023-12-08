@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-{XML_ID}">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="{lassberg-letter-XML_ID}">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Brief von {SENT_BY} an {SENT_TO} ({SENT_DATE}).</title>
-                <respStmt>
+                <respStmt xml:id="#MiS">
                     <resp>Encoding to TEI</resp>
                     <resp>Processing, NER and Topic Modelling</resp>
                     <name>Michael Schonhardt</name>
@@ -17,7 +17,7 @@
                     Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
                     geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
                     Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
-                    automatisiert mit GPT-3.5 normalisiert.</p>
+                    automatisiert mit GPT-3.5 und GPT-4 normalisiert, zusammengefasst und übersetzt.</p>
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
@@ -57,14 +57,31 @@
                 </note>
             </correspDesc>
         </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="{today}" who="#MiS" status="done">Text recognized by Transkribus</change>
+                <change when="{today}" who="#MiS" status="done">Text corrected in Transkribus</change>
+                <change when="{today}" who="#MiS" status="done">Exported from Transkribus</change>
+                <change when="{today}" who="#MiS" status="done">Automatic NER</change>
+                <change when="{today}" who="#MiS" status="done">Automatic normalization, translation and summary</change>
+                <change when="" who="" status="draft">Manual markup and proofreading</change>
+                <change when="" who="" status="draft">Finished markup</change>
+            </listChange>
+        </revisionDesc>
     </teiHeader>
     <text>
         <body>
-            <div type="original" resp="ocr">
+            <div type="original" resp="#transkribus #MiS">
                 <p>{ORIGINAL_TEXT}</p>
             </div>
-            <div type="normalized" resp="GPT3.5">
+            <div type="normalized" resp="#GPT3.5">
                 <p>{NORMALIZED_TEXT}</p>
+            </div>
+            <div type="translation" resp="#GPT3.5">
+                <p>{TRANSLATED_TEXT}</p>
+            </div>
+            <div type="translated" resp="#GPT3.5">
+                <p>{SUMMARY_TEXT}</p>
             </div>
         </body>
     </text>
