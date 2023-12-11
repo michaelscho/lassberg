@@ -156,6 +156,18 @@ div[type = "normalized"]:before {
 
 }
 
+div[type = "translation"]:before {
+    content: oxy_label(text, "\aÜbersetzt: \a", styles, 
+"font-size:1em;font-weight: bold;")
+
+}
+
+div[type = "summary"]:before {
+    content: oxy_label(text, "\aZusammenfassung: \a", styles, 
+"font-size:1em;font-weight: bold;")
+
+}
+
 div[type = "normalized"] {
     display: block;
 }
