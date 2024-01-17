@@ -323,7 +323,7 @@ class ProcessPageXML:
         tags = self.extract_tags(self.letter_text)
         self.letter_text = self.remove_tags(self.letter_text)
 
-        # NER using Flair
+        # NER using Flair ~NER~
         # load model
         tagger = Classifier.load('de-ner-large')
         tagger.to('cpu')

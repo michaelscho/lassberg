@@ -16,7 +16,7 @@ const WelcomePage = {
                 `,
 };
 const LettersPage = {
-  props: ["csvData"],
+  props: ["lettersData"],
   template: `
   <div>
     <h1 class="my-4">The Lassberg Letters</h1>
@@ -26,87 +26,88 @@ const LettersPage = {
       <thead>
         <tr>
           <th scope="col">Date<input v-model="filters.date" type="text"/></th>
-
-          <th scope="col">From/To Laßberg<input v-model="filters.fromTo" type="text"/></th>
-
-          <th scope="col">Name (GND)<input v-model="filters.name" type="text"/></th>
-          
+          <th scope="col">From (GND)<input v-model="filters.name_from" type="text"/></th>
+          <th scope="col">To (GND)<input v-model="filters.name_to" type="text"/></th>
           <th scope="col">Place<input v-model="filters.place" type="text"/></th>
-
           <th scope="col">Provenance<input v-model="filters.provenance" type="text"/></th>
-
-          <th scope="col">Persons<input v-model="filters.persons" type="text"/></th>
-
-          <th scope="col">Topics<input v-model="filters.topics" type="text"/></th>
-
-  
+          <th scope="col">Mentioned<input v-model="filters.persons" type="text"/></th>
         </tr>
       </thead>
 
       <tbody>
-      <tr v-for="(item, id) in filteredData" :key="id" >
-
-          <td><router-link :to="'/letter/' + item.ID">{{ item.Datum }}</router-link><template v-if="item.normalized_text !== ''"><img
-          src="img/green_checkmark.svg"
-          height="12"
-          width="12"/>
-        </template></td>
-          <td>{{ item['VON/AN'] === 'VON' ? 'from Laßberg' : 'to Laßberg' }}</td>
+        <tr v-for="(item, id) in filteredData" :key="id" >
+          <td><router-link :to="'/letter/' + item.id">{{ item.date }}</router-link></td>
+          <td>
+            <!-- Case 1: Name has a wiki URL and a GND number -->
+            <template v-if="item['sent-from-information'] !== '-' && item['sent-from-gnd'] !== '-'">
+              <a :href="item['sent-from-information']">{{ item['sent-from-name'] }}</a>
+              <span class="ml-2">
+                <a :href="'https://lobid.org/gnd/' + item['sent-from-gnd']">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12">
+                </a>
+              </span>
+            </template>
+            
+            <!-- Case 2: Name has no wiki page but a GND number -->
+            <template v-else-if="item['sent-from-information'] === '-' && item['sent-from-name'] !== '-'">
+              {{ item['sent-from-name'] }}
+              <span class="ml-2">
+                <a :href="'https://lobid.org/gnd/' + item['sent-from-gnd']">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12">
+                </a>
+              </span>
+            </template>
+            
+            <!-- Case 3: Name has no wiki page and no GND number -->
+            <template v-else>
+              {{ item['sent-from-name'] }}
+            </template>
+          </td>
 
           <td>
           <!-- Case 1: Name has a wiki URL and a GND number -->
-          <template v-if="item.Wiki !== '-' && item.GND !== '-'">
-            <a :href="item.Wiki">{{ item.Name }}</a>
+          <template v-if="item['received-by-information'] !== '-' && item['received-by-gnd'] !== '-'">
+            <a :href="item['received-by-information']">{{ item['received-by-name'] }}</a>
             <span class="ml-2">
-              <a :href="'https://lobid.org/gnd/' + item.GND">
+              <a :href="'https://lobid.org/gnd/' + item['received-by-gnd']">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12">
               </a>
             </span>
           </template>
-        
+          
           <!-- Case 2: Name has no wiki page but a GND number -->
-          <template v-else-if="item.Wiki === '-' && item.GND !== '-'">
-            {{ item.Name }}
+          <template v-else-if="item['received-by-information'] === '-' && item['received-by-name'] !== '-'">
+            {{ item['received-by-name'] }}
             <span class="ml-2">
-              <a :href="'https://lobid.org/gnd/' + item.GND">
+              <a :href="'https://lobid.org/gnd/' + item['received-by-gnd']">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12">
               </a>
             </span>
           </template>
-        
+          
           <!-- Case 3: Name has no wiki page and no GND number -->
           <template v-else>
-            {{ item.Name }}
+            {{ item['received-by-name'] }}
           </template>
         </td>
-        
-          
-          <td>{{ item.Ort }}</td>
-          
-          <td>{{ item.Aufbewahrungsort || '' }}, {{ item.Aufbewahrungsinstitution  || '' }}</td>
 
+          <td>{{ item['place-sent-from-name'] }}</td>
+          <td>{{ item['owning-institution-place'] || '' }}, {{ item['owning-institution-name'] || '' }}</td>
           <td>{{ item.persons_mentioned }}</td>
-
-          <td>{{ item.topics_mentioned }}</td>
-          
-          </tr>
+        </tr>
       </tbody>
     </table>
-
   </div>
-  
   `,
   data() {
     return {
       filters: {
         date: "",
         place: "",
-        name: "",
+        name_from: "",
+        name_to: "",
         provenance: "",
-        persons: "",
-        topics: "",
-        fromTo: "",
-      },
+        persons: "",      },
     };
   },
   methods: {
@@ -116,45 +117,44 @@ const LettersPage = {
 
   computed: {
     filteredData() {
-      if (!this.csvData) {
+      if (!this.lettersData) {
         return [];
       }
-      return this.csvData.filter((item) => {
+      return this.lettersData.filter((item) => {
+        // Concatenate owning institution place and name
+        const owningInstitution = `${item['owning-institution-place']} ${item['owning-institution-name']}`.toLowerCase();
+  
         return (
-          item.Datum &&
-          item.Datum.toLowerCase().includes(this.filters.date.toLowerCase()) &&
-          item.Ort.toLowerCase().includes(this.filters.place.toLowerCase()) &&
-          item.Name.toLowerCase().includes(this.filters.name.toLowerCase()) &&
-          item.persons_mentioned.toLowerCase().includes(this.filters.persons.toLowerCase()) &&
-          item.topics_mentioned.toLowerCase().includes(this.filters.topics.toLowerCase()) &&
-          (item.Aufbewahrungsort + ", " + item.Aufbewahrungsinstitution)
-            .toLowerCase()
-            .includes(this.filters.provenance.toLowerCase()) &&
-          item["VON/AN"]
-            .toLowerCase()
-            .includes(this.filters.fromTo.toLowerCase())
+          item.date.toLowerCase().includes(this.filters.date.toLowerCase()) &&
+          item['sent-from-name'].toLowerCase().includes(this.filters.name_from.toLowerCase()) &&
+          item['received-by-name'].toLowerCase().includes(this.filters.name_to.toLowerCase()) &&
+          item['place-sent-from-name'].toLowerCase().includes(this.filters.place.toLowerCase()) &&
+          owningInstitution.includes(this.filters.provenance.toLowerCase()) &&
+          // Add other filters as necessary, for persons, topics, etc.
+          true // Placeholder for other conditions
         );
       });
     },
-
+  
     filteredDataCount() {
       return this.filteredData.length;
     },
-
+  
     filteredDataIds() {
       return this.filteredData.map((_, index) => `filteredItem-${index}`);
     },
   },
+  
 
   mounted() {
   },
 };
 
 const LetterView = {
-  props: ["id", "csvData"],
+  props: {id: String, lettersData: Array},
   data() {
     return {
-      letter: {},
+      letter: null,
     };
   },
   mounted() {
@@ -162,7 +162,7 @@ const LetterView = {
   },
   methods: {
     findLetterById() {
-      this.letter = this.csvData.find(item => item.ID === this.id);
+      this.letter = this.lettersData.find(item => item.id === this.id);
       if (!this.letter) {
         console.error('Letter not found with ID:', this.id);
       }
@@ -170,7 +170,7 @@ const LetterView = {
   },
   template: `
     <div>
-      <h1 class="my-4">{{ letter['VON/AN'] === 'VON' ?  'Joseph von Laßberg': letter.Name }} to {{ letter['VON/AN'] === 'VON' ? letter.Name : 'Joseph von Laßberg' }} ({{ letter.Datum === "Unbekannt" ? "Unknown" : new Date(letter.Datum).toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' }) }})</h1>
+      <h1 class="my-4">{{ item['sent-from-name'] }} to {{ letter['VON/AN'] === 'VON' ? letter.Name : 'Joseph von Laßberg' }} ({{ letter.Datum === "Unbekannt" ? "Unknown" : new Date(letter.Datum).toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' }) }})</h1>
       <p><strong>Date:</strong> {{ letter.Datum }}</p>
       <p><strong>Name:</strong> {{ letter.Name }}</p>
       <p><strong>Place:</strong> {{ letter.Ort }}</p>
@@ -222,7 +222,7 @@ const routes = [
     component: LettersPage,
     props: () => app.getData(),
   },
-  { path: "/letter/:id", component: LetterView, props: (route) => ({ id: route.params.id, csvData: app.csvData }) },
+  { path: "/letter/:id", component: LetterView, props: (route) => ({ id: route.params.id, lettersData: app.lettersData }) },
   { path: "/literature", component: LiteraturePage },
   { path: "/analysis", component: AnalysisPage },
   {
@@ -243,39 +243,39 @@ const app = new Vue({
   el: "#app",
   router,
   data: {
-    csvData: [],
+    lettersData: [],
     isLoading: true,
   },
   methods: {
     loadData() {
       axios
-        .get("data/register/register_for_web.csv")
+        .get("json/letters_json.json")
         .then((response) => {
-          this.csvData = Papa.parse(response.data, { header: true }).data;
+          this.lettersData = response.data;
 
           // sort by date, 'Unbekannt' last
-          this.csvData.sort((a, b) => {
-            if (a.Datum === "Unbekannt" && b.Datum === "Unbekannt") {
+          this.lettersData.sort((a, b) => {
+            if (a.date === "Unbekannt" && b.date === "Unbekannt") {
               return 0;
-            } else if (a.Datum === "Unbekannt") {
+            } else if (a.date === "Unbekannt") {
               return 1;
-            } else if (b.Datum === "Unbekannt") {
+            } else if (b.date === "Unbekannt") {
               return -1;
             } else {
-              return new Date(a.Datum) - new Date(b.Datum);
+              return new Date(a.date) - new Date(b.date);
             }
           });
 
-          console.log(this.csvData);
+          console.log(this.lettersData);
           this.isLoading = false;
         })
         .catch((error) => {
-          console.error("Error fetching CSV data:", error);
+          console.error("Error fetching json data:", error);
         });
     },
     getData() {
       return {
-        csvData: this.csvData,
+        lettersData: this.lettersData,
         isLoading: this.isLoading,
       };
     },
