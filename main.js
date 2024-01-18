@@ -155,10 +155,18 @@ const LetterView = {
   data() {
     return {
       letter: null,
+      letterText: null,
+      originalText: null,
+      normalizedText: null,
+      translationText: null,
+      summaryText: null
     };
   },
   mounted() {
     this.findLetterById();
+    if (this.letter) {
+      this.loadTeiFile(this.id);
+    }
   },
   methods: {
     findLetterById() {
@@ -167,21 +175,71 @@ const LetterView = {
         console.error('Letter not found with ID:', this.id);
       }
     },
+
+  loadTeiFile(letterId) {
+    const url = `https://raw.githubusercontent.com/michaelscho/lassberg/main/data/letters/${letterId}.xml`;
+    axios.get(url)
+      .then(response => {
+        const parser = new DOMParser();
+        const xmlDoc = parser.parseFromString(response.data, "text/xml");
+
+        // Extracting original text
+        const originalElement = xmlDoc.querySelector('div[type="original"]');
+        this.originalText = this.processText(originalElement);
+
+        // Extracting normalized text
+        const normalizedElement = xmlDoc.querySelector('div[type="normalized"]');
+        this.normalizedText = this.processText(normalizedElement);
+
+        // Extracting normalized text
+        const translationElement = xmlDoc.querySelector('div[type="translation"]');
+        this.translationText = this.processText(translationElement);
+
+        // Extracting summary
+        const summaryElement = xmlDoc.querySelector('div[type="summary"]');
+        this.summaryText = this.processText(summaryElement);
+      })
+      .catch(error => {
+        console.error('Error fetching TEI file:', error);
+      });
+    },
+    processText(element) {
+      if (!element) return '';
+  
+      // Clone the element to not modify the original XML document
+      const clonedElement = element.cloneNode(true);
+  
+      // Process each <rs> element
+      clonedElement.querySelectorAll('rs').forEach(rs => {
+        const span = document.createElement('span');
+        span.className = 'highlighted-rs';
+        span.innerHTML = rs.innerHTML;
+        rs.parentNode.replaceChild(span, rs);
+      });
+  
+      return clonedElement.innerHTML;
+    },
+    
   },
   template: `
     <div>
-      <h1 class="my-4">{{ item['sent-from-name'] }} to {{ letter['VON/AN'] === 'VON' ? letter.Name : 'Joseph von Laßberg' }} ({{ letter.Datum === "Unbekannt" ? "Unknown" : new Date(letter.Datum).toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' }) }})</h1>
-      <p><strong>Date:</strong> {{ letter.Datum }}</p>
-      <p><strong>Name:</strong> {{ letter.Name }}</p>
-      <p><strong>Place:</strong> {{ letter.Ort }}</p>
-      <p><strong>Journal:</strong> {{ letter.Journalnummer }}</p>
-      <p><strong>Harris 1991:</strong> {{ letter.Nummer_Harris }}</p>
-      <p><strong>Provenance:</strong> {{ letter.Aufbewahrungsort || '' }}, {{ letter.Aufbewahrungsinstitution  || '' }}</p>
-      <p><strong>Printed:</strong> <a :href="letter.url">{{ letter.text }}</a></p>
-      <p><strong>Summary:</strong> {{ letter.summary_en }} (<i>This summary was automatically created using GPT 4.</i>)</p>
-      <p><strong>Text:</strong> {{ letter.letter_text }}</p>
-      <p><strong>Normalized Text:</strong> {{ letter.normalized_text }} (<i>This normalization was automatically created using GPT 4.</i>)</p>
-
+      <h1 class="my-4">{{ letter['sent-from-name'] }} to {{ letter['received-by-name'] }} ({{ letter.date === "Unbekannt" ? "Unknown" : new Date(letter.date).toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' }) }})</h1>
+      <h2>Metadata</h2>
+      <p><strong>Date:</strong> {{ letter['date'] }}</p>
+      <p><strong>Name:</strong> {{ letter['sent-from-name'] }}</p>
+      <p><strong>Place:</strong> {{ letter['place-sent-from-name'] }}</p>
+      <p><strong>Journal:</strong> {{ letter['journal-number-lassberg'] }}</p>
+      <p><strong>Harris 1991:</strong> {{ letter['register-number-harris'] }}</p>
+      <p><strong>Provenance:</strong> {{ letter['owning-institution-place'] || '' }}, {{ letter['owning-institution-name']  || '' }}</p>
+      <p><strong>Printed:</strong> <a :href="letter['printed-publication-url']">{{ letter['printed-publication-name'] }}</a></p>      
+      <h2>Original Text</h2>
+      <p><div v-html="originalText"></div></p>
+      <h2>Normalized Text</h2>
+      <p><div v-html="normalizedText"></div></p>
+      <h2>Translation</h2>
+      <p><div v-html="translationText"></div></p>
+      <h2>Summary</h2>
+      <p><div v-html="summaryText"></div></p>
       <p><router-link to="/letters">Back to Letters</router-link></p>
       </div>
   `,
@@ -224,7 +282,10 @@ const routes = [
   },
   { path: "/letter/:id", component: LetterView, props: (route) => ({ id: route.params.id, lettersData: app.lettersData }) },
   { path: "/literature", component: LiteraturePage },
-  { path: "/analysis", component: AnalysisPage },
+  { path: "/analysis", 
+  beforeEnter() {
+    location.href = "https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb";
+  }, },
   {
     path: "/repository",
     beforeEnter() {
