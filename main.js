@@ -151,7 +151,13 @@ const LettersPage = {
 };
 
 const LetterView = {
-  props: {id: String, lettersData: Array},
+  props: {
+    id: String, 
+    lettersData: Array,
+    personRegister: Array,
+    placeRegister: Array,
+    literatureRegister: Array
+    },
   data() {
     return {
       letter: null,
@@ -159,15 +165,31 @@ const LetterView = {
       originalText: null,
       normalizedText: null,
       translationText: null,
-      summaryText: null
+      summaryText: null,
+      personEntries: [],
+      placeEntries: [],
+      literatureEntries: []
     };
   },
+
+  // here, something does not work due to the asynchronous loading of the data
+
   mounted() {
+    console.log(this.personRegister, this.placeRegister, this.literatureRegister);
     this.findLetterById();
     if (this.letter) {
-      this.loadTeiFile(this.id);
+      this.loadTeiFile(this.id)
+        .then(refs => {
+          this.processRegisters(refs);
+        })
+        .catch(error => {
+          console.error('Error in loading TEI file:', error);
+        });
+    } else {
+      console.error('Letter not found with ID:', this.id);
     }
   },
+
   methods: {
     findLetterById() {
       this.letter = this.lettersData.find(item => item.id === this.id);
@@ -176,33 +198,77 @@ const LetterView = {
       }
     },
 
-  loadTeiFile(letterId) {
-    const url = `https://raw.githubusercontent.com/michaelscho/lassberg/main/data/letters/${letterId}.xml`;
-    axios.get(url)
-      .then(response => {
+    processRegisters(refs) {
+      console.log('refs:', refs);
+      // Filter the person register based on refs.persons
+      this.personEntries = this.filterRegisterEntries(this.personRegister, refs.persons);
+
+      // Filter the place register based on refs.places
+      this.placeEntries = this.filterRegisterEntries(this.placeRegister, refs.places);
+
+      // Filter the literature register based on refs.literature
+      this.literatureEntries = this.filterRegisterEntries(this.literatureRegister, refs.literature);
+
+      console.log('Person Entries:', this.personEntries);
+      console.log('Place Entries:', this.placeEntries);
+      console.log('Literature Entries:', this.literatureEntries);
+    
+
+    },
+    
+    filterRegisterEntries(registerArray, refs) {
+      return registerArray.filter(entry => 
+        refs.some(ref => ref.endsWith('#' + entry.id))
+      );
+    },
+        
+    async loadTeiFile(letterId) {
+      const url = `https://raw.githubusercontent.com/michaelscho/lassberg/main/data/letters/${letterId}.xml`;
+      try {
+        const response = await axios.get(url);
         const parser = new DOMParser();
         const xmlDoc = parser.parseFromString(response.data, "text/xml");
-
+    
         // Extracting original text
-        const originalElement = xmlDoc.querySelector('div[type="original"]');
-        this.originalText = this.processText(originalElement);
-
+        this.originalText = this.processText(xmlDoc.querySelector('div[type="original"]'));
         // Extracting normalized text
-        const normalizedElement = xmlDoc.querySelector('div[type="normalized"]');
-        this.normalizedText = this.processText(normalizedElement);
-
-        // Extracting normalized text
-        const translationElement = xmlDoc.querySelector('div[type="translation"]');
-        this.translationText = this.processText(translationElement);
-
+        this.normalizedText = this.processText(xmlDoc.querySelector('div[type="normalized"]'));
+        // Extracting translation text
+        this.translationText = this.processText(xmlDoc.querySelector('div[type="translation"]'));
         // Extracting summary
-        const summaryElement = xmlDoc.querySelector('div[type="summary"]');
-        this.summaryText = this.processText(summaryElement);
-      })
-      .catch(error => {
+        this.summaryText = this.processText(xmlDoc.querySelector('div[type="summary"]'));
+    
+        // Extracting and processing references from the header
+        const refs = this.extractRefs(xmlDoc.querySelector('teiHeader'));
+    
+        // Load and filter registers based on extracted references
+        return refs;
+      } catch (error) {
         console.error('Error fetching TEI file:', error);
-      });
+      }
     },
+
+    extractRefs(teiHeader) {
+      const refs = {
+        persons: [],
+        places: [],
+        literature: []
+      };
+  
+      teiHeader.querySelectorAll('ref[type="cmif:mentionsPerson"]').forEach(ref => {
+        refs.persons.push(ref.getAttribute('target'));
+      });
+      teiHeader.querySelectorAll('ref[type="cmif:mentionsPlace"]').forEach(ref => {
+        refs.places.push(ref.getAttribute('target'));
+      });
+      teiHeader.querySelectorAll('ref[type="cmif:mentionsBibl"]').forEach(ref => {
+        refs.literature.push(ref.getAttribute('target'));
+      });
+  
+      return refs;
+    },
+  
+
     processText(element) {
       if (!element) return '';
   
@@ -212,17 +278,43 @@ const LetterView = {
       // Process each <rs> element
       clonedElement.querySelectorAll('rs').forEach(rs => {
         const span = document.createElement('span');
+        //span.style.backgroundColor = 'yellow'; 
         span.className = 'highlighted-rs';
         span.innerHTML = rs.innerHTML;
         rs.parentNode.replaceChild(span, rs);
       });
-  
+
       return clonedElement.innerHTML;
+    },
+
+    processHeader(headerElement) {
+      if (!headerElement) return;
+  
+      // Initialize metadata lists
+      this.personRefs = [];
+      this.placeRefs = [];
+      this.literatureRefs = [];
+  
+      // Process and populate person references
+      headerElement.querySelectorAll('ref[type="cmif:mentionsPerson"]').forEach(ref => {
+        this.personRefs.push(ref.getAttribute('target'));
+      });
+  
+      // Process and populate place references
+      headerElement.querySelectorAll('ref[type="cmif:mentionsPlace"]').forEach(ref => {
+        this.placeRefs.push(ref.getAttribute('target'));
+      });
+  
+      // Process and populate literature references
+      headerElement.querySelectorAll('ref[type="cmif:mentionsBibl"]').forEach(ref => {
+        this.literatureRefs.push(ref.getAttribute('target'));
+      });
     },
     
   },
   template: `
     <div>
+    <div v-if="letter">
       <h1 class="my-4">{{ letter['sent-from-name'] }} to {{ letter['received-by-name'] }} ({{ letter.date === "Unbekannt" ? "Unknown" : new Date(letter.date).toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' }) }})</h1>
       <h2>Metadata</h2>
       <p><strong>Date:</strong> {{ letter['date'] }}</p>
@@ -232,15 +324,39 @@ const LetterView = {
       <p><strong>Harris 1991:</strong> {{ letter['register-number-harris'] }}</p>
       <p><strong>Provenance:</strong> {{ letter['owning-institution-place'] || '' }}, {{ letter['owning-institution-name']  || '' }}</p>
       <p><strong>Printed:</strong> <a :href="letter['printed-publication-url']">{{ letter['printed-publication-name'] }}</a></p>      
+      <h2>Mentioned Persons</h2>
+      <ul>
+      <li v-for="person in personEntries" :key="person.key">
+        
+        {{ person.name }} (GND: <a :href="person.gnd">{{ person.gnd }}</a>,
+        Info: <a :href="person.wiki">{{ person.wiki }}</a>)
+      </li>
+    </ul>
+      <h2>Mentioned Places</h2>  
+      <ul>
+      <li v-for="place in placeEntries" :key="place.key">
+        {{ place.name }} (Wikidata: <a :href="place.wikidata">{{ place.wikidata }}</a>)
+      </li>
+    </ul>
+      <h2>Mentioned References</h2>
+      <ul>
+      <li v-for="literature in literatureEntries" :key="literature.key">
+      {{ literature.author }}: {{ literature.title }}. {{ literature.pubPlace }}, {{ literature.date }} (<a :href="literature.idno">{{ literature.idno }}</a>)  
+      </li>
+    </ul>
+      <h2>Summary</h2>
+      <p><div v-html="summaryText"></div></p>
+      <p><strong>Prepared by GPT4</strong></p>
       <h2>Original Text</h2>
       <p><div v-html="originalText"></div></p>
       <h2>Normalized Text</h2>
       <p><div v-html="normalizedText"></div></p>
+      <p><strong>Prepared by GPT4</strong></p>
       <h2>Translation</h2>
       <p><div v-html="translationText"></div></p>
-      <h2>Summary</h2>
-      <p><div v-html="summaryText"></div></p>
+      <p><strong>Prepared by GPT4</strong></p>
       <p><router-link to="/letters">Back to Letters</router-link></p>
+      </div>
       </div>
   `,
 };
@@ -280,7 +396,16 @@ const routes = [
     component: LettersPage,
     props: () => app.getData(),
   },
-  { path: "/letter/:id", component: LetterView, props: (route) => ({ id: route.params.id, lettersData: app.lettersData }) },
+  { 
+    path: "/letter/:id", 
+    component: LetterView, 
+    props: (route) => ({ 
+      id: route.params.id, 
+      lettersData: app.lettersData,
+      personRegister: app.personRegister,
+      placeRegister: app.placeRegister,
+      literatureRegister: app.literatureRegister
+    }) },
   { path: "/literature", component: LiteraturePage },
   { path: "/analysis", 
   beforeEnter() {
@@ -300,40 +425,136 @@ const router = new VueRouter({
 });
 
 // Initialize the Vue app
+// registers and letter data is loaded
 const app = new Vue({
   el: "#app",
   router,
   data: {
     lettersData: [],
+    personRegister: [],
+    placeRegister: [],
+    literatureRegister: [],
     isLoading: true,
   },
   methods: {
     loadData() {
-      axios
-        .get("json/letters_json.json")
-        .then((response) => {
-          this.lettersData = response.data;
+      const lettersUrl = "json/letters_json.json";
+      const personRegisterUrl = 'https://raw.githubusercontent.com/michaelscho/lassberg/main/data/register/lassberg-persons.xml'; 
+      const placeRegisterUrl = 'https://raw.githubusercontent.com/michaelscho/lassberg/main/data/register/lassberg-places.xml'; 
+      const literatureRegisterUrl = 'https://raw.githubusercontent.com/michaelscho/lassberg/main/data/register/lassberg-literature.xml'; 
+    
+      Promise.all([
+        axios.get(lettersUrl),
+        axios.get(personRegisterUrl),
+        axios.get(placeRegisterUrl),
+        axios.get(literatureRegisterUrl)
+      ]).then(([lettersResponse, personResponse, placeResponse, literatureResponse]) => {
+        // Getting the letter data
+        this.lettersData = lettersResponse.data;
+        
+         // Parsing register files
+        this.personRegister = this.processPersonRegister(personResponse.data);
+        this.placeRegister = this.processPlaceRegister(placeResponse.data);
+        this.literatureRegister = this.processLiteratureRegister(literatureResponse.data);
 
-          // sort by date, 'Unbekannt' last
-          this.lettersData.sort((a, b) => {
-            if (a.date === "Unbekannt" && b.date === "Unbekannt") {
-              return 0;
-            } else if (a.date === "Unbekannt") {
-              return 1;
-            } else if (b.date === "Unbekannt") {
-              return -1;
-            } else {
-              return new Date(a.date) - new Date(b.date);
-            }
-          });
-
-          console.log(this.lettersData);
-          this.isLoading = false;
-        })
-        .catch((error) => {
-          console.error("Error fetching json data:", error);
-        });
+        // Sort list of letters
+        this.sortLettersData();
+        this.isLoading = false;
+      }).catch(error => {
+        console.error("Error fetching data:", error);
+      });
     },
+
+    sortLettersData() {
+      // sort letters by date, 'Unbekannt' last
+      this.lettersData.sort((a, b) => {
+        if (a.date === "Unbekannt" && b.date === "Unbekannt") {
+          return 0;
+        } else if (a.date === "Unbekannt") {
+          return 1;
+        } else if (b.date === "Unbekannt") {
+          return -1;
+        } else {
+          return new Date(a.date) - new Date(b.date);
+        }
+      });
+    },
+
+    processPersonRegister(xmlData) {
+      const parser = new DOMParser();
+      const xmlDoc = parser.parseFromString(xmlData, "text/xml");
+      const ns = "http://www.tei-c.org/ns/1.0"; // Namespace URI
+    
+      const persons = xmlDoc.getElementsByTagNameNS(ns, 'person');
+      return Array.from(persons).map(person => {
+        const persName = person.querySelector('persName[type="main"]');
+        const wikiRef = person.querySelector('ref[target]');
+    
+        // Accessing namespaced attribute 'xml:id'
+        const personId = person.getAttributeNS("http://www.w3.org/XML/1998/namespace", "id");
+    
+        return {
+          id: personId || 'Unknown',
+          name: persName ? persName.textContent.trim() : 'Unknown',
+          gnd: person.getAttribute('ref') || 'Unknown',
+          wiki: wikiRef ? wikiRef.getAttribute('target') : 'Unknown',
+        };
+      });
+    },
+    
+    
+
+    processPlaceRegister(xmlData) {
+      const parser = new DOMParser();
+      const xmlDoc = parser.parseFromString(xmlData, "text/xml");
+      const ns = "http://www.tei-c.org/ns/1.0"; // Namespace URI
+    
+      const places = xmlDoc.getElementsByTagNameNS(ns, 'place');
+      return Array.from(places).map(place => {
+        const placeName = place.querySelector('placeName');
+        // get @ref from placeName
+        const wikiRef = placeName ? placeName.getAttribute('ref') : null;
+        const desc = place.querySelector('desc');
+        const placeId = place.getAttributeNS("http://www.w3.org/XML/1998/namespace", "id");
+    
+        return {
+          id: placeId || 'Unknown',
+          name: placeName ? placeName.textContent.trim() : 'Unknown',
+          description: desc ? desc.textContent.trim() : 'Unknown',
+          wikidata: wikiRef || 'Unknown',
+          // Add other properties as per your XML structure
+        };
+      });
+    },
+    
+    
+    processLiteratureRegister(xmlData) {
+      const parser = new DOMParser();
+      const xmlDoc = parser.parseFromString(xmlData, "text/xml");
+      const ns = "http://www.tei-c.org/ns/1.0"; // Namespace URI
+    
+      const literatureItems = xmlDoc.getElementsByTagNameNS(ns, 'bibl');
+      return Array.from(literatureItems).map(bibl => {
+        const title = bibl.querySelector('title');
+        const author = bibl.querySelector('author');
+        const pubPlace = bibl.querySelector('pubPlace');
+        const idNo = bibl.querySelector('idno');
+        const literatureId = bibl.getAttributeNS("http://www.w3.org/XML/1998/namespace", "id");
+        const date = bibl.querySelector('date');
+        return {
+          id: literatureId || 'Unknown',
+          title: title ? title.textContent.trim() : 'Unknown',
+          author: author ? author.textContent.trim() : 'Unknown',
+          idno: idNo ? idNo.textContent.trim() : 'Unknown',
+          date: date ? date.textContent.trim() : 'Unknown',
+          pubPlace: pubPlace ? pubPlace.textContent.trim() : 'Unknown',
+
+          // Add other bibliographic details as per your XML structure
+        };
+      });
+    },
+     
+
     getData() {
       return {
         lettersData: this.lettersData,
