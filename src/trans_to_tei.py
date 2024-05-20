@@ -87,7 +87,7 @@ class GetDataFromCsv:
         """ This function reads the csv file with the register data and returns a letter as a pandas dataframe.
         """
         # read in register file
-        register = pd.read_csv(os.path.join(os.getcwd(), '..', 'data', 'register', 'register.csv'), sep=';', encoding='utf8')
+        register = pd.read_csv(os.path.join(os.getcwd(), '..', 'data', 'register', 'register.csv'), sep=';', encoding='cp1252')
         # find row with doc_id
         row = register.loc[register['ID'] == self.doc_id]
         
@@ -200,9 +200,9 @@ class ProcessPageXML:
         self.places_gpt_lookup = places_gpt_lookup
         self.letter_text = self.create_tei_from_pagexml()
         
-        #self.letter_normalization = self.create_normalisation()
-        #self.letter_translation = self.create_translation()
-        #self.letter_summary = self.create_summary()
+        self.letter_normalization = self.create_normalisation(log)
+        self.letter_translation = self.create_translation(log)
+        self.letter_summary = self.create_summary(log)
         
         self.tags = []
 
@@ -275,6 +275,7 @@ class ProcessPageXML:
         completion = openai.ChatCompletion.create(model=self.gpt_version,messages=messages)
         letter_normalization = completion.choices[0].message.content
         log.log(f"\nNormalised letter (GPT4): \n{letter_normalization}")
+        
 
         return letter_normalization
 
@@ -457,10 +458,10 @@ class ProcessPageXML:
         messages = [{"role": "user", "content": prompt_person_persons}]
         
         """ Decomment for production """
-        #completion = openai.ChatCompletion.create(model='gpt-4',messages=messages)
-        #returned_list_persons_gpt4 = completion.choices[0].message.content
+        completion = openai.ChatCompletion.create(model='gpt-4',messages=messages)
+        returned_list_persons_gpt4 = completion.choices[0].message.content
 
-        returned_list_persons_gpt4 = "Inen(none)|Rosenbäcker(none)|Inen(none)|H. v. Soumard(none)|Holbein(0354)|Erik Holbein(none)|Albr. Hegner(none)|Berthold(0385)|Erchanger(none)|Salomon III(0401)|Kirchhofer(0307)|Neugarts(0379)|Honerlage(none)|Jos. von Laßberg(0373)"
+        #returned_list_persons_gpt4 = "Inen(none)|Rosenbäcker(none)|Inen(none)|H. v. Soumard(none)|Holbein(0354)|Erik Holbein(none)|Albr. Hegner(none)|Berthold(0385)|Erchanger(none)|Salomon III(0401)|Kirchhofer(0307)|Neugarts(0379)|Honerlage(none)|Jos. von Laßberg(0373)"
         log.log(f"\n String returned from openai: {returned_list_persons_gpt4}")
 
         prompt_person_places = f"""The following is a list of placenames mentioned in a letter from the 19th century. Each place is separated by '|'. 
@@ -471,10 +472,10 @@ class ProcessPageXML:
         messages = [{"role": "user", "content": prompt_person_places}]
         
         """ Decomment for production """
-        #completion = openai.ChatCompletion.create(model='gpt-4',messages=messages)
-        #returned_list_places_gpt4 = completion.choices[0].message.content
+        completion = openai.ChatCompletion.create(model='gpt-4',messages=messages)
+        returned_list_places_gpt4 = completion.choices[0].message.content
 
-        returned_list_places_gpt4 = "Constanz(0082)|Worblingen(none)|Selhauses(none)|Ravensburg(0123)|Worblingen(none)|Schiener Berg(none)|Schrotzburg(none)|Diepoldsburg(none)|Schinen(none)|Stein(0144)|teutschlande(0187)|Eppishausen(0043)|Constantz(0082)"
+        #returned_list_places_gpt4 = "Constanz(0082)|Worblingen(none)|Selhauses(none)|Ravensburg(0123)|Worblingen(none)|Schiener Berg(none)|Schrotzburg(none)|Diepoldsburg(none)|Schinen(none)|Stein(0144)|teutschlande(0187)|Eppishausen(0043)|Constantz(0082)"
         log.log(f"\n String returned from openai: {returned_list_places_gpt4}")
         
         # split returned lists into list of persons and list of places
@@ -484,13 +485,20 @@ class ProcessPageXML:
         # deal with persons
         # split sublist into id and name
         for i, item in enumerate(returned_list_persons_gpt4):
-            returned_list_persons_gpt4[i] = item.split('(')
-            returned_list_persons_gpt4[i][1] = returned_list_persons_gpt4[i][1].replace(')','')
-
+            try:
+                returned_list_persons_gpt4[i] = item.split('(')
+                print(returned_list_persons_gpt4[i])
+                returned_list_persons_gpt4[i][1] = returned_list_persons_gpt4[i][1].replace(')','')
+            except:
+                print(f"Error: {item}")
+                log.log(f"Error: {item}")
         for i, item in enumerate(returned_list_places_gpt4):
-            returned_list_places_gpt4[i] = item.split('(')
-            returned_list_places_gpt4[i][1] = returned_list_places_gpt4[i][1].replace(')','')
-
+            try:
+                returned_list_places_gpt4[i] = item.split('(')
+                returned_list_places_gpt4[i][1] = returned_list_places_gpt4[i][1].replace(')','')
+            except:
+                print(f"Error: {item}")
+                log.log(f"Error: {item}")
         # check if query returned correct number of persons and places
         if len(returned_list_persons_gpt4) != len(look_up_string_person.split('|')[:-1]):
             print('Error: Number of persons does not match')
@@ -935,9 +943,9 @@ def main():
 
     # Text for showcasing without calling API
     # Comment out for production
-    normalized_text = """1264 163. Nr. 85. Konstanz am 30. Juli 1825. Die schöne Gelegenheit, Ihnen mein teurer Freund, durch Herrn Registrator Rosenbäcker einen freundlichen Gruß zuzurufen, will ich nicht versäumen und Ihnen sagen, dass ich letzten Montag meine Schwiegertochter, welche Ihnen mit mir noch vielmal herzlich für alle erwiesene Liebe und Freundschaft dankt, von hier nach Worblingen zu einem Freund Herrn von Soumard begleitet habe und dort in der Registratur einige interessante Urkunden fand, wovon besonders die Eine von 1444, über die Familie Holbein einen ganz unerwarteten Aufschluss gibt. Erik Holbein wird darin als der Stifter des Selhauses in Ravensburg aufgeführt. Ich hoffe Herrn Albrecht Hegner durch Mitteilung derselben einiges Vergnügen zu machen. Ich durchstrich von Worblingen aus den sogenannten Schiener Berg, besuchte die uralte Schrotzburg, in welcher vor ein Paar Jahren einige 40 römische Silbermünzen ausgegraben wurden, und fand der Sage nach, die von dem alten Hattinger in seiner Kirchengeschichte. I. Seite 482 gewagte Angabe, dass dieses die Diepoldsburg sei, wohin Berthold und Erchanger den gefangenen Bischof Salomon III verborgen haben, ganz wahrscheinlich. Ich besuchte auch Schinen, wo der allgemeinen Sage nach die ersten Christen dieses Landes, vor den Verfolgungen der Römer fliehend, sich sollen angesiedelt haben: halte aber dafür, dass es wohl möchten Leute gewesen sein, die zu Anfang des 10 Jahrhunderts, vor den alles überschwemmenden und zerstörenden Hunnen, in diesen beinahe unentdeckbaren Bergkessel sich geflüchtet haben. In Stein fand ich Herrn Pfarrer Kirchhofer abwesend und ging unausgehalten hierher zurück. Nun mein Freund! hätte ich eine kleine Bitte an den glücklichen Besitzer des Codex trad. S. Gallensium. In Neugarts Cod. diplom. Alamanniae Tom. I. Urkunde CIII., Traditis Gringi, sind ausgelassene Stellen, besonders nach den Worten: Gallone, Gringi und: Visus sum habere. Könnten Sie die Güte haben mir diese Lücken ergänzen, oder wenn die Urkunde nicht zu lange ist, lieber mir dieselbe ganz abschreiben zu lassen, so würden Sie mich recht sehr verbinden; freilich könnte nur die allergrößte Genauigkeit der Abschrift den gehörigen Wert geben. Hier lege ich Ihnen auch ein Zettelchen für den Herrn Oberst Honerlage bei, damit er sieht, dass sein Name nicht von Gestern ist, und ursprünglich dem nördlichen Deutschland angehört. Übrigens leben Sie wohl, von Eppishausen aus ein Mehreres von Ihrem Freund JvLaßzberg 1267. Konstanz, 30. Juli 1825 Josef von Lassberg beantwortet 6. Aug."""
-    translated_text = """1264 163. No. 85. Konstanz, July 30th, 1825. Dear Friend, The charming opportunity to send you my best wishes through Mister Registrar Rosenbäcker, is something I won't miss. I would like to inform you that last Monday, I accompanied my daughter-in-law - who, together with me, thanks you dearly for all the love and friendship shown - from here to Worblingen to a friend, Mr. von Soumard. There, in the registry, I found some interesting documents. Particularly, one from the year 1444, providing an unexpected insight into the Holbein family. Erik Holbein is mentioned therein as the founder of Selhaus in Ravensburg. I hope to provide Mr. Albrecht Hegner some pleasure by informing him of this. From Worblingen, I traveled to the so-called Schiener Mountain, and visited the ancient Schrotzburg, where some 40 Roman silver coins were excavated a few years ago. Interestingly, I found a legend referenced by the old Hattinger in his Church History, page 482, that suggested this might be the Diepoldsburg, where Berthold and Erchanger presumably hid Bishop Salomon III – quite plausible. I also visited Schinen, which according to popular myth was purportedly the location where the first Christians of this land settled, fleeing Roman persecution – however, my belief leans more toward it being people from the beginning of the 10th Century, refugees from the destructive Hunnic invasions, who fled to these nearly undiscovered mountain hollows. I didn’t meet Pastor Kirchhofer in Stein, and uninterrupted, I returned here. Now, my dear friend, I have a small request to ask of the fortunate owner of the Codex trad. S. Gallensium. In Neugart's Cod. diplom. Alamanniae Tom. I., document CIII., Traditis Gringi, there are omitted parts, especially after the words: Gallone, Gringi, and: Visus sum habere. If you could be so kind as to fill these gaps for me or, if it is not too long, perhaps transcribe the entire document for me, you would greatly oblige me. However, only the utmost accuracy in the transcription will give it its due value. Attached, please find a note for Colonel Honerlage, so he can see that his name is both ancient and originally belongs to Northern Germany. Finally, farewell. I will have more to tell you from Eppishausen soon. Your friend, JvLaßzberg 1267. Konstanz, July 30th, 1825 Josef von Lassberg replied to on August 6th."""
-    summary_text = """In einem Brief aus Konstanz vom 30. Juli 1825 berichtet Josef von Lassberg seinem Freund von seiner Reise zu einem Freund in Worblingen, wo er interessante Urkunden fand, darunter eine über die Familie Holbein. Er besuchte auch andere Orte, darunter Schiener Berg und Schrotzburg, und fand Hinweise auf historische Ereignisse. Er bittet seinen Freund um Hilfe bei der Ergänzung einer Urkunde aus dem Codex trad. S. Gallensium und legt einen Zettel für Oberst Honerlage bei, der besagt, dass sein Name ursprünglich aus dem nördlichen Deutschland stammt."""
+    #normalized_text = """1264 163. Nr. 85. Konstanz am 30. Juli 1825. Die schöne Gelegenheit, Ihnen mein teurer Freund, durch Herrn Registrator Rosenbäcker einen freundlichen Gruß zuzurufen, will ich nicht versäumen und Ihnen sagen, dass ich letzten Montag meine Schwiegertochter, welche Ihnen mit mir noch vielmal herzlich für alle erwiesene Liebe und Freundschaft dankt, von hier nach Worblingen zu einem Freund Herrn von Soumard begleitet habe und dort in der Registratur einige interessante Urkunden fand, wovon besonders die Eine von 1444, über die Familie Holbein einen ganz unerwarteten Aufschluss gibt. Erik Holbein wird darin als der Stifter des Selhauses in Ravensburg aufgeführt. Ich hoffe Herrn Albrecht Hegner durch Mitteilung derselben einiges Vergnügen zu machen. Ich durchstrich von Worblingen aus den sogenannten Schiener Berg, besuchte die uralte Schrotzburg, in welcher vor ein Paar Jahren einige 40 römische Silbermünzen ausgegraben wurden, und fand der Sage nach, die von dem alten Hattinger in seiner Kirchengeschichte. I. Seite 482 gewagte Angabe, dass dieses die Diepoldsburg sei, wohin Berthold und Erchanger den gefangenen Bischof Salomon III verborgen haben, ganz wahrscheinlich. Ich besuchte auch Schinen, wo der allgemeinen Sage nach die ersten Christen dieses Landes, vor den Verfolgungen der Römer fliehend, sich sollen angesiedelt haben: halte aber dafür, dass es wohl möchten Leute gewesen sein, die zu Anfang des 10 Jahrhunderts, vor den alles überschwemmenden und zerstörenden Hunnen, in diesen beinahe unentdeckbaren Bergkessel sich geflüchtet haben. In Stein fand ich Herrn Pfarrer Kirchhofer abwesend und ging unausgehalten hierher zurück. Nun mein Freund! hätte ich eine kleine Bitte an den glücklichen Besitzer des Codex trad. S. Gallensium. In Neugarts Cod. diplom. Alamanniae Tom. I. Urkunde CIII., Traditis Gringi, sind ausgelassene Stellen, besonders nach den Worten: Gallone, Gringi und: Visus sum habere. Könnten Sie die Güte haben mir diese Lücken ergänzen, oder wenn die Urkunde nicht zu lange ist, lieber mir dieselbe ganz abschreiben zu lassen, so würden Sie mich recht sehr verbinden; freilich könnte nur die allergrößte Genauigkeit der Abschrift den gehörigen Wert geben. Hier lege ich Ihnen auch ein Zettelchen für den Herrn Oberst Honerlage bei, damit er sieht, dass sein Name nicht von Gestern ist, und ursprünglich dem nördlichen Deutschland angehört. Übrigens leben Sie wohl, von Eppishausen aus ein Mehreres von Ihrem Freund JvLaßzberg 1267. Konstanz, 30. Juli 1825 Josef von Lassberg beantwortet 6. Aug."""
+    #translated_text = """1264 163. No. 85. Konstanz, July 30th, 1825. Dear Friend, The charming opportunity to send you my best wishes through Mister Registrar Rosenbäcker, is something I won't miss. I would like to inform you that last Monday, I accompanied my daughter-in-law - who, together with me, thanks you dearly for all the love and friendship shown - from here to Worblingen to a friend, Mr. von Soumard. There, in the registry, I found some interesting documents. Particularly, one from the year 1444, providing an unexpected insight into the Holbein family. Erik Holbein is mentioned therein as the founder of Selhaus in Ravensburg. I hope to provide Mr. Albrecht Hegner some pleasure by informing him of this. From Worblingen, I traveled to the so-called Schiener Mountain, and visited the ancient Schrotzburg, where some 40 Roman silver coins were excavated a few years ago. Interestingly, I found a legend referenced by the old Hattinger in his Church History, page 482, that suggested this might be the Diepoldsburg, where Berthold and Erchanger presumably hid Bishop Salomon III – quite plausible. I also visited Schinen, which according to popular myth was purportedly the location where the first Christians of this land settled, fleeing Roman persecution – however, my belief leans more toward it being people from the beginning of the 10th Century, refugees from the destructive Hunnic invasions, who fled to these nearly undiscovered mountain hollows. I didn’t meet Pastor Kirchhofer in Stein, and uninterrupted, I returned here. Now, my dear friend, I have a small request to ask of the fortunate owner of the Codex trad. S. Gallensium. In Neugart's Cod. diplom. Alamanniae Tom. I., document CIII., Traditis Gringi, there are omitted parts, especially after the words: Gallone, Gringi, and: Visus sum habere. If you could be so kind as to fill these gaps for me or, if it is not too long, perhaps transcribe the entire document for me, you would greatly oblige me. However, only the utmost accuracy in the transcription will give it its due value. Attached, please find a note for Colonel Honerlage, so he can see that his name is both ancient and originally belongs to Northern Germany. Finally, farewell. I will have more to tell you from Eppishausen soon. Your friend, JvLaßzberg 1267. Konstanz, July 30th, 1825 Josef von Lassberg replied to on August 6th."""
+    #summary_text = """In einem Brief aus Konstanz vom 30. Juli 1825 berichtet Josef von Lassberg seinem Freund von seiner Reise zu einem Freund in Worblingen, wo er interessante Urkunden fand, darunter eine über die Familie Holbein. Er besuchte auch andere Orte, darunter Schiener Berg und Schrotzburg, und fand Hinweise auf historische Ereignisse. Er bittet seinen Freund um Hilfe bei der Ergänzung einer Urkunde aus dem Codex trad. S. Gallensium und legt einen Zettel für Oberst Honerlage bei, der besagt, dass sein Name ursprünglich aus dem nördlichen Deutschland stammt."""
 
     # 1. load xml files with register data: GetDataFromXml()
     gpt_version = 'gpt-4'
@@ -973,8 +981,8 @@ def main():
         process_pagexml = ProcessPageXML(doc_id, gpt_version, xml_data.list_of_persons, xml_data.list_of_places, xml_data.persons_gpt_lookup, xml_data.places_gpt_lookup, log)
     
         print("Create TEI for letter.")
-        xml_encoded_letter = CreateXML(doc_id, csv_data.letter_data, process_pagexml.letter_text, normalized_text, translated_text, summary_text, xml_data.list_of_persons, xml_data.list_of_places)
-        #xml_encoded_letter = CreateXML(doc_id, csv_data.letter_data, process_pagexml.letter_text, process_pagexml.letter_normalization, process_pagexml.letter_translation, process_pagexml.letter_summary, xml_data.list_of_persons, xml_data.list_of_places)
+        #xml_encoded_letter = CreateXML(doc_id, csv_data.letter_data, process_pagexml.letter_text, normalized_text, translated_text, summary_text, xml_data.list_of_persons, xml_data.list_of_places)
+        xml_encoded_letter = CreateXML(doc_id, csv_data.letter_data, process_pagexml.letter_text, process_pagexml.letter_normalization, process_pagexml.letter_translation, process_pagexml.letter_summary, xml_data.list_of_persons, xml_data.list_of_places)
     
 if __name__ == "__main__":
     main()
