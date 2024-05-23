@@ -20,6 +20,9 @@ This repository will be developed in six steps:
 Data can be found in `data`, python-scripts used for processing are stored in `src` with log-files in `log`. `data/register` contains a register of all letters with relevant meta- and linked data in `./data/register/register.csv` (';'-separated) as final version. It is based on Harris 1991, but substantially enriched by linked data and digital facsimile, wherever possible. From this file, tei-encoded person- and place-registers have been created as `./data/register/lassberg-persons.xml` and `./data/register/lassberg-persons.xml`, respectively `unique_persons.csv` and `places_persons.csv`. In this process, coordinates have been added to places and GND data has been retrieved for each person. This data was stored as json-files in `data/gnd` using gnd-number as filenames. Based on the final register, each letter's metadata was encoded as TEI in `data/letters` using a unique project id as filename. The letter's text (as well as summaries, named entities and key topics) will be added to each of these files starting with the large correspondence between Laßberg and Johann Adam Pubilofer[Johann Adam Pupikofer](https://de.wikipedia.org/wiki/Johann_Adam_Pupikofer). Processed letters can be found in `data/letters`.
 
 ## Workflow
+
+![Workflow](./workflow.png)
+
 1. **Scanning as Input:** The workflow begins with scanned letters provided by libraries and archives.
 2. **Text Recognition**: The scanned documents undergo text recognition using [Transkribus](https://readcoop.eu/de/transkribus/) based on a dedicated model.
 3. **Scripted Python Pipeline**: The recognized text then enters a Python pipeline, which includes several stages:
