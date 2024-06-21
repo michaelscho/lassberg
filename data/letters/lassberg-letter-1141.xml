@@ -24,13 +24,15 @@
                     <msIdentifier>
                         <settlement>Winterthur</settlement>
                         <repository>Stadtbibliothek</repository>
-                        <idno type="signature"></idno>
+                        <idno type="signature"/>
                         <idno type="register-harris">570</idno>
                         <idno type="register-lassberg">28</idno>
                     </msIdentifier>
                     <additional>
-                        <surrogates>
-                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 15 (1887), S. 231-88, S. 235<ref>https://books.google.de/books?id=dXkKAAAAIAAJ</ref></bibl>
+                        <surrogates> <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J.
+                            von Laszberg und Johann Adam Pupikofer. In: Alemannia 15 (1887), S.
+                            231-88, S.
+                            235<ref>https://books.google.de/books?id=dXkKAAAAIAAJ</ref></bibl>
                         </surrogates>
                     </additional>
                 </msDesc>
@@ -40,41 +42,39 @@
             <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
             <correspDesc xml:id="correspDesc-lassberg-letter-1141">
                 <correspAction type="sent">
-                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
-                        >Joseph von Laßberg</persName>
-                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</placeName>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373"
+                        ref="https://d-nb.info/gnd/118778862">Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043"
+                        >Eppishausen</placeName>
                     <date when="1827-02-03">03.02.1827</date>
                 </correspAction>
                 <correspAction type="received">
-                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X"
-                        >Johann Adam Pupikofer</persName>
-                    
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179"
+                        ref="https://d-nb.info/gnd/11565108X">Johann Adam Pupikofer</persName>
+
                 </correspAction>
-                
+
                 <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
-                <note type="mentioned">
-                    <ref type="cmif:mentionsBibl"
-                        target="../register/lassberg-literature.xml#lassberg-literature-0049"
-                        ><rs>Bucelinus (genaues Werk unbekannt)</rs></ref>
-                    <ref type="cmif:mentionsPerson"
-                        target="../register/lassberg-persons.xml#lassberg-correspondent-0395"
-                        ><rs>von Rugge (Geschlecht)</rs></ref>
-                    <ref type="cmif:mentionsPerson"
-                        target="../register/lassberg-persons.xml#lassberg-correspondent-0397"
-                        ><rs>von Helmsdorf (Geschlecht)</rs></ref>
-                    <ref type="cmif:mentionsPerson"
-                        target="../register/lassberg-persons.xml#lassberg-correspondent-0396"
-                        ><rs>Heinrich von Rugge</rs></ref>
-                    <ref type="cmif:mentionsPlace"
-                        target="../register/lassberg-places.xml#lassberg-place-0043"
-                        ><rs>Eppishausen</rs></ref>
-                </note>
+                <note type="mentioned"> <ref type="cmif:mentionsBibl"
+                    target="../register/lassberg-literature.xml#lassberg-literature-0049"
+                    ><rs>Bucelinus (genaues Werk unbekannt)</rs></ref> <ref
+                    type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0395"><rs>von
+                    Rugge (Geschlecht)</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0397"><rs>von
+                    Helmsdorf (Geschlecht)</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0396"
+                    ><rs>Heinrich von Rugge</rs></ref> <ref type="cmif:mentionsPlace"
+                    target="../register/lassberg-places.xml#lassberg-place-0043"
+                    ><rs>Eppishausen</rs></ref> </note>
             </correspDesc>
         </profileDesc>
         <revisionDesc>
             <listChange>
-                <change when="2023-08-01" who="#MiS" status="draft">File created and preprocessed automatically</change>
-                <change when="2023-08-29" who="#MiS" status="draft">Manual markup and proofreading</change>
+                <change when="2023-08-01" who="#MiS" status="draft">File created and preprocessed
+                    automatically</change>
+                <change when="2023-08-29" who="#MiS" status="draft">Manual markup and
+                    proofreading</change>
                 <change when="2023-11-22" who="#MiS" status="draft">Finished markup</change>
                 <!-- <change when="" who="" status="puplished">Final proofreading</change> -->
             </listChange>
@@ -82,31 +82,31 @@
     </teiHeader>
     <text>
         <body>
-            <div type="original" resp="ocr">
-                <p>Epishausen. 3. Febr. 1827. Mit meinem herzlichen Danke für Iren lezten Besuch
-                    folget nun auch der lezthin vergeßene <rs type="bibl"
+            <div type="print" resp="ocr">
+                <p><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043"
+                    >Eppishausen</rs>. 3. Febr. 1827. Mit meinem herzlichen Danke für Iren lezten
+                    Besuch folget nun auch der lezthin vergeßene <rs type="bibl"
                     key="../register/lassberg-literature.xml#lassberg-literature-0049"
                     >Bucelinus</rs>: im lezten Bande werden Sie vererter Freund finden, daß <rs
                     type="place" key="../register/lassberg-places.xml#lassberg-place-0043"
                     >Eppishausen</rs> im <date notBefore="1400" notAfter="1500">xv.
                     iahrhunderte</date> den <rs type="person"
                     key="../register/lassberg-persons.xml#lassberg-correspondent-0395">Ruggen von
-                    Tannek</rs> gehórte und sie sich davon schrieben. Ich ware begierig zu wißen,
+                    Tannek</rs> gehörte und sie sich davon schrieben. Ich wäre begierig zu wißen,
                     wie das zugieng? sollten es die <rs type="person"
                     key="../register/lassberg-persons.xml#lassberg-correspondent-0397">von
-                    Helmsdorf</rs> von inen bekommen haben? das wåre lustig, wenn Hr. <rs
+                    Helmsdorf</rs> von inen bekommen haben? das wäre lustig, wenn Hr. <rs
                     type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0396"
-                    >Heinrich von Rugge</rs> einmal sollte hier gesungen haben! "der winter kan
-                    nicht anders sin, wan swere vnd ane masze lanc: mir were lieb, wolt er zergan,:
-                    was guoter froede ich uf den sumer han, des gistuond nie hoher mir der muot, das
-                    ist ein zit, die minen ougen senfte tuot." das singe ich von ganzem Herzen mit;
-                    aber der auster dux inquietae turpidus adriae bringt uns heute wieder so
-                    fúrchterliches Schneegestóber, dass ich sobald noch keinem Frúling entgegen
-                    sehe. Ich habe es diese ganze nacht schon in meinen Schultern gefúlt und fúle es
-                    noch in meinem steifen arm. Vergeßen Sie nicht daß Krankenbesuch, náchst dem
-                    predigen, die erste pflicht eines guten seelenhirten ist. Vale et fave
-                    Laßbergius Seiner Hocherwürden dem Herren Diaconus Pupicofer zu Bischofszelle
-                    mit einem <rs type="object" key="">paket Bücher</rs></p>
+                    >Heinrich von Rugge</rs> einmal sollte hier gesungen haben! <quote>der winter
+                    kan nicht anders sin, wan swere vnd ane masze lanc: mir were lieb, wolt er
+                    zergan: was guoter froede ich uf den sumer han, des gistuond nie hoher mir der
+                    muot, das ist ein zit, die minen ougen senfte tuot.</quote> das singe ich von
+                    ganzem Herzen mit; aber der auster dux inquietae turpidus adriae bringt uns
+                    heute wieder so fürchterliches Schneegestäber, dass ich sobald noch keinem
+                    Früling entgegen sehe. Ich habe es diese ganze nacht schon in meinen Schultern
+                    gefült und füle es noch in meinem steifen arm. Vergeßen Sie nicht daß
+                    Krankenbesuch, nächst dem predigen, die erste pflicht eines guten seelenhirten
+                    ist. Vale et fave Laßbergerius. </p>
             </div>
             <div type="normalized" resp="GPT3.5">
                 <p>Epishausen, 3. Februar 1827. Mit meinem herzlichen Dank für Ihren letzten Besuch
@@ -123,13 +123,37 @@
                     Frühling entgegensehe. Ich habe es diese ganze Nacht schon in meinen Schultern
                     gefühlt und fühle es noch in meinem steifen Arm. Vergessen Sie nicht, dass
                     Krankenbesuch, neben dem Predigen, die erste Pflicht eines guten Seelenhirten
-                    ist. Vale et fave Laßbergius Seiner Hocherwürden dem Herrn Diaconus Pupicofer zu
-                    Bischofszelle mit einem Paket Bücher</p>
+                    ist. Vale et fave Laßbergius</p>
             </div>
-            <div type="translation" resp="#GPT4"><p>Epishausen, February 3, 1827.
-                
-                With my heartfelt thanks for your last visit, I am now also sending the recently forgotten Bucelinus. In the last volume, my esteemed friend, you will find that in the 15th century, Eppishausen belonged to Ruggen von Tannek, and they wrote themselves from there. I was eager to know how this came about? Could the von Helmsdorf have gotten it from them? It would be amusing if Lord Heinrich von Rugge had once sung here! "The winter cannot be otherwise, when heavy and immeasurably long: I would love for it to pass, how much joy I have for the summer, whose favor never lifts my spirit higher, that is a time, which is gentle to my eyes." I sing this with all my heart; but the oyster, dux inquietae turpidus adriae, brings us such terrible snowstorms today that I still see no spring in sight. I have felt it in my shoulders all night and still feel it in my stiff arm. Do not forget that visiting the sick, next to preaching, is the first duty of a good shepherd of souls. Vale et fave Laßbergius To His Reverence Mr. Diaconus Pupicofer in Bischofszelle with a package of books.</p></div>
-            <div type="summary" resp="#GPT4"><p>In seinem Brief vom 3. Februar 1827 dankt Laßberg für den letzten Besuch des Adressaten und sendet das zuvor vergessene Werk von Bucelinus. Er teilt seine Neugier über die historische Zugehörigkeit Eppishausens im 15. Jahrhundert zu Ruggen von Tannek und deren mögliche Verbindung zu den von Helmsdorf mit. Laßberg zitiert einen Vers, der seine Sehnsucht nach dem Frühling ausdrückt, und kommentiert das aktuelle schwere Schneegestöber, das ihm keine Hoffnung auf baldigen Frühling lässt. Er erinnert den Adressaten daran, dass der Besuch von Kranken neben dem Predigen eine wichtige Pflicht eines Seelsorgers ist. Der Brief endet mit Grüßen und der Erwähnung eines Pakets Bücher für Herrn Pupikofer.</p></div>
+            <div type="translation" resp="#GPT4">
+                <p>Epishausen, February 3, 1827. With my heartfelt thanks for your last visit, I am
+                    now also sending the recently forgotten Bucelinus. In the last volume, my
+                    esteemed friend, you will find that in the 15th century, Eppishausen belonged to
+                    Ruggen von Tannek, and they wrote themselves from there. I was eager to know how
+                    this came about? Could the von Helmsdorf have gotten it from them? It would be
+                    amusing if Lord Heinrich von Rugge had once sung here! "The winter cannot be
+                    otherwise, when heavy and immeasurably long: I would love for it to pass, how
+                    much joy I have for the summer, whose favor never lifts my spirit higher, that
+                    is a time, which is gentle to my eyes." I sing this with all my heart; but the
+                    oyster, dux inquietae turpidus adriae, brings us such terrible snowstorms today
+                    that I still see no spring in sight. I have felt it in my shoulders all night
+                    and still feel it in my stiff arm. Do not forget that visiting the sick, next to
+                    preaching, is the first duty of a good shepherd of souls. Vale et fave
+                    Laßbergius To His Reverence Mr. Diaconus Pupicofer in Bischofszelle with a
+                    package of books.</p>
+            </div>
+            <div type="summary" resp="#GPT4">
+                <p>In seinem Brief vom 3. Februar 1827 dankt Laßberg für den letzten Besuch des
+                    Adressaten und sendet das zuvor vergessene Werk von Bucelinus. Er teilt seine
+                    Neugier über die historische Zugehörigkeit Eppishausens im 15. Jahrhundert zu
+                    Ruggen von Tannek und deren mögliche Verbindung zu den von Helmsdorf mit.
+                    Laßberg zitiert einen Vers, der seine Sehnsucht nach dem Frühling ausdrückt, und
+                    kommentiert das aktuelle schwere Schneegestöber, das ihm keine Hoffnung auf
+                    baldigen Frühling lässt. Er erinnert den Adressaten daran, dass der Besuch von
+                    Kranken neben dem Predigen eine wichtige Pflicht eines Seelsorgers ist. Der
+                    Brief endet mit Grüßen und der Erwähnung eines Pakets Bücher für Herrn
+                    Pupikofer.</p>
+            </div>
         </body>
     </text>
 </TEI>
