@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1323">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Johann Adam Pupikofer (14.06.1829).</title>
+                <respStmt xml:id="MiS">
+                    <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 und GPT-4 normalisiert, zusammengefasst und übersetzt.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Winterthur</settlement>
+                        <repository>Stadtbibliothek</repository>
+                        <idno type="signature">Ms BRH 46/5</idno>
+                        <idno type="register-harris">654</idno>
+                        <idno type="register-lassberg">138</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 15 (1887), S. 231-88, S. 247<ref>https://books.google.de/books?id=dXkKAAAAIAAJ</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1323">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1829-06-14">14.06.1829</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X"
+                        >Johann Adam Pupikofer</persName>
+                    
+                </correspAction>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <!--<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-{PERS_NUMBER}"><rs>{ORIGINAL_STRING_MENTION}</rs></ref>-->
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2024-06-03" who="#MiS" status="done">Text recognized by Transkribus</change>
+                <change when="2024-06-03" who="#MiS" status="done">Text corrected in Transkribus</change>
+                <change when="2024-06-03" who="#MiS" status="done">Exported from Transkribus</change>
+                <change when="2024-06-03" who="#MiS" status="done">Automatic NER</change>
+                <change when="2024-06-03" who="#MiS" status="done">Automatic normalization, translation and summary</change>
+                <change when="" who="" status="draft">Manual markup and proofreading</change>
+                <change when="" who="" status="draft">Finished markup</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="original" resp="#transkribus #MiS">
+                <p>E. am 14. Juny 1829. Ich bin lezthin mein lieber Freund und nachbar! noch so taliter qualiter unter mein Dach gekommen, von dem Jupiter pluvius zwar noch erreicht; aber nicht durchweicht, benezt aber nicht verlezt. Hier folgen die zwei lezten Ochsen, damit das achtgespan vollständig seie. Im lezten bande gefallt der herr obristzunftmeister mir nicht mer; das bestreben den schein eines parteimannes von sich zu entfernen ist zu sichtbar, als daß nicht eine der beabsichtigten entgegengesezte wirkung erfolgen sollte. <rs type="cmif:mentionsPerson">R.J.P.</rs>! Was die Thuringer und das von mir über sie abgeleitete betrift; so eignet sich dies, da wir einander so nahe wonen, besser zu einer mündlichen, als zu einer epistolischen controverse, indessen danke ich Inen für den wiederspruch, der wie ich hoffe, bei näherer verhandlung meine meinung nur noch mer bevestigen soll. Ich weiß wol daß <rs type="cmif:mentionsPerson">Düring</rs> nicht nur zu <rs type="cmif:mentionsPlace">Basel</rs>, sondern an vielen orten in der <rs type="cmif:mentionsPlace">Schweiz</rs>, ja selbst im übrigen <rs type="cmif:mentionsPlace">Teutschland</rs>, ein häufig vorkommender tauf- und vor- name ist: aber wie viele duzend geschlechter haben wir nicht [:selbst ser alte:], deren namen apellative und taufnamen sind? Der Basler <rs type="cmif:mentionsPerson">Türli-Türlin</rs> war aller warscheinlichkeit nach ein Elsässer, wo dieses geschlecht ursprünglich zu hause war. In <rs type="cmif:mentionsPlace">Kleinbasel</rs> sezten sich immer gern auswärtige Edelleute und bildeten eine art von opposition gegen die republicanischen großBasler. Ich danke Inen viel mal, daß auch Sie, wie mein vorausgegangener teurer <rs type="cmif:mentionsPerson">Ittnerus</rs> sagte, nicht nur für sich; sondern auch für Ire freunde lesen; das heisset ja warhaft das beste mit einem teilen; ich werde es, wo ich immer kann zu erwiedern trachten. Das nobile Turegum, multarum copla rerum, will seine literar. schäze nicht von sich geben; auch ich habe noch nichts erhalten. vielleicht mit dem heutigen Arboner botten. Ich wünschte, daß Sie bei mir wären; der augenblik des auspakens ist immer einer der genussreichen, es gehet mir dabei wie dem kürzlich verstorbenen Friedr. <rs type="cmif:mentionsPerson">Schlegel</rs> mit den speisen; zuerst verschlang er sie mit den augen, und dann erst mit dem munde. Daß mir die ankunft der bücher die reiselust vertreiben könnte glaube ich nicht; ich füle eine solche sensucht nach veränderung meiner lebensweise, daß ich warscheinlich einmal plötzlich mich selbst enfüren; oder wie man von d. pferden sagt, mit mir selbst durchgehen werde, und zwar bald; denn nach einem schreiben des alten biderben <rs type="cmif:mentionsPerson">Mülinen</rs> ddto 6 Junij könnten die franz. cod. von <rs type="cmif:mentionsPlace">Bern</rs> bald in der villa <rs type="cmif:mentionsPerson">Eponis</rs> anlangen, dann kommt <rs type="cmif:mentionsPerson">Uhland</rs> und dann bin ich glebae und menbranae adscriptus. H. v. <rs type="cmif:mentionsPerson">Mülinen</rs> schreibt mir auch: daß prof. <rs type="cmif:mentionsPerson">Rud. Wyss</rs> ser krank im Bade zu Schinznach liege und man ser für sein leben fürchte. Sie sehen aus allem diesem mein bester! daß ich mit dem besten willen, doch sobald nicht daran kommen kann, die wünsche des <rs type="cmif:mentionsPerson">H. Dalp</rs> zu erfüllen. Mein neuer hausgenosse von <rs type="cmif:mentionsPlace">Wasserburg</rs>. Der episcopatus Constantiensis. Die franz. msspte. aus <rs type="cmif:mentionsPlace">Bern</rs>. <rs type="cmif:mentionsPerson">Uhland</rs>s hierherkunft und noch eine ganze Litaney alter literarschulden, multorum camelorum onus, wollen vorerst jr alteres recht haben; dann komme ich erst an <rs type="cmif:mentionsPerson">H. Dalp</rs>; aber ich will und werde an in kommen, nur geduld! Von meiner erwerbung der cod. <rs type="cmif:mentionsPlace">Wasserburg</rs>, bin Ich dem publicum doch auch rechenschaft schuldig. Ich habe die literatur eingangs der II. abteilung des <rs type="cmif:mentionsPerson">Wilhelm von Orlienz</rs>, etwa 200 verse abgeschrieben und an <rs type="cmif:mentionsPerson">Uhland</rs> gesendet, von im sollen sie auch nach <rs type="cmif:mentionsPlace">cassel</rs> zu <rs type="cmif:mentionsPerson">Jacob Grimm</rs>, nach <rs type="cmif:mentionsPlace">Göttingen</rs> zu <rs type="cmif:mentionsPerson">Benecke</rs> und nach <rs type="cmif:mentionsPlace">Berlin</rs> zu <rs type="cmif:mentionsPerson">Lachmann</rs> wandern: wärend dem abschreiben gieng mir die poëtische ader auf, und ich wollte die sendung à la <rs type="cmif:mentionsPerson">Schwab</rs> mit einigen Reimen begleiten; gab es aber wieder auf; weil sie mir beim lesen nicht mer so gut gefielen wie beim hinschreiben. Dies war der anfang des impromtu: vil liebü hern vnd fründ min! ich send vch hie ein rennerlin, wann es soll rennen in dü lant durch das es vch wurd erkant, was ich vor kurzen stunden altes nüv hab funden. da by einen schönen grüßz das rennerlin vch bringen müßz von dem alten Lazzbergäre, der schon so manig märe gelesen vnd gefunden hat, vnd aber suchet frü und spat vnd dessen vast vnmüzzig ist, so lang im got sin leben fristt etc. etc. Auch den <rs type="cmif:mentionsPerson">Conrad von Fuozisbrunnen</rs> will h. v. <rs type="cmif:mentionsPerson">Mülinen</rs> schon gefunden haben. Er macht in zu einem herren von <rs type="cmif:mentionsPlace">Signau</rs> denen im XIII. iarhundert <rs type="cmif:mentionsPlace">Füzisbad</rs> [:heutzutag <rs type="cmif:mentionsPlace">Schwendlenbad</rs> in der pfarre <rs type="cmif:mentionsPlace">wyl</rs> bei <rs type="cmif:mentionsPlace">Bern</rs>:] angehörte und im XIV. durch Heurat an die Sennen von <rs type="cmif:mentionsPlace">Münsingen</rs> gelangte. Er möchte [:sagt er:] ein son eines Freiherrn Heinrich von <rs type="cmif:mentionsPlace">Signau</rs> gewesen sein, der 1200 lebte und dessen gemalin mechtild in 2r ehe einen <rs type="cmif:mentionsPerson">Ulrich von Langenstein</rs> heiratete. Es gehet doch nichts über die allzeitfertigen genealogen! Ich erwarte Sie morgen bei guter vormittagszeit, um mir die bücher auspaken zu helfen, die heute kommen sollen. Adieu! und viele grüsse an Ire hausgenossen! Totus quantustuus <rs type="cmif:mentionsPerson">Laßbergius</rs>. Soeben ist die bücherkiste angekommen, sie ist groß und wiegt über 12 Ztr. es giebt also allerley zu schauen, kommen Sie doch morgen; ich werde sie jnen in reihe und glieder aufmarschirt vorstellen die bücher, darf ich bitten den einschluss d. morgigen boten zu besorgen? </p>
+            </div>
+            <div type="normalized" resp="#GPT4">
+                <p></p>
+            </div>
+            <div type="translation" resp="#GPT4">
+                <p></p>
+            </div>
+            <div type="summary" resp="#GPT4">
+                <p></p>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1626">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Johann Adam Pupikofer (17.02.1832).</title>
+                <respStmt xml:id="MiS">
+                    <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 und GPT-4 normalisiert, zusammengefasst und übersetzt.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Winterthur</settlement>
+                        <repository>Stadtbibliothek</repository>
+                        <idno type="signature">Ms BRH 46/5</idno>
+                        <idno type="register-harris">809</idno>
+                        <idno type="register-lassberg">47</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 15 (1887), S. 231-88, S. 270<ref>https://books.google.de/books?id=dXkKAAAAIAAJ</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1626">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1832-02-17">17.02.1832</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X"
+                        >Johann Adam Pupikofer</persName>
+                    
+                </correspAction>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <!--<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-{PERS_NUMBER}"><rs>{ORIGINAL_STRING_MENTION}</rs></ref>-->
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2024-06-03" who="#MiS" status="done">Text recognized by Transkribus</change>
+                <change when="2024-06-03" who="#MiS" status="done">Text corrected in Transkribus</change>
+                <change when="2024-06-03" who="#MiS" status="done">Exported from Transkribus</change>
+                <change when="2024-06-03" who="#MiS" status="done">Automatic NER</change>
+                <change when="2024-06-03" who="#MiS" status="done">Automatic normalization, translation and summary</change>
+                <change when="" who="" status="draft">Manual markup and proofreading</change>
+                <change when="" who="" status="draft">Finished markup</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="original" resp="#transkribus #MiS">
+                <p>E am 17 Hornung 1832. als ich heute in meinem nebenzimmer nach den im vorigen herbste verraumten analectis Fischingensibus suchte, fand ich statt derselben, einen schon am St. Silvester tage ein gepakten und für Sie pro ströna bestimmten kupferstich; den ich auch wirklich abgesandt glaubte. So gehet es den alten und vergesslichen leuten! mit denen man am ende am besten tun würde, sie wie unsere heidnischen vorfaren, hinunter zu schaufeln, damit sie keine dumme streiche mer machen können. Nemen Sie mein lieber nachbar! die kleine gabe auch jezt noch an, als wenn sie zu rechter zeit gekommen wäre und wenn Sie das Bild in Irer stube aufhängen und manchmal ansehen; so denken Sie dabei auch ein oder das andere mal an den alten einsiedler in der <rs type="cmif:mentionsPlace">waldklause</rs>, der Inen und den Irigen nicht nur am neuen jare, sondern alle wochen und tage darin gutes wünscht. Die Fischingischen excerpte habe ich noch nicht gefunden, bin aber gewiss, daß sie nur untergeschoben und nicht verloren sind: der gute <rs type="cmif:mentionsPerson">H Zellweger</rs> würde doch in seinem gegenwärtigen zustande keinen gebrauch davon machen können, und in einigen tagen bin ich versichert sie wieder aufzuspüren. Über eine andere und neuere vergesslichkeit muß ich mich vor Inen anklagen. <rs type="cmif:mentionsPerson">H. Vogler</rs> in <rs type="cmif:mentionsPlace">Frauenfeld</rs> sandte mir 3 sogenannte hetrurische gefässe, welche zu <rs type="cmif:mentionsBibl">Baiae</rs> bei <rs type="cmif:mentionsPlace">Neapel</rs> durch schweizer soldaten ausgegraben wurden, zum ansehen. ich wollte sie nicht zurüksenden, one sie Inen gezeigt zu haben; allein, Ir kurzer aufenthalt am mittwoche, ließ mich nicht daran denken, ich sende sie Inen also jezt zu, damit sie dieselben betrachten können, und bitte Sie nächste woche, wenn Sie nach <rs type="cmif:mentionsPlace">frauenfeld</rs> gehen, dieselben dem <rs type="cmif:mentionsPerson">H. Tobler</rs> wieder zuzustellen. der kopf auf der lampe schien mir anfangs ein Frosch zu sein, weil ich das gefäß verkert in die hand nam, ich hielt es für das zeichen des töpfers der Bätzaye; geheissen habe; allein da ich es umkerte, fand ich einen Perseuskopf, den wol manche andere für einen Mercur, was er nicht ist, halten werden. Das wäre so ein kleiner anfang; oder besser beitrag zu einem künftigen Thurgauischen Museum, adde parvum parvo, magnus acervus erit. Der artikel in der <rs type="">Hallischen L. zeitung</rs> über <rs type="cmif:mentionsPerson">Grimms</rs> rechts altertümer hat mich nicht befriedigt; es ist doch mer inhalts anzeige, als wirkliche recension. Ich sende Inen auch die 2 hefte morgenblätter mit, und bitte mich bei <rs type="cmif:mentionsPerson">H Decan</rs> zu entschuldigen, daß ich sie so lange behalten habe. Wenn Sie wieder von <rs type="cmif:mentionsPlace">Frauenfeld</rs> zurükkommen; so hoffe ich auf einen besuch von Inen und freue mich zu vernemen was die väter des vaterlandes gutes machen. H <rs type="cmif:mentionsPerson">H Anderwert</rs> und Mörikofer bitte ich freundlich von mir zu grüssen. Indessen Gott befolen! von Irem ergebensten <rs type="cmif:mentionsPerson">J. Laßberg</rs>. </p>
+            </div>
+            <div type="normalized" resp="#GPT4">
+                <p></p>
+            </div>
+            <div type="translation" resp="#GPT4">
+                <p></p>
+            </div>
+            <div type="summary" resp="#GPT4">
+                <p></p>
+            </div>
+        </body>
+    </text>
+</TEI>

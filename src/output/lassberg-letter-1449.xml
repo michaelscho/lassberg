@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1449">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Johann Adam Pupikofer (04.06.1830).</title>
+                <respStmt xml:id="MiS">
+                    <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 und GPT-4 normalisiert, zusammengefasst und übersetzt.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Winterthur</settlement>
+                        <repository>Stadtbibliothek</repository>
+                        <idno type="signature">Ms BRH 46/5</idno>
+                        <idno type="register-harris">723</idno>
+                        <idno type="register-lassberg">187</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 15 (1887), S. 231-88, S. 257<ref>https://books.google.de/books?id=dXkKAAAAIAAJ</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1449">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1830-06-04">04.06.1830</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X"
+                        >Johann Adam Pupikofer</persName>
+                    
+                </correspAction>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <!--<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-{PERS_NUMBER}"><rs>{ORIGINAL_STRING_MENTION}</rs></ref>-->
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2024-06-03" who="#MiS" status="done">Text recognized by Transkribus</change>
+                <change when="2024-06-03" who="#MiS" status="done">Text corrected in Transkribus</change>
+                <change when="2024-06-03" who="#MiS" status="done">Exported from Transkribus</change>
+                <change when="2024-06-03" who="#MiS" status="done">Automatic NER</change>
+                <change when="2024-06-03" who="#MiS" status="done">Automatic normalization, translation and summary</change>
+                <change when="" who="" status="draft">Manual markup and proofreading</change>
+                <change when="" who="" status="draft">Finished markup</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="original" resp="#transkribus #MiS">
+                <p>Seiner Hocherwürden Dem Herren Pfarrer Pupikofer Bischofszelle. <rs type="cmif:mentionsPlace">E.</rs> am 4 Junij 1830. Ich sende Inen, mein vererter Herr und nachbar! die <rs type="cmif:mentionsPerson">Angela</rs> mit einem langen oder kurzen <rs type="cmif:mentionsPlace">E.</rs> zurük und um nicht in den verdacht zu kommen, als ob Ich Sie um einen verdienten rum bringen wollte; so enthalte ich mich aller bemerkungen über die einzelheiten der composition, und erlaube mir blos die, jedoch ganz unvorgreifliche, meinungsäusserung, daß es mir in dieser gestalt noch kein so eigentliches gedicht zu sein scheint und einer völligen umarbeitung bedarf; welche Sie sich bei einem so schönen und wirklich poëtischen stoffe, nicht werden reuen lassen, auch das dem <rs type="cmif:mentionsPerson">H. Follen</rs> gegebene versprechen macht es Inen gewissermaßen zum cathegorischen imperativ. Der <rs type="cmif:mentionsBibl">codex traditionum augiae albae</rs> hält mich ser vest und freut mich alle tage mer; ich habe bereits 130 seiten abgeschrieben aber ich habe noch 60 weitere bis zur hälfte; dann mache ich eine pause; daneben arbeiten tapezirer, sattler, maurer und schlosser auf wenige schritte von mir, und machen mir mit allerlei tönen und gerüchen die geduld kurz und die zeit lang, was wollen Sie? man muss leben und leben lassen! <rs type="cmif:mentionsPerson">H. v. Meusebach</rs> hat mir durch einen <rs type="cmif:mentionsPerson">H.</rs> <rs type="cmif:mentionsPerson">David</rs> gessner V.D.M. der von <rs type="cmif:mentionsPlace">Berlin</rs> nach dem nobile <rs type="cmif:mentionsPlace">Turegum</rs> heimgekert ist, zwei literar. seltenheiten gesendet; aber nicht dazu geschrieben. Das eine ist der unvollendete III. band der <rs type="cmif:mentionsBibl">Müllerschen</rs> sammlung, welcher nahe an 25000 verse von <rs type="cmif:mentionsPerson">conrads</rs> v. <rs type="cmif:mentionsPerson">Würzburg</rs> trojanischem Krieg und sonst noch einige gute sachen enthält. Das andere ist <rs type="cmif:mentionsPerson">Kochs</rs> compendium der teutschen literatur. 2 bde. in 8 welches Sie gewiss nicht one vergnügen lesen werden; ausserdem aber giebts nichts neues in Theotiscis. <rs type="cmif:mentionsPerson">Wolffs</rs> volkslieder habe ich schon zu <rs type="cmif:mentionsPerson">H. Kunkler</rs> bibliopega in <rs type="cmif:mentionsPlace">Amrisweil</rs> gesendet um zu sehen wie der man arbeitet? Vollen hat mir auch die zeichnung vom alten klingen geschikt, die aufnahme geschah von der seite der müle und nimmt sich ganz gut aus. diese woche komme ich noch nicht an den <rs type="cmif:mentionsPerson">Walter von klingen</rs>, aber montag wollen wir den erenmann aufs brett nehmen. Sie haben einen ser schönen tag zu Irer reise über den <rs type="cmif:mentionsPlace">Tannenberg</rs> gehabt, und ich bedaure den genuss dieser aussicht nicht mit Inen haben teilen zu können, aber meine handwerksleute werden diese woche noch nicht fertig. Hr. <rs type="cmif:mentionsPerson">Huber</rs> macht viele und große pausen, das fördert nicht. Gestern kam er gar nicht und heute erst abends 4 ur. ich war gestem ein wenig an der sonne, und sie machte mir ser heiss. ich dachte dabei an die gallischen männer, welche jezt auf dem afrikanischen Sande lagern werden und gewiss nicht in die holen hände hauchen. Da am sonntage nicht gearbeitet wird; so könnte es wol sein, daß wir uns auf mittag in <rs type="cmif:mentionsPlace">Hauptwil</rs> antreffen würden. Meine stutte leidet noch immer an einem fuße; es ist ein elend wenn man pferde hat; ich warte mit sensucht auf den augenblik, wo die Dampfwagen allge mein eingefürt werden, um mir auch einen anzuschaffen. Hoffentlich bekommen wir auch noch maschinen, welche wenn sie einmal aufgezogen sind, codices abschreiben; dann will ich mir erst recht wol sein lassen und nichts als briefe schreiben. Leben Sie wol, mit groß und kleinen, die ich alle herzlich grüsse, und vergessen Sie ja nicht mir die appenzeller zeitung mitzubringen; worin <rs type="cmif:mentionsPerson">H.</rs> freimut so strenge gezwaget worden sein soll. Bei <rs type="cmif:mentionsPerson">H.</rs> oberamtmanns viele empfelungen von dem hofpoëten <rs type="cmif:mentionsPerson">Laßberg</rs>. </p>
+            </div>
+            <div type="normalized" resp="#GPT4">
+                <p></p>
+            </div>
+            <div type="translation" resp="#GPT4">
+                <p></p>
+            </div>
+            <div type="summary" resp="#GPT4">
+                <p></p>
+            </div>
+        </body>
+    </text>
+</TEI>

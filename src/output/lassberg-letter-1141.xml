@@ -1,0 +1,85 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1141">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Johann Adam Pupikofer (03.02.1827).</title>
+                <respStmt xml:id="MiS">
+                    <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 und GPT-4 normalisiert, zusammengefasst und übersetzt.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Winterthur</settlement>
+                        <repository>Stadtbibliothek</repository>
+                        <idno type="signature">Ms BRH 46/5</idno>
+                        <idno type="register-harris">570</idno>
+                        <idno type="register-lassberg">28</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 15 (1887), S. 231-88, S. 235<ref>https://books.google.de/books?id=dXkKAAAAIAAJ</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1141">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862">Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1827-02-03">03.02.1827</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X">Johann Adam Pupikofer</persName>
+                    
+                </correspAction>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <!--<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-{PERS_NUMBER}"><rs>{ORIGINAL_STRING_MENTION}</rs></ref>-->
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2024-06-03" who="#MiS" status="done">Text recognized by Transkribus</change>
+                <change when="2024-06-03" who="#MiS" status="done">Text corrected in Transkribus</change>
+                <change when="2024-06-03" who="#MiS" status="done">Exported from Transkribus</change>
+                <change when="2024-06-03" who="#MiS" status="done">Automatic NER</change>
+                <change when="2024-06-03" who="#MiS" status="done">Automatic normalization, translation and summary</change>
+                <change when="" who="" status="draft">Manual markup and proofreading</change>
+                <change when="" who="" status="draft">Finished markup</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="original" resp="#transkribus #MiS">
+                <p><rs type="cmif:mentionsPlace" key="../register/lassberg-places.xml#lassberg-place-0211">Epishausen</rs>. 3. Febr. 1827. Mit meinem herzlichen Danke für Iren lezten Besuch folget nun auch der lezthin vergeßene <rs type="cmif:mentionsPerson" key="./register/lassberg-persons.xml#lassberg-correspondent-0448">Bucelinus</rs>: im lezten Bande werden Sie vererter Freund finden, daß <rs type="cmif:mentionsPlace" key="../register/lassberg-places.xml#lassberg-place-0211">Eppishausen</rs> im xv. jahrhunderte den Ruggen von <rs type="cmif:mentionsPlace">Tannek</rs> gehörte und sie sich davon schrieben. Ich wäre begierig zu wißen, wie das zugieng? sollten es die von <rs type="cmif:mentionsPlace" key="../register/lassberg-places.xml#lassberg-place-0067">Helmsdorf</rs> von inen bekommen haben? das wäre lustig, wenn Hr. <rs type="cmif:mentionsPerson" key="./register/lassberg-persons.xml#lassberg-correspondent-0396">Heinrich von Rugge</rs> einmal sollte hier gesungen haben! "der winter kan nicht anders sin, "wan swere vnd ane masze lanc: "mir were lieb, wolt er zergan: "was guoter froede ich uf den sumer han, "des gistuond nie hoher mir der muot, "das ist ein zit, die minen ougen senfte tuot." das singe ich von ganzem Herzen mit; aber der auster dux inquietae turpidus adriae bringt uns heute wieder so fürchterliches Schneegestäber, dass ich sobald noch keinem Früling entgegen sehe. Ich habe es diese ganze nacht schon in meinen Schultern gefült und füle es noch in meinem steifen arm. Vergeßen Sie nicht daß Krankenbesuch, nächst dem predigen, die erste pflicht eines guten seelenhirten ist. Vale et fave <rs type="cmif:mentionsPerson">Laßbergerius</rs>. </p>
+            </div>
+            <div type="normalized" resp="#GPT4">
+                <p/>
+            </div>
+            <div type="translation" resp="#GPT4">
+                <p/>
+            </div>
+            <div type="summary" resp="#GPT4">
+                <p/>
+            </div>
+        </body>
+    </text>
+</TEI>
