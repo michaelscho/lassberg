@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-2014">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Johann Adam Pupikofer (01.05.1838).</title>
+                <respStmt xml:id="MiS">
+                    <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 und GPT-4 normalisiert, zusammengefasst und übersetzt.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Winterthur</settlement>
+                        <repository>Stadtbibliothek</repository>
+                        <idno type="signature">Ms BRH 46/5</idno>
+                        <idno type="register-harris">986</idno>
+                        <idno type="register-lassberg">117</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 15 (1887), S. 231-88, S. 275<ref>https://books.google.de/books?id=dXkKAAAAIAAJ</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-2014">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1838-05-01">01.05.1838</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X"
+                        >Johann Adam Pupikofer</persName>
+                    
+                </correspAction>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <!--<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-{PERS_NUMBER}"><rs>{ORIGINAL_STRING_MENTION}</rs></ref>-->
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2024-06-03" who="#MiS" status="done">Text recognized by Transkribus</change>
+                <change when="2024-06-03" who="#MiS" status="done">Text corrected in Transkribus</change>
+                <change when="2024-06-03" who="#MiS" status="done">Exported from Transkribus</change>
+                <change when="2024-06-03" who="#MiS" status="done">Automatic NER</change>
+                <change when="2024-06-03" who="#MiS" status="done">Automatic normalization, translation and summary</change>
+                <change when="" who="" status="draft">Manual markup and proofreading</change>
+                <change when="" who="" status="draft">Finished markup</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="original" resp="#transkribus #MiS">
+                <p><rs type="cmif:mentionsPlace">Eppishausen</rs> am 1. May 1838. Vererter freund und nachbar! Ich danke Inen herzlich für den lieben freundlichen brief, den Sie mir durch <rs type="cmif:mentionsPerson">Sonderegger</rs> gesendet haben; obschon ich weit entfernt bin zu glauben, daß Sie ie so tief in meiner schuld staken, als Sie darinne ausgesprochen haben; so tut es doch meinem alten, aber nichts weniger als veralteten herzen, ser wol; ich werde in aufbehalten in dem archive meines herzens, und wenn ich aus den fenstern des ehemaligen bischöfl. Archives zu <rs type="cmif:mentionsPlace">Meersburg</rs>, wo als meiner bücherkammer, doch mein meister aufenthalt sein wird & hinüber schaue in den herrlichen garten der Pomona und des Vertumnus; so will ich denken und mir selbst sagen: da drüben, rechts am fuße des Tannenbergs, wonet doch noch ein mann, von dem ich gewiß weiß, daß er mir wol will und dann wird auch der gedanke meinem alten herzen wieder wol tun: ia ich wage es zu hoffen, daß Sie mer als einmal im laufe des iares über den hellespont faren und den alten einsiedler in der <rs type="cmif:mentionsPlace">Dagoberts burg</rs> freundlich überraschen und mit der gewonten altväterischen hausmannskost vorlieb nemen werden. At mihi seu longum post tempus venerat hospes, Sive operum vacuo gratus conviva per imbrem Vicinus, bene erat, non piscibus urbe petistis, Sed pullo, atque hoedo &cund dann: Aliquando dextrae conjungere dextram Fas erit et notas audire ac reddere voces. Sie sehen, ich kann noch immer, wie ein alter magister, das citiren nicht lassen, aber ohe! jam satis! Ich lese heute in der <rs type="">Constanzer zeitung</rs>, daß am elften May die alte Maculatur des ehemaligen <rs type="">Provincial Archives</rs> im alten Schlosse zu <rs type="cmif:mentionsPlace">Meersburg</rs> versteigert wird. wie wäre es wenn Sie am 10. frühe mit mir dahin gingen, um am nachmittage noch einsicht von dem vorhandenen zu nemen, und den folgenden tag selbst zu kauffen was Sie glauben brauchen zu können. angeblich sollen es einige 30 Zentner sein, und ich glaube nicht, daß der Zentner über 20 bazen, vielleicht noch geringer zu stehen kommen wird. Sie würden dann am abend des 9. hierher kommen, damit wir den folgenden tag recht frühe aufbrechen könnten. Ob ich aber Sie auch wieder nach hause begleiten könnte? kann ich freilich nicht für gewiß versichern. Vielleicht würde freund <rs type="cmif:mentionsPerson">Imhoff</rs> sich entschliessen die kleine reise bei dem schönen wetter mitzumachen, wenn Sie die güte haben wollten mit im davon zu sprechen. Die bücher werde ich in <rs type="cmif:mentionsPlace">Stokach</rs> bestens besorgen; wenn Sie aber ein par der aufgeschriebenen nicht erhalten sollten; so denken Sie nur, ich habe Sie als mir mangelnd, für mich behalten. z.B. <rs type="cmif:mentionsPerson">Wasers</rs> Jahrzeitenbuch und vielleicht <rs type="cmif:mentionsBibl">Goldast Catholicon</rs>. <rs type="cmif:mentionsPerson">Manessen</rs> Minnesänger wird Inen warscheinl. Decan <rs type="cmif:mentionsPerson">Eytenbenz</rs> zu <rs type="cmif:mentionsPlace">Bietingen</rs> wegschnappen, welcher schon lange darauf gespannt hat. Dass Sie das sonst so allgemein brauchbare <rs type="cmif:mentionsBibl">Chronicon Gotwicense</rs>, welches eigentlich keine Chronik; sondern eine geschäzte sammlung diplomatischer abhandlungen ist, welche als Prodromus zu dem nicht erschienenen Chronikon dienen sollten, nicht aufgeschrieben haben wundert mich. Durch <rs type="cmif:mentionsPerson">Wakernagel</rs> habe ich ser angeneme geschenke aus <rs type="cmif:mentionsPlace">Berlin</rs> und <rs type="cmif:mentionsPlace">Göttingen</rs> erhalten. <rs type="cmif:mentionsPerson">Wilh. Grimm</rs> schikt mir sein <rs type="cmif:mentionsBibl">Rolandslied</rs> mit den dazu gehörigen bildern aus dem cod. palat. <rs type="cmif:mentionsPerson">Lachmann</rs> 2 in der academie der Wißenschaften vorgelesene abhandlungen, seine anmerkungen zum <rs type="cmif:mentionsBibl">Nibelungenliede</rs>, und einen neuen <rs type="cmif:mentionsPerson">Gregorius vf dem Steine</rs>, vor welchem freilich <rs type="cmif:mentionsPerson">Greuth</rs> zurüktretten muss. Man kann nicht alles sein und machen! hätte ich gewusst, dass <rs type="cmif:mentionsPerson">Lachmann</rs> Lust zur herausgabe habe; ich würde <rs type="cmif:mentionsPerson">Greuth</rs> nicht dazu angetrieben haben; allein mir lag daran, dass das schönste Gedicht <rs type="cmif:mentionsPerson">Hartmanns v. A.</rs> einmal herauskomme, und wäre es nicht herausgekommen; so würde <rs type="cmif:mentionsPerson">Lachmann</rs> vielleicht noch lange damit gezaudert haben: so hängt im menschlichen leben so viele vom zufall ab. Zugleich mit den <rs type="cmif:mentionsPlace">Berlin</rs>er und Göttinger büchern erhielt ich 2 schriften von <rs type="cmif:mentionsPerson">Jacob Grimm</rs> und <rs type="cmif:mentionsPerson">Dahlmann</rs>, worinne sie die geschichte irer Landesverweisung erzälen. beide konnten weder in <rs type="cmif:mentionsPlace">Leibzig</rs>, noch in <rs type="cmif:mentionsPlace">Stuttgart</rs> das imprimatur erhalten, wurden daher in <rs type="cmif:mentionsPlace">Basel</rs> gedrukt. also ist die Schweizer freiheit doch noch zu etwas gut. die eine schrift, lässt mich einen blik in meines so lieben freundes <rs type="cmif:mentionsPerson">Jacob Gr.</rs> herze tun, welches tief betrübt zu sein scheint, und das tut mir ser leide; denn ein solcher mann sollte über äussere begebenheiten in soweit erhaben bleiben, dass er den innern gleichmut darüber nicht verliert; auch one haus und heimat, hat er am felde der wissenschaften einen reichen aker, und an seiner feder einen wakern pflug; aber mit bekümmertem herzen ist nicht gut akern. Leben Sie wol und geben Sie mir gute antwort wegen <rs type="cmif:mentionsPlace">Meersburg</rs>; sonst kaufe ich den ganzen plunder, dann müssen Sie doch kommen und auslesen; den überrest aber muß ich der <rs type="cmif:mentionsBibl">Dea</rs> cloacina opfern. Viele grüße von uns allen an die Irigen von <rs type="cmif:mentionsPerson">Irem J. Laßberg</rs>. </p>
+            </div>
+            <div type="normalized" resp="#GPT4">
+                <p></p>
+            </div>
+            <div type="translation" resp="#GPT4">
+                <p></p>
+            </div>
+            <div type="summary" resp="#GPT4">
+                <p></p>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1826">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Johann Adam Pupikofer (01.01.1836).</title>
+                <respStmt xml:id="MiS">
+                    <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 und GPT-4 normalisiert, zusammengefasst und übersetzt.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Winterthur</settlement>
+                        <repository>Stadtbibliothek</repository>
+                        <idno type="signature">Ms BRH 46/5</idno>
+                        <idno type="register-harris">888</idno>
+                        <idno type="register-lassberg">1</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 15 (1887), S. 231-88, S. 273<ref>https://books.google.de/books?id=dXkKAAAAIAAJ</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1826">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1836-01-01">01.01.1836</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X"
+                        >Johann Adam Pupikofer</persName>
+                    
+                </correspAction>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <!--<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-{PERS_NUMBER}"><rs>{ORIGINAL_STRING_MENTION}</rs></ref>-->
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2024-06-03" who="#MiS" status="done">Text recognized by Transkribus</change>
+                <change when="2024-06-03" who="#MiS" status="done">Text corrected in Transkribus</change>
+                <change when="2024-06-03" who="#MiS" status="done">Exported from Transkribus</change>
+                <change when="2024-06-03" who="#MiS" status="done">Automatic NER</change>
+                <change when="2024-06-03" who="#MiS" status="done">Automatic normalization, translation and summary</change>
+                <change when="" who="" status="draft">Manual markup and proofreading</change>
+                <change when="" who="" status="draft">Finished markup</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="original" resp="#transkribus #MiS">
+                <p>Seiner Wolerwürden Herrn Diacon <rs type="cmif:mentionsPerson">Pupikofer</rs> zu <rs type="cmif:mentionsPlace">Bischofszelle</rs>. <rs type="cmif:mentionsPlace">Eppishausen</rs> am 1. Januar 1836. Prosit Neu Jar! Da bekanntlich das castrum doloris, sonst auch ofen genannt, in dem hintern und respective obern speisezimmer, lange zuvor geheizt werden muß, ehe er eine warme stube macht; so geschiehet andurch im namen des frommen und loeblichen gynaecäums zu <rs type="cmif:mentionsPlace">Eppishausen</rs> die geziemende anfrage: ob unsere liebe nachbarn, die <rs type="cmif:mentionsBibl">Episcopicellenses</rs> morgen kommen werden, das fest des heiligen <rs type="cmif:mentionsPerson">Berthold</rs> in unserm armen Klösterlein mit uns zu feiern? In erwartung erfreulicher antwort, hat meine frau bereits ein halb klaffter holz in den fornax werfen lassen, auf daß <rs type="cmif:mentionsPerson">Sadrach</rs>, <rs type="cmif:mentionsPerson">Mysach</rs> und <rs type="cmif:mentionsPerson">Abdenago</rs> morgen lobsingend darinne herum spazieren können. In frölicher Erwartung die beiden häuser <rs type="cmif:mentionsPerson">Scherb</rs> & <rs type="cmif:mentionsPerson">Pupicofer</rs> morgen persönlich grüßen zu können. Semper idem <rs type="cmif:mentionsPerson">Laßbergius</rs>. </p>
+            </div>
+            <div type="normalized" resp="#GPT4">
+                <p></p>
+            </div>
+            <div type="translation" resp="#GPT4">
+                <p></p>
+            </div>
+            <div type="summary" resp="#GPT4">
+                <p></p>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1260">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Johann Adam Pupikofer (22.11.1828).</title>
+                <respStmt xml:id="MiS">
+                    <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 und GPT-4 normalisiert, zusammengefasst und übersetzt.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement></settlement>
+                        <repository></repository>
+                        <idno type="signature"></idno>
+                        <idno type="register-harris">616</idno>
+                        <idno type="register-lassberg">?</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 15 (1887), S. 231-88, S. 244<ref>https://books.google.de/books?id=dXkKAAAAIAAJ</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1260">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1828-11-22">22.11.1828</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X"
+                        >Johann Adam Pupikofer</persName>
+                    
+                </correspAction>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <!--<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-{PERS_NUMBER}"><rs>{ORIGINAL_STRING_MENTION}</rs></ref>-->
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2024-06-03" who="#MiS" status="done">Text recognized by Transkribus</change>
+                <change when="2024-06-03" who="#MiS" status="done">Text corrected in Transkribus</change>
+                <change when="2024-06-03" who="#MiS" status="done">Exported from Transkribus</change>
+                <change when="2024-06-03" who="#MiS" status="done">Automatic NER</change>
+                <change when="2024-06-03" who="#MiS" status="done">Automatic normalization, translation and summary</change>
+                <change when="" who="" status="draft">Manual markup and proofreading</change>
+                <change when="" who="" status="draft">Finished markup</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="original" resp="#transkribus #MiS">
+                <p>Hochgeertester Herr! Ich sende Inen hier fürs Erste die bodmerische ausgabe der Pariser Hdschrft der Minnesänger; der Nauclerus ist so schwer und groß, daß ich mich nicht getraue ihn mitzuschiken, und deshalb auf eine freie Gelegenheit warte. Sollten Sie bei lrem heurigen Neujarsblatt (:über <rs type="cmif:mentionsPlace">Bischofszell</rs>:) irgend einen Gegenstand finden, bei welchem Sie vermuthen könnten daß ich im Stande wäre Auskunft zu geben; so stehe ich von ganzem Herzen zu Dienste Ob der Franziskaner <rs type="cmif:mentionsPerson">Berthold</rs> schon um das Jar 1255 in unsern Gegenden gepredigt hat? muß ich schon darum in Zweifel ziehen: weil <rs type="cmif:mentionsPerson">Joh. Vitoduranus</rs> ausdrücklich sagt, daß er Leute gekannt habe, welche ihn predigen hörten. Indessen sind seine Predigten als Teutsche mir allerdings höchst wichtig; weil sie in der Volkssprache gehalten worden sind. da <rs type="cmif:mentionsPerson">Bertold</rs> selbst sie: orationes rusticanas nannte, und ich neme mit dem verbindlichsten Danke den gütigen Antrag an, den Sie mir machen, mir solche ad statum legendi z. übermachen, wozu sich eben jetzt eine Gelegenheit darbietet. Haben Sie die Güte mir zu bemerken, wie bald ich sie zurüksenden soll? Ich habe in diesem Spätherbst eine Ausflucht in den <rs type="cmif:mentionsPlace">Höwgau</rs> und einige Gegenden der <rs type="cmif:mentionsPlace">Donau</rs> gemacht, wo mir einige intereßante Notizen über Minnesänger und selbst urkundliche darunter. zur Ausbeute geworden sind. Habe ich Inen den II. Band des Liedersaales noch nicht überschickt, so kann ich es nun sobald nicht thun; denn von allen noch vorhandenen Exemplaren sind die 12 ersten Bogen verloren gegangen, und werden wol neu gedrukt werden müssen. Indessen glaube ich, daß Inen lieb sein könnte, die vorrede zu demselben zu kennen und lege sie daher bei. Dr. <rs type="cmif:mentionsPerson">Hofmann</rs> in <rs type="cmif:mentionsPlace">Breßlau</rs> gibt den <rs type="cmif:mentionsBibl">Willeram</rs>, teutsche Uebersetzung und Auslegung des Hohen liedes auf Subscription neu heraus, das Exemplar kostet 18 <rs type="cmif:mentionsBibl">Bazen</rs>. Archivar <rs type="cmif:mentionsPerson">Perz</rs> in <rs type="cmif:mentionsPlace">Hannover</rs> hat den V. Band unseres Gesellschafts <rs type="">Archives</rs> herausgegeben, welcher seine auf Kosten der Gesellschaft unternommene Reise nach <rs type="cmif:mentionsPlace">Italien</rs> enthält und voll wichtiger Notizen ist. Ser viele Quellen hat er für die Geschichte der Staufen entdekt, die dem bequemen (:ich möchte lieber sagen faulen:) <rs type="cmif:mentionsPerson">H. v. Raumer</rs> am Wege lagen und von ihm unbeachtet blieben. Wollen Sie jn lesen, so steht er jnen zu Dienste. Künftigen Samstag gehe ich auf einige Tage nach <rs type="cmif:mentionsPlace">Konstanz</rs>, wenn Sie mir das Vergnügen Ires Besuches gönnen wollten; so würde es im Verlauf dieser Woche mir besonders angenem sein. Empfelen Sie mich dem H. Dekan <rs type="cmif:mentionsPerson">Dänniker</rs>, dem ich für seine Notiz über <rs type="cmif:mentionsPerson">Johannes Damascenus</rs> vielmal danke. Mit vollkommener Hochachtung Dero ergebenster <rs type="cmif:mentionsPerson">J. <rs type="cmif:mentionsPerson">Laßberg</rs></rs>. <rs type="cmif:mentionsPlace">Eppishausen</rs> am 22. Nov. 1828. <rs type="cmif:mentionsPlace">Stuttg</rs>. 11. Dec. 1828 Seiner Hocherwürden Herrn <rs type="cmif:mentionsPerson">Diaconus</rs> Puppikofer <rs type="cmif:mentionsPlace">Bischofszell</rs>. Einlage in Herrn v. <rs type="cmif:mentionsPerson">Laßbergs</rs> Brief. Hochverehrtester Herr <rs type="cmif:mentionsPerson">Diaconus</rs>! Nur mit zwei Linien sage ich Inen meinen innigsten Dank für Iren neuen schönen Beitrag zum Burgenwerk, an dem ich kein jota geändert und der mich aufs neue auf jenen köstlichen Spaziergang mit unserm verehrten Freund im Herbst 1825 versetzt hat. Ihre nur allzuflüchtige Bekanntschaft ist mir eine der angenehmsten Erinnerungen unserer Reise. Möchten Sie bald ihren Wanderstab in unser Unterland setzen, damit ich Ihnen durch die That zeigen könnte, wie sehr ich wünschte, mich näher an Sie anzuschließen. Kommen Sie herunter, so bitte ich Sie ernstlich, sichs unter meinem Dache gefallen zu lassen. Wenn mein <rs type="cmif:mentionsPlace">Bodensee</rs> je eine zweite Auflage erleben sollte, so nehme ich Sie beim Wort wegen Zusätzen und Verbesserungen. Ich zweifle aber an diesem Glücke. <rs type="cmif:mentionsPerson">Dalp</rs> druckt bereits an seinem zweiten Theil, u. Ihre Sendung ist nun in seinen Händen. Thun Sie, doch was an Ihnen ist, Herrn v. <rs type="cmif:mentionsPerson">Laßberg</rs> bald zu nöthiger Theilnahme an diesem doch gewiß unterstützenswerthen Unternehmen zu vermögen. Meine l. Frau empfiehlt sich Ihnen und mit mir Ihrer verehrthesten Frau <rs type="cmif:mentionsPerson">Gemahlin</rs> Andenken; küßen Sie uns Ihre Kinder, besonders Ihren blonden wilden Knaben, und grüßen Sie mir alle Ihre Burgen und Berge viel tausendmal. Voll Freundschaft und Hochachtung der Ihrige <rs type="cmif:mentionsPerson">G.</rs> <rs type="cmif:mentionsPerson">Schwab</rs>. </p>
+            </div>
+            <div type="normalized" resp="#GPT4">
+                <p></p>
+            </div>
+            <div type="translation" resp="#GPT4">
+                <p></p>
+            </div>
+            <div type="summary" resp="#GPT4">
+                <p></p>
+            </div>
+        </body>
+    </text>
+</TEI>

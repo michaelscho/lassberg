@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1575">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Johann Adam Pupikofer (23.08.1831).</title>
+                <respStmt xml:id="MiS">
+                    <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 und GPT-4 normalisiert, zusammengefasst und übersetzt.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Winterthur</settlement>
+                        <repository>Stadtbibliothek</repository>
+                        <idno type="signature">Ms BRH 46/5</idno>
+                        <idno type="register-harris">787</idno>
+                        <idno type="register-lassberg">236</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 15 (1887), S. 231-88, S. 270<ref>https://books.google.de/books?id=dXkKAAAAIAAJ</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1575">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1831-08-23">23.08.1831</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X"
+                        >Johann Adam Pupikofer</persName>
+                    
+                </correspAction>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <!--<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-{PERS_NUMBER}"><rs>{ORIGINAL_STRING_MENTION}</rs></ref>-->
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2024-06-03" who="#MiS" status="done">Text recognized by Transkribus</change>
+                <change when="2024-06-03" who="#MiS" status="done">Text corrected in Transkribus</change>
+                <change when="2024-06-03" who="#MiS" status="done">Exported from Transkribus</change>
+                <change when="2024-06-03" who="#MiS" status="done">Automatic NER</change>
+                <change when="2024-06-03" who="#MiS" status="done">Automatic normalization, translation and summary</change>
+                <change when="" who="" status="draft">Manual markup and proofreading</change>
+                <change when="" who="" status="draft">Finished markup</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="original" resp="#transkribus #MiS">
+                <p><rs type="cmif:mentionsPlace">Eppish</rs>. am 23. August 1831. Reverende in <rs type="cmif:mentionsPerson">Christo</rs>! Der gehenkte Herr <rs type="cmif:mentionsPerson">Henking</rs> schreibt mir unterm 14. dieses aus <rs type="cmif:mentionsPlace">Karlsruhe</rs> und schliesset mir den einschluss an Sie an; heute erhalte ich den brief und heute erhalten Sie den einschluß. aus H <rs type="cmif:mentionsPerson">Henking</rs>s brief erfare ich nichts über den hergang der sache; sondern bloß, daß er irgendwo eine anstellung zu erhalten wünscht; wozu er glaubt meine dienste brauchen zu können; was aber der fall nicht sein wird, da ich H. <rs type="cmif:mentionsPerson">Henking</rs> nicht genug kenne, um In empfelen zu können, und auch in der äussern welt keine bekanntschaften mer habe, welche jm nüzen könnten. Ich enthalte mich alles urteils über <rs type="cmif:mentionsPerson">Henking</rs>s geschichte; aber ich bin überzeugt, daß er den lezten schritt früher oder nimmer hätte tun sollen. Inen muß jezt sein, wie mir vorzeiten den andern tag nach einem balle; ich hörte noch immer die musik in meinen oren wiederhallen und Sie werden das wieder- und nachtoenen der gestrigen Lieder noch immer nicht verwinden können. Zu meinem Katharr hat sich heute morgen, wie angeablasen, ein gichtischer Schmerz in der achsel gesellt; ich bin also auch in jeder bewegung des kopfs schmerzlich gehemmt. Hol der teufel das krank sein! wenn es einen am arbeiten hindert! Noch eins! ich verneme daß dieses Jar keine Alpenrosen erscheinen: H <rs type="cmif:mentionsPerson">Follen</rs> ist jezt ein reicher mann geworden, und wird wol die Leyer an die wand hängen. <rs type="cmif:mentionsPerson">Braun</rs> schreibt mir aus <rs type="cmif:mentionsPlace">München</rs> daß er am 20. über <rs type="cmif:mentionsPlace">Bozen</rs>, <rs type="cmif:mentionsPlace">Verona</rs>, <rs type="cmif:mentionsPlace">Venedig</rs>, <rs type="cmif:mentionsPlace">Bologna</rs>, <rs type="cmif:mentionsPlace">Florenz</rs>, <rs type="cmif:mentionsPlace">Pisa</rs>, <rs type="cmif:mentionsPlace">Livorno</rs>, <rs type="cmif:mentionsPlace">Genua</rs>, <rs type="cmif:mentionsPlace">Mayland</rs> die westl. <rs type="cmif:mentionsPlace">Schweiz</rs> nach <rs type="cmif:mentionsPlace">Eppish</rs>ausen reise. In einem alten Schlosse bei <rs type="cmif:mentionsPlace">Botzen</rs> hat man eine menge alte wandgemälde entdekt, welche aus dem Liede der <rs type="cmif:mentionsBibl">Nibelungen</rs>, <rs type="cmif:mentionsBibl">Heldenbuch</rs> &c: szenen darstellen, und in Irer art ser schön sein sollen. Diese will er nun vorzüglich besuchen und untersuchen. Si quid novisti rectius istis, affer; si non, his utere mecum. Vale et fave <rs type="cmif:mentionsPerson">Laszbergio</rs>. </p>
+            </div>
+            <div type="normalized" resp="#GPT4">
+                <p></p>
+            </div>
+            <div type="translation" resp="#GPT4">
+                <p></p>
+            </div>
+            <div type="summary" resp="#GPT4">
+                <p></p>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -88,6 +88,7 @@ class GetDataFromCsv:
         """
         # read in register file
         register = pd.read_csv(os.path.join(os.getcwd(), '..', 'data', 'register', 'register.csv'), sep=';', encoding='cp1252')
+        register = register.fillna('')
         # find row with doc_id
         row = register.loc[register['ID'] == self.doc_id]
         

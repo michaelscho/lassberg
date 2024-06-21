@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-2058">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Johann Adam Pupikofer (13.08.1838).</title>
+                <respStmt xml:id="MiS">
+                    <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 und GPT-4 normalisiert, zusammengefasst und übersetzt.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Winterthur</settlement>
+                        <repository>Stadtbibliothek</repository>
+                        <idno type="signature">Ms BRH 46/5</idno>
+                        <idno type="register-harris">1011</idno>
+                        <idno type="register-lassberg">218</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 15 (1887), S. 231-88, S. 278<ref>https://books.google.de/books?id=dXkKAAAAIAAJ</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-2058">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1838-08-13">13.08.1838</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X"
+                        >Johann Adam Pupikofer</persName>
+                    
+                </correspAction>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <!--<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-{PERS_NUMBER}"><rs>{ORIGINAL_STRING_MENTION}</rs></ref>-->
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2024-06-03" who="#MiS" status="done">Text recognized by Transkribus</change>
+                <change when="2024-06-03" who="#MiS" status="done">Text corrected in Transkribus</change>
+                <change when="2024-06-03" who="#MiS" status="done">Exported from Transkribus</change>
+                <change when="2024-06-03" who="#MiS" status="done">Automatic NER</change>
+                <change when="2024-06-03" who="#MiS" status="done">Automatic normalization, translation and summary</change>
+                <change when="" who="" status="draft">Manual markup and proofreading</change>
+                <change when="" who="" status="draft">Finished markup</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="original" resp="#transkribus #MiS">
+                <p>Seiner Wolerwürden Herren <rs type="cmif:mentionsPerson">Camerer</rs> und Diacon <rs type="cmif:mentionsPerson">Pupicofer</rs>, zu <rs type="cmif:mentionsPlace">Bischofszelle</rs> samt einer kiste bücher enthaltend. <rs type="cmif:mentionsPlace">Eppishausen</rs>, am 13 August 1838. Hier mein hochgeschäzter Freund! kommen endlich die bücher; welche ich gerne früher geschikt hätte, wenn nicht die beinahe täglichen farten an das Seeufer die pferde ununterbrechlich in beschlag nämen: heute haben sie rasttag, also schadet inen die kurze promenade in der abendküle nichts. Ich komme mir vor, wie eine garnison welche aus einer capitulirten vestung abziehet. ie näher der lezte tag rükt, ie mer sträubt man sich; allein, es muß nun einmal sein und da hilft, wie <rs type="cmif:mentionsPerson">Hanswurst</rs> sagt. kein zittern für den frost! Einen schönen, vielleicht den schönsten meiner plane für die zukunft, hat vor kurzem der tod zerstört! mein guter Friz wollte noch 4 iare dienen und dann an einem der ufer des <rs type="cmif:mentionsPlace">Bodensee</rs>'s ganz der wissenschaft leben, unsere vereinte büchersammlungen würden uns vielleicht zu gleichen arbeiten vereinigt haben. Cur, quos jungit amor, fatum disjungis iniquum? Nun Ist mir die alte <rs type="cmif:mentionsPlace">Meersburg</rs> auch viel weniger wert; denn der mit mir gearbeitet, der mich fortgesezt hätte, für den ich gesammelt und gearbeitet hätte, ist nicht mer! möge denn Inen mein freund! mit Irem Ernst ein fröhlicheres geschik bewaret sein. Leben Sie wol und grüßen Sie die Irigen, von Irem nun an leib und seele hinkenden Jv. <rs type="cmif:mentionsPerson">Laßberg</rs>. Sehen Sie <rs type="cmif:mentionsPerson">Scherbs</rs> und <rs type="cmif:mentionsPerson">Imhoff</rs>, so bitte ich sie von uns allen zu grüßen. </p>
+            </div>
+            <div type="normalized" resp="#GPT4">
+                <p></p>
+            </div>
+            <div type="translation" resp="#GPT4">
+                <p></p>
+            </div>
+            <div type="summary" resp="#GPT4">
+                <p></p>
+            </div>
+        </body>
+    </text>
+</TEI>

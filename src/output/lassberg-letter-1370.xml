@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1370">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Johann Adam Pupikofer (24.11.1829).</title>
+                <respStmt xml:id="MiS">
+                    <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 und GPT-4 normalisiert, zusammengefasst und übersetzt.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Winterthur</settlement>
+                        <repository>Stadtbibliothek</repository>
+                        <idno type="signature">Ms BRH 46/5</idno>
+                        <idno type="register-harris">677</idno>
+                        <idno type="register-lassberg">244</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 15 (1887), S. 231-88, S. 249<ref>https://books.google.de/books?id=dXkKAAAAIAAJ</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1370">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1829-11-24">24.11.1829</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X"
+                        >Johann Adam Pupikofer</persName>
+                    
+                </correspAction>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <!--<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-{PERS_NUMBER}"><rs>{ORIGINAL_STRING_MENTION}</rs></ref>-->
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2024-06-03" who="#MiS" status="done">Text recognized by Transkribus</change>
+                <change when="2024-06-03" who="#MiS" status="done">Text corrected in Transkribus</change>
+                <change when="2024-06-03" who="#MiS" status="done">Exported from Transkribus</change>
+                <change when="2024-06-03" who="#MiS" status="done">Automatic NER</change>
+                <change when="2024-06-03" who="#MiS" status="done">Automatic normalization, translation and summary</change>
+                <change when="" who="" status="draft">Manual markup and proofreading</change>
+                <change when="" who="" status="draft">Finished markup</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="original" resp="#transkribus #MiS">
+                <p><rs type="cmif:mentionsPlace">Eppish</rs>. am 24. Nov. 1829. Mit vielem herzlichem danke, senden ich Inen vererter Freund die urkunden wieder zurük, deren Inhalt mir ser merkwürdig war, besonders auch die von 1175 des bischofes berthold, den einige für einen herren von <rs type="cmif:mentionsPlace">Bußnang</rs>, andere für einen von <rs type="cmif:mentionsPlace">Küsnacht</rs> halten; der diaconus de annwilare war doch wol von unserm Annwil? - an der urk. des abtes <rs type="cmif:mentionsPerson">Albr. v. Ramstein</rs>, war mir das Siegel der vögte von <rs type="cmif:mentionsPerson">Stekeboron</rs> ser lieb zu sehen; aber, welches war denn der eigentliche geschlechtsname dieser vögte? - das wappen ist dem der von <rs type="cmif:mentionsPerson">Heydek</rs> ganz änlich; es möchten also diese vögte wol aus (lezterem) hause gewesen sein, auffallend war mir daß <rs type="cmif:mentionsPerson">heinr. v. Klingenberg</rs> ao. 1295 sich nicht verweser der <rs type="cmif:mentionsPlace">Reichenau</rs> nennet, wie er doch sonst tut, der <rs type="cmif:mentionsPerson">Ulr. de Bodemen</rs> in dieser charte ist wol derselbe der Arbon verkauffen half, der <rs type="cmif:mentionsPerson">Berth. de castello</rs> irret mich ser; aber ich glaube doch nicht, daß die jezigen schenken von <rs type="cmif:mentionsPerson">Castell von</rs> jm abstammen, Den abbas <rs type="cmif:mentionsBibl">Crivcelinensis</rs> heisse ich in unserer nähe willkommen, der gute <rs type="cmif:mentionsPerson">Ulr. v. Richenbach</rs> in seiner conciliums gesch: hatte mich irre gefürt und glauben gemacht, daß erst ano: 1414 pabst <rs type="cmif:mentionsPerson">Joh XXII</rs>. dem abt <rs type="cmif:mentionsPerson">Joh.</rs> wild zu <rs type="cmif:mentionsPlace">Kreuzlingen</rs> die infel aufgesezt und dies kloster zuvor nur eine probstei war; ich konnte also auf keinen abt von <rs type="cmif:mentionsPlace">Kreuzlingen</rs> verfallen; doch hatte ich in meinem exemp. der Thurgauer gesch: mit bleistift geschrieben crucelin? Mit eben so viel begirde als freude sehe ich einer weiter ausbeute entgegen, welche ich mir dann auch mitzutheilen bitte; da nun ein mal der schacht dieser reichen fundgrube geöffnet ist, darf man sich noch manches intereßante erwarten. Aus dem geschlechte v. <rs type="cmif:mentionsPerson">Schönenberg</rs> kenne ich keinen sänger, aber ser lieb wäre mir gewesen das siegel dieses <rs type="cmif:mentionsPerson">Friedrichs v. S.</rs> an der urkunde um zu wissen, ob <rs type="cmif:mentionsPerson">Stumpf</rs> inen das rechte wappen gab, das sich so ser von allen mir vorgekommenen schweiz. wappen unterscheidet. Ob <rs type="cmif:mentionsPlace">Lütelahusen</rs> = <rs type="cmif:mentionsPlace">Luterahusen</rs> seie? ist mir zwar ganz warscheinlich; aber noch nicht erwiesen; denn ich kenne ein gleichnamiges nicht weit von <rs type="cmif:mentionsPlace">Markdorf</rs> in pago <rs type="cmif:mentionsPlace">Linzgowe</rs>; auch ist zwischen lütel- und luter ein wesentlicher unterschied. Die drei zierraten im abschnitte des siegels <rs type="cmif:mentionsPerson">heinr. v. Klingenberg</rs>, haben offenbar keine beziehung auf irgend ein wappen. In dem Zürcher archive müßen sich noch genug urkunden mit seinem wappen finden, da er von 1262 bis zu seinem tode 1286 probst daselbst war. wir sehen nun daß unser Regierungsarchiv doch nicht so arm an urkunden ist, um so mer lonet es sich einer durchforschung mit musse und in guter jareszeit. hoffentlich lassen Sie die 3 neu aufgefundenen urkunden jrem cod. diplom. der Thurgauer gesch. beidruken; es sollte mich freuen, wenn Sie auch einiges aus meinem chartulario hiezu brauchen könnten. Ich finde das stille kalte wetter recht ser geeignet zum stubensizzen und arbeiten und habe wie ich glaube, schon vollkommen den winterbalg angezogen wie die füchse und werde auch so in meinem baue liegen bleiben. Von <rs type="cmif:mentionsPerson">grimms</rs> rechts altertümern sende ich Inen den I. bd. für <rs type="cmif:mentionsPerson">H. Mörikofer</rs>; den zweiten, zu welchem ich wirklich anmerkungen mache, die ich <rs type="cmif:mentionsPerson">Jacob Grimm</rs> noch vor neujar senden möchte, bekommt <rs type="cmif:mentionsPerson">H. Mörikofer</rs>, wann er mir den I. zurücktschikt. Und nun? kommen sie auch wieder in die Villa, ich hoffe doch noch vor ende des monates einen besuch. Das lezte mal waren sie auch gar so brav und sind beinahe einen ganzen tag bei mir geblieben, ungerechnet die nacht. Viele grüße an Sie und die Irigen von mir und meinen gästen. Dem herzog <rs type="cmif:mentionsPerson">Ariouestus</rs> ompfehle ich mich in sein frommes gebet. Tu autem vale et fave <rs type="cmif:mentionsPerson">Laßbergio</rs>. </p>
+            </div>
+            <div type="normalized" resp="#GPT4">
+                <p></p>
+            </div>
+            <div type="translation" resp="#GPT4">
+                <p></p>
+            </div>
+            <div type="summary" resp="#GPT4">
+                <p></p>
+            </div>
+        </body>
+    </text>
+</TEI>

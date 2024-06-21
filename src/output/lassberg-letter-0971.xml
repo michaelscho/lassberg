@@ -1,0 +1,85 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-0971">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Johann Adam Pupikofer (11.03.1825).</title>
+                <respStmt xml:id="MiS">
+                    <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 und GPT-4 normalisiert, zusammengefasst und übersetzt.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Winterthur</settlement>
+                        <repository>Stadtbibliothek</repository>
+                        <idno type="signature">Ms BRH 46/5</idno>
+                        <idno type="register-harris">499</idno>
+                        <idno type="register-lassberg">71</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 15 (1887), S. 231-88, S. 231<ref>https://books.google.de/books?id=dXkKAAAAIAAJ</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-0971">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862">Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1825-03-11">11.03.1825</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X">Johann Adam Pupikofer</persName>
+                    
+                </correspAction>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <!--<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-{PERS_NUMBER}"><rs>{ORIGINAL_STRING_MENTION}</rs></ref>-->
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2024-06-03" who="#MiS" status="done">Text recognized by Transkribus</change>
+                <change when="2024-06-03" who="#MiS" status="done">Text corrected in Transkribus</change>
+                <change when="2024-06-03" who="#MiS" status="done">Exported from Transkribus</change>
+                <change when="2024-06-03" who="#MiS" status="done">Automatic NER</change>
+                <change when="2024-06-03" who="#MiS" status="done">Automatic normalization, translation and summary</change>
+                <change when="" who="" status="draft">Manual markup and proofreading</change>
+                <change when="" who="" status="draft">Finished markup</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="original" resp="#transkribus #MiS">
+                <p><rs type="cmif:mentionsPlace" key="../register/lassberg-places.xml#lassberg-place-0211">Eppishausen</rs>, den 11. März 1825. Vererter Herr! Mit der angelegensten Bitte: es mir zu gute zu halten, daß ich Jr Buch so lange behielt und mit dem besten Dank für dessen mir gestatteten Gebrauch, sende ich Inen den IV. Band von <rs type="cmif:mentionsBibl" key="./register/lassberg-literature.xml#lassberg-literature-0010">Raumers Geschichte der Hohenstaufen</rs> hier zurük: die anhaltende Krankheit meines Freundes <rs type="cmif:mentionsPerson" key="./register/lassberg-persons.xml#lassberg-correspondent-0224">v. Ittner</rs>, welche vorgestern mit dessen Hinscheiden endete, erlaubte mir nicht, an Etwas anderes zu denken. Seit gestem Abends bin ich mit seiner Wittwe und Tochter hier angekommen; sie wollen die ersten Tage der Trauer in dieser Einsamkeit zubringen. Gerne würde ich Irem Wunsche entsprechen und Inen den II. Band von <rs type="cmif:mentionsPerson" key="./register/lassberg-persons.xml#lassberg-correspondent-0419">Zapfs Monument</rs>: anecdot: übermachen; allein, ich habe jn nicht und zweifle, ob ein solcher herausgekommen ist; doch habe ich in <rs type="cmif:mentionsPlace" key="../register/lassberg-places.xml#lassberg-place-0012">Augsburg</rs> deshalb Erkundigungen anstellen lassen. Die Handschrift <rs type="cmif:mentionsPerson" key="./register/lassberg-persons.xml#lassberg-correspondent-0379">Trutpert Neugarts</rs> zum II. Band des <rs type="cmif:mentionsBibl" key="./register/lassberg-literature.xml#lassberg-literature-0012">Episcopatus Constantiensis</rs> liegt schon im zweiten Jare bei dem H. <rs type="cmif:mentionsPerson">Graven Mülinen</rs> zu <rs type="cmif:mentionsPlace" key="../register/lassberg-places.xml#lassberg-place-0020">Bern</rs>, welchem der Verfasser sie zur Herausgabe überlaßen hat; aber bei der geschwächten Gesundheit dieses würdigen Mannes, ist wol keine Hofnung zu Bewerkstelligung dieser Herausgabe. Das Gedicht, welches eigentlich nur bis zum Anfange des <rs type="cmif:mentionsBibl" key="./register/lassberg-literature.xml#lassberg-literature-0068">Appenzeller Krieges</rs> reicht, hat weder geschichtlichen noch poët. Werth und würde wol eben so gut ungedruckt geblieben sein, was ich mir die Freiheit nam, dem <rs type="cmif:mentionsPerson" key="./register/lassberg-persons.xml#lassberg-correspondent-0169">H. v. Arx</rs> schon vor mer als drei Jaren zu äußern. Auch aus dem I. Bande von <rs type="cmif:mentionsPerson" key="./register/lassberg-persons.xml#lassberg-correspondent-0467">Anshelms</rs> <rs type="cmif:mentionsPlace" key="../register/lassberg-places.xml#lassberg-place-0020">Bern</rs>erchronik habe ich wenig Trost geschöpft, und ziehe <rs type="cmif:mentionsPerson" key="./register/lassberg-persons.xml#lassberg-correspondent-0377">Justinger</rs> und <rs type="cmif:mentionsPerson" key="./register/lassberg-persons.xml#lassberg-correspondent-0378">Tschachtlan</rs> weit vor. Eine nicht uninteressante Geschichte eines böhmischen Freyherren von <rs type="cmif:mentionsPlace">Rozmital</rs> aus dem xv. Jarhundert sende ich Inen <rs type="cmif:mentionsPerson">von Constanz</rs> aus.  Indeßen leben Sie wol und gedenken Sie zuweilen mit Liebe Ires herzlich betrübten, gehorsamen Dieners. <rs type="cmif:mentionsPerson" key="./register/lassberg-persons.xml#lassberg-correspondent-0373">Joseph v. Laßberg</rs>. </p>
+            </div>
+            <div type="normalized" resp="#GPT4">
+                <p/>
+            </div>
+            <div type="translation" resp="#GPT4">
+                <p/>
+            </div>
+            <div type="summary" resp="#GPT4">
+                <p/>
+            </div>
+        </body>
+    </text>
+</TEI>

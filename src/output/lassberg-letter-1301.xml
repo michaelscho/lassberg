@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1301">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Johann Adam Pupikofer (14.04.1829).</title>
+                <respStmt xml:id="MiS">
+                    <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 und GPT-4 normalisiert, zusammengefasst und übersetzt.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Winterthur</settlement>
+                        <repository>Stadtbibliothek</repository>
+                        <idno type="signature">Ms BRH 46/5</idno>
+                        <idno type="register-harris">639</idno>
+                        <idno type="register-lassberg">74</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 15 (1887), S. 231-88, S. 246<ref>https://books.google.de/books?id=dXkKAAAAIAAJ</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1301">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1829-04-14">14.04.1829</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X"
+                        >Johann Adam Pupikofer</persName>
+                    
+                </correspAction>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <!--<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-{PERS_NUMBER}"><rs>{ORIGINAL_STRING_MENTION}</rs></ref>-->
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2024-06-03" who="#MiS" status="done">Text recognized by Transkribus</change>
+                <change when="2024-06-03" who="#MiS" status="done">Text corrected in Transkribus</change>
+                <change when="2024-06-03" who="#MiS" status="done">Exported from Transkribus</change>
+                <change when="2024-06-03" who="#MiS" status="done">Automatic NER</change>
+                <change when="2024-06-03" who="#MiS" status="done">Automatic normalization, translation and summary</change>
+                <change when="" who="" status="draft">Manual markup and proofreading</change>
+                <change when="" who="" status="draft">Finished markup</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="original" resp="#transkribus #MiS">
+                <p>Seiner Wolerwürden Dem Herrn <rs type="cmif:mentionsPerson">Diaconus Pupikofer</rs> samt 2 päken Bücher franco. <rs type="cmif:mentionsPlace">Bischofszelle. E.</rs> am 14. April 1829. O dies infausta, nigro notanda capillo! - warum mußte ich meinen schon so lange verschobenen besuch in canpo vitifero gerade auf gestern gestellt haben? warum habe ich den tag bei weinenden leuten zugebracht, da ich jn so angenem unter lachenden hatte zubringen können? o fortunati nimium sua si bona norint; aber es gehet alles verkert zu in der welt! Mit dem schlag 8 ur als ich in meine haustüre trat; verkündigte mir meine haushälterin, daß die juridische und medizinische und auch die theologische fakultät ex episcopali cella in 2 und respective 4 personen, den armen alten Einsiedler, der zu gar keiner fakultät gehört, in seinem tugurium haben besuchen wollen. Ich hatte mir gar keine hofnung gemacht Sie mein verertester freund! vor Ostern noch einmal zu sehen, und kam diesmal so hässlich um dieses unerwartete vergnügen!! - auch den herrn Oberamtmann und die 2 liebenswürdigen frauen hätte ich mit vergnügen gesehen; aber mir ist kein glük bescheret. Ich sende mit vielem Danke Inen die geliehenen bücher zurük; sollte ich noch etwas dergleichen von Inen in meiner gewarsame haben; so bitte ich mich daran zu erinnern; denn es ist billig, daß jeder gute christ vor oder in der österlichen zeit sein gewissen rein mache. Ich habe lezte woche über 1500 verse für <rs type="cmif:mentionsPlace">Berlin</rs> abgeschrieben, welche noch auf die ostermesse kommen sollen. Der böse Hagen wird noch machen, daß mir die finger von den händen abfallen. Die 3 quartbände Minnesänger sind laut schreibens des verlegers <rs type="cmif:mentionsPerson">Barth</rs> in <rs type="cmif:mentionsPlace">Leipzig</rs> schon in den lezten tagen des Märzen an mich abgegangen und können also täglich eintreffen, ich bin ser begierig darauf. <rs type="cmif:mentionsPerson">v.d. hagen</rs> giebt mir nachricht von einer neu entdekten Liedersammlung des XIV. Jahrhunderts; die mehr als 100 stüke verschiedener art enthaltet, und wovon er mir eine abschrift anbietet, in dem schwäb. merkur hat Herr Pfarrer <rs type="cmif:mentionsPerson">Jäger</rs>, ohne mein wissen, einen trompetenstoß ins publikum getan, worin er von unsern projekten zu herausgabe histor. quellen spricht. Das siehet so wie eine art von Notzwang aus, die ich mir nicht gern antun lasse, und dies könnte beinahe machen daß ich wieder zurükgienge, denn ich lasse mich nicht gerne von fremden beherrschen. Ueberhaupt ist mir die fraubaserey zuwieder, die alles ausposaunet und so gern von dem spricht, was getan werden will und noch nicht gethan ist. Sonst giebts nichts neues. Schiken Sie mir auch wieder morgenblätter, man schläft so sanft dabei ein, wenn man sie im bette lieset. Viele Grüße an Sie und die Irigen Von Irem ergebensten <rs type="cmif:mentionsPerson">J. Laßberg</rs>. </p>
+            </div>
+            <div type="normalized" resp="#GPT4">
+                <p></p>
+            </div>
+            <div type="translation" resp="#GPT4">
+                <p></p>
+            </div>
+            <div type="summary" resp="#GPT4">
+                <p></p>
+            </div>
+        </body>
+    </text>
+</TEI>

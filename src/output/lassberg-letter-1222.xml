@@ -1,0 +1,85 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1222">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Johann Adam Pupikofer (22.02.1828).</title>
+                <respStmt xml:id="MiS">
+                    <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 und GPT-4 normalisiert, zusammengefasst und übersetzt.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Winterthur</settlement>
+                        <repository>Stadtbibliothek</repository>
+                        <idno type="signature">Ms BRH 46/5</idno>
+                        <idno type="register-harris">597</idno>
+                        <idno type="register-lassberg">28</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 15 (1887), S. 231-88, S. 242<ref>https://books.google.de/books?id=dXkKAAAAIAAJ</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1222">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862">Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1828-02-22">22.02.1828</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X">Johann Adam Pupikofer</persName>
+                    
+                </correspAction>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <!--<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-{PERS_NUMBER}"><rs>{ORIGINAL_STRING_MENTION}</rs></ref>-->
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2024-06-03" who="#MiS" status="done">Text recognized by Transkribus</change>
+                <change when="2024-06-03" who="#MiS" status="done">Text corrected in Transkribus</change>
+                <change when="2024-06-03" who="#MiS" status="done">Exported from Transkribus</change>
+                <change when="2024-06-03" who="#MiS" status="done">Automatic NER</change>
+                <change when="2024-06-03" who="#MiS" status="done">Automatic normalization, translation and summary</change>
+                <change when="" who="" status="draft">Manual markup and proofreading</change>
+                <change when="" who="" status="draft">Finished markup</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="original" resp="#transkribus #MiS">
+                <p>E. am 22. Hornung 1828. Wenn ich schon ganz allein bin; so bin ich doch um kein har einsamer, als ichs bei anwesenheit meiner gäste war; ja ich gewinne noch beträchtlich an zeit, welche ich den gesäzen der gastfreundschaft opfern musste: damit will ich nun eben nichts weniger behaupten, als daß mir jeder besuch von einem vernünftigen und verständigen manne nicht zu jeder stunde erfreulich, von einem freunde aber, eine ware woltat seie. Nun sind aber Sie mein wertester Freund! krank und ich nicht wol; damit können wir freilich einander nicht nahe kommen. Bei mir ist noch ein anderes übel (:für mich eines der größten:) eingetretten; daß nämlich meine rechte hand immer steifer wird und die abscheuliche schrift, die ich jezt schreibe, mich so anekelt, daß mir alles schreiben ganz entleidet. Ich danke Inen für die helvetia und die Kellersche Karte - lezte gefällt mir nicht und das zurükkeren des <rs type="cmif:mentionsPerson" key="./register/lassberg-persons.xml#lassberg-correspondent-0087">H. Kellers</rs> zu perspectivischen vorstellungen der ortschaften wie sie vor 40 iaren mode war, wird niemandem gefallen, der die einzig ware idée von einer Landkarte hat, daß sie ein grundriß sein soll. Was die ottonische münze quaestionis betrift; so habe ich dieselbe in 3 meiner münzbücher gefunden und bin darüber ganz im klaren, daß sie von <rs type="cmif:mentionsPerson">Otto I.</rs> und italienischen schlages ist: darum danke ich Inen nicht weniger für die freundschaftl. gefälligkeit, hiebei an mich gedacht zu haben. Ich danke Inen auch für die nachricht über das Geschlecht v. <rs type="cmif:mentionsPerson">Husen</rs>. Sie wißen, daß ich eine gemalte Scheibe habe, mit dem wappen v. <rs type="cmif:mentionsPerson">Husen</rs> 1575, es intereßirt mich zu wissen, ob es mit dem an Irer urkunde übereinstimmt? <rs type="cmif:mentionsPerson">Zingebär</rs> (:amomum zingiber hinc:) ist offenbar ein apellativer geschlechtsname wie Sie sagen von einem der mit ingwer gehandelt hat. Sie wißen, daß im <rs type="cmif:mentionsBibl" key="./register/lassberg-literature.xml#lassberg-literature-0022">Liedersal</rs> ein Dichter <rs type="cmif:mentionsPerson">Zwingewer</rs> oder <rs type="cmif:mentionsPerson">Zingelber</rs> vorkommt: <rs type="cmif:mentionsPerson">Maßmann</rs> sagt mir, der name heiße in einem wirzburger Codex <rs type="cmif:mentionsPerson">Zwikower</rs>: ich mache noch ein ? hinzu. Nun mein Lieber! auch noch ein par worte von meinem franz: mscrpt. daß ich hofnung habe, vielleicht bald mein eigen nennen zu können. Es ist ein zwar bekanntes, aber ein höchst selten vorkommendes gedicht: <rs type="cmif:mentionsBibl">Le Voen du paon</rs> und besteht aus 3 abteilungen. I. <rs type="cmif:mentionsBibl">le voen du paon</rs>. II. les mariages. III. le rester. Die beiden ersten teile sollen schon 100 jare früher gedichtet worden seien, iean brise barre (:warscheinlich ein Brabanter:) nennt sich als den verf. delezten teiles. Die biographie universelle Tom I. pag. 535 sagt er sei gegen das iar 1330 gestorben; dies verhindert nicht, daß unsere handschrift am ende des XIII. jarhunderts gefertigt worden ist. Übrigens ist das ganze gedicht eine art <rs type="cmif:mentionsBibl">Alexandreis</rs>, und stellet das ritterliche Leben und die cours d’amour in <rs type="cmif:mentionsPlace">frankreich</rs> im XIII. J:h: vor. Die Sprache darin nur selten warhaft poëtisch und erinnert an die leirey der damaligen zeit. Und nun genug für heute und für meine augen - ich sende Inen hiebei mein neuestes, eine strena des H. Prof. <rs type="cmif:mentionsPerson">Schreibers</rs> zu <rs type="cmif:mentionsPlace" key="../register/lassberg-places.xml#lassberg-place-0050">freiburg</rs>. darin sehen Sie woher ich kunde über die franz. handschrift bekam. Tu autem vale et fave <rs type="cmif:mentionsPerson">Laßbergio</rs>. Schiken Sie mir <rs type="cmif:mentionsPerson">Schreibers</rs> programm bald wieder, ich habe noch nicht geantwortet. </p>
+            </div>
+            <div type="normalized" resp="#GPT4">
+                <p/>
+            </div>
+            <div type="translation" resp="#GPT4">
+                <p/>
+            </div>
+            <div type="summary" resp="#GPT4">
+                <p/>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1412">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Johann Adam Pupikofer (10.02.1830).</title>
+                <respStmt xml:id="MiS">
+                    <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 und GPT-4 normalisiert, zusammengefasst und übersetzt.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Winterthur</settlement>
+                        <repository>Stadtbibliothek</repository>
+                        <idno type="signature">Ms BRH 46/5</idno>
+                        <idno type="register-harris">702</idno>
+                        <idno type="register-lassberg">56</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 15 (1887), S. 231-88, S. 253<ref>https://books.google.de/books?id=dXkKAAAAIAAJ</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1412">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1830-02-10">10.02.1830</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X"
+                        >Johann Adam Pupikofer</persName>
+                    
+                </correspAction>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <!--<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-{PERS_NUMBER}"><rs>{ORIGINAL_STRING_MENTION}</rs></ref>-->
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2024-06-03" who="#MiS" status="done">Text recognized by Transkribus</change>
+                <change when="2024-06-03" who="#MiS" status="done">Text corrected in Transkribus</change>
+                <change when="2024-06-03" who="#MiS" status="done">Exported from Transkribus</change>
+                <change when="2024-06-03" who="#MiS" status="done">Automatic NER</change>
+                <change when="2024-06-03" who="#MiS" status="done">Automatic normalization, translation and summary</change>
+                <change when="" who="" status="draft">Manual markup and proofreading</change>
+                <change when="" who="" status="draft">Finished markup</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="original" resp="#transkribus #MiS">
+                <p>E. am 10. Febr. 1830. Was sagen Sie mein lieber freund! zu dem einliegenden Briefe? und was wollen Sie, daß ich dem freiherrn v. <rs type="cmif:mentionsPlace">Müller-Friedberg</rs>, der mich noch zu einem Seigneur d’Eppishausen macht, antworten soll? ich stelle es ganz in Iren willen, ob ich die verlangte recensorische anzeige Irer gesch. des <rs type="cmif:mentionsPlace">Thurgaus</rs> machen soll, oder nicht? Sie wissen, daß ich weder schmeicheln noch heucheln kann, und die verschweigung meines namens habe ich gottlob' noch nie ursache gehabt zu verlangen. Daß Sie mich nicht als einen ungerechten oder neidischen mann kennen, hoffe ich; aber ich gestehe, daß ich ser ungeschickt bin zu loben, was soll ich tun? Soeben erhalte ich Iren brief von gestern, weil der bote stets zu faul ist, über die brücke zu gehen, und was er für mich hat, immer in der Farb zu Erlen abgiebt. Die beiden Rüdenpanzer habe ich angelegt und den einen, der mir nicht zu enge war, behalten, ich denke, es ist der, welcher 34 <rs type="cmif:mentionsBibl">bazen</rs> kostet und lege dieselben hier bei. Ungeachtet ich Inen vorgestern, das was Inen unterwegs begegnen werde vorgesagt habe, [:aber den alten leuten glaubt man nichts mer:] so tut es mir doch leide, daß Sie meinen schlitten nicht angenommen haben; aber ich freue mich hinwieder, daß Ihre gesundheit nicht schaden gelitten. Daß Sie jezt den <rs type="cmif:mentionsBibl">Agathias</rs> ganz ins Teutsche übersezen wollen, kann ich nicht billigen. warten Sie lieber, bis Sie nach einiger zeit im griechischen sich wieder ganz festgesezt haben. Sie werden, wenn Sie diesen Schriftsteller erst ganz bis zum ende gelesen haben, viele und grosse sprachschwierigkeit antreffen. Wenn Sie in aber gleich im ersten sturme von vorn herein zu übersezen anfangen; so wird notwendig eine große ungleichheit des stils entstehen, welche sie am ende einsehen und sich dann gemüssiget sehen werden, die frühere arbeit noch einmal zu machen. Daß Sie mit seinem stile nicht zufrieden sind, wundert mich nicht. Im VI. jarh. waren die Advocaten zu <rs type="cmif:mentionsPlace">Smyrna</rs> blose wortkünstler und obschon man den stil des <rs type="cmif:mentionsBibl">Agathias</rs> lobet [:wie z.B. gerh. <rs type="cmif:mentionsPerson">Voß</rs>:] so finde ich in doch mer geziert, als warhaft zierlich. Ich will die stelle: taaoo vjaua - bei <rs type="cmif:mentionsPerson">Grimm</rs> aufsuchen; halte sie aber nicht für relevant. Wie es denn bel jeder sache etwas zu bedauern giebt; so bedaure ich, daß wir unsere eisfart nicht schon am vormittag begonnen haben; wir hätten mer gesehen und erfaren. Ich meines ortes war dabei ganz vergnügt und habe bei den unzweifelhaft günstigen auspicien an gar keine gefar denken können - obschon sie in der reihe der möglichkeiten lag. wie ein junger und leichtsinniger mensch habe ich meine freude nicht in die brust verschließen können. gestern abends bekomme ich einen brief von einem freunde aus <rs type="cmif:mentionsPlace">Schafhausen</rs>, der mir vorschlägt von <rs type="cmif:mentionsPlace">Konstanz</rs> aus im schlitten auf dem see bis <rs type="cmif:mentionsPlace">Lindau</rs> zu faren: aber das ist nun durch das eingefallene und warscheinlich anhaltende tauwetter unmöglich geworden. Daß der hauptmann <rs type="cmif:mentionsPerson">Zellweger</rs> die »éopoßia hat, nimmt mich nicht wunder; aber seiner frau, ob ich sie gleich nur vom sehen kenne, hätte ich doch mer zugetraut. Wenn es wieder kalt werden sollte, so mache ich doch einen versuch nach <rs type="cmif:mentionsPlace">Meersburg</rs> hinüber zu schlitten; könnten Sie nur mit mir kommen. Solche secular ereignisse muss man benuzen, soviel als man kann; wäre es auch nur denjenigen zu wiedersprechen, die hintendrein lügen. Die Bären brazen folgen hier, mit der bitte, sie in Bischofszelle solen und an dem fußrande mit leder einfassen zu lassen, hinten am fersen muss dieser rand etwas höher sein, zuvor aber müssen sie wieder geflikt werden. auch sende ich Inen das anniversarium Arowiense, welches ich jezt zu benuzen nicht zeit finde. Gestern erhielt ich auch einen brief von <rs type="cmif:mentionsPerson">H. gr. v. Mülinen</rs>, der sich auf 4 quartseiten beklagt, daß er nimmer schreiben kann. er will mir für den Episcopat. constant, aus dem <rs type="">Berner archive</rs> noch merere urkunden senden, und verspricht eine noch größere ausbeute, wenn er wieder bei seinen sammlungen in <rs type="cmif:mentionsPlace">Thun</rs> ist. Er sagt mir daß die <rs type="">HH.</rs> <rs type="cmif:mentionsPerson">v. Klingen</rs> schon 1270 im besize von hohen Twiel waren : also fiel meine vermutung, daß es unter <rs type="cmif:mentionsPerson">Heinrich von <rs type="cmif:mentionsPlace">Klingenberg</rs></rs> dem bischofe erst an das haus <rs type="cmif:mentionsPlace">Klingenberg</rs> gekommen, weg. 1266 war es doch gewiß noch im eigentum König <rs type="cmif:mentionsPerson">Conradins</rs>. Ulr. <rs type="cmif:mentionsPerson">v. Klingen</rs> [:der erbauer <rs type="cmif:mentionsPlace">Klingenau</rs>'s?:] soll es 1167 schon bebesessen haben, sagt <rs type="cmif:mentionsPerson">H. gr. v. Mülinen</rs>. In <rs type="cmif:mentionsPlace">Schafhausen</rs> bemerkte man 22° Kälte, da sind wir noch besser dran. ich glaube jezt wirklich, daß der früling nicht mehr fern sei. so viel für heute. <rs type="cmif:mentionsPlace">Laßberg</rs>. </p>
+            </div>
+            <div type="normalized" resp="#GPT4">
+                <p></p>
+            </div>
+            <div type="translation" resp="#GPT4">
+                <p></p>
+            </div>
+            <div type="summary" resp="#GPT4">
+                <p></p>
+            </div>
+        </body>
+    </text>
+</TEI>
