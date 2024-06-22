@@ -180,11 +180,11 @@ class NamedEntityRecognition:
         print(self.list_of_entities)
         for item in self.list_of_entities:
             if item[1] == 'PER':
-                type = 'cmif:mentionsPerson'
+                type = 'person'
             elif item[1] == 'LOC':
-                type = 'cmif:mentionsPlace'
+                type = 'place'
             elif item[1] == 'MISC':
-                type = 'cmif:mentionsBibl'
+                type = 'bibl'
             else:
                 type = ''
 
@@ -375,12 +375,15 @@ class InsertIdentification:
             elif "(none)" in item:
                 pass
             else:
-                item = item.split("(")
-                item[0] = item[0].strip()
-                item[1] = item[1].replace(")",'')
-                if "," in item[1]:
-                    item[1] = item[1].split(',')[0]  
-                combined_list.append(item)
+                try:
+                    item = item.split("(")
+                    item[0] = item[0].strip()
+                    item[1] = item[1].replace(")",'')
+                    if "," in item[1]:
+                        item[1] = item[1].split(',')[0]  
+                    combined_list.append(item)
+                except:
+                    pass
                 
         return combined_list
         
@@ -394,12 +397,12 @@ class InsertIdentification:
                 #print(rs_element.text)
                 for item in self.identification_results_as_list:
                     if rs_element.text == item[0]:
-                        if rs_element.get('type') == "cmif:mentionsBibl":
-                            prefix = "./register/lassberg-literature.xml#lassberg-literature-"
-                        elif rs_element.get('type') == "cmif:mentionsPlace":
+                        if rs_element.get('type') == "bibl":
+                            prefix = "../register/lassberg-literature.xml#lassberg-literature-"
+                        elif rs_element.get('type') == "place":
                             prefix = "../register/lassberg-places.xml#lassberg-place-"
                         else:
-                            prefix = "./register/lassberg-persons.xml#lassberg-correspondent-"
+                            prefix = "../register/lassberg-persons.xml#lassberg-correspondent-"
 
                         rs_element.set('key', prefix + item[1])
             self.write_letter(root, letter)
