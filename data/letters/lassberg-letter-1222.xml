@@ -24,13 +24,15 @@
                     <msIdentifier>
                         <settlement>Winterthur</settlement>
                         <repository>Stadtbibliothek</repository>
-                        <idno type="signature"></idno>
+                        <idno type="signature"/>
                         <idno type="register-harris">597</idno>
                         <idno type="register-lassberg">28</idno>
                     </msIdentifier>
                     <additional>
-                        <surrogates>
-                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 15 (1887), S. 231-88, S. 242<ref>https://books.google.de/books?id=dXkKAAAAIAAJ</ref></bibl>
+                        <surrogates> <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J.
+                            von Laszberg und Johann Adam Pupikofer. In: Alemannia 15 (1887), S.
+                            231-88, S.
+                            242<ref>https://books.google.de/books?id=dXkKAAAAIAAJ</ref></bibl>
                         </surrogates>
                     </additional>
                 </msDesc>
@@ -40,39 +42,191 @@
             <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
             <correspDesc xml:id="correspDesc-lassberg-letter-1222">
                 <correspAction type="sent">
-                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
-                        >Joseph von Laßberg</persName>
-                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</placeName>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373"
+                        ref="https://d-nb.info/gnd/118778862">Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043"
+                        >Eppishausen</placeName>
                     <date when="1828-02-22">22.02.1828</date>
                 </correspAction>
                 <correspAction type="received">
-                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X"
-                        >Johann Adam Pupikofer</persName>
-                    
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179"
+                        ref="https://d-nb.info/gnd/11565108X">Johann Adam Pupikofer</persName>
+
                 </correspAction>
-                
+
                 <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
                 <note type="mentioned">
-                    <!--<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-{PERS_NUMBER}"><rs>{ORIGINAL_STRING_MENTION}</rs></ref>-->
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0065"
+                        ><rs>Helvetia: Denkwürdigkeiten für die XXII Freistaaten der Schweizerischen
+                        Eidgenossenschaft</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0022"
+                        ><rs>Lieder-Saal, das ist: Sammelung altteutscher Gedichte, Bd.
+                        3,</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0013"
+                        ><rs>Unbekannt</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0078"
+                        ><rs>Biographie universelle ou dictionnaire de tous les hommes</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0079"
+                        ><rs>Alexandreis</rs></ref>
+                    <ref type="unknownType" target=""><rs>Unknown</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0492"
+                        ><rs>Heinrich Keller</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0493"
+                        ><rs>Otto I.</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0494"
+                        ><rs>Husen (Adelsgeschlecht)</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0354"
+                        ><rs>Unbekannt</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0495"
+                        ><rs>Maßmann</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0496"
+                        ><rs>iean brise barre</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0200"
+                        ><rs>Johann Heinrich Nepomuk Schreiber</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0373"
+                        ><rs>Joseph von Laßberg</rs></ref>
+                    <ref type="cmif:mentionsPlace"
+                        target="../register/lassberg-places.xml#lassberg-place-0043"
+                        ><rs>Eppishausen</rs></ref>
+                    <ref type="cmif:mentionsPlace"
+                        target="../register/lassberg-places.xml#lassberg-place-0220"
+                        ><rs>Frankreich</rs></ref>
+                    <ref type="cmif:mentionsPlace"
+                        target="../register/lassberg-places.xml#lassberg-place-0050"><rs>Freiburg i.
+                        Brsg</rs></ref>
                 </note>
             </correspDesc>
         </profileDesc>
     </teiHeader>
     <text>
         <body>
-            <div type="original" resp="ocr">
-                <p>E. am 22. Hornung 1828
-Wenn ich schon ganz allein bin; so bin ich doch um kein har einsamer, als ichs bei anwesenheit meiner gáste war; ja ich gewinne noch betráchtlich an zeit, welche ich den gesázen der gastfreundschaft opfern musste: damit will ich nun eben nichts weniger behaupten, als daß mir jeder besuch von einem vernünftigen und verständigen manne nicht zu jeder stunde erfreulich, von einem freunde aber, eine ware woltat seie. Nun sind aber Sie mein wertester Freund! krank und ich nicht wol; damit können wir freilich einander nicht nahe kommen. Bei mir ist noch ein anderes úbel (:fúr mich eines der größten :) eingetretten; daß námlich meine rechte hand immer steifer wird und die abscheuliche schrift, die ich jezt schreibe, mich so anekelt, daß mir alles schreiben ganz entleidet. Ich danke <rs type="person" key="">Inen</rs> für die helvetia und die Kellersche Karte lezte gefällt mir nicht und das zurúkkeren des <rs type="person" key="">H. Kellers</rs> zu perspectivischen vorstellungeu der ortschaften wie sie vor 40 iaren mode war, wird niemandem gefallen, der die einzig ware idée von einer Landkarte hat, daß sie ein grundriß sein soll. Was die ottonische münze quaestionis betrift; so habe ich dieselbe in 3 meiner münzbúcher gefunden und bin darüber ganz im klaren, daß sie von <rs type="person" key="">Otto I.</rs> und italienischen schlages ist darum danke ich <rs type="person" key="">Inen</rs> nicht weniger für die freundschaftl. gefälligkeit, hiebei an mich gedacht zu haben. Ich danke <rs type="person" key="">Inen</rs> auch für die nachricht über das Geschlecht v. <rs type="person" key="">Husen</rs>. Sie wißen, daß ich eine gemalte Scheibe habe, mit dem wappen v. <rs type="person" key="">Husen</rs> 1575, es intereßirt mich su wissen, ob es mit dem an Irer urkunde übereinstimmt? <rs type="person" key="">Zingebár</rs> (:amomum zingiber hinc:) ist offenbar ein apellativer geschlechtsname wie Sie sagen von einem der mit ingwer gehandelt hat. Sie wißen, daß im <rs type="misc" key="">Liedersal</rs> ein Dichter <rs type="person" key="">Zwingewer</rs> oder <rs type="person" key="">Zingelber</rs> vorkommt: <rs type="person" key="">Maßmann</rs> sagt mir, der name heiße in einem wirzburger Codex <rs type="person" key="">Zwikower</rs>: ich mache noch ein ? hinzu. Nun mein Lieber! auch noch ein par worte von meinem franz: mscrpt. daß ich hofnung habe, vielleicht bald mein eigen nennen zu können. Es ist ein zwar bekanntes, aber ein hóchst selten vorkommendes gedicht: <rs type="misc" key="">Le Voeu du paon</rs> und besteht aus 3 abteilungen. I. le <rs type="misc" key="">voeu du paon</rs>. II. les mariages. III. le rester. Die beiden ersten teile sollen schon 100 jare frúher gedichtet worden seien. iean <rs type="misc" key="">brise barre</rs> (:warscheinlich ein Brabanter:) nennt sich als den verf. des lezten teiles. Die biographie universelle Tom I. pag. 535 sagt er sei gegen das iar 1330 gestorben; dies verhindert nicht, daß unsere handschrift am ende des XIII. iarhunderts gefertigt worden ist. Übrigens ist das ganze gedicht eine art <rs type="misc" key="">Alexandreis</rs>, und stellet das ritterliche Leben und die cours d'amour in <rs type="place" key="">frankreich</rs> im XIII. J: h: vor. Die Sprache ist darin nur selten warhaft poëtisch und erinnert an die leirey der damaligen zeit. Und nun genug für heute und für meine augen ich sende <rs type="person" key="">Inen</rs> hiebei mein neuestes, eine strena des H. Prof. <rs type="person" key="">Schreibers</rs> zu <rs type="place" key="">freiburg</rs>. darin sehen Sie woher ich kunde über die franz. handschrift bekam.
-Tu autem vale et fave <rs type="person" key="">Laßbergio</rs>.
-Schiken Sie mir <rs type="person" key="">Schreibers</rs> programm bald wieder, ich habe noch nicht geantwortet.</p>
+            <div type="original" resp="#transkribus #MiS">
+                <p><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043"
+                    >E.</rs> am 22. Hornung 1828. Wenn ich schon ganz allein bin; so bin ich doch um
+                    kein har einsamer, als ichs bei anwesenheit meiner gäste war; ja ich gewinne
+                    noch beträchtlich an zeit, welche ich den gesäzen der gastfreundschaft opfern
+                    musste: damit will ich nun eben nichts weniger behaupten, als daß mir jeder
+                    besuch von einem vernünftigen und verständigen manne nicht zu jeder stunde
+                    erfreulich, von einem freunde aber, eine ware woltat seie. Nun sind aber Sie
+                    mein wertester Freund! krank und ich nicht wol; damit können wir freilich
+                    einander nicht nahe kommen. Bei mir ist noch ein anderes übel (:für mich eines
+                    der größten:) eingetretten; daß nämlich meine rechte hand immer steifer wird und
+                    die abscheuliche schrift, die ich jezt schreibe, mich so anekelt, daß mir alles
+                    schreiben ganz entleidet. Ich danke Inen für die <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0065">helvetia</rs>
+                    und die <rs type="object">Kellersche Karte</rs> - lezte gefällt mir nicht und
+                    das zurükkeren des <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0492">H.
+                    Kellers</rs> zu perspectivischen vorstellungen der ortschaften wie sie vor 40
+                    iaren mode war, wird niemandem gefallen, der die einzig ware idée von einer
+                    Landkarte hat, daß sie ein grundriß sein soll. Was die <rs type="object"
+                    >ottonische münze</rs> quaestionis betrift; so habe ich dieselbe in 3 meiner
+                    münzbücher gefunden und bin darüber ganz im klaren, daß sie von <rs
+                    type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0493"
+                    >Otto I.</rs> und italienischen schlages ist: darum danke ich Inen nicht weniger
+                    für die freundschaftl. gefälligkeit, hiebei an mich gedacht zu haben. Ich danke
+                    Inen auch für die nachricht über das Geschlecht v. <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0494">Husen</rs>.
+                    Sie wißen, daß ich eine gemalte Scheibe habe, mit dem wappen v. <rs
+                    type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0494"
+                    >Husen</rs> 1575, es intereßirt mich zu wissen, ob es mit dem an Irer <rs
+                    type="object">urkunde</rs> übereinstimmt? Zingebär (:amomum zingiber hinc:) ist
+                    offenbar ein apellativer geschlechtsname wie Sie sagen von einem der mit ingwer
+                    gehandelt hat. Sie wißen, daß im <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0022"
+                    >Liedersal</rs> ein Dichter <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0354">Zwingewer
+                    oder Zingelber</rs> vorkommt: <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0495">Maßmann</rs>
+                    sagt mir, der name heiße in einem <rs type="object">wirzburger Codex</rs>
+                    Zwikower: ich mache noch ein ? hinzu. Nun mein Lieber! auch noch ein par worte
+                    von meinem <rs type="object">franz: mscrpt.</rs> daß ich hofnung habe,
+                    vielleicht bald mein eigen nennen zu können. Es ist ein zwar bekanntes, aber ein
+                    höchst selten vorkommendes gedicht: <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0013">Le Voen du
+                    paon</rs> und besteht aus 3 abteilungen. I. le voen du paon. II. les mariages.
+                    III. le rester. Die beiden ersten teile sollen schon 100 jare früher gedichtet
+                    worden seien, <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0496">iean brise
+                    barre</rs> (:warscheinlich ein Brabanter:) nennt sich als den verf. delezten
+                    teiles. Die <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0078">biographie
+                    universelle</rs> Tom I. pag. 535 sagt er sei gegen das iar 1330 gestorben; dies
+                    verhindert nicht, daß unsere handschrift am ende des XIII. jarhunderts gefertigt
+                    worden ist. Übrigens ist das ganze gedicht eine art <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0079"
+                    >Alexandreis</rs>, und stellet das ritterliche Leben und die cours d’amour in
+                    <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0220"
+                    >frankreich</rs> im XIII. J:h: vor. Die Sprache darin nur selten warhaft
+                    poëtisch und erinnert an die leirey der damaligen zeit. Und nun genug für heute
+                    und für meine augen - ich sende Inen hiebei mein neuestes, eine strena des H.
+                    Prof. <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0200"
+                    >Schreibers</rs> zu <rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0050">freiburg</rs>. darin
+                    sehen Sie woher ich kunde über die <rs type="object">franz. handschrift</rs>
+                    bekam. Tu autem vale et fave <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0373"
+                    >Laßbergio</rs>. Schiken Sie mir <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0200"
+                    >Schreibers</rs> programm bald wieder, ich habe noch nicht geantwortet. </p>
             </div>
             <div type="normalized" resp="GPT3.5">
-                <p>E. am 22. Februar 1828
-
-Wenn ich schon ganz allein bin, so bin ich doch um kein Haar einsamer, als ich es bei Anwesenheit meiner Gäste war; ja, ich gewinne noch beträchtlich an Zeit, welche ich den Gesätzen der Gastfreundschaft opfern musste: damit will ich nun eben nichts weniger behaupten, als dass mir jeder Besuch von einem vernünftigen und verständigen Mann nicht zu jeder Stunde erfreulich, von einem Freund aber, eine wahre Wohltat seie. Nun sind aber Sie, mein wertester Freund, krank und ich nicht wohl; damit können wir freilich einander nicht nahe kommen. Bei mir ist noch ein anderes Übel (für mich eines der größten) eingetreten; dass nämlich meine rechte Hand immer steifer wird und die abscheuliche Schrift, die ich jetzt schreibe, mich so anekelt, dass mir alles Schreiben ganz entleidet. Ich danke Ihnen für die Helvetia und die <rs type="person" key="">Kellers</rs>che Karte. Die letzte gefällt mir nicht und das Zurückeren des Herrn <rs type="person" key="">Kellers</rs> zu perspektivischen Vorstellungen der Ortschaften, wie sie vor 40 Jahren Mode war, wird niemandem gefallen, der die einzige wahre Idee von einer Landkarte hat, dass sie ein Grundriss sein soll. Was die ottonische Münze betrifft, so habe ich dieselbe in 3 meiner Münzbücher gefunden und bin darüber ganz im Klaren, dass sie von <rs type="person" key="">Otto I.</rs> und italienischen Schlages ist. Darum danke ich Ihnen nicht weniger für die freundschaftliche Gefälligkeit, hierbei an mich gedacht zu haben. Ich danke Ihnen auch für die Nachricht über das Geschlecht von <rs type="person" key="">Husen</rs>. Sie wissen, dass ich eine gemalte Scheibe habe mit dem Wappen von <rs type="person" key="">Husen</rs> von 1575. Es interessiert mich zu wissen, ob es mit dem in Ihrer Urkunde übereinstimmt? <rs type="person" key="">Zingebär</rs> (<rs type="misc" key="">Amomum zingiber</rs>, hier in der Bedeutung von) ist offenbar ein appellativer Geschlechtsname, wie Sie sagen, von einem, der mit Ingwer gehandelt hat. Sie wissen, dass in <rs type="place" key="">Liedersal</rs> ein Dichter <rs type="person" key="">Zwingewer</rs> oder <rs type="person" key="">Zingelber</rs> vorkommt: <rs type="person" key="">Maßmann</rs> sagt mir, der Name heiße in einem Würzburger Kodex <rs type="person" key="">Zwikower</rs>: ich mache noch ein Fragezeichen hinzu. Nun, mein Lieber! Auch noch ein paar Worte von meinem französischen Manuskript, das ich Hoffnung habe, vielleicht bald mein Eigen nennen zu können. Es ist zwar bekannt, aber ein höchst selten vorkommendes Gedicht: <rs type="misc" key="">Le Voeu du paon</rs> und besteht aus 3 Abteilungen. I. <rs type="misc" key="">Le voeu du paon</rs>. II. Les <rs type="misc" key="">mariages</rs>. III. <rs type="misc" key="">Le rester</rs>. Die beiden ersten Teile sollen schon 100 Jahre früher gedichtet worden sein. <rs type="person" key="">Jean Brise Barre</rs> (wahrscheinlich ein Brabanter) nennt sich als den Verfasser des letzten Teiles. Die Biographie universelle Tom I, Seite 535 sagt, er sei gegen das Jahr 1330 gestorben; dies verhindert nicht, dass unsere Handschrift am Ende des 13. Jahrhunderts gefertigt worden ist. Übrigens ist das ganze Gedicht eine Art <rs type="misc" key="">Alexandreis</rs> und stellt das ritterliche Leben und die cours d'amour in <rs type="place" key="">Frankreich</rs> im 13. Jh. vor. Die Sprache ist darin nur selten wahrhaft poetisch und erinnert an die Leier der damaligen Zeit. Und nun genug für heute und für meine Augen. Ich sende Ihnen hierbei mein Neuestes, eine Strena des Herrn Prof. <rs type="person" key="">Schreibers</rs> zu <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0050">Freiburg</rs>. Darin sehen Sie, woher ich Kenntnis über die französische Handschrift bekam.
-
-Tu autem vale et fave <rs type="person" key="">Laßbergio</rs>.
-Schicken Sie mir <rs type="person" key="">Schreibers</rs> Programm bald wieder, ich habe noch nicht geantwortet.</p>
+                <p>E. am 22. Februar 1828 Wenn ich schon ganz allein bin, so bin ich doch um kein
+                    Haar einsamer, als ich es bei Anwesenheit meiner Gäste war; ja, ich gewinne noch
+                    beträchtlich an Zeit, welche ich den Gesätzen der Gastfreundschaft opfern
+                    musste: damit will ich nun eben nichts weniger behaupten, als dass mir jeder
+                    Besuch von einem vernünftigen und verständigen Mann nicht zu jeder Stunde
+                    erfreulich, von einem Freund aber, eine wahre Wohltat seie. Nun sind aber Sie,
+                    mein wertester Freund, krank und ich nicht wohl; damit können wir freilich
+                    einander nicht nahe kommen. Bei mir ist noch ein anderes Übel (für mich eines
+                    der größten) eingetreten; dass nämlich meine rechte Hand immer steifer wird und
+                    die abscheuliche Schrift, die ich jetzt schreibe, mich so anekelt, dass mir
+                    alles Schreiben ganz entleidet. Ich danke Ihnen für die Helvetia und die
+                    Kellersche Karte. Die letzte gefällt mir nicht und das Zurückeren des Herrn
+                    Kellers zu perspektivischen Vorstellungen der Ortschaften, wie sie vor 40 Jahren
+                    Mode war, wird niemandem gefallen, der die einzige wahre Idee von einer
+                    Landkarte hat, dass sie ein Grundriss sein soll. Was die ottonische Münze
+                    betrifft, so habe ich dieselbe in 3 meiner Münzbücher gefunden und bin darüber
+                    ganz im Klaren, dass sie von Otto I. und italienischen Schlages ist. Darum danke
+                    ich Ihnen nicht weniger für die freundschaftliche Gefälligkeit, hierbei an mich
+                    gedacht zu haben. Ich danke Ihnen auch für die Nachricht über das Geschlecht von
+                    Husen. Sie wissen, dass ich eine gemalte Scheibe habe mit dem Wappen von Husen
+                    von 1575. Es interessiert mich zu wissen, ob es mit dem in Ihrer Urkunde
+                    übereinstimmt? Zingebär (Amomum zingiber, hier in der Bedeutung von) ist
+                    offenbar ein appellativer Geschlechtsname, wie Sie sagen, von einem, der mit
+                    Ingwer gehandelt hat. Sie wissen, dass in Liedersal ein Dichter Zwingewer oder
+                    Zingelber vorkommt: Maßmann sagt mir, der Name heiße in einem Würzburger Kodex
+                    Zwikower: ich mache noch ein Fragezeichen hinzu. Nun, mein Lieber! Auch noch ein
+                    paar Worte von meinem französischen Manuskript, das ich Hoffnung habe,
+                    vielleicht bald mein Eigen nennen zu können. Es ist zwar bekannt, aber ein
+                    höchst selten vorkommendes Gedicht: Le Voeu du paon und besteht aus 3
+                    Abteilungen. I. Le voeu du paon. II. Les mariages. III. Le rester. Die beiden
+                    ersten Teile sollen schon 100 Jahre früher gedichtet worden sein. Jean Brise
+                    Barre (wahrscheinlich ein Brabanter) nennt sich als den Verfasser des letzten
+                    Teiles. Die Biographie universelle Tom I, Seite 535 sagt, er sei gegen das Jahr
+                    1330 gestorben; dies verhindert nicht, dass unsere Handschrift am Ende des 13.
+                    Jahrhunderts gefertigt worden ist. Übrigens ist das ganze Gedicht eine Art
+                    Alexandreis und stellt das ritterliche Leben und die cours d'amour in Frankreich
+                    im 13. Jh. vor. Die Sprache ist darin nur selten wahrhaft poetisch und erinnert
+                    an die Leier der damaligen Zeit. Und nun genug für heute und für meine Augen.
+                    Ich sende Ihnen hierbei mein Neuestes, eine Strena des Herrn Prof. Schreibers zu
+                    Freiburg. Darin sehen Sie, woher ich Kenntnis über die französische Handschrift
+                    bekam. Tu autem vale et fave Laßbergio. Schicken Sie mir Schreibers Programm
+                    bald wieder, ich habe noch nicht geantwortet.</p>
             </div>
         </body>
     </text>
