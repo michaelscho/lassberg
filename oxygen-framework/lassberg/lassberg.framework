@@ -1144,6 +1144,59 @@
 											<Boolean>false</Boolean>
 										</field>
 									</action>
+									<action>
+										<field name="id">
+											<String>lassberg-add-personGrp</String>
+										</field>
+										<field name="name">
+											<String>Person hinzufügen</String>
+										</field>
+										<field name="description">
+											<String>Fügt xml Snippet für neue Person hinzu</String>
+										</field>
+										<field name="largeIconPath">
+											<String></String>
+										</field>
+										<field name="smallIconPath">
+											<String></String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String></String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>fragment</String>
+																<String>&lt;personGrp xml:id="${xpath_eval(concat('lassberg-correspondent-', format-number(count(//person) + count(//personGrp) + 1, '0000')))}"  xmlns="http://www.tei-c.org/ns/1.0" ref="" type="">
+          &lt;persName type="main">&lt;/persName>
+          &lt;ref target="">&lt;/ref>
+&lt;/personGrp></String>
+															</entry>
+															<entry>
+																<String>insertLocation</String>
+																<String>.</String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
+									</action>
 								</action-array>
 							</field>
 							<field name="menubarDescriptor">

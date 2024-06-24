@@ -53,10 +53,11 @@ listPerson {
     padding-top: 20px;
 }
 
-listPerson:before {
-    content: oxy_button(
-        actionID, 'lassberg-add-person',
-        showIcon, true)
+listPerson:after {
+    content: oxy_buttonGroup(
+    label, 'Add person or personGrp',
+    actionIDs, 'lassberg-add-person, lassberg-add-personGrp'
+)
 }
 
 
@@ -71,7 +72,26 @@ person {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
 }
 
+
+personGrp {
+    display: block;
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #aaa;
+    border-radius: 5px; /* Rounded corners */
+    background-color: #e0e0e0; /* Stronger gray background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
+}
+
 person > persName {
+    display: block;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+personGrp > persName {
     display: block;
     font-weight: bold;
     font-size: 1.2em;
@@ -100,8 +120,36 @@ person:before {
             
             ;
 }
+ 
+personGrp:before {
+ content: oxy_combobox(           
+            edit, "@gender",
+            editable, true,
+            values, "male, female, CorporateBody, none",
+            labels, "male, female, Körperschaft, none")
+            
+            oxy_combobox(           
+            edit, "@type",
+            editable, true,
+            values, "contemporary, historical",
+            labels, "contemporary, historical")
+            
+            oxy_button(
+        actionID, 'lassberg-get-data-from-lobid',
+        showIcon, true)
+            
+            
+            ;
+}
 
 person:after {
+  -oxy-link:attr(ref);
+  content: oxy_label(text, "GND: ", styles, "font-weight:bold;width:70px") oxy_textfield(
+            edit, "@ref") ") ";
+          
+}
+
+personGrp:after {
   -oxy-link:attr(ref);
   content: oxy_label(text, "GND: ", styles, "font-weight:bold;width:70px") oxy_textfield(
             edit, "@ref") ") ";

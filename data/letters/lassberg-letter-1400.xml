@@ -24,13 +24,15 @@
                     <msIdentifier>
                         <settlement>Winterthur</settlement>
                         <repository>Stadtbibliothek</repository>
-                        <idno type="signature"></idno>
+                        <idno type="signature">Ms BRH 46/5</idno>
                         <idno type="register-harris">695</idno>
                         <idno type="register-lassberg">35</idno>
                     </msIdentifier>
                     <additional>
-                        <surrogates>
-                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 15 (1887), S. 231-88, S. 250<ref>https://books.google.de/books?id=dXkKAAAAIAAJ</ref></bibl>
+                        <surrogates> <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J.
+                            von Laszberg und Johann Adam Pupikofer. In: Alemannia 15 (1887), S.
+                            231-88, S.
+                            250<ref>https://books.google.de/books?id=dXkKAAAAIAAJ</ref></bibl>
                         </surrogates>
                     </additional>
                 </msDesc>
@@ -40,43 +42,164 @@
             <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
             <correspDesc xml:id="correspDesc-lassberg-letter-1400">
                 <correspAction type="sent">
-                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
-                        >Joseph von Laßberg</persName>
-                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</placeName>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373"
+                        ref="https://d-nb.info/gnd/118778862">Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043"
+                        >Eppishausen</placeName>
                     <date when="1830-01-26">26.01.1830</date>
                 </correspAction>
                 <correspAction type="received">
-                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X"
-                        >Johann Adam Pupikofer</persName>
-                    
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179"
+                        ref="https://d-nb.info/gnd/11565108X">Johann Adam Pupikofer</persName>
+
                 </correspAction>
-                
+
                 <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
                 <note type="mentioned">
-                    <!--<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-{PERS_NUMBER}"><rs>{ORIGINAL_STRING_MENTION}</rs></ref>-->
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0080"
+                        ><rs>Thurgauer Neujahrsblatt</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0012"
+                        ><rs>Episcopatus Constantiensis Alemannicus sub metropoli Moguntina
+                        chronologice et diplomatice illustratus</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0086"
+                        ><rs>Monumenta Boica</rs></ref>
+                    <ref type="unknownType" target=""><rs>Unknown</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0196"
+                        ><rs>Johann Daniel Wilhelm Hartmann</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0403"
+                        ><rs>Peter Scheitlin</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0199"
+                        ><rs>Johann Friedrich von Cotta</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0169"
+                        ><rs>Ildefons von Arx</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0523"
+                        ><rs>Benedikt (Heiliger)</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0394"
+                        ><rs>Jakob Christoph Scherb</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0373"
+                        ><rs>Joseph von Laßberg</rs></ref>
+                    <ref type="cmif:mentionsPlace"
+                        target="../register/lassberg-places.xml#lassberg-place-0043"
+                        ><rs>Eppishausen</rs></ref>
+                    <ref type="cmif:mentionsPlace"
+                        target="../register/lassberg-places.xml#lassberg-place-0178"
+                        ><rs>Schweiz</rs></ref>
+                    <ref type="cmif:mentionsPlace"
+                        target="../register/lassberg-places.xml#lassberg-place-0141"><rs>St.
+                        Gallen</rs></ref>
+                    <ref type="cmif:mentionsPlace"
+                        target="../register/lassberg-places.xml#lassberg-place-0147"
+                        ><rs>Stuttgart</rs></ref>
+                    <ref type="cmif:mentionsPlace"
+                        target="../register/lassberg-places.xml#lassberg-place-0240"
+                        ><rs>Herisau</rs></ref>
                 </note>
             </correspDesc>
         </profileDesc>
     </teiHeader>
     <text>
         <body>
-            <div type="original" resp="ocr">
-                <p>Eppish. am 26. Januar 1830.
-Vortreflichster οὐκάλεγων!
-Hofentlich sind Sie samstag abends wol bei Iren penaten und bei Iren alten postillen angekommen, aus welehen Sie für den folgenden morgen doch eine oratio pro aris et focis zusamenlesen konnten; was mich anbetrift; so fand ich bei meiner ankunft eine merkwürdige kleine sammlung von zeichnungen und gemålden alter wappen und siegel, welche mir hr. Kupferstecher <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0196">Hartmann</rs>, wie er sagt, auf Ire bestellung zugesendet hat. Da sie mir blos ad videndum mitgeteilt sind; so werde ich sie wol bald zurúksenden múßen; kommen Sie also, wenn auch Sie sie sehen wollen, es ist wol der múhe wert, denn sie sind recht brav und characteristisch gezeichnet es sind lauter schweiz. wappen und Sie werden darunter welche finden, welche wir schon lángst zu kennen wünschten. Die verhandlungen des großen rates zu <rs type="place" key="">St. gallen</rs> habe ich mit vergnügen gelesen, es scheint man will auch dort jede staatsgewalt in die ir gebúrende stellung sezen. Das Neujarsblatt finde ich erbármlich wie aus dem aermel geschüttelt und in aller eile herabgeleiert. soll ich mich irren, wenn ich den etwas schnellen und oft faulen h. Pfrer. <rs type="person" key="">Scheitlin</rs> für den verfasser halte? Heute erhalte ich die nachricht, daß einer meiner áltesten freunde [: von den knabenjaren an:] plózlich und one krank zu sein, verstorben ist. Wol jm, er war ein gerechter und woltátiger mann und gewiß ruhet er sanft in der alten erde. Zugleich erhalte ich einen brief von dem <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0199">H. v. Cotta</rs> aus <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0147">Stuttgart</rs>, welcher alles was ich in betref des epicopatus const. vorgeschlagen habe, genemiget. es wird also ernst mit der sache, und ich für lange an die hobelbank gespannt. Seit 2 tagen hat die vépe iren siz unbeweglich bei uns aufgeschlagen; ich denke also, daß Sie Ihre reise nach <rs type="place" key="">Herisau</rs> auch vertagt haben, und wol auf einen sprung in die waldklause kommen können. Sobald wieder heller himmel. håtte ich lust eine fart ad <rs type="place" key="">st. gallonem</rs> vorzunemen. ich hóre gar nichts mer von meinem guten und lieben Arxius, ob er schon in das große coenobium des heiligen vaters <rs type="person" key="">Benedictus</rs> abgereist oder gegen alle erwartung, wieder auf der besserung ist. Viele grüße an die Irigen und H. Oberamtmanns von <rs type="place" key="">Irem</rs>
-<rs type="person" key="">Josefus Eremita</rs>.
-Die winkelmänner bitte ich zum buchbinder zu schiken, und sich auch ein wenig um die monumenta boica erkundigen zu lassen.</p>
+            <div type="original" resp="#transkribus #MiS">
+                <p><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043"
+                    >Eppish</rs>. am 26. Januar 1830. Vortrefflichster oxéuv Hofentlich sind Sie
+                    samstag abends wol bei Iren penaten und bei Iren alten postillen angekommen, aus
+                    welchen Sie für den folgenden morgen doch eine oratio pro aris et focis
+                    zusamenlesen konnten: was mich anbetrift: so fand ich bei meiner ankunft eine
+                    merkwürdige kleine sammlung von <rs type="object" key="">zeichnungen und
+                    gemälden alter wappen und siegel</rs>, welche mir hr. Kupferstecher <rs
+                    type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0196"
+                    >Hartmann</rs>, wie er sagt, auf Ire bestellung zugesendet hat. Da sie mir blos
+                    ad videndum mitgeteilt sind: so werde ich sie wol bald zurüksenden müßen: kommen
+                    Sie also, wenn auch Sie sie sehen wollen, es ist wol der mühe wert, denn sie
+                    sind recht brav und characteristisch gereichnet es sind lauter <rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0178">schweiz</rs>. wappen
+                    und Sie werden darunter welche finden, welche wir schon längst zu kennen
+                    wünschten. Die verhandlungen des großen rates zu <rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0141">St. gallen</rs> habe
+                    ich mit vergnügen gelesen, es scheint man will auch dort jede staatsgewalt in
+                    die ir gebürende stellung sezen. <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0080">Das
+                    Neujarsblatt</rs> finde ich erbärmlich wie aus dem aermel geschüttelt und in
+                    aller eile herabgeleiert. soll ich mich irren, wenn ich den etwas schnellen und
+                    oft faulen h. Pfrer. <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0403"
+                    >Scheitlin</rs> für den verfasser halte? Heute erhalte ich die nachricht, daß
+                    einer meiner ältesten freunde [:von den knabenjaren an:] plözlich und one krank
+                    zu sein, verstorben ist. Wol jm, er war ein gerechter und woltätiger mann und
+                    gewiß ruhet er sanft in der alten erde. Zugleich erhalte ich einen brief von dem
+                    <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0199">H. v.
+                    Cotta</rs> aus <rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0147">Stuttgart</rs>,
+                    welcher alles was ich in betref des <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0012">epicopatus
+                    const.</rs> vorgeschlagen habe, genemiget, es wird also ernst mit der sache, und
+                    ich für lange an die hobelbank gespannt. Seit 2 tagen hat die «àv iren siz
+                    unbeweglich bei uns aufgeschlagen; ich denke also, daß Sie Ihre reise nach <rs
+                    type="place" key="../register/lassberg-places.xml#lassberg-place-0240"
+                    >Herisau</rs> auch vertagt haben, und wol auf einen sprung in die waldklause
+                    kommen können. Sobald wieder heller himmel, hätte ich lust eine fart ad <rs
+                    type="place" key="../register/lassberg-places.xml#lassberg-place-0141">st.
+                    gallonem</rs> vorzunemen. ich höre gar nichts mer von meinem guten und lieben
+                    <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0169">Arxius</rs>,
+                    ob er schon in das große coenobium des heiligen vaters <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0523"
+                    >Benedictus</rs> abgereist oder gegen alle erwartung, wieder auf der besserung
+                    ist. Viele grüße an die Irigen und <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0394">H.
+                    Oberamtmanns</rs> von Irem <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0373">Josefus
+                    Eremita</rs>. Die winkelmänner bitte ich zum buchbinder zu schiken, und sich
+                    auch ein wenig um die <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0086">monumenta
+                    boica</rs> erkundigen zu lassen. </p>
             </div>
+
             <div type="normalized" resp="GPT3.5">
-                <p>Eppish, am 26. Januar 1830.
-Vortrefflichster Unbekannter!
-
-Hoffentlich sind Sie Samstag abends wohlbehalten bei Ihren Penaten und bei Ihren alten Postillen angekommen, aus welchen Sie für den folgenden Morgen doch eine Oration pro aris et focis zusammengestellt konnten. Was mich betrifft, so fand ich bei meiner Ankunft eine merkwürdige kleine Sammlung von Zeichnungen und Gemälden alter Wappen und Siegel, welche mir Herr Kupferstecher <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0196">Hartmann</rs>, wie er sagt, auf Ihre Bestellung zugesendet hat. Da sie mir bloß zur Ansicht mitgeteilt sind, werde ich sie wohl bald zurückschicken müssen; kommen Sie also, wenn auch Sie sie sehen wollen, es ist wohl der Mühe wert, denn sie sind recht gut und charakteristisch gezeichnet. Es sind lauter Schweizer Wappen und Sie werden darunter welche finden, die wir schon lange zu kennen wünschten. Die Verhandlungen des großen Rates zu <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0141">St. Gallen</rs> habe ich mit Vergnügen gelesen, es scheint man will auch dort jede Staatsgewalt in die ihr gebührende Stellung setzen. Das Neujarsblatt finde ich erbärmlich wie aus dem Ärmel geschüttelt und in aller Eile herabgeleiert. Soll ich mich irren, wenn ich den etwas schnellen und oft faulen Herrn Pfarrer <rs type="person" key="">Scheitlin</rs> für den Verfasser halte? Heute erhalte ich die Nachricht, dass einer meiner ältesten Freunde (von den Knabenjahren an) plötzlich und ohne krank zu sein, verstorben ist. Wohl ihm, er war ein gerechter und wohltätiger Mann und gewiss ruhet er sanft in der alten Erde. Zugleich erhalte ich einen Brief von dem Herrn <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0199">v. Cotta</rs> aus <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0147">Stuttgart</rs>, welcher alles, was ich in Bezug auf den Episkopatus Const. vorgeschlagen habe, genehmigt. Es wird also ernst mit der Sache, und ich bin gespannt. Seit 2 Tagen hat die Kälte Ihren Sitz unbeweglich bei uns aufgeschlagen; ich denke also, dass Sie Ihre Reise nach <rs type="place" key="">Herisau</rs> auch vertagt haben und wohl auf einen Sprung in die <rs type="place" key="">Waldklause</rs> kommen können. Sobald wieder Heller Himmel ist, hätte ich Lust, einen Ausflug nach <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0141">St. Gallen</rs> zu unternehmen. Ich höre gar nichts mehr von meinem guten und lieben Arxius, ob er schon ins große Kloster des heiligen Vaters <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0234">Benedikt</rs> abgereist oder gegen alle Erwartung wieder auf dem Weg der Besserung ist. Viele Grüße an Ihre Lieben und den Herrn Oberamtmann von Ihnen
-
-<rs type="person" key="">Josef Eremita</rs>.
-
-Die Winkelmänner bitte ich zum Buchbinder zu schicken und sich auch ein wenig nach den <rs type="misc" key="">Monumenta Boica</rs> zu erkundigen.</p>
+                <p>Eppish, am 26. Januar 1830. Vortrefflichster Unbekannter! Hoffentlich sind Sie
+                    Samstag abends wohlbehalten bei Ihren Penaten und bei Ihren alten Postillen
+                    angekommen, aus welchen Sie für den folgenden Morgen doch eine Oration pro aris
+                    et focis zusammengestellt konnten. Was mich betrifft, so fand ich bei meiner
+                    Ankunft eine merkwürdige kleine Sammlung von Zeichnungen und Gemälden alter
+                    Wappen und Siegel, welche mir Herr Kupferstecher Hartmann, wie er sagt, auf Ihre
+                    Bestellung zugesendet hat. Da sie mir bloß zur Ansicht mitgeteilt sind, werde
+                    ich sie wohl bald zurückschicken müssen; kommen Sie also, wenn auch Sie sie
+                    sehen wollen, es ist wohl der Mühe wert, denn sie sind recht gut und
+                    charakteristisch gezeichnet. Es sind lauter Schweizer Wappen und Sie werden
+                    darunter welche finden, die wir schon lange zu kennen wünschten. Die
+                    Verhandlungen des großen Rates zu St. Gallen habe ich mit Vergnügen gelesen, es
+                    scheint man will auch dort jede Staatsgewalt in die ihr gebührende Stellung
+                    setzen. Das Neujarsblatt finde ich erbärmlich wie aus dem Ärmel geschüttelt und
+                    in aller Eile herabgeleiert. Soll ich mich irren, wenn ich den etwas schnellen
+                    und oft faulen Herrn Pfarrer Scheitlin für den Verfasser halte? Heute erhalte
+                    ich die Nachricht, dass einer meiner ältesten Freunde (von den Knabenjahren an)
+                    plötzlich und ohne krank zu sein, verstorben ist. Wohl ihm, er war ein gerechter
+                    und wohltätiger Mann und gewiss ruhet er sanft in der alten Erde. Zugleich
+                    erhalte ich einen Brief von dem Herrn v. Cotta aus Stuttgart, welcher alles, was
+                    ich in Bezug auf den Episkopatus Const. vorgeschlagen habe, genehmigt. Es wird
+                    also ernst mit der Sache, und ich bin gespannt. Seit 2 Tagen hat die Kälte Ihren
+                    Sitz unbeweglich bei uns aufgeschlagen; ich denke also, dass Sie Ihre Reise nach
+                    Herisau auch vertagt haben und wohl auf einen Sprung in die Waldklause kommen
+                    können. Sobald wieder Heller Himmel ist, hätte ich Lust, einen Ausflug nach St.
+                    Gallen zu unternehmen. Ich höre gar nichts mehr von meinem guten und lieben
+                    Arxius, ob er schon ins große Kloster des heiligen Vaters Benedikt abgereist
+                    oder gegen alle Erwartung wieder auf dem Weg der Besserung ist. Viele Grüße an
+                    Ihre Lieben und den Herrn Oberamtmann von Ihnen Josef Eremita. Die Winkelmänner
+                    bitte ich zum Buchbinder zu schicken und sich auch ein wenig nach den Monumenta
+                    Boica zu erkundigen.</p>
             </div>
+
         </body>
     </text>
 </TEI>
