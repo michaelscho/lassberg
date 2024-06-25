@@ -215,3 +215,33 @@ FOREACH (item IN CASE WHEN ref.type = "cmif:mentionsBibl" THEN [1] ELSE [] END |
     MERGE (l)-[:MENTIONS]->(b)
 )
 RETURN l;
+
+// Add normalized text to nodes
+// Add text nodes
+WITH ["0952", "0966", "0971", "0993", "1015", "1039", "1044", "1051", "1077", "1131", "1132", "1137", "1138", "1141", "1146", "1151", "1153", "1154", "1157", "1159", "1164", "1165", "1166", "1167", "1170", "1171", "1175", "1186", "1204", "1222", "1247", "1260", "1301", "1323", "1370", "1400", "1408"] AS letterIDs
+
+// Unwind the list to process each letter ID
+UNWIND letterIDs AS letterID
+
+// Load the XML for the current letter
+// Match or create the letter node
+MERGE (l:Letter {id: "lassberg-letter-" + letterID})
+WITH l, letterID
+
+CALL apoc.load.xml('https://raw.githubusercontent.com/michaelscho/lassberg/main/data/letters/lassberg-letter-' + letterID + '.xml')
+YIELD value 
+
+// Navigate through the XML to extract both mentions and the normalized text
+UNWIND value._children AS child
+WITH l, child
+WHERE child._type = "text"
+UNWIND child._children AS grandChild
+WITH l, grandChild
+WHERE grandChild._type = "body"
+UNWIND grandChild._children AS body
+WITH l, body
+WHERE body.type = "normalized"
+UNWIND body._children AS text
+WITH l, text
+SET l.normalizedText = text._text
+RETURN l, text
