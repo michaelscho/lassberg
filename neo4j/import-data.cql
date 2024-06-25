@@ -119,13 +119,21 @@ MERGE (l)-[:RECEIVES]->(receiver)
 
 // Connect letter to sending place
 MERGE (l)-[:SENT_FROM]->(sendingPlace)
-<<<<<<< HEAD
 
 RETURN l;
 
-// Attempt to load the XML file TODO create batch import
-MATCH (l:Letter {id: "lassberg-letter-0952"})
-CALL apoc.load.xml('https://raw.githubusercontent.com/michaelscho/lassberg/main/data/letters/lassberg-letter-0952.xml') 
+// Define the list of letter IDs
+WITH ["0952", "0966", "0971", "0993", "1015", "1039", "1044", "1051", "1077", "1131", "1132", "1137", "1138", "1141", "1146", "1151", "1153", "1154", "1157", "1159", "1164", "1165", "1166", "1167", "1170", "1171", "1175", "1186", "1204", "1222", "1247", "1260", "1301", "1323", "1370", "1400", "1408"] AS letterIDs
+
+// Unwind the list to process each letter ID
+UNWIND letterIDs AS letterID
+
+// Match or create the letter node
+MERGE (l:Letter {id: letterID})
+WITH l, letterID
+
+// Load the XML for the current letter
+CALL apoc.load.xml('https://raw.githubusercontent.com/michaelscho/lassberg/main/data/letters/lassberg-letter-' + letterID + '.xml')
 YIELD value 
 UNWIND value._children AS child
 WITH l,child
@@ -162,44 +170,48 @@ FOREACH (item IN CASE WHEN ref.type = "cmif:mentionsBibl" THEN [1] ELSE [] END |
     MERGE (l)-[:MENTIONS]->(b)
 )
 RETURN l;
-=======
 
-RETURN l;
+// Create letters
+// Define the list of letter IDs
+WITH ["0952", "0966", "0971", "0993", "1015", "1039", "1044", "1051", "1077", "1131", "1132", "1137", "1138", "1141", "1146", "1151", "1153", "1154", "1157", "1159", "1164", "1165", "1166", "1167", "1170", "1171", "1175", "1186", "1204", "1222", "1247", "1260", "1301", "1323", "1370", "1400", "1408"] AS letterIDs
 
-// Load in mentiones in letters
-// Iterate through each letter
-MATCH (l:Letter)
-WITH l, 'https://raw.githubusercontent.com/michaelscho/lassberg/main/data/letters/' + l.id + '.xml' AS url
+// Unwind the list to process each letter ID
+UNWIND letterIDs AS letterID
 
-// Attempt to load the XML file
-CALL apoc.load.xml(url, null, {failOnError: false}) 
-YIELD value AS xmlFile
-WITH l, url, xmlFile, xmlFile IS NOT NULL AS fileExists
-SET l.processed = fileExists
+// Match or create the letter node
+MERGE (l:Letter {id: letterID})
+WITH l, letterID
 
-// Proceed only if the XML file exists
-WITH l, url, xmlFile
-WHERE l.processed AND xmlFile IS NOT NULL
-UNWIND xmlFile._children AS child
-WITH l, child
-WHERE child._type = "note" AND child.type = "mentioned"
-UNWIND child._children AS ref
+// Load the XML for the current letter
+CALL apoc.load.xml('https://raw.githubusercontent.com/michaelscho/lassberg/main/data/letters/lassberg-letter-' + letterID + '.xml')
+
+YIELD value 
+UNWIND value._children AS child
+WITH l,child
+WHERE child._type = "teiHeader"
+UNWIND child._children AS grandChild
+WITH l,grandChild
+WHERE grandChild._type = "profileDesc"
+UNWIND grandChild._children AS profileDesc
+WITH l,profileDesc
+WHERE profileDesc._type = "correspDesc"
+UNWIND profileDesc._children AS correspDesc
+WITH l,correspDesc
+WHERE correspDesc._type = "note"
+UNWIND correspDesc._children AS ref
 WITH l, ref
-WHERE ref._type IN ["cmif:mentionsPerson", "cmif:mentionsPlace", "cmif:mentionsBibl"]
 
 // Create or find the mentioned nodes and link them to the letter
-FOREACH (item IN CASE WHEN ref._type = "cmif:mentionsPerson" THEN [1] ELSE [] END |
+FOREACH (item IN CASE WHEN ref.type = "cmif:mentionsPerson" THEN [1] ELSE [] END |
     MERGE (p:Person {id: apoc.text.replace(ref.target, '../register/lassberg-persons.xml#', '')})
     MERGE (l)-[:MENTIONS]->(p)
 )
-FOREACH (item IN CASE WHEN ref._type = "cmif:mentionsPlace" THEN [1] ELSE [] END |
+FOREACH (item IN CASE WHEN ref.type = "cmif:mentionsPlace" THEN [1] ELSE [] END |
     MERGE (place:Place {id: apoc.text.replace(ref.target, '../register/lassberg-places.xml#', '')})
     MERGE (l)-[:MENTIONS]->(place)
 )
-FOREACH (item IN CASE WHEN ref._type = "cmif:mentionsBibl" THEN [1] ELSE [] END |
+FOREACH (item IN CASE WHEN ref.type = "cmif:mentionsBibl" THEN [1] ELSE [] END |
     MERGE (b:Bibl {id: apoc.text.replace(ref.target, '../register/lassberg-literature.xml#', '')})
     MERGE (l)-[:MENTIONS]->(b)
 )
 RETURN l;
-
->>>>>>> b0b5098e8503640eb7d6ef5749b7b9a45c69bd1a
