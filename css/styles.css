@@ -1,0 +1,77 @@
+/* General Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  padding: 20px;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 35vh; /* Adjust the height as needed */
+  overflow: hidden;
+}
+
+.hero-image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-position: top;
+  object-fit: cover; /* Keeps the image proportionate while filling the section */
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.hero-title {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+/* Alternating colors for main rows */
+.odd-row {
+  background-color: #ffffff; /* White */
+}
+.even-row {
+  background-color: #f6f6f6; /* Light gray */
+}
+
+/* Collapsible rows */
+.collapsible-row {
+  background-color: #f9f9f9; /* Light background for collapsible content */
+  border-top: 1px solid #ddd; /* Subtle border for clarity */
+}
+
+/* Disable animations for faster expand/collapse */
+.collapse {
+  display: none;
+  transition: none !important;
+}
+
+.collapse.show {
+  display: table-row;
+}
+
