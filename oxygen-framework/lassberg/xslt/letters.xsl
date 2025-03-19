@@ -28,7 +28,7 @@
                                         <a class="nav-link" href="../index.html">Welcome</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="/html/letters.html">Letters</a>
+                                        <a class="nav-link" href="/lassberg/html/letters.html">Letters</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link"
@@ -110,7 +110,7 @@
             
             <xsl:choose>
                 <xsl:when test="@change='online'">
-                    <a href="/html/letters/{@key}.html" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Open Letter</a>
+                    <a href="/lassberg/html/letters/{@key}.html" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Open Letter</a>
                 </xsl:when>
             </xsl:choose>
               
