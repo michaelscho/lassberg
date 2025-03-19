@@ -1,36 +1,39 @@
-<?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1449">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Brief von Joseph von Laßberg an Johann Adam Pupikofer (04.06.1830).</title>
-                <respStmt>
+                <respStmt xml:id="MiS">
                     <resp>Encoding to TEI</resp>
                     <resp>Processing, NER and Topic Modelling</resp>
                     <name>Michael Schonhardt</name>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
-                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
-                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
-                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
-                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
-                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
-                    automatisiert mit GPT-3.5 normalisiert.</p>
+                <p>Textfassung auf Basis der Transkription durch Transkribus korrigiert und in TEI
+                    überführt. Automatisierte NER-Erkennung und Identifikation durch Flair geprüft,
+                    korrigiert und ergänzt. Normalisierung, Zusammenfassung und Übersetzung durch
+                    GPT-4. Lizenz: </p>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY
+                        4.0</licence>
+                </availability>
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
                     <msIdentifier>
                         <settlement>Winterthur</settlement>
                         <repository>Stadtbibliothek</repository>
-                        <idno type="signature"></idno>
+                        <idno type="signature">Ms BRH 46/5</idno>
                         <idno type="register-harris">723</idno>
                         <idno type="register-lassberg">187</idno>
                     </msIdentifier>
                     <additional>
-                        <surrogates>
-                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 15 (1887), S. 231-88, S. 257<ref>https://books.google.de/books?id=dXkKAAAAIAAJ</ref></bibl>
+                        <surrogates> <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J.
+                            von Laszberg und Johann Adam Pupikofer. In: Alemannia 15 (1887), S.
+                            231-88, S.
+                            257<ref>https://books.google.de/books?id=dXkKAAAAIAAJ</ref></bibl>
                         </surrogates>
                     </additional>
                 </msDesc>
@@ -40,36 +43,321 @@
             <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
             <correspDesc xml:id="correspDesc-lassberg-letter-1449">
                 <correspAction type="sent">
-                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
-                        >Joseph von Laßberg</persName>
-                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</placeName>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373"
+                        ref="https://d-nb.info/gnd/118778862">Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043"
+                        >Eppishausen</placeName>
                     <date when="1830-06-04">04.06.1830</date>
                 </correspAction>
                 <correspAction type="received">
-                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X"
-                        >Johann Adam Pupikofer</persName>
-                    
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179"
+                        ref="https://d-nb.info/gnd/11565108X">Johann Adam Pupikofer</persName>
+
                 </correspAction>
-                
+
                 <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
-                <note type="mentioned">
-                    <!--<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-{PERS_NUMBER}"><rs>{ORIGINAL_STRING_MENTION}</rs></ref>-->
-                </note>
+                <note type="mentioned"> <ref type="cmif:mentionsBibl"
+                    target="../register/lassberg-literature.xml#lassberg-literature-0158"
+                    ><rs>Angela</rs></ref> <ref type="cmif:mentionsBibl"
+                    target="../register/lassberg-literature.xml#lassberg-literature-0026"
+                    ><rs>Samlung deutscher Gedichte aus dem XII., XIII. und XIV. Jahrhundert. 3
+                    Bde.</rs></ref> <ref type="cmif:mentionsBibl"
+                    target="../register/lassberg-literature.xml#lassberg-literature-0128"
+                    ><rs>Trojanerkrieg</rs></ref> <ref type="cmif:mentionsBibl"
+                    target="../register/lassberg-literature.xml#lassberg-literature-0159"
+                    ><rs>Compendium der deutschen Literatur-Geschichte.</rs></ref> <ref
+                    type="cmif:mentionsBibl"
+                    target="../register/lassberg-literature.xml#lassberg-literature-0160"
+                    ><rs>Sammlung historischer Volkslieder und Gedichte der Deutschen</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                    target="../register/lassberg-literature.xml#lassberg-literature-0157"
+                    ><rs>Appenzeller Zeitung</rs></ref> <ref type="unknownType" target=""
+                    ><rs>Unknown</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0004"><rs>Adolf
+                    Ludwig Follen</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0256"><rs>Karl
+                    Hartwig Gregor von Meusebach</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0626"><rs>David
+                    Gessner</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0596"><rs>Konrad
+                    von Würzburg</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0354"
+                    ><rs>Unbekannt</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0418"><rs>Walter
+                    von Klingen</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0394"><rs>Jakob
+                    Christoph Scherb</rs></ref> <ref type="cmif:mentionsPlace"
+                    target="../register/lassberg-places.xml#lassberg-place-0022"
+                    ><rs>Berlin</rs></ref> <ref type="cmif:mentionsPlace"
+                    target="../register/lassberg-places.xml#lassberg-place-0166"
+                    ><rs>Zürich</rs></ref> <ref type="cmif:mentionsPlace"
+                    target="../register/lassberg-places.xml#lassberg-place-0300"
+                    ><rs>Amriswil</rs></ref> <ref type="cmif:mentionsPlace"
+                    target="../register/lassberg-places.xml#lassberg-place-0299"><rs>Tannenberg bei
+                    Waldkirch</rs></ref> <ref type="cmif:mentionsPlace"
+                    target="../register/lassberg-places.xml#lassberg-place-0197"
+                    ><rs>Hauptwil</rs></ref> </note>
             </correspDesc>
         </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2025-03-16" who="#MiS" status="done">Text recognized by
+                    Transkribus</change>
+                <change when="2025-03-16" who="#MiS" status="done">Text corrected in
+                    Transkribus</change>
+                <change when="2025-03-16" who="#MiS" status="done">Exported from
+                    Transkribus</change>
+                <change when="2025-03-16" who="#MiS" status="done">Automatic NER</change>
+                <change when="2025-03-16" who="#MiS" status="done">Automatic normalization,
+                    translation and summary</change>
+                <change when="" who="" status="draft">Manual markup and proofreading</change>
+                <change when="" who="" status="draft">Finished markup</change>
+            </listChange>
+        </revisionDesc>
     </teiHeader>
     <text>
         <body>
-            <div type="original" resp="ocr">
-                <p>E. am 4. Junii 1830
-Ich sende <rs type="person" key="">Inen</rs>, mein vererter Herr und nachbar! die <rs type="person" key="">Angela</rs> mit einem langen oder kurzen E. zurúk und um nicht in den verdacht zu kommen, als ob Ich Sie um einen verdienten rum bringen wollte; so enthalte ich mich aller bemerkungen úber die einzelheiten der composition, und erlaube mir blos die, jedoch ganz unvorgreifliche, meinungsausserung, daß es mir in dieser gestalt noch kein so eigentliches gedicht zu sein scheint und einer völligen umarbeitung bedarf; welche Sie sich bei einem so schónen und wirklich poëtischen stoffe, nicht werden reuen lassen, auch das dem <rs type="person" key="">H.</rs> Follen gegebene versprechen macht es <rs type="person" key="">Inen</rs> gewissermaßen zum cathegorischen imperativ. Der <rs type="misc" key="">codex traditionum augiae albae</rs> hält mich ser vest und freut mich alle tage mer; ich habe bereits 130 seiten abgeschrieben aber ich habe noch 60 weitere bis zur hálfte; dann mache ich eine pause; daneben arbeiten tapezirer, sattler, maurer und schlosser auf wenige schritte von mir, und machen mir mit allerlei tónen und gerúchen die geduld kurz und die zeit lang, was wollen Sie? man muss leben und leben lassen! <rs type="person" key="">H.</rs> v. Meusebach hat mir durch einen <rs type="person" key="">H.</rs> David gessner V. <rs type="person" key="">D. M.</rs> der von <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0022">Berlin</rs> nach dem nobile <rs type="place" key="">Turegum</rs> heimgekert ist, zwei literar. seltenheiten gesendet; aber nicht dazu geschrieben. Das eine ist der unvollendete III. band der <rs type="misc" key="">Müllerschen</rs> sammlung, welcher nahe an 25000 verse von <rs type="person" key="">conrads v</rs>. <rs type="person" key="">Würzburg</rs> trojanischem Krieg und sonst noch einige gute sachen enthält. Das andere ist <rs type="person" key="">Kochs</rs> compendium der teutschen literatur. 2 bde. in 8' welches Sie gewiss nicht one vergnúgen lesen werden; ausserdem aber giebts nichts neues in Theotiscis. <rs type="person" key="">Wolffs</rs> volkslieder habe ich schon zu <rs type="person" key="">H.</rs> Kunkler bibliopega in <rs type="place" key="">Amrisweil</rs> gesendet um zu sehen wie der man arbeitet? Vollen hat mir auch die zeichnung vom alten klingen geschikt, die aufnahme geschah von der seite der múle und nimmt sich ganz gut aus. diese woche komme ich noch nicht an den <rs type="person" key="">Walter von klingen</rs>, aber montag wollen wir den erenmann aufs brett nehmen, Sie haben einen ser schónen tag zu Irer reise úber den <rs type="place" key="">Tannenberg</rs> gehabt, und ich bedaure den genuss dieser aussicht nicht mit <rs type="person" key="">Inen</rs> haben teilen zu können. aber meine handwerksleute werden diese woche noch nicht fertig. Hr. <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0071">Huber</rs> macht viele und große pausen, das fórdert nicht. Gestern kam er gar nicht und heute erst abends 4 ur. ich war gestern ein wenig an der sonne, und sie machte mir ser heiss. ich dachte dabei an die gallischen manner, welche jezt auf dem afrikanischen Sande lagern werden und gewiss nicht in die holen hande hauchen. Da am sonntage nicht gearbeitet wird; so konnte es wol sein, daß wir uns auf mittag in <rs type="place" key="">Hauptwil</rs> antreffen würden. Meine stutte leidet noch immer an einem fuße; es ist ein elend wenn man pferde hat; ich warte mit sensucht auf den augenblik, wo die Dampfwagen allgemein eingefúrt werden, um mir auch einen anzuschaffen. Hoffentlich bekommen wir auch noch maschinen, welche wenn sie einmal aufgezogen sind, codices abschreiben; dann will ich mir erst recht wol sein lassen und nichts als briefe schreiben. Leben Sie wol, mit groß und kleinen, die ich alle herzlich grússe, und vergessen Sie ja nicht mir die appenzeller zeitung mitzubringen; worin <rs type="person" key="">H.</rs> freimut so strenge gezwaget worden sein soll. Bei <rs type="person" key="">H.</rs> oberamtmanns viele empfelungen von dem hofpoëten
-<rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0373">Laßberg</rs>.</p>
+            <div type="original" resp="#transkribus #MiS">
+                <p><pb n="1" corresp="../pagexml/1449/1449-1.xml"/><lb
+                    xml:id="lassberg-letter-1449-1-1" n="1" corresp="tr_2_tl_1"/>E. am 4. Juny 1830.
+                    <lb xml:id="lassberg-letter-1449-1-2" n="2" corresp="tr_2_tl_2"/>Ich sende Inen,
+                    mein vererter Herr und nachbar! <lb xml:id="lassberg-letter-1449-1-3" n="3"
+                    corresp="tr_2_tl_3"/>die <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0158">Angela</rs>
+                    mit einem langen oder kurzen E. zurük <lb xml:id="lassberg-letter-1449-1-4"
+                    n="4" corresp="tr_2_tl_4"/>und um nicht in den verdacht zu kommen, als ob <lb
+                    xml:id="lassberg-letter-1449-1-5" n="5" corresp="line_1742070303242_83"/>Ich Sie
+                    um einen verdienten rum bringen wollte; <lb xml:id="lassberg-letter-1449-1-6"
+                    n="6" corresp="tr_2_tl_7"/>so enthalte ich mich aller bemerkungen über die <lb
+                    xml:id="lassberg-letter-1449-1-7" n="7" corresp="tr_2_tl_8"/>einzelheiten der
+                    composition, und erlaube mir blos <lb xml:id="lassberg-letter-1449-1-8" n="8"
+                    corresp="tr_2_tl_9"/>die, jedoch ganz unvorgreifliche, meinungsäusserung, <lb
+                    xml:id="lassberg-letter-1449-1-9" n="9" corresp="tr_2_tl_10"/>daß es mir in
+                    dieser gestalt noch kein so eigentliches <lb xml:id="lassberg-letter-1449-1-10"
+                    n="10" corresp="tr_2_tl_11"/>gedicht zu sein scheint und einer völligen
+                    Umarbeitung <lb xml:id="lassberg-letter-1449-1-11" n="11" corresp="tr_2_tl_12"
+                    />bedarf; welche Sie sich bei einem so schönen und <lb
+                    xml:id="lassberg-letter-1449-1-12" n="12" corresp="tr_2_tl_13"/>wirklich
+                    poetischen Stoffe, nicht werden reuen lassen. <lb
+                    xml:id="lassberg-letter-1449-1-13" n="13" corresp="tr_2_tl_14"/>auch das dem <rs
+                    type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0004"
+                    >H. Follen</rs> gegebene versprechen macht es <lb
+                    xml:id="lassberg-letter-1449-1-14" n="14" corresp="tr_2_tl_15"/>Inen
+                    gewissermaßen zum cathegorischen imperativ. <lb
+                    xml:id="lassberg-letter-1449-1-15" n="15" corresp="tr_2_tl_16"/>Der <rs
+                    type="object">codex traditionum augiae albae</rs> hält mich ser vest und <lb
+                    xml:id="lassberg-letter-1449-1-16" n="16" corresp="tr_2_tl_17"/>freut mich alle
+                    tage mer; ich habe bereits 130 seiten abgeschrieben <lb
+                    xml:id="lassberg-letter-1449-1-17" n="17" corresp="tr_2_tl_18"/>aber ich habe
+                    noch 60 weitere bis zur hälfte; dann mache <lb
+                    xml:id="lassberg-letter-1449-1-18" n="18" corresp="tr_2_tl_19"/>ich eine pause;
+                    daneben arbeiten tapezirer, sattler, <lb xml:id="lassberg-letter-1449-1-19"
+                    n="19" corresp="tr_2_tl_20"/>maurer und Schlosser auf wenige schritte von mir,
+                    und <lb xml:id="lassberg-letter-1449-1-20" n="20" corresp="tr_2_tl_21"/>machen
+                    mir mit allerlei tönen und geräuschen <lb xml:id="lassberg-letter-1449-1-21"
+                    n="21" corresp="tr_2_tl_22"/>die geduld kurz und die zeit lang. was wollen Sie?
+                    <lb xml:id="lassberg-letter-1449-1-22" n="22" corresp="tr_2_tl_23"/>man muss
+                    leben und leben lassen! <pb n="2" corresp="../pagexml/1449/1449-2.xml"/><lb
+                    xml:id="lassberg-letter-1449-2-1" n="1" corresp="tr_1_tl_1"/><rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0256">H. v.
+                    Meusebach</rs> hat mir durch einen H. <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0626">David
+                    gessner</rs> <lb xml:id="lassberg-letter-1449-2-2" n="2" corresp="tr_1_tl_2"
+                    />V.D.M. der von <rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0022">Berlin</rs> nach dem
+                    nobile <rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0166">Turegum</rs> <lb
+                    xml:id="lassberg-letter-1449-2-3" n="3" corresp="line_1742070342026_90"
+                    />heimgekert ist, zwei literar. Seltenheiten gesendet; <lb
+                    xml:id="lassberg-letter-1449-2-4" n="4" corresp="line_1742070344892_94"/>aber
+                    nicht dazu geschrieben. Das eine ist der unvollendete <lb
+                    xml:id="lassberg-letter-1449-2-5" n="5" corresp="line_1742070347970_98"/>III.
+                    band der <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0026">Müllerschen
+                    Sammlung</rs>, welcher nahe an <lb xml:id="lassberg-letter-1449-2-6" n="6"
+                    corresp="tr_1_tl_9"/>25000 verse von <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0596">Conrads v.
+                    Würzburg</rs> <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0128">trojanischem
+                    <lb xml:id="lassberg-letter-1449-2-7" n="7" corresp="tr_1_tl_10"/>Krieg</rs> und
+                    sonst noch einige gute Sachen enthält. <lb xml:id="lassberg-letter-1449-2-8"
+                    n="8" corresp="line_1742070358608_110"/>Das andere ist <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0159">Kochs
+                    compendium der teutschen <lb xml:id="lassberg-letter-1449-2-9" n="9"
+                    corresp="tr_1_tl_13"/>literatur. 2bde. in 8°</rs> welches Sie gewiss nicht one
+                    <lb xml:id="lassberg-letter-1449-2-10" n="10" corresp="line_1742070353136_102"
+                    />vergnügen lesen werden; ausserdem aber giebts nichts <lb
+                    xml:id="lassberg-letter-1449-2-11" n="11" corresp="line_1742070355764_106"
+                    />neues in Theotiscis. <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0160">Wolffs
+                    Volkslieder</rs> habe <lb xml:id="lassberg-letter-1449-2-12" n="12"
+                    corresp="line_1742070361421_114"/>ich schon zu <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0354">H.
+                    Kunkler</rs> bibliopega in <rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0300">Amriswil</rs> gesendet
+                    <lb xml:id="lassberg-letter-1449-2-13" n="13" corresp="tr_1_tl_20"/>um zu sehen
+                    wie der man arbeitet? <lb xml:id="lassberg-letter-1449-2-14" n="14"
+                    corresp="tr_1_tl_21"/>Follen hat mir auch die Zeichnung v. altenklingen <lb
+                    xml:id="lassberg-letter-1449-2-15" n="15" corresp="tr_1_tl_22"/>geschikt, die
+                    aufnahme geschah von der seite der müle, <lb xml:id="lassberg-letter-1449-2-16"
+                    n="16" corresp="tr_1_tl_23"/>und nimmt sich ganz gut aus. diese woche komme <lb
+                    xml:id="lassberg-letter-1449-2-17" n="17" corresp="tr_1_tl_24"/>ich noch nicht
+                    an den <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0418">Walter von
+                    klingen</rs>, aber montags <lb xml:id="lassberg-letter-1449-2-18" n="18"
+                    corresp="tr_1_tl_25"/>wollen wir den erenmann aufs brett nehmen. <lb
+                    xml:id="lassberg-letter-1449-2-19" n="19" corresp="tr_1_tl_26"/>Sie haben einen
+                    ser schönen tag zu Irer reise über den <lb xml:id="lassberg-letter-1449-2-20"
+                    n="20" corresp="tr_1_tl_27"/>den <rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0299">Tannenberg</rs>
+                    gehabt, und ich bedaure den genuss <lb xml:id="lassberg-letter-1449-2-21" n="21"
+                    corresp="tr_1_tl_28"/>dieser aussicht nicht mit Inen haben teilen zu können. <lb
+                    xml:id="lassberg-letter-1449-2-22" n="22" corresp="tr_1_tl_29"/>aber meine
+                    handwerksleute werden diese woche <lb xml:id="lassberg-letter-1449-2-23" n="23"
+                    corresp="tr_1_tl_30"/>noch nicht fertig. Hr. <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0354">Huber</rs>
+                    macht viele und <lb xml:id="lassberg-letter-1449-2-24" n="24"
+                    corresp="tr_1_tl_31"/>große pausen, das fördert nicht. <pb n="3"
+                    corresp="../pagexml/1449/1449-3.xml"/><lb xml:id="lassberg-letter-1449-3-1"
+                    n="1" corresp="tr_1_tl_1"/>Gestern kam er gar nicht und heute erst abends 4 ur.
+                    <lb xml:id="lassberg-letter-1449-3-2" n="2" corresp="tr_1_tl_2"/>ich war gestern
+                    ein wenig an der sonne, und sie <lb xml:id="lassberg-letter-1449-3-3" n="3"
+                    corresp="tr_1_tl_3"/>machte mir ser heiss. ich dachte dabei an die gallischen
+                    <lb xml:id="lassberg-letter-1449-3-4" n="4" corresp="tr_1_tl_4"/>männer, welche
+                    jezt auf dem afrikanischen Sande <lb xml:id="lassberg-letter-1449-3-5" n="5"
+                    corresp="line_1742070403791_134"/>lagern werden und gewiss nicht in die holen
+                    hände <lb xml:id="lassberg-letter-1449-3-6" n="6"
+                    corresp="line_1742070406459_138"/>hauchen. Da am Sonntage nicht gearbeitet wird;
+                    <lb xml:id="lassberg-letter-1449-3-7" n="7" corresp="tr_1_tl_9"/>so könnte es
+                    wol sein, daß wir uns auf mittag <lb xml:id="lassberg-letter-1449-3-8" n="8"
+                    corresp="line_1742070409319_142"/>in <rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0197">Hauptwil</rs>
+                    antreffen würden. Meine stutte <lb xml:id="lassberg-letter-1449-3-9" n="9"
+                    corresp="tr_1_tl_12"/>leidet noch immer an einem fuße; es ist ein elend <lb
+                    xml:id="lassberg-letter-1449-3-10" n="10" corresp="tr_1_tl_13"/>wenn man pferde
+                    hat; ich warte mit sensucht auf <lb xml:id="lassberg-letter-1449-3-11" n="11"
+                    corresp="line_1742070427348_151"/>den augenblik, wo die Dampfwagen allgemein <lb
+                    xml:id="lassberg-letter-1449-3-12" n="12" corresp="line_1742070430603_155"
+                    />eingefürt werden, um mir auch einen anzu <lb break="no"
+                    xml:id="lassberg-letter-1449-3-13" n="13" corresp="line_1742070434286_159"
+                    />schaffen. Hoffentlich bekommen wir auch noch <lb
+                    xml:id="lassberg-letter-1449-3-14" n="14" corresp="line_1742070436883_163"
+                    />maschinen, welche wenn sie einmal aufgezogen sind, <lb
+                    xml:id="lassberg-letter-1449-3-15" n="15" corresp="line_1742070439711_167"
+                    />Codices abschreiben; dann will ich mir erst recht <lb
+                    xml:id="lassberg-letter-1449-3-16" n="16" corresp="line_1742070442478_171"/>wol
+                    sein lassen und nichts als briefe schreiben. <lb
+                    xml:id="lassberg-letter-1449-3-17" n="17" corresp="line_1742070445928_175"
+                    />Leben Sie wol, mit groß und kleinen, die ich alle <lb
+                    xml:id="lassberg-letter-1449-3-18" n="18" corresp="tr_1_tl_31"/>herzlich grüsse,
+                    und vergessen Sie ja nicht mir die <lb xml:id="lassberg-letter-1449-3-19" n="19"
+                    corresp="line_1742070375070_121"/><rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0157">appenzeller
+                    Zeitung</rs> mitzubringen; worin H. <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0354">Freimut</rs>
+                    <lb xml:id="lassberg-letter-1449-3-20" n="20" corresp="line_1742070378350_125"
+                    />so strenge gezwaget worden sein soll. Bei H. <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0394">Oberamt<lb
+                    break="no" xml:id="lassberg-letter-1449-3-21" n="21"
+                    corresp="line_1742070381352_129"/>manns</rs> viele empfelungen von dem hofpoeten
+                    <lb xml:id="lassberg-letter-1449-3-22" n="22" corresp="tr_1_tl_39"/>Laßberg.
+                </p>
             </div>
-            <div type="normalized" resp="GPT3.5">
-                <p>E. am 4. Juni 1830
-
-Ich sende Ihnen, mein verehrter Herr und Nachbar, die <rs type="person" key="">Angela</rs> mit einem langen oder kurzen "E" zurück und um nicht in den Verdacht zu kommen, als ob Ich Sie um einen verdienten Ruhm bringen wollte; so enthalte ich mich aller Bemerkungen über die Einzelheiten der Komposition, und erlaube mir bloß die, jedoch ganz unvorgreifliche, Meinungsäußerung, dass es mir in dieser Gestalt noch kein so eigentliches Gedicht zu sein scheint und einer völligen Umgestaltung bedarf; welche Sie sich bei einem so schönen und wirklich poetischen Stoff, nicht werden reuen lassen, auch das dem Herrn <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0004">Follen</rs> gegebene Versprechen macht es Ihnen gewissermaßen zum kategorischen Imperativ. Der <rs type="misc" key="">Codex Traditionum Augiae Albae</rs> hält mich sehr fest und freut mich alle Tage mehr; ich habe bereits 130 Seiten abgeschrieben aber ich habe noch 60 weitere bis zur Hälfte; dann mache ich eine Pause; daneben arbeiten Tapezierer, Sattler, Maurer und Schlosser auf wenige Schritte von mir, und machen mir mit allerlei Tönen und Gerüchen die Geduld kurz und die Zeit lang, was wollen Sie? Man muss leben und leben lassen! Herr <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0256">von Meusebach</rs> hat mir durch einen Herrn <rs type="person" key="">David Gessner</rs> V. <rs type="person" key="">D. M.</rs>, der von <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0022">Berlin</rs> nach dem noble <rs type="place" key="">Turegum</rs> heimgekehrt ist, zwei literarische Seltenheiten gesendet; aber nicht dazu geschrieben. Das eine ist der unvollendete III. Band der <rs type="misc" key="">Müllerschen Sammlung</rs>, welcher nahe an 25000 Verse von <rs type="person" key="">Conrads von Würzburg</rs> trojanischem Krieg und sonst noch einige gute Sachen enthält. Das andere ist <rs type="person" key="">Kochs</rs> <rs type="misc" key="">Compendium der deutschen Literatur</rs>. 2 Bände in 8', welche Sie gewiss nicht ohne Vergnügen lesen werden; außerdem aber gibt es nichts Neues in Theotiscis. <rs type="person" key="">Wolffs</rs> Volkslieder habe ich schon zu Herrn <rs type="person" key="">Kunkler Biblioprega</rs> in <rs type="place" key="">Amrisweil</rs> gesendet, um zu sehen wie der Mann arbeitet? <rs type="person" key="">Vollen</rs> hat mir auch die Zeichnung vom alten <rs type="place" key="">Klingen</rs> geschickt, die Aufnahme geschah von der Seite der Mühle und nimmt sich ganz gut aus. Diese Woche komme ich noch nicht an den Walter von <rs type="place" key="">Klingen</rs>, aber Montag wollen wir den Erenmann aufs Brett nehmen, Sie haben einen sehr schönen Tag zu Ihrer Reise über den <rs type="place" key="">Tannenberg</rs> gehabt, und ich bedaure den Genuss dieser Aussicht nicht mit Ihnen haben teilen zu können. Aber meine Handwerksleute werden diese Woche noch nicht fertig. Herr <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0071">Huber</rs> macht viele und große Pausen, das fördert nicht. Gestern kam er gar nicht und heute erst abends um 4 Uhr. Ich war gestern ein wenig an der Sonne, und sie machte mir sehr heiß. Ich dachte dabei an die gallischen Männer, welche jetzt auf dem afrikanischen Sande lagern werden und gewiss nicht in die holen Hände hauchen. Da am Sonntag nicht gearbeitet wird; so konnte es wohl sein, dass wir uns auf Mittag in <rs type="place" key="">Hauptwil</rs> antreffen würden. Meine Stute leidet noch immer an einem Fuß; es ist ein Elend wenn man Pferde hat; ich warte mit Sehnsucht auf den Augenblick, wo die Dampfwagen allgemein eingeführt werden, um mir auch einen anzuschaffen. Hoffentlich bekommen wir auch noch Maschinen, welche wenn sie einmal aufgezogen sind, Codices abschreiben; dann will ich mir erst recht wohl sein lassen und nichts als Briefe schreiben. Leben Sie wohl, mit Groß und Kleinen, die ich alle herzlich grüße, und vergessen Sie ja nicht mir die <rs type="organisation" key="">Appenzeller Zeitung</rs> mitzubringen; worin Herr <rs type="person" key="">Freimut</rs> so strenge gezwungen worden sein soll. Bei Herrn Oberamtmann viele Empfehlungen von dem Hofpoeten
-<rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0373">Laßberg</rs>.</p>
+            <div type="normalized" resp="#GPT4">
+                <p>E. am 4. Juni 1830. Ich sende Ihnen, mein verehrter Herr und Nachbar, die Angela
+                    mit einem langen oder kurzen E. zurück und um nicht in den Verdacht zu kommen,
+                    als ob Ich Sie um einen verdienten Ruhm bringen wollte; so enthalte ich mich
+                    aller Bemerkungen über die Einzelheiten der Komposition, und erlaube mir bloß
+                    die, jedoch ganz unvorgreifliche, Meinungsäußerung, dass es mir in dieser
+                    Gestalt noch kein so eigentliches Gedicht zu sein scheint und einer völligen
+                    Umarbeitung bedarf; welche Sie sich bei einem so schönen und wirklich poetischen
+                    Stoffe nicht werden reuen lassen. Auch das dem H. Follen gegebene Versprechen
+                    macht es Ihnen gewissermaßen zum kategorischen Imperativ. Der Codex traditionum
+                    Augiae Albae hält mich sehr fest und freut mich alle Tage mehr; ich habe bereits
+                    130 Seiten abgeschrieben aber ich habe noch 60 weitere bis zur Hälfte; dann
+                    mache ich eine Pause; daneben arbeiten Tapezierer, Sattler, Maurer und Schlosser
+                    auf wenige Schritte von mir, und machen mir mit allerlei Tönen und Geräuschen
+                    die Geduld kurz und die Zeit lang. Was wollen Sie? Man muss leben und leben
+                    lassen! H. v. Meusebach hat mir durch einen H. David Gessner V.D.M. der von
+                    Berlin nach dem nobile Turegum heimgekehrt ist, zwei literarische Seltenheiten
+                    gesendet; aber nicht dazu geschrieben. Das eine ist der unvollendete III. Band
+                    der Müllerschen Sammlung, welcher nahe an 25000 Verse von Conrads v. Würzburg
+                    trojanischem Krieg und sonst noch einige gute Sachen enthält. Das andere ist
+                    Kochs Compendium der deutschen Literatur. 2 Bde. in 8° welches Sie gewiss nicht
+                    ohne Vergnügen lesen werden; außerdem aber gibt es nichts Neues in Theotiscis.
+                    Wolffs Volkslieder habe ich schon zu H. Kunkler Bibliopega in Amriswil gesendet
+                    um zu sehen wie der Mann arbeitet? Follen hat mir auch die Zeichnung v.
+                    Altenklingen geschickt, die Aufnahme geschah von der Seite der Mühle, und nimmt
+                    sich ganz gut aus. Diese Woche komme ich noch nicht an den Walter von Klingen,
+                    aber montags wollen wir den Ehrenmann aufs Brett nehmen. Sie haben einen sehr
+                    schönen Tag zu Ihrer Reise über den den Tannenberg gehabt, und ich bedaure den
+                    Genuss dieser Aussicht nicht mit Ihnen haben teilen zu können. Aber meine
+                    Handwerksleute werden diese Woche noch nicht fertig. Hr. Huber macht viele und
+                    große Pausen, das fördert nicht. Gestern kam er gar nicht und heute erst abends
+                    4 Uhr. Ich war gestern ein wenig an der Sonne, und sie machte mir sehr heiß. Ich
+                    dachte dabei an die gallischen Männer, welche jetzt auf dem afrikanischen Sande
+                    lagern werden und gewiss nicht in die hohlen Hände hauchen. Da am Sonntage nicht
+                    gearbeitet wird; so könnte es wohl sein, dass wir uns am Mittag in Hauptwil
+                    antreffen würden. Meine Stute leidet noch immer an einem Fuß; es ist ein Elend
+                    wenn man Pferde hat; ich warte mit Sehnsucht auf den Augenblick, wo die
+                    Dampfwagen allgemein eingeführt werden, um mir auch einen anzuschaffen.
+                    Hoffentlich bekommen wir auch noch Maschinen, welche wenn sie einmal aufgezogen
+                    sind, Codices abschreiben; dann will ich mir erst recht wohl sein lassen und
+                    nichts als Briefe schreiben. Leben Sie wohl, mit Groß und Kleinen, die ich alle
+                    herzlich grüße, und vergessen Sie ja nicht mir die Appenzeller Zeitung
+                    mitzubringen; worin H. Freimut so streng gezwaget worden sein soll. Bei H.
+                    Oberamtmanns viele Empfehlungen von dem Hofpoeten Laßberg.</p>
+            </div>
+            <div type="translation" resp="#GPT4">
+                <p>E. on June 4, 1830. I send you, my esteemed sir and neighbor! the Angela with a
+                    long or short E back and to avoid the suspicion that I wanted to deny you a
+                    deserved fame; I therefore refrain from making any remarks about the details of
+                    the composition and merely allow myself the, though quite non-prejudicial,
+                    expression of opinion that in this form it still does not seem to me to be such
+                    a real poem and requires a complete reworking; which you will not regret with
+                    such a beautiful and truly poetic subject. Also, the promise given to Mr. Folien
+                    makes it somewhat of a categorical imperative for you. The codex traditionum
+                    augiae albae holds me very firmly and pleases me more every day; I have already
+                    copied 130 pages but I still have 60 more to halfway; then I take a break;
+                    meanwhile, upholsterers, saddlers, masons, and locksmiths are working a few
+                    steps away from me, making my patience short and the time long with all sorts of
+                    sounds and noises. What do you want? One must live and let live! Mr. v.
+                    Meusebach sent me, through a Mr. David Gessner V.D.M. who returned home from
+                    Berlin to Noble Turegum, two literary rarities; but did not write with them. One
+                    is the unfinished third volume of the Müller collection, which contains close to
+                    25,000 verses of Conrad v. Würzburg's Trojan War and still some other good
+                    items. The other is Koch's compendium of German literature. 2 volumes in 8°,
+                    which you will read with pleasure for sure; furthermore, there is nothing new in
+                    Theotiscis. I have already sent Wolff's folk songs to Mr. Rankler, the
+                    bookbinder in Amriswil, to see how the man works. Follen also sent me the
+                    drawing of Altenklingen, the recording was made from the side of the mill, and
+                    it looks quite good. This week I will not yet get to Walter von Klingen, but
+                    Monday we want to tackle the gentleman. You had a very nice day for your journey
+                    over the Tannenberg, and I regret not being able to share the joy of this view
+                    with you. But my craftsmen won't be finished this week. Mr. Huber makes many and
+                    large pauses, which does not promote progress. Yesterday he didn't come at all
+                    and today only at 4 PM. I was in the sun a little yesterday, and it made me very
+                    hot. I thought of the Gallic men, who will now be camped on the African sand and
+                    certainly not breathing into hollow hands. Since there is no work on Sundays; we
+                    might meet for lunch in Hauptwil. My mare is still suffering from one foot; it
+                    is a misery to have horses; I am waiting eagerly for the moment when steam
+                    carriages are generally introduced, to get one myself. Hopefully, we will also
+                    get machines that, once set up, copy codices; then I will truly enjoy myself and
+                    write nothing but letters. Farewell, with great and small, whom I all cordially
+                    greet, and don't forget to bring me the Appenzeller Zeitung in which Mr. Freimut
+                    is said to have been so strictly criticized. Many regards from Mr. Oberamtmann's
+                    court poet Laßberg.</p>
+            </div>
+            <div type="summary" resp="#GPT4">
+                <p>Joseph von Laßberg gibt Johan Adam Pupikofer eine Rückmeldung zu dessen Gedicht
+                    *Angela*, das er für überarbeitungsbedürftig hält. Er berichtet von seiner
+                    fortschreitenden Arbeit an der *Codex traditionum Augiae Albae*-Abschrift, die
+                    durch Bauarbeiten erschwert wird. Zudem erwähnt er literarische Neuigkeiten,
+                    darunter zwei seltene Werke von Meusebach und eine Zeichnung von Altenklingen.
+                    Er beklagt Verzögerungen durch Handwerker, äußert seine Sehnsucht nach
+                    Dampfwägen und spekuliert über zukünftige Maschinen zur Abschrift von Codices.
+                    Abschließend lädt er Pupikofer zu einem Treffen in Hauptwil ein und bittet um
+                    die *Appenzeller Zeitung*.</p>
             </div>
         </body>
     </text>

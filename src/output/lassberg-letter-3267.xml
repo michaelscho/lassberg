@@ -1,0 +1,115 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-3267">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Wilhelm Wackernagel an Joseph von Laßberg (21.04.1834).</title>
+                <respStmt xml:id="MiS">
+                    <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 und GPT-4 normalisiert, zusammengefasst und übersetzt.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="signature">K 3534,1</idno>
+                        <idno type="register-harris">-</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed"><ref>https://digital.blb-karlsruhe.de/lassberg/content/titleinfo/8042930</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-3267">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0367" ref="https://d-nb.info/gnd/118805851">Wilhelm Wackernagel</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0019">Basel</placeName>
+                    <date when="1834-04-21">21.04.1834</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862">Joseph von Laßberg</persName>
+                    
+                </correspAction>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <!--<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-{PERS_NUMBER}"><rs>{ORIGINAL_STRING_MENTION}</rs></ref>-->
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2025-03-18" who="#MiS" status="done">Text recognized by Transkribus</change>
+                <change when="2025-03-18" who="#MiS" status="done">Text corrected in Transkribus</change>
+                <change when="2025-03-18" who="#MiS" status="done">Exported from Transkribus</change>
+                <change when="2025-03-18" who="#MiS" status="done">Automatic NER</change>
+                <change when="2025-03-18" who="#MiS" status="done">Automatic normalization, translation and summary</change>
+                <change when="" who="" status="draft">Manual markup and proofreading</change>
+                <change when="" who="" status="draft">Finished markup</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="original" resp="#transkribus #MiS">
+                <p><pb n="1" corresp="../pagexml/3267/3267-1.xml"/><lb xml:id="lassberg-letter-3267-1-1" n="1" corresp="tr_1_tl_2"/><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0019">Basel</rs> 21/4/34. <lb xml:id="lassberg-letter-3267-1-2" n="2" corresp="tr_1_tl_3"/>Hochverehrter Herr <rs type="person">Baron</rs>, <lb xml:id="lassberg-letter-3267-1-3" n="3" corresp="tr_1_tl_4"/>mit dem besten und herzlichsten Danke für Ihre grosse Gefälligkeit <lb xml:id="lassberg-letter-3267-1-4" n="4" corresp="tr_1_tl_5"/>sende ich Ihnen beifolgend die vier Bände <rs type="bibl" key="../register/lassberg-literature.xml#lassberg-literature-0022">Liedersaal</rs>, den dritten <lb xml:id="lassberg-letter-3267-1-5" n="5" corresp="tr_1_tl_6"/>Band der <rs type="bibl" key="../register/lassberg-literature.xml#lassberg-literature-0026">Myllerischen Samlung</rs> und die <rs type="bibl" key="../register/lassberg-literature.xml#lassberg-literature-0131">Moerin</rs> wiederum zurück. <lb xml:id="lassberg-letter-3267-1-6" n="6" corresp="tr_1_tl_7"/>Verzeihen Sie die lange Verzoegerung gütigst damit, dass ich den <lb xml:id="lassberg-letter-3267-1-7" n="7" corresp="tr_1_tl_8"/>dritten Band des <rs type="">LS</rs>. jezt zum ersten Mahle gelesen habe. Gleich <lb xml:id="lassberg-letter-3267-1-8" n="8" corresp="tr_1_tl_9"/>das vorderste Stück, die listigen Weiber ist meisterlich vorgetragen <lb xml:id="lassberg-letter-3267-1-9" n="9" corresp="tr_1_tl_10"/>und muss noch in die ältesten besten Zeiten gehoeren. <lb xml:id="lassberg-letter-3267-1-10" n="10" corresp="tr_1_tl_11"/>Zu den vielen Handschriften das Gedichtes von den vii. weisen <lb xml:id="lassberg-letter-3267-1-11" n="11" corresp="tr_1_tl_12"/>Meistern kommt noch eine hiesige, und sie allein enthält den <lb xml:id="lassberg-letter-3267-1-12" n="12" corresp="tr_1_tl_13"/>Namen des Verfassers; es ist der Büheler, der auch die <lb xml:id="lassberg-letter-3267-1-13" n="13" corresp="tr_1_tl_14"/>Koenigstochter von <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0220">Frankreich</rs> gedichtet hat. Ausserdem habe <lb xml:id="lassberg-letter-3267-1-14" n="14" corresp="tr_1_tl_15"/>ich neulich noch manche andre nicht"unamüetige" Handschrift <lb xml:id="lassberg-letter-3267-1-15" n="15" corresp="tr_1_tl_16"/>herausgesucht.  <lb xml:id="lassberg-letter-3267-1-16" n="16" corresp="tr_1_tl_17"/>Jezt sehe ich mit Begierde dem neuen Merkmale Ihres Wollwollens, <lb xml:id="lassberg-letter-3267-1-17" n="17" corresp="tr_1_tl_18"/>der <pb n="2" corresp="../pagexml/3267/3267-2.xml"/><lb xml:id="lassberg-letter-3267-2-1" n="1" corresp="tr_1_tl_1"/>der verheissenen zweiten Sendung, und gar einer Sendung von anec <lb break="no" xml:id="lassberg-letter-3267-2-2" n="2" corresp="tr_1_tl_2"/>dotis entgegen. Ist es Ihnen nicht bequemer, mir den ganzen Frau <lb break="no" xml:id="lassberg-letter-3267-2-3" n="3" corresp="tr_1_tl_3"/>endienst selbst herzuschicken? Dann kann ich Ihnen die Mühe <lb xml:id="lassberg-letter-3267-2-4" n="4" corresp="tr_1_tl_4"/>des Abschreibens ersparen. Er würde Ihnen dadurch nicht lange <lb xml:id="lassberg-letter-3267-2-5" n="5" corresp="tr_1_tl_5"/>entzogen werden: ich weiss in dem Buche schon Bescheid, da ich es <lb xml:id="lassberg-letter-3267-2-6" n="6" corresp="tr_1_tl_6"/>bereits einmahl ganz für <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0260">Lachmann</rs> abgeschrieben habe. <lb xml:id="lassberg-letter-3267-2-7" n="7" corresp="tr_1_tl_7"/>ich schreibe diese wenigen Zeilen an dem ersten von dreyen für Lehrer <lb xml:id="lassberg-letter-3267-2-8" n="8" corresp="tr_1_tl_8"/>und Schüler drangvollen Tagen, denen der öffentlichen Prüfung. <lb xml:id="lassberg-letter-3267-2-9" n="9" corresp="tr_1_tl_9"/>Ist die abgethan, so kommen endlich anderthalb Wochen Ferien, auf <lb xml:id="lassberg-letter-3267-2-10" n="10" corresp="tr_1_tl_10"/>die ich mich diesmahl freue, wie ich mich nie als Schüler darauf <lb xml:id="lassberg-letter-3267-2-11" n="11" corresp="tr_1_tl_11"/>gefreut habe. <lb xml:id="lassberg-letter-3267-2-12" n="12" corresp="tr_1_tl_12"/>Gott behüte Sie, hochverehrter Herr <rs type="person">Baron</rs>, in Ihrem stillen Kloe <lb break="no" xml:id="lassberg-letter-3267-2-13" n="13" corresp="tr_1_tl_13"/>sterli und erhalte Sie im gewohnten Wollwollen für <lb xml:id="lassberg-letter-3267-2-14" n="14" corresp="tr_1_tl_14"/>Ihren ganz ergebenen <lb xml:id="lassberg-letter-3267-2-15" n="15" corresp="tr_1_tl_15"/>Wilh. <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0367">Wackernagel</rs> Dr. </p>
+            </div>
+            <div type="normalized" resp="#GPT4">
+                <p>Basel 21/4/34.
+
+Hochverehrter Herr Baron,
+
+mit dem besten und herzlichsten Dank für Ihre große Gefälligkeit sende ich Ihnen beifolgend die vier Bände Liedersaal, den dritten Band der Myllerischen Sammlung und die Moerin wiederum zurück. Verzeihen Sie die lange Verzögerung gütigst damit, dass ich den dritten Band des LS. jetzt zum ersten Male gelesen habe. Gleich das vorderste Stück, die listigen Weiber, ist meisterlich vorgetragen und muss noch in die ältesten besten Zeiten gehören.
+
+Zu den vielen Handschriften des Gedichtes von den vii. weisen Meistern kommt noch eine hiesige, und sie allein enthält den Namen des Verfassers; es ist der Büheler, der auch die Königstochter von Frankreich gedichtet hat. Außerdem habe ich neulich noch manche andere nicht "unamüetige" Handschrift herausgesucht. Jetzt sehe ich mit Begierde dem neuen Merkmal Ihres Wohlwollens, der verheißenen zweiten Sendung, und gar einer Sendung von Anekdoten entgegen. 
+
+Ist es Ihnen nicht bequemer, mir den ganzen Frauendienst selbst herzuschicken? Dann kann ich Ihnen die Mühe des Abschreibens ersparen. Er würde Ihnen dadurch nicht lange entzogen werden: ich weiß in dem Buche schon Bescheid, da ich es bereits einmal ganz für Lachmann abgeschrieben habe.
+
+Ich schreibe diese wenigen Zeilen an dem ersten von dreien für Lehrer und Schüler drangvollen Tagen, denen der öffentlichen Prüfung. Ist die abgetan, so kommen endlich anderthalb Wochen Ferien, auf die ich mich diesmal freue, wie ich mich nie als Schüler darauf gefreut habe.
+
+Gott behüte Sie, hochverehrter Herr Baron, in Ihrem stillen Klösterli und erhalte Sie im gewohnten Wohlwollen für
+
+Ihren ganz ergebenen
+
+Wilh. Wackernagel Dr.</p>
+            </div>
+            <div type="translation" resp="#GPT4">
+                <p>Basel 4/21/34.
+
+Highly esteemed Mr. Baron,
+
+With the best and most heartfelt thanks for your great kindness, I am sending you back enclosed the four volumes of "Liedersaal," the third volume of the Myller collection, and the Moeri once again. Kindly forgive the long delay, as I have just read the third volume of the LS for the first time. The very first piece, "The Cunning Women," is masterfully presented and must belong to the oldest and best times.
+
+Among the many manuscripts of the poem of the seven wise masters, there is one from here that contains the name of the author; it is Büheler, who also composed "The King's Daughter of France." Besides, I have recently found some other not "unamusing" manuscripts.
+
+I am now eagerly anticipating the new token of your benevolence, the promised second shipment, and especially a shipment of anecdotes. If it is more convenient for you, would you not send me the entire "Fraudienst" yourself? Then I could spare you the trouble of copying. It would not be long withheld from you: I am already familiar with the book, as I have copied it entirely for Lachmann once before.
+
+I am writing these few lines on the first of three busy days for teachers and students leading up to the public examination. Once that is done, a week and a half of vacation finally comes, which I am looking forward to this time as I have never looked forward to it as a student.
+
+May God protect you, highly esteemed Mr. Baron, in your quiet cloister, and preserve you in your accustomed benevolence for your most devoted,
+
+Wilh. Wackernagel Dr.</p>
+            </div>
+            <div type="summary" resp="#GPT4">
+                <p/>
+            </div>
+        </body>
+    </text>
+</TEI>

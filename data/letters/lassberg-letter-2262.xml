@@ -1,0 +1,349 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-2262">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Wilhelm Wackernagel an Joseph von Laßberg (11.08.1841).</title>
+                <respStmt xml:id="MiS">
+                    <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Textfassung auf Basis der Transkription durch Transkribus korrigiert und in TEI
+                    überführt. Automatisierte NER-Erkennung und Identifikation durch Flair geprüft,
+                    korrigiert und ergänzt. Normalisierung, Zusammenfassung und Übersetzung durch
+                    GPT-4. Lizenz: </p>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY
+                        4.0</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Basel</settlement>
+                        <repository>Staatsarchiv des Kantons Basel-Stadt</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">2720</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates> <bibl type="printed"><ref/></bibl> </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-2262">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0367"
+                        ref="https://d-nb.info/gnd/118805851">Wilhelm Wackernagel</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0019"
+                        >Basel</placeName>
+                    <date when="1841-08-11">11.08.1841</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373"
+                        ref="https://d-nb.info/gnd/118778862">Joseph von Laßberg</persName>
+
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned"> <ref type="cmif:mentionsBibl"
+                    target="../register/lassberg-literature.xml#lassberg-literature-0121"
+                    ><rs>Deutsches Lesebuch</rs></ref> <ref type="cmif:mentionsBibl"
+                    target="../register/lassberg-literature.xml#lassberg-literature-0151"
+                    ><rs>Glossar zum altdeutschen Lesebuch</rs></ref> <ref type="unknownType"
+                    target=""><rs>Unknown</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0556"
+                    ><rs>Emanuel Burckhardt-Iselin</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0555"
+                    ><rs>Caroline Luise Wackernagel-Bluntschli</rs></ref> <ref
+                    type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0176"><rs>Jenny
+                    von Droste zu Hülshoff</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0354"
+                    ><rs>Unbekannt</rs></ref> <ref type="cmif:mentionsPlace"
+                    target="../register/lassberg-places.xml#lassberg-place-0019"
+                    ><rs>Basel</rs></ref> <ref type="cmif:mentionsPlace"
+                    target="../register/lassberg-places.xml#lassberg-place-0101"
+                    ><rs>Meersburg</rs></ref> <ref type="cmif:mentionsPlace"
+                    target="../register/lassberg-places.xml#lassberg-place-0244"
+                    ><rs>Rhein</rs></ref> <ref type="cmif:mentionsPlace"
+                    target="../register/lassberg-places.xml#lassberg-place-0043"
+                    ><rs>Eppishausen</rs></ref> </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2025-03-05" who="#MiS" status="done">Text recognized by
+                    Transkribus</change>
+                <change when="2025-03-05" who="#MiS" status="done">Text corrected in
+                    Transkribus</change>
+                <change when="2025-03-05" who="#MiS" status="done">Exported from
+                    Transkribus</change>
+                <change when="2025-03-05" who="#MiS" status="done">Automatic NER</change>
+                <change when="2025-03-05" who="#MiS" status="done">Automatic normalization,
+                    translation and summary</change>
+                <change when="2025-03-06" who="#MiS" status="done">Manual markup and
+                    proofreading</change>
+                <change when="2025-03-06" who="#MiS" status="done">Finished markup</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="original" resp="#transkribus #MiS">
+                <p><pb n="1" corresp="../pagexml/2262/2262-1.xml"/><lb
+                    xml:id="lassberg-letter-2262-1-1" n="1" corresp="tr_1_tl_1"/>Von Herzen
+                    verehrter Herr und Freund! <lb xml:id="lassberg-letter-2262-1-2" n="2"
+                    corresp="tr_1_tl_2"/>Mit inniger Freude habe ich (freylich in Folge meiner <lb
+                    xml:id="lassberg-letter-2262-1-3" n="3" corresp="tr_1_tl_3"/>Vacanz-abwesenheit
+                    von <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0019"
+                    >Basel</rs> erst nach Verlauf eines vollen <lb xml:id="lassberg-letter-2262-1-4"
+                    n="4" corresp="tr_1_tl_4"/>Monats) Ihren Brief vom 9 July durch meinen Nachbarn,
+                    <lb xml:id="lassberg-letter-2262-1-5" n="5" corresp="tr_1_tl_5"/>Herrn <rs
+                    type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0556"
+                    >R.H. Burckhardt-Iselen</rs> erhalten. Mit Freude, <lb
+                    xml:id="lassberg-letter-2262-1-6" n="6" corresp="tr_1_tl_6"/>aber auch mit
+                    Wehmuth: denn bei diesen freundlichen <lb xml:id="lassberg-letter-2262-1-7"
+                    n="7" corresp="tr_1_tl_7"/>Zeilen und den begleitenden Erzählungen des
+                    Ueberbringers <lb xml:id="lassberg-letter-2262-1-8" n="8" corresp="tr_1_tl_8"
+                    />fiel es mir von neuem schwer aufs Herz, wie lange ich <lb
+                    xml:id="lassberg-letter-2262-1-9" n="9" corresp="tr_1_tl_9"/>Sie und die
+                    verehrten Ihrigen schon nicht mehr gesehen, <lb
+                    xml:id="lassberg-letter-2262-1-10" n="10" corresp="tr_1_tl_10"/>dass ich Sie in
+                    Ihrem neuen Schlosse noch gar nicht <lb xml:id="lassberg-letter-2262-1-11"
+                    n="11" corresp="tr_1_tl_11"/>besucht habe. Jedesmal dass Ferien eintraten, habe
+                    ich <lb xml:id="lassberg-letter-2262-1-12" n="12" corresp="tr_1_tl_12"/>all
+                    diese Jahre gedacht: Geh. nach <rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0101">Märsburg</rs>, und
+                    niemals <lb xml:id="lassberg-letter-2262-1-13" n="13" corresp="tr_1_tl_13"/>mehr
+                    habe ich es, bald durch Arbeitsdrang, bald durch <lb
+                    xml:id="lassberg-letter-2262-1-14" n="14" corresp="tr_1_tl_14"/>häusliche
+                    Verhältnisse behindert, ausführen können. So <lb
+                    xml:id="lassberg-letter-2262-1-15" n="15" corresp="tr_1_tl_15"/>auch wieder in
+                    den eben verflossenen Sommerferien: <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0555">meine <lb
+                    xml:id="lassberg-letter-2262-1-16" n="16" corresp="tr_1_tl_16"/>Frau</rs> ist in
+                    Umständen die ihr eine groessere Reise unmoeglich <lb
+                    xml:id="lassberg-letter-2262-1-17" n="17" corresp="line_1734427526204_4383"/>und
+                    <pb n="2" corresp="../pagexml/2262/2262-2.xml"/><lb
+                    xml:id="lassberg-letter-2262-2-1" n="1" corresp="tr_1_tl_1"/>und mir (nachdem
+                    wir schon zweymal das Unglück einer zu <lb xml:id="lassberg-letter-2262-2-2"
+                    n="2" corresp="tr_1_tl_2"/>frühen Niederkunft haben erleben müssen) eine längere
+                    <lb xml:id="lassberg-letter-2262-2-3" n="3" corresp="tr_1_tl_3"/>Trennung
+                    unerwünscht machen: da haben wir uns denn <lb xml:id="lassberg-letter-2262-2-4"
+                    n="4" corresp="tr_1_tl_4"/>nur sieben Stunden von hier in einem einsamen
+                    Gebirgsbade <lb xml:id="lassberg-letter-2262-2-5" n="5" corresp="tr_1_tl_5"/>der
+                    Landschaft niedergelassen. Uebers Jahr aber komme <lb
+                    xml:id="lassberg-letter-2262-2-6" n="6" corresp="tr_1_tl_6"/>ich sicherlich,
+                    wenn Gott mir diese Freude gönnen mag. <lb xml:id="lassberg-letter-2262-2-7"
+                    n="7" corresp="tr_1_tl_7"/>Und Sie, geliebter und verehrter Herr und Freund, Sie
+                    <lb xml:id="lassberg-letter-2262-2-8" n="8" corresp="tr_1_tl_8"/>sollten doch
+                    auch einmal, wenn Sie den <rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0244">Rhein</rs> hinunter
+                    <lb xml:id="lassberg-letter-2262-2-9" n="9" corresp="tr_1_tl_9"/>in die Heimat
+                    Ihrer <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0176">Frau
+                    Gemahlin</rs> reisen, mit auf <lb xml:id="lassberg-letter-2262-2-10" n="10"
+                    corresp="tr_1_tl_10"/>dem Weg unsre alte <rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0019">Basilea</rs> besuchen,
+                    wo Ihnen mehr <lb xml:id="lassberg-letter-2262-2-11" n="11" corresp="tr_1_tl_11"
+                    />als Ein Herz zugethan ist, keines aber (ich sage es getrost) <lb
+                    xml:id="lassberg-letter-2262-2-12" n="12" corresp="tr_1_tl_12"/>so wie das
+                    meine. <lb xml:id="lassberg-letter-2262-2-13" n="13" corresp="tr_1_tl_13"/>Aus
+                    Ihrem lieben Brief und aus den Berichten des <lb
+                    xml:id="lassberg-letter-2262-2-14" n="14" corresp="tr_1_tl_14"/>Ritterlichen
+                    Ehepaars ersche ich dass ich Sie um die <lb xml:id="lassberg-letter-2262-2-15"
+                    n="15" corresp="tr_1_tl_15"/>schöne Rüstigkeit Ihres Arbeitens zu beneiden habe.
+                    <lb xml:id="lassberg-letter-2262-2-16" n="16" corresp="tr_1_tl_16"/>Mir geht es
+                    bei den Leiden nervoeser Reizbarkeit gar <lb xml:id="lassberg-letter-2262-2-17"
+                    n="17" corresp="tr_1_tl_17"/>langsam <pb n="3"
+                    corresp="../pagexml/2262/2262-3.xml"/><lb xml:id="lassberg-letter-2262-3-1"
+                    n="1" corresp="tr_1_tl_1"/>langsam von Statten. Das <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0121">Altd.
+                    Lesebuch</rs> ist allerdings noch <lb xml:id="lassberg-letter-2262-3-2" n="2"
+                    corresp="tr_1_tl_2"/>immer nicht vollendet; und nicht mehr eraschienen als Sie
+                    in <lb xml:id="lassberg-letter-2262-3-3" n="3" corresp="tr_1_tl_3"/>Händen
+                    haben: jedoch wird jezt mit Eifer am <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0151">Glossar</rs>
+                    <lb xml:id="lassberg-letter-2262-3-4" n="4" corresp="tr_1_tl_4"/>gedruckt. Vom
+                    dritten Theile des ganzen Werkes (Prosa <lb xml:id="lassberg-letter-2262-3-5"
+                    n="5" corresp="tr_1_tl_5"/>seit MD.) wird nächstens der erste Band Geiler v. <lb
+                    xml:id="lassberg-letter-2262-3-6" n="6" corresp="tr_1_tl_6"/>Keisersb. bis
+                    Zinzendorf heraus und natürlich auch <lb xml:id="lassberg-letter-2262-3-7" n="7"
+                    corresp="tr_1_tl_7"/>zu Ihnen hinauf kommen. Gern hätte ich Ihnen vor <lb
+                    xml:id="lassberg-letter-2262-3-8" n="8" corresp="tr_1_tl_8"/>einem Jahre
+                    geschickt was hier der Jubel des Buchdruckerfestes <lb
+                    xml:id="lassberg-letter-2262-3-9" n="9" corresp="tr_1_tl_9"/>an Poesie u. Prosa
+                    (hystorischer u. oratorischer) zu Tage <lb xml:id="lassberg-letter-2262-3-10"
+                    n="10" corresp="tr_1_tl_10"/>gefördert hat: aber ich habe aus dem Sturm und
+                    Drang <lb xml:id="lassberg-letter-2262-3-11" n="11" corresp="tr_1_tl_11"/>des
+                    allgemeinen Zugreifens kaum für mich selbst (den <lb
+                    xml:id="lassberg-letter-2262-3-12" n="12" corresp="tr_1_tl_12"/>Praesidenten der
+                    Festcommission) Exemplare retten können. <lb xml:id="lassberg-letter-2262-3-13"
+                    n="13" corresp="tr_1_tl_13"/>Damit entschuldigen Sie mich falls Sie mir gezürnt
+                    haben. <lb xml:id="lassberg-letter-2262-3-14" n="14" corresp="tr_1_tl_14"/>Auf
+                    das Buch, dessen Druck Sie jezo beschäftigt, bin ich <lb
+                    xml:id="lassberg-letter-2262-3-15" n="15" corresp="tr_1_tl_15"/>um so
+                    begieriger, als Sie über Inhalt u. Form u. Verfasser noch <lb
+                    xml:id="lassberg-letter-2262-3-16" n="16" corresp="tr_1_tl_16"/>gar nichts haben
+                    verrathen mögen. Aber (damit ich auch an Sie <lb
+                    xml:id="lassberg-letter-2262-3-17" n="17" corresp="tr_1_tl_17"/>eine <pb n="4"
+                    corresp="../pagexml/2262/2262-4.xml"/><lb xml:id="lassberg-letter-2262-4-1"
+                    n="1" corresp="tr_2_tl_1"/>eine neckende Frage der Ungeduld richte) was macht
+                    der <lb xml:id="lassberg-letter-2262-4-2" n="2" corresp="tr_2_tl_2"/><rs
+                    type="object">Weingartner Codex</rs>? Soll diess Juwel der altdeutschen <lb
+                    xml:id="lassberg-letter-2262-4-3" n="3" corresp="tr_2_tl_3"/>Liederdichtung noch
+                    länger in den Gewölben <rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0101">Ihrer Burg</rs> <lb
+                    xml:id="lassberg-letter-2262-4-4" n="4" corresp="tr_2_tl_4"/>vergraben liegen?
+                    <lb xml:id="lassberg-letter-2262-4-5" n="5" corresp="tr_2_tl_5"/>Endlich
+                    diessmal lassen Sie mich eine grosse Bitte, die ich in <lb
+                    xml:id="lassberg-letter-2262-4-6" n="6" corresp="tr_2_tl_6"/><rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs>, die
+                    ich bisher in jedem Briefe nur mit Mühe unter <lb break="no"
+                    xml:id="lassberg-letter-2262-4-7" n="7" corresp="tr_2_tl_7"/>drückt habe, frey
+                    heraus Ihnen vortragen: da Ihr Liedersaal <lb xml:id="lassberg-letter-2262-4-8"
+                    n="8" corresp="tr_2_tl_8"/>doch nicht in den Buchhandel kommt, und da man ihn
+                    nur <lb xml:id="lassberg-letter-2262-4-9" n="9" corresp="tr_2_tl_9"/>als
+                    Geschenk von Ihnen haben kann: so erweysen Sie auch <lb
+                    xml:id="lassberg-letter-2262-4-10" n="10" corresp="tr_2_tl_10"/>mir diese
+                    Freundes gunst! Und jedesfalls zürnen Sie der freyen <lb
+                    xml:id="lassberg-letter-2262-4-11" n="11" corresp="tr_2_tl_11"/>Bitte nicht! <lb
+                    xml:id="lassberg-letter-2262-4-12" n="12" corresp="tr_2_tl_12"/>Lassen Sie mich
+                    mit diesem schweren Worte abbrechen. Gott <lb xml:id="lassberg-letter-2262-4-13"
+                    n="13" corresp="tr_2_tl_13"/>erhalte mir Sie und Ihre Gewogenheit. Mit mir laest
+                    sich auch <lb xml:id="lassberg-letter-2262-4-14" n="14" corresp="tr_2_tl_14"
+                    /><rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0555">mein liebes
+                    Weib</rs> Ihnen u. Ihrer hochverehrten <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0176">Frau
+                    Gemahlin</rs> <lb xml:id="lassberg-letter-2262-4-15" n="15" corresp="tr_2_tl_15"
+                    />angelegentlichst empfehlen, und wenn Sie (ich bitte nochmals <lb
+                    xml:id="lassberg-letter-2262-4-16" n="16" corresp="tr_2_tl_16"/>darum) über <rs
+                    type="place" key="../register/lassberg-places.xml#lassberg-place-0019"
+                    >Basel</rs> kommen, soll Ihnen auch <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0354">mein
+                    Bube</rs> eine <lb xml:id="lassberg-letter-2262-4-17" n="17"
+                    corresp="tr_2_tl_17"/>tüchtige Patschhand geben. Von treuem Herzen <lb
+                    xml:id="lassberg-letter-2262-4-18" n="18" corresp="tr_2_tl_18"/>Ihr beständig
+                    ergebener <lb xml:id="lassberg-letter-2262-4-19" n="19" corresp="tr_2_tl_19"
+                    />Wilh. Wackernagel Dr. <lb xml:id="lassberg-letter-2262-4-20" n="20"
+                    corresp="line_1734427547459_4401"/>Basel 11 Aug. 41 </p>
+            </div>
+            <div type="normalized" resp="#GPT4">
+                <p>Von Herzen verehrter Herr und Freund! Mit inniger Freude habe ich (freilich in
+                    Folge meiner Vakanz-Abwesenheit von Basel erst nach Verlauf eines vollen Monats)
+                    Ihren Brief vom 9. Juli durch meinen Nachbarn, Herrn R.H. Burckhardt-Iselin
+                    erhalten. Mit Freude, aber auch mit Wehmut: denn bei diesen freundlichen Zeilen
+                    und den begleitenden Erzählungen des Überbringers fiel es mir von neuem schwer
+                    aufs Herz, wie lange ich Sie und die verehrten Ihrigen schon nicht mehr gesehen,
+                    dass ich Sie in Ihrem neuen Schlosse noch gar nicht besucht habe. Jedes Mal dass
+                    Ferien eintraten, habe ich all diese Jahre gedacht: Geh. nach Märsburg, und
+                    niemals mehr habe ich es, bald durch Arbeitsdrang, bald durch häusliche
+                    Verhältnisse behindert, ausführen können. So auch wieder in den eben
+                    verflossenen Sommerferien: meine Frau ist in Umständen, die ihr eine größere
+                    Reise unmöglich und mir (nachdem wir schon zweimal das Unglück einer zu frühen
+                    Niederkunft haben erleben müssen) eine längere Trennung unerwünscht machen: da
+                    haben wir uns denn nur sieben Stunden von hier in einem einsamen Gebirgsbade der
+                    Landschaft niedergelassen. Übers Jahr aber komme ich sicherlich, wenn Gott mir
+                    diese Freude gönnen mag. Und Sie, geliebter und verehrter Herr und Freund, Sie
+                    sollten doch auch einmal, wenn Sie den Rhein hinunter in die Heimat Ihrer Frau
+                    Gemahlin reisen, mit auf dem Weg unsere alte Basilea besuchen, wo Ihnen mehr als
+                    ein Herz zugetan ist, keines aber (ich sage es getrost) so wie das meine. Aus
+                    Ihrem lieben Brief und aus den Berichten des Ritterlichen Ehepaars ersehe ich,
+                    dass ich Sie um die schöne Rüstigkeit Ihres Arbeitens zu beneiden habe. Mir geht
+                    es bei den Leiden nervöser Reizbarkeit gar langsam vonstatten. Das Altd.
+                    Lesebuch ist allerdings noch immer nicht vollendet; und nicht mehr erschienen
+                    als Sie in Händen haben: jedoch wird jetzt mit Eifer am Glossar gedruckt. Vom
+                    dritten Teil des ganzen Werkes (Prosa seit MD.) wird nächstens der erste Band
+                    Geiler v. Keisersb. bis Zinzendorf heraus und natürlich auch zu Ihnen
+                    hinaufkommen. Gern hätte ich Ihnen vor einem Jahre geschickt, was hier der Jubel
+                    des Buchdruckerfestes an Poesie u. Prosa (historischer u. oratorischer) zu Tage
+                    gefördert hat: aber ich habe aus dem Sturm und Drang des allgemeinen Zugreifens
+                    kaum für mich selbst (den Präsidenten der Festkommission) Exemplare retten
+                    können. Damit entschuldigen Sie mich falls Sie mir gezürnt haben. Auf das Buch,
+                    dessen Druck Sie jetzt beschäftigt, bin ich umso begieriger, als Sie über Inhalt
+                    u. Form u. Verfasser noch gar nichts haben verraten mögen. Aber (damit ich auch
+                    an Sie eine neckende Frage der Ungeduld richte) was macht der Weingartner Codex?
+                    Soll dieses Juwel der altdeutschen Liederdichtung noch länger in den Gewölben
+                    Ihrer Burg vergraben liegen? Endlich diesmal lassen Sie mich eine große Bitte,
+                    die ich in Eppishausen, die ich bisher in jedem Briefe nur mit Mühe unter drückt
+                    habe, frei heraus Ihnen vortragen: Da Ihr Liedersaal doch nicht in den
+                    Buchhandel kommt, und da man ihn nur als Geschenk von Ihnen haben kann: so
+                    erweisen Sie auch mir diese Freundesgunst! Und jedenfalls zürnen Sie der freien
+                    Bitte nicht! Lassen Sie mich mit diesem schweren Worte abbrechen. Gott erhalte
+                    mir Sie und Ihre Gewogenheit. Mit mir lässt sich auch mein liebes Weib Ihnen u.
+                    Ihrer hochverehrten Frau Gemahlin angelegentlichst empfehlen, und wenn Sie (ich
+                    bitte nochmals darum) über Basel kommen, soll Ihnen auch mein Bube eine tüchtige
+                    Patschehand geben. Von treuem Herzen Ihr beständig ergebener Wilh. Wackernagel
+                    Dr. Basel, 11. Aug. 41</p>
+            </div>
+            <div type="translation" resp="#GPT4">
+                <p>From the heart, esteemed sir and friend! With heartfelt joy, I have received
+                    (admittedly, following my vacation absence from Basel only after the course of a
+                    full month) your letter from July 9 through my neighbor, Mr. R.H.
+                    Burckhardt-Iselen. With joy, but also with melancholy: for upon reading these
+                    kind lines and the accompanying tales of the bearer, it weighed heavily on my
+                    heart anew how long it has been since I have seen you and your esteemed family,
+                    and that I have not yet visited you in your new castle. Every time holidays
+                    came, I thought all these years: Go to Märsburg, and yet I have never been able
+                    to fulfill it, sometimes hindered by the demand of work, sometimes by domestic
+                    circumstances. So it was again in the past summer vacation: my wife is in a
+                    condition that makes a longer journey impossible for her and (after having
+                    already twice experienced the misfortune of a premature delivery) makes a longer
+                    separation undesirable for me: thus, we have settled only seven hours from here
+                    in a secluded mountain bath of the countryside. But next year, I will surely
+                    come, if God grants me this joy. And you, beloved and esteemed sir and friend,
+                    you should also, once when you travel down the Rhine to the homeland of your
+                    wife, stop by our old Basilea, where more than one heart is devoted to you,
+                    though none (I say it confidently) like mine. From your lovely letter and from
+                    the reports of the noble couple, I perceive that I must envy you for the
+                    beautiful vigor of your work. For me, due to the suffering of nervous
+                    irritability, everything proceeds very slowly. The Old German Reader is indeed
+                    still not completed; and not more has appeared than what you have in hand:
+                    however, the glossary is now being printed with zeal. The first volume from the
+                    third part of the whole work (Prose since MD.) will soon come out, from Geiler
+                    v. Keisersb. to Zinzendorf, and naturally also reach you. I would have gladly
+                    sent you what the jubilation of the printer's festival brought to light here in
+                    poetry and prose (historical and oratorical) a year ago, but I could hardly save
+                    for myself (the president of the festival commission) any copies from the storm
+                    and stress of general demand. Please excuse me if you have been angry with me. I
+                    am all the more eager for the book which you are now occupied with printing, as
+                    you have revealed nothing about its content, form, or author. But (so that I too
+                    may direct a teasing question of impatience at you) how is the Weingartner
+                    Codex? Should this jewel of old German song poetry remain buried in the vaults
+                    of your castle for longer? Finally, this time, allow me to put forward a great
+                    request that I have, until now, only with difficulty suppressed in every letter,
+                    at Eppishausen: since your song hall does not enter the book trade, and as it
+                    can only be obtained as a gift from you, please also bestow this favor upon me
+                    as a friend! And in any case, do not be angry at the free request! Let me break
+                    off with this serious word. May God preserve you and your goodwill towards me.
+                    My dear wife also earnestly recommends herself to you and your highly esteemed
+                    wife, and when you (I ask once more for this) come to Basel, my boy shall also
+                    give you a hearty handshake. From a loyal heart, Your ever-devoted Wilh.
+                    Wackernagel Dr. Basel, August 11, 1841</p>
+            </div>
+            <div type="summary" resp="#GPT4">
+                <p>Wackernagel entschuldigt sich dafür, dass er Laßberg trotz mehrfacher Absicht
+                    noch nicht in Meersburg besucht hat, was insbesondere durch familiäre
+                    Verpflichtungen und gesundheitliche Umstände verhindert wurde. Er hofft jedoch,
+                    dies im kommenden Jahr nachholen zu können, und lädt Laßberg ein, Basel zu
+                    besuchen. Er berichtet über den Fortschritt seines Altdeutschen Lesebuchs, das
+                    noch nicht vollständig erschienen ist, jedoch am Glossar gearbeitet wird. Zudem
+                    erwähnt er den dritten Teil seines Werkes, der bald erscheinen soll. Wackernagel
+                    erkundigt sich nach Laßbergs Buchprojekt, über dessen Inhalt er bisher nichts
+                    erfahren hat, und drängt darauf, den Weingartner Codex nicht länger
+                    unveröffentlicht zu lassen. Schließlich bittet er um ein Exemplar von Laßbergs
+                    Liedersaal, da dieses nicht im Handel erhältlich ist, und versichert ihm seine
+                    anhaltende Freundschaft. Seine Frau sendet ebenfalls Grüße, und sein Sohn soll
+                    Laßberg bei einem möglichen Besuch in Basel persönlich begrüßen.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

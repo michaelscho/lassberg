@@ -1,0 +1,528 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1776">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Wilhelm Wackernagel an Joseph von Laßberg (12.05.1834).</title>
+                <respStmt xml:id="MiS">
+                    <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Textfassung auf Basis der Transkription durch Transkribus korrigiert und in TEI
+                    überführt. Automatisierte NER-Erkennung und Identifikation durch Flair geprüft,
+                    korrigiert und ergänzt. Normalisierung, Zusammenfassung und Übersetzung durch
+                    GPT-4. Lizenz: </p>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY
+                        4.0</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Basel</settlement>
+                        <repository>Staatsarchiv des Kantons Basel-Stadt</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">2497</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates> <bibl type="printed"><ref/></bibl> </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1776">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0367"
+                        ref="https://d-nb.info/gnd/118805851">Wilhelm Wackernagel</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0019"
+                        >Basel</placeName>
+                    <date when="1834-05-12">12.05.1834</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373"
+                        ref="https://d-nb.info/gnd/118778862">Joseph von Laßberg</persName>
+
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned"> <ref type="cmif:mentionsBibl"
+                    target="../register/lassberg-literature.xml#lassberg-literature-0133"
+                    ><rs>Frauendienst</rs></ref> <ref type="cmif:mentionsBibl"
+                    target="../register/lassberg-literature.xml#lassberg-literature-0168"
+                    ><rs>Vocabularius Sancti Galli</rs></ref> <ref type="cmif:mentionsBibl"
+                    target="../register/lassberg-literature.xml#lassberg-literature-0171"><rs>De
+                    materia artis rhetoricae</rs></ref> <ref type="cmif:mentionsBibl"
+                    target="../register/lassberg-literature.xml#lassberg-literature-0169"><rs>De
+                    syllogismis</rs></ref> <ref type="cmif:mentionsBibl"
+                    target="../register/lassberg-literature.xml#lassberg-literature-0170"><rs>De
+                    consolatione philosophiae</rs></ref> <ref type="cmif:mentionsBibl"
+                    target="../register/lassberg-literature.xml#lassberg-literature-0174"><rs>Vom
+                    gemeinen leben</rs></ref> <ref type="cmif:mentionsBibl"
+                    target="../register/lassberg-literature.xml#lassberg-literature-0013"
+                    ><rs>Unbekannt</rs></ref> <ref type="cmif:mentionsBibl"
+                    target="../register/lassberg-literature.xml#lassberg-literature-0172"><rs>Der
+                    welsche Gast</rs></ref> <ref type="cmif:mentionsBibl"
+                    target="../register/lassberg-literature.xml#lassberg-literature-0173"
+                    ><rs>Helmbrecht</rs></ref> <ref type="cmif:mentionsBibl"
+                    target="../register/lassberg-literature.xml#lassberg-literature-0188"
+                    ><rs>Mainauer Naturlehre</rs></ref> <ref type="cmif:mentionsBibl"
+                    target="../register/lassberg-literature.xml#lassberg-literature-0187"
+                    ><rs>Martina</rs></ref> <ref type="cmif:mentionsBibl"
+                    target="../register/lassberg-literature.xml#lassberg-literature-0167"><rs>Buch
+                    von der Heiligen Leben</rs></ref> <ref type="cmif:mentionsBibl"
+                    target="../register/lassberg-literature.xml#lassberg-literature-0166"><rs>Sieben
+                    weise Meister gedichtet.</rs></ref> <ref type="cmif:mentionsBibl"
+                    target="../register/lassberg-literature.xml#lassberg-literature-0165"
+                    ><rs>Hildebrandslied</rs></ref> <ref type="unknownType" target=""
+                    ><rs>Unknown</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0601"><rs>Ulrich
+                    von Liechtenstein</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0119"
+                    ><rs>Friedrich Heinrich von der Hagen</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0596"><rs>Konrad
+                    von Würzburg</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0639"
+                    ><rs>Albrecht der Kolbe</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0611"
+                    ><rs>Gertrud von Hohenberg</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0640"
+                    ><rs>Maximilian Neustück</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0614"><rs>Kaiser
+                    Heinrich II.</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0577"><rs>Jesus
+                    Christus</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0633"
+                    ><rs>Kunigunde von Luxemburg</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0634"
+                    ><rs>Michael, Erzengel</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0635"
+                    ><rs>Gabriel, Erzengel</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0636"
+                    ><rs>Raphael, Erzengel</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0523"
+                    ><rs>Benedikt (Heiliger)</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0373"><rs>Joseph
+                    von Laßberg</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0260"><rs>Karl
+                    Lachmann</rs></ref> <ref type="cmif:mentionsPlace"
+                    target="../register/lassberg-places.xml#lassberg-place-0019"
+                    ><rs>Basel</rs></ref> <ref type="cmif:mentionsPlace"
+                    target="../register/lassberg-places.xml#lassberg-place-0166"
+                    ><rs>Zürich</rs></ref> <ref type="cmif:mentionsPlace"
+                    target="../register/lassberg-places.xml#lassberg-place-0220"
+                    ><rs>Frankreich</rs></ref> <ref type="cmif:mentionsPlace"
+                    target="../register/lassberg-places.xml#lassberg-place-0301"
+                    ><rs>Schwarzwald</rs></ref> <ref type="cmif:mentionsPlace"
+                    target="../register/lassberg-places.xml#lassberg-place-0260"><rs>Jura</rs></ref>
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2025-03-07" who="#MiS" status="done">Text recognized by
+                    Transkribus</change>
+                <change when="2025-03-07" who="#MiS" status="done">Text corrected in
+                    Transkribus</change>
+                <change when="2025-03-07" who="#MiS" status="done">Exported from
+                    Transkribus</change>
+                <change when="2025-03-07" who="#MiS" status="done">Automatic NER</change>
+                <change when="2025-03-07" who="#MiS" status="done">Automatic normalization,
+                    translation and summary</change>
+                <change when="2025-03-07" who="#MiS" status="done">Manual markup and
+                    proofreading</change>
+                <change when="2025-03-07" who="#MiS" status="done">Finished markup</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="original" resp="#transkribus #MiS">
+                <p><pb n="1" corresp="../pagexml/1776/1776-1.xml"/><lb
+                    xml:id="lassberg-letter-1776-1-1" n="1" corresp="tr_1_tl_1"/>Basel, 12/5/34. <lb
+                    xml:id="lassberg-letter-1776-1-2" n="2" corresp="tr_1_tl_2"/>Hochverehrter Herr
+                    Baron <lb xml:id="lassberg-letter-1776-1-3" n="3" corresp="tr_1_tl_3"/>mit
+                    Betrübniss habe ich Ihren letzten gütigen Brief gelesen. ich <lb
+                    xml:id="lassberg-letter-1776-1-4" n="4" corresp="tr_1_tl_4"/>wünsche, ich hoffe
+                    dass das Uebel wieder gehoben und Hand und <lb xml:id="lassberg-letter-1776-1-5"
+                    n="5" corresp="tr_1_tl_5"/>Arm genesen sey. Wie verdriesslich wäre es Ihnen
+                    sonst, in <lb xml:id="lassberg-letter-1776-1-6" n="6" corresp="tr_1_tl_6"
+                    />dieser wunnerlichen zit des meien, wo Ihr Gau von jeher am <lb
+                    xml:id="lassberg-letter-1776-1-7" n="7" corresp="tr_1_tl_7"/>schönsten gewesen
+                    ist, gar die Stube hüten zu müssen Gott besser! <lb
+                    xml:id="lassberg-letter-1776-1-8" n="8" corresp="tr_1_tl_8"/>Auch hier habe ich
+                    seit voriger Woche den Kummer einen <lb xml:id="lassberg-letter-1776-1-9" n="9"
+                    corresp="tr_2_tl_1"/>Kranken zu beklagen. Einer von meinen Studenten, gerade
+                    mein <lb xml:id="lassberg-letter-1776-1-10" n="10" corresp="tr_2_tl_2"
+                    />Liebling, ein frischer liebenswürdiger geistreicher Mensch von seltener <lb
+                    xml:id="lassberg-letter-1776-1-11" n="11" corresp="tr_2_tl_3"/>Dichtergabe, ist
+                    eben jetzt wo er die Theologie aufgeben <lb xml:id="lassberg-letter-1776-1-12"
+                    n="12" corresp="tr_2_tl_4"/>und sich ganz auf die deutschen Studien legen
+                    wollte, in Geistes <lb break="no" xml:id="lassberg-letter-1776-1-13" n="13"
+                    corresp="tr_2_tl_5"/>verwirrung verfallen. Ein blühender Bursch von achtzehn
+                    Jahren. <lb xml:id="lassberg-letter-1776-1-14" n="14" corresp="tr_2_tl_6"/>Das
+                    ist aber nicht der erste Fall der Art. Die <rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0019">Baseler</rs> Nerven
+                    <lb xml:id="lassberg-letter-1776-1-15" n="15" corresp="tr_2_tl_7"/>sind so aufs
+                    gewöhnliche eingerichtet, dass ein etwas ungewöhn <lb break="no"
+                    xml:id="lassberg-letter-1776-1-16" n="16" corresp="tr_2_tl_9"/>licher Geist sie
+                    gleich überreizt. Nun liegt der gute Mensch und <lb
+                    xml:id="lassberg-letter-1776-1-17" n="17" corresp="tr_2_tl_10"/>phantasiert von
+                    poetischen Genüssen. <pb n="2" corresp="../pagexml/1776/1776-2.xml"/><lb
+                    xml:id="lassberg-letter-1776-2-1" n="1" corresp="tr_1_tl_1"/>Der Bericht von
+                    Ihrem Unglück gieng mir um so näher, als mir daneben <lb
+                    xml:id="lassberg-letter-1776-2-2" n="2" corresp="tr_1_tl_2"/>so reiche und so
+                    überaus zierlich geschriebene Auszüge vor Augen lagen. <lb
+                    xml:id="lassberg-letter-1776-2-3" n="3" corresp="tr_1_tl_3"/>Eine so mühevolle
+                    Freundlichkeit durfte ich nie erwarten: wie soll <lb
+                    xml:id="lassberg-letter-1776-2-4" n="4" corresp="tr_1_tl_4"/>ich Ihnen dafür
+                    danken. Der <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0133"
+                    >Frauendienst</rs> erfolgt anbei mit <lb xml:id="lassberg-letter-1776-2-5" n="5"
+                    corresp="tr_1_tl_5"/>meinem besten Dank zurück. ich habe das hübsche Abenteuer
+                    aus <lb break="no" xml:id="lassberg-letter-1776-2-6" n="6" corresp="tr_1_tl_6"
+                    />gewählt, wie <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0601">Ulrich</rs>
+                    sich in einen Miselsächtigen verkleidet: er erzählt <lb
+                    xml:id="lassberg-letter-1776-2-7" n="7" corresp="tr_1_tl_7"/>an dieser Stelle
+                    mit am besten, und die ganze Geschichte ist chara <lb break="no"
+                    xml:id="lassberg-letter-1776-2-8" n="8" corresp="tr_1_tl_8"/>cteristisch für
+                    ihn. <lb xml:id="lassberg-letter-1776-2-9" n="9" corresp="tr_1_tl_9"/>Ausserdem
+                    soll von ungedruckten Sachen, wofern der Raum ausreicht, noch <lb
+                    xml:id="lassberg-letter-1776-2-10" n="10" corresp="tr_1_tl_10"/>folgendes
+                    hinein. Als erstes Stück das ganze <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0168">vocab: S.
+                    Galli</rs>. – Aus <lb xml:id="lassberg-letter-1776-2-11" n="11"
+                    corresp="tr_1_tl_11"/>der <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0171">sgall.
+                    Rhetorik</rs> (Zürcher H.S.). <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0169">Sgall
+                    Abhandlung de syllogismis</rs> <lb xml:id="lassberg-letter-1776-2-12" n="12"
+                    corresp="tr_1_tl_12"/>(ib.). Eine Stelle des <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0170">Boeth</rs>.
+                    (Zürcher u. Sgall. HSS.) Aus <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0174">Heinrich v.
+                    <lb xml:id="lassberg-letter-1776-2-13" n="13" corresp="tr_1_tl_13"/>M. gemeinen
+                    lebens</rs> (ein Oestreicher vor 1163). <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0013">Predigt</rs>
+                    aus einer Zürcher <lb xml:id="lassberg-letter-1776-2-14" n="14"
+                    corresp="tr_2_tl_1"/>HS. c 1160. <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0013">Gebet</rs>
+                    aus einer Hs. zu Muri, etwa gleichzeitig. <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0013">Predigt <lb
+                    break="no" xml:id="lassberg-letter-1776-2-15" n="15" corresp="tr_2_tl_2"
+                    />bruchstücke</rs> von hier, grammatisch merkwürdig wie mir noch weniges vor <lb
+                    break="no" xml:id="lassberg-letter-1776-2-16" n="16" corresp="tr_2_tl_3"
+                    />gekommen, c. 1200. – Ein Abschnitt aus <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0172">Tommasins v.
+                    Zerclaere welschem <lb xml:id="lassberg-letter-1776-2-17" n="17"
+                    corresp="tr_2_tl_4"/>Gast</rs>. Hoeflichkeitsregeln enthaltend. <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0013">Lieder</rs>
+                    aus der Würzb. HS. (freylich <lb xml:id="lassberg-letter-1776-2-18" n="18"
+                    corresp="tr_2_tl_5"/>halb w: halb schon ediert von <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0119">Herr vd
+                    Hagen</rs>). Eben daher und aus Wiener <lb xml:id="lassberg-letter-1776-2-19"
+                    n="19" corresp="tr_2_tl_6"/>u. Pfälzer HSS. einige <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0013">Erzählungen
+                    u. Fabeln</rs>. Aus <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0173">Wernhers des
+                    gartennaeres <lb xml:id="lassberg-letter-1776-2-20" n="20" corresp="tr_2_tl_7"
+                    />Meier Helmbrecht</rs> (Wiener H.S.). Lieder von <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0596">Konr. v.
+                    Würzburg</rs>. <lb xml:id="lassberg-letter-1776-2-21" n="21" corresp="tr_2_tl_8"
+                    />Aus der <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0188"
+                    >Cosmographie</rs> hinter der <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0187">Martina</rs>.
+                    Aus <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0167">Hermanns von
+                    <lb xml:id="lassberg-letter-1776-2-22" n="22" corresp="tr_2_tl_9"/>Fritzlar
+                    Legendenbuch</rs> (c. 1340), Pfälzer H. Aus meinem Graubündner <lb
+                    xml:id="lassberg-letter-1776-2-23" n="23" corresp="tr_2_tl_10"/>Prediger <rs
+                    type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0639"
+                    >Albr. Kolbe</rs>. <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0013">Ascetien des
+                    14 Jh.</rs> von hier und aus <rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0166">Zürich</rs>. <lb
+                    xml:id="lassberg-letter-1776-2-24" n="24" corresp="tr_2_tl_11"/><rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0166">Sieben weise
+                    Meister gedichtet 1412.</rs>, Baseler HS. <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0013"
+                    >Meistergesänge</rs> aus <lb xml:id="lassberg-letter-1776-2-25" n="25"
+                    corresp="tr_2_tl_12"/>Pfälzer HSS <pb n="3" corresp="../pagexml/1776/1776-3.xml"
+                    /><lb xml:id="lassberg-letter-1776-3-1" n="1" corresp="tr_2_tl_1"/>Diese Woche
+                    endlich erwarte ich die erste Correctur. Wüsste ich nur ob ich mich von <lb
+                    xml:id="lassberg-letter-1776-3-2" n="2" corresp="tr_2_tl_2"/>Ihnen noch weiterer
+                    gütiger Unterstützung gewärtigen dürfte. ich wage unter <lb
+                    xml:id="lassberg-letter-1776-3-3" n="3" corresp="tr_2_tl_3"/>diesen Umständen
+                    nicht darum zu bitten; ich wollte nur, ich könnte es. <lb
+                    xml:id="lassberg-letter-1776-3-4" n="4" corresp="tr_2_tl_4"/>Übrigens hätte ich
+                    Ihnen den <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0133"
+                    >Frauendienst</rs> schon vor einer Woche zurück <lb break="no"
+                    xml:id="lassberg-letter-1776-3-5" n="5" corresp="tr_2_tl_5"/>senden können; aber
+                    ich wollte doch lieber warten bis es mir moeglich wäre, <lb
+                    xml:id="lassberg-letter-1776-3-6" n="6" corresp="tr_2_tl_6"/>die gewünschte
+                    Abbildung der <rs type="object" key="">Krone</rs> der <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0611">Königinn
+                    Anna</rs> beizulegen, ich habe <lb xml:id="lassberg-letter-1776-3-7" n="7"
+                    corresp="tr_2_tl_7"/>sie nun erhalten, angefertigt vom Mahler <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0640"
+                    >Neustück</rs>, den ich glaube für weitere <lb xml:id="lassberg-letter-1776-3-8"
+                    n="8" corresp="tr_2_tl_8"/>Arbeiten der Art empfehlen zu können. Die Masse des
+                    Originals stehn <lb xml:id="lassberg-letter-1776-3-9" n="9" corresp="tr_2_tl_9"
+                    />auf einem beiliegenden Zettel. Die Krone ist von Silber, von Silberblech und
+                    <lb xml:id="lassberg-letter-1776-3-10" n="10" corresp="tr_1_tl_1"/>vergoldet.
+                    Die Zeichnung ist wenige Stunden vor Verlosung des ganzen <lb
+                    xml:id="lassberg-letter-1776-3-11" n="11" corresp="tr_1_tl_3"/>Schatzes (44
+                    Nummern) zwischen Stadt und Land aufgenommen worden. Im F. 1827 war er <lb
+                    xml:id="lassberg-letter-1776-3-12" n="12" corresp="tr_1_tl_4"/>auf 321 Mark 12
+                    Loth Silbers w. 6 M. 1 L. Goldes gewürdigt worden; jetzt <lb
+                    xml:id="lassberg-letter-1776-3-13" n="13" corresp="tr_1_tl_5"/>auf den Geldwerth
+                    von 19-20000 Schw. Fr. wovon nach dem bekannten modus <lb
+                    xml:id="lassberg-letter-1776-3-14" n="14" corresp="tr_1_tl_6"/>2/5 der Stadt,
+                    3/5. dem Lande zufallen sollten. Ein Privatmann hatte sich <lb
+                    xml:id="lassberg-letter-1776-3-15" n="15" corresp="tr_1_tl_7"/>erboten 23000 Fr.
+                    zu zahlen; aber die wohlberechnete Speculation <lb
+                    xml:id="lassberg-letter-1776-3-16" n="16" corresp="tr_1_tl_8"/>missglückte, da
+                    diesmahl die Landschaft nicht das baare Geld vorzog, sondern <lb
+                    xml:id="lassberg-letter-1776-3-17" n="17" corresp="tr_1_tl_9"/>auf Theilung in
+                    natura bestand. ich muss zu meiner Schande gestehn: ich <lb
+                    xml:id="lassberg-letter-1776-3-18" n="18" corresp="tr_1_tl_10"/>weiss nicht ob
+                    beim Loossen, wie man es wünschte, der Stadt die <rs type="object" key="">goldne
+                    Altar <lb break="no" xml:id="lassberg-letter-1776-3-19" n="19"
+                    corresp="tr_1_tl_11"/>tafel</rs>, die grade auf etwa 8000 Fr., ihren Antheil,
+                    geschätzt worden, zuge <lb break="no" xml:id="lassberg-letter-1776-3-20" n="20"
+                    corresp="tr_1_tl_12"/>fallen ist. Diese von Kaiser <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0614">Heinrich
+                    II</rs>. gewidmete Tafel ist von Holz, mit Ducaten <lb break="no"
+                    xml:id="lassberg-letter-1776-3-21" n="21" corresp="tr_3_tl_1"/>gold überzogen
+                    lang 5'5", hoch 3'8". Sie enthält in fünf Nischen oder Feldern, mitten <lb
+                    xml:id="lassberg-letter-1776-3-22" n="22" corresp="tr_3_tl_2"/>inne <rs
+                    type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0577"
+                    >Christus</rs>, dem zu Füssen <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0614">Heinrich</rs>
+                    und <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0633"
+                    >Kunigunde</rs> knien; ihm zu Seiten <lb xml:id="lassberg-letter-1776-3-23"
+                    n="23" corresp="tr_3_tl_3"/>in den vier übrigen Feldern <lb
+                    xml:id="lassberg-letter-1776-3-24" n="24" corresp="tr_3_tl_4"/>die Erzengel <rs
+                    type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0634"
+                    >Mich</rs>. <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0635">Gabr</rs>.
+                    <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0636">Raph</rs>.
+                    und den heil. <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0523"
+                    >Benedictus</rs> Auf dem obern Rande <lb xml:id="lassberg-letter-1776-3-25"
+                    n="25" corresp="tr_3_tl_6"/>der Tafel steht gemahlt: + QVIS SICVT HEL FORTIS
+                    MEDICVS <lb xml:id="lassberg-letter-1776-3-26" n="26" corresp="tr_3_tl_7"/>SOTER
+                    BENEDICTVS. Auf den untern: + PROSPICE TERRIGENAS CLEMENS <lb
+                    xml:id="lassberg-letter-1776-3-27" n="27" corresp="tr_3_tl_9"/>MEDTATOR USIAS.
+                    Im J: 1585 ist der Werth dieser Tafel auf 2000 Sonnen <lb break="no"
+                    xml:id="lassberg-letter-1776-3-28" n="28" corresp="tr_3_tl_10"/>kronen oder 4500
+                    lb geschätzt worden. <pb n="4" corresp="../pagexml/1776/1776-4.xml"/><lb
+                    xml:id="lassberg-letter-1776-4-1" n="1" corresp="tr_2_tl_1"/>Da haben Sie,
+                    hochgeehrter Herr <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0373">Baron</rs>,
+                    die Nachrichten die Sie verlangt, so <lb xml:id="lassberg-letter-1776-4-2" n="2"
+                    corresp="tr_2_tl_2"/>gut ich sie zu geben im Stande bin. Künstlerischen Werth
+                    hat die Tafel ei <lb break="no" xml:id="lassberg-letter-1776-4-3" n="3"
+                    corresp="tr_2_tl_3"/>gentlich gar keinen; auch nicht denjenigen den sie wohl
+                    haben könnte. <lb xml:id="lassberg-letter-1776-4-4" n="4" corresp="tr_2_tl_4"
+                    />Noch lege ich Ihnen im Auftrage Prof. <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0260"
+                    >Lachmanns</rs>, der sich Ihnen <lb xml:id="lassberg-letter-1776-4-5" n="5"
+                    corresp="tr_2_tl_5"/>auf das angelegentlichste empfehlen lässt; von seinen
+                    academischen <lb xml:id="lassberg-letter-1776-4-6" n="6" corresp="tr_2_tl_6"
+                    />Vorlesungen über althochd. Metrik und seiner neuen Recension des <lb
+                    xml:id="lassberg-letter-1776-4-7" n="7" corresp="tr_1_tl_2"/><rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0165"
+                    >Hildebrandsliedes</rs> Exemplare bei. Namentlich die letztere ist mir für <lb
+                    xml:id="lassberg-letter-1776-4-8" n="8" corresp="tr_1_tl_3"/>mein Lesebuch noch
+                    gar wohl zu statten gekommen. <lb xml:id="lassberg-letter-1776-4-9" n="9"
+                    corresp="tr_1_tl_4"/>So wenig mir <rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0220">Frankreich</rs>
+                    gefallen will, so habe ich mich ihm doch <lb xml:id="lassberg-letter-1776-4-10"
+                    n="10" corresp="tr_1_tl_5"/>zu Anfangs dieses Monates noch um einige Häuser
+                    ﻿genähert: ich <lb xml:id="lassberg-letter-1776-4-11" n="11" corresp="tr_1_tl_6"
+                    />wohne jezt S. Johann No 31. Eine schöne geräumige Wohnung <lb
+                    xml:id="lassberg-letter-1776-4-12" n="12" corresp="tr_1_tl_7"/>mit stattlicher
+                    Aussicht auf <rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0301">Schwarzwald</rs> u.
+                    <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0260"
+                    >Jura</rs> und <rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0019">Basel</rs> mitten <lb
+                    xml:id="lassberg-letter-1776-4-13" n="13" corresp="tr_1_tl_8"/>inne. <lb
+                    xml:id="lassberg-letter-1776-4-14" n="14" corresp="tr_1_tl_9"/>ich bitte Gott
+                    Sie gesund, zu machen und gesund zu erhalten. <lb
+                    xml:id="lassberg-letter-1776-4-15" n="15" corresp="tr_1_tl_10"/>Leben Sie recht
+                    wohl und bleiben Sie freundlich gewogen <lb xml:id="lassberg-letter-1776-4-16"
+                    n="16" corresp="tr_1_tl_11"/>Ihrem ergebenen <lb
+                    xml:id="lassberg-letter-1776-4-17" n="17" corresp="tr_1_tl_12"/>Wilh.
+                    Wackernagel Dr. </p>
+            </div>
+            <div type="normalized" resp="#GPT4">
+                <p>Basel, 12/5/34. Hochverehrter Herr Baron mit Betrübnis habe ich Ihren letzten
+                    gütigen Brief gelesen. Ich wünsche, ich hoffe, dass das Übel wieder gehoben und
+                    Hand und Arm genesen sei. Wie verdrießlich wäre es Ihnen sonst, in dieser
+                    wunderlichen Zeit des Maiens, wo Ihr Gau von jeher am schönsten gewesen ist, gar
+                    die Stube hüten zu müssen. Gott besser! Auch hier habe ich seit voriger Woche
+                    den Kummer, einen Kranken zu beklagen. Einer von meinen Studenten, gerade mein
+                    Liebling, ein frischer, liebenswürdiger, geistreicher Mensch von seltener
+                    Dichtergabe, ist eben jetzt, wo er die Theologie aufgeben und sich ganz auf die
+                    deutschen Studien legen wollte, in Geistesverwirrung verfallen. Ein blühender
+                    Bursche von achtzehn Jahren. Das ist aber nicht der erste Fall der Art. Die
+                    Baseler Nerven sind so aufs Gewöhnliche eingerichtet, dass ein etwas
+                    ungewöhnlicher Geist sie gleich überreizt. Nun liegt der gute Mensch und
+                    phantasiert von poetischen Genüssen. Der Bericht von Ihrem Unglück ging mir umso
+                    näher, als mir daneben so reiche und so überaus zierlich geschriebene Auszüge
+                    vor Augen lagen. Eine so mühevolle Freundlichkeit durfte ich nie erwarten: Wie
+                    soll ich Ihnen dafür danken? Der Frauendienst erfolgt anbei mit meinem besten
+                    Dank zurück. Ich habe das hübsche Abenteuer ausgewählt, wie Ulrich sich in einen
+                    Aussätzigen verkleidet: Er erzählt an dieser Stelle mit am besten, und die ganze
+                    Geschichte ist charakteristisch für ihn. Außerdem soll von ungedruckten Sachen,
+                    sofern der Raum ausreicht, noch folgendes hinein. Als erstes Stück das ganze
+                    Vocab: S. Galli. – Aus der sgall. Rhetorik (Zürcher H.S.). Sgall Abhandlung de
+                    syllogismis (ib.). Eine Stelle des Boeth. (Zürcher u. Sgall. HSS.) Aus Heinrich
+                    v. d. gemeinen Lebens (ein Österreicher vor 1163). Predigt aus einer Zürcher HS.
+                    c 1160. Gebet aus einer HS. zu Muri, etwa gleichzeitig. Predigtbruchstücke von
+                    hier, grammatisch merkwürdig wie mir noch weniges vorgekommen, c. 1200. – Ein
+                    Abschnitt aus Tommasins v. Zerclaere welschem Gast. Höflichkeitsregeln
+                    enthaltend. Lieder aus der Würzb. HS. (freilich halb w: halb schon ediert von
+                    Herrn v.d. Hagen). Eben daher und aus Wiener u. Pfälzer HSS. einige Erzählungen
+                    u. Fabeln. Aus Wernhers des Gärtnernaeres Meier Helmbrecht (Wiener HB.). Lieder
+                    von Konr. v. Würzburg. Aus der Cosmographie hinter der Martina. Aus Hermanns von
+                    Fritzlar Legendenbuch (c. 1340), Pfälzer HB. Aus meinem Graubündner Prediger
+                    Albr. Kolbe. Asketen des 14. Jh. von hier und aus Zürich. Sieben weise Meister
+                    gedichtet 1412., Baseler HB. Meistergesänge aus Pfälzer HSS. Diese Woche endlich
+                    erwarte ich die erste Korrektur. Wüsste ich nur, ob ich mich von Ihnen noch
+                    weiterer gütiger Unterstützung gewärtigen dürfte. Ich wage unter diesen
+                    Umständen nicht darum zu bitten; ich wollte nur, ich könnte es. Übrigens hätte
+                    ich Ihnen den Frauendienst schon vor einer Woche zurücksenden können; aber ich
+                    wollte doch lieber warten, bis es mir möglich wäre, die gewünschte Abbildung der
+                    Krone der Königin Anna beizulegen. Ich habe sie nun erhalten, angefertigt vom
+                    Maler Neustück, den ich glaube, für weitere Arbeiten der Art empfehlen zu
+                    können. Die Maße des Originals stehen auf einem beiliegenden Zettel. Die Krone
+                    ist von Silber, von Silberblech und vergoldet. Die Zeichnung ist wenige Stunden
+                    vor Verlosung des ganzen Schatzes (44 Nummern) zwischen Stadt und Land
+                    aufgenommen worden. Im Jahr 1827 war er auf 321 Mark 12 Lot Silbers w. 6 M. 1 L.
+                    Goldes gewürdigt worden; jetzt auf den Geldwert von 19-20000 Schw. Fr., wovon
+                    nach dem bekannten Modus 2/5 der Stadt, 3/5 dem Lande zufallen sollten. Ein
+                    Privatmann hatte sich erboten, 23000 Fr. zu zahlen; aber die wohlberechnete
+                    Spekulation missglückte, da diesmal die Landschaft nicht das bare Geld vorzog,
+                    sondern auf Teilung in natura bestand. Ich muss zu meiner Schande gestehen: Ich
+                    weiß nicht, ob beim Losen, wie man es wünschte, der Stadt die goldene
+                    Altartafel, die gerade auf etwa 8000 Fr., ihren Anteil, geschätzt worden,
+                    zugefallen ist. Diese von Kaiser Heinrich II. gewidmete Tafel ist von Holz, mit
+                    Dukatengold überzogen, lang 5'5", hoch 3'8". Sie enthält in fünf Nischen oder
+                    Feldern, mitteninne Christus, dem zu Füßen Heinrich und Kunigunde knien; ihm zu
+                    Seiten in den vier übrigen Feldern die Erzengel Mich. Gabr. Raph. und den
+                    heiligen Benedictus. Auf dem oberen Rande der Tafel steht gemalt: + QVIS SICVT
+                    HEL FORTIS MEDICVS SOTER BENEDICTVS. Auf dem unteren: + PROSPICE TERRIGENAS
+                    CLEMENS MEDTATOR USIAS. Im Jahr 1585 ist der Wert dieser Tafel auf 2000
+                    Sonnenkronen oder 4500 lb geschätzt worden. Da haben Sie, hochgeehrter Herr
+                    Baron, die Nachrichten, die Sie verlangt, so gut ich sie zu geben im Stande bin.
+                    Künstlerischen Wert hat die Tafel eigentlich gar keinen; auch nicht denjenigen,
+                    den sie wohl haben könnte. Noch lege ich Ihnen im Auftrage Prof. Lachmanns, der
+                    sich Ihnen auf das angelegentlichste empfehlen lässt, von seinen akademischen
+                    Vorlesungen über althochd. Metrik und seiner neuen Rezenzion des
+                    Hildebrandsliedes Exemplare bei. Namentlich die letztere ist mir für mein
+                    Lesebuch noch gar wohl zu statten gekommen. So wenig mir Frankreich gefallen
+                    will, so habe ich mich ihm doch zu Anfang dieses Monats noch um einige Häuser
+                    genähert: Ich wohne jetzt S. Johann No 31. Eine schöne, geräumige Wohnung mit
+                    stattlicher Aussicht auf Schwarzwald u. Jura und Basel mitteninne. Ich bitte
+                    Gott, Sie gesund zu machen und gesund zu erhalten. Leben Sie recht wohl und
+                    bleiben Sie freundlich gewogen Ihrem ergebenen Wilh. Wackernagel Dr. </p>
+            </div>
+            <div type="translation" resp="#GPT4">
+                <p>Basel, 12/5/34. Highly esteemed Baron, With sadness I have read your last kind
+                    letter. I wish and hope that the illness is lifted and that hand and arm are
+                    healed. How vexing it would be for you otherwise, in this wonderful time of May,
+                    where your region has always been at its most beautiful, to have to guard the
+                    room. God forbid! Here too, since last week, I have had the sorrow of a sick
+                    person to lament. One of my students, especially my favorite, a fresh, amiable,
+                    witty person with rare poetic talent, has now, just when he intended to abandon
+                    theology and focus entirely on German studies, fallen into mental confusion. A
+                    blossoming youth of eighteen years. But this is not the first case of its kind.
+                    The Basel nerves are typically so set up that a somewhat unusual mind
+                    immediately overstimulates them. Now the good man lies and fantasizes about
+                    poetic delights. The report of your misfortune affected me all the more as
+                    simultaneously I had before me rich and exceedingly neatly written excerpts.
+                    Such a laborious friendliness I never dared expect: how shall I thank you for
+                    it. The 'Frauendienst' is enclosed along with my best thanks returned. I have
+                    chosen the charming adventure where Ulrich disguises himself as a leper: he
+                    tells the story here very well indeed, and the whole narrative is characteristic
+                    of him. Furthermore, from unprinted materials, the following should be included
+                    if space allows. First piece the entire vocab: S. Galli. – From the Sgall.
+                    Rhetoric (Zurich handwriting). Sgall treatise de syllogismis (ibid.). A passage
+                    of Boethius. (Zurich and Sgall. manuscripts) From Heinrich v. the common life
+                    (an Austrian before 1163). Sermon from a Zurich manuscript c. 1160. Prayer from
+                    a manuscript in Muri, about the same time. Sermon fragments from here,
+                    grammatically remarkable as I have encountered rarely, c. 1200. – A section from
+                    Tommasin von Zerclaere's Italian guest. Containing etiquette rules. Songs from
+                    the Würzburg manuscript (admittedly half w: half already edited by Mr. vd.
+                    Hagen). Similarly hence and from Vienna and Palatinate manuscripts some tales
+                    and fables. From Wernher's 'the gardener's Meier Helmbrecht' (Vienna
+                    manuscript). Songs by Konrad von Würzburg. From the Cosmography behind the
+                    Martina. From Hermann von Fritzlar’s legend book (c. 1340), Palatinate
+                    manuscript. From my Grisons preacher Albr. Kolbe. Ascetics of the 14th century
+                    from here and from Zurich. Seven wise masters composed 1412, Basel manuscript.
+                    Master songs from Palatinate manuscripts This week I finally expect the first
+                    correction. I wish I knew if I might expect further kind support from you. Under
+                    the circumstances, I do not dare to ask for it; I only wish I could. In
+                    addition, I could have returned the 'Frauendienst' to you a week ago; but I
+                    preferred to wait until it was possible for me to enclose the desired
+                    illustration of Queen Anna's crown, which I have now received, made by the
+                    painter Neustück, whom I believe I can recommend for further works of this kind.
+                    The dimensions of the original are noted on an accompanying slip. The crown is
+                    of silver, silver sheet, and gilded. The drawing was taken a few hours before
+                    the drawing of the whole treasure (44 numbers) between the city and countryside.
+                    In 1827, it was valued at 321 marks 12 lot of silver and 6 marks 1 lot of gold;
+                    now at the monetary value of 19-20,000 Swiss francs, of which according to the
+                    known method 2/5 should fall to the city, 3/5 to the country. A private
+                    individual had offered to pay 23,000 francs; but the well-calculated speculation
+                    failed as this time the landscape did not prefer the cash but insisted on
+                    division in kind. I must confess to my shame: I do not know if the city won, as
+                    was wished, the golden altar piece, which was roughly estimated at 8000 francs,
+                    its share. This table, dedicated by Emperor Henry II, is made of wood, covered
+                    with ducat gold, long 5'5", high 3'8". It contains in five niches or fields, in
+                    the middle of them Christ, at whose feet Henry and Kunigunde kneel; beside him
+                    on the four other fields the Archangels Michael, Gabriel, Raphael, and Saint
+                    Benedict. On the upper edge of the panel is painted: + QVIS SICVT HEL FORTIS
+                    MEDICVS SOTER BENEDICTVS. On the lower: + PROSPICE TERRIGENAS CLEMENS MEDTATOR
+                    USIAS. In the year 1585, the value of this board was estimated at 2000 sun
+                    crowns or 4500 lb. There you have, highly esteemed Herr Baron, the news you
+                    requested as well as I am able to provide it. The panel has no real artistic
+                    value; not even the value it could have. I still enclose at the behest of Prof.
+                    Lachmann, who sends his most earnest regards to you; from his academic lectures
+                    on Old High German metrics and his new recension of the Hildebrand's song
+                    copies. Particularly the latter has been very useful for my reader. As little as
+                    France wants to appeal to me, I have nevertheless moved a few houses closer to
+                    it at the beginning of this month: I now live at St. Johann No. 31. A beautiful
+                    spacious apartment with a stately view of the Black Forest and the Jura and
+                    Basel in the middle. I pray to God to make you healthy and keep you healthy.
+                    Fare you well and remain kindly disposed Yours sincerely Wilh. Wackernagel
+                    Dr.</p>
+            </div>
+            <div type="summary" resp="#GPT4">
+                <p>Wilhelm Wackernagel drückt seine Besorgnis über Laßbergs Gesundheitszustand aus
+                    und berichtet von einem eigenen erkrankten Schüler. Er dankt für die erhaltenen
+                    Abschriften und sendet den Frauendienst zurück, wobei er eine besonders
+                    interessante Passage ausgewählt hat. Zudem erläutert er, welche ungedruckten
+                    Texte er noch in sein Altdeutsches Lesebuch aufnehmen möchte. Er hat die
+                    gewünschte Abbildung der Krone der Königin Anna beigefügt und beschreibt deren
+                    Material sowie die Teilung eines Kirchenschatzes zwischen Stadt und Land.
+                    Abschließend übersendet er im Auftrag Lachmanns einige wissenschaftliche
+                    Publikationen und teilt mit, dass er in eine neue Wohnung in Basel umgezogen
+                    ist.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

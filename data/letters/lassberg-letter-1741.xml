@@ -1,0 +1,571 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1741">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Wilhelm Wackernagel an Joseph von Laßberg (30.08.1833).</title>
+                <respStmt xml:id="MiS">
+                    <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Textfassung auf Basis der Transkription durch Transkribus korrigiert und in TEI
+                    überführt. Automatisierte NER-Erkennung und Identifikation durch Flair geprüft,
+                    korrigiert und ergänzt. Normalisierung, Zusammenfassung und Übersetzung durch
+                    GPT-4. Lizenz: </p>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY
+                        4.0</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Basel</settlement>
+                        <repository>Staatsarchiv des Kantons Basel-Stadt</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">2474</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates> <bibl type="printed"><ref/></bibl> </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1741">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0367"
+                        ref="https://d-nb.info/gnd/118805851">Wilhelm Wackernagel</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0019"
+                        >Basel</placeName>
+                    <date when="1833-08-30">30.08.1833</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373"
+                        ref="https://d-nb.info/gnd/118778862">Joseph von Laßberg</persName>
+
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0192"
+                        ><rs>Baseler Wochenblatt</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0193"><rs>
+                        Beyträge zur Geschichte und Literatur, vorzüglich aus den Schätzen der
+                        Königl. Hof- und Centralbibliothek zu München</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0191"
+                        ><rs>Sigenot</rs></ref>
+                    <ref type="unknownType" target=""><rs>Unknown</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0354"
+                        ><rs>Unbekannt</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0581"
+                        ><rs>Michel Ney</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0578"
+                        ><rs>Friedrich Wilhelm IV.</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0660"><rs>
+                        Aretin, Johann Christoph</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0593"
+                        ><rs>Bernhard Joseph Docen</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0579"
+                        ><rs>Neukirch, Johann Georg</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0587"
+                        ><rs>Gottlieb Konrad Pfeffel</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0645"
+                        ><rs>Egen von Bamberg</rs></ref>
+                    <ref type="cmif:mentionsPlace"
+                        target="../register/lassberg-places.xml#lassberg-place-0019"
+                        ><rs>Basel</rs></ref>
+                    <ref type="cmif:mentionsPlace"
+                        target="../register/lassberg-places.xml#lassberg-place-0266"
+                        ><rs>Reigoldswil</rs></ref>
+                    <ref type="cmif:mentionsPlace"
+                        target="../register/lassberg-places.xml#lassberg-place-0269"
+                        ><rs>Gelterkinden</rs></ref>
+                    <ref type="cmif:mentionsPlace"
+                        target="../register/lassberg-places.xml#lassberg-place-0073"
+                        ><rs>Küsnacht</rs></ref>
+                    <ref type="cmif:mentionsPlace"
+                        target="../register/lassberg-places.xml#lassberg-place-0022"
+                        ><rs>Berlin</rs></ref>
+                    <ref type="cmif:mentionsPlace"
+                        target="../register/lassberg-places.xml#lassberg-place-0220"
+                        ><rs>Frankreich</rs></ref>
+                    <ref type="cmif:mentionsPlace"
+                        target="../register/lassberg-places.xml#lassberg-place-0267"><rs>Kanton
+                        Neuenburg</rs></ref>
+                    <ref type="cmif:mentionsPlace"
+                        target="../register/lassberg-places.xml#lassberg-place-0178"
+                        ><rs>Schweiz</rs></ref>
+                    <ref type="cmif:mentionsPlace"
+                        target="../register/lassberg-places.xml#lassberg-place-0166"
+                        ><rs>Zürich</rs></ref>
+                    <ref type="cmif:mentionsPlace"
+                        target="../register/lassberg-places.xml#lassberg-place-0270"
+                        ><rs>Muri</rs></ref>
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2025-02-27" who="#MiS" status="done">Text recognized by
+                    Transkribus</change>
+                <change when="2025-02-27" who="#MiS" status="done">Text corrected in
+                    Transkribus</change>
+                <change when="2025-02-27" who="#MiS" status="done">Exported from
+                    Transkribus</change>
+                <change when="2025-02-27" who="#MiS" status="done">Automatic NER</change>
+                <change when="2025-02-27" who="#MiS" status="done">Automatic normalization,
+                    translation and summary</change>
+                <change when="2025-03-06" who="#MiS" status="done">Manual markup and
+                    proofreading</change>
+                <change when="2025-03-06" who="#MiS" status="done">Finished markup</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="original" resp="#transkribus #MiS">
+                <p><pb n="1" corresp="../pagexml/1741/1741-1.xml"/><lb
+                    xml:id="lassberg-letter-1741-1-1" n="1" corresp="tr_1_tl_1"/>Basel 30. Augst 33.
+                    <lb xml:id="lassberg-letter-1741-1-2" n="2" corresp="tr_1_tl_2"/>Hochgeehrter
+                    Herr Baron <lb xml:id="lassberg-letter-1741-1-3" n="3" corresp="tr_1_tl_3"
+                    />Gestern ist endlich die <rs type="object" key="">Kiste mit den Bildern</rs>
+                    abgegangen. ich hoffe es werde alles so ankommen, <lb
+                    xml:id="lassberg-letter-1741-1-4" n="4" corresp="tr_1_tl_4"/>dass Sie zufrieden
+                    sind. Den grossen centnerwichtigen Querbalken habe ich nicht mit schicken <lb
+                    xml:id="lassberg-letter-1741-1-5" n="5" corresp="tr_1_tl_5"/>moegen: Kiste und
+                    Fracht waeren dadurch unmässig vertheuert worden, und so viel ich sehen <lb
+                    xml:id="lassberg-letter-1741-1-6" n="6" corresp="tr_1_tl_6"/>kann ist nichts
+                    darauf gemahlt und geschrieben als ein Palmenvers. Die Kiste aber, in der <lb
+                    xml:id="lassberg-letter-1741-1-7" n="7" corresp="tr_1_tl_7"/>die Bilder
+                    hergekommen, ist leider nicht mehr vorhanden: sie scheint bei der Versteigerung
+                    <lb xml:id="lassberg-letter-1741-1-8" n="8" corresp="tr_1_tl_8"/>irgendwie mit
+                    drein gegangen zu seyn. Mir scheint die neue nicht zu theuer. Um <lb
+                    xml:id="lassberg-letter-1741-1-9" n="9" corresp="tr_1_tl_9"/>Eins bitte ich Sie,
+                    verehrtester Herr Baron: lassen Sie Sich die Inscription auf dem <lb
+                    xml:id="lassberg-letter-1741-1-10" n="10" corresp="tr_1_tl_10"/>Deckel ebenso
+                    lustig vorkommen, als ich mich darüber geärgert habe. Solche Schrei <lb
+                    xml:id="lassberg-letter-1741-1-11" n="11" corresp="tr_1_tl_11"/>berey ist mir
+                    noch nicht vorgekommen, ich hatte in der Absicht, dass es recht schön <lb
+                    xml:id="lassberg-letter-1741-1-12" n="12" corresp="tr_1_tl_12"/>werden sollte,
+                    <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0354">meinen
+                    Hauswirth</rs> als einen "Mahler in der Kunst wie auch in Leim <lb
+                    xml:id="lassberg-letter-1741-1-13" n="13" corresp="tr_1_tl_13"/>farben" (<rs
+                    type="bibl" key="../register/lassberg-literature.xml#lassberg-literature-0192"
+                    >Baseler Wochenblättli</rs>) damit beauftragt: nun aber wollt ich ich hätte es
+                    <lb xml:id="lassberg-letter-1741-1-14" n="14" corresp="tr_1_tl_14"/>selber
+                    geschrieben. Nun genug davon. <lb xml:id="lassberg-letter-1741-1-15" n="15"
+                    corresp="tr_1_tl_15"/>Man ist hier jetzt, damit beschäftigt, <rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0019">Basel</rs> neu zu
+                    constituiren. Die Abtrennung <lb xml:id="lassberg-letter-1741-1-16" n="16"
+                    corresp="tr_1_tl_16"/>des Landes ist gestern anerkannt. Freylich war das dritte
+                    Wort beiden betreffenden <lb xml:id="lassberg-letter-1741-1-17" n="17"
+                    corresp="tr_1_tl_17"/>Verhandlungen des grossen Rathes immer: Wir thun es aber
+                    aus Zwang, nur aus <lb xml:id="lassberg-letter-1741-1-18" n="18"
+                    corresp="tr_1_tl_18"/>Zwang. Allein was hilft das? Wenn der Wolf die Schafe fort
+                    hat, so prote <lb xml:id="lassberg-letter-1741-1-19" n="19" corresp="tr_1_tl_19"
+                    />stiert der Hirte zu spät. <rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0266">Reigoldswyl</rs> und
+                    <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0269"
+                    >Gelterkinden</rs> moegen nun schon wie <lb xml:id="lassberg-letter-1741-1-20"
+                    n="20" corresp="tr_1_tl_20"/>sie mit ihren Würgern und Wütherichen fertig
+                    werden. <lb xml:id="lassberg-letter-1741-1-21" n="21" corresp="tr_1_tl_21"/>Das
+                    nächste was nun geschieht ist: die bestehende Regierung von <rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0019">Basel</rs> Stadttheil
+                    <lb xml:id="lassberg-letter-1741-1-22" n="22" corresp="tr_1_tl_22"/>wird, je
+                    nachdem das souveraine Volk entscheidet, provisorisch erklärt oder von einer <lb
+                    xml:id="lassberg-letter-1741-1-23" n="23" corresp="tr_1_tl_23"/>neu erwählten
+                    abgelöst. Sodann Entwerfung und Berathung einer <pb n="2"
+                    corresp="../pagexml/1741/1741-2.xml"/><lb xml:id="lassberg-letter-1741-2-1"
+                    n="1" corresp="tr_1_tl_1"/>neuen Constitution. Natürlich, damit keine Majorität
+                    die Minorität einschüchtere, <lb xml:id="lassberg-letter-1741-2-2" n="2"
+                    corresp="tr_1_tl_2"/>alles das unterm Schutze der eidgenössischen Waffen. <lb
+                    xml:id="lassberg-letter-1741-2-3" n="3" corresp="tr_1_tl_3"/>Die ganze
+                    Betrachtung der <rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0019">Basel</rs>er
+                    Angelegenheiten kommt auf die eine <lb xml:id="lassberg-letter-1741-2-4" n="4"
+                    corresp="tr_1_tl_4"/>Frage zurück: War es weise auf den Hilfruf der <rs
+                    type="place" key="../register/lassberg-places.xml#lassberg-place-0266"
+                    >Reigoldswyler</rs> zu hören? <lb xml:id="lassberg-letter-1741-2-5" n="5"
+                    corresp="tr_1_tl_5"/>und dem stürmischen Verlangen der Stadtbürger, die den
+                    Auszug forderten, nach <lb break="no" xml:id="lassberg-letter-1741-2-6" n="6"
+                    corresp="tr_1_tl_6"/>zugeben. Da die Unternehmung ausser allem Zusammenhang mit
+                    dem Vorfalle <lb xml:id="lassberg-letter-1741-2-7" n="7" corresp="tr_1_tl_7"/>in
+                    <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0073"
+                    >Küssnacht</rs> war (davon muss jeder überzeugt sein, der sie hat werden sehen),
+                    <lb xml:id="lassberg-letter-1741-2-8" n="8" corresp="tr_1_tl_8"/><rs
+                    type="place" key="../register/lassberg-places.xml#lassberg-place-0019"
+                    >Basel</rs> also keines Rückhaltes, keiner schnellen Unterstützung von Seiten
+                    der s. g. <lb xml:id="lassberg-letter-1741-2-9" n="9" corresp="tr_1_tl_9"
+                    />Reactionspartey gewiss seyn durfte, so beantwortet jene Frage sich von selbst.
+                    <lb xml:id="lassberg-letter-1741-2-10" n="10" corresp="tr_1_tl_10"/>Die Stadt
+                    mochte nun gewinnen oder nicht (das letztere aber wird bei einem Kam <lb
+                    break="no" xml:id="lassberg-letter-1741-2-11" n="11" corresp="tr_1_tl_11"/>pfe
+                    gegen guerillas immer wahrscheinlicher seyn, noch dazu wenn der Chef gegen <lb
+                    xml:id="lassberg-letter-1741-2-12" n="12" corresp="tr_1_tl_12"/>Willen und
+                    Einsicht die Truppen hinausführt), gegen die Eidgenossen war die <lb
+                    xml:id="lassberg-letter-1741-2-13" n="13" corresp="tr_1_tl_13"/>Sache auf beiden
+                    Seiten verloren. Was seit dem 3. August geschah und ge <lb break="no"
+                    xml:id="lassberg-letter-1741-2-14" n="14" corresp="tr_1_tl_14"/>schieht, sind
+                    lauter unvermeidliche Folgen. Freylich hätte man mindestens ehren <lb
+                    xml:id="lassberg-letter-1741-2-15" n="15" corresp="tr_1_tl_15"/>hafter fallen
+                    sollen. Da hatten die <rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0022">Berlin</rs>er im J.
+                    13. andern Muth, als die <lb xml:id="lassberg-letter-1741-2-16" n="16"
+                    corresp="tr_1_tl_16"/><rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0220">Franzosen</rs> zwey
+                    Meilen davon standen und Brand und Plünderung und den <lb
+                    xml:id="lassberg-letter-1741-2-17" n="17" corresp="tr_1_tl_17"/><rs
+                    type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0581"
+                    >Marschall Ney</rs> als neuen Koenig bringen wollten. Und das war <rs
+                    type="place" key="../register/lassberg-places.xml#lassberg-place-0022"
+                    >Berlin</rs> mit <lb xml:id="lassberg-letter-1741-2-18" n="18"
+                    corresp="tr_1_tl_18"/>seinen schnell gegrabenen Schanzen, und das waren
+                    Franzosen! Denn was <lb xml:id="lassberg-letter-1741-2-19" n="19"
+                    corresp="tr_1_tl_19"/>hat <rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0019">Basel</rs> mit der
+                    friedlichen dienstwilligen Übergabe gewonnen. Höchstens <lb
+                    xml:id="lassberg-letter-1741-2-20" n="20" corresp="tr_1_tl_20"/>ein gutes
+                    freundliches Bennehmen von Seiten der eingerückten Truppen, und <lb
+                    xml:id="lassberg-letter-1741-2-21" n="21" corresp="tr_1_tl_21"/>günstige
+                    Berichte der eidgenössischen Commissarien. Dies Tagsatzung aber <lb
+                    xml:id="lassberg-letter-1741-2-22" n="22" corresp="tr_1_tl_22"/>handelt nicht
+                    anders als hätte sie <rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0019">Basel</rs> mit der
+                    Schärfe des Schwertes <lb xml:id="lassberg-letter-1741-2-23" n="23"
+                    corresp="tr_1_tl_23"/>erobert, und die Berichte der Commissarien nennt sie
+                    kurzweg parteyisch. <lb xml:id="lassberg-letter-1741-2-24" n="24"
+                    corresp="tr_1_tl_24"/>Hätte sich <rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0019">Basel</rs> gewehrt:
+                    jene Truppen sind so, dass sie vielleicht vor langer Weile <lb
+                    xml:id="lassberg-letter-1741-2-25" n="25" corresp="tr_1_tl_25"/>auseinander
+                    gelaufen wären; jedesfalls aber, wüsste man dann eher, wa <lb break="no"
+                    xml:id="lassberg-letter-1741-2-26" n="26" corresp="tr_1_tl_26"/>rum die
+                    Tagsatzung sich als Siegerin und <rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0019">Basel</rs> als eine
+                    Verbrecherinn be <lb break="no" xml:id="lassberg-letter-1741-2-27" n="27"
+                    corresp="tr_1_tl_27"/>trachtet. <pb n="3" corresp="../pagexml/1741/1741-3.xml"
+                    /><lb xml:id="lassberg-letter-1741-3-1" n="1" corresp="tr_1_tl_1"/>Die <rs
+                    type="place" key="../register/lassberg-places.xml#lassberg-place-0267"
+                    >Neuenburger</rs> haben ihre Lostrennung von der Eidgenossenschaft beschlossen
+                    <lb xml:id="lassberg-letter-1741-3-2" n="2" corresp="tr_1_tl_3"/>und warten nur
+                    noch auf die Ratification des <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0578">Koenigs</rs>.
+                    ich fürchte er verweigert sie. <lb xml:id="lassberg-letter-1741-3-3" n="3"
+                    corresp="tr_1_tl_4"/>Gaebe er sie, so könnte das vielleicht eine fremde
+                    Intervention herbeiführen. Ein <lb xml:id="lassberg-letter-1741-3-4" n="4"
+                    corresp="tr_1_tl_5"/>schlechtes Mittel, aber doch wohl das einzige, um die <rs
+                    type="place" key="../register/lassberg-places.xml#lassberg-place-0178"
+                    >Schweiz</rs> wieder in das rechte <lb xml:id="lassberg-letter-1741-3-5" n="5"
+                    corresp="tr_1_tl_6"/>Gleis zu bringen. Ohne diess ist kein gutes Ende abzuschen.
+                    Denn welche Tage <lb xml:id="lassberg-letter-1741-3-6" n="6"
+                    corresp="line_1734353810161_2385"/>wird es geben, wenn die guten <rs
+                    type="place" key="../register/lassberg-places.xml#lassberg-place-0178"
+                    >Schweiz</rs>er zuletzt inne werden, dass sie an den radi <lb break="no"
+                    xml:id="lassberg-letter-1741-3-7" n="7" corresp="line_1734353813588_2391"/>calen
+                    Stimmführern nur eine neue Oligarchie gewonnen haben, boeser und gefähr <lb
+                    break="no" xml:id="lassberg-letter-1741-3-8" n="8"
+                    corresp="line_1734353816105_2397"/>licher als irgend eine der alten
+                    Aristokratien? <lb xml:id="lassberg-letter-1741-3-9" n="9"
+                    corresp="line_1734353818707_2403"/>All diess Unglück trifft auch mich nicht
+                    gelinde. Schon seit langer Zeit hat man <lb xml:id="lassberg-letter-1741-3-10"
+                    n="10" corresp="line_1734353821527_2409"/>hier aus finanziellen und
+                    pietistischen Rücksichten die Aufhebung der Universität <lb
+                    xml:id="lassberg-letter-1741-3-11" n="11" corresp="tr_1_tl_12"/>gewünscht. Jetzt
+                    wird das Verlangen dringender und begründeter. Denn die Stadt <lb
+                    xml:id="lassberg-letter-1741-3-12" n="12" corresp="tr_1_tl_13"/>verarmt, zudem
+                    verlangen die Landschafter bei der allgemeinen Theilung der Staats <lb
+                    break="no" xml:id="lassberg-letter-1741-3-13" n="13"
+                    corresp="line_1734353824619_2415"/>güter auch die des Vermögens der Universität.
+                    Kurz sie wird nun wohl unter <lb break="no" xml:id="lassberg-letter-1741-3-14"
+                    n="14" corresp="line_1734353829119_2421"/>gehen. In diesem einen Fall mag man
+                    nichts vom Festhalten am Historischen <lb xml:id="lassberg-letter-1741-3-15"
+                    n="15" corresp="tr_1_tl_16"/>wissen, und dass es Ehrensache wäre, den <rs
+                    type="place" key="../register/lassberg-places.xml#lassberg-place-0166"
+                    >Zürchern</rs> nicht auch noch diesen Tri <lb break="no"
+                    xml:id="lassberg-letter-1741-3-16" n="16" corresp="tr_1_tl_17"/>umph zu gönnen,
+                    daran denkt man nicht. Bloss des Pädagogiums wegen <lb
+                    xml:id="lassberg-letter-1741-3-17" n="17" corresp="tr_1_tl_18"/>bin ich aber
+                    nicht hieher gegangen. <lb xml:id="lassberg-letter-1741-3-18" n="18"
+                    corresp="tr_1_tl_19"/>Verzeihen Sie, geehrtester Herr Baron, dass ich Sie soviel
+                    von Baslerischen und <lb xml:id="lassberg-letter-1741-3-19" n="19"
+                    corresp="tr_1_tl_20"/>eigenen Angelegenheiten unterhalte oder auch nicht
+                    unterhalte. Aber Sie haben wie <lb break="no" xml:id="lassberg-letter-1741-3-20"
+                    n="20" corresp="tr_1_tl_21"/>derholentlich mir selbst und in dem neulichen
+                    schönen Brief auch der guten Stadt <lb xml:id="lassberg-letter-1741-3-21" n="21"
+                    corresp="tr_1_tl_22"/><rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0019">Basel</rs> so viele
+                    Theilnahme bewiesen, dass ich mich damit entschuldigt glaube. <lb
+                    xml:id="lassberg-letter-1741-3-22" n="22" corresp="tr_1_tl_23"/>Ihr Rath, bei
+                    den Musen Trost für die Unbilden der Zeit zu suchen, würde <lb
+                    xml:id="lassberg-letter-1741-3-23" n="23" corresp="tr_1_tl_24"/>sich bewähren
+                    wenn ich mich einschliessen könnte und ausserdem die Ohren <lb
+                    xml:id="lassberg-letter-1741-3-24" n="24" corresp="tr_1_tl_25"/>verstopfen; aber
+                    die eidgenössische Musik rasselt zu oft bei mir vorüber, <lb
+                    xml:id="lassberg-letter-1741-3-25" n="25" corresp="tr_1_tl_26"/>und man kann
+                    keinen Schritt auf die Strasse thun, ohne durch bunte <lb
+                    xml:id="lassberg-letter-1741-3-26" n="26" corresp="tr_1_tl_27"/>Röcke an das
+                    Elend erinnert zu werden, mit keinem Freunde sprechen <lb
+                    xml:id="lassberg-letter-1741-3-27" n="27" corresp="tr_1_tl_28"/>ohne gleich
+                    davon und nur davon reden zu hören. Wer kann da die rechte <pb n="4"
+                    corresp="../pagexml/1741/1741-4.xml"/><lb xml:id="lassberg-letter-1741-4-1"
+                    n="1" corresp="tr_1_tl_1"/>Freude Ruhe und Sammlung gewinnen? ich studiere so
+                    viel ich muss, für <lb xml:id="lassberg-letter-1741-4-2" n="2"
+                    corresp="tr_1_tl_2"/>Universität u. Pädagogium. Ausserdem beschäftigen mich die
+                    <rs type="object" key="">Handschriften</rs> <lb
+                    xml:id="lassberg-letter-1741-4-3" n="3" corresp="tr_1_tl_3"/>aus <rs
+                    type="place" key="../register/lassberg-places.xml#lassberg-place-0270">Muri</rs>
+                    und <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0166"
+                    >Zürich</rs>, wo es zum Glück nicht viel mehr zu thun giebt als <lb
+                    xml:id="lassberg-letter-1741-4-4" n="4" corresp="tr_1_tl_4"/>abzuschreiben. Sie
+                    wollen so gütig sein und mir den VII und IX Band <lb
+                    xml:id="lassberg-letter-1741-4-5" n="5" corresp="tr_1_tl_5"/>von des <rs
+                    type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0660"
+                    >Fr. v. Aretin</rs> <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0193"
+                    >Beiträgen</rs> dennoch beschaffen? ich nehme es mit Dank <lb
+                    xml:id="lassberg-letter-1741-4-6" n="6" corresp="tr_1_tl_6"/>an: die Aufsätze
+                    von <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0593">Docen</rs>
+                    sind mir für die rechte Nutzung der Zürcher <lb
+                    xml:id="lassberg-letter-1741-4-7" n="7" corresp="tr_1_tl_7"/>Manuscripte
+                    unentbehrlich. <lb xml:id="lassberg-letter-1741-4-8" n="8" corresp="tr_1_tl_8"
+                    />Herrn <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0579"
+                    >Neukirchs</rs> Hs. ist der <rs type="object">Colmarer Codex</rs>, soviel ich
+                    aus dem was er sagt abneh <lb break="no" xml:id="lassberg-letter-1741-4-9" n="9"
+                    corresp="tr_1_tl_9"/>men kann; er hat ihn auch aus dem <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0587"
+                    >Pfeffelschen</rs> Hause, ich glaube durch <lb
+                    xml:id="lassberg-letter-1741-4-10" n="10" corresp="tr_1_tl_10"/>Heirath,
+                    überkommen. Aber ihn zu zeigen, daran will er immer noch nicht. <lb
+                    xml:id="lassberg-letter-1741-4-11" n="11" corresp="tr_1_tl_11"/>Es ist als
+                    fürchte er dann zur Herausgabe bewogen zu werden. Basler Buch <lb break="no"
+                    xml:id="lassberg-letter-1741-4-12" n="12" corresp="tr_1_tl_12"/>händler
+                    unternehmen nichts. Man muss halt abwarten; genug dass er nicht <lb
+                    xml:id="lassberg-letter-1741-4-13" n="13" corresp="tr_1_tl_13"/>aus der Welt
+                    ist. <lb xml:id="lassberg-letter-1741-4-14" n="14" corresp="tr_1_tl_14"/>Meine
+                    Studenten haben sich über <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0645">Eggen</rs>
+                    und <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0191">Sigenot</rs>
+                    sehr gefreut: ich soll ih <lb break="no" xml:id="lassberg-letter-1741-4-15"
+                    n="15" corresp="tr_1_tl_15"/>ren besten und ergebensten Dank ausrichten. Die
+                    Leute machen mich durch <lb xml:id="lassberg-letter-1741-4-16" n="16"
+                    corresp="tr_1_tl_16"/>ihren Eifer und ihrem Sinn für alte Poesie ganz glücklich.
+                    Auch das wird <lb xml:id="lassberg-letter-1741-4-17" n="17" corresp="tr_1_tl_17"
+                    />aufhören, wenn die Univ. eingeht und die Leute anderswo etwas müssen zu <lb
+                    xml:id="lassberg-letter-1741-4-18" n="18" corresp="tr_1_tl_18"/>lernen suchen.
+                    <lb xml:id="lassberg-letter-1741-4-19" n="19" corresp="tr_1_tl_19"/>Bald wieder
+                    einige Zeilen von Ihnen, das würde mir troestlich seyn. Gewähren <lb
+                    xml:id="lassberg-letter-1741-4-20" n="20" corresp="tr_1_tl_20"/>Sie die Bitte
+                    und bleiben Sie freundlich gewogen. Ihrem ergebensten <lb
+                    xml:id="lassberg-letter-1741-4-21" n="21" corresp="tr_1_tl_21"/>Wilh.
+                    Wackernagel. </p>
+            </div>
+            <div type="normalized" resp="#GPT4">
+                <p>Basel, 30. August 1833. Hochgeehrter Herr Baron, gestern ist endlich die Kiste
+                    mit den Bildern abgegangen. Ich hoffe, es wird alles so ankommen, dass Sie
+                    zufrieden sind. Den großen zentnerschweren Querbalken habe ich nicht mitschicken
+                    mögen: Kiste und Fracht wären dadurch unmäßig verteuert worden, und soviel ich
+                    sehen kann, ist nichts darauf gemalt und geschrieben als ein Palmenvers. Die
+                    Kiste aber, in der die Bilder hergekommen sind, ist leider nicht mehr vorhanden:
+                    sie scheint bei der Versteigerung irgendwie mit dabeigegangen zu sein. Mir
+                    scheint die neue nicht zu teuer. Um eines bitte ich Sie, verehrtester Herr
+                    Baron: Lassen Sie sich die Inschrift auf dem Deckel ebenso lustig vorkommen, wie
+                    ich mich darüber geärgert habe. Solche Schreiberei ist mir noch nicht
+                    vorgekommen. Ich hatte in der Absicht, dass es recht schön werden sollte, meinen
+                    Hauswirt als einen "Maler in der Kunst wie auch in Leimfarben" (Baseler
+                    Wochenblättli) damit beauftragt: Nun aber wollte ich, ich hätte es selber
+                    geschrieben. Nun genug davon. Man ist hier jetzt damit beschäftigt, Basel neu zu
+                    konstituieren. Die Abtrennung des Landes ist gestern anerkannt. Freilich war das
+                    dritte Wort bei den betreffenden Verhandlungen des großen Rates immer: Wir tun
+                    es aber aus Zwang, nur aus Zwang. Allein, was hilft das? Wenn der Wolf die
+                    Schafe fort hat, so protestiert der Hirte zu spät. Reigoldswil und Gelterkinden
+                    mögen nun schon sehen, wie sie mit ihren Würgern und Wüterichen fertig werden.
+                    Das nächste, was nun geschieht, ist: Die bestehende Regierung von
+                    Basel-Stadtteil wird, je nachdem das souveräne Volk entscheidet, provisorisch
+                    erklärt oder von einer neu gewählten abgelöst. Sodann Entwurf und Beratung einer
+                    neuen Konstitution. Natürlich, damit keine Majorität die Minorität
+                    einschüchtere, alles das unter dem Schutze der eidgenössischen Waffen. Die ganze
+                    Betrachtung der Baseler Angelegenheiten kommt auf die eine Frage zurück: War es
+                    weise, auf den Hilferuf der Reigoldswiler zu hören und dem stürmischen Verlangen
+                    der Stadtbürger, die den Auszug forderten, nachzugeben? Da die Unternehmung
+                    außer allem Zusammenhang mit dem Vorfall in Küssnacht war (davon muss jeder
+                    überzeugt sein, der sie hat werden sehen), Basel also keines Rückhalts, keiner
+                    schnellen Unterstützung von Seiten der sogenannten Reaktionspartei gewiss sein
+                    durfte, so beantwortet jene Frage sich von selbst. Die Stadt mochte nun gewinnen
+                    oder nicht (das Letztere aber wird bei einem Kampf gegen Guerillas immer
+                    wahrscheinlicher sein, noch dazu, wenn der Chef gegen Willen und Einsicht die
+                    Truppen hinausführt), gegen die Eidgenossen war die Sache auf beiden Seiten
+                    verloren. Was seit dem 3. August geschah und geschieht, sind lauter
+                    unvermeidliche Folgen. Freilich hätte man mindestens ehrenhafter fallen sollen.
+                    Da hatten die Berliner im Jahre 1813 anderen Mut, als die Franzosen zwei Meilen
+                    davon standen und Brand und Plünderung und den Marschall Ney als neuen König
+                    bringen wollten. Und das war Berlin mit seinen schnell gegrabenen Schanzen, und
+                    das waren Franzosen! Denn was hat Basel mit der friedlichen, dienstwilligen
+                    Übergabe gewonnen. Höchstens ein gutes, freundliches Benehmen von Seiten der
+                    eingerückten Truppen und günstige Berichte der eidgenössischen Kommissarien.
+                    Diese Tagsatzung aber handelt nicht anders, als hätte sie Basel mit der Schärfe
+                    des Schwertes erobert, und die Berichte der Kommissarien nennt sie kurzerhand
+                    parteiisch. Hätte sich Basel gewehrt: jene Truppen sind so, dass sie vielleicht
+                    vor langer Weile auseinandergelaufen wären; jedenfalls aber wüsste man dann
+                    eher, warum die Tagsatzung sich als Siegerin und Basel als eine Verbrecherin
+                    betrachtet. Die Neuenburger haben ihre Lostrennung von der Eidgenossenschaft
+                    beschlossen und warten nur noch auf die Ratifikation des Königs. Ich fürchte, er
+                    verweigert sie. Gäbe er sie, so könnte das vielleicht eine fremde Intervention
+                    herbeiführen. Ein schlechtes Mittel, aber doch wohl das einzige, um die Schweiz
+                    wieder in das rechte Gleis zu bringen. Ohne dies ist kein gutes Ende abzusehen.
+                    Denn welche Tage wird es geben, wenn die guten Schweizer zuletzt inne werden,
+                    dass sie an den radikalen Stimmführern nur eine neue Oligarchie gewonnen haben,
+                    böser und gefährlicher als irgendeine der alten Aristokratien? All dieses
+                    Unglück trifft auch mich nicht gelinde. Schon seit langer Zeit hat man hier aus
+                    finanziellen und pietistischen Rücksichten die Aufhebung der Universität
+                    gewünscht. Jetzt wird das Verlangen dringender und begründeter. Denn die Stadt
+                    verarmt, zudem verlangen die Landschafter bei der allgemeinen Teilung der
+                    Staatsgüter auch die des Vermögens der Universität. Kurz, sie wird nun wohl
+                    untergehen. In diesem einen Fall mag man nichts vom Festhalten am Historischen
+                    wissen, und dass es Ehrensache wäre, den Zürchern nicht auch noch diesen Triumph
+                    zu gönnen, daran denkt man nicht. Bloß des Pädagogiums wegen bin ich aber nicht
+                    hierher gegangen. Verzeihen Sie, geehrtester Herr Baron, dass ich Sie so viel
+                    von Baslerischen und eigenen Angelegenheiten unterhalte oder auch nicht
+                    unterhalte. Aber Sie haben wiederholt mir selbst und in dem neulichen schönen
+                    Brief auch der guten Stadt Basel so viel Teilnahme bewiesen, dass ich mich damit
+                    entschuldigt glaube. Ihr Rat, bei den Musen Trost für die Unbilden der Zeit zu
+                    suchen, würde sich bewähren, wenn ich mich einschließen könnte und außerdem die
+                    Ohren verstopfen; aber die eidgenössische Musik rasselt zu oft bei mir vorüber,
+                    und man kann keinen Schritt auf die Straße tun, ohne durch bunte Röcke an das
+                    Elend erinnert zu werden, mit keinem Freund sprechen, ohne gleich davon und nur
+                    davon reden zu hören. Wer kann da die rechte Freude, Ruhe und Sammlung gewinnen?
+                    Ich studiere so viel ich muss, für Universität und Pädagogium. Außerdem
+                    beschäftigen mich die Handschriften aus Muri und Zürich, wo es zum Glück nicht
+                    viel mehr zu tun gibt als abzuschreiben. Sie wollen so gütig sein und mir den
+                    VII und IX Band von des Fr. v. Aretin Beiträgen dennoch beschaffen? Ich nehme es
+                    mit Dank an: die Aufsätze von Docen sind mir für die rechte Nutzung der Zürcher
+                    Manuskripte unentbehrlich. Herrn Neukirchs Hs. ist der Colmarer Codex, soviel
+                    ich aus dem, was er sagt, abnehmen kann; er hat ihn auch aus dem Pfeffelschen
+                    Haus, ich glaube durch Heirat, überkommen. Aber ihn zu zeigen, daran will er
+                    immer noch nicht. Es ist, als fürchte er, dann zur Herausgabe bewogen zu werden.
+                    Basler Buchhändler unternehmen nichts. Man muss halt abwarten; genug, dass er
+                    nicht aus der Welt ist. Meine Studenten haben sich über Eggen und Sigenot sehr
+                    gefreut: Ich soll ihren besten und ergebensten Dank ausrichten. Die Leute machen
+                    mich durch ihren Eifer und ihren Sinn für alte Poesie ganz glücklich. Auch das
+                    wird aufhören, wenn die Universität eingeht und die Leute anderswo etwas lernen
+                    müssen. Bald wieder einige Zeilen von Ihnen, das würde mir tröstlich sein.
+                    Gewähren Sie die Bitte und bleiben Sie freundlich gewogen. Ihr ergebener Wilh.
+                    Wackernagel.</p>
+            </div>
+            <div type="translation" resp="#GPT4">
+                <p>Basel, 30th August [18]33. Honored Baron, Yesterday, the crate with the pictures
+                    finally went out. I hope everything arrives in a condition that satisfies you. I
+                    did not wish to send the large, centner-heavy crossbeam; the crate and freight
+                    would have been excessively expensive as a result, and as far as I can see,
+                    nothing is painted or written on it except a palm verse. Unfortunately, the
+                    crate in which the pictures arrived is no longer available; it seems to have
+                    somehow disappeared during the auction. The new one does not seem too expensive
+                    to me. I have one request, esteemed Baron: please find the inscription on the
+                    lid as amusing as it annoyed me. Such handwriting is unprecedented for me. I had
+                    entrusted my landlord with the task, intending for it to be quite beautiful, as
+                    a "painter in art as well as in glue colors" (Baseler Wochenblättli): yet now I
+                    wish I had written it myself. Enough about that. Currently, efforts are underway
+                    to reconstitute Basel. The separation of the land was recognized yesterday.
+                    Indeed, the third word in both relevant negotiations of the great council was
+                    always: We do this only out of compulsion. But what use is that? When the wolf
+                    has driven off the sheep, the shepherd protests too late. Reigoldswil and
+                    Gelterkinden can now deal with their oppressors and tyrants as they see fit. The
+                    next event is that the existing government of the city of Basel will, depending
+                    on the will of the sovereign people, be declared provisional or replaced by a
+                    newly elected one, followed by the drafting and consideration of a new
+                    constitution. Naturally, so that no majority intimidates the minority, all of
+                    this under the protection of the federal weapons. The entire consideration of
+                    Baseler affairs boils down to one question: Was it wise to listen to the call
+                    for help from Reigoldswil? And to yield to the stormy demands of the city
+                    citizens who called for an exodus. Since the undertaking was unrelated to the
+                    incident in Küssnacht (this must be apparent to anyone who witnessed it), Basel
+                    could not rely on any support or quick assistance from the so-called reactionary
+                    party, thus answering that question is straightforward. Whether the city stood
+                    to gain or not (the latter being increasingly likely in a struggle against
+                    guerrillas, especially when the commander leads the troops against his will and
+                    better judgment), the matter was lost on both sides against the confederates.
+                    What has occurred and is occurring since the 3rd of August are unavoidable
+                    consequences. Certainly, one should have fallen at least more honorably. The
+                    Berliners in the year [18]13 had a different courage as the French stood two
+                    miles away wanting to bring fire, plunder, and Marshal Ney as a new king. And
+                    that was Berlin with its quickly dug trenches, and those were French! For what
+                    has Basel gained with its peaceful willing surrender? At most, courteous
+                    treatment from the occupying troops and favorable reports from the federal
+                    commissioners. Yet, this diet acts as if it had conquered Basel by the sword,
+                    and it simply calls the commissioners' reports biased. Had Basel defended
+                    itself, those troops might have dispersed out of sheer boredom; in any case, one
+                    would then have sooner known why the diet considers itself victorious and Basel
+                    as criminal. The Neuchâtel people have decided to separate from the Confederacy
+                    and are only awaiting the king's ratification. I fear he will refuse it. If he
+                    grants it, it might lead to foreign intervention. A poor remedy, but perhaps the
+                    only one to bring Switzerland back to the right path. Without it, no good end is
+                    in sight. For what days lie ahead when the good Swiss finally realize that they
+                    have gained only a new, more malicious, and dangerous oligarchy in the radical
+                    leaders than any of the old aristocracies? All this misfortune also affects me
+                    not mildly. For a long time, the abolition of the university has been desired
+                    here for financial and pietistic reasons. Now the demand is more urgent and
+                    justified. The city is impoverishing, and the landowners demand, in the general
+                    division of state assets, also the wealth of the university. In short, it will
+                    likely perish. In this one case, one is not keen on clinging to historical
+                    knowledge, and no one thinks it a matter of honor not to grant Zurich yet
+                    another triumph. But I did not come here solely for the sake of the Pedagogy
+                    School. Forgive me, esteemed Baron, for entertaining or not entertaining you
+                    with so much concerning Basel and my own affairs. But you have repeatedly shown
+                    me, and in your recent lovely letter also the good city of Basel, so much
+                    empathy that I believe I am excused. Your advice to seek solace in the Muses for
+                    the indignities of the times would prove true if I could lock myself away and
+                    besides block my ears; but the federal music rattles past me too often, and one
+                    cannot take a step onto the street without being reminded of the misery by
+                    colorful coats, nor speak to a friend without immediately hearing and speaking
+                    only of it. Who can find true joy, peace, and concentration under such
+                    circumstances? I study as much as necessary for the university and pedagogy
+                    school. Additionally, I occupy myself with the manuscripts from Muri and Zurich,
+                    where fortunately there is little more to do than to copy them. Would you be so
+                    kind as to procure the VII and IX volume of Fr. v. Aretin's contributions for me
+                    nonetheless? I am grateful for it; Docen's essays are indispensable for the
+                    proper utilization of the Zurich manuscripts. Mr. Neukirchs' manuscript is the
+                    Colmar Codex, as far as I can infer from what he says; he also obtained it from
+                    the Pfeffels' house, I believe through marriage. But he still does not wish to
+                    show it. It seems he fears being persuaded to publish it. Baseler booksellers
+                    undertake nothing. One must be patient; at least it is not lost from the world.
+                    My students have greatly enjoyed Eggen and Sigenot: I am to express their best
+                    and most devoted thanks. The people make me quite happy with their enthusiasm
+                    and their sense for ancient poetry. That too will cease if the university shuts
+                    down and people have to seek education elsewhere. A few lines from you soon
+                    again would be comforting to me. Please grant this request and remain kindly
+                    disposed. Yours sincerely, Wilhelm Wackernagel.</p>
+            </div>
+            <div type="summary" resp="#GPT4">
+                <p>Wilhelm Wackernagel berichtet Joseph von Laßberg über den Versand der bestellten
+                    Bilder und die politischen Unruhen in Basel. Er kritisiert die politische
+                    Entwicklung, insbesondere die Abtrennung des Landkantons und die damit
+                    verbundene Schwächung der Stadt. Zudem äußert er Sorge über die Zukunft der
+                    Universität Basel, deren Auflösung aufgrund finanzieller und politischer Gründe
+                    droht. Er erwähnt seine Arbeit mit mittelalterlichen Handschriften und bittet
+                    Laßberg um Unterstützung bei der Beschaffung von Literatur. Schließlich
+                    informiert er über den Colmarer Liedercodex, der sich im Besitz von Herrn
+                    Neukirch befindet, aber weiterhin nicht zugänglich ist.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

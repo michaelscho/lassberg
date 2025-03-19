@@ -1,0 +1,117 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1959">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Wilhelm Wackernagel (02.01.1838).</title>
+                <respStmt xml:id="MiS">
+                    <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 und GPT-4 normalisiert, zusammengefasst und übersetzt.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Basel</settlement>
+                        <repository>Staatsarchiv des Kantons Basel-Stadt</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">956</idno>
+                        <idno type="register-lassberg">2</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Wackernagel: Albert Leitzmann, Briefe aus dem Nachlaß Wilhelm Wackernagels. VI.: Briefe von Joseph von Laßberg. In: Abhandlungen der phil.-hist. Klasse der Kgl. Sächsischen Gesellschaft der Wissenschaften 34,1. Leipzig 1916, S. 92-130, S. 115/t<ref>-</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1959">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862">Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1838-01-02">02.01.1838</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0367" ref="https://d-nb.info/gnd/118805851">Wilhelm Wackernagel</persName>
+                    
+                </correspAction>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <!--<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-{PERS_NUMBER}"><rs>{ORIGINAL_STRING_MENTION}</rs></ref>-->
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2025-03-06" who="#MiS" status="done">Text recognized by Transkribus</change>
+                <change when="2025-03-06" who="#MiS" status="done">Text corrected in Transkribus</change>
+                <change when="2025-03-06" who="#MiS" status="done">Exported from Transkribus</change>
+                <change when="2025-03-06" who="#MiS" status="done">Automatic NER</change>
+                <change when="2025-03-06" who="#MiS" status="done">Automatic normalization, translation and summary</change>
+                <change when="" who="" status="draft">Manual markup and proofreading</change>
+                <change when="" who="" status="draft">Finished markup</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="original" resp="#transkribus #MiS">
+                <p><pb n="1" corresp="../pagexml/1959/1959-1.xml"/><lb xml:id="lassberg-letter-1959-1-1" n="1" corresp="line_1734340134130_1928"/>2 <lb xml:id="lassberg-letter-1959-1-2" n="2" corresp="line_1734340183622_1933"/><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs> am 9. Januar 1838. <lb xml:id="lassberg-letter-1959-1-3" n="3" corresp="line_1734340185841_1938"/>Vererter Herr Professor! <lb xml:id="lassberg-letter-1959-1-4" n="4" corresp="line_1734340187824_1943"/>Ir wertes schreiben kann ich heute nicht vollständig und ausfürlich <lb xml:id="lassberg-letter-1959-1-5" n="5" corresp="line_1734340190177_1948"/>beantworten; das neue iar hat mir solch einen schwall von kleinen  <lb xml:id="lassberg-letter-1959-1-6" n="6" corresp="line_1734340192834_1953"/>unverschieblichen geschäften hergeschwemmt, dass ich nicht weiss, wo ich  <lb xml:id="lassberg-letter-1959-1-7" n="7" corresp="line_1734340195698_1958"/>anfangen oder enden soll. Indessen gebe ich Inen in betreff der unter <lb xml:id="lassberg-letter-1959-1-8" n="8" corresp="line_1734340197553_1963"/>handlung mit <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0046">Beyel</rs> et Comp. zu überlegen: ob es nicht zeitgemässer <lb xml:id="lassberg-letter-1959-1-9" n="9" corresp="line_1734340200210_1968"/>und selbst für den verleger vorteilhafter wäre, statt des Weingartner <lb xml:id="lassberg-letter-1959-1-10" n="10" corresp="line_1734340202507_1973"/>Codex zuerst den <rs type="">Frauendienst</rs>, oder den <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0507">Wilhelm von Orlenz</rs>, den ich <lb xml:id="lassberg-letter-1959-1-11" n="11" corresp="line_1734340205158_1978"/>eben unter der feder habe, herauszugeben? verstehet sich dabei, dass ich <lb xml:id="lassberg-letter-1959-1-12" n="12" corresp="line_1734340207534_1983"/>immer eine anzal exemplare für meinen Liedersaal, um einen zu <lb xml:id="lassberg-letter-1959-1-13" n="13" corresp="line_1734340209989_1988"/>bestimmenden preis erhielte, was nebst dem auch nicht so viele unkosten <lb xml:id="lassberg-letter-1959-1-14" n="14" corresp="line_1734340212266_1993"/>verursachen würde, da zum <rs type="bibl" key="../register/lassberg-literature.xml#lassberg-literature-0069">Weingarter codex</rs> 26 lithographien <lb xml:id="lassberg-letter-1959-1-15" n="15" corresp="line_1734340214520_1998"/>gehören, von denen ich auch nicht eine erlassen könnte. <lb xml:id="lassberg-letter-1959-1-16" n="16" corresp="line_1734340217645_2003"/>Ich gebe Inen dieses zu bedenken, und werde Inen später ausfürlicher <lb xml:id="lassberg-letter-1959-1-17" n="17" corresp="line_1734340220194_2008"/>darüber schreiben. vom frauendienst, der für <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0199">Oesterreich</rs> ein <lb xml:id="lassberg-letter-1959-1-18" n="18" corresp="line_1734340222707_2013"/>eigenes interesse hat, würden wenigstens 100 exemplare nach <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0161">Wien</rs>, <lb xml:id="lassberg-letter-1959-1-19" n="19" corresp="line_1734340224897_2018"/><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0280">Prag</rs> und <rs type="place">Brünn</rs> gehen und, wie ich glaube, selbst auch nach <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0186">Ungarn</rs> <lb xml:id="lassberg-letter-1959-1-20" n="20" corresp="line_1734340226930_2023"/>und <rs type="place">Siebenbürgen</rs>. <pb n="2" corresp="../pagexml/1959/1959-2.xml"/><lb xml:id="lassberg-letter-1959-2-1" n="1" corresp="line_1734340071696_1828"/>Die Göttinger ... , wie ich es voraus sahe, und wie <lb xml:id="lassberg-letter-1959-2-2" n="2" corresp="line_1734340074818_1833"/>... gewiß auch ... teil daran namen, <lb xml:id="lassberg-letter-1959-2-3" n="3" corresp="line_1734340076982_1838"/>und also auch ... ire massregeln danach namen. Wilhelm <lb xml:id="lassberg-letter-1959-2-4" n="4" corresp="line_1734340079191_1843"/>Grimm mit weih und kind ist zwar noch in <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0053">Göttingen</rs>, wird aber <lb xml:id="lassberg-letter-1959-2-5" n="5" corresp="line_1734340081461_1848"/>dort so lange bleiben, bis <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0170">Jacob</rs> inen allen irgendwo ein neues <lb xml:id="lassberg-letter-1959-2-6" n="6" corresp="line_1734340084181_1853"/>nest gemacht hat. Ich hoffe auf <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0065">Heidelberg</rs>, denn in der <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0178">Schweiz</rs> <lb xml:id="lassberg-letter-1959-2-7" n="7" corresp="line_1734340086928_1858"/>wird wol nichts zu machen sein: die brüder werden sich auch <lb xml:id="lassberg-letter-1959-2-8" n="8" corresp="line_1734340089584_1863"/>wol nie trennen. <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0170">Jacob</rs> war eben mit herausgabe einiger latein <lb xml:id="lassberg-letter-1959-2-9" n="9" corresp="line_1734340092367_1868"/>ischer gedichte des X und XI Jarhunderts beschäftiget, wozu ich im auch <lb xml:id="lassberg-letter-1959-2-10" n="10" corresp="line_1734340094690_1873"/>collationen und abschriften lieferte. nun ist der druk unterbrochen <lb xml:id="lassberg-letter-1959-2-11" n="11" corresp="line_1734340096920_1878"/>und kann wol sobald nicht wieder aufgenommen werden. ich <lb xml:id="lassberg-letter-1959-2-12" n="12" corresp="line_1734340099468_1883"/>habe auf meinen lezten brief an <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0170">Jacob</rs> noch keine antwort, vermute <lb xml:id="lassberg-letter-1959-2-13" n="13" corresp="line_1734340102147_1888"/>in aber in <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0065">Heidelberg</rs>. das übrige wissen Sie aus den zeitungen, die über <lb xml:id="lassberg-letter-1959-2-14" n="14" corresp="line_1734340104839_1893"/>diese angelegenheit ser umständlich sind. <lb xml:id="lassberg-letter-1959-2-15" n="15" corresp="line_1734340107362_1898"/>Einer meiner freunde wünschte sich das glossarium des <rs type="bibl">Du Fresne du Cange</rs>  <lb xml:id="lassberg-letter-1959-2-16" n="16" corresp="line_1734340110149_1903"/>anzuschaffen; ich solle Sie daher um schleunigen bericht ersuchen:  <lb xml:id="lassberg-letter-1959-2-17" n="17" corresp="line_1734340112550_1908"/>ob in <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0019">Basel</rs> im buchladen noch exemplare und zu welchem preise  <lb xml:id="lassberg-letter-1959-2-18" n="18" corresp="line_1734340115103_1913"/>zu haben sind. Sie verbinden mich durch baldige auskunft.  <lb xml:id="lassberg-letter-1959-2-19" n="19" corresp="line_1734340067290_1823"/><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0288">Uhland</rs> schrieb mir kürzlich, dass nun auch sein freund <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0145">Gustav Schwab</rs> <lb xml:id="lassberg-letter-1959-2-20" n="20" corresp="line_1734340063771_1818"/>in seine nachbarschaft, als pfarrer nach <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0055">Gomaringen</rs> /:2 kleine stunden <pb n="3" corresp="../pagexml/1959/1959-3.xml"/><lb xml:id="lassberg-letter-1959-3-1" n="1" corresp="line_1734340004925_1751"/>von <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0148">Tübingen</rs>:/ gezogen sei, nachbarschaft zusamen zu leben. <lb xml:id="lassberg-letter-1959-3-2" n="2" corresp="line_1734340009894_1756"/><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0288">Uhland</rs> hatte wieder fleissig in Theotiscis gearbeitet, muss <lb xml:id="lassberg-letter-1959-3-3" n="3" corresp="line_1734340013061_1761"/>nun aber gegen ende dieses monats zum landschaftlichen ausschuss nach <lb xml:id="lassberg-letter-1959-3-4" n="4" corresp="line_1734340015188_1766"/><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0147">Stuttgart</rs>, wegen beratung des neuen criminalgesezbuches, wo sein <lb xml:id="lassberg-letter-1959-3-5" n="5" corresp="line_1734340017943_1771"/>aufenthalt ziemlich lange dauern wird. Wir leben hier alle <lb xml:id="lassberg-letter-1959-3-6" n="6" corresp="line_1734340020923_1776"/>gesund und vergnügt und haben mit herzlicher teilnahme <lb xml:id="lassberg-letter-1959-3-7" n="7" corresp="line_1734340023376_1781"/>den guten anfang und fortgang Ires frölichen beisamen <lb xml:id="lassberg-letter-1959-3-8" n="8" corresp="line_1734340026343_1786"/>seins gelesen; das soll Inen der liebe gott recht viele iare erhalten. <lb xml:id="lassberg-letter-1959-3-9" n="9" corresp="line_1734340032457_1791"/>Dies, mit den besten grüssen von uns allen, der neuiarswunsch <lb xml:id="lassberg-letter-1959-3-10" n="10" corresp="line_1734340034024_1796"/>ires <lb xml:id="lassberg-letter-1959-3-11" n="11" corresp="line_1734340036424_1801"/>ergebenen JvLaßberg. </p>
+            </div>
+            <div type="normalized" resp="#GPT4">
+                <p>Eppishausen am 9. Januar 1838.
+
+Verehrter Herr Professor!
+
+Ihr wertes Schreiben kann ich heute nicht vollständig und ausführlich beantworten; das neue Jahr hat mir solch einen Schwall von kleinen unverschieblichen Geschäften hergeschwemmt, dass ich nicht weiß, wo ich anfangen oder enden soll. Indessen gebe ich Ihnen in betreff der Unterhandlung mit Beyel et Comp. zu überlegen: ob es nicht zeitgemäßer und selbst für den Verleger vorteilhafter wäre, statt des Weingartner Codex zuerst den Frauendienst oder den Wilhelm von Orlens, den ich eben unter der Feder habe, herauszugeben? versteht sich dabei, dass ich immer eine Anzahl Exemplare für meinen Liedersaal, um einen zu bestimmenden Preis erhielte, was nebst dem auch nicht so viele Unkosten verursachen würde, da zum Weingartner Codex 26 Lithographien gehören, von denen ich auch nicht eine erlassen könnte.
+
+Ich gebe Ihnen dieses zu bedenken und werde Ihnen später ausführlicher darüber schreiben. Vom Frauendienst, der für Österreich ein eigenes Interesse hat, würden wenigstens 100 Exemplare nach Wien, Prag und Brünn gehen und, wie ich glaube, selbst auch nach Ungarn und Siebenbürgen.
+
+Die Göttinger ..., wie ich es voraussah, und wie ... gewiss auch ... teil daran nahmen, und also auch ... Ihre Maßregeln danach nahmen. Wilhelm Grimm mit Weib und Kind ist zwar noch in Göttingen, wird aber dort so lange bleiben, bis Jacob ihnen allen irgendwo ein neues Nest gemacht hat. Ich hoffe auf Heidelberg, denn in der Schweiz wird wohl nichts zu machen sein: die Brüder werden sich auch wohl nie trennen. Jacob war eben mit Herausgabe einiger lateinischer Gedichte des X und XI Jahrhunderts beschäftigt, wozu ich ihm auch Kollationen und Abschriften lieferte. Nun ist der Druck unterbrochen und kann wohl sobald nicht wieder aufgenommen werden. Ich habe auf meinen letzten Brief an Jacob noch keine Antwort, vermute ihn aber in Heidelberg. Das Übrige wissen Sie aus den Zeitungen, die über diese Angelegenheit sehr umständlich sind.
+
+Einer meiner Freunde wünschte sich das Glossarium des Du Fresne du Cange anzuschaffen; ich solle Sie daher um schleunigen Bericht ersuchen: ob in Basel im Buchladen noch Exemplare und zu welchem Preise zu haben sind. Sie verbinden mich durch baldige Auskunft. Uhland schrieb mir kürzlich, dass nun auch sein Freund Gustav Schwab in seine Nachbarschaft, als Pfarrer nach Gomaringen /:2 kleine Stunden von Tübingen:/ gezogen sei, Nachbarschaft zusammen zu leben.
+
+Uhland hatte wieder fleißig in Theotiscis gearbeitet, muss nun aber gegen Ende dieses Monats zum landschaftlichen Ausschuss nach Stuttgart, wegen Beratung des neuen Criminalgesetzbuches, wo sein Aufenthalt ziemlich lange dauern wird. Wir leben hier alle gesund und vergnügt und haben mit herzlicher Teilnahme den guten Anfang und Fortgang Ihres fröhlichen Beisammen seins gelesen; das soll Ihnen der liebe Gott recht viele Jahre erhalten.
+
+Dies, mit den besten Grüßen von uns allen, der Neujahrswunsch
+
+Ihrer
+
+ergebenen Jvl.aßberg.</p>
+            </div>
+            <div type="translation" resp="#GPT4">
+                <p>Eppishausen, January 9, 1838.
+
+Esteemed Professor!
+
+I cannot fully and thoroughly answer your valued letter today; the new year has brought me such a flood of small unavoidable tasks that I do not know where to start or end. In the meantime, I offer you, regarding the negotiation with Beyel et Comp., something to consider: whether it would not be more timely and even more advantageous for the publisher to first publish the "Frauendienst" or "Wilhelm von Orlenz," which I have just under the pen, instead of the Weingartner Codex? It goes without saying that I would always receive a number of copies for my Liedersaal at a price to be determined, which would also not incur as many costs, as the Weingartner Codex includes 26 lithographs, not one of which I could forgo.
+
+I offer you this to consider and will write to you more extensively about it later. Of the "Frauendienst," which holds particular interest for Austria, at least 100 copies would go to Vienna, Prague, and Brno, and, I believe, also to Hungary and Transylvania.
+
+The Göttingen ..., as I foresaw, and as ... certainly also ... took part in it, and thus also ... took their measures accordingly. Wilhelm Grimm, with wife and child, is still in Göttingen, but will remain there until Jacob finds a new nest for them somewhere. I hope for Heidelberg, for nothing seems to be possible in Switzerland: the brothers will probably never separate. Jacob was just engaged in the publication of some Latin poems of the 10th and 11th centuries, for which I also delivered collations and transcripts. Now the printing is interrupted and probably cannot be resumed soon. I have not yet received an answer to my last letter to Jacob, but I suspect him to be in Heidelberg. You know the rest from the newspapers, which are very detailed about this matter.
+
+One of my friends wished to acquire Du Fresne du Cange's glossarium; I am to request from you an urgent report as to whether there are still copies available in the bookstore in Basel, and at what price. You would oblige me by providing prompt information.
+
+Uhland recently wrote to me that now his friend Gustav Schwab has moved to his vicinity as a pastor to Gomaringen (two small hours from Tübingen), to live in neighborhood together. Uhland had again diligently worked in Theotiscis, but now has to go to the regional committee in Stuttgart at the end of this month to consult on the new criminal code, where his stay will be quite long. We all live here healthy and cheerful and have read with heartfelt participation the good beginning and progress of your joyful being together, which may the dear God preserve for you for many years.
+
+This, with best regards from all of us, the new year's wish of your devoted JvLaßberg.</p>
+            </div>
+            <div type="summary" resp="#GPT4">
+                <p/>
+            </div>
+        </body>
+    </text>
+</TEI>

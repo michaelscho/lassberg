@@ -1,0 +1,147 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1779">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Wilhelm Wackernagel (05.06.1834).</title>
+                <respStmt xml:id="MiS">
+                    <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 und GPT-4 normalisiert, zusammengefasst und übersetzt.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Basel</settlement>
+                        <repository>Staatsarchiv des Kantons Basel-Stadt</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">867</idno>
+                        <idno type="register-lassberg">97</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Wackernagel: Albert Leitzmann, Briefe aus dem Nachlaß Wilhelm Wackernagels. VI.: Briefe von Joseph von Laßberg. In: Abhandlungen der phil.-hist. Klasse der Kgl. Sächsischen Gesellschaft der Wissenschaften 34,1. Leipzig 1916, S. 92-130, S. 104<ref>-</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1779">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862">Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1834-06-05">05.06.1834</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0367" ref="https://d-nb.info/gnd/118805851">Wilhelm Wackernagel</persName>
+                    
+                </correspAction>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <!--<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-{PERS_NUMBER}"><rs>{ORIGINAL_STRING_MENTION}</rs></ref>-->
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2025-03-05" who="#MiS" status="done">Text recognized by Transkribus</change>
+                <change when="2025-03-05" who="#MiS" status="done">Text corrected in Transkribus</change>
+                <change when="2025-03-05" who="#MiS" status="done">Exported from Transkribus</change>
+                <change when="2025-03-05" who="#MiS" status="done">Automatic NER</change>
+                <change when="2025-03-05" who="#MiS" status="done">Automatic normalization, translation and summary</change>
+                <change when="" who="" status="draft">Manual markup and proofreading</change>
+                <change when="" who="" status="draft">Finished markup</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="original" resp="#transkribus #MiS">
+                <p><pb n="1" corresp="../pagexml/1779/1779-1.xml"/><lb xml:id="lassberg-letter-1779-1-1" n="1" corresp="tr_2_tl_2"/><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs> am 5 Juny 1834. <lb xml:id="lassberg-letter-1779-1-2" n="2" corresp="tr_2_tl_3"/>Nemen Sie mit dem guten willen vorlieb lieber herre! ich habe warlich nicht <lb xml:id="lassberg-letter-1779-1-3" n="3" corresp="tr_2_tl_4"/>mer zu wege bringen können. da liegt noch ein gedicht aus dem XII iarh. nach  <lb xml:id="lassberg-letter-1779-1-4" n="4" corresp="tr_2_tl_5"/>einem münchner codex auf den erlichen biederen Schwaben, den heiligen <rs type="person">Ulrich</rs> <lb xml:id="lassberg-letter-1779-1-5" n="5" corresp="tr_2_tl_6"/>bischof von <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0012">Augsburg</rs>, non invita <rs type="person">Minerva</rs> gedichtet; aber ich käme wol iezt <lb xml:id="lassberg-letter-1779-1-6" n="6" corresp="tr_2_tl_7"/>zu späte wenn ich erst daraus abschreiben wollte, da ich fürchten muss <lb xml:id="lassberg-letter-1779-1-7" n="7" corresp="tr_2_tl_8"/>mit der beilage zu spät zu kommen. ach, warum haben Sie mir nicht <lb xml:id="lassberg-letter-1779-1-8" n="8" corresp="tr_2_tl_9"/>anfangs winters von Irem vorhaben gesagt! wie viel hätte ich abschreiben, <lb xml:id="lassberg-letter-1779-1-9" n="9" corresp="tr_2_tl_10"/>wie viel bessere auswale hätte ich treffen können. <lb xml:id="lassberg-letter-1779-1-10" n="10" corresp="tr_2_tl_11"/>Die abbildung der krone der kaiserin <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0558">Anna</rs>, deren Sie in Irer lezten sendung als beiliegend <lb xml:id="lassberg-letter-1779-1-11" n="11" corresp="tr_2_tl_12"/>erwänen, so wie auch den beiliegen sollenden zettel, konnten meine augen, angewandter mühe <lb xml:id="lassberg-letter-1779-1-12" n="12" corresp="tr_2_tl_13"/>ungeachtet, nicht entdeken, i. e. es lag nichts dergleichen bei. schreiben Sie es also nicht <lb xml:id="lassberg-letter-1779-1-13" n="13" corresp="tr_2_tl_14"/>mir zu, wenn die auslagen welche Sie die güte hatten desfalls für mich zu machen, <lb xml:id="lassberg-letter-1779-1-14" n="14" corresp="tr_2_tl_15"/>zur stunde mir unbekannt, noch nicht erstattet sind. Die goldne altartafel kaiser <lb xml:id="lassberg-letter-1779-1-15" n="15" corresp="tr_2_tl_16"/><rs type="person">Heinr. II</rs>. ist doch wirklich in ser würdige hände gefallen und da wo das liecht <lb xml:id="lassberg-letter-1779-1-16" n="16" corresp="tr_2_tl_17"/>im stalle ist, vermutlich auch bestens aufgehoben. <lb xml:id="lassberg-letter-1779-1-17" n="17" corresp="tr_2_tl_18"/>Was für schöne sachen werden Sie uns in Irem Alt Teutschen Lesebuch sehen lassen! ich  <lb xml:id="lassberg-letter-1779-1-18" n="18" corresp="tr_2_tl_19"/>freue mich recht ser darauf. Nun sollen Sie auch wissen, daß der codex oder <lb xml:id="lassberg-letter-1779-1-19" n="19" corresp="tr_2_tl_20"/>das Evangeliarium kaiser <rs type="person">Ludw. des frommen</rs> seit mereren wochen der vitla <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Epponis</rs> <lb xml:id="lassberg-letter-1779-1-20" n="20" corresp="tr_2_tl_21"/>angehört. den theologischen wert dieser handschrift kann ich nicht hinlänglich beurteilen, <lb xml:id="lassberg-letter-1779-1-21" n="21" corresp="tr_2_tl_22"/>aber für die kunstgeschichte scheint er mir nicht unwichtig zu sein, das verstehet sich von <lb xml:id="lassberg-letter-1779-1-22" n="22" corresp="tr_2_tl_23"/>den beiden bücherdekeln. der obere ist ganz mit edelsteinen überdekt, dagegen enthält <lb xml:id="lassberg-letter-1779-1-23" n="23" corresp="tr_2_tl_24"/>der untere in silber gegrabene zeichnungen, welche mir mit ienen, welche man <lb xml:id="lassberg-letter-1779-1-24" n="24" corresp="tr_2_tl_25"/>auf schwedischen und dänischen Runensteinen findet, nahe verwandt zu sein scheinen. <lb xml:id="lassberg-letter-1779-1-25" n="25" corresp="tr_2_tl_26"/>Doch Sie kommen wol einmal selbst in die waldklause um das alte buch zu sehen!  <pb n="2" corresp="../pagexml/1779/1779-2.xml"/><lb xml:id="lassberg-letter-1779-2-1" n="1" corresp="tr_2_tl_1"/>Ich könnte Inen auch einen alten druk, den ich noch gar nirgends angezeigt <lb xml:id="lassberg-letter-1779-2-2" n="2" corresp="tr_2_tl_2"/>gefunden habe, zum ausziehen geben. der titel ist: <rs type="bibl">Amor</rs>: die Liebe. das ditz <lb xml:id="lassberg-letter-1779-2-3" n="3" corresp="tr_2_tl_3"/>büchlyn werd bekant, amor die lieb ist es genant. Dez Pfennigs art vnd vntrüw <lb xml:id="lassberg-letter-1779-2-4" n="4" corresp="tr_2_tl_4"/>spyl, wird hye vngspart traktieret vyll, man spricht gekauft lieb hab nit <lb xml:id="lassberg-letter-1779-2-5" n="5" corresp="tr_2_tl_5"/>wert, wird doch menicher damit versert, dise lieb kauf das ist min rot, <lb xml:id="lassberg-letter-1779-2-6" n="6" corresp="tr_2_tl_6"/>vmb ain krützer git man ein lot. <rs type="person">Dorynne</rs> lies vnd merk vf eben, <lb xml:id="lassberg-letter-1779-2-7" n="7" corresp="tr_2_tl_7"/>vmb ain pfund würdst dus nit geben. es sind nur 52 blätter iedes zu <lb xml:id="lassberg-letter-1779-2-8" n="8" corresp="tr_2_tl_8"/>62 versen, weniges felet am ende. Soll ich es Inen schiken? <lb xml:id="lassberg-letter-1779-2-9" n="9" corresp="tr_2_tl_9"/>Jezt muß ich mich auf die reise rüsten, um <rs type="person">Beneke</rs> und <rs type="person">Grimms</rs> bald <lb xml:id="lassberg-letter-1779-2-10" n="10" corresp="tr_1_tl_1"/>sehen zu können; ich denke so bis zum 25! wird es heißen <rs type="person">Hans</rs> spann <lb xml:id="lassberg-letter-1779-2-11" n="11" corresp="tr_1_tl_2"/>ein. <lb xml:id="lassberg-letter-1779-2-12" n="12" corresp="tr_1_tl_3"/>Ach wie traurig ist das was Sie mir von dem unglüklichen schüler sagen, <lb xml:id="lassberg-letter-1779-2-13" n="13" corresp="tr_1_tl_4"/>den der wansinn ergriffen hat. O tausend mal lieber Tod; der tod dauert <lb xml:id="lassberg-letter-1779-2-14" n="14" corresp="tr_1_tl_5"/>wenn er auch schmerzlich ist, nur einen augenblik; aber wansinn! <lb xml:id="lassberg-letter-1779-2-15" n="15" corresp="tr_1_tl_6"/>ach gott! das ist ein täglicher stündlicher tod. gott gebe im ruhe dem armen! <lb xml:id="lassberg-letter-1779-2-16" n="16" corresp="tr_1_tl_7"/>Nun ist die stunde der postaufgabe schon unvermerkt angekommen, <lb xml:id="lassberg-letter-1779-2-17" n="17" corresp="tr_1_tl_8"/>ich muß also schließen, ich grüße Sie mein vererter herr Professor! ich <lb xml:id="lassberg-letter-1779-2-18" n="18" corresp="tr_1_tl_9"/>bin und bleibe <lb xml:id="lassberg-letter-1779-2-19" n="19" corresp="tr_1_tl_10"/>Ir <lb xml:id="lassberg-letter-1779-2-20" n="20" corresp="tr_1_tl_11"/>ergebenster <lb xml:id="lassberg-letter-1779-2-21" n="21" corresp="tr_1_tl_12"/><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0373">JosephvLaßberg</rs>. </p>
+            </div>
+            <div type="normalized" resp="#GPT4">
+                <p>Eppishausen, am 5. Juni 1834.  
+Nehmen Sie mit dem guten Willen vorlieb, lieber Herr! Ich habe wahrlich nicht  
+mehr zu Wege bringen können. Da liegt noch ein Gedicht aus dem XII. Jahrh. nach  
+einem Münchner Codex auf den ehrlichen biederen Schwaben, den heiligen Ulrich  
+Bischof von Augsburg, non invita Minerva gedichtet; aber ich käme wohl jetzt  
+zu spät, wenn ich erst daraus abschreiben wollte, da ich fürchten muss,  
+mit der Beilage zu spät zu kommen. Ach, warum haben Sie mir nicht  
+anfangs Winters von Ihrem Vorhaben gesagt! Wie viel hätte ich abschreiben,  
+wie viel bessere Auswahl hätte ich treffen können.  
+Die Abbildung der Krone der Kaiserin Anna, deren Sie in Ihrer letzten Sendung als beiliegend  
+erwähnen, so wie auch den beiliegen sollenden Zettel, konnten meine Augen, angewandter Mühe  
+ungeachtet, nicht entdecken, i.e. es lag nichts dergleichen bei. Schreiben Sie es also nicht  
+mir zu, wenn die Auslagen, welche Sie die Güte hatten, desfalls für mich zu machen,  
+zur Stunde mir unbekannt, noch nicht erstattet sind. Die goldene Altartafel Kaiser  
+Heinr. II. ist doch wirklich in sehr würdige Hände gefallen und da, wo das Licht  
+im Stalle ist, vermutlich auch bestens aufgehoben.  
+Was für schöne Sachen werden Sie uns in Ihrem Altdeutschen Lesebuch sehen lassen! Ich  
+freue mich recht sehr darauf. Nun sollen Sie auch wissen, dass der Codex oder  
+das Evangeliarium Kaiser Ludw. des Frommen seit mehreren Wochen der vitla Epponis  
+angehört. Den theologischen Wert dieser Handschrift kann ich nicht hinlänglich beurteilen,  
+aber für die Kunstgeschichte scheint er mir nicht unwichtig zu sein, das versteht sich von  
+den beiden Bücherdeckeln. Der obere ist ganz mit Edelsteinen überdeckt, dagegen enthält  
+der untere in Silber gegrabene Zeichnungen, welche mir mit jenen, welche man  
+auf schwedischen und dänischen Runensteinen findet, nahe verwandt zu sein scheinen.  
+Doch Sie kommen wohl einmal selbst in die Waldklause, um das alte Buch zu sehen!  
+Ich könnte Ihnen auch einen alten Druck, den ich noch gar nirgends angezeigt  
+gefunden habe, zum Ausziehen geben. Der Titel ist: Amor: die Liebe. Das ditz  
+Büchlein wird bekannt, Amor die Lieb ist es genannt. Dez Pfennigs Art und Untreu  
+Spiel, wird hier ungespart traktieret viel, man spricht gekauft Lieb hab nicht  
+wert, wird doch mancher damit versert, die lieb Kauf, das ist mein Rat,  
+um ein Kreuzer gibt man ein Lot. Darin lies und merk auf eben,  
+um ein Pfund würdest du's nicht geben. Es sind nur 52 Blätter jedes zu  
+62 Versen, weniges fehlt am Ende. Soll ich es Ihnen schicken?  
+Jetzt muss ich mich auf die Reise rüsten, um Beneke und Grimms bald  
+sehen zu können; ich denke so bis zum 25. wird es heißen Hans spann  
+ein.  
+Ach wie traurig ist das, was Sie mir von dem unglücklichen Schüler sagen,  
+den der Wahnsinn ergriffen hat. O tausendmal lieber Tod; der Tod dauert,  
+wenn er auch schmerzlich ist, nur einen Augenblick; aber Wahnsinn!  
+Ach Gott! Das ist ein täglicher stündlicher Tod. Gott gebe ihm Ruhe, dem Armen!  
+Nun ist die Stunde der Postaufgabe schon unvermerkt angekommen,  
+ich muss also schließen, ich grüße Sie mein verehrter Herr Professor! Ich  
+bin und bleibe  
+Ihr  
+ergebenster  
+Joseph Laßberg.  </p>
+            </div>
+            <div type="translation" resp="#GPT4">
+                <p>Eppishausen, June 5, 1834.
+
+Receive with good will, dear Sir! I truly have not been able to accomplish more. There still lies a poem from the 12th century according to a Munich codex about the honest and upright Swabian, Saint Ulrich, Bishop of Augsburg, composed non invita Minerva; but I would probably already be too late if I were to start copying it now, as I must fear being too late with the supplement. Oh, why did you not tell me about your plan at the beginning of winter! How much I could have copied, how much better selections I could have made.
+
+The illustration of Empress Anna's crown, which you mentioned as enclosed in your last dispatch, as well as the note that should have been enclosed, I could not discover despite my diligent efforts, i.e., there was nothing of the kind included. So do not attribute it to me if the expenses you kindly incurred on my behalf are still unknown to me and have not yet been reimbursed. The golden altar panel of Emperor Henry II. has truly fallen into very worthy hands and is presumably well preserved where the light is in the stable.
+
+What beautiful things will you show us in your Old German Reader! I am really looking forward to it. Now you should also know that the codex or the Evangelarium of Emperor Louis the Pious has belonged to Vitla Epponis for several weeks. I cannot adequately assess the theological value of this manuscript, but for art history, it does not seem unimportant to me, as understood from the two book covers. The upper one is entirely covered with precious stones, whereas the lower one contains engravings in silver which seem to me closely related to those found on Swedish and Danish runestones.
+
+But surely you will come to the forest hermitage yourself sometime to see the old book! I could also provide you with an old print that I have found nowhere else mentioned, to excerpt. The title is: Amor: Love. This little book became known, it is called "amor the love." The nature and unfaithfulness of the penny play are abundantly discussed here. Many speak bought love is of no value, yet many are supplied with it. This love bought that is my advice, for a penny one gives a lot. Read therein and note carefully, you would not give it up for a pound. It consists of only 52 leaves, each with 62 verses, with little missing at the end. Should I send it to you?
+
+Now I must prepare for the journey to see Beneke and the Grimms soon; I think it will be until the 25th! then it will be said Hans spann ein.
+
+Oh, how sad is the news you tell me about the unfortunate student who has been seized by madness. Oh, a thousand times would I prefer death; death, even when painful, lasts only a moment; but madness! Oh God! that is a daily hourly death. May God grant the poor soul peace!
+
+Now the time for posting is already unnoticed upon us, and I must close. I greet you, my esteemed Professor! I am and remain
+Your
+most devoted
+JosephvLaßberg.</p>
+            </div>
+            <div type="summary" resp="#GPT4">
+                <p/>
+            </div>
+        </body>
+    </text>
+</TEI>

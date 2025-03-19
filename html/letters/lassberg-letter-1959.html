@@ -1,0 +1,274 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0" lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>The Lassberg Letters</title>
+      <link href="../../css/styles.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script><script src="../../js/letters.js"></script><link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"><script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script></head>
+   <body>
+      <div id="app" class="container">
+         <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+            <div class="container-fluid"><a class="navbar-brand" href="#">Laßberg Letters</a><ul class="navbar-nav">
+                  <li class="nav-item"><a class="nav-link" href="../../index.html">Welcome</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb">Data Analysis</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg">Repository</a></li>
+               </ul>
+            </div>
+         </nav>
+         <div class="container my-4">
+            <header class="mb-4">
+               <h1>Brief von Joseph von Laßberg an Wilhelm Wackernagel (02.01.1838).</h1>
+               <p class="lead">
+                  Textfassung auf Basis der Transkription durch Transkribus korrigiert und in TEI
+                  überführt. Automatisierte NER-Erkennung und Identifikation durch Flair geprüft,
+                  korrigiert und ergänzt. Normalisierung, Zusammenfassung und Übersetzung durch
+                  GPT-4. Lizenz: 
+                  
+                  <a href="https://creativecommons.org/licenses/by/4.0/">CC BY
+                     4.0</a>
+                  
+                  </p>
+            </header>
+            <section id="map" class="mb-4">
+               <div id="mapid"></div>
+            </section>
+            <section id="metadata" class="mb-4">
+               <h2>Metadata</h2>
+               <p><strong>Signatur: </strong>Basel, Staatsarchiv des Kantons Basel-Stadt, </p>
+               <p><strong>Registernummer (Laßberg): </strong>2</p>
+               <p><strong>Registernummer (Harris): </strong>956</p>
+               <p><strong>Gedruck in: </strong><a href="-">Wackernagel: Albert Leitzmann, Briefe aus
+                     dem Nachlaß Wilhelm Wackernagels. VI.: Briefe von Joseph von Laßberg.
+                     In: Abhandlungen der phil.-hist. Klasse der Kgl. Sächsischen
+                     Gesellschaft der Wissenschaften 34,1. Leipzig 1916, S. 92-130, S.
+                     115/t</a></p>
+            </section>
+            <section id="original-text" class="mb-4">
+               <h2>Original Text</h2>
+               <div>
+                  2 Eppishausen am 9. Januar 1838. Vererter Herr Professor! Ir
+                  wertes schreiben kann ich heute nicht vollständig und ausfürlich beantworten; das neue iar hat mir solch einen schwall von kleinen unverschieblichen geschäften hergeschwemmt, dass ich nicht weiss, wo ich anfangen oder enden soll. Indessen gebe ich Inen in betreff der unter handlung mit <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Beyel</strong&gt;">Beyel<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> et
+                  Comp. zu überlegen: ob es nicht zeitgemässer und
+                  selbst für den verleger vorteilhafter wäre, statt des <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Weingartner Codex</span> zuerst den <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ulrich von Liechtenstein: Frauendienst.</strong&gt;">Frauendienst<a href="https://www.handschriftencensus.de/werke/386">📖</a></span>, oder den <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Willehalm von&#xA;        Orlens.</strong&gt;">Wilhelm von
+                     Orlenz<a href="https://handschriftencensus.de/werke/323">📖</a></span>, den ich eben unter der feder habe, herauszugeben?
+                  verstehet sich dabei, dass ich immer eine anzal exemplare für meinen
+                  Liedersaal, um einen zu bestimmenden preis erhielte, was nebst dem
+                  auch nicht so viele unkosten verursachen würde, da zum <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Weingarter
+                     codex</span> 26 lithographien gehören, von denen ich auch nicht eine
+                  erlassen könnte. Ich gebe Inen dieses zu bedenken, und werde
+                  Inen später ausfürlicher darüber schreiben. vom <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ulrich von Liechtenstein: Frauendienst.</strong&gt;">frauendienst<a href="https://www.handschriftencensus.de/werke/386">📖</a></span>, der für <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Österreich</strong&gt;">Oesterreich<a href="https://www.wikidata.org/wiki/Q40"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> ein
+                  eigenes interesse hat, würden wenigstens 100 exemplare nach <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wien</strong&gt;">Wien<a href="https://www.wikidata.org/wiki/Q1741"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Prag</strong&gt;">Prag<a href="https://www.wikidata.org/wiki/Q1085"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>
+                  und <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Brünn</strong&gt;">Brünn<a href="https://www.wikidata.org/wiki/Q14960"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> gehen und, wie ich glaube, selbst auch nach <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ungarn</strong&gt;">Ungarn<a href="https://www.wikidata.org/wiki/Q28"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> und
+                  <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Siebenbürgen</strong&gt;">Siebenbürgen<a href="https://www.wikidata.org/wiki/Q39473"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>. Die
+                  <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Göttingen</strong&gt;">Göttinger<a href="https://www.wikidata.org/wiki/Q3033"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> ... , wie ich es voraus sahe, und wie ... gewiß auch ... teil daran namen, und
+                  also auch ... ire massregeln danach namen. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wilhelm Grimm</strong&gt;">Wilhelm Grimm<a href="https://d-nb.info/gnd/118542265"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> mit <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Dorothea Grimm</strong&gt;">weib<a href="https://d-nb.info/gnd/116842857"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> und
+                  <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Herman Grimm</strong&gt;">kind<a href="https://d-nb.info/gnd/118697773"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> ist
+                  zwar noch in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Göttingen</strong&gt;">Göttingen<a href="https://www.wikidata.org/wiki/Q3033"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, wird
+                  aber dort so lange bleiben, bis <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jacob Grimm</strong&gt;">Jacob<a href="https://d-nb.info/gnd/118542257"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                  inen allen irgendwo ein neues nest gemacht hat. Ich hoffe auf <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Heidelberg</strong&gt;">Heidelberg<a href="https://www.wikidata.org/wiki/Q2966"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, denn in der <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Schweiz</strong&gt;">Schweiz<a href="https://www.wikidata.org/wiki/Q39"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> wird
+                  wol nichts zu machen sein: die brüder werden sich auch wol
+                  nie trennen. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jacob Grimm</strong&gt;">Jacob<a href="https://d-nb.info/gnd/118542257"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                  war eben mit herausgabe einiger <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Lateinische Gedichte des X. und XI. Jahrhunderts.</strong&gt;">latein ischer gedichte des X und XI Jarhunderts<a href="https://archive.org/details/lateinischegedic00grimuoft">📖</a></span> beschäftiget, wozu ich im auch
+                  collationen und abschriften lieferte. nun ist der druk unterbrochen und
+                  kann wol sobald nicht wieder aufgenommen werden. ich habe auf meinen lezten brief an <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jacob Grimm</strong&gt;">Jacob<a href="https://d-nb.info/gnd/118542257"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                  noch keine antwort, vermute in aber in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Heidelberg</strong&gt;">Heidelberg<a href="https://www.wikidata.org/wiki/Q2966"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>. das
+                  übrige wissen Sie aus den zeitungen, die über diese angelegenheit ser umständlich sind. Einer <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Adam Pupikofer</strong&gt;">meiner
+                     freunde<a href="https://d-nb.info/gnd/11565108X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> wünschte sich das <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Du Cange, Charles Du Fresne Glossarium Ad Scriptores&#xA;        Mediae Et Infimae Latinitatis.</strong&gt;">glossarium
+                     des Du Fresne du Cange<a href="VD18 12072141-001">📖</a></span> anzuschaffen; ich solle Sie daher um
+                  schleunigen bericht ersuchen: ob in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Basel</strong&gt;">Basel<a href="https://www.wikidata.org/wiki/Q78"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> im
+                  buchladen noch exemplare und zu welchem preise zu
+                  haben sind. Sie verbinden mich durch baldige auskunft. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ludwig Uhland</strong&gt;">Uhland<a href="https://d-nb.info/gnd/118625063"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> schrieb mir kürzlich, dass nun auch sein freund <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Gustav Schwab</strong&gt;">Gustav
+                     Schwab<a href="https://d-nb.info/gnd/118762745"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> in seine nachbarschaft, als pfarrer nach <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Gomaringen</strong&gt;">Gomaringen<a href="https://www.wikidata.org/wiki/Q507707"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> /:2 kleine stunden von <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Tübingen</strong&gt;">Tübingen<a href="https://www.wikidata.org/wiki/Q3806"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>:/
+                  gezogen sei, nachbarschaft zusamen zu leben. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ludwig Uhland</strong&gt;">Uhland<a href="https://d-nb.info/gnd/118625063"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> hatte wieder fleissig in Theotiscis gearbeitet, muss nun
+                  aber gegen ende dieses monats zum landschaftlichen ausschuss nach <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Stuttgart</strong&gt;">Stuttgart<a href="https://www.wikidata.org/wiki/Q1022"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, wegen beratung des neuen criminalgesezbuches, wo sein aufenthalt ziemlich lange dauern wird. Wir leben hier alle gesund und vergnügt und haben mit herzlicher teilnahme den
+                  guten anfang und fortgang Ires frölichen beisamen seins
+                  gelesen; das soll Inen der liebe gott recht viele iare erhalten. Dies,
+                  mit den besten grüssen von uns allen, der neuiarswunsch ires ergebenen JvLaßberg. 
+                  </div>
+            </section>
+            <section id="normalised-text" class="mb-4">
+               <h2>Normalisierter Text</h2>
+               <div>
+                  Eppishausen am 9. Januar 1838. Verehrter Herr Professor! Ihr wertes Schreiben
+                  kann ich heute nicht vollständig und ausführlich beantworten; das neue Jahr hat
+                  mir solch einen Schwall von kleinen unverschieblichen Geschäften hergeschwemmt,
+                  dass ich nicht weiß, wo ich anfangen oder enden soll. Indessen gebe ich Ihnen in
+                  betreff der Unterhandlung mit Beyel et Comp. zu überlegen: ob es nicht
+                  zeitgemäßer und selbst für den Verleger vorteilhafter wäre, statt des
+                  Weingartner Codex zuerst den Frauendienst oder den Wilhelm von Orlens, den ich
+                  eben unter der Feder habe, herauszugeben? versteht sich dabei, dass ich immer
+                  eine Anzahl Exemplare für meinen Liedersaal, um einen zu bestimmenden Preis
+                  erhielte, was nebst dem auch nicht so viele Unkosten verursachen würde, da zum
+                  Weingartner Codex 26 Lithographien gehören, von denen ich auch nicht eine
+                  erlassen könnte. Ich gebe Ihnen dieses zu bedenken und werde Ihnen später
+                  ausführlicher darüber schreiben. Vom Frauendienst, der für Österreich ein
+                  eigenes Interesse hat, würden wenigstens 100 Exemplare nach Wien, Prag und Brünn
+                  gehen und, wie ich glaube, selbst auch nach Ungarn und Siebenbürgen. Die
+                  Göttinger ..., wie ich es voraussah, und wie ... gewiss auch ... teil daran
+                  nahmen, und also auch ... Ihre Maßregeln danach nahmen. Wilhelm Grimm mit Weib
+                  und Kind ist zwar noch in Göttingen, wird aber dort so lange bleiben, bis Jacob
+                  ihnen allen irgendwo ein neues Nest gemacht hat. Ich hoffe auf Heidelberg, denn
+                  in der Schweiz wird wohl nichts zu machen sein: die Brüder werden sich auch wohl
+                  nie trennen. Jacob war eben mit Herausgabe einiger lateinischer Gedichte des X
+                  und XI Jahrhunderts beschäftigt, wozu ich ihm auch Kollationen und Abschriften
+                  lieferte. Nun ist der Druck unterbrochen und kann wohl sobald nicht wieder
+                  aufgenommen werden. Ich habe auf meinen letzten Brief an Jacob noch keine
+                  Antwort, vermute ihn aber in Heidelberg. Das Übrige wissen Sie aus den
+                  Zeitungen, die über diese Angelegenheit sehr umständlich sind. Einer meiner
+                  Freunde wünschte sich das Glossarium des Du Fresne du Cange anzuschaffen; ich
+                  solle Sie daher um schleunigen Bericht ersuchen: ob in Basel im Buchladen noch
+                  Exemplare und zu welchem Preise zu haben sind. Sie verbinden mich durch baldige
+                  Auskunft. Uhland schrieb mir kürzlich, dass nun auch sein Freund Gustav Schwab
+                  in seine Nachbarschaft, als Pfarrer nach Gomaringen /:2 kleine Stunden von
+                  Tübingen:/ gezogen sei, Nachbarschaft zusammen zu leben. Uhland hatte wieder
+                  fleißig in Theotiscis gearbeitet, muss nun aber gegen Ende dieses Monats zum
+                  landschaftlichen Ausschuss nach Stuttgart, wegen Beratung des neuen
+                  Criminalgesetzbuches, wo sein Aufenthalt ziemlich lange dauern wird. Wir leben
+                  hier alle gesund und vergnügt und haben mit herzlicher Teilnahme den guten
+                  Anfang und Fortgang Ihres fröhlichen Beisammen seins gelesen; das soll Ihnen der
+                  liebe Gott recht viele Jahre erhalten. Dies, mit den besten Grüßen von uns
+                  allen, der Neujahrswunsch Ihrer ergebenen Jvl.aßberg.
+                  </div>
+            </section>
+            <section id="translation" class="mb-4">
+               <h2>Translation</h2>
+               <div>
+                  Eppishausen, January 9, 1838. Esteemed Professor! I cannot fully and thoroughly
+                  answer your valued letter today; the new year has brought me such a flood of
+                  small unavoidable tasks that I do not know where to start or end. In the
+                  meantime, I offer you, regarding the negotiation with Beyel et Comp., something
+                  to consider: whether it would not be more timely and even more advantageous for
+                  the publisher to first publish the "Frauendienst" or "Wilhelm von Orlenz," which
+                  I have just under the pen, instead of the Weingartner Codex? It goes without
+                  saying that I would always receive a number of copies for my Liedersaal at a
+                  price to be determined, which would also not incur as many costs, as the
+                  Weingartner Codex includes 26 lithographs, not one of which I could forgo. I
+                  offer you this to consider and will write to you more extensively about it
+                  later. Of the "Frauendienst," which holds particular interest for Austria, at
+                  least 100 copies would go to Vienna, Prague, and Brno, and, I believe, also to
+                  Hungary and Transylvania. The Göttingen ..., as I foresaw, and as ... certainly
+                  also ... took part in it, and thus also ... took their measures accordingly.
+                  Wilhelm Grimm, with wife and child, is still in Göttingen, but will remain there
+                  until Jacob finds a new nest for them somewhere. I hope for Heidelberg, for
+                  nothing seems to be possible in Switzerland: the brothers will probably never
+                  separate. Jacob was just engaged in the publication of some Latin poems of the
+                  10th and 11th centuries, for which I also delivered collations and transcripts.
+                  Now the printing is interrupted and probably cannot be resumed soon. I have not
+                  yet received an answer to my last letter to Jacob, but I suspect him to be in
+                  Heidelberg. You know the rest from the newspapers, which are very detailed about
+                  this matter. One of my friends wished to acquire Du Fresne du Cange's
+                  glossarium; I am to request from you an urgent report as to whether there are
+                  still copies available in the bookstore in Basel, and at what price. You would
+                  oblige me by providing prompt information. Uhland recently wrote to me that now
+                  his friend Gustav Schwab has moved to his vicinity as a pastor to Gomaringen
+                  (two small hours from Tübingen), to live in neighborhood together. Uhland had
+                  again diligently worked in Theotiscis, but now has to go to the regional
+                  committee in Stuttgart at the end of this month to consult on the new criminal
+                  code, where his stay will be quite long. We all live here healthy and cheerful
+                  and have read with heartfelt participation the good beginning and progress of
+                  your joyful being together, which may the dear God preserve for you for many
+                  years. This, with best regards from all of us, the new year's wish of your
+                  devoted JvLaßberg.
+                  </div>
+            </section>
+         </div>
+      </div><script src="https://unpkg.com/leaflet/dist/leaflet.js"></script><script>
+                    // Create the map and set its view to a default coordinate and zoom level.
+                    var map = L.map('mapid').setView([47.545,9.23759], 7);
+                    // Set up the OpenStreetMap tile layer.
+                    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: 'Map data <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
+                    }).addTo(map);
+                    
+                    
+                    // Optionally add a marker at the center
+                    
+                    // Define custom marker icons.
+                    var mentionedIcon = L.icon({
+                    iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
+                    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/images/marker-shadow.png',
+                    iconSize: [25, 41],
+                    iconAnchor: [12, 41],
+                    popupAnchor: [1, -34],
+                    shadowSize: [41, 41]
+                    });
+                    
+                    L.marker([47.545,9.23759]).addTo(map)
+                    .bindPopup('Eppishausen')
+                    .openPopup();
+                    
+                    
+                        
+                        var popupText = "Österreich";
+                        L.marker([48, 14], {icon: mentionedIcon}).addTo(map)
+                        .bindPopup(popupText);
+                    
+                        
+                        var popupText = "Wien";
+                        L.marker([48.208333,16.3725], {icon: mentionedIcon}).addTo(map)
+                        .bindPopup(popupText);
+                    
+                        
+                        var popupText = "Prag";
+                        L.marker([50.0875, 14.421388888888888], {icon: mentionedIcon}).addTo(map)
+                        .bindPopup(popupText);
+                    
+                        
+                        var popupText = "Brünn";
+                        L.marker([49.195277777778, 16.608333333333], {icon: mentionedIcon}).addTo(map)
+                        .bindPopup(popupText);
+                    
+                        
+                        var popupText = "Ungarn";
+                        L.marker([47, 19], {icon: mentionedIcon}).addTo(map)
+                        .bindPopup(popupText);
+                    
+                        
+                        var popupText = "Siebenbürgen";
+                        L.marker([46.766666666667, 23.583333333333], {icon: mentionedIcon}).addTo(map)
+                        .bindPopup(popupText);
+                    
+                        
+                        var popupText = "Göttingen";
+                        L.marker([51.533889,9.935556], {icon: mentionedIcon}).addTo(map)
+                        .bindPopup(popupText);
+                    
+                        
+                        var popupText = "Heidelberg";
+                        L.marker([49.41666667,8.71666667], {icon: mentionedIcon}).addTo(map)
+                        .bindPopup(popupText);
+                    
+                        
+                        var popupText = "Schweiz";
+                        L.marker([46.798562, 8.231973], {icon: mentionedIcon}).addTo(map)
+                        .bindPopup(popupText);
+                    
+                        
+                        var popupText = "Basel";
+                        L.marker([47.55472222,7.59055556], {icon: mentionedIcon}).addTo(map)
+                        .bindPopup(popupText);
+                    
+                        
+                        var popupText = "Gomaringen";
+                        L.marker([48.452,9.1], {icon: mentionedIcon}).addTo(map)
+                        .bindPopup(popupText);
+                    
+                        
+                        var popupText = "Tübingen";
+                        L.marker([48.52,9.055556], {icon: mentionedIcon}).addTo(map)
+                        .bindPopup(popupText);
+                    
+                        
+                        var popupText = "Stuttgart";
+                        L.marker([48.7775,9.18], {icon: mentionedIcon}).addTo(map)
+                        .bindPopup(popupText);
+                    </script><script>
+                    // Initialize all tooltips
+                    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+                    new bootstrap.Tooltip(tooltipTriggerEl)
+                    })
+                </script></body>
+</html>

@@ -1,0 +1,402 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1786">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Wilhelm Wackernagel an Joseph von Laßberg (23.06.1834).</title>
+                <respStmt xml:id="MiS">
+                    <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Textfassung auf Basis der Transkription durch Transkribus korrigiert und in TEI
+                    überführt. Automatisierte NER-Erkennung und Identifikation durch Flair geprüft,
+                    korrigiert und ergänzt. Normalisierung, Zusammenfassung und Übersetzung durch
+                    GPT-4. Lizenz: </p>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY
+                        4.0</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Freiburg i.Br.</settlement>
+                        <repository>Universitätsbibliothek</repository>
+                        <idno type="signature">Autograph Nr. 380</idno>
+                        <idno type="register-harris">2504</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates> <bibl type="printed"><ref/></bibl> </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1786">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0367"
+                        ref="https://d-nb.info/gnd/118805851">Wilhelm Wackernagel</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0019"
+                        >Basel</placeName>
+                    <date when="1834-06-23">23.06.1834</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373"
+                        ref="https://d-nb.info/gnd/118778862">Joseph von Laßberg</persName>
+
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned"> <ref type="cmif:mentionsBibl"
+                    target="../register/lassberg-literature.xml#lassberg-literature-0132"
+                    ><rs>Minnesinger. Deutsche Liederdichter des zwölften, dreizehnten und
+                    vierzehnten Jahrhunderts, aus allen bekannten Handschriften und früheren
+                    Drucken</rs></ref> <ref type="cmif:mentionsBibl"
+                    target="../register/lassberg-literature.xml#lassberg-literature-0179"
+                    ><rs>Gauriel von Muntabel</rs></ref> <ref type="cmif:mentionsBibl"
+                    target="../register/lassberg-literature.xml#lassberg-literature-0181"><rs>Unser
+                    vrouwen klage</rs></ref> <ref type="cmif:mentionsBibl"
+                    target="../register/lassberg-literature.xml#lassberg-literature-0143"><rs>Amor:
+                    die Liebe</rs></ref> <ref type="cmif:mentionsBibl"
+                    target="../register/lassberg-literature.xml#lassberg-literature-0142"><rs>St.
+                    Ulrichs Leben</rs></ref> <ref type="cmif:mentionsBibl"
+                    target="../register/lassberg-literature.xml#lassberg-literature-0184"
+                    ><rs>Geistlich Artzney Für Ketzergifft vnd jetziger zeit böse Lüfft</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                    target="../register/lassberg-literature.xml#lassberg-literature-0185"
+                    ><rs>Geistlicher Fastnachtskrapfen</rs></ref> <ref type="cmif:mentionsBibl"
+                    target="../register/lassberg-literature.xml#lassberg-literature-0178"
+                    ><rs>Neidhart</rs></ref> <ref type="cmif:mentionsBibl"
+                    target="../register/lassberg-literature.xml#lassberg-literature-0180"
+                    ><rs>Sprüche</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0119"
+                    ><rs>Friedrich Heinrich von der Hagen</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0601"><rs>Ulrich
+                    von Liechtenstein</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0192"><rs>Johann
+                    Caspar von Orelli</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0134"><rs>Georg
+                    Friedrich Benecke</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0362 ../register/lassberg-persons.xml#lassberg-correspondent-0170"
+                    ><rs/></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0362"
+                    ><rs>Wilhelm Grimm</rs></ref> <ref type="cmif:mentionsPlace"
+                    target="../register/lassberg-places.xml#lassberg-place-0053"
+                    ><rs>Göttingen</rs></ref> </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2025-03-18" who="#MiS" status="done">Text recognized by
+                    Transkribus</change>
+                <change when="2025-03-18" who="#MiS" status="done">Text corrected in
+                    Transkribus</change>
+                <change when="2025-03-18" who="#MiS" status="done">Exported from
+                    Transkribus</change>
+                <change when="2025-03-18" who="#MiS" status="done">Automatic NER</change>
+                <change when="2025-03-18" who="#MiS" status="done">Automatic normalization,
+                    translation and summary</change>
+                <change when="2025-03-18" who="#MiS" status="done">Manual markup and
+                    proofreading</change>
+                <change when="2025-03-18" who="#MiS" status="done">Finished markup</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="original" resp="#transkribus #MiS">
+                <p><pb n="1" corresp="../pagexml/1786/1786-1.xml"/><add><lb
+                    xml:id="lassberg-letter-1786-1-1" n="1" corresp="tr_1_tl_1"/>erhalten am 26 Juny
+                    1834. <lb xml:id="lassberg-letter-1786-1-3" n="3" corresp="tr_1_tl_3"/>am 29
+                    Juny habe ich <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0132">Im Hagens
+                    dichterleben 4to</rs> und <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0179">Gabriel:
+                    Montavel</rs> in folio gesendet. </add><lb xml:id="lassberg-letter-1786-1-2"
+                    n="2" corresp="tr_1_tl_2"/>Basel 23. Juny 34.<lb
+                    xml:id="lassberg-letter-1786-1-4" n="4" corresp="tr_1_tl_4"/>Hochverehrter Herr
+                    Baron, <lb xml:id="lassberg-letter-1786-1-5" n="5" corresp="tr_1_tl_5"/>wenn ich
+                    einen Briefsteller schreiben wollte, so könnte ich jezt die schoensten <lb
+                    xml:id="lassberg-letter-1786-1-6" n="6" corresp="tr_1_tl_6"/>studien machen für
+                    das Capitel von den Danksagungen: Sie geben mir <lb
+                    xml:id="lassberg-letter-1786-1-7" n="7" corresp="tr_1_tl_7"/>dazu von Woche zu
+                    Woche immer neuen Anlaß. <lb xml:id="lassberg-letter-1786-1-8" n="8"
+                    corresp="tr_1_tl_8"/>Die letzte sechsfache Sendung habe ich zu meiner großen
+                    Freude erhalten <lb xml:id="lassberg-letter-1786-1-9" n="9" corresp="tr_1_tl_9"
+                    /><rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0181">Marien
+                    Klage</rs> war mir noch von der Pfälzer Handschrift her in ange <lb break="no"
+                    xml:id="lassberg-letter-1786-1-10" n="10" corresp="tr_1_tl_10"/>nehmer
+                    Erinnerung. <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0143">Amor die
+                    lieb</rs> hätte ich nach Sprache und Reim <lb xml:id="lassberg-letter-1786-1-11"
+                    n="11" corresp="tr_1_tl_11"/>älter angeschlagen, als es dort ist (1492). Der <rs
+                    type="bibl" key="../register/lassberg-literature.xml#lassberg-literature-0142"
+                    >h. Ulrich</rs> hat ver <lb break="no" xml:id="lassberg-letter-1786-1-12" n="12"
+                    corresp="tr_1_tl_12"/>wunderliche Alterthümlichkeiten. Alles ist mir höchst
+                    willkommen! <lb xml:id="lassberg-letter-1786-1-13" n="13" corresp="tr_1_tl_13"
+                    />Es waere eine Unschicklichkeit, wenn ich Ihnen unbequem machen <lb
+                    xml:id="lassberg-letter-1786-1-14" n="14" corresp="tr_1_tl_14"/>wollte, um es
+                    nur selber bequem zu haben: wenn ich sie mit dem <lb
+                    xml:id="lassberg-letter-1786-1-15" n="15" corresp="tr_1_tl_15"/>Ausziehen
+                    beschwerte. Auch ohne das ist die Güte gross genug. Nur <lb
+                    xml:id="lassberg-letter-1786-1-16" n="16" corresp="tr_1_tl_16"/>ein Übelstand
+                    ist dabei: gern hätte ich noch vor Ihrer Abreise die <lb
+                    xml:id="lassberg-letter-1786-1-17" n="17" corresp="tr_1_tl_17"/>sendung
+                    zurückwandern lassen, wenn mir nur Pädagogium und Universität <lb
+                    xml:id="lassberg-letter-1786-1-18" n="18" corresp="tr_1_tl_18"/>(ich lese
+                    historische syntax) und die mühselige correctur der ersten Bogen <lb
+                    xml:id="lassberg-letter-1786-1-19" n="19" corresp="tr_1_tl_19"/>Zeit ließen,
+                    jezt Zeit liessen, für die spaeteren zu copieren. Da muss <lb
+                    xml:id="lassberg-letter-1786-1-20" n="20" corresp="tr_1_tl_20"/>ich nun auch
+                    noch Ihre Geduld in Anspruch nehmen. Erst in einigen Wochen <lb
+                    xml:id="lassberg-letter-1786-1-21" n="21" corresp="tr_1_tl_21"/>kommt die
+                    Ruhezeit, die ich mir zu einer Arbeitzeit machen kann, die <lb
+                    xml:id="lassberg-letter-1786-1-22" n="22" corresp="tr_1_tl_22"/>gesegneten
+                    Ferien. <lb xml:id="lassberg-letter-1786-1-23" n="23" corresp="tr_1_tl_23"/>ich
+                    weiss nicht ob ich die <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0184">geistl.
+                    Arzney</rs> u. den <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0185"
+                    >Fastnachtskrapfen</rs> behalten <lb xml:id="lassberg-letter-1786-1-24" n="24"
+                    corresp="tr_1_tl_24"/>darf oder zurückschicken soll? <pb n="2"
+                    corresp="../pagexml/1786/1786-2.xml"/><lb xml:id="lassberg-letter-1786-2-1"
+                    n="1" corresp="tr_1_tl_1"/>Sie wollen mir, damit ich doch auch etwas von Ihrer
+                    schoenen Reise habe, während <lb xml:id="lassberg-letter-1786-2-2" n="2"
+                    corresp="tr_1_tl_3"/>der Zeit die <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0132">hagenschen
+                    Dichterleben</rs> anvertrauen: mir würde in der That damit der <lb
+                    xml:id="lassberg-letter-1786-2-3" n="3" corresp="tr_1_tl_4"/>groeßte Gefalle
+                    geschehen: ich besitze nur die ersten zehn Bogen, und doch wurden <lb
+                    xml:id="lassberg-letter-1786-2-4" n="4" corresp="tr_1_tl_5"/>mir die übrigen für
+                    mein Buch in chronologischer Beziehung nicht ohne <lb
+                    xml:id="lassberg-letter-1786-2-5" n="5" corresp="tr_1_tl_6"/>Nutzern seyn; zudem
+                    wäre ich auf <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0178">Nitharts</rs>
+                    Leben neugierig, ob es das von <lb xml:id="lassberg-letter-1786-2-6" n="6"
+                    corresp="tr_1_tl_7"/>mir einmahl verfasste ist und wie es mir woll jezt noch
+                    gefällt. <lb xml:id="lassberg-letter-1786-2-7" n="7" corresp="tr_1_tl_8"/>Dass
+                    <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0119">Hr. vdH</rs>.
+                    es versteht, sich die Mühe klein zu maden und Buch und Honorar <lb
+                    xml:id="lassberg-letter-1786-2-8" n="8" corresp="tr_1_tl_9"/>desto groesser, ist
+                    an ihm freylich nicht neu; aber das mit dem <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0601"
+                    >Liechtenstein</rs> <lb xml:id="lassberg-letter-1786-2-9" n="9"
+                    corresp="tr_1_tl_10"/>geht doch über meinen besten Glauben hinaus. <lb
+                    xml:id="lassberg-letter-1786-2-10" n="10" corresp="tr_1_tl_11"/>Wenn Sie dann zu
+                    den Minnesängern noch den <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0179">Gabr. v.
+                    Montavel</rs> legen wollten <lb xml:id="lassberg-letter-1786-2-11" n="11"
+                    corresp="tr_1_tl_12"/>(Ihre Auszüge enthalten nur den Anfang, nicht auch das
+                    gleichfalls verheissene <lb xml:id="lassberg-letter-1786-2-12" n="12"
+                    corresp="tr_1_tl_13"/>Ende), so würde sie Ihre Güte, wenn ich so sagen könnte,
+                    als vollendet be <lb break="no" xml:id="lassberg-letter-1786-2-13" n="13"
+                    corresp="tr_1_tl_14"/>trachten. <lb xml:id="lassberg-letter-1786-2-14" n="14"
+                    corresp="tr_1_tl_15"/>In <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0192">Orelli</rs>
+                    habe ich mich wieder finden gelernt. Ich glaube in der Hat, er hat <lb
+                    xml:id="lassberg-letter-1786-2-15" n="15" corresp="tr_1_tl_16"/>die
+                    landschaftliche Wahl im besten Willen gegen uns angenommen (politische <lb
+                    xml:id="lassberg-letter-1786-2-16" n="16" corresp="tr_1_tl_17"/>Parteyung kennt
+                    er wohl nur in so fern, als es ihm für die Zürcherische Ge <lb break="no"
+                    xml:id="lassberg-letter-1786-2-17" n="17" corresp="tr_1_tl_18"/>Lehrsamkeit
+                    erspriesslich scheint), besonders aber aus Freude an vielen Bü <lb break="no"
+                    xml:id="lassberg-letter-1786-2-18" n="18" corresp="tr_1_tl_19"/>chern und
+                    litterar. Entdeckungen. Mit dem hohen Taxieren hat er seit <lb break="no"
+                    xml:id="lassberg-letter-1786-2-19" n="19" corresp="tr_1_tl_20"/>her etwas
+                    nachgelassen; zudem ist auch diese Schätzung nicht die definitive. <lb
+                    xml:id="lassberg-letter-1786-2-20" n="20" corresp="tr_1_tl_21"/>ich habe
+                    ernsthaft und ruhig mit ihm über diese Angelegenheit gesprochen: <lb
+                    xml:id="lassberg-letter-1786-2-21" n="21" corresp="tr_1_tl_22"/>da erklärte er
+                    es für schändlich und thoericht, es dahin zu bringen, dass die <lb
+                    xml:id="lassberg-letter-1786-2-22" n="22" corresp="tr_1_tl_23"/>Bibliothek wegen
+                    zu hoher Veranschlagung müßte versteigert werden. Wenn <lb
+                    xml:id="lassberg-letter-1786-2-23" n="23" corresp="tr_1_tl_24"/>er nur kein
+                    Bibliothecar waere, sondern ein Antiquar! <lb xml:id="lassberg-letter-1786-2-24"
+                    n="24" corresp="tr_1_tl_25"/>Was meinen Sie zu der Taxe der Kunstsammlung? Die
+                    Experten der Stadt <lb xml:id="lassberg-letter-1786-2-25" n="25"
+                    corresp="tr_1_tl_26"/>haben sie auf 16000. Fr., die der Landschaft auf 110000.
+                    geschätzt. <lb xml:id="lassberg-letter-1786-2-26" n="26" corresp="tr_1_tl_27"
+                    />Eins so unverschaemt als das andre. Und es kostet nur neue Directen <lb
+                    xml:id="lassberg-letter-1786-2-27" n="27" corresp="tr_1_tl_28"/>für neue
+                    Experten. <pb n="3" corresp="../pagexml/1786/1786-3.xml"/><lb
+                    xml:id="lassberg-letter-1786-3-1" n="1" corresp="tr_1_tl_1"/>Und nun meine
+                    besten und herzlichsten Glückwünsche zu Ihrer Reise: <lb
+                    xml:id="lassberg-letter-1786-3-2" n="2" corresp="tr_1_tl_2"/>Gesundheit und
+                    Fröhlichkeit während der Zeit und nachher, und <lb
+                    xml:id="lassberg-letter-1786-3-3" n="3" corresp="tr_1_tl_3"/>litterarische und
+                    artistische Fünde, so viel der Wagen nur fassen <lb
+                    xml:id="lassberg-letter-1786-3-4" n="4" corresp="tr_1_tl_4"/>mag. Und wenn sie
+                    nach <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0053"
+                    >Göttingen</rs>, kommen, so denken sie <lb xml:id="lassberg-letter-1786-3-5"
+                    n="5" corresp="tr_1_tl_5"/>meiner bei <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0134">Benecke</rs>
+                    und den Br. <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0362 ../register/lassberg-persons.xml#lassberg-correspondent-0170"
+                    >Grimm</rs> und bestellen sie meine <lb xml:id="lassberg-letter-1786-3-6" n="6"
+                    corresp="tr_1_tl_6"/>angelegentlichsten Grüße und Empfehlungen. Gern hätte ich
+                    Sie <lb xml:id="lassberg-letter-1786-3-7" n="7" corresp="tr_1_tl_7"/>auch
+                    gebeten einen Brief mitzunehmen, wenn ich nur dazu kommen <lb
+                    xml:id="lassberg-letter-1786-3-8" n="8" corresp="tr_1_tl_8"/>könnte, einen zu
+                    schreiben. Wenn Sie wollen, so erzählen sie von <lb
+                    xml:id="lassberg-letter-1786-3-9" n="9" corresp="tr_1_tl_9"/>meinem altd.
+                    Lesebuch: noch weiss man dort niechts davon; ich würde, <lb
+                    xml:id="lassberg-letter-1786-3-10" n="10" corresp="tr_1_tl_10"/>wenn erst mehr
+                    gedruckt wäre, Probeoegen schicken. Schoen waere es, <lb
+                    xml:id="lassberg-letter-1786-3-11" n="11" corresp="tr_1_tl_11"/>wenn mir <rs
+                    type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0362"
+                    >Wilh. Gr.</rs> den <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0180">Freydank</rs>
+                    zusammen ließe: vielleicht <lb xml:id="lassberg-letter-1786-3-12" n="12"
+                    corresp="tr_1_tl_12"/>traefe er noch vor Thorschluss ein; ohne dies muss ich mit
+                    dem Müller <lb break="no" xml:id="lassberg-letter-1786-3-13" n="13"
+                    corresp="tr_1_tl_13"/>schen Text vorlieb nehmen. <lb
+                    xml:id="lassberg-letter-1786-3-14" n="14" corresp="tr_1_tl_14"/>Noch einmahl,
+                    leben Sie recht wohl! Mein aufrichtiger Dank und <lb
+                    xml:id="lassberg-letter-1786-3-15" n="15" corresp="tr_1_tl_15"/>meine besten
+                    Wünsche begleiten sie. Bleiben Sie mir geneigt. <lb
+                    xml:id="lassberg-letter-1786-3-16" n="16" corresp="tr_1_tl_16"/>Von Herzen Ihr
+                    ergebenster <lb xml:id="lassberg-letter-1786-3-17" n="17" corresp="tr_1_tl_17"
+                    />Wilh. Wackernagel </p>
+            </div>
+            <div type="normalized" resp="#GPT4">
+                <p>erhalten am 26. Juni 1834. Basel, 23. Juni 34. am 29. Juni habe ich Im Hagens
+                    Dichterleben 4to und Gabriel: Montavel in folio gesendet. Hochverehrter Herr
+                    Baron, wenn ich einen Briefsteller schreiben wollte, so könnte ich jetzt die
+                    schönsten Studien machen für das Kapitel von den Danksagungen: Sie geben mir
+                    dazu von Woche zu Woche immer neuen Anlass. Die letzte sechsfache Sendung habe
+                    ich zu meiner großen Freude erhalten. Marien Klage war mir noch von der Pfälzer
+                    Handschrift her in angenehmer Erinnerung. Amor die lieb hätte ich nach Sprache
+                    und Reim älter angeschlagen, als es dort ist (1492). Der h. Ulrich hat
+                    verwunderliche Altertümlichkeiten. Alles ist mir höchst willkommen! Es wäre eine
+                    Unschicklichkeit, wenn ich Ihnen unbequem machen wollte, um es nur selber bequem
+                    zu haben: wenn ich Sie mit dem Ausziehen beschwerte. Auch ohne das ist die Güte
+                    groß genug. Nur ein Übelstand ist dabei: gern hätte ich noch vor Ihrer Abreise
+                    die Sendung zurückwandern lassen, wenn mir nur Pädagogium und Universität (ich
+                    lese historische Syntax) und die mühselige Korrektur der ersten Bogen Zeit
+                    ließen, jetzt Zeit ließen, für die späteren zu kopieren. Da muss ich nun auch
+                    noch Ihre Geduld in Anspruch nehmen. Erst in einigen Wochen kommt die Ruhezeit,
+                    die ich mir zu einer Arbeitszeit machen kann, die gesegneten Ferien. ich weiß
+                    nicht, ob ich die geistl. Arzney u. den Fastnachtskrapfen behalten darf oder
+                    zurückschicken soll? Sie wollen mir, damit ich doch auch etwas von Ihrer schönen
+                    Reise habe, während der Zeit die hagenschen Dichterleben anvertrauen: mir würde
+                    in der Tat damit der größte Gefallen geschehen: ich besitze nur die ersten zehn
+                    Bogen, und doch würden mir die übrigen für mein Buch in chronologischer
+                    Beziehung nicht ohne Nutzen sein; zudem wäre ich auf Nitharts Leben neugierig,
+                    ob es das von mir einmal verfasste ist und wie es mir wohl jetzt noch gefällt.
+                    Dass Hr. vdH. es versteht, sich die Mühe klein zu machen und Buch und Honorar
+                    desto größer, ist an ihm freilich nicht neu; aber das mit dem Liechtenstein geht
+                    doch über meinen besten Glauben hinaus. Wenn Sie dann zu den Minnesängern noch
+                    den Gabr. v. Montavel legen wollten (Ihre Auszüge enthalten nur den Anfang,
+                    nicht auch das gleichfalls verheißene Ende), so würde Sie Ihre Güte, wenn ich so
+                    sagen könnte, als vollendet betrachten. In Orelli habe ich mich wiederfinden
+                    gelernt. Ich glaube in der Hat, er hat die landschaftliche Wahl im besten Willen
+                    gegen uns angenommen (politische Parteiung kennt er wohl nur insofern, als es
+                    ihm für die Zürcherische Gelehrsamkeit ersprießlich scheint), besonders aber aus
+                    Freude an vielen Büchern und literar. Entdeckungen. Mit dem hohen Taxieren hat
+                    er seither etwas nachgelassen; zudem ist auch diese Schätzung nicht die
+                    definitive. ich habe ernsthaft und ruhig mit ihm über diese Angelegenheit
+                    gesprochen: da erklärte er es für schändlich und töricht, es dahin zu bringen,
+                    dass die Bibliothek wegen zu hoher Veranschlagung versteigert werden müsste.
+                    Wenn er nur kein Bibliothekar wäre, sondern ein Antiquar! Was meinen Sie zu der
+                    Taxe der Kunstsammlung? Die Experten der Stadt haben sie auf 16000 Fr., die der
+                    Landschaft auf 110000 geschätzt. Eins so unverschämt als das andere. Und es
+                    kostet nur neue Direktiven für neue Experten. Und nun meine besten und
+                    herzlichsten Glückwünsche zu Ihrer Reise: Gesundheit und Fröhlichkeit während
+                    der Zeit und nachher, und literarische und artistische Funde, so viel der Wagen
+                    nur fassen mag. Und wenn Sie nach Göttingen kommen, so denken Sie meiner bei
+                    Benecke und den Br. Grimm und bestellen Sie meine angelegentlichsten Grüße und
+                    Empfehlungen. Gern hätte ich Sie auch gebeten, einen Brief mitzunehmen, wenn ich
+                    nur dazu kommen könnte, einen zu schreiben. Wenn Sie wollen, so erzählen Sie von
+                    meinem altd. Lesebuch: noch weiß man dort nichts davon; ich würde, wenn erst
+                    mehr gedruckt wäre, Probedrucke schicken. Schön wäre es, wenn mir Wilh. Gr. den
+                    Freydank zusammen ließe: vielleicht träfe er noch vor Torschluss ein; ohne dies
+                    muss ich mit dem Müllerschen Text vorliebnehmen. Noch einmal, leben Sie recht
+                    wohl! Mein aufrichtiger Dank und meine besten Wünsche begleiten Sie. Bleiben Sie
+                    mir geneigt. Von Herzen Ihr ergebenster Wilh. Wackernagel</p>
+            </div>
+            <div type="translation" resp="#GPT4">
+                <p>Received on June 26, 1834. Basel, June 23, 1834. On June 29, I sent 'In Hagens
+                    Dichterleben' 4to and Gabriel: Montavel in folio. Highly esteemed Mr. Baron, If
+                    I wanted to write a letter writer, I could now make the most beautiful studies
+                    for the chapter on gratitude: you keep giving me new reasons for it every week.
+                    I received the last sixfold shipment to my great delight. 'Marien Klage' was
+                    still pleasantly remembered from the Palatinate manuscript. I would have
+                    considered 'Amor die lieb' to be older in language and rhyme than it is marked
+                    there (1492). St. Ulrich has amazing antiquities. Everything is most welcome to
+                    me! It would be inappropriate if I wanted to make it inconvenient for you just
+                    to make it convenient for myself: if I burdened you with the excerpts. Even
+                    without it, the kindness is more than sufficient. There is only one drawback: I
+                    would have liked to send the shipment back before your departure, but the
+                    Pedagogium and the University (I am reading historical syntax) and the tedious
+                    correction of the first sheets take too much time, leaving none for copying
+                    later ones. Thus, I must also call upon your patience. Only in a few weeks
+                    arrives the quiet time which I can turn into a working time—the blessed
+                    holidays. I do not know whether I may keep the spiritual medicine and the
+                    carnival fritter or if I should return them? You wish, so I may at least partake
+                    somewhat in your lovely journey during this time, to confide 'Hagens
+                    Dichterleben' in me: in fact, that would be the greatest favor done to me: I
+                    only possess the first ten sheets, yet the remaining ones would not be without
+                    use for my book in chronological relation; besides, I am curious about Nithart's
+                    life, whether it is the one I once wrote, and how it would please me now. That
+                    Mr. vdH. knows how to make himself little effort and the book and honorarium all
+                    the greater, is indeed nothing new about him; but the matter with Liechtenstein
+                    goes beyond my best belief. If you would then want to add Gabriel v. Montavel to
+                    the Minnesingers (your excerpts only contain the beginning, not the also
+                    promised end), I would consider your kindness, if I could say so, as completed.
+                    In Orelli, I have learned to find myself again. I believe that he has taken the
+                    choice of the landscape in the best of intentions against us (he only recognizes
+                    political partisanship insofar as it seems beneficial to him for Zurich's
+                    scholarship), but especially out of joy for many books and literary discoveries.
+                    Since then, he has somewhat relented with the high taxation; moreover, this
+                    estimate is not the definitive one. I have spoken seriously and calmly with him
+                    about this matter: he declared it disgraceful and foolish to bring it to the
+                    point where the library would have to be sold due to overvaluation. If only he
+                    were not a librarian but an antiquarian! What do you think about the valuation
+                    of the art collection? The city's experts estimated it at 16,000 Fr., and those
+                    of the landscape at 110,000. One as impertinent as the other. And it only incurs
+                    new directors for new experts. And now my best and warmest congratulations on
+                    your journey: health and happiness during the time and afterward, and literary
+                    and artistic finds as many as the carriage can hold. And when you come to
+                    Göttingen, remember me with Benecke and the Br. Grimm and convey my most
+                    heartfelt greetings and recommendations. I would have gladly asked you to take a
+                    letter with you if I could only get around to writing one. If you like, tell
+                    them about my old German reading book: they still know nothing of it there; I
+                    would, once more is printed, send sample sheets. It would be nice if Wilh. Gr.
+                    would let Freydank come together with me: perhaps it would still arrive before
+                    the gate closes; without it, I must be content with the Müller text. Once more,
+                    fare you well! My sincere thanks and best wishes accompany you. Remain favorably
+                    inclined to me. From the heart, your most devoted Wilh. Wackernagel</p>
+            </div>
+            <div type="summary" resp="#GPT4">
+                <p>Wackernagel dankt Laßberg für die regelmäßigen Sendungen von Büchern und
+                    Handschriften, insbesondere für Marien Klage, Amor die lieb und den Hl. Ulrich,
+                    die er mit großer Freude entgegengenommen hat. Er bedauert jedoch, dass ihm
+                    seine akademischen Verpflichtungen – insbesondere Vorlesungen zur historischen
+                    Syntax und Korrekturarbeiten – wenig Zeit lassen, um die Bücher noch vor
+                    Laßbergs Abreise zurückzusenden. Er bittet um Klärung, ob er die Geistliche
+                    Arznei und den Fastnachtskrapfen behalten oder zurückgeben soll. Zudem erbittet
+                    er die Dichterleben von von der Hagen, da ihm nur die ersten zehn Bogen
+                    vorliegen und er besonders an Nitharts Leben interessiert ist. Er kritisiert von
+                    der Hagen für dessen Art, Bücher mit wenig Mühe und maximalem Honorar zu
+                    erstellen, und äußert Verwunderung über dessen Umgang mit dem Liechtenstein.
+                    Wackernagel erwähnt ein Gespräch mit Orelli über die geplante Bibliothekstaxe in
+                    Zürich. Während Orelli zunächst hohe Preise angesetzt habe, sei er mittlerweile
+                    zu vernünftigeren Einschätzungen gekommen. Wackernagel kritisiert jedoch die
+                    extremen Bewertungen der Basler Kunstsammlung, die zwischen 16.000 und 110.000
+                    Franken schwanken. Abschließend wünscht er Laßberg eine gute Reise mit vielen
+                    literarischen und künstlerischen Funden. Er bittet ihn, in Göttingen Grüße an
+                    Benecke und die Brüder Grimm auszurichten, und erwähnt sein Altdeutsches
+                    Lesebuch, von dem in Göttingen noch nichts bekannt sei. Besonders hofft er, dass
+                    Wilhelm Grimm ihm eine zuverlässige Ausgabe von Freydank bereitstellen könnte.
+                    Mit erneutem Dank und besten Wünschen verabschiedet er sich herzlich.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

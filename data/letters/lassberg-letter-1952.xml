@@ -1,0 +1,243 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1952">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Wilhelm Wackernagel an Joseph von Laßberg (30.11.1837).</title>
+                <respStmt xml:id="MiS">
+                    <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Textfassung auf Basis der Transkription durch Transkribus korrigiert und in TEI
+                    überführt. Automatisierte NER-Erkennung und Identifikation durch Flair geprüft,
+                    korrigiert und ergänzt. Normalisierung, Zusammenfassung und Übersetzung durch
+                    GPT-4. Lizenz: </p>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY
+                        4.0</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Basel</settlement>
+                        <repository>Staatsarchiv des Kantons Basel-Stadt</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">2590</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates> <bibl type="printed"><ref/></bibl> </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1952">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0367"
+                        ref="https://d-nb.info/gnd/118805851">Wilhelm Wackernagel</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0019"
+                        >Basel</placeName>
+                    <date when="1837-11-30">30.11.1837</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373"
+                        ref="https://d-nb.info/gnd/118778862">Joseph von Laßberg</persName>
+
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned"> <ref type="cmif:mentionsBibl"
+                    target="../register/lassberg-literature.xml#lassberg-literature-0022"
+                    ><rs>Lieder-Saal, das ist: Sammelung altteutscher Gedichte</rs></ref> <ref
+                    type="cmif:mentionsBibl"
+                    target="../register/lassberg-literature.xml#lassberg-literature-0145"
+                    ><rs>Gedichte</rs></ref> <ref type="cmif:mentionsBibl"
+                    target="../register/lassberg-literature.xml#lassberg-literature-0121"
+                    ><rs>Deutsches Lesebuch</rs></ref> <ref type="unknownType" target=""
+                    ><rs>Unknown</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0046"
+                    ><rs>Beyel</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0191"><rs>Johann
+                    Caspar Bluntschli</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0176"><rs>Jenny
+                    von Droste zu Hülshoff</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0362 ../register/lassberg-persons.xml#lassberg-correspondent-0170"
+                    ><rs/></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0615"><rs>Ernst
+                    August I.</rs></ref> <ref type="cmif:mentionsPlace"
+                    target="../register/lassberg-places.xml#lassberg-place-0053"
+                    ><rs>Göttingen</rs></ref> </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2025-03-05" who="#MiS" status="done">Text recognized by
+                    Transkribus</change>
+                <change when="2025-03-05" who="#MiS" status="done">Text corrected in
+                    Transkribus</change>
+                <change when="2025-03-05" who="#MiS" status="done">Exported from
+                    Transkribus</change>
+                <change when="2025-03-05" who="#MiS" status="done">Automatic NER</change>
+                <change when="2025-03-05" who="#MiS" status="done">Automatic normalization,
+                    translation and summary</change>
+                <change when="2025-03-06" who="#MiS" status="done">Manual markup and
+                    proofreading</change>
+                <change when="2025-03-06" who="#MiS" status="done">Finished markup</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="original" resp="#transkribus #MiS">
+                <p><pb n="1" corresp="../pagexml/1952/1952-1.xml"/><lb
+                    xml:id="lassberg-letter-1952-1-1" n="1" corresp="tr_1_tl_1"/>Basel 30 Nov. 37.
+                    <lb xml:id="lassberg-letter-1952-1-2" n="2" corresp="tr_1_tl_2"/>Hochverehrter
+                    Herr Baron, <lb xml:id="lassberg-letter-1952-1-3" n="3" corresp="tr_1_tl_3"
+                    />Ihrer Erlaubniss gemäss habe ich nachgefragt ob die <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0046">Beyelsche
+                    Buchhandlung</rs> <lb xml:id="lassberg-letter-1952-1-4" n="4"
+                    corresp="tr_1_tl_4"/>Druck und Verlag des <rs type="object">Weingartner
+                    Codes</rs> als vierten Bandes des <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0022"
+                    >Liedersaals</rs> <lb xml:id="lassberg-letter-1952-1-5" n="5"
+                    corresp="tr_1_tl_5"/>übernehmen wollte. Die Antwort ist, wie ich es nicht anders
+                    voraussetzen <lb xml:id="lassberg-letter-1952-1-6" n="6" corresp="tr_1_tl_6"
+                    />durfte, ein freudiges ja gewesen. "Auch die Litrographien" schreibt mir <lb
+                    xml:id="lassberg-letter-1952-1-7" n="7" corresp="tr_1_tl_7"/><rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0191">mein
+                    Schwager</rs> "wollen wir auf uns nehmen, wenn sie nicht gar zu zahl <lb
+                    break="no" xml:id="lassberg-letter-1952-1-8" n="8" corresp="tr_1_tl_8"/>reich
+                    seyn müssen; im letztern Fall wenigstens theilweise". ich habe über <lb
+                    xml:id="lassberg-letter-1952-1-9" n="9" corresp="tr_1_tl_9"/>das Buch selbst und
+                    über Ihre Bedingungen gesagt was ich zu sagen <lb
+                    xml:id="lassberg-letter-1952-1-10" n="10" corresp="tr_1_tl_10"/>wusste, so dass,
+                    glaube ich, damit der Druck alsbald beginnen könne, nun <lb
+                    xml:id="lassberg-letter-1952-1-11" n="11" corresp="tr_1_tl_11"/>nichts mehr
+                    fehlt als das <rs type="object" key="">Manuscript</rs> und die näheren
+                    Anweisungen <lb xml:id="lassberg-letter-1952-1-12" n="12" corresp="tr_1_tl_12"
+                    />von Ihrer Seite. Quod felix faustum sit! <lb
+                    xml:id="lassberg-letter-1952-1-13" n="13" corresp="tr_1_tl_13"/>Und wie geht es
+                    in Ihrem nun bald veroedeten Schlosse? wie Ihnen <lb
+                    xml:id="lassberg-letter-1952-1-14" n="14" corresp="tr_1_tl_14"/>und Ihrer
+                    verehrten Frau <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0176"
+                    >Gemahlinn</rs> und den lieblichen Kindern? <lb
+                    xml:id="lassberg-letter-1952-1-15" n="15" corresp="tr_1_tl_15"/>Uns hier geht es
+                    ganz wohl, und gienge es noch besser, wenn ich nicht <lb
+                    xml:id="lassberg-letter-1952-1-16" n="16" corresp="tr_1_tl_16"/>um mich ganz zu
+                    erholen auf Befehl des Arztes, faulenzen und bloss <lb
+                    xml:id="lassberg-letter-1952-1-17" n="17" corresp="tr_1_tl_17"/>vegetieren
+                    müste. <pb n="2" corresp="../pagexml/1952/1952-2.xml"/><lb
+                    xml:id="lassberg-letter-1952-2-1" n="1" corresp="tr_1_tl_1"/>Dass unter andern
+                    <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0053"
+                    >Göttinger</rs> Professoren auch die Brüder <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0362 ../register/lassberg-persons.xml#lassberg-correspondent-0170"
+                    >Grimm</rs> <lb xml:id="lassberg-letter-1952-2-2" n="2" corresp="tr_1_tl_2"
+                    />eine Verwahrung gegen den von <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0615">Ernst
+                    August</rs> vorgeschriebenen neuen <lb xml:id="lassberg-letter-1952-2-3" n="3"
+                    corresp="tr_1_tl_3"/>Eid unterzeichnet d.h. dass sie Ruhe und Erdenglück muthig
+                    auf <lb xml:id="lassberg-letter-1952-2-4" n="4" corresp="tr_1_tl_4"/>die Wage
+                    gesetzt haben (denn wie leicht können die übrigen Beamten <lb
+                    xml:id="lassberg-letter-1952-2-5" n="5" corresp="tr_1_tl_5"/>sie feige im stich
+                    lassen?) das wird Ihnen keine neue Nachricht <lb
+                    xml:id="lassberg-letter-1952-2-6" n="6" corresp="tr_1_tl_6"/>seyn, ich bin
+                    dieser braven Menschen wegen in ernstlicher Unruhe. <lb
+                    xml:id="lassberg-letter-1952-2-7" n="7" corresp="tr_1_tl_7"/>Gott wende es zum
+                    besten. <lb xml:id="lassberg-letter-1952-2-8" n="8" corresp="tr_1_tl_8"/>Für den
+                    <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0145">Hugo von
+                    Montfort</rs> würde ich Ihnen danken müssen, auch <lb
+                    xml:id="lassberg-letter-1952-2-9" n="9" corresp="tr_1_tl_9"/>wenn ich ihn nicht
+                    so schön für das <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0121">Lesebuch</rs>
+                    brauchen könnte: <lb xml:id="lassberg-letter-1952-2-10" n="10"
+                    corresp="tr_1_tl_10"/>solche Freude habe ich an diesem merkwürdigen
+                    dreydraethigen Gewebe <lb xml:id="lassberg-letter-1952-2-11" n="11"
+                    corresp="tr_1_tl_11"/>von Minne-Meister- und Volksgesang gehabt. <lb
+                    xml:id="lassberg-letter-1952-2-12" n="12" corresp="tr_1_tl_12"/>Leben Sie wohl,
+                    und bewahren Sie mir Ihre freundliche Gewogenheit. <lb
+                    xml:id="lassberg-letter-1952-2-13" n="13" corresp="tr_1_tl_13"/>Sammt meinem
+                    lieben Weibe Ihnen und Ihrer Frau <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0176"
+                    >Gemahlinn</rs> <lb xml:id="lassberg-letter-1952-2-14" n="14"
+                    corresp="tr_1_tl_14"/>mich auf das angelegentlichste empfehlend. <lb
+                    xml:id="lassberg-letter-1952-2-15" n="15" corresp="tr_1_tl_15"/>Ihr staets
+                    ergebener <lb xml:id="lassberg-letter-1952-2-16" n="16" corresp="tr_1_tl_16"
+                    />Wilh. Wackernagel Dr. </p>
+            </div>
+            <div type="normalized" resp="#GPT4">
+                <p>Basel, 30. Nov. 37. Hochverehrter Herr Baron, Ihrer Erlaubnis gemäß habe ich
+                    nachgefragt, ob die Beyersche Buchhandlung Druck und Verlag des Weingartner
+                    Codes als vierten Bandes des Liedersaals übernehmen wollte. Die Antwort ist, wie
+                    ich es nicht anders voraussetzen durfte, ein freudiges Ja gewesen. "Auch die
+                    Lithographien," schreibt mir mein Schwager, "wollen wir auf uns nehmen, wenn sie
+                    nicht gar zu zahlreich sein müssen; im letzteren Fall wenigstens teilweise." Ich
+                    habe über das Buch selbst und über Ihre Bedingungen gesagt, was ich zu sagen
+                    wusste, so dass, glaube ich, damit der Druck alsbald beginnen könne, nun nichts
+                    mehr fehlt als das Manuskript und die näheren Anweisungen von Ihrer Seite. Quod
+                    felix faustum sit! Und wie geht es in Ihrem nun bald verödeten Schloss? Wie
+                    Ihnen und Ihrer verehrten Frau Gemahlin und den lieblichen Kindern? Uns hier
+                    geht es ganz wohl, und ginge es noch besser, wenn ich nicht, um mich ganz zu
+                    erholen, auf Befehl des Arztes faulenzen und bloß vegetieren müsste. Dass unter
+                    anderen Göttinger Professoren auch die Brüder Grimm eine Verwahrung gegen den
+                    von Ernst August vorgeschriebenen neuen Eid unterzeichnet haben, d.h., dass sie
+                    Ruhe und Erdenglück mutig auf die Waage gesetzt haben (denn wie leicht können
+                    die übrigen Beamten sie feige im Stich lassen?), das wird Ihnen keine neue
+                    Nachricht sein, ich bin dieser braven Menschen wegen in ernstlicher Unruhe. Gott
+                    wende es zum Besten. Für den Hugo von Montfort würde ich Ihnen danken müssen,
+                    auch wenn ich ihn nicht so schön für das Lesebuch brauchen könnte: solche Freude
+                    habe ich an diesem merkwürdigen dreidrähtigen Gewebe von Minne-Meister- und
+                    Volksgesang gehabt. Leben Sie wohl, und bewahren Sie mir Ihre freundliche
+                    Gewogenheit. Samt meinem lieben Weibe Ihnen und Ihrer Frau Gemahlin mich auf das
+                    Angelegentlichste empfehlend. Ihr stets ergebener Wilh. Wackernagel Dr.</p>
+            </div>
+            <div type="translation" resp="#GPT4">
+                <p>Basel, 30 Nov. 37. Highly esteemed Baron, With your permission, I inquired
+                    whether the Beyel Bookstore would be willing to take on the printing and
+                    publishing of the Weingartner Codes as the fourth volume of the Liedersaal. The
+                    answer was, as I could not have assumed otherwise, a joyful yes. "We will also
+                    undertake the lithographs," writes my brother-in-law, "if they do not have to be
+                    too numerous; at least partially in the latter case." I have said what I knew to
+                    say about the book itself and about your terms, so that, I believe, the printing
+                    can soon begin, now nothing is missing but the manuscript and further
+                    instructions from your side. Quod felix faustum sit! And how is it going in your
+                    soon-to-be deserted castle? How are you, your esteemed wife, and the lovely
+                    children? We are quite well here, and it would be even better if I, to fully
+                    recover, didn't have to laze around and merely vegetate on the doctor's orders.
+                    That among other Göttingen professors, the Brothers Grimm also signed a protest
+                    against the new oath prescribed by Ernst August, i.e., that they have
+                    courageously risked peace and earthly happiness (as how easily other officials
+                    can cowardly abandon them?), this will not be new news to you, I am in earnest
+                    concern for these good people. May God turn it for the best. For Hugo von
+                    Montfort, I must thank you, even if I could not use him so beautifully for the
+                    reading book: such joy I have had in this remarkable threefold fabric of
+                    minnesinger and folk song. Farewell, and maintain your friendly favor towards
+                    me. Together with my dear wife, I most earnestly commend myself to you and your
+                    esteemed wife. Yours sincerely, Wilh. Wackernagel Dr.</p>
+            </div>
+            <div type="summary" resp="#GPT4">
+                <p>Wackernagel informiert Laßberg, dass die Beyersche Buchhandlung bereit ist, den
+                    Weingartner Codex als vierten Band des Liedersaals zu drucken und zu verlegen.
+                    Auch die Lithographien werden übernommen, sofern deren Anzahl nicht zu hoch ist.
+                    Er betont, dass nun nur noch das Manuskript und genauere Anweisungen von Laßberg
+                    fehlen, damit der Druck beginnen kann. Anschließend erkundigt er sich nach
+                    Laßbergs Wohlbefinden und dem Zustand seines bald verlassenen Schlosses. Er
+                    selbst muss sich auf ärztlichen Rat hin schonen und bedauert diese erzwungene
+                    Untätigkeit. Wackernagel erwähnt die Göttinger Professorenproteste gegen den
+                    neuen Eid von König Ernst August, insbesondere das mutige Verhalten der Brüder
+                    Grimm, und äußert seine Sorge um deren Schicksal. Zum Abschluss dankt er Laßberg
+                    für den Hugo von Montfort, dessen Lieder ihm große Freude bereitet haben und
+                    sich hervorragend für sein Altdeutsches Lesebuch eignen. Er sendet beste Grüße
+                    an Laßbergs Familie und verabschiedet sich in der Hoffnung auf fortbestehende
+                    freundschaftliche Verbundenheit.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

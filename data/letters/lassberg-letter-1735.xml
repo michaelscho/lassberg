@@ -1,0 +1,327 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1735">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Wilhelm Wackernagel an Joseph von Laßberg (08.08.1833).</title>
+                <respStmt xml:id="MiS">
+                    <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Textfassung auf Basis der Transkription durch Transkribus korrigiert und in TEI
+                    überführt. Automatisierte NER-Erkennung und Identifikation durch Flair geprüft,
+                    korrigiert und ergänzt. Normalisierung, Zusammenfassung und Übersetzung durch
+                    GPT-4. Lizenz: </p>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY
+                        4.0</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Basel</settlement>
+                        <repository>Staatsarchiv des Kantons Basel-Stadt</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">2472</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates> <bibl type="printed"><ref/></bibl> </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1735">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0367"
+                        ref="https://d-nb.info/gnd/118805851">Wilhelm Wackernagel</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0019"
+                        >Basel</placeName>
+                    <date when="1833-08-08">08.08.1833</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373"
+                        ref="https://d-nb.info/gnd/118778862">Joseph von Laßberg</persName>
+
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned"> <ref type="cmif:mentionsBibl"
+                    target="../register/lassberg-literature.xml#lassberg-literature-0125"
+                    ><rs>Anzeige einer alten Handschrift der Aeneis des Heinrich von Veldeck, in:
+                    Beyträge zur Geschichte und Literatur, vorzüglich aus den Schätzen der Königl.
+                    Hof- und Centralbibliothek zu München. 7.</rs></ref> <ref type="unknownType"
+                    target=""><rs>Unknown</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0300"
+                    ><rs>Marquard Wocher</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0592"
+                    ><rs>Charlotte Grimm</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0540"
+                    ><rs>Johannes Pupikofer</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0527"><rs>Franz
+                    Joseph Stalder</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0170"><rs>Jacob
+                    Grimm</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0362"
+                    ><rs>Wilhelm Grimm</rs></ref> <ref type="cmif:mentionsPlace"
+                    target="../register/lassberg-places.xml#lassberg-place-0019"
+                    ><rs>Basel</rs></ref> <ref type="cmif:mentionsPlace"
+                    target="../register/lassberg-places.xml#lassberg-place-0226"
+                    ><rs>Raperswil</rs></ref> <ref type="cmif:mentionsPlace"
+                    target="../register/lassberg-places.xml#lassberg-place-0166"
+                    ><rs>Zürich</rs></ref> <ref type="cmif:mentionsPlace"
+                    target="../register/lassberg-places.xml#lassberg-place-0286"><rs>Wasserkirche,
+                    Zürich</rs></ref> <ref type="cmif:mentionsPlace"
+                    target="../register/lassberg-places.xml#lassberg-place-0097"
+                    ><rs>München</rs></ref> <ref type="cmif:mentionsPlace"
+                    target="../register/lassberg-places.xml#lassberg-place-0270"><rs>Muri</rs></ref>
+                    <ref type="cmif:mentionsPlace"
+                    target="../register/lassberg-places.xml#lassberg-place-0284"><rs>Rigi</rs></ref>
+                    <ref type="cmif:mentionsPlace"
+                    target="../register/lassberg-places.xml#lassberg-place-0287"
+                    ><rs>Beromünster</rs></ref> <ref type="cmif:mentionsPlace"
+                    target="../register/lassberg-places.xml#lassberg-place-0288"><rs>Kloster St.
+                    Urban</rs></ref> <ref type="cmif:mentionsPlace"
+                    target="../register/lassberg-places.xml#lassberg-place-0053"
+                    ><rs>Göttingen</rs></ref> <ref type="cmif:mentionsPlace"
+                    target="../register/lassberg-places.xml#lassberg-place-0285"
+                    ><rs>Wiesbaden</rs></ref> </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2025-03-05" who="#MiS" status="done">Text recognized by
+                    Transkribus</change>
+                <change when="2025-03-05" who="#MiS" status="done">Text corrected in
+                    Transkribus</change>
+                <change when="2025-03-05" who="#MiS" status="done">Exported from
+                    Transkribus</change>
+                <change when="2025-03-05" who="#MiS" status="done">Automatic NER</change>
+                <change when="2025-03-05" who="#MiS" status="done">Automatic normalization,
+                    translation and summary</change>
+                <change when="2025-03-06" who="#MiS" status="done">Manual markup and
+                    proofreading</change>
+                <change when="2025-03-06" who="#MiS" status="done">Finished markup</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="original" resp="#transkribus #MiS">
+                <p><pb n="1" corresp="../pagexml/1735/1735-1.xml"/><lb
+                    xml:id="lassberg-letter-1735-1-1" n="1" corresp="tr_1_tl_2"/>Basel 8/8/33. <lb
+                    xml:id="lassberg-letter-1735-1-2" n="2" corresp="tr_1_tl_3"/>Hochwohlgeborner
+                    Herr, <lb xml:id="lassberg-letter-1735-1-3" n="3" corresp="tr_1_tl_4"
+                    />Hochzuvererender Herr Baron! <lb xml:id="lassberg-letter-1735-1-4" n="4"
+                    corresp="tr_1_tl_5"/>Das traurige Ereignis das ich gleich nach meiner Rückehr
+                    hier erlebte, <lb xml:id="lassberg-letter-1735-1-5" n="5" corresp="tr_1_tl_6"
+                    />die Unruhe und Verwirrung, in der sich Alles befindet, hat er mir erst <lb
+                    xml:id="lassberg-letter-1735-1-6" n="6" corresp="tr_1_tl_7"/>jetzt gestattet
+                    Ihrem Befehl zu genügen und zur Wiederlangung <lb
+                    xml:id="lassberg-letter-1735-1-7" n="7" corresp="tr_1_tl_8"/>des bewußten <rs
+                    type="object" key="">Altarbildes</rs> Schritte zu thun. Er steht in der
+                    Stadtgerichts <lb break="no" xml:id="lassberg-letter-1735-1-8" n="8"
+                    corresp="tr_1_tl_9"/>schreibung wohl aufgehoben da und wird mir, sobald ich es
+                    verlange, <lb xml:id="lassberg-letter-1735-1-9" n="9" corresp="tr_1_tl_10"
+                    />ausgeliefert werden. Das ist bloss ungewiss, ob vielleicht noch uner <lb
+                    break="no" xml:id="lassberg-letter-1735-1-10" n="10" corresp="tr_1_tl_11"
+                    />ledigte Speditionskosten darauf haften: ich soll Sie fragen ob Sie <lb
+                    xml:id="lassberg-letter-1735-1-11" n="11" corresp="tr_1_tl_12"/>sich erinnern,
+                    in welcher Art Sie es hergesendet haben, gleich auf <lb
+                    xml:id="lassberg-letter-1735-1-12" n="12" corresp="tr_1_tl_13"/>Ihre oder auf
+                    der <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0300"
+                    >Verstorbenen</rs> Kosten? Es kommt ganz auf Ihr <lb
+                    xml:id="lassberg-letter-1735-1-13" n="13" corresp="tr_1_tl_14"/>Gedächtnis an.
+                    Wie befehlen Sie nun, geehrtester Herr Baron, <lb
+                    xml:id="lassberg-letter-1735-1-14" n="14" corresp="tr_1_tl_15"/>die Übersendung?
+                    Doch woll mit einer Frachtfuhre? Zur Post <lb xml:id="lassberg-letter-1735-1-15"
+                    n="15" corresp="tr_1_tl_16"/>würde es zu theuer seyn. Und ich denke, den grossen
+                    Querbalken, <lb xml:id="lassberg-letter-1735-1-16" n="16" corresp="tr_1_tl_17"
+                    />den ein Mann kaum erheben kann und auf dem nichts steht als <lb
+                    xml:id="lassberg-letter-1735-1-17" n="17" corresp="tr_1_tl_18"/>ein Vers aus den
+                    Psalmen, brauche ich nicht mit ein zu packen? <pb n="2"
+                    corresp="../pagexml/1735/1735-2.xml"/><lb xml:id="lassberg-letter-1735-2-1"
+                    n="1" corresp="tr_1_tl_1"/>Wie schön war die Reise, wie schön besonders durch
+                    Ihre unverdiente Freundlich <lb break="no" xml:id="lassberg-letter-1735-2-2"
+                    n="2" corresp="tr_1_tl_2"/>keit! Aber Trauer und Verdruss und trübe Erwartungen
+                    stoeren mir seit <lb xml:id="lassberg-letter-1735-2-3" n="3" corresp="tr_1_tl_3"
+                    />jenem unseligen Kriegstage alle Nachfreude der Erinnerung. Morgen wird es <lb
+                    xml:id="lassberg-letter-1735-2-4" n="4" corresp="tr_1_tl_4"/>entschieden werden,
+                    ob <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0019"
+                    >Basel</rs> eine Belagerung wagt oder sich von den Radicalen <lb
+                    xml:id="lassberg-letter-1735-2-5" n="5" corresp="tr_1_tl_5"/>Gesetze
+                    vorschreiben laest, ob wir eidgenössische Truppen einnehmen oder <lb
+                    xml:id="lassberg-letter-1735-2-6" n="6" corresp="tr_1_tl_6"/>nicht. Beides ist
+                    schlimm, aber das Eine schlimmer, und ich fürchte, man werde <lb
+                    xml:id="lassberg-letter-1735-2-7" n="7" corresp="tr_1_tl_7"/>gerade dazu sich
+                    entschliessen. <lb xml:id="lassberg-letter-1735-2-8" n="8" corresp="tr_1_tl_8"
+                    />Von <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0226"
+                    >Rapperschwil</rs> aus gieng ich, weil das schlechte Wetter anhielt, wieder <lb
+                    xml:id="lassberg-letter-1735-2-9" n="9" corresp="tr_1_tl_9"/>nach <rs
+                    type="place" key="../register/lassberg-places.xml#lassberg-place-0166"
+                    >Zürich</rs>. Dort fanden sich auf der <rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0286">Wasserkirche</rs> noch
+                    schöne Sachen vor, <lb xml:id="lassberg-letter-1735-2-10" n="10"
+                    corresp="tr_1_tl_10"/>z. B. eine Logik u. Rhetorik aus dem Anfange des XI Jh.
+                    mit deutschen Bei <lb break="no" xml:id="lassberg-letter-1735-2-11" n="11"
+                    corresp="tr_1_tl_11"/>spielen, und auch der Text halb deutsch halb lateinisch.
+                    Unter den Bei <lb break="no" xml:id="lassberg-letter-1735-2-12" n="12"
+                    corresp="tr_1_tl_12"/>spielen auch deutsche Verse, dieselben die <rs
+                    type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0592"
+                    >Docen</rs> in <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0125">Archivs
+                    Beiträgen Bd VII</rs>, <lb xml:id="lassberg-letter-1735-2-13" n="13"
+                    corresp="tr_1_tl_13"/>aus virgilianischen Glossen zu <rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0097">München</rs> bekannt
+                    gemacht hat. Besitzen <lb xml:id="lassberg-letter-1735-2-14" n="14"
+                    corresp="tr_1_tl_14"/>Sie die Beitr. und dürfte ich Sie dann auf einige Tage
+                    darum bitten, um <lb xml:id="lassberg-letter-1735-2-15" n="15"
+                    corresp="tr_1_tl_15"/>diesen und die folgenden Bände? Von Arau aus begab ich
+                    mich nach <lb xml:id="lassberg-letter-1735-2-16" n="16" corresp="tr_1_tl_16"
+                    /><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0270"
+                    >Muri</rs>; von da, weil nun endlich das Wetter schön war, und wie schön! <lb
+                    xml:id="lassberg-letter-1735-2-17" n="17" corresp="tr_1_tl_17"/>auf den <rs
+                    type="place" key="../register/lassberg-places.xml#lassberg-place-0284"
+                    >Rigi</rs>. Da traf ich auch Herrn <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0540"
+                    >Pupikofer</rs> wieder an. <lb xml:id="lassberg-letter-1735-2-18" n="18"
+                    corresp="tr_1_tl_18"/>Nach <rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0287">Beromünster</rs> kam
+                    ich zu spät: <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0527">Stalder</rs>
+                    war einige Stunden vorher begraben <lb xml:id="lassberg-letter-1735-2-19" n="19"
+                    corresp="tr_1_tl_19"/>worden. Auch in <rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0288">S. Urban</rs> bin ich
+                    gewesen. Die klösterliche Zucht <lb xml:id="lassberg-letter-1735-2-20" n="20"
+                    corresp="tr_1_tl_20"/>ist da eben nicht gar strenge. <lb
+                    xml:id="lassberg-letter-1735-2-21" n="21" corresp="tr_1_tl_21"/>Von <rs
+                    type="place" key="../register/lassberg-places.xml#lassberg-place-0053"
+                    >Göttingen</rs> habe ich traurige Briefe. Dem Br. <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0170">Grimm</rs>
+                    ist eine <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0592"
+                    >Schwester</rs> <lb xml:id="lassberg-letter-1735-2-22" n="22"
+                    corresp="tr_1_tl_22"/>gestorben. <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0362">Wilhelm</rs>
+                    ist in <rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0285">Wiesbaden</rs>. <pb
+                    n="3" corresp="../pagexml/1735/1735-3.xml"/><lb
+                    xml:id="lassberg-letter-1735-3-1" n="1" corresp="tr_1_tl_1"/>Verzeihen Sie mir
+                    geneigtest die schlechte Schrift und die Eilfertigkeit dieses <lb
+                    xml:id="lassberg-letter-1735-3-2" n="2" corresp="tr_1_tl_2"/>Briefes, ich muss
+                    zum Appell u. dann wahrscheinlich auf die Wache. Aus dem <lb
+                    xml:id="lassberg-letter-1735-3-3" n="3" corresp="tr_1_tl_3"/>Studieren wird in
+                    diesen Zeiten nicht viel. <lb xml:id="lassberg-letter-1735-3-4" n="4"
+                    corresp="tr_1_tl_4"/>Darf ich Sie, schon des <rs type="object" key=""
+                    >Altarbildes</rs> wegen, um eine recht baldige Antwort <lb
+                    xml:id="lassberg-letter-1735-3-5" n="5" corresp="tr_1_tl_5"/>bitten. Empfehlen
+                    Sie mich Ihren werthen Hausgenossen bestens und <lb
+                    xml:id="lassberg-letter-1735-3-6" n="6" corresp="tr_1_tl_6"/>erhalten Sie mir
+                    Ihr freundliches Wohlwollen, der ich bin, <lb xml:id="lassberg-letter-1735-3-7"
+                    n="7" corresp="tr_1_tl_7"/>hochzuverehrender Herr Baron <lb
+                    xml:id="lassberg-letter-1735-3-8" n="8" corresp="tr_1_tl_8"/>Ihr gehorsamst
+                    ergebener <lb xml:id="lassberg-letter-1735-3-9" n="9" corresp="tr_1_tl_9"/>Wilh.
+                    Wackernagel. <pb n="4" corresp="../pagexml/1735/1735-4.xml"/><lb
+                    xml:id="lassberg-letter-1735-4-1" n="1" corresp="tr_1_tl_1"/>Quomodo sedes sola
+                    civitas plena populo? <lb xml:id="lassberg-letter-1735-4-2" n="2"
+                    corresp="tr_1_tl_2"/>facta est quare redua domina gentinur. </p>
+            </div>
+            <div type="normalized" resp="#GPT4">
+                <p>Basel 8/8/33. Hochwohlgeborener Herr, Hochzuverehrender Herr Baron! Das traurige
+                    Ereignis, das ich gleich nach meiner Rückkehr hier erlebte, die Unruhe und
+                    Verwirrung, in der sich alles befindet, hat es mir erst jetzt gestattet, Ihrem
+                    Befehl zu genügen und zur Wiederlangung des bewussten Altarbildes Schritte zu
+                    tun. Es steht in der Stadtgerichtsschreibung wohl aufgehoben da und wird mir,
+                    sobald ich es verlange, ausgeliefert werden. Es ist bloß ungewiss, ob vielleicht
+                    noch unerledigte Speditionskosten darauf haften: Ich soll Sie fragen, ob Sie
+                    sich erinnern, in welcher Art Sie es hergesendet haben, gleich auf Ihre oder auf
+                    der Verstorbenen Kosten? Es kommt ganz auf Ihr Gedächtnis an. Wie befehlen Sie
+                    nun, geehrtester Herr Baron, die Übersendung? Doch wohl mit einer Frachtfuhre?
+                    Zur Post würde es zu teuer sein. Und ich denke, den großen Querbalken, den ein
+                    Mann kaum erheben kann und auf dem nichts steht als ein Vers aus den Psalmen,
+                    brauche ich nicht mit einzupacken? Wie schön war die Reise, wie schön besonders
+                    durch Ihre unverdiente Freundlichkeit! Aber Trauer und Verdruss und trübe
+                    Erwartungen stören mir seit jenem unseligen Kriegstage alle Nachfreude der
+                    Erinnerung. Morgen wird es entschieden werden, ob Basel eine Belagerung wagt
+                    oder sich von den Radikalen Gesetze vorschreiben lässt, ob wir eidgenössische
+                    Truppen einnehmen oder nicht. Beides ist schlimm, aber das eine schlimmer, und
+                    ich fürchte, man werde gerade dazu sich entschließen. Von Rapperswil aus ging
+                    ich, weil das schlechte Wetter anhielt, wieder nach Zürich. Dort fanden sich auf
+                    der Wasserkirche noch schöne Sachen vor, z. B. eine Logik und Rhetorik aus dem
+                    Anfange des XI Jh. mit deutschen Beispielen, und auch der Text halb deutsch halb
+                    lateinisch. Unter den Beispielen auch deutsche Verse, dieselben die Docen in
+                    Archivs Beiträgen Bd VII, aus virgilianischen Glossen zu München bekannt gemacht
+                    hat. Besitzen Sie die Beitr. und dürfte ich Sie dann auf einige Tage darum
+                    bitten, um diesen und die folgenden Bände? Von Aarau aus begab ich mich nach
+                    Muri; von da, weil nun endlich das Wetter schön war, und wie schön! auf den
+                    Rigi. Da traf ich auch Herrn Pupikofer wieder an. Nach Beromünster kam ich zu
+                    spät: Stalder war einige Stunden vorher begraben worden. Auch in S. Urban bin
+                    ich gewesen. Die klösterliche Zucht ist da eben nicht gar strenge. Von Göttingen
+                    habe ich traurige Briefe. Dem Br. Grimm ist eine Schwester gestorben. Wilhelm
+                    ist in Wiesbaden. Verzeihen Sie mir geneigtest die schlechte Schrift und die
+                    Eilfertigkeit dieses Briefes, ich muss zum Appell und dann wahrscheinlich auf
+                    die Wache. Aus dem Studieren wird in diesen Zeiten nicht viel. Darf ich Sie,
+                    schon des Altarbildes wegen, um eine recht baldige Antwort bitten. Empfehlen Sie
+                    mich Ihren werten Hausgenossen bestens und erhalten Sie mir Ihr freundliches
+                    Wohlwollen, der ich bin, hochzuverehrender Herr Baron Ihr gehorsamst ergebener
+                    Wilh. Wackernagel. Quomodo sedes sola civitas plena populo? Facta est quare
+                    redua domina gentium.</p>
+            </div>
+            <div type="translation" resp="#GPT4">
+                <p>Basel 8/8/33. Most Noble Sir, Highly Esteemed Mr. Baron! The sad event that I
+                    experienced immediately after my return here, the unrest and confusion in which
+                    everything finds itself, has only now allowed me to comply with your command and
+                    to take steps to recover the aforementioned altar piece. It is well preserved in
+                    the city's court records and will be delivered to me as soon as I demand it. It
+                    is just uncertain whether there are any pending shipping costs attached to it: I
+                    should ask you if you remember how you sent it here, whether on your own costs
+                    or those of the deceased? It all depends on your memory. How do you wish, most
+                    esteemed Mr. Baron, the transmission to be? Perhaps by freight wagon? Sending it
+                    by post would be too expensive. And I suppose I do not need to include the large
+                    crossbeam, which a man can hardly lift and on which nothing stands except a
+                    verse from the Psalms? How beautiful the journey was, especially made beautiful
+                    by your unmerited kindness! But sorrow and annoyance and bleak expectations have
+                    marred all the joyful memories of recollection since that ill-fated day of war.
+                    Tomorrow it will be decided whether Basel dares a siege or subjects itself to
+                    the laws imposed by the radicals, whether we accept federal troops or not. Both
+                    are bad, but one is worse, and I fear that it will be decided. From Rapperswil,
+                    since the bad weather persisted, I went back to Zurich. There on the
+                    Wasserkirche were still beautiful things to be found, such as a logic and
+                    rhetoric from the beginning of the 11th century with German examples, and also
+                    the text half in German half in Latin. Among the examples there were also German
+                    verses, the same ones that Docen made known in the Archive's Contributions Vol.
+                    VII from Virgilian glosses in Munich. Do you own the Contributions, and may I
+                    then ask you for them for a few days, for this and the following volumes? From
+                    Aarau I went to Muri; from there, as the weather finally became beautiful, and
+                    how beautiful! to the Rigi. There, I met Mr. Pupikofer again. I arrived in
+                    Beromünster too late: Stalder had been buried a few hours earlier. I also
+                    visited St. Urban. The monastic discipline there is not very strict. I have
+                    received sad letters from Göttingen. Mr. Grimm's sister has died. Wilhelm is in
+                    Wiesbaden. Please excuse the poor handwriting and the haste of this letter, I
+                    must go to the roll call and then probably to the watch. During these times,
+                    much studying cannot be done. May I ask you, already for the sake of the altar
+                    piece, for a very prompt reply. Please convey my best regards to your esteemed
+                    household members and maintain your kind goodwill towards me, as I am, Highly
+                    Esteemed Mr. Baron Your most obediently devoted Wilh. Wackernagel. Quomodo sedes
+                    sola civitas plena populo? facta est quare redua domina gentinur.</p>
+            </div>
+            <div type="summary" resp="#GPT4">
+                <p>Wilhelm Wackernagel berichtet Joseph von Laßberg über die Wiederbeschaffung eines
+                    Altarbildes, das in Basel sicher verwahrt ist, und bittet um Anweisungen zur
+                    Übersendung. Er schildert die angespannte politische Lage in Basel, die kurz vor
+                    einer Belagerung oder der Übernahme durch radikale Kräfte steht. Zudem berichtet
+                    er von seiner Reise über Zürich, Aarau und den Rigi, bei der er wertvolle
+                    Handschriften entdeckte, aber auch von traurigen Nachrichten aus Göttingen,
+                    insbesondere dem Tod einer Schwester der Brüder Grimm. Er bittet um eine baldige
+                    Antwort bezüglich des Altarbildes.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

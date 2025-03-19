@@ -1,36 +1,39 @@
-<?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1270">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Brief von Johann Adam Pupikofer an Joseph von Laßberg (30.12.1828).</title>
-                <respStmt>
+                <respStmt xml:id="MiS">
                     <resp>Encoding to TEI</resp>
                     <resp>Processing, NER and Topic Modelling</resp>
                     <name>Michael Schonhardt</name>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
-                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
-                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
-                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
-                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
-                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
-                    automatisiert mit GPT-3.5 normalisiert.</p>
+                <p>Textfassung auf Basis der Transkription durch Transkribus korrigiert und in TEI
+                    überführt. Automatisierte NER-Erkennung und Identifikation durch Flair geprüft,
+                    korrigiert und ergänzt. Normalisierung, Zusammenfassung und Übersetzung durch
+                    GPT-4. Lizenz: </p>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY
+                        4.0</licence>
+                </availability>
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
                     <msIdentifier>
                         <settlement>Frauenfeld</settlement>
-                        <repository>Thurgauische Kantonsbibliothek</repository>
-                        <idno type="signature"></idno>
+                        <repository>Staatsarchiv Thurgau</repository>
+                        <idno type="signature">9'45, 1.1/75.1</idno>
                         <idno type="register-harris">2228</idno>
-                        <idno type="register-lassberg">nan</idno>
+                        <idno type="register-lassberg"/>
                     </msIdentifier>
                     <additional>
-                        <surrogates>
-                            <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In: Alemannia 16 (1888), S.  1-32 und 97-154, S. 28<ref>https://books.google.de/books?id=XWY5AAAAMAAJ</ref></bibl>
+                        <surrogates> <bibl type="printed">Johannes Meyer, Briefwechsel zwischen J.
+                            von Laszberg und Johann Adam Pupikofer. In: Alemannia 16 (1888), S. 1-32
+                            und 97-154, S.
+                            28<ref>https://books.google.de/books?id=XWY5AAAAMAAJ</ref></bibl>
                         </surrogates>
                     </additional>
                 </msDesc>
@@ -40,37 +43,256 @@
             <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
             <correspDesc xml:id="correspDesc-lassberg-letter-1270">
                 <correspAction type="sent">
-                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179" ref="https://d-nb.info/gnd/11565108X"
-                        >Johann Adam Pupikofer</persName>
-                    
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0179"
+                        ref="https://d-nb.info/gnd/11565108X">Johann Adam Pupikofer</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0025"
+                        >Bischofszell</placeName>
                     <date when="1828-12-30">30.12.1828</date>
                 </correspAction>
                 <correspAction type="received">
-                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
-                        >Joseph von Laßberg</persName>
-                    <placeName key="../register/lassberg-places.xml#lassberg-place-0025">Bischofszell</placeName>
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373"
+                        ref="https://d-nb.info/gnd/118778862">Joseph von Laßberg</persName>
+
                 </correspAction>
-                
+
                 <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
-                <note type="mentioned">
-                    <!--<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-{PERS_NUMBER}"><rs>{ORIGINAL_STRING_MENTION}</rs></ref>-->
-                </note>
+                <note type="mentioned"> <ref type="cmif:mentionsBibl"
+                    target="../register/lassberg-literature.xml#lassberg-literature-0154"
+                    ><rs>Diarium</rs></ref> <ref type="cmif:mentionsBibl"
+                    target="../register/lassberg-literature.xml#lassberg-literature-0074"
+                    ><rs>Morgenblatt für gebildete Stände. Nr. 121</rs></ref> <ref
+                    type="cmif:mentionsBibl"
+                    target="../register/lassberg-literature.xml#lassberg-literature-0155"
+                    ><rs>Weinfelden, dargestellt in seinen bisherigen Schicksalen und in seinem
+                    gegenwärtigen Zustande.</rs></ref> <ref type="cmif:mentionsBibl"
+                    target="../register/lassberg-literature.xml#lassberg-literature-0156"><rs>Kanton
+                    Schaffhausen: Neujahrsgeschenke für die Jugend des Kantons
+                    Schaffhausen.</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0373"><rs>Joseph
+                    von Laßberg</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0179"><rs>Johann
+                    Adam Pupikofer</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0354"
+                    ><rs>Unbekannt</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0627"
+                    ><rs>Johannes Rütiner</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0544"><rs>Fritz
+                    Jakob von Anwil</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0468"
+                    ><rs>Däniker, Hans Kaspar</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0307"
+                    ><rs>Melchior Kirchhofer</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0394"><rs>Jakob
+                    Christoph Scherb</rs></ref> <ref type="cmif:mentionsPlace"
+                    target="../register/lassberg-places.xml#lassberg-place-0043"
+                    ><rs>Eppishausen</rs></ref> </note>
             </correspDesc>
         </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2025-03-16" who="#MiS" status="done">Text recognized by
+                    Transkribus</change>
+                <change when="2025-03-16" who="#MiS" status="done">Text corrected in
+                    Transkribus</change>
+                <change when="2025-03-16" who="#MiS" status="done">Exported from
+                    Transkribus</change>
+                <change when="2025-03-16" who="#MiS" status="done">Automatic NER</change>
+                <change when="2025-03-16" who="#MiS" status="done">Automatic normalization,
+                    translation and summary</change>
+                <change when="2025-03-16" who="#MiS" status="done">Manual markup and
+                    proofreading</change>
+                <change when="2025-03-16" who="#MiS" status="done">Finished markup</change>
+            </listChange>
+        </revisionDesc>
     </teiHeader>
     <text>
         <body>
-            <div type="original" resp="ocr">
-                <p>Mein verehrtester Herr und Nachbar!
-Wie übel es doch Ihrem Schneehuhn ergangen ist! Wohl war in der Todesstunde demselben kein geringer Trost die Hoffnung, von einem sachverständigen Gaumen der Feinheit und Schmackhaftigkeit gerühmt zu werden und somit wenigstens einen Schatten des Nachruhms einzuernten. Wie schmeichelhaft mochte die Aussicht sein, in der Zelle des heiligen <rs type="person" key="">Eppo</rs> zum Opfer zu dienen, und von einem so hocherfahrenen, des edeln Weidwerks durch und durch kundigen Jäger gespeist zu werden! Nun kommt es einem Chorsänger in die Hände, der nichts anders als Erdäpfel und Kalbsbraten zu beurtheilen versteht, und alle Hoffnung auf eine auch nur augenblickliche Berühmtheit ist verschwunden! Was wird die gute Frau Doctorin dazu sagen? Unser einer denkt dabei an die Brosamen, die von des Reichen Tische fielen, und dankt gar schön. Aber selbst im alten Jahre nochmals zu Ihnen zu kommen, will mir nicht gelingen; ich sollte die commentationes fatales des edeln Mannes <rs type="person" key="">Rütiner</rs> in einigen Tagen zurück gehen lassen, und bin kaum zur Hälfte damit fertig. Was er doch von der Frau des gelehrten <rs type="person" key="">Fritz Jakob von Anwyl</rs> schreibt! Tom. I. p. 31 heißt es: Uxor <rs type="person" key="">Jacobi</rs> <rs type="person" key="">Fritz von Anwyl</rs> tum cum libros bibliopola adfert: „Supersunt aegrotanti podagra.“ vel immensum pretium dicit poscere, ne emat. Si vir sciret, contunderetur. Lieset man dieß nicht auch im Gesichte der herrischen Frau auf Ihrer gemalten Scheibe. Herr Dekan <rs type="person" key="">Däniker</rs> wünscht Ihnen guten Fmpfang der Morgenblätter, die Sie mit Muße durchgehen können. frühern Jahrgänge hat er nicht mehr. Mit der Abfassung des Thurg. Neujahrstücks bitte ich, Nachsicht zu tragen. Das Schaffhausersche werden Sie wohl bereits bekommen haben: aber Herr Pfr. <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0307">Kirchhofer</rs> lobt die Empfänglichkeit dafür nicht sehr. Wir haben am Neujahrs-Abend auf dem Schlosse ein Abendessen, welchem Herr Oberamtmann und Herr Dekan <rs type="person" key="">Däniker</rs> mit Ihren Frauen beiwohnen werden; wir werden auch Punsch anfertigen und den jungen Leuten und den Laien Gelegenheit zum Tanz verschaffen. Wollen Sie nicht auch dabei sein? Am Tage des heil. <rs type="person" key="">Bertholdus</rs>, der im Kalender freilich nach dem unschuldigen Schäfer <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0054">Abel</rs> den Ehrenplatz läßt, spreche ich um ein Süppchen in <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs> ein: da werden Sie doch wohl nicht ausweichen? Und nun Gott befohlen das alte Jahr! Das neue bringe Ihnen recht viele Antiquitäten ins Haus und nehme Ihnen keines der Güter, die Sie besitzen. Mir erhalte es Ihr freundliches Wohlwollen und das Vergnügen, recht oft bei Ihnen zu sein. Leben Sie wohl, wie es von Herzen wünscht
-Ihr Diac. <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0179">Pupikofer</rs>.
-<rs type="place" key="">Bischofzell</rs>, den 30. Dec. 1828.</p>
+            <div type="original" resp="#transkribus #MiS">
+                <p><pb n="1" corresp="../pagexml/1270/1270-1.xml"/><lb
+                    xml:id="lassberg-letter-1270-1-1" n="1" corresp="tr_1_tl_1"/>Mein verehrtester
+                    Herr und Nachbar! <lb xml:id="lassberg-letter-1270-1-2" n="2"
+                    corresp="tr_1_tl_2"/>Wie übel es doch Ihrem Schneehuhn ergangen ist! Wohl war
+                    <lb xml:id="lassberg-letter-1270-1-3" n="3" corresp="tr_1_tl_3"/>in der
+                    Todesstunde demselben kein geringer Trost die Hoffnung, <lb
+                    xml:id="lassberg-letter-1270-1-4" n="4" corresp="tr_1_tl_4"/>von einem
+                    sachverständigen Gaumen der Feinheit und Schmack <lb break="no"
+                    xml:id="lassberg-letter-1270-1-5" n="5" corresp="tr_1_tl_5"/>haftigkeit gerühmt
+                    zu werden und somit wenigstens einen <lb xml:id="lassberg-letter-1270-1-6" n="6"
+                    corresp="tr_1_tl_6"/>Schatten des Nachruhms einzuernten. Wie schmeichelhaft
+                    mochte <lb xml:id="lassberg-letter-1270-1-7" n="7" corresp="tr_1_tl_7"/>die
+                    Aussicht seyn, in der <rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0043">Zelle des heiligen
+                    Eppo</rs> zum Opfer <lb xml:id="lassberg-letter-1270-1-8" n="8"
+                    corresp="tr_1_tl_8"/>zu dienen, und von einem so hocherfahrenen des edlen <lb
+                    xml:id="lassberg-letter-1270-1-9" n="9" corresp="tr_1_tl_9"/>Weidwerks durch und
+                    durch <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0373">kundigen
+                    Jäger</rs> gespeißt zu werden. <lb xml:id="lassberg-letter-1270-1-10" n="10"
+                    corresp="tr_1_tl_10"/>Nun kommt es einem <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0179">armen
+                    Chorsänger</rs> in die Hände, der nichts <lb xml:id="lassberg-letter-1270-1-11"
+                    n="11" corresp="tr_1_tl_11"/>anders als Erdäpfel und Kalbsbraten zu beurtheilen
+                    versteht <lb xml:id="lassberg-letter-1270-1-12" n="12" corresp="tr_1_tl_12"/>und
+                    alle Hoffnung auf eine auch nur augenblickliche Berühmtheit <lb
+                    xml:id="lassberg-letter-1270-1-13" n="13" corresp="tr_1_tl_13"/>ist
+                    verschwunden. Was wird die gute <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0354">Frau
+                    Doctorin</rs> dazu sagen? <lb xml:id="lassberg-letter-1270-1-14" n="14"
+                    corresp="tr_1_tl_14"/>Unser einer denkt dabey an die Brosamen, die von des
+                    Reichen <lb xml:id="lassberg-letter-1270-1-15" n="15" corresp="tr_1_tl_15"
+                    />Tische fielen und dankt gar schön. <lb xml:id="lassberg-letter-1270-1-16"
+                    n="16" corresp="tr_1_tl_16"/>Aber selbst im Alten Jahre nochmals zu Ihnen zu
+                    kommen <lb xml:id="lassberg-letter-1270-1-17" n="17" corresp="tr_1_tl_17"/>will
+                    mir nicht gelingen; ich sollte die <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0154">comentationes
+                    fatales</rs> <lb xml:id="lassberg-letter-1270-1-18" n="18" corresp="tr_1_tl_18"
+                    />des edelen Mannes <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0627">Rütiner</rs>
+                    in einigen Tagen zurück gehen <pb n="2" corresp="../pagexml/1270/1270-2.xml"
+                    /><lb xml:id="lassberg-letter-1270-2-1" n="1" corresp="tr_3_tl_1"/>lassen, und
+                    bin kaum zur Hälfte damit fertig. Was er doch von der <lb
+                    xml:id="lassberg-letter-1270-2-2" n="2" corresp="tr_3_tl_2"/>Frau des gelehrten
+                    <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0544">Fritz Jakob
+                    vom Anwyl</rs> schreibt! <ref>Tom. I. p. <lb xml:id="lassberg-letter-1270-2-3"
+                    n="3" corresp="tr_3_tl_3"/>31</ref>. heißt es: Uxor Jacobi Fritz von Anwyl tum
+                    cum libros biblio <lb break="no" xml:id="lassberg-letter-1270-2-4" n="4"
+                    corresp="tr_3_tl_4"/>pola adfert: "supersunt aegrotanti podagra" vel immensum
+                    <lb xml:id="lassberg-letter-1270-2-5" n="5" corresp="tr_3_tl_5"/>pretium dicit
+                    poscere, ne emat. Si vir sciret, contunderetur. <lb
+                    xml:id="lassberg-letter-1270-2-6" n="6" corresp="tr_3_tl_6"/>Liest man dieß
+                    nicht auch im Gedichte der herrischen Frau auf <lb
+                    xml:id="lassberg-letter-1270-2-7" n="7" corresp="tr_3_tl_7"/>Ihrer gemahlten
+                    Scheibe. <lb xml:id="lassberg-letter-1270-2-8" n="8" corresp="tr_3_tl_8"/>Herr
+                    Dekan <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0468">Däniker</rs>
+                    wünscht Ihnen guten Empfang der <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0074">Morgen <lb
+                    break="no" xml:id="lassberg-letter-1270-2-9" n="9" corresp="tr_3_tl_9"
+                    />blätter</rs>, die Sie mit Muße durchgehen können. Die frühern Jahr <lb
+                    break="no" xml:id="lassberg-letter-1270-2-10" n="10" corresp="tr_3_tl_10"/>gänge
+                    hat er nicht mehr. Mit der Abfassung des <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0155">Thurg.
+                    Neujahr <lb break="no" xml:id="lassberg-letter-1270-2-11" n="11"
+                    corresp="tr_1_tl_1"/>stücks</rs> bitte ich, Nachsicht zu tragen. Das <rs
+                    type="bibl" key="../register/lassberg-literature.xml#lassberg-literature-0156"
+                    >Schafhausersche</rs> werden <lb xml:id="lassberg-letter-1270-2-12" n="12"
+                    corresp="tr_1_tl_2"/>Sie wohl bereits bekommen haben: aber Herr Pfr. <rs
+                    type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0307"
+                    >Kirchhofer</rs> lobt <lb xml:id="lassberg-letter-1270-2-13" n="13"
+                    corresp="tr_1_tl_3"/>die Empfänglichkeit dafür nicht sehr. <lb
+                    xml:id="lassberg-letter-1270-2-14" n="14" corresp="tr_1_tl_4"/>Wir haben am
+                    Neujahr-Abend auf dem Schlosse ein Abendessen <lb
+                    xml:id="lassberg-letter-1270-2-15" n="15" corresp="tr_1_tl_5"/>welchem Herr <rs
+                    type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0394"
+                    >Oberamtmann</rs> und Herr Dekan <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0468">Däniker</rs>
+                    mit ihren <lb xml:id="lassberg-letter-1270-2-16" n="16" corresp="tr_1_tl_6"
+                    />Frauen beiwohnen werden; wir werde auch Punsch anfertigen, <lb
+                    xml:id="lassberg-letter-1270-2-17" n="17" corresp="tr_1_tl_7"/>und den jungen
+                    Leuten und den Laien Gelegenheit zum Tanz <lb xml:id="lassberg-letter-1270-2-18"
+                    n="18" corresp="tr_1_tl_8"/>verschaffenen. Wollen Sie nicht auch dabey seyn? Am
+                    Tage des <lb xml:id="lassberg-letter-1270-2-19" n="19" corresp="tr_1_tl_9"
+                    />heil. Bertholdus, der im Kalender freylich nach dem unschuldigen <lb
+                    xml:id="lassberg-letter-1270-2-20" n="20" corresp="tr_1_tl_10"/>Schäfer Abel den
+                    Ehrenplatz läßt, spreche ich um ein Süppchen <lb
+                    xml:id="lassberg-letter-1270-2-21" n="21" corresp="tr_1_tl_11"/>in <rs
+                    type="place" key="../register/lassberg-places.xml#lassberg-place-0043"
+                    >Eppishausen</rs> ein: da werden Sie doch wohl nicht ausweichen? <pb n="3"
+                    corresp="../pagexml/1270/1270-3.xml"/><lb xml:id="lassberg-letter-1270-3-1"
+                    n="1" corresp="tr_2_tl_1"/>Und nun Gott befohlen, das Alte Jahr! Das Neue bringe
+                    Ihnen <lb xml:id="lassberg-letter-1270-3-2" n="2" corresp="tr_2_tl_2"/>recht
+                    viele Antiquitäten in's Haus, und nehme Ihnen keines der <lb
+                    xml:id="lassberg-letter-1270-3-3" n="3" corresp="tr_2_tl_3"/>Güter, die Sie
+                    bereits besitzen. Mir erhalte es Ihr freundschaftliches <lb
+                    xml:id="lassberg-letter-1270-3-4" n="4" corresp="tr_2_tl_4"/>Wohlwollen und das
+                    Vergnügen, recht oft bey Ihnen zu sein. <lb xml:id="lassberg-letter-1270-3-5"
+                    n="5" corresp="tr_2_tl_5"/>Leben Sie wohl, wie es von Herzen wünscht. <lb
+                    xml:id="lassberg-letter-1270-3-6" n="6" corresp="line_1713550096695_206"/>Ihr
+                    <lb xml:id="lassberg-letter-1270-3-7" n="7" corresp="tr_2_tl_7"/>Diac. Pupikofer
+                    <lb xml:id="lassberg-letter-1270-3-8" n="8" corresp="tr_2_tl_6"/>Bischofzell den
+                    30. Dec. 1828. </p>
             </div>
-            <div type="normalized" resp="GPT3.5">
-                <p>Mein verehrtester Herr und Nachbar!
-Wie übel es doch Ihrem Schneehuhn ergangen ist! Wohl war in der Todesstunde demselben kein geringer Trost die Hoffnung, von einem sachverständigen Gaumen der Feinheit und Schmackhaftigkeit gerühmt zu werden und somit wenigstens einen Schatten des Nachruhms einzuernten. Wie schmeichelhaft mochte die Aussicht sein, in der Zelle des heiligen <rs type="person" key="">Eppo</rs> zum Opfer zu dienen, und von einem so hocherfahrenen, des edlen Weidwerks durch und durch kundigen Jäger gespeist zu werden! Nun kommt es einem Chorsänger in die Hände, der nichts anderes als Erdäpfel und Kalbsbraten zu beurteilen versteht, und alle Hoffnung auf eine auch nur augenblickliche Berühmtheit ist verschwunden! Was wird die gute Frau Doktorin dazu sagen? Unser einer denkt dabei an die Brosamen, die von des Reichen Tisch fielen, und dankt gar schön. Aber selbst im alten Jahr nochmals zu Ihnen zu kommen, will mir nicht gelingen; ich sollte die kommentationes fatales des edlen Mannes <rs type="person" key="">Rütiner</rs> in einigen Tagen zurückgehen lassen, und bin kaum zur Hälfte damit fertig. Was er doch von der Frau des gelehrten <rs type="person" key="">Fritz Jakob von Anwyl</rs> schreibt! Tom. I. p. 31 heißt es: Uxor <rs type="person" key="">Jacobi</rs> <rs type="person" key="">Fritz von Anwyl</rs> tum cum libros bibliopola adfert: „Supersunt aegrotanti podagra.“ vel immensum pretium dicit poscere, ne emat. Si vir sciret, contunderetur. Lieset man dies nicht auch im Gesichte der herrischen Frau auf Ihrer gemalten Scheibe. Herr Dekan <rs type="person" key="">Däniker</rs> wünscht Ihnen guten Empfang der Morgenblätter, die Sie mit Muße durchgehen können. Frühere Jahrgänge hat er nicht mehr. Mit der Abfassung des Thurg. Neujahrstücks bitte ich, Nachsicht zu tragen. Das Schaffhausersche werden Sie wohl bereits bekommen haben: aber Herr Pfarrer <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0307">Kirchhofer</rs> lobt die Empfänglichkeit dafür nicht sehr. Wir haben am Neujahrs-Abend auf dem Schlosse ein Abendessen, welchem Herr Oberamtmann und Herr Dekan <rs type="person" key="">Däniker</rs> mit Ihren Frauen beiwohnen werden; wir werden auch Punsch anfertigen und den jungen Leuten und den Laien Gelegenheit zum Tanz verschaffen. Wollen Sie nicht auch dabei sein? Am Tage des heil. <rs type="person" key="">Bertholdus</rs>, der im Kalender freilich nach dem unschuldigen Schäfer <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0054">Abel</rs> den Ehrenplatz lässt, spreche ich um ein Süppchen in <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs> ein: da werden Sie doch wohl nicht ausweichen? Und nun Gott befohlen das alte Jahr! Das neue bringe Ihnen recht viele Antiquitäten ins Haus und nehme Ihnen keines der Güter, die Sie besitzen. Mir erhalte es Ihr freundliches Wohlwollen und das Vergnügen, recht oft bei Ihnen zu sein. Leben Sie wohl, wie es von Herzen wünscht
-Ihr Diakon <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0179">Pupikofer</rs>.
-<rs type="place" key="">Bischofzell</rs>, den 30. Dez. 1828.</p>
+            <div type="normalized" resp="#GPT4">
+                <p>Mein verehrtester Herr und Nachbar! Wie übel es doch Ihrem Schneehuhn ergangen
+                    ist! Wohl war in der Todesstunde demselben kein geringer Trost die Hoffnung, von
+                    einem sachverständigen Gaumen der Feinheit und Schmack­ haftigkeit gerühmt zu
+                    werden und somit wenigstens einen Schatten des Nachruhms einzuernten. Wie
+                    schmeichelhaft mochte die Aussicht sein, in der Zelle des heiligen Eppo zum
+                    Opfer zu dienen, und von einem so hocherfahrenen des edlen Weidwerks durch und
+                    durch kundigen Jäger gespeist zu werden. Nun kommt es einem armen Chorsänger in
+                    die Hände, der nichts anders als Erdäpfel und Kalbsbraten zu beurteilen versteht
+                    und alle Hoffnung auf eine auch nur augenblickliche Berühmtheit ist
+                    verschwunden. Was wird die gute Frau Doktorin dazu sagen? Unser einer denkt
+                    dabei an die Brosamen, die von des Reichen Tische fielen und dankt gar schön.
+                    Aber selbst im Alten Jahr nochmals zu Ihnen zu kommen will mir nicht gelingen;
+                    ich sollte die commentationes fatales des edlen Mannes Rütiner in einigen Tagen
+                    zurückgehen lassen, und bin kaum zur Hälfte damit fertig. Was er doch von der
+                    Frau des gelehrten Fritz Jakob vom Anwyl schreibt! Tom. I. p. 31. heißt es: Uxor
+                    Jacobi Fritz von Anwyl tum cum libros biblio­ pola adfert: "supersunt aegrotanti
+                    podagra" vel immensum pretium dicit poscere, ne emat. Si vir sciret,
+                    contunderetur. Liest man dies nicht auch im Gedichte der herrischen Frau auf
+                    Ihrer gemalten Scheibe. Herr Dekan Däniker wünscht Ihnen guten Empfang der
+                    Morgen­ blätter, die Sie mit Muße durchgehen können. Die früheren Jahr­ gänge
+                    hat er nicht mehr. Mit der Abfassung des Thurg. Neujahr­ stücks bitte ich,
+                    Nachsicht zu tragen. Das Schafhausersche werden Sie wohl bereits bekommen haben:
+                    aber Herr Pfr. Kirchhofer lobt die Empfänglichkeit dafür nicht sehr. Wir haben
+                    am Neujahrsabend auf dem Schlosse ein Abendessen welchem Herr Oberamtmann und
+                    Herr Dekan Däniker mit ihren Frauen beiwohnen werden; wir werden auch Punsch
+                    anfertigen, und den jungen Leuten und den Laien Gelegenheit zum Tanz
+                    verschaffen. Wollen Sie nicht auch dabei sein? Am Tage des heil. Bertholdus, der
+                    im Kalender freilich nach dem unschuldigen Schäfer Abel den Ehrenplatz lässt,
+                    spreche ich um ein Süppchen in Eppishausen ein: da werden Sie doch wohl nicht
+                    ausweichen? Und nun Gott befohlen, das Alte Jahr! Das Neue bringe Ihnen recht
+                    viele Antiquitäten ins Haus, und nehme Ihnen keines der Güter, die Sie bereits
+                    besitzen. Mir erhalte es Ihr freundschaftliches Wohlwollen und das Vergnügen,
+                    recht oft bei Ihnen zu sein. Leben Sie wohl, wie es von Herzen wünscht. Ihr
+                    Diac. Pupikofer Bischofzell den 30. Dez. 1828. </p>
+            </div>
+            <div type="translation" resp="#GPT4">
+                <p>My most esteemed Sir and Neighbor! How unfortunate it is for your ptarmigan!
+                    Indeed, in its final hour, it had no small comfort in the hope of being praised
+                    for its delicacy and tastiness by a knowledgeable palate, thereby at least
+                    earning a shadow of posthumous fame. How flattering must have been the prospect
+                    of serving as a sacrifice in the cell of Saint Eppo and being consumed by such
+                    an experienced hunter thoroughly acquainted with the noble game. Now it falls
+                    into the hands of a poor choirmaster, who understands nothing but potatoes and
+                    roast veal, and all hope of even momentary fame has vanished. What will the good
+                    doctor's wife say to this? We think of the crumbs that fall from the rich man's
+                    table and offer our sincere thanks. Yet, even at the end of the year, it seems I
+                    cannot come to you again; I should return the "comentationes fatales" of the
+                    noble Mr. Rütiner in a few days, and I am scarcely halfway through. What he
+                    writes about the wife of the learned Fritz Jakob von Anwyl! In volume one, page
+                    31, it says: "Uxor Jacobi Fritz von Anwyl" when the bookseller brings books,
+                    "supersunt aegrotanti podagra" or demands an immense price, lest he buy. If the
+                    husband knew, he would be crushed. Does one not also read this in the poem of
+                    the imperious lady on her painted pane? Mr. Dean Däniker wishes you a good
+                    reception of the Morning Papers, which you can go through at your leisure. He no
+                    longer has the earlier volumes. I ask for your patience with the drafting of the
+                    Thurgau New Year's piece. You probably have already received the one from
+                    Schaffhausen, but Mr. Pastor Kirchhofer doesn't highly praise the receptivity
+                    for it. On New Year's Eve, we have a dinner at the castle, which Mr. Oberamtmann
+                    and Mr. Dean Däniker with their wives will attend; we will also make punch and
+                    provide the young people and laymen the opportunity to dance. Would you not like
+                    to join us? On the day of Saint Berthold, who, in the calendar, graciously
+                    leaves the place of honor to the innocent shepherd Abel, I will request a little
+                    soup in Eppishausen: you will surely not decline? And now, Godspeed to the Old
+                    Year! May the New Year bring you many antiquities into your home and take away
+                    none of the goods you already possess. May it preserve your friendly goodwill
+                    towards me and the pleasure of being with you very often. Farewell, as is
+                    earnestly wished from the heart. Yours, Diaconus Pupikofer Bischofzell, December
+                    30, 1828.</p>
+            </div>
+            <div type="summary" resp="#GPT4">
+                <p>Johan Adam Pupikofer schreibt an Joseph von Laßberg in humorvollem Ton über das
+                    unglückliche Schicksal eines Schneehuhns, das statt eines Kennergaumens nur
+                    einen gewöhnlichen Esser fand. Er berichtet von seiner verzögerten Arbeit an den
+                    *Commentationes* von Rütiner, erwähnt eine Anekdote über die Frau des Gelehrten
+                    Fritz Jakob von Anwyl und übermittelt Grüße von Dekan Däniker. Zudem lädt er
+                    Laßberg zu einem geselligen Abendessen mit Tanz am Neujahrsabend auf dem Schloss
+                    ein und kündigt einen Besuch in Eppishausen am Tag des heiligen Bertholdus an.
+                    Abschließend wünscht er ihm ein neues Jahr voller Antiquitäten und beständiger
+                    Freundschaft.</p>
             </div>
         </body>
     </text>

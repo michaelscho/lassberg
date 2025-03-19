@@ -1,0 +1,105 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-2274">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Wilhelm Wackernagel an Joseph von Laßberg (23.09.1841).</title>
+                <respStmt xml:id="MiS">
+                    <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 und GPT-4 normalisiert, zusammengefasst und übersetzt.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Basel</settlement>
+                        <repository>Staatsarchiv des Kantons Basel-Stadt</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">2724</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed"><ref/></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-2274">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0367" ref="https://d-nb.info/gnd/118805851">Wilhelm Wackernagel</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0019">Basel</placeName>
+                    <date when="1841-09-23">23.09.1841</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862">Joseph von Laßberg</persName>
+                    
+                </correspAction>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <!--<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-{PERS_NUMBER}"><rs>{ORIGINAL_STRING_MENTION}</rs></ref>-->
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2025-02-27" who="#MiS" status="done">Text recognized by Transkribus</change>
+                <change when="2025-02-27" who="#MiS" status="done">Text corrected in Transkribus</change>
+                <change when="2025-02-27" who="#MiS" status="done">Exported from Transkribus</change>
+                <change when="2025-02-27" who="#MiS" status="done">Automatic NER</change>
+                <change when="2025-02-27" who="#MiS" status="done">Automatic normalization, translation and summary</change>
+                <change when="" who="" status="draft">Manual markup and proofreading</change>
+                <change when="" who="" status="draft">Finished markup</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="original" resp="#transkribus #MiS">
+                <p><pb n="1" corresp="../pagexml/2274/2274-1.xml"/><lb xml:id="lassberg-letter-2274-1-1" n="1" corresp="tr_1_tl_1"/><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0019">Basel</rs> 23 Sept. 41. <lb xml:id="lassberg-letter-2274-1-2" n="2" corresp="tr_1_tl_2"/>Verehrtester Herr und Freund! <lb xml:id="lassberg-letter-2274-1-3" n="3" corresp="tr_1_tl_3"/>Herzlichen Dank für die so freundlich beschleunigte <lb xml:id="lassberg-letter-2274-1-4" n="4" corresp="tr_1_tl_4"/>Uebersendung der beiden Bände des Liedersaals (1. u. 3). <lb xml:id="lassberg-letter-2274-1-5" n="5" corresp="tr_1_tl_5"/>meine Sammlung ist nun reicher um eine stattliche <lb xml:id="lassberg-letter-2274-1-6" n="6" corresp="tr_1_tl_6"/>Zierde, und ich um einen Gegenstand widerholten <lb xml:id="lassberg-letter-2274-1-7" n="7" corresp="tr_1_tl_7"/>Studiums und gelehrten Lustwandels: man braucht <lb xml:id="lassberg-letter-2274-1-8" n="8" corresp="tr_1_tl_8"/>ja nur aufzuschlagen, so hat man ein schmuck abge <lb break="no" xml:id="lassberg-letter-2274-1-9" n="9" corresp="tr_1_tl_9"/>schlossenes Bild vor sich. Meinen Dank für solche <lb xml:id="lassberg-letter-2274-1-10" n="10" corresp="tr_1_tl_10"/>Freude auszusprechen hatte ich aufgeschoben, bis ich <lb xml:id="lassberg-letter-2274-1-11" n="11" corresp="tr_1_tl_11"/>ihn zugleich noch durch eine kleine Gegengabe bethaetigen <lb xml:id="lassberg-letter-2274-1-12" n="12" corresp="tr_1_tl_12"/>koennte. Hier ist diese nun: ein neuer Band meines <lb xml:id="lassberg-letter-2274-1-13" n="13" corresp="tr_1_tl_13"/>Lesebuches, der erste des dritten Theiles. Vielleicht gewährt <lb xml:id="lassberg-letter-2274-1-14" n="14" corresp="tr_1_tl_14"/>er Ihnen jetzt, wo Sie für einige Zeit auf Ihrer <lb xml:id="lassberg-letter-2274-1-15" n="15" corresp="tr_1_tl_15"/>grossen Meeresburg ganz, vereinsamt sind, die Ausfüllung <lb xml:id="lassberg-letter-2274-1-16" n="16" corresp="tr_1_tl_16"/>einer müssigen Stunde, sich blätternd darin umzuschauen. <lb xml:id="lassberg-letter-2274-1-17" n="17" corresp="tr_1_tl_17"/>Jedesfalls stellen Sie ihn zu den übrigen, und gedenken <lb xml:id="lassberg-letter-2274-1-18" n="18" corresp="tr_1_tl_18"/>Sie meiner mit altem Wohlwollen. <pb n="2" corresp="../pagexml/2274/2274-2.xml"/><lb xml:id="lassberg-letter-2274-2-1" n="1" corresp="tr_1_tl_1"/>Hoffentlich gehts Ihnen und den fernen Ihrigen wohl, <lb xml:id="lassberg-letter-2274-2-2" n="2" corresp="tr_1_tl_2"/>und besser als uns. Wir sind gestern vor acht Tagen <lb xml:id="lassberg-letter-2274-2-3" n="3" corresp="tr_1_tl_3"/>durch eine zu frühe Niederkunft meiner Frau (mit <lb xml:id="lassberg-letter-2274-2-4" n="4" corresp="tr_1_tl_4"/>einem todten Töchterlein) in Schrecken und Trauer <lb xml:id="lassberg-letter-2274-2-5" n="5" corresp="tr_1_tl_5"/>versetzt worden. Der Frau gehts besser als ich <lb xml:id="lassberg-letter-2274-2-6" n="6" corresp="tr_1_tl_6"/>anfangs fürchten muste: aber wir sind aufs neue <lb xml:id="lassberg-letter-2274-2-7" n="7" corresp="tr_1_tl_7"/>für jetzt und für laengere Zeit einer schönen <lb xml:id="lassberg-letter-2274-2-8" n="8" corresp="tr_1_tl_8"/>Hoffnung beraubt worden. Das sind Kümmernisse, <lb xml:id="lassberg-letter-2274-2-9" n="9" corresp="tr_1_tl_9"/>die mich etwas niederdrücken. <lb xml:id="lassberg-letter-2274-2-10" n="10" corresp="tr_1_tl_10"/>Und nun, leben Sie wohl! Noch einmal: herzlichen <lb xml:id="lassberg-letter-2274-2-11" n="11" corresp="tr_1_tl_11"/>Dank herzlichen Gruss in alter, staets erneuerter <lb xml:id="lassberg-letter-2274-2-12" n="12" corresp="tr_1_tl_12"/>Anhänglichkeit von Ihrem <lb xml:id="lassberg-letter-2274-2-13" n="13" corresp="tr_1_tl_13"/>aufrichtig ergebenen <lb xml:id="lassberg-letter-2274-2-14" n="14" corresp="tr_1_tl_14"/>Wilh. <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0367">Wackernagel</rs> Dr. </p>
+            </div>
+            <div type="normalized" resp="#GPT4">
+                <p>Basel, 23. Sept. 41.
+
+Verehrter Herr und Freund!
+
+Herzlichen Dank für die so freundlich beschleunigte Übersendung der beiden Bände des Liedersaals (1. u. 3). Meine Sammlung ist nun reicher um eine stattliche Zierde, und ich um einen Gegenstand wiederholten Studiums und gelehrten Lustwandels: Man braucht ja nur aufzuschlagen, so hat man ein schmuck abgeschlossenes Bild vor sich. Meinen Dank für solche Freude auszusprechen hatte ich aufgeschoben, bis ich ihn zugleich noch durch eine kleine Gegengabe betätigen könnte. Hier ist diese nun: ein neuer Band meines Lesebuches, der erste des dritten Teils. Vielleicht gewährt er Ihnen jetzt, wo Sie für einige Zeit auf Ihrer großen Meeresburg ganz vereinsamt sind, die Ausfüllung einer müßigen Stunde, sich blätternd darin umzuschauen. Jedenfalls stellen Sie ihn zu den übrigen, und gedenken Sie meiner mit altem Wohlwollen.
+
+Hoffentlich geht's Ihnen und den fernen Ihrigen wohl, und besser als uns. Wir sind gestern vor acht Tagen durch eine zu frühe Niederkunft meiner Frau (mit einem toten Töchterlein) in Schrecken und Trauer versetzt worden. Der Frau geht's besser als ich anfangs fürchten musste: Aber wir sind aufs Neue für jetzt und für längere Zeit einer schönen Hoffnung beraubt worden. Das sind Kümmernisse, die mich etwas niederdrücken.
+
+Und nun, leben Sie wohl! Noch einmal: Herzlichen Dank, herzlichen Gruß in alter, stets erneuerter Anhänglichkeit von Ihrem aufrichtig ergebenen
+
+Wilh. Wackernagel Dr.</p>
+            </div>
+            <div type="translation" resp="#GPT4">
+                <p>Basel, 23rd Sept. 1841.
+
+Most esteemed sir and friend!
+
+Heartfelt thanks for the so kindly expedited dispatch of the two volumes of the Song Hall (1st and 3rd). My collection is now enriched with a splendid ornament, and I with a subject for repeated study and scholarly strolls: one only needs to open it, and a beautifully finished image lies before you. I had postponed expressing my thanks for such joy until I could also confirm it with a small return gift. Here it is now: a new volume of my reader, the first of the third part. Perhaps it will now offer you, as you are completely isolated on your great sea castle for some time, the fulfillment of an idle hour by leafing through it. In any case, place it with the others and remember me with old goodwill.
+
+Hopefully, you and your distant loved ones are well, and better than us. We were thrown into shock and sadness yesterday eight days ago due to the premature delivery of my wife (with a stillborn daughter). My wife is better than I initially feared: but we are newly deprived of a beautiful hope for now and for a longer time. These are troubles that weigh me down a bit.
+
+And now, farewell! Once again: heartfelt thanks, warm regards, with old, constantly renewed attachment from your sincerely devoted
+
+Wilh. Wackernagel, Dr.</p>
+            </div>
+            <div type="summary" resp="#GPT4">
+                <p/>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,119 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-2011">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Wilhelm Wackernagel an Joseph von Laßberg (25.04.1838).</title>
+                <respStmt xml:id="MiS">
+                    <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 und GPT-4 normalisiert, zusammengefasst und übersetzt.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Basel</settlement>
+                        <repository>Staatsarchiv des Kantons Basel-Stadt</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">2617</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed"><ref/></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-2011">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0367" ref="https://d-nb.info/gnd/118805851">Wilhelm Wackernagel</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0019">Basel</placeName>
+                    <date when="1838-04-25">25.04.1838</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862">Joseph von Laßberg</persName>
+                    
+                </correspAction>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <!--<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-{PERS_NUMBER}"><rs>{ORIGINAL_STRING_MENTION}</rs></ref>-->
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2025-03-06" who="#MiS" status="done">Text recognized by Transkribus</change>
+                <change when="2025-03-06" who="#MiS" status="done">Text corrected in Transkribus</change>
+                <change when="2025-03-06" who="#MiS" status="done">Exported from Transkribus</change>
+                <change when="2025-03-06" who="#MiS" status="done">Automatic NER</change>
+                <change when="2025-03-06" who="#MiS" status="done">Automatic normalization, translation and summary</change>
+                <change when="" who="" status="draft">Manual markup and proofreading</change>
+                <change when="" who="" status="draft">Finished markup</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="original" resp="#transkribus #MiS">
+                <p><pb n="1" corresp="../pagexml/2011/2011-1.xml"/><lb xml:id="lassberg-letter-2011-1-1" n="1" corresp="tr_1_tl_1"/>erhalten am 30. April 1838 <lb xml:id="lassberg-letter-2011-1-2" n="2" corresp="tr_1_tl_2"/><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0019">Basel</rs> 25 Apr. 1838. <lb xml:id="lassberg-letter-2011-1-3" n="3" corresp="tr_1_tl_3"/>Verehrtester Herr Baron, <lb xml:id="lassberg-letter-2011-1-4" n="4" corresp="tr_1_tl_4"/>meine und meiner Frau beste Glückwünsche zu der stattlichen <lb xml:id="lassberg-letter-2011-1-5" n="5" corresp="tr_1_tl_5"/><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0101">Meeresburg</rs>: langes Leben darin und Freuden die Fülle! <lb xml:id="lassberg-letter-2011-1-6" n="6" corresp="tr_1_tl_6"/>Ebenso auch freundlichen Dank für die übersendeten Ab <lb break="no" xml:id="lassberg-letter-2011-1-7" n="7" corresp="tr_1_tl_7"/>bildungen: nun werden wir den Weg zu Ihrem gastlichen <lb xml:id="lassberg-letter-2011-1-8" n="8" corresp="tr_1_tl_8"/>Herd noch leichter finden: denn ich merke wohl wir <lb xml:id="lassberg-letter-2011-1-9" n="9" corresp="tr_1_tl_9"/>werden ihn wieder einmal suchen dürfen. <lb xml:id="lassberg-letter-2011-1-10" n="10" corresp="tr_1_tl_10"/>Hoffentlich finden diese Zeilen sie selber noch in <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppis</rs> <lb break="no" xml:id="lassberg-letter-2011-1-11" n="11" corresp="tr_1_tl_11"/>hausen, und das Einpacken Ihrer Sachen noch nicht ab <lb break="no" xml:id="lassberg-letter-2011-1-12" n="12" corresp="tr_1_tl_12"/>geschlossen. Denn es kommt einiges mit das auch noch <lb xml:id="lassberg-letter-2011-1-13" n="13" corresp="tr_1_tl_13"/>eingepackt seyn will. Von mir nicht, aber durch mich <lb xml:id="lassberg-letter-2011-1-14" n="14" corresp="tr_1_tl_14"/>von anderen, von <rs type="person">Wilh. <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0362">Grimm</rs></rs> u. <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0260">Lachmann</rs>. <lb xml:id="lassberg-letter-2011-1-15" n="15" corresp="tr_1_tl_15"/>Von mir nicht, und das bitte ich Sie vor allen Dingen <lb xml:id="lassberg-letter-2011-1-16" n="16" corresp="tr_1_tl_16"/>freundlich entschuldigen zu wollen. Auch habe ich nämlich <lb xml:id="lassberg-letter-2011-1-17" n="17" corresp="tr_1_tl_17"/>die mir anvertrauten Bücher nicht ausbenützt, nächstens <lb xml:id="lassberg-letter-2011-1-18" n="18" corresp="tr_1_tl_18"/>aber hoffe ich damit fertig zu seyn, und dann sollen <lb xml:id="lassberg-letter-2011-1-19" n="19" corresp="tr_1_tl_19"/>sie in <pb n="2" corresp="../pagexml/2011/2011-2.xml"/><lb xml:id="lassberg-letter-2011-2-1" n="1" corresp="tr_2_tl_1"/>sie in Begleitung meines besten Dankes zu Ihnen heim <lb break="no" xml:id="lassberg-letter-2011-2-2" n="2" corresp="tr_2_tl_2"/>wandern. Auch das gewünschte Verzeichniss der Vonspey <lb break="no" xml:id="lassberg-letter-2011-2-3" n="3" corresp="tr_2_tl_3"/>rischen Antiquitäten erhalten Sie diesemal noch nicht: <lb xml:id="lassberg-letter-2011-2-4" n="4" corresp="tr_2_tl_4"/>ich meine, um ihnen recht zu dienen sey es nöthig dass <lb xml:id="lassberg-letter-2011-2-5" n="5" corresp="tr_2_tl_5"/>ich vorher selbst noch einmal jene Sammlung genau be <lb break="no" xml:id="lassberg-letter-2011-2-6" n="6" corresp="tr_2_tl_6"/>trachte, und dann etwa dem Catalog einige Raisonne <lb break="no" xml:id="lassberg-letter-2011-2-7" n="7" corresp="tr_2_tl_7"/>ments beigebe. Dazu habe ich aber jezt wo sich die <lb xml:id="lassberg-letter-2011-2-8" n="8" corresp="tr_2_tl_9"/>alten Arbeiten noch durch Amtsgeschäfte häufen, leider <lb xml:id="lassberg-letter-2011-2-9" n="9" corresp="tr_2_tl_11"/>noch keine Zeit gefunden. Indessen auch dieses bald und <lb xml:id="lassberg-letter-2011-2-10" n="10" corresp="tr_2_tl_13"/>nächstens. <lb xml:id="lassberg-letter-2011-2-11" n="11" corresp="tr_2_tl_16"/>Also von <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0362">Grimm</rs> und <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0260">Lachmann</rs>. Von jenem den Pf. <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0376">Konrad</rs>, <lb xml:id="lassberg-letter-2011-2-12" n="12" corresp="tr_2_tl_17"/>wieder eine sorgfältige treue Arbeit, recht in seiner Art <lb xml:id="lassberg-letter-2011-2-13" n="13" corresp="tr_2_tl_19"/>von diesem die Noten zum Nibelliede, zwey academische <lb xml:id="lassberg-letter-2011-2-14" n="14" corresp="tr_2_tl_20"/>Vorträge über altd. Gedichte, und (ich bin für Herrn <lb xml:id="lassberg-letter-2011-2-15" n="15" corresp="tr_2_tl_22"/><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0046">Beyel</rs> darüber erschrocken) eine neue Ausgabe von <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0196">Hart</rs> <lb break="no" xml:id="lassberg-letter-2011-2-16" n="16" corresp="tr_2_tl_25"/><rs type="person">manns Gregor</rs>: keinesweges bloss ein emendierter Greith, <lb xml:id="lassberg-letter-2011-2-17" n="17" corresp="tr_2_tl_28"/>sondern mit Vergleichung der Wiener Handschrift und dessen <lb xml:id="lassberg-letter-2011-2-18" n="18" corresp="tr_2_tl_29"/>was <pb n="3" corresp="../pagexml/2011/2011-3.xml"/><lb xml:id="lassberg-letter-2011-3-1" n="1" corresp="tr_1_tl_1"/>was man aus der verlorenen Strassburger kennt. <lb xml:id="lassberg-letter-2011-3-2" n="2" corresp="tr_1_tl_2"/>Bald hätte ich vergessen, dass ich dennoch auch etwas <lb xml:id="lassberg-letter-2011-3-3" n="3" corresp="tr_1_tl_3"/>beizulegen habe: Jac. <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0362">Grimm</rs>s neueste Schrift und <lb xml:id="lassberg-letter-2011-3-4" n="4" corresp="tr_1_tl_4"/>eine von <rs type="person">Dahlmann</rs> beide über den Göttinger Handel, <lb xml:id="lassberg-letter-2011-3-5" n="5" corresp="tr_1_tl_5"/>beide da sie weder in <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0086">Leipzig</rs> noch in <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0147">Stuttgart</rs> das Im <lb break="no" xml:id="lassberg-letter-2011-3-6" n="6" corresp="tr_1_tl_6"/>primatur erhielten hier gedruckt; ich denke dass <lb xml:id="lassberg-letter-2011-3-7" n="7" corresp="tr_1_tl_7"/>auch Ihnen die herzvolle gemüthliche Art mit der <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0362">Grimm</rs> <lb xml:id="lassberg-letter-2011-3-8" n="8" corresp="tr_1_tl_8"/>hier den ganzen Gang der Sachen und die Zustände seiner <lb xml:id="lassberg-letter-2011-3-9" n="9" corresp="tr_1_tl_9"/>Seite darlegt, besonders wohlthun wird. Noch ist er immer <lb xml:id="lassberg-letter-2011-3-10" n="10" corresp="tr_1_tl_10"/>in <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0075">Cassel</rs>, missmuthig und fast verbittert, wenigstens <lb xml:id="lassberg-letter-2011-3-11" n="11" corresp="tr_1_tl_11"/>wie <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0260">Lachmann</rs> schreibt. <lb xml:id="lassberg-letter-2011-3-12" n="12" corresp="tr_1_tl_12"/>Mit der <rs type="bibl">Georgia Augusta</rs> aber stehts täglich übler: die <lb xml:id="lassberg-letter-2011-3-13" n="13" corresp="tr_1_tl_13"/>Fundamente weichen, und die Wände triefen. Wir haben <lb xml:id="lassberg-letter-2011-3-14" n="14" corresp="tr_1_tl_15"/>einen jüngeren Docenten von daher für unsre juristische <lb xml:id="lassberg-letter-2011-3-15" n="15" corresp="tr_1_tl_17"/>Facultät gewonnen, Prof. <rs type="person">Wunderlich</rs>, einen von den <lb xml:id="lassberg-letter-2011-3-16" n="16" corresp="line_1734359463818_2647"/>wenigen die auf Anlass des Huldigungsreverses von neuem <lb xml:id="lassberg-letter-2011-3-17" n="17" corresp="tr_1_tl_19"/>ihr Gewissen verwahrt haben. Eben dieser ist W. <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0362">Grimm</rs>s Bote <lb xml:id="lassberg-letter-2011-3-18" n="18" corresp="tr_1_tl_20"/>gewesen. <pb n="4" corresp="../pagexml/2011/2011-4.xml"/><lb xml:id="lassberg-letter-2011-4-1" n="1" corresp="tr_1_tl_1"/>ich muss jedoch schliessen. Gott behüte Sie! <lb xml:id="lassberg-letter-2011-4-2" n="2" corresp="tr_1_tl_2"/>Unser beider herzlichste Grüsse und Empfehlungen an <lb xml:id="lassberg-letter-2011-4-3" n="3" corresp="tr_1_tl_3"/>Sie und Ihre verehrte Frau <rs type="person">Gemahlinn</rs> und das liebliche <lb xml:id="lassberg-letter-2011-4-4" n="4" corresp="tr_1_tl_4"/>Zwillingsgestirn der Kinder, deren Namen ich im <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0178">Schweiz</rs>: <lb xml:id="lassberg-letter-2011-4-5" n="5" corresp="tr_1_tl_5"/>Museum zwar richtig, aber (wie <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0179">H. Pupikofer</rs> schreibt) <lb xml:id="lassberg-letter-2011-4-6" n="6" corresp="tr_1_tl_6"/>Ihnen doch nicht zu Dank ausgedeutet habe. <lb xml:id="lassberg-letter-2011-4-7" n="7" corresp="tr_1_tl_7"/>Leben Sie wohl, in aller Freundlichkeit gewogen <lb xml:id="lassberg-letter-2011-4-8" n="8" corresp="tr_1_tl_8"/>Ihrem ergebensten <lb xml:id="lassberg-letter-2011-4-9" n="9" corresp="tr_1_tl_9"/><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0362">Wilh</rs>. <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0367">Wackernagel</rs> Dr. <lb xml:id="lassberg-letter-2011-4-10" n="10" corresp="tr_1_tl_10"/>Alles Glück auf die Reise in die alte <rs type="place">Koenigsburg</rs>! <lb xml:id="lassberg-letter-2011-4-11" n="11" corresp="tr_1_tl_11"/>Blauen Himmel und Sonnenschein, und keinen <lb xml:id="lassberg-letter-2011-4-12" n="12" corresp="tr_1_tl_12"/>Schmerz beim Abschied von der altgewohnten <lb xml:id="lassberg-letter-2011-4-13" n="13" corresp="tr_1_tl_13"/>Waldklause! </p>
+            </div>
+            <div type="normalized" resp="#GPT4">
+                <p>erhalten am 30. April 1838  
+Basel, 25. Apr. 1838.
+
+Verehrtester Herr Baron,  
+meine und meiner Frau beste Glückwünsche zu der stattlichen Meeresburg: langes Leben darin und Freuden die Fülle! Ebenso auch freundlichen Dank für die übersendeten Abbildungen: nun werden wir den Weg zu Ihrem gastlichen Herd noch leichter finden: denn ich merke wohl, wir werden ihn wieder einmal suchen dürfen. Hoffentlich finden diese Zeilen Sie selber noch in Eppishausen, und das Einpacken Ihrer Sachen noch nicht abgeschlossen. Denn es kommt einiges mit, das auch noch eingepackt sein will. Von mir nicht, aber durch mich von anderen, von Wilh. Grimm u. Lachmann.
+
+Von mir nicht, und das bitte ich Sie vor allen Dingen freundlich entschuldigen zu wollen. Auch habe ich nämlich die mir anvertrauten Bücher nicht ausbenützt, nächstens aber hoffe ich damit fertig zu sein, und dann sollen sie in Begleitung meines besten Dankes zu Ihnen heimwandern. Auch das gewünschte Verzeichnis der Vonspeyrischen Antiquitäten erhalten Sie diesmal noch nicht: ich meine, um Ihnen recht zu dienen, sei es nötig, dass ich vorher selbst noch einmal jene Sammlung genau betrachte, und dann etwa dem Katalog einige Raisonnements beigebe. Dazu habe ich aber jetzt, wo sich die alten Arbeiten noch durch Amtsgeschäfte häufen, leider noch keine Zeit gefunden. Indessen auch dieses bald und nächstens.
+
+Also von Grimm und Lachmann. Von jenem den Pf. Konrad, wieder eine sorgfältige treue Arbeit, recht in seiner Art. Von diesem die Noten zum Nibelungenlied, zwei akademische Vorträge über altd. Gedichte, und (ich bin für Herrn Beyel darüber erschrocken) eine neue Ausgabe von Hartmanns Gregor: keineswegs bloß ein emendierter Greith, sondern mit Vergleichung der Wiener Handschrift und dessen, was man aus der verlorenen Straßburger kennt. Bald hätte ich vergessen, dass ich dennoch auch etwas beizulegen habe: Jac. Grimms neueste Schrift und eine von Dahlmann, beide über den Göttinger Handel, beide, da sie weder in Leipzig noch in Stuttgart das Imprimatur erhielten, hier gedruckt; ich denke, dass auch Ihnen die herzvolle gemütliche Art, mit der Grimm hier den ganzen Gang der Sachen und die Zustände seiner Seite darlegt, besonders wohltun wird. Noch ist er immer in Cassel, missmutig und fast verbittert, wenigstens wie Lachmann schreibt.
+
+Mit der Georgia Augusta aber steht’s täglich übler: die Fundamente weichen, und die Wände triefen. Wir haben einen jüngeren Dozenten von daher für unsere juristische Fakultät gewonnen, Prof. Wunderlich, einen von den wenigen, die auf Anlass des Huldigungsreverses von neuem ihr Gewissen verwahrt haben. Eben dieser ist W. Grimms Bote gewesen.
+
+Ich muss jedoch schließen. Gott behüte Sie! Unser beider herzlichste Grüße und Empfehlungen an Sie und Ihre verehrte Frau Gemahlin und das liebliche Zwillingsgestirn der Kinder, deren Namen ich im Schweiz: Museum zwar richtig, aber (wie H. Pupikofer schreibt) Ihnen doch nicht zu Dank ausgedeutet habe.
+
+Leben Sie wohl, in aller Freundlichkeit gewogen  
+Ihrem ergebensten  
+Wilh. Wackernagel Dr.
+
+Alles Glück auf die Reise in die alte Königsburg!  
+Blauen Himmel und Sonnenschein, und keinen Schmerz beim Abschied von der altgewohnten Waldklause!</p>
+            </div>
+            <div type="translation" resp="#GPT4">
+                <p>Received on April 30, 1838  
+Basel, April 25, 1838.  
+Most esteemed Baron,  
+my wife and I send our best congratulations on the stately Sea Castle: long life within it and abundant joys!  
+We also extend our friendly thanks for the sent illustrations: now we will find the way to your hospitable hearth even more easily: for I do realize we may wish to seek it out again.  
+Hopefully, these lines still reach you in Eppishausen, and the packing of your things is not yet completed. For there is some more that wants to be packed as well. Not from me, but through me from others, from Wilhelm Grimm and Lachmann.  
+Not from me, and I kindly ask you to excuse this above all. I have also not used the books entrusted to me, but I hope to be done with them soon, and then they shall wander home to you accompanied by my best thanks. Also, the desired list of the Vonspeyr Antiquities you will not receive this time either: I mean, to serve you well, it is necessary that I first take another close look at that collection myself, and then perhaps add some annotations to the catalog. However, I have not yet found the time for that as my old duties are still piling up with office work. Nevertheless, this too will be soon and shortly attended to.  
+So, from Grimm and Lachmann. From the former Kap. Konrad, again a careful faithful work, very much in his manner, from the latter the notes to the "Nibelungenlied," two academic lectures on old German poems, and (I am shocked for Mr. Beyel about it) a new edition of Hartmann's Gregor: by no means merely an emended Greith, but with comparison to the Vienna manuscript and what is known from the lost Strasbourg [version].  
+I almost forgot to mention that I also have something to enclose: Jacob Grimm's latest writing and one by Dahlmann both on the Göttingen Affair, both printed here since they received no imprimatur in Leipzig or Stuttgart; I think you too will especially appreciate the heartfelt and friendly manner with which Grimm presents the entire course of events and the conditions of his side here. He is still in Kassel, disheartened and almost embittered, at least as Lachmann writes.  
+As for the Georgia Augusta, things worsen daily: the foundations are weakening, and the walls are dripping. We have secured a younger lecturer for our law faculty, Prof. Wunderlich, one of the few who have newly safeguarded their conscience upon the occasion of the homage reversal. He has been Wilhelm Grimm's messenger.  
+However, I must close. God protect you!  
+Both of our warmest regards and compliments to you and your esteemed wife and the lovely twin stars of children, whose names I have correctly but (as Mr. Pupikofer writes) not to your thanks interpreted in the Swiss Museum.  
+Farewell, kindly disposed in all friendliness  
+Your most devoted Wilh. Wackernagel Dr.  
+May all happiness be with you on your journey to the old Königsburg!  
+Blue skies and sunshine, and no pain in bidding farewell to the old familiar forest hermitage!  </p>
+            </div>
+            <div type="summary" resp="#GPT4">
+                <p/>
+            </div>
+        </body>
+    </text>
+</TEI>

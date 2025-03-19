@@ -588,7 +588,7 @@
 														<serializableOrderedMap>
 															<entry>
 																<String>fragment</String>
-																<String>&lt;person xml:id="${xpath_eval(concat('lassberg-correspondent-', format-number(count(//person) + count(//personGrp) + 1, '0000')))}" xmlns="http://www.tei-c.org/ns/1.0" gender="" ref="">
+																<String>&lt;person xml:id="${xpath_eval(concat('lassberg-correspondent-', format-number(count(//person) + count(//personGrp) + 2, '0000')))}" xmlns="http://www.tei-c.org/ns/1.0" gender="" ref="">
         &lt;persName type="main">&lt;/persName>
         &lt;occupation>&lt;/occupation>
         &lt;birth when="">&lt;/birth>
@@ -1176,7 +1176,7 @@
 														<serializableOrderedMap>
 															<entry>
 																<String>fragment</String>
-																<String>&lt;personGrp xml:id="${xpath_eval(concat('lassberg-correspondent-', format-number(count(//person) + count(//personGrp) + 1, '0000')))}"  xmlns="http://www.tei-c.org/ns/1.0" ref="" type="">
+																<String>&lt;personGrp xml:id="${xpath_eval(concat('lassberg-correspondent-', format-number(count(//person) + count(//personGrp) + 2, '0000')))}"  xmlns="http://www.tei-c.org/ns/1.0" ref="" type="">
           &lt;persName type="main">&lt;/persName>
           &lt;ref target="">&lt;/ref>
 &lt;/personGrp></String>
@@ -1184,6 +1184,10 @@
 															<entry>
 																<String>insertLocation</String>
 																<String>.</String>
+															</entry>
+															<entry>
+																<String>insertPosition</String>
+																<String>Inside as last child</String>
 															</entry>
 														</serializableOrderedMap>
 													</field>
@@ -1243,6 +1247,114 @@
 													</field>
 													<field name="operationID">
 														<String>ro.sync.ecss.extensions.commons.operations.ChangeAttributesOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
+									</action>
+									<action>
+										<field name="id">
+											<String>lassberg-add-grimms</String>
+										</field>
+										<field name="name">
+											<String>Grimms einfügen</String>
+										</field>
+										<field name="description">
+											<String></String>
+										</field>
+										<field name="largeIconPath">
+											<String></String>
+										</field>
+										<field name="smallIconPath">
+											<String></String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String></String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>elementLocation</String>
+																<String>.</String>
+															</entry>
+															<entry>
+																<String>name</String>
+																<String>key</String>
+															</entry>
+															<entry>
+																<String>value</String>
+																<String>../register/lassberg-persons.xml#lassberg-correspondent-0362 ../register/lassberg-persons.xml#lassberg-correspondent-0170</String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.ChangeAttributeOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
+									</action>
+									<action>
+										<field name="id">
+											<String>lassberg-add-twins</String>
+										</field>
+										<field name="name">
+											<String>Zwillinge einfügen</String>
+										</field>
+										<field name="description">
+											<String></String>
+										</field>
+										<field name="largeIconPath">
+											<String></String>
+										</field>
+										<field name="smallIconPath">
+											<String></String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String></String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>elementLocation</String>
+																<String>.</String>
+															</entry>
+															<entry>
+																<String>name</String>
+																<String>key</String>
+															</entry>
+															<entry>
+																<String>value</String>
+																<String>../register/lassberg-persons.xml#lassberg-correspondent-0584 ../register/lassberg-persons.xml#lassberg-correspondent-0585</String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.ChangeAttributeOperation</String>
 													</field>
 												</actionMode>
 											</actionMode-array>
@@ -1325,6 +1437,16 @@
 											<toolbarItem>
 												<field name="actionID">
 													<String>lassberg-register-letter-change-state</String>
+												</field>
+											</toolbarItem>
+											<toolbarItem>
+												<field name="actionID">
+													<String>lassberg-add-twins</String>
+												</field>
+											</toolbarItem>
+											<toolbarItem>
+												<field name="actionID">
+													<String>lassberg-add-grimms</String>
 												</field>
 											</toolbarItem>
 										</toolbarEntry-array>
@@ -1413,7 +1535,91 @@
 						</documentTypeRule-array>
 					</field>
 					<field name="scenarios">
-						<scenario-array/>
+						<scenario-array>
+							<scenario>
+								<field name="advancedOptionsMap">
+									<null/>
+								</field>
+								<field name="name">
+									<String>Brief zu HTML</String>
+								</field>
+								<field name="baseURL">
+									<String></String>
+								</field>
+								<field name="footerURL">
+									<String></String>
+								</field>
+								<field name="fOPMethod">
+									<String>pdf</String>
+								</field>
+								<field name="fOProcessorName">
+									<String>Apache FOP</String>
+								</field>
+								<field name="headerURL">
+									<String></String>
+								</field>
+								<field name="inputXSLURL">
+									<String>${framework}/xslt/letter-to-html.xsl</String>
+								</field>
+								<field name="inputXMLURL">
+									<String>${currentFileURL}</String>
+								</field>
+								<field name="defaultScenario">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="isFOPPerforming">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="type">
+									<String>XSL</String>
+								</field>
+								<field name="saveAs">
+									<Boolean>true</Boolean>
+								</field>
+								<field name="openInBrowser">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="outputResource">
+									<String>${pd}/html/letter/${cfn}.html</String>
+								</field>
+								<field name="openOtherLocationInBrowser">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="locationToOpenInBrowserURL">
+									<null/>
+								</field>
+								<field name="openInEditor">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="showInHTMLPane">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="showInXMLPane">
+									<Boolean>true</Boolean>
+								</field>
+								<field name="showInSVGPane">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="showInResultSetPane">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="useXSLTInput">
+									<Boolean>true</Boolean>
+								</field>
+								<field name="xsltParams">
+									<list/>
+								</field>
+								<field name="cascadingStylesheets">
+									<String-array/>
+								</field>
+								<field name="xslTransformer">
+									<String>Saxon-PE</String>
+								</field>
+								<field name="extensionURLs">
+									<String-array/>
+								</field>
+							</scenario>
+						</scenario-array>
 					</field>
 					<field name="validationScenarios">
 						<validationScenario-array/>
@@ -1422,7 +1628,9 @@
 						<null/>
 					</field>
 					<field name="defaultTransformationScenarios">
-						<null/>
+						<list>
+							<String>Brief zu HTML</String>
+						</list>
 					</field>
 					<field name="extensionsBundleClassName">
 						<null/>

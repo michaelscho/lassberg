@@ -1,0 +1,233 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1868">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Wilhelm Wackernagel an Joseph von Laßberg (26.08.1836).</title>
+                <respStmt xml:id="MiS">
+                    <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Textfassung auf Basis der Transkription durch Transkribus korrigiert und in TEI
+                    überführt. Automatisierte NER-Erkennung und Identifikation durch Flair geprüft,
+                    korrigiert und ergänzt. Normalisierung, Zusammenfassung und Übersetzung durch
+                    GPT-4. Lizenz: </p>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY
+                        4.0</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Basel</settlement>
+                        <repository>Staatsarchiv des Kantons Basel-Stadt</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">2545</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates> <bibl type="printed"><ref/></bibl> </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1868">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0367"
+                        ref="https://d-nb.info/gnd/118805851">Wilhelm Wackernagel</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0019"
+                        >Basel</placeName>
+                    <date when="1836-08-26">26.08.1836</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373"
+                        ref="https://d-nb.info/gnd/118778862">Joseph von Laßberg</persName>
+
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned"> <ref type="cmif:mentionsBibl"
+                    target="../register/lassberg-literature.xml#lassberg-literature-0121"
+                    ><rs>Deutsches Lesebuch</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0179"><rs>Johann
+                    Adam Pupikofer</rs></ref> <ref type="cmif:mentionsPlace"
+                    target="../register/lassberg-places.xml#lassberg-place-0141"><rs>St.
+                    Gallen</rs></ref> <ref type="cmif:mentionsPlace"
+                    target="../register/lassberg-places.xml#lassberg-place-0043"
+                    ><rs>Eppishausen</rs></ref> </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2025-03-06" who="#MiS" status="done">Text recognized by
+                    Transkribus</change>
+                <change when="2025-03-06" who="#MiS" status="done">Text corrected in
+                    Transkribus</change>
+                <change when="2025-03-06" who="#MiS" status="done">Exported from
+                    Transkribus</change>
+                <change when="2025-03-06" who="#MiS" status="done">Automatic NER</change>
+                <change when="2025-03-06" who="#MiS" status="done">Automatic normalization,
+                    translation and summary</change>
+                <change when="2025-03-06" who="#MiS" status="done">Manual markup and
+                    proofreading</change>
+                <change when="2025-03-06" who="#MiS" status="done">Finished markup</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="original" resp="#transkribus #MiS">
+                <p><pb n="1" corresp="../pagexml/1868/1868-1.xml"/><lb
+                    xml:id="lassberg-letter-1868-1-1" n="1" corresp="line_1734280793513_939"/>Basel
+                    26. August 1836 <lb xml:id="lassberg-letter-1868-1-2" n="2" corresp="tr_1_tl_1"
+                    />Hochverehrter Herr Freyherr, <lb xml:id="lassberg-letter-1868-1-3" n="3"
+                    corresp="tr_1_tl_2"/>es war mir eine grosse Freude und die liebste überraschung
+                    die mir werden konnte, <lb xml:id="lassberg-letter-1868-1-4" n="4"
+                    corresp="tr_1_tl_3"/>als ich vor vierzehn Tagen bei meiner Rückehr von einer
+                    Ferienreise Ihren Brief <lb xml:id="lassberg-letter-1868-1-5" n="5"
+                    corresp="tr_1_tl_4"/>vorfand, den ersten nach langer Unterbrechung. Nun waren
+                    jahrelange drückende <lb xml:id="lassberg-letter-1868-1-6" n="6"
+                    corresp="tr_1_tl_5"/>Besorgnisse mit einem Mahle gehoben: ich sah, dass ich Ihre
+                    wohlwollende Gesinnung <lb xml:id="lassberg-letter-1868-1-7" n="7"
+                    corresp="tr_1_tl_6"/>gegen mich, die mir so sehr viel werth ist, nicht
+                    verscherzt hatte, wenn auch in <lb xml:id="lassberg-letter-1868-1-8" n="8"
+                    corresp="tr_1_tl_7"/>etwas gekrännt und verlezt. Aber auch dieses, weiß Gott,
+                    und Sie selber wissen <lb xml:id="lassberg-letter-1868-1-9" n="9"
+                    corresp="tr_1_tl_8"/>es, insofern ganz ohne meine Schuld, als ich bei jener <rs
+                    type="bibl" key="../register/lassberg-literature.xml#lassberg-literature-0121"
+                    >Zueignung</rs> grade das <lb xml:id="lassberg-letter-1868-1-10" n="10"
+                    corresp="tr_1_tl_9"/>Gegentheil gewollt und gemeint hatte, als ich auch gar
+                    nicht beabsichtigt <lb xml:id="lassberg-letter-1868-1-11" n="11"
+                    corresp="tr_1_tl_10"/>Ihnen vor dem Volk eine Ehre, sondern nur vor aller Welt
+                    Ihnen meinen auf <lb break="no" xml:id="lassberg-letter-1868-1-12" n="12"
+                    corresp="tr_1_tl_11"/>richtigen und herrlichen Dank zu bezeugen. Denn daß mit
+                    dergleichen öffent <lb break="no" xml:id="lassberg-letter-1868-1-13" n="13"
+                    corresp="tr_1_tl_12"/>lichen Ehrungen einem Manne von Ehre eigentlich gar nicht
+                    gedient sey, das <lb xml:id="lassberg-letter-1868-1-14" n="14"
+                    corresp="tr_1_tl_13"/>wuste ich sehr wohl. Nun, verzeihen Sie mir! Aber Sie
+                    haben es schon. <lb xml:id="lassberg-letter-1868-1-15" n="15"
+                    corresp="tr_1_tl_14"/>Von dem Unglück das Sie erlebt haben sich so ernstlich zu
+                    beschödigen, hatte <lb xml:id="lassberg-letter-1868-1-16" n="16"
+                    corresp="tr_1_tl_15"/>mir bereits H. Diac. <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0179"
+                    >Pupikofer</rs> erzählt, und es that mir nun Leid, aus Ihrem <lb
+                    xml:id="lassberg-letter-1868-1-17" n="17" corresp="tr_1_tl_16"/>Briefe <pb n="2"
+                    corresp="../pagexml/1868/1868-2.xml"/><lb xml:id="lassberg-letter-1868-2-1"
+                    n="1" corresp="tr_1_tl_1"/>Briefe nichts von Fortschritten der Besserung zu
+                    erfahren. Jezt hoffe ich sey <lb xml:id="lassberg-letter-1868-2-2" n="2"
+                    corresp="tr_1_tl_2"/>aber alles wieder gut: ich traue auf Baden und auf die
+                    häusliche Glückse <lb break="no" xml:id="lassberg-letter-1868-2-3" n="3"
+                    corresp="tr_1_tl_3"/>ligkeit die Sie so wohlthuend umgiebt. Allen Segen Gottes
+                    über Sie und Ihr <lb xml:id="lassberg-letter-1868-2-4" n="4" corresp="tr_1_tl_4"
+                    />Haus und Ihre Familie! ich freue mich recht darauf, Sie im Herbste, <lb
+                    xml:id="lassberg-letter-1868-2-5" n="5" corresp="tr_1_tl_5"/>falls ich nach <rs
+                    type="place" key="../register/lassberg-places.xml#lassberg-place-0141">S.
+                    Gallen</rs> reise, heimsuchen zu dürfen. <lb xml:id="lassberg-letter-1868-2-6"
+                    n="6" corresp="tr_1_tl_6"/>Beiliegend erhalten Sie eine gute Kampfel, den <rs
+                    type="bibl" key="../register/lassberg-literature.xml#lassberg-literature-0121"
+                    >zweyten Theil des Lesebuches</rs>. <lb xml:id="lassberg-letter-1868-2-7" n="7"
+                    corresp="tr_1_tl_7"/>Lassen Sie Sich denselben wohl gefallen, und mich auch
+                    gelegentlich erfahren <lb xml:id="lassberg-letter-1868-2-8" n="8"
+                    corresp="tr_1_tl_8"/>ob er Ihnen gefalle. Über den ersten bin ich nun um Ihr
+                    Urtheil gekommen; <lb xml:id="lassberg-letter-1868-2-9" n="9"
+                    corresp="tr_1_tl_9"/>und doch wie viel könnte es mir nützen, da ich im Winter
+                    höchst wahrscheinlich <lb xml:id="lassberg-letter-1868-2-10" n="10"
+                    corresp="tr_1_tl_10"/>an eine zweyte Auflage muß, eben deren wegen ich auch nach
+                    <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0141">S.
+                    Gallen</rs> reisen <lb xml:id="lassberg-letter-1868-2-11" n="11"
+                    corresp="tr_1_tl_11"/>will. Vielleicht lassen Sie mir auch in <rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs> noch
+                    diess und jenes <lb xml:id="lassberg-letter-1868-2-12" n="12"
+                    corresp="tr_1_tl_12"/>dafür in die Hand wachsen. <lb
+                    xml:id="lassberg-letter-1868-2-13" n="13" corresp="tr_1_tl_13"/>Noch einmal
+                    meinen herzlichen Dank für Ihr "Gehe hin und sündige nicht <lb
+                    xml:id="lassberg-letter-1868-2-14" n="14" corresp="tr_1_tl_14"/>mehr!" und meine
+                    besten Wünsche für Sie und die Ihrigen. <lb xml:id="lassberg-letter-1868-2-15"
+                    n="15" corresp="tr_1_tl_15"/>In Ergebenheit Ihnen zugethan <lb
+                    xml:id="lassberg-letter-1868-2-16" n="16" corresp="tr_1_tl_16"/>Wih. Wackenagel
+                    Dr. <pb n="3" corresp="../pagexml/1868/1868-3.xml"/><lb
+                    xml:id="lassberg-letter-1868-3-1" n="1" corresp="line_1734280793513_939"/>Basel
+                </p>
+            </div>
+            <div type="normalized" resp="#GPT4">
+                <p>Basel, 26. August 1836 Hochverehrter Herr Freiherr, es war mir eine große Freude
+                    und die liebste Überraschung, die mir werden konnte, als ich vor vierzehn Tagen
+                    bei meiner Rückkehr von einer Ferienreise Ihren Brief vorfand, den ersten nach
+                    langer Unterbrechung. Nun waren jahrelange drückende Besorgnisse mit einem Male
+                    gehoben: Ich sah, dass ich Ihre wohlwollende Gesinnung gegen mich, die mir so
+                    sehr viel wert ist, nicht verscherzt hatte, wenn auch in etwas gekränkt und
+                    verletzt. Aber auch dieses, weiß Gott, und Sie selber wissen es, insofern ganz
+                    ohne meine Schuld, als ich bei jener Zueignung gerade das Gegenteil gewollt und
+                    gemeint hatte, als ich auch gar nicht beabsichtigt, Ihnen vor dem Volk eine
+                    Ehre, sondern nur vor aller Welt Ihnen meinen aufrichtigen und herzlichen Dank
+                    zu bezeugen. Denn dass mit dergleichen öffentlichen Ehrungen einem Manne von
+                    Ehre eigentlich gar nicht gedient sei, das wusste ich sehr wohl. Nun, verzeihen
+                    Sie mir! Aber Sie haben es schon. Von dem Unglück, das Sie erlebt haben, sich so
+                    ernstlich zu beschädigen, hatte mir bereits H. Diac. Pupikofer erzählt, und es
+                    tat mir nun Leid, aus Ihrem Briefe nichts von Fortschritten der Besserung zu
+                    erfahren. Jetzt hoffe ich, sei aber alles wieder gut: Ich traue auf Baden und
+                    auf die häusliche Glückseligkeit, die Sie so wohltuend umgibt. Allen Segen
+                    Gottes über Sie und Ihr Haus und Ihre Familie! Ich freue mich recht darauf, Sie
+                    im Herbst, falls ich nach St. Gallen reise, heimsuchen zu dürfen. Beiliegend
+                    erhalten Sie eine gute Kampfel, den zweiten Teil des Lesebuches. Lassen Sie Sich
+                    denselben wohl gefallen, und mich auch gelegentlich erfahren, ob er Ihnen
+                    gefalle. Über den ersten bin ich nun um Ihr Urteil gekommen; und doch wie viel
+                    könnte es mir nützen, da ich im Winter höchstwahrscheinlich an eine zweite
+                    Auflage muss, eben deren wegen ich auch nach St. Gallen reisen will. Vielleicht
+                    lassen Sie mir auch in Eppishausen noch dies und jenes dafür in die Hand
+                    wachsen. Noch einmal meinen herzlichen Dank für Ihr "Gehe hin und sündige nicht
+                    mehr!" und meine besten Wünsche für Sie und die Ihrigen. In Ergebenheit Ihnen
+                    zugetan Wih. Wackernagel Dr.</p>
+            </div>
+            <div type="translation" resp="#GPT4">
+                <p>Basel, August 26, 1836 Highly esteemed Baron, It was a great pleasure and the
+                    most delightful surprise I could have received when, fourteen days ago, upon my
+                    return from a holiday trip, I found your letter, the first after a long
+                    interruption. Now, years of oppressive concerns were instantly lifted: I saw
+                    that I had not forfeited your benevolent disposition towards me, which is so
+                    very valuable to me, even though it might have been slightly strained and hurt.
+                    But even this, God knows, and you yourself know, was entirely without my fault,
+                    as with that dedication I intended and meant precisely the opposite, as I did
+                    not at all intend to bestow you an honor before the people, but only to express
+                    my sincere and wonderful thanks to you before the whole world. For I knew very
+                    well that such public honors do not actually serve a man of honor. Well, forgive
+                    me! But you have already done so. Mr. Diac. Pupikofer had already told me about
+                    the misfortune that you had experienced and how seriously it impacted you, and I
+                    was sorry to learn from your letter that there were no reports of improvements.
+                    Now I hope everything is fine again: I trust in Baden and in the domestic
+                    happiness that surrounds you so pleasantly. May all God's blessings be upon you
+                    and your house and family! I am really looking forward to visiting you in the
+                    fall if I travel to St. Gallen. Enclosed you will receive a good Kampfel, the
+                    second part of the reading book. May it please you well, and let me occasionally
+                    know whether you like it. I have now come to await your judgment on the first;
+                    and yet how much it could benefit me, since I will most likely have to undertake
+                    a second edition in the winter, for which reason I also want to travel to St.
+                    Gallen. Perhaps you will let this and that grow in my hand in Eppishausen for
+                    it. Once more, my heartfelt thanks for your "Go and sin no more!" and my best
+                    wishes for you and yours. Devotedly yours, Wih. Wackenagel Dr.</p>
+            </div>
+            <div type="summary" resp="#GPT4">
+                <p>Wackernagel freut sich über Laßbergs lange erwarteten Brief nach einer Zeit der
+                    Funkstille, da er befürchtet hatte, dessen Wohlwollen verloren zu haben. Er
+                    betont, dass eine frühere Widmung seinerseits keinesfalls als unpassende
+                    öffentliche Ehrung gedacht war, sondern lediglich als ehrlicher Dank, und bittet
+                    um Verzeihung für etwaige Missverständnisse. Er spricht Laßberg sein Mitgefühl
+                    für eine Verletzung aus, von der er bereits durch Diakon Pupikofer erfahren
+                    hatte, und hofft, dass sich sein Zustand durch Kuren und das häusliche Glück
+                    verbessert hat. Wackernagel kündigt an, Laßberg möglicherweise im Herbst zu
+                    besuchen, falls er nach St. Gallen reist. Dem Brief liegt der zweite Teil seines
+                    Lesebuchs bei, über den er gerne Laßbergs Meinung hören würde, da er
+                    voraussichtlich im Winter eine zweite Auflage vorbereitet. Er hofft, dass er bei
+                    Laßbergs Bibliothek in Eppishausen noch hilfreiche Materialien für seine Arbeit
+                    finden könnte. Abschließend dankt er Laßberg für dessen verzeihende Haltung und
+                    sendet ihm und seiner Familie beste Wünsche.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

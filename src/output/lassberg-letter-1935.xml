@@ -1,0 +1,101 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1935">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Wilhelm Wackernagel (13.10.1837).</title>
+                <respStmt xml:id="MiS">
+                    <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 und GPT-4 normalisiert, zusammengefasst und übersetzt.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Basel</settlement>
+                        <repository>Staatsarchiv des Kantons Basel-Stadt</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">943</idno>
+                        <idno type="register-lassberg">173</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Wackernagel: Albert Leitzmann, Briefe aus dem Nachlaß Wilhelm Wackernagels. VI.: Briefe von Joseph von Laßberg. In: Abhandlungen der phil.-hist. Klasse der Kgl. Sächsischen Gesellschaft der Wissenschaften 34,1. Leipzig 1916, S. 92-130, S. 114<ref>-</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1935">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862">Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1837-10-13">13.10.1837</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0367" ref="https://d-nb.info/gnd/118805851">Wilhelm Wackernagel</persName>
+                    
+                </correspAction>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <!--<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-{PERS_NUMBER}"><rs>{ORIGINAL_STRING_MENTION}</rs></ref>-->
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2025-02-27" who="#MiS" status="done">Text recognized by Transkribus</change>
+                <change when="2025-02-27" who="#MiS" status="done">Text corrected in Transkribus</change>
+                <change when="2025-02-27" who="#MiS" status="done">Exported from Transkribus</change>
+                <change when="2025-02-27" who="#MiS" status="done">Automatic NER</change>
+                <change when="2025-02-27" who="#MiS" status="done">Automatic normalization, translation and summary</change>
+                <change when="" who="" status="draft">Manual markup and proofreading</change>
+                <change when="" who="" status="draft">Finished markup</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="original" resp="#transkribus #MiS">
+                <p><pb n="1" corresp="../pagexml/1935/1935-1.xml"/><lb xml:id="lassberg-letter-1935-1-1" n="1" corresp="tr_1_tl_2"/>75 <lb xml:id="lassberg-letter-1935-1-2" n="2" corresp="tr_1_tl_3"/>Hochgeerter Herr Professor! <lb xml:id="lassberg-letter-1935-1-3" n="3" corresp="tr_1_tl_4"/>Als ich vor einiger zeit die nachricht von Irer krankheit erhielt, und wie schwer und heftig sie  <lb xml:id="lassberg-letter-1935-1-4" n="4" corresp="tr_1_tl_5"/>seie, da gab ich schon die hofnung auf, Sie im laufe dieses iares noch in der <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">villa Epponis</rs> zu <lb xml:id="lassberg-letter-1935-1-5" n="5" corresp="tr_1_tl_6"/>sehen: wie ser mussten mich also Ire gestern nachts erhaltenen zeilen von <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0166">Zürich</rs> erfreuen!  <lb xml:id="lassberg-letter-1935-1-6" n="6" corresp="tr_1_tl_7"/>Sie sind geheilt, und der beste balsam für leib und seele, ein liebes, frommes, teutsches weib, <lb xml:id="lassberg-letter-1935-1-7" n="7" corresp="tr_1_tl_8"/>liegt an Irer brust. kommen Sie also mit Irer geliebten frau, und seien Sie <rs type="person">Jenny</rs> und <lb xml:id="lassberg-letter-1935-1-8" n="8" corresp="tr_1_tl_9"/>mir herzlich willkommen. Sonntag und montag haben wir ein par iunge eheleute aus <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0141">S. Gallen</rs> <lb xml:id="lassberg-letter-1935-1-9" n="9" corresp="tr_1_tl_10"/>zu gaste; wenn Sie also nach <rs type="place">Irem</rs> vorhaben Dienstags kommen; so haben Sie uns dann <lb xml:id="lassberg-letter-1935-1-10" n="10" corresp="tr_1_tl_11"/>ganz allein. Meine frau grüsset mit mir Sie und die Irige, und damit gott befolen <lb xml:id="lassberg-letter-1935-1-11" n="11" corresp="tr_1_tl_12"/>von <rs type="place">Irem</rs> <lb xml:id="lassberg-letter-1935-1-12" n="12" corresp="tr_1_tl_14"/>ergebenen <lb xml:id="lassberg-letter-1935-1-13" n="13" corresp="tr_1_tl_16"/><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0373 ">JvLaßberg</rs>. <lb xml:id="lassberg-letter-1935-1-14" n="14" corresp="tr_1_tl_13"/><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs> am 13ten octobers. morgens 7 ur. <lb xml:id="lassberg-letter-1935-1-15" n="15" corresp="tr_1_tl_15"/>1837. <lb xml:id="lassberg-letter-1935-1-16" n="16" corresp="tr_1_tl_17"/>Noch eine bitte: grüssen Sie mir auch den guten <rs type="person">Aurelius Tigurinus</rs>, und den clarus <lb xml:id="lassberg-letter-1935-1-17" n="17" corresp="tr_1_tl_18"/><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0278">Okenius</rs>. </p>
+            </div>
+            <div type="normalized" resp="#GPT4">
+                <p>Hochgeehrter Herr Professor!  
+Als ich vor einiger Zeit die Nachricht von Ihrer Krankheit erhielt, und wie schwer und heftig sie sei, da gab ich schon die Hoffnung auf, Sie im Laufe dieses Jahres noch in der Villa Epponis zu sehen: wie sehr mussten mich also Ihre gestern nachts erhaltenen Zeilen von Zürich erfreuen!  
+Sie sind geheilt, und der beste Balsam für Leib und Seele, ein liebes, frommes, deutsches Weib, liegt an Ihrer Brust. Kommen Sie also mit Ihrer geliebten Frau, und seien Sie Jenny und mir herzlich willkommen. Sonntag und Montag haben wir ein paar junge Eheleute aus St. Gallen zu Gast; wenn Sie also nach Ihrem Vorhaben dienstags kommen, so haben Sie uns dann ganz allein. Meine Frau grüßt mit mir Sie und die Ihre, und damit Gott befohlen von Ihrem ergebenen  
+J. v. Laßberg.  
+Eppishausen am 13. Oktober, morgens 7 Uhr.  
+1837.  
+Noch eine Bitte: grüßen Sie mir auch den guten Aurelius Tigurinus und den klaren Okenius.</p>
+            </div>
+            <div type="translation" resp="#GPT4">
+                <p>Highly esteemed Professor!
+
+When I received news some time ago of your illness, and how severe and intense it was, I had already given up hope of seeing you in the Epponis villa this year. How delighted I was, then, by the lines from Zurich that I received from you last night! You are healed, and the best balm for body and soul, a dear, devout German wife, lies at your breast. So come with your beloved wife and be warmly welcomed by Jenny and me. Sunday and Monday we have a couple of young newlyweds from S. Gallen as guests; if you come on Tuesday as planned, then you will have us all to yourself. My wife and I send our regards to you and yours, and with that, may God bless you.
+
+From your devoted
+JvLaßberg.
+
+Eppishausen, on October 13th, 7 a.m.
+1837.
+
+One more request: please also give my regards to the good Aurelius Tigurinus and the esteemed Okenius.</p>
+            </div>
+            <div type="summary" resp="#GPT4">
+                <p>A man, JvLaßberg, writes to a professor expressing his initial concern after learning of the professor's severe illness. However, he is now overjoyed to hear of the professor's recovery, as conveyed in a recent letter received from Zurich. Laßberg attributes part of the recovery to the presence of the professor's loving and devout German wife. He warmly invites the professor and his wife to visit the villa Epponis, assuring them of a warm welcome from him and Jenny, his wife. He mentions that they will host a couple from Sankt Gallen on Sunday and Monday, suggesting the professor visit the following Tuesday to have them to themselves. The letter closes with greetings from Laßberg and his wife, and a request to send regards to friends Aurelius Tigurinus and Clarus Okenius. The letter is dated October 13, 1837, at 7 a.m. in Eppishausen.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

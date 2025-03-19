@@ -1,0 +1,453 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1787">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Wilhelm Wackernagel (27.06.1834).</title>
+                <respStmt xml:id="MiS">
+                    <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Textfassung auf Basis der Transkription durch Transkribus korrigiert und in TEI
+                    überführt. Automatisierte NER-Erkennung und Identifikation durch Flair geprüft,
+                    korrigiert und ergänzt. Normalisierung, Zusammenfassung und Übersetzung durch
+                    GPT-4. Lizenz: </p>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY
+                        4.0</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Basel</settlement>
+                        <repository>Staatsarchiv des Kantons Basel-Stadt</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">869</idno>
+                        <idno type="register-lassberg">112</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates> <bibl type="printed">Wackernagel: Albert Leitzmann, Briefe aus
+                            dem Nachlaß Wilhelm Wackernagels. VI.: Briefe von Joseph von Laßberg.
+                            In: Abhandlungen der phil.-hist. Klasse der Kgl. Sächsischen
+                            Gesellschaft der Wissenschaften 34,1. Leipzig 1916, S. 92-130, S.
+                            108<ref>-</ref></bibl> </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1787">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373"
+                        ref="https://d-nb.info/gnd/118778862">Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043"
+                        >Eppishausen</placeName>
+                    <date when="1834-06-27">27.06.1834</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0367"
+                        ref="https://d-nb.info/gnd/118805851">Wilhelm Wackernagel</persName>
+
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned"> <ref type="cmif:mentionsBibl"
+                    target="../register/lassberg-literature.xml#lassberg-literature-0132"
+                    ><rs>Minnesinger. Deutsche Liederdichter des zwölften, dreizehnten und
+                    vierzehnten Jahrhunderts, aus allen bekannten Handschriften und früheren
+                    Drucken</rs></ref> <ref type="cmif:mentionsBibl"
+                    target="../register/lassberg-literature.xml#lassberg-literature-0179"
+                    ><rs>Gauriel von Muntabel</rs></ref> <ref type="cmif:mentionsBibl"
+                    target="../register/lassberg-literature.xml#lassberg-literature-0175"
+                    ><rs>Minneburg (Reimfassung)</rs></ref> <ref type="cmif:mentionsBibl"
+                    target="../register/lassberg-literature.xml#lassberg-literature-0184"
+                    ><rs>Geistlich Artzney Für Ketzergifft vnd jetziger zeit böse Lüfft</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                    target="../register/lassberg-literature.xml#lassberg-literature-0185"
+                    ><rs>Geistlicher Fastnachtskrapfen</rs></ref> <ref type="cmif:mentionsBibl"
+                    target="../register/lassberg-literature.xml#lassberg-literature-0121"
+                    ><rs>Deutsches Lesebuch</rs></ref> <ref type="cmif:mentionsBibl"
+                    target="../register/lassberg-literature.xml#lassberg-literature-0186"
+                    ><rs>Vridankes Bescheidenheit, hrsg. von Wilhelm Grimm.</rs></ref> <ref
+                    type="cmif:mentionsBibl"
+                    target="../register/lassberg-literature.xml#lassberg-literature-0022"
+                    ><rs>Lieder-Saal, das ist: Sammelung altteutscher Gedichte</rs></ref> <ref
+                    type="cmif:mentionsBibl"
+                    target="../register/lassberg-literature.xml#lassberg-literature-0180"
+                    ><rs>Sprüche</rs></ref> <ref type="cmif:mentionsBibl"
+                    target="../register/lassberg-literature.xml#lassberg-literature-0187"
+                    ><rs>Martina</rs></ref> <ref type="unknownType" target=""><rs>Unknown</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0119"
+                    ><rs>Friedrich Heinrich von der Hagen</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0645"><rs>Egen
+                    von Bamberg</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0151"
+                    ><rs>Heinrich Friedrich Otto Abel</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0601"><rs>Ulrich
+                    von Liechtenstein</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0316"><rs>Orell
+                    Füssli</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0434"
+                    ><rs>Christoph Heinrich Myller</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0623"><rs>Konrad
+                    von St. Gallen</rs></ref> <ref type="cmif:mentionsPlace"
+                    target="../register/lassberg-places.xml#lassberg-place-0297"
+                    ><rs>Niederdeutschland</rs></ref> <ref type="cmif:mentionsPlace"
+                    target="../register/lassberg-places.xml#lassberg-place-0053"
+                    ><rs>Göttingen</rs></ref> <ref type="cmif:mentionsPlace"
+                    target="../register/lassberg-places.xml#lassberg-place-0147"
+                    ><rs>Stuttgart</rs></ref> <ref type="cmif:mentionsPlace"
+                    target="../register/lassberg-places.xml#lassberg-place-0113"
+                    ><rs>Paris</rs></ref> <ref type="cmif:mentionsPlace"
+                    target="../register/lassberg-places.xml#lassberg-place-0019"
+                    ><rs>Basel</rs></ref> <ref type="cmif:mentionsPlace"
+                    target="../register/lassberg-places.xml#lassberg-place-0166"
+                    ><rs>Zürich</rs></ref> <ref type="cmif:mentionsPlace"
+                    target="../register/lassberg-places.xml#lassberg-place-0188"
+                    ><rs>Schwaben</rs></ref> <ref type="cmif:mentionsPlace"
+                    target="../register/lassberg-places.xml#lassberg-place-0298"
+                    ><rs>Mainau</rs></ref> <ref type="cmif:mentionsPlace"
+                    target="../register/lassberg-places.xml#lassberg-place-0082"
+                    ><rs>Konstanz</rs></ref> </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2025-03-07" who="#MiS" status="done">Text recognized by
+                    Transkribus</change>
+                <change when="2025-03-07" who="#MiS" status="done">Text corrected in
+                    Transkribus</change>
+                <change when="2025-03-07" who="#MiS" status="done">Exported from
+                    Transkribus</change>
+                <change when="2025-03-07" who="#MiS" status="done">Automatic NER</change>
+                <change when="2025-03-07" who="#MiS" status="done">Automatic normalization,
+                    translation and summary</change>
+                <change when="2025-03-07" who="#MiS" status="done">Manual markup and
+                    proofreading</change>
+                <change when="2025-03-07" who="#MiS" status="done">Finished markup</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="original" resp="#transkribus #MiS">
+                <p><pb n="1" corresp="../pagexml/1787/1787-1.xml"/><lb
+                    xml:id="lassberg-letter-1787-1-1" n="1" corresp="tr_2_tl_2"/>Eppishaus am 27.
+                    Juny 1834. <lb xml:id="lassberg-letter-1787-1-2" n="2" corresp="tr_2_tl_3"
+                    />Hochzuvererender Herr Professor! <lb xml:id="lassberg-letter-1787-1-3" n="3"
+                    corresp="tr_2_tl_4"/>Mit Freude habe ich gestern abend gelesen, daß meine lezte
+                    Sendung <lb xml:id="lassberg-letter-1787-1-4" n="4" corresp="tr_2_tl_5"/>Inen so
+                    willkommen war, und beeile mich hiebei auch die beiden <lb
+                    xml:id="lassberg-letter-1787-1-5" n="5" corresp="tr_2_tl_6"/>weitern sachen zu
+                    senden, i. e. die <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0132">leben der
+                    dichter</rs> von <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0119">von der
+                    Hagen</rs>, <lb xml:id="lassberg-letter-1787-1-6" n="6" corresp="tr_2_tl_7"/>und
+                    der <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0179">gabriel v.
+                    Montavel</rs>, welchem auch noch aus <rs type="object" key="">meiner <lb
+                    xml:id="lassberg-letter-1787-1-7" n="7" corresp="tr_2_tl_8"/>eigenen
+                    Handschrift</rs>, ein apographum, der <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0175"
+                    >Minneburg</rs> durch <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0645">meister <lb
+                    xml:id="lassberg-letter-1787-1-8" n="8" corresp="tr_2_tl_9"/>Egen von
+                    Bamberg</rs>, beigebunden ist; vielleicht können sie auch aus <lb
+                    xml:id="lassberg-letter-1787-1-9" n="9" corresp="tr_2_tl_10"/>diesem gedichte
+                    etwas brauchen; recht gerne hätte ich nun noch <lb
+                    xml:id="lassberg-letter-1787-1-10" n="10" corresp="tr_2_tl_11"/>meres geschickt;
+                    aber ich fürchtete, es möchte sie zulezt ermüden, <lb
+                    xml:id="lassberg-letter-1787-1-11" n="11" corresp="tr_2_tl_12"/>wenn ich all zu
+                    starke sendungen mache. Wenn Sie die <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0184">geistl.
+                    Artzney</rs> <lb xml:id="lassberg-letter-1787-1-12" n="12" corresp="tr_2_tl_13"
+                    />und die <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0185"
+                    >Faßtnanchtskrapfen</rs> gefälligst wollten abschreiben lassen; so wäre es <lb
+                    xml:id="lassberg-letter-1787-1-13" n="13" corresp="tr_2_tl_14"/>mir lieb die
+                    gesandten abschriften wieder zurück zu erhalten; denn ich <lb
+                    xml:id="lassberg-letter-1787-1-14" n="14" corresp="tr_2_tl_15"/>komme iezt nur
+                    mer mit mühe und anstrengung daran, etwas zum <lb
+                    xml:id="lassberg-letter-1787-1-15" n="15" corresp="tr_2_tl_16"/>zweiten mal
+                    abzuschreiben. <lb xml:id="lassberg-letter-1787-1-16" n="16"
+                    corresp="tr_2_tl_17"/>Ich hoffe in drei wochen wieder von meiner reise nach <rs
+                    type="place" key="../register/lassberg-places.xml#lassberg-place-0297"
+                    >Niederdeutschland</rs> <lb xml:id="lassberg-letter-1787-1-17" n="17"
+                    corresp="tr_2_tl_18"/>zurückzukommen und meine weinlese selbst zu halten; in 14
+                    tagen <lb xml:id="lassberg-letter-1787-1-18" n="18" corresp="tr_2_tl_19"/>denke
+                    ich abzugehen; wenn Sie mir also einige probebogen von <lb
+                    xml:id="lassberg-letter-1787-1-19" n="19" corresp="tr_2_tl_20"/>Irem <rs
+                    type="bibl" key="../register/lassberg-literature.xml#lassberg-literature-0121"
+                    >Lesebuch</rs> mit geben wollen, um sie in <rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0053">Göttingen</rs>
+                    abzugeben; so <lb xml:id="lassberg-letter-1787-1-20" n="20" corresp="tr_2_tl_21"
+                    />bitte ich sie nicht zu versiegeln, damit post- und maut- beamte <lb
+                    xml:id="lassberg-letter-1787-1-21" n="21" corresp="tr_2_tl_22"/>sich nicht
+                    darein zu mischen haben. <pb n="2" corresp="../pagexml/1787/1787-2.xml"/><lb
+                    xml:id="lassberg-letter-1787-2-1" n="1" corresp="tr_1_tl_1"/>Ich erhalte eben
+                    einen brief von herrn ober tribunal procurator <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0151">Abel</rs> aus
+                    <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0147"
+                    >Stuttgart</rs>, <lb xml:id="lassberg-letter-1787-2-2" n="2" corresp="tr_1_tl_2"
+                    />nebst einem an in geschriebenen von herrn Professor <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0119">von der
+                    Hagen</rs>. <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0151">Abel</rs>
+                    hatte in <rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0113">Paris</rs> <lb
+                    xml:id="lassberg-letter-1787-2-3" n="3" corresp="tr_1_tl_3"/>die bilder aus dem
+                    sogenannten <rs type="object" key="">Manessischen Codex</rs> abgezeichnet und
+                    ist wirk <lb break="no" xml:id="lassberg-letter-1787-2-4" n="4"
+                    corresp="tr_1_tl_4"/>lich daran sie in colorirtem steindruke zu geben, 18 stüke
+                    sind <lb xml:id="lassberg-letter-1787-2-5" n="5" corresp="tr_1_tl_5"/>schon
+                    fertig; dies erfur nun herr <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0119">von der
+                    Hagen</rs> und schreibt iezt an <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0151">Abel</rs>:
+                    <lb xml:id="lassberg-letter-1787-2-6" n="6" corresp="tr_1_tl_6"/>er wünscht mit
+                    ime rüksichtlich derbilder eine vereinbarung zu treffen; <lb
+                    xml:id="lassberg-letter-1787-2-7" n="7" corresp="tr_1_tl_7"/>indem er gesinnt
+                    seie dieselben ebenfalls, mit einem texte heraus zu <lb break="no"
+                    xml:id="lassberg-letter-1787-2-8" n="8" corresp="tr_1_tl_8"/>geben, welcher ein
+                    auszug aus den dichterleben sein würde. meint H. <lb
+                    xml:id="lassberg-letter-1787-2-9" n="9" corresp="tr_1_tl_9"/><rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0119">von der
+                    Hagen</rs> im ernste, <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0151">Abel</rs>
+                    werde eine schon angefangene edition <lb xml:id="lassberg-letter-1787-2-10"
+                    n="10" corresp="tr_1_tl_10"/>im zu liebe /: den er gar nicht kennet; sonst würde
+                    ers noch weniger tun :/ auf <lb xml:id="lassberg-letter-1787-2-11" n="11"
+                    corresp="tr_1_tl_11"/>geben; so ist er warlich ein einfältiger mann; verstehet
+                    er aber unter <lb xml:id="lassberg-letter-1787-2-12" n="12" corresp="tr_1_tl_12"
+                    />der vereinbarung der bilder, dass sie sich ausschliessend mit seiner werten
+                    <lb xml:id="lassberg-letter-1787-2-13" n="13" corresp="tr_1_tl_13"/>person
+                    vereinbaren sollen; so ist er vollends nicht klug. <lb
+                    xml:id="lassberg-letter-1787-2-14" n="14" corresp="tr_1_tl_14"/><rs
+                    type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0151"
+                    >Abel</rs> hat mir nun die sache zur entscheidung heimgestellt, was mir gerade
+                    nicht <lb xml:id="lassberg-letter-1787-2-15" n="15" corresp="tr_1_tl_15"/>viel
+                    freude macht; denn auf einer seite wünsche ich schon lange daß <lb
+                    xml:id="lassberg-letter-1787-2-16" n="16" corresp="tr_1_tl_16"/>die fraglichen
+                    bilder einmal zusammen herauskommen möchten; auf der an <lb break="no"
+                    xml:id="lassberg-letter-1787-2-17" n="17" corresp="tr_1_tl_17"/>dern seite ist
+                    herr <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0119">von der
+                    Hagen</rs> gar nicht der mann dazu die archaeologische <lb
+                    xml:id="lassberg-letter-1787-2-18" n="18" corresp="tr_1_tl_18"/>seite dieser
+                    aufgabe zu lösen. ich denke sonst wol durchaus: wenn das <lb
+                    xml:id="lassberg-letter-1787-2-19" n="19" corresp="tr_1_tl_19"/>gute nur
+                    geschiehet, gleich viel durch wen; aber ich fürchte hier <lb
+                    xml:id="lassberg-letter-1787-2-20" n="20" corresp="tr_1_tl_20"/>ist von ime wol
+                    nichts gutes zu erwarten. In den dichterleben <lb
+                    xml:id="lassberg-letter-1787-2-21" n="21" corresp="tr_1_tl_21"/>schien mir
+                    unzweifelhaft, dass die anmerkungen zum <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0601">Ulrich von
+                    Lichten <lb xml:id="lassberg-letter-1787-2-22" n="22" corresp="tr_1_tl_22"
+                    />stein</rs> von einem Österreicher /: Kopitar :/ oder steiermärker /: Kalchberg
+                    :/ <lb xml:id="lassberg-letter-1787-2-23" n="23" corresp="tr_1_tl_23"/>herkommen
+                    müssen. Die so stark divergierenden taxationen der <rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0019">Basler</rs> kunst <lb
+                    break="no" xml:id="lassberg-letter-1787-2-24" n="24" corresp="tr_1_tl_24"
+                    />sammelung habe ich in der zeitung gelesen. soweit sie mir, obschon flüchtig,
+                    in <lb xml:id="lassberg-letter-1787-2-25" n="25" corresp="tr_1_tl_25"/>in
+                    verschiedenen malen bekannt wurde, scheint mir dass der Basler taxator dieselbe
+                    <lb xml:id="lassberg-letter-1787-2-26" n="26" corresp="tr_1_tl_26"/>näher an
+                    einen kaufwert gestellt habe als der <rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0166">Zürcher</rs> <rs
+                    type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0316"
+                    >Fuessly</rs>. es ist eben so ver <pb n="3" corresp="../pagexml/1787/1787-3.xml"
+                    /><lb break="no" xml:id="lassberg-letter-1787-3-1" n="1" corresp="tr_1_tl_2"
+                    />ächtlich, als gemein boshaft, wie man die <rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0019">Basler</rs> an einem
+                    langsamen feuer <lb xml:id="lassberg-letter-1787-3-2" n="2" corresp="tr_1_tl_3"
+                    />bratet. <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0186">W. Grimms
+                    Frydanck</rs> ist noch nicht ausgegeben; <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0434">Müllers</rs>
+                    ab <lb xml:id="lassberg-letter-1787-3-3" n="3" corresp="tr_1_tl_4"/>druk aus
+                    einer schönen Handschrift ist strozend von felern; in den <lb
+                    xml:id="lassberg-letter-1787-3-4" n="4" corresp="tr_1_tl_5"/>drei ersten bänden
+                    des <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0022"
+                    >Liedersaales</rs> stehet mer als die hälfte von <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0180">Fry <lb
+                    xml:id="lassberg-letter-1787-3-5" n="5" corresp="tr_1_tl_6"/>gedank</rs>, <rs
+                    type="object" key="">meine handschrift</rs> ist von 1312, gehört also zu den
+                    ältesten <lb xml:id="lassberg-letter-1787-3-6" n="6" corresp="tr_1_tl_7"
+                    />codices des <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0180"
+                    >Freidanks</rs>; soll ich Inen den <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0022"
+                    >Liedersaal</rs> senden? Sie werden <lb xml:id="lassberg-letter-1787-3-7" n="7"
+                    corresp="tr_1_tl_8"/>ia doch nur einzelnes in Ir <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0121">lesebuch</rs>
+                    aufnehmen. <lb xml:id="lassberg-letter-1787-3-8" n="8" corresp="tr_1_tl_9"/>Ich
+                    erwarte vor meiner abreise noch einen brief von Inen, vielleicht <lb
+                    xml:id="lassberg-letter-1787-3-9" n="9" corresp="tr_1_tl_10"/>auch einen nach
+                    <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0053"
+                    >Göttingen</rs>; man findet so leicht ein par stunden <lb
+                    xml:id="lassberg-letter-1787-3-10" n="10" corresp="tr_1_tl_11"/>bei früherm
+                    aufstehen oder späterem niederliegen. <lb xml:id="lassberg-letter-1787-3-11"
+                    n="11" corresp="tr_1_tl_12"/>Leben Sie wol! Ich wags, mit got! <lb
+                    xml:id="lassberg-letter-1787-3-12" n="12" corresp="line_1734255684110_53"/>Ir
+                    <lb xml:id="lassberg-letter-1787-3-13" n="13" corresp="tr_1_tl_13"/>ergebenster
+                    <lb xml:id="lassberg-letter-1787-3-14" n="14" corresp="tr_1_tl_14"/>JvLaßberg.
+                    <lb xml:id="lassberg-letter-1787-3-15" n="15" corresp="tr_1_tl_15"/>Wenn die
+                    Bibliotheke verkauft wird; so kauffen Sie mir <lb
+                    xml:id="lassberg-letter-1787-3-16" n="16" corresp="tr_1_tl_16"/>ia: daz <rs
+                    type="bibl" key="../register/lassberg-literature.xml#lassberg-literature-0187"
+                    >buoch von Sante Martinen</rs> einer magede niagede die ainlif <lb
+                    xml:id="lassberg-letter-1787-3-17" n="17" corresp="tr_1_tl_17"/>marter litt. ich
+                    gebe von 20 bis 30 Louis d'ors dafür, <lb xml:id="lassberg-letter-1787-3-18"
+                    n="18" corresp="tr_1_tl_18"/>das buch sollte wieder nach <rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0188">Schwaben</rs>, wo es
+                    zu hause ist, <lb xml:id="lassberg-letter-1787-3-19" n="19" corresp="tr_1_tl_19"
+                    />auf der insel <rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0298">Mayenau</rs> wurde es
+                    gedichtet und zu <rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0082">Constanz</rs> <lb
+                    xml:id="lassberg-letter-1787-3-20" n="20" corresp="tr_1_tl_20"/>wurde es
+                    geschrieben durch <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0623">Conrad von S.
+                    Gallen</rs>. </p>
+            </div>
+            <div type="normalized" resp="#GPT4">
+                <p>Eppishausen am 27. Juni 1834. Hochzuverehrender Herr Professor! Mit Freude habe
+                    ich gestern Abend gelesen, dass meine letzte Sendung Ihnen so willkommen war,
+                    und beeile mich hierbei auch die beiden weiteren Sachen zu senden, i. e. die
+                    Leben der Dichter von von der Hagen und der Gabriel v. Montavel, welchem auch
+                    noch aus meiner eigenen Handschrift ein Apographum der Minneburg durch Meister
+                    Egen von Bamberg beigebunden ist; vielleicht können Sie auch aus diesem Gedichte
+                    etwas brauchen; recht gerne hätte ich nun noch mehr geschickt; aber ich
+                    fürchtete, es möchte Sie zuletzt ermüden, wenn ich allzu starke Sendungen mache.
+                    Wenn Sie die geistlichen Arznei und die Fastnachtskrapfen gefälligst wollten
+                    abschreiben lassen, so wäre es mir lieb, die gesandten Abschriften wieder
+                    zurückzuerhalten; denn ich komme jetzt nur mehr mit Mühe und Anstrengung daran,
+                    etwas zum zweiten Mal abzuschreiben. Ich hoffe in drei Wochen wieder von meiner
+                    Reise nach Niederdeutschland zurückzukommen und meine Weinlese selbst zu halten;
+                    in 14 Tagen denke ich abzugehen; wenn Sie mir also einige größere Bogen von
+                    Ihrem Lesebuch mitgeben wollen, um sie in Göttingen abzugeben, so bitte ich Sie,
+                    nicht zu versiegeln, damit Post- und Mautbeamte sich nicht darein zu mischen
+                    haben. Ich erhalte eben einen Brief von Herrn Obertribunalprokurator Abel aus
+                    Stuttgart, nebst einem an ihn geschriebenen von Herrn Professor von der Hagen.
+                    Abel hatte in Paris die Bilder aus dem sogenannten Manessischen Codex
+                    abgezeichnet und ist wirklich daran, sie in koloriertem Steindruck zu geben, 18
+                    Stücke sind schon fertig; dies erfuhr nun Herr von der Hagen und schreibt jetzt
+                    an Abel: Er wünscht, mit ihm bezüglich der Bilder eine Vereinbarung zu treffen;
+                    indem er gesinnt sei, dieselben ebenfalls, mit einem Text herauszugeben, welcher
+                    ein Auszug aus den Dichterleben sein würde. Meint H. von der Hagen im Ernst,
+                    Abel werde eine schon angefangene Edition ihm zuliebe /: den er gar nicht kennt;
+                    sonst würde er's noch weniger tun :/ aufgeben; so ist er wahrlich ein
+                    einfältiger Mann; versteht er aber unter der Vereinbarung der Bilder, dass sie
+                    sich ausschließlich mit seiner werten Person vereinbaren sollen, so ist er
+                    vollends nicht klug. Abel hat mir nun die Sache zur Entscheidung heimgestellt,
+                    was mir gerade nicht viel Freude macht; denn auf einer Seite wünsche ich schon
+                    lange, dass die fraglichen Bilder einmal zusammen herauskommen möchten; auf der
+                    anderen Seite ist Herr von der Hagen gar nicht der Mann dazu, die archäologische
+                    Seite dieser Aufgabe zu lösen. Ich denke sonst wohl durchaus: wenn das Gute nur
+                    geschieht, gleich viel durch wen; aber ich fürchte, hier ist von ihm wohl nichts
+                    Gutes zu erwarten. In den Dichterleben schien mir unzweifelhaft, dass die
+                    Anmerkungen zum Ulrich von Lichtenstein von einem Österreicher /: Kopitar :/
+                    oder Steiermärker /: Kalchberg :/ herkommen müssen. Die so stark divergierenden
+                    Taxationen der Basler Kunstsammlung habe ich in der Zeitung gelesen. Soweit sie
+                    mir, obschon flüchtig, in verschiedenen Malen bekannt wurde, scheint mir, dass
+                    der Basler Taxator dieselbe näher an einen Kaufwert gestellt habe als der
+                    Zürcher Füßli. Es ist ebenso verächtlich, als gemein boshaft, wie man die Basler
+                    an einem langsamen Feuer brät. W. Grimms Freidank ist noch nicht ausgegeben;
+                    Müllers Abdruck aus einer schönen Handschrift ist strotzend von Fehlern; in den
+                    drei ersten Bänden des Lieder-Saales steht mehr als die Hälfte von Freigedank,
+                    meine Handschrift ist von 1312, gehört also zu den ältesten Codices des
+                    Freidanks; soll ich Ihnen den Lieder-Saal senden? Sie werden ja doch nur
+                    Einzelnes in Ihr Lesebuch aufnehmen. Ich erwarte vor meiner Abreise noch einen
+                    Brief von Ihnen, vielleicht auch einen nach Göttingen; man findet so leicht ein
+                    paar Stunden bei früherem Aufstehen oder späterem Niederlegen. Leben Sie wohl!
+                    Ich wague es, mit Gott! Ihr ergebenster Jv. Lassberg. Wenn die Bibliothek
+                    verkauft wird, so kaufen Sie mir ja: das Buch von Sante Martinen einer Magde,
+                    die ein Leid einiges Martyrium litt. Ich gebe von 20 bis 30 Louis d'ors dafür,
+                    das Buch sollte wieder nach Schwaben, wo es zu Hause ist, auf der Insel
+                    Reichenau wurde es gedichtet und in Konstanz wurde es geschrieben durch Konrad
+                    von Sankt Gallen.</p>
+            </div>
+            <div type="translation" resp="#GPT4">
+                <p>Eppishaus on June 27, 1834. Highly revered Professor! With joy, I read yesterday
+                    evening that my last shipment was so welcome to you, and I hasten to send you
+                    the two other things, i.e., the lives of the poets by von der Hagen, and Gabriel
+                    v. Montavel, to which I have also added, from my own manuscript, an apograph of
+                    the Minneburg by Master Egen von Bamberg; perhaps you can find something useful
+                    in this poem as well; I would have gladly sent more, but I feared it might tire
+                    you out if I send too much at once. If you could kindly have the spiritual
+                    medicine and the carnival donuts copied for me, I would appreciate receiving the
+                    copies back; for now, I only manage with difficulty and effort to copy anything
+                    a second time. I hope to return from my trip to Northern Germany in three weeks
+                    to conduct my grape harvest myself; I plan to leave in 14 days; so if you would
+                    like to send me some large sheets from your reader to deliver in Göttingen,
+                    please do not seal them, so that the postal and customs officers do not meddle
+                    in them. I have just received a letter from Mr. Senior Tribunal Procurator Abel
+                    from Stuttgart, along with one addressed to you from Professor von der Hagen.
+                    Abel had copied the pictures from the so-called Manessian Codex in Paris and is
+                    indeed preparing to publish them in colored lithograph, 18 pieces are already
+                    finished; Mr. von der Hagen now learned of this and is writing to Abel: he
+                    wishes to come to an agreement with him regarding the pictures, as he intends to
+                    publish them as well with a text, which would be an excerpt from the poets'
+                    lives. If Mr. von der Hagen seriously thinks Abel will abandon an already
+                    started edition for his sake /: whom he doesn't know at all; otherwise he would
+                    do it even less :/, then he is indeed a naive man; but if he means by coming to
+                    an agreement about the pictures that they should exclusively suit his esteemed
+                    person, then he is not wise at all. Abel has now put the matter in my hands for
+                    decision, which doesn't give me much pleasure; because on one hand, I have long
+                    wished for these pictures to be finally published together; on the other hand,
+                    Mr. von der Hagen is not at all the right person to solve the archaeological
+                    aspect of this task. Normally, I think: if only the good is done, it doesn’t
+                    matter by whom; but I fear nothing good is to be expected from him here. In the
+                    poets' lives, it seemed to me undoubtedly that the annotations on Ulrich von
+                    Lichtenstein must come from an Austrian /: Kopitar :/ or a Styrian /: Kalchberg
+                    :/. The diverging valuations of the Basel art collection which I read about in
+                    the newspaper, albeit briefly in various installments, seem to me that the Basel
+                    appraiser placed them closer to a market value than the Zürcher Fuessly. It is
+                    contemptible and wickedly spiteful how they roast the Baselers on a slow fire.
+                    W. Grimm's Frydanck is not yet published; Müller's printout from a beautiful
+                    manuscript is rife with errors; in the first three volumes of the Songbook
+                    series, more than half of Frydanck is present, my manuscript is from 1312, and
+                    therefore belongs to the oldest codices of Freidank; should I send you the
+                    Songbook? Surely, you will only take certain parts for your reader. I expect a
+                    letter from you before my departure, perhaps even one to Göttingen; one so
+                    easily finds a couple of hours by rising early or going to bed late. Farewell! I
+                    dare, with God! Your humble JvLaßberg. If the library is sold; please buy me the
+                    book of Saint Martine of a maiden who suffered a martyrdom. I am offering 20 to
+                    30 Louis d'ors for it; the book should return to Swabia, where it belongs, it
+                    was composed on the island of Mainau and written in Constance by Conrad von S.
+                    Gallen.</p>
+            </div>
+            <div type="summary" resp="#GPT4">
+                <p>Laßberg freut sich, dass seine letzte Sendung gut angekommen ist, und legt nun
+                    weitere Werke bei, darunter Leben der Dichter von von der Hagen und ein
+                    Apographum der Minneburg von Meister Egen von Bamberg. Er bittet Wackernagel,
+                    zwei Texte („geistliche Arznei“ und „Fastnachtskrapfen“) abschreiben zu lassen,
+                    da ihm das erneute Abschreiben zunehmend schwerfällt. Er kündigt an, in 14 Tagen
+                    zu einer Reise nach Norddeutschland aufzubrechen und in drei Wochen
+                    zurückzukehren. Falls Wackernagel größere Abschnitte seines Lesebuchs für
+                    Göttingen mitgeben möchte, sollten diese unversiegelt bleiben, um Post- und
+                    Mautkontrollen zu vermeiden. Laßberg berichtet von einem Streit um die
+                    Veröffentlichung der Bilder aus dem Manessischen Codex: Abel plant deren
+                    Herausgabe im kolorierten Steindruck, während von der Hagen ebenfalls eine
+                    Edition mit begleitendem Text plant. Laßberg ist skeptisch, ob von der Hagen für
+                    diese Aufgabe geeignet ist, da dieser die archäologische Seite des Projekts
+                    nicht bewältigen könne. Er erwähnt verschiedene Handschriften und Editionen,
+                    unter anderem Müllers fehlerhaften Abdruck von Freidank und seine eigene, ältere
+                    Handschrift von 1312. Zudem bietet er an, Wackernagel den Liedersaal zu senden,
+                    falls dieser Einzeltexte für sein Lesebuch benötigt. Schließlich bittet er
+                    Wackernagel, im Falle eines Verkaufs der Basler Bibliothek für ihn ein seltenes
+                    Buch über das Martyrium einer Magd zu erwerben, das mit Schwaben verbunden ist.
+                    Er verabschiedet sich mit dem Wunsch, vor seiner Abreise noch einen Brief von
+                    Wackernagel zu erhalten, und blickt seiner Reise mit Gottvertrauen entgegen.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

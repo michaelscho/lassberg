@@ -1,0 +1,131 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-2263">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Wilhelm Wackernagel (13.08.1841).</title>
+                <respStmt xml:id="MiS">
+                    <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 und GPT-4 normalisiert, zusammengefasst und übersetzt.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Basel</settlement>
+                        <repository>Staatsarchiv des Kantons Basel-Stadt</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">1137</idno>
+                        <idno type="register-lassberg">204</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Wackernagel: Albert Leitzmann, Briefe aus dem Nachlaß Wilhelm Wackernagels. VI.: Briefe von Joseph von Laßberg. In: Abhandlungen der phil.-hist. Klasse der Kgl. Sächsischen Gesellschaft der Wissenschaften 34,1. Leipzig 1916, S. 92-130, S. 123<ref>-</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-2263">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862">Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0101">Meersburg</placeName>
+                    <date when="1841-08-13">13.08.1841</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0367" ref="https://d-nb.info/gnd/118805851">Wilhelm Wackernagel</persName>
+                    
+                </correspAction>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <!--<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-{PERS_NUMBER}"><rs>{ORIGINAL_STRING_MENTION}</rs></ref>-->
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2025-02-27" who="#MiS" status="done">Text recognized by Transkribus</change>
+                <change when="2025-02-27" who="#MiS" status="done">Text corrected in Transkribus</change>
+                <change when="2025-02-27" who="#MiS" status="done">Exported from Transkribus</change>
+                <change when="2025-02-27" who="#MiS" status="done">Automatic NER</change>
+                <change when="2025-02-27" who="#MiS" status="done">Automatic normalization, translation and summary</change>
+                <change when="" who="" status="draft">Manual markup and proofreading</change>
+                <change when="" who="" status="draft">Finished markup</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="original" resp="#transkribus #MiS">
+                <p><pb n="1" corresp="../pagexml/2263/2263-1.xml"/><lb xml:id="lassberg-letter-2263-1-1" n="1" corresp="tr_1_tl_2"/>204 <lb xml:id="lassberg-letter-2263-1-2" n="2" corresp="tr_1_tl_3"/>Auf der alten <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0101">Meersburg</rs> am 13 August. 1841. <lb xml:id="lassberg-letter-2263-1-3" n="3" corresp="tr_1_tl_4"/>Vererter herr und freund! <lb xml:id="lassberg-letter-2263-1-4" n="4" corresp="tr_1_tl_5"/>Ist es möglich, dass Sie der einzige unter meinen freunden sind, der kein exemplar <lb xml:id="lassberg-letter-2263-1-5" n="5" corresp="tr_1_tl_6"/>meines Liedersaales besizt! ich muss gestehen dass ich, ungeachtet meiner 72 iare, <lb xml:id="lassberg-letter-2263-1-6" n="6" corresp="tr_1_tl_7"/>eine gewisse wärme auf meinen wangen aufsteigen fülte, als ich an die stelle <lb xml:id="lassberg-letter-2263-1-7" n="7" corresp="tr_1_tl_8"/>Ires briefes kam, die mir diese unterlassung kund giebt; aber ich danke Inen doch <lb xml:id="lassberg-letter-2263-1-8" n="8" corresp="tr_1_tl_9"/>von herzen, dass Sie mich an diese freundschaftsschuld erinnert haben. <lb xml:id="lassberg-letter-2263-1-9" n="9" corresp="tr_1_tl_10"/>hier folgen inzwischen der I. und der III. band, die einzigen, die ich noch vorrätig <lb xml:id="lassberg-letter-2263-1-10" n="10" corresp="tr_1_tl_11"/>habe, alles andere liegt in dem grossen vierekigten thurme des königs <rs type="person">Dagobert</rs>, <lb xml:id="lassberg-letter-2263-1-11" n="11" corresp="tr_1_tl_12"/>zwar nicht in einem verliese, aber noch, vom umzuge her, in grosser unordnung, <lb xml:id="lassberg-letter-2263-1-12" n="12" corresp="tr_1_tl_13"/>so dass ich die feienden baende erst noch heraussuchen muss; ich hoffe aber, Sie <lb xml:id="lassberg-letter-2263-1-13" n="13" corresp="tr_1_tl_14"/>sollen nicht lange darauf warten. <lb xml:id="lassberg-letter-2263-1-14" n="14" corresp="tr_1_tl_15"/>als man mir diesen morgen Iren brief übers bette brachte und ich die bekannten <lb xml:id="lassberg-letter-2263-1-15" n="15" corresp="tr_1_tl_16"/>züge der überschrift erblikte, erschrak ich über das schwarze siegel und den graeu <lb break="no" xml:id="lassberg-letter-2263-1-16" n="16" corresp="tr_1_tl_17"/>lichen Basilisken, fürchtend, es möchte ein unfall Ir haus betroffen haben. <lb xml:id="lassberg-letter-2263-1-17" n="17" corresp="tr_1_tl_18"/>Gottlob! dass es nun nicht so ist; aber die nachrichten, welche Sie mir von Irer lieben <lb xml:id="lassberg-letter-2263-1-18" n="18" corresp="tr_1_tl_19"/>frau und Irem eigenen befinden geben, sind eben auch nicht ser triöstlich und tun <lb xml:id="lassberg-letter-2263-1-19" n="19" corresp="tr_1_tl_20"/>mir leide genug. moege denn der genuss der reinen bergluft im <rs type="place">Jura</rs> brust und <lb xml:id="lassberg-letter-2263-1-20" n="20" corresp="tr_1_tl_21"/>nerven stärken und Sie im herbste wieder hergestellt in die alte <rs type="place">Basilea</rs> zurükkeren! <pb n="2" corresp="../pagexml/2263/2263-2.xml"/><lb xml:id="lassberg-letter-2263-2-1" n="1" corresp="tr_1_tl_1"/>auch hier, in der alten <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0101">Meersburg</rs>, wehet auf unserem felsen milde und <lb xml:id="lassberg-letter-2263-2-2" n="2" corresp="tr_1_tl_2"/>reine luft, und ich alter knabe selbst füle mich seit meinem hiersein <lb xml:id="lassberg-letter-2263-2-3" n="3" corresp="tr_1_tl_3"/>viel woler, dann zuvor; aber iezt hieher zu kommen dürfte ich Inen beiden <lb xml:id="lassberg-letter-2263-2-4" n="4" corresp="tr_1_tl_4"/>nicht raten, indem am 3ten dieses meine frau samt den kindern ins Pumper <lb break="no" xml:id="lassberg-letter-2263-2-5" n="5" corresp="tr_1_tl_5"/>nikel land verreiset ist und vor ende Septembers nicht heimkommen wird; <lb xml:id="lassberg-letter-2263-2-6" n="6" corresp="tr_1_tl_6"/>ich aber bin daheim geblieben, als ein getreuer burgvogt, das haus zu hüten. <lb xml:id="lassberg-letter-2263-2-7" n="7" corresp="tr_1_tl_7"/>aus <rs type="place">Koeln</rs>, das sie am 9tn verliessen, habe ich nachricht von meinen lieben reisenden, <lb xml:id="lassberg-letter-2263-2-8" n="8" corresp="tr_1_tl_8"/>alle, alt und iung, waren gesund und munter geblieben. Gott helfe inen weiter. <lb xml:id="lassberg-letter-2263-2-9" n="9" corresp="tr_1_tl_9"/>Herr <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0424">Burkhard Iselin</rs> und seine frau sind biedere leute, wir wurden, im bade <lb xml:id="lassberg-letter-2263-2-10" n="10" corresp="tr_1_tl_10"/>der alten Yburinga, recht dike bekannte und trennten uns ungern. wo moegen sie <lb xml:id="lassberg-letter-2263-2-11" n="11" corresp="tr_1_tl_11"/>iezt sein? es soll inen wol gehen! <lb xml:id="lassberg-letter-2263-2-12" n="12" corresp="tr_1_tl_12"/>Was in <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0019">Basel</rs> bei der iubelfeier der buchdruker erschienen ist, habe ich als gastgeschenk <lb xml:id="lassberg-letter-2263-2-13" n="13" corresp="tr_1_tl_13"/>von herrn Professor <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0365">de Wette</rs> erhalten und meine frau ein halbduzend schoener aurikel <lb break="no" xml:id="lassberg-letter-2263-2-14" n="14" corresp="tr_1_tl_14"/>pflanzen dazu. Das buch, oder besser zu sagen, das büchlein, das ich eben druken <lb xml:id="lassberg-letter-2263-2-15" n="15" corresp="tr_1_tl_15"/>lasse, begreift nur wenige bogen, und enthaltet einige gedichte aus dem anfange des XV. <lb xml:id="lassberg-letter-2263-2-16" n="16" corresp="tr_1_tl_16"/>iarhunderts, wovon das eine: 460 verse, die belagerung und zerstoerung der burg <lb xml:id="lassberg-letter-2263-2-17" n="17" corresp="tr_1_tl_17"/><rs type="place">Hohenzollern</rs>, enthaltend, auch historischen wert hat. der dichter ist ein noch <lb xml:id="lassberg-letter-2263-2-18" n="18" corresp="tr_1_tl_18"/>unbekannter: <rs type="person">Conrad Silberdrat</rs>, one zweifel aus <rs type="place">Rotweil</rs>. es kommen auch von <pb n="3" corresp="../pagexml/2263/2263-3.xml"/><lb xml:id="lassberg-letter-2263-3-1" n="1" corresp="tr_1_tl_2"/>einem andern gleichzeitigen Schwaben: <rs type="person">Conrad Oettinger</rs> einige gedichte darein. mich <lb xml:id="lassberg-letter-2263-3-2" n="2" corresp="tr_1_tl_3"/>daucht, aus dem anfange des XV iarhunderts seien noch nicht genug gedichte bekannt, um den gang <lb xml:id="lassberg-letter-2263-3-3" n="3" corresp="tr_1_tl_4"/>und verfall der sprache vollständig und ununterbrochen daraus verfolgen zu koennen, und <lb xml:id="lassberg-letter-2263-3-4" n="4" corresp="tr_1_tl_5"/>sie müssen doch auch heraus. einander mal was anderes und dann auch mereres. <lb xml:id="lassberg-letter-2263-3-5" n="5" corresp="tr_1_tl_6"/>An den <rs type="bibl">Weingarter Codex</rs>: kann ich iezt nicht gehen, es gehoert eine lange und ganz ruhige <lb xml:id="lassberg-letter-2263-3-6" n="6" corresp="tr_1_tl_7"/>zeit dazu, um mich dieser arbeit mit voller besinnung und one unterbrechung hingeben <lb xml:id="lassberg-letter-2263-3-7" n="7" corresp="tr_1_tl_8"/>zu koennen. ein altes liederbuch ist mir zugekommen, aus der zweiten hälfte des XVI. <lb xml:id="lassberg-letter-2263-3-8" n="8" corresp="tr_1_tl_9"/>iarhunderts. es sind lauter autographa. darunter 6 lieder von der hand eines <rs type="person">Eberwin Droste</rs> <lb xml:id="lassberg-letter-2263-3-9" n="9" corresp="tr_1_tl_10"/>1579. der derselben geschlechtslinie der Drosten angehoerte wie meine frau. er <lb xml:id="lassberg-letter-2263-3-10" n="10" corresp="tr_1_tl_11"/>möchte sie wol selbst gemacht haben, wie ich auch von den übrigen vermute, welche von <lb xml:id="lassberg-letter-2263-3-11" n="11" corresp="tr_1_tl_12"/>zerschiedenen händen sind und warscheinlich auch von zerschiedenen verfassern. <lb xml:id="lassberg-letter-2263-3-12" n="12" corresp="tr_1_tl_13"/>vielleicht lasse ich sie auch noch hinzudruken. und nun, gott befolen! <lb xml:id="lassberg-letter-2263-3-13" n="13" corresp="tr_1_tl_14"/>mit weib und kind! von <lb xml:id="lassberg-letter-2263-3-14" n="14" corresp="tr_1_tl_15"/>Irem <lb xml:id="lassberg-letter-2263-3-15" n="15" corresp="tr_1_tl_16"/>JvLassberg. <lb xml:id="lassberg-letter-2263-3-16" n="16" corresp="tr_1_tl_17"/>Sollten Sie <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0424">Burkhard-Iselin</rs>, oder seine frau sehen; so richten Sie <lb xml:id="lassberg-letter-2263-3-17" n="17" corresp="tr_1_tl_18"/>doch von mir recht herzliche grüsse aus. </p>
+            </div>
+            <div type="normalized" resp="#GPT4">
+                <p>Auf der alten Meersburg am 13. August 1841.
+
+Verehrter Herr und Freund!
+
+Ist es möglich, dass Sie der Einzige unter meinen Freunden sind, der kein Exemplar meines Liedersaales besitzt! Ich muss gestehen, dass ich, ungeachtet meiner 72 Jahre, eine gewisse Wärme auf meinen Wangen aufsteigen fühlte, als ich an die Stelle Ihres Briefes kam, die mir diese Unterlassung kundgibt; aber ich danke Ihnen doch von Herzen, dass Sie mich an diese Freundschaftsschuld erinnert haben.
+
+Hier folgen inzwischen der I. und der III. Band, die einzigen, die ich noch vorrätig habe, alles andere liegt in dem großen viereckigen Turme des Königs Dagobert, zwar nicht in einem Verlies, aber noch, vom Umzug her, in großer Unordnung, so dass ich die fehlenden Bände erst noch heraussuchen muss; ich hoffe aber, Sie sollen nicht lange darauf warten.
+
+Als man mir diesen Morgen Ihren Brief übers Bett brachte und ich die bekannten Züge der Überschrift erblickte, erschrak ich über das schwarze Siegel und den greulichlichen Basilisken, fürchtend, es möchte ein Unfall Ihr Haus betroffen haben. Gottlob! Dass es nun nicht so ist; aber die Nachrichten, welche Sie mir von Ihrer lieben Frau und Ihrem eigenen Befinden geben, sind eben auch nicht sehr tröstlich und tun mir leide genug. Möge denn der Genuss der reinen Bergluft im Jura Brust und Nerven stärken und Sie im Herbste wieder hergestellt in die alte Basilea zurückkehren!
+
+Auch hier, in der alten Meersburg, weht auf unserem Felsen milde und reine Luft, und ich alter Knabe selbst fühle mich seit meinem Hiersein viel wohler als zuvor; aber jetzt hierher zu kommen dürfte ich Ihnen beiden nicht raten, indem am 3. dieses meine Frau samt den Kindern ins Pumpernickelland verreist ist und vor Ende Septembers nicht heimkommen wird; ich aber bin daheim geblieben, als ein getreuer Burgvogt, das Haus zu hüten.
+
+Aus Köln, das sie am 9. verließen, habe ich Nachricht von meinen lieben Reisenden, alle, alt und jung, waren gesund und munter geblieben. Gott helfe ihnen weiter.
+
+Herr Burkhard Iselin und seine Frau sind biedere Leute, wir wurden, im Bade der alten Yburinga, recht dicke Bekannte und trennten uns ungern. Wo mögen sie jetzt sein? Es soll ihnen wohl gehen!
+
+Was in Basel bei der Jubelfeier der Buchdrucker erschienen ist, habe ich als Gastgeschenk von Herrn Professor de Wette erhalten und meine Frau ein halbes Dutzend schöner Aurikelpflanzen dazu. Das Buch, oder besser zu sagen, das Büchlein, das ich eben drucken lasse, begreift nur wenige Bogen und enthält einige Gedichte aus dem Anfang des XV. Jahrhunderts, wovon das eine: 460 Verse, die Belagerung und Zerstörung der Burg Hohenzollern, enthaltend, auch historischen Wert hat. Der Dichter ist ein noch unbekannter: Conrad Silberdrat, ohne Zweifel aus Rottweil. Es kommen auch von einem anderen gleichzeitigen Schwaben: Conrad Oettinger einige Gedichte darein. Mich däucht, aus dem Anfang des XV. Jahrhunderts seien noch nicht genug Gedichte bekannt, um den Gang und Verfall der Sprache vollständig und ununterbrochen daraus verfolgen zu können, und sie müssen doch auch heraus. Ein andermal was anderes und dann auch mehreres.
+
+An den Weingartner Codex: kann ich jetzt nicht gehen, es gehört eine lange und ganz ruhige Zeit dazu, um mich dieser Arbeit mit voller Besinnung und ohne Unterbrechung hingeben zu können. Ein altes Liederbuch ist mir zugekommen, aus der zweiten Hälfte des XVI. Jahrhunderts. Es sind lauter Autographa. Darunter 6 Lieder von der Hand eines Eberwin Droste 1579. Der derselben Geschlechtslinie der Drosten angehörte wie meine Frau. Er möchte sie wohl selbst gemacht haben, wie ich auch von den übrigen vermute, welche von verschiedenen Händen sind und wahrscheinlich auch von verschiedenen Verfassern. Vielleicht lasse ich sie auch noch hinzudrucken.
+
+Und nun, Gott befohlen! Mit Weib und Kind!
+
+Von Ihrem JvLassberg.
+
+Sollten Sie Burkhard-Iselin, oder seine Frau sehen, so richten Sie doch von mir recht herzliche Grüße aus.</p>
+            </div>
+            <div type="translation" resp="#GPT4">
+                <p>At the old Meersburg, August 13, 1841.
+
+Honored Sir and Friend!
+
+Is it possible that you are the only one among my friends who does not possess a copy of my "Liedersaal"? I must confess that, despite my 72 years, I felt a certain warmth rising in my cheeks when I came to the part of your letter that informs me of this omission; but I thank you from the bottom of my heart for reminding me of this friendly obligation.
+
+Here you will find the first and third volumes, the only ones I still have in stock; everything else lies in the large square tower of King Dagobert, not exactly in a dungeon, but still, from the move, in great disarray, so I must first find the missing volumes; I hope, however, that you will not have to wait long for them.
+
+When your letter was brought to me in bed this morning, and I saw the familiar handwriting on the envelope, I was startled by the black seal and the grayish basilisk, fearing that a misfortune had befallen your house. Thank God, this is not the case; but the news you give me about your dear wife and your own condition is also not very comforting and causes me enough sorrow. May the enjoyment of the pure mountain air in the Jura strengthen your chest and nerves and bring you back to old Basilea restored in the autumn!
+
+Here, too, in the old Meersburg, a gentle and pure air blows on our rock, and I, an old boy myself, feel much better since I've been here than before; but I would not advise you both to come here now, as my wife, along with the children, left for Pumpernickel Land on the 3rd of this month and will not return before the end of September. I, however, have stayed at home as a faithful castle warden to guard the house.
+
+From Cologne, which they left on the 9th, I have news of my dear travelers; all, old and young, have remained healthy and cheerful. God help them further.
+
+Mr. Burkhard Iselin and his wife are good people; during the bath of the old Yburinga, we became quite close acquaintances and parted reluctantly. Where might they be now? May they fare well!
+
+What appeared in Basel for the jubilee of the printers, I received as a guest gift from Professor de Wette, and my wife received half a dozen beautiful auricula plants with it. The book, or rather booklet, I am printing now comprises only a few sheets and contains some poems from the early fifteenth century, one of which: 460 verses containing the siege and destruction of Hohenzollern Castle, also holds historical value. The poet is still unknown: Conrad Silberdrat, undoubtedly from Rottweil. Some poems by another contemporary Swabian: Conrad Oettinger are also included. It seems to me that from the early fifteenth century, not enough poems are known to be able to fully and continuously follow the progression and decline of the language, and they must be brought forth. Once something else, and then more.
+
+I cannot attend to the Weingartner Codex now; it requires a long and completely quiet time to devote myself to this work with full reflection and without interruption. An old songbook has come to me from the second half of the sixteenth century; they are all autographs. Among them are 6 songs in the hand of an Eberwin Droste from 1579, who belonged to the same lineage of Drostes as my wife. He might have made them himself, as I also suspect of the others, which are by different hands and probably by different authors. Perhaps I will also have them printed later. And now, God be with you! With wife and child!
+
+From your JvLassberg.
+
+If you should see Burkhard Iselin or his wife, please convey my very best regards.</p>
+            </div>
+            <div type="summary" resp="#GPT4">
+                <p/>
+            </div>
+        </body>
+    </text>
+</TEI>

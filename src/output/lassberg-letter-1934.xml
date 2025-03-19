@@ -1,0 +1,106 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1934">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Wilhelm Wackernagel an Joseph von Laßberg (11.10.1837).</title>
+                <respStmt xml:id="MiS">
+                    <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 und GPT-4 normalisiert, zusammengefasst und übersetzt.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Basel</settlement>
+                        <repository>Staatsarchiv des Kantons Basel-Stadt</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">2582</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed"><ref/></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1934">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0367" ref="https://d-nb.info/gnd/118805851">Wilhelm Wackernagel</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0166">Zürich</placeName>
+                    <date when="1837-10-11">11.10.1837</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862">Joseph von Laßberg</persName>
+                    
+                </correspAction>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <!--<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-{PERS_NUMBER}"><rs>{ORIGINAL_STRING_MENTION}</rs></ref>-->
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2025-02-27" who="#MiS" status="done">Text recognized by Transkribus</change>
+                <change when="2025-02-27" who="#MiS" status="done">Text corrected in Transkribus</change>
+                <change when="2025-02-27" who="#MiS" status="done">Exported from Transkribus</change>
+                <change when="2025-02-27" who="#MiS" status="done">Automatic NER</change>
+                <change when="2025-02-27" who="#MiS" status="done">Automatic normalization, translation and summary</change>
+                <change when="" who="" status="draft">Manual markup and proofreading</change>
+                <change when="" who="" status="draft">Finished markup</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="original" resp="#transkribus #MiS">
+                <p><pb n="1" corresp="../pagexml/1934/1934-1.xml"/><lb xml:id="lassberg-letter-1934-1-1" n="1" corresp="tr_1_tl_3"/>Hochgeehrter Herr Baron, <lb xml:id="lassberg-letter-1934-1-2" n="2" corresp="tr_1_tl_4"/>diese wenigen Zeilen sollen Sie nur benachrichtigen, dass <lb xml:id="lassberg-letter-1934-1-3" n="3" corresp="tr_1_tl_5"/>ich in der künftigen Woche (wahrscheinlich schon am Dienstag) <lb xml:id="lassberg-letter-1934-1-4" n="4" corresp="tr_1_tl_6"/>von Ihrer gütigen Erlaubniss Gebrauch zu machen und bei <lb xml:id="lassberg-letter-1934-1-5" n="5" corresp="tr_1_tl_7"/>Ihnen „in gastes wise" einzusprechen gedenke. ich mache <lb xml:id="lassberg-letter-1934-1-6" n="6" corresp="tr_1_tl_8"/>Ihnen diese Anzeige so spät, weil ich bis auf den heutigen <lb xml:id="lassberg-letter-1934-1-7" n="7" corresp="tr_1_tl_9"/>Tag fürchten muste, die Nachwehen einer unwillkomme <lb break="no" xml:id="lassberg-letter-1934-1-8" n="8" corresp="tr_1_tl_10"/>nen Krankheit, die mich sechs Wochen lang ans Haus <lb xml:id="lassberg-letter-1934-1-9" n="9" corresp="tr_1_tl_11"/>und ans Bett gefesselt hat, würden mir jede, selbst die <lb xml:id="lassberg-letter-1934-1-10" n="10" corresp="tr_1_tl_12"/>kleinste Hochzeitreise unmöglich machen. Der liebe <lb xml:id="lassberg-letter-1934-1-11" n="11" corresp="tr_1_tl_13"/>Gott hat mir aber darüber weggeholfen, so dass mir nun <lb xml:id="lassberg-letter-1934-1-12" n="12" corresp="tr_1_tl_14"/>auch die Freude nicht entgehen wird, in diesen meinen <lb xml:id="lassberg-letter-1934-1-13" n="13" corresp="tr_1_tl_15"/>schönsten Tagen Sie zu besuchen. <lb xml:id="lassberg-letter-1934-1-14" n="14" corresp="tr_1_tl_16"/>Meine Braut und mich selbst Ihrem und Ihrer verehr <lb break="no" xml:id="lassberg-letter-1934-1-15" n="15" corresp="tr_1_tl_17"/>ten Frau <rs type="person">Gemahlinn</rs> geneigtem Wohlwollen angelegent <lb break="no" xml:id="lassberg-letter-1934-1-16" n="16" corresp="tr_1_tl_18"/>lich empfehlend, bin ich in Erwartung eines heitern <lb xml:id="lassberg-letter-1934-1-17" n="17" corresp="tr_1_tl_19"/>Wiedersehens <lb xml:id="lassberg-letter-1934-1-18" n="18" corresp="tr_1_tl_20"/>Ihr ganz ergebener <lb xml:id="lassberg-letter-1934-1-19" n="19" corresp="tr_1_tl_21"/>gez: <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0367">Wilh. Wackernagel</rs> Dr. <lb xml:id="lassberg-letter-1934-1-20" n="20" corresp="tr_1_tl_24"/>(bei Prof. <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0191">Bluntschli</rs> zum <rs type="place">Steinböckli</rs>) <lb xml:id="lassberg-letter-1934-1-21" n="21" corresp="line_1734289508290_1345"/><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0166">Zürich</rs> 11/10/37. <pb n="2" corresp="../pagexml/1934/1934-2.xml"/></p>
+            </div>
+            <div type="normalized" resp="#GPT4">
+                <p>Hochgeehrter Herr Baron,
+
+diese wenigen Zeilen sollen Sie nur benachrichtigen, dass ich in der künftigen Woche (wahrscheinlich schon am Dienstag) von Ihrer gütigen Erlaubnis Gebrauch zu machen und bei Ihnen „in gastesweise" einzusprechen gedenke. Ich mache Ihnen diese Anzeige so spät, weil ich bis auf den heutigen Tag fürchten musste, die Nachwehen einer unwillkommenen Krankheit, die mich sechs Wochen lang ans Haus und ans Bett gefesselt hat, würden mir jede, selbst die kleinste Hochzeitreise unmöglich machen. Der liebe Gott hat mir aber darüber weggeholfen, so dass mir nun auch die Freude nicht entgehen wird, in diesen meinen schönsten Tagen Sie zu besuchen.
+
+Meine Braut und mich selbst Ihrem und Ihrer verehrten Frau Gemahlin geneigtem Wohlwollen angelegentlich empfehlend, bin ich in Erwartung eines heiteren Wiedersehens
+
+Ihr ganz ergebener
+
+gez: Wilh. Wackernagel Dr.  
+(bei Prof. Bluntschli zum Steinböckli)  
+Zürich, 11/10/37.</p>
+            </div>
+            <div type="translation" resp="#GPT4">
+                <p>Highly esteemed Baron,
+
+These few lines are merely to inform you that I intend to take advantage of your kind permission and visit you "as a guest" in the coming week (probably as early as Tuesday). I am notifying you of this so late because, until today, I had to fear the aftereffects of an unwelcome illness that has confined me to the house and bed for six weeks, which would have made even the smallest honeymoon impossible. However, the dear God has helped me overcome this, so that I will not miss the joy of visiting you during these, my happiest days.
+
+Recommending myself and my bride to your and your esteemed wife's benevolent goodwill, I remain in anticipation of a joyful reunion.
+
+Yours sincerely,
+
+Signed: Wilh. Wackernagel Dr.
+(at Prof. Bluntschli's at Steinböckli)
+
+Zurich 11/10/37.</p>
+            </div>
+            <div type="summary" resp="#GPT4">
+                <p/>
+            </div>
+        </body>
+    </text>
+</TEI>

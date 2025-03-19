@@ -10,6 +10,9 @@ from flair.nn import Classifier
 from flair.data import Label
 from langchain_community.llms import Ollama
 from openai import OpenAI
+import requests
+import time
+from zipfile import ZipFile
 
 client = OpenAI(api_key = config.openai_key)
 
@@ -23,6 +26,7 @@ class GetData:
         self.method = self.get_retrival_method_from_input()
         self.llm = self.get_llm_from_input()
         self.ids = self.get_ids_from_input()
+        self.transkribus_id = self.get_transkribus_id_from_input()
         self.processing_method = self.get_processing_method_from_input()
         self.letters_data = self.read_register_csv() 
         self.list_of_persons = self.create_list_from_xml('person', 'lassberg-persons.xml')
@@ -46,7 +50,7 @@ class GetData:
 
     def get_ids_from_input(self):
         ids = []
-        user_input = input("Enter one or document ids (separated by spaces): ")
+        user_input = input("Enter a document id: ")
         numbers_str = user_input.split()
         for num_str in numbers_str:
             try:
@@ -56,6 +60,12 @@ class GetData:
                 print(f"Invalid number: {num_str}")
                 exit()
         return ids
+    
+    def get_transkribus_id_from_input(self):
+        
+        user_input = input("Enter a transkribus document id: ")
+        numbers_str = user_input
+        return numbers_str
 
     def get_retrival_method_from_input(self):
         user_input = input("Enter method of retrival: \"transkribus\", \"escriptorium\" or \"local\": ")
@@ -111,37 +121,249 @@ class GetData:
             if element == 'place':
                 list_of_items.append([item.get('{http://www.w3.org/XML/1998/namespace}id'), item.find('.//{*}placeName').get('ref'), re.sub('\s+',' ', item.find('.//{*}placeName').text.replace('\n',' '))])
             if element == 'bibl':
-                list_of_items.append([item.get('{http://www.w3.org/XML/1998/namespace}id'), item.find('.//{*}idno').text, f"{item.find('.//{*}author').text} {item.find('.//{*}title').text}"])
+                id = item.get('{http://www.w3.org/XML/1998/namespace}id')
+                idno = item.find('.//{*}idno').text if item.find('.//{*}idno') is not None else ''
+                author = item.find('.//{*}author').text if item.find('.//{*}author') is not None else ''
+                title = item.find('.//{*}title').text if item.find('.//{*}title') is not None else ''
+                list_of_items.append([id, idno, f"{author} {title}"])
         print(list_of_items)
         
         return list_of_items
+    
+class ProcessPageXMLFromTranskribus:
+    """ This class processes the page-xml files from Transkribus, processes text using gpt3.5 or gpt4 
+        via openai and creates a TEI representation of the letter.
+    """
+
+    def __init__(self, doc_title, document_id):
+        self.doc_title = doc_title
+        self.path_to_folder = self.create_export_folder()
+        self.document_id = document_id
+        self.collection_id = config.collection_id
+        self.user = config.transcribus_user
+        self.pw = config.transcribus_pw
+        self.session = self.login_transkribus()
+        self.export_file_url = self.export_pagexml()
+        self.zip_file_name = self.download_export()
+        self.export_folder = config.export_folder
+        self.unzip_file()
+        self.rename_files()        
+        
+
+    def login_transkribus(self):
+        """ Login to Transkribus and start session
+
+        Uses REST url https://transkribus.eu/TrpServer/rest/auth/login
+        :param user: Username as string (should be specified in config.py)
+        :param pw: Password as string (should be specified in config.py)
+        :return: Returns session
+        """
+
+        # set session...
+        session = requests.Session()
+        # ..post credentials
+        req = session.post('https://transkribus.eu/TrpServer/rest/auth/login',data = {'user': self.user, 'pw': self.pw})
+        return session
+
+    def export_pagexml(self):
+        """ Export page-XML to local machine for further processing
+
+        Uses REST url https://transkribus.eu/TrpServer/rest/collections/{collection-ID}/{document-ID}/fulldoc
+
+        :param session: Transkribus session as returned from login_transkribus()
+        :param collection_id: Transkribus collection number as Int
+        :param document_id: Transkribus document number as Int
+        :param startpage: First page of document to be exported as Int
+        :param endpage: Last page of document to be exported as Int
+        :return: Returns url to exported data that can be downloaded as zip-file
+        """
+
+        # concat url to document...
+        url = 'https://transkribus.eu/TrpServer/rest/collections/' + str(self.collection_id) + '/' + str(self.document_id) + '/export'
+
+        # ...set paramater for exporting page-xml...
+        params = '{"commonPars":{"doExportDocMetadata":true,"doWriteMets":true,"doWriteImages":false,"doExportPageXml":true,"doExportAltoXml":false,"doExportSingleTxtFiles":false,"doWritePdf":false,"doWriteTei":false,"doWriteDocx":false,"doWriteOneTxt":false,"doWriteTagsXlsx":false,"doWriteTagsIob":false,"doWriteTablesXlsx":false,"doCreateTitle":false,"useVersionStatus":"Latest version","writeTextOnWordLevel":false,"doBlackening":false,"selectedTags":["add","date","Address","supplied","work","capital-rubricated","unclear","sic","structure","div","regionType","seg-supp","speech","person","gap","organization","comment","abbrev","place","rubricated"],"font":"FreeSerif","splitIntoWordsInAltoXml":false,"pageDirName":"page","fileNamePattern":"${filename}","useHttps":true,"remoteImgQuality":"orig","doOverwrite":true,"useOcrMasterDir":true,"exportTranscriptMetadata":true,"updatePageXmlImageDimensions":false},"altoPars":{"splitIntoWordsInAltoXml":false},"pdfPars":{"doPdfImagesOnly":false,"doPdfImagesPlusText":true,"doPdfWithTextPages":false,"doPdfWithTags":false,"doPdfWithArticles":false,"pdfImgQuality":"view"},"docxPars":{"doDocxWithTags":false,"doDocxPreserveLineBreaks":false,"doDocxForcePageBreaks":false,"doDocxMarkUnclear":false,"doDocxKeepAbbrevs":false,"doDocxExpandAbbrevs":false,"doDocxSubstituteAbbrevs":false}}'
+
+        # ...post export request, starts export and returns job number...
+        export_request = self.session.post(url,params)
+        export_request = export_request.text
+
+        # ...check status of job after a couple of seconds (usually, it takes around 5 seconds to export a page)...
+        time.sleep(6)
+        export_status = self.session.get('https://transkribus.eu/TrpServer/rest/jobs/' + export_request)
+        export_status = export_status.json()
+
+        while export_status["state"] != 'FINISHED':
+            # ...check again after 5 seconds...
+            export_status = self.session.get('https://transkribus.eu/TrpServer/rest/jobs/' + export_request)
+            export_status = export_status.json()
+            time.sleep(10)
+
+        # ..get url of exported zip file...
+        export_file_url = export_status["result"]
+        return export_file_url
+
+    def download_export(self):
+        """ Download of exported data
+
+        Downloads exported data from transkribus server using url returned by export_pagexml() as zip file,
+        saves it to export folder on local machine specified in config.py and returns name of zip file
+
+        :param url: Url to zip file as string
+        :return: Name of downloaded zip file as string
+        """
+
+        # download zip file to the subfolder ./documents on a local machine...
+        zip_file_name = os.path.join(os.getcwd(),'..','data','pagexml','export.zip')
+        zip_file = requests.get(self.export_file_url)
+        zip_file.raise_for_status()
+        save_file = open(zip_file_name,'wb')
+        for chunk in zip_file.iter_content(100000):
+            save_file.write(chunk)
+        save_file.close()
+        return zip_file_name
+    
+    def create_export_folder(self):
+        path = os.path.join(os.getcwd(),'..','data','pagexml',f'lassberg-letter-{self.doc_title}')
+        if not os.path.exists(path):
+            os.makedirs(path)
+        return path
+
+    def unzip_file(self):
+        """ Extracts data from zip file
+
+        Extracts data from zip file into local folder specified in config.py
+        and returns path to pageXML for further processing
+
+        :param zip_file_name: name of zip file as string as returned by download_export()
+        :return: path to downloaded pageXML as string
+        """
+
+        with ZipFile(self.zip_file_name, 'r') as zip_obj:
+            # Identify the parent directory containing the "page" subfolder
+            for file in zip_obj.namelist():
+                parts = file.split("/")
+                if len(parts) > 1 and parts[-2] == "page":
+                    # Extract only files inside the "page" subfolder
+                    target_path = os.path.join(self.path_to_folder, os.path.basename(file))
+                    print(target_path)
+                    with zip_obj.open(file) as source, open(target_path, 'wb') as target:
+                        target.write(source.read())
+        
+
+    def rename_files(self):
+        """ Renames downloaded files
+
+        Renames downloaded files to numbered filenames using 4 leading zeros
+        :param path_to_pagexml: Path to file as provided by function unzip_file
+        """
+        n = 1
+        # get sorted list of files in folder
+        for filename in os.listdir(self.path_to_folder):
+            # rename files
+            os.rename(os.path.join(self.path_to_folder,filename), os.path.join(self.path_to_folder, f"lassberg-letter-{self.doc_title}-{str(n)}.xml"))
+            n = n + 1
+
+
+    
 
 class ProcessText:
-    def __init__(self, method, id):
+    def __init__(self, method, id, transkribus_id=None):
         self.method = method
+        self.doc_title = id
+        self.transkribus_id = transkribus_id
         self.id = id
         self.letter_text = self.load_text()
+        self.letter_text_ner = self.post_process(self.letter_text)
         self.preprocess_text()
 
     def load_text(self):
         if self.method == "transkribus":
-            pass
+            transkribus = ProcessPageXMLFromTranskribus(self.id, self.transkribus_id)
+            letter_text = self.create_tei_from_pagexml(transkribus.path_to_folder)
+            
         elif self.method == "escriptorium":
             pass
         elif self.method == "local":
-            letter_path = os.path.join(os.getcwd(),'input', f"{self.id}.txt")
-            with open(letter_path, 'r', encoding='utf8') as file:
-                letter_text = file.read()
+            #letter_path = os.path.join(os.getcwd(),'input', f"{self.id}.txt")
+            #with open(letter_path, 'r', encoding='utf8') as file:
+            #    letter_text = file.read()
+            xml_path = os.path.join(os.getcwd(),'..', "data", "pagexml", f"lassberg-letter-{self.id}")
+            letter_text = self.create_tei_from_pagexml(xml_path)
+            print(letter_text)
+            
+        return letter_text
+    
+    def create_tei_from_pagexml(self, path_to_folder):
+        """
+        Creates TEI representation from the extracted text in the PAGE XML files.
+
+        This function processes each PAGE XML file and extracts the text from the columns and headers.
+        It constructs the TEI representation by combining the extracted text and applying certain
+        replacements and transformations. The TEI representation is stored in the 'bdd_tei_text' attribute of the object.
+        """
+
+        letter_text = ""
+        # open folder with pagexml-files
+        path_to_pagexml_files = [os.path.join(path_to_folder,f) for f in os.listdir(path_to_folder) if f.endswith('.xml')]
+
+        # open each pagexml-file for exporting text to tei
+        n = 1
+        lb_break = False
+        for filename in path_to_pagexml_files:
+            tree = LET.parse(filename)
+            root = tree.getroot()
+            page_text = ""
+            text_regions = root.findall('.//{*}TextRegion')
+            if len(text_regions) > 2:
+                print("Too many TextRegions.")
+                exit()
+            elif len(text_regions) > 2:
+                print("Double Page.")
+            
+            # iterate over all text regions
+            for text_region in text_regions:
+                # creates page beginning for each xml-pagefile using data taken from config file
+                page_break = f'<pb n="{n}" corresp="../pagexml/{self.doc_title}/{self.doc_title}-{n}.xml"/>'
+                page_text = page_text + page_break    
+            
+                # iterate over all text lines
+                e = 1
+                for text_line in text_region.findall('.//{*}TextLine'):
+                        
+                    # ad <lb> element and text
+                    break_equals_no = "break=\"no\" "
+                    line_content = f"<lb {break_equals_no if lb_break == True else ''}xml:id=\"lassberg-letter-{self.doc_title}-{n}-{e}\" n=\"{e}\" corresp=\"{text_line.get('id')}\"/>{text_line.findall('.//{*}Unicode')[0].text}\n"
+                    e = e + 1
+                    page_text = page_text + line_content
+                    if '¬' in text_line.findall('.//{*}Unicode')[0].text:
+                        lb_break = True
+                        page_text = page_text.replace('¬','')
+                    else:
+                        lb_break = False
+
+                n = n + 1
+
+            letter_text = letter_text + page_text
+        
         return letter_text
     
     def preprocess_text(self):
         self.letter_text = re.sub(r'\n', ' ', self.letter_text)
+
+    def post_process(self, text):
+        text = re.sub(r'<.*?/>', '', text)
+        text = re.sub(r'<.*?>', '', text)
+        print(text)
+        return text
 
 class NamedEntityRecognition:
     def __init__(self, processing, id, data):
         self.data = data
         self.id = id
         self.letter_text = processing.letter_text
+        self.letter_text_ner = processing.letter_text_ner
+
         self.list_of_entities = []
         if data.llm == "mock":
             print("""Starting NER extraction for 0971
@@ -165,7 +387,7 @@ class NamedEntityRecognition:
             tagger.to('cuda')
 
 
-        sentence = Sentence(self.letter_text)
+        sentence = Sentence(self.letter_text_ner)
 
         tagger.predict(sentence)
 
@@ -194,14 +416,64 @@ class NamedEntityRecognition:
                 pass
             else:
 
-                self.letter_text = self.letter_text.replace(f'{item[0] }',f'<rs type="{type}">{item[0][:1]}*+*{item[0][1:]}</rs>')
+                self.letter_text = self.letter_text.replace(f'{item[0]}',f'<rs type="{type}">{item[0][:1]}*+*{item[0][1:]}</rs>')
                 self.letter_text = self.letter_text.replace(f'{item[0]}.',f'<rs type="{type}">{item[0][:1]}*+*{item[0][1:]}</rs>')
                 self.letter_text = self.letter_text.replace(f'{item[0]};',f'<rs type="{type}">{item[0][:1]}*+*{item[0][1:]}</rs>')
                 self.letter_text = self.letter_text.replace(f'{item[0]}:',f'<rs type="{type}">{item[0][:1]}*+*{item[0][1:]}</rs>')
         
         processing.letter_text = self.letter_text.replace('*+*','')
 
-        print(processing.letter_text)          
+        print(processing.letter_text)
+
+class LLMTextProcessing:
+    def __init__(self, data, processing):
+        self.letter_text = processing.letter_text_ner
+        self.llm = data.llm
+        self.normalization = self.normalize_text()
+        self.translation = self.translate_text()
+        #self.summary = self.summarize_text()
+        self.summary = ""
+
+    def normalize_text(self):
+        if self.llm == "gpt4":
+            system_prompt = f"""You are a machine build to normalize historical texts into a modern ortography. 
+                                You will only correct ortography and not interfere with the text in any other way."""
+        
+            prompt_person = f"""The following is a letter written in German from the 19th century. It may contain historic ortography ar small errors.
+                                Normalize the text to modern ortography. The text is as follows: {self.letter_text}"""
+            
+            normalization = self.gpt_processing(system_prompt, prompt_person)
+            return normalization
+            
+
+    def translate_text(self):
+        if self.llm == "gpt4":
+            system_prompt = f"""You are a machine build to translate historical texts into English. 
+                                You will only translate the text and not interfere with the text in any other way."""
+        
+            prompt_person = f"""The following is a letter written in German from the 19th century. It may contain historic ortography ar small errors.
+                                Translate the text to English. The text is as follows: {self.letter_text}"""
+            
+            translation = self.gpt_processing(system_prompt, prompt_person)
+            return translation
+
+    def summarize_text(self):
+        if self.llm == "gpt4":
+            system_prompt = f"""You are a machine build to summarize historical texts. 
+                                You will only summarize the text and not interfere with the text in any other way."""
+        
+            prompt_person = f"""The following is a letter written in German from the 19th century. It may contain historic ortography ar small errors.
+                                Summarize the text in not more than 200 words. The text is as follows: {self.letter_text}"""
+            
+            summary = self.gpt_processing(system_prompt, prompt_person)
+            return summary
+
+    def gpt_processing(self, system_prompt, prompt):
+        messages = [{"role": "system", "content": system_prompt}, {"role": "user", "content": prompt}]
+        completion = client.chat.completions.create(model='gpt-4o',messages=messages)
+        processed_text = completion.choices[0].message.content
+        return processed_text
+                  
 
 class LLMIdentification:
     def __init__(self, data):
@@ -424,14 +696,14 @@ class InsertIdentification:
 class CreateXML:
     """ This class creates the xml file for each letter, inserts processed data and saves it to the folder ../data/letters/lassberg-letter-id.xml.
     """
-    def __init__(self, letter_text, id, data):
+    def __init__(self, letter_text, id, data, processed_tests):
         self.list_of_persons = data.list_of_persons
         self.list_of_places = data.list_of_places
         self.original_text = letter_text
         
-        self.normalized_text = ""
-        self.translated_text = ""  
-        self.summary_text = ""
+        self.normalized_text = processed_tests.normalization
+        self.translated_text = processed_tests.translation
+        self.summary_text = processed_tests.summary
         
         self.doc_id = f'lassberg-letter-{id}'
         self.letter_data = self.get_letter_data(data)
@@ -451,7 +723,10 @@ class CreateXML:
         self.xml_template = self.xml_template.replace('{lassberg-letter-XML_ID}',self.doc_id)
         self.xml_template = self.xml_template.replace('{SENT_BY}',self.letter_data['SENT_FROM_NAME'].values[0])
         self.xml_template = self.xml_template.replace('{SENT_TO}',self.letter_data['RECIVED_BY_NAME'].values[0])
-        self.xml_template = self.xml_template.replace('{SENT_DATE}', datetime.strptime(self.letter_data['Datum'].values[0], '%Y-%m-%d').strftime('%d.%m.%Y'))
+        try:
+            self.xml_template = self.xml_template.replace('{SENT_DATE}', datetime.strptime(self.letter_data['Datum'].values[0], '%Y-%m-%d').strftime('%d.%m.%Y'))
+        except:
+            self.xml_template = self.xml_template.replace('{SENT_DATE}','Unbekannt')
 
         self.xml_template = self.xml_template.replace('{REPOSITORY_PLACE}',self.letter_data['Aufbewahrungsort'].values[0])
         self.xml_template = self.xml_template.replace('{REPOSITORY_INSTITUTION}',self.letter_data['Aufbewahrungsinstitution'].values[0])
@@ -464,8 +739,10 @@ class CreateXML:
         self.xml_template = self.xml_template.replace('{PRINTED_IN}',self.letter_data['published_in'].values[0])
         self.xml_template = self.xml_template.replace('{PRINTED_IN_URL}',self.letter_data['published_in_url'].values[0])
         self.xml_template = self.xml_template.replace('{XML_ID}',self.doc_id)
-        self.xml_template = self.xml_template.replace('{SENT_DATE_ISO}',self.letter_data['Datum'].values[0])
-
+        try:
+            self.xml_template = self.xml_template.replace('{SENT_DATE_ISO}',self.letter_data['Datum'].values[0])
+        except:
+            self.xml_template = self.xml_template.replace('{SENT_DATE_ISO}','Unbekannt')
         try:
             self.xml_template = self.xml_template.replace('{ORIGINAL_TEXT}', self.original_text)
         except: 
@@ -528,13 +805,15 @@ def main():
 
         print(f"Processing letter {id}...")
         
-        processing = ProcessText(data.method, id)
+        processing = ProcessText(data.method, id, data.transkribus_id)
 
         print(f"{processing.letter_text}\n")
 
         ner = NamedEntityRecognition(processing, id, data)
 
-        CreateXML(processing.letter_text, id, data)
+        processed_tests = LLMTextProcessing(data, processing)
+
+        CreateXML(processing.letter_text, id, data, processed_tests)
 
         # Process letter
         print(f"Letter {id} processed.\n".center(20, '#'))

@@ -1,0 +1,190 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1781">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Wilhelm Wackernagel an Joseph von Laßberg (06.06.1834).</title>
+                <respStmt xml:id="MiS">
+                    <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 und GPT-4 normalisiert, zusammengefasst und übersetzt.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Basel</settlement>
+                        <repository>Staatsarchiv des Kantons Basel-Stadt</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">2500</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed"><ref/></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1781">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0367" ref="https://d-nb.info/gnd/118805851">Wilhelm Wackernagel</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0152">Unbekannt</placeName>
+                    <date when="1834-06-06">06.06.1834</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862">Joseph von Laßberg</persName>
+                    
+                </correspAction>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <!--<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-{PERS_NUMBER}"><rs>{ORIGINAL_STRING_MENTION}</rs></ref>-->
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2025-03-06" who="#MiS" status="done">Text recognized by Transkribus</change>
+                <change when="2025-03-06" who="#MiS" status="done">Text corrected in Transkribus</change>
+                <change when="2025-03-06" who="#MiS" status="done">Exported from Transkribus</change>
+                <change when="2025-03-06" who="#MiS" status="done">Automatic NER</change>
+                <change when="2025-03-06" who="#MiS" status="done">Automatic normalization, translation and summary</change>
+                <change when="" who="" status="draft">Manual markup and proofreading</change>
+                <change when="" who="" status="draft">Finished markup</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="original" resp="#transkribus #MiS">
+                <p><pb n="1" corresp="../pagexml/1781/1781-1.xml"/><lb xml:id="lassberg-letter-1781-1-1" n="1" corresp="tr_1_tl_1"/>erhalten am 12 July. <lb xml:id="lassberg-letter-1781-1-2" n="2" corresp="tr_1_tl_2"/>Sonntags, 6. Juny 1834. <lb xml:id="lassberg-letter-1781-1-3" n="3" corresp="tr_1_tl_3"/>Hochverehrter Herr <rs type="person">Baron</rs>, <lb xml:id="lassberg-letter-1781-1-4" n="4" corresp="tr_1_tl_4"/>am vergangenen Donnerstag habe ich Ihre letze Sendung erhalten, <lb xml:id="lassberg-letter-1781-1-5" n="5" corresp="tr_1_tl_5"/>zu meiner grössten <rs type="bibl" key="../register/lassberg-literature.xml#lassberg-literature-0015">Fr</rs>eude, da ich in diesem rückhaltlosen Anver <lb break="no" xml:id="lassberg-letter-1781-1-6" n="6" corresp="tr_1_tl_6"/>trauen einer so prächtigen Abschrift eines gänzlich unbekannten Ge <lb break="no" xml:id="lassberg-letter-1781-1-7" n="7" corresp="tr_1_tl_7"/>dichtes ein besonderes Zeichen der Güte erkennen muss, mit der <lb xml:id="lassberg-letter-1781-1-8" n="8" corresp="tr_1_tl_8"/>Sie mir und meinem Unternehmen freundlich geneigt sind. <lb xml:id="lassberg-letter-1781-1-9" n="9" corresp="tr_1_tl_9"/>Da können Sie denken, wie mir zu Muthe war, als ich dennoch <lb xml:id="lassberg-letter-1781-1-10" n="10" corresp="tr_1_tl_10"/>den ganzen Tag vor andern dringenden Arbeiten nicht dazu ge <lb break="no" xml:id="lassberg-letter-1781-1-11" n="11" corresp="tr_1_tl_11"/>langen konnte, die Handschrift nur einigermassen näher zu <lb xml:id="lassberg-letter-1781-1-12" n="12" corresp="tr_1_tl_12"/>betrachten. Um so begieriger machte ich mich <rs type="bibl" key="../register/lassberg-literature.xml#lassberg-literature-0015">Fr</rs>eytags daran <lb xml:id="lassberg-letter-1781-1-13" n="13" corresp="tr_1_tl_13"/>und schon am Nachmittag waren beide Gedichte, das eine gelesen, <lb xml:id="lassberg-letter-1781-1-14" n="14" corresp="tr_1_tl_14"/>das andre, die <rs type="bibl">Minneburg</rs>, zum mindesten durchlaufen. Der <lb xml:id="lassberg-letter-1781-1-15" n="15" corresp="tr_1_tl_15"/><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0428">Gabriel</rs> ist als Nachahmung des <rs type="person">Iweins</rs> für die Litt. Gesch. von <lb xml:id="lassberg-letter-1781-1-16" n="16" corresp="tr_1_tl_16"/>Bedeutung, und ich denke auch solche Stellen auszuheben, die <lb xml:id="lassberg-letter-1781-1-17" n="17" corresp="tr_1_tl_17"/>jenes Verhältniss in deutliches Licht setzen, nämlich die beiden <lb xml:id="lassberg-letter-1781-1-18" n="18" corresp="tr_1_tl_18"/>Kämpfe mit <rs type="person">Walban</rs> und mit <rs type="person">Iwan</rs>. Aus welcher Handschr. <lb xml:id="lassberg-letter-1781-1-19" n="19" corresp="tr_1_tl_19"/>stammt denn die <rs type="bibl">Minneburg</rs>? Von der Wienerischen weicht <pb n="2" corresp="../pagexml/1781/1781-2.xml"/><lb xml:id="lassberg-letter-1781-2-1" n="1" corresp="tr_1_tl_1"/>dieser Text wesentlich ab: die Stelle über <rs type="person">Meister</rs> <rs type="person">Egen</rs> die jene ent <lb break="no" xml:id="lassberg-letter-1781-2-2" n="2" corresp="tr_1_tl_2"/>hält (Grundriss S. 442) habe ich hier trotz allem Suchen nicht <lb xml:id="lassberg-letter-1781-2-3" n="3" corresp="tr_1_tl_3"/>wieder finden können; die mehrfachen Beziehungen auf ihn lau <lb break="no" xml:id="lassberg-letter-1781-2-4" n="4" corresp="tr_1_tl_4"/>ten jedesmahl anders. <lb xml:id="lassberg-letter-1781-2-5" n="5" corresp="tr_1_tl_5"/>Auch Herr <rs type="person">vd. H.</rs> Lebensbeschreibungen sind mir gar willkommen, <lb xml:id="lassberg-letter-1781-2-6" n="6" corresp="tr_1_tl_6"/>so sehr ich mich auch theilweise darüber ärgere; z B. wegen des <lb xml:id="lassberg-letter-1781-2-7" n="7" corresp="tr_1_tl_7"/>unverschaemten Streichs mit dem <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0506">Ulrich von Lichtenstein</rs> und <lb xml:id="lassberg-letter-1781-2-8" n="8" corresp="tr_1_tl_8"/>der gnaedigen Protectormine mit der er meine Arbeit über <rs type="person">Nithart</rs> <lb xml:id="lassberg-letter-1781-2-9" n="9" corresp="tr_1_tl_9"/>bevorwortet. "Mein junger <rs type="bibl" key="../register/lassberg-literature.xml#lassberg-literature-0015">Fr</rs>eund <rs type="person">W. W.</rs>" ich dachte ich wäre <lb xml:id="lassberg-letter-1781-2-10" n="10" corresp="tr_1_tl_10"/>jezt über das Alter und die Verhältnisse hinaus, unter denen <lb xml:id="lassberg-letter-1781-2-11" n="11" corresp="tr_1_tl_11"/>eine solche Titulatur am Platze ist. Als er die Lieder <rs type="person">Nithart</rs>s <lb xml:id="lassberg-letter-1781-2-12" n="12" corresp="tr_1_tl_12"/>von mir bearbeiten liess, im J: 1826; damals war ich freylich noch <lb xml:id="lassberg-letter-1781-2-13" n="13" corresp="tr_1_tl_13"/>jung; aber dies Datum verschweigt er weislich, und ich werde nun <lb xml:id="lassberg-letter-1781-2-14" n="14" corresp="tr_1_tl_14"/>bei Gelegenheit jenen ganzen schülerhaften Versuch, den er freylich <lb xml:id="lassberg-letter-1781-2-15" n="15" corresp="tr_1_tl_15"/>in seiner Bequemlichkeit ohne weiteres abdrucken laesst, désavou <lb break="no" xml:id="lassberg-letter-1781-2-16" n="16" corresp="tr_1_tl_16"/>iren müssen.  <lb xml:id="lassberg-letter-1781-2-17" n="17" corresp="tr_1_tl_17"/>Möge sich Hr. <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0054">Abel</rs> um Gottes willen nicht mit ihm einlassen so <lb xml:id="lassberg-letter-1781-2-18" n="18" corresp="tr_1_tl_18"/>viel ich weiss, besitzt <rs type="person">vd. H.</rs> nur von dem kleinern Theile der <lb xml:id="lassberg-letter-1781-2-19" n="19" corresp="tr_1_tl_19"/>Pariser Bilder wirkliche Durchzeichnungen; von dem grössern aber <lb xml:id="lassberg-letter-1781-2-20" n="20" corresp="tr_1_tl_20"/>bloss die Beschreibungen. Da könnte es ihm freylich ganz er <lb break="no" xml:id="lassberg-letter-1781-2-21" n="21" corresp="tr_1_tl_21"/>wünscht seyn, mit Jemanden der alle hat sich zu "vereinbaren." <pb n="3" corresp="../pagexml/1781/1781-3.xml"/><lb xml:id="lassberg-letter-1781-3-1" n="1" corresp="tr_2_tl_1"/><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0192">Orelli</rs> hat sich zu guter Lezt doch noch als braven Mann bewährt: <lb xml:id="lassberg-letter-1781-3-2" n="2" corresp="tr_2_tl_2"/>indem der vorläufige Anschlag um 40 % reduciert worden, sind als <lb xml:id="lassberg-letter-1781-3-3" n="3" corresp="tr_2_tl_3"/>einmuthige Schätzung der beiderseitigen Experten nur 44000 <rs type="bibl" key="../register/lassberg-literature.xml#lassberg-literature-0015">Fr</rs>. <lb xml:id="lassberg-letter-1781-3-4" n="4" corresp="tr_2_tl_4"/>verblieben, wovon 31000, auf die Bücher, 13000 auf die Münzen <lb xml:id="lassberg-letter-1781-3-5" n="5" corresp="tr_2_tl_5"/>kommen. Man hatte 100000 gefürchtet. Von einer Versteigerung kann <lb xml:id="lassberg-letter-1781-3-6" n="6" corresp="tr_2_tl_6"/>nun noch weniger die Rede seyn. Ist das nicht honnet von ihm? <lb xml:id="lassberg-letter-1781-3-7" n="7" corresp="tr_2_tl_7"/>Von ihm: denn er lenkte die andern. <lb xml:id="lassberg-letter-1781-3-8" n="8" corresp="tr_2_tl_8"/>Wissen Sie schon dass man Sie hat ersuchen wollen, die definitive <lb xml:id="lassberg-letter-1781-3-9" n="9" corresp="tr_2_tl_9"/>Schätzung der Kunst gegenstände als Oberexpert zu übernehmen? <lb xml:id="lassberg-letter-1781-3-10" n="10" corresp="tr_2_tl_10"/>Hatten Sie es gethan, so wäre das, wie ich aus Ihrem Briefe ab <lb break="no" xml:id="lassberg-letter-1781-3-11" n="11" corresp="tr_2_tl_11"/>nehme, wahrlich nicht zum Schaden <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0230">Basels</rs> gewesen; und wie <lb xml:id="lassberg-letter-1781-3-12" n="12" corresp="tr_2_tl_12"/>hätte ich mich gefreut, Sie hier begrüssen zu können! Man hat <lb xml:id="lassberg-letter-1781-3-13" n="13" corresp="tr_2_tl_13"/>aber in <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0001">Arau</rs> einen Hrn. <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0002">Keller</rs> aus <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0132">Schafhausen</rs> vorgezogen; <lb xml:id="lassberg-letter-1781-3-14" n="14" corresp="tr_2_tl_14"/>warum, weiss ich nicht. <lb xml:id="lassberg-letter-1781-3-15" n="15" corresp="tr_2_tl_15"/>Sie erbieten Sich, Aushängebogen des Lesebuches mit nach <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0053">Göttingen</rs> <lb xml:id="lassberg-letter-1781-3-16" n="16" corresp="tr_2_tl_16"/>nehmen zu wollen. Wenn ich aber jezt schon etwas davon zeigen <lb xml:id="lassberg-letter-1781-3-17" n="17" corresp="tr_2_tl_17"/>möchte, So wären Sie, dem das Buch so viel verdankt, gewiss der <lb xml:id="lassberg-letter-1781-3-18" n="18" corresp="tr_2_tl_18"/>erste gewesen dem ichs vorgelegt hätte. Aber ich stehe jetzt, mit <lb xml:id="lassberg-letter-1781-3-19" n="19" corresp="tr_2_tl_19"/>Sp. 112., erst am Anfange des XII Jh., und nach dem bisherigen <lb xml:id="lassberg-letter-1781-3-20" n="20" corresp="tr_2_tl_20"/>laest sich der Character der Sammlung nur ungenügend beurtheilen. <lb xml:id="lassberg-letter-1781-3-21" n="21" corresp="tr_2_tl_21"/>Vor dem Schluss des XII Jh. möchte ich sie keinem vom Fache zeigen. <pb n="4" corresp="../pagexml/1781/1781-4.xml"/><lb xml:id="lassberg-letter-1781-4-1" n="1" corresp="tr_1_tl_1"/>Da mirs daran liegt, wo es mit meinem Plane sich verträgt mich <lb xml:id="lassberg-letter-1781-4-2" n="2" corresp="tr_1_tl_2"/>an <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0260">Lachmanns</rs> Auswahl anzuschliessen, so werde ich aus dem <lb xml:id="lassberg-letter-1781-4-3" n="3" corresp="tr_1_tl_3"/><rs type="bibl" key="../register/lassberg-literature.xml#lassberg-literature-0015">Fr</rs>eydank dieselben Stellen geben als er und in seinem Text: <lb xml:id="lassberg-letter-1781-4-4" n="4" corresp="tr_1_tl_4"/>dann haben Sie auch nicht die erneute Mühe einer Uebersendung <lb xml:id="lassberg-letter-1781-4-5" n="5" corresp="tr_1_tl_5"/>Ihres Liedersaales. <lb xml:id="lassberg-letter-1781-4-6" n="6" corresp="tr_1_tl_6"/>Gleich am Beginn der Ferien werde ich, namentlich des Taulers <lb xml:id="lassberg-letter-1781-4-7" n="7" corresp="tr_1_tl_7"/>wegen, auf einige Tage nach <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0146">Strassburg</rs> wandern, und dann <lb xml:id="lassberg-letter-1781-4-8" n="8" corresp="tr_1_tl_8"/>die ganze übrige Zeit der Vollendung des Leschuches widmen. <lb xml:id="lassberg-letter-1781-4-9" n="9" corresp="tr_1_tl_9"/>Dann könnte freylich alles was ich noch von Ihrer Güte in <lb xml:id="lassberg-letter-1781-4-10" n="10" corresp="tr_1_tl_10"/>Händen habe, nach <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs> zurück; aber es ist doch wohl <lb xml:id="lassberg-letter-1781-4-11" n="11" corresp="tr_1_tl_11"/>sicherer, wenn ich damit warte, bis Sie heimgekehrt sind. <lb xml:id="lassberg-letter-1781-4-12" n="12" corresp="tr_1_tl_12"/>Und nun leben Sie recht wohl, sehr verehrter Herr <rs type="person">Baron</rs>! <lb xml:id="lassberg-letter-1781-4-13" n="13" corresp="tr_1_tl_13"/>Noch einmahl wünsche ich Ihnen von ganzem Herzen alles Glück <lb xml:id="lassberg-letter-1781-4-14" n="14" corresp="tr_1_tl_14"/>und alle <rs type="bibl" key="../register/lassberg-literature.xml#lassberg-literature-0015">Fr</rs>eude; ergehe es Ihnen wohl und kehren Sie gesund <lb xml:id="lassberg-letter-1781-4-15" n="15" corresp="tr_1_tl_15"/>wieder. Gott behüte Sie! <lb xml:id="lassberg-letter-1781-4-16" n="16" corresp="tr_1_tl_16"/>Ihr herzlichst ergebener <lb xml:id="lassberg-letter-1781-4-17" n="17" corresp="tr_1_tl_17"/><rs type="person">Wilh</rs>. <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0367">Wackernagel</rs>. </p>
+            </div>
+            <div type="normalized" resp="#GPT4">
+                <p>Erhalten am 12. Juli.
+
+Sonntag, 6. Juni 1834.
+
+Hochverehrter Herr Baron,
+
+am vergangenen Donnerstag habe ich Ihre letzte Sendung erhalten, zu meiner größten Freude, da ich in diesem rückhaltlosen Anvertrauen einer so prächtigen Abschrift eines gänzlich unbekannten Gedichts ein besonderes Zeichen der Güte erkennen muss, mit der Sie mir und meinem Unternehmen freundlich geneigt sind.
+
+Da können Sie denken, wie mir zumute war, als ich dennoch den ganzen Tag vor anderen dringenden Arbeiten nicht dazu gelangen konnte, die Handschrift nur einigermaßen näher zu betrachten. Umso begieriger machte ich mich freitags daran und schon am Nachmittag waren beide Gedichte, das eine gelesen, das andere, die Minneburg, zumindest durchlaufen. Der Gabriel ist als Nachahmung des Iweins für die Litt. Gesch. von Bedeutung, und ich denke auch solche Stellen auszuheben, die jenes Verhältnis in deutliches Licht setzen, nämlich die beiden Kämpfe mit Walban und mit Iwan. Aus welcher Handschrift stammt denn die Minneburg? Von der Wienerischen weicht dieser Text wesentlich ab: die Stelle über Meister Egen, die jene enthält (Grundriss S. 442), habe ich hier trotz allem Suchen nicht wiederfinden können; die mehrfachen Beziehungen auf ihn lauten jedesmal anders.
+
+Auch Herr vd. H. Lebensbeschreibungen sind mir gar willkommen, so sehr ich mich auch teilweise darüber ärgere; z. B. wegen des unverschämten Streichs mit dem Ulrich von Lichtenstein und der gnädigen Protectormine, mit der er meine Arbeit über Nithart bevorwortet. "Mein junger Freund W. W." ich dachte, ich wäre jetzt über das Alter und die Verhältnisse hinaus, unter denen eine solche Titulatur am Platze ist. Als er die Lieder Nitharts von mir bearbeiten ließ, im Jahr 1826; damals war ich freilich noch jung; aber dieses Datum verschweigt er weislich, und ich werde nun bei Gelegenheit jenen ganzen schülerhaften Versuch, den er freilich in seiner Bequemlichkeit ohne weiteres abdrucken lässt, desavouieren müssen.
+
+Möge sich Hr. Abel um Gottes willen nicht mit ihm einlassen, soviel ich weiß, besitzt vd. H. nur von dem kleineren Teil der Pariser Bilder wirkliche Durchzeichnungen; von dem größeren aber bloß die Beschreibungen. Da könnte es ihm freilich ganz erwünscht sein, mit jemandem, der alle hat, sich zu "vereinbaren".
+
+Orelli hat sich zu guter Letzt doch noch als braven Mann bewährt: indem der vorläufige Anschlag um 40 % reduziert worden ist, sind als einmütige Schätzung der beiderseitigen Experten nur 44.000 Fr. verblieben, wovon 31.000 auf die Bücher, 13.000 auf die Münzen kommen. Man hatte 100.000 gefürchtet. Von einer Versteigerung kann nun noch weniger die Rede sein. Ist das nicht honnêt von ihm? Von ihm: denn er lenkte die anderen.
+
+Wissen Sie schon, dass man Sie hat ersuchen wollen, die definitive Schätzung der Kunstgegenstände als Oberexperte zu übernehmen? Hätten Sie es getan, so wäre das, wie ich aus Ihrem Briefe abnehme, wahrlich nicht zum Schaden Basels gewesen; und wie hätte ich mich gefreut, Sie hier begrüßen zu können! Man hat aber in Arau einen Herrn Keller aus Schafhausen vorgezogen; warum, weiß ich nicht.
+
+Sie erbieten sich, Aushängebogen des Lesebuches mit nach Göttingen nehmen zu wollen. Wenn ich aber jetzt schon etwas davon zeigen möchte, so wären Sie, dem das Buch so viel verdankt, gewiss der erste gewesen, dem ich es vorgelegt hätte. Aber ich stehe jetzt, mit Sp. 112., erst am Anfang des XII. Jahrhunderts, und nach dem bisherigen lässt sich der Charakter der Sammlung nur ungenügend beurteilen. Vor dem Schluss des XII. Jahrhunderts möchte ich sie keinem vom Fache zeigen.
+
+Da mir daran liegt, wo es mit meinem Plan sich verträgt, mich an Lachmanns Auswahl anzuschließen, so werde ich aus dem Freydank dieselben Stellen geben als er und in seinem Text: dann haben Sie auch nicht die erneute Mühe einer Übersendung Ihres Liedersaals.
+
+Gleich am Beginn der Ferien werde ich, namentlich des Taulers wegen, auf einige Tage nach Straßburg wandern und dann die ganze übrige Zeit der Vollendung des Lesebuches widmen. Dann könnte freilich alles, was ich noch von Ihrer Güte in Händen habe, nach Eppishausen zurück; aber es ist doch wohl sicherer, wenn ich damit warte, bis Sie heimgekehrt sind.
+
+Und nun leben Sie recht wohl, sehr verehrter Herr Baron! Noch einmal wünsche ich Ihnen von ganzem Herzen alles Glück und alle Freude; ergehe es Ihnen wohl und kehren Sie gesund wieder. Gott behüte Sie!
+
+Ihr herzlichst ergebener
+
+Wilh. Wackernagel.</p>
+            </div>
+            <div type="translation" resp="#GPT4">
+                <p>Received on 12 July.  
+Sunday, 6 June 1834.  
+Highly esteemed Baron,  
+last Thursday I received your latest consignment,  
+to my great delight, as I must recognize in this unreserved trust  
+a magnificent copy of a completely unknown poem as a particular sign  
+of the kindness with which you are favorably inclined toward me and my enterprise.  
+You can well imagine how I felt when, nevertheless,  
+I was unable the entire day due to other pressing tasks  
+to even somewhat closely  
+examine the manuscript. All the more eagerly I set to it on Friday,  
+and by the afternoon, both poems, one read,  
+the other, the Minneburg, had at least been gone through.  
+The Gabriel is significant as an imitation of the Iwein for the literary history,  
+and I also think of highlighting such passages that  
+put that relationship in clear light, namely the two  
+fights with Walban and with Iwan. From which manuscript  
+does the Minneburg originate? This text deviates significantly from the Vienna version;  
+the passage about Master Egen contained there (Outline p. 442) I could not  
+find here despite all searching; the multiple references to him each  
+time sound different.  
+Mr. vd. H.’s biographies are very welcome to me,  
+even though I partly find them irritating; for example, because of the  
+outrageous trick with Ulrich von Lichtenstein and  
+the gracious condescension with which he prefaces my work on Nithart.  
+"My young friend W. W." - I thought I had  
+now surpassed the age and circumstances under which  
+such a title is appropriate. When he had Nithart's songs  
+revised by me in the year 1826, at that time I was indeed still  
+young; but he wisely omits this date, and I will now  
+on occasion have to disavow that entire student-like attempt,  
+which, out of convenience, he simply had printed.  
+May Mr. Abel for God's sake not get involved with him,  
+as far as I know, vd. H. possesses only the smaller part of the  
+Parisian pictures in actual copies; of the larger, however,  
+just the descriptions. Then it could indeed suit him  
+very well to "agree" with someone who has them all.  
+In the end, Orelli proved to be a decent man:  
+as the preliminary estimate was reduced by 40%,  
+only 44,000 Francs remained as the unanimous estimate  
+of the respective experts, of which 31,000 are for the books,  
+13,000 for the coins. 100,000 had been feared.  
+There can no longer be any talk of an auction.  
+Isn't that honorable of him?  
+Of him: for he guided the others.  
+Do you already know that they wanted to ask you to take on the definitive  
+valuation of the art objects as chief expert?  
+Had you done so, it would have, as I infer from your letter,  
+truly not been to Basel's detriment; and how  
+happy I would have been to greet you here!  
+But they preferred a Mr. Keller from Schafhausen in Aarau;  
+why, I do not know.  
+You offer to take specimen pages of the reading book  
+to Göttingen. If I wanted to show something of it already now,  
+you, to whom the book owes so much, would certainly  
+have been the first to whom I would have presented it.  
+But I am now, with Sp. 112, only at the beginning of the 12th century,  
+and based on what is available so far,  
+the character of the collection can only be inadequately assessed.  
+Before the end of the 12th century,  
+I would not want to show it to anyone in the field.  
+As it matters to me, as long as it agrees with my plan, to align with Lachmann's selection,  
+I will give the same passages from the Freydank as he does and in his text:  
+then you also will not have the renewed effort  
+of sending your songbook.  
+At the very start of the vacation, I will, especially because of Tauler,  
+wander to Strasbourg for a few days, and then  
+devote the entire remaining time to completing the reading book.  
+Then indeed everything that I still have  
+from your kindness in my hands could go back to Eppishausen;  
+but it is probably safer  
+if I wait with that until you have returned home.  
+And now, live well, most esteemed Baron!  
+Once again, I wish you all happiness  
+and all joy from the bottom of my heart; may things go well for you, and may you return healthy.  
+God bless you!  
+Yours sincerely devoted,  
+Wilh. Wackernagel.</p>
+            </div>
+            <div type="summary" resp="#GPT4">
+                <p/>
+            </div>
+        </body>
+    </text>
+</TEI>

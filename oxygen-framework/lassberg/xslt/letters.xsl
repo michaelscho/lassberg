@@ -108,6 +108,12 @@
             <!--<button class="btn btn-primary btn-sm" data-bs-toggle="collapse" data-bs-target="#{@key}-details" aria-expanded="false">Expand</button>-->
             <button class="btn btn-primary btn-sm" data-target="#{@key}-details">Expand</button>
             
+            <xsl:choose>
+                <xsl:when test="@change='online'">
+                    <a href="/html/letters/{@key}.html" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Open Letter</a>
+                </xsl:when>
+            </xsl:choose>
+              
         </td>
         </tr>
         <tr class="collapse collapsible-row" id="{@key}-details">
@@ -150,8 +156,8 @@
                         </div>
                         
                         <xsl:choose>
-                            <!-- If status is "in_oxygen_done", fetch summary and additional mentions -->
-                            <xsl:when test="@change='in_oxygen_done'">
+                            <!-- If status is "online", fetch summary and additional mentions -->
+                            <xsl:when test="@change='online'">
                                 <div class="row mt-4">
                                     <div class="col-md-12">
                                         <strong>Zusammenfassung:</strong>
@@ -161,6 +167,7 @@
                                         </p>
                                     </div>
                                 </div>
+                               
                                 <div class="row">
                                     <!-- Mentioned Persons -->
                                     <div class="col-md-4 mentioned-persons">
@@ -168,29 +175,40 @@
                                         <ul class="list-unstyled">
                                             <xsl:variable name="mentionedPersons" 
                                                 select="document(concat('../../../data/letters/', @key, '.xml'))//tei:note[@type='mentioned']/tei:ref[@type='cmif:mentionsPerson']"/>
+                                            
+                                            <!-- Iterate over each mentioned person reference -->
                                             <xsl:for-each select="$mentionedPersons">
-                                                <xsl:variable name="targetId" select="substring-after(@target, '#')" />
-                                                <xsl:variable name="person" 
-                                                    select="document('../../../data/register/lassberg-persons.xml')//tei:person[@xml:id=$targetId]  
-                                                    | document('../../../data/register/lassberg-persons.xml')//tei:personGrp[@xml:id=$targetId]" />
-                                                <li>
-                                                    <xsl:choose>
-                                                        <xsl:when test="$person">
-                                                            <a href="{string($person/tei:ref[@target][1]/@target)}">
-                                                                <xsl:value-of select="$person/tei:persName[@type='main']"/>
-                                                            </a>
-                                                            (<xsl:value-of select="$person/@type"/>)
-                                                            <a href="{string($person/@ref)}"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"/></a>
-                                                        </xsl:when>
-                                                        <xsl:otherwise>
-                                                            <em>Person not found</em>
-                                                        </xsl:otherwise>
-                                                    </xsl:choose>
-                                                </li>
+                                                <!-- Split @target attribute into separate IDs -->
+                                                <xsl:for-each select="tokenize(@target, '\s+')">
+                                                    <xsl:variable name="targetId" select="substring-after(., '#')" />
+                                                    <xsl:variable name="person" 
+                                                        select="document('../../../data/register/lassberg-persons.xml')//tei:person[@xml:id=$targetId]  
+                                                        | document('../../../data/register/lassberg-persons.xml')//tei:personGrp[@xml:id=$targetId]" />
+                                                    
+                                                    <li class="mb-3">
+                                                        <xsl:choose>
+                                                            <xsl:when test="$person">
+                                                                <a href="{string($person/tei:ref[@target][1]/@target)}">
+                                                                    <xsl:value-of select="$person/tei:persName[@type='main']"/>
+                                                                </a>
+                                                                (<xsl:value-of select="$person/@type"/>)
+                                                                <xsl:if test="$person/@ref">
+                                                                    <a href="{string($person/@ref)}">
+                                                                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"/>
+                                                                    </a>
+                                                                </xsl:if>
+                                                            </xsl:when>
+                                                            <xsl:otherwise>
+                                                                <em>Person not found</em>
+                                                            </xsl:otherwise>
+                                                        </xsl:choose>
+                                                    </li>
+                                                </xsl:for-each>
                                             </xsl:for-each>
                                         </ul>
                                     </div>
                                 </div>
+                                
                                 
                                 <div class="col-md-4 mentioned-places">
                                     <strong>Erwähnte Orte:</strong>
@@ -201,7 +219,7 @@
                                             <xsl:variable name="targetId" select="substring-after(@target, '#')" />
                                             <xsl:variable name="place" 
                                                 select="document('../../../data/register/lassberg-places.xml')//tei:place[@xml:id=$targetId]" />
-                                            <li>
+                                            <li class="mb-3">
                                                 <xsl:choose>
                                                     <xsl:when test="$place">
                                                         <xsl:value-of select="$place/tei:placeName"/>
@@ -225,21 +243,40 @@
                                     <ul class="list-unstyled">
                                         <xsl:variable name="mentionedLiterature" 
                                             select="document(concat('../../../data/letters/', @key, '.xml'))//tei:note[@type='mentioned']/tei:ref[@type='cmif:mentionsBibl']"/>
+                                        
                                         <xsl:for-each select="$mentionedLiterature">
                                             <xsl:variable name="targetId" select="substring-after(@target, '#')" />
-                                            <xsl:variable name="bibl" 
-                                                select="document('../../../data/register/lassberg-literature.xml')//tei:bibl[@xml:id=$targetId]" />
-                                            <li>
+                                            <xsl:variable name="bibl" select="document('../../../data/register/lassberg-literature.xml')//tei:bibl[@xml:id=$targetId]" />
+                                            
+                                            <li class="mb-3">
                                                 <xsl:choose>
                                                     <xsl:when test="$bibl">
-                                                        <xsl:value-of select="$bibl/tei:author"/>:
-                                                        <xsl:value-of select="$bibl/tei:title"/>. 
-                                                        <xsl:value-of select="$bibl/tei:pubPlace"/> 
-                                                        <xsl:value-of select="$bibl/tei:date"/>. 
+                                                        <!-- Extracting all author names -->
+                                                        <xsl:variable name="authors">
+                                                            <xsl:for-each select="$bibl/tei:author">
+                                                                <xsl:variable name="authorRef" select="substring-after(@key, '#')"/>
+                                                                <xsl:variable name="authorName" select="document('../../../data/register/lassberg-persons.xml')//tei:person[@xml:id = $authorRef]/tei:persName/text()"/>
+                                                                <xsl:value-of select="$authorName"/>
+                                                                <xsl:if test="position() != last()"> 
+                                                                    <xsl:text>; </xsl:text> 
+                                                                </xsl:if>
+                                                            </xsl:for-each>
+                                                        </xsl:variable>
+                                                        
+                                                        <xsl:if test="normalize-space($authors) != ''">
+                                                            <xsl:value-of select="normalize-space($authors)"/>
+                                                            <xsl:text>: </xsl:text>
+                                                        </xsl:if>
+                                                        
+                                                        <xsl:value-of select="$bibl/tei:title"/>
+                                                        <xsl:if test="not(ends-with(normalize-space($bibl/tei:title), '.'))">
+                                                            <xsl:text>.</xsl:text>
+                                                        </xsl:if>
+                                                        
                                                         <xsl:choose>
-                                                            <!-- If idno starts with 'http', make it a link -->
+                                                            <!-- If idno starts with 'http', make it a clickable link -->
                                                             <xsl:when test="starts-with($bibl/tei:idno, 'http')">
-                                                                <a href="{$bibl/tei:idno}">
+                                                                <a href="{$bibl/tei:idno}" target="_blank" rel="noopener noreferrer">
                                                                     <xsl:value-of select="$bibl/tei:idno"/>
                                                                 </a>
                                                             </xsl:when>
@@ -257,6 +294,10 @@
                                         </xsl:for-each>
                                     </ul>
                                 </div>
+                                
+                                
+                                
+                                
                                 
                                 
                                 
@@ -278,12 +319,12 @@
         
     </xsl:template>
     
-    <!-- Template for date -->
+    <!-- Template for date
     <xsl:template match="tei:date">
         <a href="letters/{../../@key}.html">
             <xsl:value-of select="."/>
         </a>
-    </xsl:template>
+    </xsl:template> -->
     
     <!-- Template for persName -->
     <xsl:template match="tei:persName">

@@ -1,0 +1,293 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1768">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Wilhelm Wackernagel an Joseph von Laßberg (02.04.1834).</title>
+                <respStmt xml:id="MiS">
+                    <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Textfassung auf Basis der Transkription durch Transkribus korrigiert und in TEI
+                    überführt. Automatisierte NER-Erkennung und Identifikation durch Flair geprüft,
+                    korrigiert und ergänzt. Normalisierung, Zusammenfassung und Übersetzung durch
+                    GPT-4. Lizenz: </p>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY
+                        4.0</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Basel</settlement>
+                        <repository>Staatsarchiv des Kantons Basel-Stadt</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">2492</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates> <bibl type="printed"><ref/></bibl> </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1768">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0367"
+                        ref="https://d-nb.info/gnd/118805851">Wilhelm Wackernagel</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0019"
+                        >Basel</placeName>
+                    <date when="1834-04-02">02.04.1834</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373"
+                        ref="https://d-nb.info/gnd/118778862">Joseph von Laßberg</persName>
+
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned"> <ref type="cmif:mentionsBibl"
+                    target="../register/lassberg-literature.xml#lassberg-literature-0163"><rs>Der
+                    Pfaff vom Kahlenberg</rs></ref> <ref type="cmif:mentionsBibl"
+                    target="../register/lassberg-literature.xml#lassberg-literature-0164"><rs>
+                    Nachtrab oder Nebelkräh</rs></ref> <ref type="cmif:mentionsBibl"
+                    target="../register/lassberg-literature.xml#lassberg-literature-0101"><rs>Ein
+                    schoen alt Lied von Grave Friz von Zolre, dem Oettinger, und der Belagerung von
+                    Hohen Zolren</rs></ref> <ref type="cmif:mentionsBibl"
+                    target="../register/lassberg-literature.xml#lassberg-literature-0026"
+                    ><rs>Samlung deutscher Gedichte aus dem XII., XIII. und XIV. Jahrhundert. 3
+                    Bde.</rs></ref> <ref type="cmif:mentionsBibl"
+                    target="../register/lassberg-literature.xml#lassberg-literature-0131"><rs>Die
+                    Mörin</rs></ref> <ref type="cmif:mentionsBibl"
+                    target="../register/lassberg-literature.xml#lassberg-literature-0121"
+                    ><rs>Deutsches Lesebuch</rs></ref> <ref type="unknownType" target=""
+                    ><rs>Unknown</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0354"
+                    ><rs>Unbekannt</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0601"><rs>Ulrich
+                    von Liechtenstein</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0631"
+                    ><rs>Philipp Frankfurter</rs></ref> <ref type="cmif:mentionsPlace"
+                    target="../register/lassberg-places.xml#lassberg-place-0001"
+                    ><rs>Aarau</rs></ref> <ref type="cmif:mentionsPlace"
+                    target="../register/lassberg-places.xml#lassberg-place-0166"
+                    ><rs>Zürich</rs></ref> <ref type="cmif:mentionsPlace"
+                    target="../register/lassberg-places.xml#lassberg-place-0048"><rs>Frankfurt am
+                    Main</rs></ref> <ref type="cmif:mentionsPlace"
+                    target="../register/lassberg-places.xml#lassberg-place-0020"><rs>Bern</rs></ref>
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2025-03-07" who="#MiS" status="done">Text recognized by
+                    Transkribus</change>
+                <change when="2025-03-07" who="#MiS" status="done">Text corrected in
+                    Transkribus</change>
+                <change when="2025-03-07" who="#MiS" status="done">Exported from
+                    Transkribus</change>
+                <change when="2025-03-07" who="#MiS" status="done">Automatic NER</change>
+                <change when="2025-03-07" who="#MiS" status="done">Automatic normalization,
+                    translation and summary</change>
+                <change when="2025-03-06" who="#MiS" status="done">Manual markup and
+                    proofreading</change>
+                <change when="2025-03-06" who="#MiS" status="done">Finished markup</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="original" resp="#transkribus #MiS">
+                <p><pb n="1" corresp="../pagexml/1768/1768-1.xml"/><lb
+                    xml:id="lassberg-letter-1768-1-1" n="1" corresp="tr_1_tl_1"/>erhalten am 6
+                    April. <lb xml:id="lassberg-letter-1768-1-2" n="2" corresp="tr_1_tl_2"/>Basel
+                    2/4/24 <lb xml:id="lassberg-letter-1768-1-3" n="3" corresp="tr_1_tl_3"
+                    />Hochverehrter Herr Baron, <lb xml:id="lassberg-letter-1768-1-4" n="4"
+                    corresp="tr_1_tl_4"/>vorgestern, am zweiten Ostertage, habe ich zu meiner
+                    grossen Freude Ihren <lb xml:id="lassberg-letter-1768-1-5" n="5"
+                    corresp="tr_1_tl_5"/>werthen Brief sammt Beilagen erhalten: schon vorgestern,
+                    aber erst heute <lb xml:id="lassberg-letter-1768-1-6" n="6" corresp="tr_1_tl_6"
+                    />komme ich dazu Ihnen, wie Sie befohlen, den richtigen Empfang anzu <lb
+                    break="no" xml:id="lassberg-letter-1768-1-7" n="7" corresp="tr_1_tl_7"/>zeigen:
+                    ich hatte diese Tage Besuch hier, der mich daran hinderte, Froelich <lb
+                    xml:id="lassberg-letter-1768-1-8" n="8" corresp="tr_1_tl_8"/>aus <rs
+                    type="place" key="../register/lassberg-places.xml#lassberg-place-0001"
+                    >Arau</rs>. Ihre grosse und schnelle Gefälligkeit verpflichtet mich <lb
+                    xml:id="lassberg-letter-1768-1-9" n="9" corresp="tr_1_tl_9"/>zum innigsten Dank:
+                    noch mehr die Güte mit der Sie das Unternehmen <lb
+                    xml:id="lassberg-letter-1768-1-10" n="10" corresp="tr_1_tl_10"/>billigen und mir
+                    sogar dazu und weitere Unterstützung verheissen. <lb
+                    xml:id="lassberg-letter-1768-1-11" n="11" corresp="tr_1_tl_11"/>ich weiss nicht
+                    ob Sie aus dem was man schreibt errathen können was <lb
+                    xml:id="lassberg-letter-1768-1-12" n="12" corresp="tr_1_tl_12"/>man gerne noch
+                    geschrieben hätte; aber es scheint so: denn in der Tat <lb
+                    xml:id="lassberg-letter-1768-1-13" n="13" corresp="tr_1_tl_13"/>hätte ich die
+                    gern um Mittheilungen aus Ihren anecdotis ersucht, <lb
+                    xml:id="lassberg-letter-1768-1-14" n="14" corresp="tr_1_tl_14"/>konnte mir aber
+                    nicht das Herz dazu faßen. Um so freudiger über <lb break="no"
+                    xml:id="lassberg-letter-1768-1-15" n="15" corresp="tr_1_tl_15"/>raschen mich nun
+                    Ihre zuvorkommenden Anerbietungen. Was sagt <lb
+                    xml:id="lassberg-letter-1768-1-16" n="16" corresp="tr_1_tl_16"/>doch <rs
+                    type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0354"
+                    >Hartmann</rs> von der Milde u. Güte der Schwaben? Es ist viel <lb
+                    xml:id="lassberg-letter-1768-1-17" n="17" corresp="tr_1_tl_17"/>gewagt daß ich
+                    es annehme, aber ich nehme es an, u. mit Begierde sehe <lb
+                    xml:id="lassberg-letter-1768-1-18" n="18" corresp="tr_1_tl_18"/>ich nun einigen
+                    Strophen aus <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0601">Ulrich v.
+                    Lichtenstein</rs> einigen Liedern aus <lb xml:id="lassberg-letter-1768-1-19"
+                    n="19" corresp="tr_1_tl_19"/>der Sammlung der Häßlerin, u. was Sie mir sonst
+                    noch wollen zukommen <lb xml:id="lassberg-letter-1768-1-20" n="20"
+                    corresp="tr_1_tl_20"/>lassen <pb n="2" corresp="../pagexml/1768/1768-2.xml"/><lb
+                    xml:id="lassberg-letter-1768-2-1" n="1" corresp="tr_1_tl_1"/>lassen, entgegen.
+                    Schade dass vielleicht grade das Schoenste aus dem Frauen <lb break="no"
+                    xml:id="lassberg-letter-1768-2-2" n="2" corresp="tr_1_tl_2"/>dienst weniger in
+                    ein auch für Schulen bestimmtes Buch passt. <lb
+                    xml:id="lassberg-letter-1768-2-3" n="3" corresp="tr_1_tl_3"/>Wie erfreut mich
+                    Ihre grosse Güte! <lb xml:id="lassberg-letter-1768-2-4" n="4"
+                    corresp="tr_1_tl_4"/>Ein schoener Erwerb, auch zum Besten der Sammlung, ist mir
+                    kürzlich <lb xml:id="lassberg-letter-1768-2-5" n="5" corresp="tr_1_tl_5"/>zu <rs
+                    type="place" key="../register/lassberg-places.xml#lassberg-place-0166"
+                    >Zürich</rs> in der Füsslinschen Auction geglückt, nämlich eine bisher un <lb
+                    break="no" xml:id="lassberg-letter-1768-2-6" n="6" corresp="tr_1_tl_6"/>bekannte
+                    Ausgabe vom <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0163">Pfarrherren
+                    von Kalenberg</rs>, <rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0048">Frankf</rs>. a/M.
+                    1550. 8°. <lb xml:id="lassberg-letter-1768-2-7" n="7" corresp="tr_1_tl_7"/>Eine
+                    ältere ist noch nicht nachgewiesen; man erfährt aus ihr auch den <lb
+                    xml:id="lassberg-letter-1768-2-8" n="8" corresp="tr_1_tl_8"/>Namen des Vf., der
+                    in den andern Edit: fehlt, <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0631">Philipo
+                    Franckfurdter</rs>. <lb xml:id="lassberg-letter-1768-2-9" n="9"
+                    corresp="tr_1_tl_9"/>Freylich habe ich auch diess Büchlein u. <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0164">Fischarts
+                    Nachtraben</rs> (beide zusammen <lb break="no"
+                    xml:id="lassberg-letter-1768-2-10" n="10" corresp="tr_1_tl_10"/>gebunden) mit f.
+                    6 ß 16 zahlen müssen. <lb xml:id="lassberg-letter-1768-2-11" n="11"
+                    corresp="tr_1_tl_11"/>Ihnen aber wünsche ich Glück zu dem ehrwürdigen <rs
+                    type="object">Karolinger</rs>. Enthält er <lb xml:id="lassberg-letter-1768-2-12"
+                    n="12" corresp="tr_1_tl_12"/>nicht auch deutsche Sachen? <lb
+                    xml:id="lassberg-letter-1768-2-13" n="13" corresp="tr_1_tl_13"/>Ob ich nach <rs
+                    type="place" key="../register/lassberg-places.xml#lassberg-place-0020">Bern</rs>
+                    gehen möchte? Sehr gern, falls ein Professor ungehudelt <lb
+                    xml:id="lassberg-letter-1768-2-14" n="14" corresp="tr_1_tl_14"/>bleiben kann von
+                    dem politischen Treiben ich sässe da an der reichen <lb
+                    xml:id="lassberg-letter-1768-2-15" n="15" corresp="tr_1_tl_15"/>Quelle einer
+                    schoenen Bibliothek und mein hiesiges Einkommen ist <lb
+                    xml:id="lassberg-letter-1768-2-16" n="16" corresp="tr_1_tl_16"/>doch gar zu
+                    schmal. Wollen Sie mich also auch in dieser Beziehung <lb
+                    xml:id="lassberg-letter-1768-2-17" n="17" corresp="tr_1_tl_17"/>Ihre freundliche
+                    Theilnahme erfahren lassen, so kann es mir nur will <lb break="no"
+                    xml:id="lassberg-letter-1768-2-18" n="18" corresp="tr_1_tl_18"/>kommen seyn. <lb
+                    xml:id="lassberg-letter-1768-2-19" n="19" corresp="tr_1_tl_19"/>Noch einmal
+                    meinen herzlichsten Dank für bereits erwiesene u. noch <lb
+                    xml:id="lassberg-letter-1768-2-20" n="20" corresp="tr_1_tl_20"/>verheissene
+                    Güte. Ehestens werden <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0101"
+                    >Liedersaal</rs> u: <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0026">Müllersche
+                    Sammlung</rs> und <lb xml:id="lassberg-letter-1768-2-21" n="21"
+                    corresp="tr_1_tl_21"/><rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0131">Mörin</rs>
+                    zurückerfolgen, als dann denke ich auch ausführlicher über die <lb
+                    xml:id="lassberg-letter-1768-2-22" n="22" corresp="tr_1_tl_22"/>Einrichtung des
+                    <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0121"
+                    >Lesebuchs</rs> schreiben zu können. Erhalten Sie, hoch <lb break="no"
+                    xml:id="lassberg-letter-1768-2-23" n="23" corresp="tr_1_tl_23"/>verehrter Herr
+                    Baron, ein freundliches Wohlwollen <lb xml:id="lassberg-letter-1768-2-24" n="24"
+                    corresp="tr_1_tl_24"/>Ihrem ganz ergebenen <lb
+                    xml:id="lassberg-letter-1768-2-25" n="25" corresp="tr_1_tl_25"/>Wilh.
+                    Wackernagel Dr. </p>
+            </div>
+            <div type="normalized" resp="#GPT4">
+                <p>erhalten am 6. April. Basel, 2.4.24 Hochverehrter Herr Baron, vorgestern, am
+                    zweiten Ostertage, habe ich zu meiner großen Freude Ihren wertvollen Brief samt
+                    Beilagen erhalten: schon vorgestern, aber erst heute komme ich dazu, Ihnen, wie
+                    Sie befohlen, den richtigen Empfang anzuzeigen: ich hatte diese Tage Besuch
+                    hier, der mich daran hinderte, Frölich aus Aarau. Ihre große und schnelle
+                    Gefälligkeit verpflichtet mich zum innigsten Dank: noch mehr die Güte, mit der
+                    Sie das Unternehmen billigen und mir sogar dazu und weitere Unterstützung
+                    verheißen. Ich weiß nicht, ob Sie aus dem, was man schreibt, erraten können, was
+                    man gerne noch geschrieben hätte; aber es scheint so: denn in der Tat hätte ich
+                    die gern um Mitteilungen aus Ihren Anekdoten ersucht, konnte mir aber nicht das
+                    Herz dazu fassen. Umso freudiger überraschen mich nun Ihre zuvorkommenden
+                    Anerbietungen. Was sagt doch Hartmann von der Milde und Güte der Schwaben? Es
+                    ist viel gewagt, dass ich es annehme, aber ich nehme es an, und mit Begierde
+                    sehe ich nun einigen Strophen aus Ulrich v. Lichtenstein, einigen Liedern aus
+                    der Sammlung der Häßlerin, und was Sie mir sonst noch zukommen lassen wollen,
+                    entgegen. Schade, dass vielleicht gerade das Schönste aus dem Frauendienst
+                    weniger in ein auch für Schulen bestimmtes Buch passt. Wie erfreut mich Ihre
+                    große Güte! Ein schöner Erwerb, auch zum Besten der Sammlung, ist mir kürzlich
+                    zu Zürich in der Füsslinschen Auktion geglückt, nämlich eine bisher unbekannte
+                    Ausgabe vom Pfarrherren von Kalenberg, Frankfurt am Main 1550. 8°. Eine ältere
+                    ist noch nicht nachgewiesen; man erfährt aus ihr auch den Namen des Verfassers,
+                    der in den anderen Editionen fehlt, Philipo Frankfurter. Freilich habe ich auch
+                    dieses Büchlein und Fischarts Nachtraben (beide zusammen gebunden) mit f. 6 ß 16
+                    zahlen müssen. Ihnen aber wünsche ich Glück zu dem ehrwürdigen Karolinger.
+                    Enthält er nicht auch deutsche Sachen? Ob ich nach Bern gehen möchte? Sehr gern,
+                    falls ein Professor ungehindert bleiben kann von dem politischen Treiben, ich
+                    säße da an der reichen Quelle einer schönen Bibliothek und mein hiesiges
+                    Einkommen ist doch gar zu schmal. Wollen Sie mich also auch in dieser Beziehung
+                    Ihre freundliche Teilnahme erfahren lassen, so kann es mir nur willkommen sein.
+                    Noch einmal meinen herzlichsten Dank für bereits erwiesene und noch verheißene
+                    Güte. Ehestens werden Liedersaal und Müllersche Sammlung und Mörin
+                    zurückerfolgen, alsdann denke ich auch ausführlicher über die Einrichtung des
+                    Lesebuchs schreiben zu können. Erhalten Sie, hochverehrter Herr Baron, ein
+                    freundliches Wohlwollen Ihrem ganz ergebenen Wilh. Wackernagel Dr.</p>
+            </div>
+            <div type="translation" resp="#GPT4">
+                <p>Received on April 6. Basel, 2/4/24 Highly Esteemed Baron, The day before
+                    yesterday, on the second day of Easter, I received, to my great joy, your
+                    esteemed letter along with enclosures: already the day before yesterday, but
+                    only today do I get around to informing you of the correct receipt as you
+                    commanded: I had visitors here these days, which prevented me - Froelich from
+                    Arau. Your great and prompt kindness obligates me to the deepest thanks: even
+                    more so the goodness with which you approve the endeavor and even promise
+                    further support. I do not know if you can guess from what one writes what one
+                    would have gladly written further; but it seems so: because, in fact, I would
+                    have liked to ask you for information from your anecdotes, but I could not bring
+                    myself to do it. All the more joyfully surprising are now your courteous offers.
+                    What does Hartmann say about the mildness and goodness of the Swabians? It is a
+                    bold step for me to accept it, but I do accept it, and eagerly I now look
+                    forward to some verses from Ulrich von Lichtenstein [and] some songs from the
+                    collection of Häßlerin, and anything else you wish to provide. What a pity that
+                    perhaps the most beautiful part from the lady’s service is less suitable for a
+                    book also intended for schools. How your great kindness delights me! A beautiful
+                    acquisition, also for the benefit of the collection, recently succeeded for me
+                    at the Füsslinschen Auction in Zurich, namely a previously unknown edition of
+                    the parish priest of Kalenberg, Frankf. a/M. 1550. 8°. An older one has not yet
+                    been proven; one also learns the name of the author from it, which is missing in
+                    the other editions: Philipo Franckfurdter. Certainly, I had to pay 6 florins and
+                    16 Kreuzers for this booklet and Fischart’s Nachtraben (both bound together).
+                    But I wish you luck with the venerable Carolingian. Does it not also contain
+                    German matters? Would I like to go to Bern? Very much, if a professor can remain
+                    unaffected by the political hustle and bustle; I would sit there at the abundant
+                    source of a beautiful library, and my income here is indeed quite meager. So, if
+                    you would let me experience your kind interest in this matter, it would
+                    certainly be welcome to me. Once again, my heartfelt thanks for the kindness
+                    already shown and still promised. The Liedersaal and Müller’s collection and
+                    Mörin will soon be returned, and then I hope to write more extensively about the
+                    arrangement of the reader. May you, highly esteemed Baron, maintain a friendly
+                    goodwill towards your most devoted, Wilh. Wackernagel Dr.</p>
+            </div>
+            <div type="summary" resp="#GPT4">
+                <p>Wilhelm Wackernagel dankt Joseph von Laßberg für dessen wohlwollende
+                    Unterstützung seines Vorhabens und nimmt erfreut das Angebot weiterer
+                    Textbeiträge an, darunter Strophen von Ulrich von Lichtenstein und Lieder aus
+                    der Häßlerin-Sammlung. Er berichtet von einem wertvollen Erwerb in Zürich, einer
+                    bislang unbekannten Ausgabe des Pfarrherrn von Kalenberg von 1550, und erkundigt
+                    sich, ob Laßberg ihm in Bezug auf eine mögliche Professur in Bern behilflich
+                    sein könnte. Abschließend kündigt er die baldige Rücksendung geliehener Bücher
+                    an.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,139 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1774">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Wilhelm Wackernagel (01.05.1834).</title>
+                <respStmt xml:id="MiS">
+                    <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 und GPT-4 normalisiert, zusammengefasst und übersetzt.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Basel</settlement>
+                        <repository>Staatsarchiv des Kantons Basel-Stadt</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">865</idno>
+                        <idno type="register-lassberg">177</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Wackernagel: Albert Leitzmann, Briefe aus dem Nachlaß Wilhelm Wackernagels. VI.: Briefe von Joseph von Laßberg. In: Abhandlungen der phil.-hist. Klasse der Kgl. Sächsischen Gesellschaft der Wissenschaften 34,1. Leipzig 1916, S. 92-130, S. 103<ref>-</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1774">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862">Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1834-05-01">01.05.1834</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0367" ref="https://d-nb.info/gnd/118805851">Wilhelm Wackernagel</persName>
+                    
+                </correspAction>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <!--<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-{PERS_NUMBER}"><rs>{ORIGINAL_STRING_MENTION}</rs></ref>-->
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2025-03-05" who="#MiS" status="done">Text recognized by Transkribus</change>
+                <change when="2025-03-05" who="#MiS" status="done">Text corrected in Transkribus</change>
+                <change when="2025-03-05" who="#MiS" status="done">Exported from Transkribus</change>
+                <change when="2025-03-05" who="#MiS" status="done">Automatic NER</change>
+                <change when="2025-03-05" who="#MiS" status="done">Automatic normalization, translation and summary</change>
+                <change when="" who="" status="draft">Manual markup and proofreading</change>
+                <change when="" who="" status="draft">Finished markup</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="original" resp="#transkribus #MiS">
+                <p><pb n="1" corresp="../pagexml/1774/1774-1.xml"/><lb xml:id="lassberg-letter-1774-1-1" n="1" corresp="tr_1_tl_2"/><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs> am 1. may. 1834. <lb xml:id="lassberg-letter-1774-1-2" n="2" corresp="tr_1_tl_3"/>Verertester Herr! <lb xml:id="lassberg-letter-1774-1-3" n="3" corresp="tr_1_tl_4"/>Seit 5 wochen durch die gicht am rechten arme invalide <lb xml:id="lassberg-letter-1774-1-4" n="4" corresp="tr_1_tl_5"/>habe ich meine abschriften für Sie unterbrechen müssen. Sie sehen wol <lb xml:id="lassberg-letter-1774-1-5" n="5" corresp="tr_1_tl_6"/>an meinen schriftzügen wie schlecht es mit dem schreiben gehet: <lb xml:id="lassberg-letter-1774-1-6" n="6" corresp="tr_1_tl_7"/>Ich sende Inen daher, zugleich Irem eigenen wunsche gemäss, <lb xml:id="lassberg-letter-1774-1-7" n="7" corresp="tr_1_tl_8"/>den Frauendienst um selbst darinne für Ire chrestomathie <lb xml:id="lassberg-letter-1774-1-8" n="8" corresp="tr_1_tl_9"/>wälen zu können. Die mir zurükgesandten bücher habe ich <lb xml:id="lassberg-letter-1774-1-9" n="9" corresp="tr_1_tl_10"/>richtig erhalten. was ich abgeschrieben habe, lege ich <lb xml:id="lassberg-letter-1774-1-10" n="10" corresp="tr_1_tl_11"/>hier bei. es soll aber noch einiges folgen, wenn die <lb xml:id="lassberg-letter-1774-1-11" n="11" corresp="tr_1_tl_12"/>schmerzen in der hand nachlassen wollen. es verstehet sich <lb xml:id="lassberg-letter-1774-1-12" n="12" corresp="tr_1_tl_13"/>dass es lauter anecdota sein müssen. eine gereimte legende aus <lb xml:id="lassberg-letter-1774-1-13" n="13" corresp="tr_1_tl_14"/>dem XII. iarhundert von St. <rs type="person">Ulrich</rs> dem bischof von <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0012">Augsburg</rs> <lb xml:id="lassberg-letter-1774-1-14" n="14" corresp="tr_1_tl_15"/>bedaure ich jezt nicht beihanden zu haben, sie ist der <lb xml:id="lassberg-letter-1774-1-15" n="15" corresp="tr_1_tl_16"/>sprache wegen ser merkwürdig, <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0288">Uhland</rs> hat sie schon <lb xml:id="lassberg-letter-1774-1-16" n="16" corresp="tr_1_tl_17"/>seit merern iaren von mir, und noch nie zurükgesendet! <lb xml:id="lassberg-letter-1774-1-17" n="17" corresp="tr_1_tl_18"/>ich habe aber darum geschrieben, wenn sie nur noch zu <lb xml:id="lassberg-letter-1774-1-18" n="18" corresp="tr_1_tl_19"/>rechter zeit kommt. <lb xml:id="lassberg-letter-1774-1-19" n="19" corresp="tr_1_tl_20"/>Ich habe in der zeitung gelesen, dass zu <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0019">Basel</rs> die kirchenschäze <lb xml:id="lassberg-letter-1774-1-20" n="20" corresp="tr_1_tl_21"/>des domes geteilt werden, und dass darunter eine krone der <lb xml:id="lassberg-letter-1774-1-21" n="21" corresp="tr_1_tl_22"/>königin <rs type="person">Anna</rs> /: warscheinlich der gemalin kais. <rs type="person">Rudolph I</rs>.:/ <pb n="2" corresp="../pagexml/1774/1774-2.xml"/><lb xml:id="lassberg-letter-1774-2-1" n="1" corresp="tr_1_tl_1"/>befindlich seie. es ist vermutlich die ienige welche in irem grabe <lb xml:id="lassberg-letter-1774-2-2" n="2" corresp="tr_1_tl_2"/>gefunden wurde, als in den 70er iaren des vorigen Jarhunderts <lb xml:id="lassberg-letter-1774-2-3" n="3" corresp="tr_1_tl_3"/>die <rs type="">St. Blasier</rs> mönche die habsburgischen leichen aus dem <lb xml:id="lassberg-letter-1774-2-4" n="4" corresp="tr_1_tl_4"/><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0230">Basler dome</rs> abholten. ich vermute dass diese krone wol nur <lb xml:id="lassberg-letter-1774-2-5" n="5" corresp="tr_1_tl_5"/>von kupfer und vergoldet sein wird; aber sie kann für die <lb xml:id="lassberg-letter-1774-2-6" n="6" corresp="tr_1_tl_6"/>kunstgeschichte merkwürdig sein. wenn Sie, verertester <lb xml:id="lassberg-letter-1774-2-7" n="7" corresp="tr_1_tl_7"/>herr! daher die güte haben wollten, mir diese krone, etwa <lb xml:id="lassberg-letter-1774-2-8" n="8" corresp="tr_1_tl_8"/>in der grösse eines quartblattes, abzeichnen zu lassen; <lb xml:id="lassberg-letter-1774-2-9" n="9" corresp="tr_1_tl_9"/>so würden Sie mich ser verbinden und ich die unkosten <lb xml:id="lassberg-letter-1774-2-10" n="10" corresp="tr_1_tl_10"/>mit dem besten danke erstatten. einige nachrichten über den <lb xml:id="lassberg-letter-1774-2-11" n="11" corresp="tr_1_tl_11"/>inhalt des hölzernen mit goldblech überzogenen altarblattes <lb xml:id="lassberg-letter-1774-2-12" n="12" corresp="tr_1_tl_12"/>wären mir ser willkommen. ich denke doch die Basler lassen diese <lb xml:id="lassberg-letter-1774-2-13" n="13" corresp="tr_1_tl_13"/><rs type="bibl">Cymelia</rs> nicht in Liechstaller hände kommen und <lb xml:id="lassberg-letter-1774-2-14" n="14" corresp="tr_1_tl_14"/>lösen sie mit Thalern aus. <lb xml:id="lassberg-letter-1774-2-15" n="15" corresp="tr_1_tl_15"/>Leben Sie wol; ich habe eine ganz bleierne hand <lb xml:id="lassberg-letter-1774-2-16" n="16" corresp="tr_1_tl_16"/>und kann nicht weiter, obschon ich noch manches <lb xml:id="lassberg-letter-1774-2-17" n="17" corresp="tr_1_tl_17"/>zu sagen hätte. Gott befohlen von Irem <lb xml:id="lassberg-letter-1774-2-18" n="18" corresp="tr_1_tl_18"/>ergebensten <lb xml:id="lassberg-letter-1774-2-19" n="19" corresp="tr_1_tl_19"/><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0573">JvLassberg</rs>. </p>
+            </div>
+            <div type="normalized" resp="#GPT4">
+                <p>Eppishausen am 1. Mai 1834.
+
+Verehrter Herr!
+
+Seit 5 Wochen durch die Gicht am rechten Arm invalide,
+habe ich meine Abschriften für Sie unterbrechen müssen. Sie sehen wohl
+an meinen Schriftzügen, wie schlecht es mit dem Schreiben geht:
+Ich sende Ihnen daher, zugleich Ihrem eigenen Wunsche gemäß,
+den Frauendienst, um selbst darin für Ihre Chrestomathie
+wählen zu können. Die mir zurückgesandten Bücher habe ich
+richtig erhalten. Was ich abgeschrieben habe, lege ich
+hier bei. Es soll aber noch einiges folgen, wenn die
+Schmerzen in der Hand nachlassen wollen. Es versteht sich,
+dass es lauter Anecdota sein müssen. Eine gereimte Legende aus
+dem XII. Jahrhundert von St. Ulrich, dem Bischof von Augsburg,
+bedauere ich jetzt nicht bei Händen zu haben, sie ist der
+Sprache wegen sehr merkwürdig. Uhland hat sie schon
+seit mehreren Jahren von mir, und noch nie zurückgesendet!
+Ich habe darum geschrieben, wenn sie nur noch zu
+rechter Zeit kommt.
+
+Ich habe in der Zeitung gelesen, dass zu Basel die Kirchenschätze
+des Domes geteilt werden, und dass darunter eine Krone der
+Königin Anna (/wahrscheinlich der Gemahlin Kais. Rudolph I./)
+befindlich sei. Es ist vermutlich diejenige, welche in ihrem Grabe
+gefunden wurde, als in den 70er Jahren des vorigen Jahrhunderts
+die St. Blasier Mönche die Habsburgischen Leichen aus dem
+Basler Dome abholten. Ich vermute, dass diese Krone wohl nur
+von Kupfer und vergoldet sein wird; aber sie kann für die
+Kunstgeschichte merkwürdig sein. Wenn Sie, verehrter
+Herr! daher die Güte haben wollten, mir diese Krone, etwa
+in der Größe eines Quartblattes, abzeichnen zu lassen;
+so würden Sie mich sehr verbinden und ich die Unkosten
+mit dem besten Danke erstatten. Einige Nachrichten über den
+Inhalt des hölzernen mit Goldblech überzogenen Altarblattes
+wären mir sehr willkommen. Ich denke doch, die Basler lassen diese
+Cymelia nicht in Leihestaller Hände kommen und
+lösen sie mit Talern aus.
+
+Leben Sie wohl; ich habe eine ganz bleierne Hand
+und kann nicht weiter, obschon ich noch manches
+zu sagen hätte. Gott befohlen von Ihrem
+ergebensten
+
+JvLassberg.</p>
+            </div>
+            <div type="translation" resp="#GPT4">
+                <p>Eppishausen, May 1, 1834.
+
+Honored Sir!
+
+For 5 weeks, rendered invalid by gout in my right arm, I have had to interrupt my transcriptions for you. You can well see from my handwriting how poor the writing is: I therefore send you, according to your own wish, the "Frauendienst" so that you can select from it for your chrestomathy. I have correctly received the books you sent back. What I have transcribed up until now, I enclose here. There should be more to follow, if the pain in my hand subsides. It is understood that they must all be anecdotes. I regret not having on hand at the moment a rhymed legend from the 12th century about St. Ulrich the Bishop of Augsburg, due to its language, it is quite remarkable; Uhland has had it for several years from me and has not yet returned it! However, I have written to him about it, hoping it will come back in due course.
+
+I have read in the newspaper that in Basel the church treasures of the cathedral are being divided, and that a crown belonging to Queen Anna (likely the consort of Emperor Rudolph I) is among them. It is likely the one found in her tomb when, in the 1770s, the monks of St. Blasien retrieved the Habsburg remains from the Basel cathedral. I suspect this crown is merely copper and gilded; nevertheless, it could be remarkable for art history. If you, honored sir, would be so kind as to have this crown sketched for me, approximately the size of a quarto page, you would greatly oblige me and I would gladly reimburse the expenses with the greatest thanks. Some information about the contents of the wooden altarpiece overlaid with gold leaf would be extremely welcome to me. I do hope that the people of Basel will not let these treasures fall into the hands of the people of Liechstall and will ransom them with Thalers.
+
+Farewell; my hand is completely leaden and I cannot continue further, although I have much more to say. Godspeed from your most devoted,
+
+JvLassberg.</p>
+            </div>
+            <div type="summary" resp="#GPT4">
+                <p/>
+            </div>
+        </body>
+    </text>
+</TEI>

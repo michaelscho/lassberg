@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // Apply checkbox filter
             const status = row.getAttribute("data-status");
-            if (showOnlyTranscribed && status !== "in_oxygen_done") {
+            if (showOnlyTranscribed && status !== "online") {
                 return false;
             }
 

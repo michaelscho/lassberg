@@ -1,0 +1,129 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1765">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Wilhelm Wackernagel an Joseph von Laßberg (16.03.1834).</title>
+                <respStmt xml:id="MiS">
+                    <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>. Briefe
+                    automatisiert mit GPT-3.5 und GPT-4 normalisiert, zusammengefasst und übersetzt.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Basel</settlement>
+                        <repository>Staatsarchiv des Kantons Basel-Stadt</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">2490</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed"><ref/></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1765">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0367" ref="https://d-nb.info/gnd/118805851">Wilhelm Wackernagel</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0019">Basel</placeName>
+                    <date when="1834-03-16">16.03.1834</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862">Joseph von Laßberg</persName>
+                    
+                </correspAction>
+                
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <!--<ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-{PERS_NUMBER}"><rs>{ORIGINAL_STRING_MENTION}</rs></ref>-->
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2025-03-06" who="#MiS" status="done">Text recognized by Transkribus</change>
+                <change when="2025-03-06" who="#MiS" status="done">Text corrected in Transkribus</change>
+                <change when="2025-03-06" who="#MiS" status="done">Exported from Transkribus</change>
+                <change when="2025-03-06" who="#MiS" status="done">Automatic NER</change>
+                <change when="2025-03-06" who="#MiS" status="done">Automatic normalization, translation and summary</change>
+                <change when="" who="" status="draft">Manual markup and proofreading</change>
+                <change when="" who="" status="draft">Finished markup</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="original" resp="#transkribus #MiS">
+                <p><pb n="1" corresp="../pagexml/1765/1765-1.xml"/><lb xml:id="lassberg-letter-1765-1-1" n="1" corresp="tr_1_tl_1"/>erhalten am 20 März abendes. <lb xml:id="lassberg-letter-1765-1-2" n="2" corresp="tr_1_tl_3"/>beantwortet und die bücher gesendet am 21. <lb xml:id="lassberg-letter-1765-1-3" n="3" corresp="tr_1_tl_2"/><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0019">Basel</rs> 16/3/34. <lb xml:id="lassberg-letter-1765-1-4" n="4" corresp="tr_1_tl_4"/>Hochgeehrter Herr <rs type="person">Baron</rs>, <lb xml:id="lassberg-letter-1765-1-5" n="5" corresp="tr_1_tl_5"/>hoffentlich treffen diese Zeilen Sie in der besten Gesundheit und mir so geneigt, daß ich Ihnen <lb xml:id="lassberg-letter-1765-1-6" n="6" corresp="tr_1_tl_6"/>mit meinem Brief und meiner Bitte nicht gar zu beschwerlich falle. <lb xml:id="lassberg-letter-1765-1-7" n="7" corresp="tr_1_tl_7"/>ich bin im Begriff, ein altdeutsches Lesebus für den academischen und höhren Schuluntericht <lb xml:id="lassberg-letter-1765-1-8" n="8" corresp="tr_1_tl_8"/>drucken zu laßen, in der hiesigen Schweighäuserischen (Wielandischen) Buchhandlung. Mit <lb xml:id="lassberg-letter-1765-1-9" n="9" corresp="tr_1_tl_9"/>dem April sollen die Pressen sich schon rühren. Leider fehlen mir aber für die mittelhochd. <lb xml:id="lassberg-letter-1765-1-10" n="10" corresp="tr_1_tl_10"/>Litteratur einige Bücher, die ich mit Schmerzen vermisse, ungern nicht benutzen würde. <lb xml:id="lassberg-letter-1765-1-11" n="11" corresp="tr_1_tl_11"/>Es ist der dritte Band der Müllerischen Sammlung (des <rs type="bibl">Trojener Krieges</rs> wegen), Wernherrs Maria <lb xml:id="lassberg-letter-1765-1-12" n="12" corresp="tr_1_tl_12"/>von Hoter, und Ihr Liederaal. Aus welchen Schätzen und von wessen Güte kann ich da <lb xml:id="lassberg-letter-1765-1-13" n="13" corresp="tr_1_tl_13"/>Unterstützung erwarten, wenn sie nicht, hochverehrter Herr <rs type="person">Baron</rs>, meiner Sich annehmen? <lb xml:id="lassberg-letter-1765-1-14" n="14" corresp="tr_1_tl_14"/>Wollen Sie also die Gewogenheit haben, mir auf ganz kurze Zeit, nur damit ich schnell <lb xml:id="lassberg-letter-1765-1-15" n="15" corresp="tr_1_tl_15"/>Abschrift nehmen kann, jene Bücher lieder anzuvertrauen? Wofern sie nicht gar (ich wage <lb xml:id="lassberg-letter-1765-1-16" n="16" corresp="tr_1_tl_16"/>die Bitte, da Sie nicht ganz und gar eigennützig ist) die hiesige untheilbare Bibliothek <lb xml:id="lassberg-letter-1765-1-17" n="17" corresp="tr_1_tl_17"/>mit einem bleibenden Exemplar des <rs type="bibl" key="../register/lassberg-literature.xml#lassberg-literature-0022">Liedersaales</rs> schmücken wollen. Hr. Prof. <rs type="person">Gerlach</rs> hat mich <lb xml:id="lassberg-letter-1765-1-18" n="18" corresp="tr_1_tl_18"/>ermuntert, diess Gesuch an Sie zu stellen. <lb xml:id="lassberg-letter-1765-1-19" n="19" corresp="tr_1_tl_19"/>Darf ich Verzeihung und gütigst baldige Gewährung hoffen? Sie würden damit meine Verbind <lb break="no" xml:id="lassberg-letter-1765-1-20" n="20" corresp="tr_1_tl_20"/>lichkeit wo möglich noch vermehren, und gebe mir sicherlich alle Mühe, Ihnen das Buch zu <lb xml:id="lassberg-letter-1765-1-21" n="21" corresp="tr_1_tl_21"/>Danke zu machen: es sollen viele und hübsche Sachen drin stehn, auch manches bisher ungedruckte. <lb xml:id="lassberg-letter-1765-1-22" n="22" corresp="tr_1_tl_22"/>Der Fuchs <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0491">Reinhart</rs> hat doch den weg gefunden? Mit dem Buche ist der litterarischen Forschung <lb xml:id="lassberg-letter-1765-1-23" n="23" corresp="tr_1_tl_23"/>eine neue Bahn gebrochen, und gleich bis zum Ziel. <lb xml:id="lassberg-letter-1765-1-24" n="24" corresp="tr_1_tl_24"/>Noch einmahl empfehle ich mich und meine Bitte Ihrem geneigten Wohlwollen und bin <lb xml:id="lassberg-letter-1765-1-25" n="25" corresp="tr_1_tl_25"/>in voller Hochachtung und Ergebenheit. <lb xml:id="lassberg-letter-1765-1-26" n="26" corresp="tr_1_tl_28"/><rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0367">Wilh. Wackernagel</rs> Dr. <lb xml:id="lassberg-letter-1765-1-27" n="27" corresp="tr_1_tl_29"/><rs type="person">S. Johan</rs> 40. <lb xml:id="lassberg-letter-1765-1-28" n="28" corresp="tr_1_tl_26"/>Befindet sich in <rs type="person">Epponis</rs> villa, vielleicht <lb xml:id="lassberg-letter-1765-1-29" n="29" corresp="tr_1_tl_27"/>auch eine Moerin, eine mitteilbare? </p>
+            </div>
+            <div type="normalized" resp="#GPT4">
+                <p>Erhalten am 20. März abends.  
+Beantwortet und die Bücher gesendet am 21.  
+Basel, 16. März 1834.
+
+Hochgeehrter Herr Baron,
+
+hoffentlich treffen diese Zeilen Sie in der besten Gesundheit und mir so geneigt, dass ich Ihnen mit meinem Brief und meiner Bitte nicht gar zu beschwerlich falle.
+
+Ich bin im Begriff, ein altdeutsches Lesebuch für den akademischen und höheren Schulunterricht drucken zu lassen, in der hiesigen Schweighäuserischen (Wielandischen) Buchhandlung. Mit dem April sollen die Pressen sich schon rühren. Leider fehlen mir aber für die mittelhochdeutsche Literatur einige Bücher, die ich mit Schmerzen vermisse, ungern nicht benutzen würde.
+
+Es ist der dritte Band der Müllerschen Sammlung (des Trojanerkrieges wegen), Wernhers Maria von Hoter, und Ihr Liedersaal. Aus welchen Schätzen und von wessen Güte kann ich da Unterstützung erwarten, wenn Sie nicht, hochverehrter Herr Baron, meiner Sache annehmen?
+
+Wollen Sie also die Gewogenheit haben, mir auf ganz kurze Zeit, nur damit ich schnell Abschrift nehmen kann, jene Bücher lieder anzuvertrauen? Wofern Sie nicht gar (ich wage die Bitte, da sie nicht ganz und gar eigennützig ist) die hiesige unteilbare Bibliothek mit einem bleibenden Exemplar des Liedersaals schmücken wollen. Herr Prof. Gerlach hat mich ermuntert, dieses Gesuch an Sie zu stellen.
+
+Darf ich Verzeihung und gütigst baldige Gewährung hoffen? Sie würden damit meine Verbindlichkeit wo möglich noch vermehren, und ich gebe mir sicherlich alle Mühe, Ihnen das Buch zu danken: Es sollen viele und hübsche Sachen drin stehen, auch manches bisher ungedruckte. 
+
+Der Fuchs Reinhart hat doch den Weg gefunden? Mit dem Buche ist der literarischen Forschung eine neue Bahn gebrochen, und gleich bis zum Ziel.
+
+Noch einmal empfehle ich mich und meine Bitte Ihrem geneigten Wohlwollen und bin in voller Hochachtung und Ergebenheit.
+
+Wilh. Wackernagel Dr.
+
+S. Johann 40.
+
+Befindet sich in Epponis Villa, vielleicht auch eine Morgaine, eine mitteilbare?</p>
+            </div>
+            <div type="translation" resp="#GPT4">
+                <p>Received on March 20 in the evening. Answered and the books sent on the 21st. Basel 03/16/34.
+
+Highly esteemed Baron,
+
+I hope these lines find you in the best of health and so disposed towards me that I do not overly burden you with my letter and my request.
+
+I am about to have an old German reader for academic and higher school instruction printed at the local Schweighäuser (Wieland) bookstore. The presses are scheduled to start in April. However, I am sadly lacking a few books on Middle High German literature, which I sorely miss and would reluctantly forgo using.
+
+I am in need of the third volume of the Müller collection (because of the Trojan War), Wernherr's Maria von Hoter, and your Liederaal. From whose generosity and resources could I expect support if not from you, highly esteemed Baron, to whom I appeal?
+
+Would you be so kind as to lend me those books, even briefly, so I may quickly take excerpts? Unless – I venture to make this request as it is not entirely self-serving – you would wish to adorn the indivisible library here with a permanent copy of the Liederaal. Prof. Gerlach encouraged me to present this request to you.
+
+May I hope for your kind pardon and prompt granting of my request? You would thereby possibly increase my obligation, and I certainly endeavor to make the book worthy of your favor: many beautiful and charming pieces will be included, as well as some that have not been printed before.
+
+Did the "Reynard the Fox" find its way to you? With this book, a new path has been opened to literary research, and straight to the goal.
+
+Once again, I entrust myself and my request to your kind benevolence and remain in full respect and devotion.
+
+Wilh. Wackernagel Dr. S. Johan 40.
+
+Might there possibly be in Epponis villa a Moerin, one that can be shared?</p>
+            </div>
+            <div type="summary" resp="#GPT4">
+                <p/>
+            </div>
+        </body>
+    </text>
+</TEI>

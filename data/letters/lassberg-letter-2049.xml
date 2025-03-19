@@ -1,0 +1,202 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-2049">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Wilhelm Wackernagel an Joseph von Laßberg (21.07.1838).</title>
+                <respStmt xml:id="MiS">
+                    <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Textfassung auf Basis der Transkription durch Transkribus korrigiert und in TEI
+                    überführt. Automatisierte NER-Erkennung und Identifikation durch Flair geprüft,
+                    korrigiert und ergänzt. Normalisierung, Zusammenfassung und Übersetzung durch
+                    GPT-4. Lizenz: </p>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY
+                        4.0</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Basel</settlement>
+                        <repository>Staatsarchiv des Kantons Basel-Stadt</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">2635</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates> <bibl type="printed"><ref/></bibl> </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-2049">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0367"
+                        ref="https://d-nb.info/gnd/118805851">Wilhelm Wackernagel</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0092"
+                        >Lostorf</placeName>
+                    <date when="1838-07-21">21.07.1838</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373"
+                        ref="https://d-nb.info/gnd/118778862">Joseph von Laßberg</persName>
+
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned"> <ref type="unknownType" target=""><rs>Unknown</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0124"
+                    ><rs>Friedrich von Laßberg</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0584 ../register/lassberg-persons.xml#lassberg-correspondent-0585"
+                    ><rs/></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0616"><rs>Hugo
+                    von Montfort</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0618"><rs>Niklas
+                    von Wyle</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0176"><rs>Jenny
+                    von Droste zu Hülshoff</rs></ref> <ref type="cmif:mentionsPlace"
+                    target="../register/lassberg-places.xml#lassberg-place-0092"
+                    ><rs>Lostorf</rs></ref> <ref type="cmif:mentionsPlace"
+                    target="../register/lassberg-places.xml#lassberg-place-0019"
+                    ><rs>Basel</rs></ref> </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2025-03-05" who="#MiS" status="done">Text recognized by
+                    Transkribus</change>
+                <change when="2025-03-05" who="#MiS" status="done">Text corrected in
+                    Transkribus</change>
+                <change when="2025-03-05" who="#MiS" status="done">Exported from
+                    Transkribus</change>
+                <change when="2025-03-05" who="#MiS" status="done">Automatic NER</change>
+                <change when="2025-03-05" who="#MiS" status="done">Automatic normalization,
+                    translation and summary</change>
+                <change when="2025-03-06" who="#MiS" status="done">Manual markup and
+                    proofreading</change>
+                <change when="2025-03-06" who="#MiS" status="done">Finished markup</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="original" resp="#transkribus #MiS">
+                <p><pb n="1" corresp="../pagexml/2049/2049-1.xml"/><lb
+                    xml:id="lassberg-letter-2049-1-1" n="1" corresp="tr_1_tl_1"/>Lostorf zwischen
+                    Arau u. Olten <lb xml:id="lassberg-letter-2049-1-2" n="2" corresp="tr_1_tl_2"
+                    />21/7/38. <lb xml:id="lassberg-letter-2049-1-3" n="3" corresp="tr_1_tl_3"
+                    />Hochverehrter Herr Baron! <lb xml:id="lassberg-letter-2049-1-4" n="4"
+                    corresp="tr_1_tl_4"/>Mit aufrichtig herzlicher Theilnahme habe ich den Trauer
+                    fall vernommen der Sie <lb xml:id="lassberg-letter-2049-1-5" n="5"
+                    corresp="tr_1_tl_5"/>und Ihr Haus betroffen hat; die Wissenschaft wird <rs
+                    type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0124"
+                    >ihn</rs> auch zu beklagen haben. <lb xml:id="lassberg-letter-2049-1-6" n="6"
+                    corresp="tr_1_tl_6"/>Möge der Herr Sie stärken, und Ihnen zum Trost und Ersatz
+                    Ihre <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0584 ../register/lassberg-persons.xml#lassberg-correspondent-0585"
+                    >lieblichen Zwillinge</rs> <lb xml:id="lassberg-letter-2049-1-7" n="7"
+                    corresp="tr_1_tl_7"/>desto kräftiger gedeihen lassen. <lb
+                    xml:id="lassberg-letter-2049-1-8" n="8" corresp="tr_1_tl_8"/>ich habe Ihren
+                    Brief hieher gesendet erhalten, nach <rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0092">Lostorf</rs>, einem
+                    freundlichen <lb xml:id="lassberg-letter-2049-1-9" n="9" corresp="tr_1_tl_9"
+                    />Badeorte, den ich meiner Gesundheit wegen für einige Ferienwochen habe
+                    beziehen <lb xml:id="lassberg-letter-2049-1-10" n="10" corresp="tr_1_tl_10"
+                    />müssen. Diess der Grund weshalb ich Ihrem Befehle die <rs type="object" key=""
+                    >geliehenen Bücher</rs> zurück <lb break="no" xml:id="lassberg-letter-2049-1-11"
+                    n="11" corresp="tr_1_tl_11"/>zusenden unmöglich sogleich Folge leisten kann; es
+                    soll aber geschehen so wie ich <lb xml:id="lassberg-letter-2049-1-12" n="12"
+                    corresp="tr_1_tl_12"/>wieder in <rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0019">Basel</rs> bin, damit
+                    Sie nicht in dem Verdachte bestärkt werden, ich <lb
+                    xml:id="lassberg-letter-2049-1-13" n="13" corresp="tr_1_tl_13"/>wollte Ihre Güte
+                    missbrauchen. Denn zu meiner Betrübniss hegen Sie, glaube <lb
+                    xml:id="lassberg-letter-2049-1-14" n="14" corresp="tr_1_tl_14"/>ich, diesen
+                    Verdacht. ich hatte Sie auf Ihre frühere Anmahnung ergebenst <lb
+                    xml:id="lassberg-letter-2049-1-15" n="15" corresp="tr_1_tl_15"/>gebeten mir jene
+                    Bücher noch einige Zeit lassen zu wollen, damit ich dieselben wirklich <lb
+                    xml:id="lassberg-letter-2049-1-16" n="16" corresp="tr_1_tl_16"/>auch brauchen
+                    könnte. Recht geschehen ist das noch nicht, da die Stücke vom <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0616">Gr. v. <lb
+                    xml:id="lassberg-letter-2049-1-17" n="17" corresp="tr_1_tl_17"/>Montfort</rs>
+                    und von <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0618">Niclas v.
+                    Wyle</rs> noch nicht gedruckt und noch nicht nach Ihren <lb
+                    xml:id="lassberg-letter-2049-1-18" n="18" corresp="tr_1_tl_18"
+                    />Originalexemplaren corrigiert sind. Indessen will ich diesen kleineren Verlust
+                    gern <lb xml:id="lassberg-letter-2049-1-19" n="19" corresp="tr_1_tl_19"
+                    />verschmerzen um einem grössern zu entgehn, dem Verlust Ihres Wohlwollens. <lb
+                    xml:id="lassberg-letter-2049-1-20" n="20" corresp="tr_1_tl_20"/>Unter
+                    gehorsamsten Empfehlungen an Ihre gnaedige Frau <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0176"
+                    >Gemahlinn</rs> habe ich die Ehre zu seyn <lb xml:id="lassberg-letter-2049-1-21"
+                    n="21" corresp="tr_1_tl_21"/>Eu. Hochwohlgeboren <lb
+                    xml:id="lassberg-letter-2049-1-22" n="22" corresp="tr_1_tl_22"/>ergebenster
+                    Diener <lb xml:id="lassberg-letter-2049-1-23" n="23" corresp="tr_1_tl_23"/>gez.
+                    Wilh. Wackernagel Dr. Prof. </p>
+            </div>
+            <div type="normalized" resp="#GPT4">
+                <p>Lostorf zwischen Aarau u. Olten 21/7/38. Hochverehrter Herr Baron! Mit aufrichtig
+                    herzlicher Teilnahme habe ich den Trauerfall vernommen, der Sie und Ihr Haus
+                    betroffen hat; die Wissenschaft wird ihn auch zu beklagen haben. Möge der Herr
+                    Sie stärken und Ihnen zum Trost und Ersatz Ihre lieblichen Zwillinge desto
+                    kräftiger gedeihen lassen. Ich habe Ihren Brief hierher gesendet erhalten, nach
+                    Lostorf, einem freundlichen Badeort, den ich meiner Gesundheit wegen für einige
+                    Ferienwochen habe beziehen müssen. Dies der Grund, weshalb ich Ihrem Befehl, die
+                    geliehenen Bücher zurückzusenden, unmöglich sogleich Folge leisten kann; es soll
+                    aber geschehen, so wie ich wieder in Basel bin, damit Sie nicht in dem Verdacht
+                    bestärkt werden, ich wollte Ihre Güte missbrauchen. Denn zu meiner Betrübnis
+                    hegen Sie, glaube ich, diesen Verdacht. Ich hatte Sie auf Ihre frühere Anmahnung
+                    ergebenst gebeten, mir jene Bücher noch einige Zeit lassen zu wollen, damit ich
+                    dieselben wirklich auch brauchen könnte. Recht geschehen ist das noch nicht, da
+                    die Stücke vom Gr. v. Montfort und von Niclas v. Wyle noch nicht gedruckt und
+                    noch nicht nach Ihren Originalexemplaren korrigiert sind. Indessen will ich
+                    diesen kleineren Verlust gern verschmerzen, um einem größeren zu entgehen, dem
+                    Verlust Ihres Wohlwollens. Unter gehorsamsten Empfehlungen an Ihre gnädige Frau
+                    Gemahlin habe ich die Ehre, zu sein Eu. Hochwohlgeboren ergebenster Diener gez.
+                    Wilh. Wackernagel Dr. Prof. </p>
+            </div>
+            <div type="translation" resp="#GPT4">
+                <p>Lostorf between Arau and Olten 21/7/38. Most esteemed Baron, With sincere
+                    heartfelt sympathy, I have learned of the bereavement that has affected you and
+                    your household; science will also have cause to mourn. May the Lord strengthen
+                    you and allow your lovely twins to thrive all the more robustly as a comfort and
+                    substitution for you. I have received your letter here, in Lostorf, a pleasant
+                    spa town which I had to take up due to my health for a few weeks of vacation.
+                    This is the reason why I cannot immediately comply with your command to return
+                    the borrowed books; however, this will happen as soon as I am back in Basel, so
+                    that you will not be reinforced in the suspicion that I might want to abuse your
+                    kindness. For to my distress, you, I believe, harbor this suspicion. I had
+                    earnestly requested you, upon your earlier prompting, to allow me to keep those
+                    books for a little longer so that I could actually make use of them. This has
+                    not yet been done because the pieces from Gr. v. Montfort and Niclas v. Wyle
+                    have not yet been printed, and your original copies have not yet been corrected.
+                    However, I am willing to gladly forgo this minor loss to avoid a greater one,
+                    the loss of your goodwill. With the most obedient compliments to your gracious
+                    wife, I have the honor to be Your Excellency's most devoted servant signed Wilh.
+                    Wackernagel Dr. Prof.</p>
+            </div>
+            <div type="summary" resp="#GPT4">
+                <p>Wackernagel spricht Laßberg sein aufrichtiges Beileid zu einem Trauerfall in
+                    dessen Familie aus und wünscht ihm Trost und Kraft, insbesondere durch das
+                    Gedeihen seiner Zwillinge. Er erklärt, dass er sich derzeit aus gesundheitlichen
+                    Gründen in einem Badeort in Lostorf aufhält und daher die von Laßberg geliehenen
+                    Bücher nicht sofort zurücksenden kann. Er versichert jedoch, dass er dies nach
+                    seiner Rückkehr nach Basel umgehend nachholen wird, da er nicht den Eindruck
+                    erwecken möchte, seine Güte auszunutzen. Obwohl er die Bücher noch nicht
+                    vollständig nutzen konnte, ist er bereit, darauf zu verzichten, um Laßbergs
+                    Wohlwollen nicht zu verlieren. Abschließend richtet er Grüße an Laßbergs Frau
+                    aus.</p>
+            </div>
+        </body>
+    </text>
+</TEI>
