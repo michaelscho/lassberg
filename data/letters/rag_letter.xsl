@@ -15,7 +15,8 @@
         <xsl:apply-templates select="//tei:div[@type='original']"/>
         <xsl:text>, </xsl:text>
         <xsl:apply-templates select="//tei:div[@type='normalized']"/>
-        
+        <xsl:text>, </xsl:text>
+        <xsl:apply-templates select="//tei:div[@type='translation']"/>
         <xsl:text>}</xsl:text>
     </xsl:template>
     
@@ -47,7 +48,7 @@
 
         <xsl:for-each select=".//tei:note/tei:ref[@type='cmif:mentionsPlace']">
             <xsl:text>"</xsl:text>
-                <xsl:value-of select="."/>
+            <xsl:value-of select="normalize-space(.)"/>
             <xsl:text>"</xsl:text>
             <xsl:if test="position() != last()">
                 <xsl:text>, </xsl:text>
@@ -57,7 +58,7 @@
         
         <xsl:for-each select=".//tei:note/tei:ref[@type='cmif:mentionsPerson']">
             <xsl:text>"</xsl:text>
-            <xsl:value-of select="."/>
+            <xsl:value-of select="normalize-space(.)"/>
             <xsl:text>"</xsl:text>
             <xsl:if test="position() != last()">
                 <xsl:text>, </xsl:text>
@@ -67,7 +68,7 @@
         
         <xsl:for-each select=".//tei:note/tei:ref[@type='cmif:mentionsBibl']">
             <xsl:text>"</xsl:text>
-            <xsl:value-of select="."/>
+            <xsl:value-of select="normalize-space(.)"/>
             <xsl:text>"</xsl:text>
             <xsl:if test="position() != last()">
                 <xsl:text>, </xsl:text>
@@ -93,6 +94,12 @@
 
     <xsl:template match="//tei:div[@type='normalized']">
         <xsl:text>"normalized": "</xsl:text>
+        <xsl:apply-templates/>
+        <xsl:text>"</xsl:text>
+    </xsl:template>
+    
+    <xsl:template match="//tei:div[@type='translation']">
+        <xsl:text>"translated": "</xsl:text>
         <xsl:apply-templates/>
         <xsl:text>"</xsl:text>
     </xsl:template>

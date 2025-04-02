@@ -1,9 +1,8 @@
-// Add persons
 CALL apoc.load.xml('https://raw.githubusercontent.com/michaelscho/lassberg/main/data/register/lassberg-persons.xml') 
 YIELD value 
 UNWIND value._children AS child
 WITH child
-WHERE child._type = "text"
+WHERE child._type = "text"  // Ensures we're in the main TEI text section
 UNWIND child._children AS grandChild
 WITH grandChild
 WHERE grandChild._type = "body"
@@ -15,11 +14,13 @@ WITH greatGreatGrandChild
 WHERE greatGreatGrandChild._type = "listPerson"
 UNWIND greatGreatGrandChild._children AS personOrGroup
 WITH personOrGroup
-WHERE personOrGroup._type IN ["person", "personGrp"]  // Modified to include personGrp
+WHERE personOrGroup._type IN ["person", "personGrp"]
+AND apoc.meta.cypher.type(personOrGroup) = "MAP"  // Ensures we only process structured data
 
-MERGE (p:Person {id: personOrGroup.`xml:id`, type: personOrGroup.`type`})
-SET p.name = [x IN personOrGroup._children WHERE x._type = "persName" | x._text][0],
-    p.gender = personOrGroup.gender,
+MERGE (p:Person {id: personOrGroup.`xml:id`})
+SET p.type = COALESCE(personOrGroup.`type`, "unknown"),  // Avoid NULL errors
+    p.name = [x IN personOrGroup._children WHERE x._type = "persName" | x._text][0],
+    p.gender = COALESCE(personOrGroup.gender, "unknown"),
     p.gnd = personOrGroup.ref,
     p.occupation = [x IN personOrGroup._children WHERE x._type = "occupation" | x._text][0],
     p.education = [x IN personOrGroup._children WHERE x._type = "education" | x._text][0],
@@ -27,6 +28,7 @@ SET p.name = [x IN personOrGroup._children WHERE x._type = "persName" | x._text]
     p.wikipediaRef = [x IN personOrGroup._children WHERE x._type = "ref" | x._text][0]
 
 RETURN p.name, p.gender, p.gnd, p.occupation, p.education, p.birth, p.wikipediaRef LIMIT 10;
+
 
 
 // Add places
@@ -99,7 +101,7 @@ CREATE (p)-[:HAS_AUTHORED]->(b);
 LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/michaelscho/lassberg/main/data/register/register.csv' AS row FIELDTERMINATOR ';'
 
 // Create or update the letter node
-MERGE (l:Letter {id: row.ID})
+MERGE (l:Letter {lassbergId: row.ID})
 SET l.Nummer_Harris = row.Nummer_Harris,
     l.Journalnummer = row.Journalnummer,
     l.Signatur = row.Signatur,
@@ -122,162 +124,21 @@ MERGE (l)-[:SENT_FROM]->(sendingPlace)
 
 RETURN l;
 
+// Create individual letters
 // Define the list of letter IDs
-WITH [
-    
-    "1449",
-"1270",
-"0971",
-"1015",
-"1209",
-"1729",
-"1730",
-"1735",
-"1737",
-"1741",
-"1743",
-"1760",
-"1765",
-"1766",
-"1768",
-"1774",
-"1776",
-"1779",
-"1781",
-"1783",
-"1784",
-"1786",
-"1787",
-"1800",
-"1802",
-"1857",
-"1868",
-"1934",
-"1935",
-"1952",
-"1959",
-"1961",
-"1999",
-"2011",
-"2022",
-"2049",
-"2052",
-"2214",
-"2255",
-"2262",
-"2263",
-"2274",
-"2319",
-"2358",
-"3173",
-"3266",
-"3267",
-"3268"] AS letterIDs
+WITH ["1449", "1270", "0971", "1015", "1209", "1729", "1730",
+        "1735", "1737", "1741", "1743", "1760", "1765", "1766",
+        "1768", "1774", "1776", "1779", "1781", "1783", "1784",
+        "1786", "1787", "1800", "1802", "1857", "1868", "1934",
+        "1935", "1952", "1959", "1961", "1999", "2011", "2022",
+        "2049", "2052", "2214", "2255", "2262", "2263", "2274",
+        "2319", "2358", "3173", "3266", "3267", "3268"] AS letterIDs
 
 // Unwind the list to process each letter ID
 UNWIND letterIDs AS letterID
 
 // Match or create the letter node
-MERGE (l:Letter {id: letterID})
-WITH l, letterID
-
-// Load the XML for the current letter
-CALL apoc.load.xml('https://raw.githubusercontent.com/michaelscho/lassberg/main/data/letters/lassberg-letter-' + letterID + '.xml')
-YIELD value 
-UNWIND value._children AS child
-WITH l,child
-WHERE child._type = "teiHeader"
-UNWIND child._children AS grandChild
-WITH l,grandChild
-WHERE grandChild._type = "revisionDesc"
-UNWIND grandChild._children AS revDesc
-WITH l,revDesc
-WHERE revDesc._type = "listChange"
-UNWIND revDesc._children AS listChange
-WITH l,listChange
-WHERE listChange._type = "profileDesc"
-UNWIND listChange._children AS profileDesc
-WITH l,profileDesc
-WHERE profileDesc._type = "correspDesc"
-UNWIND profileDesc._children AS correspDesc
-WITH l,correspDesc
-WHERE correspDesc._type = "note"
-UNWIND correspDesc._children AS ref
-WITH l, ref
-
-// Create or find the mentioned nodes and link them to the letter
-FOREACH (item IN CASE WHEN ref.type = "cmif:mentionsPerson" THEN [1] ELSE [] END |
-    MERGE (p:Person {id: apoc.text.replace(ref.target, '../register/lassberg-persons.xml#', '')})
-    MERGE (l)-[:MENTIONS]->(p)
-)
-FOREACH (item IN CASE WHEN ref.type = "cmif:mentionsPlace" THEN [1] ELSE [] END |
-    MERGE (place:Place {id: apoc.text.replace(ref.target, '../register/lassberg-places.xml#', '')})
-    MERGE (l)-[:MENTIONS]->(place)
-)
-FOREACH (item IN CASE WHEN ref.type = "cmif:mentionsBibl" THEN [1] ELSE [] END |
-    MERGE (b:Bibl {id: apoc.text.replace(ref.target, '../register/lassberg-literature.xml#', '')})
-    MERGE (l)-[:MENTIONS]->(b)
-)
-RETURN l;
-
-// Create letters
-// Define the list of letter IDs
-WITH [
-    
-    "1449",
-"1270",
-"0971",
-"1015",
-"1209",
-"1729",
-"1730",
-"1735",
-"1737",
-"1741",
-"1743",
-"1760",
-"1765",
-"1766",
-"1768",
-"1774",
-"1776",
-"1779",
-"1781",
-"1783",
-"1784",
-"1786",
-"1787",
-"1800",
-"1802",
-"1857",
-"1868",
-"1934",
-"1935",
-"1952",
-"1959",
-"1961",
-"1999",
-"2011",
-"2022",
-"2049",
-"2052",
-"2214",
-"2255",
-"2262",
-"2263",
-"2274",
-"2319",
-"2358",
-"3173",
-"3266",
-"3267",
-"3268"] AS letterIDs
-
-// Unwind the list to process each letter ID
-UNWIND letterIDs AS letterID
-
-// Match or create the letter node
-MERGE (l:Letter {id: letterID})
+MERGE (l:Letter {lassbergId: "lassberg-letter-" + letterID})
 WITH l, letterID
 
 // Load the XML for the current letter
@@ -312,67 +173,26 @@ FOREACH (item IN CASE WHEN ref.type = "cmif:mentionsBibl" THEN [1] ELSE [] END |
     MERGE (b:Bibl {id: apoc.text.replace(ref.target, '../register/lassberg-literature.xml#', '')})
     MERGE (l)-[:MENTIONS]->(b)
 )
+SET l:Online
 RETURN l;
 
 // Add normalized text to nodes
 // Add text nodes
-WITH [
-    
-    "1449",
-"1270",
-"0971",
-"1015",
-"1209",
-"1729",
-"1730",
-"1735",
-"1737",
-"1741",
-"1743",
-"1760",
-"1765",
-"1766",
-"1768",
-"1774",
-"1776",
-"1779",
-"1781",
-"1783",
-"1784",
-"1786",
-"1787",
-"1800",
-"1802",
-"1857",
-"1868",
-"1934",
-"1935",
-"1952",
-"1959",
-"1961",
-"1999",
-"2011",
-"2022",
-"2049",
-"2052",
-"2214",
-"2255",
-"2262",
-"2263",
-"2274",
-"2319",
-"2358",
-"3173",
-"3266",
-"3267",
-"3268"] AS letterIDs
+WITH ["1449", "1270", "0971", "1015", "1209", "1729", "1730",
+        "1735", "1737", "1741", "1743", "1760", "1765", "1766",
+        "1768", "1774", "1776", "1779", "1781", "1783", "1784",
+        "1786", "1787", "1800", "1802", "1857", "1868", "1934",
+        "1935", "1952", "1959", "1961", "1999", "2011", "2022",
+        "2049", "2052", "2214", "2255", "2262", "2263", "2274",
+        "2319", "2358", "3173", "3266", "3267", "3268"] AS letterIDs
+
 
 // Unwind the list to process each letter ID
 UNWIND letterIDs AS letterID
 
 // Load the XML for the current letter
 // Match or create the letter node
-MERGE (l:Letter {id: "lassberg-letter-" + letterID})
+MERGE (l:Letter {lassbergId: "lassberg-letter-" + letterID})
 WITH l, letterID
 
 CALL apoc.load.xml('https://raw.githubusercontent.com/michaelscho/lassberg/main/data/letters/lassberg-letter-' + letterID + '.xml')
@@ -391,4 +211,19 @@ WHERE body.type = "normalized"
 UNWIND body._children AS text
 WITH l, text
 SET l.normalizedText = text._text
-RETURN l, text
+RETURN l, text;
+
+// Add Label online for easier retrival
+WITH [
+    "1449", "1270", "0971", "1015", "1209", "1729", "1730", "1735",
+    "1737", "1741", "1743", "1760", "1765", "1766", "1768", "1774",
+    "1776", "1779", "1781", "1783", "1784", "1786", "1787", "1800",
+    "1802", "1857", "1868", "1934", "1935", "1952", "1959", "1961",
+    "1999", "2011", "2022", "2049", "2052", "2214", "2255", "2262",
+    "2263", "2274", "2319", "2358", "3173", "3266", "3267", "3268"
+] AS letterIDs
+
+MATCH (l:Letter)
+WHERE l.lassbergId IN letterIDs
+SET l:Online
+RETURN l.id, labels(l) LIMIT 10;
