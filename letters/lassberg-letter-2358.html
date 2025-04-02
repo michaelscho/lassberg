@@ -1,0 +1,252 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0" lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>The Lassberg Letters</title>
+      <link href="../../css/styles.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script><script src="../../js/letters.js"></script><link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"><script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script></head>
+   <body>
+      <div id="app" class="container">
+         <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+            <div class="container-fluid"><a class="navbar-brand" href="#">Laßberg Letters</a><ul class="navbar-nav">
+                  <li class="nav-item"><a class="nav-link" href="../../index.html">Welcome</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb">Data Analysis</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg">Repository</a></li>
+               </ul>
+            </div>
+         </nav>
+         <div class="container my-4">
+            <header class="mb-4">
+               <h1>Brief von Joseph von Laßberg an Wilhelm Wackernagel (02.08.1842).</h1>
+               <p class="lead">
+                  Textfassung auf Basis der Transkription durch Transkribus korrigiert und in TEI
+                  überführt. Automatisierte NER-Erkennung und Identifikation durch Flair geprüft,
+                  korrigiert und ergänzt. Normalisierung, Zusammenfassung und Übersetzung durch
+                  GPT-4. Lizenz: 
+                  
+                  <a href="https://creativecommons.org/licenses/by/4.0/">CC BY
+                     4.0</a>
+                  
+                  </p>
+            </header>
+            <section id="map" class="mb-4">
+               <div id="mapid"></div>
+            </section>
+            <section id="metadata" class="mb-4">
+               <h2>Metadata</h2>
+               <p><strong>Signatur: </strong>Basel, Staatsarchiv des Kantons Basel-Stadt, </p>
+               <p><strong>Registernummer (Laßberg): </strong>138</p>
+               <p><strong>Registernummer (Harris): </strong>1191</p>
+               <p><strong>Gedruck in: </strong><a href="-">Wackernagel: Albert Leitzmann, Briefe aus
+                     dem Nachlaß Wilhelm Wackernagels. VI.: Briefe von Joseph von Laßberg.
+                     In: Abhandlungen der phil.-hist. Klasse der Kgl. Sächsischen
+                     Gesellschaft der Wissenschaften 34,1. Leipzig 1916, S. 92-130, S.
+                     126</a></p>
+            </section>
+            <section id="original-text" class="mb-4">
+               <h2>Original Text</h2>
+               <div>
+                  138. Auf der alten
+                  Meersburg am 2. August. 1842. Vererter Herr und Freund! Hier folgt ein
+                  kleines specimen meiner alten tätigkeit. "nemen Sie es mit
+                  nachsicht auf!" ist eine so verbrauchte redensart, daß ich mich schaemen
+                  würde sie hier anzuwenden: nein, nemen Sie es nicht mit nachsieht auf! und
+                  sagen Sie mir lieber, was Inen daran und darinne missfaellt! Ich danke Inen
+                  auch, dass Sie die güte hatten, unsere grüsse bei H. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Emanuel Burckhardt-Iselin</strong&gt;">Burkhard Iselin<a href="https://d-nb.info/gnd/1089905092"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> auszurichten: moechte ich Inen auch danken koennen für gute
+                  nachrichten, die Sie uns von Irem und der Irigen befinden geben
+                  sollten! - gehet es unsern wünschen nach; so muss dasselbe ser gut sein. Über die so
+                  langwierige belagerung und zerstoerung der burg zu <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Burg&#xA;                        Hohenzollern</strong&gt;">Hohenzollern<a href="https://www.wikidata.org/wiki/Q156457"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> hat
+                  keiner unserer schwaebischen geschichtschreiber einen ver ständlichen
+                  bericht verlassen; ich dachte also, es moechte angenem sein etwas naeheres
+                  darüber zu hoeren. hat <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Konrad Silberdrat: Die Fehde des Grafen Friedrich von Zollern.</strong&gt;">das
+                     gedicht<a href="https://geschichtsquellen.de/werk/5253">📖</a></span> auch keinen poetischen wert; so hat es doch gewiss einen sprachlichen;
+                  denn die teutsche literatur des zeitraumes von 1400-1450. ist doch wirklich arm an mustern.
+                  Die <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unbekannt: Unbekannt.</strong&gt;">lieder der
+                     beiden Hohenstaufen<a href="-">📖</a></span> sind auch nicht zu verachten, und <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Heinzelin von Konstanz: Von dem Ritter&#xA;        und von dem Pfaffen.</strong&gt;">Kleinheinzens
+                     gedicht<a href="https://handschriftencensus.de/werke/1596">📖</a></span> ist ein tüchtiges gegenstük zu den <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Heinzelin von Konstanz: Von den zwein&#xA;        Sanct Johansen.</strong&gt;">beiden S.
+                     Johannsen<a href="https://handschriftencensus.de/werke/2348">📖</a></span>, und das <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unbekannt: Unbekannt.</strong&gt;">ge dicht des
+                     Franzosen<a href="-">📖</a></span> ist um kein haar toller, als die neueste Berliner
+                  Religionsphilosophie; aber doch noch tolle genug. Neues genug in der
+                  Theotisca! 2 neue übersezzungen des <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Nibelungenlied.</strong&gt;">Nibelungen
+                     liedes<a href="https://handschriftencensus.de/werke/271">📖</a></span>,
+                  von <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Gotthard Oswald Marbach: Das&#xA;        Nibelungenlied übersetzt von Gotthard Oswald Marbach.</strong&gt;">Marbach<a href="https://www.digitale-sammlungen.de/de/view/bsb10057191">📖</a></span>
+                  die eine, von <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Gustav Pfizer: Der Nibelungen Noth / illustrirt mit Holzschnitten nach Zeichnungen&#xA;        von Julius Schnorr von Carolsfeld und Eugen Neureuther.</strong&gt;">Pfizer<a href="https://digital.blb-karlsruhe.de/blbihd/Handschriften/content/titleinfo/6187169">📖</a></span>
+                  die andere, welche beide die suppe nicht fett machen werden: eine <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Adolf Ludwig Follen: Das Nibelungen-Lied im Ton unserer Volkslieder.</strong&gt;">dritte<a href="https://books.google.de/books?id=XA3RvjUYWVwC">📖</a></span>,
+                  von dem ehemaligen Professor <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Adolf Ludwig Follen</strong&gt;">Follen<a href="https://d-nb.info/gnd/116646772"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                  in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Zürich</strong&gt;">Zürich<a href="https://www.wikidata.org/wiki/Q72"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, soll, wie ich hoere, auch nächstens erscheinen. alles dieses manet
+                  mich an die vielen übersezzungen von <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Vergilius Maro, Publius: Aeneis.</strong&gt;">Virgils Aeneis<a href="https://d-nb.info/gnd/4099391-7">📖</a></span>, die in
+                  meiner iugendzeit herauskamen; was waren sie? bei dem barte <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Kaiser Friedrich I.</strong&gt;">Friderichs des I.<a href="https://d-nb.info/gnd/118535757"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>! sie sind und waren nicht Virgilisch! <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Franz Viktor Pfeiffer</strong&gt;">Franz Pfeiffer<a href="https://d-nb.info/gnd/118740776"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> von <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Solothurn</strong&gt;">Solothurn<a href="https://www.wikidata.org/wiki/Q68965"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> sizzet
+                  in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Stuttgart</strong&gt;">Stuttgart<a href="https://www.wikidata.org/wiki/Q1022"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> und laesst da seinen <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Franz Viktor Pfeiffer: Barlaam und Josaphat.</strong&gt;">Barlaam und
+                     Josaphat<a href="https://archive.org/details/barlaamundjosap00rudo">📖</a></span> druken: das wird ein gut stük arbeit werden.
+                  hernach will er an den <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Willehalm von&#xA;        Orlens.</strong&gt;">Wilhelm von
+                     Orlienz<a href="https://handschriftencensus.de/werke/323">📖</a></span> gehen und nach und nach den ganzen <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Rudolf von Ems: Weltchronik.</strong&gt;">Rudolf von
+                     Ems<a href="https://geschichtsquellen.de/werk/4869">📖</a></span> heraus geben. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Friedrich von Cotta</strong&gt;">Cotta<a href="https://d-nb.info/gnd/11852240X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> in
+                  <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Stuttgart</strong&gt;">Stuttgart<a href="https://www.wikidata.org/wiki/Q1022"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> will eine ganze reihe mittelhoch teutscher
+                  dichter herausgeben; ich hoffe doch: inedita. Prof. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Albert Lucian Constans Schott</strong&gt;">Albert Schott<a href="https://d-nb.info/gnd/11692313X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>, früher in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Zürich</strong&gt;">Zürich<a href="https://www.wikidata.org/wiki/Q72"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, nun in
+                  <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Stuttgart</strong&gt;">Stuttgart<a href="https://www.wikidata.org/wiki/Q1022"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, soll eine einleitung dazu schreiben, und war deshalb 4 wochen bei
+                  mir, in
+                  meinem büchersaale arbeitend. da er mir den plan seines werkes nicht
+                  mitgeteilt hat; so weiss ich nicht von was für an sichten er dabei
+                  ausgehen wird. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ludwig Uhland</strong&gt;">Uhland<a href="https://d-nb.info/gnd/118625063"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                  ist eben nach <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Schweden</strong&gt;">Schweden<a href="https://www.wikidata.org/wiki/Q34"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> abgereiset); so
+                  liegt denn sein <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ludwig Uhland: Alte hoch- und niederdeutsche Volkslieder in fünf&#xA;        Büchern.</strong&gt;">werk über das
+                     teutsche volkslied<a href="https://books.google.lu/books?id=O4xvl_oQ7FkC">📖</a></span> wieder, gott weiss auf wie lange, hinter dem ofen. Wir alte und iunge leute, in der <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Meersburg</strong&gt;">Dagebertsburg<a href="https://www.wikidata.org/wiki/Q498212"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>,
+                  leben ganz stille, ruhig, und was dem lieben Gott am meisten zu verdanken ist,
+                  gesund und
+                  zufrieden. was die täglich naerrischer werdenden welthändel
+                  anbetrift, so kann und muss ich sagen: oblites eorum,
+                  obliviscendus et illis! Leben Sie wol! herzlich von uns allen gegrüßet und gott befolen!
+                  von Irem Joseph von
+                  Laszberg. 
+                  </div>
+            </section>
+            <section id="normalised-text" class="mb-4">
+               <h2>Normalisierter Text</h2>
+               <div>
+                  138. Auf der alten Meersburg am 2. August 1842. Verehrter Herr und Freund! Hier
+                  folgt ein kleines Specimen meiner alten Tätigkeit. "Nehmen Sie es mit Nachsicht
+                  auf!" ist eine so verbrauchte Redensart, dass ich mich schämen würde, sie hier
+                  anzuwenden: nein, nehmen Sie es nicht mit Nachsicht auf! und sagen Sie mir
+                  lieber, was Ihnen daran und darinnen missfällt! Ich danke Ihnen auch, dass Sie
+                  die Güte hatten, unsere Grüße bei H. Burkhard Iselin auszurichten: möchte ich
+                  Ihnen auch danken können für gute Nachrichten, die Sie uns von Ihrem und der
+                  Ihrigen Befinden geben sollten! - Geht es unseren Wünschen nach; so muss
+                  dasselbe sehr gut sein. Über die so langwierige Belagerung und Zerstörung der
+                  Burg zu Hohenzollern hat keiner unserer schwäbischen Geschichtsschreiber einen
+                  ver- ständlichen Bericht verlassen; ich dachte also, es möchte angenehm sein
+                  etwas Näheres darüber zu hören. Hat das Gedicht auch keinen poetischen Wert; so
+                  hat es doch gewiss einen sprachlichen; denn die deutsche Literatur des
+                  Zeitraumes von 1400-1450 ist doch wirklich arm an Mustern. Die Lieder der beiden
+                  Hohenstaufen sind auch nicht zu verachten, und Kleinheinzens Gedicht ist ein
+                  tüchtiges Gegenstück zu den beiden S. Johannsen, und das Ge- dicht des Franzosen
+                  ist um kein Haar toller, als die neueste Berliner Religionsphilosophie; aber
+                  doch noch toll genug. Neues genug in der Theotisca! 2 neue Übersetzungen des
+                  Nibelungen- liedes, von Marbach die eine, von Pfizer die andere, welche beide
+                  die Suppe nicht fett machen werden: eine dritte, von dem ehemaligen Professor
+                  Follen in Zürich, soll, wie ich höre, auch nächstens erscheinen. Alles dieses
+                  mahnt mich an die vielen Übersetzungen von Virgils Aeneis, die in meiner
+                  Jugendzeit herauskamen; was waren sie? bei dem Barte Friedrichs des I.! Sie sind
+                  und waren nicht virgilisch! Franz Pfeiffer von Solothurn sitzt in Stuttgart und
+                  lässt da seinen Barlaam und Josaphat drucken: das wird ein gut Stück Arbeit
+                  werden. Hernach will er an den Wilhelm von Orlienz gehen und nach und nach den
+                  ganzen Rudolf von Ems heraus- geben. Cotta in Stuttgart will eine ganze Reihe
+                  mittelhoch- deutscher Dichter herausgeben; ich hoffe doch: inedita. Prof. Albert
+                  Schott, früher in Zürich, nun in Stuttgart, soll eine Einleitung dazu schreiben,
+                  und war deshalb 4 Wochen bei mir, in meinem Büchersaal arbeitend. Da er mir den
+                  Plan seines Werkes nicht mitgeteilt hat; so weiß ich nicht, von was für An-
+                  sichten er dabei ausgehen wird. Uhland ist eben nach Schweden abgereist; so
+                  liegt denn sein Werk über das deutsche Volkslied wieder, Gott weiß auf wie
+                  lange, hinter dem Ofen. Wir alte und junge Leute, in der Dagebertsburg, leben
+                  ganz still, ruhig, und was dem lieben Gott am meisten zu verdanken ist, gesund
+                  und zufrieden. Was die täglich närrischer werdenden Welthändel anbetrifft, so
+                  kann und muss ich sagen: oblites eorum, obliviscendus et illis! Leben Sie wohl!
+                  Herzlich von uns allen gegrüßt und Gott befohlen! von Ihrem Joseph von Laßberg.
+                  
+                  </div>
+            </section>
+            <section id="translation" class="mb-4">
+               <h2>Translation</h2>
+               <div>
+                  138. At the old Meersburg on August 2, 1842. Honored Sir and Friend! Here follows
+                  a small specimen of my old activity. "Take it with indulgence!" is such a
+                  worn-out saying that I would be ashamed to apply it here: no, do not take it
+                  with indulgence! and rather tell me what you find displeasing in and about it! I
+                  also thank you for having the kindness to convey our greetings to Mr. Burkhard
+                  Iselin: may I also be able to thank you for good news that you should give us
+                  about yourself and your family! - if it goes according to our wishes; so it must
+                  be very good. Regarding the lengthy siege and destruction of the castle at
+                  Hohenzollern, none of our Swabian historians has left a comprehensible report;
+                  so I thought it might be pleasant to hear something more about it. Even if the
+                  poem has no poetic value; it certainly has a linguistic one; for the German
+                  literature of the period from 1400-1450 is indeed poor in examples. The songs of
+                  the two Hohenstaufen are also not to be despised, and Kleinheinzen's poem is a
+                  solid counterpiece to the two St. Johannsen, and the poem of the Frenchman is
+                  not a whit crazier than the latest Berlin religious philosophy; but still crazy
+                  enough. Enough new things in the Theotisca! 2 new translations of the
+                  Nibelungenlied, one by Marbach, the other by Pfizer, neither of which will make
+                  the soup rich: a third, by the former Professor Follen in Zurich, is also said
+                  to be forthcoming soon, as I hear. All this reminds me of the many translations
+                  of Virgil's Aeneid that came out during my youth; what were they? By the beard
+                  of Frederick I! They are and were not Virgilian! Franz Pfeiffer from Solothurn
+                  is sitting in Stuttgart and is having his Barlaam and Josaphat printed there:
+                  that will be a good piece of work. Afterwards, he intends to tackle Wilhelm von
+                  Orlienz and gradually publish the entire Rudolf von Ems. Cotta in Stuttgart
+                  wants to publish a whole series of Middle High German poets; I hope they are:
+                  inedita. Prof. Albert Schott, formerly in Zurich, now in Stuttgart, is supposed
+                  to write an introduction to it and was with me for 4 weeks, working in my
+                  library. Since he did not share the plan of his work with me; I do not know from
+                  what perspectives he will approach it. Uhland has just traveled to Sweden; thus
+                  his work on the German folk song is, God knows for how long, shelved again. We
+                  old and young people, in the Dagobert Castle, live very quietly, calmly, and,
+                  thank God most of all, healthily and contentedly. As for the world affairs,
+                  which are becoming more foolish daily, I can and must say: oblites eorum,
+                  obliviscendus et illis! Farewell! Heartily greeted by all of us and may God keep
+                  you! Your Joseph von Laszberg.
+                  </div>
+            </section>
+         </div>
+      </div><script src="https://unpkg.com/leaflet/dist/leaflet.js"></script><script>
+                    // Create the map and set its view to a default coordinate and zoom level.
+                    var map = L.map('mapid').setView([47.7,9.26666667], 7);
+                    // Set up the OpenStreetMap tile layer.
+                    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: 'Map data <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
+                    }).addTo(map);
+                    
+                    
+                    // Optionally add a marker at the center
+                    
+                    // Define custom marker icons.
+                    var mentionedIcon = L.icon({
+                    iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
+                    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/images/marker-shadow.png',
+                    iconSize: [25, 41],
+                    iconAnchor: [12, 41],
+                    popupAnchor: [1, -34],
+                    shadowSize: [41, 41]
+                    });
+                    
+                    L.marker([47.7,9.26666667]).addTo(map)
+                    .bindPopup('Meersburg')
+                    .openPopup();
+                    
+                    
+                        
+                        var popupText = "Burg Hohenzollern";
+                        L.marker([48.32356111111111, 8.9674], {icon: mentionedIcon}).addTo(map)
+                        .bindPopup(popupText);
+                    
+                        
+                        var popupText = "Zürich";
+                        L.marker([47.374444,8.541111], {icon: mentionedIcon}).addTo(map)
+                        .bindPopup(popupText);
+                    
+                        
+                        var popupText = "Solothurn";
+                        L.marker([47.21666667,7.53333333], {icon: mentionedIcon}).addTo(map)
+                        .bindPopup(popupText);
+                    
+                        
+                        var popupText = "Stuttgart";
+                        L.marker([48.7775,9.18], {icon: mentionedIcon}).addTo(map)
+                        .bindPopup(popupText);
+                    
+                        
+                        var popupText = "Schweden";
+                        L.marker([61, 15], {icon: mentionedIcon}).addTo(map)
+                        .bindPopup(popupText);
+                    
+                        
+                        var popupText = "Meersburg";
+                        L.marker([47.7,9.26666667], {icon: mentionedIcon}).addTo(map)
+                        .bindPopup(popupText);
+                    </script><script>
+                    // Initialize all tooltips
+                    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+                    new bootstrap.Tooltip(tooltipTriggerEl)
+                    })
+                </script></body>
+</html>

@@ -1,0 +1,236 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0" lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>The Lassberg Letters</title>
+      <link href="../../css/styles.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script><script src="../../js/letters.js"></script><link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"><script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script></head>
+   <body>
+      <div id="app" class="container">
+         <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+            <div class="container-fluid"><a class="navbar-brand" href="#">Laßberg Letters</a><ul class="navbar-nav">
+                  <li class="nav-item"><a class="nav-link" href="../../index.html">Welcome</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb">Data Analysis</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg">Repository</a></li>
+               </ul>
+            </div>
+         </nav>
+         <div class="container my-4">
+            <header class="mb-4">
+               <h1>Brief von Wilhelm Wackernagel an Joseph von Laßberg (13.06.1834).</h1>
+               <p class="lead">
+                  Textfassung auf Basis der Transkription durch Transkribus korrigiert und in TEI
+                  überführt. Automatisierte NER-Erkennung und Identifikation durch Flair geprüft,
+                  korrigiert und ergänzt. Normalisierung, Zusammenfassung und Übersetzung durch
+                  GPT-4. Lizenz: 
+                  
+                  <a href="https://creativecommons.org/licenses/by/4.0/">CC BY
+                     4.0</a>
+                  
+                  </p>
+            </header>
+            <section id="map" class="mb-4">
+               <div id="mapid"></div>
+            </section>
+            <section id="metadata" class="mb-4">
+               <h2>Metadata</h2>
+               <p><strong>Signatur: </strong>Basel, Staatsarchiv des Kantons Basel-Stadt, </p>
+               <p><strong>Registernummer (Laßberg): </strong></p>
+               <p><strong>Registernummer (Harris): </strong>2502</p>
+               <p><strong>Gedruck in: </strong><a href=""></a></p>
+            </section>
+            <section id="original-text" class="mb-4">
+               <h2>Original Text</h2>
+               <div>
+                  Basel, den 13 Juny
+                  1834. Sehr
+                  verehrter Herr Baron, mit Beschämung, (denn ich weiss nicht womit ich so grosse
+                  Güte verdiene) habe ich vor etwa einer Woche Ihren werthen Brief sammt den schoenen Beilagen
+                  erhalten. Was mich dabei am meisten freut, ist dass Sie nicht mehr von Hand gicht
+                  erzählen und das auch die Gedichte so fest und zierlich geschrieben sind als je. Gott erhalte
+                  Sie dabei! Sie
+                  lassen über das Register meines <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wilhelm Wackernagel: Deutsches Lesebuch.</strong&gt;">Lesebuches<a href="https://digi.ub.uni-heidelberg.de/diglit/wackernagel1839ga">📖</a></span> einen ganzen Sternenhimmel aufgehen. Es sollen da
+                  nämlich die bisher ungedruckten Sachen mit Sternen bezeichnet werden. Besondern Dank
+                  muss ich Ihnen noch für die ausführlichen Notizen sagen, mit denen die einzelnen
+                  Auszüge begleitet sind: in der Vorrede soll das alles getreulich nach erzählt werden. Ausser all dem was ich bereits empfangen laest Ihre grosse
+                  Gefälligkeit mich noch zwey Gaben hoffen: um die eine legen Sie die Bitte mir in den Mund,
+                  die andre
+                  haben Sie schon verheissen: <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;St. Ulrichs Leben.</strong&gt;">den heil.
+                     Ulrich<a href="https://geschichtsquellen.de/werk/70">📖</a></span> und <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Amor:&#xA;        die Liebe.</strong&gt;">Amor<a href="https://www.gesamtkatalogderwiegendrucke.de/docs/AMOR.htm">📖</a></span> die
+                  Lieb. Machen
+                  Sies damit wie schon früher mit dem <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ulrich von Liechtenstein</strong&gt;">Ulrich v.
+                     L.<a href="https://d-nb.info/gnd/118625306"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> und mit der <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Hermann von Sachsenheim: Die&#xA;        Mörin.</strong&gt;">Moerin<a href="https://handschriftencensus.de/werke/889">📖</a></span>:
+                  vertrauen Sie der Post und mir, lassen Sie mich selber auswahlen und copieren, und Ihr Vertrauen
+                  soll nicht gemissbraucht werden: aus jedem nur eine kleine Stelle, nicht
+                  mehr und nichts weiter. Darf ich mich schon im Voraus freuen? Meinen herzlichen Dank für die Theilnahme die Sie
+                  meinem unglücklichen Freunde beweisen. Leider ist, was auch der Arzt köstliches sagen
+                  mag, wenig Hoffnung mehr, seitdem die frühere Tobsucht in Narrheit übergegangen
+                  ist, ich kann die Betrübniss nicht verwinden: ich vermisse ihn im Collegium,
+                  u. auch daheim fehlt mir sein Besuch. Ein privatissimum über <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Walter von der Vogelweide</strong&gt;">Walther
+                     vdW<a href="https://d-nb.info/gnd/118628976"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> wobei ich auf ihn besonders gerechnet hätte, ist mir nun ein betrübendes Geschäft.
+                  Guter Gott! Seit anderthalb Wochen ist <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Caspar von Orelli</strong&gt;">Orelli<a href="https://d-nb.info/gnd/118787179"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                  hier als landschaftlicher Schatzungsexpert für die Bibliothek; er habe die Wahl angenommen,
+                  damit sie auf keinen Dummen und Boeswilligen falle. Er schätzt die Handschriften und
+                  alten Drucke, als wollte er sie einem engl. Lord zum Kauf anbieten. Und doch lautet
+                  die Instruction auf einen solchen Anschlag, dass eine etwanige Versteigerung
+                  dreymahl so viel ein bringen müsste. Sie reisen also nach <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Göttingen</strong&gt;">Göttingen<a href="https://www.wikidata.org/wiki/Q3033"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>. ich
+                  hoffe Sie werden mir Gelegenheit geben Ihnen vorher noch einmahl zu
+                  schreiben, damit ich Ihnen Glück zur Reise wünschen und Sie bitten kann; meine
+                  herzlichsten Grüsse und Empfehlungen auszurichten. Fesselte mich der Druck des
+                  <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wilhelm Wackernagel: Deutsches Lesebuch.</strong&gt;">Lesebuches<a href="https://digi.ub.uni-heidelberg.de/diglit/wackernagel1839ga">📖</a></span> (soeben ist der vierte Bogen corrigiert worden) nicht für
+                  diesen Sommer an <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Basel</strong&gt;">Basel<a href="https://www.wikidata.org/wiki/Q78"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, so würde
+                  mir Ihre Reise beinahe leid thun denn alsdann hätte ein Ausflug an
+                  den <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Bodensee</strong&gt;">Bodensee<a href="https://www.wikidata.org/wiki/Q4127"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> mich wohl auch an Ihrer Waldklause vorüber geführt. Nun, ich hoffe
+                  den <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Codex gemmens argentens</span> doch noch einmahl zu sehen.
+                  Die
+                  Abbildung der <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Krone</span> muss durchaus mitgekommen
+                  seyn: hier ist sie nicht; sie liegt, glaube ich, zwischen den ersten Blättern des <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ulrich von Liechtenstein: Frauendienst.</strong&gt;">Frauendienstes<a href="https://www.handschriftencensus.de/werke/386">📖</a></span>. Die Paar Batzen die der Zeichner dafür empfangen habe ich nicht
+                  notiert, weil ich Ihnen mit so kleiner Münze nicht beschwerlich fallen mag; auch würde
+                  die Post wegen ihrer Procente in Verlegenheit kommen. ich hole sie deshalb am
+                  besten einmahl selbst. Leben Sie recht wohl. Gott erhalte Sie bei Gesundheit und
+                  lasse es jetzt immerhin noch fort regnen: dann haben Sie desto schöneres
+                  Reisewetter. Bleiben Sie geneigt. Ihrem ergebensten Wilh. Wackernagel. 
+                  </div>
+            </section>
+            <section id="normalised-text" class="mb-4">
+               <h2>Normalisierter Text</h2>
+               <div>
+                  Basel, den 13. Juni 1834. Sehr verehrter Herr Baron, mit Beschämung, (denn ich
+                  weiß nicht womit ich so große Güte verdiene) habe ich vor etwa einer Woche Ihren
+                  werten Brief samt den schönen Beilagen erhalten. Was mich dabei am meisten
+                  freut, ist, dass Sie nicht mehr von Handgicht erzählen und dass auch die
+                  Gedichte so fest und zierlich geschrieben sind wie je. Gott erhalte Sie dabei!
+                  Sie lassen über das Register meines Lesebuches einen ganzen Sternenhimmel
+                  aufgehen. Es sollen da nämlich die bisher ungedruckten Sachen mit Sternen
+                  bezeichnet werden. Besonderen Dank muss ich Ihnen noch für die ausführlichen
+                  Notizen sagen, mit denen die einzelnen Auszüge begleitet sind: In der Vorrede
+                  soll das alles getreulich nacherzählt werden. Außer all dem, was ich bereits
+                  empfangen ließ, lässt Ihre große Gefälligkeit mich noch zwei Gaben hoffen: um
+                  die eine legen Sie die Bitte mir in den Mund, die andere haben Sie schon
+                  verheißen: den heil. Ulrich und Amor die Lieb. Machen Sie es damit wie schon
+                  früher mit dem Ulrich v. L. und mit der Moerin: vertrauen Sie der Post und mir,
+                  lassen Sie mich selber auswählen und kopieren, und Ihr Vertrauen soll nicht
+                  missbraucht werden: aus jedem nur eine kleine Stelle, nicht mehr und nichts
+                  weiter. Darf ich mich schon im Voraus freuen? Meinen herzlichen Dank für die
+                  Teilnahme, die Sie meinem unglücklichen Freunde beweisen. Leider ist, was auch
+                  der Arzt Köstliches sagen mag, wenig Hoffnung mehr, seitdem die frühere Tobsucht
+                  in Narrheit übergegangen ist, ich kann die Betrübnis nicht verwinden: ich
+                  vermisse ihn im Kollegium, und auch daheim fehlt mir sein Besuch. Ein
+                  privatissimum über Walther vdW, wobei ich auf ihn besonders gerechnet hätte, ist
+                  mir nun ein betrübendes Geschäft. Guter Gott! Seit anderthalb Wochen ist Orelli
+                  hier als landschaftlicher Schätzungsexpert für die Bibliothek; er habe die Wahl
+                  angenommen, damit sie auf keinen Dummen und Böswilligen falle. Er schätzt die
+                  Handschriften und alten Drucke, als wollte er sie einem engl. Lord zum Kauf
+                  anbieten. Und doch lautet die Instruktion auf einen solchen Anschlag, dass eine
+                  etwaige Versteigerung dreimal so viel einbringen müsste. Sie reisen also nach
+                  Göttingen. Ich hoffe, Sie werden mir Gelegenheit geben, Ihnen vorher noch einmal
+                  zu schreiben, damit ich Ihnen Glück zur Reise wünschen und Sie bitten kann,
+                  meine herzlichsten Grüße und Empfehlungen auszurichten. Fesselte mich der Druck
+                  des Lesebuches (soeben ist der vierte Bogen korrigiert worden) nicht für diesen
+                  Sommer an Basel, so würde mir Ihre Reise beinahe leid tun, denn alsdann hätte
+                  ein Ausflug an den Bodensee mich wohl auch an Ihrer Waldklause vorüber geführt.
+                  Nun, ich hoffe, den Codex gemmens argentens doch noch einmal zu sehen. Die
+                  Abbildung der Krone muss durchaus mitgekommen sein: hier ist sie nicht; sie
+                  liegt, glaube ich, zwischen den ersten Blättern des Frauendienstes. Die paar
+                  Batzen, die der Zeichner dafür empfangen, habe ich nicht notiert, weil ich Ihnen
+                  mit so kleiner Münze nicht beschwerlich fallen mag; auch würde die Post wegen
+                  ihrer Prozente in Verlegenheit kommen. Ich hole sie deshalb am besten einmal
+                  selbst. Leben Sie recht wohl. Gott erhalte Sie bei Gesundheit und lasse es jetzt
+                  immerhin noch fort regnen: dann haben Sie desto schöneres Reisewetter. Bleiben
+                  Sie geneigt. Ihrem ergebensten Wilh. Wackernagel.
+                  </div>
+            </section>
+            <section id="translation" class="mb-4">
+               <h2>Translation</h2>
+               <div>
+                  Basel, June 13, 1834. Highly esteemed Baron, With embarrassment (for I do not
+                  know how I deserve such great kindness), I received your valued letter along
+                  with the beautiful enclosures about a week ago. What pleases me most is that you
+                  no longer speak of hand gout and that the poems are written as firmly and
+                  elegantly as ever. May God keep you in that state! You let a whole sky full of
+                  stars rise over the index of my reading book. The previously unpublished items
+                  are to be marked with stars. I must express particular thanks for the detailed
+                  notes that accompany the individual excerpts: all this shall be faithfully
+                  recounted in the preface. Besides all that I have already received, your great
+                  kindness lets me hope for two more gifts: for one, you put the request in my
+                  mouth, for the other, you have already promised: the holy Ulrich and Amor the
+                  Love. Handle them as you did earlier with Ulrich of L. and with the Moor: trust
+                  the mail and me, let me choose and copy myself, and your trust shall not be
+                  abused: just a small passage from each, no more and nothing else. May I rejoice
+                  in advance? My heartfelt thanks for the sympathy you show my unfortunate friend.
+                  Unfortunately, whatever the doctor may say optimistically, there is little hope
+                  left since the earlier frenzy has turned into madness. I cannot overcome the
+                  grief: I miss him in the college, and his visits are missing at home too. A
+                  private lecture on Walther vdW in which I had particularly counted on him is now
+                  a saddening affair. Good God! Orelli has been here for a week and a half as a
+                  landscape tax expert for the library; he accepted the position so it wouldn't
+                  fall to a fool or a malevolent person. He values the manuscripts and old prints
+                  as if he wanted to offer them for sale to an English lord. And yet, the
+                  instruction sounds like an estimate that any possible auction should bring in
+                  three times as much. You are traveling to Göttingen. I hope you will give me the
+                  opportunity to write to you once more before then, so I can wish you a good
+                  journey and ask you to convey my warmest greetings and recommendations. If the
+                  printing of the reading book (just now the fourth sheet has been corrected) did
+                  not bind me to Basel this summer, your journey would almost distress me, since
+                  then an excursion to Lake Constance might have led me past your forest hermitage
+                  as well. Well, I hope to see the Codex gemmens argentens once more. The
+                  illustration of the crown must have come along: it is not here; I believe it
+                  lies between the first pages of the Frauendienst. I did not note the few batzen
+                  the artist received for it, because I do not wish to trouble you with such small
+                  change; also, the mail would be embarrassed by their percentage. Therefore, I
+                  will best retrieve them myself at some point. Farewell. May God keep you in
+                  health and let it rain now still: then you will have all the more beautiful
+                  travel weather. Remain inclined. Yours sincerely, Wilh. Wackernagel.
+                  </div>
+            </section>
+         </div>
+      </div><script src="https://unpkg.com/leaflet/dist/leaflet.js"></script><script>
+                    // Create the map and set its view to a default coordinate and zoom level.
+                    var map = L.map('mapid').setView([47.55472222,7.59055556], 7);
+                    // Set up the OpenStreetMap tile layer.
+                    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: 'Map data <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
+                    }).addTo(map);
+                    
+                    
+                    // Optionally add a marker at the center
+                    
+                    // Define custom marker icons.
+                    var mentionedIcon = L.icon({
+                    iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
+                    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/images/marker-shadow.png',
+                    iconSize: [25, 41],
+                    iconAnchor: [12, 41],
+                    popupAnchor: [1, -34],
+                    shadowSize: [41, 41]
+                    });
+                    
+                    L.marker([47.55472222,7.59055556]).addTo(map)
+                    .bindPopup('Basel')
+                    .openPopup();
+                    
+                    
+                        
+                        var popupText = "Göttingen";
+                        L.marker([51.533889,9.935556], {icon: mentionedIcon}).addTo(map)
+                        .bindPopup(popupText);
+                    
+                        
+                        var popupText = "Basel";
+                        L.marker([47.55472222,7.59055556], {icon: mentionedIcon}).addTo(map)
+                        .bindPopup(popupText);
+                    
+                        
+                        var popupText = "Bodensee";
+                        L.marker([47.65, 9.3166666666667], {icon: mentionedIcon}).addTo(map)
+                        .bindPopup(popupText);
+                    </script><script>
+                    // Initialize all tooltips
+                    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+                    new bootstrap.Tooltip(tooltipTriggerEl)
+                    })
+                </script></body>
+</html>

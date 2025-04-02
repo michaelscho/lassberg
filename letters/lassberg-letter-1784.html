@@ -1,0 +1,310 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0" lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>The Lassberg Letters</title>
+      <link href="../../css/styles.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script><script src="../../js/letters.js"></script><link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"><script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script></head>
+   <body>
+      <div id="app" class="container">
+         <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+            <div class="container-fluid"><a class="navbar-brand" href="#">Laßberg Letters</a><ul class="navbar-nav">
+                  <li class="nav-item"><a class="nav-link" href="../../index.html">Welcome</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb">Data Analysis</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg">Repository</a></li>
+               </ul>
+            </div>
+         </nav>
+         <div class="container my-4">
+            <header class="mb-4">
+               <h1>Brief von Joseph von Laßberg an Wilhelm Wackernagel (16.06.1834).</h1>
+               <p class="lead">
+                  Textfassung auf Basis der Transkription durch Transkribus korrigiert und in TEI
+                  überführt. Automatisierte NER-Erkennung und Identifikation durch Flair geprüft,
+                  korrigiert und ergänzt. Normalisierung, Zusammenfassung und Übersetzung durch
+                  GPT-4. Lizenz: 
+                  
+                  <a href="https://creativecommons.org/licenses/by/4.0/">CC BY
+                     4.0</a>
+                  
+                  </p>
+            </header>
+            <section id="map" class="mb-4">
+               <div id="mapid"></div>
+            </section>
+            <section id="metadata" class="mb-4">
+               <h2>Metadata</h2>
+               <p><strong>Signatur: </strong>Basel, Staatsarchiv des Kantons Basel-Stadt, </p>
+               <p><strong>Registernummer (Laßberg): </strong>106</p>
+               <p><strong>Registernummer (Harris): </strong>868</p>
+               <p><strong>Gedruck in: </strong><a href="-">Wackernagel: Albert Leitzmann, Briefe aus
+                     dem Nachlaß Wilhelm Wackernagels. VI.: Briefe von Joseph von Laßberg.
+                     In: Abhandlungen der phil.-hist. Klasse der Kgl. Sächsischen
+                     Gesellschaft der Wissenschaften 34,1. Leipzig 1916, S. 92-130, S.
+                     106</a></p>
+            </section>
+            <section id="original-text" class="mb-4">
+               <h2>Original Text</h2>
+               <div>
+                  Eppishausen am 16
+                  Juny 1834. Hochzuvererender Herr Professor! Ich bin frohe, dass Sie die lezte sendung so nachsichtig
+                  aufgenommen haben, und sende nun nachträglich: 1. <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;St. Ulrichs Leben.</strong&gt;">Sante Vlrichs
+                     leben<a href="https://geschichtsquellen.de/werk/70">📖</a></span>. 2.
+                  <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unser vrouwen&#xA;        klage.</strong&gt;">Der spiegel
+                     oder Marienklage<a href="https://www.handschriftencensus.de/werke/393">📖</a></span> . 3. <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Amor:&#xA;        die Liebe.</strong&gt;">Amor die
+                     lieb<a href="https://www.gesamtkatalogderwiegendrucke.de/docs/AMOR.htm">📖</a></span> - leider fehlen 1-2 blätter. 4. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Albrant, der Meister </strong&gt;">meister
+                     Alabrands<a href="https://d-nb.info/gnd/118501593"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> /: <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Kaiser Friedrich II.</strong&gt;">Friedrichs
+                     II<a href="https://d-nb.info/gnd/118535765"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> rossarztes:/ von <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Albrant, der Meister: Roßarzneibuch.</strong&gt;">Rossarznei<a href="https://www.handschriftencensus.de/werke/677">📖</a></span>, wegen dem hinten angehängten <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Heinrich von Meißen (Frauenlob): Unser frouwen leich.</strong&gt;">hymnus auf
+                     Maria<a href="https://de.wikipedia.org/wiki/Frauenlobs_Marienleich">📖</a></span>, welcher wol von <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Heinrich von Meißen (Frauenlob)</strong&gt;">Frauenlob<a href="https://d-nb.info/gnd/118535102"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> sein möchte, aus welcher zeit nahezu auch die schrift sein möchte, aber
+                  leider unganz. 5. ain <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Daniel Baradinus: Geistlich Artzney Für Ketzergifft vnd jetziger zeit böse&#xA;        Lüfft.</strong&gt;">gaistlich
+                     artzney</span>, und 6. <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Geistlicher&#xA;        Fastnachtskrapfen.</strong&gt;">Gaistlicher
+                     vasnacht krapffen<a href="https://handschriftencensus.de/werke/3704">📖</a></span>. von 5 und 6 sind die originale in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Eppishausen</strong&gt;">Eppishausen<a href="https://www.wikidata.org/wiki/Q1423653"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>. glauben Sie
+                  vererter Herr! nur sicher, dass ich vollkommen überzeugt bin, dass Sie auf alle
+                  fälle besser auswälen werden als irgend ein anderer, was für Ir buch und seinen zwek taugt;
+                  blos der wunsch Inen mühe zu ersparen, konnte mich zum selbst abschreiben
+                  veranlassen; von herzen gerne vertraue ich Inen nicht nur diese, sondern alle bücher und
+                  handschriften die ich besize, an. Ich muss gestehen, dass ich das apographum des <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ulrich von Liechtenstein: Frauendienst.</strong&gt;">Frauendienstes<a href="https://www.handschriftencensus.de/werke/386">📖</a></span> bei seiner rükkunft nicht mer besahe und die zeichnung von
+                  der krone in dem pakpapier suchte; nun durch Ir schreiben aufmerksam gemacht,
+                  fand ich sie
+                  am angezeigten orte und wiederhole meinen dank dafür. Von Irem
+                  verunglükten schüler sage ich nichts mer, solches unglük schneidet zu tief ins
+                  herz! aber
+                  was Sie mir von Herrn <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Caspar von Orelli</strong&gt;">C.
+                     Orelly<a href="https://d-nb.info/gnd/118787179"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> sagen, tat mir nicht weniger wehe. Ein so vorzüglicher gelerter sollte sich
+                  nicht von Liechtstalern dingen lassen, noch weniger aber, wenn er sich schon
+                  solcher erniedrigung unterzogen hat, cum ira et odio gegen die unterdrükten handeln;
+                  er sollte nicht vergessen, dass die kümmerliche <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Zürich</strong&gt;">Tigurine<a href="https://www.wikidata.org/wiki/Q72"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> nie
+                  werden wird was <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Basel</strong&gt;">Basel<a href="https://www.wikidata.org/wiki/Q78"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> schon vor
+                  300 iaren war. es tut mir leide,
+                  die durch so viele iare von diesem Manne genärte gute meinung ablegen zu müssen;
+                  aber die sache
+                  ist doch zu offenbar, als dass man nicht kunde davon nemen sollte. Ich habe zu meiner
+                  reise einen reisegefärten bis <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Kassel</strong&gt;">Kassel<a href="https://www.wikidata.org/wiki/Q2865"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> gehabt,
+                  der hat mir plözlich abgesagt; nun denke ich bis <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Köln</strong&gt;">Cöln<a href="https://www.wikidata.org/wiki/Q365"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> zu wasser zu
+                  gehen und von dort nach <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Westfalen</strong&gt;">Westphalen<a href="https://www.wikidata.org/wiki/Q8614"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, und
+                  dann an die <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Weser</strong&gt;">Weser<a href="https://www.wikidata.org/wiki/Q1650"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> und <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Leine</strong&gt;">Leine<a href="https://www.wikidata.org/wiki/Q161051"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>; aber vor
+                  ende dieses monats gehet es nicht los. wo und was soll ich Inen in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Göttingen</strong&gt;">Göttingen<a href="https://www.wikidata.org/wiki/Q3033"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> ausrichten? geben Sie mir recht viele aufträge, sie sollen auf das
+                  pünktlichste vollzogen werden: kann ich Inen nichts mitbringen? hoffentlich den schon
+                  gedrukten aber bisher noch inclaustrirten <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Freidank: Sprüche.</strong&gt;">Frydank<a href="https://handschriftencensus.de/werke/115">📖</a></span>
+                  von <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wilhelm Grimm</strong&gt;">Wilhelm
+                     Grimm<a href="https://d-nb.info/gnd/118542265"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>. Ich neme also noch keinen abschied und erwarte weitere nachrichten von
+                  Inen. Professor <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Gustav Schwab</strong&gt;">Schwab<a href="https://d-nb.info/gnd/118762745"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                  und Ober Tribunal Procurator <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Otto Abel</strong&gt;">Abel<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> aus
+                  <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Stuttgart</strong&gt;">Stuttgart<a href="https://www.wikidata.org/wiki/Q1022"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> haben lezthin einige tage bei mir zugebracht. lezterer will die
+                  bilder aus dem <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">pariser codex</span> der <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Bodmer, Johann Jakob: Fabeln aus den Zeiten der Minnesinger.</strong&gt;">Minnesinger<a href="VD18-11146354">📖</a></span>, als fac simile herausgeben und hat mir einige proben gezeigt,
+                  die gar nicht übel sind; die liebe zu den Hohenstaufen und irer zeit ist bei im
+                  beinahe zur fixen idee geworden, er verwendet einen grossen teil seines
+                  ansenlichen vermögens auf sammlung und erhaltung teutscher
+                  altertümer. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ludwig Uhland</strong&gt;">Uhland<a href="https://d-nb.info/gnd/118625063"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                  arbeitet nun ununterbrochen. an seinem buche über <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ludwig Uhland: Alte hoch- und niederdeutsche Volkslieder in fünf&#xA;        Büchern.</strong&gt;">das teutsche
+                     volkslied<a href="https://books.google.lu/books?id=O4xvl_oQ7FkC">📖</a></span>; soll aber daneben noch ein paar andere sachen auf dem amboss
+                  haben, ich
+                  hoffe in auf meiner durchreise zu sprechen. habe ich Inen denn gesagt, dass ich
+                  von dem 4ten
+                  bande der hagenschen <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Minnesinger. Deutsche Liederdichter des&#xA;        zwölften, dreizehnten und vierzehnten Jahrhunderts, aus allen bekannten Handschriften und&#xA;        früheren Drucken.</strong&gt;">Minnesinger<a href="https://archive.org/details/minnesingerdeut00hagegoog">📖</a></span> alles bis mit bogen 56 bekommen habe, her <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Neidhart.</strong&gt;">Nithart<a href="https://www.handschriftencensus.de/werke/269">📖</a></span>
+                  ist der lezte, ich denke das wird nun etwa die hälfte des ganzen sein.
+                  ich muss gestehen, dass diese sogenannten Leben der Dichter über
+                  meine erwartung ausgefallen sind: zuweilen macht <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Friedrich Heinrich von der Hagen</strong&gt;">H. v. der
+                     Hagen<a href="https://d-nb.info/gnd/118829130"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> sichs freilich bequem, so hat er z. b. den ganzen <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ulrich von Liechtenstein: Frauendienst.</strong&gt;">frauendienst<a href="https://www.handschriftencensus.de/werke/386">📖</a></span>, nach der <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ludwig Tieck: Frauendienst, oder: Geschichte und Liebe des Ritters und Sängers Ulrich von&#xA;        Lichtenstein.</strong&gt;">Tieckschen
+                     auflösung<a href="https://www.digitale-sammlungen.de/en/view/bsb10128718">📖</a></span>, aufgenommen von S. 321 bis 404. aber man siehet auch ganz
+                  genau wo <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Friedrich Heinrich von der Hagen</strong&gt;">H. v. der
+                     Hagen<a href="https://d-nb.info/gnd/118829130"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> die arbeit anderen überlassen hat. Sollten Sie in meiner abwesenheit
+                  das buch zu
+                  benuzen wünschen; so werde ich es Inen mit vielem vergnügen senden. Indessen
+                  gottbefolen! von Irem ergebensten JvLaßberg. 
+                  </div>
+            </section>
+            <section id="normalised-text" class="mb-4">
+               <h2>Normalisierter Text</h2>
+               <div>
+                  Eppishausen, am 16. Juni 1834. Hochzuverehrender Herr Professor! Ich bin froh,
+                  dass Sie die letzte Sendung so nachsichtig aufgenommen haben, und sende nun
+                  nachträglich: 1. Sankt Ulrichs Leben. 2. Der Spiegel oder Marienklage. 3. Amor
+                  die Lieb - leider fehlen 1-2 Blätter. 4. Meister Alebrands (Friedrichs II.
+                  Rossarztes) von Rossarznei, wegen dem hinten angehängten Hymnus auf Maria,
+                  welcher wohl von Frauenlob sein möchte, aus welcher Zeit nahezu auch die Schrift
+                  sein möchte, aber leider unvollständig. 5. Ein geistlich Arznei, und 6.
+                  Geistlicher Fasnachtkrapfen. Von 5 und 6 sind die Originale in Eppishausen.
+                  Glauben Sie, verehrter Herr! nur sicher, dass ich vollkommen überzeugt bin, dass
+                  Sie in jedem Fall besser auswählen werden als irgendein anderer, was für Ihr
+                  Buch und seinen Zweck taugt; bloß der Wunsch, Ihnen Mühe zu ersparen, konnte
+                  mich zum Selbstabschreiben veranlassen; von Herzen gerne vertraue ich Ihnen
+                  nicht nur diese, sondern alle Bücher und Handschriften, die ich besitze, an. Ich
+                  muss gestehen, dass ich das Apograph des Frauendienstes bei seiner Rückkunft
+                  nicht mehr besah und die Zeichnung von der Krone in dem Packpapier suchte; nun
+                  durch Ihr Schreiben aufmerksam gemacht, fand ich sie am angezeigten Orte und
+                  wiederhole meinen Dank dafür. Von Ihrem verunglückten Schüler sage ich nichts
+                  mehr, solches Unglück schneidet zu tief ins Herz! Aber was Sie mir von Herrn C.
+                  Orelly sagen, tat mir nicht weniger weh. Ein so vorzüglicher Gelehrter sollte
+                  sich nicht von Lichttalern dingen lassen, noch weniger aber, wenn er sich schon
+                  solcher Erniedrigung unterzogen hat, cum ira et odio gegen die Unterdrückten
+                  handeln; er sollte nicht vergessen, dass die kümmerliche Tigurine nie werden
+                  wird, was Basel schon vor 300 Jahren war. Es tut mir leid, die durch so viele
+                  Jahre von diesem Mann genährte gute Meinung ablegen zu müssen; aber die Sache
+                  ist doch zu offenbar, als dass man nicht Kunde davon nehmen sollte. Ich habe zu
+                  meiner Reise einen Reisegefährten bis Kassel gehabt, der hat mir plötzlich
+                  abgesagt; nun denke ich, bis Köln zu Wasser zu gehen und von dort nach
+                  Westfalen, und dann an die Weser und Leine; aber vor Ende dieses Monats geht es
+                  nicht los. Wo und was soll ich Ihnen in Göttingen ausrichten? Geben Sie mir
+                  recht viele Aufträge, sie sollen auf das Pünktlichste vollzogen werden: kann ich
+                  Ihnen nichts mitbringen? Hoffentlich den schon gedruckten, aber bisher noch
+                  inklusierten Frydank von Wilhelm Grimm. Ich nehme also noch keinen Abschied und
+                  erwarte weitere Nachrichten von Ihnen. Professor Schwab und
+                  Obertribunalprokurator Abel aus Stuttgart haben letztens einige Tage bei mir
+                  zugebracht. Letzterer will die Bilder aus dem Pariser Codex der Minnesänger, als
+                  Faksimile herausgeben und hat mir einige Proben gezeigt, die gar nicht übel
+                  sind; die Liebe zu den Hohenstaufen und ihrer Zeit ist bei ihm beinahe zur fixen
+                  Idee geworden, er verwendet einen großen Teil seines ansehnlichen Vermögens auf
+                  Sammlung und Erhaltung deutscher Altertümer. Uhland arbeitet nun ununterbrochen
+                  an seinem Buche über das deutsche Volkslied; soll aber daneben noch ein paar
+                  andere Sachen auf dem Amboss haben, ich hoffe, ihn auf meiner Durchreise zu
+                  sprechen. Habe ich Ihnen denn gesagt, dass ich von dem 4. Band der Hagischen
+                  Minnesänger alles bis mit Bogen 56 bekommen habe, Herr Neidhart ist der letzte,
+                  ich denke, das wird nun etwa die Hälfte des Ganzen sein. Ich muss gestehen, dass
+                  diese sogenannten Leben der Dichter über meine Erwartung ausgefallen sind:
+                  zuweilen macht Herr von der Hagen sich's freilich bequem, so hat er z. B. den
+                  ganzen Frauendienst, nach der Tieckschen Auflösung, aufgenommen von S. 321 bis
+                  404. Aber man sieht auch ganz genau, wo Herr von der Hagen die Arbeit anderen
+                  überlassen hat. Sollten Sie in meiner Abwesenheit das Buch zu benutzen wünschen,
+                  so werde ich es Ihnen mit vielem Vergnügen senden. Indessen gottbefohlen! Von
+                  Ihrem ergebensten JvLaßberg.
+                  </div>
+            </section>
+            <section id="translation" class="mb-4">
+               <h2>Translation</h2>
+               <div>
+                  Eppishausen, June 16, 1834. Highly Revered Professor! I am glad that you have
+                  received the last shipment so indulgently, and now I send subsequently: 1. Life
+                  of Saint Ulrich. 2. The Mirror or Lament of Mary. 3. Love of Amor -
+                  unfortunately, 1-2 pages are missing. 4. Master Alebrand's /: Frederick II's
+                  horse doctor's:/ on Equine Medicine, due to the appended hymn to Mary, which
+                  might likely be by Frauenlob, from which time nearly also the writing might be,
+                  but unfortunately incomplete. 5. A spiritual remedy, and 6. Spiritual carnival
+                  pastries. The originals of 5 and 6 are in Eppishausen. Believe me, esteemed sir,
+                  I am completely convinced that in any case, you will be able to select better
+                  what is suitable for your book and its purpose than anyone else; the mere wish
+                  to spare you trouble could prompt me to transcribe them myself; I gladly entrust
+                  you not only with these but all the books and manuscripts I possess. I must
+                  confess that I no longer examined the copy of the Frauendienst upon its return
+                  and sought the drawing of the crown in the packaging paper; now, having been
+                  made aware by your letter, I found it at the indicated place and repeat my
+                  thanks for it. I shall say nothing more about your unfortunate student; such
+                  misfortune cuts too deeply into the heart! But what you tell me about Mr. C.
+                  Orelly hurt me no less. Such an exquisite scholar should not let himself be
+                  hired by Liechtstalers, much less should he act with anger and hatred against
+                  the oppressed if he has already submitted to such humiliation; he should not
+                  forget that the pitiable Tigurine will never become what Basel already was 300
+                  years ago. I regret having to set aside the good opinion nourished of this man
+                  for so many years; but the matter is too obvious to go unnoticed. For my
+                  journey, I had a travel companion as far as Kassel, who abruptly canceled on me;
+                  I now intend to travel to Cologne by water and from there to Westphalia, and
+                  then to the Weser and Leine; but it does not commence before the end of this
+                  month. Where and what should I deliver for you in Göttingen? Give me many tasks,
+                  they shall be executed most punctually: can I bring you anything? Hopefully the
+                  already printed but still enclosed Frydank by Wilhelm Grimm. So, I do not take
+                  leave yet and await further news from you. Professor Schwab and Ober Tribunal
+                  Procurator Abel from Stuttgart have spent a few days with me recently. The
+                  latter intends to publish the images from the Parisian codex of the Minnesingers
+                  as a facsimile and has shown me some samples, which are not bad at all; the love
+                  for the Hohenstaufen and their time has almost become a fixed idea for him, he
+                  invests a large part of his considerable fortune in the collection and
+                  preservation of German antiquities. Uhland is now working uninterruptedly on his
+                  book about the German folk song; but apparently has a couple of other things on
+                  the anvil as well, I hope to speak with him on my passage. Have I told you that
+                  I have received everything from the 4th volume of Hagen's Minnesingers up to
+                  folio 56, Herr Nithart is the last, I think that will now be about half of the
+                  whole. I must confess that these so-called Lives of the Poets have exceeded my
+                  expectations: sometimes H. von der Hagen certainly makes it easy for himself,
+                  for example, he has included the entire Frauendienst according to Tieck's
+                  solution, from page 321 to 404. But you can also see quite exactly where H. von
+                  der Hagen has left the work to others. Should you wish to use the book during my
+                  absence; I will gladly send it to you with much pleasure. In the meantime, may
+                  God protect you! From your devoted JvLaßberg.
+                  </div>
+            </section>
+         </div>
+      </div><script src="https://unpkg.com/leaflet/dist/leaflet.js"></script><script>
+                    // Create the map and set its view to a default coordinate and zoom level.
+                    var map = L.map('mapid').setView([47.545,9.23759], 7);
+                    // Set up the OpenStreetMap tile layer.
+                    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: 'Map data <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
+                    }).addTo(map);
+                    
+                    
+                    // Optionally add a marker at the center
+                    
+                    // Define custom marker icons.
+                    var mentionedIcon = L.icon({
+                    iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
+                    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/images/marker-shadow.png',
+                    iconSize: [25, 41],
+                    iconAnchor: [12, 41],
+                    popupAnchor: [1, -34],
+                    shadowSize: [41, 41]
+                    });
+                    
+                    L.marker([47.545,9.23759]).addTo(map)
+                    .bindPopup('Eppishausen')
+                    .openPopup();
+                    
+                    
+                        
+                        var popupText = "Eppishausen";
+                        L.marker([47.545,9.23759], {icon: mentionedIcon}).addTo(map)
+                        .bindPopup(popupText);
+                    
+                        
+                        var popupText = "Zürich";
+                        L.marker([47.374444,8.541111], {icon: mentionedIcon}).addTo(map)
+                        .bindPopup(popupText);
+                    
+                        
+                        var popupText = "Basel";
+                        L.marker([47.55472222,7.59055556], {icon: mentionedIcon}).addTo(map)
+                        .bindPopup(popupText);
+                    
+                        
+                        var popupText = "Kassel";
+                        L.marker([51.3158,9.4979], {icon: mentionedIcon}).addTo(map)
+                        .bindPopup(popupText);
+                    
+                        
+                        var popupText = "Köln";
+                        L.marker([50.942222222222, 6.9577777777778], {icon: mentionedIcon}).addTo(map)
+                        .bindPopup(popupText);
+                    
+                        
+                        var popupText = "Westfalen";
+                        L.marker([52, 8], {icon: mentionedIcon}).addTo(map)
+                        .bindPopup(popupText);
+                    
+                        
+                        var popupText = "Weser";
+                        L.marker([53.561111, 8.522222], {icon: mentionedIcon}).addTo(map)
+                        .bindPopup(popupText);
+                    
+                        
+                        var popupText = "Leine";
+                        L.marker([51.388611111111, 10.320277777778], {icon: mentionedIcon}).addTo(map)
+                        .bindPopup(popupText);
+                    
+                        
+                        var popupText = "Göttingen";
+                        L.marker([51.533889,9.935556], {icon: mentionedIcon}).addTo(map)
+                        .bindPopup(popupText);
+                    
+                        
+                        var popupText = "Stuttgart";
+                        L.marker([48.7775,9.18], {icon: mentionedIcon}).addTo(map)
+                        .bindPopup(popupText);
+                    </script><script>
+                    // Initialize all tooltips
+                    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+                    new bootstrap.Tooltip(tooltipTriggerEl)
+                    })
+                </script></body>
+</html>

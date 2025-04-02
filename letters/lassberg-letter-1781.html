@@ -1,0 +1,307 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0" lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>The Lassberg Letters</title>
+      <link href="../../css/styles.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script><script src="../../js/letters.js"></script><link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"><script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script></head>
+   <body>
+      <div id="app" class="container">
+         <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+            <div class="container-fluid"><a class="navbar-brand" href="#">Laßberg Letters</a><ul class="navbar-nav">
+                  <li class="nav-item"><a class="nav-link" href="../../index.html">Welcome</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb">Data Analysis</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg">Repository</a></li>
+               </ul>
+            </div>
+         </nav>
+         <div class="container my-4">
+            <header class="mb-4">
+               <h1>Brief von Wilhelm Wackernagel an Joseph von Laßberg (06.06.1834).</h1>
+               <p class="lead">
+                  Textfassung auf Basis der Transkription durch Transkribus korrigiert und in TEI
+                  überführt. Automatisierte NER-Erkennung und Identifikation durch Flair geprüft,
+                  korrigiert und ergänzt. Normalisierung, Zusammenfassung und Übersetzung durch
+                  GPT-4. Lizenz: 
+                  
+                  <a href="https://creativecommons.org/licenses/by/4.0/">CC BY
+                     4.0</a>
+                  
+                  </p>
+            </header>
+            <section id="map" class="mb-4">
+               <div id="mapid"></div>
+            </section>
+            <section id="metadata" class="mb-4">
+               <h2>Metadata</h2>
+               <p><strong>Signatur: </strong>Basel, Staatsarchiv des Kantons Basel-Stadt, </p>
+               <p><strong>Registernummer (Laßberg): </strong></p>
+               <p><strong>Registernummer (Harris): </strong>2500</p>
+               <p><strong>Gedruck in: </strong><a href=""></a></p>
+            </section>
+            <section id="original-text" class="mb-4">
+               <h2>Original Text</h2>
+               <div>
+                  erhalten am 12
+                  July. Sonntags,
+                  6. Juny 1834. Hochverehrter Herr Baron, am vergangenen Donnerstag habe ich Ihre letze Sendung
+                  erhalten, zu
+                  meiner grössten Freude, da ich in diesem rückhaltlosen Anver trauen einer so
+                  prächtigen Abschrift eines <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;St. Ulrichs Leben.</strong&gt;">gänzlich
+                     unbekannten Ge dichtes<a href="https://geschichtsquellen.de/werk/70">📖</a></span> ein besonderes Zeichen der Güte erkennen muss,
+                  mit der Sie mir
+                  und meinem Unternehmen freundlich geneigt sind. Da können Sie
+                  denken, wie mir zu Muthe war, als ich dennoch den ganzen Tag
+                  vor andern dringenden Arbeiten nicht dazu ge langen konnte,
+                  die <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Handschrift</span> nur einigermassen näher zu betrachten. Um
+                  so begieriger machte ich mich Freytags daran und schon am
+                  Nachmittag waren beide Gedichte, das eine gelesen, das andre, die
+                  <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Minneburg&#xA;        (Reimfassung).</strong&gt;">Minneburg<a href="https://handschriftencensus.de/werke/616">📖</a></span>, zum mindesten durchlaufen. Der <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Konrad von Stoffel: Gauriel von Muntabel.</strong&gt;">Gauriel<a href="https://handschriftencensus.de/werke/567">📖</a></span>
+                  ist als Nachahmung des <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Hartmann von Aue: Iwein.</strong&gt;">Iweins<a href="https://handschriftencensus.de/werke/150">📖</a></span>
+                  für die Litt. Gesch. von Bedeutung, und ich denke auch solche Stellen auszuheben,
+                  die jenes
+                  Verhältniss in deutliches Licht setzen, nämlich die beiden Kämpfe mit
+                  Walban und mit Iwan. Aus welcher Handschr. stammt denn die
+                  <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Minneburg&#xA;        (Reimfassung).</strong&gt;">Minneburg<a href="https://handschriftencensus.de/werke/616">📖</a></span>? Von der <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Wienerischen</span> weicht dieser Text
+                  wesentlich ab: die Stelle über <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Egen von Bamberg</strong&gt;">Meister
+                     Egen<a href="https://d-nb.info/gnd/118681680"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> die jene ent hält (<span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Literarischer Grundriß zur Geschichte&#xA;        der deutschen Poesie.</strong&gt;">Grundriss<a href="BSB-ID 991057351239707356">📖</a></span> <a href="https://www.digitale-sammlungen.de/de/view/bsb11266828?page=476">S.
+                     442</a>) habe ich hier trotz allem Suchen nicht wieder finden
+                  können; die mehrfachen Beziehungen auf ihn lau ten jedesmahl
+                  anders. Auch
+                  <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Friedrich Heinrich von der Hagen</strong&gt;">Herr vd. H.<a href="https://d-nb.info/gnd/118829130"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Minnesinger. Deutsche Liederdichter des&#xA;        zwölften, dreizehnten und vierzehnten Jahrhunderts, aus allen bekannten Handschriften und&#xA;        früheren Drucken.</strong&gt;">Lebensbeschreibungen<a href="https://archive.org/details/minnesingerdeut00hagegoog">📖</a></span> sind mir gar willkommen, so sehr ich mich
+                  auch theilweise darüber ärgere; z B. wegen des unverschaemten
+                  Streichs mit dem <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ulrich von Liechtenstein</strong&gt;">Ulrich von
+                     Lichtenstein<a href="https://d-nb.info/gnd/118625306"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> und der gnaedigen Protectormine mit der er <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Minnesinger. Deutsche Liederdichter des&#xA;        zwölften, dreizehnten und vierzehnten Jahrhunderts, aus allen bekannten Handschriften und&#xA;        früheren Drucken.</strong&gt;">meine Arbeit
+                     über Nithart<a href="https://archive.org/details/minnesingerdeut00hagegoog">📖</a></span> bevorwortet. "Mein junger Freund W. W." ich dachte ich wäre
+                  jezt über
+                  das Alter und die Verhältnisse hinaus, unter denen eine solche
+                  Titulatur am Platze ist. Als er die <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Neidhart.</strong&gt;">Lieder
+                     Nitharts<a href="https://www.handschriftencensus.de/werke/269">📖</a></span> von mir bearbeiten liess, im J: 1826; damals war ich freylich noch jung; aber dies
+                  Datum verschweigt er weislich, und ich werde nun bei Gelegenheit
+                  jenen ganzen schülerhaften Versuch, den er freylich in seiner
+                  Bequemlichkeit ohne weiteres abdrucken laesst, désavou iren müssen. Möge sich Hr.
+                  <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Carl Gustav Abel</strong&gt;">Abel<a href="https://d-nb.info/gnd/116001410"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> um
+                  Gottes willen nicht mit ihm einlassen so viel ich weiss, besitzt <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Friedrich Heinrich von der Hagen</strong&gt;">vd. H.<a href="https://d-nb.info/gnd/118829130"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                  nur von dem kleinern Theile der <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Pariser Bilder</span> wirkliche
+                  Durchzeichnungen; von dem grössern aber bloss die Beschreibungen. Da könnte es ihm freylich
+                  ganz er wünscht seyn, mit Jemanden der alle hat sich zu
+                  "vereinbaren." <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Caspar von Orelli</strong&gt;">Orelli<a href="https://d-nb.info/gnd/118787179"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                  hat sich zu guter Lezt doch noch als braven Mann bewährt: indem der
+                  vorläufige Anschlag um 40 % reduciert worden, sind als einmuthige
+                  Schätzung der beiderseitigen Experten nur 44000 Fr. verblieben, wovon
+                  31000, auf die Bücher, 13000 auf die Münzen kommen. Man hatte
+                  100000 gefürchtet. Von einer Versteigerung kann nun noch weniger
+                  die Rede seyn. Ist das nicht honnet von ihm? Von ihm: denn er
+                  lenkte die andern. Wissen Sie schon dass man Sie hat ersuchen wollen, die
+                  definitive Schätzung der Kunst gegenstände als Oberexpert zu übernehmen? Hatten Sie es
+                  gethan, so wäre das, wie ich aus Ihrem Briefe ab nehme, wahrlich
+                  nicht zum Schaden <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Basel</strong&gt;">Basels<a href="https://www.wikidata.org/wiki/Q78"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> gewesen;
+                  und wie hätte ich mich gefreut, Sie hier begrüssen zu können! Man hat aber in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Aarau</strong&gt;">Arau<a href="https://www.wikidata.org/wiki/Q14274"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>
+                  einen Hrn. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Adelbert von Keller</strong&gt;">Keller<a href="https://d-nb.info/gnd/118831216"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                  aus <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Schaffhausen</strong&gt;">Schafhausen<a href="https://www.wikidata.org/wiki/Q9009"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> vorgezogen; warum, weiss ich nicht. Sie erbieten
+                  Sich, Aushängebogen des Lesebuches mit nach <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Göttingen</strong&gt;">Göttingen<a href="https://www.wikidata.org/wiki/Q3033"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> nehmen zu
+                  wollen. Wenn ich aber jezt schon etwas davon zeigen möchte, So wären
+                  Sie, dem das Buch so viel verdankt, gewiss der erste gewesen
+                  dem ichs vorgelegt hätte. Aber ich stehe jetzt, mit Sp. 112., erst
+                  am Anfange des XII Jh., und nach dem bisherigen laest sich der
+                  Character der Sammlung nur ungenügend beurtheilen. Vor dem Schluss
+                  des XII Jh. möchte ich sie keinem vom Fache zeigen. Da mirs daran liegt, wo es mit meinem Plane sich
+                  verträgt mich an <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Karl Lachmann</strong&gt;">Lachmanns<a href="https://d-nb.info/gnd/118568558"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> Auswahl anzuschliessen, so werde ich aus dem <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Freidank: Sprüche.</strong&gt;">Freydank<a href="https://handschriftencensus.de/werke/115">📖</a></span>
+                  dieselben Stellen geben als er und in seinem Text: dann haben Sie auch
+                  nicht die erneute Mühe einer Uebersendung Ihres <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Joseph von Laßberg: Ein schoen alt Lied von Grave Friz von Zolre, dem Oettinger, und der&#xA;        Belagerung von Hohen Zolren.</strong&gt;">Liedersaales<a href="https://gateway-bayern.de/BV012184336">📖</a></span>. Gleich am Beginn der Ferien werde ich, namentlich des <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Predigten.</strong&gt;">Taulers<a href="https://handschriftencensus.de/werke/652">📖</a></span> wegen, auf einige Tage nach <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Straßburg</strong&gt;">Strassburg<a href="https://www.wikidata.org/wiki/Q6602"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>
+                  wandern, und dann die ganze übrige Zeit der Vollendung des <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wilhelm Wackernagel: Deutsches Lesebuch.</strong&gt;">Lesebuches<a href="https://digi.ub.uni-heidelberg.de/diglit/wackernagel1839ga">📖</a></span> widmen. Dann könnte freylich alles was ich noch von Ihrer Güte in
+                  Händen habe,
+                  nach <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Eppishausen</strong&gt;">Eppishausen<a href="https://www.wikidata.org/wiki/Q1423653"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> zurück; aber es ist doch wohl sicherer, wenn
+                  ich damit warte, bis Sie heimgekehrt sind. Und nun leben
+                  Sie recht wohl, sehr verehrter Herr Baron! Noch einmahl
+                  wünsche ich Ihnen von ganzem Herzen alles Glück und alle Freude;
+                  ergehe es Ihnen wohl und kehren Sie gesund wieder. Gott
+                  behüte Sie! Ihr herzlichst ergebener Wilh. Wackernagel. 
+                  </div>
+            </section>
+            <section id="normalised-text" class="mb-4">
+               <h2>Normalisierter Text</h2>
+               <div>
+                  Erhalten am 12. Juli. Sonntag, 6. Juni 1834. Hochverehrter Herr Baron, am
+                  vergangenen Donnerstag habe ich Ihre letzte Sendung erhalten, zu meiner größten
+                  Freude, da ich in diesem rückhaltlosen Anvertrauen einer so prächtigen Abschrift
+                  eines gänzlich unbekannten Gedichts ein besonderes Zeichen der Güte erkennen
+                  muss, mit der Sie mir und meinem Unternehmen freundlich geneigt sind. Da können
+                  Sie denken, wie mir zumute war, als ich dennoch den ganzen Tag vor anderen
+                  dringenden Arbeiten nicht dazu gelangen konnte, die Handschrift nur einigermaßen
+                  näher zu betrachten. Umso begieriger machte ich mich freitags daran und schon am
+                  Nachmittag waren beide Gedichte, das eine gelesen, das andere, die Minneburg,
+                  zumindest durchlaufen. Der Gabriel ist als Nachahmung des Iweins für die Litt.
+                  Gesch. von Bedeutung, und ich denke auch solche Stellen auszuheben, die jenes
+                  Verhältnis in deutliches Licht setzen, nämlich die beiden Kämpfe mit Walban und
+                  mit Iwan. Aus welcher Handschrift stammt denn die Minneburg? Von der
+                  Wienerischen weicht dieser Text wesentlich ab: die Stelle über Meister Egen, die
+                  jene enthält (Grundriss S. 442), habe ich hier trotz allem Suchen nicht
+                  wiederfinden können; die mehrfachen Beziehungen auf ihn lauten jedesmal anders.
+                  Auch Herr vd. H. Lebensbeschreibungen sind mir gar willkommen, so sehr ich mich
+                  auch teilweise darüber ärgere; z. B. wegen des unverschämten Streichs mit dem
+                  Ulrich von Lichtenstein und der gnädigen Protectormine, mit der er meine Arbeit
+                  über Nithart bevorwortet. "Mein junger Freund W. W." ich dachte, ich wäre jetzt
+                  über das Alter und die Verhältnisse hinaus, unter denen eine solche Titulatur am
+                  Platze ist. Als er die Lieder Nitharts von mir bearbeiten ließ, im Jahr 1826;
+                  damals war ich freilich noch jung; aber dieses Datum verschweigt er weislich,
+                  und ich werde nun bei Gelegenheit jenen ganzen schülerhaften Versuch, den er
+                  freilich in seiner Bequemlichkeit ohne weiteres abdrucken lässt, desavouieren
+                  müssen. Möge sich Hr. Abel um Gottes willen nicht mit ihm einlassen, soviel ich
+                  weiß, besitzt vd. H. nur von dem kleineren Teil der Pariser Bilder wirkliche
+                  Durchzeichnungen; von dem größeren aber bloß die Beschreibungen. Da könnte es
+                  ihm freilich ganz erwünscht sein, mit jemandem, der alle hat, sich zu
+                  "vereinbaren". Orelli hat sich zu guter Letzt doch noch als braven Mann bewährt:
+                  indem der vorläufige Anschlag um 40 % reduziert worden ist, sind als einmütige
+                  Schätzung der beiderseitigen Experten nur 44.000 Fr. verblieben, wovon 31.000
+                  auf die Bücher, 13.000 auf die Münzen kommen. Man hatte 100.000 gefürchtet. Von
+                  einer Versteigerung kann nun noch weniger die Rede sein. Ist das nicht honnêt
+                  von ihm? Von ihm: denn er lenkte die anderen. Wissen Sie schon, dass man Sie hat
+                  ersuchen wollen, die definitive Schätzung der Kunstgegenstände als Oberexperte
+                  zu übernehmen? Hätten Sie es getan, so wäre das, wie ich aus Ihrem Briefe
+                  abnehme, wahrlich nicht zum Schaden Basels gewesen; und wie hätte ich mich
+                  gefreut, Sie hier begrüßen zu können! Man hat aber in Arau einen Herrn Keller
+                  aus Schafhausen vorgezogen; warum, weiß ich nicht. Sie erbieten sich,
+                  Aushängebogen des Lesebuches mit nach Göttingen nehmen zu wollen. Wenn ich aber
+                  jetzt schon etwas davon zeigen möchte, so wären Sie, dem das Buch so viel
+                  verdankt, gewiss der erste gewesen, dem ich es vorgelegt hätte. Aber ich stehe
+                  jetzt, mit Sp. 112., erst am Anfang des XII. Jahrhunderts, und nach dem
+                  bisherigen lässt sich der Charakter der Sammlung nur ungenügend beurteilen. Vor
+                  dem Schluss des XII. Jahrhunderts möchte ich sie keinem vom Fache zeigen. Da mir
+                  daran liegt, wo es mit meinem Plan sich verträgt, mich an Lachmanns Auswahl
+                  anzuschließen, so werde ich aus dem Freydank dieselben Stellen geben als er und
+                  in seinem Text: dann haben Sie auch nicht die erneute Mühe einer Übersendung
+                  Ihres Liedersaals. Gleich am Beginn der Ferien werde ich, namentlich des Taulers
+                  wegen, auf einige Tage nach Straßburg wandern und dann die ganze übrige Zeit der
+                  Vollendung des Lesebuches widmen. Dann könnte freilich alles, was ich noch von
+                  Ihrer Güte in Händen habe, nach Eppishausen zurück; aber es ist doch wohl
+                  sicherer, wenn ich damit warte, bis Sie heimgekehrt sind. Und nun leben Sie
+                  recht wohl, sehr verehrter Herr Baron! Noch einmal wünsche ich Ihnen von ganzem
+                  Herzen alles Glück und alle Freude; ergehe es Ihnen wohl und kehren Sie gesund
+                  wieder. Gott behüte Sie! Ihr herzlichst ergebener Wilh. Wackernagel.
+                  </div>
+            </section>
+            <section id="translation" class="mb-4">
+               <h2>Translation</h2>
+               <div>
+                  Received on 12 July. Sunday, 6 June 1834. Highly esteemed Baron, last Thursday I
+                  received your latest consignment, to my great delight, as I must recognize in
+                  this unreserved trust a magnificent copy of a completely unknown poem as a
+                  particular sign of the kindness with which you are favorably inclined toward me
+                  and my enterprise. You can well imagine how I felt when, nevertheless, I was
+                  unable the entire day due to other pressing tasks to even somewhat closely
+                  examine the manuscript. All the more eagerly I set to it on Friday, and by the
+                  afternoon, both poems, one read, the other, the Minneburg, had at least been
+                  gone through. The Gabriel is significant as an imitation of the Iwein for the
+                  literary history, and I also think of highlighting such passages that put that
+                  relationship in clear light, namely the two fights with Walban and with Iwan.
+                  From which manuscript does the Minneburg originate? This text deviates
+                  significantly from the Vienna version; the passage about Master Egen contained
+                  there (Outline p. 442) I could not find here despite all searching; the multiple
+                  references to him each time sound different. Mr. vd. H.’s biographies are very
+                  welcome to me, even though I partly find them irritating; for example, because
+                  of the outrageous trick with Ulrich von Lichtenstein and the gracious
+                  condescension with which he prefaces my work on Nithart. "My young friend W. W."
+                  - I thought I had now surpassed the age and circumstances under which such a
+                  title is appropriate. When he had Nithart's songs revised by me in the year
+                  1826, at that time I was indeed still young; but he wisely omits this date, and
+                  I will now on occasion have to disavow that entire student-like attempt, which,
+                  out of convenience, he simply had printed. May Mr. Abel for God's sake not get
+                  involved with him, as far as I know, vd. H. possesses only the smaller part of
+                  the Parisian pictures in actual copies; of the larger, however, just the
+                  descriptions. Then it could indeed suit him very well to "agree" with someone
+                  who has them all. In the end, Orelli proved to be a decent man: as the
+                  preliminary estimate was reduced by 40%, only 44,000 Francs remained as the
+                  unanimous estimate of the respective experts, of which 31,000 are for the books,
+                  13,000 for the coins. 100,000 had been feared. There can no longer be any talk
+                  of an auction. Isn't that honorable of him? Of him: for he guided the others. Do
+                  you already know that they wanted to ask you to take on the definitive valuation
+                  of the art objects as chief expert? Had you done so, it would have, as I infer
+                  from your letter, truly not been to Basel's detriment; and how happy I would
+                  have been to greet you here! But they preferred a Mr. Keller from Schafhausen in
+                  Aarau; why, I do not know. You offer to take specimen pages of the reading book
+                  to Göttingen. If I wanted to show something of it already now, you, to whom the
+                  book owes so much, would certainly have been the first to whom I would have
+                  presented it. But I am now, with Sp. 112, only at the beginning of the 12th
+                  century, and based on what is available so far, the character of the collection
+                  can only be inadequately assessed. Before the end of the 12th century, I would
+                  not want to show it to anyone in the field. As it matters to me, as long as it
+                  agrees with my plan, to align with Lachmann's selection, I will give the same
+                  passages from the Freydank as he does and in his text: then you also will not
+                  have the renewed effort of sending your songbook. At the very start of the
+                  vacation, I will, especially because of Tauler, wander to Strasbourg for a few
+                  days, and then devote the entire remaining time to completing the reading book.
+                  Then indeed everything that I still have from your kindness in my hands could go
+                  back to Eppishausen; but it is probably safer if I wait with that until you have
+                  returned home. And now, live well, most esteemed Baron! Once again, I wish you
+                  all happiness and all joy from the bottom of my heart; may things go well for
+                  you, and may you return healthy. God bless you! Yours sincerely devoted, Wilh.
+                  Wackernagel.
+                  </div>
+            </section>
+         </div>
+      </div><script src="https://unpkg.com/leaflet/dist/leaflet.js"></script><script>
+                    // Create the map and set its view to a default coordinate and zoom level.
+                    var map = L.map('mapid').setView([-], 7);
+                    // Set up the OpenStreetMap tile layer.
+                    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: 'Map data <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
+                    }).addTo(map);
+                    
+                    
+                    // Optionally add a marker at the center
+                    
+                    // Define custom marker icons.
+                    var mentionedIcon = L.icon({
+                    iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
+                    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/images/marker-shadow.png',
+                    iconSize: [25, 41],
+                    iconAnchor: [12, 41],
+                    popupAnchor: [1, -34],
+                    shadowSize: [41, 41]
+                    });
+                    
+                    L.marker([-]).addTo(map)
+                    .bindPopup('Unbekannt')
+                    .openPopup();
+                    
+                    
+                        
+                        var popupText = "Basel";
+                        L.marker([47.55472222,7.59055556], {icon: mentionedIcon}).addTo(map)
+                        .bindPopup(popupText);
+                    
+                        
+                        var popupText = "Aarau";
+                        L.marker([47.4,8.05], {icon: mentionedIcon}).addTo(map)
+                        .bindPopup(popupText);
+                    
+                        
+                        var popupText = "Schaffhausen";
+                        L.marker([47.7,8.63333333], {icon: mentionedIcon}).addTo(map)
+                        .bindPopup(popupText);
+                    
+                        
+                        var popupText = "Göttingen";
+                        L.marker([51.533889,9.935556], {icon: mentionedIcon}).addTo(map)
+                        .bindPopup(popupText);
+                    
+                        
+                        var popupText = "Straßburg";
+                        L.marker([48.573333,7.752222], {icon: mentionedIcon}).addTo(map)
+                        .bindPopup(popupText);
+                    
+                        
+                        var popupText = "Eppishausen";
+                        L.marker([47.545,9.23759], {icon: mentionedIcon}).addTo(map)
+                        .bindPopup(popupText);
+                    </script><script>
+                    // Initialize all tooltips
+                    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+                    new bootstrap.Tooltip(tooltipTriggerEl)
+                    })
+                </script></body>
+</html>
