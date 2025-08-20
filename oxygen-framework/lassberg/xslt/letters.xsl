@@ -109,16 +109,91 @@
     
     <xsl:template match="tei:correspDesc">
         <tr data-status="{@change}" data-key="{@key}">
-            <xsl:attribute name="data-harris" select="normalize-space(tei:note[@type='nummer_harris'])"/>
-            
             <td class="dt-control text-center"><i class="bi bi-plus-lg"></i></td>
             <td><xsl:value-of select="@key"/></td>
             <td><xsl:value-of select="normalize-space(tei:correspAction[@type='sent']/tei:date/@when)"/></td>
             <td><xsl:apply-templates select="tei:correspAction[@type='sent']/tei:persName"/></td>
             <td><xsl:apply-templates select="tei:correspAction[@type='received']/tei:persName"/></td>
             <td><xsl:apply-templates select="tei:correspAction[@type='sent']/tei:placeName"/></td>
-            <td>
-                <xsl:value-of select="normalize-space(tei:note[@type='aufbewahrungsort'])"/>, <xsl:value-of select="normalize-space(tei:note[@type='aufbewahrungsinstitution'])"/>
+            <td><xsl:value-of select="normalize-space(tei:note[@type='aufbewahrungsort'])"/>, <xsl:value-of select="normalize-space(tei:note[@type='aufbewahrungsinstitution'])"/></td>
+        </tr>
+        
+        <tr class="dt-details-row" style="display: none;">
+            <td colspan="7" class="p-3 bg-light">
+                <div class="collapsible-content p-2">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <strong>Signature:</strong> <span class="text-muted"><xsl:value-of select="tei:note[@type='signatur']"/></span><br/>
+                            <strong>Harris ID:</strong> <span class="text-muted"><xsl:value-of select="tei:note[@type='nummer_harris']"/></span><br/>
+                            <strong>Journal:</strong> <span class="text-muted"><xsl:value-of select="tei:note[@type='journalnummer']"/></span>
+                        </div>
+                        <div class="col-md-6">
+                            <strong>Print:</strong>
+                            <xsl:choose>
+                                <xsl:when test="normalize-space(tei:note[@type='published_in'])">
+                                    <a href="{tei:note[@type='published_in']/@target}" target="_blank"><xsl:value-of select="tei:note[@type='published_in']"/></a>
+                                </xsl:when>
+                                <xsl:otherwise><span class="text-muted">Not available</span></xsl:otherwise>
+                            </xsl:choose><br/>
+                            <strong>Scan:</strong>
+                            <xsl:choose>
+                                <xsl:when test="normalize-space(tei:note[@type='url_facsimile'])">
+                                    <a href="{tei:note[@type='url_facsimile']}" target="_blank">View Scan</a>
+                                </xsl:when>
+                                <xsl:otherwise><span class="text-muted">Not available</span></xsl:otherwise>
+                            </xsl:choose>
+                        </div>
+                    </div>
+                    
+                    <xsl:if test="@change='online'">
+                        <hr class="my-3"/>
+                        <div class="row">
+                            <div class="col-12">
+                                <h6>Summary</h6>
+                                <p class="text-muted small">
+                                    <xsl:variable name="summaryText" select="document(concat('../data/letters/', @key, '.xml'))//tei:div[@type='summary']/tei:p"/>
+                                    <xsl:value-of select="$summaryText"/>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-md-4">
+                                <h6>Mentioned Persons</h6>
+                                <ul class="list-unstyled small">
+                                    <xsl:variable name="mentionedPersons" select="document(concat('../data/letters/', @key, '.xml'))//tei:ref[@type='cmif:mentionsPerson']"/>
+                                    <xsl:for-each select="$mentionedPersons">
+                                        <xsl:variable name="targetId" select="substring-after(@target, '#')"/>
+                                        <xsl:variable name="person" select="document('../data/register/lassberg-persons.xml')//tei:person[@xml:id=$targetId]"/>
+                                        <li><xsl:value-of select="$person/tei:persName[@type='main']"/></li>
+                                    </xsl:for-each>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <h6>Mentioned Places</h6>
+                                <ul class="list-unstyled small">
+                                    <xsl:variable name="mentionedPlaces" select="document(concat('../data/letters/', @key, '.xml'))//tei:ref[@type='cmif:mentionsPlace']"/>
+                                    <xsl:for-each select="$mentionedPlaces">
+                                        <xsl:variable name="targetId" select="substring-after(@target, '#')"/>
+                                        <xsl:variable name="place" select="document('../data/register/lassberg-places.xml')//tei:place[@xml:id=$targetId]"/>
+                                        <li><xsl:value-of select="$place/tei:placeName"/></li>
+                                    </xsl:for-each>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <h6>Mentioned Literature</h6>
+                                <ul class="list-unstyled small">
+                                    <xsl:variable name="mentionedBibl" select="document(concat('../data/letters/', @key, '.xml'))//tei:ref[@type='cmif:mentionsBibl']"/>
+                                    <xsl:for-each select="$mentionedBibl">
+                                        <xsl:variable name="targetId" select="substring-after(@target, '#')"/>
+                                        <xsl:variable name="bibl" select="document('../data/register/lassberg-literature.xml')//tei:bibl[@xml:id=$targetId]"/>
+                                        <li><xsl:value-of select="$bibl/tei:author"/>, <xsl:value-of select="$bibl/tei:title"/></li>
+                                    </xsl:for-each>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="{concat('../html/letters/', @key, '.html')}" class="btn btn-primary btn-sm mt-3" target="_blank">Open Full Letter Page</a>
+                    </xsl:if>
+                </div>
             </td>
         </tr>
     </xsl:template>
