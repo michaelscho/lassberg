@@ -1,80 +1,96 @@
-/* General Reset */
-body, html {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
+/* --- FONTS & TYPOGRAPHY --- */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.7;
 }
 
-main {
-  padding: 20px;
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+    font-family: 'Lora', serif;
 }
 
-/* Hero Section */
+h2 {
+    border-bottom: 2px solid #0d6efd; /* Bootstrap primary color */
+    padding-bottom: 10px;
+    margin-bottom: 1.5rem !important;
+}
+
+/* --- COLORS & THEME --- */
+body {
+    background-color: #f8f9fa; /* Light grey background */
+}
+
+/* --- NAVIGATION --- */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* --- HERO SECTION --- */
 .hero-section {
-  position: relative;
-  width: 100%;
-  height: 35vh; /* Adjust the height as needed */
-  overflow: hidden;
+    position: relative;
+    height: 50vh; /* Taller hero section */
+    background: url('../img/Lassberg.jpg') no-repeat center center;
+    background-size: cover;
+    background-position: top;
 }
 
-.hero-image-container {
-  position: relative;
-  width: 100%;
-  height: 100%;
+.hero-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(13, 27, 51, 0.6); /* Dark blue overlay */
 }
 
-.hero-image {
-  width: 100%;
-  height: 100%;
-  object-position: top;
-  object-fit: cover; /* Keeps the image proportionate while filling the section */
-}
-
-.hero-overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+.hero-section .container {
+    position: relative;
+    z-index: 2;
 }
 
 .hero-title {
-  font-size: 3rem;
-  margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
-
 .hero-subtitle {
-  font-size: 1.5rem;
-  margin: 0;
+    font-weight: 400;
 }
 
-/* Alternating colors for main rows */
-.odd-row {
-  background-color: #ffffff; /* White */
-}
-.even-row {
-  background-color: #f6f6f6; /* Light gray */
+
+/* --- MAIN CONTENT & SECTIONS --- */
+main p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
 }
 
-/* Collapsible rows */
-.collapsible-row {
-  background-color: #f9f9f9; /* Light background for collapsible content */
-  border-top: 1px solid #ddd; /* Subtle border for clarity */
+main a {
+    color: #0d6efd;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
-/* Disable animations for faster expand/collapse */
-.collapse {
-  display: none;
-  transition: none !important;
+main a:hover {
+    color: #0a58ca;
+    text-decoration: underline;
 }
 
-.collapse.show {
-  display: table-row;
+.bg-light {
+    background-color: #ffffff !important; /* Use white for the goals section */
 }
 
+/* --- PROJECT GOALS SECTION --- */
+#goals .bi {
+    transition: transform 0.3s ease;
+}
+
+#goals .col-md-4:hover .bi {
+    transform: scale(1.1);
+}
+
+/* --- ENTITY SPANS & LEGACY --- */
+/* (Kept from original for compatibility) */
 span.rs-person { background-color: #d1ecf1; padding: 2px 4px; border-radius: 4px; }
 span.rs-place { background-color: #e48cf9; padding: 2px 4px; border-radius: 4px; }
 span.rs-bibl { background-color: #aef5c2; padding: 2px 4px; border-radius: 4px; }
@@ -83,10 +99,10 @@ span.rs-object { background-color: #f9b6a9; padding: 2px 4px; border-radius: 4px
 #mapid { height: 400px; }
 
 .tooltip {
-  z-index: 1050 !important;  /* Ensure tooltip is above other elements */
+    z-index: 1050 !important;
 }
 
 .mirador-parent {
-  height: 100%;
-  position: relative;
+    height: 100%;
+    position: relative;
 }

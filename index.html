@@ -2,87 +2,120 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Lassberg Letters</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Laßberg Letters Project</title>
 
-  <!-- Include Bootstrap 5 CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"/>
-  <link href="../css/styles.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
-
-
-
-
+    <link href="../css/styles.css" rel="stylesheet" />
 </head>
 
 <body>
-  <div id="app" class="container">
-    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
-      <div class="container-fluid"><a class="navbar-brand" href="#">Laßberg Letters</a>
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="#">Welcome</a></li>
-          <li class="nav-item"><a class="nav-link" href="letters.html">Register</a></li>
-          <li class="nav-item"><a class="nav-link"
-              href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb">Data
-              Analysis</a></li>
-          <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg">Repository</a></li>
-          <li class="nav-item"><a class="nav-link" href="https://www.zotero.org/groups/6109140/joseph_von_laberg/library">Literature</a></li>
-        </ul>
 
-      </div>
-    </nav>
-    <section class="hero-section">
-      <div class="hero-image-container">
-        <img src="../img/Lassberg.jpg" alt="Portrait of Lassberg" class="hero-image" />
-        <div class="hero-overlay">
-          <h1 class="hero-title">The Laßberg Letters</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">The Laßberg Letters</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Welcome</a></li>
+                    <li class="nav-item"><a class="nav-link" href="letters.html">Register</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.zotero.org/groups/6109140/joseph_von_laberg/library" target="_blank">Literature</a></li>
+                </ul>
+            </div>
         </div>
-      </div>
-    </section>
+    </nav>
 
-    <div>
-      <p>Joseph Maria Christoph Freiherr von Laßberg (1770-1855) was a German scholar, bibliophile, and literary
-        collector who played a significant role in the cultural and intellectual life of the early 19th century. Born in
-        Donaueschingen, Laßberg was educated in law and cameralism at the Universities of Straßburg and Freiburg and
-        pursued a successful career in service of the House of Fürstenberg (<router-link
-          to="/literature#Bader1955">Bader 1955</router-link>, <router-link to="/literature#Graf2010">Graf
-          2010</router-link>, <router-link to="/literature#Schupp1982">Schupp 1982</router-link>, <router-link
-          to="/literature#Sprague2011">Sprague 2011</router-link>). However, in the wake of the loss of sovereignty
-        sealed at the Congress of Vienna, the mediatised nobility compensated, among other things, through an increased
-        interest in the Middle Ages, which they romantically idealized as a better time. Thus, many aristocratic
-        scholars attempted to collect and study medieval artifacts and united several medievalist disciplines into a
-        politically connoted patriotic archaeology, in service of the noble interests. From then on, the efforts of the
-        lower nobility's scholarship were directed towards the exploration of medieval writings and other remains of
-        that era (<router-link to="/literature#Graf2010">Graf 2010</router-link>, <router-link
-          to="/literature#Schupp2006">Schupp 2006</router-link>). This explains Laßberg deep interest in the study of
-        medieval literature. Indeed, he dedicated much of his resources to collecting and studying manuscripts, books,
-        and other historical artifacts. His private library, today scattered, comprised over 10,000 volumes and included
-        many medieval manuscripts, which he acquired from various monastic libraries and
-        private collections (<router-link to="/literature#Bothien2001">Bothien 2001</router-link>, <router-link
-          to="/literature#Gantert2001">Gantert 2001</router-link>, <router-link to="/literature#Obhof2001">Obhof
-          2001</router-link>, <router-link to="/literature#Obhof2005">Obhof 2005</router-link>, <router-link
-          to="/literature#Schupp2002">Schupp 2002</router-link>, <router-link to="/literature#Schupp1993">Schupp
-          1993</router-link>, <router-link to="/literature#Weidhase2002">Weidhase 2002</router-link>).</p>
+    <header class="hero-section text-white text-center">
+        <div class="container d-flex flex-column justify-content-center h-100">
+            <h1 class="display-4 fw-bold hero-title">The Joseph von Laßberg Letters</h1>
+            <p class="lead hero-subtitle">Exploring the intellectual network of a 19th-century antiquarian.</p>
+        </div>
+    </header>
 
-      <p>Laßberg's scholarly pursuits focused primarily on German medieval literature, and his efforts to preserve,
-        edit, and disseminate these works had a long lasting impact on the emerging field of Medieval Studies in Germany. By sharing his extensive
-        collection, he facilitated the study and dissemination of medieval literature, contributing significantly to the
-        development and growth of Medieval Studies during the 19th century. Thus, it is not surprising, that his
-        correspondence, <router-link
-          to="/literature#Harris1991">Harris 1991</router-link>) unveils an extensive network of
-        distinguished scholars, writers, and cultural figures of his time. His letters offer a rare insight
-        into a dynamic and influential intellectual community that contributed significantly to the development of
-        German Romanticism and the resurgence of interest in the nation's presumed medieval past.</p>
-    </div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
-    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
-    crossorigin="anonymous"></script>
+    <main class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <section id="introduction" class="mb-5">
+                        <h2 class="mb-4">Joseph von Laßberg: A Life of Collection</h2>
+                        <p>Joseph Maria Christoph Freiherr von Laßberg (1770-1855) was a German scholar, bibliophile, and antiquarian who played a significant role in the cultural and intellectual life of the early 19th century. Born into a noble family long in service to the House of Fürstenberg (<a href="http://zotero.org/groups/6109140/items/MKZDHQXS" target="_blank">Wieser 1955</a>), Laßberg pursued a successful career as a forest official and privy councilor, rising to the rank of <em>Landesoberforstmeister</em> (<a href="http://zotero.org/groups/6109140/items/F4XWA6RM" target="_blank">Schupp 1982</a>). In the wake of the Napoleonic Wars and the political restructuring that followed, many members of the mediatised nobility sought new purpose in the preservation of cultural heritage (<a href="http://zotero.org/groups/6109140/items/SDAYHYPZ" target="_blank">Hakelberg 2021</a>). Laßberg co-founded the aristocratic society "Die Kette" (The Chain), which aimed to affirm the nobility's role through the study of medieval culture (<a href="http://zotero.org/groups/6109140/items/ZALVR4B7" target="_blank">Schupp 2004</a>, <a href="http://zotero.org/groups/6109140/items/SDAYHYPZ" target="_blank">Hakelberg 2021</a>). This context explains Laßberg's deep interest in medieval literature. He dedicated his resources to amassing a private library of over 10,000 prints and some 263 manuscripts (<a href="http://zotero.org/groups/6109140/items/F4XWA6RM" target="_blank">Schupp 1982</a>, <a href="http://zotero.org/groups/6109140/items/KTW4PHS5" target="_blank">Gantert 2010</a>), including his most famous acquisition, the Nibelungenlied Manuscript C, which he purchased with the help of Princess Elisabeth zu Fürstenberg during the Congress of Vienna (<a href="http://zotero.org/groups/6109140/items/YR6EEK32" target="_blank">Obhof 2001</a>, <a href="http://zotero.org/groups/6109140/items/59GA2SFP" target="_blank">Johne 1955</a>).</p>
+                        <p>Laßberg's scholarly pursuits focused primarily on German medieval literature, and his efforts to preserve and share these works had a long-lasting impact. His main editorial achievement, the <em>Liedersaal</em> (<a href="http://zotero.org/groups/6109140/items/FFEEE47U" target="_blank">Bothien 2001</a>, <a href="http://zotero.org/groups/6109140/items/F4XWA6RM" target="_blank">Schupp 1982</a>), made a vast collection of Middle High German poetry accessible to his contemporaries. By opening his library at his estates in Eppishausen (<a href="http://zotero.org/groups/6109140/items/IMWBEJXC" target="_blank">Schupp 2001</a>) and later Meersburg Castle (<a href="http://zotero.org/groups/6109140/items/T8Q3SNTU" target="_blank">Kastner 1955</a>), he became an indispensable facilitator for the emerging field of German Studies (<a href="http://zotero.org/groups/6109140/items/8FRJPHDF" target="_blank">Glunk 1955</a>). His extensive correspondence reveals a vast network of scholars, including Jacob and Wilhelm Grimm (<a href="http://zotero.org/groups/6109140/items/KGHXYWYC" target="_blank">Schupp 1978</a>), Ludwig Uhland (<a href="http://zotero.org/groups/6109140/items/BH8B7HKB" target="_blank">Pfeiffer 1870</a>), Friedrich Heinrich von der Hagen (<a href="http://zotero.org/groups/6109140/items/7XEEJ6US" target="_blank">Grunewald 1981</a>), and Swiss historians like Johann Adam Pupikofer (<a href="http://zotero.org/groups/6109140/items/9XVGVVNS" target="_blank">Wepfer 2001</a>) and Ildefons von Arx (<a href="http://zotero.org/groups/6109140/items/AA6IRWV6" target="_blank">Studer 1955</a>). His letters offer rare insight into the dynamic intellectual community that shaped German Romanticism and the resurgence of interest in the nation's medieval past.</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <section id="goals" class="py-5 bg-light">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2>Project Goals</h2>
+                    <p class="lead text-muted">Leveraging digital methods to uncover new insights.</p>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4 mb-4">
+                        <div class="p-4">
+                            <i class="bi bi-archive-fill fs-1 text-primary"></i>
+                            <h4 class="mt-3">Collect & Aggregate</h4>
+                            <p>To digitally collect and present the full text of Laßberg's letters, using the comprehensive register compiled by Martin Harris as a foundational guide.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="p-4">
+                            <i class="bi bi-display-fill fs-1 text-primary"></i>
+                            <h4 class="mt-3">Digitize & Transcribe</h4>
+                            <p>Carried out as part of the project „Die Schweiz und ihr ‘Mittelalter’“ at the University of Bern, making the correspondence accessible for the first time.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="p-4">
+                            <i class="bi bi-diagram-3-fill fs-1 text-primary"></i>
+                            <h4 class="mt-3">Analyze & Visualize</h4>
+                            <p>To systematically analyze the letters as a complete epistemic and social network, uncovering new connections and exploring underappreciated roles within the scholarly circle.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <section id="status">
+                        <h2 class="mb-4">Current Status & Disclaimer</h2>
+                         <p>While Laßberg's life and work have been the subject of extensive research, a complete picture of his intellectual world remains to be drawn. Past scholarship has illuminated his role as a collector and his relationships with other famous figures. However, the sheer scale of his correspondence, scattered across numerous archives, has prevented a comprehensive analysis of his network. This project employs digital methods to overcome these limitations. By systematically analyzing his letters as a complete epistemic and social network, we aim to uncover the full dynamics of his influence, explore the underappreciated role of women in his scholarly circle—such as his wife Jenny von Droste-Hülshoff (<a href="http://zotero.org/groups/6109140/items/A8WNP6TG" target="_blank">Schoof 1961</a>) and his lifelong confidante Princess Elisabeth zu Fürstenberg (<a href="http://zotero.org/groups/6109140/items/65K7BXPF" target="_blank">Siefert 2022</a>)—and map the key intellectual hubs of his time, revealing new insights into the cultural history of the 19th century.</p>
+                        <p class="alert alert-warning"><strong>Please Note:</strong> This website is currently in a <strong>beta stage</strong>. It is intended to provide early access to the transcribed letters as they become available. As this is not a final scholarly edition, the content may contain errors and is subject to significant changes. We therefore advise users to <strong>cite with caution</strong>.</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2025 The Laßberg Letters Project</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
 </body>
-
 </html>
