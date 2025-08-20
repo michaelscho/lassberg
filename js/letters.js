@@ -1,93 +1,117 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    // Initialize the DataTable with configurations
     const table = $('#letter-table').DataTable({
         paging: true,
         pageLength: 25,
-        lengthChange: true,
         lengthMenu: [[10, 25, 50, -1], [10, 25, 50, "All"]],
-        info: true, // Shows "Showing 1 to X of Y entries"
+        info: true,
         responsive: true,
-        order: [[1, 'asc']], // Default sort by Date column
+        order: [[2, 'asc']], // Default sort by Date (now column index 2)
         columnDefs: [
             {
                 orderable: false,
-                className: 'dt-control', // Essential class for the expand/collapse functionality
-                targets: 0,              // Apply to the first column
-                defaultContent: ''       // DataTables will handle the icon
+                className: 'dt-control',
+                targets: 0,
+                defaultContent: ''
             }
         ],
-        // This function runs every time the table is drawn (e.g., on filter, sort, or page change)
         drawCallback: function () {
             const api = this.api();
-            const count = api.page.info().recordsDisplay; // Gets the count of currently displayed rows
+            const count = api.page.info().recordsDisplay;
             $('#filteredCounter').text(`${count} letters shown`);
         }
     });
 
     // --- EVENT LISTENERS FOR FILTERS ---
+    $('#filter-id').on('keyup', function () { table.column(1).search(this.value).draw(); });
+    $('#filter-date').on('keyup', function () { table.column(2).search(this.value).draw(); });
+    $('#filter-sender').on('keyup', function () { table.column(3).search(this.value).draw(); });
+    $('#filter-recipient').on('keyup', function () { table.column(4).search(this.value).draw(); });
+    $('#filter-place').on('keyup', function () { table.column(5).search(this.value).draw(); });
 
-    // Connects each text input to the search function of its corresponding column
-    $('#filter-date').on('keyup', function () { table.column(1).search(this.value).draw(); });
-    $('#filter-sender').on('keyup', function () { table.column(2).search(this.value).draw(); });
-    $('#filter-recipient').on('keyup', function () { table.column(3).search(this.value).draw(); });
-    $('#filter-place').on('keyup', function () { table.column(4).search(this.value).draw(); });
-    $('#filter-provenance').on('keyup', function () { table.column(5).search(this.value).draw(); });
-
-    // Custom filter function for the "transcribed" checkbox
     $('#filterCheckbox').on('change', function () {
         if (this.checked) {
-            // If checked, filter to only show rows with data-status="online"
             $.fn.dataTable.ext.search.push((settings, data, dataIndex) => {
                 return $(table.row(dataIndex).node()).attr('data-status') === 'online';
             });
         } else {
-            // If unchecked, remove the custom filter
             $.fn.dataTable.ext.search.pop();
         }
-        table.draw(); // Redraw the table with the new filter applied/removed
+        table.draw();
     });
 
     // --- EVENT LISTENER FOR EXPAND/COLLAPSE ---
-
-    // Handles clicks on the first column to show/hide child rows
-    $('#letter-table tbody').on('click', 'td.dt-control', function (event) {
+    $('#letter-table tbody').on('click', 'td.dt-control', async function (event) {
         event.stopPropagation();
         const tr = $(this).closest('tr');
         const row = table.row(tr);
+        const icon = $(this).find('i');
 
         if (row.child.isShown()) {
-            // This row is already open - close it
             row.child.hide();
             tr.removeClass('dt-hasChild');
+            icon.removeClass('bi-dash-lg').addClass('bi-plus-lg');
         } else {
-            // Open this row by formatting its child row content
-            const letterData = tr.data(); // DataTables automatically reads data-* attributes
-            row.child(formatChildRow(letterData)).show();
             tr.addClass('dt-hasChild');
+            icon.removeClass('bi-plus-lg').addClass('bi-dash-lg');
+            
+            // Show a loading message while we fetch the details
+            row.child('<div><span class="spinner-border spinner-border-sm" role="status"></span> Loading details...</div>').show();
+
+            const letterKey = tr.data('key');
+            try {
+                // Fetch and display the rich details
+                const detailsHtml = await getFormattedDetails(letterKey, tr.data());
+                row.child(detailsHtml).show();
+            } catch (error) {
+                row.child('<div class="text-danger">Could not load letter details.</div>').show();
+                console.error("Error fetching letter details:", error);
+            }
         }
     });
 
-    // --- HELPER FUNCTION ---
+    // --- HELPER FUNCTIONS ---
 
-    // Creates the HTML for the expandable details section from the row's data-* attributes
-    function formatChildRow(data) {
-        const scanLink = data.scanUrl ? `<a href="${data.scanUrl}" target="_blank">View Scan</a>` : `<span class="text-muted">Not available</span>`;
-        const printLink = data.printUrl ? `<a href="${data.printUrl}" target="_blank">${data.printText || 'View Print'}</a>` : `<span class="text-muted">Not available</span>`;
+    // Cache to store fetched letter details to avoid repeated network requests
+    const detailsCache = new Map();
 
-        return `
+    async function getFormattedDetails(key, rowData) {
+        if (detailsCache.has(key)) {
+            return detailsCache.get(key);
+        }
+
+        const url = `../data/letters/${key}.xml`;
+        const response = await fetch(url);
+        if (!response.ok) {
+            throw new Error(`File not found: ${url}`);
+        }
+        const xmlText = await response.text();
+        const parser = new DOMParser();
+        const xmlDoc = parser.parseFromString(xmlText, "text/xml");
+
+        const summaryNode = xmlDoc.querySelector('div[type="summary"]');
+        const summary = summaryNode ? summaryNode.textContent.trim() : 'No summary available.';
+
+        // Create the "Open Letter" button only if the status is "online"
+        const openLetterButton = rowData.status === 'online' 
+            ? `<a href="../html/letters/${key}.html" class="btn btn-primary btn-sm mt-2" target="_blank">Open Letter</a>` 
+            : '';
+
+        const html = `
             <div class="collapsible-content p-3">
                 <div class="row">
                     <div class="col-md-6">
-                        <strong>Harris ID:</strong> <span class="text-muted">${data.harris || 'N/A'}</span><br/>
-                        <strong>Signature:</strong> <span class="text-muted">${data.signature || 'N/A'}</span><br/>
-                        <strong>Journal:</strong> <span class="text-muted">${data.journal || 'N/A'}</span>
-                    </div>
-                    <div class="col-md-6">
-                        <strong>Print:</strong> ${printLink}<br/>
-                        <strong>Scan:</strong> ${scanLink}
+                        <strong>Provenance:</strong> <span class="text-muted">${rowData.provenance || 'N/A'}</span><br/>
+                        <strong>Harris ID:</strong> <span class="text-muted">${rowData.harris || 'N/A'}</span>
                     </div>
                 </div>
+                <hr>
+                <h6>Summary</h6>
+                <p class="text-muted small">${summary}</p>
+                ${openLetterButton}
             </div>`;
+        
+        detailsCache.set(key, html); // Cache the result
+        return html;
     }
 });
