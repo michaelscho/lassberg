@@ -119,6 +119,7 @@
             <td><xsl:apply-templates select="tei:correspAction[@type='sent']/tei:placeName"/></td>
             <td><xsl:value-of select="normalize-space(tei:note[@type='aufbewahrungsort'])"/>, <xsl:value-of select="normalize-space(tei:note[@type='aufbewahrungsinstitution'])"/></td>
         </tr>
+        
         <tr class="dt-details-row" style="display: none;">
             <td colspan="7" class="p-3 bg-light">
                 <div class="collapsible-content p-2">
@@ -147,6 +148,11 @@
                     </div>
                     <xsl:if test="@change='online'">
                         <hr class="my-2"/>
+                        <h6>Summary</h6>
+                        <p class="text-muted small">
+                            <xsl:variable name="summaryText" select="document(concat('../../../data/letters/', @key, '.xml'))//tei:div[@type='summary']/tei:p"/>
+                            <xsl:value-of select="$summaryText"/>
+                        </p>
                         <a href="{concat('../html/letters/', @key, '.html')}" class="btn btn-primary btn-sm" target="_blank">Open Full Letter Page</a>
                     </xsl:if>
                 </div>
