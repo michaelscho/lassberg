@@ -180,53 +180,121 @@
 
     
     <!-- ===== Details template mode: XSLT computes the HTML snippet once per letter ===== -->
+    <!-- ===== Details template mode: XSLT computes the HTML snippet once per letter ===== -->
     <xsl:template match="tei:correspDesc" mode="details">
         <xsl:variable name="key" select="@key"/>
         <xsl:variable name="letterPath" select="concat($letters-base, $key, '.xml')"/>
         <xsl:variable name="letterDoc" select="if (doc-available($letterPath)) then doc($letterPath) else ()"/>
         <xsl:variable name="summary" select="$letterDoc//tei:div[@type='summary']"/>
-        <xsl:variable name="mentionedPersons" select="$letterDoc//tei:note[@type='mentioned']/tei:ref[@type='cmif:mentionsPerson']"/>
-        <xsl:variable name="mentionedPlaces" select="$letterDoc//tei:note[@type='mentioned']/tei:ref[@type='cmif:mentionsPlace']"/>
+        <xsl:variable name="mentionedPersons"   select="$letterDoc//tei:note[@type='mentioned']/tei:ref[@type='cmif:mentionsPerson']"/>
+        <xsl:variable name="mentionedPlaces"    select="$letterDoc//tei:note[@type='mentioned']/tei:ref[@type='cmif:mentionsPlace']"/>
         <xsl:variable name="mentionedLiterature" select="$letterDoc//tei:note[@type='mentioned']/tei:ref[@type='cmif:mentionsBibl']"/>
-
+        
         <template id="details-{$key}">
             <div class="collapsible-content p-3">
+                
+                <!-- LEFT/RIGHT STACK (Signatur, Harris, Journal, Druck, Scan) -->
                 <div class="row">
-                    <div class="col-12">
-                        <strong>Harris ID:</strong>
-                        <span class="text-muted"><xsl:value-of select="normalize-space(tei:note[@type='nummer_harris'])"/></span>
+                    <!-- Left Stack -->
+                    <div class="col-md-6">
+                        <div class="detail-section mb-3">
+                            <strong>Signatur: </strong>
+                            <span class="text-muted">
+                                <xsl:value-of select="normalize-space(tei:note[@type='signatur'])"/>
+                            </span>
+                        </div>
+                        <div class="detail-section mb-3">
+                            <strong>Harris: </strong>
+                            <span class="text-muted">
+                                <xsl:value-of select="normalize-space(tei:note[@type='nummer_harris'])"/>
+                            </span>
+                        </div>
+                        <div class="detail-section mb-3">
+                            <strong>Journal: </strong>
+                            <span class="text-muted">
+                                <xsl:value-of select="normalize-space(tei:note[@type='journalnummer'])"/>
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Stack -->
+                    <div class="col-md-6">
+                        <div class="detail-section mb-3">
+                            <strong>Druck: </strong>
+                            <xsl:variable name="pub" select="tei:note[@type='published_in']"/>
+                            <xsl:choose>
+                                <xsl:when test="$pub/@target">
+                                    <a href="{$pub/@target}">
+                                        <xsl:value-of select="normalize-space($pub)"/>
+                                    </a>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <span class="text-muted">
+                                        <xsl:value-of select="normalize-space($pub)"/>
+                                    </span>
+                                </xsl:otherwise>
+                            </xsl:choose>
+                        </div>
+                        
+                        <div class="detail-section mb-3">
+                            <strong>Scan: </strong>
+                            <xsl:variable name="scan" select="normalize-space(tei:note[@type='url_facsimile'])"/>
+                            <xsl:choose>
+                                <xsl:when test="string-length($scan) &gt; 0">
+                                    <a href="{$scan}">
+                                        <xsl:value-of select="$scan"/>
+                                    </a>
+                                </xsl:when>
+                                <xsl:otherwise><span class="text-muted">—</span></xsl:otherwise>
+                            </xsl:choose>
+                        </div>
                     </div>
                 </div>
+                
                 <hr class="my-2"/>
-
+                
+                <!-- SUMMARY -->
                 <h6>Zusammenfassung</h6>
                 <p class="text-muted small mb-3">
                     <xsl:choose>
-                        <xsl:when test="$letterDoc"><xsl:value-of select="normalize-space(string($summary))"/></xsl:when>
+                        <xsl:when test="$letterDoc">
+                            <xsl:value-of select="normalize-space(string($summary))"/>
+                        </xsl:when>
                         <xsl:otherwise>Keine Zusammenfassung verfügbar.</xsl:otherwise>
                     </xsl:choose>
-                    <xsl:text> </xsl:text><span class="fst-italic">(Diese Zusammenfassung wurde automatisch erstellt.)</span>
+                    <xsl:text> </xsl:text>
+                    <span class="fst-italic">(Diese Zusammenfassung wurde automatisch erstellt.)</span>
                 </p>
-
+                
+                <!-- MENTIONED ENTITIES -->
                 <div class="row">
-                    <div class="col-md-4">
+                    <!-- Personen -->
+                    <div class="col-md-4 mentioned-persons">
                         <strong>Erwähnte Personen</strong>
                         <ul class="list-unstyled">
                             <xsl:for-each select="$mentionedPersons">
-                                <xsl:for-each select="tokenize(@target, '\\s+')">
+                                <xsl:for-each select="tokenize(@target, '\s+')">
                                     <xsl:variable name="targetId" select="substring-after(., '#')"/>
-                                    <xsl:variable name="person" select="doc($persons-register)//tei:person[@xml:id=$targetId] | doc($persons-register)//tei:personGrp[@xml:id=$targetId]"/>
+                                    <xsl:variable name="person"
+                                        select="doc($persons-register)//tei:person[@xml:id=$targetId] |
+                                        doc($persons-register)//tei:personGrp[@xml:id=$targetId]"/>
                                     <li class="mb-2">
                                         <xsl:choose>
                                             <xsl:when test="$person">
                                                 <xsl:variable name="ext" select="string(($person/tei:ref[@target])[1]/@target)"/>
                                                 <xsl:choose>
-                                                    <xsl:when test="$ext"><a href="{$ext}"><xsl:value-of select="$person/tei:persName[@type='main']"/></a></xsl:when>
-                                                    <xsl:otherwise><xsl:value-of select="$person/tei:persName[@type='main']"/></xsl:otherwise>
+                                                    <xsl:when test="$ext">
+                                                        <a href="{$ext}"><xsl:value-of select="$person/tei:persName[@type='main']"/></a>
+                                                    </xsl:when>
+                                                    <xsl:otherwise>
+                                                        <xsl:value-of select="$person/tei:persName[@type='main']"/>
+                                                    </xsl:otherwise>
                                                 </xsl:choose>
                                                 <xsl:text> (</xsl:text><xsl:value-of select="$person/@type"/><xsl:text>)</xsl:text>
                                                 <xsl:if test="$person/@ref">
-                                                    <a class="ms-1" href="{string($person/@ref)}"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND" height="12"/></a>
+                                                    <a class="ms-1" href="{string($person/@ref)}">
+                                                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND" height="12"/>
+                                                    </a>
                                                 </xsl:if>
                                             </xsl:when>
                                             <xsl:otherwise><em>Person not found</em></xsl:otherwise>
@@ -236,8 +304,9 @@
                             </xsl:for-each>
                         </ul>
                     </div>
-
-                    <div class="col-md-4">
+                    
+                    <!-- Orte -->
+                    <div class="col-md-4 mentioned-places">
                         <strong>Erwähnte Orte</strong>
                         <ul class="list-unstyled">
                             <xsl:for-each select="$mentionedPlaces">
@@ -248,11 +317,16 @@
                                         <xsl:when test="$place">
                                             <xsl:value-of select="$place/tei:placeName"/>
                                             <xsl:if test="$place/tei:placeName/@ref">
-                                                <a class="ms-1" href="{string($place/tei:placeName/@ref)}"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="Wikidata" height="12"/></a>
+                                                <a class="ms-1" href="{string($place/tei:placeName/@ref)}">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="Wikidata" height="12"/>
+                                                </a>
                                             </xsl:if>
                                             <xsl:variable name="geo" select="tokenize(normalize-space($place/tei:location/tei:geo), ',')"/>
                                             <xsl:if test="count($geo) = 2">
-                                                <a class="ms-2" href="https://www.openstreetmap.org/?mlat={normalize-space($geo[1])}&amp;mlon={normalize-space($geo[2])}">Show on OSM</a>
+                                                <a class="ms-2"
+                                                    href="https://www.openstreetmap.org/?mlat={normalize-space($geo[1])}&amp;mlon={normalize-space($geo[2])}">
+                                                    Show on OSM
+                                                </a>
                                             </xsl:if>
                                         </xsl:when>
                                         <xsl:otherwise><em>Place not found</em></xsl:otherwise>
@@ -261,8 +335,9 @@
                             </xsl:for-each>
                         </ul>
                     </div>
-
-                    <div class="col-md-4">
+                    
+                    <!-- Literatur -->
+                    <div class="col-md-4 mentioned-literature">
                         <strong>Erwähnte Literatur</strong>
                         <ul class="list-unstyled">
                             <xsl:for-each select="$mentionedLiterature">
@@ -274,7 +349,8 @@
                                             <xsl:variable name="authors">
                                                 <xsl:for-each select="$bibl/tei:author">
                                                     <xsl:variable name="authorRef" select="substring-after(@key, '#')"/>
-                                                    <xsl:variable name="authorName" select="doc($persons-register)//tei:person[@xml:id = $authorRef]/tei:persName/text()"/>
+                                                    <xsl:variable name="authorName"
+                                                        select="doc($persons-register)//tei:person[@xml:id = $authorRef]/tei:persName/text()"/>
                                                     <xsl:value-of select="$authorName"/>
                                                     <xsl:if test="position() != last()"><xsl:text>; </xsl:text></xsl:if>
                                                 </xsl:for-each>
@@ -286,7 +362,9 @@
                                             <xsl:if test="not(ends-with(normalize-space($bibl/tei:title), '.'))"><xsl:text>.</xsl:text></xsl:if>
                                             <xsl:choose>
                                                 <xsl:when test="starts-with($bibl/tei:idno, 'http')">
-                                                    <a href="{$bibl/tei:idno}" target="_blank" rel="noopener noreferrer"><xsl:value-of select="$bibl/tei:idno"/></a>
+                                                    <a href="{$bibl/tei:idno}" target="_blank" rel="noopener noreferrer">
+                                                        <xsl:value-of select="$bibl/tei:idno"/>
+                                                    </a>
                                                 </xsl:when>
                                                 <xsl:otherwise>(<xsl:value-of select="$bibl/tei:idno"/>)</xsl:otherwise>
                                             </xsl:choose>
@@ -298,12 +376,17 @@
                         </ul>
                     </div>
                 </div>
-
+                
+                <!-- Link to full letter page, if available -->
                 <xsl:if test="@change='online'">
-                    <a href="../letters/{$key}.html" class="btn btn-primary btn-sm mt-3" target="_blank" rel="noopener noreferrer">Open Full Letter Page</a>
+                    <a href="../letters/{$key}.html"
+                        class="btn btn-primary btn-sm mt-3"
+                        target="_blank" rel="noopener noreferrer">Open Full Letter Page</a>
                 </xsl:if>
+                
             </div>
         </template>
     </xsl:template>
+    
 
 </xsl:stylesheet>
