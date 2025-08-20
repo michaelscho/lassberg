@@ -52,11 +52,12 @@
                         <div class="card shadow-sm">
                             <div class="card-header bg-light p-3">
                                 <div class="row gy-2 gx-3 align-items-center">
-                                    <div class="col-lg col-md-6"><input type="text" class="form-control form-control-sm" id="filter-id" placeholder="Filter by ID..."/></div>
-                                    <div class="col-lg col-md-6"><input type="text" class="form-control form-control-sm" id="filter-date" placeholder="Filter by date..."/></div>
-                                    <div class="col-lg col-md-6"><input type="text" class="form-control form-control-sm" id="filter-sender" placeholder="Filter by sender..."/></div>
+                                    <div class="col-lg col-md-4"><input type="text" class="form-control form-control-sm" id="filter-id" placeholder="Filter by ID..."/></div>
+                                    <div class="col-lg col-md-4"><input type="text" class="form-control form-control-sm" id="filter-date" placeholder="Filter by date..."/></div>
+                                    <div class="col-lg col-md-4"><input type="text" class="form-control form-control-sm" id="filter-sender" placeholder="Filter by sender..."/></div>
                                     <div class="col-lg col-md-6"><input type="text" class="form-control form-control-sm" id="filter-recipient" placeholder="Filter by recipient..."/></div>
-                                    <div class="col-lg col-md-12"><input type="text" class="form-control form-control-sm" id="filter-place" placeholder="Filter by place..."/></div>
+                                    <div class="col-lg col-md-6"><input type="text" class="form-control form-control-sm" id="filter-place" placeholder="Filter by place..."/></div>
+                                    <div class="col-lg col-md-12"><input type="text" class="form-control form-control-sm" id="filter-provenance" placeholder="Filter by provenance..."/></div>
                                     <div class="col-12 d-flex justify-content-between align-items-center pt-2">
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" id="filterCheckbox"/>
@@ -71,11 +72,12 @@
                                     <table class="table table-striped table-hover" id="letter-table" style="width:100%">
                                         <thead>
                                             <tr>
-                                                <th scope="col" style="width: 5%;"></th> <th scope="col" style="width: 15%;">ID</th>
+                                                <th scope="col" style="width: 5%;"></th> <th scope="col" style="width: 10%;">ID</th>
                                                 <th scope="col" style="width: 10%;">Date</th>
-                                                <th scope="col" style="width: 25%;">From</th>
-                                                <th scope="col" style="width: 25%;">To</th>
-                                                <th scope="col" style="width: 20%;">Place</th>
+                                                <th scope="col" style="width: 20%;">From</th>
+                                                <th scope="col" style="width: 20%;">To</th>
+                                                <th scope="col" style="width: 15%;">Place</th>
+                                                <th scope="col" style="width: 20%;">Provenance</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -108,13 +110,16 @@
     <xsl:template match="tei:correspDesc">
         <tr data-status="{@change}" data-key="{@key}">
             <xsl:attribute name="data-harris" select="normalize-space(tei:note[@type='nummer_harris'])"/>
-            <xsl:attribute name="data-provenance" select="concat(normalize-space(tei:note[@type='aufbewahrungsort']), ', ', normalize-space(tei:note[@type='aufbewahrungsinstitution']))"/>
             
-            <td></td> <td><xsl:value-of select="@key"/></td>
+            <td class="dt-control text-center"><i class="bi bi-plus-lg"></i></td>
+            <td><xsl:value-of select="@key"/></td>
             <td><xsl:value-of select="normalize-space(tei:correspAction[@type='sent']/tei:date/@when)"/></td>
             <td><xsl:apply-templates select="tei:correspAction[@type='sent']/tei:persName"/></td>
             <td><xsl:apply-templates select="tei:correspAction[@type='received']/tei:persName"/></td>
             <td><xsl:apply-templates select="tei:correspAction[@type='sent']/tei:placeName"/></td>
+            <td>
+                <xsl:value-of select="normalize-space(tei:note[@type='aufbewahrungsort'])"/>, <xsl:value-of select="normalize-space(tei:note[@type='aufbewahrungsinstitution'])"/>
+            </td>
         </tr>
     </xsl:template>
     
