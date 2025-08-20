@@ -11,7 +11,7 @@
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
                 <title>Register of Letters - The Laßberg Project</title>
                 
-                <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+                <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"/>
                 <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css" />
                 
                 <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -56,12 +56,13 @@
                                     <div class="col-lg col-md-6"><input type="text" class="form-control form-control-sm" id="filter-sender" placeholder="Filter by sender..."/></div>
                                     <div class="col-lg col-md-6"><input type="text" class="form-control form-control-sm" id="filter-recipient" placeholder="Filter by recipient..."/></div>
                                     <div class="col-lg col-md-6"><input type="text" class="form-control form-control-sm" id="filter-place" placeholder="Filter by place..."/></div>
+                                    <div class="col-lg col-md-12"><input type="text" class="form-control form-control-sm" id="filter-provenance" placeholder="Filter by provenance..."/></div>
                                     <div class="col-12 d-flex justify-content-between align-items-center pt-2">
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" id="filterCheckbox"/>
                                             <label class="form-check-label" for="filterCheckbox">Show only transcribed letters</label>
                                         </div>
-                                        <span class="text-muted small" id="filteredCounter">Loading letters...</span>
+                                        <span class="text-muted small" id="filteredCounter"></span>
                                     </div>
                                 </div>
                             </div>
@@ -96,7 +97,9 @@
                 <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
                 <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
                 <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+                    crossorigin="anonymous"></script>
                 <script src="../js/letters.js"></script>
             </body>
         </html>
@@ -104,24 +107,12 @@
     
     <xsl:template match="tei:correspDesc">
         <tr data-status="{@change}">
-            <xsl:attribute name="data-harris">
-                <xsl:value-of select="normalize-space(tei:note[@type='nummer_harris'])"/>
-            </xsl:attribute>
-            <xsl:attribute name="data-signature">
-                <xsl:value-of select="normalize-space(tei:note[@type='signatur'])"/>
-            </xsl:attribute>
-            <xsl:attribute name="data-journal">
-                <xsl:value-of select="normalize-space(tei:note[@type='journalnummer'])"/>
-            </xsl:attribute>
-            <xsl:attribute name="data-scan-url">
-                <xsl:value-of select="normalize-space(tei:note[@type='url_facsimile'])"/>
-            </xsl:attribute>
-            <xsl:attribute name="data-print-url">
-                <xsl:value-of select="normalize-space(tei:note[@type='published_in']/@target)"/>
-            </xsl:attribute>
-            <xsl:attribute name="data-print-text">
-                <xsl:value-of select="normalize-space(tei:note[@type='published_in'])"/>
-            </xsl:attribute>
+            <xsl:attribute name="data-harris" select="normalize-space(tei:note[@type='nummer_harris'])"/>
+            <xsl:attribute name="data-signature" select="normalize-space(tei:note[@type='signatur'])"/>
+            <xsl:attribute name="data-journal" select="normalize-space(tei:note[@type='journalnummer'])"/>
+            <xsl:attribute name="data-scan-url" select="normalize-space(tei:note[@type='url_facsimile'])"/>
+            <xsl:attribute name="data-print-url" select="normalize-space(tei:note[@type='published_in']/@target)"/>
+            <xsl:attribute name="data-print-text" select="normalize-space(tei:note[@type='published_in'])"/>
             
             <td></td> <td><xsl:value-of select="normalize-space(tei:correspAction[@type='sent']/tei:date/@when)"/></td>
             <td><xsl:apply-templates select="tei:correspAction[@type='sent']/tei:persName"/></td>
