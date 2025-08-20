@@ -4,8 +4,6 @@
     
     <xsl:output method="html" indent="yes" doctype-system="about:legacy-compat"/>
     
-    <xsl:variable name="register" select="/"/>
-    
     <xsl:template match="/">
         <html lang="en">
             <head>
@@ -74,16 +72,16 @@
                                     <table class="table table-striped table-hover" id="letter-table" style="width:100%">
                                         <thead>
                                             <tr>
-                                                <th style="width: 5%;"></th> <th style="width: 10%;">ID</th>
-                                                <th style="width: 10%;">Date</th>
-                                                <th style="width: 20%;">From</th>
-                                                <th style="width: 20%;">To</th>
-                                                <th style="width: 15%;">Place</th>
-                                                <th style="width: 20%;">Provenance</th>
+                                                <th scope="col" style="width: 5%;"></th> <th scope="col" style="width: 10%;">ID</th>
+                                                <th scope="col" style="width: 10%;">Date</th>
+                                                <th scope="col" style="width: 20%;">From</th>
+                                                <th scope="col" style="width: 20%;">To</th>
+                                                <th scope="col" style="width: 15%;">Place</th>
+                                                <th scope="col" style="width: 20%;">Provenance</th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <xsl:apply-templates select="$register//tei:correspDesc"/>
+                                            <xsl:apply-templates select="//tei:correspDesc"/>
                                         </tbody>
                                     </table>
                                 </div>
@@ -110,52 +108,17 @@
     </xsl:template>
     
     <xsl:template match="tei:correspDesc">
-        <tr data-status="{@change}">
+        <tr data-status="{@change}" data-key="{@key}">
+            <xsl:attribute name="data-harris" select="normalize-space(tei:note[@type='nummer_harris'])"/>
+            
             <td class="dt-control text-center"><i class="bi bi-plus-lg"></i></td>
             <td><xsl:value-of select="@key"/></td>
             <td><xsl:value-of select="normalize-space(tei:correspAction[@type='sent']/tei:date/@when)"/></td>
             <td><xsl:apply-templates select="tei:correspAction[@type='sent']/tei:persName"/></td>
             <td><xsl:apply-templates select="tei:correspAction[@type='received']/tei:persName"/></td>
             <td><xsl:apply-templates select="tei:correspAction[@type='sent']/tei:placeName"/></td>
-            <td><xsl:value-of select="normalize-space(tei:note[@type='aufbewahrungsort'])"/>, <xsl:value-of select="normalize-space(tei:note[@type='aufbewahrungsinstitution'])"/></td>
-        </tr>
-        
-        <tr class="dt-details-row" style="display: none;">
-            <td colspan="7" class="p-3 bg-light">
-                <div class="collapsible-content p-2">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <strong>Signature:</strong> <span class="text-muted"><xsl:value-of select="tei:note[@type='signatur']"/></span><br/>
-                            <strong>Harris ID:</strong> <span class="text-muted"><xsl:value-of select="tei:note[@type='nummer_harris']"/></span><br/>
-                            <strong>Journal:</strong> <span class="text-muted"><xsl:value-of select="tei:note[@type='journalnummer']"/></span>
-                        </div>
-                        <div class="col-md-6">
-                            <strong>Print:</strong>
-                            <xsl:choose>
-                                <xsl:when test="normalize-space(tei:note[@type='published_in'])">
-                                    <a href="{tei:note[@type='published_in']/@target}" target="_blank"><xsl:value-of select="tei:note[@type='published_in']"/></a>
-                                </xsl:when>
-                                <xsl:otherwise><span class="text-muted">Not available</span></xsl:otherwise>
-                            </xsl:choose><br/>
-                            <strong>Scan:</strong>
-                            <xsl:choose>
-                                <xsl:when test="normalize-space(tei:note[@type='url_facsimile'])">
-                                    <a href="{tei:note[@type='url_facsimile']}" target="_blank">View Scan</a>
-                                </xsl:when>
-                                <xsl:otherwise><span class="text-muted">Not available</span></xsl:otherwise>
-                            </xsl:choose>
-                        </div>
-                    </div>
-                    <xsl:if test="@change='online'">
-                        <hr class="my-2"/>
-                        <h6>Summary</h6>
-                        <p class="text-muted small">
-                            <xsl:variable name="summaryText" select="document(concat('../../../data/letters/', @key, '.xml'))//tei:div[@type='summary']/tei:p"/>
-                            <xsl:value-of select="$summaryText"/>
-                        </p>
-                        <a href="{concat('../html/letters/', @key, '.html')}" class="btn btn-primary btn-sm" target="_blank">Open Full Letter Page</a>
-                    </xsl:if>
-                </div>
+            <td>
+                <xsl:value-of select="normalize-space(tei:note[@type='aufbewahrungsort'])"/>, <xsl:value-of select="normalize-space(tei:note[@type='aufbewahrungsinstitution'])"/>
             </td>
         </tr>
     </xsl:template>
@@ -165,10 +128,15 @@
         <xsl:if test="@ref">
             <a href="{@ref}" target="_blank" class="ms-1" title="External Record">
                 <xsl:choose>
-                    <xsl:when test="self::tei:persName"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND" height="12"/></xsl:when>
-                    <xsl:otherwise><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="Wikidata" height="12"/></xsl:otherwise>
+                    <xsl:when test="self::tei:persName">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND" height="12"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="Wikidata" height="12"/>
+                    </xsl:otherwise>
                 </xsl:choose>
             </a>
         </xsl:if>
     </xsl:template>
+    
 </xsl:stylesheet>
