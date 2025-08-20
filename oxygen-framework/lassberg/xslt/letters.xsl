@@ -1,365 +1,207 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0"
     xmlns:tei="http://www.tei-c.org/ns/1.0">
-    
-    <!-- Output as HTML -->
-    <xsl:output method="html" indent="yes"/>
-    
-    <!-- Main template -->
+
+    <xsl:output method="html" indent="yes" doctype-system="about:legacy-compat"/>
+
     <xsl:template match="/">
         <html lang="en">
             <head>
                 <meta charset="UTF-8"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-                <title>The Lassberg Letters</title>
+                <title>Register of Letters - The Laßberg Project</title>
+
+                <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+                    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+                    crossorigin="anonymous" />
+
+                <link rel="preconnect" href="https://fonts.googleapis.com"/>
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true"/>
+                <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap"
+                    rel="stylesheet"/>
+
+                <link rel="stylesheet"
+                    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"/>
+
                 <link href="../css/styles.css" rel="stylesheet"/>
-                <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-                <script src="../js/letters.js"></script>
             </head>
             <body>
-                <div id="app" class="container">
-                    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
-                        <div class="container-fluid">
-                            <a class="navbar-brand" href="#">Laßberg Letters</a>
-                            
-                                <ul class="navbar-nav">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="../index.html">Welcome</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="/lassberg/html/letters.html">Letters</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link"
-                                            href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb">Data
-                                            Analysis</a>
-                                    </li>
-                                    
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="https://github.com/michaelscho/lassberg">Repository</a>
-                                    </li>
-                                </ul>
-                            
+
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+                    <div class="container">
+                        <a class="navbar-brand" href="../index.html">The Laßberg Letters</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item"><a class="nav-link" href="../index.html">Welcome</a></li>
+                                <li class="nav-item"><a class="nav-link active" href="#">Letters</a></li>
+                                <li class="nav-item"><a class="nav-link"
+                                        href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb"
+                                        target="_blank">Data Analysis</a></li>
+                                <li class="nav-item"><a class="nav-link"
+                                        href="https://github.com/michaelscho/lassberg"
+                                        target="_blank">Repository</a></li>
+                                <li class="nav-item"><a class="nav-link"
+                                        href="https://www.zotero.org/groups/6109140/joseph_von_laberg/library"
+                                        target="_blank">Literature</a></li>
+                            </ul>
                         </div>
-                    </nav>
-                    <div>
-                        <h2 class="my-4">Register of letters</h2>
-                        <p><span id="filteredCounter">0</span> letters selected.</p>
-                        <p><label><input type="checkbox" id="filterCheckbox"/> Show only transcribed letters.</label></p>
-                        <table class="table table-striped" id="letter-table">
-                            <thead>
-                                <tr>
-                                    <th scope="col">
-                                        Date <br/><input type="text" data-column="0" placeholder="Filter Date"/>
-                                    </th>
-                                    <th scope="col">
-                                        From (GND) <br/><input type="text" data-column="1" placeholder="Filter From"/>
-                                    </th>
-                                    <th scope="col">
-                                        To (GND) <br/><input type="text" data-column="2" placeholder="Filter To"/>
-                                    </th>
-                                    <th scope="col">
-                                        Place <br/><input type="text" data-column="3" placeholder="Filter Place"/>
-                                    </th>
-                                    <th scope="col">
-                                        Provenance <br/><input type="text" data-column="4" placeholder="Filter Provenance"/>
-                                    </th>
-                                    <th scope="col">Mentioned <br/><input type="text" data-column="5" placeholder="Filter Mentions"/></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <!-- Populate the table rows here -->
-                                <xsl:apply-templates select="//tei:correspDesc"/>
-                            </tbody>
-                        </table>
                     </div>
-                </div>
-                
+                </nav>
+
+                <header class="page-header py-5 bg-light text-center">
+                    <div class="container">
+                        <h1 class="display-5">Register of Correspondence</h1>
+                        <p class="lead text-muted">A comprehensive, filterable list of letters from the Laßberg collection.</p>
+                    </div>
+                </header>
+
+                <main class="py-5">
+                    <div class="container">
+                        <div class="card shadow-sm">
+                            <div class="card-header bg-light p-3">
+                                <div class="row gy-2 gx-3 align-items-center">
+                                    <div class="col-lg-3">
+                                        <input type="text" class="form-control form-control-sm" id="filter-sender" data-column="1" placeholder="Filter by sender..."/>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <input type="text" class="form-control form-control-sm" id="filter-recipient" data-column="2" placeholder="Filter by recipient..."/>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <input type="text" class="form-control form-control-sm" id="filter-place" data-column="3" placeholder="Filter by place..."/>
+                                    </div>
+                                    <div class="col-lg-3">
+                                         <input type="text" class="form-control form-control-sm" id="filter-provenance" data-column="4" placeholder="Filter by provenance..."/>
+                                    </div>
+                                    <div class="col-12 d-flex justify-content-between align-items-center pt-2">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="filterCheckbox"/>
+                                            <label class="form-check-label" for="filterCheckbox">
+                                                Show only transcribed letters
+                                            </label>
+                                        </div>
+                                        <span class="text-muted small" id="filteredCounter">0 letters shown</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-hover" id="letter-table" style="width:100%">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" class="text-center">Details</th>
+                                                <th scope="col">Date</th>
+                                                <th scope="col">From</th>
+                                                <th scope="col">To</th>
+                                                <th scope="col">Place</th>
+                                                <th scope="col">Provenance</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <xsl:apply-templates select="//tei:correspDesc"/>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+
+                <footer class="bg-dark text-white text-center py-3">
+                    <div class="container">
+                        <p>© 2025 The Laßberg Letters Project</p>
+                    </div>
+                </footer>
+
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HqnECQrOpS"
+                    crossorigin="anonymous"></script>
+                <script src="../js/letters.js"></script>
+
             </body>
         </html>
     </xsl:template>
-    
-    <!-- Template for each correspDesc -->
+
     <xsl:template match="tei:correspDesc">
         <tr data-status="{@change}">
-            <!-- Date -->
-            <td>
-                <xsl:apply-templates select="tei:correspAction[@type='sent']/tei:date"/>
+            <td class="text-center">
+                 <button class="btn btn-outline-secondary btn-sm" data-bs-toggle="collapse" data-bs-target="#{@key}-details" aria-expanded="false">
+                     <i class="bi bi-plus-lg"></i>
+                 </button>
             </td>
-            <!-- From (GND) -->
+            <td><xsl:apply-templates select="tei:correspAction[@type='sent']/tei:date"/></td>
+            <td><xsl:apply-templates select="tei:correspAction[@type='sent']/tei:persName"/></td>
+            <td><xsl:apply-templates select="tei:correspAction[@type='received']/tei:persName"/></td>
+            <td><xsl:apply-templates select="tei:correspAction[@type='sent']/tei:placeName"/></td>
             <td>
-                <xsl:apply-templates select="tei:correspAction[@type='sent']/tei:persName"/>
+                <xsl:value-of select="normalize-space(tei:note[@type='aufbewahrungsort'])"/>, <xsl:value-of select="normalize-space(tei:note[@type='aufbewahrungsinstitution'])"/> 
             </td>
-            <!-- To (GND) -->
-            <td>
-                <xsl:apply-templates select="tei:correspAction[@type='received']/tei:persName"/>
-            </td>
-            <!-- Place -->
-            <td>
-                <xsl:apply-templates select="tei:correspAction[@type='sent']/tei:placeName"/>
-            </td>
-            <!-- Provenance -->
-            <td>
-                <xsl:apply-templates select="tei:note[@type='aufbewahrungsort']"/>, <xsl:apply-templates select="tei:note[@type='aufbewahrungsinstitution']"/> 
-            </td>
-
-        <td>
-            <!--<button class="btn btn-primary btn-sm" data-bs-toggle="collapse" data-bs-target="#{@key}-details" aria-expanded="false">Expand</button>-->
-            <button class="btn btn-primary btn-sm" data-target="#{@key}-details">Expand</button>
-            
-            <xsl:choose>
-                <xsl:when test="@change='online'">
-                    <a href="/lassberg/html/letters/{@key}.html" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Open Letter</a>
-                </xsl:when>
-            </xsl:choose>
-              
-        </td>
         </tr>
-        <tr class="collapse collapsible-row" id="{@key}-details">
-            <td colspan="7" class="p-3">
-                <div class="card">
-                    <div class="card-body">
-
-                        <div class="row">
-                            <!-- Left Stack -->
-                            <div class="col-md-6">
-                                <div class="detail-section mb-3">
-                                    <strong>Signatur: </strong>
-                                    <span class="text-muted"><xsl:apply-templates select="tei:note[@type='signatur']"/></span>
-                                </div>
-                                <div class="detail-section mb-3">
-                                    <strong>Harris: </strong>
-                                    <span class="text-muted"><xsl:apply-templates select="tei:note[@type='nummer_harris']"/></span>
-                                </div>
-                                <div class="detail-section mb-3">
-                                    <strong>Journal: </strong>
-                                    <span class="text-muted"><xsl:apply-templates select="tei:note[@type='journalnummer']"/></span>
-                                </div>
-                            </div>
-                            
-                            <!-- Right Stack -->
-                            <div class="col-md-6">
-                                <div class="detail-section mb-3">
-                                    <strong>Druck: </strong>
-                                    <a href="{./tei:note[@type='published_in']/@target}">
-                                        <xsl:apply-templates select="tei:note[@type='published_in']"/>
-                                    </a>
-                                </div>
-                                <div class="detail-section mb-3">
-                                    <strong>Scan: </strong>
-                                    <a href="{./tei:note[@type='url_facsimile']}">
-                                        <xsl:apply-templates select="tei:note[@type='url_facsimile']"/>
-                                    </a>
-                                </div>
-                            </div>
+        
+        <tr class="collapse" id="{@key}-details">
+            <td colspan="6" class="p-3 bg-light">
+                <div class="collapsible-content p-2">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <strong>Harris ID:</strong> <span class="text-muted"><xsl:value-of select="tei:note[@type='nummer_harris']"/></span><br/>
+                            <strong>Signature:</strong> <span class="text-muted"><xsl:value-of select="tei:note[@type='signatur']"/></span><br/>
+                            <strong>Journal:</strong> <span class="text-muted"><xsl:value-of select="tei:note[@type='journalnummer']"/></span>
                         </div>
-                        
-                        <xsl:choose>
-                            <!-- If status is "online", fetch summary and additional mentions -->
-                            <xsl:when test="@change='online'">
-                                <div class="row mt-4">
-                                    <div class="col-md-12">
-                                        <strong>Zusammenfassung:</strong>
-                                        <p class="text-muted">
-                                            <xsl:variable name="externalSummary" select="document(concat('../../../data/letters/', @key, '.xml'))//tei:div[@type='summary']"/>
-                                            <xsl:value-of select="$externalSummary"/> (Diese Zusammenfassung wurde automatisch erstellt.)
-                                        </p>
-                                    </div>
-                                </div>
-                               
-                                <div class="row">
-                                    <!-- Mentioned Persons -->
-                                    <div class="col-md-4 mentioned-persons">
-                                        <strong>Erwähnte Personen:</strong>
-                                        <ul class="list-unstyled">
-                                            <xsl:variable name="mentionedPersons" 
-                                                select="document(concat('../../../data/letters/', @key, '.xml'))//tei:note[@type='mentioned']/tei:ref[@type='cmif:mentionsPerson']"/>
-                                            
-                                            <!-- Iterate over each mentioned person reference -->
-                                            <xsl:for-each select="$mentionedPersons">
-                                                <!-- Split @target attribute into separate IDs -->
-                                                <xsl:for-each select="tokenize(@target, '\s+')">
-                                                    <xsl:variable name="targetId" select="substring-after(., '#')" />
-                                                    <xsl:variable name="person" 
-                                                        select="document('../../../data/register/lassberg-persons.xml')//tei:person[@xml:id=$targetId]  
-                                                        | document('../../../data/register/lassberg-persons.xml')//tei:personGrp[@xml:id=$targetId]" />
-                                                    
-                                                    <li class="mb-3">
-                                                        <xsl:choose>
-                                                            <xsl:when test="$person">
-                                                                <a href="{string($person/tei:ref[@target][1]/@target)}">
-                                                                    <xsl:value-of select="$person/tei:persName[@type='main']"/>
-                                                                </a>
-                                                                (<xsl:value-of select="$person/@type"/>)
-                                                                <xsl:if test="$person/@ref">
-                                                                    <a href="{string($person/@ref)}">
-                                                                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"/>
-                                                                    </a>
-                                                                </xsl:if>
-                                                            </xsl:when>
-                                                            <xsl:otherwise>
-                                                                <em>Person not found</em>
-                                                            </xsl:otherwise>
-                                                        </xsl:choose>
-                                                    </li>
-                                                </xsl:for-each>
-                                            </xsl:for-each>
-                                        </ul>
-                                    </div>
-                                </div>
-                                
-                                
-                                <div class="col-md-4 mentioned-places">
-                                    <strong>Erwähnte Orte:</strong>
-                                    <ul class="list-unstyled">
-                                        <xsl:variable name="mentionedPlaces" 
-                                            select="document(concat('../../../data/letters/', @key, '.xml'))//tei:note[@type='mentioned']/tei:ref[@type='cmif:mentionsPlace']"/>
-                                        <xsl:for-each select="$mentionedPlaces">
-                                            <xsl:variable name="targetId" select="substring-after(@target, '#')" />
-                                            <xsl:variable name="place" 
-                                                select="document('../../../data/register/lassberg-places.xml')//tei:place[@xml:id=$targetId]" />
-                                            <li class="mb-3">
-                                                <xsl:choose>
-                                                    <xsl:when test="$place">
-                                                        <xsl:value-of select="$place/tei:placeName"/>
-                                                        <a href="{string($place/tei:placeName/@ref)}"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"/></a>
-                                                        <xsl:variable name="geo" select="tokenize($place/tei:location/tei:geo, ',')" />
-                                                        <a href="https://www.openstreetmap.org/?mlat={normalize-space($geo[1])}&amp;mlon={normalize-space($geo[2])}">
-                                                            Show on OSM
-                                                        </a>
-                                                    </xsl:when>
-                                                    <xsl:otherwise>
-                                                        <em>Place not found</em>
-                                                    </xsl:otherwise>
-                                                </xsl:choose>
-                                            </li>
-                                        </xsl:for-each>
-                                    </ul>
-                                </div>
-                                
-                                <div class="col-md-4 mentioned-literature">
-                                    <strong>Erwähnte Literatur:</strong>
-                                    <ul class="list-unstyled">
-                                        <xsl:variable name="mentionedLiterature" 
-                                            select="document(concat('../../../data/letters/', @key, '.xml'))//tei:note[@type='mentioned']/tei:ref[@type='cmif:mentionsBibl']"/>
-                                        
-                                        <xsl:for-each select="$mentionedLiterature">
-                                            <xsl:variable name="targetId" select="substring-after(@target, '#')" />
-                                            <xsl:variable name="bibl" select="document('../../../data/register/lassberg-literature.xml')//tei:bibl[@xml:id=$targetId]" />
-                                            
-                                            <li class="mb-3">
-                                                <xsl:choose>
-                                                    <xsl:when test="$bibl">
-                                                        <!-- Extracting all author names -->
-                                                        <xsl:variable name="authors">
-                                                            <xsl:for-each select="$bibl/tei:author">
-                                                                <xsl:variable name="authorRef" select="substring-after(@key, '#')"/>
-                                                                <xsl:variable name="authorName" select="document('../../../data/register/lassberg-persons.xml')//tei:person[@xml:id = $authorRef]/tei:persName/text()"/>
-                                                                <xsl:value-of select="$authorName"/>
-                                                                <xsl:if test="position() != last()"> 
-                                                                    <xsl:text>; </xsl:text> 
-                                                                </xsl:if>
-                                                            </xsl:for-each>
-                                                        </xsl:variable>
-                                                        
-                                                        <xsl:if test="normalize-space($authors) != ''">
-                                                            <xsl:value-of select="normalize-space($authors)"/>
-                                                            <xsl:text>: </xsl:text>
-                                                        </xsl:if>
-                                                        
-                                                        <xsl:value-of select="$bibl/tei:title"/>
-                                                        <xsl:if test="not(ends-with(normalize-space($bibl/tei:title), '.'))">
-                                                            <xsl:text>.</xsl:text>
-                                                        </xsl:if>
-                                                        
-                                                        <xsl:choose>
-                                                            <!-- If idno starts with 'http', make it a clickable link -->
-                                                            <xsl:when test="starts-with($bibl/tei:idno, 'http')">
-                                                                <a href="{$bibl/tei:idno}" target="_blank" rel="noopener noreferrer">
-                                                                    <xsl:value-of select="$bibl/tei:idno"/>
-                                                                </a>
-                                                            </xsl:when>
-                                                            <!-- Otherwise, display idno as plain text -->
-                                                            <xsl:otherwise>
-                                                                (<xsl:value-of select="$bibl/tei:idno"/>)
-                                                            </xsl:otherwise>
-                                                        </xsl:choose>
-                                                    </xsl:when>
-                                                    <xsl:otherwise>
-                                                        <em>Literature not found</em>
-                                                    </xsl:otherwise>
-                                                </xsl:choose>
-                                            </li>
-                                        </xsl:for-each>
-                                    </ul>
-                                </div>
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                            </xsl:when>
-                            <!-- Otherwise, leave blank or provide default text -->
-                            <xsl:otherwise>
-                                <div class="row mt-4">
-                                    <div class="col-md-12">
-                                        <p class="text-muted">No additional details available.</p>
-                                    </div>
-                                </div>
-                            </xsl:otherwise>
-                        </xsl:choose>
+                        <div class="col-md-6">
+                            <strong>Scan:</strong>
+                            <xsl:choose>
+                                <xsl:when test="normalize-space(tei:note[@type='url_facsimile'])">
+                                    <a href="{tei:note[@type='url_facsimile']}" target="_blank"><xsl:value-of select="tei:note[@type='url_facsimile']"/></a>
+                                </xsl:when>
+                                <xsl:otherwise><span class="text-muted">Not available</span></xsl:otherwise>
+                            </xsl:choose><br/>
+                            <strong>Print:</strong>
+                            <xsl:choose>
+                                <xsl:when test="normalize-space(tei:note[@type='published_in'])">
+                                    <a href="{tei:note[@type='published_in']/@target}" target="_blank"><xsl:value-of select="tei:note[@type='published_in']"/></a>
+                                </xsl:when>
+                                <xsl:otherwise><span class="text-muted">Not available</span></xsl:otherwise>
+                            </xsl:choose>
+                        </div>
                     </div>
+                    <xsl:if test="@change='online'">
+                        <hr/>
+                        <h6>Letter Summary</h6>
+                        <p class="text-muted small">
+                            <xsl:variable name="externalSummary" select="document(concat('../../../data/letters/', @key, '.xml'))//tei:div[@type='summary']"/>
+                            <xsl:value-of select="$externalSummary"/>
+                            <i>(This summary was generated automatically.)</i>
+                        </p>
+                    </xsl:if>
                 </div>
             </td>
         </tr>
-        
-        
     </xsl:template>
-    
-    <!-- Template for date
-    <xsl:template match="tei:date">
-        <a href="letters/{../../@key}.html">
-            <xsl:value-of select="."/>
-        </a>
-    </xsl:template> -->
-    
-    <!-- Template for persName -->
-    <xsl:template match="tei:persName">
-        <xsl:choose>
-            <!-- Check if the ana attribute exists and is not empty -->
-            <xsl:when test="@ana and string-length(normalize-space(@ana)) > 0">
-                <a href="{@ana}">
-                    <xsl:value-of select="."/>
-                </a>
 
-            </xsl:when>
-            <!-- If ana does not exist or is empty -->
-            <xsl:otherwise>
-                <xsl:value-of select="."/>
-                <span class="ml-2">
-                    <a href="{@ref}">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"/>
-                    </a>
-                </span>
-            </xsl:otherwise>
-        </xsl:choose>
-        
-    </xsl:template>
-    
-    <!-- Template for placeName -->
-    <xsl:template match="tei:placeName">  
+    <xsl:template match="tei:persName">
         <xsl:value-of select="."/>
-        <span><a href="{@ref}">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"/>
-        </a></span>
+        <xsl:if test="@ref">
+            <a href="{@ref}" target="_blank" class="ms-1" title="GND Record">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND" height="12"/>
+            </a>
+        </xsl:if>
     </xsl:template>
-    
-    <!-- Template for notes (provenance, persons mentioned) -->
+
+    <xsl:template match="tei:placeName">
+        <xsl:value-of select="."/>
+        <xsl:if test="@ref">
+            <a href="{@ref}" target="_blank" class="ms-1" title="Wikidata Record">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="Wikidata" height="12"/>
+            </a>
+        </xsl:if>
+    </xsl:template>
+
     <xsl:template match="tei:note">
         <xsl:value-of select="."/>
     </xsl:template>
-    
+
 </xsl:stylesheet>
