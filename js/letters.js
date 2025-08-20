@@ -73,41 +73,20 @@ document.addEventListener('DOMContentLoaded', function () {
     const detailsCache = new Map();
 
     async function getFormattedDetails(key, rowData) {
-        if (detailsCache.has(key)) {
-            return detailsCache.get(key);
-        }
-        
-        const url = `https://raw.githubusercontent.com/michaelscho/lassberg/main/data/letters/${key}.xml`;
-        
-        const response = await fetch(url);
-        if (!response.ok) {
-            throw new Error(`File not found or couldn't be fetched from ${url}`);
-        }
-        const xmlText = await response.text();
-        const parser = new DOMParser();
-        const xmlDoc = parser.parseFromString(xmlText, "text/xml");
+    if (detailsCache.has(key)) return detailsCache.get(key);
 
-        const summaryNode = xmlDoc.querySelector('div[type="summary"]');
-        const summary = summaryNode ? summaryNode.textContent.trim() : 'No summary available.';
-
-        const openLetterButton = rowData.status === 'online' 
-            ? `<a href="../html/letters/${key}.html" class="btn btn-primary btn-sm mt-3" target="_blank">Open Full Letter Page</a>` 
-            : '';
-
-        const html = `
-            <div class="collapsible-content p-3">
-                <div class="row">
-                    <div class="col-12">
-                        <strong>Harris ID:</strong> <span class="text-muted">${rowData.harris || 'N/A'}</span>
-                    </div>
-                </div>
-                <hr class="my-2">
-                <h6>Summary</h6>
-                <p class="text-muted small mb-0">${summary}</p>
-                ${openLetterButton}
-            </div>`;
-        
+    // Use pre-rendered HTML from XSLT
+    const tpl = document.getElementById(`details-${key}`);
+    if (tpl) {
+        const html = tpl.innerHTML;   // content of <template>
         detailsCache.set(key, html);
         return html;
     }
+
+    // Fallback (optional): show a message if template is missing
+    const html = '<div class="text-muted p-3">No details available.</div>';
+    detailsCache.set(key, html);
+    return html;
+}
+
 });
