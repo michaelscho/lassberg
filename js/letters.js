@@ -21,8 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // --- EVENT LISTENERS FOR FILTERS ---
-    // Note the updated column indices to match the new table structure
+    // EVENT LISTENERS FOR FILTERS
     $('#filter-id').on('keyup', function () { table.column(1).search(this.value).draw(); });
     $('#filter-date').on('keyup', function () { table.column(2).search(this.value).draw(); });
     $('#filter-sender').on('keyup', function () { table.column(3).search(this.value).draw(); });
@@ -41,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
         table.draw();
     });
 
-    // --- EVENT LISTENER FOR EXPAND/COLLAPSE ---
+    // EVENT LISTENER FOR EXPAND/COLLAPSE
     $('#letter-table tbody').on('click', 'td.dt-control', async function (event) {
         event.stopPropagation();
         const tr = $(this).closest('tr');
@@ -69,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // --- HELPER FUNCTIONS ---
+    // HELPER FUNCTIONS
     const detailsCache = new Map();
 
     async function getFormattedDetails(key, rowData) {
@@ -78,12 +77,12 @@ document.addEventListener('DOMContentLoaded', function () {
     // Use pre-rendered HTML from XSLT
     const tpl = document.getElementById(`details-${key}`);
     if (tpl) {
-        const html = tpl.innerHTML;   // content of <template>
+        const html = tpl.innerHTML;   
         detailsCache.set(key, html);
         return html;
     }
 
-    // Fallback (optional): show a message if template is missing
+    // show a message if template is missing
     const html = '<div class="text-muted p-3">No details available.</div>';
     detailsCache.set(key, html);
     return html;
