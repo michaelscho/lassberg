@@ -60,6 +60,11 @@ bibl:before {
             labels, "historicalSource, contemporaryPublication");
 }
 
+
+bibl:after {
+ content: oxy_button(actionID, 'lassberg-add-gnd');
+}
+
 author:before {
  content: oxy_buttonGroup(
 icon, '${framework}/img/account-box-outline-16.png', 
