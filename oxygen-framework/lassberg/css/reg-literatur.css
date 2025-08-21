@@ -61,6 +61,15 @@ bibl:before {
 }
 
 
+idno:before {
+ content: oxy_combobox(           
+            edit, "@type",
+            editable, true,
+            values, "gnd, handschriftencensus, googlebooks, vd18, vd16, vd17, riopac, varia, gw",
+            labels, "gnd, handschriftencensus, googlebooks, vd18, vd16, vd17, riopac, varia, gw");
+}
+
+
 bibl:after {
  content: oxy_button(actionID, 'lassberg-add-gnd');
 }

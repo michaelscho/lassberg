@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0"
-    xmlns:tei="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="tei">
+    xmlns:tei="http://www.tei-c.org/ns/1.0"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    exclude-result-prefixes="tei xs">
+    
 
     <xsl:output method="html" indent="yes" doctype-system="about:legacy-compat"/>
 
@@ -108,7 +111,7 @@
 
                 <footer class="bg-dark text-white text-center py-3">
                     <div class="container">
-                        <p>© 2025 The Laßberg Letters Project</p>
+                        
                     </div>
                 </footer>
 
@@ -137,12 +140,62 @@
         <xsl:variable name="mentionedPlaces" select="$letterDoc//tei:note[@type='mentioned']/tei:ref[@type='cmif:mentionsPlace']"/>
         <xsl:variable name="mentionedLiterature" select="$letterDoc//tei:note[@type='mentioned']/tei:ref[@type='cmif:mentionsBibl']"/>
 
+        <!-- Also index manuscripts/objects -->
+        <xsl:variable name="mentionedManuscripts"
+            select="$letterDoc//tei:note[@type='mentioned']/tei:ref[@type=('cmif:mentionsObject','cmif:mentionsMs')]"/>
+        
+        <!-- Build searchable strings -->
+        <xsl:variable name="personNames" as="xs:string*">
+            <xsl:for-each select="$mentionedPersons">
+                <xsl:for-each select="tokenize(@target, '\s+')">
+                    <xsl:variable name="id" select="substring-after(., '#')"/>
+                    <xsl:sequence select="normalize-space((
+                        doc($persons-register)//tei:person[@xml:id=$id] |
+                        doc($persons-register)//tei:personGrp[@xml:id=$id]
+                        )/tei:persName[@type='main'])"/>
+                </xsl:for-each>
+            </xsl:for-each>
+        </xsl:variable>
+        
+        <xsl:variable name="placeNames" as="xs:string*">
+            <xsl:for-each select="$mentionedPlaces">
+                <xsl:variable name="id" select="substring-after(@target, '#')"/>
+                <xsl:sequence select="normalize-space(doc($places-register)//tei:place[@xml:id=$id]/tei:placeName)"/>
+            </xsl:for-each>
+        </xsl:variable>
+        
+        <xsl:variable name="litTitles" as="xs:string*">
+            <xsl:for-each select="$mentionedLiterature">
+                <xsl:variable name="id" select="substring-after(@target, '#')"/>
+                <xsl:sequence select="normalize-space(doc($literature-register)//tei:bibl[@xml:id=$id]/tei:title)"/>
+            </xsl:for-each>
+        </xsl:variable>
+        
+        <xsl:variable name="objectTexts" as="xs:string*">
+            <xsl:for-each select="$mentionedManuscripts">
+                <xsl:sequence select="normalize-space(.)"/>
+            </xsl:for-each>
+        </xsl:variable>
+        
+        <xsl:variable name="summaryText" select="normalize-space(string($summary))"/>
+        
+        <!-- One combined index for DataTables global search -->
+        <xsl:variable name="searchIndex"
+            select="normalize-space(string-join(($personNames, $placeNames, $litTitles, $objectTexts, $summaryText), ' '))"/>
+        
         
         
 
         <tr data-status="{@change}" data-key="{$key}">
             <xsl:attribute name="data-harris" select="normalize-space(tei:note[@type='nummer_harris'])"/>
-            <td class="dt-control text-center"><i class="bi bi-plus-lg"></i></td>
+            <td class="dt-control text-center">
+                <i class="bi bi-plus-lg"></i>
+                <!-- Hidden text DataTables will index for global search -->
+                <span class="d-none dt-search-index">
+                    <xsl:value-of select="$searchIndex"/>
+                </span>
+            </td>
+            
             <td><xsl:value-of select="$key"/></td>
             <td><xsl:value-of select="normalize-space(tei:correspAction[@type='sent']/tei:date/@when)"/></td>
             <td><xsl:apply-templates select="tei:correspAction[@type='sent']/tei:persName"/></td>
@@ -258,7 +311,7 @@
                                         <xsl:value-of select="$scan"/>
                                     </a>
                                 </xsl:when>
-                                <xsl:otherwise><span class="text-muted">—</span></xsl:otherwise>
+                                <xsl:otherwise><span class="text-muted"> - </span></xsl:otherwise>
                             </xsl:choose>
                         </div>
                     </div>
@@ -370,7 +423,7 @@
                         <button class="accordion-button collapsed" type="button"
                             data-bs-toggle="collapse" data-bs-target="#acc-{$key}-collapse-objs"
                             aria-expanded="false" aria-controls="acc-{$key}-collapse-objs">
-                            Manuscripts and Objects
+                            Handschriften
                         </button>
                     </h2>
                     <div id="acc-{$key}-collapse-objs" class="accordion-collapse collapse"
@@ -423,45 +476,85 @@
                                                 <xsl:if test="position() != last()"><xsl:text>; </xsl:text></xsl:if>
                                             </xsl:for-each>
                                         </xsl:variable>
+                                        
                                         <xsl:if test="normalize-space($authors) != ''">
                                             <xsl:value-of select="normalize-space($authors)"/><xsl:text>: </xsl:text>
                                         </xsl:if>
+                                        
                                         <xsl:value-of select="tei:title"/>
                                         <xsl:if test="not(ends-with(normalize-space(tei:title), '.'))"><xsl:text>.</xsl:text></xsl:if>
-                                        <xsl:choose>
-                                            <xsl:when test="starts-with(tei:idno, 'http')">
-                                                <a href="{tei:idno}" target="_blank" rel="noopener noreferrer"><xsl:value-of select="tei:idno"/></a>
-                                            </xsl:when>
-                                            <xsl:otherwise>(<xsl:value-of select="tei:idno"/>)</xsl:otherwise>
-                                        </xsl:choose>
+                                        
+                                        <!-- Link badges from typed idnos -->
+                                        <xsl:variable name="gnd" select="normalize-space(tei:idno[@type='gnd'][1])"/>
+                                        <xsl:variable name="hc"  select="normalize-space(tei:idno[@type='handschriftencensus'][1])"/>
+                                        <xsl:variable name="gq"  select="normalize-space(tei:idno[@type='geschichtsquellen'][1])"/>
+                                        
+                                        <!-- Only show links for these known types; otherwise show nothing -->
+                                        <xsl:if test="$gnd != '' or $hc != '' or $gq != ''">
+                                            <xsl:text> </xsl:text>
+                                            <xsl:if test="$gnd != ''">
+                                                <a href="{$gnd}" target="_blank" rel="noopener noreferrer">GND</a>
+                                            </xsl:if>
+                                            <xsl:if test="$hc != ''">
+                                                <xsl:text> </xsl:text>
+                                                <a href="{$hc}" target="_blank" rel="noopener noreferrer">Handschriftencensus</a>
+                                            </xsl:if>
+                                            <xsl:if test="$gq != ''">
+                                                <xsl:text> </xsl:text>
+                                                <a href="{$gq}" target="_blank" rel="noopener noreferrer">Geschichtsquellen</a>
+                                            </xsl:if>
+                                        </xsl:if>
+                                        
                                     </li>
                                 </xsl:for-each>
                             </ul>
+                            
                             
                             <!-- Contemporary Literature -->
                             <strong>Zeitgenössische Literatur</strong>
                             <ul class="list-unstyled mb-0">
                                 <xsl:for-each select="$resolvedBibl[@type='contemporaryPublication']">
                                     <li class="mb-2">
+                                        <!-- REPLACE your current $authors block with this normalized version -->
                                         <xsl:variable name="authors">
                                             <xsl:for-each select="tei:author">
-                                                <xsl:variable name="authorRef" select="substring-after(@key, '#')"/>
+                                                <xsl:variable name="authorRef"  select="substring-after(@key, '#')"/>
                                                 <xsl:variable name="authorName" select="doc($persons-register)//tei:person[@xml:id = $authorRef]/tei:persName/text()"/>
-                                                <xsl:value-of select="$authorName"/>
+                                                <!-- normalize: trim, remove any semicolons within the name -->
+                                                <xsl:variable name="raw"    select="normalize-space($authorName)"/>
+                                                <xsl:variable name="noSemi" select="translate($raw, ';', '')"/>
+                                                <xsl:choose>
+                                                    <!-- if in 'Last, First ...' form, flip to 'First ... Last' and strip inner commas -->
+                                                    <xsl:when test="contains($noSemi, ',')">
+                                                        <xsl:variable name="last"       select="normalize-space(substring-before($noSemi, ','))"/>
+                                                        <xsl:variable name="firstPart"  select="normalize-space(substring-after($noSemi, ','))"/>
+                                                        <xsl:variable name="firstClean" select="normalize-space(translate($firstPart, ',', ''))"/>
+                                                        <xsl:value-of select="concat($firstClean, ' ', $last)"/>
+                                                    </xsl:when>
+                                                    <!-- otherwise keep as-is (already 'First Last') -->
+                                                    <xsl:otherwise>
+                                                        <xsl:value-of select="$noSemi"/>
+                                                    </xsl:otherwise>
+                                                </xsl:choose>
+                                                <!-- separator between multiple authors -->
                                                 <xsl:if test="position() != last()"><xsl:text>; </xsl:text></xsl:if>
                                             </xsl:for-each>
                                         </xsl:variable>
+                                        
                                         <xsl:if test="normalize-space($authors) != ''">
                                             <xsl:value-of select="normalize-space($authors)"/><xsl:text>: </xsl:text>
                                         </xsl:if>
                                         <xsl:value-of select="tei:title"/>
                                         <xsl:if test="not(ends-with(normalize-space(tei:title), '.'))"><xsl:text>.</xsl:text></xsl:if>
-                                        <xsl:choose>
-                                            <xsl:when test="starts-with(tei:idno, 'http')">
-                                                <a href="{tei:idno}" target="_blank" rel="noopener noreferrer"><xsl:value-of select="tei:idno"/></a>
-                                            </xsl:when>
-                                            <xsl:otherwise>(<xsl:value-of select="tei:idno"/>)</xsl:otherwise>
-                                        </xsl:choose>
+                                        <xsl:variable name="gnd" select="normalize-space(tei:idno[@type='gnd'][1])"/>
+                                        <xsl:if test="$gnd != ''">
+                                            <xsl:text> </xsl:text>
+                                            <a href="{$gnd}" target="_blank" rel="noopener noreferrer">
+                                                GND
+                                            </a>
+                                            
+                                        </xsl:if>
+                                        
                                     </li>
                                 </xsl:for-each>
                             </ul>
