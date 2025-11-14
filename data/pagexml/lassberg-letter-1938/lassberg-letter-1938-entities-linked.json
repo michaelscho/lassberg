@@ -1,0 +1,383 @@
+{
+  "letter_id": "1938",
+  "title": "Letter 1938 — done_lassberg-letter-1938",
+  "entities": [
+    {
+      "text": "Wackernagel Basel",
+      "target_label": "PER",
+      "added_by_llm": false,
+      "char_span": {
+        "start": 0,
+        "end": 17
+      },
+      "evidence": {
+        "mentions": [
+          {
+            "model": "flair_base",
+            "text": "Wackernagel Basel",
+            "label": "ORG",
+            "score": 0.7446656227111816,
+            "start": 0,
+            "end": 17
+          },
+          {
+            "model": "hmbert",
+            "text": "Wackernagel",
+            "label": "org",
+            "score": 0.3901,
+            "start": 0,
+            "end": 11
+          },
+          {
+            "model": "hf_default",
+            "text": "Wackernagel",
+            "label": "PER",
+            "score": 0.9797213673591614,
+            "start": 0,
+            "end": 11
+          }
+        ],
+        "vote_count": 3
+      },
+      "links": {
+        "register": "lassberg-correspondent-0367",
+        "decision": {
+          "method": "llm",
+          "score": 1.0,
+          "candidates_considered": [
+            "lassberg-correspondent-0367",
+            "lassberg-correspondent-0661",
+            "lassberg-correspondent-0660",
+            "lassberg-correspondent-0659",
+            "lassberg-correspondent-0658",
+            "lassberg-correspondent-0657"
+          ]
+        }
+      }
+    },
+    {
+      "text": "Nov. 37",
+      "target_label": "TIME",
+      "added_by_llm": false,
+      "char_span": {
+        "start": 21,
+        "end": 28
+      },
+      "evidence": {
+        "mentions": [
+          {
+            "model": "hmbert",
+            "text": "Nov. 37",
+            "label": "time",
+            "score": 0.6052000000000001,
+            "start": 21,
+            "end": 28
+          }
+        ],
+        "vote_count": 1
+      },
+      "links": {
+        "register": null,
+        "decision": {
+          "method": "none",
+          "score": 0.0,
+          "candidates_considered": []
+        }
+      }
+    },
+    {
+      "text": "Herr Baron",
+      "target_label": "PER",
+      "added_by_llm": false,
+      "char_span": {
+        "start": 45,
+        "end": 55
+      },
+      "evidence": {
+        "mentions": [
+          {
+            "model": "hmbert",
+            "text": "Herr Baron",
+            "label": "pers",
+            "score": 0.7643000000000001,
+            "start": 45,
+            "end": 55
+          },
+          {
+            "model": "flair_base",
+            "text": "Baron",
+            "label": "PER",
+            "score": 0.9997648596763611,
+            "start": 50,
+            "end": 55
+          },
+          {
+            "model": "hf_default",
+            "text": "Baron",
+            "label": "PER",
+            "score": 0.9669784903526306,
+            "start": 50,
+            "end": 55
+          }
+        ],
+        "vote_count": 3
+      },
+      "links": {
+        "register": null,
+        "decision": {
+          "method": "llm",
+          "score": 0.5,
+          "candidates_considered": [
+            "lassberg-correspondent-0465",
+            "lassberg-correspondent-0466",
+            "lassberg-correspondent-0661",
+            "lassberg-correspondent-0660",
+            "lassberg-correspondent-0659",
+            "lassberg-correspondent-0658"
+          ]
+        }
+      }
+    },
+    {
+      "text": "Göttingen",
+      "target_label": "LOC",
+      "added_by_llm": false,
+      "char_span": {
+        "start": 83,
+        "end": 92
+      },
+      "evidence": {
+        "mentions": [
+          {
+            "model": "hmbert",
+            "text": "Göttingen",
+            "label": "loc",
+            "score": 0.9677,
+            "start": 83,
+            "end": 92
+          },
+          {
+            "model": "flair_base",
+            "text": "Göttingen",
+            "label": "LOC",
+            "score": 0.9999972581863403,
+            "start": 83,
+            "end": 92
+          },
+          {
+            "model": "flair_large",
+            "text": "Göttingen",
+            "label": "LOC",
+            "score": 0.9999957084655762,
+            "start": 83,
+            "end": 92
+          },
+          {
+            "model": "hf_default",
+            "text": "Göttingen",
+            "label": "LOC",
+            "score": 0.9995701909065247,
+            "start": 83,
+            "end": 92
+          }
+        ],
+        "vote_count": 4
+      },
+      "links": {
+        "register": "lassberg-place-0053",
+        "decision": {
+          "method": "llm",
+          "score": 1.0,
+          "candidates_considered": [
+            "lassberg-place-0053",
+            "lassberg-place-0307",
+            "lassberg-place-0264",
+            "lassberg-place-0219",
+            "lassberg-place-0001",
+            "lassberg-place-0002"
+          ]
+        }
+      }
+    },
+    {
+      "text": "Frau Gemahlinn",
+      "target_label": "PER",
+      "added_by_llm": false,
+      "char_span": {
+        "start": 475,
+        "end": 489
+      },
+      "evidence": {
+        "mentions": [
+          {
+            "model": "hmbert",
+            "text": "Frau Gemahlinn",
+            "label": "pers",
+            "score": 0.7876000000000001,
+            "start": 475,
+            "end": 489
+          },
+          {
+            "model": "flair_large",
+            "text": "Gemahlinn",
+            "label": "PER",
+            "score": 0.9999897480010986,
+            "start": 480,
+            "end": 489
+          },
+          {
+            "model": "hf_default",
+            "text": "G",
+            "label": "PER",
+            "score": 0.936093270778656,
+            "start": 480,
+            "end": 481
+          }
+        ],
+        "vote_count": 3
+      },
+      "links": {
+        "register": null,
+        "decision": {
+          "method": "llm",
+          "score": 0.0,
+          "candidates_considered": [
+            "lassberg-correspondent-0661",
+            "lassberg-correspondent-0660",
+            "lassberg-correspondent-0659",
+            "lassberg-correspondent-0658",
+            "lassberg-correspondent-0657",
+            "lassberg-correspondent-0656"
+          ]
+        }
+      }
+    },
+    {
+      "text": "Eppishauser",
+      "target_label": "LOC",
+      "added_by_llm": false,
+      "char_span": {
+        "start": 935,
+        "end": 946
+      },
+      "evidence": {
+        "mentions": [
+          {
+            "model": "hmbert",
+            "text": "Eppishauser",
+            "label": "loc",
+            "score": 0.8086,
+            "start": 935,
+            "end": 946
+          }
+        ],
+        "vote_count": 1
+      },
+      "links": {
+        "register": null,
+        "decision": {
+          "method": "llm",
+          "score": 0.0,
+          "candidates_considered": [
+            "lassberg-place-0307",
+            "lassberg-place-0264",
+            "lassberg-place-0219",
+            "lassberg-place-0001",
+            "lassberg-place-0002",
+            "lassberg-place-0003"
+          ]
+        }
+      }
+    },
+    {
+      "text": "Wilh. Wackernagel Dr",
+      "target_label": "PER",
+      "added_by_llm": false,
+      "char_span": {
+        "start": 1183,
+        "end": 1203
+      },
+      "evidence": {
+        "mentions": [
+          {
+            "model": "hmbert",
+            "text": "Wilh. Wackernagel Dr",
+            "label": "pers",
+            "score": 0.8959,
+            "start": 1183,
+            "end": 1203
+          },
+          {
+            "model": "flair_base",
+            "text": "Wackernagel Dr",
+            "label": "PER",
+            "score": 0.7731969356536865,
+            "start": 1189,
+            "end": 1203
+          },
+          {
+            "model": "flair_large",
+            "text": "Wilh.",
+            "label": "PER",
+            "score": 0.8238849639892578,
+            "start": 1183,
+            "end": 1188
+          },
+          {
+            "model": "hf_default",
+            "text": "Wilh",
+            "label": "PER",
+            "score": 0.8671674728393555,
+            "start": 1183,
+            "end": 1187
+          }
+        ],
+        "vote_count": 4
+      },
+      "links": {
+        "register": "lassberg-correspondent-0367",
+        "decision": {
+          "method": "llm",
+          "score": 1.0,
+          "candidates_considered": [
+            "lassberg-correspondent-0367",
+            "lassberg-correspondent-0530",
+            "lassberg-correspondent-0661",
+            "lassberg-correspondent-0660",
+            "lassberg-correspondent-0659",
+            "lassberg-correspondent-0658"
+          ]
+        }
+      }
+    }
+  ],
+  "dropped": [
+    {
+      "text": "ergebenster",
+      "label": "pers",
+      "reason": "out of scope",
+      "evidence": {
+        "model": "hmbert",
+        "score": 0.6047
+      }
+    },
+    {
+      "text": "Gott",
+      "label": "PER",
+      "reason": "out of scope",
+      "evidence": {
+        "model": "hf_default",
+        "score": 0.9993106126785278
+      }
+    },
+    {
+      "text": "G",
+      "label": "PER",
+      "reason": "out of scope",
+      "evidence": {
+        "model": "hf_default",
+        "score": 0.6425738334655762
+      }
+    }
+  ]
+}
