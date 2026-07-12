@@ -80,8 +80,11 @@
                         target="../register/lassberg-persons.xml#lassberg-correspondent-0399"
                         ><rs>Karl der Große</rs></ref>
                     <ref type="cmif:mentionsPerson"
-                        target="../register/lassberg-persons.xml#lassberg-correspondent-0354"
-                        ><rs>Unbekannt</rs></ref>
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0674"
+                        ><rs>Gerardus</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0675"
+                        ><rs>Sigwards</rs></ref>
                     <ref type="cmif:mentionsPerson"
                         target="../register/lassberg-persons.xml#lassberg-correspondent-0402"
                         ><rs>Walafrid Strabo</rs></ref>
@@ -112,6 +115,12 @@
                     <ref type="cmif:mentionsPlace"
                         target="../register/lassberg-places.xml#lassberg-place-0192"
                         ><rs>Wertbühl</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0179"
+                        ><rs>Johann Adam Pupikofer</rs></ref>
+                    <ref type="cmif:mentionsPlace"
+                        target="../register/lassberg-places.xml#lassberg-place-0025"
+                        ><rs>Bischofszell</rs></ref>
                 </note>
             </correspDesc>
         </profileDesc>
@@ -120,14 +129,18 @@
                 <change when="2023-08-01" who="#MiS" status="draft">File created and preprocessed automatically</change>
                 <change when="2023-08-29" who="#MiS" status="draft">Manual markup and proofreading</change>
                 <change when="2023-11-22" who="#MiS" status="draft">Finished markup</change>
+                <change when="2026-07-10" who="#check-letter-annotations" status="done">Checked via check-letter-annotations skill (Vollständigkeit, Verlinkung, Struktur, Header/Body-Konsistenz, Formeln)</change>
                 <!-- <change when="" who="" status="puplished">Final proofreading</change> -->
             </listChange>
         </revisionDesc>
     </teiHeader>
     <text>
         <body>
-            <div type="original" resp="ocr">
-                <p>Hochwohlgeborner, verehrtester Herr! Indem ich Ihnen den <rs type="bibl"
+            <div type="print" resp="ocr">
+                <opener>
+                    <salute>Hochwohlgeborner, verehrtester Herr!</salute>
+                </opener>
+                <p>Indem ich Ihnen den <rs type="bibl"
                     key="../register/lassberg-literature.xml#lassberg-literature-0059">Canisius</rs>
                     sende, erlaube ich mir, einige Bemerkungen beizufügen, mit der Bitte, daß Sie
                     Ihre Bemerkungen über diese Bemerkungen machen möchten. Mir kömmt der <rs
@@ -142,7 +155,7 @@
                     als z. B. das <rs type="object" key="">historische Gemälde</rs> von J. N. v. v.
                     S. F. II. P. III. In l. 1. § 35 (p. 70) kommt ein Liederdichter sehr übel weg.
                     Ich möchte fragen, ob der <rs type="person"
-                    key="../register/lassberg-persons.xml#lassberg-correspondent-0354">Gerardus</rs>
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0674">Gerardus</rs>
                     in der praef. 1. II (p. 71) derselbe sei wie 1. II. § 3. 1. II. § 11 ist der
                     Hosentausch und Anfangs-§ 13 der Krezer; § 20 der Thurgauer Riese. Es scheint
                     mir fast, daß <rs type="bibl"
@@ -155,7 +168,7 @@
                     Walafridus</rs> fiel mir die „enumeratio abbatum Augiae“ auf (p. 206. f.) und
                     das epigramm ad Amicam p. 245. Letzteres wäre des Verfassers der
                     Klostergeschichte oder <rs type="person"
-                    key="../register/lassberg-persons.xml#lassberg-correspondent-0354">Sigwards</rs>
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0675">Sigwards</rs>
                     nicht unwürdig. Nur sind die drei letzten Verse nicht mehr recht gemüthlich.
                     Ueberhaupt möchte ich den <rs type="person"
                     key="../register/lassberg-persons.xml#lassberg-correspondent-0402">Walafrid</rs>
@@ -198,8 +211,14 @@
                     Freitag vor und komme am Abend vorher zu Ihnen, oder am Morgen in der Frühe. <rs
                     type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0393"
                     >Meine Frau</rs> läßt Ihnen noch herzlich für den schönen Fastnachtskuchen
-                    danken, Mit ausgezeichneter Hochachtung und Ergebenheit Ihr Diac. Pupikofer.
-                    Bischofzell, den 1. März 1827.</p>
+                    danken,</p>
+                <closer>
+                    <salute>Mit ausgezeichneter Hochachtung und Ergebenheit Ihr</salute>
+                    <signed>Diac. <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0179">Pupikofer</rs></signed>.
+                    <dateline><rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0025">Bischofzell</rs>, den 1. März 1827</dateline>.
+                </closer>
             </div>
             <div type="normalized" resp="GPT3.5">
                 <p>Hochwohlgeborener, verehrtester Herr! Indem ich Ihnen den Canisius sende, erlaube

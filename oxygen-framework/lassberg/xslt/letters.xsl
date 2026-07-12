@@ -12,6 +12,7 @@
     <xsl:param name="persons-register" select="'../../../data/register/lassberg-persons.xml'"/>
     <xsl:param name="places-register" select="'../../../data/register/lassberg-places.xml'"/>
     <xsl:param name="literature-register" select="'../../../data/register/lassberg-literature.xml'"/>
+    <xsl:param name="manuscripts-register" select="'../../../data/register/lassberg-manuscripts.xml'"/>
 
     <!-- ===== Main template (keeps your new HTML shell/UI) ===== -->
     <xsl:template match="/">
@@ -19,7 +20,7 @@
             <head>
                 <meta charset="UTF-8"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-                <title>Register of Letters - The Laßberg Project</title>
+                <title>Letters - The Laßberg Project</title>
 
                 <!-- Bootstrap + DataTables CSS -->
                 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"/>
@@ -45,6 +46,8 @@
                             <ul class="navbar-nav ms-auto">
                                 <li class="nav-item"><a class="nav-link" href="../index.html">Welcome</a></li>
                                 <li class="nav-item"><a class="nav-link active" href="#">Letters</a></li>
+                                <li class="nav-item"><a class="nav-link" href="persons.html">Persons</a></li>
+                                <li class="nav-item"><a class="nav-link" href="places.html">Places</a></li>
                                 <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
                                 <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
                                 <li class="nav-item"><a class="nav-link" href="https://www.zotero.org/groups/6109140/joseph_von_laberg/library" target="_blank">Literature</a></li>
@@ -55,13 +58,20 @@
 
                 <header class="page-header py-5 bg-light text-center">
                     <div class="container">
-                        <h1 class="display-5">Register of Correspondence</h1>
-                        <p class="lead text-muted">A comprehensive, filterable list of letters from the Laßberg collection.</p>
+                        <h1 class="display-5">Letters</h1>
+                        <p class="lead text-muted">A comprehensive, filterable register of correspondence from the Laßberg collection.</p>
                     </div>
                 </header>
 
                 <main class="py-5">
                     <div class="container">
+                        <div class="card shadow-sm mb-3">
+                            <div class="card-body">
+                                <label for="global-search" class="form-label small text-muted mb-1">Search across letters, persons, places and literature</label>
+                                <input type="search" class="form-control" id="global-search" placeholder="e.g. a name, a place, a title, or a word from a letter..." autocomplete="off"/>
+                                <div id="letter-search-results" class="list-group mt-2 d-none"></div>
+                            </div>
+                        </div>
                         <div class="card shadow-sm">
                             <div class="card-header bg-light p-3">
                                 <div class="row gy-2 gx-3 align-items-center">
@@ -122,6 +132,8 @@
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
                     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
                     crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/minisearch@6.3.0/dist/umd/index.min.js"></script>
+                <script src="../js/search.js"></script>
                 <script src="../js/letters.js"></script>
 
                 
@@ -189,7 +201,9 @@
         <tr data-status="{@change}" data-key="{$key}">
             <xsl:attribute name="data-harris" select="normalize-space(tei:note[@type='nummer_harris'])"/>
             <td class="dt-control text-center">
-                <i class="bi bi-plus-lg"></i>
+                <button type="button" class="row-expand-btn" aria-label="Show letter details" aria-expanded="false">
+                    <i class="bi bi-chevron-down"></i>
+                </button>
                 <!-- Hidden text DataTables will index for global search -->
                 <span class="d-none dt-search-index">
                     <xsl:value-of select="$searchIndex"/>
@@ -244,15 +258,25 @@
         <xsl:variable name="summary" select="$letterDoc//tei:div[@type='summary']"/>
         <xsl:variable name="mentionedPersons"   select="$letterDoc//tei:note[@type='mentioned']/tei:ref[@type='cmif:mentionsPerson']"/>
         <xsl:variable name="mentionedPlaces"    select="$letterDoc//tei:note[@type='mentioned']/tei:ref[@type='cmif:mentionsPlace']"/>
-        <xsl:variable name="mentionedLiterature" select="$letterDoc//tei:note[@type='mentioned']/tei:ref[@type='cmif:mentionsBibl']"/>
-        <!-- ADD inside <xsl:template match="tei:correspDesc" mode="details"> after existing variables -->
-        <xsl:variable name="mentionedManuscripts"
-            select="$letterDoc//tei:note[@type='mentioned']/tei:ref[@type=('cmif:mentionsObject','cmif:mentionsMs')]"/>
-        
+        <!-- CMIF has no dedicated witness category, so both abstract works and manuscript/print
+             exemplars use cmif:mentionsBibl (docs/TEI.md, "<correspAction> und <note
+             type=\"mentioned\">"); Werk vs. Exemplar is distinguished by which register file the
+             @target points into, not by a separate CMIF @type. -->
+        <xsl:variable name="mentionedBibl" select="$letterDoc//tei:note[@type='mentioned']/tei:ref[@type='cmif:mentionsBibl']"/>
+        <xsl:variable name="mentionedLiterature" select="$mentionedBibl[contains(@target, 'lassberg-literature.xml')]"/>
+        <xsl:variable name="mentionedManuscripts" select="$mentionedBibl[contains(@target, 'lassberg-manuscripts.xml')]"/>
+
         <xsl:variable name="resolvedBibl" as="element(tei:bibl)*">
             <xsl:for-each select="$mentionedLiterature">
                 <xsl:variable name="targetId" select="substring-after(@target,'#')"/>
                 <xsl:sequence select="doc($literature-register)//tei:bibl[@xml:id=$targetId]"/>
+            </xsl:for-each>
+        </xsl:variable>
+
+        <xsl:variable name="resolvedWitnesses" as="element(tei:witness)*">
+            <xsl:for-each select="$mentionedManuscripts">
+                <xsl:variable name="targetId" select="substring-after(@target,'#')"/>
+                <xsl:sequence select="doc($manuscripts-register)//tei:witness[@xml:id=$targetId]"/>
             </xsl:for-each>
         </xsl:variable>
         
@@ -430,26 +454,34 @@
                         aria-labelledby="acc-{$key}-head-objs" data-bs-parent="#acc-{$key}">
                         <div class="accordion-body">
                             <ul class="list-unstyled mb-0">
-                                <xsl:for-each select="$mentionedManuscripts">
+                                <xsl:for-each select="$resolvedWitnesses">
                                     <li class="mb-2">
-                                        <xsl:choose>
-                                            <xsl:when test="starts-with(@target,'http')">
-                                                <a href="{@target}"><xsl:value-of select="normalize-space(.)"/></a>
-                                            </xsl:when>
-                                            <xsl:otherwise>
-                                                <xsl:value-of select="normalize-space(.)"/>
-                                                <xsl:if test="contains(@target,'#')">
-                                                    <span class="text-muted"> (<xsl:value-of select="substring-after(@target,'#')"/>)</span>
-                                                </xsl:if>
-                                            </xsl:otherwise>
-                                        </xsl:choose>
+                                        <xsl:value-of select="tei:bibl/tei:settlement"/>
+                                        <xsl:if test="tei:bibl/tei:settlement and tei:bibl/tei:repository"><xsl:text>, </xsl:text></xsl:if>
+                                        <xsl:value-of select="tei:bibl/tei:repository"/>
+                                        <xsl:if test="normalize-space(tei:bibl/tei:idno[@type='signature'])">
+                                            <xsl:text> (</xsl:text><xsl:value-of select="tei:bibl/tei:idno[@type='signature']"/><xsl:text>)</xsl:text>
+                                        </xsl:if>
+                                        <xsl:variable name="workId" select="substring-after(@corresp, '#')"/>
+                                        <xsl:if test="$workId">
+                                            <xsl:variable name="work" select="doc($literature-register)//tei:bibl[@xml:id=$workId]"/>
+                                            <xsl:if test="$work/tei:title">
+                                                <span class="text-muted"> — <xsl:value-of select="$work/tei:title"/></span>
+                                            </xsl:if>
+                                        </xsl:if>
+                                        <xsl:if test="tei:bibl/tei:note">
+                                            <div class="text-muted small"><xsl:value-of select="tei:bibl/tei:note"/></div>
+                                        </xsl:if>
                                     </li>
                                 </xsl:for-each>
+                                <xsl:if test="not($resolvedWitnesses)">
+                                    <li class="text-muted">Keine Handschriften-/Druckexemplare verzeichnet.</li>
+                                </xsl:if>
                             </ul>
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Literatur (split into Historical Sources / Contemporary Literature) -->
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="acc-{$key}-head-lit">
@@ -568,7 +600,7 @@
                 
                 <!-- Link to full letter page, if available -->
                 <xsl:if test="@change='online'">
-                    <a href="../letters/{$key}.html"
+                    <a href="letters/{$key}.html"
                         class="btn btn-primary btn-sm mt-3"
                         target="_blank" rel="noopener noreferrer">Open Full Letter Page</a>
                 </xsl:if>

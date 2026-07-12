@@ -1,0 +1,26 @@
+# Requirements for the KI-Infrastruktur pipeline (build/, embeddings/, clustering/, graph/, rdf/,
+# mcp_server/). Installed into its own .venv-infra — do NOT install into src/'s .venv, which has a
+# separate, fragile dependency set (see CLAUDE.md).
+lxml
+PyYAML
+
+# Phase 2: embeddings
+FlagEmbedding
+torch
+
+# Phase 3: clustering
+umap-learn
+hdbscan
+scikit-learn
+
+# Phase 4: Neo4j import
+neo4j
+
+# Phase 5: RDF
+rdflib
+
+# Phase 6: MCP server
+fastmcp
+
+# tests
+pytest

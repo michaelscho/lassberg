@@ -5,32 +5,42 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>The Lassberg Letters</title>
       <link href="../../css/styles.css" rel="stylesheet">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script><script src="../../js/letters.js"></script><link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"><script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script></head>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script><link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"><script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script></head>
    <body>
-      <div id="app" class="container">
-         <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
-            <div class="container-fluid"><a class="navbar-brand" href="#">Laßberg Letters</a><ul class="navbar-nav">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+         <div class="container"><a class="navbar-brand" href="../../index.html">The Laßberg Letters</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ms-auto">
                   <li class="nav-item"><a class="nav-link" href="../../index.html">Welcome</a></li>
                   <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
-                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb">Data Analysis</a></li>
-                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg">Repository</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../persons.html">Persons</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../places.html">Places</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
                </ul>
             </div>
-         </nav>
-         <div class="container my-4">
-            <header class="mb-4">
-               <h1>Brief von Wilhelm Wackernagel an Joseph von Laßberg (08.08.1833).</h1>
-               <p class="lead">
-                  Textfassung auf Basis der Transkription durch Transkribus korrigiert und in TEI
+         </div>
+      </nav>
+      <header class="page-header py-4">
+         <div class="container">
+            <h1 class="mb-2">Brief von Wilhelm Wackernagel an Joseph von Laßberg (08.08.1833).</h1>
+            <p class="lead mb-0">
+               
+               <p>Textfassung auf Basis der Transkription durch Transkribus korrigiert und in TEI
                   überführt. Automatisierte NER-Erkennung und Identifikation durch Flair geprüft,
                   korrigiert und ergänzt. Normalisierung, Zusammenfassung und Übersetzung durch
-                  GPT-4. Lizenz: 
-                  
-                  <a href="https://creativecommons.org/licenses/by/4.0/">CC BY
-                     4.0</a>
-                  
-                  </p>
-            </header>
+                  GPT-4. Lizenz: </p>
+               
+               <a href="https://creativecommons.org/licenses/by/4.0/">CC BY
+                  4.0</a>
+               
+               </p>
+         </div>
+      </header>
+      <main class="py-4">
+         <div class="container">
             <section id="map" class="mb-4">
                <div id="mapid"></div>
             </section>
@@ -42,213 +52,238 @@
                <p><strong>Gedruck in: </strong><a href=""></a></p>
             </section>
             <section id="original-text" class="mb-4">
-               <h2>Original Text</h2>
+               <h2>Original Text
+                  <span class="transcription-source badge-manuscript" title="Diplomatische Transkription der Handschrift">Transcribed from the manuscript (Transkribus)</span></h2>
                <div>
-                  Basel 8/8/33. Hochwohlgeborner
-                  Herr, Hochzuvererender Herr Baron! Das traurige Ereignis das ich gleich nach meiner Rückehr
-                  hier erlebte, die Unruhe und Verwirrung, in der sich Alles befindet, hat er mir erst jetzt gestattet
-                  Ihrem Befehl zu genügen und zur Wiederlangung des bewußten <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Altarbildes</span> Schritte zu thun. Er steht in der
-                  Stadtgerichts schreibung wohl aufgehoben da und wird mir, sobald ich es
-                  verlange, ausgeliefert werden. Das ist bloss ungewiss, ob vielleicht noch uner ledigte Speditionskosten darauf haften: ich soll Sie fragen ob Sie sich erinnern,
-                  in welcher Art Sie es hergesendet haben, gleich auf Ihre oder auf
-                  der <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Marquard Wocher</strong&gt;">Verstorbenen<a href="https://d-nb.info/gnd/131893505"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> Kosten? Es kommt ganz auf Ihr Gedächtnis an.
-                  Wie befehlen Sie nun, geehrtester Herr Baron, die Übersendung?
-                  Doch woll mit einer Frachtfuhre? Zur Post würde es zu theuer seyn. Und ich denke, den grossen
-                  Querbalken, den ein Mann kaum erheben kann und auf dem nichts steht als ein Vers aus den
-                  Psalmen, brauche ich nicht mit ein zu packen? Wie schön war die Reise, wie schön besonders durch
-                  Ihre unverdiente Freundlich keit! Aber Trauer und Verdruss und trübe Erwartungen
-                  stoeren mir seit jenem unseligen Kriegstage alle Nachfreude der Erinnerung. Morgen wird es entschieden werden,
-                  ob <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Basel</strong&gt;">Basel<a href="https://www.wikidata.org/wiki/Q78"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> eine Belagerung wagt oder sich von den Radicalen Gesetze
-                  vorschreiben laest, ob wir eidgenössische Truppen einnehmen oder nicht. Beides ist
-                  schlimm, aber das Eine schlimmer, und ich fürchte, man werde gerade dazu sich
-                  entschliessen. Von <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Raperswil</strong&gt;">Rapperschwil<a href="https://www.wikidata.org/wiki/Q65602"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> aus gieng ich, weil das schlechte Wetter anhielt, wieder nach <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Zürich</strong&gt;">Zürich<a href="https://www.wikidata.org/wiki/Q72"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>. Dort fanden sich auf der <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wasserkirche,&#xA;                        Zürich</strong&gt;">Wasserkirche<a href="https://www.wikidata.org/wiki/Q477189"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> noch
-                  schöne Sachen vor, z. B. eine Logik u. Rhetorik aus dem Anfange des XI Jh.
-                  mit deutschen Bei spielen, und auch der Text halb deutsch halb lateinisch.
-                  Unter den Bei spielen auch deutsche Verse, dieselben die <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Charlotte Grimm</strong&gt;">Docen<a href="https://d-nb.info/gnd/118542222"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> in <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Charlotte Grimm: Anzeige einer&#xA;        alten Handschrift der Aeneis des Heinrich von Veldeck, in: Beyträge zur Geschichte und&#xA;        Literatur, vorzüglich aus den Schätzen der Königl. Hof- und Centralbibliothek zu München.&#xA;        7.</strong&gt;">Archivs
-                     Beiträgen Bd VII<a href="BSB-ID 991047974869707356">📖</a></span>, aus virgilianischen Glossen zu <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;München</strong&gt;">München<a href="https://www.wikidata.org/wiki/Q1726"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> bekannt
-                  gemacht hat. Besitzen Sie die Beitr. und dürfte ich Sie dann auf einige Tage
-                  darum bitten, um diesen und die folgenden Bände? Von Arau aus begab ich
-                  mich nach <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Muri</strong&gt;">Muri<a href="https://www.wikidata.org/wiki/Q69011"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>; von da, weil nun endlich das Wetter schön war, und wie schön! auf den <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Rigi</strong&gt;">Rigi<a href="https://www.wikidata.org/wiki/Q15291"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>. Da traf ich auch Herrn <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johannes Pupikofer</strong&gt;">Pupikofer<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> wieder an. Nach <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Beromünster</strong&gt;">Beromünster<a href="https://www.wikidata.org/wiki/Q7146"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> kam
-                  ich zu spät: <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Franz Joseph Stalder</strong&gt;">Stalder<a href="https://d-nb.info/gnd/11720613X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
-                  war einige Stunden vorher begraben worden. Auch in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Kloster St.&#xA;                        Urban</strong&gt;">S. Urban<a href="https://www.wikidata.org/wiki/Q1157569"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> bin ich
-                  gewesen. Die klösterliche Zucht ist da eben nicht gar strenge. Von <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Göttingen</strong&gt;">Göttingen<a href="https://www.wikidata.org/wiki/Q3033"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> habe ich traurige Briefe. Dem Br. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jacob Grimm</strong&gt;">Grimm<a href="https://d-nb.info/gnd/118542257"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
-                  ist eine <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Charlotte Grimm</strong&gt;">Schwester<a href="https://d-nb.info/gnd/118542222"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> gestorben. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wilhelm Grimm</strong&gt;">Wilhelm<a href="https://d-nb.info/gnd/118542265"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
-                  ist in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wiesbaden</strong&gt;">Wiesbaden<a href="https://www.wikidata.org/wiki/Q1721"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>. Verzeihen Sie mir
-                  geneigtest die schlechte Schrift und die Eilfertigkeit dieses Briefes, ich muss
-                  zum Appell u. dann wahrscheinlich auf die Wache. Aus dem Studieren wird in
-                  diesen Zeiten nicht viel. Darf ich Sie, schon des <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Altarbildes</span> wegen, um eine recht baldige Antwort bitten. Empfehlen
-                  Sie mich Ihren werthen Hausgenossen bestens und erhalten Sie mir
-                  Ihr freundliches Wohlwollen, der ich bin, hochzuverehrender Herr Baron Ihr gehorsamst
-                  ergebener Wilh.
-                  Wackernagel. Quomodo sedes sola
-                  civitas plena populo? facta est quare redua domina gentinur. 
+                  
+                  <p><br>Basel 8/8/33. <br>Hochwohlgeborner
+                     Herr, <br>Hochzuvererender Herr Baron! <br>Das traurige Ereignis das ich gleich nach meiner Rückehr
+                     hier erlebte, <br>die Unruhe und Verwirrung, in der sich Alles befindet, hat er mir erst <br>jetzt gestattet
+                     Ihrem Befehl zu genügen und zur Wiederlangung <br>des bewußten <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Altarbildes</span> Schritte zu thun. Er steht in der
+                     Stadtgerichts <br>schreibung wohl aufgehoben da und wird mir, sobald ich es
+                     verlange, <br>ausgeliefert werden. Das ist bloss ungewiss, ob vielleicht noch uner <br>ledigte Speditionskosten darauf haften: ich soll Sie fragen ob Sie <br>sich erinnern,
+                     in welcher Art Sie es hergesendet haben, gleich auf <br>Ihre oder auf
+                     der <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Marquard Wocher</strong&gt;">Verstorbenen<a href="https://d-nb.info/gnd/131893505"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> Kosten? Es kommt ganz auf Ihr <br>Gedächtnis an.
+                     Wie befehlen Sie nun, geehrtester Herr Baron, <br>die Übersendung?
+                     Doch woll mit einer Frachtfuhre? Zur Post <br>würde es zu theuer seyn. Und ich denke, den grossen
+                     Querbalken, <br>den ein Mann kaum erheben kann und auf dem nichts steht als <br>ein Vers aus den
+                     Psalmen, brauche ich nicht mit ein zu packen? <br>Wie schön war die Reise, wie schön besonders durch
+                     Ihre unverdiente Freundlich <br>keit! Aber Trauer und Verdruss und trübe Erwartungen
+                     stoeren mir seit <br>jenem unseligen Kriegstage alle Nachfreude der Erinnerung. Morgen wird es <br>entschieden werden,
+                     ob <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Basel</strong&gt;">Basel<a href="https://www.wikidata.org/wiki/Q78"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> eine Belagerung wagt oder sich von den Radicalen <br>Gesetze
+                     vorschreiben laest, ob wir eidgenössische Truppen einnehmen oder <br>nicht. Beides ist
+                     schlimm, aber das Eine schlimmer, und ich fürchte, man werde <br>gerade dazu sich
+                     entschliessen. <br>Von <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Raperswil</strong&gt;">Rapperschwil<a href="https://www.wikidata.org/wiki/Q65602"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> aus gieng ich, weil das schlechte Wetter anhielt, wieder <br>nach <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Zürich</strong&gt;">Zürich<a href="https://www.wikidata.org/wiki/Q72"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>. Dort fanden sich auf der <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wasserkirche,&#xA;                        Zürich</strong&gt;">Wasserkirche<a href="https://www.wikidata.org/wiki/Q477189"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> noch
+                     schöne Sachen vor, <br>z. B. eine Logik u. Rhetorik aus dem Anfange des XI Jh.
+                     mit deutschen Bei <br>spielen, und auch der Text halb deutsch halb lateinisch.
+                     Unter den Bei <br>spielen auch deutsche Verse, dieselben die <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Charlotte Grimm</strong&gt;">Docen<a href="https://d-nb.info/gnd/118542222"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> in <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Bernhard Joseph Docen: Anzeige einer&#xA;        alten Handschrift der Aeneis des Heinrich von Veldeck, in: Beyträge zur Geschichte und&#xA;        Literatur, vorzüglich aus den Schätzen der Königl. Hof- und Centralbibliothek zu München.&#xA;        7.</strong&gt;">Archivs
+                        Beiträgen Bd VII<a href="BSB-ID%0A        991047974869707356">📖</a></span>, <br>aus virgilianischen Glossen zu <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;München</strong&gt;">München<a href="https://www.wikidata.org/wiki/Q1726"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> bekannt
+                     gemacht hat. Besitzen <br>Sie die Beitr. und dürfte ich Sie dann auf einige Tage
+                     darum bitten, um <br>diesen und die folgenden Bände? Von Arau aus begab ich
+                     mich nach <br><span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Muri</strong&gt;">Muri<a href="https://www.wikidata.org/wiki/Q69011"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>; von da, weil nun endlich das Wetter schön war, und wie schön! <br>auf den <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Rigi</strong&gt;">Rigi<a href="https://www.wikidata.org/wiki/Q15291"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>. Da traf ich auch Herrn <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johannes Pupikofer</strong&gt;">Pupikofer<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> wieder an. <br>Nach <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Beromünster</strong&gt;">Beromünster<a href="https://www.wikidata.org/wiki/Q7146"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> kam
+                     ich zu spät: <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Franz Joseph Stalder</strong&gt;">Stalder<a href="https://d-nb.info/gnd/11720613X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                     war einige Stunden vorher begraben <br>worden. Auch in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Kloster St.&#xA;                        Urban</strong&gt;">S. Urban<a href="https://www.wikidata.org/wiki/Q1157569"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> bin ich
+                     gewesen. Die klösterliche Zucht <br>ist da eben nicht gar strenge. <br>Von <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Göttingen</strong&gt;">Göttingen<a href="https://www.wikidata.org/wiki/Q3033"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> habe ich traurige Briefe. Dem Br. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jacob Grimm</strong&gt;">Grimm<a href="https://d-nb.info/gnd/118542257"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                     ist eine <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Charlotte Grimm</strong&gt;">Schwester<a href="https://d-nb.info/gnd/118542222"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> <br>gestorben. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wilhelm Grimm</strong&gt;">Wilhelm<a href="https://d-nb.info/gnd/118542265"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                     ist in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wiesbaden</strong&gt;">Wiesbaden<a href="https://www.wikidata.org/wiki/Q1721"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>. <br>Verzeihen Sie mir
+                     geneigtest die schlechte Schrift und die Eilfertigkeit dieses <br>Briefes, ich muss
+                     zum Appell u. dann wahrscheinlich auf die Wache. Aus dem <br>Studieren wird in
+                     diesen Zeiten nicht viel. <br>Darf ich Sie, schon des <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Altarbildes</span> wegen, um eine recht baldige Antwort <br>bitten. Empfehlen
+                     Sie mich Ihren werthen Hausgenossen bestens und <br>erhalten Sie mir
+                     Ihr freundliches Wohlwollen, der ich bin, <br>hochzuverehrender Herr Baron <br>Ihr gehorsamst
+                     ergebener <br>Wilh.
+                     Wackernagel. <br>Quomodo sedes sola
+                     civitas plena populo? <br>facta est quare redua domina gentinur. </p>
                   </div>
             </section>
             <section id="normalised-text" class="mb-4">
                <h2>Normalisierter Text</h2>
                <div>
-                  Basel 8/8/33. Hochwohlgeborener Herr, Hochzuverehrender Herr Baron! Das traurige
-                  Ereignis, das ich gleich nach meiner Rückkehr hier erlebte, die Unruhe und
-                  Verwirrung, in der sich alles befindet, hat es mir erst jetzt gestattet, Ihrem
-                  Befehl zu genügen und zur Wiederlangung des bewussten Altarbildes Schritte zu
-                  tun. Es steht in der Stadtgerichtsschreibung wohl aufgehoben da und wird mir,
-                  sobald ich es verlange, ausgeliefert werden. Es ist bloß ungewiss, ob vielleicht
-                  noch unerledigte Speditionskosten darauf haften: Ich soll Sie fragen, ob Sie
-                  sich erinnern, in welcher Art Sie es hergesendet haben, gleich auf Ihre oder auf
-                  der Verstorbenen Kosten? Es kommt ganz auf Ihr Gedächtnis an. Wie befehlen Sie
-                  nun, geehrtester Herr Baron, die Übersendung? Doch wohl mit einer Frachtfuhre?
-                  Zur Post würde es zu teuer sein. Und ich denke, den großen Querbalken, den ein
-                  Mann kaum erheben kann und auf dem nichts steht als ein Vers aus den Psalmen,
-                  brauche ich nicht mit einzupacken? Wie schön war die Reise, wie schön besonders
-                  durch Ihre unverdiente Freundlichkeit! Aber Trauer und Verdruss und trübe
-                  Erwartungen stören mir seit jenem unseligen Kriegstage alle Nachfreude der
-                  Erinnerung. Morgen wird es entschieden werden, ob Basel eine Belagerung wagt
-                  oder sich von den Radikalen Gesetze vorschreiben lässt, ob wir eidgenössische
-                  Truppen einnehmen oder nicht. Beides ist schlimm, aber das eine schlimmer, und
-                  ich fürchte, man werde gerade dazu sich entschließen. Von Rapperswil aus ging
-                  ich, weil das schlechte Wetter anhielt, wieder nach Zürich. Dort fanden sich auf
-                  der Wasserkirche noch schöne Sachen vor, z. B. eine Logik und Rhetorik aus dem
-                  Anfange des XI Jh. mit deutschen Beispielen, und auch der Text halb deutsch halb
-                  lateinisch. Unter den Beispielen auch deutsche Verse, dieselben die Docen in
-                  Archivs Beiträgen Bd VII, aus virgilianischen Glossen zu München bekannt gemacht
-                  hat. Besitzen Sie die Beitr. und dürfte ich Sie dann auf einige Tage darum
-                  bitten, um diesen und die folgenden Bände? Von Aarau aus begab ich mich nach
-                  Muri; von da, weil nun endlich das Wetter schön war, und wie schön! auf den
-                  Rigi. Da traf ich auch Herrn Pupikofer wieder an. Nach Beromünster kam ich zu
-                  spät: Stalder war einige Stunden vorher begraben worden. Auch in S. Urban bin
-                  ich gewesen. Die klösterliche Zucht ist da eben nicht gar strenge. Von Göttingen
-                  habe ich traurige Briefe. Dem Br. Grimm ist eine Schwester gestorben. Wilhelm
-                  ist in Wiesbaden. Verzeihen Sie mir geneigtest die schlechte Schrift und die
-                  Eilfertigkeit dieses Briefes, ich muss zum Appell und dann wahrscheinlich auf
-                  die Wache. Aus dem Studieren wird in diesen Zeiten nicht viel. Darf ich Sie,
-                  schon des Altarbildes wegen, um eine recht baldige Antwort bitten. Empfehlen Sie
-                  mich Ihren werten Hausgenossen bestens und erhalten Sie mir Ihr freundliches
-                  Wohlwollen, der ich bin, hochzuverehrender Herr Baron Ihr gehorsamst ergebener
-                  Wilh. Wackernagel. Quomodo sedes sola civitas plena populo? Facta est quare
-                  redua domina gentium.
+                  
+                  <p>Basel 8/8/33. Hochwohlgeborener Herr, Hochzuverehrender Herr Baron! Das traurige
+                     Ereignis, das ich gleich nach meiner Rückkehr hier erlebte, die Unruhe und
+                     Verwirrung, in der sich alles befindet, hat es mir erst jetzt gestattet, Ihrem
+                     Befehl zu genügen und zur Wiederlangung des bewussten Altarbildes Schritte zu
+                     tun. Es steht in der Stadtgerichtsschreibung wohl aufgehoben da und wird mir,
+                     sobald ich es verlange, ausgeliefert werden. Es ist bloß ungewiss, ob vielleicht
+                     noch unerledigte Speditionskosten darauf haften: Ich soll Sie fragen, ob Sie
+                     sich erinnern, in welcher Art Sie es hergesendet haben, gleich auf Ihre oder auf
+                     der Verstorbenen Kosten? Es kommt ganz auf Ihr Gedächtnis an. Wie befehlen Sie
+                     nun, geehrtester Herr Baron, die Übersendung? Doch wohl mit einer Frachtfuhre?
+                     Zur Post würde es zu teuer sein. Und ich denke, den großen Querbalken, den ein
+                     Mann kaum erheben kann und auf dem nichts steht als ein Vers aus den Psalmen,
+                     brauche ich nicht mit einzupacken? Wie schön war die Reise, wie schön besonders
+                     durch Ihre unverdiente Freundlichkeit! Aber Trauer und Verdruss und trübe
+                     Erwartungen stören mir seit jenem unseligen Kriegstage alle Nachfreude der
+                     Erinnerung. Morgen wird es entschieden werden, ob Basel eine Belagerung wagt
+                     oder sich von den Radikalen Gesetze vorschreiben lässt, ob wir eidgenössische
+                     Truppen einnehmen oder nicht. Beides ist schlimm, aber das eine schlimmer, und
+                     ich fürchte, man werde gerade dazu sich entschließen. Von Rapperswil aus ging
+                     ich, weil das schlechte Wetter anhielt, wieder nach Zürich. Dort fanden sich auf
+                     der Wasserkirche noch schöne Sachen vor, z. B. eine Logik und Rhetorik aus dem
+                     Anfange des XI Jh. mit deutschen Beispielen, und auch der Text halb deutsch halb
+                     lateinisch. Unter den Beispielen auch deutsche Verse, dieselben die Docen in
+                     Archivs Beiträgen Bd VII, aus virgilianischen Glossen zu München bekannt gemacht
+                     hat. Besitzen Sie die Beitr. und dürfte ich Sie dann auf einige Tage darum
+                     bitten, um diesen und die folgenden Bände? Von Aarau aus begab ich mich nach
+                     Muri; von da, weil nun endlich das Wetter schön war, und wie schön! auf den
+                     Rigi. Da traf ich auch Herrn Pupikofer wieder an. Nach Beromünster kam ich zu
+                     spät: Stalder war einige Stunden vorher begraben worden. Auch in S. Urban bin
+                     ich gewesen. Die klösterliche Zucht ist da eben nicht gar strenge. Von Göttingen
+                     habe ich traurige Briefe. Dem Br. Grimm ist eine Schwester gestorben. Wilhelm
+                     ist in Wiesbaden. Verzeihen Sie mir geneigtest die schlechte Schrift und die
+                     Eilfertigkeit dieses Briefes, ich muss zum Appell und dann wahrscheinlich auf
+                     die Wache. Aus dem Studieren wird in diesen Zeiten nicht viel. Darf ich Sie,
+                     schon des Altarbildes wegen, um eine recht baldige Antwort bitten. Empfehlen Sie
+                     mich Ihren werten Hausgenossen bestens und erhalten Sie mir Ihr freundliches
+                     Wohlwollen, der ich bin, hochzuverehrender Herr Baron Ihr gehorsamst ergebener
+                     Wilh. Wackernagel. Quomodo sedes sola civitas plena populo? Facta est quare
+                     redua domina gentium.</p>
                   </div>
             </section>
             <section id="translation" class="mb-4">
                <h2>Translation</h2>
                <div>
-                  Basel 8/8/33. Most Noble Sir, Highly Esteemed Mr. Baron! The sad event that I
-                  experienced immediately after my return here, the unrest and confusion in which
-                  everything finds itself, has only now allowed me to comply with your command and
-                  to take steps to recover the aforementioned altar piece. It is well preserved in
-                  the city's court records and will be delivered to me as soon as I demand it. It
-                  is just uncertain whether there are any pending shipping costs attached to it: I
-                  should ask you if you remember how you sent it here, whether on your own costs
-                  or those of the deceased? It all depends on your memory. How do you wish, most
-                  esteemed Mr. Baron, the transmission to be? Perhaps by freight wagon? Sending it
-                  by post would be too expensive. And I suppose I do not need to include the large
-                  crossbeam, which a man can hardly lift and on which nothing stands except a
-                  verse from the Psalms? How beautiful the journey was, especially made beautiful
-                  by your unmerited kindness! But sorrow and annoyance and bleak expectations have
-                  marred all the joyful memories of recollection since that ill-fated day of war.
-                  Tomorrow it will be decided whether Basel dares a siege or subjects itself to
-                  the laws imposed by the radicals, whether we accept federal troops or not. Both
-                  are bad, but one is worse, and I fear that it will be decided. From Rapperswil,
-                  since the bad weather persisted, I went back to Zurich. There on the
-                  Wasserkirche were still beautiful things to be found, such as a logic and
-                  rhetoric from the beginning of the 11th century with German examples, and also
-                  the text half in German half in Latin. Among the examples there were also German
-                  verses, the same ones that Docen made known in the Archive's Contributions Vol.
-                  VII from Virgilian glosses in Munich. Do you own the Contributions, and may I
-                  then ask you for them for a few days, for this and the following volumes? From
-                  Aarau I went to Muri; from there, as the weather finally became beautiful, and
-                  how beautiful! to the Rigi. There, I met Mr. Pupikofer again. I arrived in
-                  Beromünster too late: Stalder had been buried a few hours earlier. I also
-                  visited St. Urban. The monastic discipline there is not very strict. I have
-                  received sad letters from Göttingen. Mr. Grimm's sister has died. Wilhelm is in
-                  Wiesbaden. Please excuse the poor handwriting and the haste of this letter, I
-                  must go to the roll call and then probably to the watch. During these times,
-                  much studying cannot be done. May I ask you, already for the sake of the altar
-                  piece, for a very prompt reply. Please convey my best regards to your esteemed
-                  household members and maintain your kind goodwill towards me, as I am, Highly
-                  Esteemed Mr. Baron Your most obediently devoted Wilh. Wackernagel. Quomodo sedes
-                  sola civitas plena populo? facta est quare redua domina gentinur.
+                  
+                  <p>Basel 8/8/33. Most Noble Sir, Highly Esteemed Mr. Baron! The sad event that I
+                     experienced immediately after my return here, the unrest and confusion in which
+                     everything finds itself, has only now allowed me to comply with your command and
+                     to take steps to recover the aforementioned altar piece. It is well preserved in
+                     the city's court records and will be delivered to me as soon as I demand it. It
+                     is just uncertain whether there are any pending shipping costs attached to it: I
+                     should ask you if you remember how you sent it here, whether on your own costs
+                     or those of the deceased? It all depends on your memory. How do you wish, most
+                     esteemed Mr. Baron, the transmission to be? Perhaps by freight wagon? Sending it
+                     by post would be too expensive. And I suppose I do not need to include the large
+                     crossbeam, which a man can hardly lift and on which nothing stands except a
+                     verse from the Psalms? How beautiful the journey was, especially made beautiful
+                     by your unmerited kindness! But sorrow and annoyance and bleak expectations have
+                     marred all the joyful memories of recollection since that ill-fated day of war.
+                     Tomorrow it will be decided whether Basel dares a siege or subjects itself to
+                     the laws imposed by the radicals, whether we accept federal troops or not. Both
+                     are bad, but one is worse, and I fear that it will be decided. From Rapperswil,
+                     since the bad weather persisted, I went back to Zurich. There on the
+                     Wasserkirche were still beautiful things to be found, such as a logic and
+                     rhetoric from the beginning of the 11th century with German examples, and also
+                     the text half in German half in Latin. Among the examples there were also German
+                     verses, the same ones that Docen made known in the Archive's Contributions Vol.
+                     VII from Virgilian glosses in Munich. Do you own the Contributions, and may I
+                     then ask you for them for a few days, for this and the following volumes? From
+                     Aarau I went to Muri; from there, as the weather finally became beautiful, and
+                     how beautiful! to the Rigi. There, I met Mr. Pupikofer again. I arrived in
+                     Beromünster too late: Stalder had been buried a few hours earlier. I also
+                     visited St. Urban. The monastic discipline there is not very strict. I have
+                     received sad letters from Göttingen. Mr. Grimm's sister has died. Wilhelm is in
+                     Wiesbaden. Please excuse the poor handwriting and the haste of this letter, I
+                     must go to the roll call and then probably to the watch. During these times,
+                     much studying cannot be done. May I ask you, already for the sake of the altar
+                     piece, for a very prompt reply. Please convey my best regards to your esteemed
+                     household members and maintain your kind goodwill towards me, as I am, Highly
+                     Esteemed Mr. Baron Your most obediently devoted Wilh. Wackernagel. Quomodo sedes
+                     sola civitas plena populo? facta est quare redua domina gentinur.</p>
                   </div>
             </section>
          </div>
-      </div><script src="https://unpkg.com/leaflet/dist/leaflet.js"></script><script>
+      </main>
+      <footer class="bg-dark text-white text-center py-3">
+         <div class="container">
+            <p class="mb-0"><a href="../letters.html">Back to the Letters</a></p>
+         </div>
+      </footer><script src="https://unpkg.com/leaflet/dist/leaflet.js"></script><script>
                     // Create the map and set its view to a default coordinate and zoom level.
-                    var map = L.map('mapid').setView([47.55472222,7.59055556], 7);
-                    // Set up the OpenStreetMap tile layer.
-                    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                    attribution: 'Map data <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
+                    var map = L.map('mapid', { scrollWheelZoom: false }).setView([47.55472222,7.59055556], 7);
+                    // Muted basemap (CARTO Positron) instead of the default colourful OSM tiles,
+                    // to match the edition's restrained palette.
+                    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+                    attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+                    subdomains: 'abcd',
+                    maxZoom: 19
                     }).addTo(map);
-                    
-                    
-                    // Optionally add a marker at the center
-                    
-                    // Define custom marker icons.
-                    var mentionedIcon = L.icon({
-                    iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
-                    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/images/marker-shadow.png',
-                    iconSize: [25, 41],
-                    iconAnchor: [12, 41],
-                    popupAnchor: [1, -34],
-                    shadowSize: [41, 41]
-                    });
-                    
-                    L.marker([47.55472222,7.59055556]).addTo(map)
+
+                    // Sender's place: filled circle in the edition's accent colour.
+                    L.circleMarker([47.55472222,7.59055556], {
+                    radius: 8, color: '#143761', weight: 2, fillColor: '#1d4e89', fillOpacity: 0.85
+                    }).addTo(map)
                     .bindPopup('Basel')
                     .openPopup();
+
+                    // Mentioned places: smaller, lighter circles in a secondary tone.
                     
-                    
-                        
+
                         var popupText = "Basel";
-                        L.marker([47.55472222,7.59055556], {icon: mentionedIcon}).addTo(map)
+                        L.circleMarker([47.55472222,7.59055556], {
+                        radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75
+                        }).addTo(map)
                         .bindPopup(popupText);
                     
-                        
+
                         var popupText = "Raperswil";
-                        L.marker([47.63676, 9.04676], {icon: mentionedIcon}).addTo(map)
+                        L.circleMarker([47.63676, 9.04676], {
+                        radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75
+                        }).addTo(map)
                         .bindPopup(popupText);
                     
-                        
+
                         var popupText = "Zürich";
-                        L.marker([47.374444,8.541111], {icon: mentionedIcon}).addTo(map)
+                        L.circleMarker([47.374444,8.541111], {
+                        radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75
+                        }).addTo(map)
                         .bindPopup(popupText);
                     
-                        
+
                         var popupText = "Wasserkirche, Zürich";
-                        L.marker([47.369611111111, 8.5433333333333], {icon: mentionedIcon}).addTo(map)
+                        L.circleMarker([47.369611111111, 8.5433333333333], {
+                        radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75
+                        }).addTo(map)
                         .bindPopup(popupText);
                     
-                        
+
                         var popupText = "München";
-                        L.marker([48.139722,11.574444], {icon: mentionedIcon}).addTo(map)
+                        L.circleMarker([48.139722,11.574444], {
+                        radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75
+                        }).addTo(map)
                         .bindPopup(popupText);
                     
-                        
+
                         var popupText = "Muri";
-                        L.marker([47.274722222222, 8.3416666666667], {icon: mentionedIcon}).addTo(map)
+                        L.circleMarker([47.274722222222, 8.3416666666667], {
+                        radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75
+                        }).addTo(map)
                         .bindPopup(popupText);
                     
-                        
+
                         var popupText = "Rigi";
-                        L.marker([47.05, 8.4666666666667], {icon: mentionedIcon}).addTo(map)
+                        L.circleMarker([47.05, 8.4666666666667], {
+                        radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75
+                        }).addTo(map)
                         .bindPopup(popupText);
                     
-                        
+
                         var popupText = "Beromünster";
-                        L.marker([47.199722222222, 8.2], {icon: mentionedIcon}).addTo(map)
+                        L.circleMarker([47.199722222222, 8.2], {
+                        radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75
+                        }).addTo(map)
                         .bindPopup(popupText);
                     
-                        
+
                         var popupText = "Kloster St. Urban";
-                        L.marker([47.231944444444, 7.84], {icon: mentionedIcon}).addTo(map)
+                        L.circleMarker([47.231944444444, 7.84], {
+                        radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75
+                        }).addTo(map)
                         .bindPopup(popupText);
                     
-                        
+
                         var popupText = "Göttingen";
-                        L.marker([51.533889,9.935556], {icon: mentionedIcon}).addTo(map)
+                        L.circleMarker([51.533889,9.935556], {
+                        radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75
+                        }).addTo(map)
                         .bindPopup(popupText);
                     
-                        
+
                         var popupText = "Wiesbaden";
-                        L.marker([50.0825, 8.24], {icon: mentionedIcon}).addTo(map)
+                        L.circleMarker([50.0825, 8.24], {
+                        radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75
+                        }).addTo(map)
                         .bindPopup(popupText);
                     </script><script>
                     // Initialize all tooltips

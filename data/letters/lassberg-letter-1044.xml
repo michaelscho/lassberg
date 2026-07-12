@@ -59,8 +59,8 @@
                     target="../register/lassberg-literature.xml#lassberg-literature-0026"
                     ><rs>Samlung deutscher Gedichte aus dem XII., XIII. und XIV. Jahrhundert. 3
                     Bde.</rs></ref> <ref type="cmif:mentionsBibl"
-                    target="../register/lassberg-literature.xml#lassberg-literature-0013"
-                    ><rs>Unbekannt</rs></ref> <ref type="cmif:mentionsBibl"
+                    target="../register/lassberg-literature.xml#lassberg-literature-0194"
+                    ><rs>Trojanerkrieg</rs></ref> <ref type="cmif:mentionsBibl"
                     target="../register/lassberg-literature.xml#lassberg-literature-0027"
                     ><rs>Literarischer Grundriß zur Geschichte der deutschen Poesie: von der
                     ältesten Zeit bis in das sechzehnte Jahrhundert</rs></ref> <ref
@@ -119,6 +119,7 @@
                 <change when="2023-08-29" who="#MiS" status="draft">Manual markup and
                     proofreading</change>
                 <change when="2023-11-22" who="#MiS" status="draft">Finished markup</change>
+                <change when="2026-07-10" who="#check-letter-annotations" status="done">Checked via check-letter-annotations skill (Vollständigkeit, Verlinkung, Struktur, Header/Body-Konsistenz, Formeln)</change>
                 <!-- <change when="" who="" status="puplished">Final proofreading</change> -->
             </listChange>
         </revisionDesc>
@@ -127,8 +128,12 @@
     <text>
         <body>
             <div type="print" resp="ocr">
-                <p><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043"
-                    >Eppishausen</rs> am 4. Nov. 1825. Mein verertester Herr! Ir erst heute
+                <opener>
+                    <dateline><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043"
+                    >Eppishausen</rs> am 4. Nov. 1825.</dateline>
+                    <salute>Mein verertester Herr!</salute>
+                </opener>
+                <p>Ir erst heute
                     erhaltenes Schreiben vom 29. Weinmonat hat mir viele Freude gemacht: es tut
                     einem alten Manne immer wol, wenn man an jn denkt; noch mer, wenn man seiner mit
                     Liebe gedenkt. Ich bitte Sie zu glauben, daß ich einen nicht kleinen Wert auf Ir
@@ -137,7 +142,7 @@
                     type="bibl" key="../register/lassberg-literature.xml#lassberg-literature-0026"
                     >Myller'sche Sammlung</rs>; es ist auch ein dritter Teil vorhanden der nie in
                     den Buchhandel gekommen ist und den ich nicht besize; er enthält den <rs
-                    type="bibl" key="../register/lassberg-literature.xml#lassberg-literature-0013"
+                    type="bibl" key="../register/lassberg-literature.xml#lassberg-literature-0194"
                     >Krieg von Troja des Wolfram von Eschilbach</rs>. Es freut mich ungemein, daß
                     sie sich mit der teutchen Literatur des Mittelalters näher bekannt machen
                     wollen; die Sache kann nicht anderst als dabei gewinnen, und mich würde es ganz
@@ -233,10 +238,14 @@
                     sie hergekommen sind. Ich sende Inen das einzige Exemplar vom III. Bande des <rs
                     type="bibl" key="../register/lassberg-literature.xml#lassberg-literature-0022"
                     >Liedersaales</rs> das ich bei Handen habe, denn es ist beßer, daß es jre
-                    Lesebegierde befriedige als unbenuzt bei mir liege, behalten Sie es als Andenken
-                    an Iren ergebensten <rs type="person"
+                    Lesebegierde befriedige als unbenuzt bei mir liege.</p>
+                <closer>
+                    <salute>behalten Sie es als Andenken
+                    an Iren ergebensten</salute>
+                    <signed><rs type="person"
                     key="../register/lassberg-persons.xml#lassberg-correspondent-0373">J. v.
-                    Laßberg</rs>.</p>
+                    Laßberg</rs></signed>.
+                </closer>
             </div>
             <div type="normalized" resp="GPT3.5">
                 <p>Eppishausen am 4. Nov. 1825. Mein verehrtester Herr! Ihr erst heute erhaltenes

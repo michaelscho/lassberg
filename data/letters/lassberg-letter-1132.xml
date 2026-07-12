@@ -99,6 +99,9 @@
                     <ref type="cmif:mentionsPlace"
                         target="../register/lassberg-places.xml#lassberg-place-0025"
                         ><rs>Bischofszell</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0179"
+                        ><rs>Johann Adam Pupikofer</rs></ref>
                 </note>
             </correspDesc>
         </profileDesc>
@@ -107,6 +110,7 @@
                 <change when="2023-08-01" who="#MiS" status="draft">File created and preprocessed automatically</change>
                 <change when="2023-08-29" who="#MiS" status="draft">Manual markup and proofreading</change>
                 <change when="2023-11-22" who="#MiS" status="draft">Finished markup</change>
+                <change when="2026-07-10" who="#check-letter-annotations" status="done">Checked via check-letter-annotations skill (Vollständigkeit, Verlinkung, Struktur, Header/Body-Konsistenz, Formeln)</change>
                 <!-- <change when="" who="" status="puplished">Final proofreading</change> -->
             </listChange>
         </revisionDesc>    
@@ -114,8 +118,11 @@
     </teiHeader>
     <text>
         <body>
-            <div type="original" resp="ocr">
-                <p>Hochwohlgeborner, verehrtester Herr und Gönner! Schon die verflossene Woche hätte
+            <div type="print" resp="ocr">
+                <opener>
+                    <salute>Hochwohlgeborner, verehrtester Herr und Gönner!</salute>
+                </opener>
+                <p>Schon die verflossene Woche hätte
                     ich Ihnen gerne mit <rs type="person"
                     key="../register/lassberg-persons.xml#lassberg-correspondent-0394">Herrn
                     Oberamtmann</rs> einen Besuch abgestattet, und Ihnen einige Ihrer Bücher wieder
@@ -157,10 +164,17 @@
                             type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0047">Brunschwyler</rs>, in der
                     Erwartung, daß Sie bald selbst nach <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0025"
                     >Bischofzell</rs> kommen, noch für keinen Religions oder Musikunterricht
-                    gesorgt, wird Ihnen aber darüber Vorschläge machen. Genehmigen Sie,
+                    gesorgt, wird Ihnen aber darüber Vorschläge machen.</p>
+                <closer>
+                    <salute>Genehmigen Sie,
                     Hochwohlgeborner, hochzuverehrender Herr und Gönner, die Versicherung meiner
                     aufrichtigsten Hochachtung und Dankbarkeit, womit ich die Ehre habe zu sein
-                    Hochdero Ergebenster Diac. Pupikofer. Bischofzell den 12. Dec. 1826.</p>
+                    Hochdero Ergebenster</salute>
+                    <signed>Diac. <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0179">Pupikofer</rs></signed>.
+                    <dateline><rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0025">Bischofzell</rs> den 12. Dec. 1826</dateline>.
+                </closer>
             </div>
             <div type="normalized" resp="GPT3.5">
                 <p>Sehr geehrter, verehrter Herr und Gönner! Schon die vergangene Woche hätte ich

@@ -1,102 +1,262 @@
+/* =========================================================================
+   The Laßberg Letters — shared stylesheet
+   Used by index.html and both XSLT-generated shells (letters.xsl,
+   letter-to-html.xsl) via a relative <link>, so every rule here applies
+   across the welcome page, the register, and individual letter pages.
+   ========================================================================= */
+
+:root {
+    --ink: #1e2a38;          /* cool dark slate, not pure black */
+    --ink-muted: #5b6b7a;
+    --accent: #1d4e89;       /* muted archival blue instead of Bootstrap primary */
+    --accent-dark: #143761;
+    --paper: #f6f7f9;        /* soft cool off-white instead of stock Bootstrap grey */
+    --paper-alt: #eaedf2;
+    --rule: #d6dce4;
+    --manuscript: #3f6b5c;   /* muted green-teal: manuscript-sourced transcription */
+    --print-source: #8a6f45; /* muted brown: print/OCR-sourced transcription */
+    --footer-accent: #dcbf8a; /* warm gold on the dark footer — a classic navy/gold pairing */
+}
+
 /* --- FONTS & TYPOGRAPHY --- */
 body {
     font-family: 'Roboto', sans-serif;
-    color: #333;
+    color: var(--ink);
     line-height: 1.7;
+    background-color: var(--paper);
 }
 
 h1, h2, h3, h4, h5, h6, .navbar-brand {
     font-family: 'Lora', serif;
+    color: var(--ink);
 }
 
 h2 {
-    border-bottom: 2px solid #0d6efd; /* Bootstrap primary color */
-    padding-bottom: 10px;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 0.6rem;
     margin-bottom: 1.5rem !important;
-}
-
-/* --- COLORS & THEME --- */
-body {
-    background-color: #f8f9fa; /* Light grey background */
+    font-weight: 700;
 }
 
 /* --- NAVIGATION --- */
+.navbar.bg-dark {
+    background-color: var(--ink) !important;
+}
+
 .navbar-brand {
-    font-weight: bold;
-    font-size: 1.5rem;
+    font-weight: 700;
+    font-size: 1.4rem;
+    letter-spacing: 0.01em;
 }
 
-/* --- HERO SECTION --- */
-.hero-section {
-    position: relative;
-    height: 50vh; /* Taller hero section */
-    background: url('../img/Lassberg.jpg') no-repeat center center;
-    background-size: cover;
-    background-position: top;
+/* --- FOOTER --- */
+footer {
+    background-color: var(--ink) !important;
+    font-size: 0.9rem;
 }
 
-.hero-section::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(13, 27, 51, 0.6); /* Dark blue overlay */
+footer a {
+    color: var(--footer-accent);
+    text-decoration: underline;
+    text-decoration-color: rgba(220, 191, 138, 0.4);
+    text-underline-offset: 2px;
 }
 
-.hero-section .container {
-    position: relative;
-    z-index: 2;
+footer a:hover {
+    color: #fff;
+    text-decoration-color: currentColor;
 }
 
-.hero-title {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-}
-.hero-subtitle {
-    font-weight: 400;
+/* --- MASTHEAD (replaces the old photo-hero) --- */
+.page-masthead {
+    padding: 4rem 0 3rem;
+    border-bottom: 1px solid var(--rule);
+    background-color: var(--paper-alt);
+    text-align: left;
 }
 
+.masthead-eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.8rem;
+    color: var(--accent);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.masthead-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.masthead-subtitle {
+    font-size: 1.15rem;
+    color: var(--ink-muted);
+    max-width: 40em;
+    margin-bottom: 0;
+}
+
+/* --- PAGE HEADER (letters.xsl / letter-to-html.xsl shells) --- */
+.page-header {
+    background-color: var(--paper-alt) !important;
+    border-bottom: 1px solid var(--rule);
+}
 
 /* --- MAIN CONTENT & SECTIONS --- */
 main p {
-    font-size: 1.1rem;
-    margin-bottom: 1.5rem;
+    font-size: 1.05rem;
+    margin-bottom: 1.4rem;
 }
 
-main a {
-    color: #0d6efd;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-main a:hover {
-    color: #0a58ca;
+main a, .accordion-body a {
+    color: var(--accent);
     text-decoration: underline;
+    text-decoration-color: rgba(29, 78, 137, 0.35);
+    text-underline-offset: 2px;
+    transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+main a:hover, .accordion-body a:hover {
+    color: var(--accent-dark);
+    text-decoration-color: currentColor;
 }
 
 .bg-light {
-    background-color: #ffffff !important; /* Use white for the goals section */
+    background-color: var(--paper-alt) !important;
 }
 
-/* --- PROJECT GOALS SECTION --- */
-#goals .bi {
-    transition: transform 0.3s ease;
+/* --- PROJECT GOALS (definition-list layout, replaces icon-circle cards) --- */
+.goals-section {
+    padding: 3rem 0;
 }
 
-#goals .col-md-4:hover .bi {
-    transform: scale(1.1);
+.goals-list dt {
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    color: var(--accent-dark);
+    margin-top: 1.5rem;
+    font-size: 1.05rem;
 }
 
-/* --- ENTITY SPANS & LEGACY --- */
-/* (Kept from original for compatibility) */
-span.rs-person { background-color: #d1ecf1; padding: 2px 4px; border-radius: 4px; }
-span.rs-place { background-color: #e48cf9; padding: 2px 4px; border-radius: 4px; }
-span.rs-bibl { background-color: #aef5c2; padding: 2px 4px; border-radius: 4px; }
-span.rs-object { background-color: #f9b6a9; padding: 2px 4px; border-radius: 4px; }
+.goals-list dt:first-child {
+    margin-top: 0;
+}
 
-#mapid { height: 400px; }
+.goals-list dd {
+    margin-left: 0;
+    margin-bottom: 0;
+    color: var(--ink-muted);
+}
+
+/* --- STATUS / DISCLAIMER --- */
+.alert-warning {
+    background-color: var(--paper-alt);
+    border: 1px solid var(--rule);
+    border-left: 3px solid var(--accent);
+    color: var(--ink);
+}
+
+/* =========================================================================
+   Letter transcription — diplomatic text and its apparatus
+   ========================================================================= */
+
+#original-text, .collapsible-content {
+    font-family: 'Lora', serif;
+    font-size: 1.08rem;
+    line-height: 1.85;
+}
+
+/* Source-of-transcription badge next to the "Original Text" heading */
+.transcription-source {
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding: 0.2rem 0.55rem;
+    border-radius: 3px;
+    vertical-align: middle;
+    margin-left: 0.75rem;
+}
+
+.transcription-source.badge-manuscript {
+    color: var(--manuscript);
+    background-color: rgba(63, 93, 84, 0.12);
+}
+
+.transcription-source.badge-print {
+    color: var(--print-source);
+    background-color: rgba(122, 106, 82, 0.14);
+}
+
+/* Epistolary formula elements (docs/TEI.md: opener/closer/dateline/salute/signed/address) —
+   deliberately understated: same voice as the surrounding prose, just grouped a little tighter
+   than body paragraphs so the formula reads as one unit. */
+.letter-opener, .letter-closer {
+    margin: 0.9rem 0;
+}
+
+.letter-opener p, .letter-closer p {
+    margin-bottom: 0.2rem;
+}
+
+.letter-dateline, .letter-salute, .letter-signed, .letter-address {
+    margin-bottom: 0.2rem;
+}
+
+.letter-postscript {
+    margin-top: 1.2rem;
+    padding-top: 0.9rem;
+    border-top: 1px solid var(--rule);
+}
+
+/* Archival apparatus (docs/TEI.md: <fw>/<add>) — deliberately not part of the
+   letter's own voice: sans-serif, muted, bracketed, smaller. */
+.letter-fw, .letter-add {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.85rem;
+    font-style: normal;
+    color: var(--ink-muted);
+    background-color: var(--paper-alt);
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    padding: 0.35rem 0.6rem;
+    margin: 0.5rem 0;
+    display: inline-block;
+}
+
+.letter-fw::before {
+    content: "\2696\FE0E  ";
+    opacity: 0.6;
+}
+
+.letter-add::before {
+    content: "\21B3 ";
+    opacity: 0.6;
+}
+
+/* --- ENTITY SPANS --- */
+/* Subtle colored underline instead of solid highlighter backgrounds. */
+span.rs-person, span.rs-place, span.rs-bibl, span.rs-object {
+    background: none;
+    padding: 0;
+    border-radius: 0;
+    border-bottom: 2px solid;
+    cursor: help;
+}
+
+span.rs-person { border-bottom-color: #b5622b; }
+span.rs-place  { border-bottom-color: #8a3a91; }
+span.rs-bibl   { border-bottom-color: #3f7d4a; }
+span.rs-object { border-bottom-color: #b8860b; }
+
+#mapid {
+    height: 340px;
+    border-radius: 4px;
+    border: 1px solid var(--rule);
+}
 
 .tooltip {
     z-index: 1050 !important;
@@ -105,4 +265,95 @@ span.rs-object { background-color: #f9b6a9; padding: 2px 4px; border-radius: 4px
 .mirador-parent {
     height: 100%;
     position: relative;
+}
+
+/* --- PERSONS / PLACES REGISTERS --- */
+.mention-badge {
+    font-size: 0.85rem;
+    color: var(--ink-muted);
+    white-space: nowrap;
+}
+
+#places-map {
+    height: 420px;
+    border-radius: 4px 4px 0 0;
+}
+
+a.place-map-link {
+    text-decoration-style: dotted;
+}
+
+/* --- TABLES / ACCORDIONS (register page) --- */
+.card {
+    border-color: var(--rule);
+}
+
+.card.shadow-sm {
+    box-shadow: 0 1px 3px rgba(30, 42, 56, 0.08) !important;
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--accent-dark);
+    background-color: var(--paper-alt);
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.2rem rgba(29, 78, 137, 0.15);
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+    background-color: var(--paper-alt);
+}
+
+/* Suppress DataTables' built-in dt-control marker (drawn via a CSS pseudo-element in
+   dataTables.bootstrap5.min.css) now that we render our own .row-expand-btn instead. */
+table.dataTable > tbody > tr td.dt-control:before,
+table.dataTable > tbody > tr.dt-hasChild td.dt-control:before {
+    display: none !important;
+}
+
+/* Row expand/collapse control (register table) */
+.row-expand-btn {
+    width: 1.75rem;
+    height: 1.75rem;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--rule);
+    border-radius: 50%;
+    background-color: #fff;
+    color: var(--ink-muted);
+    line-height: 1;
+    transition: transform 0.15s ease, background-color 0.15s ease, color 0.15s ease;
+}
+
+.row-expand-btn:hover {
+    background-color: var(--paper-alt);
+    color: var(--accent-dark);
+    border-color: var(--accent);
+}
+
+.row-expand-btn[aria-expanded="true"] {
+    background-color: var(--accent);
+    color: #fff;
+    border-color: var(--accent);
+    transform: rotate(180deg);
+}
+
+/* --- SEARCH BOX (MiniSearch, see js/letters.js) --- */
+#letter-search-results {
+    max-height: 320px;
+    overflow-y: auto;
+}
+
+#letter-search-results .list-group-item {
+    border-color: var(--rule);
+}
+
+#letter-search-results .search-kind {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--ink-muted);
 }

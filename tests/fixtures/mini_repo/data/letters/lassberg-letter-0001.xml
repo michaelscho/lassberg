@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-0001">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt><title>Fixture letter 0001</title></titleStmt>
+            <sourceDesc><msDesc><msIdentifier>
+                <settlement>Testort</settlement>
+                <repository>Testarchiv</repository>
+                <idno type="signature"/>
+            </msIdentifier></msDesc></sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <correspDesc xml:id="correspDesc-lassberg-letter-0001">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0001" ref="https://d-nb.info/gnd/000001">Test Sender</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0001">Testort</placeName>
+                    <date when="1825-01-01">01.01.1825</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0002" ref="https://d-nb.info/gnd/000002">Test Empfaenger</persName>
+                </correspAction>
+                <note type="mentioned">
+                    <ref type="cmif:mentionsBibl" target="../register/lassberg-literature.xml#lassberg-literature-0001"><rs>Testwerk</rs></ref>
+                    <ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0001"><rs>Testort</rs></ref>
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-01-01" who="#test" status="done">Fixture, manually marked reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="original" resp="#test">
+                <p>Ich sende Ihnen das <rs type="bibl" key="../register/lassberg-literature.xml#lassberg-literature-0001">Testwerk</rs> aus <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0001">Testort</rs>.</p>
+            </div>
+            <div type="normalized" resp="test">
+                <p>Ich sende Ihnen das Testwerk aus Testort, normalisiert.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

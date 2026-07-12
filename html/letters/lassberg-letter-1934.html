@@ -5,32 +5,42 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>The Lassberg Letters</title>
       <link href="../../css/styles.css" rel="stylesheet">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script><script src="../../js/letters.js"></script><link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"><script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script></head>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script><link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"><script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script></head>
    <body>
-      <div id="app" class="container">
-         <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
-            <div class="container-fluid"><a class="navbar-brand" href="#">Laßberg Letters</a><ul class="navbar-nav">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+         <div class="container"><a class="navbar-brand" href="../../index.html">The Laßberg Letters</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ms-auto">
                   <li class="nav-item"><a class="nav-link" href="../../index.html">Welcome</a></li>
                   <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
-                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb">Data Analysis</a></li>
-                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg">Repository</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../persons.html">Persons</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../places.html">Places</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
                </ul>
             </div>
-         </nav>
-         <div class="container my-4">
-            <header class="mb-4">
-               <h1>Brief von Wilhelm Wackernagel an Joseph von Laßberg (11.10.1837).</h1>
-               <p class="lead">
-                  Textfassung auf Basis der Transkription durch Transkribus korrigiert und in TEI
+         </div>
+      </nav>
+      <header class="page-header py-4">
+         <div class="container">
+            <h1 class="mb-2">Brief von Wilhelm Wackernagel an Joseph von Laßberg (11.10.1837).</h1>
+            <p class="lead mb-0">
+               
+               <p>Textfassung auf Basis der Transkription durch Transkribus korrigiert und in TEI
                   überführt. Automatisierte NER-Erkennung und Identifikation durch Flair geprüft,
                   korrigiert und ergänzt. Normalisierung, Zusammenfassung und Übersetzung durch
-                  GPT-4. Lizenz: 
-                  
-                  <a href="https://creativecommons.org/licenses/by/4.0/">CC BY
-                     4.0</a>
-                  
-                  </p>
-            </header>
+                  GPT-4. Lizenz: </p>
+               
+               <a href="https://creativecommons.org/licenses/by/4.0/">CC BY
+                  4.0</a>
+               
+               </p>
+         </div>
+      </header>
+      <main class="py-4">
+         <div class="container">
             <section id="map" class="mb-4">
                <div id="mapid"></div>
             </section>
@@ -42,90 +52,95 @@
                <p><strong>Gedruck in: </strong><a href=""></a></p>
             </section>
             <section id="original-text" class="mb-4">
-               <h2>Original Text</h2>
+               <h2>Original Text
+                  <span class="transcription-source badge-manuscript" title="Diplomatische Transkription der Handschrift">Transcribed from the manuscript (Transkribus)</span></h2>
                <div>
-                  Hochgeehrter Herr
-                  Baron, diese
-                  wenigen Zeilen sollen Sie nur benachrichtigen, dass ich in der
-                  künftigen Woche (wahrscheinlich schon am Dienstag) von Ihrer gütigen
-                  Erlaubniss Gebrauch zu machen und bei Ihnen „in gastes wise" einzusprechen gedenke. ich
-                  mache Ihnen
-                  diese Anzeige so spät, weil ich bis auf den heutigen Tag fürchten muste,
-                  die Nachwehen einer unwillkomme nen Krankheit, die mich sechs Wochen lang ans Haus
-                  und ans Bett
-                  gefesselt hat, würden mir jede, selbst die kleinste
-                  Hochzeitreise unmöglich machen. Der liebe Gott hat mir aber darüber weggeholfen, so dass mir
-                  nun auch die
-                  Freude nicht entgehen wird, in diesen meinen schönsten Tagen
-                  Sie zu besuchen. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Caroline Luise Wackernagel-Bluntschli</strong&gt;">Meine
-                     Braut<a href="https://d-nb.info/gnd/113182346X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> und mich selbst Ihrem und Ihrer verehr ten <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Caroline Luise Wackernagel-Bluntschli</strong&gt;">Frau Gemahlinn<a href="https://d-nb.info/gnd/113182346X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> geneigtem Wohlwollen angelegent lich empfehlend,
-                  bin ich in Erwartung eines heitern Wiedersehens Ihr ganz ergebener gez: Wilh. Wackernagel Dr. (bei <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Caspar Bluntschli</strong&gt;">Prof. Bluntschli<a href="https://d-nb.info/gnd/118512129"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> zum Steinböckli) Zürich 11/10/37. 
+                  
+                  <p><br>Hochgeehrter Herr
+                     Baron, <br>diese
+                     wenigen Zeilen sollen Sie nur benachrichtigen, dass <br>ich in der
+                     künftigen Woche (wahrscheinlich schon am Dienstag) <br>von Ihrer gütigen
+                     Erlaubniss Gebrauch zu machen und bei <br>Ihnen „in gastes wise" einzusprechen gedenke. ich
+                     mache <br>Ihnen
+                     diese Anzeige so spät, weil ich bis auf den heutigen <br>Tag fürchten muste,
+                     die Nachwehen einer unwillkomme <br>nen Krankheit, die mich sechs Wochen lang ans Haus
+                     <br>und ans Bett
+                     gefesselt hat, würden mir jede, selbst die <br>kleinste
+                     Hochzeitreise unmöglich machen. Der liebe <br>Gott hat mir aber darüber weggeholfen, so dass mir
+                     nun <br>auch die
+                     Freude nicht entgehen wird, in diesen meinen <br>schönsten Tagen
+                     Sie zu besuchen. <br><span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Caroline Luise Wackernagel-Bluntschli</strong&gt;">Meine
+                        Braut<a href="https://d-nb.info/gnd/113182346X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> und mich selbst Ihrem und Ihrer verehr <br>ten <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Caroline Luise Wackernagel-Bluntschli</strong&gt;">Frau Gemahlinn<a href="https://d-nb.info/gnd/113182346X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> geneigtem Wohlwollen angelegent <br>lich empfehlend,
+                     bin ich in Erwartung eines heitern <br>Wiedersehens <br>Ihr ganz ergebener <br>gez: Wilh. Wackernagel Dr. <br>(bei <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Caspar Bluntschli</strong&gt;">Prof. Bluntschli<a href="https://d-nb.info/gnd/118512129"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> zum Steinböckli) <br>Zürich 11/10/37. </p>
                   </div>
             </section>
             <section id="normalised-text" class="mb-4">
                <h2>Normalisierter Text</h2>
                <div>
-                  Hochgeehrter Herr Baron, diese wenigen Zeilen sollen Sie nur benachrichtigen,
-                  dass ich in der künftigen Woche (wahrscheinlich schon am Dienstag) von Ihrer
-                  gütigen Erlaubnis Gebrauch zu machen und bei Ihnen „in gastesweise"
-                  einzusprechen gedenke. Ich mache Ihnen diese Anzeige so spät, weil ich bis auf
-                  den heutigen Tag fürchten musste, die Nachwehen einer unwillkommenen Krankheit,
-                  die mich sechs Wochen lang ans Haus und ans Bett gefesselt hat, würden mir jede,
-                  selbst die kleinste Hochzeitreise unmöglich machen. Der liebe Gott hat mir aber
-                  darüber weggeholfen, so dass mir nun auch die Freude nicht entgehen wird, in
-                  diesen meinen schönsten Tagen Sie zu besuchen. Meine Braut und mich selbst Ihrem
-                  und Ihrer verehrten Frau Gemahlin geneigtem Wohlwollen angelegentlich
-                  empfehlend, bin ich in Erwartung eines heiteren Wiedersehens Ihr ganz ergebener
-                  gez: Wilh. Wackernagel Dr. (bei Prof. Bluntschli zum Steinböckli) Zürich,
-                  11/10/37.
+                  
+                  <p>Hochgeehrter Herr Baron, diese wenigen Zeilen sollen Sie nur benachrichtigen,
+                     dass ich in der künftigen Woche (wahrscheinlich schon am Dienstag) von Ihrer
+                     gütigen Erlaubnis Gebrauch zu machen und bei Ihnen „in gastesweise"
+                     einzusprechen gedenke. Ich mache Ihnen diese Anzeige so spät, weil ich bis auf
+                     den heutigen Tag fürchten musste, die Nachwehen einer unwillkommenen Krankheit,
+                     die mich sechs Wochen lang ans Haus und ans Bett gefesselt hat, würden mir jede,
+                     selbst die kleinste Hochzeitreise unmöglich machen. Der liebe Gott hat mir aber
+                     darüber weggeholfen, so dass mir nun auch die Freude nicht entgehen wird, in
+                     diesen meinen schönsten Tagen Sie zu besuchen. Meine Braut und mich selbst Ihrem
+                     und Ihrer verehrten Frau Gemahlin geneigtem Wohlwollen angelegentlich
+                     empfehlend, bin ich in Erwartung eines heiteren Wiedersehens Ihr ganz ergebener
+                     gez: Wilh. Wackernagel Dr. (bei Prof. Bluntschli zum Steinböckli) Zürich,
+                     11/10/37.</p>
                   </div>
             </section>
             <section id="translation" class="mb-4">
                <h2>Translation</h2>
                <div>
-                  Highly esteemed Baron, These few lines are merely to inform you that I intend to
-                  take advantage of your kind permission and visit you "as a guest" in the coming
-                  week (probably as early as Tuesday). I am notifying you of this so late because,
-                  until today, I had to fear the aftereffects of an unwelcome illness that has
-                  confined me to the house and bed for six weeks, which would have made even the
-                  smallest honeymoon impossible. However, the dear God has helped me overcome
-                  this, so that I will not miss the joy of visiting you during these, my happiest
-                  days. Recommending myself and my bride to your and your esteemed wife's
-                  benevolent goodwill, I remain in anticipation of a joyful reunion. Yours
-                  sincerely, Signed: Wilh. Wackernagel Dr. (at Prof. Bluntschli's at Steinböckli)
-                  Zurich 11/10/37.
+                  
+                  <p>Highly esteemed Baron, These few lines are merely to inform you that I intend to
+                     take advantage of your kind permission and visit you "as a guest" in the coming
+                     week (probably as early as Tuesday). I am notifying you of this so late because,
+                     until today, I had to fear the aftereffects of an unwelcome illness that has
+                     confined me to the house and bed for six weeks, which would have made even the
+                     smallest honeymoon impossible. However, the dear God has helped me overcome
+                     this, so that I will not miss the joy of visiting you during these, my happiest
+                     days. Recommending myself and my bride to your and your esteemed wife's
+                     benevolent goodwill, I remain in anticipation of a joyful reunion. Yours
+                     sincerely, Signed: Wilh. Wackernagel Dr. (at Prof. Bluntschli's at Steinböckli)
+                     Zurich 11/10/37.</p>
                   </div>
             </section>
          </div>
-      </div><script src="https://unpkg.com/leaflet/dist/leaflet.js"></script><script>
+      </main>
+      <footer class="bg-dark text-white text-center py-3">
+         <div class="container">
+            <p class="mb-0"><a href="../letters.html">Back to the Letters</a></p>
+         </div>
+      </footer><script src="https://unpkg.com/leaflet/dist/leaflet.js"></script><script>
                     // Create the map and set its view to a default coordinate and zoom level.
-                    var map = L.map('mapid').setView([47.374444,8.541111], 7);
-                    // Set up the OpenStreetMap tile layer.
-                    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                    attribution: 'Map data <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
+                    var map = L.map('mapid', { scrollWheelZoom: false }).setView([47.374444,8.541111], 7);
+                    // Muted basemap (CARTO Positron) instead of the default colourful OSM tiles,
+                    // to match the edition's restrained palette.
+                    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+                    attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+                    subdomains: 'abcd',
+                    maxZoom: 19
                     }).addTo(map);
-                    
-                    
-                    // Optionally add a marker at the center
-                    
-                    // Define custom marker icons.
-                    var mentionedIcon = L.icon({
-                    iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
-                    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/images/marker-shadow.png',
-                    iconSize: [25, 41],
-                    iconAnchor: [12, 41],
-                    popupAnchor: [1, -34],
-                    shadowSize: [41, 41]
-                    });
-                    
-                    L.marker([47.374444,8.541111]).addTo(map)
+
+                    // Sender's place: filled circle in the edition's accent colour.
+                    L.circleMarker([47.374444,8.541111], {
+                    radius: 8, color: '#143761', weight: 2, fillColor: '#1d4e89', fillOpacity: 0.85
+                    }).addTo(map)
                     .bindPopup('Zürich')
                     .openPopup();
+
+                    // Mentioned places: smaller, lighter circles in a secondary tone.
                     
-                    
-                        
+
                         var popupText = "Zürich";
-                        L.marker([47.374444,8.541111], {icon: mentionedIcon}).addTo(map)
+                        L.circleMarker([47.374444,8.541111], {
+                        radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75
+                        }).addTo(map)
                         .bindPopup(popupText);
                     </script><script>
                     // Initialize all tooltips

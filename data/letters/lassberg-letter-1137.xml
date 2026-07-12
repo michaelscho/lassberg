@@ -59,8 +59,8 @@
                     target="../register/lassberg-literature.xml#lassberg-literature-0012"
                     ><rs>Episcopatus Constantiensis Alemannicus sub metropoli Moguntina chronologice
                     et diplomatice illustratus</rs></ref> <ref type="cmif:mentionsBibl"
-                    target="../register/lassberg-literature.xml#lassberg-literature-0013"
-                    ><rs>Unbekannt</rs></ref> <ref type="cmif:mentionsBibl"
+                    target="../register/lassberg-literature.xml#lassberg-literature-0201"
+                    ><rs>Schiller</rs></ref> <ref type="cmif:mentionsBibl"
                     target="../register/lassberg-literature.xml#lassberg-literature-0046"
                     ><rs>Glossarium Germanicum medii aevi, maximam partem e diplomatibus multis
                     praeterea aliis monumentis ... adornatum in 1 Bd. (Vol. 1-2).</rs></ref> <ref
@@ -71,7 +71,9 @@
                     target="../register/lassberg-literature.xml#lassberg-literature-0048"><rs>Isis
                     (Zeitschrift)</rs></ref> <ref type="cmif:mentionsPlace"
                     target="../register/lassberg-places.xml#lassberg-place-0187"
-                    ><rs>Deutschland</rs></ref> </note>
+                    ><rs>Deutschland</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0373"
+                    ><rs>Joseph von Laßberg</rs></ref> </note>
             </correspDesc>
         </profileDesc>
         <revisionDesc>
@@ -81,6 +83,7 @@
                 <change when="2023-08-29" who="#MiS" status="draft">Manual markup and
                     proofreading</change>
                 <change when="2023-11-22" who="#MiS" status="draft">Finished markup</change>
+                <change when="2026-07-10" who="#check-letter-annotations" status="done">Checked via check-letter-annotations skill (Vollständigkeit, Verlinkung, Struktur, Header/Body-Konsistenz, Formeln)</change>
                 <!-- <change when="" who="" status="puplished">Final proofreading</change> -->
             </listChange>
         </revisionDesc>
@@ -88,14 +91,17 @@
     <text>
         <body>
             <div type="print" resp="ocr">
-                <p>P.P. Dieser <rs type="object" key="">Katalog</rs> scheint mir so intereßante
+                <opener>
+                    <salute>P.P.</salute>
+                </opener>
+                <p>Dieser <rs type="object" key="">Katalog</rs> scheint mir so intereßante
                     Sachen zu enthalten, daß ich mich beeile Inen denselben zu übermachen mit der
                     Bitte, in mir bald wieder zurük zusenden; indem ich auch einiges daraus
                     bestellen möchte; stossen Sie sich nicht an meinen Zeichen; wenn Sie etwas zu
                     bestellen wünschen; so tue ich vorhinein Verzicht darauf. <rs type="bibl"
                     key="../register/lassberg-literature.xml#lassberg-literature-0012">Neugart</rs>
                     scheint mir ser wolfeil, so wie auch <rs type="bibl"
-                    key="../register/lassberg-literature.xml#lassberg-literature-0013">Schiller</rs>
+                    key="../register/lassberg-literature.xml#lassberg-literature-0201">Schiller</rs>
                     der nun gewöhnlich 3 Ldrs. kostet, auch das seltene <rs type="bibl"
                     key="../register/lassberg-literature.xml#lassberg-literature-0046">Gloßar: v.
                     Haltaus</rs>. Die mir geliehenen Bücher, sende ich mit vielem Danke zurük: die
@@ -117,8 +123,14 @@
                     beweglichen alters, lieber bei der Geschichte bleiben, die man in der warmen
                     Stube abhandeln kann. Der Iupiter χιωνóφopoς hat uns eine solche Ladung Floken
                     herabgeworfen, daß wir für den ganzen Winter genug daran hätten, und nun die
-                    Schlittban wenigstens auf eine zeitlang gesichert scheint. Vale et me amare
-                    perge. Laßberg. am 5. Januar 1827.</p>
+                    Schlittban wenigstens auf eine zeitlang gesichert scheint.</p>
+                <closer>
+                    <salute>Vale et me amare
+                    perge.</salute>
+                    <signed><rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0373">Laßberg</rs></signed>.
+                    <dateline>am 5. Januar 1827</dateline>.
+                </closer>
             </div>
             <div type="normalized" resp="GPT3.5">
                 <p>P. P. Dieser Katalog scheint mir so interessante Sachen zu enthalten, dass ich

@@ -80,6 +80,7 @@
                 <change when="2023-08-01" who="#MiS" status="done">File created and preprocessed automatically</change>
                 <change when="2023-08-29" who="#MiS" status="inProgress">Manual markup and proofreading</change>
                 <change when="2023-11-22" who="#MiS" status="draft">Finished markup</change>
+                <change when="2026-07-10" who="#check-letter-annotations" status="done">Checked via check-letter-annotations skill (Vollständigkeit, Verlinkung, Struktur, Header/Body-Konsistenz, Formeln)</change>
                 <!-- <change when="" who="" status="puplished">Final proofreading</change> -->
             </listChange>
         </revisionDesc>
@@ -87,8 +88,11 @@
     </teiHeader>
     <text>
         <body>
-            <div type="original" resp="ocr">
-                <p>Hochwohlgeborner Herr! Mit herzlichem Danke sende ich Ihnen hiermit <rs
+            <div type="print" resp="ocr">
+                <opener>
+                    <salute>Hochwohlgeborner Herr!</salute>
+                </opener>
+                <p>Mit herzlichem Danke sende ich Ihnen hiermit <rs
                     type="bibl" key="../register/lassberg-literature.xml#lassberg-literature-0012"
                     >Neugarti episc. Const</rs>. und <rs type="bibl"
                     key="../register/lassberg-literature.xml#lassberg-literature-0011">Zapfii
@@ -108,10 +112,16 @@
                     15. Jahrhundert</date> vorkommt. Die <rs type="bibl"
                     key="../register/lassberg-literature.xml#lassberg-literature-0068">Reimchronik
                     vom Appenzeller Krieg</rs> ist ihnen wahrscheinlich durch den Herausgeber
-                    bekannt geworden. Indem ich Sie, hochwohlgeborner, verehrtester Herr! meiner
+                    bekannt geworden.</p>
+                <closer>
+                    <salute>Indem ich Sie, hochwohlgeborner, verehrtester Herr! meiner
                     ausgezeichneten Hochachtung versichere und Sie um Ihre fernere Gewogenheit
-                    bitte, habe ich die Ehre zu sein Hochdero ergebenster Diac. Pupikofer
-                    Bischofzell, den <date when="1825">24. Febr. 1825</date>.</p>
+                    bitte, habe ich die Ehre zu sein Hochdero ergebenster</salute>
+                    <signed>Diac. <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0179">Pupikofer</rs></signed>
+                    <dateline><rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0025">Bischofzell</rs>, den <date when="1825">24. Febr. 1825</date></dateline>.
+                </closer>
             </div>
             <div type="normalized" resp="GPT3.5">
                 <p>Hochwohlgeborener Herr! Mit herzlichem Dank sende ich Ihnen hiermit Neugart'sches

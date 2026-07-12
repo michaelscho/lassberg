@@ -13,22 +13,27 @@
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
                 <title>The Lassberg Letters</title>
                 <link href="../../css/styles.css" rel="stylesheet"/>
-                <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+                <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
                     rel="stylesheet"/>
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"/>
-                <script src="../../js/letters.js"/>
+                <link rel="preconnect" href="https://fonts.googleapis.com"/>
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/>
+                <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"/>
                 <!-- Leaflet CSS from CDN -->
                 <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
                 <!-- Mirador JS -->
-                <script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script>    
-            
+                <script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script>
+
             </head>
             <body>
-                <div id="app" class="container">
-                    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
-                        <div class="container-fluid">
-                            <a class="navbar-brand" href="#">Laßberg Letters</a>
-                            <ul class="navbar-nav">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+                    <div class="container">
+                        <a class="navbar-brand" href="../../index.html">The Laßberg Letters</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ms-auto">
                                 <li class="nav-item">
                                     <a class="nav-link" href="../../index.html">Welcome</a>
                                 </li>
@@ -36,31 +41,40 @@
                                     <a class="nav-link" href="../letters.html">Letters</a>
                                 </li>
                                 <li class="nav-item">
+                                    <a class="nav-link" href="../persons.html">Persons</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../places.html">Places</a>
+                                </li>
+                                <li class="nav-item">
                                     <a class="nav-link"
                                         href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb"
-                                        >Data Analysis</a>
+                                        target="_blank">Data Analysis</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link"
                                         href="https://github.com/michaelscho/lassberg"
-                                        >Repository</a>
+                                        target="_blank">Repository</a>
                                 </li>
                             </ul>
                         </div>
-                    </nav>
+                    </div>
+                </nav>
 
-                    <div class="container my-4">
-                        <!-- Header: display title and publication statement -->
-                        <header class="mb-4">
-                            <h1>
-                                <xsl:value-of
-                                    select="tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title"/>
-                            </h1>
-                            <p class="lead">
-                                <xsl:apply-templates select="tei:teiHeader/tei:fileDesc/tei:publicationStmt"/>
-                            </p>
-                        </header>
+                <header class="page-header py-4">
+                    <div class="container">
+                        <h1 class="mb-2">
+                            <xsl:value-of
+                                select="tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title"/>
+                        </h1>
+                        <p class="lead mb-0">
+                            <xsl:apply-templates select="tei:teiHeader/tei:fileDesc/tei:publicationStmt"/>
+                        </p>
+                    </div>
+                </header>
 
+                <main class="py-4">
+                    <div class="container">
                         <!-- Leaflet Map Section -->
                         <section id="map" class="mb-4">
 
@@ -96,14 +110,27 @@
                             </p>
                         </section>
                         <!-- Original Text Section -->
+                        <xsl:variable name="transcriptionDiv"
+                            select="(tei:text//tei:div[@type = 'original'] | tei:text//tei:div[@type = 'print'])[1]"/>
                         <section id="original-text" class="mb-4">
-                            <h2>Original Text</h2>
+                            <h2>Original Text
+                                <xsl:choose>
+                                    <xsl:when test="$transcriptionDiv/@type = 'print'">
+                                        <span class="transcription-source badge-print"
+                                            title="OCR-Texterfassung aus der gedruckten Edition, siehe Metadaten/Gedruckt in">Transcribed from the printed edition (OCR)</span>
+                                    </xsl:when>
+                                    <xsl:when test="$transcriptionDiv/@type = 'original'">
+                                        <span class="transcription-source badge-manuscript"
+                                            title="Diplomatische Transkription der Handschrift">Transcribed from the manuscript (Transkribus)</span>
+                                    </xsl:when>
+                                    <xsl:otherwise/>
+                                </xsl:choose>
+                            </h2>
                             <div>
-                                <xsl:apply-templates select="tei:text//tei:div[@type = 'original']"
-                                />
+                                <xsl:apply-templates select="$transcriptionDiv"/>
                             </div>
-                            
-                            
+
+
 
                             <xsl:variable name="doc-id" select="/tei:TEI/@xml:id"/>
                                 <xsl:choose>
@@ -136,7 +163,14 @@
                             </div>
                         </section>
                     </div>
-                </div>
+                </main>
+
+                <footer class="bg-dark text-white text-center py-3">
+                    <div class="container">
+                        <p class="mb-0"><a href="../letters.html">Back to the Letters</a></p>
+                    </div>
+                </footer>
+
                 <!-- Leaflet JS from CDN -->
                 <script src="https://unpkg.com/leaflet/dist/leaflet.js"/>
                 <!-- Initialize the Leaflet map -->
@@ -145,36 +179,32 @@
                     <xsl:variable name="sentPlace" select="substring-after(//tei:correspAction[@type = 'sent']/tei:placeName/@key, '#')"/>
                     <xsl:variable name="sentPlaceCoord" select="document('../../../data/register/lassberg-places.xml')//tei:place[@xml:id = $sentPlace]/tei:location/tei:geo/text()"/>
                     // Create the map and set its view to a default coordinate and zoom level.
-                    var map = L.map('mapid').setView([<xsl:value-of select="normalize-space($sentPlaceCoord)"/>], 7);
-                    // Set up the OpenStreetMap tile layer.
-                    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                    attribution: 'Map data <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
+                    var map = L.map('mapid', { scrollWheelZoom: false }).setView([<xsl:value-of select="normalize-space($sentPlaceCoord)"/>], 7);
+                    // Muted basemap (CARTO Positron) instead of the default colourful OSM tiles,
+                    // to match the edition's restrained palette.
+                    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+                    attribution: '&amp;copy; <a href="https://carto.com/attributions">CARTO</a> &amp;copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+                    subdomains: 'abcd',
+                    maxZoom: 19
                     }).addTo(map);
-                    
-                    
-                    // Optionally add a marker at the center
-                    <!--"document(concat('../../../data/letters/', @key, '.xml'))//tei:note[@type='mentioned']/tei:ref[@type='cmif:mentionsPerson']"-->
-                    // Define custom marker icons.
-                    var mentionedIcon = L.icon({
-                    iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
-                    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/images/marker-shadow.png',
-                    iconSize: [25, 41],
-                    iconAnchor: [12, 41],
-                    popupAnchor: [1, -34],
-                    shadowSize: [41, 41]
-                    });
-                    
-                    L.marker([<xsl:value-of select="normalize-space($sentPlaceCoord)"/>]).addTo(map)
+
+                    // Sender's place: filled circle in the edition's accent colour.
+                    L.circleMarker([<xsl:value-of select="normalize-space($sentPlaceCoord)"/>], {
+                    radius: 8, color: '#143761', weight: 2, fillColor: '#1d4e89', fillOpacity: 0.85
+                    }).addTo(map)
                     .bindPopup('<xsl:value-of select="normalize-space($sentPlaceName)"/>')
                     .openPopup();
-                    
+
+                    // Mentioned places: smaller, lighter circles in a secondary tone.
                     <xsl:for-each select="//tei:ref[@type = 'cmif:mentionsPlace']">
                         <xsl:variable name="mentionedPlaceName" select="./tei:rs"/>
                         <xsl:variable name="mentionedPlace" select="substring-after(./@target, '#')"/>
                         <xsl:variable name="mentionedPlaceCoord" select="document('../../../data/register/lassberg-places.xml')//tei:place[@xml:id = $mentionedPlace]/tei:location/tei:geo/text()"/>
-                        
+
                         var popupText = "<xsl:value-of select="normalize-space($mentionedPlaceName)"/>";
-                        L.marker([<xsl:value-of select="normalize-space($mentionedPlaceCoord)"/>], {icon: mentionedIcon}).addTo(map)
+                        L.circleMarker([<xsl:value-of select="normalize-space($mentionedPlaceCoord)"/>], {
+                        radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75
+                        }).addTo(map)
                         .bindPopup(popupText);
                     </xsl:for-each>
                     
@@ -225,6 +255,57 @@
                 
             </body>
         </html>
+    </xsl:template>
+
+    <!-- Templates for the epistolary-formula elements introduced 2026-07-10 (docs/TEI.md,
+         "opener/closer/dateline/salute/signed/address"). Without these, XSLT's built-in default
+         template applies to their children with no HTML wrapper, so text from a <p>, an
+         <opener>, and a <closer> would all run together with no block separation. -->
+    <xsl:template match="tei:p">
+        <p><xsl:apply-templates/></p>
+    </xsl:template>
+
+    <xsl:template match="tei:opener">
+        <div class="letter-opener"><xsl:apply-templates/></div>
+    </xsl:template>
+
+    <xsl:template match="tei:closer">
+        <div class="letter-closer"><xsl:apply-templates/></div>
+    </xsl:template>
+
+    <xsl:template match="tei:address">
+        <p class="letter-address"><xsl:apply-templates/></p>
+    </xsl:template>
+
+    <xsl:template match="tei:dateline">
+        <p class="letter-dateline"><xsl:apply-templates/></p>
+    </xsl:template>
+
+    <xsl:template match="tei:salute">
+        <p class="letter-salute"><xsl:apply-templates/></p>
+    </xsl:template>
+
+    <xsl:template match="tei:signed">
+        <p class="letter-signed"><xsl:apply-templates/></p>
+    </xsl:template>
+
+    <xsl:template match="tei:postscript">
+        <div class="letter-postscript"><xsl:apply-templates/></div>
+    </xsl:template>
+
+    <!-- Archival apparatus (docs/TEI.md, "Archivalische Apparate") — never the letter's own
+         voice, kept visually distinct via CSS rather than blended into opener/closer/p. -->
+    <xsl:template match="tei:fw">
+        <div class="letter-fw"><xsl:apply-templates/></div>
+    </xsl:template>
+
+    <xsl:template match="tei:add">
+        <div class="letter-add"><xsl:apply-templates/></div>
+    </xsl:template>
+
+    <!-- Manuscript-transcription line breaks (only present in type="original" divs). -->
+    <xsl:template match="tei:lb">
+        <br/>
     </xsl:template>
 
     <!-- Template for rs elements: using an attribute value template -->

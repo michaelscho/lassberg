@@ -5,32 +5,42 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>The Lassberg Letters</title>
       <link href="../../css/styles.css" rel="stylesheet">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script><script src="../../js/letters.js"></script><link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"><script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script></head>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script><link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"><script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script></head>
    <body>
-      <div id="app" class="container">
-         <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
-            <div class="container-fluid"><a class="navbar-brand" href="#">Laßberg Letters</a><ul class="navbar-nav">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+         <div class="container"><a class="navbar-brand" href="../../index.html">The Laßberg Letters</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ms-auto">
                   <li class="nav-item"><a class="nav-link" href="../../index.html">Welcome</a></li>
                   <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
-                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb">Data Analysis</a></li>
-                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg">Repository</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../persons.html">Persons</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../places.html">Places</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
                </ul>
             </div>
-         </nav>
-         <div class="container my-4">
-            <header class="mb-4">
-               <h1>Brief von Joseph von Laßberg an Wilhelm Wackernagel (13.08.1833).</h1>
-               <p class="lead">
-                  Textfassung auf Basis der Transkription durch Transkribus korrigiert und in TEI
+         </div>
+      </nav>
+      <header class="page-header py-4">
+         <div class="container">
+            <h1 class="mb-2">Brief von Joseph von Laßberg an Wilhelm Wackernagel (13.08.1833).</h1>
+            <p class="lead mb-0">
+               
+               <p>Textfassung auf Basis der Transkription durch Transkribus korrigiert und in TEI
                   überführt. Automatisierte NER-Erkennung und Identifikation durch Flair geprüft,
                   korrigiert und ergänzt. Normalisierung, Zusammenfassung und Übersetzung durch
-                  GPT-4. Lizenz: 
-                  
-                  <a href="https://creativecommons.org/licenses/by/4.0/">CC BY
-                     4.0</a>
-                  
-                  </p>
-            </header>
+                  GPT-4. Lizenz: </p>
+               
+               <a href="https://creativecommons.org/licenses/by/4.0/">CC BY
+                  4.0</a>
+               
+               </p>
+         </div>
+      </header>
+      <main class="py-4">
+         <div class="container">
             <section id="map" class="mb-4">
                <div id="mapid"></div>
             </section>
@@ -46,390 +56,411 @@
                      95-98</a></p>
             </section>
             <section id="original-text" class="mb-4">
-               <h2>Original Text</h2>
+               <h2>Original Text
+                  <span class="transcription-source badge-manuscript" title="Diplomatische Transkription der Handschrift">Transcribed from the manuscript (Transkribus)</span></h2>
                <div>
-                  147
-                  Eppishausen 13.
-                  Aug. 33 Quomodo
-                  sedet sola civitas plena populo! facta est quasi vidua! Non est qui
-                  consoletur eam ex omnibus charis eius: omnes amici eius spreverunt eam et facti sunt
-                  ei inimici. Hieremias. Wer sich selbst aufgiebt, ist bald von allen verlassen! <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Basel</strong&gt;">Basel<a href="https://www.wikidata.org/wiki/Q78"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> ist verloren; weil es sich selbst verlassen hat! quis temperet a lachrimis!
-                  multis bonis illa flebilis occidit! aber, wer nicht krieg zu füren weiß, tut wol den frieden zu
-                  kauffen! nun fürchte ich die haben felgeschossen, die da glauben in um die schande
-                  eingehandelt zu haben; denn iezt werden die tage der trübsale erst angehen. So eben las ich
-                  in <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Heinrich Luden: Geschichte des&#xA;        Teutschen Volkes. 12 Bände.</strong&gt;">Ludens geschichte des teutschen volkes<a href="https://books.google.de/books?id=fUAAAAAAcAAJ">📖</a></span> nachstehendes: "aber ankläger der
-                  gesinnungen liessen von ieher selten ab und waren noch seltener zu widerlegen. dieselbe
-                  leidenschaft, die zum ersten schritte trieb, fürte weiter. iede eigne äusserung, iede fremde
-                  be wegung,
-                  ward zum beweise. Die natur verlor ir recht, der verstand seine ere; das entfernteste
-                  wurde zum nächsten gezogen, und das entgegengesezte zum gleichen gezält. aus
-                  angst, scham und dem gefüle eigener verdorbenheit entstand ein unaus löschlicher hass und eine wilde verfolgungwut, die nicht eher geheilt ward,
-                  bis man die
-                  gewalthaber zur teilname an der sünde gebracht hatte und bis das opfer gefallen
-                  war." Sehen
-                  Sie hier die neueste geschichte der <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Schweiz</strong&gt;">Schweiz<a href="https://www.wikidata.org/wiki/Q39"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> und die
-                  zukunft Irer stadt! wie schön und folgerecht hatte <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Basel</strong&gt;">Basel<a href="https://www.wikidata.org/wiki/Q78"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> sich
-                  benommen; wie inconsequent hat es auf einmal geendet! wer hätte das erwartet? vitam,
-                  praeferre pudori! et propter vitam vivendi perdere causas. - ich weiß wol,
-                  mit reden und schreiben ist iezt nichts auszurichten; auch ist die sache so
-                  gründlich verdorben, daß sie nicht wieder auf einen vesten grund kommen kann; aber was ist
-                  nun anzufangen? ich antworte wie die durch das erdbeben /: 1783 :/
-                  verschüttete frau in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Kalabrien</strong&gt;">Calabrien<a href="https://www.wikidata.org/wiki/Q1458"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>: warten! warten
-                  und nicht verzagen! am schlusse <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">meines</span> <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Schwabenspiegel.</strong&gt;">Schwabenspiegels<a href="https://geschichtsquellen.de/werk/4329">📖</a></span> von 1287 stehet: "Swer danne z' aller zituffe daz reht sprichet,
-                  der gewinnet mangen vint. des mac sich der biderbe man gerne trösten. durch
-                  got vnd durch sin ere, daz er die vintschaft hab durch daz reht. vnd wizzent, swer daz reht
-                  gerne stäte hat, dem hilfet got, vnd ist ofte sehin worden an manigem man,
-                  die mangen widerstrit hatten, dar vmb, daz sie dem rehten
-                  gestunden." Ich kann Inen nicht genug sagen, wie tief mich diese iämmerliche katastrophe
-                  betrübt hat
-                  und wie viele traurige folgen ich daraus hervorgehen sehe. Gott walts! denn
-                  dieser allein könnte noch helfen; aber die zeiten der wunder sind vorbei! so wie die
-                  zeiten der
-                  treue und des glaubens. Ich glaube nicht, daß die fremden mächte sich in den
-                  handel mischen, noch viel weniger tätig einschreiten werden. Diz Liet haizet div
-                  Lklage!!! Aus dem
-                  beiliegenden Briefe werden Sie ersehen, daß ich dem H. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Marquard Wocher</strong&gt;">Marquard
-                     Wocher<a href="https://d-nb.info/gnd/131893505"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> weder für den transport des <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">altares</span>, noch für
-                  sonst etwas einiges schuldig geblieben bin, daß und wie derselbe solchen aus einander zu
-                  nemen, mit blendramen versehen zu lassen und mir zuzusenden gedachte, endlich daß der
-                  altar in einer großen kiste lag, aus welcher <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Marquard Wocher</strong&gt;">Wocher<a href="https://d-nb.info/gnd/131893505"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
-                  eine kleinere wollte machen lassen, um die stüke einzeln darein zu paken.
-                  wollen Sie die freundschaftliche gefälligkeit haben, auf eben solche weise damit
-                  zu verfaren; so werden Sie mich recht ser verbinden. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Marquard Wocher</strong&gt;">Wochers<a href="https://d-nb.info/gnd/131893505"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
-                  brief bitte ich mir wieder zurük zu senden: es ist der lezte den er mir schrieb, ich möchte
-                  in gerne zum andenken, an die 40iärige freundschaft, die zwischen uns
-                  bestund, auf behalten. Da von <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Basel</strong&gt;">Basel<a href="https://www.wikidata.org/wiki/Q78"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> gewiß
-                  frachtwagen nach <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;St. Gallen</strong&gt;">S. Gallen<a href="https://www.wikidata.org/wiki/Q25607"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> und <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Rorschach</strong&gt;">Rorschach<a href="https://www.wikidata.org/wiki/Q68250"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> gehen; so wird die kiste auf diesem wege am besten hieher gelangen,
-                  mein hauß liegt ia an der straße nach <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Rorschach</strong&gt;">Rorschach<a href="https://www.wikidata.org/wiki/Q68250"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>. alle
-                  sich ergebende kosten werde ich mit dem verbindlichsten danke erstatten.
-                  wie ser
-                  bedauerte ich Sie des schlechten wetters wegen, das Sie auf Irer reise
-                  verfolgte; nun bin ich doch dadurch getröstet, daß Sie in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Zürich</strong&gt;">Zürich<a href="https://www.wikidata.org/wiki/Q72"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> noch
-                  einige ausbeute gemacht haben; auch <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Caspar von Orelli</strong&gt;">Aurelius
-                     Cicero<a href="https://d-nb.info/gnd/118787179"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>, der bald nach Inen mit dem Professor <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Georg Baiter</strong&gt;">Baiter<a href="https://d-nb.info/gnd/11604117X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
-                  hieherkam, sprach mir von der teutschen logik und rhetorik des XI. Jarhunderts: nun das
-                  ist ein guter fund! aber ich bedaure Irren den <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Charlotte Grimm: Anzeige einer&#xA;        alten Handschrift der Aeneis des Heinrich von Veldeck, in: Beyträge zur Geschichte und&#xA;        Literatur, vorzüglich aus den Schätzen der Königl. Hof- und Centralbibliothek zu München.&#xA;        7.</strong&gt;">VII. band der
-                     Aretinischen beiträge<a href="BSB-ID 991047974869707356">📖</a></span> nicht senden zu können; ich
-                  besize nur die 6. hefte des 3. und iene der iargänge 1805 und 6. wenn Sie aber
-                  wollen; so bin ich bereit das verlangte in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Schaffhausen</strong&gt;">Schafhausen<a href="https://www.wikidata.org/wiki/Q9009"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> oder
-                  <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Zürich</strong&gt;">Zürich<a href="https://www.wikidata.org/wiki/Q72"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> zu entlenen und Irren zu senden. wie schmerzlich fällt auch mir der tod der <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Charlotte Grimm</strong&gt;">frau von Hassenpflug<a href="https://d-nb.info/gnd/118542222"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Kassel</strong&gt;">Cassel<a href="https://www.wikidata.org/wiki/Q2865"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>; mitten
-                  in den
-                  besten iaren und aus der mitte einer liebenden familie wurde sie hinweggerafft.
-                  ich weiß wie
-                  die brüder <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Grimm<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> diese schwester liebten, wie tief muß ire trauer sein. ich fürchte mich
-                  an <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jacob Grimm</strong&gt;">Jacob<a href="https://d-nb.info/gnd/118542257"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> zu
-                  schreiben, und bin frohe in nun später zu sehen, da wie ich
-                  hoffe, die zeit schon woltätig auf seinen schmerz gewirkt hat. Der schluß Ires
-                  briefes: aus dem studiren wird in diesen zeiten nicht viel, muß nun
-                  umgekeret werden. gerade in den zeiten der trauer muß man sich den musen in die
-                  arme werfen! diese freundlichen schwestern sind die besten trösterinnen in
-                  trübseligen zeiten, sie beruhigen und erheitern das leidende gemüte, sie
-                  ermutigen es und lassen zulezt wieder die hofnungssonne hinein scheinen: ich
-                  habe dies überzeugend an mir erfaren, und glaube daher an diese arznei und
-                  empfele sie iedem betrübten. Hat uns der <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Nibelungenlied.</strong&gt;">Nibelunge<a href="https://handschriftencensus.de/werke/271">📖</a></span> liet stark bewegt; so lassen wir uns iezt durch die klage rüren! fata
-                  viam expedient! <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Caspar von Orelli</strong&gt;">Aurelius
-                     Tigurinus<a href="https://d-nb.info/gnd/118787179"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> muß in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;St. Gallen</strong&gt;">St. Gallen<a href="https://www.wikidata.org/wiki/Q25607"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> noch
-                  manches gefunden haben; weil er sich über 14 tage da aufhielt; dies gehet aber wol nur auf
-                  classische literatur. Er äußerte hier gute hofnungen für seine alma <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Zürich</strong&gt;">Tigurina<a href="https://www.wikidata.org/wiki/Q72"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, und bedauerte den mißgriff den er bei <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ludwig Ettmüller</strong&gt;">Ettmüllers<a href="https://d-nb.info/gnd/116585986"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> berufung gemacht hat. von politik vermied ich aus
-                  guten gründen zu sprechen. die erliche haut schien mir auch schon ganz
-                  endoctrinirt zu sein. Habeat sibi! In dem literarischen nachlasse und collectaneen meines
-                  freundes <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ildefons von Arx</strong&gt;">Arx<a href="https://d-nb.info/gnd/116353740"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> bin ich auf einige
-                  <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">merkwürdige historische urkunden </span>gestoßen; aber nichts quod
-                  ad theotiscam facit, ließ sich entdeken. In diesen
-                  unpoetischen zeiten, wendet sich das gemüte lieber zu der geschichte,
-                  nicht zu der unserer tage, welche kleinlicht und gemein ist; sondern zu
-                  der des mittelalters, in demselben erscheinet auch selbst das
-                  laster mit geist und kraft, und hat durch tat und tüchtig keit seinen wert
-                  behalten. die gegenwärtige zeit erscheint dagegen als niederdrükend
-                  und vernichtend, man erblikt überall nichts als eine feige
-                  kriecherei vor dem volk, oder vor den fürsten, sittenlosigkeit, unver stand
-                  und eine wütige umwälzungssucht. Eben hiedurch wird unsere zeit dem manne
-                  von kopf und herz so schwer zu ertragen. was den vätern heilig
-                  war, wird iezt herabgesezt und verachtet; aber das schlechte und gemeine wird
-                  hinaufgehoben und oft sogar auf den altar gestellt. überall will man
-                  iezt durch angst und schreken und gräuel die friedlichen
-                  menschen aus iren verhältnissen und gewonheiten aufrütteln, verblüffen und
-                  iren verstand gefangen nemen. o he! iam satis! Einer meiner
-                  haußgenossen, Dr. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Hermann von Liebenau</strong&gt;">Liebenau<a href="https://d-nb.info/gnd/116987650"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
-                  ist in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Baden (Aargau)</strong&gt;">Baden<a href="https://www.wikidata.org/wiki/Q63939"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, um seine
-                  einge weide zu stärken; gienge er auf die tagsazung so würde er
-                  lernen, wie man one alle eingeweide sich recht wol befinden kann. der candidatus iuris, vetter
-                  <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Maximilian von Lassberg</strong&gt;">Max<a href="https://d-nb.info/gnd/116004169"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>,
-                  erwiedert Iren gruß auf das freundlichste. Leben Sie wol,
-                  gott befolen von Irem ergebensten JvLaßberg. Ser begierig wäre ich zu erfaren, ob meine vermutung wegen
-                  des <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Colmarer codex</span> der meister sänger einigen
-                  grund hat? oder was des <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Neukirch, Johann Georg</strong&gt;">H.
-                     Neukirch<a href="https://d-nb.info/gnd/1037649648"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> handschrift denn eigentlich enthaltet? Dabam ex villa epponis XIII. augusti. mdcccxxxiii.
                   
+                  <p><br>147
+                     <br>Eppishausen 13.
+                     Aug. 33 <br>Quomodo
+                     sedet sola civitas plena populo! facta est quasi vidua! <br>Non est qui
+                     consoletur eam ex omnibus charis eius: omnes amici eius spreverunt <br>eam et facti sunt
+                     ei inimici. Hieremias. <br>Wer sich selbst aufgiebt, ist bald von allen verlassen! <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Basel</strong&gt;">Basel<a href="https://www.wikidata.org/wiki/Q78"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> ist verloren; weil es sich <br>selbst verlassen hat! quis temperet a lachrimis!
+                     multis bonis illa flebilis occidit! <br>aber, wer nicht krieg zu füren weiß, tut wol den frieden zu
+                     kauffen! nun <br>fürchte ich die haben felgeschossen, die da glauben in um die schande
+                     eingehandelt <br>zu haben; denn iezt werden die tage der trübsale erst angehen. So eben las ich
+                     <br>in <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Heinrich Luden: Geschichte des&#xA;        Teutschen Volkes. 12 Bände.</strong&gt;">Ludens geschichte des teutschen volkes<a href="https://books.google.de/books?id=fUAAAAAAcAAJ">📖</a></span> nachstehendes: "aber ankläger der
+                     gesinnungen <br>liessen von ieher selten ab und waren noch seltener zu widerlegen. dieselbe
+                     leidenschaft, <br>die zum ersten schritte trieb, fürte weiter. iede eigne äusserung, iede fremde
+                     be <br>wegung,
+                     ward zum beweise. Die natur verlor ir recht, der verstand seine ere; <br>das entfernteste
+                     wurde zum nächsten gezogen, und das entgegengesezte zum gleichen <br>gezält. aus
+                     angst, scham und dem gefüle eigener verdorbenheit entstand ein unaus <br>löschlicher hass und eine wilde verfolgungwut, die nicht eher geheilt ward,
+                     bis man <br>die
+                     gewalthaber zur teilname an der sünde gebracht hatte und bis das opfer gefallen
+                     <br>war." Sehen
+                     Sie hier die neueste geschichte der <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Schweiz</strong&gt;">Schweiz<a href="https://www.wikidata.org/wiki/Q39"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> und die
+                     zukunft Irer stadt! <br>wie schön und folgerecht hatte <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Basel</strong&gt;">Basel<a href="https://www.wikidata.org/wiki/Q78"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> sich
+                     benommen; wie inconsequent hat es auf <br>einmal geendet! wer hätte das erwartet? vitam,
+                     praeferre pudori! <br>et propter vitam vivendi perdere causas. - ich weiß wol,
+                     mit reden und schreiben <br>ist iezt nichts auszurichten; auch ist die sache so
+                     gründlich verdorben, daß sie nicht <br>wieder auf einen vesten grund kommen kann; aber was ist
+                     nun anzufangen? <br>ich antworte wie die durch das erdbeben /: 1783 :/
+                     verschüttete frau in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Kalabrien</strong&gt;">Calabrien<a href="https://www.wikidata.org/wiki/Q1458"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>: <br>warten! warten
+                     und nicht verzagen! am schlusse <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">meines</span> <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Schwabenspiegel.</strong&gt;">Schwabenspiegels<a href="https://geschichtsquellen.de/werk/4329">📖</a></span> von 1287 <br>stehet: "Swer danne z' aller zituffe daz reht sprichet,
+                     der gewinnet mangen <br>vint. des mac sich der biderbe man gerne trösten. durch
+                     got vnd durch <br>sin ere, daz er die vintschaft hab durch daz reht. vnd wizzent, <br>swer daz reht
+                     gerne stäte hat, dem hilfet got, vnd ist ofte sehin worden <br>an manigem man,
+                     die mangen widerstrit hatten, dar vmb, daz <br>sie dem rehten
+                     gestunden." <br>Ich kann Inen nicht genug sagen, wie tief mich diese iämmerliche katastrophe
+                     betrübt <br>hat
+                     und wie viele traurige folgen ich daraus hervorgehen sehe. Gott walts! denn
+                     dieser <br>allein könnte noch helfen; aber die zeiten der wunder sind vorbei! so wie die
+                     zeiten <br>der
+                     treue und des glaubens. Ich glaube nicht, daß die fremden mächte sich in den
+                     handel <br>mischen, noch viel weniger tätig einschreiten werden. Diz Liet haizet div
+                     Lklage!!! <br>Aus dem
+                     beiliegenden Briefe werden Sie ersehen, daß ich dem H. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Marquard Wocher</strong&gt;">Marquard
+                        Wocher<a href="https://d-nb.info/gnd/131893505"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> <br>weder für den transport des <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">altares</span>, noch für
+                     sonst etwas einiges schuldig geblieben <br>bin, daß und wie derselbe solchen aus einander zu
+                     nemen, mit blendramen versehen <br>zu lassen und mir zuzusenden gedachte, endlich daß der
+                     altar in einer großen kiste lag, <br>aus welcher <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Marquard Wocher</strong&gt;">Wocher<a href="https://d-nb.info/gnd/131893505"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                     eine kleinere wollte machen lassen, um die stüke einzeln <br>darein zu paken.
+                     wollen Sie die freundschaftliche gefälligkeit haben, auf eben <br>solche weise damit
+                     zu verfaren; so werden Sie mich recht ser verbinden. <br><span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Marquard Wocher</strong&gt;">Wochers<a href="https://d-nb.info/gnd/131893505"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                     brief bitte ich mir wieder zurük zu senden: es ist der lezte den er mir <br>schrieb, ich möchte
+                     in gerne zum andenken, an die 40iärige freundschaft, die <br>zwischen uns
+                     bestund, auf behalten. Da von <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Basel</strong&gt;">Basel<a href="https://www.wikidata.org/wiki/Q78"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> gewiß
+                     frachtwagen nach <br><span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;St. Gallen</strong&gt;">S. Gallen<a href="https://www.wikidata.org/wiki/Q25607"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> und <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Rorschach</strong&gt;">Rorschach<a href="https://www.wikidata.org/wiki/Q68250"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> gehen; so wird die kiste auf diesem wege am besten <br>hieher gelangen,
+                     mein hauß liegt ia an der straße nach <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Rorschach</strong&gt;">Rorschach<a href="https://www.wikidata.org/wiki/Q68250"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>. alle
+                     sich ergebende <br>kosten werde ich mit dem verbindlichsten danke erstatten.
+                     <br>wie ser
+                     bedauerte ich Sie des schlechten wetters wegen, das Sie auf Irer reise
+                     verfolgte; <br>nun bin ich doch dadurch getröstet, daß Sie in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Zürich</strong&gt;">Zürich<a href="https://www.wikidata.org/wiki/Q72"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> noch
+                     einige ausbeute gemacht <br>haben; auch <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Caspar von Orelli</strong&gt;">Aurelius
+                        Cicero<a href="https://d-nb.info/gnd/118787179"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>, der bald nach Inen mit dem Professor <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Georg Baiter</strong&gt;">Baiter<a href="https://d-nb.info/gnd/11604117X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                     hieherkam, <br>sprach mir von der teutschen logik und rhetorik des XI. Jarhunderts: nun das
+                     ist ein guter <br>fund! aber ich bedaure Irren den <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Bernhard Joseph Docen: Anzeige einer&#xA;        alten Handschrift der Aeneis des Heinrich von Veldeck, in: Beyträge zur Geschichte und&#xA;        Literatur, vorzüglich aus den Schätzen der Königl. Hof- und Centralbibliothek zu München.&#xA;        7.</strong&gt;">VII. band der
+                        Aretinischen beiträge<a href="BSB-ID%0A        991047974869707356">📖</a></span> nicht senden zu <br>können; ich
+                     besize nur die 6. hefte des 3. und iene der iargänge 1805 und 6. <br>wenn Sie aber
+                     wollen; so bin ich bereit das verlangte in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Schaffhausen</strong&gt;">Schafhausen<a href="https://www.wikidata.org/wiki/Q9009"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> oder
+                     <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Zürich</strong&gt;">Zürich<a href="https://www.wikidata.org/wiki/Q72"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> <br>zu entlenen und Irren zu senden. <br>wie schmerzlich fällt auch mir der tod der <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Charlotte Grimm</strong&gt;">frau von Hassenpflug<a href="https://d-nb.info/gnd/118542222"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Kassel</strong&gt;">Cassel<a href="https://www.wikidata.org/wiki/Q2865"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>; mitten
+                     <br>in den
+                     besten iaren und aus der mitte einer liebenden familie wurde sie hinweggerafft.
+                     <br>ich weiß wie
+                     die brüder <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Grimm<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> diese schwester liebten, wie tief muß ire trauer sein. <br>ich fürchte mich
+                     an <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jacob Grimm</strong&gt;">Jacob<a href="https://d-nb.info/gnd/118542257"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> zu
+                     schreiben, und bin frohe in nun später zu sehen, <br>da wie ich
+                     hoffe, die zeit schon woltätig auf seinen schmerz gewirkt hat. <br>Der schluß Ires
+                     briefes: aus dem studiren wird in diesen zeiten nicht viel, <br>muß nun
+                     umgekeret werden. gerade in den zeiten der trauer muß man sich <br>den musen in die
+                     arme werfen! diese freundlichen schwestern sind die besten <br>trösterinnen in
+                     trübseligen zeiten, sie beruhigen und erheitern das leidende <br>gemüte, sie
+                     ermutigen es und lassen zulezt wieder die hofnungssonne hinein <br>scheinen: ich
+                     habe dies überzeugend an mir erfaren, und glaube daher an diese <br>arznei und
+                     empfele sie iedem betrübten. Hat uns der <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Nibelungenlied.</strong&gt;">Nibelunge<a href="https://handschriftencensus.de/werke/271">📖</a></span> liet stark <br>bewegt; so lassen wir uns iezt durch die klage rüren! fata
+                     viam <br>expedient! <br><span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Caspar von Orelli</strong&gt;">Aurelius
+                        Tigurinus<a href="https://d-nb.info/gnd/118787179"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> muß in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;St. Gallen</strong&gt;">St. Gallen<a href="https://www.wikidata.org/wiki/Q25607"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> noch
+                     manches gefunden haben; weil er <br>sich über 14 tage da aufhielt; dies gehet aber wol nur auf
+                     classische literatur. <br>Er äußerte hier gute hofnungen für seine alma <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Zürich</strong&gt;">Tigurina<a href="https://www.wikidata.org/wiki/Q72"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, und bedauerte <br>den mißgriff den er bei <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ludwig Ettmüller</strong&gt;">Ettmüllers<a href="https://d-nb.info/gnd/116585986"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> berufung gemacht hat. von politik <br>vermied ich aus
+                     guten gründen zu sprechen. die erliche haut schien mir <br>auch schon ganz
+                     endoctrinirt zu sein. Habeat sibi! <br>In dem literarischen nachlasse und collectaneen meines
+                     freundes <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ildefons von Arx</strong&gt;">Arx<a href="https://d-nb.info/gnd/116353740"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> <br>bin ich auf einige
+                     <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">merkwürdige historische urkunden </span>gestoßen; <br>aber nichts quod
+                     ad theotiscam facit, ließ sich entdeken. In <br>diesen
+                     unpoetischen zeiten, wendet sich das gemüte lieber zu der <br>geschichte,
+                     nicht zu der unserer tage, welche kleinlicht und gemein <br>ist; sondern zu
+                     der des mittelalters, in demselben erscheinet auch <br>selbst das
+                     laster mit geist und kraft, und hat durch tat und tüchtig <br>keit seinen wert
+                     behalten. die gegenwärtige zeit erscheint dagegen als <br>niederdrükend
+                     und vernichtend, man erblikt überall nichts als <br>eine feige
+                     kriecherei vor dem volk, oder vor den fürsten, sittenlosigkeit, unver <br>stand
+                     und eine wütige umwälzungssucht. Eben hiedurch wird unsere <br>zeit dem manne
+                     von kopf und herz so schwer zu ertragen. was den <br>vätern heilig
+                     war, wird iezt herabgesezt und verachtet; aber das schlechte <br>und gemeine wird
+                     hinaufgehoben und oft sogar auf den altar gestellt. <br>überall will man
+                     iezt durch angst und schreken und gräuel die <br>friedlichen
+                     menschen aus iren verhältnissen und gewonheiten aufrütteln, <br>verblüffen und
+                     iren verstand gefangen nemen. o he! iam satis! <br>Einer meiner
+                     haußgenossen, Dr. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Hermann von Liebenau</strong&gt;">Liebenau<a href="https://d-nb.info/gnd/116987650"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                     ist in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Baden (Aargau)</strong&gt;">Baden<a href="https://www.wikidata.org/wiki/Q63939"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, um seine
+                     einge <br>weide zu stärken; gienge er auf die tagsazung so würde er
+                     lernen, wie <br>man one alle eingeweide sich recht wol befinden kann. der candidatus <br>iuris, vetter
+                     <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Maximilian von Lassberg</strong&gt;">Max<a href="https://d-nb.info/gnd/116004169"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>,
+                     erwiedert Iren gruß auf das freundlichste. <br>Leben Sie wol,
+                     gott befolen von <br>Irem <br>ergebensten <br>JvLaßberg. <br>Ser begierig wäre ich zu erfaren, ob meine <br>vermutung wegen
+                     des <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Colmarer codex</span> der meister <br>sänger einigen
+                     grund hat? oder was des <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Neukirch, Johann Georg</strong&gt;">H.
+                        Neukirch<a href="https://d-nb.info/gnd/1037649648"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> <br>handschrift denn eigentlich enthaltet? <br>Dabam ex villa epponis XIII. augusti. <br>mdcccxxxiii.
+                     </p>
                   </div>
             </section>
             <section id="normalised-text" class="mb-4">
                <h2>Normalisierter Text</h2>
                <div>
-                  Eppishausen, 13. Aug. 33 Quomodo sedet sola civitas plena populo! facta est quasi
-                  vidua! Non est qui consoletur eam ex omnibus charis eius: omnes amici eius
-                  spreverunt eam et facti sunt ei inimici. Hieremias. Wer sich selbst aufgibt, ist
-                  bald von allen verlassen! Basel ist verloren; weil es sich selbst verlassen hat!
-                  quis temperet a lacrimis! multis bonis illa flebilis occidit! aber, wer nicht
-                  Krieg zu führen weiß, tut wohl den Frieden zu kaufen! nun fürchte ich, die haben
-                  fehlgeschossen, die da glauben, ihn um die Schande eingehandelt zu haben; denn
-                  jetzt werden die Tage der Trübsale erst angehen. Soeben las ich in Ludens
-                  Geschichte des deutschen Volkes nachstehendes: "aber Ankläger der Gesinnungen
-                  ließen von jeher selten ab und waren noch seltener zu widerlegen. dieselbe
-                  Leidenschaft, die zum ersten Schritte trieb, führte weiter. jede eigene
-                  Äußerung, jede fremde Bewegung, ward zum Beweise. Die Natur verlor ihr Recht,
-                  der Verstand seine Ehre; das Entfernteste wurde zum Nächsten gezogen und das
-                  Entgegengesetzte zum Gleichen gezählt. aus Angst, Scham und dem Gefühle eigener
-                  Verdorbenheit entstand ein unauslöschlicher Hass und eine wilde Verfolgungswut,
-                  die nicht eher geheilt ward, bis man die Gewalthaber zur Teilnahme an der Sünde
-                  gebracht hatte und bis das Opfer gefallen war." Sehen Sie hier die neueste
-                  Geschichte der Schweiz und die Zukunft Ihrer Stadt! wie schön und folgerecht
-                  hatte Basel sich benommen; wie inkonsequent hat es auf einmal geendet! wer hätte
-                  das erwartet? vitam praeferre pudori! et propter vitam vivendi perdere causas. -
-                  ich weiß wohl, mit Reden und Schreiben ist jetzt nichts auszurichten; auch ist
-                  die Sache so gründlich verdorben, dass sie nicht wieder auf einen festen Grund
-                  kommen kann; aber was ist nun anzufangen? ich antworte wie die durch das
-                  Erdbeben /: 1783 :/ verschüttete Frau in Kalabrien: warten! warten und nicht
-                  verzagen! am Schlusse meines Schwabenspiegels von 1287 steht: "Swer danne z'
-                  aller zituffe daz reht sprichet, der gewinnet mangen vint. des mac sich der
-                  biderbe man gerne trösten. durch Got und durch sin Ere, daz er die Vintschaft
-                  hab durch daz reht. und wissend, swer daz reht gerne stäte hat, dem hilft Got,
-                  und ist oft gesehen worden an manchem Man, die mangen Widerstrit hatten, darum,
-                  daz sie dem rehten gestunden." Ich kann Ihnen nicht genug sagen, wie tief mich
-                  diese jämmerliche Katastrophe betrübt hat und wie viele traurige Folgen ich
-                  daraus hervorgehen sehe. Gott walts! denn dieser allein könnte noch helfen; aber
-                  die Zeiten der Wunder sind vorbei! so wie die Zeiten der Treue und des Glaubens.
-                  Ich glaube nicht, dass die fremden Mächte sich in den Handel mischen, noch viel
-                  weniger tätig einschreiten werden. Diz Liet haizet div Klage!!! Aus dem
-                  beiliegenden Briefe werden Sie ersehen, dass ich dem H. Marquard Wocher weder
-                  für den Transport des Altares, noch für sonst etwas einiges schuldig geblieben
-                  bin, dass und wie derselbe solchen auseinander zu nehmen, mit Blendrahmen
-                  versehen zu lassen und mir zuzusenden gedachte, endlich dass der Altar in einer
-                  großen Kiste lag, aus welcher Wocher eine kleinere wollte machen lassen, um die
-                  Stücke einzeln darein zu packen. wollen Sie die freundschaftliche Gefälligkeit
-                  haben, auf eben solche Weise damit zu verfahren; so werden Sie mich recht sehr
-                  verbinden. Wochers Brief bitte ich mir wieder zurückzusenden: es ist der letzte,
-                  den er mir schrieb, ich möchte ihn gerne zum Andenken, an die 40-jährige
-                  Freundschaft, die zwischen uns bestand, aufbehalten. Da von Basel gewiss
-                  Frachtwagen nach St. Gallen und Rorschach gehen; so wird die Kiste auf diesem
-                  Wege am besten hierher gelangen, mein Haus liegt ja an der Straße nach
-                  Rorschach. alle sich ergebende Kosten werde ich mit dem verbindlichsten Danke
-                  erstatten. Wie sehr bedauerte ich Sie des schlechten Wetters wegen, das Sie auf
-                  Ihrer Reise verfolgte; nun bin ich doch dadurch getröstet, dass Sie in Zürich
-                  noch einige Ausbeute gemacht haben; auch Aurelius Cicero, der bald nach Ihnen
-                  mit dem Professor Baiter hierherkam, sprach mir von der deutschen Logik und
-                  Rhetorik des XI. Jahrhunderts: nun das ist ein guter Fund! aber ich bedaure
-                  Ihnen den VII. Band der Aretinischen Beiträge nicht senden zu können; ich
-                  besitze nur die 6. Hefte des 3. und jene der Jahrgänge 1805 und 6. wenn Sie aber
-                  wollen; so bin ich bereit das Verlangte in Schaffhausen oder Zürich zu entlehnen
-                  und Ihnen zu senden. Wie schmerzlich fällt auch mir der Tod der Frau von
-                  Hassenpflug in Kassel; mitten in den besten Jahren und aus der Mitte einer
-                  liebenden Familie wurde sie hinweggerafft. ich weiß wie die Brüder Grimm diese
-                  Schwester liebten, wie tief muss ihre Trauer sein. ich fürchte mich, an Jakob zu
-                  schreiben, und bin froh ihn nun später zu sehen, da wie ich hoffe, die Zeit
-                  schon wohltätig auf seinen Schmerz gewirkt hat. Der Schluss Ihres Briefes: aus
-                  dem Studieren wird in diesen Zeiten nicht viel, muss nun umgekehrt werden.
-                  gerade in den Zeiten der Trauer muss man sich den Musen in die Arme werfen!
-                  diese freundlichen Schwestern sind die besten Trösterinnen in trübseligen
-                  Zeiten, sie beruhigen und erheitern das leidende Gemüt, sie ermutigen es, und
-                  lassen zuletzt wieder die Hoffnungssonne hineinscheinen: ich habe dies
-                  überzeugend an mir erfahren, und glaube daher an diese Arznei und empfehle sie
-                  jedem Betrübten. Hat uns der Nibelungenlied stark bewegt; so lassen wir uns
-                  jetzt durch die Klage rühren! fata viam expedient! Aulrelius Tigurinus muss in
-                  St. Gallen noch manches gefunden haben; weil er sich über 14 Tage da aufhielt;
-                  dies geht aber wohl nur auf klassische Literatur. Er äußerte hier gute
-                  Hoffnungen für seine alma Tigurina, und bedauerte den Missgriff, den er bei
-                  Ettmüllers Berufung gemacht hat. von Politik vermied ich aus guten Gründen zu
-                  sprechen. die ehrliche Haut schien mir auch schon ganz indoktriniert zu sein.
-                  Habeat sibi! In dem literarischen Nachlasse und Collectaneen meines Freundes Arx
-                  bin ich auf einige merkwürdige historische Urkunden gestoßen; aber nichts quod
-                  ad theotiscam facit, ließ sich entdecken. In diesen unpoetischen Zeiten, wendet
-                  sich das Gemüt lieber zu der Geschichte, nicht zu der unserer Tage, welche
-                  kleinlich und gemein ist; sondern zu der des Mittelalters, in demselben
-                  erscheint auch selbst das Laster mit Geist und Kraft, und hat durch Tat und
-                  Tüchtigkeit seinen Wert behalten. die gegenwärtige Zeit erscheint dagegen als
-                  niederdrückend und vernichtend, man erblickt überall nichts als eine feige
-                  Kriecherei vor dem Volk, oder vor den Fürsten, Sittenlosigkeit, Unverstand und
-                  eine wütige Umwälzungssucht. Eben hierdurch wird unsere Zeit dem Manne von Kopf
-                  und Herz so schwer zu ertragen. was den Vätern heilig war, wird jetzt
-                  herabgesetzt und verachtet; aber das Schlechte und Gemeine wird hinaufgehoben
-                  und oft sogar auf den Altar gestellt. überall will man jetzt durch Angst und
-                  Schrecken und Gräuel die friedlichen Menschen aus ihren Verhältnissen und
-                  Gewohnheiten aufrütteln, verblüffen und ihren Verstand gefangen nehmen. o he!
-                  iam satis! Einer meiner Hausgenossen, Dr. Liebenau ist in Baden, um seine
-                  Eingeweide zu stärken; ginge er auf die Tagsatzung, so würde er lernen, wie man
-                  ohne alle Eingeweide sich recht wohl befinden kann. der Candidatus iuris, Vetter
-                  Max, erwidert Ihren Gruß auf das Freundlichste. Leben Sie wohl, Gott befohlen
-                  von Ihrem ergebensten JvLaßberg. Sehr begierig wäre ich zu erfahren, ob meine
-                  Vermutung wegen des Colmarer Codex der Meistersänger einigen Grund hat? oder was
-                  des H. Neukirch Handschrift denn eigentlich enthält? Dabam ex Villa Epponis
-                  XIII. Augusti. mdcccxxxiii.
+                  
+                  <p>Eppishausen, 13. Aug. 33 Quomodo sedet sola civitas plena populo! facta est quasi
+                     vidua! Non est qui consoletur eam ex omnibus charis eius: omnes amici eius
+                     spreverunt eam et facti sunt ei inimici. Hieremias. Wer sich selbst aufgibt, ist
+                     bald von allen verlassen! Basel ist verloren; weil es sich selbst verlassen hat!
+                     quis temperet a lacrimis! multis bonis illa flebilis occidit! aber, wer nicht
+                     Krieg zu führen weiß, tut wohl den Frieden zu kaufen! nun fürchte ich, die haben
+                     fehlgeschossen, die da glauben, ihn um die Schande eingehandelt zu haben; denn
+                     jetzt werden die Tage der Trübsale erst angehen. Soeben las ich in Ludens
+                     Geschichte des deutschen Volkes nachstehendes: "aber Ankläger der Gesinnungen
+                     ließen von jeher selten ab und waren noch seltener zu widerlegen. dieselbe
+                     Leidenschaft, die zum ersten Schritte trieb, führte weiter. jede eigene
+                     Äußerung, jede fremde Bewegung, ward zum Beweise. Die Natur verlor ihr Recht,
+                     der Verstand seine Ehre; das Entfernteste wurde zum Nächsten gezogen und das
+                     Entgegengesetzte zum Gleichen gezählt. aus Angst, Scham und dem Gefühle eigener
+                     Verdorbenheit entstand ein unauslöschlicher Hass und eine wilde Verfolgungswut,
+                     die nicht eher geheilt ward, bis man die Gewalthaber zur Teilnahme an der Sünde
+                     gebracht hatte und bis das Opfer gefallen war." Sehen Sie hier die neueste
+                     Geschichte der Schweiz und die Zukunft Ihrer Stadt! wie schön und folgerecht
+                     hatte Basel sich benommen; wie inkonsequent hat es auf einmal geendet! wer hätte
+                     das erwartet? vitam praeferre pudori! et propter vitam vivendi perdere causas. -
+                     ich weiß wohl, mit Reden und Schreiben ist jetzt nichts auszurichten; auch ist
+                     die Sache so gründlich verdorben, dass sie nicht wieder auf einen festen Grund
+                     kommen kann; aber was ist nun anzufangen? ich antworte wie die durch das
+                     Erdbeben /: 1783 :/ verschüttete Frau in Kalabrien: warten! warten und nicht
+                     verzagen! am Schlusse meines Schwabenspiegels von 1287 steht: "Swer danne z'
+                     aller zituffe daz reht sprichet, der gewinnet mangen vint. des mac sich der
+                     biderbe man gerne trösten. durch Got und durch sin Ere, daz er die Vintschaft
+                     hab durch daz reht. und wissend, swer daz reht gerne stäte hat, dem hilft Got,
+                     und ist oft gesehen worden an manchem Man, die mangen Widerstrit hatten, darum,
+                     daz sie dem rehten gestunden." Ich kann Ihnen nicht genug sagen, wie tief mich
+                     diese jämmerliche Katastrophe betrübt hat und wie viele traurige Folgen ich
+                     daraus hervorgehen sehe. Gott walts! denn dieser allein könnte noch helfen; aber
+                     die Zeiten der Wunder sind vorbei! so wie die Zeiten der Treue und des Glaubens.
+                     Ich glaube nicht, dass die fremden Mächte sich in den Handel mischen, noch viel
+                     weniger tätig einschreiten werden. Diz Liet haizet div Klage!!! Aus dem
+                     beiliegenden Briefe werden Sie ersehen, dass ich dem H. Marquard Wocher weder
+                     für den Transport des Altares, noch für sonst etwas einiges schuldig geblieben
+                     bin, dass und wie derselbe solchen auseinander zu nehmen, mit Blendrahmen
+                     versehen zu lassen und mir zuzusenden gedachte, endlich dass der Altar in einer
+                     großen Kiste lag, aus welcher Wocher eine kleinere wollte machen lassen, um die
+                     Stücke einzeln darein zu packen. wollen Sie die freundschaftliche Gefälligkeit
+                     haben, auf eben solche Weise damit zu verfahren; so werden Sie mich recht sehr
+                     verbinden. Wochers Brief bitte ich mir wieder zurückzusenden: es ist der letzte,
+                     den er mir schrieb, ich möchte ihn gerne zum Andenken, an die 40-jährige
+                     Freundschaft, die zwischen uns bestand, aufbehalten. Da von Basel gewiss
+                     Frachtwagen nach St. Gallen und Rorschach gehen; so wird die Kiste auf diesem
+                     Wege am besten hierher gelangen, mein Haus liegt ja an der Straße nach
+                     Rorschach. alle sich ergebende Kosten werde ich mit dem verbindlichsten Danke
+                     erstatten. Wie sehr bedauerte ich Sie des schlechten Wetters wegen, das Sie auf
+                     Ihrer Reise verfolgte; nun bin ich doch dadurch getröstet, dass Sie in Zürich
+                     noch einige Ausbeute gemacht haben; auch Aurelius Cicero, der bald nach Ihnen
+                     mit dem Professor Baiter hierherkam, sprach mir von der deutschen Logik und
+                     Rhetorik des XI. Jahrhunderts: nun das ist ein guter Fund! aber ich bedaure
+                     Ihnen den VII. Band der Aretinischen Beiträge nicht senden zu können; ich
+                     besitze nur die 6. Hefte des 3. und jene der Jahrgänge 1805 und 6. wenn Sie aber
+                     wollen; so bin ich bereit das Verlangte in Schaffhausen oder Zürich zu entlehnen
+                     und Ihnen zu senden. Wie schmerzlich fällt auch mir der Tod der Frau von
+                     Hassenpflug in Kassel; mitten in den besten Jahren und aus der Mitte einer
+                     liebenden Familie wurde sie hinweggerafft. ich weiß wie die Brüder Grimm diese
+                     Schwester liebten, wie tief muss ihre Trauer sein. ich fürchte mich, an Jakob zu
+                     schreiben, und bin froh ihn nun später zu sehen, da wie ich hoffe, die Zeit
+                     schon wohltätig auf seinen Schmerz gewirkt hat. Der Schluss Ihres Briefes: aus
+                     dem Studieren wird in diesen Zeiten nicht viel, muss nun umgekehrt werden.
+                     gerade in den Zeiten der Trauer muss man sich den Musen in die Arme werfen!
+                     diese freundlichen Schwestern sind die besten Trösterinnen in trübseligen
+                     Zeiten, sie beruhigen und erheitern das leidende Gemüt, sie ermutigen es, und
+                     lassen zuletzt wieder die Hoffnungssonne hineinscheinen: ich habe dies
+                     überzeugend an mir erfahren, und glaube daher an diese Arznei und empfehle sie
+                     jedem Betrübten. Hat uns der Nibelungenlied stark bewegt; so lassen wir uns
+                     jetzt durch die Klage rühren! fata viam expedient! Aulrelius Tigurinus muss in
+                     St. Gallen noch manches gefunden haben; weil er sich über 14 Tage da aufhielt;
+                     dies geht aber wohl nur auf klassische Literatur. Er äußerte hier gute
+                     Hoffnungen für seine alma Tigurina, und bedauerte den Missgriff, den er bei
+                     Ettmüllers Berufung gemacht hat. von Politik vermied ich aus guten Gründen zu
+                     sprechen. die ehrliche Haut schien mir auch schon ganz indoktriniert zu sein.
+                     Habeat sibi! In dem literarischen Nachlasse und Collectaneen meines Freundes Arx
+                     bin ich auf einige merkwürdige historische Urkunden gestoßen; aber nichts quod
+                     ad theotiscam facit, ließ sich entdecken. In diesen unpoetischen Zeiten, wendet
+                     sich das Gemüt lieber zu der Geschichte, nicht zu der unserer Tage, welche
+                     kleinlich und gemein ist; sondern zu der des Mittelalters, in demselben
+                     erscheint auch selbst das Laster mit Geist und Kraft, und hat durch Tat und
+                     Tüchtigkeit seinen Wert behalten. die gegenwärtige Zeit erscheint dagegen als
+                     niederdrückend und vernichtend, man erblickt überall nichts als eine feige
+                     Kriecherei vor dem Volk, oder vor den Fürsten, Sittenlosigkeit, Unverstand und
+                     eine wütige Umwälzungssucht. Eben hierdurch wird unsere Zeit dem Manne von Kopf
+                     und Herz so schwer zu ertragen. was den Vätern heilig war, wird jetzt
+                     herabgesetzt und verachtet; aber das Schlechte und Gemeine wird hinaufgehoben
+                     und oft sogar auf den Altar gestellt. überall will man jetzt durch Angst und
+                     Schrecken und Gräuel die friedlichen Menschen aus ihren Verhältnissen und
+                     Gewohnheiten aufrütteln, verblüffen und ihren Verstand gefangen nehmen. o he!
+                     iam satis! Einer meiner Hausgenossen, Dr. Liebenau ist in Baden, um seine
+                     Eingeweide zu stärken; ginge er auf die Tagsatzung, so würde er lernen, wie man
+                     ohne alle Eingeweide sich recht wohl befinden kann. der Candidatus iuris, Vetter
+                     Max, erwidert Ihren Gruß auf das Freundlichste. Leben Sie wohl, Gott befohlen
+                     von Ihrem ergebensten JvLaßberg. Sehr begierig wäre ich zu erfahren, ob meine
+                     Vermutung wegen des Colmarer Codex der Meistersänger einigen Grund hat? oder was
+                     des H. Neukirch Handschrift denn eigentlich enthält? Dabam ex Villa Epponis
+                     XIII. Augusti. mdcccxxxiii.</p>
                   </div>
             </section>
             <section id="translation" class="mb-4">
                <h2>Translation</h2>
                <div>
-                  Eppishausen, 13 August, [18]33 "How deserted lies the city, once so full of
-                  people! How like a widow she has become! There is no one to comfort her among
-                  all her loved ones; all her friends have betrayed her and become her enemies." -
-                  Jeremiah. He who gives up on himself is soon abandoned by all! Basel is lost
-                  because it abandoned itself! Who can refrain from tears! It fell pitiable to
-                  many good ones! But, those who do not know how to wage war should wisely
-                  purchase peace! Now I fear those have missed their mark, who believe they have
-                  bargained for disgrace; for now the days of tribulation will truly begin. I just
-                  read the following in Luden's history of the German people: "But accusers of
-                  sentiments rarely ceased and were even more rarely refuted. The same passion
-                  that led to the first step led further. Every own expression, every foreign
-                  movement was taken as evidence. Nature lost its right, reason its honor; the
-                  most distant was brought closest, and the opposite was counted as the same. From
-                  fear, shame, and the feeling of one's own corruption sprang an indelible hatred
-                  and a wild persecution frenzy, which was not cured until the rulers were made to
-                  partake in the sin and until the victim had fallen." See here the latest history
-                  of Switzerland and the future of your city! How beautifully and consistently
-                  Basel behaved; how inconsistently it ended all at once! Who would have expected
-                  that? To prefer life to honor! And for the sake of life to lose the reasons for
-                  living. - I know well, with speaking and writing there is nothing to be achieved
-                  now; also, the matter is so thoroughly spoiled that it cannot come back to a
-                  firm ground; but what is to be done now? I answer like the woman buried by the
-                  earthquake /:1783:/ in Calabria: wait! wait and do not despair! At the end of my
-                  Swabian Mirror from 1287 it stands: "Whoever speaks the right at all times,
-                  gains many enemies. The honorable man can gladly take comfort in this. Through
-                  God and through his honor, that he has the enmity through the right. And know,
-                  whoever gladly supports the right, God helps him, and it has often been seen in
-                  many men who had many disputes, because they stood by the right." I cannot tell
-                  you enough how deeply this wretched catastrophe has grieved me and how many
-                  sorrowful consequences I see arising from it. God wills it! For He alone could
-                  still help; but the times of miracles are over! Just as the times of loyalty and
-                  faith. I do not believe that foreign powers will interfere in the matter, much
-                  less act decisively. This song is called the Lament!!! From the enclosed letter,
-                  you will see that I owe Mr. Marquard Wocher nothing for the transport of the
-                  altar, nor for anything else, that and how he intended to take it apart, provide
-                  it with frame fittings, and send it to me, finally that the altar was in a big
-                  box, from which Wocher wanted to have a smaller one made, to pack the pieces
-                  individually therein. Would you have the friendly courtesy to proceed in such a
-                  manner; you will oblige me greatly. I ask you to return Wocher's letter to me:
-                  it is the last one he wrote to me, I would like to keep it in remembrance of the
-                  40-year friendship that existed between us. Since freight wagons from Basel
-                  certainly go to St. Gallen and Rorschach, the box will best reach me this way,
-                  my house is indeed on the road to Rorschach. I will reimburse all arising costs
-                  with the most obliging thanks. How much I regretted your following bad weather
-                  on your journey; now I am comforted by the fact that you still made some
-                  acquisitions in Zurich; also, Aurelius Cicero, who came here soon after you with
-                  Professor Baiter, spoke to me of the German logic and rhetoric of the 11th
-                  century: now that is a good find! But I regret not being able to send you the
-                  7th volume of the Aretinian contributions; I possess only the 6 issues of the
-                  3rd and those of the years 1805 and 6. If you want; I am willing to borrow what
-                  is wanted in Schaffhausen or Zurich and send it to you. How painful also for me
-                  is the death of Mrs. von Hassenpflug in Kassel; in the midst of the best years
-                  and from the midst of a loving family, she was snatched away. I know how the
-                  brothers Grimm loved this sister, how deep their mourning must be. I fear
-                  writing to Jacob, and am glad to see him later, as I hope, time has already
-                  acted beneficially on his pain. The end of your letter: not much will come from
-                  studying in these times, must now be turned around. Precisely in times of
-                  mourning, one must throw oneself into the arms of the muses! These friendly
-                  sisters are the best comforters in troubled times, they calm and brighten the
-                  suffering mind, they encourage it and finally let the sun of hope shine in
-                  again: I have experienced this convincingly in myself, and therefore believe in
-                  this medicine and recommend it to everyone who is troubled. If the
-                  Nibelungenlied moved us strongly; let us now be moved by the lament! Fates will
-                  find a way! Aurelius Tigurinus must have found much more in St. Gallen; because
-                  he stayed there for over 14 days; but this likely pertains to classical
-                  literature. He expressed good hopes here for his alma Tigurina, and lamented the
-                  mistake he made in Ettmüller's calling. For good reason, I avoided speaking
-                  about politics. The honest fellow seemed to me already quite indoctrinated. Have
-                  it so! In the literary estate and collectanea of my friend Arx, I have come
-                  across some remarkable historical documents; but nothing quod ad theotiscam
-                  facit could be discovered. In these unpoetic times, the mind rather turns to
-                  history, not to our day's, which is petty and common; but to that of the Middle
-                  Ages, in it even vice appears with spirit and force, and has retained its value
-                  through action and capability. The present time, on the other hand, appears as
-                  oppressive and annihilating, everywhere one sees nothing but cowardly servility
-                  before the people or the princes, immorality, lack of understanding, and a
-                  furious desire for upheaval. That is why our time is so hard to bear for a man
-                  with a head and heart. What was sacred to the fathers is now demeaned and
-                  despised; but the bad and common are elevated and often even placed on the
-                  altar. Everywhere now they want through fear and horror and atrocities to shake
-                  peaceful people out of their relationships and habits, to bewilder them and
-                  capture their mind. Oh enough already! One of my housemates, Dr. Liebenau, is in
-                  Baden, to strengthen his intestines; if he went to the diet session, he would
-                  learn how one can feel quite well without any intestines. The candidate of law,
-                  cousin Max, returns your greeting most kindly. Live well, entrusted to God by
-                  Your most devoted JvLaßberg. I would be very eager to learn whether my
-                  assumption regarding the Colmar Codex of the Meistersing has some basis? Or what
-                  Mr. Neukirch's manuscript actually contains? Given from the villa at Epponis
-                  XIII, August. 1833.
+                  
+                  <p>Eppishausen, 13 August, [18]33 "How deserted lies the city, once so full of
+                     people! How like a widow she has become! There is no one to comfort her among
+                     all her loved ones; all her friends have betrayed her and become her enemies." -
+                     Jeremiah. He who gives up on himself is soon abandoned by all! Basel is lost
+                     because it abandoned itself! Who can refrain from tears! It fell pitiable to
+                     many good ones! But, those who do not know how to wage war should wisely
+                     purchase peace! Now I fear those have missed their mark, who believe they have
+                     bargained for disgrace; for now the days of tribulation will truly begin. I just
+                     read the following in Luden's history of the German people: "But accusers of
+                     sentiments rarely ceased and were even more rarely refuted. The same passion
+                     that led to the first step led further. Every own expression, every foreign
+                     movement was taken as evidence. Nature lost its right, reason its honor; the
+                     most distant was brought closest, and the opposite was counted as the same. From
+                     fear, shame, and the feeling of one's own corruption sprang an indelible hatred
+                     and a wild persecution frenzy, which was not cured until the rulers were made to
+                     partake in the sin and until the victim had fallen." See here the latest history
+                     of Switzerland and the future of your city! How beautifully and consistently
+                     Basel behaved; how inconsistently it ended all at once! Who would have expected
+                     that? To prefer life to honor! And for the sake of life to lose the reasons for
+                     living. - I know well, with speaking and writing there is nothing to be achieved
+                     now; also, the matter is so thoroughly spoiled that it cannot come back to a
+                     firm ground; but what is to be done now? I answer like the woman buried by the
+                     earthquake /:1783:/ in Calabria: wait! wait and do not despair! At the end of my
+                     Swabian Mirror from 1287 it stands: "Whoever speaks the right at all times,
+                     gains many enemies. The honorable man can gladly take comfort in this. Through
+                     God and through his honor, that he has the enmity through the right. And know,
+                     whoever gladly supports the right, God helps him, and it has often been seen in
+                     many men who had many disputes, because they stood by the right." I cannot tell
+                     you enough how deeply this wretched catastrophe has grieved me and how many
+                     sorrowful consequences I see arising from it. God wills it! For He alone could
+                     still help; but the times of miracles are over! Just as the times of loyalty and
+                     faith. I do not believe that foreign powers will interfere in the matter, much
+                     less act decisively. This song is called the Lament!!! From the enclosed letter,
+                     you will see that I owe Mr. Marquard Wocher nothing for the transport of the
+                     altar, nor for anything else, that and how he intended to take it apart, provide
+                     it with frame fittings, and send it to me, finally that the altar was in a big
+                     box, from which Wocher wanted to have a smaller one made, to pack the pieces
+                     individually therein. Would you have the friendly courtesy to proceed in such a
+                     manner; you will oblige me greatly. I ask you to return Wocher's letter to me:
+                     it is the last one he wrote to me, I would like to keep it in remembrance of the
+                     40-year friendship that existed between us. Since freight wagons from Basel
+                     certainly go to St. Gallen and Rorschach, the box will best reach me this way,
+                     my house is indeed on the road to Rorschach. I will reimburse all arising costs
+                     with the most obliging thanks. How much I regretted your following bad weather
+                     on your journey; now I am comforted by the fact that you still made some
+                     acquisitions in Zurich; also, Aurelius Cicero, who came here soon after you with
+                     Professor Baiter, spoke to me of the German logic and rhetoric of the 11th
+                     century: now that is a good find! But I regret not being able to send you the
+                     7th volume of the Aretinian contributions; I possess only the 6 issues of the
+                     3rd and those of the years 1805 and 6. If you want; I am willing to borrow what
+                     is wanted in Schaffhausen or Zurich and send it to you. How painful also for me
+                     is the death of Mrs. von Hassenpflug in Kassel; in the midst of the best years
+                     and from the midst of a loving family, she was snatched away. I know how the
+                     brothers Grimm loved this sister, how deep their mourning must be. I fear
+                     writing to Jacob, and am glad to see him later, as I hope, time has already
+                     acted beneficially on his pain. The end of your letter: not much will come from
+                     studying in these times, must now be turned around. Precisely in times of
+                     mourning, one must throw oneself into the arms of the muses! These friendly
+                     sisters are the best comforters in troubled times, they calm and brighten the
+                     suffering mind, they encourage it and finally let the sun of hope shine in
+                     again: I have experienced this convincingly in myself, and therefore believe in
+                     this medicine and recommend it to everyone who is troubled. If the
+                     Nibelungenlied moved us strongly; let us now be moved by the lament! Fates will
+                     find a way! Aurelius Tigurinus must have found much more in St. Gallen; because
+                     he stayed there for over 14 days; but this likely pertains to classical
+                     literature. He expressed good hopes here for his alma Tigurina, and lamented the
+                     mistake he made in Ettmüller's calling. For good reason, I avoided speaking
+                     about politics. The honest fellow seemed to me already quite indoctrinated. Have
+                     it so! In the literary estate and collectanea of my friend Arx, I have come
+                     across some remarkable historical documents; but nothing quod ad theotiscam
+                     facit could be discovered. In these unpoetic times, the mind rather turns to
+                     history, not to our day's, which is petty and common; but to that of the Middle
+                     Ages, in it even vice appears with spirit and force, and has retained its value
+                     through action and capability. The present time, on the other hand, appears as
+                     oppressive and annihilating, everywhere one sees nothing but cowardly servility
+                     before the people or the princes, immorality, lack of understanding, and a
+                     furious desire for upheaval. That is why our time is so hard to bear for a man
+                     with a head and heart. What was sacred to the fathers is now demeaned and
+                     despised; but the bad and common are elevated and often even placed on the
+                     altar. Everywhere now they want through fear and horror and atrocities to shake
+                     peaceful people out of their relationships and habits, to bewilder them and
+                     capture their mind. Oh enough already! One of my housemates, Dr. Liebenau, is in
+                     Baden, to strengthen his intestines; if he went to the diet session, he would
+                     learn how one can feel quite well without any intestines. The candidate of law,
+                     cousin Max, returns your greeting most kindly. Live well, entrusted to God by
+                     Your most devoted JvLaßberg. I would be very eager to learn whether my
+                     assumption regarding the Colmar Codex of the Meistersing has some basis? Or what
+                     Mr. Neukirch's manuscript actually contains? Given from the villa at Epponis
+                     XIII, August. 1833.</p>
                   </div>
             </section>
          </div>
-      </div><script src="https://unpkg.com/leaflet/dist/leaflet.js"></script><script>
+      </main>
+      <footer class="bg-dark text-white text-center py-3">
+         <div class="container">
+            <p class="mb-0"><a href="../letters.html">Back to the Letters</a></p>
+         </div>
+      </footer><script src="https://unpkg.com/leaflet/dist/leaflet.js"></script><script>
                     // Create the map and set its view to a default coordinate and zoom level.
-                    var map = L.map('mapid').setView([47.545,9.23759], 7);
-                    // Set up the OpenStreetMap tile layer.
-                    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                    attribution: 'Map data <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
+                    var map = L.map('mapid', { scrollWheelZoom: false }).setView([47.545,9.23759], 7);
+                    // Muted basemap (CARTO Positron) instead of the default colourful OSM tiles,
+                    // to match the edition's restrained palette.
+                    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+                    attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+                    subdomains: 'abcd',
+                    maxZoom: 19
                     }).addTo(map);
-                    
-                    
-                    // Optionally add a marker at the center
-                    
-                    // Define custom marker icons.
-                    var mentionedIcon = L.icon({
-                    iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
-                    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/images/marker-shadow.png',
-                    iconSize: [25, 41],
-                    iconAnchor: [12, 41],
-                    popupAnchor: [1, -34],
-                    shadowSize: [41, 41]
-                    });
-                    
-                    L.marker([47.545,9.23759]).addTo(map)
+
+                    // Sender's place: filled circle in the edition's accent colour.
+                    L.circleMarker([47.545,9.23759], {
+                    radius: 8, color: '#143761', weight: 2, fillColor: '#1d4e89', fillOpacity: 0.85
+                    }).addTo(map)
                     .bindPopup('Eppishausen')
                     .openPopup();
+
+                    // Mentioned places: smaller, lighter circles in a secondary tone.
                     
-                    
-                        
+
                         var popupText = "Basel";
-                        L.marker([47.55472222,7.59055556], {icon: mentionedIcon}).addTo(map)
+                        L.circleMarker([47.55472222,7.59055556], {
+                        radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75
+                        }).addTo(map)
                         .bindPopup(popupText);
                     
-                        
+
                         var popupText = "Schweiz";
-                        L.marker([46.798562, 8.231973], {icon: mentionedIcon}).addTo(map)
+                        L.circleMarker([46.798562, 8.231973], {
+                        radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75
+                        }).addTo(map)
                         .bindPopup(popupText);
                     
-                        
+
                         var popupText = "Kalabrien";
-                        L.marker([39, 16.5], {icon: mentionedIcon}).addTo(map)
+                        L.circleMarker([39, 16.5], {
+                        radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75
+                        }).addTo(map)
                         .bindPopup(popupText);
                     
-                        
+
                         var popupText = "St. Gallen";
-                        L.marker([47.42416667,9.37083333], {icon: mentionedIcon}).addTo(map)
+                        L.circleMarker([47.42416667,9.37083333], {
+                        radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75
+                        }).addTo(map)
                         .bindPopup(popupText);
                     
-                        
+
                         var popupText = "Rorschach";
-                        L.marker([47.478611,9.493611], {icon: mentionedIcon}).addTo(map)
+                        L.circleMarker([47.478611,9.493611], {
+                        radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75
+                        }).addTo(map)
                         .bindPopup(popupText);
                     
-                        
+
                         var popupText = "Zürich";
-                        L.marker([47.374444,8.541111], {icon: mentionedIcon}).addTo(map)
+                        L.circleMarker([47.374444,8.541111], {
+                        radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75
+                        }).addTo(map)
                         .bindPopup(popupText);
                     
-                        
+
                         var popupText = "Schaffhausen";
-                        L.marker([47.7,8.63333333], {icon: mentionedIcon}).addTo(map)
+                        L.circleMarker([47.7,8.63333333], {
+                        radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75
+                        }).addTo(map)
                         .bindPopup(popupText);
                     
-                        
+
                         var popupText = "Kassel";
-                        L.marker([51.3158,9.4979], {icon: mentionedIcon}).addTo(map)
+                        L.circleMarker([51.3158,9.4979], {
+                        radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75
+                        }).addTo(map)
                         .bindPopup(popupText);
                     
-                        
+
                         var popupText = "Baden (Aargau)";
-                        L.marker([47.47291,8.30799], {icon: mentionedIcon}).addTo(map)
+                        L.circleMarker([47.47291,8.30799], {
+                        radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75
+                        }).addTo(map)
                         .bindPopup(popupText);
                     </script><script>
                     // Initialize all tooltips

@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-register-literature">
+  <teiHeader><fileDesc><titleStmt><title>Fixture literature</title></titleStmt></fileDesc></teiHeader>
+  <text><body>
+    <listBibl>
+      <bibl xml:id="lassberg-literature-0001" type="historicalSource">
+        <author key="">Test Autor</author>
+        <title>Testwerk</title>
+        <pubPlace key="">Testort</pubPlace>
+        <date>1500</date>
+        <idno type="varia">-</idno>
+      </bibl>
+      <bibl xml:id="lassberg-literature-0002" type="contemporaryPublication">
+        <author key="../register/lassberg-persons.xml#lassberg-correspondent-0001">Test Sender</author>
+        <title>Zweites Testwerk</title>
+        <pubPlace key="../register/lassberg-places.xml#lassberg-place-0001">Testort</pubPlace>
+        <date>1825</date>
+      </bibl>
+    </listBibl>
+  </body></text>
+</TEI>

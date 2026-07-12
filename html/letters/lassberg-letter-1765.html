@@ -5,32 +5,42 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>The Lassberg Letters</title>
       <link href="../../css/styles.css" rel="stylesheet">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script><script src="../../js/letters.js"></script><link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"><script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script></head>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script><link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"><script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script></head>
    <body>
-      <div id="app" class="container">
-         <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
-            <div class="container-fluid"><a class="navbar-brand" href="#">Laßberg Letters</a><ul class="navbar-nav">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+         <div class="container"><a class="navbar-brand" href="../../index.html">The Laßberg Letters</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ms-auto">
                   <li class="nav-item"><a class="nav-link" href="../../index.html">Welcome</a></li>
                   <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
-                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb">Data Analysis</a></li>
-                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg">Repository</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../persons.html">Persons</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../places.html">Places</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
                </ul>
             </div>
-         </nav>
-         <div class="container my-4">
-            <header class="mb-4">
-               <h1>Brief von Wilhelm Wackernagel an Joseph von Laßberg (16.03.1834).</h1>
-               <p class="lead">
-                  Textfassung auf Basis der Transkription durch Transkribus korrigiert und in TEI
+         </div>
+      </nav>
+      <header class="page-header py-4">
+         <div class="container">
+            <h1 class="mb-2">Brief von Wilhelm Wackernagel an Joseph von Laßberg (16.03.1834).</h1>
+            <p class="lead mb-0">
+               
+               <p>Textfassung auf Basis der Transkription durch Transkribus korrigiert und in TEI
                   überführt. Automatisierte NER-Erkennung und Identifikation durch Flair geprüft,
                   korrigiert und ergänzt. Normalisierung, Zusammenfassung und Übersetzung durch
-                  GPT-4. Lizenz: 
-                  
-                  <a href="https://creativecommons.org/licenses/by/4.0/">CC BY
-                     4.0</a>
-                  
-                  </p>
-            </header>
+                  GPT-4. Lizenz: </p>
+               
+               <a href="https://creativecommons.org/licenses/by/4.0/">CC BY
+                  4.0</a>
+               
+               </p>
+         </div>
+      </header>
+      <main class="py-4">
+         <div class="container">
             <section id="map" class="mb-4">
                <div id="mapid"></div>
             </section>
@@ -42,128 +52,133 @@
                <p><strong>Gedruck in: </strong><a href=""></a></p>
             </section>
             <section id="original-text" class="mb-4">
-               <h2>Original Text</h2>
+               <h2>Original Text
+                  <span class="transcription-source badge-manuscript" title="Diplomatische Transkription der Handschrift">Transcribed from the manuscript (Transkribus)</span></h2>
                <div>
-                  erhalten am 20 März
-                  abendes. beantwortet und die bücher gesendet am 21. Basel 16/3/34. Hochgeehrter Herr
-                  Baron, hoffentlich treffen diese Zeilen Sie in der besten Gesundheit und mir so
-                  geneigt, daß ich Ihnen mit meinem Brief und meiner Bitte nicht gar zu beschwerlich
-                  falle. ich bin
-                  im Begriff, ein <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wilhelm Wackernagel: Deutsches Lesebuch.</strong&gt;">altdeutsches
-                     Lesebus für den academischen und höhren Schuluntericht<a href="https://digi.ub.uni-heidelberg.de/diglit/wackernagel1839ga">📖</a></span> drucken zu laßen,
-                  in der hiesigen Schweighäuserischen (Wielandischen) Buchhandlung. Mit dem April sollen
-                  die Pressen sich schon rühren. Leider fehlen mir aber für die mittelhochd. Litteratur
-                  einige Bücher, die ich mit Schmerzen vermisse, ungern nicht benutzen würde. Es ist der <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Christoph Heinrich Myller: Samlung deutscher Gedichte aus dem XII., XIII. und XIV. Jahrhundert. 3&#xA;        Bde.</strong&gt;">dritte Band der Müllerischen Sammlung<a href="https://www.digitale-sammlungen.de/de/details/bsb10057384">📖</a></span> (des <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Konrad von Würzburg: Trojanerkrieg.</strong&gt;">Trojener
-                     Krieges</span> wegen), <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wernher (Priester): Maria.</strong&gt;">Wernherrs
-                     Maria</span> von <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wernher eines Geistlichen im zwölften Jahrhundert Gedicht zur Ehre&#xA;        der Jungfrau Maria.</strong&gt;">Oeter<a href="https://books.google.it/books?id=8VQ7AAAAcAAJ">📖</a></span>,
-                  und Ihr <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Joseph von Laßberg: Lieder-Saal, das ist:&#xA;        Sammelung altteutscher Gedichte.</strong&gt;">Liederaal<a href="http://dl.ub.uni-freiburg.de/diglit/liedersaal1825-3">📖</a></span>. Aus welchen Schätzen und von wessen Güte kann ich da Unterstützung
-                  erwarten, wenn sie nicht, hochverehrter Herr Baron, meiner Sich annehmen? Wollen Sie also
-                  die Gewogenheit haben, mir auf ganz kurze Zeit, nur damit ich schnell Abschrift nehmen
-                  kann, jene Bücher lieder anzuvertrauen? Wofern sie nicht gar (ich wage die Bitte, da
-                  Sie nicht ganz und gar eigennützig ist) die hiesige untheilbare Bibliothek mit einem
-                  bleibenden Exemplar des <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Joseph von Laßberg: Lieder-Saal, das ist:&#xA;        Sammelung altteutscher Gedichte.</strong&gt;">Liedersaales<a href="http://dl.ub.uni-freiburg.de/diglit/liedersaal1825-3">📖</a></span> schmücken wollen. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Franz Dorotheus Gerlach</strong&gt;">Hr. Prof.
-                     Gerlach<a href="https://d-nb.info/gnd/116586842"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> hat mich ermuntert, diess Gesuch an Sie zu stellen. Darf ich
-                  Verzeihung und gütigst baldige Gewährung hoffen? Sie würden damit meine Verbind
-                  lichkeit wo möglich noch vermehren, und gebe mir sicherlich alle Mühe, Ihnen
-                  das Buch zu Danke zu machen: es sollen viele und hübsche Sachen drin stehn, auch manches
-                  bisher ungedruckte. Der <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;August Geyder: Reinhart Fuchs.</strong&gt;">Fuchs
-                     Reinhart<a href="BSB-ID 991093365599707356">📖</a></span> hat doch den weg gefunden? Mit dem Buche ist der litterarischen
-                  Forschung eine neue Bahn gebrochen, und gleich bis zum Ziel. Noch einmahl
-                  empfehle ich mich und meine Bitte Ihrem geneigten Wohlwollen und bin in voller
-                  Hochachtung und Ergebenheit. Wilh. Wackernagel Dr. S. Johan 40. Befindet sich in
-                  <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Eppishausen</strong&gt;">Epponis villa<a href="https://www.wikidata.org/wiki/Q1423653"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, vielleicht auch eine <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Hermann von Sachsenheim: Die&#xA;        Mörin.</strong&gt;">Moerin<a href="https://handschriftencensus.de/werke/889">📖</a></span>,
-                  eine mitteilbare? 
+                  
+                  <p><br>erhalten am 20 März
+                     abendes. <br>beantwortet und die bücher gesendet am 21. <br>Basel 16/3/34. <br>Hochgeehrter Herr
+                     Baron, <br>hoffentlich treffen diese Zeilen Sie in der besten Gesundheit und mir so
+                     geneigt, daß ich Ihnen <br>mit meinem Brief und meiner Bitte nicht gar zu beschwerlich
+                     falle. <br>ich bin
+                     im Begriff, ein <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wilhelm Wackernagel: Deutsches Lesebuch.</strong&gt;">altdeutsches
+                        Lesebus für den academischen und höhren Schuluntericht<a href="https://digi.ub.uni-heidelberg.de/diglit/wackernagel1839gahttps://archive.org/details/deutscheslesebu00wackgoog">📖</a></span> <br>drucken zu laßen,
+                     in der hiesigen Schweighäuserischen (Wielandischen) Buchhandlung. Mit <br>dem April sollen
+                     die Pressen sich schon rühren. Leider fehlen mir aber für die mittelhochd. <br>Litteratur
+                     einige Bücher, die ich mit Schmerzen vermisse, ungern nicht benutzen würde. <br>Es ist der <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Christoph Heinrich Myller: Samlung deutscher Gedichte aus dem XII., XIII. und XIV. Jahrhundert.&#xA;        3 Bde.</strong&gt;">dritte Band der Müllerischen Sammlung<a href="https://www.digitale-sammlungen.de/de/details/bsb10057384VD18 11205407">📖</a></span> (des <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Konrad von Würzburg: Trojanerkrieg.</strong&gt;">Trojener
+                        Krieges<a href="https://handschriftencensus.de/werke/212">📖</a></span> wegen), <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wernher (Priester): Maria.</strong&gt;">Wernherrs
+                        Maria</span> <br>von <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Friedrich Wilhelm Oetter: Wernher eines Geistlichen im zwölften Jahrhundert Gedicht zur Ehre&#xA;        der Jungfrau Maria.</strong&gt;">Oeter<a href="https://books.google.it/books?id=8VQ7AAAAcAAJ">📖</a></span>,
+                     und Ihr <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Joseph von Laßberg: Lieder-Saal, das ist: Sammelung altteutscher&#xA;        Gedichte.</strong&gt;">Liederaal<a href="http://dl.ub.uni-freiburg.de/diglit/liedersaal1825-3https://www.digitale-sammlungen.de/en/view/bsb10113516">📖</a></span>. Aus welchen Schätzen und von wessen Güte kann ich da <br>Unterstützung
+                     erwarten, wenn sie nicht, hochverehrter Herr Baron, meiner Sich annehmen? <br>Wollen Sie also
+                     die Gewogenheit haben, mir auf ganz kurze Zeit, nur damit ich schnell <br>Abschrift nehmen
+                     kann, jene Bücher lieder anzuvertrauen? Wofern sie nicht gar (ich wage <br>die Bitte, da
+                     Sie nicht ganz und gar eigennützig ist) die hiesige untheilbare Bibliothek <br>mit einem
+                     bleibenden Exemplar des <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Joseph von Laßberg: Lieder-Saal, das ist: Sammelung altteutscher&#xA;        Gedichte.</strong&gt;">Liedersaales<a href="http://dl.ub.uni-freiburg.de/diglit/liedersaal1825-3https://www.digitale-sammlungen.de/en/view/bsb10113516">📖</a></span> schmücken wollen. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Franz Dorotheus Gerlach</strong&gt;">Hr. Prof.
+                        Gerlach<a href="https://d-nb.info/gnd/116586842"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> hat mich <br>ermuntert, diess Gesuch an Sie zu stellen. <br>Darf ich
+                     Verzeihung und gütigst baldige Gewährung hoffen? Sie würden damit meine Verbind
+                     <br>lichkeit wo möglich noch vermehren, und gebe mir sicherlich alle Mühe, Ihnen
+                     das Buch zu <br>Danke zu machen: es sollen viele und hübsche Sachen drin stehn, auch manches
+                     bisher ungedruckte. <br>Der <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;August Geyder: Reinhart Fuchs.</strong&gt;">Fuchs
+                        Reinhart<a href="BSB-ID 991093365599707356">📖</a></span> hat doch den weg gefunden? Mit dem Buche ist der litterarischen
+                     Forschung <br>eine neue Bahn gebrochen, und gleich bis zum Ziel. <br>Noch einmahl
+                     empfehle ich mich und meine Bitte Ihrem geneigten Wohlwollen und bin <br>in voller
+                     Hochachtung und Ergebenheit. <br>Wilh. Wackernagel Dr. <br>S. Johan 40. <br>Befindet sich in
+                     <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Eppishausen</strong&gt;">Epponis villa<a href="https://www.wikidata.org/wiki/Q1423653"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, vielleicht <br>auch eine <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Hermann von Sachsenheim: Die&#xA;        Mörin.</strong&gt;">Moerin<a href="https://handschriftencensus.de/werke/889">📖</a></span>,
+                     eine mitteilbare? </p>
                   </div>
             </section>
             <section id="normalised-text" class="mb-4">
                <h2>Normalisierter Text</h2>
                <div>
-                  Erhalten am 20. März abends. Beantwortet und die Bücher gesendet am 21. Basel,
-                  16. März 1834. Hochgeehrter Herr Baron, hoffentlich treffen diese Zeilen Sie in
-                  der besten Gesundheit und mir so geneigt, dass ich Ihnen mit meinem Brief und
-                  meiner Bitte nicht gar zu beschwerlich falle. Ich bin im Begriff, ein
-                  altdeutsches Lesebuch für den akademischen und höheren Schulunterricht drucken
-                  zu lassen, in der hiesigen Schweighäuserischen (Wielandischen) Buchhandlung. Mit
-                  dem April sollen die Pressen sich schon rühren. Leider fehlen mir aber für die
-                  mittelhochdeutsche Literatur einige Bücher, die ich mit Schmerzen vermisse,
-                  ungern nicht benutzen würde. Es ist der dritte Band der Müllerschen Sammlung
-                  (des Trojanerkrieges wegen), Wernhers Maria von Oeter, und Ihr Liedersaal. Aus
-                  welchen Schätzen und von wessen Güte kann ich da Unterstützung erwarten, wenn
-                  Sie nicht, hochverehrter Herr Baron, meiner Sache annehmen? Wollen Sie also die
-                  Gewogenheit haben, mir auf ganz kurze Zeit, nur damit ich schnell Abschrift
-                  nehmen kann, jene Bücher lieder anzuvertrauen? Wofern Sie nicht gar (ich wage
-                  die Bitte, da sie nicht ganz und gar eigennützig ist) die hiesige unteilbare
-                  Bibliothek mit einem bleibenden Exemplar des Liedersaals schmücken wollen. Herr
-                  Prof. Gerlach hat mich ermuntert, dieses Gesuch an Sie zu stellen. Darf ich
-                  Verzeihung und gütigst baldige Gewährung hoffen? Sie würden damit meine
-                  Verbindlichkeit wo möglich noch vermehren, und ich gebe mir sicherlich alle
-                  Mühe, Ihnen das Buch zu danken: Es sollen viele und hübsche Sachen drin stehen,
-                  auch manches bisher ungedruckte. Der Fuchs Reinhart hat doch den Weg gefunden?
-                  Mit dem Buche ist der literarischen Forschung eine neue Bahn gebrochen, und
-                  gleich bis zum Ziel. Noch einmal empfehle ich mich und meine Bitte Ihrem
-                  geneigten Wohlwollen und bin in voller Hochachtung und Ergebenheit. Wilh.
-                  Wackernagel Dr. S. Johann 40. Befindet sich in Epponis Villa, vielleicht auch
-                  eine Morgaine, eine mitteilbare?
+                  
+                  <p>Erhalten am 20. März abends. Beantwortet und die Bücher gesendet am 21. Basel,
+                     16. März 1834. Hochgeehrter Herr Baron, hoffentlich treffen diese Zeilen Sie in
+                     der besten Gesundheit und mir so geneigt, dass ich Ihnen mit meinem Brief und
+                     meiner Bitte nicht gar zu beschwerlich falle. Ich bin im Begriff, ein
+                     altdeutsches Lesebuch für den akademischen und höheren Schulunterricht drucken
+                     zu lassen, in der hiesigen Schweighäuserischen (Wielandischen) Buchhandlung. Mit
+                     dem April sollen die Pressen sich schon rühren. Leider fehlen mir aber für die
+                     mittelhochdeutsche Literatur einige Bücher, die ich mit Schmerzen vermisse,
+                     ungern nicht benutzen würde. Es ist der dritte Band der Müllerschen Sammlung
+                     (des Trojanerkrieges wegen), Wernhers Maria von Oeter, und Ihr Liedersaal. Aus
+                     welchen Schätzen und von wessen Güte kann ich da Unterstützung erwarten, wenn
+                     Sie nicht, hochverehrter Herr Baron, meiner Sache annehmen? Wollen Sie also die
+                     Gewogenheit haben, mir auf ganz kurze Zeit, nur damit ich schnell Abschrift
+                     nehmen kann, jene Bücher lieder anzuvertrauen? Wofern Sie nicht gar (ich wage
+                     die Bitte, da sie nicht ganz und gar eigennützig ist) die hiesige unteilbare
+                     Bibliothek mit einem bleibenden Exemplar des Liedersaals schmücken wollen. Herr
+                     Prof. Gerlach hat mich ermuntert, dieses Gesuch an Sie zu stellen. Darf ich
+                     Verzeihung und gütigst baldige Gewährung hoffen? Sie würden damit meine
+                     Verbindlichkeit wo möglich noch vermehren, und ich gebe mir sicherlich alle
+                     Mühe, Ihnen das Buch zu danken: Es sollen viele und hübsche Sachen drin stehen,
+                     auch manches bisher ungedruckte. Der Fuchs Reinhart hat doch den Weg gefunden?
+                     Mit dem Buche ist der literarischen Forschung eine neue Bahn gebrochen, und
+                     gleich bis zum Ziel. Noch einmal empfehle ich mich und meine Bitte Ihrem
+                     geneigten Wohlwollen und bin in voller Hochachtung und Ergebenheit. Wilh.
+                     Wackernagel Dr. S. Johann 40. Befindet sich in Epponis Villa, vielleicht auch
+                     eine Morgaine, eine mitteilbare?</p>
                   </div>
             </section>
             <section id="translation" class="mb-4">
                <h2>Translation</h2>
                <div>
-                  Received on March 20 in the evening. Answered and the books sent on the 21st.
-                  Basel 03/16/34. Highly esteemed Baron, I hope these lines find you in the best
-                  of health and so disposed towards me that I do not overly burden you with my
-                  letter and my request. I am about to have an old German reader for academic and
-                  higher school instruction printed at the local Schweighäuser (Wieland)
-                  bookstore. The presses are scheduled to start in April. However, I am sadly
-                  lacking a few books on Middle High German literature, which I sorely miss and
-                  would reluctantly forgo using. I am in need of the third volume of the Müller
-                  collection (because of the Trojan War), Wernherr's Maria von Oeter, and your
-                  Liederaal. From whose generosity and resources could I expect support if not
-                  from you, highly esteemed Baron, to whom I appeal? Would you be so kind as to
-                  lend me those books, even briefly, so I may quickly take excerpts? Unless – I
-                  venture to make this request as it is not entirely self-serving – you would wish
-                  to adorn the indivisible library here with a permanent copy of the Liederaal.
-                  Prof. Gerlach encouraged me to present this request to you. May I hope for your
-                  kind pardon and prompt granting of my request? You would thereby possibly
-                  increase my obligation, and I certainly endeavor to make the book worthy of your
-                  favor: many beautiful and charming pieces will be included, as well as some that
-                  have not been printed before. Did the "Reynard the Fox" find its way to you?
-                  With this book, a new path has been opened to literary research, and straight to
-                  the goal. Once again, I entrust myself and my request to your kind benevolence
-                  and remain in full respect and devotion. Wilh. Wackernagel Dr. S. Johan 40.
-                  Might there possibly be in Epponis villa a Moerin, one that can be shared?
+                  
+                  <p>Received on March 20 in the evening. Answered and the books sent on the 21st.
+                     Basel 03/16/34. Highly esteemed Baron, I hope these lines find you in the best
+                     of health and so disposed towards me that I do not overly burden you with my
+                     letter and my request. I am about to have an old German reader for academic and
+                     higher school instruction printed at the local Schweighäuser (Wieland)
+                     bookstore. The presses are scheduled to start in April. However, I am sadly
+                     lacking a few books on Middle High German literature, which I sorely miss and
+                     would reluctantly forgo using. I am in need of the third volume of the Müller
+                     collection (because of the Trojan War), Wernherr's Maria von Oeter, and your
+                     Liederaal. From whose generosity and resources could I expect support if not
+                     from you, highly esteemed Baron, to whom I appeal? Would you be so kind as to
+                     lend me those books, even briefly, so I may quickly take excerpts? Unless – I
+                     venture to make this request as it is not entirely self-serving – you would wish
+                     to adorn the indivisible library here with a permanent copy of the Liederaal.
+                     Prof. Gerlach encouraged me to present this request to you. May I hope for your
+                     kind pardon and prompt granting of my request? You would thereby possibly
+                     increase my obligation, and I certainly endeavor to make the book worthy of your
+                     favor: many beautiful and charming pieces will be included, as well as some that
+                     have not been printed before. Did the "Reynard the Fox" find its way to you?
+                     With this book, a new path has been opened to literary research, and straight to
+                     the goal. Once again, I entrust myself and my request to your kind benevolence
+                     and remain in full respect and devotion. Wilh. Wackernagel Dr. S. Johan 40.
+                     Might there possibly be in Epponis villa a Moerin, one that can be shared?</p>
                   </div>
             </section>
          </div>
-      </div><script src="https://unpkg.com/leaflet/dist/leaflet.js"></script><script>
+      </main>
+      <footer class="bg-dark text-white text-center py-3">
+         <div class="container">
+            <p class="mb-0"><a href="../letters.html">Back to the Letters</a></p>
+         </div>
+      </footer><script src="https://unpkg.com/leaflet/dist/leaflet.js"></script><script>
                     // Create the map and set its view to a default coordinate and zoom level.
-                    var map = L.map('mapid').setView([47.55472222,7.59055556], 7);
-                    // Set up the OpenStreetMap tile layer.
-                    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                    attribution: 'Map data <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
+                    var map = L.map('mapid', { scrollWheelZoom: false }).setView([47.55472222,7.59055556], 7);
+                    // Muted basemap (CARTO Positron) instead of the default colourful OSM tiles,
+                    // to match the edition's restrained palette.
+                    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+                    attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+                    subdomains: 'abcd',
+                    maxZoom: 19
                     }).addTo(map);
-                    
-                    
-                    // Optionally add a marker at the center
-                    
-                    // Define custom marker icons.
-                    var mentionedIcon = L.icon({
-                    iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
-                    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/images/marker-shadow.png',
-                    iconSize: [25, 41],
-                    iconAnchor: [12, 41],
-                    popupAnchor: [1, -34],
-                    shadowSize: [41, 41]
-                    });
-                    
-                    L.marker([47.55472222,7.59055556]).addTo(map)
+
+                    // Sender's place: filled circle in the edition's accent colour.
+                    L.circleMarker([47.55472222,7.59055556], {
+                    radius: 8, color: '#143761', weight: 2, fillColor: '#1d4e89', fillOpacity: 0.85
+                    }).addTo(map)
                     .bindPopup('Basel')
                     .openPopup();
+
+                    // Mentioned places: smaller, lighter circles in a secondary tone.
                     
-                    
-                        
+
                         var popupText = "Eppishausen";
-                        L.marker([47.545,9.23759], {icon: mentionedIcon}).addTo(map)
+                        L.circleMarker([47.545,9.23759], {
+                        radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75
+                        }).addTo(map)
                         .bindPopup(popupText);
                     </script><script>
                     // Initialize all tooltips

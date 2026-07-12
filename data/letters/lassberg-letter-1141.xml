@@ -66,7 +66,9 @@
                     target="../register/lassberg-persons.xml#lassberg-correspondent-0396"
                     ><rs>Heinrich von Rugge</rs></ref> <ref type="cmif:mentionsPlace"
                     target="../register/lassberg-places.xml#lassberg-place-0043"
-                    ><rs>Eppishausen</rs></ref> </note>
+                    ><rs>Eppishausen</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0373"
+                    ><rs>Joseph von Laßberg</rs></ref> </note>
             </correspDesc>
         </profileDesc>
         <revisionDesc>
@@ -76,6 +78,7 @@
                 <change when="2023-08-29" who="#MiS" status="draft">Manual markup and
                     proofreading</change>
                 <change when="2023-11-22" who="#MiS" status="draft">Finished markup</change>
+                <change when="2026-07-10" who="#check-letter-annotations" status="done">Checked via check-letter-annotations skill (Vollständigkeit, Verlinkung, Struktur, Header/Body-Konsistenz, Formeln)</change>
                 <!-- <change when="" who="" status="puplished">Final proofreading</change> -->
             </listChange>
         </revisionDesc>
@@ -83,8 +86,11 @@
     <text>
         <body>
             <div type="print" resp="ocr">
-                <p><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043"
-                    >Eppishausen</rs>. 3. Febr. 1827. Mit meinem herzlichen Danke für Iren lezten
+                <opener>
+                    <dateline><rs type="place" key="../register/lassberg-places.xml#lassberg-place-0043"
+                    >Eppishausen</rs>. 3. Febr. 1827.</dateline>
+                </opener>
+                <p>Mit meinem herzlichen Danke für Iren lezten
                     Besuch folget nun auch der lezthin vergeßene <rs type="bibl"
                     key="../register/lassberg-literature.xml#lassberg-literature-0049"
                     >Bucelinus</rs>: im lezten Bande werden Sie vererter Freund finden, daß <rs
@@ -106,7 +112,12 @@
                     Früling entgegen sehe. Ich habe es diese ganze nacht schon in meinen Schultern
                     gefült und füle es noch in meinem steifen arm. Vergeßen Sie nicht daß
                     Krankenbesuch, nächst dem predigen, die erste pflicht eines guten seelenhirten
-                    ist. Vale et fave Laßbergerius. </p>
+                    ist.</p>
+                <closer>
+                    <salute>Vale et fave</salute>
+                    <signed><rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0373">Laßbergerius</rs></signed>.
+                </closer>
             </div>
             <div type="normalized" resp="GPT3.5">
                 <p>Epishausen, 3. Februar 1827. Mit meinem herzlichen Dank für Ihren letzten Besuch

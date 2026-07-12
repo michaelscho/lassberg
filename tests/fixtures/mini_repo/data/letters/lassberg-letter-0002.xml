@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-0002">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt><title>Fixture letter 0002 (raw, unreviewed)</title></titleStmt>
+            <sourceDesc><msDesc><msIdentifier>
+                <settlement>Testort</settlement>
+                <repository>Testarchiv</repository>
+                <idno type="signature"/>
+            </msIdentifier></msDesc></sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <correspDesc xml:id="correspDesc-lassberg-letter-0002">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0002" ref="">Test Empfaenger</persName>
+                    <date when="1825-02-01">01.02.1825</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0001" ref="https://d-nb.info/gnd/000001">Test Sender</persName>
+                </correspAction>
+                <!-- <note type="mentioned"><ref type="cmif:mentionsPerson" target="../register/lassberg-persons.xml#lassberg-correspondent-{PERS_NUMBER}"><rs>{ORIGINAL_STRING_MENTION}</rs></ref></note> -->
+            </correspDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Vielen Dank fuer <rs type="bibl" key="">das unbekannte Buch</rs>, ich sende es an <rs type="object" key="">meinen Diener</rs> zurueck.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

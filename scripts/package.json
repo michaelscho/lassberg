@@ -1,0 +1,10 @@
+{
+  "name": "lassberg-pipeline-scripts",
+  "private": true,
+  "description": "Node-only devDependencies for pipeline test scripts (e.g. test_onnx_consistency.mjs). Not part of the frontend's deployed bundle - frontend/ stays CDN-only, no build step.",
+  "type": "module",
+  "dependencies": {
+    "@huggingface/transformers": "^4.2.0",
+    "onnxruntime-node": "^1.27.0"
+  }
+}

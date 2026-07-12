@@ -5,32 +5,42 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>The Lassberg Letters</title>
       <link href="../../css/styles.css" rel="stylesheet">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script><script src="../../js/letters.js"></script><link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"><script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script></head>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script><link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"><script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script></head>
    <body>
-      <div id="app" class="container">
-         <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
-            <div class="container-fluid"><a class="navbar-brand" href="#">Laßberg Letters</a><ul class="navbar-nav">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+         <div class="container"><a class="navbar-brand" href="../../index.html">The Laßberg Letters</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ms-auto">
                   <li class="nav-item"><a class="nav-link" href="../../index.html">Welcome</a></li>
                   <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
-                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb">Data Analysis</a></li>
-                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg">Repository</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../persons.html">Persons</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../places.html">Places</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
                </ul>
             </div>
-         </nav>
-         <div class="container my-4">
-            <header class="mb-4">
-               <h1>Brief von Joseph von Laßberg an Wilhelm Wackernagel (27.06.1834).</h1>
-               <p class="lead">
-                  Textfassung auf Basis der Transkription durch Transkribus korrigiert und in TEI
+         </div>
+      </nav>
+      <header class="page-header py-4">
+         <div class="container">
+            <h1 class="mb-2">Brief von Joseph von Laßberg an Wilhelm Wackernagel (27.06.1834).</h1>
+            <p class="lead mb-0">
+               
+               <p>Textfassung auf Basis der Transkription durch Transkribus korrigiert und in TEI
                   überführt. Automatisierte NER-Erkennung und Identifikation durch Flair geprüft,
                   korrigiert und ergänzt. Normalisierung, Zusammenfassung und Übersetzung durch
-                  GPT-4. Lizenz: 
-                  
-                  <a href="https://creativecommons.org/licenses/by/4.0/">CC BY
-                     4.0</a>
-                  
-                  </p>
-            </header>
+                  GPT-4. Lizenz: </p>
+               
+               <a href="https://creativecommons.org/licenses/by/4.0/">CC BY
+                  4.0</a>
+               
+               </p>
+         </div>
+      </header>
+      <main class="py-4">
+         <div class="container">
             <section id="map" class="mb-4">
                <div id="mapid"></div>
             </section>
@@ -46,269 +56,290 @@
                      108</a></p>
             </section>
             <section id="original-text" class="mb-4">
-               <h2>Original Text</h2>
+               <h2>Original Text
+                  <span class="transcription-source badge-manuscript" title="Diplomatische Transkription der Handschrift">Transcribed from the manuscript (Transkribus)</span></h2>
                <div>
-                  Eppishaus am 27.
-                  Juny 1834. Hochzuvererender Herr Professor! Mit Freude habe ich gestern abend gelesen, daß meine lezte
-                  Sendung Inen so
-                  willkommen war, und beeile mich hiebei auch die beiden weitern sachen zu
-                  senden, i. e. die <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Minnesinger. Deutsche Liederdichter des&#xA;        zwölften, dreizehnten und vierzehnten Jahrhunderts, aus allen bekannten Handschriften und&#xA;        früheren Drucken.</strong&gt;">leben der
-                     dichter<a href="https://archive.org/details/minnesingerdeut00hagegoog">📖</a></span> von <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Friedrich Heinrich von der Hagen</strong&gt;">von der
-                     Hagen<a href="https://d-nb.info/gnd/118829130"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>, und
-                  der <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Konrad von Stoffel: Gauriel von Muntabel.</strong&gt;">gabriel v.
-                     Montavel<a href="https://handschriftencensus.de/werke/567">📖</a></span>, welchem auch noch aus <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">meiner eigenen
-                     Handschrift</span>, ein apographum, der <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Minneburg&#xA;        (Reimfassung).</strong&gt;">Minneburg<a href="https://handschriftencensus.de/werke/616">📖</a></span> durch <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Egen von Bamberg</strong&gt;">meister Egen von
-                     Bamberg<a href="https://d-nb.info/gnd/118681680"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>, beigebunden ist; vielleicht können sie auch aus diesem gedichte
-                  etwas brauchen; recht gerne hätte ich nun noch meres geschickt;
-                  aber ich fürchtete, es möchte sie zulezt ermüden, wenn ich all zu
-                  starke sendungen mache. Wenn Sie die <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Daniel Baradinus: Geistlich Artzney Für Ketzergifft vnd jetziger zeit böse&#xA;        Lüfft.</strong&gt;">geistl.
-                     Artzney</span> und die <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Geistlicher&#xA;        Fastnachtskrapfen.</strong&gt;">Faßtnanchtskrapfen<a href="https://handschriftencensus.de/werke/3704">📖</a></span> gefälligst wollten abschreiben lassen; so wäre es mir lieb die
-                  gesandten abschriften wieder zurück zu erhalten; denn ich komme iezt nur
-                  mer mit mühe und anstrengung daran, etwas zum zweiten mal
-                  abzuschreiben. Ich hoffe in drei wochen wieder von meiner reise nach <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Niederdeutschland</strong&gt;">Niederdeutschland<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> zurückzukommen und meine weinlese selbst zu halten; in 14
-                  tagen denke
-                  ich abzugehen; wenn Sie mir also einige probebogen von Irem <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wilhelm Wackernagel: Deutsches Lesebuch.</strong&gt;">Lesebuch<a href="https://digi.ub.uni-heidelberg.de/diglit/wackernagel1839ga">📖</a></span> mit geben wollen, um sie in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Göttingen</strong&gt;">Göttingen<a href="https://www.wikidata.org/wiki/Q3033"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>
-                  abzugeben; so bitte ich sie nicht zu versiegeln, damit post- und maut- beamte sich nicht
-                  darein zu mischen haben. Ich erhalte eben
-                  einen brief von herrn ober tribunal procurator <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Heinrich Friedrich Otto Abel</strong&gt;">Abel<a href="https://d-nb.info/gnd/116001917"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> aus
-                  <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Stuttgart</strong&gt;">Stuttgart<a href="https://www.wikidata.org/wiki/Q1022"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, nebst einem an in geschriebenen von herrn Professor <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Friedrich Heinrich von der Hagen</strong&gt;">von der
-                     Hagen<a href="https://d-nb.info/gnd/118829130"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Heinrich Friedrich Otto Abel</strong&gt;">Abel<a href="https://d-nb.info/gnd/116001917"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
-                  hatte in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Paris</strong&gt;">Paris<a href="https://www.wikidata.org/wiki/Q90"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> die bilder aus dem
-                  sogenannten <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Manessischen Codex</span> abgezeichnet und
-                  ist wirk lich daran sie in colorirtem steindruke zu geben, 18 stüke
-                  sind schon
-                  fertig; dies erfur nun herr <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Friedrich Heinrich von der Hagen</strong&gt;">von der
-                     Hagen<a href="https://d-nb.info/gnd/118829130"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> und schreibt iezt an <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Heinrich Friedrich Otto Abel</strong&gt;">Abel<a href="https://d-nb.info/gnd/116001917"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>:
-                  er wünscht mit
-                  ime rüksichtlich derbilder eine vereinbarung zu treffen; indem er gesinnt
-                  seie dieselben ebenfalls, mit einem texte heraus zu geben, welcher ein
-                  auszug aus den dichterleben sein würde. meint H. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Friedrich Heinrich von der Hagen</strong&gt;">von der
-                     Hagen<a href="https://d-nb.info/gnd/118829130"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> im ernste, <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Heinrich Friedrich Otto Abel</strong&gt;">Abel<a href="https://d-nb.info/gnd/116001917"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
-                  werde eine schon angefangene edition im zu liebe /: den er gar nicht kennet; sonst würde
-                  ers noch weniger tun :/ auf geben; so ist er warlich ein einfältiger mann; verstehet
-                  er aber unter der vereinbarung der bilder, dass sie sich ausschliessend mit seiner werten
-                  person
-                  vereinbaren sollen; so ist er vollends nicht klug. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Heinrich Friedrich Otto Abel</strong&gt;">Abel<a href="https://d-nb.info/gnd/116001917"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> hat mir nun die sache zur entscheidung heimgestellt, was mir gerade
-                  nicht viel
-                  freude macht; denn auf einer seite wünsche ich schon lange daß die fraglichen
-                  bilder einmal zusammen herauskommen möchten; auf der an dern seite ist
-                  herr <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Friedrich Heinrich von der Hagen</strong&gt;">von der
-                     Hagen<a href="https://d-nb.info/gnd/118829130"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> gar nicht der mann dazu die archaeologische seite dieser
-                  aufgabe zu lösen. ich denke sonst wol durchaus: wenn das gute nur
-                  geschiehet, gleich viel durch wen; aber ich fürchte hier ist von ime wol
-                  nichts gutes zu erwarten. In den dichterleben schien mir
-                  unzweifelhaft, dass die anmerkungen zum <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ulrich von Liechtenstein</strong&gt;">Ulrich von
-                     Lichten stein<a href="https://d-nb.info/gnd/118625306"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> von einem Österreicher /: Kopitar :/ oder steiermärker /: Kalchberg
-                  :/ herkommen
-                  müssen. Die so stark divergierenden taxationen der <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Basel</strong&gt;">Basler<a href="https://www.wikidata.org/wiki/Q78"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> kunst sammelung habe ich in der zeitung gelesen. soweit sie mir, obschon flüchtig,
-                  in in
-                  verschiedenen malen bekannt wurde, scheint mir dass der Basler taxator dieselbe
-                  näher an
-                  einen kaufwert gestellt habe als der <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Zürich</strong&gt;">Zürcher<a href="https://www.wikidata.org/wiki/Q72"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Orell Füssli</strong&gt;">Fuessly<a href="https://d-nb.info/gnd/16077028-2"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>. es ist eben so ver ächtlich, als gemein boshaft, wie man die <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Basel</strong&gt;">Basler<a href="https://www.wikidata.org/wiki/Q78"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> an einem
-                  langsamen feuer bratet. <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wilhelm Grimm: Vridankes Bescheidenheit.</strong&gt;">W. Grimms
-                     Frydanck<a href="https://www.digitale-sammlungen.de/en/view/bsb11091575">📖</a></span> ist noch nicht ausgegeben; <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Christoph Heinrich Myller</strong&gt;">Müllers<a href="https://d-nb.info/gnd/117575410"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
-                  ab druk aus
-                  einer schönen Handschrift ist strozend von felern; in den drei ersten bänden
-                  des <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Joseph von Laßberg: Lieder-Saal, das ist:&#xA;        Sammelung altteutscher Gedichte.</strong&gt;">Liedersaales<a href="http://dl.ub.uni-freiburg.de/diglit/liedersaal1825-3">📖</a></span> stehet mer als die hälfte von <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Freidank: Sprüche.</strong&gt;">Fry gedank<a href="https://handschriftencensus.de/werke/115">📖</a></span>, <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">meine handschrift</span> ist von 1312, gehört also zu den
-                  ältesten codices des <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Freidank: Sprüche.</strong&gt;">Freidanks<a href="https://handschriftencensus.de/werke/115">📖</a></span>; soll ich Inen den <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Joseph von Laßberg: Lieder-Saal, das ist:&#xA;        Sammelung altteutscher Gedichte.</strong&gt;">Liedersaal<a href="http://dl.ub.uni-freiburg.de/diglit/liedersaal1825-3">📖</a></span> senden? Sie werden ia doch nur einzelnes in Ir <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wilhelm Wackernagel: Deutsches Lesebuch.</strong&gt;">lesebuch<a href="https://digi.ub.uni-heidelberg.de/diglit/wackernagel1839ga">📖</a></span>
-                  aufnehmen. Ich
-                  erwarte vor meiner abreise noch einen brief von Inen, vielleicht auch einen nach
-                  <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Göttingen</strong&gt;">Göttingen<a href="https://www.wikidata.org/wiki/Q3033"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>; man findet so leicht ein par stunden bei früherm
-                  aufstehen oder späterem niederliegen. Leben Sie wol! Ich wags, mit got! Ir
-                  ergebenster
-                  JvLaßberg.
-                  Wenn die
-                  Bibliotheke verkauft wird; so kauffen Sie mir ia: daz <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Hugo von Langenstein: Martina.</strong&gt;">buoch von Sante Martinen<a href="https://handschriftencensus.de/werke/1737">📖</a></span> einer magede niagede die ainlif marter litt. ich
-                  gebe von 20 bis 30 Louis d'ors dafür, das buch sollte wieder nach <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Schwaben</strong&gt;">Schwaben<a href="https://www.wikidata.org/wiki/Q11812551"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, wo es
-                  zu hause ist, auf der insel <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Mainau</strong&gt;">Mayenau<a href="https://www.wikidata.org/wiki/Q165401"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> wurde es
-                  gedichtet und zu <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Konstanz</strong&gt;">Constanz<a href="https://www.wikidata.org/wiki/Q3834"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> wurde es
-                  geschrieben durch <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Konrad von St. Gallen</strong&gt;">Conrad von S.
-                     Gallen<a href="https://d-nb.info/gnd/1136598111"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>. 
+                  
+                  <p><br>Eppishaus am 27.
+                     Juny 1834. <br>Hochzuvererender Herr Professor! <br>Mit Freude habe ich gestern abend gelesen, daß meine lezte
+                     Sendung <br>Inen so
+                     willkommen war, und beeile mich hiebei auch die beiden <br>weitern sachen zu
+                     senden, i. e. die <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Friedrich Heinrich von der Hagen: Minnesinger. Deutsche Liederdichter des&#xA;        zwölften, dreizehnten und vierzehnten Jahrhunderts, aus allen bekannten Handschriften und&#xA;        früheren Drucken.</strong&gt;">leben der
+                        dichter<a href="https://archive.org/details/minnesingerdeut00hagegoog">📖</a></span> von <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Friedrich Heinrich von der Hagen</strong&gt;">von der
+                        Hagen<a href="https://d-nb.info/gnd/118829130"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>, <br>und
+                     der <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Konrad von Stoffel: Gauriel von Muntabel.</strong&gt;">gabriel v.
+                        Montavel<a href="https://handschriftencensus.de/werke/567">📖</a></span>, welchem auch noch aus <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">meiner <br>eigenen
+                        Handschrift</span>, ein apographum, der <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Minneburg&#xA;        (Reimfassung).</strong&gt;">Minneburg<a href="https://handschriftencensus.de/werke/616">📖</a></span> durch <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Egen von Bamberg</strong&gt;">meister <br>Egen von
+                        Bamberg<a href="https://d-nb.info/gnd/118681680"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>, beigebunden ist; vielleicht können sie auch aus <br>diesem gedichte
+                     etwas brauchen; recht gerne hätte ich nun noch <br>meres geschickt;
+                     aber ich fürchtete, es möchte sie zulezt ermüden, <br>wenn ich all zu
+                     starke sendungen mache. Wenn Sie die <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Daniel Baradinus: Geistlich Artzney Für Ketzergifft vnd jetziger zeit böse&#xA;        Lüfft.</strong&gt;">geistl.
+                        Artzney</span> <br>und die <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Geistlicher&#xA;        Fastnachtskrapfen.</strong&gt;">Faßtnanchtskrapfen<a href="https://handschriftencensus.de/werke/3704">📖</a></span> gefälligst wollten abschreiben lassen; so wäre es <br>mir lieb die
+                     gesandten abschriften wieder zurück zu erhalten; denn ich <br>komme iezt nur
+                     mer mit mühe und anstrengung daran, etwas zum <br>zweiten mal
+                     abzuschreiben. <br>Ich hoffe in drei wochen wieder von meiner reise nach <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Niederdeutschland</strong&gt;">Niederdeutschland<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> <br>zurückzukommen und meine weinlese selbst zu halten; in 14
+                     tagen <br>denke
+                     ich abzugehen; wenn Sie mir also einige probebogen von <br>Irem <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wilhelm Wackernagel: Deutsches Lesebuch.</strong&gt;">Lesebuch<a href="https://digi.ub.uni-heidelberg.de/diglit/wackernagel1839gahttps://archive.org/details/deutscheslesebu00wackgoog">📖</a></span> mit geben wollen, um sie in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Göttingen</strong&gt;">Göttingen<a href="https://www.wikidata.org/wiki/Q3033"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>
+                     abzugeben; so <br>bitte ich sie nicht zu versiegeln, damit post- und maut- beamte <br>sich nicht
+                     darein zu mischen haben. <br>Ich erhalte eben
+                     einen brief von herrn ober tribunal procurator <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Heinrich Friedrich Otto Abel</strong&gt;">Abel<a href="https://d-nb.info/gnd/116001917"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> aus
+                     <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Stuttgart</strong&gt;">Stuttgart<a href="https://www.wikidata.org/wiki/Q1022"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, <br>nebst einem an in geschriebenen von herrn Professor <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Friedrich Heinrich von der Hagen</strong&gt;">von der
+                        Hagen<a href="https://d-nb.info/gnd/118829130"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Heinrich Friedrich Otto Abel</strong&gt;">Abel<a href="https://d-nb.info/gnd/116001917"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                     hatte in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Paris</strong&gt;">Paris<a href="https://www.wikidata.org/wiki/Q90"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> <br>die bilder aus dem
+                     sogenannten <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Manessischen Codex</span> abgezeichnet und
+                     ist wirk <br>lich daran sie in colorirtem steindruke zu geben, 18 stüke
+                     sind <br>schon
+                     fertig; dies erfur nun herr <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Friedrich Heinrich von der Hagen</strong&gt;">von der
+                        Hagen<a href="https://d-nb.info/gnd/118829130"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> und schreibt iezt an <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Heinrich Friedrich Otto Abel</strong&gt;">Abel<a href="https://d-nb.info/gnd/116001917"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>:
+                     <br>er wünscht mit
+                     ime rüksichtlich derbilder eine vereinbarung zu treffen; <br>indem er gesinnt
+                     seie dieselben ebenfalls, mit einem texte heraus zu <br>geben, welcher ein
+                     auszug aus den dichterleben sein würde. meint H. <br><span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Friedrich Heinrich von der Hagen</strong&gt;">von der
+                        Hagen<a href="https://d-nb.info/gnd/118829130"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> im ernste, <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Heinrich Friedrich Otto Abel</strong&gt;">Abel<a href="https://d-nb.info/gnd/116001917"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                     werde eine schon angefangene edition <br>im zu liebe /: den er gar nicht kennet; sonst würde
+                     ers noch weniger tun :/ auf <br>geben; so ist er warlich ein einfältiger mann; verstehet
+                     er aber unter <br>der vereinbarung der bilder, dass sie sich ausschliessend mit seiner werten
+                     <br>person
+                     vereinbaren sollen; so ist er vollends nicht klug. <br><span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Heinrich Friedrich Otto Abel</strong&gt;">Abel<a href="https://d-nb.info/gnd/116001917"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> hat mir nun die sache zur entscheidung heimgestellt, was mir gerade
+                     nicht <br>viel
+                     freude macht; denn auf einer seite wünsche ich schon lange daß <br>die fraglichen
+                     bilder einmal zusammen herauskommen möchten; auf der an <br>dern seite ist
+                     herr <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Friedrich Heinrich von der Hagen</strong&gt;">von der
+                        Hagen<a href="https://d-nb.info/gnd/118829130"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> gar nicht der mann dazu die archaeologische <br>seite dieser
+                     aufgabe zu lösen. ich denke sonst wol durchaus: wenn das <br>gute nur
+                     geschiehet, gleich viel durch wen; aber ich fürchte hier <br>ist von ime wol
+                     nichts gutes zu erwarten. In den dichterleben <br>schien mir
+                     unzweifelhaft, dass die anmerkungen zum <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ulrich von Liechtenstein</strong&gt;">Ulrich von
+                        Lichten <br>stein<a href="https://d-nb.info/gnd/118625306"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> von einem Österreicher /: Kopitar :/ oder steiermärker /: Kalchberg
+                     :/ <br>herkommen
+                     müssen. Die so stark divergierenden taxationen der <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Basel</strong&gt;">Basler<a href="https://www.wikidata.org/wiki/Q78"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> kunst <br>sammelung habe ich in der zeitung gelesen. soweit sie mir, obschon flüchtig,
+                     in <br>in
+                     verschiedenen malen bekannt wurde, scheint mir dass der Basler taxator dieselbe
+                     <br>näher an
+                     einen kaufwert gestellt habe als der <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Zürich</strong&gt;">Zürcher<a href="https://www.wikidata.org/wiki/Q72"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Orell Füssli</strong&gt;">Fuessly<a href="https://d-nb.info/gnd/16077028-2"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>. es ist eben so ver <br>ächtlich, als gemein boshaft, wie man die <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Basel</strong&gt;">Basler<a href="https://www.wikidata.org/wiki/Q78"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> an einem
+                     langsamen feuer <br>bratet. <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wilhelm Grimm: Vridankes Bescheidenheit.</strong&gt;">W. Grimms
+                        Frydanck<a href="https://www.digitale-sammlungen.de/en/view/bsb11091575">📖</a></span> ist noch nicht ausgegeben; <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Christoph Heinrich Myller</strong&gt;">Müllers<a href="https://d-nb.info/gnd/117575410"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                     ab <br>druk aus
+                     einer schönen Handschrift ist strozend von felern; in den <br>drei ersten bänden
+                     des <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Joseph von Laßberg: Lieder-Saal, das ist: Sammelung altteutscher&#xA;        Gedichte.</strong&gt;">Liedersaales<a href="http://dl.ub.uni-freiburg.de/diglit/liedersaal1825-3https://www.digitale-sammlungen.de/en/view/bsb10113516">📖</a></span> stehet mer als die hälfte von <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Freidank: Sprüche.</strong&gt;">Fry <br>gedank<a href="https://handschriftencensus.de/werke/115">📖</a></span>, <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">meine handschrift</span> ist von 1312, gehört also zu den
+                     ältesten <br>codices des <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Freidank: Sprüche.</strong&gt;">Freidanks<a href="https://handschriftencensus.de/werke/115">📖</a></span>; soll ich Inen den <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Joseph von Laßberg: Lieder-Saal, das ist: Sammelung altteutscher&#xA;        Gedichte.</strong&gt;">Liedersaal<a href="http://dl.ub.uni-freiburg.de/diglit/liedersaal1825-3https://www.digitale-sammlungen.de/en/view/bsb10113516">📖</a></span> senden? Sie werden <br>ia doch nur einzelnes in Ir <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wilhelm Wackernagel: Deutsches Lesebuch.</strong&gt;">lesebuch<a href="https://digi.ub.uni-heidelberg.de/diglit/wackernagel1839gahttps://archive.org/details/deutscheslesebu00wackgoog">📖</a></span>
+                     aufnehmen. <br>Ich
+                     erwarte vor meiner abreise noch einen brief von Inen, vielleicht <br>auch einen nach
+                     <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Göttingen</strong&gt;">Göttingen<a href="https://www.wikidata.org/wiki/Q3033"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>; man findet so leicht ein par stunden <br>bei früherm
+                     aufstehen oder späterem niederliegen. <br>Leben Sie wol! Ich wags, mit got! <br>Ir
+                     <br>ergebenster
+                     <br>JvLaßberg.
+                     <br>Wenn die
+                     Bibliotheke verkauft wird; so kauffen Sie mir <br>ia: daz <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Hugo von Langenstein: Martina.</strong&gt;">buoch von Sante Martinen<a href="https://handschriftencensus.de/werke/1737">📖</a></span> einer magede niagede die ainlif <br>marter litt. ich
+                     gebe von 20 bis 30 Louis d'ors dafür, <br>das buch sollte wieder nach <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Schwaben</strong&gt;">Schwaben<a href="https://www.wikidata.org/wiki/Q11812551"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, wo es
+                     zu hause ist, <br>auf der insel <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Mainau</strong&gt;">Mayenau<a href="https://www.wikidata.org/wiki/Q165401"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> wurde es
+                     gedichtet und zu <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Konstanz</strong&gt;">Constanz<a href="https://www.wikidata.org/wiki/Q3834"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> <br>wurde es
+                     geschrieben durch <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Konrad von St. Gallen</strong&gt;">Conrad von S.
+                        Gallen<a href="https://d-nb.info/gnd/1136598111"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>. </p>
                   </div>
             </section>
             <section id="normalised-text" class="mb-4">
                <h2>Normalisierter Text</h2>
                <div>
-                  Eppishausen am 27. Juni 1834. Hochzuverehrender Herr Professor! Mit Freude habe
-                  ich gestern Abend gelesen, dass meine letzte Sendung Ihnen so willkommen war,
-                  und beeile mich hierbei auch die beiden weiteren Sachen zu senden, i. e. die
-                  Leben der Dichter von von der Hagen und der Gabriel v. Montavel, welchem auch
-                  noch aus meiner eigenen Handschrift ein Apographum der Minneburg durch Meister
-                  Egen von Bamberg beigebunden ist; vielleicht können Sie auch aus diesem Gedichte
-                  etwas brauchen; recht gerne hätte ich nun noch mehr geschickt; aber ich
-                  fürchtete, es möchte Sie zuletzt ermüden, wenn ich allzu starke Sendungen mache.
-                  Wenn Sie die geistlichen Arznei und die Fastnachtskrapfen gefälligst wollten
-                  abschreiben lassen, so wäre es mir lieb, die gesandten Abschriften wieder
-                  zurückzuerhalten; denn ich komme jetzt nur mehr mit Mühe und Anstrengung daran,
-                  etwas zum zweiten Mal abzuschreiben. Ich hoffe in drei Wochen wieder von meiner
-                  Reise nach Niederdeutschland zurückzukommen und meine Weinlese selbst zu halten;
-                  in 14 Tagen denke ich abzugehen; wenn Sie mir also einige größere Bogen von
-                  Ihrem Lesebuch mitgeben wollen, um sie in Göttingen abzugeben, so bitte ich Sie,
-                  nicht zu versiegeln, damit Post- und Mautbeamte sich nicht darein zu mischen
-                  haben. Ich erhalte eben einen Brief von Herrn Obertribunalprokurator Abel aus
-                  Stuttgart, nebst einem an ihn geschriebenen von Herrn Professor von der Hagen.
-                  Abel hatte in Paris die Bilder aus dem sogenannten Manessischen Codex
-                  abgezeichnet und ist wirklich daran, sie in koloriertem Steindruck zu geben, 18
-                  Stücke sind schon fertig; dies erfuhr nun Herr von der Hagen und schreibt jetzt
-                  an Abel: Er wünscht, mit ihm bezüglich der Bilder eine Vereinbarung zu treffen;
-                  indem er gesinnt sei, dieselben ebenfalls, mit einem Text herauszugeben, welcher
-                  ein Auszug aus den Dichterleben sein würde. Meint H. von der Hagen im Ernst,
-                  Abel werde eine schon angefangene Edition ihm zuliebe /: den er gar nicht kennt;
-                  sonst würde er's noch weniger tun :/ aufgeben; so ist er wahrlich ein
-                  einfältiger Mann; versteht er aber unter der Vereinbarung der Bilder, dass sie
-                  sich ausschließlich mit seiner werten Person vereinbaren sollen, so ist er
-                  vollends nicht klug. Abel hat mir nun die Sache zur Entscheidung heimgestellt,
-                  was mir gerade nicht viel Freude macht; denn auf einer Seite wünsche ich schon
-                  lange, dass die fraglichen Bilder einmal zusammen herauskommen möchten; auf der
-                  anderen Seite ist Herr von der Hagen gar nicht der Mann dazu, die archäologische
-                  Seite dieser Aufgabe zu lösen. Ich denke sonst wohl durchaus: wenn das Gute nur
-                  geschieht, gleich viel durch wen; aber ich fürchte, hier ist von ihm wohl nichts
-                  Gutes zu erwarten. In den Dichterleben schien mir unzweifelhaft, dass die
-                  Anmerkungen zum Ulrich von Lichtenstein von einem Österreicher /: Kopitar :/
-                  oder Steiermärker /: Kalchberg :/ herkommen müssen. Die so stark divergierenden
-                  Taxationen der Basler Kunstsammlung habe ich in der Zeitung gelesen. Soweit sie
-                  mir, obschon flüchtig, in verschiedenen Malen bekannt wurde, scheint mir, dass
-                  der Basler Taxator dieselbe näher an einen Kaufwert gestellt habe als der
-                  Zürcher Füßli. Es ist ebenso verächtlich, als gemein boshaft, wie man die Basler
-                  an einem langsamen Feuer brät. W. Grimms Freidank ist noch nicht ausgegeben;
-                  Müllers Abdruck aus einer schönen Handschrift ist strotzend von Fehlern; in den
-                  drei ersten Bänden des Lieder-Saales steht mehr als die Hälfte von Freigedank,
-                  meine Handschrift ist von 1312, gehört also zu den ältesten Codices des
-                  Freidanks; soll ich Ihnen den Lieder-Saal senden? Sie werden ja doch nur
-                  Einzelnes in Ihr Lesebuch aufnehmen. Ich erwarte vor meiner Abreise noch einen
-                  Brief von Ihnen, vielleicht auch einen nach Göttingen; man findet so leicht ein
-                  paar Stunden bei früherem Aufstehen oder späterem Niederlegen. Leben Sie wohl!
-                  Ich wague es, mit Gott! Ihr ergebenster Jv. Lassberg. Wenn die Bibliothek
-                  verkauft wird, so kaufen Sie mir ja: das Buch von Sante Martinen einer Magde,
-                  die ein Leid einiges Martyrium litt. Ich gebe von 20 bis 30 Louis d'ors dafür,
-                  das Buch sollte wieder nach Schwaben, wo es zu Hause ist, auf der Insel
-                  Reichenau wurde es gedichtet und in Konstanz wurde es geschrieben durch Konrad
-                  von Sankt Gallen.
+                  
+                  <p>Eppishausen am 27. Juni 1834. Hochzuverehrender Herr Professor! Mit Freude habe
+                     ich gestern Abend gelesen, dass meine letzte Sendung Ihnen so willkommen war,
+                     und beeile mich hierbei auch die beiden weiteren Sachen zu senden, i. e. die
+                     Leben der Dichter von von der Hagen und der Gabriel v. Montavel, welchem auch
+                     noch aus meiner eigenen Handschrift ein Apographum der Minneburg durch Meister
+                     Egen von Bamberg beigebunden ist; vielleicht können Sie auch aus diesem Gedichte
+                     etwas brauchen; recht gerne hätte ich nun noch mehr geschickt; aber ich
+                     fürchtete, es möchte Sie zuletzt ermüden, wenn ich allzu starke Sendungen mache.
+                     Wenn Sie die geistlichen Arznei und die Fastnachtskrapfen gefälligst wollten
+                     abschreiben lassen, so wäre es mir lieb, die gesandten Abschriften wieder
+                     zurückzuerhalten; denn ich komme jetzt nur mehr mit Mühe und Anstrengung daran,
+                     etwas zum zweiten Mal abzuschreiben. Ich hoffe in drei Wochen wieder von meiner
+                     Reise nach Niederdeutschland zurückzukommen und meine Weinlese selbst zu halten;
+                     in 14 Tagen denke ich abzugehen; wenn Sie mir also einige größere Bogen von
+                     Ihrem Lesebuch mitgeben wollen, um sie in Göttingen abzugeben, so bitte ich Sie,
+                     nicht zu versiegeln, damit Post- und Mautbeamte sich nicht darein zu mischen
+                     haben. Ich erhalte eben einen Brief von Herrn Obertribunalprokurator Abel aus
+                     Stuttgart, nebst einem an ihn geschriebenen von Herrn Professor von der Hagen.
+                     Abel hatte in Paris die Bilder aus dem sogenannten Manessischen Codex
+                     abgezeichnet und ist wirklich daran, sie in koloriertem Steindruck zu geben, 18
+                     Stücke sind schon fertig; dies erfuhr nun Herr von der Hagen und schreibt jetzt
+                     an Abel: Er wünscht, mit ihm bezüglich der Bilder eine Vereinbarung zu treffen;
+                     indem er gesinnt sei, dieselben ebenfalls, mit einem Text herauszugeben, welcher
+                     ein Auszug aus den Dichterleben sein würde. Meint H. von der Hagen im Ernst,
+                     Abel werde eine schon angefangene Edition ihm zuliebe /: den er gar nicht kennt;
+                     sonst würde er's noch weniger tun :/ aufgeben; so ist er wahrlich ein
+                     einfältiger Mann; versteht er aber unter der Vereinbarung der Bilder, dass sie
+                     sich ausschließlich mit seiner werten Person vereinbaren sollen, so ist er
+                     vollends nicht klug. Abel hat mir nun die Sache zur Entscheidung heimgestellt,
+                     was mir gerade nicht viel Freude macht; denn auf einer Seite wünsche ich schon
+                     lange, dass die fraglichen Bilder einmal zusammen herauskommen möchten; auf der
+                     anderen Seite ist Herr von der Hagen gar nicht der Mann dazu, die archäologische
+                     Seite dieser Aufgabe zu lösen. Ich denke sonst wohl durchaus: wenn das Gute nur
+                     geschieht, gleich viel durch wen; aber ich fürchte, hier ist von ihm wohl nichts
+                     Gutes zu erwarten. In den Dichterleben schien mir unzweifelhaft, dass die
+                     Anmerkungen zum Ulrich von Lichtenstein von einem Österreicher /: Kopitar :/
+                     oder Steiermärker /: Kalchberg :/ herkommen müssen. Die so stark divergierenden
+                     Taxationen der Basler Kunstsammlung habe ich in der Zeitung gelesen. Soweit sie
+                     mir, obschon flüchtig, in verschiedenen Malen bekannt wurde, scheint mir, dass
+                     der Basler Taxator dieselbe näher an einen Kaufwert gestellt habe als der
+                     Zürcher Füßli. Es ist ebenso verächtlich, als gemein boshaft, wie man die Basler
+                     an einem langsamen Feuer brät. W. Grimms Freidank ist noch nicht ausgegeben;
+                     Müllers Abdruck aus einer schönen Handschrift ist strotzend von Fehlern; in den
+                     drei ersten Bänden des Lieder-Saales steht mehr als die Hälfte von Freigedank,
+                     meine Handschrift ist von 1312, gehört also zu den ältesten Codices des
+                     Freidanks; soll ich Ihnen den Lieder-Saal senden? Sie werden ja doch nur
+                     Einzelnes in Ihr Lesebuch aufnehmen. Ich erwarte vor meiner Abreise noch einen
+                     Brief von Ihnen, vielleicht auch einen nach Göttingen; man findet so leicht ein
+                     paar Stunden bei früherem Aufstehen oder späterem Niederlegen. Leben Sie wohl!
+                     Ich wague es, mit Gott! Ihr ergebenster Jv. Lassberg. Wenn die Bibliothek
+                     verkauft wird, so kaufen Sie mir ja: das Buch von Sante Martinen einer Magde,
+                     die ein Leid einiges Martyrium litt. Ich gebe von 20 bis 30 Louis d'ors dafür,
+                     das Buch sollte wieder nach Schwaben, wo es zu Hause ist, auf der Insel
+                     Reichenau wurde es gedichtet und in Konstanz wurde es geschrieben durch Konrad
+                     von Sankt Gallen.</p>
                   </div>
             </section>
             <section id="translation" class="mb-4">
                <h2>Translation</h2>
                <div>
-                  Eppishaus on June 27, 1834. Highly revered Professor! With joy, I read yesterday
-                  evening that my last shipment was so welcome to you, and I hasten to send you
-                  the two other things, i.e., the lives of the poets by von der Hagen, and Gabriel
-                  v. Montavel, to which I have also added, from my own manuscript, an apograph of
-                  the Minneburg by Master Egen von Bamberg; perhaps you can find something useful
-                  in this poem as well; I would have gladly sent more, but I feared it might tire
-                  you out if I send too much at once. If you could kindly have the spiritual
-                  medicine and the carnival donuts copied for me, I would appreciate receiving the
-                  copies back; for now, I only manage with difficulty and effort to copy anything
-                  a second time. I hope to return from my trip to Northern Germany in three weeks
-                  to conduct my grape harvest myself; I plan to leave in 14 days; so if you would
-                  like to send me some large sheets from your reader to deliver in Göttingen,
-                  please do not seal them, so that the postal and customs officers do not meddle
-                  in them. I have just received a letter from Mr. Senior Tribunal Procurator Abel
-                  from Stuttgart, along with one addressed to you from Professor von der Hagen.
-                  Abel had copied the pictures from the so-called Manessian Codex in Paris and is
-                  indeed preparing to publish them in colored lithograph, 18 pieces are already
-                  finished; Mr. von der Hagen now learned of this and is writing to Abel: he
-                  wishes to come to an agreement with him regarding the pictures, as he intends to
-                  publish them as well with a text, which would be an excerpt from the poets'
-                  lives. If Mr. von der Hagen seriously thinks Abel will abandon an already
-                  started edition for his sake /: whom he doesn't know at all; otherwise he would
-                  do it even less :/, then he is indeed a naive man; but if he means by coming to
-                  an agreement about the pictures that they should exclusively suit his esteemed
-                  person, then he is not wise at all. Abel has now put the matter in my hands for
-                  decision, which doesn't give me much pleasure; because on one hand, I have long
-                  wished for these pictures to be finally published together; on the other hand,
-                  Mr. von der Hagen is not at all the right person to solve the archaeological
-                  aspect of this task. Normally, I think: if only the good is done, it doesn’t
-                  matter by whom; but I fear nothing good is to be expected from him here. In the
-                  poets' lives, it seemed to me undoubtedly that the annotations on Ulrich von
-                  Lichtenstein must come from an Austrian /: Kopitar :/ or a Styrian /: Kalchberg
-                  :/. The diverging valuations of the Basel art collection which I read about in
-                  the newspaper, albeit briefly in various installments, seem to me that the Basel
-                  appraiser placed them closer to a market value than the Zürcher Fuessly. It is
-                  contemptible and wickedly spiteful how they roast the Baselers on a slow fire.
-                  W. Grimm's Frydanck is not yet published; Müller's printout from a beautiful
-                  manuscript is rife with errors; in the first three volumes of the Songbook
-                  series, more than half of Frydanck is present, my manuscript is from 1312, and
-                  therefore belongs to the oldest codices of Freidank; should I send you the
-                  Songbook? Surely, you will only take certain parts for your reader. I expect a
-                  letter from you before my departure, perhaps even one to Göttingen; one so
-                  easily finds a couple of hours by rising early or going to bed late. Farewell! I
-                  dare, with God! Your humble JvLaßberg. If the library is sold; please buy me the
-                  book of Saint Martine of a maiden who suffered a martyrdom. I am offering 20 to
-                  30 Louis d'ors for it; the book should return to Swabia, where it belongs, it
-                  was composed on the island of Mainau and written in Constance by Conrad von S.
-                  Gallen.
+                  
+                  <p>Eppishaus on June 27, 1834. Highly revered Professor! With joy, I read yesterday
+                     evening that my last shipment was so welcome to you, and I hasten to send you
+                     the two other things, i.e., the lives of the poets by von der Hagen, and Gabriel
+                     v. Montavel, to which I have also added, from my own manuscript, an apograph of
+                     the Minneburg by Master Egen von Bamberg; perhaps you can find something useful
+                     in this poem as well; I would have gladly sent more, but I feared it might tire
+                     you out if I send too much at once. If you could kindly have the spiritual
+                     medicine and the carnival donuts copied for me, I would appreciate receiving the
+                     copies back; for now, I only manage with difficulty and effort to copy anything
+                     a second time. I hope to return from my trip to Northern Germany in three weeks
+                     to conduct my grape harvest myself; I plan to leave in 14 days; so if you would
+                     like to send me some large sheets from your reader to deliver in Göttingen,
+                     please do not seal them, so that the postal and customs officers do not meddle
+                     in them. I have just received a letter from Mr. Senior Tribunal Procurator Abel
+                     from Stuttgart, along with one addressed to you from Professor von der Hagen.
+                     Abel had copied the pictures from the so-called Manessian Codex in Paris and is
+                     indeed preparing to publish them in colored lithograph, 18 pieces are already
+                     finished; Mr. von der Hagen now learned of this and is writing to Abel: he
+                     wishes to come to an agreement with him regarding the pictures, as he intends to
+                     publish them as well with a text, which would be an excerpt from the poets'
+                     lives. If Mr. von der Hagen seriously thinks Abel will abandon an already
+                     started edition for his sake /: whom he doesn't know at all; otherwise he would
+                     do it even less :/, then he is indeed a naive man; but if he means by coming to
+                     an agreement about the pictures that they should exclusively suit his esteemed
+                     person, then he is not wise at all. Abel has now put the matter in my hands for
+                     decision, which doesn't give me much pleasure; because on one hand, I have long
+                     wished for these pictures to be finally published together; on the other hand,
+                     Mr. von der Hagen is not at all the right person to solve the archaeological
+                     aspect of this task. Normally, I think: if only the good is done, it doesn’t
+                     matter by whom; but I fear nothing good is to be expected from him here. In the
+                     poets' lives, it seemed to me undoubtedly that the annotations on Ulrich von
+                     Lichtenstein must come from an Austrian /: Kopitar :/ or a Styrian /: Kalchberg
+                     :/. The diverging valuations of the Basel art collection which I read about in
+                     the newspaper, albeit briefly in various installments, seem to me that the Basel
+                     appraiser placed them closer to a market value than the Zürcher Fuessly. It is
+                     contemptible and wickedly spiteful how they roast the Baselers on a slow fire.
+                     W. Grimm's Frydanck is not yet published; Müller's printout from a beautiful
+                     manuscript is rife with errors; in the first three volumes of the Songbook
+                     series, more than half of Frydanck is present, my manuscript is from 1312, and
+                     therefore belongs to the oldest codices of Freidank; should I send you the
+                     Songbook? Surely, you will only take certain parts for your reader. I expect a
+                     letter from you before my departure, perhaps even one to Göttingen; one so
+                     easily finds a couple of hours by rising early or going to bed late. Farewell! I
+                     dare, with God! Your humble JvLaßberg. If the library is sold; please buy me the
+                     book of Saint Martine of a maiden who suffered a martyrdom. I am offering 20 to
+                     30 Louis d'ors for it; the book should return to Swabia, where it belongs, it
+                     was composed on the island of Mainau and written in Constance by Conrad von S.
+                     Gallen.</p>
                   </div>
             </section>
          </div>
-      </div><script src="https://unpkg.com/leaflet/dist/leaflet.js"></script><script>
+      </main>
+      <footer class="bg-dark text-white text-center py-3">
+         <div class="container">
+            <p class="mb-0"><a href="../letters.html">Back to the Letters</a></p>
+         </div>
+      </footer><script src="https://unpkg.com/leaflet/dist/leaflet.js"></script><script>
                     // Create the map and set its view to a default coordinate and zoom level.
-                    var map = L.map('mapid').setView([47.545,9.23759], 7);
-                    // Set up the OpenStreetMap tile layer.
-                    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                    attribution: 'Map data <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
+                    var map = L.map('mapid', { scrollWheelZoom: false }).setView([47.545,9.23759], 7);
+                    // Muted basemap (CARTO Positron) instead of the default colourful OSM tiles,
+                    // to match the edition's restrained palette.
+                    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+                    attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+                    subdomains: 'abcd',
+                    maxZoom: 19
                     }).addTo(map);
-                    
-                    
-                    // Optionally add a marker at the center
-                    
-                    // Define custom marker icons.
-                    var mentionedIcon = L.icon({
-                    iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
-                    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/images/marker-shadow.png',
-                    iconSize: [25, 41],
-                    iconAnchor: [12, 41],
-                    popupAnchor: [1, -34],
-                    shadowSize: [41, 41]
-                    });
-                    
-                    L.marker([47.545,9.23759]).addTo(map)
+
+                    // Sender's place: filled circle in the edition's accent colour.
+                    L.circleMarker([47.545,9.23759], {
+                    radius: 8, color: '#143761', weight: 2, fillColor: '#1d4e89', fillOpacity: 0.85
+                    }).addTo(map)
                     .bindPopup('Eppishausen')
                     .openPopup();
+
+                    // Mentioned places: smaller, lighter circles in a secondary tone.
                     
-                    
-                        
+
                         var popupText = "Niederdeutschland";
-                        L.marker([], {icon: mentionedIcon}).addTo(map)
+                        L.circleMarker([], {
+                        radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75
+                        }).addTo(map)
                         .bindPopup(popupText);
                     
-                        
+
                         var popupText = "Göttingen";
-                        L.marker([51.533889,9.935556], {icon: mentionedIcon}).addTo(map)
+                        L.circleMarker([51.533889,9.935556], {
+                        radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75
+                        }).addTo(map)
                         .bindPopup(popupText);
                     
-                        
+
                         var popupText = "Stuttgart";
-                        L.marker([48.7775,9.18], {icon: mentionedIcon}).addTo(map)
+                        L.circleMarker([48.7775,9.18], {
+                        radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75
+                        }).addTo(map)
                         .bindPopup(popupText);
                     
-                        
+
                         var popupText = "Paris";
-                        L.marker([48.85666667,2.35222222], {icon: mentionedIcon}).addTo(map)
+                        L.circleMarker([48.85666667,2.35222222], {
+                        radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75
+                        }).addTo(map)
                         .bindPopup(popupText);
                     
-                        
+
                         var popupText = "Basel";
-                        L.marker([47.55472222,7.59055556], {icon: mentionedIcon}).addTo(map)
+                        L.circleMarker([47.55472222,7.59055556], {
+                        radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75
+                        }).addTo(map)
                         .bindPopup(popupText);
                     
-                        
+
                         var popupText = "Zürich";
-                        L.marker([47.374444,8.541111], {icon: mentionedIcon}).addTo(map)
+                        L.circleMarker([47.374444,8.541111], {
+                        radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75
+                        }).addTo(map)
                         .bindPopup(popupText);
                     
-                        
+
                         var popupText = "Schwaben";
-                        L.marker([48.37844, 9.963274], {icon: mentionedIcon}).addTo(map)
+                        L.circleMarker([48.37844, 9.963274], {
+                        radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75
+                        }).addTo(map)
                         .bindPopup(popupText);
                     
-                        
+
                         var popupText = "Mainau";
-                        L.marker([47.705, 9.195278], {icon: mentionedIcon}).addTo(map)
+                        L.circleMarker([47.705, 9.195278], {
+                        radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75
+                        }).addTo(map)
                         .bindPopup(popupText);
                     
-                        
+
                         var popupText = "Konstanz";
-                        L.marker([47.66666667,9.18333333], {icon: mentionedIcon}).addTo(map)
+                        L.circleMarker([47.66666667,9.18333333], {
+                        radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75
+                        }).addTo(map)
                         .bindPopup(popupText);
                     </script><script>
                     // Initialize all tooltips

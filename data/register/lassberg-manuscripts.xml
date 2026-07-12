@@ -1,0 +1,49 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-register-manuscripts">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Handschriften- und Druckexemplare (Textzeugen), die in der
+                    Laßberg-Korrespondenz erwähnt werden</title>
+                <respStmt>
+                    <name xml:id="MiS">Michael Schonhardt</name>
+                    <resp>Konzeption, Datenmodell und Kodierung nach TEI</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Born digital. In Vorbereitung.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digital. Erstellt aus der Analyse der Laßberg-Korrespondenz.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <listWit>
+                <!-- Vorlage für neue Einträge, siehe docs/TEI.md, Abschnitt "Handschriften- und
+                     Druckexemplare (Textzeugen)":
+
+                <witness xml:id="lassberg-witness-0001" type="manuscript"
+                    corresp="../register/lassberg-literature.xml#lassberg-literature-NNNN">
+                    <bibl>
+                        <settlement></settlement>
+                        <repository></repository>
+                        <idno type="signature"></idno>
+                    </bibl>
+                </witness>
+
+                <witness xml:id="lassberg-witness-0002" type="print"
+                    corresp="../register/lassberg-literature.xml#lassberg-literature-NNNN">
+                    <bibl>
+                        <settlement></settlement>
+                        <repository></repository>
+                        <idno type="signature"></idno>
+                        <note>Provenienz-/Anmerkungshinweis, sofern bekannt.</note>
+                    </bibl>
+                </witness>
+                -->
+            </listWit>
+        </body>
+    </text>
+</TEI>

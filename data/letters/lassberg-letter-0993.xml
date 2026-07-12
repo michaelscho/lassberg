@@ -57,8 +57,11 @@
                         target="../register/lassberg-literature.xml#lassberg-literature-0010"
                         ><rs>Geschichte der Hohenstaufen und ihrer Zeit.</rs></ref>
                     <ref type="cmif:mentionsBibl"
-                        target="../register/lassberg-literature.xml#lassberg-literature-0013"
-                        ><rs>Unbekannt</rs></ref>
+                        target="../register/lassberg-literature.xml#lassberg-literature-0200"
+                        ><rs>Quellenschriftsteller der deutschen Geschichte</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0107"
+                        ><rs>Waltharius</rs></ref>
                     <ref type="cmif:mentionsBibl"
                         target="../register/lassberg-literature.xml#lassberg-literature-0016"
                         ><rs>Casus monasterii Petrishusensis</rs></ref>
@@ -73,6 +76,9 @@
                     <ref type="cmif:mentionsBibl"
                         target="../register/lassberg-literature.xml#lassberg-literature-0018"
                         ><rs>Chronik der Stadt und Landschaft Schaffhausen</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0223"
+                        ><rs>Die Schweiz in ihren Ritterburgen und Bergschlössern</rs></ref>
                     <ref type="cmif:mentionsPerson"
                         target="../register/lassberg-persons.xml#lassberg-correspondent-0224"
                         ><rs>Joseph Albrecht von Ittner</rs></ref>
@@ -103,6 +109,9 @@
                     <ref type="cmif:mentionsPlace"
                         target="../register/lassberg-places.xml#lassberg-place-0025"
                         ><rs>Bischofszell</rs></ref>
+                    <ref type="cmif:mentionsPlace"
+                        target="../register/lassberg-places.xml#lassberg-place-0082"
+                        ><rs>Konstanz</rs></ref>
                 </note>
             </correspDesc>
         </profileDesc>
@@ -111,6 +120,7 @@
                 <change when="2023-08-01" who="#MiS" status="done">File created and preprocessed automatically</change>
                 <change when="2023-08-29" who="#MiS" status="InProgress">Manual markup and proofreading</change>
                 <change when="2023-11-22" who="#MiS" status="draft">Finished markup</change>
+                <change when="2026-07-10" who="#check-letter-annotations" status="done">Checked via check-letter-annotations skill (Vollständigkeit, Verlinkung, Struktur, Header/Body-Konsistenz, Formeln)</change>
                 <!-- <change when="" who="" status="puplished">Final proofreading</change> -->
             </listChange>
         </revisionDesc>
@@ -118,8 +128,11 @@
     </teiHeader>
     <text>
         <body>
-            <div type="original" resp="ocr">
-                <p>Hochwohlgeborner, verehrtester Herr Freyherr! Obschon ich Ihnen durch keine
+            <div type="print" resp="ocr">
+                <opener>
+                    <salute>Hochwohlgeborner, verehrtester Herr Freyherr!</salute>
+                </opener>
+                <p>Obschon ich Ihnen durch keine
                     förmliche Beyleidsbezeugung meine herzliche Theilnahme an Ihrer Trauer über den
                     Hinschied Ihres trefflichen, so allgemein hochgeschäzten Freundes des
                     Staatsrathes <rs type="person"
@@ -128,7 +141,9 @@
                     Trauerbotschaft, und zwar um so mer geschmerzt hat, da ich den edlen Mann lezten
                     Herbst wenigstens für einige Augenblicke zu sehen bei Ihnen das Vergnügen hatte,
                     und aus Ihren eigenen Aeußerungen wußte, welch' großen Werth Sie auf die
-                    Freundschaft desselben setzen. Möge Sein Verlust Ihnen die Gegend um Konstanz
+                    Freundschaft desselben setzen. Möge Sein Verlust Ihnen die Gegend um <rs
+                    type="place" key="../register/lassberg-places.xml#lassberg-place-0082"
+                    >Konstanz</rs>
                     nicht gleichgültig machen, und somit auch mich des Glücks berauben, in Ihnen
                     einen Gönner und Beförderer meiner historischen Studien, und einen edelmüthigen
                     Gastfreund zu verlieren! Die gütige Vorsehung möge Ihnen jenen Verlust durch ein
@@ -146,19 +161,20 @@
                     Erwartungen und Wünschen am wenigsten entsprochen hat. Ob vielleicht nicht mehr
                     zu leisten war, mögen Sie beurtheilen. Ganz auffallend war mir die endlich
                     erfolgte Ankündigung der Herausgeber der <rs type="bibl"
-                    key="../register/lassberg-literature.xml#lassberg-literature-0013"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0200"
                     >Quellenschriftsteller der deutschen Geschichte</rs> und der Umstand, daß nun
                     die St. Gallischen Schriftsteller schon in den ersten Band kommen, die Sammlung
                     selbst nicht über die Jare 500 zurück gehen soll. Ich glaubte, Ihre Bearbeitung
                     der <rs type="bibl"
-                    key="../register/lassberg-literature.xml#lassberg-literature-0013">Historia
+                    key="../register/lassberg-literature.xml#lassberg-literature-0107">Historia
                     Waltharii</rs> werde die Reihe eröffnen. Ein Herr <rs type="person"
                     key="../register/lassberg-persons.xml#lassberg-correspondent-0380">Dalp</rs> aus
                     <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0179"
                     >Chur</rs>, Buchführer in einer Gießischen Buchandlung hat mich letzthin um
-                    Beiträge zur Herausgabe einer Beschreibung aller Ritterburgen der <rs
+                    Beiträge zur Herausgabe einer <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0223">Beschreibung aller Ritterburgen der <rs
                     type="place" key="../register/lassberg-places.xml#lassberg-place-0178"
-                    >Schweiz</rs> aufgefordert, und er macht sich Hoffnung auf eine günstige
+                    >Schweiz</rs></rs> aufgefordert, und er macht sich Hoffnung auf eine günstige
                     Aufnahme dieses Werkes. Ich zweifle aber, daß der Absatz in der <rs type="place"
                     key="../register/lassberg-places.xml#lassberg-place-0178">Schweiz</rs> groß sein
                     werde; die Deutschen müßten sich mehr dafür interessiren, wenn der Erfolg Gewinn
@@ -184,9 +200,16 @@
                     Chronik</rs>, in welcher Auszüge aus dem Archive des Klosters <rs type="place"
                     key="../register/lassberg-places.xml#lassberg-place-0180">Allerheiligen</rs>
                     vorkommen, die, wenn sie, was ich noch nicht vergleichen konnte, unbenutzt sind,
-                    manches Interesse gewähren möchten. Genehmigen Sie, Hochwohlgeborner,
+                    manches Interesse gewähren möchten.</p>
+                <closer>
+                    <salute>Genehmigen Sie, Hochwohlgeborner,
                     hochverehrter Herr! die Versicherung unveränderlicher Hochachtung und
-                    Ergebenheit von Ihrem Diac. Pupikofer, Bischofzell, den 26. May 1825.</p>
+                    Ergebenheit von Ihrem</salute>
+                    <signed>Diac. <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0179">Pupikofer</rs></signed>,
+                    <dateline><rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0025">Bischofzell</rs>, den 26. May 1825</dateline>.
+                </closer>
             </div>
             <div type="normalized" resp="GPT3.5">
                 <p>Hochwohlgeborener, verehrtester Herr Freiherr! Obschon ich Ihnen durch keine

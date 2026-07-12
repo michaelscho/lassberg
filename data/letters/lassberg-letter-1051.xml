@@ -85,6 +85,12 @@
                         target="../register/lassberg-persons.xml#lassberg-correspondent-0354"
                         ><rs>Unbekannt</rs></ref>
                     <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0671"
+                        ><rs>Burchard von Zollern</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0672"
+                        ><rs>Wezel von Zollern</rs></ref>
+                    <ref type="cmif:mentionsPerson"
                         target="../register/lassberg-persons.xml#lassberg-correspondent-0388"
                         ><rs>Zähringer (Geschlecht)</rs></ref>
                     <ref type="cmif:mentionsPerson"
@@ -111,6 +117,12 @@
                     <ref type="cmif:mentionsPlace"
                         target="../register/lassberg-places.xml#lassberg-place-0049"
                         ><rs>Frauenfeld</rs></ref>
+                    <ref type="cmif:mentionsPlace"
+                        target="../register/lassberg-places.xml#lassberg-place-0025"
+                        ><rs>Bischofszell</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0179"
+                        ><rs>Johann Adam Pupikofer</rs></ref>
                 </note>
             </correspDesc>
         </profileDesc>
@@ -119,14 +131,18 @@
                 <change when="2023-08-01" who="#MiS" status="draft">File created and preprocessed automatically</change>
                 <change when="2023-08-29" who="#MiS" status="draft">Manual markup and proofreading</change>
                 <change when="2023-11-22" who="#MiS" status="draft">Finished markup</change>
+                <change when="2026-07-10" who="#check-letter-annotations" status="done">Checked via check-letter-annotations skill (Vollständigkeit, Verlinkung, Struktur, Header/Body-Konsistenz, Formeln)</change>
                 <!-- <change when="" who="" status="puplished">Final proofreading</change> -->
             </listChange>
         </revisionDesc>
     </teiHeader>
     <text>
         <body>
-            <div type="original" resp="ocr">
-                <p>Hochwohlgeborner, verehrtester Herr! Mit herzlichem Danke sende ich den ersten
+            <div type="print" resp="ocr">
+                <opener>
+                    <salute>Hochwohlgeborner, verehrtester Herr!</salute>
+                </opener>
+                <p>Mit herzlichem Danke sende ich den ersten
                     Band von <rs type="bibl"
                     key="../register/lassberg-literature.xml#lassberg-literature-0031">Kopps Bildern
                     und Schriften der Vorzeit</rs> an Sie zurück. Ich habe die Schrift mit Vergnügen
@@ -142,8 +158,8 @@
                     Aber der <rs type="bibl"
                     key="../register/lassberg-literature.xml#lassberg-literature-0033">Continuator
                     Hermanni</rs> berichtet ad. a. <date when="1061">1061</date>, daß <rs
-                        type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0354">Burchardus</rs> und <rs
-                            type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0354">Wezilo Zollerani</rs> umgekommen
+                        type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0671">Burchardus</rs> und <rs
+                            type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0672">Wezilo Zollerani</rs> umgekommen
                     seien im Kampfe gegen den <rs type="person"
                     key="../register/lassberg-persons.xml#lassberg-correspondent-0388"
                     >Zähringer</rs>. Wäre hier nicht eine Verwechslung möglich? Wie ich den <rs
@@ -177,9 +193,16 @@
                     key="../register/lassberg-places.xml#lassberg-place-0049">Frauenfeld</rs>, und
                     will Ihnen die verlangten <rs type="object" key="">Urkunden</rs> besorgen. Auf
                     solche Weise muß ich noch lange Ihres belehrenden und angenehmen Umgangs
-                    entbehren. Genehmigen Sie, Hochwohlgeborner, verehrtester Herr, die Versicherung
-                    dankbarer Hochachtung und Ergebenheit von Irem Diac. Pupikofer. Bischofzell den
-                    3. Dec. 1825.</p>
+                    entbehren.</p>
+                <closer>
+                    <salute>Genehmigen Sie, Hochwohlgeborner, verehrtester Herr, die Versicherung
+                    dankbarer Hochachtung und Ergebenheit von Irem</salute>
+                    <signed>Diac. <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0179">Pupikofer</rs></signed>.
+                    <dateline><rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0025">Bischofzell</rs> den
+                    3. Dec. 1825</dateline>.
+                </closer>
             </div>
             <div type="normalized" resp="GPT3.5">
                 <p>Hochwohlgeborener, verehrtester Herr! Mit herzlichem Dank sende ich den ersten

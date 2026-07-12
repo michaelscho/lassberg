@@ -60,5 +60,47 @@ Data can be found in `data`, python-scripts used for processing are stored in `s
     * Local Neo4J Instance: A local Neo4J database instance is used for data management, with imports facilitated by provided Cypher code.
 7. **Long-term Archiving**: Final data will be archived [Zenodo](https://zenodo.org/), ensuring its preservation and accessibility for future research and reference.
 
+## KI-Infrastruktur (semantic search, graph, RDF, MCP server)
+
+A second, independent pipeline (`PLAN_edition_ki_infrastruktur.md`) builds a reproducible set of
+static artifacts from the TEI data — embeddings, a Neo4j graph, an RDF/Turtle dump, precomputed
+UMAP/HDBSCAN clustering, an MCP server for Claude Desktop/agents, and a static browser frontend
+with semantic search, cluster visualization, and a client-side GraphRAG retrieval mode. It reads
+`data/letters/` and `data/register/` as input and writes to `build/`, `embeddings/`,
+`clustering/`, `graph/`, `rdf/`, and `frontend/`, all committed as static artifacts.
+
+### Quickstart
+
+```bash
+python3 -m venv .venv-infra
+source .venv-infra/bin/activate
+pip install -r requirements-infra.txt
+make all          # parse -> embed -> cluster -> graph (needs Docker) -> rdf -> frontend
+```
+
+Run `make parse embed cluster rdf frontend` instead of `make all` to skip the Neo4j step if Docker
+isn't available. See the `edition-pipeline` Claude Code skill (`.claude/skills/edition-pipeline/`)
+for the full workflow, or just ask Claude to "rebuild the pipeline."
+
+### Artifacts
+
+| Directory | Contents | Built by |
+|---|---|---|
+| `build/` | `letters.jsonl` (all 3268 letters, ~170 with full text), `entities.json` (persons/places/works/witnesses), `manifest.json`, `warnings.log` | `scripts/parse_tei.py` |
+| `embeddings/bge-m3/` | BGE-M3 letter embeddings (float16 safetensors) | `scripts/embed.py` |
+| `clustering/` | UMAP 2D projection + HDBSCAN cluster assignments/labels | `scripts/cluster.py` |
+| `graph/import.cypher` | Idempotent Cypher import script (Neo4j) | `scripts/export_cypher.py` |
+| `rdf/edition.ttl` (+ `cmif.xml`) | CMIF/correspSearch-vocabulary RDF dump (+ classic TEI-CMIF) | `scripts/export_rdf.py` |
+| `frontend/` | Static site: semantic search, cluster map, graph/SPARQL explorer, GraphRAG | `scripts/export_frontend.py` + `frontend/*.js` |
+| `mcp_server/` | FastMCP server (semantic search, graph query, SPARQL, get_letter) for Claude Desktop | see `mcp_server/README.md` |
+
+Runtime services (`docker-compose.yml`): Neo4j (`make graph`) and Oxigraph (`make sparql`) are
+disposable — both are fully reconstructible from the committed artifacts at any time.
+
+**Superseded by this pipeline** (kept in the repo for reference, not deleted, not further
+maintained): `neo4j/import-data.cql` (hand-written predecessor of `scripts/export_cypher.py`) and
+`rag/` (experimental Chroma/Neo4j chat scripts predecessor of the MCP server + browser GraphRAG).
+`data/register/register_cmif_output.xml` is superseded by `rdf/cmif.xml` (`make cmif`).
+
 ## Literature
 Harris 1991: Harris, Martin: Joseph Maria Christoph Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.

@@ -5,32 +5,42 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>The Lassberg Letters</title>
       <link href="../../css/styles.css" rel="stylesheet">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script><script src="../../js/letters.js"></script><link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"><script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script></head>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script><link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"><script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script></head>
    <body>
-      <div id="app" class="container">
-         <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
-            <div class="container-fluid"><a class="navbar-brand" href="#">Laßberg Letters</a><ul class="navbar-nav">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+         <div class="container"><a class="navbar-brand" href="../../index.html">The Laßberg Letters</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ms-auto">
                   <li class="nav-item"><a class="nav-link" href="../../index.html">Welcome</a></li>
                   <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
-                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb">Data Analysis</a></li>
-                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg">Repository</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../persons.html">Persons</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../places.html">Places</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
                </ul>
             </div>
-         </nav>
-         <div class="container my-4">
-            <header class="mb-4">
-               <h1>Brief von Joseph von Laßberg an Wilhelm Wackernagel (30.03.1838).</h1>
-               <p class="lead">
-                  Textfassung auf Basis der Transkription durch Transkribus korrigiert und in TEI
+         </div>
+      </nav>
+      <header class="page-header py-4">
+         <div class="container">
+            <h1 class="mb-2">Brief von Joseph von Laßberg an Wilhelm Wackernagel (30.03.1838).</h1>
+            <p class="lead mb-0">
+               
+               <p>Textfassung auf Basis der Transkription durch Transkribus korrigiert und in TEI
                   überführt. Automatisierte NER-Erkennung und Identifikation durch Flair geprüft,
                   korrigiert und ergänzt. Normalisierung, Zusammenfassung und Übersetzung durch
-                  GPT-4. Lizenz: 
-                  
-                  <a href="https://creativecommons.org/licenses/by/4.0/">CC BY
-                     4.0</a>
-                  
-                  </p>
-            </header>
+                  GPT-4. Lizenz: </p>
+               
+               <a href="https://creativecommons.org/licenses/by/4.0/">CC BY
+                  4.0</a>
+               
+               </p>
+         </div>
+      </header>
+      <main class="py-4">
+         <div class="container">
             <section id="map" class="mb-4">
                <div id="mapid"></div>
             </section>
@@ -46,290 +56,313 @@
                      117</a></p>
             </section>
             <section id="original-text" class="mb-4">
-               <h2>Original Text</h2>
+               <h2>Original Text
+                  <span class="transcription-source badge-manuscript" title="Diplomatische Transkription der Handschrift">Transcribed from the manuscript (Transkribus)</span></h2>
                <div>
-                  Eppishausen am 30.
-                  März 1838. Vererter Herr Professor! Um unsern freunden und verwandten unsern künftigen wonort
-                  recht bald, in einem, wenn auch nicht <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">kunstreichen
-                     bilde</span>, vergegenwärtigen zu können, zeichnete <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jenny von Droste zu Hülshoff</strong&gt;">meine
-                     frau<a href="https://d-nb.info/gnd/118527541"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> solchen flüchtig und eiligst ließen wir solchen in Constanz
-                  lithographiren: hier folgen ein par exemplare davon für Sie und Ire <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Caroline Luise Wackernagel-Bluntschli</strong&gt;">frau
-                     gemalin<a href="https://d-nb.info/gnd/113182346X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>; damit, wenn Sie einst, die küsten des <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Bodensee</strong&gt;">Bodensees<a href="https://www.wikidata.org/wiki/Q4127"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>
-                  bereisend, nach <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Meersburg</strong&gt;">Meersburg<a href="https://www.wikidata.org/wiki/Q498212"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> kommen,
-                  auch wissen, wo Sie einkeren sollen. Sie werden schon aus dem bildchen
-                  ersehen, daß es eine gute, wonliche und geräumige alte burg ist, ganz frei an der sonne
-                  gelegen, mit vielen hellen, hohen und freundlichen gemächern von denen man herrliche
-                  aussieht über den ganzen <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Bodensee</strong&gt;">Bodensee<a href="https://www.wikidata.org/wiki/Q4127"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> auf die
-                  schwäbischen, tyrolischen und schweizerischen <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Alpen</strong&gt;">alpen<a href="https://www.wikidata.org/wiki/Q1286"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> hat; auch
-                  wächst zu
-                  <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Meersburg</strong&gt;">Meersburg<a href="https://www.wikidata.org/wiki/Q498212"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> ein weinchen, das dem <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Eppishausen</strong&gt;">Eppishauser<a href="https://www.wikidata.org/wiki/Q1423653"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> an
-                  güte, kraft und annemlichkeit kaum nachstehet. was will man mer, wenn sich der besuch
-                  lieber freunde noch dazu füget? bene est, nil amplius oro! Jezt bin ich mit
-                  einpaken <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">meiner bücher</span> beschäftiget, multorum
-                  camelorum onus! und bald werde ich an die <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">handschriften</span> kommen; ich erwäne dieses beiläufig, damit, wenn etwa die am
-                  18ten octobers von hier nach <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Basel</strong&gt;">Basel<a href="https://www.wikidata.org/wiki/Q78"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> gereiseten
-                  dort entberlich werden sollten, sie die reise nach dem alten <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Schwaben</strong&gt;">Schwabenlande<a href="https://www.wikidata.org/wiki/Q11812551"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, um
-                  guter gesellschaft willen, mit iren hiesigen kameraden antretten könnten. Nach langem
-                  zwischenraume habe ich vor kurzem wieder einmal <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">eine
-                     pergament handschrift des XIV. Jarhunderts</span> erworben, ein schöner wolerhaltener
-                  codex: es ist ein lateinisches Martyrologium oder heiligenlegende, wie sie
-                  per circulum anni in der katholischen kirche
-                  gefeiert werden. da der verfasser, in dem leben <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Karl der Große</strong&gt;">Karl des
-                     großen<a href="https://d-nb.info/gnd/118560034"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>, ganz dem <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Turpin von Reims</strong&gt;">Turpinus<a href="https://d-nb.info/gnd/118802992"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
-                  gefolgt ist; so ist diese recension wol iünger als das <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Beda Venerabilis: Martyrologium.</strong&gt;">Martyrologium
-                     Bedae<a href="-">📖</a></span>, und
-                  da sie die S. Galler Heiligen: <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Otmar (Heiliger)</strong&gt;">Othmar<a href="https://d-nb.info/gnd/11874786X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>,
-                  <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Gallus (Heiliger)</strong&gt;">Gallus<a href="https://d-nb.info/gnd/118537350"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
-                  und <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Notker Balbulus</strong&gt;">Notker<a href="https://d-nb.info/gnd/118588850"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
-                  enthält, auch noch iünger als ienes des <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Usuard von St-Germain: Martyrologium.</strong&gt;">Usuardus</span>, das er <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Karl der Dicke</strong&gt;">Karl dem
-                     III<a href="https://d-nb.info/gnd/118630938"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>. diken zu eignete. Je nun, es ist doch immer etwas; regnets nicht, so tröpfelts doch!
-                  In der <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Baseler&#xA;        Zeitung.</strong&gt;">Baseler Zeitung<a href="https://hls-dhs-dss.ch/de/articles/024762/2002-07-03/">📖</a></span> lezten Jares N. 49. seite 216. lese ich unter den
-                  ankündigungen, daß bei <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Heinrich von Speyr-Passavant</strong&gt;">H. von
-                     Speyr<a href="https://www.wikidata.org/wiki/Q116619851"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> dem ältern. zum grünen Helm. N. 415. für 2 bazen, ein <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unbekannt: Unbekannt.</strong&gt;">gedruktes
-                     verzeichniß seines Antiquitaeten und kunst kabinets<a href="-">📖</a></span> zu haben seie. da ich doch gerne
-                  den inhalt dieser, von dem besizer selbst reich genannten, sammelung kennen lernte;
-                  so wage ich es Sie vererter Herr! zu bitten, mir bei rüksendung <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">meiner bücher</span> ein exemplar beizulegen, und mir die 2
-                  bazen bis zu nächster gelegenheit zu borgen, auch möchte ich erfaren: ob <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Heinrich von Speyr-Passavant</strong&gt;">H. von
-                     Speyr<a href="https://www.wikidata.org/wiki/Q116619851"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> nicht etwa mit gegenständen seiner sammelung handelt oder tauscht ? Von unserm guten
-                  <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jacob Grimm</strong&gt;">Jacob
-                     Grimm<a href="https://d-nb.info/gnd/118542257"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> habe ich die längste zeit nichts erhalten: da es nun gegen ostern gehet,
-                  wird er sich wol bald entscheiden müßen, ob er in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Berlin</strong&gt;">Berlin<a href="https://www.wikidata.org/wiki/Q64"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> oder <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Leipzig</strong&gt;">Leipzig<a href="https://www.wikidata.org/wiki/Q2079"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> das kommende sommerhalbiar lesen will? das lezte wäre mir noch lieber; denn
-                  ich fürchte,
-                  daß <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wilhelm Grimm</strong&gt;">Wilhelms<a href="https://d-nb.info/gnd/118542265"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
-                  brust das klima von <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Berlin</strong&gt;">Berlin<a href="https://www.wikidata.org/wiki/Q64"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> nicht
-                  ertragen möchte. Nun muß auch <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jacob Grimm</strong&gt;">Jacobs<a href="https://d-nb.info/gnd/118542257"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
-                  <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jacob Grimm: Lateinische Gedichte des X. und XI. Jh.</strong&gt;">lateinisches
-                     buch<a href="https://books.google.de/books?id=b0hNW6DYAj8C">📖</a></span>, an dem er auch in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Kassel</strong&gt;">Kassel<a href="https://www.wikidata.org/wiki/Q2865"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>
-                  ununterbrochen fortarbeitete, bereits fertig sein, wenn es noch auf
-                  die Ostermesse wandern will; ich bin ser begierig darauf, auf die tierfabel, die
-                  älter sein soll als der <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Reinardus&#xA;        Vulpes.</strong&gt;">Reinardus<a href="-">📖</a></span>, auf den <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ruodlieb.</strong&gt;">Ortlieb<a href="https://geschichtsquellen.de/werk/5257">📖</a></span>,
-                  ob er auf einem historischen grunde wurzelt? und
-                  auf den von mir, mit meinem ganzen aparate, im abge trettenen <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Waltharius.</strong&gt;">Waltharius<a href="https://geschichtsquellen.de/werk/2090">📖</a></span> und wie er die geschichte mit dem <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unbekannt: Unbekannt.</strong&gt;">Geraldus
-                     Floriacensis<a href="-">📖</a></span> nennen wird? Sollte mir freund <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jacob Grimm</strong&gt;">Jacob<a href="https://d-nb.info/gnd/118542257"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
-                  etwa, durch einen heimkerenden Baseler Studenten, ein <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">exemplar</span> an Sie übermachen; so bitte ich recht angelegenst es mir doch, mit erstem
-                  abgehenden postwagen, zuzufertigen. Zum lesen und schreiben habe ich nun wenig zeit; doch lese
-                  ich eben /: im bette:/ <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Georg Gottfried Gervinus: Geschichte der&#xA;        poetischen National-Literatur der Deutschen.</strong&gt;">Gervinus geschichte der
-                     poetischen National Literatur der Deutschen<a href="-">📖</a></span>. welch ein strom von
-                  beredsamkeit, welch ein meer voll wissen, welch schneller und umfassender überblik!
-                  aber auch welch ein unbe gränztes selbstvertrauen, welcher absolutismus im
-                  absprechen und manchmal, welche einseitigkeit in ansieht und urteil! die demut ist doch
-                  eine förderliche tugend für die wissenschaft; aber sie scheint nach gerade ganz außer
-                  übung zu kommen. Die <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">kinder<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> sind gottlob!
-                  beide wol auf, wachsen wie die spargeln und fangen, bei iezt
-                  anbrechendem frülinge, an zu singen wie die voegelein des benachbarten büchen waldes.
-                  alle tage neue freuden! auch die ältern sind wol und gottlob! noch immer gutes
-                  mutes. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jenny von Droste zu Hülshoff</strong&gt;">Jenny<a href="https://d-nb.info/gnd/118527541"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
-                  grüßet Sie und die <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Caroline Luise Wackernagel-Bluntschli</strong&gt;">frau
-                     Professorin<a href="https://d-nb.info/gnd/113182346X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> mit Irem ergebensten JvLaßberg. Sie haben doch wol meinen Brief vom 15 hornungs erhalten?
-                  - der <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Weingartner codex</span> wird in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Frauenfeld</strong&gt;">Frauenfeld<a href="https://www.wikidata.org/wiki/Q68120"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> für den druk abgeschrieben; dieser aber kann erst beginnen,
-                  wenn ich einmal in dem alten <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Meersburg</strong&gt;">Meersburg<a href="https://www.wikidata.org/wiki/Q498212"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> size
-                  und mein haupt an den thurm des königs <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Dagobert I.</strong&gt;">Dagobert<a href="https://d-nb.info/gnd/118523287"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
-                  lene. 
+                  
+                  <p><br>Eppishausen am 30.
+                     März 1838. <br>Vererter Herr Professor! <br>Um unsern freunden und verwandten unsern künftigen wonort
+                     recht bald, in einem, wenn <br>auch nicht <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">kunstreichen
+                        bilde</span>, vergegenwärtigen zu können, zeichnete <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jenny von Droste zu Hülshoff</strong&gt;">meine
+                        frau<a href="https://d-nb.info/gnd/118527541"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> solchen <br>flüchtig und eiligst ließen wir solchen in Constanz
+                     lithographiren: hier folgen ein <br>par exemplare davon für Sie und Ire <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Caroline Luise Wackernagel-Bluntschli</strong&gt;">frau
+                        gemalin<a href="https://d-nb.info/gnd/113182346X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>; damit, wenn Sie einst, die <br>küsten des <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Bodensee</strong&gt;">Bodensees<a href="https://www.wikidata.org/wiki/Q4127"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>
+                     bereisend, nach <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Meersburg</strong&gt;">Meersburg<a href="https://www.wikidata.org/wiki/Q498212"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> kommen,
+                     auch wissen, wo Sie <br>einkeren sollen. Sie werden schon aus dem bildchen
+                     ersehen, daß es eine gute, wonliche <br>und geräumige alte burg ist, ganz frei an der sonne
+                     gelegen, mit vielen hellen, <br>hohen und freundlichen gemächern von denen man herrliche
+                     aussieht über den ganzen <br><span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Bodensee</strong&gt;">Bodensee<a href="https://www.wikidata.org/wiki/Q4127"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> auf die
+                     schwäbischen, tyrolischen und schweizerischen <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Alpen</strong&gt;">alpen<a href="https://www.wikidata.org/wiki/Q1286"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> hat; auch
+                     wächst <br>zu
+                     <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Meersburg</strong&gt;">Meersburg<a href="https://www.wikidata.org/wiki/Q498212"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> ein weinchen, das dem <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Eppishausen</strong&gt;">Eppishauser<a href="https://www.wikidata.org/wiki/Q1423653"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> an
+                     güte, kraft und annemlichkeit <br>kaum nachstehet. was will man mer, wenn sich der besuch
+                     lieber freunde noch dazu <br>füget? bene est, nil amplius oro! <br>Jezt bin ich mit
+                     einpaken <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">meiner bücher</span> beschäftiget, multorum
+                     camelorum onus! <br>und bald werde ich an die <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">handschriften</span> kommen; ich erwäne dieses beiläufig, damit, <br>wenn etwa die am
+                     18ten octobers von hier nach <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Basel</strong&gt;">Basel<a href="https://www.wikidata.org/wiki/Q78"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> gereiseten
+                     dort entberlich werden <br>sollten, sie die reise nach dem alten <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Schwaben</strong&gt;">Schwabenlande<a href="https://www.wikidata.org/wiki/Q11812551"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, um
+                     guter gesellschaft willen, <br>mit iren hiesigen kameraden antretten könnten. <br>Nach langem
+                     zwischenraume habe ich vor kurzem wieder einmal <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">eine
+                        pergament <br>handschrift des XIV. Jarhunderts</span> erworben, ein schöner wolerhaltener
+                     codex: es ist ein <br>lateinisches Martyrologium oder heiligenlegende, wie sie
+                     per circulum anni in der <br>katholischen kirche
+                     gefeiert werden. da der verfasser, in dem leben <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Karl der Große</strong&gt;">Karl des
+                        großen<a href="https://d-nb.info/gnd/118560034"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>, ganz dem <br><span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Turpin von Reims</strong&gt;">Turpinus<a href="https://d-nb.info/gnd/118802992"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                     gefolgt ist; so ist diese recension wol iünger als das <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Beda Venerabilis: Martyrologium.</strong&gt;">Martyrologium
+                        Bedae<a href="-">📖</a></span>, <br>und
+                     da sie die S. Galler Heiligen: <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Otmar (Heiliger)</strong&gt;">Othmar<a href="https://d-nb.info/gnd/11874786X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>,
+                     <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Gallus (Heiliger)</strong&gt;">Gallus<a href="https://d-nb.info/gnd/118537350"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                     und <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Notker Balbulus</strong&gt;">Notker<a href="https://d-nb.info/gnd/118588850"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                     enthält, auch noch <br>iünger als ienes des <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Usuard von St-Germain: Martyrologium.</strong&gt;">Usuardus<a href="https://geschichtsquellen.de/werk/3450">📖</a></span>, das er <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Karl der Dicke</strong&gt;">Karl dem
+                        III<a href="https://d-nb.info/gnd/118630938"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>. diken zu eignete. Je nun, es ist <br>doch immer etwas; regnets nicht, so tröpfelts doch!
+                     <br>In der <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Baseler Zeitung.</strong&gt;">Baseler Zeitung<a href="https://hls-dhs-dss.ch/de/articles/024762/2002-07-03/">📖</a></span> lezten Jares N. 49. seite 216. lese ich unter den
+                     ankündigungen, <br>daß bei <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Heinrich von Speyr-Passavant</strong&gt;">H. von
+                        Speyr<a href="https://www.wikidata.org/wiki/Q116619851"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> dem ältern. zum grünen Helm. N. 415. für 2 bazen, ein <br><span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unbekannt: gedruktes verzeichniß seines Antiquitaeten und kunst kabinets.</strong&gt;">gedruktes
+                        verzeichniß seines Antiquitaeten und kunst kabinets<a href="-">📖</a></span> zu haben seie. <br>da ich doch gerne
+                     den inhalt dieser, von dem besizer selbst reich genannten, sammelung <br>kennen lernte;
+                     so wage ich es Sie vererter Herr! zu bitten, mir bei rüksendung <br><span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">meiner bücher</span> ein exemplar beizulegen, und mir die 2
+                     bazen bis zu nächster gelegenheit <br>zu borgen, auch möchte ich erfaren: ob <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Heinrich von Speyr-Passavant</strong&gt;">H. von
+                        Speyr<a href="https://www.wikidata.org/wiki/Q116619851"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> nicht etwa mit gegenständen <br>seiner sammelung handelt oder tauscht ? <br>Von unserm guten
+                     <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jacob Grimm</strong&gt;">Jacob
+                        Grimm<a href="https://d-nb.info/gnd/118542257"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> habe ich die längste zeit nichts erhalten: da es nun gegen <br>ostern gehet,
+                     wird er sich wol bald entscheiden müßen, ob er in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Berlin</strong&gt;">Berlin<a href="https://www.wikidata.org/wiki/Q64"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> oder <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Leipzig</strong&gt;">Leipzig<a href="https://www.wikidata.org/wiki/Q2079"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> <br>das kommende sommerhalbiar lesen will? das lezte wäre mir noch lieber; denn
+                     <br>ich fürchte,
+                     daß <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wilhelm Grimm</strong&gt;">Wilhelms<a href="https://d-nb.info/gnd/118542265"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                     brust das klima von <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Berlin</strong&gt;">Berlin<a href="https://www.wikidata.org/wiki/Q64"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> nicht
+                     ertragen möchte. Nun muß auch <br><span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jacob Grimm</strong&gt;">Jacobs<a href="https://d-nb.info/gnd/118542257"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                     <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jacob Grimm: Lateinische Gedichte des X. und XI. Jh.</strong&gt;">lateinisches
+                        buch<a href="https://books.google.de/books?id=b0hNW6DYAj8C">📖</a></span>, an dem er auch in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Kassel</strong&gt;">Kassel<a href="https://www.wikidata.org/wiki/Q2865"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>
+                     ununterbrochen fortarbeitete, bereits fertig sein, <br>wenn es noch auf
+                     die Ostermesse wandern will; ich bin ser begierig darauf, auf die <br>tierfabel, die
+                     älter sein soll als der <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Reinardus&#xA;        Vulpes.</strong&gt;">Reinardus<a href="-">📖</a></span>, auf den <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ruodlieb.</strong&gt;">Ortlieb<a href="https://geschichtsquellen.de/werk/5257">📖</a></span>,
+                     ob er auf einem historischen <br>grunde wurzelt? und
+                     auf den von mir, mit meinem ganzen aparate, im abge <br>trettenen <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Waltharius.</strong&gt;">Waltharius<a href="https://geschichtsquellen.de/werk/2090">📖</a></span> und wie er die geschichte mit dem <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unbekannt: Geraldus Floriacensis.</strong&gt;">Geraldus
+                        Floriacensis<a href="-">📖</a></span> nennen wird? <br>Sollte mir freund <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jacob Grimm</strong&gt;">Jacob<a href="https://d-nb.info/gnd/118542257"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                     etwa, durch einen heimkerenden Baseler Studenten, ein <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">exemplar</span> <br>an Sie übermachen; so bitte ich recht angelegenst es mir doch, mit erstem
+                     abgehenden <br>postwagen, zuzufertigen. <br>Zum lesen und schreiben habe ich nun wenig zeit; doch lese
+                     ich eben /: im bette:/ <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Georg Gottfried Gervinus: Geschichte der&#xA;        poetischen National-Literatur der Deutschen.</strong&gt;">Gervinus <br>geschichte der
+                        poetischen National Literatur der Deutschen<a href="-">📖</a></span>. welch ein strom von
+                     beredsamkeit, welch ein <br>meer voll wissen, welch schneller und umfassender überblik!
+                     aber auch welch ein unbe <br>gränztes selbstvertrauen, welcher absolutismus im
+                     absprechen und manchmal, welche <br>einseitigkeit in ansieht und urteil! die demut ist doch
+                     eine förderliche tugend für <br>die wissenschaft; aber sie scheint nach gerade ganz außer
+                     übung zu kommen. <br>Die <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">kinder<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> sind gottlob!
+                     beide wol auf, wachsen wie die spargeln und fangen, <br>bei iezt
+                     anbrechendem frülinge, an zu singen wie die voegelein des benachbarten <br>büchen waldes.
+                     alle tage neue freuden! auch die ältern sind wol und gottlob! <br>noch immer gutes
+                     mutes. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jenny von Droste zu Hülshoff</strong&gt;">Jenny<a href="https://d-nb.info/gnd/118527541"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                     grüßet Sie und die <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Caroline Luise Wackernagel-Bluntschli</strong&gt;">frau
+                        Professorin<a href="https://d-nb.info/gnd/113182346X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> mit <br>Irem <br>ergebensten <br>JvLaßberg. <br>Sie haben doch wol meinen Brief vom 15 hornungs erhalten?
+                     - der <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Weingartner codex</span> wird <br>in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Frauenfeld</strong&gt;">Frauenfeld<a href="https://www.wikidata.org/wiki/Q68120"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> für den druk abgeschrieben; dieser aber kann erst beginnen,
+                     wenn ich einmal <br>in dem alten <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Meersburg</strong&gt;">Meersburg<a href="https://www.wikidata.org/wiki/Q498212"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> size
+                     und mein haupt an den thurm des königs <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Dagobert I.</strong&gt;">Dagobert<a href="https://d-nb.info/gnd/118523287"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                     lene. </p>
                   </div>
             </section>
             <section id="normalised-text" class="mb-4">
                <h2>Normalisierter Text</h2>
                <div>
-                  Eppishausen am 30. März 1838. Verehrter Herr Professor! Um unseren Freunden und
-                  Verwandten unseren künftigen Wohnort recht bald, in einem, wenn auch nicht
-                  kunstreichen Bilde, vergegenwärtigen zu können, zeichnete meine Frau solchen
-                  flüchtig und eiligst ließen wir solchen in Konstanz lithographieren: hier folgen
-                  ein paar Exemplare davon für Sie und Ihre Frau Gemahlin; damit, wenn Sie einst,
-                  die Küsten des Bodensees bereisend, nach Meersburg kommen, auch wissen, wo Sie
-                  einkehren sollen. Sie werden schon aus dem Bildchen ersehen, dass es eine gute,
-                  wohnliche und geräumige alte Burg ist, ganz frei an der Sonne gelegen, mit
-                  vielen hellen, hohen und freundlichen Gemächern, von denen man herrliche
-                  Aussicht über den ganzen Bodensee auf die schwäbischen, tirolischen und
-                  schweizerischen Alpen hat; auch wächst zu Meersburg ein Weinchen, das dem
-                  Eppishauser an Güte, Kraft und Annehmlichkeit kaum nachsteht. Was will man mehr,
-                  wenn sich der Besuch lieber Freunde noch dazu fügt? Bene est, nil amplius oro!
-                  Jetzt bin ich mit Einpacken meiner Bücher beschäftigt, multorum camelorum onus!
-                  und bald werde ich an die Handschriften kommen; ich erwähne dieses beiläufig,
-                  damit, wenn etwa die am 18. Oktober von hier nach Basel gereisten dort
-                  entbehrlich werden sollten, sie die Reise nach dem alten Schwabenlande, um guter
-                  Gesellschaft willen, mit ihren hiesigen Kameraden antreten könnten. Nach langem
-                  Zwischenraum habe ich vor kurzem wieder einmal eine Pergamenthandschrift des
-                  XIV. Jahrhunderts erworben, ein schöner wohlerhaltener Codex: es ist ein
-                  lateinisches Martyrologium oder Heiligenlegende, wie sie per circulum anni in
-                  der katholischen Kirche gefeiert werden. Da der Verfasser, in dem Leben Karls
-                  des Großen, ganz dem Turpinus gefolgt ist, so ist diese Rezension wohl jünger
-                  als das Martyrologium Bedae, und da sie die St. Galler Heiligen: Othmar, Gallus
-                  und Notker enthält, auch noch jünger als jenes des Usuardus, das er Karl dem
-                  III. diktiert zu eigen hatte. Je nun, es ist doch immer etwas; regnet’s nicht,
-                  so tröpfelt’s doch! In der Baseler Zeitung letzten Jahres Nr. 49, Seite 216,
-                  lese ich unter den Ankündigungen, dass bei H. von Speyr dem Ältern, zum grünen
-                  Helm, Nr. 415, für 2 Batzen, ein gedrucktes Verzeichnis seines Antiquitäten- und
-                  Kunstkabinets zu haben sei. Da ich doch gerne den Inhalt dieser, von dem
-                  Besitzer selbst reich genannten, Sammlung kennenlernte; so wage ich es Sie,
-                  verehrter Herr, zu bitten, mir bei Rücksendung meiner Bücher ein Exemplar
-                  beizulegen, und mir die 2 Batzen bis zu nächster Gelegenheit zu borgen, auch
-                  möchte ich erfahren: ob H. von Speyr nicht etwa mit Gegenständen seiner Sammlung
-                  handelt oder tauscht? Von unserem guten Jacob Grimm habe ich die längste Zeit
-                  nichts erhalten: da es nun gegen Ostern geht, wird er sich wohl bald entscheiden
-                  müssen, ob er in Berlin oder Leipzig das kommende Sommerhalbjahr lesen will. Das
-                  letzte wäre mir noch lieber; denn ich fürchte, dass Wilhelms Brust das Klima von
-                  Berlin nicht ertragen möchte. Nun muss auch Jacobs lateinisches Buch, an dem er
-                  auch in Kassel ununterbrochen fortarbeitete, bereits fertig sein, wenn es noch
-                  auf die Ostermesse wandern will; ich bin sehr begierig darauf, auf die
-                  Tierfabel, die älter sein soll als der Reinardus, auf den Ortlieb, ob er auf
-                  einem historischen Grunde wurzelt? Und auf den von mir, mit meinem ganzen
-                  Apparat, im abgetretenen Waltharius und wie er die Geschichte mit dem Geraldus
-                  Floriacensis nennen wird? Sollte mir Freund Jacob etwa, durch einen
-                  heimkehrenden Baseler Studenten, ein Exemplar an Sie übermachen; so bitte ich
-                  recht angelegentlich, es mir doch, mit erstem abgehenden Postwagen, zuzuferigen.
-                  Zum Lesen und Schreiben habe ich nun wenig Zeit; doch lese ich eben /: im Bette
-                  :/ Gervinus Geschichte der poetischen National-Literatur der Deutschen. Welch
-                  ein Strom von Beredsamkeit, welch ein Meer voll Wissen, welch schneller und
-                  umfassender Überblick! Aber auch welch ein unbegrenztes Selbstvertrauen, welcher
-                  Absolutismus im Absprechen und manchmal, welche Einseitigkeit in Ansicht und
-                  Urteil! Die Demut ist doch eine förderliche Tugend für die Wissenschaft; aber
-                  sie scheint nachgerade ganz außer Übung zu kommen. Die Kinder sind Gottlob beide
-                  wohlauf, wachsen wie die Spargeln und fangen, bei jetzt anbrechendem Frühlinge,
-                  an zu singen wie die Vögelein des benachbarten Buchenwaldes. Alle Tage neue
-                  Freuden! Auch die Älteren sind wohl und Gottlob noch immer guten Mutes. Jenny
-                  grüßt Sie und die Frau Professorin mit Ihrem ergebensten JvLaßberg. Sie haben
-                  doch wohl meinen Brief vom 15. Hornung erhalten? - Der Weingartner Codex wird in
-                  Frauenfeld für den Druck abgeschrieben; dieser aber kann erst beginnen, wenn ich
-                  einmal in dem alten Meersburg sitze und mein Haupt an den Turm des Königs
-                  Dagobert lehne.
+                  
+                  <p>Eppishausen am 30. März 1838. Verehrter Herr Professor! Um unseren Freunden und
+                     Verwandten unseren künftigen Wohnort recht bald, in einem, wenn auch nicht
+                     kunstreichen Bilde, vergegenwärtigen zu können, zeichnete meine Frau solchen
+                     flüchtig und eiligst ließen wir solchen in Konstanz lithographieren: hier folgen
+                     ein paar Exemplare davon für Sie und Ihre Frau Gemahlin; damit, wenn Sie einst,
+                     die Küsten des Bodensees bereisend, nach Meersburg kommen, auch wissen, wo Sie
+                     einkehren sollen. Sie werden schon aus dem Bildchen ersehen, dass es eine gute,
+                     wohnliche und geräumige alte Burg ist, ganz frei an der Sonne gelegen, mit
+                     vielen hellen, hohen und freundlichen Gemächern, von denen man herrliche
+                     Aussicht über den ganzen Bodensee auf die schwäbischen, tirolischen und
+                     schweizerischen Alpen hat; auch wächst zu Meersburg ein Weinchen, das dem
+                     Eppishauser an Güte, Kraft und Annehmlichkeit kaum nachsteht. Was will man mehr,
+                     wenn sich der Besuch lieber Freunde noch dazu fügt? Bene est, nil amplius oro!
+                     Jetzt bin ich mit Einpacken meiner Bücher beschäftigt, multorum camelorum onus!
+                     und bald werde ich an die Handschriften kommen; ich erwähne dieses beiläufig,
+                     damit, wenn etwa die am 18. Oktober von hier nach Basel gereisten dort
+                     entbehrlich werden sollten, sie die Reise nach dem alten Schwabenlande, um guter
+                     Gesellschaft willen, mit ihren hiesigen Kameraden antreten könnten. Nach langem
+                     Zwischenraum habe ich vor kurzem wieder einmal eine Pergamenthandschrift des
+                     XIV. Jahrhunderts erworben, ein schöner wohlerhaltener Codex: es ist ein
+                     lateinisches Martyrologium oder Heiligenlegende, wie sie per circulum anni in
+                     der katholischen Kirche gefeiert werden. Da der Verfasser, in dem Leben Karls
+                     des Großen, ganz dem Turpinus gefolgt ist, so ist diese Rezension wohl jünger
+                     als das Martyrologium Bedae, und da sie die St. Galler Heiligen: Othmar, Gallus
+                     und Notker enthält, auch noch jünger als jenes des Usuardus, das er Karl dem
+                     III. diktiert zu eigen hatte. Je nun, es ist doch immer etwas; regnet’s nicht,
+                     so tröpfelt’s doch! In der Baseler Zeitung letzten Jahres Nr. 49, Seite 216,
+                     lese ich unter den Ankündigungen, dass bei H. von Speyr dem Ältern, zum grünen
+                     Helm, Nr. 415, für 2 Batzen, ein gedrucktes Verzeichnis seines Antiquitäten- und
+                     Kunstkabinets zu haben sei. Da ich doch gerne den Inhalt dieser, von dem
+                     Besitzer selbst reich genannten, Sammlung kennenlernte; so wage ich es Sie,
+                     verehrter Herr, zu bitten, mir bei Rücksendung meiner Bücher ein Exemplar
+                     beizulegen, und mir die 2 Batzen bis zu nächster Gelegenheit zu borgen, auch
+                     möchte ich erfahren: ob H. von Speyr nicht etwa mit Gegenständen seiner Sammlung
+                     handelt oder tauscht? Von unserem guten Jacob Grimm habe ich die längste Zeit
+                     nichts erhalten: da es nun gegen Ostern geht, wird er sich wohl bald entscheiden
+                     müssen, ob er in Berlin oder Leipzig das kommende Sommerhalbjahr lesen will. Das
+                     letzte wäre mir noch lieber; denn ich fürchte, dass Wilhelms Brust das Klima von
+                     Berlin nicht ertragen möchte. Nun muss auch Jacobs lateinisches Buch, an dem er
+                     auch in Kassel ununterbrochen fortarbeitete, bereits fertig sein, wenn es noch
+                     auf die Ostermesse wandern will; ich bin sehr begierig darauf, auf die
+                     Tierfabel, die älter sein soll als der Reinardus, auf den Ortlieb, ob er auf
+                     einem historischen Grunde wurzelt? Und auf den von mir, mit meinem ganzen
+                     Apparat, im abgetretenen Waltharius und wie er die Geschichte mit dem Geraldus
+                     Floriacensis nennen wird? Sollte mir Freund Jacob etwa, durch einen
+                     heimkehrenden Baseler Studenten, ein Exemplar an Sie übermachen; so bitte ich
+                     recht angelegentlich, es mir doch, mit erstem abgehenden Postwagen, zuzuferigen.
+                     Zum Lesen und Schreiben habe ich nun wenig Zeit; doch lese ich eben /: im Bette
+                     :/ Gervinus Geschichte der poetischen National-Literatur der Deutschen. Welch
+                     ein Strom von Beredsamkeit, welch ein Meer voll Wissen, welch schneller und
+                     umfassender Überblick! Aber auch welch ein unbegrenztes Selbstvertrauen, welcher
+                     Absolutismus im Absprechen und manchmal, welche Einseitigkeit in Ansicht und
+                     Urteil! Die Demut ist doch eine förderliche Tugend für die Wissenschaft; aber
+                     sie scheint nachgerade ganz außer Übung zu kommen. Die Kinder sind Gottlob beide
+                     wohlauf, wachsen wie die Spargeln und fangen, bei jetzt anbrechendem Frühlinge,
+                     an zu singen wie die Vögelein des benachbarten Buchenwaldes. Alle Tage neue
+                     Freuden! Auch die Älteren sind wohl und Gottlob noch immer guten Mutes. Jenny
+                     grüßt Sie und die Frau Professorin mit Ihrem ergebensten JvLaßberg. Sie haben
+                     doch wohl meinen Brief vom 15. Hornung erhalten? - Der Weingartner Codex wird in
+                     Frauenfeld für den Druck abgeschrieben; dieser aber kann erst beginnen, wenn ich
+                     einmal in dem alten Meersburg sitze und mein Haupt an den Turm des Königs
+                     Dagobert lehne.</p>
                   </div>
             </section>
             <section id="translation" class="mb-4">
                <h2>Translation</h2>
                <div>
-                  Eppishausen, March 30, 1838. Esteemed Professor! To be able to vividly present
-                  our future place of residence to our friends and relatives, even if not in an
-                  artful image, my wife quickly drew such an image, and we had it lithographed in
-                  Constance: here are a few copies for you and your wife; so that, when you one
-                  day travel along the shores of Lake Constance and come to Meersburg, you will
-                  know where to stop by. You will already see from the little picture that it is a
-                  good, comfortable and spacious old castle, freely located in the sun, with many
-                  bright, high, and pleasant chambers from which one has a splendid view over the
-                  whole Lake Constance to the Swabian, Tyrolean, and Swiss Alps; also, in
-                  Meersburg grows a wine that barely falls short of the Eppishausen in quality,
-                  strength, and pleasantness. What more could one ask for, if visits from dear
-                  friends are added to it? All is well, I ask for nothing more! At present, I am
-                  occupied with packing my books, a burden of many camels! And soon I will come to
-                  the manuscripts; I mention this incidentally so that, if those who traveled from
-                  here to Basel on October 18 are needed there, they might undertake the journey
-                  to the old Swabian land, for the sake of good company, with their comrades from
-                  here. After a long interval, I recently acquired a parchment manuscript from the
-                  14th century, a beautiful, well-preserved codex: it is a Latin martyrology or
-                  legend of saints as celebrated in the Catholic Church throughout the year. Since
-                  the author has entirely followed Turpinus in the life of Charlemagne; this
-                  recension is probably younger than the Martyrologium Bedae, and since it
-                  contains the St. Gall saints: Othmar, Gallus, and Notker, it is also younger
-                  than that of Usuardus, which he dedicated to Charles III. Well, it is always
-                  something; if it doesn't rain, it drizzles! In the Basel newspaper last year No.
-                  49, page 216, I read among the announcements that at H. von Speyr the elder, at
-                  the Green Helmet, No. 415, a printed catalog of his collection of antiquities
-                  and art can be had for 2 batzens. As I would like to know the contents of this
-                  collection, which is described by the owner as rich, I dare to ask you, esteemed
-                  Sir, to enclose a copy when returning my books and to lend me the 2 batzens
-                  until the next opportunity, also I would like to know if H. von Speyr might
-                  trade or barter items from his collection? I have received nothing from our good
-                  Jacob Grimm for the longest time: since it is nearing Easter, he will soon have
-                  to decide whether he will lecture in Berlin or Leipzig in the coming summer
-                  semester? I would prefer the latter; because I fear that Wilhelm's chest might
-                  not endure the Berlin climate. By now, Jacob's Latin book, on which he has been
-                  continuously working even in Kassel, must be finished if it is to wander to the
-                  Easter fair; I am very curious about it, about the animal fable, which is said
-                  to be older than the Reynard, about Ortlieb, whether it is rooted in a
-                  historical foundation? And about how he will name the story with Geraldus
-                  Floriacensis concerning my whole apparatus in the relinquished Waltharius? If
-                  friend Jacob might deliver a copy to you through a returning Basel student; I
-                  kindly ask you to send it to me with the first departing mail coach. I now have
-                  little time to read and write; nevertheless, I am currently reading—to
-                  bed—Gervinus's history of the poetic national literature of the Germans. What a
-                  torrent of eloquence, what a sea full of knowledge, what quick and comprehensive
-                  overview! But also what boundless self-confidence, what absolutism in judgment,
-                  and sometimes what partiality in viewpoint and judgment! Humility is indeed a
-                  beneficial virtue for science; but it seems to be going entirely out of
-                  practice. The children, thank God, are both well, growing like asparagus, and
-                  beginning, in this now commencing spring, to sing like the little birds of the
-                  neighboring beech forest. New joys every day! The elders are also well, thank
-                  God, and still in good spirits. Jenny sends greetings to you and Mrs. Professor
-                  with her respectfully, JvLaßberg. You did receive my letter of February 15,
-                  didn't you?—the Weingartner codex is being transcribed for print in Frauenfeld;
-                  however, this can only begin once I am settled in the old Meersburg and lean my
-                  head against King Dagobert's tower.
+                  
+                  <p>Eppishausen, March 30, 1838. Esteemed Professor! To be able to vividly present
+                     our future place of residence to our friends and relatives, even if not in an
+                     artful image, my wife quickly drew such an image, and we had it lithographed in
+                     Constance: here are a few copies for you and your wife; so that, when you one
+                     day travel along the shores of Lake Constance and come to Meersburg, you will
+                     know where to stop by. You will already see from the little picture that it is a
+                     good, comfortable and spacious old castle, freely located in the sun, with many
+                     bright, high, and pleasant chambers from which one has a splendid view over the
+                     whole Lake Constance to the Swabian, Tyrolean, and Swiss Alps; also, in
+                     Meersburg grows a wine that barely falls short of the Eppishausen in quality,
+                     strength, and pleasantness. What more could one ask for, if visits from dear
+                     friends are added to it? All is well, I ask for nothing more! At present, I am
+                     occupied with packing my books, a burden of many camels! And soon I will come to
+                     the manuscripts; I mention this incidentally so that, if those who traveled from
+                     here to Basel on October 18 are needed there, they might undertake the journey
+                     to the old Swabian land, for the sake of good company, with their comrades from
+                     here. After a long interval, I recently acquired a parchment manuscript from the
+                     14th century, a beautiful, well-preserved codex: it is a Latin martyrology or
+                     legend of saints as celebrated in the Catholic Church throughout the year. Since
+                     the author has entirely followed Turpinus in the life of Charlemagne; this
+                     recension is probably younger than the Martyrologium Bedae, and since it
+                     contains the St. Gall saints: Othmar, Gallus, and Notker, it is also younger
+                     than that of Usuardus, which he dedicated to Charles III. Well, it is always
+                     something; if it doesn't rain, it drizzles! In the Basel newspaper last year No.
+                     49, page 216, I read among the announcements that at H. von Speyr the elder, at
+                     the Green Helmet, No. 415, a printed catalog of his collection of antiquities
+                     and art can be had for 2 batzens. As I would like to know the contents of this
+                     collection, which is described by the owner as rich, I dare to ask you, esteemed
+                     Sir, to enclose a copy when returning my books and to lend me the 2 batzens
+                     until the next opportunity, also I would like to know if H. von Speyr might
+                     trade or barter items from his collection? I have received nothing from our good
+                     Jacob Grimm for the longest time: since it is nearing Easter, he will soon have
+                     to decide whether he will lecture in Berlin or Leipzig in the coming summer
+                     semester? I would prefer the latter; because I fear that Wilhelm's chest might
+                     not endure the Berlin climate. By now, Jacob's Latin book, on which he has been
+                     continuously working even in Kassel, must be finished if it is to wander to the
+                     Easter fair; I am very curious about it, about the animal fable, which is said
+                     to be older than the Reynard, about Ortlieb, whether it is rooted in a
+                     historical foundation? And about how he will name the story with Geraldus
+                     Floriacensis concerning my whole apparatus in the relinquished Waltharius? If
+                     friend Jacob might deliver a copy to you through a returning Basel student; I
+                     kindly ask you to send it to me with the first departing mail coach. I now have
+                     little time to read and write; nevertheless, I am currently reading—to
+                     bed—Gervinus's history of the poetic national literature of the Germans. What a
+                     torrent of eloquence, what a sea full of knowledge, what quick and comprehensive
+                     overview! But also what boundless self-confidence, what absolutism in judgment,
+                     and sometimes what partiality in viewpoint and judgment! Humility is indeed a
+                     beneficial virtue for science; but it seems to be going entirely out of
+                     practice. The children, thank God, are both well, growing like asparagus, and
+                     beginning, in this now commencing spring, to sing like the little birds of the
+                     neighboring beech forest. New joys every day! The elders are also well, thank
+                     God, and still in good spirits. Jenny sends greetings to you and Mrs. Professor
+                     with her respectfully, JvLaßberg. You did receive my letter of February 15,
+                     didn't you?—the Weingartner codex is being transcribed for print in Frauenfeld;
+                     however, this can only begin once I am settled in the old Meersburg and lean my
+                     head against King Dagobert's tower.</p>
                   </div>
             </section>
          </div>
-      </div><script src="https://unpkg.com/leaflet/dist/leaflet.js"></script><script>
+      </main>
+      <footer class="bg-dark text-white text-center py-3">
+         <div class="container">
+            <p class="mb-0"><a href="../letters.html">Back to the Letters</a></p>
+         </div>
+      </footer><script src="https://unpkg.com/leaflet/dist/leaflet.js"></script><script>
                     // Create the map and set its view to a default coordinate and zoom level.
-                    var map = L.map('mapid').setView([47.545,9.23759], 7);
-                    // Set up the OpenStreetMap tile layer.
-                    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                    attribution: 'Map data <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
+                    var map = L.map('mapid', { scrollWheelZoom: false }).setView([47.545,9.23759], 7);
+                    // Muted basemap (CARTO Positron) instead of the default colourful OSM tiles,
+                    // to match the edition's restrained palette.
+                    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+                    attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+                    subdomains: 'abcd',
+                    maxZoom: 19
                     }).addTo(map);
-                    
-                    
-                    // Optionally add a marker at the center
-                    
-                    // Define custom marker icons.
-                    var mentionedIcon = L.icon({
-                    iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
-                    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/images/marker-shadow.png',
-                    iconSize: [25, 41],
-                    iconAnchor: [12, 41],
-                    popupAnchor: [1, -34],
-                    shadowSize: [41, 41]
-                    });
-                    
-                    L.marker([47.545,9.23759]).addTo(map)
+
+                    // Sender's place: filled circle in the edition's accent colour.
+                    L.circleMarker([47.545,9.23759], {
+                    radius: 8, color: '#143761', weight: 2, fillColor: '#1d4e89', fillOpacity: 0.85
+                    }).addTo(map)
                     .bindPopup('Eppishausen')
                     .openPopup();
+
+                    // Mentioned places: smaller, lighter circles in a secondary tone.
                     
-                    
-                        
+
                         var popupText = "Bodensee";
-                        L.marker([47.65, 9.3166666666667], {icon: mentionedIcon}).addTo(map)
+                        L.circleMarker([47.65, 9.3166666666667], {
+                        radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75
+                        }).addTo(map)
                         .bindPopup(popupText);
                     
-                        
+
                         var popupText = "Meersburg";
-                        L.marker([47.7,9.26666667], {icon: mentionedIcon}).addTo(map)
+                        L.circleMarker([47.7,9.26666667], {
+                        radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75
+                        }).addTo(map)
                         .bindPopup(popupText);
                     
-                        
+
                         var popupText = "Alpen";
-                        L.marker([46.57805555555556, 8.615], {icon: mentionedIcon}).addTo(map)
+                        L.circleMarker([46.57805555555556, 8.615], {
+                        radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75
+                        }).addTo(map)
                         .bindPopup(popupText);
                     
-                        
+
                         var popupText = "Eppishausen";
-                        L.marker([47.545,9.23759], {icon: mentionedIcon}).addTo(map)
+                        L.circleMarker([47.545,9.23759], {
+                        radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75
+                        }).addTo(map)
                         .bindPopup(popupText);
                     
-                        
+
                         var popupText = "Basel";
-                        L.marker([47.55472222,7.59055556], {icon: mentionedIcon}).addTo(map)
+                        L.circleMarker([47.55472222,7.59055556], {
+                        radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75
+                        }).addTo(map)
                         .bindPopup(popupText);
                     
-                        
+
                         var popupText = "Schwaben";
-                        L.marker([48.37844, 9.963274], {icon: mentionedIcon}).addTo(map)
+                        L.circleMarker([48.37844, 9.963274], {
+                        radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75
+                        }).addTo(map)
                         .bindPopup(popupText);
                     
-                        
+
                         var popupText = "Berlin";
-                        L.marker([52.52,13.405], {icon: mentionedIcon}).addTo(map)
+                        L.circleMarker([52.52,13.405], {
+                        radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75
+                        }).addTo(map)
                         .bindPopup(popupText);
                     
-                        
+
                         var popupText = "Leipzig";
-                        L.marker([51.34,12.375], {icon: mentionedIcon}).addTo(map)
+                        L.circleMarker([51.34,12.375], {
+                        radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75
+                        }).addTo(map)
                         .bindPopup(popupText);
                     
-                        
+
                         var popupText = "Kassel";
-                        L.marker([51.3158,9.4979], {icon: mentionedIcon}).addTo(map)
+                        L.circleMarker([51.3158,9.4979], {
+                        radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75
+                        }).addTo(map)
                         .bindPopup(popupText);
                     
-                        
+
                         var popupText = "Frauenfeld";
-                        L.marker([47.55,8.9], {icon: mentionedIcon}).addTo(map)
+                        L.circleMarker([47.55,8.9], {
+                        radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75
+                        }).addTo(map)
                         .bindPopup(popupText);
                     </script><script>
                     // Initialize all tooltips

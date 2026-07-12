@@ -61,8 +61,14 @@
                         target="../register/lassberg-literature.xml#lassberg-literature-0032"
                         ><rs>Cronick des gotzhuses Rychenowe.</rs></ref>
                     <ref type="cmif:mentionsPerson"
-                        target="../register/lassberg-persons.xml#lassberg-correspondent-0354"
-                        ><rs>Unbekannt</rs></ref>
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0673"
+                        ><rs>Marquart von Chemenat</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0179"
+                        ><rs>Johann Adam Pupikofer</rs></ref>
+                    <ref type="cmif:mentionsPlace"
+                        target="../register/lassberg-places.xml#lassberg-place-0025"
+                        ><rs>Bischofszell</rs></ref>
                 </note>
             </correspDesc>
         </profileDesc>
@@ -71,14 +77,18 @@
                 <change when="2023-08-01" who="#MiS" status="draft">File created and preprocessed automatically</change>
                 <change when="2023-08-29" who="#MiS" status="draft">Manual markup and proofreading</change>
                 <change when="2023-11-22" who="#MiS" status="draft">Finished markup</change>
+                <change when="2026-07-10" who="#check-letter-annotations" status="done">Checked via check-letter-annotations skill (Vollständigkeit, Verlinkung, Struktur, Header/Body-Konsistenz, Formeln)</change>
                 <!-- <change when="" who="" status="puplished">Final proofreading</change> -->
             </listChange>
         </revisionDesc>
     </teiHeader>
     <text>
         <body>
-            <div type="original" resp="ocr">
-                <p>Hochwohlgeborner, verehrtester Herr! Mit herzlichem Danke sende ich Ihnen hier
+            <div type="print" resp="ocr">
+                <opener>
+                    <salute>Hochwohlgeborner, verehrtester Herr!</salute>
+                </opener>
+                <p>Mit herzlichem Danke sende ich Ihnen hier
                     <rs type="bibl"
                     key="../register/lassberg-literature.xml#lassberg-literature-0026">Myllers
                     Sammlung von Minneliedern</rs> zurück. Ich muss nochmals um Verzeihung bitten,
@@ -88,12 +98,19 @@
                     Urkunden</rs> beigelegt; dieselben sollten genau sein; selbst einige
                     Nachläßigkeiten und Auslaßungen des Textes wollte ich nicht verbessern. Die
                     dritte, wichtigere Urkunde von <rs type="person"
-                    key="../register/lassberg-persons.xml#lassberg-correspondent-0354">Marquart von
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0673">Marquart von
                     Chemenat</rs> werde ich Ihnen nächstens gleichfalls zustellen. Meinen Besuch bei
                     Ihnen werde ich, wenn Sie es gütigst erlauben, künftigen Mittwoch oder
                     Donnerstag wiederhohlen. Doch nein, am Mittwoch kan es nicht sein! Also am
-                    Donnerstag. Unterdessen habe ich die Ehre zu verharren Dero ergebenster Diac.
-                    Pupikofer. Bischofzell, den 11. März 1826.</p>
+                    Donnerstag.</p>
+                <closer>
+                    <salute>Unterdessen habe ich die Ehre zu verharren Dero ergebenster</salute>
+                    <signed>Diac.
+                    <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0179">Pupikofer</rs></signed>.
+                    <dateline><rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0025">Bischofzell</rs>, den 11. März 1826</dateline>.
+                </closer>
             </div>
             <div type="normalized" resp="GPT3.5">
                 <p>Hochwohlgeborner, verehrtester Herr! Mit herzlichem Dank sende ich Ihnen hier

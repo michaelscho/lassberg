@@ -54,8 +54,8 @@
                 <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
                 <note type="mentioned">
                     <ref type="cmif:mentionsBibl"
-                        target="../register/lassberg-literature.xml#lassberg-literature-0001"
-                        ><rs>Fabeln aus den Zeiten der Minnesinger</rs></ref>
+                        target="../register/lassberg-literature.xml#lassberg-literature-0222"
+                        ><rs>Sammlung von Minnesingern aus dem schwäbischen Zeitpuncte</rs></ref>
                     <ref type="cmif:mentionsBibl"
                         target="../register/lassberg-literature.xml#lassberg-literature-0002"
                         ><rs>Memorabilium omnis aetatis et omnium gentium chronici
@@ -123,15 +123,19 @@
                 <change when="2023-08-01" who="#MiS" status="draft">File created and preprocessed automatically</change>
                 <change when="2023-08-29" who="#MiS" status="draft">Manual markup and proofreading</change>
                 <change when="2023-11-22" who="#MiS" status="draft">Finished markup</change>
+                <change when="2026-07-10" who="#check-letter-annotations" status="done">Checked via check-letter-annotations skill (Vollständigkeit, Verlinkung, Struktur, Header/Body-Konsistenz, Formeln)</change>
                 <!-- <change when="" who="" status="puplished">Final proofreading</change> -->
             </listChange>
         </revisionDesc>
     </teiHeader>
     <text>
         <body>
-            <div type="original" resp="ocr">
-                <p>Hochwohlgeborner Herr! Indem ich Ihnen <rs type="bibl"
-                    key="../register/lassberg-literature.xml#lassberg-literature-0001">Bodmers
+            <div type="print" resp="ocr">
+                <opener>
+                    <salute>Hochwohlgeborner Herr!</salute>
+                </opener>
+                <p>Indem ich Ihnen <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0222">Bodmers
                     Ausgabe der Minnesånger</rs> mit vielem Danke zurücksende, kann ich mich nicht
                     enthalten, Ihnen meinen herzlichen Dank für Ihre Gastfreundschaft nochmals
                     auszudrücken. <rs type="bibl"
@@ -184,11 +188,17 @@
                     >1388</date> geschriebenen Chronik</rs> vorkomme. Wo nun wohl diese Chronik sich
                     befinden möge? Von der <rs type="bibl"
                     key="../register/lassberg-literature.xml#lassberg-literature-0009">Chronik
-                    Heinrichs von Klingenberg</rs> scheint sie bestimmt verschieden zu sein.
-                    Genehmigen Sie, hochwohlgeborner, geehrtester Herr, die Versicherung wahrer
+                    Heinrichs von Klingenberg</rs> scheint sie bestimmt verschieden zu sein.</p>
+                <closer>
+                    <salute>Genehmigen Sie, hochwohlgeborner, geehrtester Herr, die Versicherung wahrer
                     Hochachtung und steter Dienstfertigkeit, mit der ich die Ehre habe zu sein Ihr
-                    ergebenster Pupikofer. Bischofszell, den <date when="1824">20 Dec.
-                    1824</date>.</p>
+                    ergebenster</salute>
+                    <signed><rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0179">Pupikofer</rs></signed>.
+                    <dateline><rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0025">Bischofszell</rs>, den <date when="1824">20 Dec.
+                    1824</date></dateline>.
+                </closer>
             </div>
             <div type="normalized" resp="GPT3.5">
                 <p>Hochwohlgeborner Herr! Indem ich Ihnen Bodmers Ausgabe der Minnesänger mit vielem

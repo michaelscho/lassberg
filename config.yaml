@@ -1,0 +1,38 @@
+paths:
+  letters: data/letters
+  register: data/register
+  letters_register: data/register/lassberg-letters.xml   # Gesamtregister (3268 Briefe, Metadaten)
+
+embedding:
+  primary:
+    name: BAAI/bge-m3
+    dim: 1024
+    normalize: true
+    max_tokens: 8192
+  secondary:            # optional, per Flag aktivieren
+    name: Qwen/Qwen3-Embedding-0.6B
+    enabled: false
+
+clustering:
+  # Zielwerte für den Vollausbau (3268 Volltextbriefe); solange das Teilkorpus klein ist (~170),
+  # hier temporär n_neighbors: 10 / min_cluster_size: 5 setzen und beim Anwachsen zurückstellen
+  umap: {n_neighbors: 10, min_dist: 0.1, metric: cosine, random_state: 42}
+  hdbscan: {min_cluster_size: 3, min_samples: 2, cluster_selection_method: eom}
+
+frontend:
+  matryoshka_dim: 512   # Dimension für Browser-Vektoren (BGE-M3: einfaches Truncate+Renorm testen; Fallback: volle 1024)
+  quantization: int8
+  browser_model: Xenova/bge-m3   # ONNX-Konvertierung für Transformers.js
+  browser_model_dtype: q8        # q8 (~560 MB) oder fp16 (~1,1 GB); Konsistenztest entscheidet
+  hf_api_fallback: true          # optionaler Fallback ohne Modell-Download
+  letter_url_pattern: html/letters/lassberg-letter-{id}.html   # bestehende HTML-Briefansichten des Repos
+
+rdf:
+  base_uri: https://michaelscho.github.io/lassberg/   # entschieden: GitHub-Pages-URL des Repos
+
+neo4j:
+  uri: bolt://localhost:7687
+  user: neo4j
+
+sparql:
+  endpoint: http://localhost:7878/query

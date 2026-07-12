@@ -119,6 +119,12 @@
                     <ref type="cmif:mentionsPlace"
                         target="../register/lassberg-places.xml#lassberg-place-0185"
                         ><rs>Darmstadt</rs></ref>
+                    <ref type="cmif:mentionsPlace"
+                        target="../register/lassberg-places.xml#lassberg-place-0025"
+                        ><rs>Bischofszell</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0610"
+                        ><rs>Rudolf von Habsburg</rs></ref>
                 </note>
             </correspDesc>
         </profileDesc>
@@ -127,6 +133,7 @@
                 <change when="2023-08-01" who="#MiS" status="done">File created and preprocessed automatically</change>
                 <change when="2023-08-29" who="#MiS" status="InProgress">Manual markup and proofreading</change>
                 <change when="2023-11-22" who="#MiS" status="draft">Finished markup</change>
+                <change when="2026-07-10" who="#check-letter-annotations" status="done">Checked via check-letter-annotations skill (Vollständigkeit, Verlinkung, Struktur, Header/Body-Konsistenz, Formeln)</change>
                 <!-- <change when="" who="" status="puplished">Final proofreading</change> -->
             </listChange>
         </revisionDesc>
@@ -134,8 +141,11 @@
     </teiHeader>
     <text>
         <body>
-            <div type="original" resp="ocr">
-                <p>Hochwohlgeborner Herr! Schon zum dritten Male suchte ich Sie umsonst auf Ihrem
+            <div type="print" resp="ocr">
+                <opener>
+                    <salute>Hochwohlgeborner Herr!</salute>
+                </opener>
+                <p>Schon zum dritten Male suchte ich Sie umsonst auf Ihrem
                     Musensitze zu <rs type="place"
                     key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs> in
                     den drei letzten Wochen auf; und immer umsonst, so daß ich nun fast die Hoffnung
@@ -215,7 +225,9 @@
                     untereinander schlagen, dass ihr Blut untereinander fliesst. Das hat nun
                     angehoben, da der König von Ungarn und der von Böhen stritten und der König von
                     Frankreich, der auch einen grossen Streit jenseits des Meeres hat, und der Graf
-                    Peter von Savoyen, und Graf Rudolf von Habsburg und Graf Hermann von Heimberg
+                    Peter von Savoyen, und Graf <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0610">Rudolf von
+                    Habsburg</rs> und Graf Hermann von Heimberg
                     und der Bischof von Würzberg und König Prinz mit deutschem Volke."</quote> Ob
                     der letztere nicht selbst <rs type="person"
                     key="../register/lassberg-persons.xml#lassberg-correspondent-0384">Konradin</rs>
@@ -225,10 +237,17 @@
                     sehen das Vergnügen haben, so wünsche ich Ihnen von Herzen einen recht
                     angenehmen Winteraufenthalt und reiche Fundgruben für Ihre verdienstlichen
                     Forschungen. Möge der Lenz Sie denn wieder mit den Schwalben herführen und Ihre
-                    Gewogenheit mir ferner Aufmunteruug und Stärkung geben. Genehmigen Sie die
+                    Gewogenheit mir ferner Aufmunteruug und Stärkung geben.</p>
+                <closer>
+                    <salute>Genehmigen Sie die
                     Versicherung, dass ich mit unbeschränkter Hochachtung und Freundschaftlichkeit
-                    verbleibe Ihr ergebenster Diac. Pupikofer. Bischofzell, den 29. Weinmonat
-                    1825.</p>
+                    verbleibe Ihr ergebenster</salute>
+                    <signed>Diac. <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0179">Pupikofer</rs></signed>.
+                    <dateline><rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0025">Bischofzell</rs>, den 29. Weinmonat
+                    1825</dateline>.
+                </closer>
             </div>
             <div type="normalized" resp="GPT3.5">
                 <p>Hochwohlgeborener Herr! Schon zum dritten Male suchte ich Sie umsonst auf Ihrem

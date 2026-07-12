@@ -94,7 +94,11 @@
                     target="../register/lassberg-places.xml#lassberg-place-0020"><rs>Bern</rs></ref>
                     <ref type="cmif:mentionsPlace"
                     target="../register/lassberg-places.xml#lassberg-place-0082"
-                    ><rs>Konstanz</rs></ref> </note>
+                    ><rs>Konstanz</rs></ref> <ref type="cmif:mentionsPlace"
+                    target="../register/lassberg-places.xml#lassberg-place-0043"
+                    ><rs>Eppishausen</rs></ref> <ref type="cmif:mentionsPerson"
+                    target="../register/lassberg-persons.xml#lassberg-correspondent-0373"
+                    ><rs>Joseph von Laßberg</rs></ref> </note>
             </correspDesc>
         </profileDesc>
         <revisionDesc>
@@ -111,17 +115,23 @@
                 <change when="2025-03-16" who="#MiS" status="done">Manual markup and
                     proofreading</change>
                 <change when="2025-03-16" who="#MiS" status="done">Finished markup</change>
+                <change when="2026-07-10" who="#check-letter-annotations" status="done">Checked via check-letter-annotations skill (Vollständigkeit, Verlinkung, Struktur, Header/Body-Konsistenz, Formeln)</change>
             </listChange>
         </revisionDesc>
     </teiHeader>
     <text>
         <body>
             <div type="original" resp="#transkribus #MiS">
-                <p><pb n="1" corresp="../pagexml/0971/0971-1.xml"/><lb
-                    xml:id="lassberg-letter-0971-1-1" n="1" corresp="tr_1_tl_2"/>kopi <lb
-                    xml:id="lassberg-letter-0971-1-2" n="2" corresp="tr_1_tl_1"/>Eppishausen den 11.
-                    März 1825 <lb xml:id="lassberg-letter-0971-1-3" n="3" corresp="tr_1_tl_3"
-                    />Vererter Herr! <lb xml:id="lassberg-letter-0971-1-4" n="4" corresp="tr_1_tl_4"
+                <pb n="1" corresp="../pagexml/0971/0971-1.xml"/>
+                <opener>
+                    <lb xml:id="lassberg-letter-0971-1-1" n="1" corresp="tr_1_tl_2"/>kopi
+                    <lb xml:id="lassberg-letter-0971-1-2" n="2" corresp="tr_1_tl_1"/>
+                    <dateline><rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs> den 11.
+                    März 1825</dateline> <lb xml:id="lassberg-letter-0971-1-3" n="3" corresp="tr_1_tl_3"
+                    /><salute>Vererter Herr!</salute>
+                </opener>
+                <p><lb xml:id="lassberg-letter-0971-1-4" n="4" corresp="tr_1_tl_4"
                     />Mit der angelegensten Bitte: es mir zu <lb xml:id="lassberg-letter-0971-1-5"
                     n="5" corresp="tr_1_tl_5"/>gute zu halten, daß ich Jr Buch so lange behielt und
                     mit dem <lb xml:id="lassberg-letter-0971-1-6" n="6" corresp="tr_1_tl_6"/>besten
@@ -195,12 +205,17 @@
                     corresp="tr_1_tl_10"/>herren von Rozmital</rs> aus dem xv. Jarhundert sende ich
                     <lb xml:id="lassberg-letter-0971-2-11" n="11" corresp="tr_1_tl_11"/>Inen von <rs
                     type="place" key="../register/lassberg-places.xml#lassberg-place-0082"
-                    >Constanz</rs> aus. Indeßen leben Sie wol und <lb
+                    >Constanz</rs> aus.</p>
+                <closer>
+                    <salute>Indeßen leben Sie wol und <lb
                     xml:id="lassberg-letter-0971-2-12" n="12" corresp="tr_1_tl_12"/>gedenken Sie
                     zuweilen mit Liebe Ires herzlich betrübten <lb
                     xml:id="lassberg-letter-0971-2-13" n="13" corresp="tr_1_tl_13"/>gehorsamen
-                    Dieners. <lb xml:id="lassberg-letter-0971-2-14" n="14" corresp="tr_1_tl_14"
-                    />Joseph v. Laßberg. </p>
+                    Dieners.</salute>
+                    <signed><lb xml:id="lassberg-letter-0971-2-14" n="14" corresp="tr_1_tl_14"
+                    /><rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0373">Joseph v. Laßberg</rs>.</signed>
+                </closer>
             </div>
             <div type="normalized" resp="#GPT4">
                 <p>Eppishausen, den 11. März 1825 Verehrter Herr! Mit der angelegentlichsten Bitte:

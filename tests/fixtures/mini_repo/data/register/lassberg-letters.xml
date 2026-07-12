@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-register-letters">
+  <teiHeader><fileDesc><titleStmt><title>Fixture register</title></titleStmt></fileDesc></teiHeader>
+  <text><body>
+    <profileDesc>
+      <correspDesc key="lassberg-letter-0001" change="online">
+        <correspAction type="sent">
+          <persName key="lassberg-correspondent-0001" ref="https://d-nb.info/gnd/000001">Test Sender</persName>
+          <placeName key="lassberg-place-0001" ref="https://www.wikidata.org/wiki/Q1">Testort</placeName>
+          <date when="1825-01-01">1825-01-01</date>
+        </correspAction>
+        <correspAction type="received">
+          <persName key="lassberg-correspondent-0002" ref="https://d-nb.info/gnd/000002">Test Empfaenger</persName>
+        </correspAction>
+        <note type="nummer_harris">42</note>
+        <note type="journalnummer"></note>
+        <note type="aufbewahrungsort">Testarchivstadt</note>
+        <note type="aufbewahrungsinstitution">Testarchiv</note>
+        <note type="signatur">Sig. 1</note>
+        <note type="url_facsimile"></note>
+        <note type="published_in" target="https://example.com/pub">Test Publication, 1900</note>
+      </correspDesc>
+      <correspDesc key="lassberg-letter-0002">
+        <correspAction type="sent">
+          <persName key="lassberg-correspondent-0002" ref="https://d-nb.info/gnd/000002">Test Empfaenger</persName>
+          <date when="1825-02-01">1825-02-01</date>
+        </correspAction>
+        <correspAction type="received">
+          <persName key="lassberg-correspondent-0001" ref="https://d-nb.info/gnd/000001">Test Sender</persName>
+        </correspAction>
+      </correspDesc>
+      <correspDesc key="lassberg-letter-0003">
+        <correspAction type="sent">
+          <persName key="lassberg-correspondent-0001" ref="https://d-nb.info/gnd/000001">Test Sender</persName>
+          <date when="1825-03-01">1825-03-01</date>
+        </correspAction>
+        <correspAction type="received">
+          <persName key="lassberg-correspondent-0002" ref="https://d-nb.info/gnd/000002">Test Empfaenger</persName>
+        </correspAction>
+      </correspDesc>
+    </profileDesc>
+  </body></text>
+</TEI>

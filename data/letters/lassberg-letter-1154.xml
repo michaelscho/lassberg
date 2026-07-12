@@ -48,7 +48,7 @@
                 <correspAction type="received">
                     <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
                         >Joseph von Laßberg</persName>
-                    <placeName key="../register/lassberg-places.xml#lassberg-place-0152">Unbekannt</placeName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</placeName>
                 </correspAction>
                 
                 <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
@@ -58,8 +58,8 @@
                         ><rs>Der Bär, als Wappen des Kantons Appenzell. In: Appenzellisches
                         Monatsblatt 3 Heft 2 (1827), S. 21-26.</rs></ref>
                     <ref type="cmif:mentionsBibl"
-                        target="../register/lassberg-literature.xml#lassberg-literature-0013"
-                        ><rs>Unbekannt</rs></ref>
+                        target="../register/lassberg-literature.xml#lassberg-literature-0196"
+                        ><rs>Germania topo-chrono-stemmatographica sacra et profana (2 Bde.)</rs></ref>
                     <ref type="cmif:mentionsBibl"
                         target="../register/lassberg-literature.xml#lassberg-literature-0066"
                         ><rs>Historia Nigrae Silvae Ordinis Sancti Benedicti Coloniae. Teil: 3:
@@ -87,7 +87,7 @@
                         ><rs>Hugo Thumb</rs></ref>
                     <ref type="cmif:mentionsPerson"
                         target="../register/lassberg-persons.xml#lassberg-correspondent-0418"
-                        ><rs>Walter von Klingen Anshelm, Valerius</rs></ref>
+                        ><rs>Walter von Klingen</rs></ref>
                     <ref type="cmif:mentionsPerson"
                         target="../register/lassberg-persons.xml#lassberg-correspondent-0179"
                         ><rs>Johann Adam Pupikofer</rs></ref>
@@ -117,18 +117,24 @@
                 <change when="2023-08-01" who="#MiS" status="draft">File created and preprocessed automatically</change>
                 <change when="2023-08-29" who="#MiS" status="draft">Manual markup and proofreading</change>
                 <change when="2023-11-22" who="#MiS" status="draft">Finished markup</change>
+                <change when="2026-07-10" who="#check-letter-annotations" status="done">Checked via
+                    check-letter-annotations skill (Vollständigkeit, Verlinkung, Struktur,
+                    Header/Body-Konsistenz, Formeln)</change>
                 <!-- <change when="" who="" status="puplished">Final proofreading</change> -->
             </listChange>
         </revisionDesc>
     </teiHeader>
     <text>
         <body>
-            <div type="original" resp="ocr">
-                <p>Seiner Hochwohlgeboren dem Herrn Baron <rs type="person"
+            <div type="print" resp="ocr">
+                <opener>
+                    <address>Seiner Hochwohlgeboren dem Herrn Baron <rs type="person"
                     key="../register/lassberg-persons.xml#lassberg-correspondent-0373">von
                     Laßberg</rs> zu <rs type="place"
-                    key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs>.
-                    Hochwohlgeborener Herr und Gönner! Mit vielem Bedauern habe ich vernommen, daß
+                    key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs>.</address>
+                    <salute>Hochwohlgeborener Herr und Gönner!</salute>
+                </opener>
+                <p>Mit vielem Bedauern habe ich vernommen, daß
                     Sie wieder einen Fieberanfall gehabt haben; doch ist es gut, daß derselbe so
                     bald wieder nachgegeben hat; möge bald jede Spur davon verschwinden! Ihre
                     Bemerkungen über den Bären, den Ihnen das <rs type="bibl"
@@ -142,7 +148,7 @@
                     Alterthumsforschers geben; es kommt viel darauf an, wer etwas sage. Auch würden
                     wohl hunderte sich gerne Alterthumsforscher und berühmt nennen lassen, die lange
                     nicht so viel als Sie für die Aufhellung des Alterthums gethan haben. Mit vielem
-                    Danke sende ich Ihnen die <rs type="bibl" key="../register/lassberg-literature.xml#lassberg-literature-0013">2 Bände
+                    Danke sende ich Ihnen die <rs type="bibl" key="../register/lassberg-literature.xml#lassberg-literature-0196">2 Bände
                     des Bucelin</rs>. Ich bemerkte, daß Sie bei der Genealogie der <rs type="person"
                     key="../register/lassberg-persons.xml#lassberg-correspondent-0415">Herren von
                     Neuenburg</rs> hinzuschrieben die Thumben und die Burg desselben Namens am
@@ -173,10 +179,14 @@
                     heimgebracht; doch werde ich mich nur durch schlechte Witterung und
                     Verschlimmerung des Übels abhalten lassen, Sie morgen oder übermorgen zu sehen.
                     Die <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0191">Weinfelder</rs> Reise will ich
-                    unterdessen verschieben. Mit herzlicher Ergebenheit und Hochachtung Ihr Diac.
-                    <rs type="person"
+                    unterdessen verschieben.</p>
+                <closer>
+                    <salute>Mit herzlicher Ergebenheit und Hochachtung Ihr Diac.</salute>
+                    <signed><rs type="person"
                     key="../register/lassberg-persons.xml#lassberg-correspondent-0179"
-                    >Pupikofer</rs>. Den 5. Mart. 27.</p>
+                    >Pupikofer</rs></signed>.
+                    <dateline>Den 5. Mart. 27.</dateline>
+                </closer>
             </div>
             <div type="normalized" resp="GPT3.5">
                 <p>Seiner Hochwohlgeboren dem Herrn Baron von Laßberg zu Eppishausen.

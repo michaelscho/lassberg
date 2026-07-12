@@ -5,32 +5,42 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>The Lassberg Letters</title>
       <link href="../../css/styles.css" rel="stylesheet">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script><script src="../../js/letters.js"></script><link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"><script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script></head>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script><link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"><script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script></head>
    <body>
-      <div id="app" class="container">
-         <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
-            <div class="container-fluid"><a class="navbar-brand" href="#">Laßberg Letters</a><ul class="navbar-nav">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+         <div class="container"><a class="navbar-brand" href="../../index.html">The Laßberg Letters</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ms-auto">
                   <li class="nav-item"><a class="nav-link" href="../../index.html">Welcome</a></li>
                   <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
-                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb">Data Analysis</a></li>
-                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg">Repository</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../persons.html">Persons</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../places.html">Places</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
                </ul>
             </div>
-         </nav>
-         <div class="container my-4">
-            <header class="mb-4">
-               <h1>Brief von Wilhelm Wackernagel an Joseph von Laßberg (12.05.1834).</h1>
-               <p class="lead">
-                  Textfassung auf Basis der Transkription durch Transkribus korrigiert und in TEI
+         </div>
+      </nav>
+      <header class="page-header py-4">
+         <div class="container">
+            <h1 class="mb-2">Brief von Wilhelm Wackernagel an Joseph von Laßberg (12.05.1834).</h1>
+            <p class="lead mb-0">
+               
+               <p>Textfassung auf Basis der Transkription durch Transkribus korrigiert und in TEI
                   überführt. Automatisierte NER-Erkennung und Identifikation durch Flair geprüft,
                   korrigiert und ergänzt. Normalisierung, Zusammenfassung und Übersetzung durch
-                  GPT-4. Lizenz: 
-                  
-                  <a href="https://creativecommons.org/licenses/by/4.0/">CC BY
-                     4.0</a>
-                  
-                  </p>
-            </header>
+                  GPT-4. Lizenz: </p>
+               
+               <a href="https://creativecommons.org/licenses/by/4.0/">CC BY
+                  4.0</a>
+               
+               </p>
+         </div>
+      </header>
+      <main class="py-4">
+         <div class="container">
             <section id="map" class="mb-4">
                <div id="mapid"></div>
             </section>
@@ -42,296 +52,309 @@
                <p><strong>Gedruck in: </strong><a href=""></a></p>
             </section>
             <section id="original-text" class="mb-4">
-               <h2>Original Text</h2>
+               <h2>Original Text
+                  <span class="transcription-source badge-manuscript" title="Diplomatische Transkription der Handschrift">Transcribed from the manuscript (Transkribus)</span></h2>
                <div>
-                  Basel, 12/5/34. Hochverehrter Herr
-                  Baron mit
-                  Betrübniss habe ich Ihren letzten gütigen Brief gelesen. ich wünsche, ich hoffe
-                  dass das Uebel wieder gehoben und Hand und Arm&nbsp;genesen sey. Wie verdriesslich wäre es Ihnen
-                  sonst, in dieser wunnerlichen zit des meien, wo Ihr Gau von jeher am schönsten gewesen
-                  ist, gar die Stube hüten zu müssen Gott besser! Auch hier habe ich
-                  seit voriger Woche den Kummer einen Kranken zu beklagen. Einer von meinen Studenten, gerade
-                  mein Liebling, ein frischer liebenswürdiger geistreicher Mensch von seltener Dichtergabe, ist
-                  eben jetzt wo er die Theologie aufgeben und sich ganz auf die deutschen Studien legen
-                  wollte, in Geistes verwirrung verfallen. Ein blühender Bursch von achtzehn
-                  Jahren. Das
-                  ist aber nicht der erste Fall der Art. Die <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Basel</strong&gt;">Baseler<a href="https://www.wikidata.org/wiki/Q78"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> Nerven
-                  sind so aufs
-                  gewöhnliche eingerichtet, dass ein etwas ungewöhn licher Geist sie
-                  gleich überreizt. Nun liegt der gute Mensch und phantasiert von
-                  poetischen Genüssen. Der Bericht von
-                  Ihrem Unglück gieng mir um so näher, als mir daneben so reiche und so
-                  überaus zierlich geschriebene Auszüge vor Augen lagen. Eine so mühevolle
-                  Freundlichkeit durfte ich nie erwarten: wie soll ich Ihnen dafür
-                  danken. Der <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ulrich von Liechtenstein: Frauendienst.</strong&gt;">Frauendienst<a href="https://www.handschriftencensus.de/werke/386">📖</a></span> erfolgt anbei mit meinem besten Dank zurück. ich habe das hübsche Abenteuer
-                  aus gewählt, wie <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ulrich von Liechtenstein</strong&gt;">Ulrich<a href="https://d-nb.info/gnd/118625306"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
-                  sich in einen Miselsächtigen verkleidet: er erzählt an dieser Stelle
-                  mit am besten, und die ganze Geschichte ist chara cteristisch für
-                  ihn. Ausserdem
-                  soll von ungedruckten Sachen, wofern der Raum ausreicht, noch folgendes
-                  hinein. Als erstes Stück das ganze <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Vocabularius Sancti&#xA;        Galli.</strong&gt;">vocab: S.
-                     Galli<a href="https://handschriftencensus.de/werke/4438">📖</a></span>. – Aus der <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Notker III. von St. Gallen: De&#xA;        materia artis rhetoricae.</strong&gt;">sgall.
-                     Rhetorik<a href="https://handschriftencensus.de/werke/5706">📖</a></span> (Zürcher H.S.). <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Notker III. von St. Gallen: De&#xA;        syllogismis.</strong&gt;">Sgall
-                     Abhandlung de syllogismis<a href="https://handschriftencensus.de/werke/5709">📖</a></span> (ib.). Eine Stelle des <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Notker III. von St. Gallen: De&#xA;        consolatione philosophiae.</strong&gt;">Boeth<a href="https://handschriftencensus.de/werke/5702">📖</a></span>.
-                  (Zürcher u. Sgall. HSS.) Aus <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Heinrich von Melk: Vom gemeinen leben.</strong&gt;">Heinrich v.
-                     M. gemeinen
-                     lebens</span> (ein Oestreicher vor 1163). <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unbekannt: Unbekannt.</strong&gt;">Predigt<a href="-">📖</a></span>
-                  aus einer Zürcher HS. c 1160. <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unbekannt: Unbekannt.</strong&gt;">Gebet<a href="-">📖</a></span>
-                  aus einer Hs. zu Muri, etwa gleichzeitig. <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unbekannt: Unbekannt.</strong&gt;">Predigt bruchstücke<a href="-">📖</a></span> von hier, grammatisch merkwürdig wie mir noch weniges vor gekommen, c. 1200. – Ein Abschnitt aus <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Thomasîn von Zerclaere: Der welsche Gast.</strong&gt;">Tommasins v.
-                     Zerclaere welschem Gast<a href="https://handschriftencensus.de/werke/377">📖</a></span>. Hoeflichkeitsregeln enthaltend. <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unbekannt: Unbekannt.</strong&gt;">Lieder<a href="-">📖</a></span>
-                  aus der Würzb. HS. (freylich halb w: halb schon ediert von <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Friedrich Heinrich von der Hagen</strong&gt;">Herr vd
-                     Hagen<a href="https://d-nb.info/gnd/118829130"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>). Eben daher und aus Wiener u. Pfälzer HSS. einige <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unbekannt: Unbekannt.</strong&gt;">Erzählungen
-                     u. Fabeln<a href="-">📖</a></span>. Aus <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wernher der Gartenaere: Helmbrecht.</strong&gt;">Wernhers des
-                     gartennaeres Meier Helmbrecht<a href="https://handschriftencensus.de/werke/764">📖</a></span> (Wiener H.S.). Lieder von <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Konrad von Würzburg</strong&gt;">Konr. v.
-                     Würzburg<a href="https://d-nb.info/gnd/118565133"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>. Aus der <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Mainauer&#xA;        Naturlehre.</strong&gt;">Cosmographie<a href="https://handschriftencensus.de/werke/946">📖</a></span> hinter der <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Hugo von Langenstein: Martina.</strong&gt;">Martina<a href="https://handschriftencensus.de/werke/1737">📖</a></span>.
-                  Aus <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Hermann von Fritzlar: Buch von der Heiligen Leben.</strong&gt;">Hermanns von
-                     Fritzlar
-                     Legendenbuch<a href="https://de.wikipedia.org/wiki/Hermann_von_Fritzlar">📖</a></span> (c. 1340), Pfälzer H. Aus meinem Graubündner Prediger <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Albrecht der Kolbe</strong&gt;">Albr. Kolbe<a href="https://d-nb.info/gnd/1052192769"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>. <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unbekannt: Unbekannt.</strong&gt;">Ascetien des
-                     14 Jh.<a href="-">📖</a></span> von hier und aus <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Zürich</strong&gt;">Zürich<a href="https://www.wikidata.org/wiki/Q72"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>. <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Sieben weise&#xA;        Meister.</strong&gt;">Sieben weise
-                     Meister gedichtet 1412.<a href="https://handschriftencensus.de/werke/6078">📖</a></span>, Baseler HS. <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unbekannt: Unbekannt.</strong&gt;">Meistergesänge<a href="-">📖</a></span> aus Pfälzer HSS Diese Woche
-                  endlich erwarte ich die erste Correctur. Wüsste ich nur ob ich mich von Ihnen noch weiterer
-                  gütiger Unterstützung gewärtigen dürfte. ich wage unter diesen Umständen
-                  nicht darum zu bitten; ich wollte nur, ich könnte es. Übrigens hätte ich
-                  Ihnen den <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ulrich von Liechtenstein: Frauendienst.</strong&gt;">Frauendienst<a href="https://www.handschriftencensus.de/werke/386">📖</a></span> schon vor einer Woche zurück senden können; aber
-                  ich wollte doch lieber warten bis es mir moeglich wäre, die gewünschte
-                  Abbildung der <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Krone</span> der <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Gertrud von Hohenberg</strong&gt;">Königinn
-                     Anna<a href="https://d-nb.info/gnd/123579783"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> beizulegen, ich habe sie nun erhalten, angefertigt vom Mahler <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Maximilian Neustück</strong&gt;">Neustück<a href="https://d-nb.info/gnd/1029687587"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>, den ich glaube für weitere Arbeiten der Art empfehlen zu können. Die Masse des
-                  Originals stehn auf einem beiliegenden Zettel. Die Krone ist von Silber, von Silberblech und
-                  vergoldet.
-                  Die Zeichnung ist wenige Stunden vor Verlosung des ganzen Schatzes (44
-                  Nummern) zwischen Stadt und Land aufgenommen worden. Im F. 1827 war er auf 321 Mark 12
-                  Loth Silbers w. 6 M. 1 L. Goldes gewürdigt worden; jetzt auf den Geldwerth
-                  von 19-20000 Schw. Fr. wovon nach dem bekannten modus 2/5 der Stadt,
-                  3/5. dem Lande zufallen sollten. Ein Privatmann hatte sich erboten 23000 Fr.
-                  zu zahlen; aber die wohlberechnete Speculation missglückte, da
-                  diesmahl die Landschaft nicht das baare Geld vorzog, sondern auf Theilung in
-                  natura bestand. ich muss zu meiner Schande gestehn: ich weiss nicht ob
-                  beim Loossen, wie man es wünschte, der Stadt die <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">goldne
-                     Altar tafel</span>, die grade auf etwa 8000 Fr., ihren Antheil,
-                  geschätzt worden, zuge fallen ist. Diese von Kaiser <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Kaiser Heinrich II.</strong&gt;">Heinrich
-                     II<a href="https://d-nb.info/gnd/118548255"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>. gewidmete Tafel ist von Holz, mit Ducaten gold überzogen
-                  lang 5'5", hoch 3'8". Sie enthält in fünf Nischen oder Feldern, mitten inne <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jesus Christus</strong&gt;">Christus<a href="https://d-nb.info/gnd/7505655-0"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>, dem zu Füssen <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Kaiser Heinrich II.</strong&gt;">Heinrich<a href="https://d-nb.info/gnd/118548255"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
-                  und <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Kunigunde von Luxemburg</strong&gt;">Kunigunde<a href="https://d-nb.info/gnd/11856806X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> knien; ihm zu Seiten in den vier übrigen Feldern die Erzengel <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Michael, Erzengel</strong&gt;">Mich<a href="https://d-nb.info/gnd/1082576905"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Gabriel, Erzengel</strong&gt;">Gabr<a href="https://d-nb.info/gnd/1253037914"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>.
-                  <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Raphael, Erzengel</strong&gt;">Raph<a href="https://d-nb.info/gnd/119520761"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>.
-                  und den heil. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Benedikt (Heiliger)</strong&gt;">Benedictus<a href="https://d-nb.info/gnd/118508911"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> Auf dem obern Rande der Tafel steht gemahlt: + QVIS SICVT HEL FORTIS
-                  MEDICVS SOTER
-                  BENEDICTVS. Auf den untern: + PROSPICE TERRIGENAS CLEMENS MEDTATOR USIAS.
-                  Im J: 1585 ist der Werth dieser Tafel auf 2000 Sonnen kronen oder 4500
-                  lb geschätzt worden. Da haben Sie,
-                  hochgeehrter Herr <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Joseph von Laßberg</strong&gt;">Baron<a href="https://d-nb.info/gnd/118778862"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>,
-                  die Nachrichten die Sie verlangt, so gut ich sie zu geben im Stande bin. Künstlerischen Werth
-                  hat die Tafel ei gentlich gar keinen; auch nicht denjenigen den sie wohl
-                  haben könnte. Noch lege ich Ihnen im Auftrage Prof. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Karl Lachmann</strong&gt;">Lachmanns<a href="https://d-nb.info/gnd/118568558"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>, der sich Ihnen auf das angelegentlichste empfehlen lässt; von seinen
-                  academischen Vorlesungen über althochd. Metrik und seiner neuen Recension des <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Hildebrandslied.</strong&gt;">Hildebrandsliedes<a href="https://handschriftencensus.de/werke/2892">📖</a></span> Exemplare bei. Namentlich die letztere ist mir für mein Lesebuch noch
-                  gar wohl zu statten gekommen. So wenig mir <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Frankreich</strong&gt;">Frankreich<a href="https://www.wikidata.org/wiki/Q142"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>
-                  gefallen will, so habe ich mich ihm doch zu Anfangs dieses Monates noch um einige Häuser
-                  ﻿genähert: ich wohne jezt S. Johann No 31. Eine schöne geräumige Wohnung mit stattlicher
-                  Aussicht auf <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Schwarzwald</strong&gt;">Schwarzwald<a href="https://www.wikidata.org/wiki/Q4204"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> u.
-                  <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jura</strong&gt;">Jura<a href="https://www.wikidata.org/wiki/Q12755"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> und <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Basel</strong&gt;">Basel<a href="https://www.wikidata.org/wiki/Q78"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> mitten inne. ich bitte Gott
-                  Sie gesund, zu machen und gesund zu erhalten. Leben Sie recht
-                  wohl und bleiben Sie freundlich gewogen Ihrem ergebenen Wilh.
-                  Wackernagel Dr. 
+                  
+                  <p><br>Basel, 12/5/34. <br>Hochverehrter Herr
+                     Baron <br>mit
+                     Betrübniss habe ich Ihren letzten gütigen Brief gelesen. ich <br>wünsche, ich hoffe
+                     dass das Uebel wieder gehoben und Hand und <br>Arm&nbsp;genesen sey. Wie verdriesslich wäre es Ihnen
+                     sonst, in <br>dieser wunnerlichen zit des meien, wo Ihr Gau von jeher am <br>schönsten gewesen
+                     ist, gar die Stube hüten zu müssen Gott besser! <br>Auch hier habe ich
+                     seit voriger Woche den Kummer einen <br>Kranken zu beklagen. Einer von meinen Studenten, gerade
+                     mein <br>Liebling, ein frischer liebenswürdiger geistreicher Mensch von seltener <br>Dichtergabe, ist
+                     eben jetzt wo er die Theologie aufgeben <br>und sich ganz auf die deutschen Studien legen
+                     wollte, in Geistes <br>verwirrung verfallen. Ein blühender Bursch von achtzehn
+                     Jahren. <br>Das
+                     ist aber nicht der erste Fall der Art. Die <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Basel</strong&gt;">Baseler<a href="https://www.wikidata.org/wiki/Q78"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> Nerven
+                     <br>sind so aufs
+                     gewöhnliche eingerichtet, dass ein etwas ungewöhn <br>licher Geist sie
+                     gleich überreizt. Nun liegt der gute Mensch und <br>phantasiert von
+                     poetischen Genüssen. <br>Der Bericht von
+                     Ihrem Unglück gieng mir um so näher, als mir daneben <br>so reiche und so
+                     überaus zierlich geschriebene Auszüge vor Augen lagen. <br>Eine so mühevolle
+                     Freundlichkeit durfte ich nie erwarten: wie soll <br>ich Ihnen dafür
+                     danken. Der <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ulrich von Liechtenstein: Frauendienst.</strong&gt;">Frauendienst<a href="https://www.handschriftencensus.de/werke/386">📖</a></span> erfolgt anbei mit <br>meinem besten Dank zurück. ich habe das hübsche Abenteuer
+                     aus <br>gewählt, wie <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ulrich von Liechtenstein</strong&gt;">Ulrich<a href="https://d-nb.info/gnd/118625306"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                     sich in einen Miselsächtigen verkleidet: er erzählt <br>an dieser Stelle
+                     mit am besten, und die ganze Geschichte ist chara <br>cteristisch für
+                     ihn. <br>Ausserdem
+                     soll von ungedruckten Sachen, wofern der Raum ausreicht, noch <br>folgendes
+                     hinein. Als erstes Stück das ganze <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Vocabularius&#xA;        Sancti Galli.</strong&gt;">vocab: S.
+                        Galli<a href="https://handschriftencensus.de/werke/4438">📖</a></span>. – Aus <br>der <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Notker III. von St. Gallen: De&#xA;        materia artis rhetoricae.</strong&gt;">sgall.
+                        Rhetorik<a href="https://handschriftencensus.de/werke/5706">📖</a></span> (Zürcher H.S.). <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Notker III. von St. Gallen: De&#xA;        syllogismis.</strong&gt;">Sgall
+                        Abhandlung de syllogismis<a href="https://handschriftencensus.de/werke/5709">📖</a></span> <br>(ib.). Eine Stelle des <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Notker III. von St. Gallen: De&#xA;        consolatione philosophiae.</strong&gt;">Boeth<a href="https://handschriftencensus.de/werke/5702">📖</a></span>.
+                     (Zürcher u. Sgall. HSS.) Aus <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Heinrich von Melk: Vom gemeinen leben.</strong&gt;">Heinrich v.
+                        <br>M. gemeinen
+                        lebens</span> (ein Oestreicher vor 1163). <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unbekannt: Predigt.</strong&gt;">Predigt<a href="-">📖</a></span>
+                     aus einer Zürcher <br>HS. c 1160. <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unbekannt: Gebet.</strong&gt;">Gebet<a href="-">📖</a></span>
+                     aus einer Hs. zu Muri, etwa gleichzeitig. <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unbekannt: Predigt bruchstücke.</strong&gt;">Predigt <br>bruchstücke<a href="-">📖</a></span> von hier, grammatisch merkwürdig wie mir noch weniges vor <br>gekommen, c. 1200. – Ein Abschnitt aus <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Thomasîn von Zerclaere: Der welsche Gast.</strong&gt;">Tommasins v.
+                        Zerclaere welschem <br>Gast<a href="https://handschriftencensus.de/werke/377">📖</a></span>. Hoeflichkeitsregeln enthaltend. <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unbekannt: Lieder.</strong&gt;">Lieder<a href="-">📖</a></span>
+                     aus der Würzb. HS. (freylich <br>halb w: halb schon ediert von <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Friedrich Heinrich von der Hagen</strong&gt;">Herr vd
+                        Hagen<a href="https://d-nb.info/gnd/118829130"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>). Eben daher und aus Wiener <br>u. Pfälzer HSS. einige <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unbekannt: Erzählungen u. Fabeln.</strong&gt;">Erzählungen
+                        u. Fabeln<a href="-">📖</a></span>. Aus <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wernher der Gartenaere: Helmbrecht.</strong&gt;">Wernhers des
+                        gartennaeres <br>Meier Helmbrecht<a href="https://handschriftencensus.de/werke/764">📖</a></span> (Wiener H.S.). Lieder von <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Konrad von Würzburg</strong&gt;">Konr. v.
+                        Würzburg<a href="https://d-nb.info/gnd/118565133"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>. <br>Aus der <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Mainauer&#xA;        Naturlehre.</strong&gt;">Cosmographie<a href="https://handschriftencensus.de/werke/946">📖</a></span> hinter der <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Hugo von Langenstein: Martina.</strong&gt;">Martina<a href="https://handschriftencensus.de/werke/1737">📖</a></span>.
+                     Aus <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Hermann von Fritzlar: Buch von der Heiligen Leben.</strong&gt;">Hermanns von
+                        <br>Fritzlar
+                        Legendenbuch<a href="https://de.wikipedia.org/wiki/Hermann_von_Fritzlar">📖</a></span> (c. 1340), Pfälzer H. Aus meinem Graubündner <br>Prediger <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Albrecht der Kolbe</strong&gt;">Albr. Kolbe<a href="https://d-nb.info/gnd/1052192769"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>. <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unbekannt: Ascetien des 14 Jh.</strong&gt;">Ascetien des
+                        14 Jh.<a href="-">📖</a></span> von hier und aus <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Zürich</strong&gt;">Zürich<a href="https://www.wikidata.org/wiki/Q72"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>. <br><span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Sieben weise&#xA;        Meister.</strong&gt;">Sieben weise
+                        Meister gedichtet 1412.<a href="https://handschriftencensus.de/werke/6078">📖</a></span>, Baseler HS. <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unbekannt: Meistergesänge.</strong&gt;">Meistergesänge<a href="-">📖</a></span> aus <br>Pfälzer HSS <br>Diese Woche
+                     endlich erwarte ich die erste Correctur. Wüsste ich nur ob ich mich von <br>Ihnen noch weiterer
+                     gütiger Unterstützung gewärtigen dürfte. ich wage unter <br>diesen Umständen
+                     nicht darum zu bitten; ich wollte nur, ich könnte es. <br>Übrigens hätte ich
+                     Ihnen den <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ulrich von Liechtenstein: Frauendienst.</strong&gt;">Frauendienst<a href="https://www.handschriftencensus.de/werke/386">📖</a></span> schon vor einer Woche zurück <br>senden können; aber
+                     ich wollte doch lieber warten bis es mir moeglich wäre, <br>die gewünschte
+                     Abbildung der <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Krone</span> der <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Gertrud von Hohenberg</strong&gt;">Königinn
+                        Anna<a href="https://d-nb.info/gnd/123579783"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> beizulegen, ich habe <br>sie nun erhalten, angefertigt vom Mahler <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Maximilian Neustück</strong&gt;">Neustück<a href="https://d-nb.info/gnd/1029687587"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>, den ich glaube für weitere <br>Arbeiten der Art empfehlen zu können. Die Masse des
+                     Originals stehn <br>auf einem beiliegenden Zettel. Die Krone ist von Silber, von Silberblech und
+                     <br>vergoldet.
+                     Die Zeichnung ist wenige Stunden vor Verlosung des ganzen <br>Schatzes (44
+                     Nummern) zwischen Stadt und Land aufgenommen worden. Im F. 1827 war er <br>auf 321 Mark 12
+                     Loth Silbers w. 6 M. 1 L. Goldes gewürdigt worden; jetzt <br>auf den Geldwerth
+                     von 19-20000 Schw. Fr. wovon nach dem bekannten modus <br>2/5 der Stadt,
+                     3/5. dem Lande zufallen sollten. Ein Privatmann hatte sich <br>erboten 23000 Fr.
+                     zu zahlen; aber die wohlberechnete Speculation <br>missglückte, da
+                     diesmahl die Landschaft nicht das baare Geld vorzog, sondern <br>auf Theilung in
+                     natura bestand. ich muss zu meiner Schande gestehn: ich <br>weiss nicht ob
+                     beim Loossen, wie man es wünschte, der Stadt die <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">goldne
+                        Altar <br>tafel</span>, die grade auf etwa 8000 Fr., ihren Antheil,
+                     geschätzt worden, zuge <br>fallen ist. Diese von Kaiser <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Kaiser Heinrich II.</strong&gt;">Heinrich
+                        II<a href="https://d-nb.info/gnd/118548255"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>. gewidmete Tafel ist von Holz, mit Ducaten <br>gold überzogen
+                     lang 5'5", hoch 3'8". Sie enthält in fünf Nischen oder Feldern, mitten <br>inne <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jesus Christus</strong&gt;">Christus<a href="https://d-nb.info/gnd/7505655-0"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>, dem zu Füssen <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Kaiser Heinrich II.</strong&gt;">Heinrich<a href="https://d-nb.info/gnd/118548255"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                     und <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Kunigunde von Luxemburg</strong&gt;">Kunigunde<a href="https://d-nb.info/gnd/11856806X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> knien; ihm zu Seiten <br>in den vier übrigen Feldern <br>die Erzengel <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Michael, Erzengel</strong&gt;">Mich<a href="https://d-nb.info/gnd/1082576905"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Gabriel, Erzengel</strong&gt;">Gabr<a href="https://d-nb.info/gnd/1253037914"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>.
+                     <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Raphael, Erzengel</strong&gt;">Raph<a href="https://d-nb.info/gnd/119520761"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>.
+                     und den heil. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Benedikt (Heiliger)</strong&gt;">Benedictus<a href="https://d-nb.info/gnd/118508911"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> Auf dem obern Rande <br>der Tafel steht gemahlt: + QVIS SICVT HEL FORTIS
+                     MEDICVS <br>SOTER
+                     BENEDICTVS. Auf den untern: + PROSPICE TERRIGENAS CLEMENS <br>MEDTATOR USIAS.
+                     Im J: 1585 ist der Werth dieser Tafel auf 2000 Sonnen <br>kronen oder 4500
+                     lb geschätzt worden. <br>Da haben Sie,
+                     hochgeehrter Herr <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Joseph von Laßberg</strong&gt;">Baron<a href="https://d-nb.info/gnd/118778862"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>,
+                     die Nachrichten die Sie verlangt, so <br>gut ich sie zu geben im Stande bin. Künstlerischen Werth
+                     hat die Tafel ei <br>gentlich gar keinen; auch nicht denjenigen den sie wohl
+                     haben könnte. <br>Noch lege ich Ihnen im Auftrage Prof. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Karl Lachmann</strong&gt;">Lachmanns<a href="https://d-nb.info/gnd/118568558"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>, der sich Ihnen <br>auf das angelegentlichste empfehlen lässt; von seinen
+                     academischen <br>Vorlesungen über althochd. Metrik und seiner neuen Recension des <br><span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Hildebrandslied.</strong&gt;">Hildebrandsliedes<a href="https://handschriftencensus.de/werke/2892">📖</a></span> Exemplare bei. Namentlich die letztere ist mir für <br>mein Lesebuch noch
+                     gar wohl zu statten gekommen. <br>So wenig mir <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Frankreich</strong&gt;">Frankreich<a href="https://www.wikidata.org/wiki/Q142"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>
+                     gefallen will, so habe ich mich ihm doch <br>zu Anfangs dieses Monates noch um einige Häuser
+                     ﻿genähert: ich <br>wohne jezt S. Johann No 31. Eine schöne geräumige Wohnung <br>mit stattlicher
+                     Aussicht auf <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Schwarzwald</strong&gt;">Schwarzwald<a href="https://www.wikidata.org/wiki/Q4204"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> u.
+                     <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jura</strong&gt;">Jura<a href="https://www.wikidata.org/wiki/Q12755"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> und <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Basel</strong&gt;">Basel<a href="https://www.wikidata.org/wiki/Q78"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> mitten <br>inne. <br>ich bitte Gott
+                     Sie gesund, zu machen und gesund zu erhalten. <br>Leben Sie recht
+                     wohl und bleiben Sie freundlich gewogen <br>Ihrem ergebenen <br>Wilh.
+                     Wackernagel Dr. </p>
                   </div>
             </section>
             <section id="normalised-text" class="mb-4">
                <h2>Normalisierter Text</h2>
                <div>
-                  Basel, 12/5/34. Hochverehrter Herr Baron mit Betrübnis habe ich Ihren letzten
-                  gütigen Brief gelesen. Ich wünsche, ich hoffe, dass das Übel wieder gehoben und
-                  Hand und Arm genesen sei. Wie verdrießlich wäre es Ihnen sonst, in dieser
-                  wunderlichen Zeit des Maiens, wo Ihr Gau von jeher am schönsten gewesen ist, gar
-                  die Stube hüten zu müssen. Gott besser! Auch hier habe ich seit voriger Woche
-                  den Kummer, einen Kranken zu beklagen. Einer von meinen Studenten, gerade mein
-                  Liebling, ein frischer, liebenswürdiger, geistreicher Mensch von seltener
-                  Dichtergabe, ist eben jetzt, wo er die Theologie aufgeben und sich ganz auf die
-                  deutschen Studien legen wollte, in Geistesverwirrung verfallen. Ein blühender
-                  Bursche von achtzehn Jahren. Das ist aber nicht der erste Fall der Art. Die
-                  Baseler Nerven sind so aufs Gewöhnliche eingerichtet, dass ein etwas
-                  ungewöhnlicher Geist sie gleich überreizt. Nun liegt der gute Mensch und
-                  phantasiert von poetischen Genüssen. Der Bericht von Ihrem Unglück ging mir umso
-                  näher, als mir daneben so reiche und so überaus zierlich geschriebene Auszüge
-                  vor Augen lagen. Eine so mühevolle Freundlichkeit durfte ich nie erwarten: Wie
-                  soll ich Ihnen dafür danken? Der Frauendienst erfolgt anbei mit meinem besten
-                  Dank zurück. Ich habe das hübsche Abenteuer ausgewählt, wie Ulrich sich in einen
-                  Aussätzigen verkleidet: Er erzählt an dieser Stelle mit am besten, und die ganze
-                  Geschichte ist charakteristisch für ihn. Außerdem soll von ungedruckten Sachen,
-                  sofern der Raum ausreicht, noch folgendes hinein. Als erstes Stück das ganze
-                  Vocab: S. Galli. – Aus der sgall. Rhetorik (Zürcher H.S.). Sgall Abhandlung de
-                  syllogismis (ib.). Eine Stelle des Boeth. (Zürcher u. Sgall. HSS.) Aus Heinrich
-                  v. d. gemeinen Lebens (ein Österreicher vor 1163). Predigt aus einer Zürcher HS.
-                  c 1160. Gebet aus einer HS. zu Muri, etwa gleichzeitig. Predigtbruchstücke von
-                  hier, grammatisch merkwürdig wie mir noch weniges vorgekommen, c. 1200. – Ein
-                  Abschnitt aus Tommasins v. Zerclaere welschem Gast. Höflichkeitsregeln
-                  enthaltend. Lieder aus der Würzb. HS. (freilich halb w: halb schon ediert von
-                  Herrn v.d. Hagen). Eben daher und aus Wiener u. Pfälzer HSS. einige Erzählungen
-                  u. Fabeln. Aus Wernhers des Gärtnernaeres Meier Helmbrecht (Wiener HB.). Lieder
-                  von Konr. v. Würzburg. Aus der Cosmographie hinter der Martina. Aus Hermanns von
-                  Fritzlar Legendenbuch (c. 1340), Pfälzer HB. Aus meinem Graubündner Prediger
-                  Albr. Kolbe. Asketen des 14. Jh. von hier und aus Zürich. Sieben weise Meister
-                  gedichtet 1412., Baseler HB. Meistergesänge aus Pfälzer HSS. Diese Woche endlich
-                  erwarte ich die erste Korrektur. Wüsste ich nur, ob ich mich von Ihnen noch
-                  weiterer gütiger Unterstützung gewärtigen dürfte. Ich wage unter diesen
-                  Umständen nicht darum zu bitten; ich wollte nur, ich könnte es. Übrigens hätte
-                  ich Ihnen den Frauendienst schon vor einer Woche zurücksenden können; aber ich
-                  wollte doch lieber warten, bis es mir möglich wäre, die gewünschte Abbildung der
-                  Krone der Königin Anna beizulegen. Ich habe sie nun erhalten, angefertigt vom
-                  Maler Neustück, den ich glaube, für weitere Arbeiten der Art empfehlen zu
-                  können. Die Maße des Originals stehen auf einem beiliegenden Zettel. Die Krone
-                  ist von Silber, von Silberblech und vergoldet. Die Zeichnung ist wenige Stunden
-                  vor Verlosung des ganzen Schatzes (44 Nummern) zwischen Stadt und Land
-                  aufgenommen worden. Im Jahr 1827 war er auf 321 Mark 12 Lot Silbers w. 6 M. 1 L.
-                  Goldes gewürdigt worden; jetzt auf den Geldwert von 19-20000 Schw. Fr., wovon
-                  nach dem bekannten Modus 2/5 der Stadt, 3/5 dem Lande zufallen sollten. Ein
-                  Privatmann hatte sich erboten, 23000 Fr. zu zahlen; aber die wohlberechnete
-                  Spekulation missglückte, da diesmal die Landschaft nicht das bare Geld vorzog,
-                  sondern auf Teilung in natura bestand. Ich muss zu meiner Schande gestehen: Ich
-                  weiß nicht, ob beim Losen, wie man es wünschte, der Stadt die goldene
-                  Altartafel, die gerade auf etwa 8000 Fr., ihren Anteil, geschätzt worden,
-                  zugefallen ist. Diese von Kaiser Heinrich II. gewidmete Tafel ist von Holz, mit
-                  Dukatengold überzogen, lang 5'5", hoch 3'8". Sie enthält in fünf Nischen oder
-                  Feldern, mitteninne Christus, dem zu Füßen Heinrich und Kunigunde knien; ihm zu
-                  Seiten in den vier übrigen Feldern die Erzengel Mich. Gabr. Raph. und den
-                  heiligen Benedictus. Auf dem oberen Rande der Tafel steht gemalt: + QVIS SICVT
-                  HEL FORTIS MEDICVS SOTER BENEDICTVS. Auf dem unteren: + PROSPICE TERRIGENAS
-                  CLEMENS MEDTATOR USIAS. Im Jahr 1585 ist der Wert dieser Tafel auf 2000
-                  Sonnenkronen oder 4500 lb geschätzt worden. Da haben Sie, hochgeehrter Herr
-                  Baron, die Nachrichten, die Sie verlangt, so gut ich sie zu geben im Stande bin.
-                  Künstlerischen Wert hat die Tafel eigentlich gar keinen; auch nicht denjenigen,
-                  den sie wohl haben könnte. Noch lege ich Ihnen im Auftrage Prof. Lachmanns, der
-                  sich Ihnen auf das angelegentlichste empfehlen lässt, von seinen akademischen
-                  Vorlesungen über althochd. Metrik und seiner neuen Rezenzion des
-                  Hildebrandsliedes Exemplare bei. Namentlich die letztere ist mir für mein
-                  Lesebuch noch gar wohl zu statten gekommen. So wenig mir Frankreich gefallen
-                  will, so habe ich mich ihm doch zu Anfang dieses Monats noch um einige Häuser
-                  genähert: Ich wohne jetzt S. Johann No 31. Eine schöne, geräumige Wohnung mit
-                  stattlicher Aussicht auf Schwarzwald u. Jura und Basel mitteninne. Ich bitte
-                  Gott, Sie gesund zu machen und gesund zu erhalten. Leben Sie recht wohl und
-                  bleiben Sie freundlich gewogen Ihrem ergebenen Wilh. Wackernagel Dr. 
+                  
+                  <p>Basel, 12/5/34. Hochverehrter Herr Baron mit Betrübnis habe ich Ihren letzten
+                     gütigen Brief gelesen. Ich wünsche, ich hoffe, dass das Übel wieder gehoben und
+                     Hand und Arm genesen sei. Wie verdrießlich wäre es Ihnen sonst, in dieser
+                     wunderlichen Zeit des Maiens, wo Ihr Gau von jeher am schönsten gewesen ist, gar
+                     die Stube hüten zu müssen. Gott besser! Auch hier habe ich seit voriger Woche
+                     den Kummer, einen Kranken zu beklagen. Einer von meinen Studenten, gerade mein
+                     Liebling, ein frischer, liebenswürdiger, geistreicher Mensch von seltener
+                     Dichtergabe, ist eben jetzt, wo er die Theologie aufgeben und sich ganz auf die
+                     deutschen Studien legen wollte, in Geistesverwirrung verfallen. Ein blühender
+                     Bursche von achtzehn Jahren. Das ist aber nicht der erste Fall der Art. Die
+                     Baseler Nerven sind so aufs Gewöhnliche eingerichtet, dass ein etwas
+                     ungewöhnlicher Geist sie gleich überreizt. Nun liegt der gute Mensch und
+                     phantasiert von poetischen Genüssen. Der Bericht von Ihrem Unglück ging mir umso
+                     näher, als mir daneben so reiche und so überaus zierlich geschriebene Auszüge
+                     vor Augen lagen. Eine so mühevolle Freundlichkeit durfte ich nie erwarten: Wie
+                     soll ich Ihnen dafür danken? Der Frauendienst erfolgt anbei mit meinem besten
+                     Dank zurück. Ich habe das hübsche Abenteuer ausgewählt, wie Ulrich sich in einen
+                     Aussätzigen verkleidet: Er erzählt an dieser Stelle mit am besten, und die ganze
+                     Geschichte ist charakteristisch für ihn. Außerdem soll von ungedruckten Sachen,
+                     sofern der Raum ausreicht, noch folgendes hinein. Als erstes Stück das ganze
+                     Vocab: S. Galli. – Aus der sgall. Rhetorik (Zürcher H.S.). Sgall Abhandlung de
+                     syllogismis (ib.). Eine Stelle des Boeth. (Zürcher u. Sgall. HSS.) Aus Heinrich
+                     v. d. gemeinen Lebens (ein Österreicher vor 1163). Predigt aus einer Zürcher HS.
+                     c 1160. Gebet aus einer HS. zu Muri, etwa gleichzeitig. Predigtbruchstücke von
+                     hier, grammatisch merkwürdig wie mir noch weniges vorgekommen, c. 1200. – Ein
+                     Abschnitt aus Tommasins v. Zerclaere welschem Gast. Höflichkeitsregeln
+                     enthaltend. Lieder aus der Würzb. HS. (freilich halb w: halb schon ediert von
+                     Herrn v.d. Hagen). Eben daher und aus Wiener u. Pfälzer HSS. einige Erzählungen
+                     u. Fabeln. Aus Wernhers des Gärtnernaeres Meier Helmbrecht (Wiener HB.). Lieder
+                     von Konr. v. Würzburg. Aus der Cosmographie hinter der Martina. Aus Hermanns von
+                     Fritzlar Legendenbuch (c. 1340), Pfälzer HB. Aus meinem Graubündner Prediger
+                     Albr. Kolbe. Asketen des 14. Jh. von hier und aus Zürich. Sieben weise Meister
+                     gedichtet 1412., Baseler HB. Meistergesänge aus Pfälzer HSS. Diese Woche endlich
+                     erwarte ich die erste Korrektur. Wüsste ich nur, ob ich mich von Ihnen noch
+                     weiterer gütiger Unterstützung gewärtigen dürfte. Ich wage unter diesen
+                     Umständen nicht darum zu bitten; ich wollte nur, ich könnte es. Übrigens hätte
+                     ich Ihnen den Frauendienst schon vor einer Woche zurücksenden können; aber ich
+                     wollte doch lieber warten, bis es mir möglich wäre, die gewünschte Abbildung der
+                     Krone der Königin Anna beizulegen. Ich habe sie nun erhalten, angefertigt vom
+                     Maler Neustück, den ich glaube, für weitere Arbeiten der Art empfehlen zu
+                     können. Die Maße des Originals stehen auf einem beiliegenden Zettel. Die Krone
+                     ist von Silber, von Silberblech und vergoldet. Die Zeichnung ist wenige Stunden
+                     vor Verlosung des ganzen Schatzes (44 Nummern) zwischen Stadt und Land
+                     aufgenommen worden. Im Jahr 1827 war er auf 321 Mark 12 Lot Silbers w. 6 M. 1 L.
+                     Goldes gewürdigt worden; jetzt auf den Geldwert von 19-20000 Schw. Fr., wovon
+                     nach dem bekannten Modus 2/5 der Stadt, 3/5 dem Lande zufallen sollten. Ein
+                     Privatmann hatte sich erboten, 23000 Fr. zu zahlen; aber die wohlberechnete
+                     Spekulation missglückte, da diesmal die Landschaft nicht das bare Geld vorzog,
+                     sondern auf Teilung in natura bestand. Ich muss zu meiner Schande gestehen: Ich
+                     weiß nicht, ob beim Losen, wie man es wünschte, der Stadt die goldene
+                     Altartafel, die gerade auf etwa 8000 Fr., ihren Anteil, geschätzt worden,
+                     zugefallen ist. Diese von Kaiser Heinrich II. gewidmete Tafel ist von Holz, mit
+                     Dukatengold überzogen, lang 5'5", hoch 3'8". Sie enthält in fünf Nischen oder
+                     Feldern, mitteninne Christus, dem zu Füßen Heinrich und Kunigunde knien; ihm zu
+                     Seiten in den vier übrigen Feldern die Erzengel Mich. Gabr. Raph. und den
+                     heiligen Benedictus. Auf dem oberen Rande der Tafel steht gemalt: + QVIS SICVT
+                     HEL FORTIS MEDICVS SOTER BENEDICTVS. Auf dem unteren: + PROSPICE TERRIGENAS
+                     CLEMENS MEDTATOR USIAS. Im Jahr 1585 ist der Wert dieser Tafel auf 2000
+                     Sonnenkronen oder 4500 lb geschätzt worden. Da haben Sie, hochgeehrter Herr
+                     Baron, die Nachrichten, die Sie verlangt, so gut ich sie zu geben im Stande bin.
+                     Künstlerischen Wert hat die Tafel eigentlich gar keinen; auch nicht denjenigen,
+                     den sie wohl haben könnte. Noch lege ich Ihnen im Auftrage Prof. Lachmanns, der
+                     sich Ihnen auf das angelegentlichste empfehlen lässt, von seinen akademischen
+                     Vorlesungen über althochd. Metrik und seiner neuen Rezenzion des
+                     Hildebrandsliedes Exemplare bei. Namentlich die letztere ist mir für mein
+                     Lesebuch noch gar wohl zu statten gekommen. So wenig mir Frankreich gefallen
+                     will, so habe ich mich ihm doch zu Anfang dieses Monats noch um einige Häuser
+                     genähert: Ich wohne jetzt S. Johann No 31. Eine schöne, geräumige Wohnung mit
+                     stattlicher Aussicht auf Schwarzwald u. Jura und Basel mitteninne. Ich bitte
+                     Gott, Sie gesund zu machen und gesund zu erhalten. Leben Sie recht wohl und
+                     bleiben Sie freundlich gewogen Ihrem ergebenen Wilh. Wackernagel Dr. </p>
                   </div>
             </section>
             <section id="translation" class="mb-4">
                <h2>Translation</h2>
                <div>
-                  Basel, 12/5/34. Highly esteemed Baron, With sadness I have read your last kind
-                  letter. I wish and hope that the illness is lifted and that hand and arm are
-                  healed. How vexing it would be for you otherwise, in this wonderful time of May,
-                  where your region has always been at its most beautiful, to have to guard the
-                  room. God forbid! Here too, since last week, I have had the sorrow of a sick
-                  person to lament. One of my students, especially my favorite, a fresh, amiable,
-                  witty person with rare poetic talent, has now, just when he intended to abandon
-                  theology and focus entirely on German studies, fallen into mental confusion. A
-                  blossoming youth of eighteen years. But this is not the first case of its kind.
-                  The Basel nerves are typically so set up that a somewhat unusual mind
-                  immediately overstimulates them. Now the good man lies and fantasizes about
-                  poetic delights. The report of your misfortune affected me all the more as
-                  simultaneously I had before me rich and exceedingly neatly written excerpts.
-                  Such a laborious friendliness I never dared expect: how shall I thank you for
-                  it. The 'Frauendienst' is enclosed along with my best thanks returned. I have
-                  chosen the charming adventure where Ulrich disguises himself as a leper: he
-                  tells the story here very well indeed, and the whole narrative is characteristic
-                  of him. Furthermore, from unprinted materials, the following should be included
-                  if space allows. First piece the entire vocab: S. Galli. – From the Sgall.
-                  Rhetoric (Zurich handwriting). Sgall treatise de syllogismis (ibid.). A passage
-                  of Boethius. (Zurich and Sgall. manuscripts) From Heinrich v. the common life
-                  (an Austrian before 1163). Sermon from a Zurich manuscript c. 1160. Prayer from
-                  a manuscript in Muri, about the same time. Sermon fragments from here,
-                  grammatically remarkable as I have encountered rarely, c. 1200. – A section from
-                  Tommasin von Zerclaere's Italian guest. Containing etiquette rules. Songs from
-                  the Würzburg manuscript (admittedly half w: half already edited by Mr. vd.
-                  Hagen). Similarly hence and from Vienna and Palatinate manuscripts some tales
-                  and fables. From Wernher's 'the gardener's Meier Helmbrecht' (Vienna
-                  manuscript). Songs by Konrad von Würzburg. From the Cosmography behind the
-                  Martina. From Hermann von Fritzlar’s legend book (c. 1340), Palatinate
-                  manuscript. From my Grisons preacher Albr. Kolbe. Ascetics of the 14th century
-                  from here and from Zurich. Seven wise masters composed 1412, Basel manuscript.
-                  Master songs from Palatinate manuscripts This week I finally expect the first
-                  correction. I wish I knew if I might expect further kind support from you. Under
-                  the circumstances, I do not dare to ask for it; I only wish I could. In
-                  addition, I could have returned the 'Frauendienst' to you a week ago; but I
-                  preferred to wait until it was possible for me to enclose the desired
-                  illustration of Queen Anna's crown, which I have now received, made by the
-                  painter Neustück, whom I believe I can recommend for further works of this kind.
-                  The dimensions of the original are noted on an accompanying slip. The crown is
-                  of silver, silver sheet, and gilded. The drawing was taken a few hours before
-                  the drawing of the whole treasure (44 numbers) between the city and countryside.
-                  In 1827, it was valued at 321 marks 12 lot of silver and 6 marks 1 lot of gold;
-                  now at the monetary value of 19-20,000 Swiss francs, of which according to the
-                  known method 2/5 should fall to the city, 3/5 to the country. A private
-                  individual had offered to pay 23,000 francs; but the well-calculated speculation
-                  failed as this time the landscape did not prefer the cash but insisted on
-                  division in kind. I must confess to my shame: I do not know if the city won, as
-                  was wished, the golden altar piece, which was roughly estimated at 8000 francs,
-                  its share. This table, dedicated by Emperor Henry II, is made of wood, covered
-                  with ducat gold, long 5'5", high 3'8". It contains in five niches or fields, in
-                  the middle of them Christ, at whose feet Henry and Kunigunde kneel; beside him
-                  on the four other fields the Archangels Michael, Gabriel, Raphael, and Saint
-                  Benedict. On the upper edge of the panel is painted: + QVIS SICVT HEL FORTIS
-                  MEDICVS SOTER BENEDICTVS. On the lower: + PROSPICE TERRIGENAS CLEMENS MEDTATOR
-                  USIAS. In the year 1585, the value of this board was estimated at 2000 sun
-                  crowns or 4500 lb. There you have, highly esteemed Herr Baron, the news you
-                  requested as well as I am able to provide it. The panel has no real artistic
-                  value; not even the value it could have. I still enclose at the behest of Prof.
-                  Lachmann, who sends his most earnest regards to you; from his academic lectures
-                  on Old High German metrics and his new recension of the Hildebrand's song
-                  copies. Particularly the latter has been very useful for my reader. As little as
-                  France wants to appeal to me, I have nevertheless moved a few houses closer to
-                  it at the beginning of this month: I now live at St. Johann No. 31. A beautiful
-                  spacious apartment with a stately view of the Black Forest and the Jura and
-                  Basel in the middle. I pray to God to make you healthy and keep you healthy.
-                  Fare you well and remain kindly disposed Yours sincerely Wilh. Wackernagel
-                  Dr.
+                  
+                  <p>Basel, 12/5/34. Highly esteemed Baron, With sadness I have read your last kind
+                     letter. I wish and hope that the illness is lifted and that hand and arm are
+                     healed. How vexing it would be for you otherwise, in this wonderful time of May,
+                     where your region has always been at its most beautiful, to have to guard the
+                     room. God forbid! Here too, since last week, I have had the sorrow of a sick
+                     person to lament. One of my students, especially my favorite, a fresh, amiable,
+                     witty person with rare poetic talent, has now, just when he intended to abandon
+                     theology and focus entirely on German studies, fallen into mental confusion. A
+                     blossoming youth of eighteen years. But this is not the first case of its kind.
+                     The Basel nerves are typically so set up that a somewhat unusual mind
+                     immediately overstimulates them. Now the good man lies and fantasizes about
+                     poetic delights. The report of your misfortune affected me all the more as
+                     simultaneously I had before me rich and exceedingly neatly written excerpts.
+                     Such a laborious friendliness I never dared expect: how shall I thank you for
+                     it. The 'Frauendienst' is enclosed along with my best thanks returned. I have
+                     chosen the charming adventure where Ulrich disguises himself as a leper: he
+                     tells the story here very well indeed, and the whole narrative is characteristic
+                     of him. Furthermore, from unprinted materials, the following should be included
+                     if space allows. First piece the entire vocab: S. Galli. – From the Sgall.
+                     Rhetoric (Zurich handwriting). Sgall treatise de syllogismis (ibid.). A passage
+                     of Boethius. (Zurich and Sgall. manuscripts) From Heinrich v. the common life
+                     (an Austrian before 1163). Sermon from a Zurich manuscript c. 1160. Prayer from
+                     a manuscript in Muri, about the same time. Sermon fragments from here,
+                     grammatically remarkable as I have encountered rarely, c. 1200. – A section from
+                     Tommasin von Zerclaere's Italian guest. Containing etiquette rules. Songs from
+                     the Würzburg manuscript (admittedly half w: half already edited by Mr. vd.
+                     Hagen). Similarly hence and from Vienna and Palatinate manuscripts some tales
+                     and fables. From Wernher's 'the gardener's Meier Helmbrecht' (Vienna
+                     manuscript). Songs by Konrad von Würzburg. From the Cosmography behind the
+                     Martina. From Hermann von Fritzlar’s legend book (c. 1340), Palatinate
+                     manuscript. From my Grisons preacher Albr. Kolbe. Ascetics of the 14th century
+                     from here and from Zurich. Seven wise masters composed 1412, Basel manuscript.
+                     Master songs from Palatinate manuscripts This week I finally expect the first
+                     correction. I wish I knew if I might expect further kind support from you. Under
+                     the circumstances, I do not dare to ask for it; I only wish I could. In
+                     addition, I could have returned the 'Frauendienst' to you a week ago; but I
+                     preferred to wait until it was possible for me to enclose the desired
+                     illustration of Queen Anna's crown, which I have now received, made by the
+                     painter Neustück, whom I believe I can recommend for further works of this kind.
+                     The dimensions of the original are noted on an accompanying slip. The crown is
+                     of silver, silver sheet, and gilded. The drawing was taken a few hours before
+                     the drawing of the whole treasure (44 numbers) between the city and countryside.
+                     In 1827, it was valued at 321 marks 12 lot of silver and 6 marks 1 lot of gold;
+                     now at the monetary value of 19-20,000 Swiss francs, of which according to the
+                     known method 2/5 should fall to the city, 3/5 to the country. A private
+                     individual had offered to pay 23,000 francs; but the well-calculated speculation
+                     failed as this time the landscape did not prefer the cash but insisted on
+                     division in kind. I must confess to my shame: I do not know if the city won, as
+                     was wished, the golden altar piece, which was roughly estimated at 8000 francs,
+                     its share. This table, dedicated by Emperor Henry II, is made of wood, covered
+                     with ducat gold, long 5'5", high 3'8". It contains in five niches or fields, in
+                     the middle of them Christ, at whose feet Henry and Kunigunde kneel; beside him
+                     on the four other fields the Archangels Michael, Gabriel, Raphael, and Saint
+                     Benedict. On the upper edge of the panel is painted: + QVIS SICVT HEL FORTIS
+                     MEDICVS SOTER BENEDICTVS. On the lower: + PROSPICE TERRIGENAS CLEMENS MEDTATOR
+                     USIAS. In the year 1585, the value of this board was estimated at 2000 sun
+                     crowns or 4500 lb. There you have, highly esteemed Herr Baron, the news you
+                     requested as well as I am able to provide it. The panel has no real artistic
+                     value; not even the value it could have. I still enclose at the behest of Prof.
+                     Lachmann, who sends his most earnest regards to you; from his academic lectures
+                     on Old High German metrics and his new recension of the Hildebrand's song
+                     copies. Particularly the latter has been very useful for my reader. As little as
+                     France wants to appeal to me, I have nevertheless moved a few houses closer to
+                     it at the beginning of this month: I now live at St. Johann No. 31. A beautiful
+                     spacious apartment with a stately view of the Black Forest and the Jura and
+                     Basel in the middle. I pray to God to make you healthy and keep you healthy.
+                     Fare you well and remain kindly disposed Yours sincerely Wilh. Wackernagel
+                     Dr.</p>
                   </div>
             </section>
          </div>
-      </div><script src="https://unpkg.com/leaflet/dist/leaflet.js"></script><script>
+      </main>
+      <footer class="bg-dark text-white text-center py-3">
+         <div class="container">
+            <p class="mb-0"><a href="../letters.html">Back to the Letters</a></p>
+         </div>
+      </footer><script src="https://unpkg.com/leaflet/dist/leaflet.js"></script><script>
                     // Create the map and set its view to a default coordinate and zoom level.
-                    var map = L.map('mapid').setView([47.55472222,7.59055556], 7);
-                    // Set up the OpenStreetMap tile layer.
-                    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                    attribution: 'Map data <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
+                    var map = L.map('mapid', { scrollWheelZoom: false }).setView([47.55472222,7.59055556], 7);
+                    // Muted basemap (CARTO Positron) instead of the default colourful OSM tiles,
+                    // to match the edition's restrained palette.
+                    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+                    attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+                    subdomains: 'abcd',
+                    maxZoom: 19
                     }).addTo(map);
-                    
-                    
-                    // Optionally add a marker at the center
-                    
-                    // Define custom marker icons.
-                    var mentionedIcon = L.icon({
-                    iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
-                    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/images/marker-shadow.png',
-                    iconSize: [25, 41],
-                    iconAnchor: [12, 41],
-                    popupAnchor: [1, -34],
-                    shadowSize: [41, 41]
-                    });
-                    
-                    L.marker([47.55472222,7.59055556]).addTo(map)
+
+                    // Sender's place: filled circle in the edition's accent colour.
+                    L.circleMarker([47.55472222,7.59055556], {
+                    radius: 8, color: '#143761', weight: 2, fillColor: '#1d4e89', fillOpacity: 0.85
+                    }).addTo(map)
                     .bindPopup('Basel')
                     .openPopup();
+
+                    // Mentioned places: smaller, lighter circles in a secondary tone.
                     
-                    
-                        
+
                         var popupText = "Basel";
-                        L.marker([47.55472222,7.59055556], {icon: mentionedIcon}).addTo(map)
+                        L.circleMarker([47.55472222,7.59055556], {
+                        radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75
+                        }).addTo(map)
                         .bindPopup(popupText);
                     
-                        
+
                         var popupText = "Zürich";
-                        L.marker([47.374444,8.541111], {icon: mentionedIcon}).addTo(map)
+                        L.circleMarker([47.374444,8.541111], {
+                        radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75
+                        }).addTo(map)
                         .bindPopup(popupText);
                     
-                        
+
                         var popupText = "Frankreich";
-                        L.marker([47, 2], {icon: mentionedIcon}).addTo(map)
+                        L.circleMarker([47, 2], {
+                        radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75
+                        }).addTo(map)
                         .bindPopup(popupText);
                     
-                        
+
                         var popupText = "Schwarzwald";
-                        L.marker([48.3, 8.15], {icon: mentionedIcon}).addTo(map)
+                        L.circleMarker([48.3, 8.15], {
+                        radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75
+                        }).addTo(map)
                         .bindPopup(popupText);
                     
-                        
+
                         var popupText = "Jura";
-                        L.marker([47.366666666667, 7.15], {icon: mentionedIcon}).addTo(map)
+                        L.circleMarker([47.366666666667, 7.15], {
+                        radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75
+                        }).addTo(map)
                         .bindPopup(popupText);
                     </script><script>
                     // Initialize all tooltips
