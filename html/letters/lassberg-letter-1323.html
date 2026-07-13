@@ -1,0 +1,345 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0" lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>The Lassberg Letters</title>
+      <link href="../../css/styles.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script><link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"><script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script></head>
+   <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+         <div class="container"><a class="navbar-brand" href="../../index.html">The Laßberg Letters</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link" href="../../index.html">Welcome</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../persons.html">Persons</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../places.html">Places</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../explore.html">Explore</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <header class="page-header py-4">
+         <div class="container">
+            <h1 class="mb-2">Brief von Joseph von Laßberg an Johann Adam Pupikofer (14.06.1829).</h1>
+            <p class="lead mb-0">
+               
+               <p>Correspondence data based on Harris, Martin: Joseph Maria Christoph
+                  Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                  Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                  geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                  Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.. Briefe
+                  automatisiert mit GPT-3.5 normalisiert.</p>
+               </p>
+         </div>
+      </header>
+      <main class="py-4">
+         <div class="container">
+            <div class="alert alert-warning letter-preview-banner" role="alert"><strong>Unreviewed working text.</strong> The encoding of this letter
+               has not yet been editorially reviewed
+               (status: draft).
+               The text may contain transcription or OCR errors — please cite with caution.
+               </div>
+            <div class="row g-4">
+               <div class="col-lg-4 order-lg-2">
+                  <aside class="letter-sidebar">
+                     <section id="metadata" class="mb-4">
+                        <h2 class="h5">Metadata</h2>
+                        <p><strong>Signatur: </strong>Winterthur, Stadtbibliothek, Ms BRH 46/5 </p>
+                        <p><strong>Registernummer (Laßberg): </strong>138</p>
+                        <p><strong>Registernummer (Harris): </strong>654</p>
+                        <p><strong>Gedruck in: </strong><a href="https://books.google.de/books?id=dXkKAAAAIAAJ">Johannes Meyer, Briefwechsel zwischen J.
+                              von Laszberg und Johann Adam Pupikofer. In: Alemannia 15 (1887), S.
+                              231-88, S.
+                              247</a></p>
+                     </section>
+                     <section id="map" class="mb-4">
+                        <h2 class="h5">Places</h2>
+                        <div id="mapid"></div>
+                        <p class="map-legend small text-muted mt-1 mb-0"><span class="legend-dot" style="background:#1d4e89"></span> place of sending
+                           <span class="legend-dot ms-2" style="background:#b57cc0"></span> places mentioned
+                           </p>
+                     </section>
+                     <section id="mentioned" class="mb-4">
+                        <h2 class="h5">Mentioned in this letter</h2>
+                        <h3 class="h6 mt-3">Persons</h3>
+                        <ul class="list-unstyled small mb-2">
+                           <li><a href="../persons.html?q=Th%C3%BCringer%20%28Adelsgeschlecht%29">Thüringer (Adelsgeschlecht)</a></li>
+                           <li><a href="../persons.html?q=Unbekannt">Unbekannt</a></li>
+                           <li><a href="../persons.html?q=Joseph%20Albrecht%20von%20Ittner">Joseph Albrecht von Ittner</a></li>
+                           <li><a href="../persons.html?q=Friedrich%20Schlegel">Friedrich Schlegel</a></li>
+                           <li><a href="../persons.html?q=Egbert%20Friedrich%20von%20M%C3%BClinen">Egbert Friedrich von Mülinen</a></li>
+                           <li><a href="../persons.html?q=Ludwig%20Uhland">Ludwig Uhland</a></li>
+                           <li><a href="../persons.html?q=Johann%20Rudolf%20Wyss">Johann Rudolf Wyss</a></li>
+                           <li><a href="../persons.html?q=Dalp">Dalp</a></li>
+                           <li><a href="../persons.html?q=Wilhelm%20von%20Orl%C3%A9ans">Wilhelm von Orléans</a></li>
+                           <li><a href="../persons.html?q=Jacob%20Grimm">Jacob Grimm</a></li>
+                           <li><a href="../persons.html?q=Georg%20Friedrich%20Benecke">Georg Friedrich Benecke</a></li>
+                           <li><a href="../persons.html?q=Karl%20Lachmann">Karl Lachmann</a></li>
+                           <li><a href="../persons.html?q=Gustav%20Schwab">Gustav Schwab</a></li>
+                           <li><a href="../persons.html?q=Konrad%20von%20Fu%C3%9Fesbrunnen">Konrad von Fußesbrunnen</a></li>
+                           <li><a href="../persons.html?q="></a></li>
+                           <li><a href="../persons.html?q=Senn%20von%20M%C3%BCnsingen">Senn von Münsingen</a></li>
+                           <li><a href="../persons.html?q=Heinrich%20von%20Signau">Heinrich von Signau</a></li>
+                           <li><a href="../persons.html?q=Mechtild%20von%20Signau">Mechtild von Signau</a></li>
+                           <li><a href="../persons.html?q=Ulrich%20von%20Langenstein">Ulrich von Langenstein</a></li>
+                           <li><a href="../persons.html?q=Joseph%20von%20La%C3%9Fberg">Joseph von Laßberg</a></li>
+                        </ul>
+                        <h3 class="h6 mt-3">Places</h3>
+                        <ul class="list-unstyled small mb-2">
+                           <li><a href="../places.html?q=Eppishausen">Eppishausen</a></li>
+                           <li><a href="../places.html?q=Basel">Basel</a></li>
+                           <li><a href="../places.html?q=Schweiz">Schweiz</a></li>
+                           <li><a href="../places.html?q=Deutschland">Deutschland</a></li>
+                           <li><a href="../places.html?q=Kleinbasel">Kleinbasel</a></li>
+                           <li><a href="../places.html?q=Arbon">Arbon</a></li>
+                           <li><a href="../places.html?q=Bern">Bern</a></li>
+                           <li><a href="../places.html?q=Schinznach">Schinznach</a></li>
+                           <li><a href="../places.html?q=Wasserburg">Wasserburg</a></li>
+                           <li><a href="../places.html?q=Kassel">Kassel</a></li>
+                           <li><a href="../places.html?q=G%C3%B6ttingen">Göttingen</a></li>
+                           <li><a href="../places.html?q=Berlin">Berlin</a></li>
+                           <li><a href="../places.html?q=Schwendlenbad">Schwendlenbad</a></li>
+                           <li><a href="../places.html?q=Schlosswil">Schlosswil</a></li>
+                        </ul>
+                        <h3 class="h6 mt-3">Literature</h3>
+                        <ul class="list-unstyled small mb-0">
+                           <li class="mb-1">Episcopatus Constantiensis Alemannicus sub metropoli Moguntina chronologice et diplomatice
+                              illustratus <a href="../explore.html?node=lassberg-literature-0012" title="Show in the knowledge graph" class="small">graph</a></li>
+                        </ul>
+                     </section>
+                  </aside>
+               </div>
+               <div class="col-lg-8 order-lg-1">
+                  <section id="original-text" class="mb-4">
+                     <h2>Original Text
+                        <span class="transcription-source badge-manuscript" title="Diplomatische Transkription der Handschrift">Transcribed from the manuscript (Transkribus)</span></h2>
+                     <div>
+                        
+                        <p><span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Eppishausen</strong&gt;">E.<a href="https://www.wikidata.org/wiki/Q1423653"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> am 14. Juny 1829. Ich bin lezthin mein lieber Freund und nachbar! noch
+                           so taliter qualiter unter mein Dach gekommen, von dem Jupiter pluvius zwar noch
+                           erreicht; aber nicht durchweicht, benezt aber nicht verlezt. Hier folgen die
+                           zwei lezten Ochsen, damit das achtgespan vollständig seie. Im lezten bande
+                           gefallt der herr obristzunftmeister mir nicht mer; das bestreben den schein
+                           eines parteimannes von sich zu entfernen ist zu sichtbar, als daß nicht eine der
+                           beabsichtigten entgegengesezte wirkung erfolgen sollte. R.J.P.! Was die <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Thuringer<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> und das von mir über sie abgeleitete betrift; so eignet sich
+                           dies, da wir einander so nahe wonen, besser zu einer mündlichen, als zu einer
+                           epistolischen controverse, indessen danke ich Inen für den wiederspruch, der wie
+                           ich hoffe, bei näherer verhandlung meine meinung nur noch mer bevestigen soll.
+                           Ich weiß wol daß <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unbekannt</strong&gt;">Düring<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           nicht nur zu <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Basel</strong&gt;">Basel<a href="https://www.wikidata.org/wiki/Q78"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, sondern an
+                           vielen orten in der <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Schweiz</strong&gt;">Schweiz<a href="https://www.wikidata.org/wiki/Q39"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, ja
+                           selbst im übrigen <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Deutschland</strong&gt;">Teutschland<a href="https://www.wikidata.org/wiki/Q183"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, ein
+                           häufig vorkommender tauf- und vor- name ist: aber wie viele duzend geschlechter
+                           haben wir nicht [:selbst ser alte:], deren namen apellative und taufnamen sind?
+                           Der <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Basel</strong&gt;">Basler<a href="https://www.wikidata.org/wiki/Q78"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unbekannt</strong&gt;">Türli-Türlin<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> war aller warscheinlichkeit nach ein Elsässer, wo dieses
+                           geschlecht ursprünglich zu hause war. In <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Kleinbasel</strong&gt;">Kleinbasel<a href="https://www.wikidata.org/wiki/Q692247"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> sezten
+                           sich immer gern auswärtige Edelleute und bildeten eine art von opposition gegen
+                           die republicanischen großBasler. Ich danke Inen viel mal, daß auch Sie, wie mein
+                           vorausgegangener teurer <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Joseph Albrecht von Ittner</strong&gt;">Ittnerus<a href="https://d-nb.info/gnd/117212555"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           sagte, nicht nur für sich; sondern auch für Ire freunde lesen; das heisset ja
+                           warhaft das beste mit einem teilen; ich werde es, wo ich immer kann zu erwiedern
+                           trachten. Das nobile Turegum, multarum copla rerum, will seine literar. schäze
+                           nicht von sich geben; auch ich habe noch nichts erhalten. vielleicht mit dem
+                           heutigen <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Arbon</strong&gt;">Arboner<a href="https://www.wikidata.org/wiki/Q64156"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> botten.
+                           Ich wünschte, daß Sie bei mir wären; der augenblik des auspakens ist immer einer
+                           der genussreichen, es gehet mir dabei wie dem kürzlich verstorbenen <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Friedrich Schlegel</strong&gt;">Friedr. Schlegel<a href="https://d-nb.info/gnd/118607987"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> mit den speisen; zuerst verschlang er sie mit den augen,
+                           und dann erst mit dem munde. Daß mir die ankunft der bücher die reiselust
+                           vertreiben könnte glaube ich nicht; ich füle eine solche sensucht nach
+                           veränderung meiner lebensweise, daß ich warscheinlich einmal plötzlich mich
+                           selbst enfüren; oder wie man von d. pferden sagt, mit mir selbst durchgehen
+                           werde, und zwar bald; denn nach einem schreiben des alten biderben <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Niklaus Friedrich von Mülinen</strong&gt;">Mülinen<a href="https://d-nb.info/gnd/117166111"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> dato 6 Junij könnten die <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">franz. cod.</span>
+                           von <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Bern</strong&gt;">Bern<a href="https://www.wikidata.org/wiki/Q70"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> bald in der <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Eppishausen</strong&gt;">villa Eponis<a href="https://www.wikidata.org/wiki/Q1423653"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>
+                           anlangen, dann kommt <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ludwig Uhland</strong&gt;">Uhland<a href="https://d-nb.info/gnd/118625063"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           und dann bin ich glebae und menbranae adscriptus. H. v. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Niklaus Friedrich von Mülinen</strong&gt;">Mülinen<a href="https://d-nb.info/gnd/117166111"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           schreibt mir auch: daß prof. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Rudolf Wyss</strong&gt;">Rud.
+                              Wyss<a href="https://d-nb.info/gnd/117349666"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> ser krank im Bade zu <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Schinznach</strong&gt;">Schinznach<a href="https://www.wikidata.org/wiki/Q237120"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> liege
+                           und man ser für sein leben fürchte. Sie sehen aus allem diesem mein bester! daß
+                           ich mit dem besten willen, doch sobald nicht daran kommen kann, die wünsche des
+                           <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Felix Dalp</strong&gt;">H. Dalp<a href="https://d-nb.info/gnd/1073403300"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           zu erfüllen. Mein neuer hausgenosse von <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wasserburg</strong&gt;">Wasserburg<a href="https://www.wikidata.org/wiki/Q522272"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>. <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Trutpert Neugart; Franz Josef Mone: Episcopatus Constantiensis Alemannicus sub metropoli Moguntina&#xA;        chronologice et diplomatice illustratus.</strong&gt;">Der episcopatus Constantiensis<a href="http://opac.regesta-imperii.de/id/62260">📖</a></span>. Die <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">franz.
+                              msspte.</span> aus <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Bern</strong&gt;">Bern<a href="https://www.wikidata.org/wiki/Q70"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ludwig Uhland</strong&gt;">Uhlands<a href="https://d-nb.info/gnd/118625063"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> hierherkunft und noch eine ganze Litaney alter literarschulden,
+                           multorum camelorum onus, wollen vorerst jr alteres recht haben; dann komme ich
+                           erst an <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Felix Dalp</strong&gt;">H. Dalp<a href="https://d-nb.info/gnd/1073403300"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>;
+                           aber ich will und werde an in kommen, nur geduld! Von meiner erwerbung der <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">cod.</span> <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wasserburg</strong&gt;">Wasserburg<a href="https://www.wikidata.org/wiki/Q522272"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, bin
+                           Ich dem publicum doch auch rechenschaft schuldig. Ich habe die literatur
+                           eingangs der II. abteilung des <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wilhelm von Orléans</strong&gt;">Wilhelm von
+                              Orlienz<a href="https://d-nb.info/gnd/108973946X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>, etwa 200 verse abgeschrieben und an <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ludwig Uhland</strong&gt;">Uhland<a href="https://d-nb.info/gnd/118625063"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           gesendet, von im sollen sie auch nach <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Kassel</strong&gt;">cassel<a href="https://www.wikidata.org/wiki/Q2865"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> zu <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jacob Grimm</strong&gt;">Jacob Grimm<a href="https://d-nb.info/gnd/118542257"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>, nach <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Göttingen</strong&gt;">Göttingen<a href="https://www.wikidata.org/wiki/Q3033"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> zu <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Georg Friedrich Benecke</strong&gt;">Benecke<a href="https://d-nb.info/gnd/11865537X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> und nach <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Berlin</strong&gt;">Berlin<a href="https://www.wikidata.org/wiki/Q64"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> zu <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Karl Lachmann</strong&gt;">Lachmann<a href="https://d-nb.info/gnd/118568558"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> wandern: wärend dem abschreiben gieng mir die poëtische ader auf,
+                           und ich wollte die sendung à la <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Gustav Schwab</strong&gt;">Schwab<a href="https://d-nb.info/gnd/118762745"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           mit einigen Reimen begleiten; gab es aber wieder auf; weil sie mir beim lesen
+                           nicht mer so gut gefielen wie beim hinschreiben. Dies war der anfang des
+                           impromtu: vil liebü hern vnd fründ min! ich send vch hie ein rennerlin, wann es
+                           soll rennen in dü lant durch das es vch wurd erkant, was ich vor kurzen stunden
+                           altes nüv hab funden. da by einen schönen grüßz das rennerlin vch bringen müßz
+                           von dem alten Lazzbergäre, der schon so manig märe gelesen vnd gefunden hat, vnd
+                           aber suchet frü und spat vnd dessen vast vnmüzzig ist, so lang im got sin leben
+                           fristt etc. etc. Auch den <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Konrad von Fußesbrunnen</strong&gt;">Conrad von
+                              Fuozisbrunnen<a href="https://d-nb.info/gnd/118565095"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> will h. v. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Niklaus Friedrich von Mülinen</strong&gt;">Mülinen<a href="https://d-nb.info/gnd/117166111"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           schon gefunden haben. Er macht in zu einem <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">herren von
+                              Signau<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> denen im XIII. iarhundert <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Schwendlenbad</strong&gt;">Füzisbad<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>
+                           [:heutzutag <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Schwendlenbad</strong&gt;">Schwendlenbad<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> in
+                           der pfarre <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Schlosswil</strong&gt;">wyl<a href="https://www.wikidata.org/wiki/Q67478"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> bei <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Bern</strong&gt;">Bern<a href="https://www.wikidata.org/wiki/Q70"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>:] angehörte und im XIV. durch Heurat an die <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Sennen von
+                              Münsingen<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> gelangte. Er möchte [:sagt er:] ein son eines <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Heinrich von Signau</strong&gt;">Freiherrn
+                              Heinrich von Signau<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> gewesen sein, der 1200 lebte und dessen <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Mechtild von Signau</strong&gt;">gemalin mechtild<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> in 2r ehe einen <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ulrich von Langenstein</strong&gt;">Ulrich von
+                              Langenstein<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> heiratete. Es gehet doch nichts über die allzeitfertigen
+                           genealogen! Ich erwarte Sie morgen bei guter vormittagszeit, um mir die <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">bücher</span> auspaken zu helfen, die heute kommen sollen.
+                           Adieu! und viele grüsse an Ire hausgenossen! Totus quantustuus <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Joseph von Laßberg</strong&gt;">Laßbergius<a href="https://d-nb.info/gnd/118778862"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>. Soeben ist die <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">bücherkiste</span>
+                           angekommen, sie ist groß und wiegt über 12 Ztr. es giebt also allerley zu
+                           schauen, kommen Sie doch morgen; ich werde sie jnen in reihe und glieder
+                           aufmarschirt vorstellen die bücher, darf ich bitten den einschluss d. morgigen
+                           boten zu besorgen? </p>
+                        </div>
+                  </section>
+                  <details id="normalised-text" class="text-version mb-4">
+                     <summary>Normalisierter Text</summary>
+                     <div>
+                        
+                        <p>E. am 14. Juni 1829. Ich bin letztens, mein lieber Freund und Nachbar, noch so
+                           taliter qualiter unter mein Dach gekommen, von dem Jupiter pluvius zwar noch
+                           erreicht; aber nicht durchweicht, benetzt aber nicht verletzt. Hier folgen die
+                           letzten Ochsen, damit das Achtgespann vollständig sei. Im letzten Band gefällt
+                           der Herr Obristzunftmeister mir nicht mehr; das Bestreben den Schein eines
+                           Parteimannes von sich zu entfernen ist zu sichtbar, als dass nicht eine der
+                           beabsichtigten entgegengesetzten Wirkung erfolgen sollte. R. J. P.! Was die
+                           Thüringer und das von mir über sie abgeleitete betrifft; so eignet sich dies, da
+                           wir einander so nah wohnen, besser zu einer mündlichen, als zu einer
+                           epistolischen Kontroverse, indessen danke ich Ihnen für den Widerspruch, der wie
+                           ich hoffe, bei näherer Verhandlung meine Meinung nur noch mehr befestigen soll.
+                           Ich weiß wohl, dass Thuring nicht nur zu Basel, sondern an vielen Orten in der
+                           Schweiz, ja selbst im übrigen Deutschland, ein häufig vorkommender Tauf- und
+                           Vorname ist: aber wie viele Dutzend Geschlechter haben wir nicht [selbst sehr
+                           alte:], deren Namen appellative und Taufnamen sind? Der Basler Türli-Türlin war
+                           aller Wahrscheinlichkeit nach ein Elsässer, wo dieses Geschlecht ursprünglich zu
+                           Hause war. In Kleinbasel setzten sich immer gern auswärtige Edelleute und
+                           bildeten eine Art von Opposition gegen die republikanischen Großbasler. Ich
+                           danke Ihnen vielmals, dass auch Sie, wie mein vorausgegangener, teurer Ittnerus
+                           sagte, nicht nur für sich; sondern auch für Ihre Freunde lesen; das heißt ja
+                           warhaft das Beste mit einem teilen; ich werde es, wo ich immer kann, zu erwidern
+                           trachten. Das nobile Turegum, multarum copia rerum, will seine literar. Schätze
+                           nicht von sich geben: auch ich habe noch nichts erhalten. Vielleicht mit dem
+                           heutigen Arboner Boten. Ich wünschte, dass Sie bei mir wären; der Augenblick des
+                           Auspackens ist immer einer der genussreichen, es geht mir dabei wie dem kürzlich
+                           verstorbenen Friedrich Schlegel mit den Speisen; zuerst verschlang er sie mit
+                           den Augen, und dann erst mit dem Mund. Dass mir die Ankunft der Bücher die
+                           Reiselust vertreiben konnte, glaube ich nicht; ich fühle eine solche Sehnsucht
+                           nach Veränderung meiner Lebensweise, dass ich wahrscheinlich einmal plötzlich
+                           mich selbst entführen; oder wie man von den Pferden sagt, mit mir selbst
+                           durchgehen werde. Und zwar bald; denn nach einem Schreiben des alten Biber
+                           Mühlinen ddto 6. Juni konnten die französischen Codices von Bern bald in der
+                           Villa Eponis anlangen, dann kommt Uhland und dann bin ich glebae und membranae
+                           adscriptus. H. v. Mühlinen schreibt mir auch, dass Professor Rudolf Wyss sehr
+                           krank im Bade zu Schinznach liege und man sehr um sein Leben fürchte. Sie sehen
+                           aus all dem, mein Bester! dass ich mit dem besten Willen doch sobald nicht daran
+                           kommen kann, die Wünsche des H. Dalp zu erfüllen. Mein neuer Hausgenosse von
+                           Wasserburg. Der Episcopatus Constantiensis. Die französischen Msptn. aus Bern.
+                           Uhlands Herkunft und noch eine ganze Liste alter literarischer Schulden,
+                           multorum camelorum onus, wollen vorerst ihr älteres Recht haben; dann komme ich
+                           erst an H. Dalp; aber ich will und werde an ihn kommen, nur Geduld! Von meiner
+                           Erwerbung der Codices Wasserburg bin ich dem Publikum doch auch Rechenschaft
+                           schuldig. Ich habe die Literatur eingangs der II. Abteilung des "Wilhelm von
+                           Orléans", etwa 200 Verse, abgeschrieben und an Uhland gesendet, von ihm sollen
+                           sie auch nach Kassel zu Jacob Grimm, nach Göttingen zu Benecke und nach Berlin
+                           zu Lachmann wandern: während dem Abschreiben ging mir die poetische Ader auf,
+                           und ich wollte die Sendung à la Schwab mit einigen Reimen begleiten; gab es aber
+                           wieder auf; weil sie mir beim Lesen nicht mehr so gut gefielen wie beim
+                           Hinschreiben. Dies war der Anfang der Improvisation: Viel lieber Herrn und
+                           Freund mein! Ich send euch hier ein Hürlein, wann es soll rennen in das Land,
+                           durch das es euch wurde erkannt, was ich vor kurzen Stunden altes Neues hab
+                           gefunden. Dazu einen schönen Gruß, das Hürlein muss euch bringen nütz von dem
+                           alten Lazzbergare, der schon so manig Mär und gelesen und gefunden hat, und aber
+                           sucht früh und spät und dessen fast unmäßig ist, so lang ihm Gott sein Leben
+                           fristt etc. etc. Auch den Conrad von Füeßbrunnen will H. v. Mühlinen schon
+                           gefunden haben. Er macht ihn zu einem Herrn von Signau, denen im 13. Jahrhundert
+                           das Füeßbad [heutzutage Schwendlenbad in der Pfarre Wyl bei Bern] angehörte und
+                           im 14. durch Heirat an die Sennen von Münsingen gelangte. Er könnte [sagt er]
+                           ein Sohn eines Freiherrn Heinrich von Signau gewesen sein, der 1200 lebte und
+                           dessen Gemahlin Mechthild in zweiter Ehe einen Ulrich von Langenstein heiratete.
+                           Es geht doch nichts über die allzeitfertigen Genealogen! Ich erwarte Sie morgen
+                           bei guter Vormittagszeit, um mir die Bücher auszupacken zu helfen, die heute
+                           kommen sollen. Adieu! und viele Grüße an Ihre Hausgenossen! Totus quantus tuus
+                           Laßbergius. Soeben ist die Bücherkiste angekommen, sie ist groß und wiegt über
+                           12 Zentner. Es gibt also allerlei zu schauen, kommen Sie doch morgen; ich werde
+                           sie Ihnen in Reihe und Glieder aufmarschiert vorstellen, die Bücher. Darf ich
+                           bitten, den Einschluss des morgigen Boten zu besorgen?</p>
+                        </div>
+                  </details>
+                  <div id="related-letters"></div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer class="bg-dark text-white text-center py-3">
+         <div class="container">
+            <p class="mb-0"><a href="../letters.html">Back to the Letters</a></p>
+         </div>
+      </footer><script src="../../js/related.js"></script><script src="https://unpkg.com/leaflet/dist/leaflet.js"></script><script>
+                    var letterPlaces = [];
+                    
+                    letterPlaces.push({ coords: [47.545,9.23759], label: "Eppishausen", kind: "sent" });
+                    
+                    letterPlaces.push({ coords: [47.55472222,7.59055556], label: "Basel", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [46.798562, 8.231973], label: "Schweiz", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [51, 10], label: "Deutschland", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [47.567088888889, 7.6047277777778], label: "Kleinbasel", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [47.51666667,9.43333333], label: "Arbon", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [46.94805556,7.4475], label: "Bern", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [47.45,8.15], label: "Schinznach", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [47.566944444444, 9.6261111111111], label: "Wasserburg", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [51.3158,9.4979], label: "Kassel", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [51.533889,9.935556], label: "Göttingen", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [52.52,13.405], label: "Berlin", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [46.909166666667, 7.6086111111111], label: "Schlosswil", kind: "mentioned" });
+                        
+
+                    if (letterPlaces.length === 0) {
+                        document.getElementById('map').style.display = 'none';
+                    } else {
+                        var map = L.map('mapid', { scrollWheelZoom: false });
+                        // Muted basemap (CARTO Positron) instead of the default colourful OSM
+                        // tiles, to match the edition's restrained palette.
+                        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+                            attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+                            subdomains: 'abcd',
+                            maxZoom: 19
+                        }).addTo(map);
+
+                        var bounds = [];
+                        letterPlaces.forEach(function (p) {
+                            var isSent = p.kind === 'sent';
+                            var marker = L.circleMarker(p.coords, isSent
+                                ? { radius: 8, color: '#143761', weight: 2, fillColor: '#1d4e89', fillOpacity: 0.85 }
+                                : { radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75 }
+                            ).addTo(map).bindPopup((isSent ? 'Sent from: ' : 'Mentioned: ') + p.label);
+                            bounds.push(p.coords);
+                        });
+                        if (bounds.length > 1) {
+                            map.fitBounds(bounds, { padding: [25, 25], maxZoom: 9 });
+                        } else {
+                            map.setView(bounds[0], 8);
+                        }
+                    }
+                </script><script>
+                    // Initialize all tooltips
+                    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+                    new bootstrap.Tooltip(tooltipTriggerEl)
+                    })
+                </script></body>
+</html>

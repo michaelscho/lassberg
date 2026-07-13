@@ -1,0 +1,272 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0" lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>The Lassberg Letters</title>
+      <link href="../../css/styles.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script><link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"><script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script></head>
+   <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+         <div class="container"><a class="navbar-brand" href="../../index.html">The Laßberg Letters</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link" href="../../index.html">Welcome</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../persons.html">Persons</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../places.html">Places</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../explore.html">Explore</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <header class="page-header py-4">
+         <div class="container">
+            <h1 class="mb-2">Brief von Johann Adam Pupikofer an Joseph von Laßberg (03.12.1825).</h1>
+            <p class="lead mb-0">
+               
+               <p>Correspondence data based on Harris, Martin: Joseph Maria Christoph
+                  Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                  Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                  geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                  Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.. Briefe
+                  automatisiert mit GPT-3.5 normalisiert.</p>
+               </p>
+         </div>
+      </header>
+      <main class="py-4">
+         <div class="container">
+            <div class="alert alert-warning letter-preview-banner" role="alert"><strong>Unreviewed working text.</strong> The encoding of this letter
+               has not yet been editorially reviewed
+               (status: done).
+               The text may contain transcription or OCR errors — please cite with caution.
+               </div>
+            <div class="row g-4">
+               <div class="col-lg-4 order-lg-2">
+                  <aside class="letter-sidebar">
+                     <section id="metadata" class="mb-4">
+                        <h2 class="h5">Metadata</h2>
+                        <p><strong>Signatur: </strong>Frauenfeld, Thurgauische Kantonsbibliothek, </p>
+                        <p><strong>Registernummer (Laßberg): </strong>nan</p>
+                        <p><strong>Registernummer (Harris): </strong>2100</p>
+                        <p><strong>Gedruck in: </strong><a href="https://books.google.de/books?id=XWY5AAAAMAAJ">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In:
+                              Alemannia 16 (1888), S.  1-32 und 97-154, S. 1</a></p>
+                     </section>
+                     <section id="map" class="mb-4">
+                        <h2 class="h5">Places</h2>
+                        <div id="mapid"></div>
+                        <p class="map-legend small text-muted mt-1 mb-0"><span class="legend-dot" style="background:#1d4e89"></span> place of sending
+                           <span class="legend-dot ms-2" style="background:#b57cc0"></span> places mentioned
+                           </p>
+                     </section>
+                     <section id="mentioned" class="mb-4">
+                        <h2 class="h5">Mentioned in this letter</h2>
+                        <h3 class="h6 mt-3">Persons</h3>
+                        <ul class="list-unstyled small mb-2">
+                           <li><a href="../persons.html?q=Unbekannt">Unbekannt</a></li>
+                           <li><a href="../persons.html?q=Burchard%20von%20Zollern">Burchard von Zollern</a></li>
+                           <li><a href="../persons.html?q=Wezel%20von%20Zollern">Wezel von Zollern</a></li>
+                           <li><a href="../persons.html?q=Z%C3%A4hringer%20%28Geschlecht%29">Zähringer (Geschlecht)</a></li>
+                           <li><a href="../persons.html?q=%C3%9Csenberger%20%28Geschlecht%29">Üsenberger (Geschlecht)</a></li>
+                           <li><a href="../persons.html?q=Habsburger%20%28Geschlecht%29">Habsburger (Geschlecht)</a></li>
+                           <li><a href="../persons.html?q=Jacobus%20von%20Vrowenfeld">Jacobus von Vrowenfeld</a></li>
+                           <li><a href="../persons.html?q=Edeln%20von%20Wiesendangen">Edeln von Wiesendangen</a></li>
+                           <li><a href="../persons.html?q=Kyburger%20%28Adelsgeschlecht%29">Kyburger (Adelsgeschlecht)</a></li>
+                           <li><a href="../persons.html?q=Johann%20Adam%20Pupikofer">Johann Adam Pupikofer</a></li>
+                        </ul>
+                        <h3 class="h6 mt-3">Places</h3>
+                        <ul class="list-unstyled small mb-2">
+                           <li><a href="../places.html?q=Kenzingen">Kenzingen</a></li>
+                           <li><a href="../places.html?q=Riegel">Riegel</a></li>
+                           <li><a href="../places.html?q=Frauenfeld">Frauenfeld</a></li>
+                           <li><a href="../places.html?q=Bischofszell">Bischofszell</a></li>
+                        </ul>
+                        <h3 class="h6 mt-3">Literature</h3>
+                        <ul class="list-unstyled small mb-0">
+                           <li class="mb-1">Bilder und Schriften der Vorzeit. <a href="../explore.html?node=lassberg-literature-0031" title="Show in the knowledge graph" class="small">graph</a></li>
+                           <li class="mb-1">Cronick des gotzhuses Rychenowe. <a href="../explore.html?node=lassberg-literature-0032" title="Show in the knowledge graph" class="small">graph</a></li>
+                           <li class="mb-1">Chronicon Helveticum <a href="../explore.html?node=lassberg-literature-0005" title="Show in the knowledge graph" class="small">graph</a></li>
+                           <li class="mb-1">Episcopatus Constantiensis Alemannicus sub metropoli Moguntina chronologice et diplomatice
+                              illustratus <a href="../explore.html?node=lassberg-literature-0012" title="Show in the knowledge graph" class="small">graph</a></li>
+                           <li class="mb-1">Continuatio Chronici Hermanni Contracti <a href="../explore.html?node=lassberg-literature-0033" title="Show in the knowledge graph" class="small">graph</a></li>
+                           <li class="mb-1">Genealogia diplomatica augustae gentis Habsburgicae (Vol. 1-3). <a href="../explore.html?node=lassberg-literature-0034" title="Show in the knowledge graph" class="small">graph</a></li>
+                           <li class="mb-1">Gemeiner loblicher Eidgenossenschaft Städten, Landen und Völkern Chronik würdiger
+                              Taten beschreibung. <a href="../explore.html?node=lassberg-literature-0035" title="Show in the knowledge graph" class="small">graph</a></li>
+                           <li class="mb-1">Samlung deutscher Gedichte aus dem XII., XIII. und XIV. Jahrhundert. 3 Bde. <a href="../explore.html?node=lassberg-literature-0026" title="Show in the knowledge graph" class="small">graph</a></li>
+                        </ul>
+                     </section>
+                  </aside>
+               </div>
+               <div class="col-lg-8 order-lg-1">
+                  <section id="original-text" class="mb-4">
+                     <h2>Original Text
+                        <span class="transcription-source badge-print" title="OCR-Texterfassung aus der gedruckten Edition, siehe Metadaten/Gedruckt in">Transcribed from the printed edition (OCR)</span></h2>
+                     <div>
+                        
+                        <div class="letter-opener">
+                           
+                           <p class="letter-salute">Hochwohlgeborner, verehrtester Herr!</p>
+                           </div>
+                        
+                        <p>Mit herzlichem Danke sende ich den ersten
+                           Band von <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Kopp, Ulrich Friedrich: Bilder und Schriften der Vorzeit.</strong&gt;">Kopps Bildern
+                              und Schriften der Vorzeit<a href="https://doi.org/10.11588/diglit.4807">📖</a></span> an Sie zurück. Ich habe die Schrift mit Vergnügen
+                           gelesen und werde Sie mit Gelegenheit auch um Mittheilung der Fortsetzung
+                           bitten. Ebenso dankbar bin ich Ihnen für die Auszüge aus <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Gallus Öhem: Cronick des gotzhuses Rychenowe.</strong&gt;">Öhms
+                              Chronik<a href="https://www.geschichtsquellen.de/werk/3828">📖</a></span>. Schon <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Tschudi, Aegidius; Iselin, Johann Rudolf: Chronicon Helveticum.</strong&gt;">Tschudi<a href="VD18-80117279">📖</a></span>
+                           erzählt vom Tode Graf <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unbekannt</strong&gt;">Wezels
+                              von Bürglen<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> ad. a. 1074 und auch <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Trutpert Neugart; Franz Josef Mone: Episcopatus Constantiensis Alemannicus sub metropoli Moguntina&#xA;        chronologice et diplomatice illustratus.</strong&gt;">Neugart episc. I. p. 412<a href="http://opac.regesta-imperii.de/id/62260">📖</a></span> bezieht sich
+                           darauf, ohne nähere Aufklärung zu geben, so daß allerdings die Umstände, welche
+                           <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Gallus Öhem: Cronick des gotzhuses Rychenowe.</strong&gt;">Öhm<a href="https://www.geschichtsquellen.de/werk/3828">📖</a></span> angibt, wichtig sind.
+                           Aber der <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Continuatio Chronici Hermanni Contracti.</strong&gt;">Continuator
+                              Hermanni<a href="https://www.geschichtsquellen.de/werk/5753">📖</a></span> berichtet ad. a. 1061, daß <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Burchard von Zollern</strong&gt;">Burchardus<a href="https://d-nb.info/gnd/1017953279"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> und <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wezel von Zollern</strong&gt;">Wezilo Zollerani<a href="https://d-nb.info/gnd/1018562400"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> umgekommen
+                           seien im Kampfe gegen den <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Zähringer<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>. Wäre hier nicht eine Verwechslung möglich? Wie ich den <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Herrgott, Marquard: Genealogia diplomatica augustae gentis Habsburgicae (Vol.&#xA;        1-3).</strong&gt;">Codex probat. von Herrgott<a href=" http://opac.regesta-imperii.de/id/47167">📖</a></span> durchgieng, fiel mir in charta 157 der Ort <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Kenzingen</strong&gt;">Chenzinga<a href="https://www.wikidata.org/wiki/Q1012640"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> bei <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Riegel</strong&gt;">Riegel<a href="https://www.wikidata.org/wiki/Q557790"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> im
+                           Badischen auf. Ist vielleicht dies der Stammort derer von <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Kenzingen<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>, die dem Inhalte der Charte zu Folge Vasallen der <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Habsburger<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> gewesen sein müßten? Laut Ch. 510 scheint der Vogt <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jacobus von Vrowenfeld</strong&gt;">Jacobus von Vrowenfeld<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> mit dem <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Edeln von
+                              Wiesendangen<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> verwandt gewesen zu sein. Die <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Edeln von Wiesendangen<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> aber waren <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Dienstleute zu Kyburg<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>. Das
+                           Wappen der Hofmeister zu <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Frauenfeld</strong&gt;">Frauenfeld<a href="https://www.wikidata.org/wiki/Q68120"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> und
+                           der <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Edeln zu
+                              Wiesendangen<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> ist bei <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Stumpf, Johannes: Gemeiner loblicher Eidgenossenschaft Städten, Landen und Völkern Chronik würdiger&#xA;        Taten beschreibung.</strong&gt;">Stumpf<a href="VD16 S 9864">📖</a></span>
+                           fast übereinstimmend. Mit <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Christoph Heinrich Myller: Samlung deutscher Gedichte aus dem XII., XIII. und XIV. Jahrhundert.&#xA;        3 Bde.</strong&gt;">Myllers
+                              Sammlung altdeutscher Gedichte<a href="https://www.digitale-sammlungen.de/de/details/bsb10057384VD18 11205407">📖</a></span> bin ich leider noch nicht zu Ende gekommen.
+                           Sollten Sie derselben bedürfen, so belieben Sie zu befehlen; wo nicht, so
+                           erlauben Sie mir dieselben noch einige Wochen zu behalten. Im Anfange dieser
+                           Woche fand ich Sie noch nicht auf Ihrem Musensitze. Künftige Woche, bis zum
+                           Donnerstag, habe ich Geschäfte in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Frauenfeld</strong&gt;">Frauenfeld<a href="https://www.wikidata.org/wiki/Q68120"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, und
+                           will Ihnen die verlangten <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Urkunden</span> besorgen. Auf
+                           solche Weise muß ich noch lange Ihres belehrenden und angenehmen Umgangs
+                           entbehren.</p>
+                        
+                        <div class="letter-closer">
+                           
+                           <p class="letter-salute">Genehmigen Sie, Hochwohlgeborner, verehrtester Herr, die Versicherung
+                              dankbarer Hochachtung und Ergebenheit von Irem</p>
+                           
+                           <p class="letter-signed">Diac. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Adam Pupikofer</strong&gt;">Pupikofer<a href="https://d-nb.info/gnd/11565108X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span></p>.
+                           
+                           <p class="letter-dateline"><span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Bischofszell</strong&gt;">Bischofzell<a href="https://www.wikidata.org/wiki/Q64865"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> den
+                              3. Dec. 1825</p>.
+                           </div>
+                        </div>
+                  </section>
+                  <details id="normalised-text" class="text-version mb-4">
+                     <summary>Normalisierter Text</summary>
+                     <div>
+                        
+                        <p>Hochwohlgeborener, verehrtester Herr! Mit herzlichem Dank sende ich den ersten
+                           Band von Kopps Bildern und Schriften der Vorzeit an Sie zurück. Ich habe die
+                           Schrift mit Vergnügen gelesen und werde Sie bei Gelegenheit auch um Mitteilung
+                           der Fortsetzung bitten. Ebenso dankbar bin ich Ihnen für die Auszüge aus Öhms
+                           Chronik. Schon Tschudi erzählt vom Tode Graf Wezels von Bürglen ad. a. 1074 und
+                           auch Neugart episc. I. p. 412 bezieht sich darauf, ohne nähere Aufklärung zu
+                           geben, sodass allerdings die Umstände, die Öhm angibt, wichtig sind. Aber der
+                           Continuator Hermanni berichtet ad. a. 1061, dass Burchardus und Wezilo Zollerani
+                           im Kampf gegen den Zähringer umgekommen sind. Wäre hier nicht eine Verwechslung
+                           möglich? Wie ich den Codex probat. von Herrgott durchging, fiel mir in Charta
+                           157 der Ort Chenzinga bei Riegel im Badischen auf. Ist vielleicht dies der
+                           Stammort derer von Kenzingen, die dem Inhalt der Charta zufolge Vasallen der
+                           Habsburger gewesen sein müssten? Laut Ch. 510 scheint der Vogt Jacobus von
+                           Vrowenfeld mit dem Edlen von Wiesendangen verwandt gewesen zu sein. Die Edlen
+                           von Wiesendangen aber waren Dienstleute zu Kyburg. Das Wappen der Hofmeister zu
+                           Frauenfeld und der Edlen zu Wiesendangen ist bei Stumpf fast übereinstimmend.
+                           Mit Myllers Sammlung altdeutscher Gedichte bin ich leider noch nicht zu Ende
+                           gekommen. Sollten Sie dieselben benötigen, so bitte ich um Ihren Befehl; wenn
+                           nicht, erlauben Sie mir, sie noch einige Wochen zu behalten. Am Anfang dieser
+                           Woche fand ich Sie noch nicht auf Ihrem Musensitz. Nächste Woche, bis zum
+                           Donnerstag, habe ich Geschäfte in Frauenfeld und werde Ihnen die gewünschten
+                           Urkunden besorgen. Auf diese Weise muss ich noch lange auf Ihren belehrenden und
+                           angenehmen Umgang verzichten. Genehmigen Sie, Hochwohlgeborener, verehrtester
+                           Herr, die Versicherung dankbarer Hochachtung und Ergebenheit von Ihrem Diakon
+                           Irem Pupikofer. Bischofzell, den 3. Dezember 1825.</p>
+                        </div>
+                  </details>
+                  <details id="translation" class="text-version mb-4">
+                     <summary>Translation</summary>
+                     <div>
+                        <p>Highly Born and Most Esteemed Sir,
+                           
+                           With heartfelt thanks, I am returning to you the first volume of Kopp's "Images and
+                           Writings of Antiquity." I have read the manuscript with pleasure and will request
+                           the continuation from you at a convenient time. I am equally grateful to you for the
+                           excerpts from Öhm's Chronicle. Tschudi mentions the death of Count Wezel of Bürglen
+                           in the year 1074, and Neugart episc. I. p. 412 refers to this without further clarification,
+                           so the circumstances Öhm provides are indeed significant. However, the Continuator
+                           Hermanni reports in the year 1061 that Burchardus and Wezilo Zollerani died in battle
+                           against the Zähringer. Could there be a mix-up here?
+                           
+                           While going through Herrgott's Codex probat., I noticed in Charta 157 the place Chenzinga
+                           near Riegel in Baden. Could this possibly be the ancestral home of the Kenzingen family,
+                           who according to the content of the charter, must have been vassals of the Habsburgs?
+                           According to Ch. 510, the Vogt Jacobus von Vrowenfeld seems to have been related to
+                           the Nobles of Wiesendangen. The Nobles of Wiesendangen, however, were servants at
+                           Kyburg. The coat of arms of the Hofmeister of Frauenfeld and the Nobles of Wiesendangen
+                           is almost identical in Stumpf.
+                           
+                           Unfortunately, I have not yet finished with Myller's collection of old German poems.
+                           If you need them, please command; if not, allow me to keep them for a few more weeks.
+                           At the beginning of this week, I still did not find you at your Muse's seat. Next
+                           week, until Thursday, I have business in Frauenfeld and will procure the requested
+                           documents for you. In this way, I must still long forego your instructive and pleasant
+                           company. Please accept, Highly Born and Most Esteemed Sir, the assurance of grateful
+                           respect and devotion from your Diakon Irem Pupikofer. Bischofszell, December 3, 1825.</p>
+                     </div>
+                  </details>
+                  <div id="related-letters"></div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer class="bg-dark text-white text-center py-3">
+         <div class="container">
+            <p class="mb-0"><a href="../letters.html">Back to the Letters</a></p>
+         </div>
+      </footer><script src="../../js/related.js"></script><script src="https://unpkg.com/leaflet/dist/leaflet.js"></script><script>
+                    var letterPlaces = [];
+                    
+                    letterPlaces.push({ coords: [47.5,9.23333333], label: "Bischofszell", kind: "sent" });
+                    
+                    letterPlaces.push({ coords: [48.1817, 7.77155], label: "Kenzingen", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [48.150556,7.75], label: "Riegel", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [47.55,8.9], label: "Frauenfeld", kind: "mentioned" });
+                        
+
+                    if (letterPlaces.length === 0) {
+                        document.getElementById('map').style.display = 'none';
+                    } else {
+                        var map = L.map('mapid', { scrollWheelZoom: false });
+                        // Muted basemap (CARTO Positron) instead of the default colourful OSM
+                        // tiles, to match the edition's restrained palette.
+                        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+                            attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+                            subdomains: 'abcd',
+                            maxZoom: 19
+                        }).addTo(map);
+
+                        var bounds = [];
+                        letterPlaces.forEach(function (p) {
+                            var isSent = p.kind === 'sent';
+                            var marker = L.circleMarker(p.coords, isSent
+                                ? { radius: 8, color: '#143761', weight: 2, fillColor: '#1d4e89', fillOpacity: 0.85 }
+                                : { radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75 }
+                            ).addTo(map).bindPopup((isSent ? 'Sent from: ' : 'Mentioned: ') + p.label);
+                            bounds.push(p.coords);
+                        });
+                        if (bounds.length > 1) {
+                            map.fitBounds(bounds, { padding: [25, 25], maxZoom: 9 });
+                        } else {
+                            map.setView(bounds[0], 8);
+                        }
+                    }
+                </script><script>
+                    // Initialize all tooltips
+                    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+                    new bootstrap.Tooltip(tooltipTriggerEl)
+                    })
+                </script></body>
+</html>

@@ -1,0 +1,215 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0" lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>The Lassberg Letters</title>
+      <link href="../../css/styles.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script><link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"><script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script></head>
+   <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+         <div class="container"><a class="navbar-brand" href="../../index.html">The Laßberg Letters</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link" href="../../index.html">Welcome</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../persons.html">Persons</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../places.html">Places</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../explore.html">Explore</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <header class="page-header py-4">
+         <div class="container">
+            <h1 class="mb-2">Brief von Johann Adam Pupikofer an Joseph von Laßberg (15.06.1830).</h1>
+            <p class="lead mb-0">
+               
+               <p>Correspondence data based on Harris, Martin: Joseph Maria Christoph
+                  Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                  Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                  geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                  Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.. Briefe
+                  automatisiert mit GPT-3.5 normalisiert.</p>
+               </p>
+         </div>
+      </header>
+      <main class="py-4">
+         <div class="container">
+            <div class="alert alert-warning letter-preview-banner" role="alert"><strong>Unreviewed working text.</strong> The encoding of this letter
+               has not yet been editorially reviewed
+               (status: draft).
+               The text may contain transcription or OCR errors — please cite with caution.
+               </div>
+            <div class="row g-4">
+               <div class="col-lg-4 order-lg-2">
+                  <aside class="letter-sidebar">
+                     <section id="metadata" class="mb-4">
+                        <h2 class="h5">Metadata</h2>
+                        <p><strong>Signatur: </strong>Frauenfeld, Thurgauische Kantonsbibliothek, </p>
+                        <p><strong>Registernummer (Laßberg): </strong>nan</p>
+                        <p><strong>Registernummer (Harris): </strong>2309</p>
+                        <p><strong>Gedruck in: </strong><a href="https://books.google.de/books?id=XWY5AAAAMAAJ">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In:
+                              Alemannia 16 (1888), S.  1-32 und 97-154, S. 115</a></p>
+                     </section>
+                     <section id="map" class="mb-4">
+                        <h2 class="h5">Places</h2>
+                        <div id="mapid"></div>
+                        <p class="map-legend small text-muted mt-1 mb-0"><span class="legend-dot" style="background:#1d4e89"></span> place of sending
+                           <span class="legend-dot ms-2" style="background:#b57cc0"></span> places mentioned
+                           </p>
+                     </section>
+                  </aside>
+               </div>
+               <div class="col-lg-8 order-lg-1">
+                  <section id="original-text" class="mb-4">
+                     <h2>Original Text
+                        <span class="transcription-source badge-print" title="OCR-Texterfassung aus der gedruckten Edition, siehe Metadaten/Gedruckt in">Transcribed from the printed edition (OCR)</span></h2>
+                     <div>
+                        
+                        <p>Mein hochverehrter Herr und Gönner!
+                           Von Tag zu Tag sehe ich einer günstigern Witterung entgegen, die mir erlaube, <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Eppishausen</strong&gt;">Eppishausen<a href="https://www.wikidata.org/wiki/Q1423653"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> wieder zu sehen; und immer kommt Regen und wieder Regen, und der Barometer selbst
+                           will immer mehr verzweifeln. Ich bin zwar so feige nicht, daß ich nicht einem trüben
+                           Himmel allenfalls noch Trotz bieten dürfte; allein im Sommer geht man doch lieber
+                           in der Sonne spazieren, als mit dem Regendache, und wenn die Hausfrau Hoffnung macht,
+                           mitzugehen, darf man vollends von Sturm und Regen nichts sagen. Sehen Sie, so ist's
+                           gekommen, daß ich nun schon seit drei Wochen nicht mehr bei Ihnen war, ganz gegen
+                           die Regel, daß man auf dem Wege der Freundschaft kein Gras soll wachsen lassen. Indem
+                           ich dieses mein trauriges Liedlein diesen Morgen sang, langte ein Brief an, der mir
+                           glauben machen wollte, es sei sehr gut gewesen, daß ich nicht zu Ihnen gewandert sei,
+                           weil ich Sie nur an einer dringenden Arbeit versäumt hätte. Herr <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Karl Wegelin</strong&gt;">Wegelin<a href="https://d-nb.info/gnd/118050885"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> schreibt mir nämlich, er befinde sich des <span class="rs-misc" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Weißenauer Codex</span> wegen in tödtlicher Angst. Er habe Ihnen geschrieben, wie der Codex bei der Bibliothek-Visitation
+                           vorgewiesen werden müsse, aber von Ihnen weder Codex noch sonstige Antwort erhalten;
+                           wenn Sie verreist seien und den Codex in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Eppishausen</strong&gt;">Eppishausen<a href="https://www.wikidata.org/wiki/Q1423653"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> eingeschlossen haben sollten, so möchte. ich doch sehen, ne respublica detrimentum
+                           capiat. Vorläufig will ich heute Abend den guten Mann trösten, daß er das theure Buch
+                           noch zur rechten Zeit erhalten werde; geschieht letzteres nicht, so lege ich mich
+                           auf Ihre Kosten zu Baden in Geiselschaft, so daß der Codex Ihnen bald theuer zu stehen
+                           kommen soll. Für Ihre Bemerkungen über die <span class="rs-misc" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Angela</span> anceps und derselben Geschichte danke ich Ihnen recht herzlich; daß die dichterische
+                           Weihe mir fehle, fühle ich wohl, und noch mehr sehe ich, daß der Bilderreichthum in
+                           der Darstellung mir fehlt. Ich lebe mehr in der Welt des Verstandes, als der Phantasie.
+                           Ich habe noch keine Umarbeitung versucht, und werde wohl damit noch eine Weile zuwarten.
+                           Herrn <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Adolf Ludwig Follen</strong&gt;">Follen<a href="https://d-nb.info/gnd/116646772"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> will ich dafür den Traum <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Walters<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> von der Vogelweide überlassen, damit das Versprechen, das ich mir abschwatzen ließ,
+                           nicht ganz unerfüllt bleibe. Ich habe seither noch einige Strophen <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Walters<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> umgearbeitet, und will dieselben Ihnen bei nächster Gelegenheit vorlegen. Was sich
+                           bei <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Steckborn<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> altes gefunden habe, wird Ihnen der überall spionirende Fehr berichtet haben. Herr
+                           <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Kaspar Mörikofer</strong&gt;">Mörikofer<a href="https://d-nb.info/gnd/11708820X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> sandte mir von zwei Münzen beiliegende Siegelabdrücke; ich kann den Inhalt nicht
+                           enträthseln: die Züge ATTIR entsprechen den jetzigen arabischen Schriftzügen nicht.
+                           Wohl gibt <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Mabillon<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> darüber Aufklärung. Ich habe Auftrag gegeben, mir einige Münzen zu kaufen, oder wenigstens
+                           noch mehrere Siegelabdrücke zu verschaffen; daß mein Wunsch erfüllt werde, darf ich
+                           freilich nicht hoffen, da die <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Steckborn<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>er ihre Schätze nicht an ihren Todfeind werden ausliefern wollen. In Gottes Namen!
+                           Wir wissen doch nun wenigstens das bestimmt, wie viele Grane die Münzen gewogen haben,
+                           und verdanken diese Untersuchung ohne Zweifel Herrn <span class="rs-organisation" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Freienmuth</span>. Ich bin sehr neugierig, Ihre Kritik über die <span class="rs-organisation" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Freienmuth</span>sche Staats-Ökonomie zu hören. Die <span class="rs-organisation" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Appenzeller Zeitung</span> hat schon in zwei Nummern dagegen gesprochen; die <span class="rs-organisation" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Zürchersche Freitagszeitung</span> von <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Bürkli<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> hat gemeint, es sei dem Verfasser wohl nur darum zu thun, seinen eigenen und den
+                           Staatsgeldern, sowie denen seiner Vettern und Basen das Bestehen eines hohen Zinsfußes
+                           zu sichern. Eine ähnliche Absicht will Herr <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Caspar Zellweger</strong&gt;">C. Zellweger<a href="https://d-nb.info/gnd/116978813"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> im Büchlein aufgespürt haben. In 14 Quartseiten, die er für mich niederzuschreiben
+                           die Güte hatte, zeigte er, wie unpolitisch das System <span class="rs-organisation" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Freienmuth</span> sei, und wie unwahrscheinlich selbst die Prämisse, auf welche er folgert. Auch ich,
+                           auch Herr Oberamtmann <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Scherb<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>, auch Herr Oberstlieutenant <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Egli<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> haben uns mit unsern Federn gegen den Erbfeind des thurgauischen Credits eingelassen.
+                           Ich glaubte vorzüglich deswegen dazu berufen zu sein, da ich vor 8 Tagen in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;St. Gallen</strong&gt;">St. Gallen<a href="https://www.wikidata.org/wiki/Q25607"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> vor allen guten und schlechten Freunden über die fides thurgovica Rede stehen mußte.
+                           Unsere Badereise soll an <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Johannes des Täufers<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> Abend vor sich gehen; wir hoffen, er werde uns, wenn er schon Täufer heißt, doch
+                           nicht mit Regen, sondern lieber mit Feuer taufen. Vorher noch, vielleicht Morgen Abend
+                           schon, werde ich Ihnen für Herrn <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jacob Grimm</strong&gt;">Grimm<a href="https://d-nb.info/gnd/118542257"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> sechs Bogen Offnungen, die ich noch collationiren muß, und das <span class="rs-organisation" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Solothurner Wochenblatt</span> überbringen. Herr <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Lüthi<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> muß ein trefflicher Mann sein, der nicht blos für alte Urkunden, sondern auch für
+                           tiefe Dichtkunst Geschmack hat. Unserm geadelten Müller ist er freilich etwas unbillig,
+                           noch mehr aber dem alten <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ildefons von Arx</strong&gt;">Arx<a href="https://d-nb.info/gnd/116353740"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>. Ich habe auch beiläufig gesagt, die Bemerkung gemacht, daß Sie mehrere Urkunden
+                           mit Episc. Const. angemerkt haben, ungeachtet sie rein Lausanensia sind. In der Hoffnung,
+                           Sie bald zu sehen, bitte ich Sie, mich und die Meinigen Ihres ferneren Wohlwollens
+                           zu würdigen. 
+                           Herzlich der Ihrige Pupikofer.
+                           den 15. Juni 1830.</p>
+                        </div>
+                  </section>
+                  <details id="normalised-text" class="text-version mb-4">
+                     <summary>Normalisierter Text</summary>
+                     <div>
+                        
+                        <p>Mein hochverehrter Herr und Gönner!
+                           Von Tag zu Tag sehe ich einer günstigeren Witterung entgegen, die mir erlaubt, <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Eppishausen</strong&gt;">Eppishausen<a href="https://www.wikidata.org/wiki/Q1423653"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> wieder zu sehen; und immer kommt Regen und wieder Regen, und der Barometer selbst
+                           will immer mehr verzweifeln. Ich bin zwar nicht so feige, dass ich nicht einem trüben
+                           Himmel allenfalls noch trotz bieten dürfte; aber im Sommer geht man doch lieber in
+                           der Sonne spazieren, als mit dem Regendach, und wenn die Hausfrau Hoffnung macht,
+                           mitzugehen, darf man erst recht von Sturm und Regen nichts sagen. Sehen Sie, so ist
+                           es gekommen, dass ich nun schon seit drei Wochen nicht mehr bei Ihnen war, ganz gegen
+                           die Regel, dass man auf dem Wege der Freundschaft kein Gras soll wachsen lassen. Indem
+                           ich dieses mein trauriges Liedlein heute Morgen sang, langte ein Brief an, der mir
+                           glauben machen wollte, es sei sehr gut gewesen, dass ich nicht zu Ihnen gewandert
+                           sei, weil ich Sie nur an einer dringenden Arbeit versäumt hätte. Herr <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Karl Wegelin</strong&gt;">Wegelin<a href="https://d-nb.info/gnd/118050885"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> schreibt mir nämlich, er befinde sich wegen des <span class="rs-misc" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Weißenauer Codex</span> in tödlicher Angst. Er hat Ihnen geschrieben, wie der Codex bei der Bibliotheksvisitation
+                           vorgezeigt werden müsse, aber von Ihnen weder Codex noch sonstige Antwort erhalten;
+                           wenn Sie verreist sind und den Codex in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Eppishausen</strong&gt;">Eppishausen<a href="https://www.wikidata.org/wiki/Q1423653"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> eingeschlossen haben sollten, so möchte ich doch sehen, dass res publica detrimentum
+                           capiat. Vorläufig will ich heute Abend den guten Mann trösten, dass er das teure Buch
+                           noch zur rechten Zeit erhalten wird; geschieht letzteres nicht, so lege ich mich auf
+                           Ihre Kosten zu Baden in Gesellschaft, so dass der Codex Ihnen bald teuer zu stehen
+                           kommen wird. Für Ihre Bemerkungen über die <span class="rs-misc" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Angela anceps</span> und die Geschichte danke ich Ihnen recht herzlich; dass mir die dichterische Weihe
+                           fehlt, fühle ich wohl, und noch mehr sehe ich, dass der Bilderreichtum in der Darstellung
+                           mir fehlt. Ich lebe mehr in der Welt des Verstandes als der Phantasie. Ich habe noch
+                           keine Umarbeitung versucht, und werde wohl damit noch eine Weile zuwarten. Herrn <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Adolf Ludwig Follen</strong&gt;">Follen<a href="https://d-nb.info/gnd/116646772"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> will ich dafür den Traum <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Walters<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> von der Vogelweide überlassen, damit das Versprechen, das ich mir abslotzen ließ,
+                           nicht ganz unerfüllt bleibe. Ich habe seither noch einige Strophen <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Walters<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> umgearbeitet und werde sie Ihnen bei nächster Gelegenheit vorlegen. Was sich bei
+                           <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Steckborn<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> Altes gefunden hat, wird Ihnen der überall spionierende <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Fehr<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> berichtet haben. Herr <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Kaspar Mörikofer</strong&gt;">Mörikofer<a href="https://d-nb.info/gnd/11708820X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> sandte mir von zwei Münzen beiliegende Siegelabdrücke; ich kann den Inhalt nicht
+                           enträtseln: die Züge ATTIR entsprechen den jetzigen arabischen Schriftzügen nicht.
+                           Wohl gibt <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Mabillon<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> darüber Aufklärung. Ich habe den Auftrag gegeben, mir einige Münzen zu kaufen oder
+                           wenigstens noch mehrere Siegelabdrücke zu verschaffen; dass mein Wunsch erfüllt wird,
+                           darf ich allerdings nicht hoffen, da die <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Steckborn<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>er ihre Schätze nicht an ihren Todfeind ausliefern wollen. In Gottes Namen! Wir wissen
+                           doch nun wenigstens genau, wie viele <span class="rs-misc" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Gran</span> die Münzen gewogen haben, und verdanken diese Untersuchung ohne Zweifel Herrn <span class="rs-organisation" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Freienmuth</span>. Ich bin sehr neugierig, Ihre Kritik über die <span class="rs-organisation" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Freienmuth</span>sche Staatsökonomie zu hören. Die <span class="rs-organisation" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Appenzeller Zeitung</span> hat schon in zwei Nummern dagegen gesprochen; die <span class="rs-organisation" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Zürcher Freitagszeitung</span> von <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Bürkli<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> hat gemeint, es sei dem Verfasser wohl nur darum zu tun, seinen eigenen und den Staatsgeldern,
+                           sowie denen seiner Vettern und Basen das Bestehen eines hohen Zinsfußes zu sichern.
+                           Eine ähnliche Absicht will Herr <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Caspar Zellweger</strong&gt;">C. Zellweger<a href="https://d-nb.info/gnd/116978813"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> in dem Büchlein aufgespürt haben. In 14 Quartseiten, die er für mich niederzuschreiben
+                           die Güte hatte, zeigte er, wie unpolitisch das System <span class="rs-organisation" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Freienmuth</span> sei, und wie unwahrscheinlich selbst die Prämisse, auf welche er folgert. Auch ich,
+                           auch Herr Oberamtmann <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Scherb<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>, auch Herr Oberstleutnant <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Egli<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> haben uns mit unserem Federn gegen den Erbfeind des thurgauischen Credits eingelassen.
+                           Ich glaubte vor allem deswegen dazu berufen zu sein, da ich vor 8 Tagen in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;St. Gallen</strong&gt;">St. Gallen<a href="https://www.wikidata.org/wiki/Q25607"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> vor allen guten und schlechten Freunden über die fides thurgovica Rede halten musste.
+                           Unsere Badereise soll an <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Johannes des Täufers<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> Abend vor sich gehen; wir hoffen, er werde uns, wenn er schon Täufer heißt, doch
+                           nicht mit Regen, sondern lieber mit Feuer taufen. Vorher noch, vielleicht schon morgen
+                           Abend, werde ich Ihnen für Herrn <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jacob Grimm</strong&gt;">Grimm<a href="https://d-nb.info/gnd/118542257"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> sechs Bogen Offnungen, die ich noch collationieren muss, und das <span class="rs-organisation" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Solothurner Wochenblatt</span> überbringen. Herr <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Lüthi<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> muss ein trefflicher Mann sein, der nicht nur für alte Urkunden, sondern auch für
+                           tiefe Dichtkunst Geschmack hat. Unserem geadelten <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Baptist Müller</strong&gt;">Müller<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> ist er freilich etwas ungerecht, noch mehr aber dem alten <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ildefons von Arx</strong&gt;">Arx<a href="https://d-nb.info/gnd/116353740"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>. Ich habe auch beiläufig gesagt, die Bemerkung gemacht, dass Sie mehrere Urkunden
+                           mit "Episc. Const." angemerkt haben, obwohl sie rein Lausanensia sind. In der Hoffnung,
+                           Sie bald zu sehen, bitte ich Sie, mich und meine Familie Ihres weiteren Wohlwollens
+                           zu würdigen.
+                           Herzlich der Ihrige Pupikofer.
+                           den 15. Juni 1830.</p>
+                        </div>
+                  </details>
+                  <div id="related-letters"></div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer class="bg-dark text-white text-center py-3">
+         <div class="container">
+            <p class="mb-0"><a href="../letters.html">Back to the Letters</a></p>
+         </div>
+      </footer><script src="../../js/related.js"></script><script src="https://unpkg.com/leaflet/dist/leaflet.js"></script><script>
+                    var letterPlaces = [];
+                    
+
+                    if (letterPlaces.length === 0) {
+                        document.getElementById('map').style.display = 'none';
+                    } else {
+                        var map = L.map('mapid', { scrollWheelZoom: false });
+                        // Muted basemap (CARTO Positron) instead of the default colourful OSM
+                        // tiles, to match the edition's restrained palette.
+                        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+                            attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+                            subdomains: 'abcd',
+                            maxZoom: 19
+                        }).addTo(map);
+
+                        var bounds = [];
+                        letterPlaces.forEach(function (p) {
+                            var isSent = p.kind === 'sent';
+                            var marker = L.circleMarker(p.coords, isSent
+                                ? { radius: 8, color: '#143761', weight: 2, fillColor: '#1d4e89', fillOpacity: 0.85 }
+                                : { radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75 }
+                            ).addTo(map).bindPopup((isSent ? 'Sent from: ' : 'Mentioned: ') + p.label);
+                            bounds.push(p.coords);
+                        });
+                        if (bounds.length > 1) {
+                            map.fitBounds(bounds, { padding: [25, 25], maxZoom: 9 });
+                        } else {
+                            map.setView(bounds[0], 8);
+                        }
+                    }
+                </script><script>
+                    // Initialize all tooltips
+                    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+                    new bootstrap.Tooltip(tooltipTriggerEl)
+                    })
+                </script></body>
+</html>

@@ -1,0 +1,270 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0" lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>The Lassberg Letters</title>
+      <link href="../../css/styles.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script><link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"><script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script></head>
+   <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+         <div class="container"><a class="navbar-brand" href="../../index.html">The Laßberg Letters</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link" href="../../index.html">Welcome</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../persons.html">Persons</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../places.html">Places</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../explore.html">Explore</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <header class="page-header py-4">
+         <div class="container">
+            <h1 class="mb-2">Brief von Joseph von Laßberg an Wilhelm Wackernagel (07.04.1842).</h1>
+            <p class="lead mb-0">
+               
+               <p>Textfassung auf Basis der Transkription durch Transkribus korrigiert und in TEI
+                  überführt. Automatisierte NER-Erkennung und Identifikation durch Flair geprüft,
+                  korrigiert und ergänzt. Normalisierung, Zusammenfassung und Übersetzung durch
+                  GPT-4. Lizenz: </p>
+               
+               <a href="https://creativecommons.org/licenses/by/4.0/">CC BY
+                  4.0</a>
+               
+               </p>
+         </div>
+      </header>
+      <main class="py-4">
+         <div class="container">
+            <div class="row g-4">
+               <div class="col-lg-4 order-lg-2">
+                  <aside class="letter-sidebar">
+                     <section id="metadata" class="mb-4">
+                        <h2 class="h5">Metadata</h2>
+                        <p><strong>Signatur: </strong>Basel, Staatsarchiv des Kantons Basel-Stadt, </p>
+                        <p><strong>Registernummer (Laßberg): </strong>53</p>
+                        <p><strong>Registernummer (Harris): </strong>1169</p>
+                        <p><strong>Gedruck in: </strong><a href="-">Wackernagel: Albert Leitzmann, Briefe aus
+                              dem Nachlaß Wilhelm Wackernagels. VI.: Briefe von Joseph von Laßberg.
+                              In: Abhandlungen der phil.-hist. Klasse der Kgl. Sächsischen
+                              Gesellschaft der Wissenschaften 34,1. Leipzig 1916, S. 92-130, S.
+                              125</a></p>
+                     </section>
+                     <section id="map" class="mb-4">
+                        <h2 class="h5">Places</h2>
+                        <div id="mapid"></div>
+                        <p class="map-legend small text-muted mt-1 mb-0"><span class="legend-dot" style="background:#1d4e89"></span> place of sending
+                           <span class="legend-dot ms-2" style="background:#b57cc0"></span> places mentioned
+                           </p>
+                     </section>
+                     <section id="mentioned" class="mb-4">
+                        <h2 class="h5">Mentioned in this letter</h2>
+                        <h3 class="h6 mt-3">Persons</h3>
+                        <ul class="list-unstyled small mb-2">
+                           <li><a href="../persons.html?q=Hans%20Ferdinand%20Ma%C3%9Fmann">Hans Ferdinand Maßmann</a></li>
+                           <li><a href="../persons.html?q=Caroline%20Luise%20Wackernagel-Bluntschli">Caroline Luise Wackernagel-Bluntschli</a></li>
+                           <li><a href="../persons.html?q=Abraham">Abraham</a></li>
+                           <li><a href="../persons.html?q=Phanuel">Phanuel</a></li>
+                           <li><a href="../persons.html?q=Anna%20%28Heilige%29">Anna (Heilige)</a></li>
+                           <li><a href="../persons.html?q=Maria%20%28Mutter%20Jesu%29">Maria (Mutter Jesu)</a></li>
+                           <li><a href="../persons.html?q=Jesus%20Christus">Jesus Christus</a></li>
+                           <li><a href="../persons.html?q=Emanuel%20Burckhardt-Iselin">Emanuel Burckhardt-Iselin</a></li>
+                           <li><a href="../persons.html?q=Anna%20Catharina%20%28Line%29%20Burckhardt">Anna Catharina (Line) Burckhardt</a></li>
+                           <li><a href="../persons.html?q="></a></li>
+                        </ul>
+                        <h3 class="h6 mt-3">Places</h3>
+                        <ul class="list-unstyled small mb-2">
+                           <li><a href="../places.html?q=Meersburg">Meersburg</a></li>
+                           <li><a href="../places.html?q=W%C3%BCrzburg">Würzburg</a></li>
+                           <li><a href="../places.html?q=Bamberg">Bamberg</a></li>
+                        </ul>
+                        <h3 class="h6 mt-3">Literature</h3>
+                        <ul class="list-unstyled small mb-0">
+                           <li class="mb-1">franzoesches gedicht vom leben Mariae <a href="../explore.html?node=lassberg-literature-0220" title="Show in the knowledge graph" class="small">graph</a></li>
+                           <li class="mb-1">Deutsches Lesebuch <a href="../explore.html?node=lassberg-literature-0121" title="Show in the knowledge graph" class="small">graph</a></li>
+                        </ul>
+                     </section>
+                  </aside>
+               </div>
+               <div class="col-lg-8 order-lg-1">
+                  <section id="original-text" class="mb-4">
+                     <h2>Original Text
+                        <span class="transcription-source badge-manuscript" title="Diplomatische Transkription der Handschrift">Transcribed from the manuscript (Transkribus)</span></h2>
+                     <div>
+                        
+                        <p><br>Auf der alten
+                           Meersburg am Bodensee den 7 April. 1842. <br>Vererter Herr und Freund! <br>So eben bringt mir
+                           ein verwandter meiner frau, in einem briefe von <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Hans Ferdinand Maßmann</strong&gt;">Maßmann<a href="https://d-nb.info/gnd/119059193"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>,
+                           beikommenden <br>einschluß an Sie, den ich nicht absenden kann, one einen gruß beizufügen.
+                           mögen Sie mit <br><span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Caroline Luise Wackernagel-Bluntschli</strong&gt;">weib<a href="https://d-nb.info/gnd/113182346X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> und
+                           kind recht wol sein! so wol als wir alle auf der alten <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Meersburg</strong&gt;">Dagobertsburg<a href="https://www.wikidata.org/wiki/Q498212"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> uns
+                           befinden. <br>one
+                           zweifel schreibt Inen <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Hans Ferdinand Maßmann</strong&gt;">Maßmann<a href="https://d-nb.info/gnd/119059193"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           von dem Grimmischen funde, aus einem <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Merseburger
+                              Missale</span>, <br>der mir doch nicht so ungeheuer wichtig erscheint, als man ausgeposaunet hat.
+                           ich habe gestern <br>aus <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Würzburg</strong&gt;">Würzburg<a href="https://www.wikidata.org/wiki/Q2999"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> einen <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">codex</span> erhalten, der einst dem
+                           prediger kloster zu <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Bamberg</strong&gt;">Bamberg<a href="https://www.wikidata.org/wiki/Q3936"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> gehoert.
+                           darinne <br>stehen, von zerschiedenen händen und aus zerschiedenen zeiten, allerlei gute
+                           sachen, des XI. XII. u. <br>XIV. Jarhunderts, das beste sind wol 4 stücke zur
+                           Theotisca gehörig auf 12 blättern: ein glaubens <br>bekenntniß, eine
+                           beichte, beschreibung des himmels, beschreibung der hoelle. die teutschen <br>sachen sind aus
+                           den ersten Decennien des XII. Jarhunderts; aber man will 500 gulden dafür haben,
+                           <br>und das
+                           scheint mir doch zuviel für das was es ist. ich werde den <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">codex</span> nicht kaufen; aber <br>für eine Bibliotheke, die nichts altteutsches
+                           besizt, wäre es eine schäzbare erwerbung. <br>Ich habe diesen winter <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">merere handschriften</span> erworben, aber nichts ser altes. darunter ein <br><span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unbekannt: franzoesches gedicht vom leben Mariae.</strong&gt;">franzoesches
+                              gedicht vom leben Mariae<a href="-">📖</a></span>, das die sonderbarsten verirrungen des
+                           menschlichen <br>geistes und proben der ausschweifendsten phantasie mit den gröbsten
+                           historischen felern <br>vereiniget. z. B. eine tochter <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Abraham</strong&gt;">Abrahams<a href="https://d-nb.info/gnd/118500201"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           gehet in den garten, riecht an einer blume und wird <br>davon schwanger,
+                           sie gebaeret einen son, der <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Phanuel</strong&gt;">Phanuel<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           genennt wird. dieser isset aepfel, <br>wischet das messer, womit er sie geschaelet hat, an
+                           seinem schenkel ab, und der schenkel wird von <br>dem daran
+                           geschmirten safte schwanger, nach neun monaten koemmt ein mädchen heraus, und
+                           <br>dies ist <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Anna (Heilige)</strong&gt;">Anna<a href="https://d-nb.info/gnd/118649418"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>, die mutter <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Maria (Mutter Jesu)</strong&gt;">Mariae<a href="https://d-nb.info/gnd/118640909"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>,
+                           der mutter des <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jesus Christus</strong&gt;">Heilandes<a href="https://d-nb.info/gnd/7505655-0"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>. etc. etc. etc. <br>Sollten Sie einmal zeit finden mich wieder mit einem par
+                           zeilen zu erfreuen; so bitte ich <br>mir auch zu sagen, was Ire nachbaren, unsere lieben
+                           freunde, Herr <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Emanuel Burckhardt-Iselin</strong&gt;">Burkhardt-Iselin<a href="https://d-nb.info/gnd/1089905092"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> <br>und seine <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Anna Catharina (Line) Burckhardt</strong&gt;">liebe
+                              frau<a href="https://d-nb.info/gnd/1301827509"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> machen? schon so lange hoeren wir nichts mer von inen, und ich <br>fürchte, die boese
+                           <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Morbona<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> möchte in dem hause der guten uns so werten leute
+                           eingekeret sein. <br>und dann bitte ich nicht darauf zu vergessen, und mir auch die vor- und
+                           nach-rede <br>zur
+                           <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wilhelm Wackernagel: Deutsches Lesebuch.</strong&gt;">2ten ausgabe
+                              ires Lesebuchs<a href="https://digi.ub.uni-heidelberg.de/diglit/wackernagel1839gahttps://archive.org/details/deutscheslesebu00wackgoog">📖</a></span> zu senden. Wir alle grüßen Sie und die <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Caroline Luise Wackernagel-Bluntschli</strong&gt;">frau
+                              Professorin<a href="https://d-nb.info/gnd/113182346X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> <br>auf das herzlichste. Leben Sie wol! Gott befolen! von <br>Irem <br>JvLaßberg. </p>
+                        </div>
+                  </section>
+                  <details id="normalised-text" class="text-version mb-4">
+                     <summary>Normalisierter Text</summary>
+                     <div>
+                        
+                        <p>Auf der alten Meersburg am Bodensee, den 7. April 1842. Verehrter Herr und
+                           Freund! Soeben bringt mir ein Verwandter meiner Frau, in einem Briefe von
+                           Maßmann, beiliegenden Einschluss an Sie, den ich nicht absenden kann, ohne einen
+                           Gruß beizufügen. Mögen Sie mit Weib und Kind recht wohl sein! So wohl als wir
+                           alle auf der alten Dagobertsburg uns befinden. Ohne Zweifel schreibt Ihnen
+                           Maßmann von dem Grimmischen Funde, aus einem Merseburger Missale, der mir doch
+                           nicht so ungeheuer wichtig erscheint, als man ausgeposaunet hat. Ich habe
+                           gestern aus Würzburg einen Codex erhalten, der einst dem Predigerkloster zu
+                           Bamberg gehört. Darin stehen, von verschiedenen Händen und aus verschiedenen
+                           Zeiten, allerlei gute Sachen des XI., XII. u. XIV. Jahrhunderts, das Beste sind
+                           wohl 4 Stücke zur Theotisca gehörig auf 12 Blättern: ein Glaubensbekenntnis,
+                           eine Beichte, Beschreibung des Himmels, Beschreibung der Hölle. Die deutschen
+                           Sachen sind aus den ersten Dezennien des XII. Jahrhunderts; aber man will 500
+                           Gulden dafür haben, und das scheint mir doch zu viel für das, was es ist. Ich
+                           werde den Codex nicht kaufen; aber für eine Bibliothek, die nichts Altdeutsches
+                           besitzt, wäre es eine schätzbare Erwerbung. Ich habe diesen Winter mehrere
+                           Handschriften erworben, aber nichts sehr Altes. Darunter ein französisches
+                           Gedicht vom Leben Mariae, das die sonderbarsten Verirrungen des menschlichen
+                           Geistes und Proben der ausschweifendsten Phantasie mit den gröbsten historischen
+                           Fehlern vereinigt. Z. B. eine Tochter Abrahams geht in den Garten, riecht an
+                           einer Blume und wird davon schwanger, sie gebiert einen Sohn, der Phanuel
+                           genannt wird. Dieser isst Äpfel, wischt das Messer, womit er sie geschält hat,
+                           an seinem Schenkel ab, und der Schenkel wird von dem daran geschmierten Safte
+                           schwanger, nach neun Monaten kommt ein Mädchen heraus, und dies ist Anna, die
+                           Mutter Mariae, der Mutter des Heilandes. etc. etc. etc. Sollten Sie einmal Zeit
+                           finden, mich wieder mit ein paar Zeilen zu erfreuen; so bitte ich, mir auch zu
+                           sagen, was Ihre Nachbarn, unsere lieben Freunde, Herr Burkhardt-Iselin und seine
+                           liebe Frau machen? Schon so lange hören wir nichts mehr von ihnen, und ich
+                           fürchte, die böse Morbona möchte in dem Hause der guten, uns so werten Leute
+                           eingekehrt sein. Und dann bitte ich, nicht darauf zu vergessen, mir auch die
+                           Vor- und Nachrede zur 2ten Ausgabe Ihres Lesebuchs zu senden. Wir alle grüßen
+                           Sie und die Frau Professorin auf das herzlichste. Leben Sie wohl! Gott befohlen!
+                           von Ihrem JvLaßberg.</p>
+                        </div>
+                  </details>
+                  <details id="translation" class="text-version mb-4">
+                     <summary>Translation</summary>
+                     <div>
+                        
+                        <p>On the old Meersburg at Lake Constance, April 7, 1842. Honored Sir and Friend! A
+                           relative of my wife just brought me, in a letter from Maßmann, the enclosed for
+                           you, which I cannot send without adding a greeting. I hope you, your wife, and
+                           child are very well! As well as all of us at the old Dagobertsburg are doing. No
+                           doubt Maßmann writes to you about the Grimm-inspired discovery from a Merseburg
+                           Missal, which does not seem as immensely important to me as it has been
+                           trumpeted. Yesterday, I received a codex from Würzburg, which once belonged to
+                           the preacher's monastery in Bamberg. Within, written by different hands and from
+                           different times, are all sorts of good things from the 11th, 12th, and 14th
+                           centuries; the best are probably 4 pieces belonging to Theotisca on 12 leaves: a
+                           creed, a confession, a description of heaven, a description of hell. The German
+                           items are from the first decades of the 12th century; but they are asking 500
+                           guilders for it, and that seems too much for what it is. I will not buy the
+                           codex; but for a library that possesses nothing old German, it would be a
+                           valuable acquisition. This winter I have acquired several manuscripts, but
+                           nothing very old. Among them is a French poem about the life of Mary, which
+                           combines the strangest aberrations of the human mind and instances of the most
+                           extravagant imagination with the grossest historical errors. For example, a
+                           daughter of Abraham goes into the garden, smells a flower, and becomes pregnant
+                           from it; she gives birth to a son named Phanuel. This son eats apples, wipes the
+                           knife with which he peeled them on his thigh, and the thigh becomes pregnant
+                           from the juice smeared on it. After nine months, a girl is born, and this is
+                           Anna, the mother of Mary, the mother of the Savior, etc., etc., etc. Should you
+                           ever find time to delight me again with a few lines; please also tell me what
+                           your neighbors, our dear friends, Mr. Burkhardt-Iselin and his dear wife are
+                           doing? For so long we have heard nothing more from them, and I fear that evil
+                           Morbona may have settled in the house of the good and so valued people. And then
+                           please do not forget to send me the preface and afterword to the 2nd edition of
+                           your Reader. We all send you and the professor's wife our warmest greetings.
+                           Live well! God be with you! Your JvLaßberg.</p>
+                        </div>
+                  </details>
+                  <div id="related-letters"></div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer class="bg-dark text-white text-center py-3">
+         <div class="container">
+            <p class="mb-0"><a href="../letters.html">Back to the Letters</a></p>
+         </div>
+      </footer><script src="../../js/related.js"></script><script src="https://unpkg.com/leaflet/dist/leaflet.js"></script><script>
+                    var letterPlaces = [];
+                    
+                    letterPlaces.push({ coords: [47.7,9.26666667], label: "Meersburg", kind: "sent" });
+                    
+                    letterPlaces.push({ coords: [49.794444,9.929444], label: "Würzburg", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [49.891666666667, 10.891666666667], label: "Bamberg", kind: "mentioned" });
+                        
+
+                    if (letterPlaces.length === 0) {
+                        document.getElementById('map').style.display = 'none';
+                    } else {
+                        var map = L.map('mapid', { scrollWheelZoom: false });
+                        // Muted basemap (CARTO Positron) instead of the default colourful OSM
+                        // tiles, to match the edition's restrained palette.
+                        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+                            attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+                            subdomains: 'abcd',
+                            maxZoom: 19
+                        }).addTo(map);
+
+                        var bounds = [];
+                        letterPlaces.forEach(function (p) {
+                            var isSent = p.kind === 'sent';
+                            var marker = L.circleMarker(p.coords, isSent
+                                ? { radius: 8, color: '#143761', weight: 2, fillColor: '#1d4e89', fillOpacity: 0.85 }
+                                : { radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75 }
+                            ).addTo(map).bindPopup((isSent ? 'Sent from: ' : 'Mentioned: ') + p.label);
+                            bounds.push(p.coords);
+                        });
+                        if (bounds.length > 1) {
+                            map.fitBounds(bounds, { padding: [25, 25], maxZoom: 9 });
+                        } else {
+                            map.setView(bounds[0], 8);
+                        }
+                    }
+                </script><script>
+                    // Initialize all tooltips
+                    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+                    new bootstrap.Tooltip(tooltipTriggerEl)
+                    })
+                </script></body>
+</html>

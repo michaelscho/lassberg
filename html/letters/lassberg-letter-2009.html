@@ -1,0 +1,175 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0" lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>The Lassberg Letters</title>
+      <link href="../../css/styles.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script><link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"><script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script></head>
+   <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+         <div class="container"><a class="navbar-brand" href="../../index.html">The Laßberg Letters</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link" href="../../index.html">Welcome</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../persons.html">Persons</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../places.html">Places</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../explore.html">Explore</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <header class="page-header py-4">
+         <div class="container">
+            <h1 class="mb-2">Brief von Joseph von Laßberg an Johann Adam Pupikofer (25.04.1838).</h1>
+            <p class="lead mb-0">
+               
+               <p>Correspondence data based on Harris, Martin: Joseph Maria Christoph
+                  Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                  Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                  geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                  Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.. Briefe
+                  automatisiert mit GPT-3.5 normalisiert.</p>
+               </p>
+         </div>
+      </header>
+      <main class="py-4">
+         <div class="container">
+            <div class="alert alert-warning letter-preview-banner" role="alert"><strong>Unreviewed working text.</strong> The encoding of this letter
+               has not yet been editorially reviewed
+               (status: draft).
+               The text may contain transcription or OCR errors — please cite with caution.
+               </div>
+            <div class="row g-4">
+               <div class="col-lg-4 order-lg-2">
+                  <aside class="letter-sidebar">
+                     <section id="metadata" class="mb-4">
+                        <h2 class="h5">Metadata</h2>
+                        <p><strong>Signatur: </strong>Winterthur, Stadtbibliothek, </p>
+                        <p><strong>Registernummer (Laßberg): </strong>nan</p>
+                        <p><strong>Registernummer (Harris): </strong>984</p>
+                        <p><strong>Gedruck in: </strong><a href="https://books.google.de/books?id=dXkKAAAAIAAJ">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In:
+                              Alemannia 15 (1887), S. 231-88, S. 274</a></p>
+                     </section>
+                     <section id="map" class="mb-4">
+                        <h2 class="h5">Places</h2>
+                        <div id="mapid"></div>
+                        <p class="map-legend small text-muted mt-1 mb-0"><span class="legend-dot" style="background:#1d4e89"></span> place of sending
+                           <span class="legend-dot ms-2" style="background:#b57cc0"></span> places mentioned
+                           </p>
+                     </section>
+                  </aside>
+               </div>
+               <div class="col-lg-8 order-lg-1">
+                  <section id="original-text" class="mb-4">
+                     <h2>Original Text
+                        <span class="transcription-source badge-print" title="OCR-Texterfassung aus der gedruckten Edition, siehe Metadaten/Gedruckt in">Transcribed from the printed edition (OCR)</span></h2>
+                     <div>
+                        
+                        <p><span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Eppishausen</strong&gt;">Eppishausen<a href="https://www.wikidata.org/wiki/Q1423653"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> am 25 April 1838.
+                           Hier mein vererter freund und nachbar! erhalten Sie zuerst den catalog der frau <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Hofrátin von Thaleppe<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> zu <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Stockach<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, in welchem Sie viel schónes und gutes finden werden. laßen Sie sich durch die darinne
+                           befindlichen Randzeichen + &amp;&gt; nicht irre machen und wenn Sie etwas damit bezeichnetes
+                           wúnschen sollten, sich nicht davon abhalten: nur muß ich bitten mir den catalog spátestens
+                           in 8 tagen wieder zurúkzusenden, damit ich selben kann nach <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Stokach<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> abgehen laßen. da die besizerin es mir úberlaßen hat, die preise selbst zu bestimmen;
+                           so werde ich bei denselben die gewónl: Auctions Catalog-preise zu grunde legen. Mit
+                           vielem danke für Sie lege ich noch die <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Ida von Tokenburg<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> hier wieder bei, aber mit wenig dank gegen den Verfasser. was hat doch der nárrische
+                           mann, mit zurúkstoßung aller geschichte, fúr ein lácherliches unding aus dem schonen
+                           romantischen stoffe dieser sage gemacht, und wie oft verrát er die meister, nach welchen
+                           er die studien zu seinem bilde [:<span class="rs-misc" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">crassa</span> et invita <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Minerva<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>!:] gemacht hat, Gott beware kúnftig die vaterländische geschichte vor solchen úberlieferungen,
+                           deren verfaßer man mit recht, wie jener italienische Abbate, und vielleicht mit mer
+                           recht: Traditore nennen könnte. Nun lieber freund? soll ich es sagen? es will mir
+                           vorkommen, als wenn unsere Bischofszeller freunde uns das scheiden dadurch erleichtern
+                           wollten, daß sie in den lezten zeiten uns immer sparsamer mit irem besuche erfreuen;
+                           aber es wird inen nicht gelingen! wie konnten wir, besonders ich, ie vergeßen, ie
+                           aufhóren mich wieder danach zu senen, wie oft in einer so langen reihe von iaren,
+                           ir freundschaftlicher umgang mich erheitert hat, und zu wúnschen, daß auch in der
+                           zukunft, der kleine arm des schwábischen meeres inen nicht zu breit sein und Sie nicht
+                           abhalten möchte, die alten dankbaren freunde zuweilen durch lre gegenwart zu erfreuen,
+                           ubi    Aliquando dextrae conjungere dextram Fas erit &amp; notas audire et reddere voces!
+                           Damit gott befolen von 
+                           Irem ergebensten freunde <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">JvLaßberg<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>.
+                           Darf ich bitten H <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Praes<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Scherb<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> die Inlage samt meinem besten danke zustellen zu lassen?</p>
+                        </div>
+                  </section>
+                  <details id="normalised-text" class="text-version mb-4">
+                     <summary>Normalisierter Text</summary>
+                     <div>
+                        
+                        <p>Hier, mein verehrter Freund und Nachbar! Erhalten Sie zuerst den Katalog der Frau
+                           Hofrätin von <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Thaleppe<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> zu <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Stockach<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, in welchem Sie viel Schönes und Gutes finden werden. Lassen Sie sich durch die darin
+                           befindlichen Randzeichen + &amp;&gt; nicht irritieren und wenn Sie etwas damit Bezeichnetes
+                           wünschen sollten, lassen Sie sich nicht davon abhalten: nur muss ich bitten, mir den
+                           Katalog spätestens in 8 Tagen wieder zurückzusenden, damit ich denselben nach <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Stockach<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> schicken kann. Da die Besitzerin es mir überlassen hat, die Preise selbst zu bestimmen,
+                           werde ich bei denselben die gewöhnlichen Auktionskatalog-Preise zugrunde legen. Mit
+                           vielem Dank für Sie lege ich noch die "<span class="rs-misc" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Ida von Tötenburg</span>" hier wieder bei, aber mit wenig Dank gegen den Verfasser. Was hat doch der närrische
+                           Mann, mit Zurückstoßung aller Geschichte, für ein lächerliches Unding aus dem schönen
+                           romantischen Stoff dieser Sage gemacht, und wie oft verrät er die Meister, nach welchen
+                           er die Studien zu seinem Bilde [:crassa et invita <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Minerva<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>!:] gemacht hat. Gott bewahre künftig die vaterländische Geschichte vor solchen Überlieferungen,
+                           deren Verfasser man mit Recht, wie jener italienische Abbate, und vielleicht mit noch
+                           mehr Recht: "Traditore" nennen könnte. Nun, lieber Freund? Soll ich es sagen? Es will
+                           mir vorkommen, als wenn unsere Bischofszeller Freunde uns das Scheiden dadurch erleichtern
+                           wollen, dass sie uns in den letzten Zeiten immer sparsamer mit ihrem Besuch erfreuen;
+                           aber es wird ihnen nicht gelingen! Wie konnten wir, besonders ich, euch vergessen,
+                           euch aufhören mich wieder danach zu sehnen, wie oft in einer so langen Reihe von Jahren
+                           euer freundschaftlicher Umgang mich erheitert hat, und zu wünschen, dass auch in der
+                           Zukunft der kleine Arm des schwäbischen Meeres euch nicht zu breit sein und euch nicht
+                           abhalten möge, die alten dankbaren Freunde zuweilen durch eure Gegenwart zu erfreuen,
+                           "ubi Aliquando dextrae conjungere dextram Fas erit &amp; notas audire et reddere voces!"
+                           Damit Gott befohlen von Ihrem ergebensten Freund <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">JvLaßberg<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>. Darf ich bitten, <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">H.<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Praes<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Scherb<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> die Beilage samt meinem besten Dank zuzustellen zu lassen?</p>
+                        </div>
+                  </details>
+                  <div id="related-letters"></div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer class="bg-dark text-white text-center py-3">
+         <div class="container">
+            <p class="mb-0"><a href="../letters.html">Back to the Letters</a></p>
+         </div>
+      </footer><script src="../../js/related.js"></script><script src="https://unpkg.com/leaflet/dist/leaflet.js"></script><script>
+                    var letterPlaces = [];
+                    
+                    letterPlaces.push({ coords: [47.545,9.23759], label: "Eppishausen", kind: "sent" });
+                    
+
+                    if (letterPlaces.length === 0) {
+                        document.getElementById('map').style.display = 'none';
+                    } else {
+                        var map = L.map('mapid', { scrollWheelZoom: false });
+                        // Muted basemap (CARTO Positron) instead of the default colourful OSM
+                        // tiles, to match the edition's restrained palette.
+                        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+                            attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+                            subdomains: 'abcd',
+                            maxZoom: 19
+                        }).addTo(map);
+
+                        var bounds = [];
+                        letterPlaces.forEach(function (p) {
+                            var isSent = p.kind === 'sent';
+                            var marker = L.circleMarker(p.coords, isSent
+                                ? { radius: 8, color: '#143761', weight: 2, fillColor: '#1d4e89', fillOpacity: 0.85 }
+                                : { radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75 }
+                            ).addTo(map).bindPopup((isSent ? 'Sent from: ' : 'Mentioned: ') + p.label);
+                            bounds.push(p.coords);
+                        });
+                        if (bounds.length > 1) {
+                            map.fitBounds(bounds, { padding: [25, 25], maxZoom: 9 });
+                        } else {
+                            map.setView(bounds[0], 8);
+                        }
+                    }
+                </script><script>
+                    // Initialize all tooltips
+                    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+                    new bootstrap.Tooltip(tooltipTriggerEl)
+                    })
+                </script></body>
+</html>

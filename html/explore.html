@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore - The Laßberg Letters Project</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <link href="../css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">The Laßberg Letters</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Welcome</a></li>
+                    <li class="nav-item"><a class="nav-link" href="letters.html">Letters</a></li>
+                    <li class="nav-item"><a class="nav-link" href="persons.html">Persons</a></li>
+                    <li class="nav-item"><a class="nav-link" href="places.html">Places</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Explore</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.zotero.org/groups/6109140/joseph_von_laberg/library" target="_blank">Literature</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header py-5 bg-light text-center">
+        <div class="container">
+            <h1 class="display-5">Explore</h1>
+            <p class="lead text-muted">Semantic search, cluster map, and graph exploration of the correspondence.</p>
+        </div>
+    </header>
+
+    <main class="py-5 explore-page">
+        <div class="container">
+
+            <div class="card shadow-sm mb-4">
+                <div class="card-body">
+                    <label for="global-search" class="form-label small text-muted mb-1">Quick search across all letters, persons, places and literature (keyword-based)</label>
+                    <input type="search" class="form-control" id="global-search" placeholder="e.g. a name, a place, a title, or a word from a letter..." autocomplete="off">
+                    <div id="letter-search-results" class="list-group mt-2 d-none"></div>
+                </div>
+            </div>
+
+            <nav class="explore-tabs" aria-label="Explore tools">
+                <button data-tab="overview" class="active">Overview</button>
+                <button data-tab="search">Semantic Search</button>
+                <button data-tab="graph">Graph / SPARQL</button>
+                <button data-tab="graphrag">GraphRAG</button>
+            </nav>
+
+            <section id="panel-overview" class="explore-panel active">
+                <p class="status">Explore the whole corpus, built from the register metadata of all
+                    3,268 letters.</p>
+                <div id="overview-stats" class="stat-strip"></div>
+
+                <div class="filter-row">
+                    <label for="overview-correspondent">Correspondent:</label>
+                    <select id="overview-correspondent"></select>
+                </div>
+                <div class="chart-card">
+                    <h3 class="chart-title">Letters per year</h3>
+                    <div id="timeline-legend" class="chart-legend"></div>
+                    <svg id="timeline-svg" viewBox="0 0 900 280" role="img"
+                        aria-label="Column chart of letters per year"></svg>
+                    <div id="timeline-tooltip" class="chart-tooltip"></div>
+                    <details class="chart-table">
+                        <summary>View as table</summary>
+                        <div id="timeline-table"></div>
+                    </details>
+                </div>
+
+                <div class="overview-grid">
+                    <div class="chart-card">
+                        <h3 class="chart-title">Correspondents</h3>
+                        <div id="overview-correspondents" class="overview-scroll"></div>
+                    </div>
+                    <div class="chart-card">
+                        <h3 class="chart-title">Places</h3>
+                        <p class="status">Blue: where letters were sent from. Purple (toggle in the
+                            layer control): places the letters talk about.</p>
+                        <!-- inline height so the map never collapses to 0px under a stale cached stylesheet -->
+                        <div id="overview-map" style="height:420px"></div>
+                    </div>
+                    <div class="chart-card">
+                        <h3 class="chart-title">Historical persons discussed</h3>
+                        <p class="status">Historical figures that the letters talk <em>about</em>: 
+                            the subjects of Laßberg's antiquarian research, counted across the
+                            full-text letters.</p>
+                        <div id="overview-historical" class="overview-scroll"></div>
+                    </div>
+                    <div class="chart-card">
+                        <h3 class="chart-title">Contemporary persons mentioned</h3>
+                        <p class="status">Living contemporaries the letters mention: the social
+                            fabric of the scholarly network beyond the correspondents themselves.</p>
+                        <div id="overview-contemporary" class="overview-scroll"></div>
+                    </div>
+                    <div class="chart-card">
+                        <h3 class="chart-title">Literature discussed</h3>
+                        <p class="status">Works including medieval texts and contemporary scholarship
+                            that the letters discuss.</p>
+                        <div id="overview-works" class="overview-scroll"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="panel-search" class="explore-panel">
+                <p class="status">Searches by <em>meaning</em>, using BGE-M3 embeddings of the
+                    transcribed full-text letters. Letters that are only recorded in the register (no transcription
+                    yet) are not covered. The first search loads
+                    the ONNX model (~560 MB, cached afterwards).</p>
+                <label><input type="checkbox" id="use-hf-api"> You can also use the Hugging Face Inference API instead of downloading the model</label>
+                <div>
+                    <label for="hf-token">HF token (stored locally only, needed only for the API variant):</label>
+                    <input type="text" id="hf-token" placeholder="hf_...">
+                </div>
+                <form id="search-form" class="search-box">
+                    <input type="text" id="search-input" placeholder="e.g. a manuscript of the Tristan">
+                    <button type="submit" class="primary" id="search-button">Search</button>
+                </form>
+                <p class="status" id="search-status"></p>
+                <div id="search-results"></div>
+            </section>
+
+            <section id="panel-graph" class="explore-panel">
+                <p class="status">The knowledge graph of the edition: every letter, person, place, work,
+                    and manuscript, connected by who wrote to whom and what is mentioned where. Search for
+                    a name or letter and explore its network.</p>
+                <form id="graph-form" class="search-box" autocomplete="off">
+                    <div class="autocomplete-wrap">
+                        <input type="text" id="graph-node-input" placeholder="Search a person, place, work, or letter&hellip;">
+                        <div id="graph-suggestions" class="autocomplete-list" hidden></div>
+                    </div>
+                    <input type="number" id="graph-depth" value="2" min="1" max="3" style="max-width:5rem;flex:none" title="Network depth">
+                    <button type="submit" class="primary">Show</button>
+                </form>
+                <p class="status" id="graph-status"></p>
+                <div id="sigma-container"></div>
+                <div id="graph-expansion-results"></div>
+
+                <details class="expert-section">
+                    <summary>SPARQL console (expert)</summary>
+                    <p class="status">Queries run against an RDF file.</p>
+                    <select id="sparql-examples"></select>
+                    <form id="sparql-form">
+                        <textarea id="sparql-input" rows="6" style="width:100%;font-family:monospace"></textarea>
+                        <button type="submit" class="primary">Run</button>
+                    </form>
+                    <p class="status" id="sparql-status"></p>
+                    <div id="sparql-results"></div>
+                </details>
+            </section>
+
+            <section id="panel-graphrag" class="explore-panel">
+                
+
+                <section class="agent-chat" id="agent-chat">
+                    <h3>Experimental: LLM-orchestrated GraphRAG Research chat</h3>
+                    <p class="status">Here, research is driven by an LLM: it formulates semantic
+                        queries, writes SPARQL against the edition RDF, traverses the knowledge graph,
+                        reads letters, and synthesizes a cited answer. Every step is shown in the output documenting how the answer was produced. 
+                        Your API key is stored in your
+                        browser only and sent only to the provider you select. (SAIA API currently not working from Browser.) For local use, see MCP server on <a href="https://github.com/michaelscho/lassberg">GitHub</a>.</p>
+                    <div class="llm-settings-grid">
+                        <label>Provider
+                            <select id="agent-provider"></select>
+                        </label>
+                        <label>API key
+                            <input type="password" id="agent-key" placeholder="API key">
+                        </label>
+                        <label>Model
+                            <span class="model-row">
+                                <input type="text" id="agent-model" list="agent-model-list">
+                                <button type="button" id="agent-models-btn"
+                                    title="Fetch the models available for this key">&#8635;</button>
+                            </span>
+                            <datalist id="agent-model-list"></datalist>
+                        </label>
+                        <label>Endpoint (base URL)
+                            <input type="text" id="agent-endpoint">
+                        </label>
+                    </div>
+                    <p class="status" id="agent-provider-note"></p>
+                    <div id="agent-log" class="chat-log" hidden></div>
+                    <form id="agent-form" class="search-box">
+                        <input type="text" id="agent-input"
+                            placeholder="e.g. Mit wem diskutierte Laßberg den Ankauf von Handschriften, und in welchen Briefen?">
+                        <button type="submit" class="primary" id="agent-send">Ask</button>
+                    </form>
+                    <p class="status">Semantic search inside the chat uses the same BGE-M3 model as the
+                        Search tab (one-time ~560 MB download on first use, or the HF-API option set
+                        there).</p>
+                </section>
+
+                <p class="status">Combines embedding search with graph expansion (shared mentions, correspondence
+                    context) into a transparent, citable research context. Retrieval-only: no LLM is called and no
+                    API key is needed.</p>
+                <form id="graphrag-form" class="search-box">
+                    <input type="text" id="graphrag-input" placeholder="e.g. letters about manuscripts and the Tristan">
+                    <button type="submit" class="primary" id="graphrag-button">Research</button>
+                </form>
+                <p class="status" id="graphrag-status"></p>
+
+                <div id="graphrag-results"></div>
+
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-1">
+                <a href="https://www.dh.unibe.ch/about_us/people/prof_dr_hodel_tobias/index_eng.html" target="_blank">Prof. Dr. Tobias Hodel</a> — Universität Bern, Digital Humanities
+                <span class="mx-2">&middot;</span>
+                <a href="https://www.linglit.tu-darmstadt.de/institutlinglit/fachgebiete/digitale_editorik_und_kulturgeschichte_des_mittelalters/index.de.jsp" target="_blank">Prof. Dr. Michael Schonhardt</a> — TU Darmstadt / Akademie der Wissenschaften und der Literatur | Mainz
+            </p>
+            <p class="mb-0"><a href="https://www.linglit.tu-darmstadt.de/institutlinglit/fachgebiete/digitale_editorik_und_kulturgeschichte_des_mittelalters/index.de.jsp" target="_blank">Contact</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/minisearch@6.3.0/dist/umd/index.min.js"></script>
+    <script src="../js/search.js"></script>
+
+    <script type="module">
+        import { initOverviewUI } from "../js/explore/overview.js";
+        import { initSearchUI } from "../js/explore/search.js";
+        import { initGraphUI } from "../js/explore/graph.js";
+        import { initSparqlUI } from "../js/explore/sparql.js";
+        import { initGraphRagUI } from "../js/explore/graphrag.js";
+
+        const tabs = document.querySelectorAll("nav.explore-tabs button");
+        const panels = document.querySelectorAll(".explore-panel");
+        const initialized = new Set();
+
+        const initializers = {
+            overview: initOverviewUI,
+            search: initSearchUI,
+            graph: () => { initGraphUI(); initSparqlUI(); },
+            graphrag: initGraphRagUI,
+        };
+
+        function activate(tabName) {
+            tabs.forEach((t) => t.classList.toggle("active", t.dataset.tab === tabName));
+            panels.forEach((p) => p.classList.toggle("active", p.id === `panel-${tabName}`));
+            if (!initialized.has(tabName)) {
+                initialized.add(tabName);
+                Promise.resolve(initializers[tabName]?.()).catch((err) => console.error(`init ${tabName} failed:`, err));
+            }
+        }
+
+        tabs.forEach((t) => t.addEventListener("click", () => activate(t.dataset.tab)));
+
+        // Deep link: ?node=<id> (e.g. from the persons/places register pages) opens the graph
+        // tab and renders that node's network; ?tab=<name> just opens a tab.
+        const params = new URLSearchParams(window.location.search);
+        const tab = params.get("node") ? "graph" : (params.get("tab") || "overview");
+        activate(tab); // offline-first: the default Overview needs no model download
+    </script>
+</body>
+
+</html>

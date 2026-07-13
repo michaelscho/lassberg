@@ -1,0 +1,326 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0" lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>The Lassberg Letters</title>
+      <link href="../../css/styles.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script><link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"><script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script></head>
+   <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+         <div class="container"><a class="navbar-brand" href="../../index.html">The Laßberg Letters</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link" href="../../index.html">Welcome</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../persons.html">Persons</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../places.html">Places</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../explore.html">Explore</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <header class="page-header py-4">
+         <div class="container">
+            <h1 class="mb-2">Brief von Johann Adam Pupikofer an Joseph von Laßberg (26.05.1825).</h1>
+            <p class="lead mb-0">
+               
+               <p>Correspondence data based on Harris, Martin: Joseph Maria Christoph
+                  Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                  Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                  geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                  Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.. Briefe
+                  automatisiert mit GPT-3.5 normalisiert.</p>
+               </p>
+         </div>
+      </header>
+      <main class="py-4">
+         <div class="container">
+            <div class="alert alert-warning letter-preview-banner" role="alert"><strong>Unreviewed working text.</strong> The encoding of this letter
+               has not yet been editorially reviewed
+               (status: done).
+               The text may contain transcription or OCR errors — please cite with caution.
+               </div>
+            <div class="row g-4">
+               <div class="col-lg-4 order-lg-2">
+                  <aside class="letter-sidebar">
+                     <section id="metadata" class="mb-4">
+                        <h2 class="h5">Metadata</h2>
+                        <p><strong>Signatur: </strong>Frauenfeld, Thurgauische Kantonsbibliothek, </p>
+                        <p><strong>Registernummer (Laßberg): </strong>nan</p>
+                        <p><strong>Registernummer (Harris): </strong>2061</p>
+                        <p><strong>Gedruck in: </strong><a href="https://books.google.de/books?id=dXkKAAAAIAAJ">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In:
+                              Alemannia 15 (1887), S. 231-88, S. 285</a></p>
+                     </section>
+                     <section id="map" class="mb-4">
+                        <h2 class="h5">Places</h2>
+                        <div id="mapid"></div>
+                        <p class="map-legend small text-muted mt-1 mb-0"><span class="legend-dot" style="background:#1d4e89"></span> place of sending
+                           <span class="legend-dot ms-2" style="background:#b57cc0"></span> places mentioned
+                           </p>
+                     </section>
+                     <section id="mentioned" class="mb-4">
+                        <h2 class="h5">Mentioned in this letter</h2>
+                        <h3 class="h6 mt-3">Persons</h3>
+                        <ul class="list-unstyled small mb-2">
+                           <li><a href="../persons.html?q=Joseph%20Albrecht%20von%20Ittner">Joseph Albrecht von Ittner</a></li>
+                           <li><a href="../persons.html?q=Dalp">Dalp</a></li>
+                           <li><a href="../persons.html?q=Kyburger%20%28Adelsgeschlecht%29">Kyburger (Adelsgeschlecht)</a></li>
+                           <li><a href="../persons.html?q=Johann%20Adam%20Pupikofer">Johann Adam Pupikofer</a></li>
+                        </ul>
+                        <h3 class="h6 mt-3">Places</h3>
+                        <ul class="list-unstyled small mb-2">
+                           <li><a href="../places.html?q=Eppishausen">Eppishausen</a></li>
+                           <li><a href="../places.html?q=Chur">Chur</a></li>
+                           <li><a href="../places.html?q=Schweiz">Schweiz</a></li>
+                           <li><a href="../places.html?q=Thurgau">Thurgau</a></li>
+                           <li><a href="../places.html?q=Kloster%20Allerheiligen">Kloster Allerheiligen</a></li>
+                           <li><a href="../places.html?q=Bischofszell">Bischofszell</a></li>
+                           <li><a href="../places.html?q=Konstanz">Konstanz</a></li>
+                        </ul>
+                        <h3 class="h6 mt-3">Literature</h3>
+                        <ul class="list-unstyled small mb-0">
+                           <li class="mb-1">Geschichte der Hohenstaufen und ihrer Zeit. <a href="../explore.html?node=lassberg-literature-0010" title="Show in the knowledge graph" class="small">graph</a></li>
+                           <li class="mb-1">Quellenschriftsteller der deutschen Geschichte <a href="../explore.html?node=lassberg-literature-0200" title="Show in the knowledge graph" class="small">graph</a></li>
+                           <li class="mb-1">Waltharius <a href="../explore.html?node=lassberg-literature-0107" title="Show in the knowledge graph" class="small">graph</a></li>
+                           <li class="mb-1">Casus monasterii Petrishusensis <a href="../explore.html?node=lassberg-literature-0016" title="Show in the knowledge graph" class="small">graph</a></li>
+                           <li class="mb-1">Germaniae Sacrae Prodromus. Seu Collectio Monumentorum Res Alemannicas Illustrantium. <a href="../explore.html?node=lassberg-literature-0017" title="Show in the knowledge graph" class="small">graph</a></li>
+                           <li class="mb-1">Episcopatus Constantiensis Alemannicus sub metropoli Moguntina chronologice et diplomatice
+                              illustratus <a href="../explore.html?node=lassberg-literature-0012" title="Show in the knowledge graph" class="small">graph</a></li>
+                           <li class="mb-1">Chronik der Stadt und Landschaft Schaffhausen <a href="../explore.html?node=lassberg-literature-0018" title="Show in the knowledge graph" class="small">graph</a></li>
+                           <li class="mb-1">Die Schweiz in ihren Ritterburgen und Bergschlössern <a href="../explore.html?node=lassberg-literature-0223" title="Show in the knowledge graph" class="small">graph</a></li>
+                        </ul>
+                     </section>
+                  </aside>
+               </div>
+               <div class="col-lg-8 order-lg-1">
+                  <section id="original-text" class="mb-4">
+                     <h2>Original Text
+                        <span class="transcription-source badge-print" title="OCR-Texterfassung aus der gedruckten Edition, siehe Metadaten/Gedruckt in">Transcribed from the printed edition (OCR)</span></h2>
+                     <div>
+                        
+                        <div class="letter-opener">
+                           
+                           <p class="letter-salute">Hochwohlgeborner, verehrtester Herr Freyherr!</p>
+                           </div>
+                        
+                        <p>Obschon ich Ihnen durch keine
+                           förmliche Beyleidsbezeugung meine herzliche Theilnahme an Ihrer Trauer über den
+                           Hinschied Ihres trefflichen, so allgemein hochgeschäzten Freundes des
+                           Staatsrathes <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Joseph Albrecht von Ittner</strong&gt;">von
+                              Ittner<a href="https://d-nb.info/gnd/117212555"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> bewiesen habe, kann ich Sie dennoch versichern, daß auch mich jene
+                           Trauerbotschaft, und zwar um so mer geschmerzt hat, da ich den edlen Mann lezten
+                           Herbst wenigstens für einige Augenblicke zu sehen bei Ihnen das Vergnügen hatte,
+                           und aus Ihren eigenen Aeußerungen wußte, welch' großen Werth Sie auf die
+                           Freundschaft desselben setzen. Möge Sein Verlust Ihnen die Gegend um <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Konstanz</strong&gt;">Konstanz<a href="https://www.wikidata.org/wiki/Q3834"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>
+                           nicht gleichgültig machen, und somit auch mich des Glücks berauben, in Ihnen
+                           einen Gönner und Beförderer meiner historischen Studien, und einen edelmüthigen
+                           Gastfreund zu verlieren! Die gütige Vorsehung möge Ihnen jenen Verlust durch ein
+                           anderes Gut wenigstens auch erträglicher machen! Da ich voraussetzen darf, daß
+                           Sie die Fortsetzung des <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Raumer, Friedrich von: Geschichte der Hohenstaufen und ihrer Zeit.</strong&gt;">Raumerschen
+                              Werkes<a href="http://opac.regesta-imperii.de/id/40301">📖</a></span> nicht ungerne lesen werden, wenn Sie nicht schon damit bekannt
+                           geworden sind, erlaube ich mir das Vergnügen, Ihnen hiermit den fünften Band zu
+                           übersenden. Den sechsten Band wünschte ich Ihnen bald selbst in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Eppishausen</strong&gt;">Eppishausen<a href="https://www.wikidata.org/wiki/Q1423653"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> zu
+                           überreichen. Zwar bin ich in die deutschen Alterthümer nicht so eingeweiht, daß
+                           ich ein kompetentes Urtheil über diesen Theil des <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Raumer, Friedrich von: Geschichte der Hohenstaufen und ihrer Zeit.</strong&gt;">Raumerschen
+                              Werkes<a href="http://opac.regesta-imperii.de/id/40301">📖</a></span> ablegen könnte; aber das muß ich wenigstens gestehen, daß es meinen
+                           Erwartungen und Wünschen am wenigsten entsprochen hat. Ob vielleicht nicht mehr
+                           zu leisten war, mögen Sie beurtheilen. Ganz auffallend war mir die endlich
+                           erfolgte Ankündigung der Herausgeber der <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unbekannt: Quellenschriftsteller der deutschen Geschichte.</strong&gt;">Quellenschriftsteller der deutschen Geschichte<a href="-">📖</a></span> und der Umstand, daß nun
+                           die St. Gallischen Schriftsteller schon in den ersten Band kommen, die Sammlung
+                           selbst nicht über die Jare 500 zurück gehen soll. Ich glaubte, Ihre Bearbeitung
+                           der <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Waltharius.</strong&gt;">Historia
+                              Waltharii<a href="https://geschichtsquellen.de/werk/2090">📖</a></span> werde die Reihe eröffnen. Ein Herr <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Felix Dalp</strong&gt;">Dalp<a href="https://d-nb.info/gnd/1073403300"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> aus
+                           <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Chur</strong&gt;">Chur<a href="https://www.wikidata.org/wiki/Q69007"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, Buchführer in einer Gießischen Buchandlung hat mich letzthin um
+                           Beiträge zur Herausgabe einer <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Gustav Schwab; Hottinger, Johann Jakob (Historiker): Die Schweiz in ihren Ritterburgen und Bergschlössern, historisch dargestellt von vaterländischen Schriftstellern.</strong&gt;">Beschreibung aller Ritterburgen der <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Schweiz</strong&gt;">Schweiz<a href="https://www.wikidata.org/wiki/Q39"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span><a href="https://www.e-rara.ch/zut/content/titleinfo/2950057">📖</a></span> aufgefordert, und er macht sich Hoffnung auf eine günstige
+                           Aufnahme dieses Werkes. Ich zweifle aber, daß der Absatz in der <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Schweiz</strong&gt;">Schweiz<a href="https://www.wikidata.org/wiki/Q39"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> groß sein
+                           werde; die Deutschen müßten sich mehr dafür interessiren, wenn der Erfolg Gewinn
+                           bringen sollte. Unterdessen verweigere ich dem Herausgeber meine Beiträge nicht,
+                           in der Hoffnung, durch Ihre Unterstützug einiges nicht unwichtiges aus dem <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Thurgau</strong&gt;">Thurgau<a href="https://www.wikidata.org/wiki/Q12713"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> liefern zu können. Letzthin war ich so frei, Sie um Mittheilung
+                           des <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Casus monasterii Petrishusensis.</strong&gt;">Chron.
+                              Peterhusanum<a href="https://www.geschichtsquellen.de/werk/812">📖</a></span> zu bitten, das in dem <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ussermann, Aemilian: Germaniae Sacrae Prodromus. Seu Collectio Monumentorum Res&#xA;        Alemannicas Illustrantium.</strong&gt;">Prodromus
+                              Germania sacra<a href=" VD18-8047859X">📖</a></span> stehen soll. Haben Sie dieses Werk gerade in Ihrer Bibliothek
+                           und ist es Ihnen entbehrlich, so wiederhole ich hiermit meine Bitte, indem ich
+                           die in <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Trutpert Neugart; Franz Josef Mone: Episcopatus Constantiensis Alemannicus sub metropoli Moguntina&#xA;        chronologice et diplomatice illustratus.</strong&gt;">Neugarti
+                              episcopatu Const.<a href="http://opac.regesta-imperii.de/id/62260">📖</a></span> über die <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Kyburger<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           angeführten Stellen nachzusehen wünschte. Unter dem Titel von <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Jakob Rüeger: Chronik der Stadt und Landschaft Schaffhausen.</strong&gt;">Rügers
+                              Chronik<a href="https://de.wikipedia.org/wiki/Johann_Jakob_R%C3%BCeger">📖</a></span>, wie derselbe im Verzeichniß angegeben war, kaufte ich unlängst
+                           eine <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Jakob Rüeger: Chronik der Stadt und Landschaft Schaffhausen.</strong&gt;">Schaffhauser
+                              Chronik<a href="https://de.wikipedia.org/wiki/Johann_Jakob_R%C3%BCeger">📖</a></span>, in welcher Auszüge aus dem Archive des Klosters <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Kloster&#xA;                        Allerheiligen</strong&gt;">Allerheiligen<a href="https://www.wikidata.org/wiki/Q323537"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>
+                           vorkommen, die, wenn sie, was ich noch nicht vergleichen konnte, unbenutzt sind,
+                           manches Interesse gewähren möchten.</p>
+                        
+                        <div class="letter-closer">
+                           
+                           <p class="letter-salute">Genehmigen Sie, Hochwohlgeborner,
+                              hochverehrter Herr! die Versicherung unveränderlicher Hochachtung und
+                              Ergebenheit von Ihrem</p>
+                           
+                           <p class="letter-signed">Diac. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Adam Pupikofer</strong&gt;">Pupikofer<a href="https://d-nb.info/gnd/11565108X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span></p>,
+                           
+                           <p class="letter-dateline"><span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Bischofszell</strong&gt;">Bischofzell<a href="https://www.wikidata.org/wiki/Q64865"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, den 26. May 1825</p>.
+                           </div>
+                        </div>
+                  </section>
+                  <details id="normalised-text" class="text-version mb-4">
+                     <summary>Normalisierter Text</summary>
+                     <div>
+                        
+                        <p>Hochwohlgeborener, verehrtester Herr Freiherr! Obschon ich Ihnen durch keine
+                           förmliche Beileidsbezeugung meine herzliche Teilnahme an Ihrer Trauer über den
+                           Hinschied Ihres trefflichen, so allgemein hochgeschätzten Freundes des
+                           Staatsrates von Ittner bewiesen habe, kann ich Sie dennoch versichern, dass auch
+                           mich jene Trauerbotschaft, und zwar umso mehr geschmerzt hat, da ich den edlen
+                           Mann letzten Herbst zumindest für einige Augenblicke bei Ihnen das Vergnügen
+                           hatte, und aus Ihren eigenen Äußerungen wusste, welch großen Wert Sie auf die
+                           Freundschaft desselben setzen. Möge sein Verlust Ihnen die Gegend um Konstanz
+                           nicht gleichgültig machen, und somit auch mich des Glücks berauben, in Ihnen
+                           einen Gönner und Förderer meiner historischen Studien, und einen edelmutigen
+                           Gastfreund zu verlieren! Die gütige Vorsehung möge Ihnen jenen Verlust durch ein
+                           anderes Gut zumindest erträglicher machen! Da ich voraussetzen darf, dass Sie
+                           die Fortsetzung des Raumerschen Werkes nicht ungern lesen werden, wenn Sie nicht
+                           schon damit bekannt geworden sind, erlaube ich mir das Vergnügen, Ihnen hiermit
+                           den fünften Band zu übersenden. Den sechsten Band wünschte ich Ihnen bald selbst
+                           in Eppishausen zu überreichen. Zwar bin ich in die deutschen Altertümer nicht so
+                           eingeweiht, dass ich ein kompetentes Urteil über diesen Teil des Raumerschen
+                           Werkes ablegen könnte; aber das muss ich zumindest gestehen, dass es meinen
+                           Erwartungen und Wünschen am wenigsten entsprochen hat. Ob vielleicht nicht mehr
+                           zu leisten war, mögen Sie beurteilen. Ganz auffallend war mir die endlich
+                           erfolgte Ankündigung der Herausgeber der Quellenschriftsteller der deutschen
+                           Geschichte und der Umstand, dass nun die St. Gallischen Schriftsteller schon im
+                           ersten Band kommen, die Sammlung selbst nicht über die Jahre 500 zurückgehen
+                           soll. Ich glaubte, Ihre Bearbeitung der Historia Waltharii werde die Reihe
+                           eröffnen. Ein Herr Dalp aus Chur, Buchführer in einer Gießischen Buchhandlung
+                           hat mich letztens um Beiträge zur Herausgabe einer Beschreibung aller
+                           Ritterburgen der Schweiz aufgefordert, und er macht sich Hoffnung auf eine
+                           günstige Aufnahme dieses Werkes. Ich zweifle aber, dass der Absatz in der
+                           Schweiz groß sein werde; die Deutschen müssten sich mehr dafür interessieren,
+                           wenn der Erfolg Gewinn bringen sollte. Unterdessen verweigere ich dem
+                           Herausgeber meine Beiträge nicht, in der Hoffnung, durch Ihre Unterstützung
+                           einiges nicht Unwichtiges aus dem Thurgau liefern zu können. Letztens war ich so
+                           frei, Sie um Mitteilung des Chron. Peterhusanum zu bitten, das in dem Prodromus
+                           Germani sacra stehen soll. Haben Sie dieses Werk gerade in Ihrer Bibliothek und
+                           ist es Ihnen entbehrlich, so wiederhole ich hiermit meine Bitte, indem ich die
+                           in Neugarten über das Bistum Konstanz angeführten Stellen nachzusehen wünschte.
+                           Unter dem Titel von Rügers Chronik, wie derselbe im Verzeichnis angegeben war,
+                           kaufte ich unlängst eine Schaffhauser Chronik, in welcher Auszüge aus dem Archiv
+                           des Klosters Allerheiligen vorkommen, die, wenn sie, was ich noch nicht
+                           vergleichen konnte, unbenutzt sind, manches Interesse gewähren möchten.
+                           Genehmigen Sie, Hochwohlgeborener, hochverehrter Herr! die Versicherung
+                           unveränderlicher Hochachtung und Ergebenheit von Ihrem Diakon Pupikofer,
+                           Bischofszell, den 26. Mai 1825.</p>
+                        </div>
+                  </details>
+                  <details id="translation" class="text-version mb-4">
+                     <summary>Translation</summary>
+                     <div>
+                        <p>
+                           Highly Born and Most Esteemed Baron!
+                           
+                           Although I have not shown my heartfelt sympathy for your sorrow over the passing of
+                           your excellent, universally esteemed friend, State Councilor von Ittner, through any
+                           formal condolence, I can assure you that I was also pained by the news of his death,
+                           all the more so since I had the pleasure of meeting the noble man last autumn, at
+                           least for a few moments at your place, and knew from your own statements how much
+                           you valued his friendship. May his loss not make the area around Konstanz indifferent
+                           to you, and thus also deprive me of the happiness of losing you as a patron and promoter
+                           of my historical studies, and a noble host! May kind Providence compensate you for
+                           this loss with another good, at least making it more bearable!
+                           
+                           Assuming that you would not be averse to reading the continuation of Raumer's work,
+                           if you are not already familiar with it, I take the pleasure of sending you the fifth
+                           volume. I hope to present the sixth volume to you soon in Eppishausen myself. Although
+                           I am not so well versed in German antiquities to give a competent judgment on this
+                           part of Raumer's work, I must at least admit that it has met my expectations and desires
+                           the least. Whether more could have been achieved, you may judge. I was quite struck
+                           by the recent announcement of the publishers of the source writers of German history
+                           and the fact that the St. Gallen writers are already to appear in the first volume,
+                           while the collection itself is not supposed to go back beyond the year 500. I thought
+                           your treatment of the Historia Waltharii would open the series.
+                           
+                           Recently, a Mr. Dalp from Chur, a bookkeeper in a Gießen bookstore, asked me for contributions
+                           to the publication of a description of all the knight's castles in Switzerland, and
+                           he is hopeful for a favorable reception of this work. However, I doubt that the sales
+                           in Switzerland will be large; the Germans would have to be more interested in it if
+                           the project is to be profitable. In the meantime, I do not refuse the publisher my
+                           contributions, hoping to be able to provide something significant from Thurgau with
+                           your support. Recently, I took the liberty of asking you for the Chron. Peterhusanum,
+                           which is supposed to be in the Prodromus Germani sacra. If you have this work in your
+                           library and can spare it, I repeat my request, as I wish to review the passages cited
+                           in Neugart about the Diocese of Konstanz.
+                           
+                           Under the title of Rüger's Chronicle, as it was listed in the catalog, I recently
+                           purchased a Schaffhausen Chronicle, which contains excerpts from the archives of the
+                           All Saints' Monastery, which, if unused as I have not yet been able to compare, might
+                           offer much interest. Please accept, Highly Born and Most Esteemed Sir, the assurance
+                           of unchanging respect and devotion from your Diakon Pupikofer, Bischofszell, May 26,
+                           1825.
+                           </p>
+                     </div>
+                  </details>
+                  <div id="related-letters"></div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer class="bg-dark text-white text-center py-3">
+         <div class="container">
+            <p class="mb-0"><a href="../letters.html">Back to the Letters</a></p>
+         </div>
+      </footer><script src="../../js/related.js"></script><script src="https://unpkg.com/leaflet/dist/leaflet.js"></script><script>
+                    var letterPlaces = [];
+                    
+                    letterPlaces.push({ coords: [47.5,9.23333333], label: "Bischofszell", kind: "sent" });
+                    
+                    letterPlaces.push({ coords: [47.545,9.23759], label: "Eppishausen", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [46.85212, 9.52965], label: "Chur", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [46.798562, 8.231973], label: "Schweiz", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [47.583333, 9.066667], label: "Thurgau", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [47.6953, 8.63667], label: "Kloster Allerheiligen", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [47.66666667,9.18333333], label: "Konstanz", kind: "mentioned" });
+                        
+
+                    if (letterPlaces.length === 0) {
+                        document.getElementById('map').style.display = 'none';
+                    } else {
+                        var map = L.map('mapid', { scrollWheelZoom: false });
+                        // Muted basemap (CARTO Positron) instead of the default colourful OSM
+                        // tiles, to match the edition's restrained palette.
+                        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+                            attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+                            subdomains: 'abcd',
+                            maxZoom: 19
+                        }).addTo(map);
+
+                        var bounds = [];
+                        letterPlaces.forEach(function (p) {
+                            var isSent = p.kind === 'sent';
+                            var marker = L.circleMarker(p.coords, isSent
+                                ? { radius: 8, color: '#143761', weight: 2, fillColor: '#1d4e89', fillOpacity: 0.85 }
+                                : { radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75 }
+                            ).addTo(map).bindPopup((isSent ? 'Sent from: ' : 'Mentioned: ') + p.label);
+                            bounds.push(p.coords);
+                        });
+                        if (bounds.length > 1) {
+                            map.fitBounds(bounds, { padding: [25, 25], maxZoom: 9 });
+                        } else {
+                            map.setView(bounds[0], 8);
+                        }
+                    }
+                </script><script>
+                    // Initialize all tooltips
+                    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+                    new bootstrap.Tooltip(tooltipTriggerEl)
+                    })
+                </script></body>
+</html>

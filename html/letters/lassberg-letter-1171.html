@@ -1,0 +1,178 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0" lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>The Lassberg Letters</title>
+      <link href="../../css/styles.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script><link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"><script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script></head>
+   <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+         <div class="container"><a class="navbar-brand" href="../../index.html">The Laßberg Letters</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link" href="../../index.html">Welcome</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../persons.html">Persons</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../places.html">Places</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../explore.html">Explore</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <header class="page-header py-4">
+         <div class="container">
+            <h1 class="mb-2">Brief von Joseph von Laßberg an Johann Adam Pupikofer (03.05.1827).</h1>
+            <p class="lead mb-0">
+               
+               <p>Correspondence data based on Harris, Martin: Joseph Maria Christoph
+                  Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                  Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                  geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                  Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.. Briefe
+                  automatisiert mit GPT-3.5 normalisiert.</p>
+               </p>
+         </div>
+      </header>
+      <main class="py-4">
+         <div class="container">
+            <div class="alert alert-warning letter-preview-banner" role="alert"><strong>Unreviewed working text.</strong> The encoding of this letter
+               has not yet been editorially reviewed
+               (status: draft).
+               The text may contain transcription or OCR errors — please cite with caution.
+               </div>
+            <div class="row g-4">
+               <div class="col-lg-4 order-lg-2">
+                  <aside class="letter-sidebar">
+                     <section id="metadata" class="mb-4">
+                        <h2 class="h5">Metadata</h2>
+                        <p><strong>Signatur: </strong>Winterthur, Stadtbibliothek, </p>
+                        <p><strong>Registernummer (Laßberg): </strong>90</p>
+                        <p><strong>Registernummer (Harris): </strong>579</p>
+                        <p><strong>Gedruck in: </strong><a href="https://books.google.de/books?id=dXkKAAAAIAAJ">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In:
+                              Alemannia 15 (1887), S. 231-88, S. 241</a></p>
+                     </section>
+                     <section id="map" class="mb-4">
+                        <h2 class="h5">Places</h2>
+                        <div id="mapid"></div>
+                        <p class="map-legend small text-muted mt-1 mb-0"><span class="legend-dot" style="background:#1d4e89"></span> place of sending
+                           <span class="legend-dot ms-2" style="background:#b57cc0"></span> places mentioned
+                           </p>
+                     </section>
+                  </aside>
+               </div>
+               <div class="col-lg-8 order-lg-1">
+                  <section id="original-text" class="mb-4">
+                     <h2>Original Text
+                        <span class="transcription-source badge-manuscript" title="Diplomatische Transkription der Handschrift">Transcribed from the manuscript (Transkribus)</span></h2>
+                     <div>
+                        
+                        <p>Ex villa 3. Mey 1827. Als ich lezthin den Boten zu Inen sandte zu fragen: ob Sie
+                           zu hause seien? geschah es in der absicht, den folgenden tag freitags Sie zu
+                           besuchen: allein der Bote brachte mir keine antwort zurük und so vermuthete ich
+                           Sie abwesend. Freitag nachmittags fur ich nach <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Weinfelden</strong&gt;">Weinfelden<a href="https://www.wikidata.org/wiki/Q68258"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, wo
+                           ich die <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">glasgemälde</span> des h. Oberamtmanns <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Rheinhart</strong&gt;">Rheinhart<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> sahe; sie verdienen keiner erwänung; denn was auch früher gutes
+                           mag daran gewesen sein, der liebe mann hat sie jämmerlich massakrirt und ware
+                           hieroglyphen daraus gemacht. Auch sah ich noch die unter dem namen <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Burg&#xA;                        Neuenburg (Weinfelden)</strong&gt;">Burg dort
+                              bekannte ruine<a href="https://www.wikidata.org/wiki/Q67772030"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>; und möchte wol iren eigentümlichen namen wißen, welcher,
+                           wie es so heisst, außer der gränze des Weinfelder erinnerungs vermögens liegt.
+                           Recht gerne wäre ich Irer freundl. einladung zu folge, lezten montag zu den
+                           Sanctimonialibus nach <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Dänikon</strong&gt;">Dännikon<a href="https://www.wikidata.org/wiki/Q70131"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>
+                           gereiset: allein unerwarteter besuch von <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Konstanz</strong&gt;">Constanz<a href="https://www.wikidata.org/wiki/Q3834"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> nam
+                           nicht nur meine zeit, sondern auch mein pferde in beschlag. Gestern wollte ich
+                           dem <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Brunschweiler</strong&gt;">Brunschwilerschen<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> Tentamen bei wohnen, da kam schon in aller frühe ein
+                           junger edelmann aus <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Schwaben</strong&gt;">Schwaben<a href="https://www.wikidata.org/wiki/Q11812551"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> zu mir
+                           angefaren, der mich de instituendo vitae genere consultiren wollte und bis
+                           abends blieb; Sie sehen also mein vererter Freund! daß nach dem epiktet.
+                           ausspruche, res quaedam in potestate nostra sunt, aliae non sunt und daß es
+                           nichts hilft vorsäze zu machen. Aus der auction haben wir nur wenige bücher
+                           bekommen und ich bin nicht mit meinen acquisitionen zufrieden. Soll ich Inen die
+                           Irigen durch den Boten senden? Der Bote wartet; vielleicht sehe ich Sie morgen?
+                           Raptim - wie die alten juristen sagten, Ir ergebenster <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Joseph von Laßberg</strong&gt;">J. v.
+                              Laßberg<a href="https://d-nb.info/gnd/118778862"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>. Haben Sie doch die güte, mir auf die zwei <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">bodenseebücher</span> weiße titel sezen zu laßen, es wird in einer minute
+                           geschehen sein. </p>
+                        </div>
+                  </section>
+                  <details id="normalised-text" class="text-version mb-4">
+                     <summary>Normalisierter Text</summary>
+                     <div>
+                        
+                        <p>Exvilla, 3. Mai 1827. Als ich neulich den Boten zu Ihnen sandte, um zu fragen, ob
+                           Sie zu Hause sind, geschah es in der Absicht, Sie am folgenden Tag, Freitag, zu
+                           besuchen. Allein der Bote brachte mir keine Antwort zurück, und so vermutete
+                           ich, dass Sie abwesend sind. Freitagnachmittags fuhr ich nach Weinfelden, wo ich
+                           die Glasgemälde des Herrn Oberamtmanns Rheinhart sah. Sie verdienen keiner
+                           Erwähnung; denn was auch früher gut daran war, hat der liebe Mann jämmerlich
+                           massakriert und daraus Hieroglyphen gemacht. Auch sah ich noch die Ruine, die
+                           dort unter dem Namen Burg bekannt ist; und ich möchte gerne ihren eigentümlichen
+                           Namen wissen, der, wie es heißt, außerhalb der Erinnerungskraft von Weinfelden
+                           liegt. Sehr gerne wäre ich Ihrer freundlichen Einladung gefolgt und hätte
+                           letzten Montag die Sanctimonialibus in Dännikon besucht. Aber unerwarteter
+                           Besuch aus Konstanz beanspruchte nicht nur meine Zeit, sondern auch mein Pferd.
+                           Gestern wollte ich am Brunschwilerschen Tentamen teilnehmen, als schon
+                           frühmorgens ein junger Edelmann aus Schwaben zu mir kam, der mich über den
+                           Lebensstil konsultieren wollte und bis abends blieb. Sie sehen also, mein
+                           verehrter Freund, dass nach dem Ausspruch von Epiktet, "res quaedam in potestate
+                           nostra sunt, aliae non sunt" (Einige Dinge liegen in unserer Macht, andere
+                           nicht), und dass es nichts hilft, Vorsätze zu machen. Aus der Auktion haben wir
+                           nur wenige Bücher bekommen und ich bin mit meinen Akquisitionen nicht zufrieden.
+                           Soll ich Ihnen Ihre Bücher durch den Boten senden? Der Bote wartet; vielleicht
+                           sehe ich Sie morgen? Raptim, wie die alten Juristen sagten, Ihr ergebenster J.
+                           v. Laßberg Haben Sie doch die Güte, mir auf die zwei Bodenseebücher weiße Titel
+                           setzen zu lassen; es wird in einer Minute geschehen sein.</p>
+                        </div>
+                  </details>
+                  <div id="related-letters"></div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer class="bg-dark text-white text-center py-3">
+         <div class="container">
+            <p class="mb-0"><a href="../letters.html">Back to the Letters</a></p>
+         </div>
+      </footer><script src="../../js/related.js"></script><script src="https://unpkg.com/leaflet/dist/leaflet.js"></script><script>
+                    var letterPlaces = [];
+                    
+                    letterPlaces.push({ coords: [47.545,9.23759], label: "Eppishausen", kind: "sent" });
+                    
+
+                    if (letterPlaces.length === 0) {
+                        document.getElementById('map').style.display = 'none';
+                    } else {
+                        var map = L.map('mapid', { scrollWheelZoom: false });
+                        // Muted basemap (CARTO Positron) instead of the default colourful OSM
+                        // tiles, to match the edition's restrained palette.
+                        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+                            attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+                            subdomains: 'abcd',
+                            maxZoom: 19
+                        }).addTo(map);
+
+                        var bounds = [];
+                        letterPlaces.forEach(function (p) {
+                            var isSent = p.kind === 'sent';
+                            var marker = L.circleMarker(p.coords, isSent
+                                ? { radius: 8, color: '#143761', weight: 2, fillColor: '#1d4e89', fillOpacity: 0.85 }
+                                : { radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75 }
+                            ).addTo(map).bindPopup((isSent ? 'Sent from: ' : 'Mentioned: ') + p.label);
+                            bounds.push(p.coords);
+                        });
+                        if (bounds.length > 1) {
+                            map.fitBounds(bounds, { padding: [25, 25], maxZoom: 9 });
+                        } else {
+                            map.setView(bounds[0], 8);
+                        }
+                    }
+                </script><script>
+                    // Initialize all tooltips
+                    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+                    new bootstrap.Tooltip(tooltipTriggerEl)
+                    })
+                </script></body>
+</html>

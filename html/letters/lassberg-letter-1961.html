@@ -1,0 +1,213 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0" lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>The Lassberg Letters</title>
+      <link href="../../css/styles.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script><link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"><script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script></head>
+   <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+         <div class="container"><a class="navbar-brand" href="../../index.html">The Laßberg Letters</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link" href="../../index.html">Welcome</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../persons.html">Persons</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../places.html">Places</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../explore.html">Explore</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <header class="page-header py-4">
+         <div class="container">
+            <h1 class="mb-2">Brief von Wilhelm Wackernagel an Joseph von Laßberg (08.01.1838).</h1>
+            <p class="lead mb-0">
+               
+               <p>Textfassung auf Basis der Transkription durch Transkribus korrigiert und in TEI
+                  überführt. Automatisierte NER-Erkennung und Identifikation durch Flair geprüft,
+                  korrigiert und ergänzt. Normalisierung, Zusammenfassung und Übersetzung durch
+                  GPT-4. Lizenz: </p>
+               
+               <a href="https://creativecommons.org/licenses/by/4.0/">CC BY
+                  4.0</a>
+               
+               </p>
+         </div>
+      </header>
+      <main class="py-4">
+         <div class="container">
+            <div class="row g-4">
+               <div class="col-lg-4 order-lg-2">
+                  <aside class="letter-sidebar">
+                     <section id="metadata" class="mb-4">
+                        <h2 class="h5">Metadata</h2>
+                        <p><strong>Signatur: </strong>Basel, Staatsarchiv des Kantons Basel-Stadt, </p>
+                        <p><strong>Registernummer (Laßberg): </strong></p>
+                        <p><strong>Registernummer (Harris): </strong>2595</p>
+                        <p><strong>Gedruck in: </strong><a href=""></a></p>
+                     </section>
+                     <section id="map" class="mb-4">
+                        <h2 class="h5">Places</h2>
+                        <div id="mapid"></div>
+                        <p class="map-legend small text-muted mt-1 mb-0"><span class="legend-dot" style="background:#1d4e89"></span> place of sending
+                           <span class="legend-dot ms-2" style="background:#b57cc0"></span> places mentioned
+                           </p>
+                     </section>
+                     <section id="mentioned" class="mb-4">
+                        <h2 class="h5">Mentioned in this letter</h2>
+                        <h3 class="h6 mt-3">Persons</h3>
+                        <ul class="list-unstyled small mb-2">
+                           <li><a href="../persons.html?q=Karl%20Lachmann">Karl Lachmann</a></li>
+                           <li><a href="../persons.html?q=Caroline%20Luise%20Wackernagel-Bluntschli">Caroline Luise Wackernagel-Bluntschli</a></li>
+                           <li><a href="../persons.html?q=Jenny%20von%20Droste%20zu%20H%C3%BClshoff">Jenny von Droste zu Hülshoff</a></li>
+                        </ul>
+                        <h3 class="h6 mt-3">Places</h3>
+                        <ul class="list-unstyled small mb-2">
+                           <li><a href="../places.html?q=G%C3%B6ttingen">Göttingen</a></li>
+                           <li><a href="../places.html?q=Eppishausen">Eppishausen</a></li>
+                        </ul>
+                        <h3 class="h6 mt-3">Literature</h3>
+                        <ul class="list-unstyled small mb-0">
+                           <li class="mb-1">Willehalm von Orlens <a href="../explore.html?node=lassberg-literature-0119" title="Show in the knowledge graph" class="small">graph</a></li>
+                           <li class="mb-1">Du Cange, Charles Du Fresne Glossarium Ad Scriptores Mediae Et Infimae Latinitatis <a href="../explore.html?node=lassberg-literature-0138" title="Show in the knowledge graph" class="small">graph</a></li>
+                           <li class="mb-1">Deutsches Lesebuch <a href="../explore.html?node=lassberg-literature-0121" title="Show in the knowledge graph" class="small">graph</a></li>
+                        </ul>
+                     </section>
+                  </aside>
+               </div>
+               <div class="col-lg-8 order-lg-1">
+                  <section id="original-text" class="mb-4">
+                     <h2>Original Text
+                        <span class="transcription-source badge-manuscript" title="Diplomatische Transkription der Handschrift">Transcribed from the manuscript (Transkribus)</span></h2>
+                     <div>
+                        
+                        <p><br>Basel
+                           8/1/38 <br>Hochgeehrter Herr Baron, <br>die herzlichsten Glückwünsche zum neuen Jahre Ihnen und den
+                           Ihrigen. <br>Wir
+                           beginnen es besser als unsre Freunde in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Göttingen</strong&gt;">Göttingen<a href="https://www.wikidata.org/wiki/Q3033"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>. Und
+                           doch, ich <br>wüste
+                           nicht ob ich nicht mit ihnen tauschen möchte: man hat gern <br>einmal in seinem
+                           Leben etwas grosses gethan, wenn man auch da <br>für grosses leiden
+                           sollte. <br>Dass
+                           Sie den Druck des <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Weingartner
+                              Codex</span> noch aufschieben möchten, <br>hat mich unbehaglich berührt: ich hatte mich so darauf
+                           gefreut, <br>diese älteste und beste Liederhandschrift sauber ediert bald vor <br>mir liegen zu
+                           haben. Der <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Willehalm&#xA;        von Orlens.</strong&gt;">Wilhelm von
+                              Orleans<a href="https://handschriftencensus.de/werke/323">📖</a></span> besitzt doch nicht <br>den Werth, dass er vor jener den Vorzug verdiente; und mit
+                           dem <br>Frauendienste ist bereits <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Karl Lachmann</strong&gt;">Lachmann<a href="https://d-nb.info/gnd/118568558"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           beschäftigt. <br>Der Basler <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Du Cange Charles Du Fresne&#xA;        Glossarium Ad Scriptores Mediae Et Infimae Latinitatis.</strong&gt;">Du Cange<a href="VD18 12072141-001">📖</a></span>
+                           ist jezt Eigenthum vom Verleger meines Lesebuches; <br>ich kann Ihnen,
+                           wenn Sie michs wollen besorgen lassen, ein Exemplar für <br>16 Schw. Fr.
+                           verschaffen; ein andrer muss etwas mehr zahlen. <br>ich seufze unter dem Druck beider <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wilhelm Wackernagel: Deutsches Lesebuch.</strong&gt;">Theile des
+                              Lesebuches<a href="https://digi.ub.uni-heidelberg.de/diglit/wackernagel1839gahttps://archive.org/details/deutscheslesebu00wackgoog">📖</a></span>: daher die Eilfertigkeit <br>dieses Briefleins. <br>Wie lange werden
+                           Sie noch in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Eppishausen</strong&gt;">Eppishausen<a href="https://www.wikidata.org/wiki/Q1423653"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>
+                           verweilen? Haben Sie bereits ein <br>neues Heimwesen erworben? ich bin begierig zu wissen ob und
+                           wo. <br>Gott behüte
+                           Sie. Meine und <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Caroline Luise Wackernagel-Bluntschli</strong&gt;">meiner
+                              Frau<a href="https://d-nb.info/gnd/113182346X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> beste Empfehlungen an <br>Ihre verehrte Frau <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jenny von Droste zu Hülshoff</strong&gt;">Gemahlinn<a href="https://d-nb.info/gnd/118527541"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> <br>Von Herzen Ihr ergebener <br>Wilh: Wackernagel Dr. </p>
+                        </div>
+                  </section>
+                  <details id="normalised-text" class="text-version mb-4">
+                     <summary>Normalisierter Text</summary>
+                     <div>
+                        
+                        <p>Basel 8/1/38 Hochgeehrter Herr Baron, die herzlichsten Glückwünsche zum neuen
+                           Jahr Ihnen und den Ihrigen. Wir beginnen es besser als unsere Freunde in
+                           Göttingen. Und doch, ich wüsste nicht ob ich nicht mit ihnen tauschen möchte:
+                           man hat gern einmal in seinem Leben etwas Großes getan, wenn man auch da für
+                           Großes leiden sollte. Dass Sie den Druck des Weingartner Codex noch aufschieben
+                           möchten, hat mich unbehaglich berührt: ich hatte mich so darauf gefreut, diese
+                           älteste und beste Liederhandschrift sauber ediert bald vor mir liegen zu haben.
+                           Der Wilhelm von Orleans besitzt doch nicht den Wert, dass er vor jener den
+                           Vorzug verdiente; und mit dem Frauendienste ist bereits Lachmann beschäftigt.
+                           Der Basler Du Cange ist jetzt Eigentum vom Verleger meines Lesebuches; ich kann
+                           Ihnen, wenn Sie mich wollen besorgen lassen, ein Exemplar für 16 Schw. Fr.
+                           verschaffen; ein anderer muss etwas mehr zahlen. ich seufze unter dem Druck
+                           beider Teile des Lesebuches: daher die Eilfertigkeit dieses Briefleins. Wie
+                           lange werden Sie noch in Eppishausen verweilen? Haben Sie bereits ein neues
+                           Heimwesen erworben? ich bin begierig zu wissen ob und wo. Gott behüte Sie. Meine
+                           und meiner Frau beste Empfehlungen an Ihre verehrte Frau Gemahlin Von Herzen Ihr
+                           ergebener Wilh: Wackernagel Dr. </p>
+                        </div>
+                  </details>
+                  <details id="translation" class="text-version mb-4">
+                     <summary>Translation</summary>
+                     <div>
+                        
+                        <p>Basel 8/1/38 Highly esteemed Baron, The warmest congratulations on the new year
+                           to you and your loved ones. We are starting it better than our friends in
+                           Göttingen. And yet, I am not sure if I might not want to trade places with them:
+                           one likes to have done something great once in their life, even if it means to
+                           suffer greatly for it. Your wish to postpone the printing of the Weingartner
+                           Codex affected me uneasily: I was so looking forward to having this oldest and
+                           best song manuscript neatly edited soon before me. Wilhelm von Orleans does not
+                           have the value to deserve precedence over the latter; and with the Frauendienst,
+                           Lachmann is already occupied. The Basel Du Cange is now the property of the
+                           publisher of my reader; I can, if you allow me, procure a copy for 16 Swiss
+                           Francs; another must pay a bit more. I am sighing under the pressure of both
+                           parts of the reader: hence the haste of this little letter. How long will you
+                           remain in Eppishausen? Have you already acquired a new residence? I am eager to
+                           know if and where. God protect you. My and my wife's best regards to your
+                           esteemed wife. Sincerely yours, Wilh: Wackernagel Dr. </p>
+                        </div>
+                  </details>
+                  <div id="related-letters"></div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer class="bg-dark text-white text-center py-3">
+         <div class="container">
+            <p class="mb-0"><a href="../letters.html">Back to the Letters</a></p>
+         </div>
+      </footer><script src="../../js/related.js"></script><script src="https://unpkg.com/leaflet/dist/leaflet.js"></script><script>
+                    var letterPlaces = [];
+                    
+                    letterPlaces.push({ coords: [47.55472222,7.59055556], label: "Basel", kind: "sent" });
+                    
+                    letterPlaces.push({ coords: [51.533889,9.935556], label: "Göttingen", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [47.545,9.23759], label: "Eppishausen", kind: "mentioned" });
+                        
+
+                    if (letterPlaces.length === 0) {
+                        document.getElementById('map').style.display = 'none';
+                    } else {
+                        var map = L.map('mapid', { scrollWheelZoom: false });
+                        // Muted basemap (CARTO Positron) instead of the default colourful OSM
+                        // tiles, to match the edition's restrained palette.
+                        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+                            attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+                            subdomains: 'abcd',
+                            maxZoom: 19
+                        }).addTo(map);
+
+                        var bounds = [];
+                        letterPlaces.forEach(function (p) {
+                            var isSent = p.kind === 'sent';
+                            var marker = L.circleMarker(p.coords, isSent
+                                ? { radius: 8, color: '#143761', weight: 2, fillColor: '#1d4e89', fillOpacity: 0.85 }
+                                : { radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75 }
+                            ).addTo(map).bindPopup((isSent ? 'Sent from: ' : 'Mentioned: ') + p.label);
+                            bounds.push(p.coords);
+                        });
+                        if (bounds.length > 1) {
+                            map.fitBounds(bounds, { padding: [25, 25], maxZoom: 9 });
+                        } else {
+                            map.setView(bounds[0], 8);
+                        }
+                    }
+                </script><script>
+                    // Initialize all tooltips
+                    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+                    new bootstrap.Tooltip(tooltipTriggerEl)
+                    })
+                </script></body>
+</html>

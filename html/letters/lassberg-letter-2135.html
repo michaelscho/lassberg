@@ -1,0 +1,199 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0" lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>The Lassberg Letters</title>
+      <link href="../../css/styles.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script><link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"><script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script></head>
+   <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+         <div class="container"><a class="navbar-brand" href="../../index.html">The Laßberg Letters</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link" href="../../index.html">Welcome</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../persons.html">Persons</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../places.html">Places</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../explore.html">Explore</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <header class="page-header py-4">
+         <div class="container">
+            <h1 class="mb-2">Brief von Joseph von Laßberg an Johann Adam Pupikofer (03.09.1839).</h1>
+            <p class="lead mb-0">
+               
+               <p>Correspondence data based on Harris, Martin: Joseph Maria Christoph
+                  Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                  Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                  geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                  Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.. Briefe
+                  automatisiert mit GPT-3.5 normalisiert.</p>
+               </p>
+         </div>
+      </header>
+      <main class="py-4">
+         <div class="container">
+            <div class="alert alert-warning letter-preview-banner" role="alert"><strong>Unreviewed working text.</strong> The encoding of this letter
+               has not yet been editorially reviewed
+               (status: draft).
+               The text may contain transcription or OCR errors — please cite with caution.
+               </div>
+            <div class="row g-4">
+               <div class="col-lg-4 order-lg-2">
+                  <aside class="letter-sidebar">
+                     <section id="metadata" class="mb-4">
+                        <h2 class="h5">Metadata</h2>
+                        <p><strong>Signatur: </strong>Winterthur, Stadtbibliothek, </p>
+                        <p><strong>Registernummer (Laßberg): </strong>137</p>
+                        <p><strong>Registernummer (Harris): </strong>1060</p>
+                        <p><strong>Gedruck in: </strong><a href="https://books.google.de/books?id=dXkKAAAAIAAJ">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In:
+                              Alemannia 15 (1887), S. 231-88, S. 279</a></p>
+                     </section>
+                     <section id="map" class="mb-4">
+                        <h2 class="h5">Places</h2>
+                        <div id="mapid"></div>
+                        <p class="map-legend small text-muted mt-1 mb-0"><span class="legend-dot" style="background:#1d4e89"></span> place of sending
+                           <span class="legend-dot ms-2" style="background:#b57cc0"></span> places mentioned
+                           </p>
+                     </section>
+                  </aside>
+               </div>
+               <div class="col-lg-8 order-lg-1">
+                  <section id="original-text" class="mb-4">
+                     <h2>Original Text
+                        <span class="transcription-source badge-print" title="OCR-Texterfassung aus der gedruckten Edition, siehe Metadaten/Gedruckt in">Transcribed from the printed edition (OCR)</span></h2>
+                     <div>
+                        
+                        <p><span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Meersburg</strong&gt;">Meersburg<a href="https://www.wikidata.org/wiki/Q498212"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> am 3 September 1839.
+                           Vererter Herr und Freund!
+                           „er lúgt wie ein bott!" ist bei uns Schwaben eine allgemeine spruchwortliche redensart:
+                           sollte sie wol unsern nachbarn im <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Sommeri&#xA;                        (Thurgau)</strong&gt;">Thurgau<a href="https://www.wikidata.org/wiki/Q66641"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> ganz unbekannt sein? wir erwarten die entbindung meiner lieben frau nicht vor Weihnachten;
+                           aber Iren glúkwunsch zu einem iungen sone nemen wir, lieber freund! als ein glúkbringendes
+                           Augurium an, da auch alle übrigen warzeichen bei der gesegneten darauf deuten. In
+                           <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Überlingen</strong&gt;">Überlingen<a href="https://www.wikidata.org/wiki/Q332952"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> musste ich mich mit 14 statt 21 bádern begnügen; weil mein schwager <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Therese Luise von Droste-Hülshoff</strong&gt;">Werner Droste<a href="https://d-nb.info/gnd/117751677"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> frúher als wir in erwarteten, ankam. nach einem aufenthalte von 14 tagen verließ
+                           er uns am lezten mitwoche wieder und ist nun wol zu hause angelangt. In <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Überlingen</strong&gt;">Überlingen<a href="https://www.wikidata.org/wiki/Q332952"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> fand ich eine 10 fuß lange und 13 zoll breite, auf beiden Seiten beschriebene pergamentrolle
+                           des XIII iarh., welche die áltesten Sazungen dieser ehemaligen Reichsstadt enthált.
+                           ich nam sie mit hieher und hatte bereits den achten teil derselben abgeschrieben,
+                           als mir aus einem schweizerischen kloster eine ganze schachtel voll 36 urkunden, meist
+                           aus dem XIII. iarh. mit vielen herrlich erhaltenen siegeln, zukam, die ich nur kurze
+                           zeit behalten darf und folglich mit unterbrechung jeder andern arbeit, alle tage hindurch
+                           abschreiben muß. dies soll mich aber nicht verhindern auf den 17 diesen in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Frauenfeld</strong&gt;">Frauenfeld<a href="https://www.wikidata.org/wiki/Q68120"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, wohin Sie mich citiren, einzufinden; wenn ich námlich gesund und die witterung zu
+                           solcher reise gúnstig genug sein sollte, denn non sum qualis eram, bonae sub regno
+                           <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Cynarae<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>! Mit vergnúgen hatten <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jenny von Droste zu Hülshoff</strong&gt;">Jenny<a href="https://d-nb.info/gnd/118527541"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> und ich gelesen, daß Sie alle glüklich und wol und mit irer kurzen reise zufrieden,
+                           noch am námlichen tage da Sie mich verliessen, wieder bei iren Penaten angekommen
+                           sind: danken Sie in meinem namen Iren lieben kindern für die gute meinung, welche
+                           Sie von den alten Schwaben gewonnen haben: ich habe das mit warer freude gehort; obschon
+                           man auch hier sagen kann: fuimus Troës! Sagen Sie im Scherb'schen hause, nebst vielen
+                           grúßen von uns, daß, wenn sie iren besuch aufsparen wollen, bis <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jenny von Droste zu Hülshoff</strong&gt;">Jenny<a href="https://d-nb.info/gnd/118527541"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> aus den Wochen ist, wir dann keine hofnung hátten sie in diesem iare mer zu sehen
+                           und wir uns noch immer schmeicheln, daß sie den herbst nicht vorüber gehen lassen
+                           werden, one die schwäbischen trauben zu verkosten. ebendasselbe bitte ich auch unserm
+                           guten Imhof, mit nicht weniger herzlichen grúßen auszurichten! Gottlob! sind wir alle
+                           wol und gesund, abgerechnet die gewónlichen gefarlosen úblichkeiten, welche den zustand
+                           meiner lieben frau zu begleiten pflegen. wir alle grúßen Sie und die Irigen viele
+                           male, und hoffen, wenn Scherbs ie kommen sollten, daß es in gesellschaft Irer frau
+                           pfarrerin und kámerin geschehen werde. Nun kere ich wieder zu meinen urkunden. Leben
+                           Sie wol! gott befolen! von Irem
+                           ergebensten <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Joseph von Laßberg</strong&gt;">Joseph v. Laßberg<a href="https://d-nb.info/gnd/118778862"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>.
+                           Recht gerne móchte ich noch vor eintritt des winters 5-10 fåßer wetterkalk von Herren
+                           von <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Muralt<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> beziehen, den betrag dafür wurde ich im bei meinem mandatarius <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">H. Kamênisch<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Guggenbúhl<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> anweisen. der transport konnte úber <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Utwil<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Gúttingen<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> oder <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Bottigkofen<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> geschehen. Sie würden mich verertester freund! durch besorgung dieser angelegenheit
+                           ungemein verbinden; aber es múßte noch binnen wenigen wochen zu stande kommen; spáter
+                           fürchte ich, móchte der aufguß nicht mer gehörig vertroknen.</p>
+                        </div>
+                  </section>
+                  <details id="normalised-text" class="text-version mb-4">
+                     <summary>Normalisierter Text</summary>
+                     <div>
+                        
+                        <p><span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Meersburg</strong&gt;">Meersburg<a href="https://www.wikidata.org/wiki/Q498212"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> am 3. September 1839.
+                           Verehrter Herr und Freund!
+                           "Er lügt wie ein Bote!" ist bei uns Schwaben eine allgemeine sprichwörtliche Redensart.
+                           Sollte sie wohl unseren Nachbarn im <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Sommeri&#xA;                        (Thurgau)</strong&gt;">Thurgau<a href="https://www.wikidata.org/wiki/Q66641"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> ganz unbekannt sein? Wir erwarten die Entbindung meiner lieben Frau nicht vor Weihnachten,
+                           aber Ihren Glückwunsch zu einem jungen Sohn nehmen wir, lieber Freund, als ein glücksbringendes
+                           Omen an, da auch alle übrigen Wahrzeichen bei der gesegneten darauf hindeuten. In
+                           <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Überlingen</strong&gt;">Überlingen<a href="https://www.wikidata.org/wiki/Q332952"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> musste ich mich mit 14 statt 21 Bädern begnügen, weil mein Schwager <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Therese Luise von Droste-Hülshoff</strong&gt;">Werner Droste<a href="https://d-nb.info/gnd/117751677"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> früher als wir erwartet ankam. Nach einem Aufenthalt von 14 Tagen verließ er uns
+                           am letzten Mittwoch wieder und ist nun wohl zu Hause angelangt. In <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Überlingen</strong&gt;">Überlingen<a href="https://www.wikidata.org/wiki/Q332952"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> fand ich eine 10 Fuß lange und 13 Zoll breite, auf beiden Seiten beschriebene Pergamentrolle
+                           des 13. Jahrhunderts, welche die ältesten Satzungen dieser ehemaligen Reichsstadt
+                           enthält. Ich nahm sie mit hierher und hatte bereits den achten Teil derselben abgeschrieben,
+                           als mir aus einem schweizerischen Kloster eine ganze Schachtel voll 36 Urkunden, meistens
+                           aus dem 13. Jahrhundert mit vielen herrlich erhaltenen Siegeln, zukam. Diese darf
+                           ich nur kurze Zeit behalten und folglich mit Unterbrechung jeder anderen Arbeit alle
+                           Tage hindurch abschreiben. Dies soll mich aber nicht hindern, am 17. dieses Monats
+                           in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Frauenfeld</strong&gt;">Frauenfeld<a href="https://www.wikidata.org/wiki/Q68120"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, wohin Sie mich zitieren, einzufinden, wenn ich nämlich gesund bin und das Wetter
+                           für solch eine Reise günstig genug ist, denn non sum qualis eram, bonae sub regno
+                           <span class="rs-misc" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Cynarae</span>! Mit Vergnügen hatten <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jenny von Droste zu Hülshoff</strong&gt;">Jenny<a href="https://d-nb.info/gnd/118527541"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> und ich gelesen, dass Sie alle glücklich und wohl und mit ihrer kurzen Reise zufrieden,
+                           noch am selben Tag, an dem Sie mich verlassen haben, wieder bei ihren Penaten angekommen
+                           sind. Danken Sie in meinem Namen Ihren lieben Kindern für die gute Meinung, die Sie
+                           von den alten Schwaben gewonnen haben. Ich habe das mit wahrer Freude gehört, obschon
+                           man auch hier sagen kann: fuimus Troës! Sagen Sie im Scherb'schen Hause, nebst vielen
+                           Grüßen von uns, dass, wenn sie ihren Besuch aufsparen wollen, bis <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jenny von Droste zu Hülshoff</strong&gt;">Jenny<a href="https://d-nb.info/gnd/118527541"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> aus den Wochen ist, wir dann keine Hoffnung hätten, sie in diesem Jahr noch zu sehen,
+                           und wir uns immer noch schmeicheln, dass sie den Herbst nicht vorübergehen lassen
+                           werden, ohne die schwäbischen Trauben zu verkosten. Ebendasselbe bitte ich auch unserem
+                           guten Imhof auszurichten, mit nicht weniger herzlichen Grüßen! Gottlob, sind wir alle
+                           wohl und gesund, abgerechnet die gewöhnlichen, gefahrlosen Üblichkeiten, welche den
+                           Zustand meiner lieben Frau zu begleiten pflegen. Wir alle grüßen Sie und Ihre Lieben
+                           viele Male und hoffen, wenn Schergs kommen sollten, dass es in Gesellschaft Ihrer
+                           Frau Pfarrerin und Kammerin geschehen wird. Nun kehre ich wieder zu meinen Urkunden
+                           zurück. Leben Sie wohl! Gott befohlen! Von Ihrem ergebensten <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Joseph von Laßberg</strong&gt;">Joseph v. Laßberg<a href="https://d-nb.info/gnd/118778862"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>.
+                           Recht gerne möchte ich noch vor Eintritt des Winters 5-10 Fässer Wetterkalk von Herrn
+                           <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">von Muralt<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> beziehen, den Betrag dafür würde ich bei meinem Mandatarius <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">H. Kamênisch<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Guggenbühl<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> anweisen. Der Transport könnte über <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Utwil<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Güttingen<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> oder <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Bottighofen<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> geschehen. Sie würden mich, verehrtester Freund, durch Besorgung dieser Angelegenheit
+                           ungemein verbinden. Aber es müsste noch innerhalb weniger Wochen zustande kommen,
+                           später fürchte ich, könnte der Aufguss nicht mehr richtig vertrocknen.</p>
+                        </div>
+                  </details>
+                  <div id="related-letters"></div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer class="bg-dark text-white text-center py-3">
+         <div class="container">
+            <p class="mb-0"><a href="../letters.html">Back to the Letters</a></p>
+         </div>
+      </footer><script src="../../js/related.js"></script><script src="https://unpkg.com/leaflet/dist/leaflet.js"></script><script>
+                    var letterPlaces = [];
+                    
+                    letterPlaces.push({ coords: [47.7,9.26666667], label: "Meersburg", kind: "sent" });
+                    
+
+                    if (letterPlaces.length === 0) {
+                        document.getElementById('map').style.display = 'none';
+                    } else {
+                        var map = L.map('mapid', { scrollWheelZoom: false });
+                        // Muted basemap (CARTO Positron) instead of the default colourful OSM
+                        // tiles, to match the edition's restrained palette.
+                        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+                            attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+                            subdomains: 'abcd',
+                            maxZoom: 19
+                        }).addTo(map);
+
+                        var bounds = [];
+                        letterPlaces.forEach(function (p) {
+                            var isSent = p.kind === 'sent';
+                            var marker = L.circleMarker(p.coords, isSent
+                                ? { radius: 8, color: '#143761', weight: 2, fillColor: '#1d4e89', fillOpacity: 0.85 }
+                                : { radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75 }
+                            ).addTo(map).bindPopup((isSent ? 'Sent from: ' : 'Mentioned: ') + p.label);
+                            bounds.push(p.coords);
+                        });
+                        if (bounds.length > 1) {
+                            map.fitBounds(bounds, { padding: [25, 25], maxZoom: 9 });
+                        } else {
+                            map.setView(bounds[0], 8);
+                        }
+                    }
+                </script><script>
+                    // Initialize all tooltips
+                    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+                    new bootstrap.Tooltip(tooltipTriggerEl)
+                    })
+                </script></body>
+</html>

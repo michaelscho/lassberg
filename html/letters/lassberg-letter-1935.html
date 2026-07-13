@@ -1,0 +1,196 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0" lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>The Lassberg Letters</title>
+      <link href="../../css/styles.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script><link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"><script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script></head>
+   <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+         <div class="container"><a class="navbar-brand" href="../../index.html">The Laßberg Letters</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link" href="../../index.html">Welcome</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../persons.html">Persons</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../places.html">Places</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../explore.html">Explore</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <header class="page-header py-4">
+         <div class="container">
+            <h1 class="mb-2">Brief von Joseph von Laßberg an Wilhelm Wackernagel (13.10.1837).</h1>
+            <p class="lead mb-0">
+               
+               <p>Textfassung auf Basis der Transkription durch Transkribus korrigiert und in TEI
+                  überführt. Automatisierte NER-Erkennung und Identifikation durch Flair geprüft,
+                  korrigiert und ergänzt. Normalisierung, Zusammenfassung und Übersetzung durch
+                  GPT-4. Lizenz: </p>
+               
+               <a href="https://creativecommons.org/licenses/by/4.0/">CC BY
+                  4.0</a>
+               
+               </p>
+         </div>
+      </header>
+      <main class="py-4">
+         <div class="container">
+            <div class="row g-4">
+               <div class="col-lg-4 order-lg-2">
+                  <aside class="letter-sidebar">
+                     <section id="metadata" class="mb-4">
+                        <h2 class="h5">Metadata</h2>
+                        <p><strong>Signatur: </strong>Basel, Staatsarchiv des Kantons Basel-Stadt, </p>
+                        <p><strong>Registernummer (Laßberg): </strong>173</p>
+                        <p><strong>Registernummer (Harris): </strong>943</p>
+                        <p><strong>Gedruck in: </strong><a href="-">Wackernagel: Albert Leitzmann, Briefe aus
+                              dem Nachlaß Wilhelm Wackernagels. VI.: Briefe von Joseph von Laßberg.
+                              In: Abhandlungen der phil.-hist. Klasse der Kgl. Sächsischen
+                              Gesellschaft der Wissenschaften 34,1. Leipzig 1916, S. 92-130, S.
+                              114</a></p>
+                     </section>
+                     <section id="map" class="mb-4">
+                        <h2 class="h5">Places</h2>
+                        <div id="mapid"></div>
+                        <p class="map-legend small text-muted mt-1 mb-0"><span class="legend-dot" style="background:#1d4e89"></span> place of sending
+                           <span class="legend-dot ms-2" style="background:#b57cc0"></span> places mentioned
+                           </p>
+                     </section>
+                     <section id="mentioned" class="mb-4">
+                        <h2 class="h5">Mentioned in this letter</h2>
+                        <h3 class="h6 mt-3">Persons</h3>
+                        <ul class="list-unstyled small mb-2">
+                           <li><a href="../persons.html?q=Caroline%20Luise%20Wackernagel-Bluntschli">Caroline Luise Wackernagel-Bluntschli</a></li>
+                           <li><a href="../persons.html?q=Jenny%20von%20Droste%20zu%20H%C3%BClshoff">Jenny von Droste zu Hülshoff</a></li>
+                           <li><a href="../persons.html?q=Johann%20Caspar%20von%20Orelli">Johann Caspar von Orelli</a></li>
+                           <li><a href="../persons.html?q=Lorenz%20Oken">Lorenz Oken</a></li>
+                        </ul>
+                        <h3 class="h6 mt-3">Places</h3>
+                        <ul class="list-unstyled small mb-2">
+                           <li><a href="../places.html?q=Eppishausen">Eppishausen</a></li>
+                           <li><a href="../places.html?q=Z%C3%BCrich">Zürich</a></li>
+                           <li><a href="../places.html?q=St.%20Gallen">St. Gallen</a></li>
+                        </ul>
+                     </section>
+                  </aside>
+               </div>
+               <div class="col-lg-8 order-lg-1">
+                  <section id="original-text" class="mb-4">
+                     <h2>Original Text
+                        <span class="transcription-source badge-manuscript" title="Diplomatische Transkription der Handschrift">Transcribed from the manuscript (Transkribus)</span></h2>
+                     <div>
+                        
+                        <p><br>75 <br>Hochgeerter Herr
+                           Professor! <br>Als
+                           ich vor einiger zeit die nachricht von Irer krankheit erhielt, und wie schwer
+                           und heftig sie <br>seie, da gab ich schon die hofnung auf, Sie im laufe dieses iares noch in der
+                           <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Eppishausen</strong&gt;">villa
+                              Epponis<a href="https://www.wikidata.org/wiki/Q1423653"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> zu <br>sehen: wie ser mussten mich also Ire gestern nachts erhaltenen zeilen von <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Zürich</strong&gt;">Zürich<a href="https://www.wikidata.org/wiki/Q72"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> erfreuen! <br>Sie sind geheilt, und der beste balsam für leib und seele,
+                           ein liebes, frommes, teutsches weib, <br>liegt an Irer brust. kommen Sie also mit Irer <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Caroline Luise Wackernagel-Bluntschli</strong&gt;">geliebten frau<a href="https://d-nb.info/gnd/113182346X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>, und seien Sie <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jenny von Droste zu Hülshoff</strong&gt;">Jenny<a href="https://d-nb.info/gnd/118527541"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           und <br>mir
+                           herzlich willkommen. Sonntag und montag haben wir ein par iunge eheleute aus <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;St. Gallen</strong&gt;">S.
+                              Gallen<a href="https://www.wikidata.org/wiki/Q25607"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> <br>zu
+                           gaste; wenn Sie also nach Irem vorhaben Dienstags kommen; so haben Sie uns dann
+                           <br>ganz allein.
+                           Meine <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jenny von Droste zu Hülshoff</strong&gt;">frau<a href="https://d-nb.info/gnd/118527541"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           grüsset mit mir Sie und die Irige, und damit gott befolen <br>von Irem <br>ergebenen <br>JvLaßberg. <br>Eppishausen am
+                           13ten octobers. morgens 7 ur. <br>1837. <br>Noch eine bitte: grüssen Sie mir auch den guten <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Caspar von Orelli</strong&gt;">Aurelius Tigurinus<a href="https://d-nb.info/gnd/118787179"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>, und den <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Lorenz Oken</strong&gt;">clarus <br> Okenius<a href="https://d-nb.info/gnd/118589717"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>.
+                           </p>
+                        </div>
+                  </section>
+                  <details id="normalised-text" class="text-version mb-4">
+                     <summary>Normalisierter Text</summary>
+                     <div>
+                        
+                        <p>Hochgeehrter Herr Professor! Als ich vor einiger Zeit die Nachricht von Ihrer
+                           Krankheit erhielt, und wie schwer und heftig sie sei, da gab ich schon die
+                           Hoffnung auf, Sie im Laufe dieses Jahres noch in der Villa Epponis zu sehen: wie
+                           sehr mussten mich also Ihre gestern nachts erhaltenen Zeilen von Zürich
+                           erfreuen! Sie sind geheilt, und der beste Balsam für Leib und Seele, ein liebes,
+                           frommes, deutsches Weib, liegt an Ihrer Brust. Kommen Sie also mit Ihrer
+                           geliebten Frau, und seien Sie Jenny und mir herzlich willkommen. Sonntag und
+                           Montag haben wir ein paar junge Eheleute aus St. Gallen zu Gast; wenn Sie also
+                           nach Ihrem Vorhaben dienstags kommen, so haben Sie uns dann ganz allein. Meine
+                           Frau grüßt mit mir Sie und die Ihre, und damit Gott befohlen von Ihrem ergebenen
+                           J. v. Laßberg. Eppishausen am 13. Oktober, morgens 7 Uhr. 1837. Noch eine Bitte:
+                           grüßen Sie mir auch den guten Aurelius Tigurinus und den klaren Okenius.</p>
+                        </div>
+                  </details>
+                  <details id="translation" class="text-version mb-4">
+                     <summary>Translation</summary>
+                     <div>
+                        
+                        <p>Highly esteemed Professor! When I received news some time ago of your illness,
+                           and how severe and intense it was, I had already given up hope of seeing you in
+                           the Epponis villa this year. How delighted I was, then, by the lines from Zurich
+                           that I received from you last night! You are healed, and the best balm for body
+                           and soul, a dear, devout German wife, lies at your breast. So come with your
+                           beloved wife and be warmly welcomed by Jenny and me. Sunday and Monday we have a
+                           couple of young newlyweds from S. Gallen as guests; if you come on Tuesday as
+                           planned, then you will have us all to yourself. My wife and I send our regards
+                           to you and yours, and with that, may God bless you. From your devoted JvLaßberg.
+                           Eppishausen, on October 13th, 7 a.m. 1837. One more request: please also give my
+                           regards to the good Aurelius Tigurinus and the esteemed Okenius.</p>
+                        </div>
+                  </details>
+                  <div id="related-letters"></div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer class="bg-dark text-white text-center py-3">
+         <div class="container">
+            <p class="mb-0"><a href="../letters.html">Back to the Letters</a></p>
+         </div>
+      </footer><script src="../../js/related.js"></script><script src="https://unpkg.com/leaflet/dist/leaflet.js"></script><script>
+                    var letterPlaces = [];
+                    
+                    letterPlaces.push({ coords: [47.545,9.23759], label: "Eppishausen", kind: "sent" });
+                    
+                    letterPlaces.push({ coords: [47.374444,8.541111], label: "Zürich", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [47.42416667,9.37083333], label: "St. Gallen", kind: "mentioned" });
+                        
+
+                    if (letterPlaces.length === 0) {
+                        document.getElementById('map').style.display = 'none';
+                    } else {
+                        var map = L.map('mapid', { scrollWheelZoom: false });
+                        // Muted basemap (CARTO Positron) instead of the default colourful OSM
+                        // tiles, to match the edition's restrained palette.
+                        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+                            attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+                            subdomains: 'abcd',
+                            maxZoom: 19
+                        }).addTo(map);
+
+                        var bounds = [];
+                        letterPlaces.forEach(function (p) {
+                            var isSent = p.kind === 'sent';
+                            var marker = L.circleMarker(p.coords, isSent
+                                ? { radius: 8, color: '#143761', weight: 2, fillColor: '#1d4e89', fillOpacity: 0.85 }
+                                : { radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75 }
+                            ).addTo(map).bindPopup((isSent ? 'Sent from: ' : 'Mentioned: ') + p.label);
+                            bounds.push(p.coords);
+                        });
+                        if (bounds.length > 1) {
+                            map.fitBounds(bounds, { padding: [25, 25], maxZoom: 9 });
+                        } else {
+                            map.setView(bounds[0], 8);
+                        }
+                    }
+                </script><script>
+                    // Initialize all tooltips
+                    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+                    new bootstrap.Tooltip(tooltipTriggerEl)
+                    })
+                </script></body>
+</html>

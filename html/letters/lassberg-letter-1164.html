@@ -1,0 +1,221 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0" lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>The Lassberg Letters</title>
+      <link href="../../css/styles.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script><link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"><script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script></head>
+   <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+         <div class="container"><a class="navbar-brand" href="../../index.html">The Laßberg Letters</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link" href="../../index.html">Welcome</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../persons.html">Persons</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../places.html">Places</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../explore.html">Explore</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <header class="page-header py-4">
+         <div class="container">
+            <h1 class="mb-2">Brief von Johann Adam Pupikofer an Joseph von Laßberg (29.03.1827).</h1>
+            <p class="lead mb-0">
+               
+               <p>Correspondence data based on Harris, Martin: Joseph Maria Christoph
+                  Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                  Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                  geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                  Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.. Briefe
+                  automatisiert mit GPT-3.5 normalisiert.</p>
+               </p>
+         </div>
+      </header>
+      <main class="py-4">
+         <div class="container">
+            <div class="alert alert-warning letter-preview-banner" role="alert"><strong>Unreviewed working text.</strong> The encoding of this letter
+               has not yet been editorially reviewed
+               (status: draft).
+               The text may contain transcription or OCR errors — please cite with caution.
+               </div>
+            <div class="row g-4">
+               <div class="col-lg-4 order-lg-2">
+                  <aside class="letter-sidebar">
+                     <section id="metadata" class="mb-4">
+                        <h2 class="h5">Metadata</h2>
+                        <p><strong>Signatur: </strong>Frauenfeld, Thurgauische Kantonsbibliothek, </p>
+                        <p><strong>Registernummer (Laßberg): </strong>nan</p>
+                        <p><strong>Registernummer (Harris): </strong>2165</p>
+                        <p><strong>Gedruck in: </strong><a href="https://books.google.de/books?id=XWY5AAAAMAAJ">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In:
+                              Alemannia 16 (1888), S.  1-32 und 97-154, S. 9</a></p>
+                     </section>
+                     <section id="map" class="mb-4">
+                        <h2 class="h5">Places</h2>
+                        <div id="mapid"></div>
+                        <p class="map-legend small text-muted mt-1 mb-0"><span class="legend-dot" style="background:#1d4e89"></span> place of sending
+                           <span class="legend-dot ms-2" style="background:#b57cc0"></span> places mentioned
+                           </p>
+                     </section>
+                     <section id="mentioned" class="mb-4">
+                        <h2 class="h5">Mentioned in this letter</h2>
+                        <h3 class="h6 mt-3">Persons</h3>
+                        <ul class="list-unstyled small mb-2">
+                           <li><a href="../persons.html?q=Klingenberg%2C%20Geschlecht">Klingenberg, Geschlecht</a></li>
+                           <li><a href="../persons.html?q=Unbekannt">Unbekannt</a></li>
+                           <li><a href="../persons.html?q=Johann%20Jakob%20Hottinger">Johann Jakob Hottinger</a></li>
+                           <li><a href="../persons.html?q=Johann%20Adam%20Pupikofer">Johann Adam Pupikofer</a></li>
+                        </ul>
+                        <h3 class="h6 mt-3">Places</h3>
+                        <ul class="list-unstyled small mb-2">
+                           <li><a href="../places.html?q=Main">Main</a></li>
+                           <li><a href="../places.html?q=Z%C3%BCrich">Zürich</a></li>
+                           <li><a href="../places.html?q=Bischofszell">Bischofszell</a></li>
+                        </ul>
+                        <h3 class="h6 mt-3">Literature</h3>
+                        <ul class="list-unstyled small mb-0">
+                           <li class="mb-1">Chartarium Dertonense <a href="../explore.html?node=lassberg-literature-0089" title="Show in the knowledge graph" class="small">graph</a></li>
+                           <li class="mb-1">Constanzer Catalog <a href="../explore.html?node=lassberg-literature-0203" title="Show in the knowledge graph" class="small">graph</a></li>
+                           <li class="mb-1">Historisch-Theologischer Grund-Riß Der alt- und jeweiligen Christlichen Welt <a href="../explore.html?node=lassberg-literature-0090" title="Show in the knowledge graph" class="small">graph</a></li>
+                           <li class="mb-1">Helvetia Sancta. <a href="../explore.html?node=lassberg-literature-0056" title="Show in the knowledge graph" class="small">graph</a></li>
+                           <li class="mb-1">Thesaurus monumentorum ecclesiasticorum et historicorum, sive Henrici Canisii lectiones
+                              antiquae. Band: 2,2. <a href="../explore.html?node=lassberg-literature-0063" title="Show in the knowledge graph" class="small">graph</a></li>
+                        </ul>
+                     </section>
+                  </aside>
+               </div>
+               <div class="col-lg-8 order-lg-1">
+                  <section id="original-text" class="mb-4">
+                     <h2>Original Text
+                        <span class="transcription-source badge-print" title="OCR-Texterfassung aus der gedruckten Edition, siehe Metadaten/Gedruckt in">Transcribed from the printed edition (OCR)</span></h2>
+                     <div>
+                        
+                        <p>Hochwohlgeborner, geehrtester Herr und Gönner! Letzten Dienstag war es mir, weil
+                           der Bote so spät kam, unmöglich, auf Ihre freundschaftliche Anfrage zu
+                           antworten; denn die Schulexamen nahmen mich gerade in Anspruch. Mein Katarrh ist
+                           soweit geheilt, daß die Heiserkeit sich verloren hat; aber der Husten ist
+                           zurückgeblieben, und nachdem ich acht Tage lang auf die Heilkraft der Natur
+                           gewartet hatte, mußte ich endlich meine Zuflucht zur Kunst nehmen. Wann ich in
+                           Ihrer gastfreundlichen villa wieder einkehren könne, weiß ich nicht, wohl auch
+                           der Arzt nicht. Die Zeit bringt Rosen, weiße und rothe, wie das Loos fällt, sagt
+                           einer Ihrer Korrespondenten. Sehr vielen Dank für Ihre litterarischen
+                           Mittheilungen! Die grammatischen Streitigkeiten haben mich sehr erlustigt. Aber
+                           sollten unsere <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Klingenberger<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> nicht vom <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Main</strong&gt;">Maine<a href="https://www.wikidata.org/wiki/Q1670"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> her eingewandert sein? die Namen wenigstens finden sich bei den
+                           unsrigen auch: Heinrich, Albert, Walter; doch die Johannes entsprechen nicht.
+                           Das <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ludovico Costa: Chartarium&#xA;        Dertonense.</strong&gt;">Chartarium
+                              Dertonense</span> habe ich noch nicht durchgehen können; nur einen Crivellarius
+                           habe ich bei oberflächlichem Ueberblicke bemerkt; ich wollte lieber, es wäre ein
+                           Crivellinensis. Ich wurde übrigens dadurch erinnert, die Ihnen letzthin gezeigte
+                           <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Urkunde</span> für Sie zu copiren und bitte Sie, sich
+                           gelegentlich an dieselbe zu erinnern, wenn Ihnen vom <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unbekannt</strong&gt;">Dietrich
+                              abbas<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>, oder <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unbekannt</strong&gt;">Henricus
+                              sacerdos<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> oder dessen Vater <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unbekannt</strong&gt;">Azzo<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           etwas vorkommen sollte. Im <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unbekannt: Constanzer Catalog.</strong&gt;">Constanzer
+                              Catalog<a href="-">📖</a></span> (den ich noch einige Tage behalten will) wird der erste Band von
+                           <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Caspar Lang: &#xA;        Historisch-Theologischer Grund-Riß Der alt- und jeweiligen Christlichen Welt.</strong&gt;">Kaspar Langs
+                              Grundriß<a href="VD17 23:294999K">📖</a></span> angeboten; da das Zürch. Exemplar um das doppelte des Anschlags
+                           wegging, und meine Preise nicht zureichten, werden Sie wohl dieses Bruchstück
+                           nicht verschmähen, da der erste Band die Hauptsache enthält, der zweite hingegen
+                           für uns ohne Werth, mit lauter dogmatischen Disputationen angefüllt ist, die <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Jakob Hottinger</strong&gt;">Hottinger<a href="https://d-nb.info/gnd/117013463"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> zu widerlegen die Mühe genommen hat.  <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Murer, Heinrich: Helvetia Sancta.</strong&gt;">Murers
+                              Helvetia<a href="VD17 12:118604L">📖</a></span> s. stieg in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Zürich</strong&gt;">Zürich<a href="https://www.wikidata.org/wiki/Q72"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> über das
+                           Doppelte des Anschlags. Die künftige Woche sollte ich den <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jacques Basnage; Heinrich Canisius: Thesaurus monumentorum ecclesiasticorum et historicorum,&#xA;        sive Henrici Canisii lectiones antiquae. Band: 2,2.</strong&gt;">Canisius<a href="https://gateway-bayern.de/BV011139785https://archive.org/details/thesaurusmonumentorumeccles2b">📖</a></span>
+                           wieder zurücksenden; wollen Sie denselben länger behalten, so will ich in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Zürich</strong&gt;">Zürich<a href="https://www.wikidata.org/wiki/Q72"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> Anzeige machen, damit keine Mahnung komme. Mit unveränderlicher
+                           Hochachtung und Ergebenheit Ihr Diac. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Adam Pupikofer</strong&gt;">Pupikofer<a href="https://d-nb.info/gnd/11565108X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>. <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Bischofszell</strong&gt;">Bischofzell<a href="https://www.wikidata.org/wiki/Q64865"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, den
+                           29. März 1827.</p>
+                        </div>
+                  </section>
+                  <details id="normalised-text" class="text-version mb-4">
+                     <summary>Normalisierter Text</summary>
+                     <div>
+                        
+                        <p>Hochwohlgeborener, geehrtester Herr und Gönner! Letzten Dienstag war es mir, weil
+                           der Bote so spät kam, unmöglich, auf Ihre freundschaftliche Anfrage zu
+                           antworten; denn die Schulexamen nahmen mich gerade in Anspruch. Mein Katarrh ist
+                           soweit geheilt, dass die Heiserkeit sich verloren hat; aber der Husten ist
+                           zurückgeblieben, und nachdem ich acht Tage lang auf die Heilkraft der Natur
+                           gewartet hatte, musste ich endlich meine Zuflucht zur Kunst nehmen. Wann ich in
+                           Ihrer gastfreundlichen Villa wieder einkehren könnte, weiß ich nicht, wohl auch
+                           der Arzt nicht. Die Zeit bringt Rosen, weiße und rote, wie das Los fällt, sagt
+                           einer Ihrer Korrespondenten. Sehr vielen Dank für Ihre literarischen
+                           Mitteilungen! Die grammatischen Streitigkeiten haben mich sehr erlustigt. Aber
+                           sollten unsere Klingenberger nicht vom Maine her eingewandert sein? Die Namen
+                           wenigstens finden sich bei den unseren auch: Heinrich, Albert, Walter; doch die
+                           Johannes entsprechen nicht. Das Chartarium Dertonense habe ich noch nicht
+                           durchgehen können; nur einen Crivellarius habe ich bei oberflächlichem Überblick
+                           bemerkt; ich wollte lieber, es wäre ein Crivellinensis. Ich wurde übrigens
+                           dadurch erinnert, die Ihnen letzthin gezeigte Urkunde für Sie zu kopieren und
+                           bitte Sie, sich gelegentlich an dieselbe zu erinnern, wenn Ihnen vom Dietrich
+                           abbas, oder Henricus sacerdos oder dessen Vater Azzo etwas vorkommen sollte. Im
+                           Constanzer Catalog (den ich noch einige Tage behalten will) wird der erste Band
+                           von Kaspar Langs Grundriss angeboten; da das Zürich. Exemplar um das doppelte
+                           des Anschlags wegging, und meine Preise nicht zureichten, werden Sie wohl dieses
+                           Bruchstück nicht verschmähen, da der erste Band die Hauptsache enthält, der
+                           zweite hingegen für uns ohne Wert, mit lauter dogmatischen Disputationen
+                           angefüllt ist, die Hottinger zu widerlegen die Mühe genommen hat. Murers
+                           Helvetia s. stieg in Zürich über das Doppelte des Anschlags. Die künftige Woche
+                           sollte ich den Canisius wieder zurücksenden; wollen Sie denselben länger
+                           behalten, so will ich in Zürich Anzeige machen, damit keine Mahnung komme. Mit
+                           unveränderlicher Hochachtung und Ergebenheit Ihr Diac. Pupikofer. Bischofzell,
+                           den 29. März 1827.</p>
+                        </div>
+                  </details>
+                  <div id="related-letters"></div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer class="bg-dark text-white text-center py-3">
+         <div class="container">
+            <p class="mb-0"><a href="../letters.html">Back to the Letters</a></p>
+         </div>
+      </footer><script src="../../js/related.js"></script><script src="https://unpkg.com/leaflet/dist/leaflet.js"></script><script>
+                    var letterPlaces = [];
+                    
+                    letterPlaces.push({ coords: [47.5,9.23333333], label: "Bischofszell", kind: "sent" });
+                    
+                    letterPlaces.push({ coords: [49.994444444444, 8.2933333333333], label: "Main", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [47.374444,8.541111], label: "Zürich", kind: "mentioned" });
+                        
+
+                    if (letterPlaces.length === 0) {
+                        document.getElementById('map').style.display = 'none';
+                    } else {
+                        var map = L.map('mapid', { scrollWheelZoom: false });
+                        // Muted basemap (CARTO Positron) instead of the default colourful OSM
+                        // tiles, to match the edition's restrained palette.
+                        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+                            attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+                            subdomains: 'abcd',
+                            maxZoom: 19
+                        }).addTo(map);
+
+                        var bounds = [];
+                        letterPlaces.forEach(function (p) {
+                            var isSent = p.kind === 'sent';
+                            var marker = L.circleMarker(p.coords, isSent
+                                ? { radius: 8, color: '#143761', weight: 2, fillColor: '#1d4e89', fillOpacity: 0.85 }
+                                : { radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75 }
+                            ).addTo(map).bindPopup((isSent ? 'Sent from: ' : 'Mentioned: ') + p.label);
+                            bounds.push(p.coords);
+                        });
+                        if (bounds.length > 1) {
+                            map.fitBounds(bounds, { padding: [25, 25], maxZoom: 9 });
+                        } else {
+                            map.setView(bounds[0], 8);
+                        }
+                    }
+                </script><script>
+                    // Initialize all tooltips
+                    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+                    new bootstrap.Tooltip(tooltipTriggerEl)
+                    })
+                </script></body>
+</html>

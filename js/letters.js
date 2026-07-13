@@ -29,63 +29,18 @@ document.addEventListener('DOMContentLoaded', function () {
     $('#filter-place').on('keyup', function () { table.column(5).search(this.value).draw(); });
     $('#filter-provenance').on('keyup', function () { table.column(6).search(this.value).draw(); }); // This filter is now active
 
-    $('#filterCheckbox').on('change', function () {
-        if (this.checked) {
-            $.fn.dataTable.ext.search.push((settings, data, dataIndex) => {
-                return $(table.row(dataIndex).node()).attr('data-status') === 'online';
-            });
-        } else {
-            $.fn.dataTable.ext.search.pop();
-        }
-        table.draw();
-    });
+    // Status filters (docs/TEI.md "Letter status model"): data-status carries the register's
+    // @change value — in_register | preview_{print,transcription} | online_{print,transcription}.
+    // "With full text online" = preview_* or online_*; "Reviewed editions only" = online_*.
+    const statusFilter = (settings, data, dataIndex) => {
+        const status = $(table.row(dataIndex).node()).attr('data-status') || '';
+        if ($('#filterReviewed').is(':checked')) return status.startsWith('online');
+        if ($('#filterFulltext').is(':checked')) return status.startsWith('online') || status.startsWith('preview');
+        return true;
+    };
+    $.fn.dataTable.ext.search.push(statusFilter);
+    $('#filterFulltext, #filterReviewed').on('change', () => table.draw());
 
-    // EVENT LISTENER FOR EXPAND/COLLAPSE
-    $('#letter-table tbody').on('click', 'td.dt-control', async function (event) {
-        event.stopPropagation();
-        const tr = $(this).closest('tr');
-        const row = table.row(tr);
-        const icon = tr.find('td.dt-control i');
-
-        if (row.child.isShown()) {
-            row.child.hide();
-            tr.removeClass('dt-hasChild');
-            icon.removeClass('bi-dash-lg').addClass('bi-plus-lg');
-        } else {
-            tr.addClass('dt-hasChild');
-            icon.removeClass('bi-plus-lg').addClass('bi-dash-lg');
-            
-            row.child('<div><span class="spinner-border spinner-border-sm"></span> Loading details...</div>').show();
-
-            const letterKey = tr.data('key');
-            try {
-                const detailsHtml = await getFormattedDetails(letterKey, tr.data());
-                row.child(detailsHtml).show();
-            } catch (error) {
-                row.child('<div class="text-danger p-3">Could not load letter details.</div>').show();
-                console.error("Error fetching letter details:", error);
-            }
-        }
-    });
-
-    // HELPER FUNCTIONS
-    const detailsCache = new Map();
-
-    async function getFormattedDetails(key, rowData) {
-    if (detailsCache.has(key)) return detailsCache.get(key);
-
-    // Use pre-rendered HTML from XSLT
-    const tpl = document.getElementById(`details-${key}`);
-    if (tpl) {
-        const html = tpl.innerHTML;   
-        detailsCache.set(key, html);
-        return html;
-    }
-
-    // show a message if template is missing
-    const html = '<div class="text-muted p-3">No details available.</div>';
-    detailsCache.set(key, html);
-    return html;
-}
-
+    initExpandableRows(table, '#letter-table');
+    applyDeepLinkSearch(table);
 });
