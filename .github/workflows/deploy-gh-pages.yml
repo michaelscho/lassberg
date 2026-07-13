@@ -1,0 +1,55 @@
+name: Deploy site to gh-pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'index.html'
+      - 'css/**'
+      - 'js/**'
+      - 'html/**'
+      - 'json/**'
+      - 'img/**'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          path: main
+
+      - name: Checkout gh-pages
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: gh-pages
+
+      # Mirrors only the published-site directories into gh-pages, leaving
+      # branch-only files (README.md, CNAME, docs/, analysis/) untouched.
+      - name: Sync site files
+        run: |
+          rsync -a main/index.html gh-pages/index.html
+          rsync -a --delete main/css/ gh-pages/css/
+          rsync -a --delete main/js/ gh-pages/js/
+          rsync -a --delete main/html/ gh-pages/html/
+          rsync -a --delete main/json/ gh-pages/json/
+          rsync -a --delete main/img/ gh-pages/img/
+
+      - name: Commit and push
+        working-directory: gh-pages
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No site changes to publish."
+            exit 0
+          fi
+          git commit -m "Deploy site from ${{ github.sha }}"
+          git push origin gh-pages
