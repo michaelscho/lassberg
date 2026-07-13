@@ -45,8 +45,9 @@ Registers actually parsed (lassberg-objects.xml is intentionally ignored, per CL
   - lassberg-literature.xml: <bibl xml:id=... type="contemporaryPublication|historicalSource|unknown">
   - lassberg-manuscripts.xml:<witness xml:id=... type="manuscript|print" corresp="...literature...">
 
-`<revisionDesc>` presence = manual-markup indicator (docs/TEI.md); its absence means a raw,
-pipeline-only letter (many empty rs/@key="").
+Letter status = the latest `revisionDesc//change/@status` (draft|done|reviewed|published, see
+docs/TEI.md "Letter status model" and scripts/sync_letter_status.py). "draft" letters typically
+still have empty rs/@key="" placeholders.
 
 File selection: `data/letters/lassberg-letter-*.xml`, excluding anything with "_old" in the name
 (3 such files exist) and non-letter files that happen to live in the same directory.
@@ -377,7 +378,7 @@ def parse_overall_register(path: Path, warnings: Warnings) -> dict:
             "id": letter_id,
             "sent": parse_corresp_action(sent_action),
             "received": parse_corresp_action(recv_action),
-            "publication_status": cd.get("change"),  # in_register|in_oxygen_done|online
+            "publication_status": cd.get("change"),  # in_register|preview_{print,transcription}|online_{print,transcription}
             "register_meta": parse_register_notes(cd, letter_id, warnings),
         }
     return letters
@@ -447,8 +448,11 @@ def parse_mentions(corresp_desc: etree._Element | None) -> dict:
 
 
 def letter_status(tree_root: etree._Element) -> str:
-    revision = tree_root.find(f".//{tei('revisionDesc')}")
-    return "reviewed" if revision is not None else "raw"
+    """Latest revisionDesc change/@status: draft|done|reviewed|published (docs/TEI.md,
+    "Letter status model"). Falls back to "draft" for files without a revisionDesc - those
+    should not exist anymore (scripts/sync_letter_status.py flags them as a conflict)."""
+    changes = tree_root.findall(f".//{tei('revisionDesc')}//{tei('change')}")
+    return changes[-1].get("status") or "draft" if changes else "draft"
 
 
 def parse_letter_file(path: Path, warnings: Warnings) -> dict:
@@ -498,10 +502,10 @@ def parse_letter_file(path: Path, warnings: Warnings) -> dict:
     status = letter_status(root)
 
     # rs-key sanity check against note[type=mentioned] (docs/TEI.md, Phase 1 step 4). Only
-    # meaningful for "reviewed" letters: "raw" letters have <note type="mentioned"> still as a
-    # commented-out placeholder template by design, so a mismatch there is expected noise, not a
-    # data issue - checking anyway would flood warnings.log with ~85 non-actionable entries.
-    if status == "reviewed":
+    # meaningful once the markup is finished: "draft" letters have <note type="mentioned"> still
+    # as a commented-out placeholder template by design, so a mismatch there is expected noise,
+    # not a data issue - checking anyway would flood warnings.log with non-actionable entries.
+    if status in ("done", "reviewed", "published"):
         all_mentioned_ids = set(mentions["persons"]) | set(mentions["places"]) | set(mentions["works"]) | set(mentions["witnesses"])
         stray_rs = rs_keys - all_mentioned_ids
         if stray_rs:

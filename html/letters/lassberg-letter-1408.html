@@ -1,0 +1,306 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0" lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>The Lassberg Letters</title>
+      <link href="../../css/styles.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script><link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"><script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script></head>
+   <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+         <div class="container"><a class="navbar-brand" href="../../index.html">The Laßberg Letters</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link" href="../../index.html">Welcome</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../persons.html">Persons</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../places.html">Places</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../explore.html">Explore</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <header class="page-header py-4">
+         <div class="container">
+            <h1 class="mb-2">Brief von Joseph von Laßberg an Johann Adam Pupikofer (05.02.1830).</h1>
+            <p class="lead mb-0">
+               
+               <p>Correspondence data based on Harris, Martin: Joseph Maria Christoph
+                  Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                  Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                  geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                  Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.. Briefe
+                  automatisiert mit GPT-3.5 normalisiert.</p>
+               </p>
+         </div>
+      </header>
+      <main class="py-4">
+         <div class="container">
+            <div class="alert alert-warning letter-preview-banner" role="alert"><strong>Unreviewed working text.</strong> The encoding of this letter
+               has not yet been editorially reviewed
+               (status: draft).
+               The text may contain transcription or OCR errors — please cite with caution.
+               </div>
+            <div class="row g-4">
+               <div class="col-lg-4 order-lg-2">
+                  <aside class="letter-sidebar">
+                     <section id="metadata" class="mb-4">
+                        <h2 class="h5">Metadata</h2>
+                        <p><strong>Signatur: </strong>Winterthur, Stadtbibliothek, Ms BRH 46/5</p>
+                        <p><strong>Registernummer (Laßberg): </strong>54</p>
+                        <p><strong>Registernummer (Harris): </strong>701</p>
+                        <p><strong>Gedruck in: </strong><a href="https://books.google.de/books?id=dXkKAAAAIAAJ">Johannes Meyer, Briefwechsel zwischen J.
+                              von Laszberg und Johann Adam Pupikofer. In: Alemannia 15 (1887), S.
+                              231-88, S.
+                              251</a></p>
+                     </section>
+                     <section id="map" class="mb-4">
+                        <h2 class="h5">Places</h2>
+                        <div id="mapid"></div>
+                        <p class="map-legend small text-muted mt-1 mb-0"><span class="legend-dot" style="background:#1d4e89"></span> place of sending
+                           <span class="legend-dot ms-2" style="background:#b57cc0"></span> places mentioned
+                           </p>
+                     </section>
+                     <section id="mentioned" class="mb-4">
+                        <h2 class="h5">Mentioned in this letter</h2>
+                        <h3 class="h6 mt-3">Persons</h3>
+                        <ul class="list-unstyled small mb-2">
+                           <li><a href="../persons.html?q=Agatha%20%28Heilige%29">Agatha (Heilige)</a></li>
+                           <li><a href="../persons.html?q=Unbekannt">Unbekannt</a></li>
+                           <li><a href="../persons.html?q=Gregor%20von%20Einsiedeln">Gregor von Einsiedeln</a></li>
+                           <li><a href="../persons.html?q=August%20von%20Gonzenbach">August von Gonzenbach</a></li>
+                           <li><a href="../persons.html?q=Ildefons%20von%20Arx">Ildefons von Arx</a></li>
+                           <li><a href="../persons.html?q=Anton%20Henne">Anton Henne</a></li>
+                           <li><a href="../persons.html?q=Franz%20Joseph%20Stalder">Franz Joseph Stalder</a></li>
+                           <li><a href="../persons.html?q=Heinrich%20Remigius%20Sauerl%C3%A4nder">Heinrich Remigius Sauerländer</a></li>
+                           <li><a href="../persons.html?q=Johann%20Daniel%20Wilhelm%20Hartmann">Johann Daniel Wilhelm Hartmann</a></li>
+                           <li><a href="../persons.html?q=Joseph%20von%20La%C3%9Fberg">Joseph von Laßberg</a></li>
+                        </ul>
+                        <h3 class="h6 mt-3">Places</h3>
+                        <ul class="list-unstyled small mb-2">
+                           <li><a href="../places.html?q=Eppishausen">Eppishausen</a></li>
+                           <li><a href="../places.html?q=Bodensee">Bodensee</a></li>
+                           <li><a href="../places.html?q=Schwaben">Schwaben</a></li>
+                           <li><a href="../places.html?q=G%C3%BCttingen">Güttingen</a></li>
+                           <li><a href="../places.html?q=Altenau">Altenau</a></li>
+                           <li><a href="../places.html?q=Bischofszell">Bischofszell</a></li>
+                           <li><a href="../places.html?q=Steckborn">Steckborn</a></li>
+                           <li><a href="../places.html?q=N%C3%BCrnberg">Nürnberg</a></li>
+                           <li><a href="../places.html?q=M%C3%BCnsterlingen">Münsterlingen</a></li>
+                           <li><a href="../places.html?q=Donau">Donau</a></li>
+                           <li><a href="../places.html?q=Rhein">Rhein</a></li>
+                           <li><a href="../places.html?q=B%C3%BCrglen%20%28TG%29">Bürglen (TG)</a></li>
+                           <li><a href="../places.html?q=Sulgen">Sulgen</a></li>
+                           <li><a href="../places.html?q=Thurgau">Thurgau</a></li>
+                           <li><a href="../places.html?q=Frauenfeld">Frauenfeld</a></li>
+                        </ul>
+                        <h3 class="h6 mt-3">Literature</h3>
+                        <ul class="list-unstyled small mb-0">
+                           <li class="mb-1">Schweizerisches Idiotikon: mit etymologischen Bemerkungen untermischt : samt einem
+                              Anhange der verkürzten Taufnamen <a href="../explore.html?node=lassberg-literature-0087" title="Show in the knowledge graph" class="small">graph</a></li>
+                           <li class="mb-1">Helvetia: Denkwürdigkeiten für die XXII Freistaaten der Schweizerischen Eidgenossenschaft <a href="../explore.html?node=lassberg-literature-0065" title="Show in the knowledge graph" class="small">graph</a></li>
+                           <li class="mb-1">Tübinger Katalog <a href="../explore.html?node=lassberg-literature-0208" title="Show in the knowledge graph" class="small">graph</a></li>
+                        </ul>
+                     </section>
+                  </aside>
+               </div>
+               <div class="col-lg-8 order-lg-1">
+                  <section id="original-text" class="mb-4">
+                     <h2>Original Text
+                        <span class="transcription-source badge-manuscript" title="Diplomatische Transkription der Handschrift">Transcribed from the manuscript (Transkribus)</span></h2>
+                     <div>
+                        
+                        <p><span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Eppishausen</strong&gt;">E.<a href="https://www.wikidata.org/wiki/Q1423653"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> an St. Agatha Tag 1830. "Mentem sanctam spontaneam, honorem Deo "et
+                           patriae librationem dedit sancta <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Agatha (Heilige)</strong&gt;">Agatha<a href="https://d-nb.info/gnd/118647229"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>."
+                           Kommen Sie, wir wollen mit einander den gefrorenen <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Bodensee</strong&gt;">Bodensee<a href="https://www.wikidata.org/wiki/Q4127"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, und all
+                           das teufelszeug, was die <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Schwaben</strong&gt;">Schwaben<a href="https://www.wikidata.org/wiki/Q11812551"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> und die
+                           Schweizer darauf treiben, anschauen und im schlitten nach <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Güttingen</strong&gt;">Güttingen<a href="https://www.wikidata.org/wiki/Q66317"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Altenau</strong&gt;">altnau<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>: oder wo sie wollen, hinfaren, wollen Sie weib und kind mit nemen;
+                           so schike ich Inen den schlitten nach der <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Bischofszell</strong&gt;">episcopalis
+                              cella<a href="https://www.wikidata.org/wiki/Q64865"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>. Was sagen sie dazu? mir ist es ser zweifelhaft, ob wir diese
+                           ereignisse zum zweiten male erleben werden? und so denke ich, man solle die
+                           gelegenheit beim Schopfe ergreiffen; denn bis montag oder dienstag fürchte ich
+                           thauwetter. Daß Sie den guten Leuten von <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Steckborn</strong&gt;">Stekeboron<a href="https://www.wikidata.org/wiki/Q67123"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> jr
+                           recht angetan haben, bezeuge ich anmit sub fide archivali, und zwar mit dem
+                           beisaze, daß Sie Inen eher zu wenig als zuviel getan haben. Wenn Sie damit
+                           fertig sind, so lassen sie mich den curiösen tändelmarkt von <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Nürnberg </strong&gt;">Nürnberg<a href="https://www.wikidata.org/wiki/Q2090"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> auch
+                           lesen. Wenn <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unbekannt</strong&gt;">Angela<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           die tochter <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unbekannt</strong&gt;">Eduards<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           und schwester abt <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Gregor von Einsiedeln</strong&gt;">Gregors von
+                              Einsiedeln<a href="https://d-nb.info/gnd/119469790"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> jezt über den <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Bodensee</strong&gt;">Bodensee<a href="https://www.wikidata.org/wiki/Q4127"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> reisen
+                           wollte; so hätte sie vor windstürmen wenig zu befürchten, ich habe eine hübsche
+                           gemalte scheibe von dieser Stiftung von <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Münsterlingen</strong&gt;">Münsterlingen<a href="https://www.wikidata.org/wiki/Q69233"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>;
+                           Sie sollten dieselbe wol in eine Ballade fassen, die legende ließ manche
+                           naturschilderung zu. Ia wol ist es eine grimme Kälte und dazu noch immer im
+                           wachsen; mein Thermometer stehet heute einen ganzen grad tiefer als gestern.
+                           Meine furcht vor der nachlässigkeit des Hr. Stadtschreiber <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;August von Gonzenbach</strong&gt;">Gonzenbach<a href="https://d-nb.info/gnd/116772913"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>, war nicht ungegründet; denn bei nur flüch tigem durchblättern
+                           habe ich schon entdekt, daß er die zum XI. Band gehörigen Kupfer in den II.
+                           eingebunden hat. umso ärgerlicher für mich, als ich mir vorher die mühe gegeben
+                           hatte, Band für Band zu collationiren und zurecht zu legen maladetta bestia! Wie
+                           ich anneme, sind auch in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Schwaben</strong&gt;">Schwaben<a href="https://www.wikidata.org/wiki/Q11812551"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> alle
+                           See'en zugefroren und <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Donau</strong&gt;">Donau<a href="https://www.wikidata.org/wiki/Q31970682"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> und <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Rhein</strong&gt;">Rhein<a href="https://www.wikidata.org/wiki/Q584"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>; wie werden die fische über nez und angel spotten! über reussen und
+                           fischer. Nun meln Freund! wenn man, one gott zu versuchen, bei dieser kälte nach
+                           <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Bürglen (TG)</strong&gt;">Bürgeln<a href="https://www.wikidata.org/wiki/Q65599"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> und <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Sulgen</strong&gt;">Sulgen<a href="https://www.wikidata.org/wiki/Q65971"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> faren
+                           kann, so kann mans auch nach <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Eppishausen</strong&gt;">Eppishausen<a href="https://www.wikidata.org/wiki/Q1423653"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> und
+                           die frau pfarrerin kann eben so gut hieher als dorthin kommen: freilich kann ich
+                           armer celibataire Inen keinen kindtaufsschmaus anbieten, aber eine Flasche alten
+                           erwärmenden Rheinwein, so gut als einer im <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Thurgau</strong&gt;">Thurgau<a href="https://www.wikidata.org/wiki/Q12713"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> liegt.
+                           Ich schrieb in meiner angst um den guten <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ildefons von Arx</strong&gt;">arxius<a href="https://d-nb.info/gnd/116353740"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           an den H. archivar <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Anton Henne</strong&gt;">Henne<a href="https://d-nb.info/gnd/118886649"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           mit der Bitte um nachricht von dem befinden meines lieben freundes: statt dessen
+                           schreibt er mir einen brief voll von lauter hors d'oevres zurük und ich weiss
+                           bloss, daß <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ildefons von Arx</strong&gt;">Arx<a href="https://d-nb.info/gnd/116353740"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> noch
+                           nicht begraben ist. Es giebt leute, die in einer ewigen kindheit bleiben. Mein
+                           correspondent von <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Frauenfeld</strong&gt;">frauenfeld<a href="https://www.wikidata.org/wiki/Q68120"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>
+                           schreibt mir kein wort von dem kriege seiner päpstlichen heiligkeit mit dem
+                           könige beider sicillen. Ich will doch nicht hoffen, daß die alte zeller
+                           geschichte wieder zum vorschein kommt; das wäre ja über das troyanische roß. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Franz Joseph Stalder</strong&gt;">Stalderus Beronensis<a href="https://d-nb.info/gnd/11720613X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> hat mir auch einen langen brief geschrieben über eine
+                           neue ausgabe seines <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Franz Joseph Stalder: Schweizerisches&#xA;        Idiotikon: mit etymologischen Bemerkungen untermischt : samt einem Anhange der verkürzten&#xA;        Taufnamen.</strong&gt;">Idiotikons</span>. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Heinrich Remigius Sauerländer</strong&gt;">Sauerländer<a href="https://d-nb.info/gnd/119138425"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> hat noch 300 exemplare der ersten ausgabe auf dem laden
+                           liegen; will sich aber zu einer neuen auflage in 1 quartbande verstehen. Wenn
+                           die 12 Bouteillen vom besten Steckborer wein angekommen sind, so lassen Sie
+                           michs doch auch wissen, damit ich der Weinprobe als alter weinschwelg beiwonen
+                           kann. Die siegel und wappen des H. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Daniel Wilhelm Hartmann</strong&gt;">Hartmann<a href="https://d-nb.info/gnd/10058019X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           habe ich noch bei handen und wünschte ser in Irer Anschauung darüber mit Inen zu
+                           sprechen. Es kommt auch die beinahe vergessene <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Balthasar, Joseph Anton von: Helvetia: Denkwürdigkeiten für die XXII Freistaaten der Schweizerischen&#xA;        Eidgenossenschaft.</strong&gt;">Helvetia<a href="https://swisscollections.ch/Record/991086841629705501">📖</a></span>
+                           dießmal endlich zurük. Ich sende Inen auch einen <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unbekannt: Tübinger Katalog.</strong&gt;">Tübinger
+                              Katalog<a href="-">📖</a></span> ad statum legendi: doch nur auf 8 tage, indem ich selbet einige
+                           bestellungen zu machen denke. gefällt Inen einiges daraus, so will ich es gerne
+                           mit dem meinigen verschreiben. Ich habe eine gute warme stube und ein noch
+                           wärmeres herz für meine freunde. Tu autem vale et me amare perge <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Joseph von Laßberg</strong&gt;">Laßberg<a href="https://d-nb.info/gnd/118778862"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>. </p>
+                        </div>
+                  </section>
+                  <details id="normalised-text" class="text-version mb-4">
+                     <summary>Normalisierter Text</summary>
+                     <div>
+                        
+                        <p> E. an St. Agatha Tag 1830. "Mentem sanctam spontaneam, honorem Deo et patriae
+                           librationem dedit sancta Agatha." Kommen Sie, wir wollen miteinander den
+                           gefrorenen Bodensee und all das Teufelszeug, was die Schwaben und die Schweizer
+                           darauf treiben, anschauen und im Schlitten nach Güttingen, Altnau: oder wo sie
+                           wollen, hinfahren. Wollen Sie Frau und Kind mitnehmen, so schicke ich Ihnen den
+                           Schlitten nach der episcopalis cella. Was sagen sie dazu? Mir ist es sehr
+                           zweifelhaft, ob wir diese Ereignisse zum zweiten Male erleben werden, und so
+                           denke ich, man solle die Gelegenheit beim Schopfe ergreifen; denn bis Montag
+                           oder Dienstag fürchte ich Tauwetter. Dass Sie den guten Leuten von Steckborn Ihr
+                           Recht angetan haben, bezeuge ich anmit sub fide archivali, und zwar mit dem
+                           Beisatz, dass Sie Ihnen eher zu wenig als zu viel getan haben. Wenn Sie damit
+                           fertig sind, so lassen Sie mich den kuriosen Tändelmarkt von Nürnberg auch
+                           lesen. Wenn Angela, die Tochter Eduards und Schwester Abt Gregors von
+                           Einsiedeln, jetzt über den Bodensee reisen wollte, so hatte sie vor Windstürmen
+                           wenig zu befürchten. Ich habe eine hübsche gemalte Scheibe von dieser Stiftung
+                           von Münsterlingen; Sie sollten dieselbe wohl in eine Ballade fassen, die Legende
+                           ließ manche Naturschilderung zu. Ja wohl, ist es eine grimme Kälte und dazu noch
+                           immer im Wachsen; mein Thermometer steht heute einen ganzen Grad tiefer als
+                           gestern. Meine Furcht vor der Nachlässigkeit des Herrn Stadtschreiber Gonzenbach
+                           war nicht ungegründet; denn bei nur flüchtigem Durchblättern habe ich schon
+                           entdeckt, dass er die zum 11. Band gehörigen Kupfer in den 2. eingebunden hat.
+                           Umso ärgerlicher für mich, als ich mir vorher die Mühe gegeben hatte, Band für
+                           Band zu kollationieren und zurecht zu legen. Maladetta bestia! Wie ich annehme,
+                           sind auch in Schwaben alle Seen zugefroren und Donau und Rhein; wie werden die
+                           Fische über Nase und Angel spotten! Über Reussen und Fischer. Nun mein Freund!
+                           Wenn man, ohne Gott zu versuchen, bei dieser Kälte nach Bürglen und Sulgen
+                           fahren kann, so kann man es auch nach Eppishausen und die Frau Pfarrerin kann
+                           ebenso gut hierher als dorthin kommen. Freilich kann ich, armer Celibataire,
+                           Ihnen keinen Kindtaufschmaus anbieten, aber eine Flasche alten erwärmenden
+                           Rheinwein, so gut wie einer im Thurgau liegt. Ich schrieb in meiner Angst um den
+                           guten Arxius an den Herrn Archivar Henne mit der Bitte um Nachricht vom Befinden
+                           meines lieben Freundes; statt dessen schreibt er mir einen Brief voll von lauter
+                           hors d'œuvres zurück und ich weiß bloß, dass Arx noch nicht begraben ist. Es
+                           gibt Leute, die in einer ewigen Kindheit bleiben. Mein Korrespondent von
+                           Frauenfeld schreibt mir kein Wort von dem Kriege seiner päpstlichen Heiligkeit
+                           mit dem König beider Sizilien. Ich will doch nicht hoffen, dass die alte Zeller
+                           Geschichte wieder zum Vorschein kommt; das wäre ja über das trojanische Roß.
+                           Stalderus Beronensis hat mir auch einen langen Brief geschrieben über eine neue
+                           Ausgabe seines Idiotikons. Sauerländer hat noch 300 Exemplare der ersten Ausgabe
+                           auf dem Laden liegen; will sich aber zu einer neuen Auflage in 1 Quartbande
+                           verstehen. Wenn die 12 Flaschen vom besten Steckborer Wein angekommen sind, so
+                           lassen Sie mich es doch auch wissen, damit ich der Weinprobe als alter
+                           Weinschwelg beiwohnen kann. Die Siegel und Wappen des Herrn Hartmann habe ich
+                           noch bei Handen und wünschte sehr, in Ihrer Anschauung darüber mit Ihnen zu
+                           sprechen. Es kommt auch die beinahe vergessene Helvetia diesmal endlich zurück.
+                           Ich sende Ihnen auch einen Tübinger Katalog ad statum legendi: doch nur auf 8
+                           Tage, indem ich selbst einige Bestellungen zu machen denke. Gefällt Ihnen etwas
+                           davon, so will ich es gerne mit dem Meinigen versprechen. Ich habe eine gute
+                           warme Stube und ein noch wärmeres Herz für meine Freunde. Tu autem vale et me
+                           amare perge Laßberg.</p>
+                        </div>
+                  </details>
+                  <div id="related-letters"></div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer class="bg-dark text-white text-center py-3">
+         <div class="container">
+            <p class="mb-0"><a href="../letters.html">Back to the Letters</a></p>
+         </div>
+      </footer><script src="../../js/related.js"></script><script src="https://unpkg.com/leaflet/dist/leaflet.js"></script><script>
+                    var letterPlaces = [];
+                    
+                    letterPlaces.push({ coords: [47.545,9.23759], label: "Eppishausen", kind: "sent" });
+                    
+                    letterPlaces.push({ coords: [47.65, 9.3166666666667], label: "Bodensee", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [48.37844, 9.963274], label: "Schwaben", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [47.59645, 9.28637], label: "Güttingen", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [47.5,9.23333333], label: "Bischofszell", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [47.666388888889, 8.9830555555556], label: "Steckborn", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [49.45388888888889, 11.0775], label: "Nürnberg", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [47.6313, 9.2337], label: "Münsterlingen", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [51.8, 14.416666666667], label: "Donau", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [51.980833333333, 4.0930555555556], label: "Rhein", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [47.549722222222, 9.1497222222222], label: "Bürglen (TG)", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [47.54235, 9.19313], label: "Sulgen", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [47.583333, 9.066667], label: "Thurgau", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [47.55,8.9], label: "Frauenfeld", kind: "mentioned" });
+                        
+
+                    if (letterPlaces.length === 0) {
+                        document.getElementById('map').style.display = 'none';
+                    } else {
+                        var map = L.map('mapid', { scrollWheelZoom: false });
+                        // Muted basemap (CARTO Positron) instead of the default colourful OSM
+                        // tiles, to match the edition's restrained palette.
+                        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+                            attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+                            subdomains: 'abcd',
+                            maxZoom: 19
+                        }).addTo(map);
+
+                        var bounds = [];
+                        letterPlaces.forEach(function (p) {
+                            var isSent = p.kind === 'sent';
+                            var marker = L.circleMarker(p.coords, isSent
+                                ? { radius: 8, color: '#143761', weight: 2, fillColor: '#1d4e89', fillOpacity: 0.85 }
+                                : { radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75 }
+                            ).addTo(map).bindPopup((isSent ? 'Sent from: ' : 'Mentioned: ') + p.label);
+                            bounds.push(p.coords);
+                        });
+                        if (bounds.length > 1) {
+                            map.fitBounds(bounds, { padding: [25, 25], maxZoom: 9 });
+                        } else {
+                            map.setView(bounds[0], 8);
+                        }
+                    }
+                </script><script>
+                    // Initialize all tooltips
+                    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+                    new bootstrap.Tooltip(tooltipTriggerEl)
+                    })
+                </script></body>
+</html>

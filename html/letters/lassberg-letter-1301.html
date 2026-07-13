@@ -1,0 +1,234 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0" lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>The Lassberg Letters</title>
+      <link href="../../css/styles.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script><link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"><script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script></head>
+   <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+         <div class="container"><a class="navbar-brand" href="../../index.html">The Laßberg Letters</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link" href="../../index.html">Welcome</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../persons.html">Persons</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../places.html">Places</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../explore.html">Explore</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <header class="page-header py-4">
+         <div class="container">
+            <h1 class="mb-2">Brief von Joseph von Laßberg an Johann Adam Pupikofer (14.04.1829).</h1>
+            <p class="lead mb-0">
+               
+               <p>Correspondence data based on Harris, Martin: Joseph Maria Christoph
+                  Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                  Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                  geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                  Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.. Briefe
+                  automatisiert mit GPT-3.5 normalisiert.</p>
+               </p>
+         </div>
+      </header>
+      <main class="py-4">
+         <div class="container">
+            <div class="alert alert-warning letter-preview-banner" role="alert"><strong>Unreviewed working text.</strong> The encoding of this letter
+               has not yet been editorially reviewed
+               (status: draft).
+               The text may contain transcription or OCR errors — please cite with caution.
+               </div>
+            <div class="row g-4">
+               <div class="col-lg-4 order-lg-2">
+                  <aside class="letter-sidebar">
+                     <section id="metadata" class="mb-4">
+                        <h2 class="h5">Metadata</h2>
+                        <p><strong>Signatur: </strong>Winterthur, Stadtbibliothek, </p>
+                        <p><strong>Registernummer (Laßberg): </strong>74</p>
+                        <p><strong>Registernummer (Harris): </strong>639</p>
+                        <p><strong>Gedruck in: </strong><a href="https://books.google.de/books?id=dXkKAAAAIAAJ">Johannes Meyer, Briefwechsel zwischen J.
+                              von Laszberg und Johann Adam Pupikofer. In: Alemannia 15 (1887), S.
+                              231-88, S.
+                              246</a></p>
+                     </section>
+                     <section id="map" class="mb-4">
+                        <h2 class="h5">Places</h2>
+                        <div id="mapid"></div>
+                        <p class="map-legend small text-muted mt-1 mb-0"><span class="legend-dot" style="background:#1d4e89"></span> place of sending
+                           <span class="legend-dot ms-2" style="background:#b57cc0"></span> places mentioned
+                           </p>
+                     </section>
+                     <section id="mentioned" class="mb-4">
+                        <h2 class="h5">Mentioned in this letter</h2>
+                        <h3 class="h6 mt-3">Persons</h3>
+                        <ul class="list-unstyled small mb-2">
+                           <li><a href="../persons.html?q=Johann%20Adam%20Pupikofer">Johann Adam Pupikofer</a></li>
+                           <li><a href="../persons.html?q=Jakob%20Christoph%20Scherb">Jakob Christoph Scherb</a></li>
+                           <li><a href="../persons.html?q=Friedrich%20Heinrich%20von%20der%20Hagen">Friedrich Heinrich von der Hagen</a></li>
+                           <li><a href="../persons.html?q=Wilhelm%20Ambrosius%20Barth">Wilhelm Ambrosius Barth</a></li>
+                           <li><a href="../persons.html?q=Karl%20Friedrich%20Jaeger">Karl Friedrich Jaeger</a></li>
+                           <li><a href="../persons.html?q=Joseph%20von%20La%C3%9Fberg">Joseph von Laßberg</a></li>
+                        </ul>
+                        <h3 class="h6 mt-3">Places</h3>
+                        <ul class="list-unstyled small mb-2">
+                           <li><a href="../places.html?q=Bischofszell">Bischofszell</a></li>
+                           <li><a href="../places.html?q=Berlin">Berlin</a></li>
+                           <li><a href="../places.html?q=Leipzig">Leipzig</a></li>
+                        </ul>
+                        <h3 class="h6 mt-3">Literature</h3>
+                        <ul class="list-unstyled small mb-0">
+                           <li class="mb-1">Schwäbische Merkur <a href="../explore.html?node=lassberg-literature-0083" title="Show in the knowledge graph" class="small">graph</a></li>
+                           <li class="mb-1">Morgenblatt für gebildete Stände. Nr. 121 <a href="../explore.html?node=lassberg-literature-0074" title="Show in the knowledge graph" class="small">graph</a></li>
+                        </ul>
+                     </section>
+                  </aside>
+               </div>
+               <div class="col-lg-8 order-lg-1">
+                  <section id="original-text" class="mb-4">
+                     <h2>Original Text
+                        <span class="transcription-source badge-manuscript" title="Diplomatische Transkription der Handschrift">Transcribed from the manuscript (Transkribus)</span></h2>
+                     <div>
+                        
+                        <p>Seiner Wolerwürden Dem Herrn <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Adam Pupikofer</strong&gt;">Diaconus
+                              Pupikofer<a href="https://d-nb.info/gnd/11565108X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> samt <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">2 päken Bücher</span> franco. <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Bischofszell</strong&gt;">Bischofszelle. E.<a href="https://www.wikidata.org/wiki/Q64865"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> am 14. April 1829. O dies infausta, nigro notanda
+                           capillo! - warum mußte ich meinen schon so lange verschobenen besuch in canpo
+                           vitifero gerade auf gestern gestellt haben? warum habe ich den tag bei weinenden
+                           leuten zugebracht, da ich jn so angenem unter lachenden hatte zubringen können?
+                           o fortunati nimium sua si bona norint; aber es gehet alles verkert zu in der
+                           welt! Mit dem schlag 8 ur als ich in meine haustüre trat; verkündigte mir meine
+                           haushälterin, daß die juridische und medizinische und auch die theologische
+                           fakultät ex episcopali cella in 2 und respective 4 personen, den armen alten
+                           Einsiedler, der zu gar keiner fakultät gehört, in seinem tugurium haben besuchen
+                           wollen. Ich hatte mir gar keine hofnung gemacht Sie mein verertester freund! vor
+                           Ostern noch einmal zu sehen, und kam diesmal so hässlich um dieses unerwartete
+                           vergnügen!! - auch den herrn <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jakob Christoph Scherb</strong&gt;">Oberamtmann<a href="https://d-nb.info/gnd/100332471"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> und die 2 liebenswürdigen frauen hätte ich mit vergnügen
+                           gesehen; aber mir ist kein glük bescheret. Ich sende mit vielem Danke Inen die
+                           geliehenen bücher zurük; sollte ich noch etwas dergleichen von Inen in meiner
+                           gewarsame haben; so bitte ich mich daran zu erinnern; denn es ist billig, daß
+                           jeder gute christ vor oder in der österlichen zeit sein gewissen rein mache. Ich
+                           habe lezte woche über 1500 verse für <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Berlin</strong&gt;">Berlin<a href="https://www.wikidata.org/wiki/Q64"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>
+                           abgeschrieben, welche noch auf die ostermesse kommen sollen. Der böse <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Friedrich Heinrich von der Hagen</strong&gt;">Hagen<a href="https://d-nb.info/gnd/118829130"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> wird noch machen, daß mir die finger von den händen abfallen. Die 3
+                           quartbände Minnesänger sind laut schreibens des verlegers <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wilhelm Ambrosius Barth</strong&gt;">Barth<a href="https://d-nb.info/gnd/116119578"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> in
+                           <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Leipzig</strong&gt;">Leipzig<a href="https://www.wikidata.org/wiki/Q2079"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> schon in den lezten tagen des Märzen an mich abgegangen und können
+                           also täglich eintreffen, ich bin ser begierig darauf. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Friedrich Heinrich von der Hagen</strong&gt;">v.d.
+                              hagen<a href="https://d-nb.info/gnd/118829130"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> giebt mir nachricht von einer neu entdekten Liedersammlung des XIV.
+                           Jahrhunderts; die mehr als 100 stüke verschiedener art enthaltet, und wovon er
+                           mir eine abschrift anbietet, in dem <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Schwäbische Merkur.</strong&gt;">schwäb.
+                              merkur</span> hat Herr <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Karl Friedrich Jaeger</strong&gt;">Pfarrer
+                              Jäger<a href="https://d-nb.info/gnd/104288507"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>, ohne mein wissen, einen trompetenstoß ins publikum getan, worin er
+                           von unsern projekten zu herausgabe histor. quellen spricht. Das siehet so wie
+                           eine art von Notzwang aus, die ich mir nicht gern antun lasse, und dies könnte
+                           beinahe machen daß ich wieder zurükgienge, denn ich lasse mich nicht gerne von
+                           fremden beherrschen. Ueberhaupt ist mir die fraubaserey zuwieder, die alles
+                           ausposaunet und so gern von dem spricht, was getan werden will und noch nicht
+                           gethan ist. Sonst giebts nichts neues. Schiken Sie mir auch wieder <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Morgenblatt für gebildete Stände.</strong&gt;">morgenblätter<a href="https://d-nb.info/gnd/4345483-5">📖</a></span>, man schläft so sanft dabei ein, wenn man sie im bette
+                           lieset. Viele Grüße an Sie und die Irigen Von Irem ergebensten <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Joseph von Laßberg</strong&gt;">J.
+                              Laßberg<a href="https://d-nb.info/gnd/118778862"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>. </p>
+                        </div>
+                  </section>
+                  <details id="normalised-text" class="text-version mb-4">
+                     <summary>Normalisierter Text</summary>
+                     <div>
+                        
+                        <p>Seiner Wohlwürden dem Herrn Diakon Pupikofer samt zwei gepackten Büchern franko
+                           zu Bischofszell. E am 14. April 1829. O diese unglückselige, mit schwarzem
+                           Haar zu kennzeichnende Sache! Warum musste ich meinen bereits so lange
+                           aufgeschobenen Besuch im Weingarten gerade gestern vereinbaren? Warum habe ich
+                           den Tag bei weinenden Menschen verbracht, obwohl ich ihn fröhlich mit Ihnen
+                           verbringen könnte? O die glücklichen Menschen, wenn sie nur ihre eigenen Güter
+                           kennen würden! Aber die Welt kommt völlig durcheinander! Um Punkt 8 Uhr, als ich
+                           in meine Haustür trat, verkündigte mir meine Haushälterin, dass die juristische,
+                           medizinische und theologische Fakultät aus der Bischofzelle in zwei bzw. vier Personen
+                           den armen alten Einsiedler, der
+                           keiner Fakultät angehört, in seiner Hütte besuchen wollte. Ich hatte mir gar
+                           keine Hoffnung gemacht, Sie, mein verehrtester Freund, vor Ostern noch einmal zu
+                           sehen, und verliere diesmal so hässlich dieses unerwartete Vergnügen! Ich
+                           schicke Ihnen mit vielen Dank zurückgeliehene Bücher; sollten Sie noch etwas
+                           Derartiges von Ihnen in meinem Gewahrsam haben, bitte ich Sie, mich daran zu
+                           erinnern, denn es ist angebracht, dass jeder gute Christ vor oder während der
+                           österlichen Zeit sein Gewissen reinigt. Letzte Woche habe ich über 1500 Verse
+                           für Berlin abgeschrieben, die noch zur Ostermesse kommen sollen. Der böse Hagen wird
+                           noch dazu führen, dass meine Finger von den Händen abfallen.
+                           Die drei Quartbände Minnesänger sind laut Schreiben
+                           des Verlegers Barth in
+                           Leipzig bereits in den letzten Tagen des März an mich versandt worden und
+                           können also jeden Tag eintreffen, darauf bin ich sehr gespannt. Hagen gibt mir Informationen
+                           über eine neu entdeckte Liedersammlung aus
+                           dem 14. Jahrhundert, die über 100 Stücke
+                           verschiedener Art enthält und von der er mir eine Abschrift anbietet. Im Schwäbischen
+                           Merkur hat
+                           Herr Pfarrer Jäger, ohne mein Wissen, einen
+                           Trompetenstoß in der Öffentlichkeit getan, in dem er von unseren Plänen zur
+                           Herausgabe historischer Quellen spricht. Das sieht aus wie eine Art Zwang, den
+                           ich ungern über mich ergehen lasse, und das könnte beinahe dazu führen, dass ich
+                           zurückgehe, denn ich lasse mich ungern von Fremden beherrschen. Generell ist mir
+                           die Prahlerei verhasst, die alles verkündet und gerne von dem spricht, was getan
+                           werden will und noch nicht getan ist. Ansonsten gibt es nichts Neues. Schicken
+                           Sie mir auch wieder Morgenblätter, man schläft so sanft dabei ein, wenn man sie
+                           im Bett liest. Viele Grüße an Sie und die Ihren von Ihrem ergebensten J. Laßberg.
+                           </p>
+                        </div>
+                  </details>
+                  <div id="related-letters"></div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer class="bg-dark text-white text-center py-3">
+         <div class="container">
+            <p class="mb-0"><a href="../letters.html">Back to the Letters</a></p>
+         </div>
+      </footer><script src="../../js/related.js"></script><script src="https://unpkg.com/leaflet/dist/leaflet.js"></script><script>
+                    var letterPlaces = [];
+                    
+                    letterPlaces.push({ coords: [47.545,9.23759], label: "Eppishausen", kind: "sent" });
+                    
+                    letterPlaces.push({ coords: [47.5,9.23333333], label: "Bischofszell", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [52.52,13.405], label: "Berlin", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [51.34,12.375], label: "Leipzig", kind: "mentioned" });
+                        
+
+                    if (letterPlaces.length === 0) {
+                        document.getElementById('map').style.display = 'none';
+                    } else {
+                        var map = L.map('mapid', { scrollWheelZoom: false });
+                        // Muted basemap (CARTO Positron) instead of the default colourful OSM
+                        // tiles, to match the edition's restrained palette.
+                        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+                            attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+                            subdomains: 'abcd',
+                            maxZoom: 19
+                        }).addTo(map);
+
+                        var bounds = [];
+                        letterPlaces.forEach(function (p) {
+                            var isSent = p.kind === 'sent';
+                            var marker = L.circleMarker(p.coords, isSent
+                                ? { radius: 8, color: '#143761', weight: 2, fillColor: '#1d4e89', fillOpacity: 0.85 }
+                                : { radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75 }
+                            ).addTo(map).bindPopup((isSent ? 'Sent from: ' : 'Mentioned: ') + p.label);
+                            bounds.push(p.coords);
+                        });
+                        if (bounds.length > 1) {
+                            map.fitBounds(bounds, { padding: [25, 25], maxZoom: 9 });
+                        } else {
+                            map.setView(bounds[0], 8);
+                        }
+                    }
+                </script><script>
+                    // Initialize all tooltips
+                    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+                    new bootstrap.Tooltip(tooltipTriggerEl)
+                    })
+                </script></body>
+</html>

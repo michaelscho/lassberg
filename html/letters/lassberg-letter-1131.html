@@ -1,0 +1,249 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0" lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>The Lassberg Letters</title>
+      <link href="../../css/styles.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script><link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"><script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script></head>
+   <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+         <div class="container"><a class="navbar-brand" href="../../index.html">The Laßberg Letters</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link" href="../../index.html">Welcome</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../persons.html">Persons</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../places.html">Places</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../explore.html">Explore</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <header class="page-header py-4">
+         <div class="container">
+            <h1 class="mb-2">Brief von Joseph von Laßberg an Johann Adam Pupikofer (12.12.1826).</h1>
+            <p class="lead mb-0">
+               
+               <p>Correspondence data based on Harris, Martin: Joseph Maria Christoph
+                  Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                  Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                  geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                  Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.. Briefe
+                  automatisiert mit GPT-3.5 normalisiert.</p>
+               </p>
+         </div>
+      </header>
+      <main class="py-4">
+         <div class="container">
+            <div class="alert alert-warning letter-preview-banner" role="alert"><strong>Unreviewed working text.</strong> The encoding of this letter
+               has not yet been editorially reviewed
+               (status: done).
+               The text may contain transcription or OCR errors — please cite with caution.
+               </div>
+            <div class="row g-4">
+               <div class="col-lg-4 order-lg-2">
+                  <aside class="letter-sidebar">
+                     <section id="metadata" class="mb-4">
+                        <h2 class="h5">Metadata</h2>
+                        <p><strong>Signatur: </strong>Winterthur, Stadtbibliothek, </p>
+                        <p><strong>Registernummer (Laßberg): </strong>322</p>
+                        <p><strong>Registernummer (Harris): </strong>566</p>
+                        <p><strong>Gedruck in: </strong><a href="https://books.google.de/books?id=dXkKAAAAIAAJ">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In:
+                              Alemannia 15 (1887), S. 231-88, S. 234</a></p>
+                     </section>
+                     <section id="map" class="mb-4">
+                        <h2 class="h5">Places</h2>
+                        <div id="mapid"></div>
+                        <p class="map-legend small text-muted mt-1 mb-0"><span class="legend-dot" style="background:#1d4e89"></span> place of sending
+                           <span class="legend-dot ms-2" style="background:#b57cc0"></span> places mentioned
+                           </p>
+                     </section>
+                     <section id="mentioned" class="mb-4">
+                        <h2 class="h5">Mentioned in this letter</h2>
+                        <h3 class="h6 mt-3">Persons</h3>
+                        <ul class="list-unstyled small mb-2">
+                           <li><a href="../persons.html?q=Herr%20v.%20String">Herr v. String</a></li>
+                           <li><a href="../persons.html?q=Ignaz%20Heinrich%20von%20Wessenberg">Ignaz Heinrich von Wessenberg</a></li>
+                           <li><a href="../persons.html?q=Elise%20%28Nichte%29">Elise (Nichte)</a></li>
+                           <li><a href="../persons.html?q=Maria%20Elisabetha%20Pupikofer%2C%20geborene%20R%C3%BCsch">Maria Elisabetha Pupikofer, geborene Rüsch</a></li>
+                           <li><a href="../persons.html?q=Joseph%20von%20La%C3%9Fberg">Joseph von Laßberg</a></li>
+                        </ul>
+                        <h3 class="h6 mt-3">Places</h3>
+                        <ul class="list-unstyled small mb-2">
+                           <li><a href="../places.html?q=Konstanz">Konstanz</a></li>
+                           <li><a href="../places.html?q=Bischofszell">Bischofszell</a></li>
+                           <li><a href="../places.html?q=Eppishausen">Eppishausen</a></li>
+                        </ul>
+                        <h3 class="h6 mt-3">Literature</h3>
+                        <ul class="list-unstyled small mb-0">
+                           <li class="mb-1">Annales et chronica aevi Carolini. (Monumenta Germaniae Historica. Scriptores in Folio,
+                              1). <a href="../explore.html?node=lassberg-literature-0036" title="Show in the knowledge graph" class="small">graph</a></li>
+                        </ul>
+                     </section>
+                  </aside>
+               </div>
+               <div class="col-lg-8 order-lg-1">
+                  <section id="original-text" class="mb-4">
+                     <h2>Original Text
+                        <span class="transcription-source badge-print" title="OCR-Texterfassung aus der gedruckten Edition, siehe Metadaten/Gedruckt in">Transcribed from the printed edition (OCR)</span></h2>
+                     <div>
+                        
+                        <div class="letter-opener">
+                           
+                           <p class="letter-dateline"><span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Eppishausen</strong&gt;">Eppishausen<a href="https://www.wikidata.org/wiki/Q1423653"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> am 12. Beity 1826.</p>
+                           
+                           <p class="letter-salute">P: P:</p>
+                           </div>
+                        
+                        <p>Die Inlage mit fl. 22 stellte mir gestern
+                           abends <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Herr v. String</strong&gt;">Herr v.
+                              String<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> zur Besorgung zu. Ich war wegen einem Sterbefalle drei Tage in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Konstanz</strong&gt;">Constanz<a href="https://www.wikidata.org/wiki/Q3834"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> und bin erst vorgestern heimgekommen. In <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Konstanz</strong&gt;">Constanz<a href="https://www.wikidata.org/wiki/Q3834"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> traf ich
+                           endlich den I. Band der <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Georg Heinrich Pertz: Annales et chronica aevi Carolini. (Monumenta Germaniae Historica.&#xA;        Scriptores in Folio, 1).</strong&gt;">Monumenta
+                              histor. germaniae<a href="http://opac.regesta-imperii.de/id/114578">📖</a></span> an; mein exemplar soll ich nächsten Samstag früh vom
+                           Buchbinder erhalten. Die Bosheit, die fromme Bosheit hatte ausgesprengt <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ignaz Heinrich von Wessenberg</strong&gt;">Wessenberg<a href="https://d-nb.info/gnd/118631764"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> sei in Folge einer lezten Krankheit ganz kindisch geworden; es
+                           geschahen sogar deshalb aus der Ferne anfragen an mich; ich brachte lezthin
+                           einen ganzen Abend bei ihm zu und fand in völlig unverändert. O Zelotypia! quo
+                           non mortalia cogis. Künftigen Donnerstag auf Mittag bekomme ich Gäste, da möchte
+                           mein Nichte <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Elise (Nichte)</strong&gt;">Elise<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           als zeitliche Haus- und Küchen Regentin die <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Maria Elisabetha Pupikofer, geborene Rüsch</strong&gt;">Frau
+                              Pfarrerin<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> freundlich bitten, Ir wo möglich eine oder zwei Schnüre trokene
+                           Morcheln, vulgo Morauchen zu verschaffen; auch wünschte sie etwa ein halb
+                           Viertel Reinetteäpfel und etwas Spalierbirnen zu erhalten; wir haben heuer gar
+                           kein Obst gemacht. Könnte man in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Bischofszell</strong&gt;">Bischofszell<a href="https://www.wikidata.org/wiki/Q64865"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>
+                           vielleicht einen schönen Fisch, oder ein par Rebhüner haben, so würde dem
+                           Gastmahl damit die Krone aufgesezt werden. Verzeihen Sie mein vererter Freund!
+                           diese gastronomica, sie sind manchmal vom Landleben gar nicht zu trennen;
+                           verfügen Sie vorkommenden Falls auch über meine Dienste.</p>
+                        
+                        <div class="letter-closer">
+                           
+                           <p class="letter-salute">Unter vielen Grüßen an
+                              die Irigen Ir aufrichtiger Diener und Freund</p>
+                           
+                           <p class="letter-signed"><span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Joseph von Laßberg</strong&gt;">J. v. Laßberg<a href="https://d-nb.info/gnd/118778862"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span></p>.
+                           </div>
+                        
+                        <div class="letter-postscript">
+                           
+                           <p>Ex mandato speziali
+                              soll ich obigen bitten auch die um so viel Endiviensalat beifügen, als ein halb
+                              Duzend Menschen über eine Mahlzeit zu verzehren pflegen, Ich meine, es sei fast
+                              lang, das Sie nicht in meine Klause gekommen sind.</p>
+                           </div>
+                        </div>
+                  </section>
+                  <details id="normalised-text" class="text-version mb-4">
+                     <summary>Normalisierter Text</summary>
+                     <div>
+                        
+                        <p>Eppishausen am 12. Beity (Dezember?) 1826. P: P: Die Anlage mit 22 Schillingen
+                           stellte mir gestern Abend Herr v. String zur Besorgung zu. Ich war wegen eines
+                           Sterbefalls drei Tage in Konstanz und bin erst vorgestern nach Hause gekommen.
+                           In Konstanz traf ich endlich den 1. Band der Monumenta histor. Germaniae an;
+                           mein Exemplar soll ich nächsten Samstag früh vom Buchbinder erhalten. Die
+                           Bosheit, die fromme Bosheit hatte ausgesprengt, Wessenberg sei infolge einer
+                           letzten Krankheit ganz kindisch geworden; es geschahen sogar deshalb aus der
+                           Ferne Anfragen an mich; ich brachte letztlich einen ganzen Abend bei ihm zu und
+                           fand ihn in völlig unverändert. O Eifersucht! Wozu zwingst du nicht alles
+                           Menschliche. Nächsten Donnerstag zu Mittag bekomme ich Gäste, da möchte meine
+                           Nichte Elise als zeitliche Haus- und Küchenregentin die Frau Pfarrerin
+                           freundlich bitten, ihr, wenn möglich, eine oder zwei Schnüre trockene Morcheln,
+                           vulgo Morauchen zu besorgen; auch wünschte sie etwa ein halbes Viertel
+                           Reinette-Äpfel und etwas Spalierbirnen zu erhalten; wir haben dieses Jahr gar
+                           kein Obst gemacht. Könnte man in Bischofszell vielleicht einen schönen Fisch
+                           oder ein paar Rebhühner haben, dann würde dem Gastmahl damit die Krone
+                           aufgesetzt werden. Verzeihen Sie, mein verehrter Freund! Diese gastronomica, sie
+                           sind manchmal vom Landleben gar nicht zu trennen; verfügen Sie, falls nötig,
+                           auch über meine Dienste. Unter vielen Grüßen an die Ihren Ihr aufrichtiger
+                           Diener und Freund I. v. Laßberg. Ex mandato speziale soll ich die oben genannte
+                           Bitte auch um so viel Endiviensalat erweitern, wie ein halbes Dutzend Menschen
+                           für eine Mahlzeit zu verzehren pflegen. Ich meine, es ist schon lange her, dass
+                           Sie in meine Klause gekommen sind.</p>
+                        </div>
+                  </details>
+                  <details id="translation" class="text-version mb-4">
+                     <summary>Translation</summary>
+                     <div>
+                        
+                        <p>Eppishausen, December 12, 1826. P: P: Yesterday evening, Mr. v. String entrusted
+                           me with an amount of 22 shillings for handling. I was in Constance for three
+                           days due to a death and only returned home the day before yesterday. In
+                           Constance, I finally received the first volume of the Monumenta histor.
+                           Germaniae; I am supposed to receive my copy from the bookbinder next Saturday
+                           morning. Malice, pious malice had spread that Wessenberg had become completely
+                           childish due to a recent illness; there were even inquiries about this from
+                           afar; I spent an entire evening with him recently and found him completely
+                           unchanged. Oh, jealousy! To what do you not compel humanity. Next Thursday at
+                           noon, I am having guests, and my niece Elise, acting as temporary house and
+                           kitchen regent, would kindly ask the pastor's wife to obtain, if possible, one
+                           or two strings of dried morels, also known as Morauchen, for her; she would also
+                           like to have about half a quarter of Reinette apples and some espalier pears; we
+                           made no fruit this year. If it would be possible to have a beautiful fish or a
+                           couple of partridges in Bischofszell, it would crown the feast. Forgive me, my
+                           esteemed friend, for these gastronomica, they are sometimes inseparable from
+                           country life; avail yourself of my services if necessary. With many greetings to
+                           yours, your sincere servant and friend I. v. Laßberg. By special mandate, I
+                           should extend the above request to include as much endive salad as half a dozen
+                           people would typically consume for a meal. It seems to me that it has been a
+                           long time since you have come to my hermitage.</p>
+                        </div>
+                  </details>
+                  <div id="related-letters"></div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer class="bg-dark text-white text-center py-3">
+         <div class="container">
+            <p class="mb-0"><a href="../letters.html">Back to the Letters</a></p>
+         </div>
+      </footer><script src="../../js/related.js"></script><script src="https://unpkg.com/leaflet/dist/leaflet.js"></script><script>
+                    var letterPlaces = [];
+                    
+                    letterPlaces.push({ coords: [47.545,9.23759], label: "Eppishausen", kind: "sent" });
+                    
+                    letterPlaces.push({ coords: [47.66666667,9.18333333], label: "Konstanz", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [47.5,9.23333333], label: "Bischofszell", kind: "mentioned" });
+                        
+
+                    if (letterPlaces.length === 0) {
+                        document.getElementById('map').style.display = 'none';
+                    } else {
+                        var map = L.map('mapid', { scrollWheelZoom: false });
+                        // Muted basemap (CARTO Positron) instead of the default colourful OSM
+                        // tiles, to match the edition's restrained palette.
+                        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+                            attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+                            subdomains: 'abcd',
+                            maxZoom: 19
+                        }).addTo(map);
+
+                        var bounds = [];
+                        letterPlaces.forEach(function (p) {
+                            var isSent = p.kind === 'sent';
+                            var marker = L.circleMarker(p.coords, isSent
+                                ? { radius: 8, color: '#143761', weight: 2, fillColor: '#1d4e89', fillOpacity: 0.85 }
+                                : { radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75 }
+                            ).addTo(map).bindPopup((isSent ? 'Sent from: ' : 'Mentioned: ') + p.label);
+                            bounds.push(p.coords);
+                        });
+                        if (bounds.length > 1) {
+                            map.fitBounds(bounds, { padding: [25, 25], maxZoom: 9 });
+                        } else {
+                            map.setView(bounds[0], 8);
+                        }
+                    }
+                </script><script>
+                    // Initialize all tooltips
+                    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+                    new bootstrap.Tooltip(tooltipTriggerEl)
+                    })
+                </script></body>
+</html>

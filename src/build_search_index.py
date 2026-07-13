@@ -80,8 +80,11 @@ def build_letter_records():
             if date_el is not None:
                 date = date_el.get("when") or text_of(date_el)
 
-        online = cd.get("change") == "online"
-        url = f"letters/{letter_id}.html" if online else f"letters.html?q={quote(letter_id)}"
+        # online_* = published edition, preview_* = unreviewed working text (docs/TEI.md "Letter
+        # status model") - both have a letter page; register-only letters deep-link into the table.
+        change = cd.get("change") or ""
+        has_page = change.startswith("online") or change.startswith("preview")
+        url = f"letters/{letter_id}.html" if has_page else f"letters.html?q={quote(letter_id)}"
 
         summary_text = ""
         transcription_text = ""

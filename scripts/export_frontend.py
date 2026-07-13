@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-Phase 7 of the KI-Infrastruktur pipeline: exports everything the static frontend needs into
-frontend/data/ - quantized search vectors, a flat letters index, and copies of the RDF/cluster
-artifacts (single source of truth stays in rdf/ and clustering/, this just syncs copies for
-GitHub Pages to serve from one directory).
+Phase 7 of the KI-Infrastruktur pipeline: exports everything the Explore page (html/explore.html
++ js/explore/) needs into json/explore/ - quantized search vectors, a flat letters index, and
+copies of the RDF/cluster artifacts (single source of truth stays in rdf/ and clustering/, this
+just syncs copies for GitHub Pages to serve from one directory).
 
 Matryoshka validation (mandatory, plan Phase 7 step 1): BGE-M3 was NOT trained with Matryoshka
 Representation Learning, so truncating 1024D -> matryoshka_dim (config.yaml: frontend.
@@ -12,7 +12,7 @@ TEST_QUERIES, computes top-10 retrieval overlap between full 1024D and truncated
 vectors, and only uses the truncated dimension if overlap >= 80%; otherwise it falls back to the
 full 1024D (still fine at this corpus size - int8-quantized 1024D is well under a MB).
 
-Output (frontend/data/):
+Output (json/explore/):
   vectors_int8.bin    - flat int8 array, row-major, shape (n_letters, dim_used)
   vectors_meta.json   - dim_used, per-dimension min/max (for dequantization), ids in row order,
                         the matryoshka validation result (overlap, decision)
@@ -20,7 +20,8 @@ Output (frontend/data/):
                         needs without further requests)
   graph.json          - copied from export_graph_json.py's output (already written there)
   edition.ttl         - copy of rdf/edition.ttl (for Oxigraph-WASM)
-  clusters.json, umap_2d.json - copies from clustering/
+(overview.json and related.json are written by scripts/export_overview.py and
+scripts/export_related.py respectively, not by this script)
 
 Usage:
     python scripts/export_frontend.py [--repo-root PATH]
@@ -145,7 +146,7 @@ def main():
 
     q_matrix, mins, maxs = quantize_int8(vectors)
 
-    out_dir = repo_root / "frontend/data"
+    out_dir = repo_root / "json/explore"
     out_dir.mkdir(parents=True, exist_ok=True)
 
     (out_dir / "vectors_int8.bin").write_bytes(q_matrix.tobytes())
@@ -197,21 +198,17 @@ def main():
     (out_dir / "letters_index.json").write_text(json.dumps(index, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"Wrote letters_index.json ({len(index)} letters)")
 
-    # Copies: RDF dump (for Oxigraph-WASM), clustering artifacts. graph.json is written directly
-    # into frontend/data/ by export_graph_json.py already.
+    # Copy: RDF dump (for Oxigraph-WASM). graph.json is written directly into json/explore/ by
+    # export_graph_json.py. The clustering artifacts stay in clustering/ (internal corpus-triage
+    # tool since the 2026-07 Explore rework - no longer shipped to the website).
     ttl_src = repo_root / "rdf/edition.ttl"
     if ttl_src.exists():
         shutil.copy(ttl_src, out_dir / "edition.ttl")
-        print("Copied rdf/edition.ttl -> frontend/data/edition.ttl")
-    for name in ("clusters.json", "umap_2d.json"):
-        src = repo_root / "clustering" / name
-        if src.exists():
-            shutil.copy(src, out_dir / name)
-            print(f"Copied clustering/{name} -> frontend/data/{name}")
+        print("Copied rdf/edition.ttl -> json/explore/edition.ttl")
 
     graph_json = out_dir / "graph.json"
     if not graph_json.exists():
-        print("WARNING: frontend/data/graph.json missing - run scripts/export_graph_json.py first.", file=sys.stderr)
+        print("WARNING: json/explore/graph.json missing - run scripts/export_graph_json.py first.", file=sys.stderr)
 
 
 if __name__ == "__main__":

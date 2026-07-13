@@ -44,6 +44,7 @@
                                 <li class="nav-item"><a class="nav-link" href="letters.html">Letters</a></li>
                                 <li class="nav-item"><a class="nav-link" href="persons.html">Persons</a></li>
                                 <li class="nav-item"><a class="nav-link active" href="#">Places</a></li>
+                                <li class="nav-item"><a class="nav-link" href="explore.html">Explore</a></li>
                                 <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
                                 <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
                                 <li class="nav-item"><a class="nav-link" href="https://www.zotero.org/groups/6109140/joseph_von_laberg/library" target="_blank">Literature</a></li>
@@ -193,7 +194,7 @@
                         </xsl:when>
                         <xsl:otherwise>
                             <xsl:if test="count($sentLetters) &gt; 0">Sent from <xsl:value-of select="count($sentLetters)"/></xsl:if>
-                            <xsl:if test="count($mentionedRefs) &gt; 0"><xsl:if test="count($sentLetters) &gt; 0"> · </xsl:if>M <xsl:value-of select="count($mentionedRefs)"/></xsl:if>
+                            <xsl:if test="count($mentionedRefs) &gt; 0"><xsl:if test="count($sentLetters) &gt; 0"> / </xsl:if>Mentioned <xsl:value-of select="count($mentionedRefs)"/></xsl:if>
                         </xsl:otherwise>
                     </xsl:choose>
                 </span>
@@ -215,6 +216,11 @@
                 <xsl:if test="tei:desc">
                     <div class="detail-section mb-2"><span class="text-muted"><xsl:value-of select="normalize-space(tei:desc)"/></span></div>
                 </xsl:if>
+                <p class="small mb-2">
+                    <a href="explore.html?node={$id}" class="btn btn-outline-secondary btn-sm">
+                        Show network graph
+                    </a>
+                </p>
                 <xsl:if test="@ana = 'needs-review'">
                     <div class="alert alert-warning py-2 px-3 small">This entry is still under review.
                         <xsl:if test="tei:note[@type='review']"> <xsl:value-of select="normalize-space(tei:note[@type='review'])"/></xsl:if>

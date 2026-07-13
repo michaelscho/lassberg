@@ -1,0 +1,179 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0" lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>The Lassberg Letters</title>
+      <link href="../../css/styles.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script><link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"><script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script></head>
+   <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+         <div class="container"><a class="navbar-brand" href="../../index.html">The Laßberg Letters</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link" href="../../index.html">Welcome</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../persons.html">Persons</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../places.html">Places</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../explore.html">Explore</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <header class="page-header py-4">
+         <div class="container">
+            <h1 class="mb-2">Brief von Johann Adam Pupikofer an Joseph von Laßberg (14.11.1829).</h1>
+            <p class="lead mb-0">
+               
+               <p>Correspondence data based on Harris, Martin: Joseph Maria Christoph
+                  Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                  Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                  geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                  Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.. Briefe
+                  automatisiert mit GPT-3.5 normalisiert.</p>
+               </p>
+         </div>
+      </header>
+      <main class="py-4">
+         <div class="container">
+            <div class="alert alert-warning letter-preview-banner" role="alert"><strong>Unreviewed working text.</strong> The encoding of this letter
+               has not yet been editorially reviewed
+               (status: draft).
+               The text may contain transcription or OCR errors — please cite with caution.
+               </div>
+            <div class="row g-4">
+               <div class="col-lg-4 order-lg-2">
+                  <aside class="letter-sidebar">
+                     <section id="metadata" class="mb-4">
+                        <h2 class="h5">Metadata</h2>
+                        <p><strong>Signatur: </strong>Frauenfeld, Thurgauische Kantonsbibliothek, </p>
+                        <p><strong>Registernummer (Laßberg): </strong>nan</p>
+                        <p><strong>Registernummer (Harris): </strong>2271</p>
+                        <p><strong>Gedruck in: </strong><a href="https://books.google.de/books?id=XWY5AAAAMAAJ">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In:
+                              Alemannia 16 (1888), S.  1-32 und 97-154, S. 100</a></p>
+                     </section>
+                     <section id="map" class="mb-4">
+                        <h2 class="h5">Places</h2>
+                        <div id="mapid"></div>
+                        <p class="map-legend small text-muted mt-1 mb-0"><span class="legend-dot" style="background:#1d4e89"></span> place of sending
+                           <span class="legend-dot ms-2" style="background:#b57cc0"></span> places mentioned
+                           </p>
+                     </section>
+                  </aside>
+               </div>
+               <div class="col-lg-8 order-lg-1">
+                  <section id="original-text" class="mb-4">
+                     <h2>Original Text
+                        <span class="transcription-source badge-print" title="OCR-Texterfassung aus der gedruckten Edition, siehe Metadaten/Gedruckt in">Transcribed from the printed edition (OCR)</span></h2>
+                     <div>
+                        
+                        <p>Mein hochverehrter Herr und Gönner!
+                           Der heilige <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Martin Usteri</strong&gt;">Martin<a href="https://d-nb.info/gnd/11880362X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> ist wahrscheinlich mit Ihnen oder mit mir unzufrieden; denn sonst hätte er nicht
+                           so manches in den Weg gestellt, das mich zu seiner Ehre in der <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">villa Epponis<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> ein Fest zu begehen hinderte. Daß er mir's nicht übel nimmt, wenn ich nicht zu ihm
+                           bete, hoffe ich um so mehr, da so viele Tausende am <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Martin Usteri</strong&gt;">Martin<a href="https://d-nb.info/gnd/11880362X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>stag, an ihre Zinsbeutel greifend, zu ihm seufzen: aber das, vermuthe ich, beleidigt
+                           ihn, daß Chronologen sein Fest am ganz unrechten Tage begehen, nachdem uns doch sein
+                           Freund <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Gregorius Turnonensis<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> durch das Beispiel der Genauigkeit vorangegangen ist. Da er nämlich im Jahre 400,
+                           402 oder 404 gestorben ist, so war der Jahrestag im Kalender um drei Tage nur verrückt,
+                           und so sollte sein Andenken am 13. November gefeiert werden. Auf diesen Tag wollte
+                           ich nun wirklich zu Ihnen kommen: aber da war ja das schrecklichste Wetter, das man
+                           sich denken mag. Nachdem ich also am 10. wegen Amtsgeschäften nicht kommen konnte,
+                           und gestern der Witterung wegen: so folgere ich, daß der Heilige mir nicht gar gewogen
+                           sei. Wir wollen sehen, wie es am Montag oder Dienstag gehe. Die Beilage kommt von
+                           Herrn Pfarrer <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Melchior Kirchhofer</strong&gt;">Kirchhofer<a href="https://d-nb.info/gnd/118842528"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>. Wahrscheinlich sendet er Ihnen wieder Dorfoffnungen. Sobald ich meine Thurgauische
+                           Geschichte mit Urkunden ausgestattet habe, will ich auch die Mülheimische Offnung
+                           copieren. Ich finde keinen Copisten, der die Schrift lesen könnte. Herr Dekan <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Däniker<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> hat die Weinsberger Weiber noch nicht zurück. Wenn sie nur nicht gar zu sehr abgenutzt
+                           werden. Herr <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Dalp<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> schreibt, daß ich ihm doch ja eine Beschreibung der <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Steinachburg<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> senden soll; er bedürfe derselben noch zum zweiten Bande. Wollen nicht Sie das gute
+                           Werk verrichten? Ich habe bei der eben vollendeten Thurg. Geschichte und dem Neujahrsblatte
+                           meine Feder ganz müde geschrieben. Auch durch Berg und Wald und Sturm, Regen und Schnee
+                           bin ich doch nicht gehindert, mich in Ihre blaue Stube oder in Ihr neues grün tapeziertes
+                           Cabinetchen zu denken. 
+                           Dies thue ich, indem ich mich Ihren Hausgenossinnen und vor allem auch dem Meister
+                           <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Sepp<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> zu Diensten empfehle als Dero litterarischen Schildknapp Pupikofer.
+                           <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">B'zell<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, 14. Nov. 1829. 
+                           Insunt documenta visu dignissima.</p>
+                        </div>
+                  </section>
+                  <details id="normalised-text" class="text-version mb-4">
+                     <summary>Normalisierter Text</summary>
+                     <div>
+                        
+                        <p>Mein hochverehrter Herr und Gönner!
+                           Der heilige <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Martin Usteri</strong&gt;">Martin<a href="https://d-nb.info/gnd/11880362X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> ist wahrscheinlich mit Ihnen oder mit mir unzufrieden; denn sonst hätte er nicht
+                           so manches in den Weg gestellt, das mich zu seiner Ehre in der <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Villa Epponis<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> ein Fest zu begehen hinderte. Dass er mir es nicht übel nimmt, wenn ich nicht zu
+                           ihm bete, hoffe ich umso mehr, da so viele Tausende am <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Martin Usteri</strong&gt;">Martin<a href="https://d-nb.info/gnd/11880362X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>stag, an ihre Zinsbeutel greifend, zu ihm seufzen: aber das, vermute ich, beleidigt
+                           ihn, dass Chronologen sein Fest am ganz unrechten Tage begehen, nachdem uns doch sein
+                           Freund <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Gregorius Turnonensis<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> durch das Beispiel der Genauigkeit vorangegangen ist. Da er nämlich im Jahre 400,
+                           402 oder 404 gestorben ist, so war der Jahrestag im Kalender um drei Tage nur verrückt,
+                           und so sollte sein Andenken am 13. November gefeiert werden. Auf diesen Tag wollte
+                           ich nun wirklich zu Ihnen kommen: aber da war ja das schrecklichste Wetter, das man
+                           sich denken mag. Nachdem ich also am 10. wegen Amtsgeschäften nicht kommen konnte,
+                           und gestern der Witterung wegen: so folgere ich, dass der Heilige mir nicht gar gewogen
+                           sei. Wir wollen sehen, wie es am Montag oder Dienstag geht. Die Beilage kommt von
+                           Herrn Pfarrer <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Melchior Kirchhofer</strong&gt;">Kirchhofer<a href="https://d-nb.info/gnd/118842528"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>. Wahrscheinlich sendet er Ihnen wieder Dorfoffenungen. Sobald ich meine Thurgauische
+                           Geschichte mit Urkunden ausgestattet habe, will ich auch die Mülheimische Offnung
+                           kopieren. Ich finde keinen Kopisten, der die Schrift lesen könnte. Herr Dekan <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Däniker<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> hat die Weinsberger Weiber noch nicht zurück. Wenn sie nur nicht gar zu sehr abgenutzt
+                           werden. Herr <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Dalp<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> schreibt, dass ich ihm doch bitte eine Beschreibung der <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Steinachburg<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> senden soll; er benötigt sie noch für den zweiten Band. Wollen nicht Sie das gute
+                           Werk verrichten? Ich habe bei der gerade vollendeten Thurg. Geschichte und dem Neujahrsblatt
+                           meine Feder ganz müde geschrieben. Auch durch Berg und Wald und Sturm, Regen und Schnee
+                           bin ich doch nicht gehindert, mich in Ihre blaue Stube oder in Ihr neues grün tapeziertes
+                           Kabinettchen zu denken.
+                           Dies tue ich, indem ich mich Ihren Hausgenossinnen und vor allem auch dem Meister
+                           <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Sepp<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> zu Diensten empfehle als Dero literarischen Schildknappen Pupikofer.
+                           <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Bützell<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, 14. Nov. 1829.
+                           Es sind Dokumente von höchstem Wert beigefügt.</p>
+                        </div>
+                  </details>
+                  <div id="related-letters"></div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer class="bg-dark text-white text-center py-3">
+         <div class="container">
+            <p class="mb-0"><a href="../letters.html">Back to the Letters</a></p>
+         </div>
+      </footer><script src="../../js/related.js"></script><script src="https://unpkg.com/leaflet/dist/leaflet.js"></script><script>
+                    var letterPlaces = [];
+                    
+                    letterPlaces.push({ coords: [47.5,9.23333333], label: "Bischofszell", kind: "sent" });
+                    
+
+                    if (letterPlaces.length === 0) {
+                        document.getElementById('map').style.display = 'none';
+                    } else {
+                        var map = L.map('mapid', { scrollWheelZoom: false });
+                        // Muted basemap (CARTO Positron) instead of the default colourful OSM
+                        // tiles, to match the edition's restrained palette.
+                        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+                            attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+                            subdomains: 'abcd',
+                            maxZoom: 19
+                        }).addTo(map);
+
+                        var bounds = [];
+                        letterPlaces.forEach(function (p) {
+                            var isSent = p.kind === 'sent';
+                            var marker = L.circleMarker(p.coords, isSent
+                                ? { radius: 8, color: '#143761', weight: 2, fillColor: '#1d4e89', fillOpacity: 0.85 }
+                                : { radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75 }
+                            ).addTo(map).bindPopup((isSent ? 'Sent from: ' : 'Mentioned: ') + p.label);
+                            bounds.push(p.coords);
+                        });
+                        if (bounds.length > 1) {
+                            map.fitBounds(bounds, { padding: [25, 25], maxZoom: 9 });
+                        } else {
+                            map.setView(bounds[0], 8);
+                        }
+                    }
+                </script><script>
+                    // Initialize all tooltips
+                    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+                    new bootstrap.Tooltip(tooltipTriggerEl)
+                    })
+                </script></body>
+</html>

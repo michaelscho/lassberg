@@ -1,7 +1,7 @@
 paths:
   letters: data/letters
   register: data/register
-  letters_register: data/register/lassberg-letters.xml   # Gesamtregister (3268 Briefe, Metadaten)
+  letters_register: data/register/lassberg-letters.xml
 
 embedding:
   primary:
@@ -14,11 +14,10 @@ embedding:
     enabled: false
 
 clustering:
-  # Zielwerte für den Vollausbau (3268 Volltextbriefe); solange das Teilkorpus klein ist (~170),
-  # hier temporär n_neighbors: 10 / min_cluster_size: 5 setzen und beim Anwachsen zurückstellen
   umap: {n_neighbors: 10, min_dist: 0.1, metric: cosine, random_state: 42}
   hdbscan: {min_cluster_size: 3, min_samples: 2, cluster_selection_method: eom}
 
+# Explore-Seite (html/explore.html + js/explore/, Artefakte in json/explore/);
 frontend:
   matryoshka_dim: 512   # Dimension für Browser-Vektoren (BGE-M3: einfaches Truncate+Renorm testen; Fallback: volle 1024)
   quantization: int8
@@ -28,7 +27,7 @@ frontend:
   letter_url_pattern: html/letters/lassberg-letter-{id}.html   # bestehende HTML-Briefansichten des Repos
 
 rdf:
-  base_uri: https://michaelscho.github.io/lassberg/   # entschieden: GitHub-Pages-URL des Repos
+  base_uri: https://michaelscho.github.io/lassberg/
 
 neo4j:
   uri: bolt://localhost:7687

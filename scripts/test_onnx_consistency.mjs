@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 /**
  * Phase 7 mandatory consistency test: runs the same BGE-M3 ONNX model + pooling setup that
- * frontend/search.js uses in the browser (Transformers.js, q8, CLS pooling, normalized) against
- * the server-computed corpus vectors (frontend/data/vectors_int8.bin, produced from
+ * js/explore/search.js uses in the browser (Transformers.js, q8, CLS pooling, normalized) against
+ * the server-computed corpus vectors (json/explore/vectors_int8.bin, produced from
  * embeddings/bge-m3/letters.safetensors by scripts/export_frontend.py), for the same 20 test
  * queries used in that script's matryoshka validation.
  *
@@ -75,8 +75,8 @@ function top10(scores, ids) {
 }
 
 async function main() {
-  const meta = JSON.parse(readFileSync(`${REPO_ROOT}frontend/data/vectors_meta.json`, "utf-8"));
-  const raw = new Int8Array(readFileSync(`${REPO_ROOT}frontend/data/vectors_int8.bin`).buffer);
+  const meta = JSON.parse(readFileSync(`${REPO_ROOT}json/explore/vectors_meta.json`, "utf-8"));
+  const raw = new Int8Array(readFileSync(`${REPO_ROOT}json/explore/vectors_int8.bin`).buffer);
   const corpusVectors = dequantize(meta, raw);
   const ids = meta.ids;
   const modelName = meta.model_name.replace("BAAI/", "Xenova/");
@@ -122,8 +122,8 @@ async function main() {
       decision: passed ? "q8 kept as primary (overlap >= 90%)" : "q8 below threshold - review fp16/HF-API fallback",
       tested_at: new Date().toISOString(),
     };
-    writeFileSync(`${REPO_ROOT}frontend/data/vectors_meta.json`, JSON.stringify(meta, null, 2));
-    console.log("Wrote result to frontend/data/vectors_meta.json (onnx_consistency_test).");
+    writeFileSync(`${REPO_ROOT}json/explore/vectors_meta.json`, JSON.stringify(meta, null, 2));
+    console.log("Wrote result to json/explore/vectors_meta.json (onnx_consistency_test).");
   }
 }
 

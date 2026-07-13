@@ -1,0 +1,249 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0" lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>The Lassberg Letters</title>
+      <link href="../../css/styles.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script><link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"><script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script></head>
+   <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+         <div class="container"><a class="navbar-brand" href="../../index.html">The Laßberg Letters</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link" href="../../index.html">Welcome</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../persons.html">Persons</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../places.html">Places</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../explore.html">Explore</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <header class="page-header py-4">
+         <div class="container">
+            <h1 class="mb-2">Brief von Johann Adam Pupikofer an Joseph von Laßberg (18.04.1847).</h1>
+            <p class="lead mb-0">
+               
+               <p>Correspondence data based on Harris, Martin: Joseph Maria Christoph
+                  Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                  Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                  geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                  Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.. Briefe
+                  automatisiert mit GPT-3.5 normalisiert.</p>
+               </p>
+         </div>
+      </header>
+      <main class="py-4">
+         <div class="container">
+            <div class="alert alert-warning letter-preview-banner" role="alert"><strong>Unreviewed working text.</strong> The encoding of this letter
+               has not yet been editorially reviewed
+               (status: draft).
+               The text may contain transcription or OCR errors — please cite with caution.
+               </div>
+            <div class="row g-4">
+               <div class="col-lg-4 order-lg-2">
+                  <aside class="letter-sidebar">
+                     <section id="metadata" class="mb-4">
+                        <h2 class="h5">Metadata</h2>
+                        <p><strong>Signatur: </strong>Frauenfeld, Thurgauische Kantonsbibliothek, </p>
+                        <p><strong>Registernummer (Laßberg): </strong>nan</p>
+                        <p><strong>Registernummer (Harris): </strong>2948</p>
+                        <p><strong>Gedruck in: </strong><a href="https://books.google.de/books?id=XWY5AAAAMAAJ">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In:
+                              Alemannia 16 (1888), S.  1-32 und 97-154, S. 149</a></p>
+                     </section>
+                     <section id="map" class="mb-4">
+                        <h2 class="h5">Places</h2>
+                        <div id="mapid"></div>
+                        <p class="map-legend small text-muted mt-1 mb-0"><span class="legend-dot" style="background:#1d4e89"></span> place of sending
+                           <span class="legend-dot ms-2" style="background:#b57cc0"></span> places mentioned
+                           </p>
+                     </section>
+                  </aside>
+               </div>
+               <div class="col-lg-8 order-lg-1">
+                  <section id="original-text" class="mb-4">
+                     <h2>Original Text
+                        <span class="transcription-source badge-print" title="OCR-Texterfassung aus der gedruckten Edition, siehe Metadaten/Gedruckt in">Transcribed from the printed edition (OCR)</span></h2>
+                     <div>
+                        
+                        <p>Hochverehrtester Herr und Freund!
+                           Die vorgerückte Frühlingszeit hat schon oft die Mahnung an mich gethan, meinen unvergeßlichen
+                           Gönner und Freund auf der alten <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Meersburg</strong&gt;">Meersburg<a href="https://www.wikidata.org/wiki/Q498212"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> heimzusuchen; allein neuerdings hat sich tiefer Schnee über den <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Gau<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> gelagert, und alles scheint im Winterfroste erstarren zu sollen. Ich selbst trage
+                           eine tiefe Schmerzenswunde in meiner Seele; denn vor wenigen Wochen hat mir der Tod
+                           eines meiner Kinder entrissen. Wenn ich daher auch nicht über das Wasser steure, das
+                           uns von Ihnen trennt, kann ich doch nicht anders, als Ihnen wenigstens brieflich von
+                           dem Verluste, der uns betroffen hat, Anzeige zu geben. Unsere liebe, sinnige und kenntnißreiche
+                           <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Wilhelmine<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>, die als Kind so freundliche Herberge in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Eppishausen</strong&gt;">Eppishausen<a href="https://www.wikidata.org/wiki/Q1423653"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> zu finden gewohnt war, lebt nicht mehr. Schon einige Jahre litt sie an einer scruphulösen
+                           Halsgeschwulst, welche allen angewandten Arzneimitteln zum Trotze stets zunahm, doch
+                           bei einer im übrigen guten Gesundheit auf dem Wege der Operation Heilung hoffen ließ.
+                           Das gute Kind unterzog sich der Operation auch mit wahrem Heldenmuthe; denn sie hatte
+                           sich für Übernahme einer Lehrstelle in der französischen <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Schweiz<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> vorbereitet und dachte, sogleich nach geschehener Heilung dahin zu verreisen. Die
+                           Operation wurde in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Heiden<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> im Kanton <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Trogen (Appenzell&#xA;                        Ausserrhoden)</strong&gt;">Appenzell<a href="https://www.wikidata.org/wiki/Q68189"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> von einem Arzte vorgenommen, der schon mehrere Personen glücklich von demselben Übel
+                           befreit hatte. Auch giengen nach der Operation drei Wochen vorüber, ohne zu Besorgnissen
+                           Veranlaßung zu geben, als ein Fieber dazu kam, das am 26. März unerwartet zum Tode
+                           führte. Die Vereiterung soll bei der zellenartigen Beschaffenheit der Geschwulst durch
+                           den Hals durchgedrungen sein und in die Brusthöhle sich ergossen haben. Die Selige
+                           erwartet auf dem Friedhof in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Heiden<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> ihren Auferstehungstag. Wie sehr dieser Verlust uns Eltern und besonders auch <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Julchen<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> schmerze, darf ich Ihnen nicht erst sagen. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Wilhelmine<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> war ja eine so gute und wohlgesinnte Tochter und Schwester und gegen alle Menschen
+                           so freundlich und theilnehmend, daß man sie schätzen und lieben mußte. Vor wenigen
+                           Tagen ist auch Botschaft gekommen, daß General <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">von Imhof<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> zu <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Stuttgart</strong&gt;">Stuttgart<a href="https://www.wikidata.org/wiki/Q1022"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> zu den Vätern heimgegangen sei. Die drei Geschwister haben einander bald folgen müssen.
+                           Und unser Freund <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Vögeli<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Zürich</strong&gt;">Zürich<a href="https://www.wikidata.org/wiki/Q72"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> lebt zwar, sieht aber fast nichts mehr; denn seine Augennerven haben eine Art Lähmung
+                           erlitten, und dadurch ist auch zugleich seine geistige Kraft fast zur Unvermögenheit
+                           reduzirt. Alles traurige Berichte! Indessen, so war der Welt Lauf von jeher: das wußten
+                           die, welche der Macht des Schicksals unterlegen sind, und werden wir auch selbst erfahren,
+                           wenn wirs nicht sonst glauben möchten. Um so mehr wundert es mich aber, wie es Ihnen
+                           gehe und wünschte ich zu vernehmen, daß Sie noch munter und frisch sind. Wenn sie
+                           mir nicht schreiben, so werde ich persönlich Bericht holen, sobald ich einmal für
+                           einige Tage loskomme, was freilich vor Ablauf eines Monats schwer halten wird. Ihre
+                           lieblichen Kinder sind gewiß wieder um ein gutes Stück gewachsen, und in allen Geschicklichkeiten
+                           und Tugenden recht vorgeschritten; denn man sagte, daß die Mamma nun auch in der Fräulein
+                           <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Tante<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> eine Gehülfin gwonnen habe, das Erziehungsgeschäft zu fördern. Auch die Poesie wird
+                           bei Fräulein <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Nette<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> den Winter über sprossen und Blüthen getrieben haben; denn der Herbst war ja so gut
+                           und ergiebig, daß seine Wärme dem Frost keinen Zugang gestattet haben kann, der Geist
+                           des Frühlings also nicht gestört worden ist. Bis ich näheres darüber erfahre, denke
+                           ich es mir so und ver gnüge mich an diesen Gedanken. Auch für mich war sanitarisch
+                           der Winter gut; allein die Studien giengen schlecht. Wohl half ich wacker mit, das
+                           Projekt der Kantonsschule zu zimmern, und wir erlangten dazu auch die Beistimmung
+                           der Souverain Representanten: Aber ob die vier Jahre keine Störung in die Ausführung
+                           bringen werden, ist noch eine unbeantwortete Frage. Von neuen Büchern erhielt ich
+                           <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Stähelins<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> <span class="rs-misc" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Wirtembergische Geschichte</span>, las sie aber noch nicht; der Ballast, der mitgegeben wurde. ist auch gar zu groß,
+                           wenngleich interessant. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Edlibachs<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> Chronik, die ich früher in Ihrem Manuscripte gelesen und benutzt habe, brachte mir
+                           dagegen einige angenehme Stunden, vielleicht aus dem Grunde, weil ich dabei immer
+                           Herrn <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Vögeli<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> als Mitherausgeber im Sinne hatte. Doch auch in der <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Bischofzell<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>ischen arca obsoleta, wie Sie das Stiftsarchiv oft zu bezeichnen pflegten, fand ich
+                           noch einige schätzenswerthe Sachen und anderes hoffe ich noch zu finden. Ich bedaure
+                           nur, daß ich in 6 Wochen die Registratur vollendet haben soll und doch noch ein so
+                           großes Stück Arbeit vor mir sehe. Es will mir bald scheinen, es sei wirklich wahr,
+                           daß man, je älter man werde, mit den Geschäften immer schwerer fertig mache. Auch
+                           das wird so sein müssen. Es wäre auch gar zu traurig, wenn man mit der Arbeit am Ende
+                           wäre und doch noch sich arbeitskräftig fühlte. Um über der Vorwelt die Gegenwart nicht
+                           zu vergessen, füge ich bei, daß Herr Dr. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Scherb<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> den Winter gut überstanden und gleichsam neue Lebenskräfte gewonnen hat. Die Rückkehr
+                           seines Sohnes <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Franz Augustin Götz</strong&gt;">August<a href="https://d-nb.info/gnd/121144097"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> von der Universität scheint namentlich dazu beigetragen zu haben; denn er hat in
+                           demselben einen hoffnungsvollen Gehülfen und Kunstjünger gewonnen. Unsere Familien
+                           haben auch, was im früheren Winter nicht mehr regelmäßig geschehen konnte, die Sonntagsabende
+                           wieder gemeinschaftlich zugebracht. Manchmal haben wir uns auch recht lebhaft an Sie
+                           erinnert, besonders am <span class="rs-misc" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Berchtoldstage</span>. Ach, das war noch eine schöne, goldene Zeit! Wie manchen herrlichen Genuß gewährten
+                           Sie mir! Die Erinnerung daran wird lebenslang dankbar in meiner Seele haften. Möge
+                           Ihnen auch dafür <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Societas Regia Scientiarum Gottingensis</strong&gt;">Gott<a href="https://d-nb.info/gnd/121531-0"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> noch lange Ihr theures Leben fristen und mir Gelegenheit gewähren, Ihnen fortwährend
+                           zu beweisen, daß ich bin 
+                           Ihr hochachtungsvoll ergebener Pupikofer.
+                           <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Bischofzell<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, 18. April 1847.</p>
+                        </div>
+                  </section>
+                  <details id="normalised-text" class="text-version mb-4">
+                     <summary>Normalisierter Text</summary>
+                     <div>
+                        
+                        <p>Hochverehrtester Herr und Freund!
+                           Die vorgerückte Frühlingszeit hat schon oft die Mahnung an mich getan, meinen unvergesslichen
+                           Gönner und Freund auf der alten <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Meersburg</strong&gt;">Meersburg<a href="https://www.wikidata.org/wiki/Q498212"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> heimzusuchen; allein neuerdings hat sich tiefer Schnee über den <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Gau<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> gelagert, und alles scheint im Winterfrost erstarren zu sollen. Ich selbst trage
+                           eine tiefe Schmerzenswunde in meiner Seele; denn vor wenigen Wochen hat mir der Tod
+                           eines meiner Kinder entrissen. Wenn ich daher auch nicht über das Wasser steure, das
+                           uns von Ihnen trennt, kann ich doch nicht anders, als Ihnen wenigstens brieflich von
+                           dem Verluste, der uns betroffen hat, Anzeige zu geben. Unsere liebe, sinnige und kenntnisreiche
+                           <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Wilhelmine<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>, die als Kind so freundliche Herberge in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Eppishausen</strong&gt;">Eppishausen<a href="https://www.wikidata.org/wiki/Q1423653"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> zu finden gewohnt war, lebt nicht mehr. Schon einige Jahre litt sie an einer skrupulösen
+                           Halsgeschwulst, welche allen angewandten Arzneimitteln zum Trotze stets zunahm, doch
+                           bei einer im Übrigen guten Gesundheit auf dem Wege der Operation Heilung hoffen ließ.
+                           Das gute Kind unterzog sich der Operation auch mit wahrem Heldenmut; denn sie hatte
+                           sich für Übernahme einer Lehrstelle in der französischen <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Schweiz<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> vorbereitet und dachte, sogleich nach geschehener Heilung dahin zu verreisen. Die
+                           Operation wurde in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Heiden<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> im Kanton <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Trogen (Appenzell&#xA;                        Ausserrhoden)</strong&gt;">Appenzell<a href="https://www.wikidata.org/wiki/Q68189"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> von einem Arzt vorgenommen, der schon mehrere Personen glücklich von demselben Übel
+                           befreit hatte. Auch gingen nach der Operation drei Wochen vorüber, ohne zu Besorgnissen
+                           Veranlassung zu geben, als ein Fieber dazu kam, das am 26. März unerwartet zum Tode
+                           führte. Die Vereiterung soll bei der zellenartigen Beschaffenheit der Geschwulst durch
+                           den Hals durchgedrungen sein und in die Brusthöhle sich ergossen haben. Die Selige
+                           erwartet auf dem Friedhof in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Heiden<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> ihren Auferstehungstag. Wie sehr dieser Verlust uns Eltern und besonders auch <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Julchen<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> schmerze, darf ich Ihnen nicht erst sagen. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Wilhelmine<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> war ja eine so gute und wohlgesinnte Tochter und Schwester und gegen alle Menschen
+                           so freundlich und teilnehmend, dass man sie schätzen und lieben musste. Vor wenigen
+                           Tagen ist auch Botschaft gekommen, dass General <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">von Imhof<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> zu <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Stuttgart</strong&gt;">Stuttgart<a href="https://www.wikidata.org/wiki/Q1022"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> zu den Vätern heimgegangen sei. Die drei Geschwister haben einander bald folgen müssen.
+                           Und unser Freund <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Vögeli<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Zürich</strong&gt;">Zürich<a href="https://www.wikidata.org/wiki/Q72"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> lebt zwar, sieht aber fast nichts mehr; denn seine Augennerven haben eine Art Lähmung
+                           erlitten, und dadurch ist auch zugleich seine geistige Kraft fast zur Unfähigkeit
+                           reduziert. Alles traurige Berichte! Indessen, so war der Welt Lauf von jeher: das
+                           wussten die, welche der Macht des Schicksals unterlegen sind, und werden wir auch
+                           selbst erfahren, wenn wir es nicht sonst glauben möchten. Um so mehr wundert es mich
+                           aber, wie es Ihnen gehe und wünschte ich zu vernehmen, dass Sie noch munter und frisch
+                           sind. Wenn sie mir nicht schreiben, so werde ich persönlich Bericht holen, sobald
+                           ich einmal für einige Tage loskomme, was freilich vor Ablauf eines Monats schwerhalten
+                           wird. Ihre lieblichen Kinder sind gewiss wieder um ein gutes Stück gewachsen, und
+                           in allen Geschicklichkeiten und Tugenden recht vorgeschritten; denn man sagte, dass
+                           die Mamma nun auch in der Fräulein <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Tante<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> eine Gehilfin gewonnen habe, das Erziehungsgeschäft zu fördern. Auch die Poesie wird
+                           bei Fräulein <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Nette<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> den Winter über sprießen und blühen getrieben haben; denn der Herbst war ja so gut
+                           und ergiebig, dass seine Wärme dem Frost keinen Zugang gestattet haben kann, der Geist
+                           des Frühlings also nicht gestört worden ist. Bis ich Näheres darüber erfahre, denke
+                           ich es mir so und vergnüge mich an diesen Gedanken. Auch für mich war sanitarisch
+                           der Winter gut; allein die Studien gingen schlecht. Wohl half ich wacker mit, das
+                           Projekt der Kantonsschule zu zimmern, und wir erlangten dazu auch die Zustimmung der
+                           Souveränrepresentanten: Aber ob die vier Jahre keine Störung in die Ausführung bringen
+                           werden, ist noch eine unbeantwortete Frage. Von neuen Büchern erhielt ich <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Stähelins<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> <span class="rs-misc" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Wirtembergische Geschichte</span>, las sie aber noch nicht; der Ballast, der mitgegeben wurde, ist auch gar zu groß,
+                           wenngleich interessant. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Edlibachs<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> Chronik, die ich früher in Ihrem Manuskript gelesen und benutzt habe, brachte mir
+                           dagegen einige angenehme Stunden, vielleicht aus dem Grunde, weil ich dabei immer
+                           Herrn <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Vögeli<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> als Mitherausgeber im Sinne hatte. Doch auch in der <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Bischofzell<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>ischen arca obsoleta, wie Sie das Stiftsarchiv oft zu bezeichnen pflegten, fand ich
+                           noch einige schätzenswerte Sachen und anderes hoffe ich noch zu finden. Ich bedaure
+                           nur, dass ich in 6 Wochen die Registratur vollendet haben soll und doch noch ein so
+                           großes Stück Arbeit vor mir sehe. Es will mir bald scheinen, es sei wirklich wahr,
+                           dass man, je älter man werde, mit den Geschäften immer schwerer fertig mache. Auch
+                           das wird so sein müssen. Es wäre auch gar zu traurig, wenn man mit der Arbeit am Ende
+                           wäre und doch noch sich arbeitskräftig fühlte. Um über der Vorwelt die Gegenwart nicht
+                           zu vergessen, füge ich bei, dass Herr Dr. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Scherb<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> den Winter gut überstanden und gleichsam neue Lebenskräfte gewonnen hat. Die Rückkehr
+                           seines Sohnes <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Franz Augustin Götz</strong&gt;">August<a href="https://d-nb.info/gnd/121144097"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> von der Universität scheint namentlich dazu beigetragen zu haben; denn er hat in
+                           demselben einen hoffnungsvollen Gehilfen und Kunstjünger gewonnen. Unsere Familien
+                           haben auch, was im früheren Winter nicht mehr regelmäßig geschehen konnte, die Sonntagsabende
+                           wieder gemeinschaftlich zugebracht. Manchmal haben wir uns auch recht lebhaft an Sie
+                           erinnert, besonders am <span class="rs-misc" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Berchtoldstage</span>. Ach, das war noch eine schöne, goldene Zeit! Wie manchen herrlichen Genuss gewährten
+                           Sie mir! Die Erinnerung daran wird lebenslang dankbar in meiner Seele haften. Möge
+                           Ihnen auch dafür Gott noch lange Ihr teures Leben fristen und mir Gelegenheit gewähren,
+                           Ihnen fortwährend zu beweisen, dass ich bin Ihr hochachtungsvoll ergebener Pupikofer.
+                           <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Bischofzell<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, 18. April 1847.</p>
+                        </div>
+                  </details>
+                  <div id="related-letters"></div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer class="bg-dark text-white text-center py-3">
+         <div class="container">
+            <p class="mb-0"><a href="../letters.html">Back to the Letters</a></p>
+         </div>
+      </footer><script src="../../js/related.js"></script><script src="https://unpkg.com/leaflet/dist/leaflet.js"></script><script>
+                    var letterPlaces = [];
+                    
+                    letterPlaces.push({ coords: [47.5,9.23333333], label: "Bischofszell", kind: "sent" });
+                    
+
+                    if (letterPlaces.length === 0) {
+                        document.getElementById('map').style.display = 'none';
+                    } else {
+                        var map = L.map('mapid', { scrollWheelZoom: false });
+                        // Muted basemap (CARTO Positron) instead of the default colourful OSM
+                        // tiles, to match the edition's restrained palette.
+                        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+                            attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+                            subdomains: 'abcd',
+                            maxZoom: 19
+                        }).addTo(map);
+
+                        var bounds = [];
+                        letterPlaces.forEach(function (p) {
+                            var isSent = p.kind === 'sent';
+                            var marker = L.circleMarker(p.coords, isSent
+                                ? { radius: 8, color: '#143761', weight: 2, fillColor: '#1d4e89', fillOpacity: 0.85 }
+                                : { radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75 }
+                            ).addTo(map).bindPopup((isSent ? 'Sent from: ' : 'Mentioned: ') + p.label);
+                            bounds.push(p.coords);
+                        });
+                        if (bounds.length > 1) {
+                            map.fitBounds(bounds, { padding: [25, 25], maxZoom: 9 });
+                        } else {
+                            map.setView(bounds[0], 8);
+                        }
+                    }
+                </script><script>
+                    // Initialize all tooltips
+                    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+                    new bootstrap.Tooltip(tooltipTriggerEl)
+                    })
+                </script></body>
+</html>

@@ -29,16 +29,17 @@ document.addEventListener('DOMContentLoaded', function () {
     $('#filter-place').on('keyup', function () { table.column(5).search(this.value).draw(); });
     $('#filter-provenance').on('keyup', function () { table.column(6).search(this.value).draw(); }); // This filter is now active
 
-    $('#filterCheckbox').on('change', function () {
-        if (this.checked) {
-            $.fn.dataTable.ext.search.push((settings, data, dataIndex) => {
-                return $(table.row(dataIndex).node()).attr('data-status') === 'online';
-            });
-        } else {
-            $.fn.dataTable.ext.search.pop();
-        }
-        table.draw();
-    });
+    // Status filters (docs/TEI.md "Letter status model"): data-status carries the register's
+    // @change value — in_register | preview_{print,transcription} | online_{print,transcription}.
+    // "With full text online" = preview_* or online_*; "Reviewed editions only" = online_*.
+    const statusFilter = (settings, data, dataIndex) => {
+        const status = $(table.row(dataIndex).node()).attr('data-status') || '';
+        if ($('#filterReviewed').is(':checked')) return status.startsWith('online');
+        if ($('#filterFulltext').is(':checked')) return status.startsWith('online') || status.startsWith('preview');
+        return true;
+    };
+    $.fn.dataTable.ext.search.push(statusFilter);
+    $('#filterFulltext, #filterReviewed').on('change', () => table.draw());
 
     initExpandableRows(table, '#letter-table');
     applyDeepLinkSearch(table);

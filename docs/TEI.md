@@ -6,8 +6,10 @@ Jeder Brief (`data/letters/lassberg-letter-<ID>.xml`) kodiert dieselbe Korrespon
 Ebenen, die konsistent zueinander gehalten werden müssen:
 
 1. **`<teiHeader>`** — strukturierte Metadaten: Absender/Empfänger mit Datum
-   (`<correspDesc>`/`<correspAction>`), sowie eine flache, nach CMIF-Vokabular sortierte Liste
-   aller im Brief erwähnten Entitäten (`<note type="mentioned">`).
+   (`<correspDesc>`/`<correspAction>`), eine flache, nach CMIF-Vokabular sortierte Liste
+   aller im Brief erwähnten Entitäten (`<note type="mentioned">`), sowie das
+   `<revisionDesc>` mit dem Bearbeitungsstand des Briefes (Statusleiter
+   `draft → done → reviewed → published`, s. Abschnitt „Statusmodell").
 2. **`<text><body>`** — der Brieftext in bis zu vier Fassungen als `<div>`s, von denen nur eine
    die Inline-Auszeichnung (`<rs>`) trägt.
 
@@ -201,31 +203,96 @@ für die neue Kategorie der Handschriften-/Druckexemplare wird `cmif:mentionsBib
 u.), da CMIF keine eigene Kategorie für Textzeugen kennt; die Unterscheidung Werk vs. Exemplar
 ergibt sich dann aus dem Zielregister (`lassberg-literature.xml` vs. `lassberg-manuscripts.xml`).
 
-### `<revisionDesc>` als Bearbeitungsstatus
+### `<revisionDesc>` als Bearbeitungsstatus — das Statusmodell (seit 2026-07-12)
+
+Das Statusmodell hat **drei Achsen mit je genau einem handgepflegten Ort**; alles andere wird
+abgeleitet (validiert/synchronisiert durch `scripts/sync_letter_status.py`, `make status`):
+
+**Achse 1 — Textquelle** (Briefdatei, `div/@type`): `original` = Transkription der Handschrift
+(vom Scan, via Transkribus), `print` = OCR-Text aus der gedruckten Edition. Bereits vorhanden,
+unverändert; steuert das Quellen-Badge der Briefseite.
+
+**Achse 2 — Bearbeitungsstand** (Briefdatei, `revisionDesc/listChange/change/@status`), als
+aufsteigende Leiter; der **letzte** Eintrag ist der aktuelle Stand:
+
+| Status | Bedeutung | Wer setzt ihn |
+|---|---|---|
+| `draft` | Kodierung automatisch erzeugt oder in Arbeit (Transkribus-Export, Roh-OCR) | Pipeline/Bearbeiter |
+| `done` | Markup vom Bearbeiter abgeschlossen | Bearbeiter |
+| `reviewed` | Kodierung geprüft — **das Publikationstor** | Bearbeiter oder `check-letter-annotations`-Skill |
+| `published` | Online publiziert | **nur** `scripts/sync_letter_status.py --publish`, nie von Hand |
+
+Gilt für Transkriptionen **und** OCR-Texte gleichermaßen — ein OCR-Brief kann `reviewed` und
+`published` sein (z. B. wenn kein Scan existiert und der Druck die legitime Textgrundlage ist).
 
 ```xml
 <revisionDesc>
     <listChange>
         <change when="2023-08-01" who="#MiS" status="draft">File created and preprocessed automatically</change>
-        <change when="2023-08-29" who="#MiS" status="draft">Manual markup and proofreading</change>
-        <change when="2023-11-22" who="#MiS" status="draft">Finished markup</change>
+        <change when="2023-11-22" who="#MiS" status="done">Finished markup</change>
+        <change when="2026-07-10" who="#check-letter-annotations" status="reviewed">Checked via check-letter-annotations skill (...)</change>
+        <change when="2026-07-12" who="#sync-letter-status" status="published">Published online</change>
     </listChange>
 </revisionDesc>
 ```
 
-Ein vorhandenes `<revisionDesc>` mit einem `Finished markup`/`Manual markup`-Eintrag ist im
-aktuellen Bestand ein zuverlässiger Indikator dafür, dass ein Brief manuell durchgesehen und
-verlinkt wurde. Briefe **ohne** `<revisionDesc>` sind in der Regel automatisiert erzeugte Rohdaten
-(Transkription + automatische NER-Vorverlinkung), bei denen viele `<rs>` noch ein leeres `key=""`
-tragen und `<note type="mentioned">` noch unbefüllt (nur als auskommentiertes Platzhalter-Template)
-vorliegt. Bei der Priorisierung von Nacharbeiten sollte zuerst nach Briefen ohne
-`<revisionDesc>` gefiltert werden.
+Der `reviewed`-Eintrag ist zugleich der Prüfnachweis (wann, von wem) und wird auf der Briefseite
+als „Encoding reviewed …" angezeigt. Bei der Priorisierung von Nacharbeiten zuerst nach Briefen
+filtern, deren letzter Status `draft` ist.
 
-Seit Juli 2026 trägt außerdem jeder Brief, der durch den `check-letter-annotations`-Skill geprüft
-wurde, einen eigenen `<change who="#check-letter-annotations" status="done">`-Eintrag — das ist der
-verlässlichste Indikator überhaupt, da er (anders als `Finished markup`) speziell diese
-systematische Prüfung (Vollständigkeit/Verlinkung/Struktur/Header-Body-Konsistenz/Formeln)
-bestätigt und nicht nur die ursprüngliche Pipeline-Bearbeitung.
+**Achse 3 — Publikationsstand** (Gesamtregister `lassberg-letters.xml`,
+`correspDesc/@change`) — ein **abgeleiteter** Wert, den `sync_letter_status.py --write` aus den
+Achsen 1+2 berechnet; von Hand wird er nicht gepflegt:
+
+| Wert | Bedeutung |
+|---|---|
+| `in_register` | Brief erfasst, keine Briefdatei vorhanden |
+| `preview_transcription` / `preview_print` | Briefdatei existiert, noch nicht publiziert — Seite ist als **Preview** online (mit Warnbanner, kein „Full Letter Page"-Button) |
+| `online_transcription` / `online_print` | publiziert (letzter Dateistatus `published`), Quelle laut Suffix |
+
+Zusätzlich trägt jeder Registereintrag die handgepflegte `<note type="scan">` mit den Werten
+`none` (kein Scan bekannt), `internal` (Scan vorhanden, z. B. Transkribus/Archivlieferung, aber
+keine öffentliche URL) oder `online` (öffentliches Digitalisat; dann muss
+`<note type="url_facsimile">` gefüllt sein). Regel: Briefe ohne Scan, aber mit gedruckter
+Edition, dürfen dauerhaft als OCR-Text (`*_print`) publiziert werden.
+
+**Workflow**: Kodierung abschließen (`done`) → prüfen lassen (`reviewed`, z. B. via
+`check-letter-annotations`) → `python scripts/sync_letter_status.py --publish lassberg-letter-XXXX`
+(hängt den `published`-Eintrag an und aktualisiert das Register) → Briefseite/Register neu bauen
+(`build-website`-Skill). `make status` prüft jederzeit die Konsistenz aller drei Achsen und
+meldet Konflikte.
+
+## Das Briefregister `data/register/lassberg-letters.xml`
+
+Das Gesamtregister ist die **einzige Datei, die alle 3268 Briefe erfasst** (die meisten ohne
+eigene Briefdatei) und damit die korpusweite Metadatenquelle für Website, Pipeline und
+CMIF-Export. Ein Eintrag:
+
+```xml
+<correspDesc key="lassberg-letter-0213" ref="https://github.com/.../lassberg-letter-0213.xml" change="in_register">
+  <correspAction type="sent">…</correspAction>
+  <correspAction type="received">…</correspAction>
+  <note type="nummer_harris">1641</note>
+  <note type="journalnummer"></note>
+  <note type="aufbewahrungsort">Freiburg i.Br.</note>
+  <note type="aufbewahrungsinstitution">Universitätsbibliothek</note>
+  <note type="signatur">Autograph Nr. 1620</note>
+  <note type="url_facsimile" target="…">…</note>
+  <note type="scan">online</note>
+  <note type="published_in" target="…">…</note>
+</correspDesc>
+```
+
+**Handgepflegt** (Ergebnis der Archiv-/Literaturrecherche): die beiden `<correspAction>`s, alle
+`<note>`-Typen — `nummer_harris` (Nummer im Harris-Register 1991), `journalnummer` (Laßbergs
+eigenes Briefjournal), `aufbewahrungsort`/`aufbewahrungsinstitution`/`signatur` (Überlieferung),
+`url_facsimile` (öffentliches Digitalisat, mit `@target`), `scan`
+(`none` | `internal` | `online`, s. Statusmodell Achse 3), `published_in` (Drucknachweis).
+Vereinzelt kommen `comment`, `iiif_manifest`, `iiif_canvas` hinzu. Leere Notes bleiben als leere
+Elemente stehen (Pipeline liest sie als „unbekannt", nicht als leeren String).
+
+**Maschinell geschrieben, nie von Hand ändern**: `@change` — der abgeleitete Publikationsstand
+(`scripts/sync_letter_status.py --write`, Details im Abschnitt „Statusmodell").
 
 ## Zusammenfassung: `@type`-Werte für `<rs>` im Fließtext
 

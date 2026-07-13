@@ -1,7 +1,7 @@
 # ONNX vs. server consistency test (Phase 7, mandatory pre-deployment gate)
 
 Verifies that the browser-side BGE-M3 embedding path (Transformers.js, q8, `Xenova/bge-m3`, CLS
-pooling + normalization - `frontend/search.js`) stays close enough to the server-side path
+pooling + normalization - `js/explore/search.js`) stays close enough to the server-side path
 (FlagEmbedding, `BAAI/bge-m3` - `scripts/embed.py`) that search results don't silently diverge
 between the MCP tool and the deployed website.
 
@@ -9,7 +9,7 @@ between the MCP tool and the deployed website.
 
 `scripts/test_onnx_consistency.mjs` embeds the same 20 test queries used in
 `scripts/export_frontend.py`'s matryoshka validation with the q8 ONNX model, retrieves the top-10
-letters against the deployed corpus vectors (`frontend/data/vectors_int8.bin`), and compares
+letters against the deployed corpus vectors (`json/explore/vectors_int8.bin`), and compares
 against the top-10 retrieved by the server-side FlagEmbedding model for the same queries
 (precomputed once into `/tmp/server_rankings.json` - see the one-off Python snippet below,
 not checked in since it's just an intermediate scratch file).
@@ -47,7 +47,7 @@ plan's 90% bar, so **q8 stays the primary browser quantization**; the HF-API fal
 available in the UI for users who prefer not to download the ~560MB model, but isn't required for
 consistency reasons.
 
-Recorded in `frontend/data/vectors_meta.json` under `onnx_consistency_test` (written
+Recorded in `json/explore/vectors_meta.json` under `onnx_consistency_test` (written
 automatically by `scripts/test_onnx_consistency.mjs` on each run).
 
 ## Separate live cross-check: MCP tool vs. browser, identical query
@@ -57,7 +57,7 @@ the actual deployed UI), the same query string was run through both paths:
 
 Query: `"Handschrift des Tristan"`
 
-| Rank | `mcp_server` (`semantic_search`, FlagEmbedding) | Browser (`frontend/search.js`, Transformers.js q8) |
+| Rank | `mcp_server` (`semantic_search`, FlagEmbedding) | Browser (`js/explore/search.js`, Transformers.js q8) |
 |---|---|---|
 | 1 | lassberg-letter-1247 (0.4884) | lassberg-letter-1247 (0.481) |
 | 2 | lassberg-letter-1231 (0.4707) | lassberg-letter-1231 (0.462) |
@@ -66,4 +66,4 @@ Query: `"Handschrift des Tristan"`
 | 5 | lassberg-letter-1455 (0.4556) | lassberg-letter-1323 (0.449) |
 
 Top-5 overlap: 4/5 - meets the plan's acceptance bar ("Top-5-Overlap >= 4"), tested via a real
-headless-browser run against `frontend/index.html` served statically (`python -m http.server`).
+headless-browser run against `html/explore.html` served statically (`python -m http.server`).

@@ -48,6 +48,7 @@
                                 <li class="nav-item"><a class="nav-link active" href="#">Letters</a></li>
                                 <li class="nav-item"><a class="nav-link" href="persons.html">Persons</a></li>
                                 <li class="nav-item"><a class="nav-link" href="places.html">Places</a></li>
+                                <li class="nav-item"><a class="nav-link" href="explore.html">Explore</a></li>
                                 <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
                                 <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
                                 <li class="nav-item"><a class="nav-link" href="https://www.zotero.org/groups/6109140/joseph_von_laberg/library" target="_blank">Literature</a></li>
@@ -82,9 +83,15 @@
                                     <div class="col-lg col-md-6"><input type="text" class="form-control form-control-sm" id="filter-place" placeholder="Filter by place..."/></div>
                                     <div class="col-lg col-md-12"><input type="text" class="form-control form-control-sm" id="filter-provenance" placeholder="Filter by provenance..."/></div>
                                     <div class="col-12 d-flex justify-content-between align-items-center pt-2">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="filterCheckbox"/>
-                                            <label class="form-check-label" for="filterCheckbox">Show only transcribed letters</label>
+                                        <div class="d-flex gap-4">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="filterFulltext"/>
+                                                <label class="form-check-label" for="filterFulltext">With full text online</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="filterReviewed"/>
+                                                <label class="form-check-label" for="filterReviewed">Reviewed editions only</label>
+                                            </div>
                                         </div>
                                         <span class="text-muted small" id="filteredCounter"></span>
                                     </div>
@@ -598,12 +605,25 @@
             </div>
             
                 
-                <!-- Link to full letter page, if available -->
-                <xsl:if test="@change='online'">
-                    <a href="letters/{$key}.html"
-                        class="btn btn-primary btn-sm mt-3"
-                        target="_blank" rel="noopener noreferrer">Open Full Letter Page</a>
-                </xsl:if>
+                <!-- Link to the letter page (docs/TEI.md "Letter status model"):
+                     online_*  = reviewed + published edition (primary button)
+                     preview_* = unreviewed working text, page carries a preview banner -->
+                <xsl:choose>
+                    <xsl:when test="starts-with(@change, 'online')">
+                        <a href="letters/{$key}.html"
+                            class="btn btn-primary btn-sm mt-3"
+                            target="_blank" rel="noopener noreferrer">
+                            <xsl:text>Open Full Letter Page</xsl:text>
+                            <xsl:if test="@change = 'online_print'"> (from printed edition)</xsl:if>
+                        </a>
+                    </xsl:when>
+                    <xsl:when test="starts-with(@change, 'preview')">
+                        <a href="letters/{$key}.html"
+                            class="btn btn-outline-secondary btn-sm mt-3"
+                            target="_blank" rel="noopener noreferrer">Open Letter Preview (unreviewed)</a>
+                    </xsl:when>
+                    <xsl:otherwise/>
+                </xsl:choose>
                 
             </div>
         </template>

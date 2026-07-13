@@ -1,4 +1,4 @@
-// Unit tests for frontend/graph-core.js (Phase 7b.3 GraphRAG expansion functions), using a small
+// Unit tests for js/explore/graph-core.js (Phase 7b.3 GraphRAG expansion functions), using a small
 // fixture graph instead of the real corpus. Run with: node --test tests/test_graph_core.mjs
 import assert from "node:assert/strict";
 import { test } from "node:test";
@@ -8,7 +8,7 @@ import {
   egoNetwork,
   neighbors,
   sharedMentions,
-} from "../frontend/graph-core.js";
+} from "../js/explore/graph-core.js";
 
 // Fixture: 4 letters, 2 persons, 1 place, 1 work.
 // - letter-A and letter-B: same correspondence (P1 -> P2), 10 days apart, share 2 mentions (W1, PL1)

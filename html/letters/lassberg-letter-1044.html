@@ -1,0 +1,410 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0" lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>The Lassberg Letters</title>
+      <link href="../../css/styles.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script><link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"><script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script></head>
+   <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+         <div class="container"><a class="navbar-brand" href="../../index.html">The Laßberg Letters</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link" href="../../index.html">Welcome</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../persons.html">Persons</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../places.html">Places</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../explore.html">Explore</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <header class="page-header py-4">
+         <div class="container">
+            <h1 class="mb-2">Brief von Joseph von Laßberg an Johann Adam Pupikofer (04.11.1825).</h1>
+            <p class="lead mb-0">
+               
+               <p>Correspondence data based on Harris, Martin: Joseph Maria Christoph
+                  Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                  Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                  geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                  Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.. Briefe
+                  automatisiert mit GPT-3.5 normalisiert.</p>
+               </p>
+         </div>
+      </header>
+      <main class="py-4">
+         <div class="container">
+            <div class="alert alert-warning letter-preview-banner" role="alert"><strong>Unreviewed working text.</strong> The encoding of this letter
+               has not yet been editorially reviewed
+               (status: done).
+               The text may contain transcription or OCR errors — please cite with caution.
+               </div>
+            <div class="row g-4">
+               <div class="col-lg-4 order-lg-2">
+                  <aside class="letter-sidebar">
+                     <section id="metadata" class="mb-4">
+                        <h2 class="h5">Metadata</h2>
+                        <p><strong>Signatur: </strong>Winterthur, Stadtbibliothek, </p>
+                        <p><strong>Registernummer (Laßberg): </strong>nan</p>
+                        <p><strong>Registernummer (Harris): </strong>523</p>
+                        <p><strong>Gedruck in: </strong><a href="https://books.google.de/books?id=dXkKAAAAIAAJ">Johannes Meyer, Briefwechsel zwischen J.
+                              von Laszberg und Johann Adam Pupikofer. In: Alemannia 15 (1887), S.
+                              231-88, S.
+                              232</a></p>
+                     </section>
+                     <section id="map" class="mb-4">
+                        <h2 class="h5">Places</h2>
+                        <div id="mapid"></div>
+                        <p class="map-legend small text-muted mt-1 mb-0"><span class="legend-dot" style="background:#1d4e89"></span> place of sending
+                           <span class="legend-dot ms-2" style="background:#b57cc0"></span> places mentioned
+                           </p>
+                     </section>
+                     <section id="mentioned" class="mb-4">
+                        <h2 class="h5">Mentioned in this letter</h2>
+                        <h3 class="h6 mt-3">Persons</h3>
+                        <ul class="list-unstyled small mb-2">
+                           <li><a href="../persons.html?q=Hartmann%20von%20Aue">Hartmann von Aue</a></li>
+                           <li><a href="../persons.html?q=Ulfilas">Ulfilas</a></li>
+                           <li><a href="../persons.html?q=Berthold%20von%20Regensburg">Berthold von Regensburg</a></li>
+                           <li><a href="../persons.html?q=Johannes%20von%20Winterthur">Johannes von Winterthur</a></li>
+                           <li><a href="../persons.html?q=Joseph%20von%20La%C3%9Fberg">Joseph von Laßberg</a></li>
+                        </ul>
+                        <h3 class="h6 mt-3">Places</h3>
+                        <ul class="list-unstyled small mb-2">
+                           <li><a href="../places.html?q=Eppishausen">Eppishausen</a></li>
+                           <li><a href="../places.html?q=Schwaben">Schwaben</a></li>
+                           <li><a href="../places.html?q=Scherzingen">Scherzingen</a></li>
+                           <li><a href="../places.html?q=Deutschland">Deutschland</a></li>
+                           <li><a href="../places.html?q=Asien">Asien</a></li>
+                           <li><a href="../places.html?q=Konstanz">Konstanz</a></li>
+                           <li><a href="../places.html?q=Schweiz">Schweiz</a></li>
+                           <li><a href="../places.html?q=Winterthur">Winterthur</a></li>
+                           <li><a href="../places.html?q=Heiligenberg">Heiligenberg</a></li>
+                        </ul>
+                        <h3 class="h6 mt-3">Literature</h3>
+                        <ul class="list-unstyled small mb-0">
+                           <li class="mb-1">Samlung deutscher Gedichte aus dem XII., XIII. und XIV. Jahrhundert. 3 Bde. <a href="../explore.html?node=lassberg-literature-0026" title="Show in the knowledge graph" class="small">graph</a></li>
+                           <li class="mb-1">Trojanerkrieg <a href="../explore.html?node=lassberg-literature-0194" title="Show in the knowledge graph" class="small">graph</a></li>
+                           <li class="mb-1">Literarischer Grundriß zur Geschichte der deutschen Poesie: von der ältesten Zeit
+                              bis in das sechzehnte Jahrhundert <a href="../explore.html?node=lassberg-literature-0027" title="Show in the knowledge graph" class="small">graph</a></li>
+                           <li class="mb-1">Tristan <a href="../explore.html?node=lassberg-literature-0028" title="Show in the knowledge graph" class="small">graph</a></li>
+                           <li class="mb-1">Der arme Heinrich. <a href="../explore.html?node=lassberg-literature-0029" title="Show in the knowledge graph" class="small">graph</a></li>
+                           <li class="mb-1">Deutsche Grammatik. <a href="../explore.html?node=lassberg-literature-0020" title="Show in the knowledge graph" class="small">graph</a></li>
+                           <li class="mb-1">Lieder-Saal, das ist: Sammelung altteutscher Gedichte, Bd. 3, <a href="../explore.html?node=lassberg-literature-0022" title="Show in the knowledge graph" class="small">graph</a></li>
+                           <li class="mb-1">Episcopatus Constantiensis Alemannicus sub metropoli Moguntina chronologice et diplomatice
+                              illustratus <a href="../explore.html?node=lassberg-literature-0012" title="Show in the knowledge graph" class="small">graph</a></li>
+                           <li class="mb-1">Sermones in lingua vulgari. <a href="../explore.html?node=lassberg-literature-0025" title="Show in the knowledge graph" class="small">graph</a></li>
+                           <li class="mb-1">Corpus historicum medii aevi sive Scriptores res.. . praecipue in Germania.. . illustrantes
+                              (Vol. 1-2). <a href="../explore.html?node=lassberg-literature-0030" title="Show in the knowledge graph" class="small">graph</a></li>
+                        </ul>
+                     </section>
+                  </aside>
+               </div>
+               <div class="col-lg-8 order-lg-1">
+                  <section id="original-text" class="mb-4">
+                     <h2>Original Text
+                        <span class="transcription-source badge-print" title="OCR-Texterfassung aus der gedruckten Edition, siehe Metadaten/Gedruckt in">Transcribed from the printed edition (OCR)</span></h2>
+                     <div>
+                        
+                        <div class="letter-opener">
+                           
+                           <p class="letter-dateline"><span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Eppishausen</strong&gt;">Eppishausen<a href="https://www.wikidata.org/wiki/Q1423653"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> am 4. Nov. 1825.</p>
+                           
+                           <p class="letter-salute">Mein verertester Herr!</p>
+                           </div>
+                        
+                        <p>Ir erst heute
+                           erhaltenes Schreiben vom 29. Weinmonat hat mir viele Freude gemacht: es tut
+                           einem alten Manne immer wol, wenn man an jn denkt; noch mer, wenn man seiner mit
+                           Liebe gedenkt. Ich bitte Sie zu glauben, daß ich einen nicht kleinen Wert auf Ir
+                           freundschaftliches Wolwollen seze und selbes auf alle Weise zu erwiedern und zu
+                           verdienen streben werde. Ich sende Inen hier nach Irem Verlangen die <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Christoph Heinrich Myller: Samlung deutscher Gedichte aus dem XII., XIII. und XIV. Jahrhundert.&#xA;        3 Bde.</strong&gt;">Myller'sche Sammlung<a href="https://www.digitale-sammlungen.de/de/details/bsb10057384VD18 11205407">📖</a></span>; es ist auch ein dritter Teil vorhanden der nie in
+                           den Buchhandel gekommen ist und den ich nicht besize; er enthält den <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Konrad von Würzburg: Trojanerkrieg.</strong&gt;">Krieg von Troja des Wolfram von Eschilbach<a href="https://handschriftencensus.de/werke/212https://d-nb.info/gnd/4285313-8">📖</a></span>. Es freut mich ungemein, daß
+                           sie sich mit der teutchen Literatur des Mittelalters näher bekannt machen
+                           wollen; die Sache kann nicht anderst als dabei gewinnen, und mich würde es ganz
+                           glüklich machen, so nahe bei mir einen Mitarbeiter zu gewinnen. Als Introduktion
+                           zu diesem Studium würde ich raten, <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Friedrich Heinrich von der Hagen; Johann Gustav Büsching: Literarischer Grundriß zur Geschichte der deutschen&#xA;        Poesie: von der ältesten Zeit bis in das sechzehnte Jahrhundert.</strong&gt;">den Grundriß
+                              der altdeutschen poët. Literatur von v. Dr Hagen und Büsching<a href="-">📖</a></span> zu lesen. So
+                           unvollkommen das Buch ist, so unentbehrlich ist es, da wir kein anderes dieser
+                           Art besizen. Sie finden es bei mir. Den <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Gottfried von Straßburg: Tristan.</strong&gt;">Tristan des
+                              Gottfried von Straßburg<a href="https://de.wikipedia.org/wiki/Tristan_(Gottfried_von_Stra%C3%9Fburg)">📖</a></span> würde ich später zu lesen raten. Jede, auch die
+                           dunkelste und entfernteste Spur zu Auffindung des Vaterlandes von <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Hartmann von Aue</strong&gt;">Hartmann v. Au<a href="https://d-nb.info/gnd/118546228"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> ist höchst wichtig, da man über seine Herkunft gar nichts
+                           weiss: allein der Name fürt uns zu nichts! es gibt noch Edelleute des Namens von
+                           Owe in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Schwaben</strong&gt;">Schwaben<a href="https://www.wikidata.org/wiki/Q11812551"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, sie
+                           sind aber mit dem Sänger <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Hartmann von Aue</strong&gt;">Hartmann<a href="https://d-nb.info/gnd/118546228"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           auf keine Weise verwandt, welcher, wie ich gute Spur habe, einen Hasen in dem
+                           Schilde oder doch wenigstens auf dem Helme fürte. Das schlimmste ist, dass wir
+                           seinen Geschlechtsnamen nicht einmal kennen; denn er selbst sagt blos im <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Hartmann von Aue: Der arme Heinrich.</strong&gt;">armen Heinrich<a href="https://de.wikipedia.org/wiki/Der_arme_Heinrich">📖</a></span>, daß er ein Dienstmann (:Ministerialis:) zu Owe sei. Es ist
+                           also bei Verfolgung irer Spur hauptsächlich das Wappen oder Siegel des Pfarrers
+                           von <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Scherzingen</strong&gt;">Scherzingen<a href="https://www.wikidata.org/wiki/Q2233843"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> zu entdeken, ob es mit jenem des <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Hartmann von Aue</strong&gt;">Hartmann von
+                              Owe<a href="https://d-nb.info/gnd/118546228"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> Aenlichkeit hat. Was Sie über <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jacob Grimm: Deutsche Grammatik.</strong&gt;">Grimms
+                              Grammatik<a href="urn:nbn:de:kobv:b4-200905191939">📖</a></span> sagen, habe ich zum Teile oft schon selbst gefunden; aber dieser
+                           Mann hat eine große Auctorität im nördlichen <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Deutschland</strong&gt;">Deutschland<a href="https://www.wikidata.org/wiki/Q183"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>; wir
+                           sind ser gute Bekannte und Freunde, aber füren oft abweichende Meinungen in
+                           unserm epistolarischen Verkere. Was Sie aber von Umwandlung der Selbstlaute in
+                           unserer Sprache sagen, ist nicht ganz begründet; denn das Gegentheil ist viel
+                           mer factisch erwiesen; wol aber bin ich darin Irer Meinung, daß diese Mundarten
+                           (:Dialecte:) nicht erst aus dieser Umwandlung entsprungen seien. Es kömmt bei
+                           diesen Dingen viel, ja das Meiste auf Zeit, Volk und Land an, von denen gerade
+                           die Rede ist. Meine alte sich immer mer bevestigende Meinung ist, daß schon vor
+                           <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ulfilas</strong&gt;">Ulfilas<a href="https://d-nb.info/gnd/118763512"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           Zeit, ja bei der Einwanderung aus <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Asien</strong&gt;">Asien<a href="https://www.wikidata.org/wiki/Q48"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, bei den
+                           germanischen Stämmen zwei Hauptdialecte gewesen, sowie sie noch sind; der
+                           ober-(deutsche) und niederdeutsche. Darüber sprechen wir beßer einmal in der <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Eppishausen</strong&gt;">Villa
+                              Epponis<a href="https://www.wikidata.org/wiki/Q1423653"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>. Sie sollen sowohl von meinem Nibelungenliede, als von dem III.
+                           Bande des <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Joseph von Laßberg: Lieder-Saal, das ist: Sammelung altteutscher&#xA;        Gedichte.</strong&gt;">Liedersaals<a href="http://dl.ub.uni-freiburg.de/diglit/liedersaal1825-3https://www.digitale-sammlungen.de/en/view/bsb10113516">📖</a></span> haben; allein erstes muß ich erst herauspaken und von lezterem
+                           sind die Exemplare in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Konstanz</strong&gt;">Constanz<a href="https://www.wikidata.org/wiki/Q3834"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>. Von
+                           Bezalung kann hier keine Rede sein und können glauben, daß jeder Anlaß Inen
+                           einen Dienst zu erweisen, mir allezeit ser willkommen ist. Es tut mir leid, daß
+                           ich bei meinem lezten Abgang die Dauer meiner Abwesenheit von hier nicht wußte,
+                           sonst hätte ich Inen den <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Trutpert Neugart; Franz Josef Mone: Episcopatus Constantiensis Alemannicus sub metropoli Moguntina&#xA;        chronologice et diplomatice illustratus.</strong&gt;">Episcopatus
+                              Constanc. des Neugart<a href="http://opac.regesta-imperii.de/id/62260">📖</a></span> geschickt, um jn meiner Abwesenheit jn zu benuzen.
+                           Ich schreibe wirklich das <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Breviarium dieser
+                              Handschrift</span> ab, welche wol so bald noch nicht im Druk erscheinen wird. Es
+                           ist ein sehr wichtiges Werk für <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Schwaben</strong&gt;">Schwaben<a href="https://www.wikidata.org/wiki/Q11812551"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> und <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Schweiz</strong&gt;">Schweiz<a href="https://www.wikidata.org/wiki/Q39"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>: aber wer will jezt gerne latein lesen? Laßen Sie sich ja nicht
+                           abhalten die Antirecension der <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Berthold von Regensburg: Sermones in lingua vulgari.</strong&gt;">Predigten des
+                              Bruders Berthold<a href="https://www.geschichtsquellen.de/werk/640">📖</a></span> zu schreiben; es ist eine verdienstliche Sache und alle
+                           Freunde der altteutschen Literatur werden es jnen Dank wissen. Der Recensent
+                           kannte und verstand wahrscheinlich diese Sprache nicht. Über <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Berthold von Regensburg</strong&gt;">Berthold<a href="https://d-nb.info/gnd/11851007X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           selbst und seine Zeit finden Sie gute Nachricht bei dem <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johannes von Winterthur</strong&gt;">Johann von
+                              Winterthur<a href="https://d-nb.info/gnd/100950574"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> in ab <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Eccard, Johann Georg: Corpus historicum medii aevi sive Scriptores res.. . praecipue in&#xA;        Germania.. . illustrantes (Vol. 1-2).</strong&gt;">Ekhardts
+                              Corp. histor: med: aevi. Tom: I.<a href="http://opac.regesta-imperii.de/id/1240506">📖</a></span> Der Mönch von <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Winterthur</strong&gt;">Winterthur<a href="https://www.wikidata.org/wiki/Q9125"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> kannte
+                           noch Leute, die den Bruder <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Berthold von Regensburg</strong&gt;">Berthold<a href="https://d-nb.info/gnd/11851007X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           predigen gehört hatten. Könnten Sie mir wohl eine Abschrift der <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Urkunde</span> verschaffen, in welcher so viele Minnesänger
+                           oder doch deren Verwandte als Zeugen vorkommen? ich glaube, Sie haben sie im <span class="rs-misc" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Kantons Archiv</span> gefunden. Gerne würde ich die Gebür
+                           bezalen; aber die Copia müsste collationirt sein. Die Villa und Urbs sind so
+                           nahe beisammen, daß sie wol dieser Tage einen Spaziergang herüber machen und bei
+                           mir nachtlagern könnten, der Abend ist im Winter vortrefflich zu
+                           wissenschaftlicher Unterhaltung, und am Morgen sind Sie ja so früh Sie wollen
+                           wieder zu Hause. Es tut mir leide, daß Sie diesen Herbst so oft fortgegangen
+                           sind; aber ich hatte unverschiebliche Geschäfte in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Heiligenberg</strong&gt;">Heiligenberg<a href="https://www.wikidata.org/wiki/Q509155"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>,
+                           unter andern die Pflanzung von 8000 jungen Eichen um den Schloßberg herum. In
+                           hundert Jaren wird das ein schöner Wald sein und niemand mehr wissen durch wen
+                           sie hergekommen sind. Ich sende Inen das einzige Exemplar vom III. Bande des <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Joseph von Laßberg: Lieder-Saal, das ist: Sammelung altteutscher&#xA;        Gedichte.</strong&gt;">Liedersaales<a href="http://dl.ub.uni-freiburg.de/diglit/liedersaal1825-3https://www.digitale-sammlungen.de/en/view/bsb10113516">📖</a></span> das ich bei Handen habe, denn es ist beßer, daß es jre
+                           Lesebegierde befriedige als unbenuzt bei mir liege.</p>
+                        
+                        <div class="letter-closer">
+                           
+                           <p class="letter-salute">behalten Sie es als Andenken
+                              an Iren ergebensten</p>
+                           
+                           <p class="letter-signed"><span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Joseph von Laßberg</strong&gt;">J. v.
+                                 Laßberg<a href="https://d-nb.info/gnd/118778862"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span></p>.
+                           </div>
+                        </div>
+                  </section>
+                  <details id="normalised-text" class="text-version mb-4">
+                     <summary>Normalisierter Text</summary>
+                     <div>
+                        
+                        <p>Eppishausen am 4. Nov. 1825. Mein verehrtester Herr! Ihr erst heute erhaltenes
+                           Schreiben vom 29. Weinmonat hat mir viele Freude gemacht: es tut einem alten
+                           Manne immer wohl, wenn man an ihn denkt; noch mehr, wenn man seiner mit Liebe
+                           gedenkt. Ich bitte Sie zu glauben, dass ich einen nicht kleinen Wert auf Ihr
+                           freundschaftliches Wohlwollen setze und selbiges auf alle Weise zu erwidern und
+                           zu verdienen streben werde. Ich sende Ihnen hier nach Ihrem Verlangen die
+                           Myller'sche Sammlung; es ist auch ein dritter Teil vorhanden, der nie in den
+                           Buchhandel gekommen ist und den ich nicht besitze; er enthält den Krieg von
+                           Troja des Wolfram von Eschilbach. Es freut mich ungemein, dass Sie sich mit der
+                           deutschen Literatur des Mittelalters näher bekannt machen wollen; die Sache kann
+                           nicht anders als dabei gewinnen, und mich würde es ganz glücklich machen, so
+                           nahe bei mir einen Mitarbeiter zu gewinnen. Als Einführung zu diesem Studium
+                           würde ich raten, den Grundriss der alten deutschen poetischen Literatur von von
+                           Dr Hagen und Büsching zu lesen. So unvollkommen das Buch ist, so unentbehrlich
+                           ist es, da wir kein anderes dieser Art besitzen. Sie finden es bei mir. Den
+                           Tristan des Gottfried von Straßburg würde ich später zu lesen raten. Jede, auch
+                           die dunkelste und entfernteste Spur zur Auffindung des Vaterlandes von Hartmann
+                           von Aue ist höchst wichtig, da man über seine Herkunft gar nichts weiß: allein
+                           der Name führt uns zu nichts! Es gibt noch Edelleute des Namens von Ow in
+                           Schwaben, sie sind aber mit dem Sänger Hartmann auf keine Weise verwandt,
+                           welcher, wie ich gute Spur habe, einen Hasen im Wappen oder doch zumindest auf
+                           dem Helm führte. Das Schlimmste ist, dass wir seinen Geschlechtsnamen nicht
+                           einmal kennen; denn er selbst sagt bloß im "armen Heinrich", dass er ein
+                           Dienstmann (Ministerialis) zu Ow sei. Es ist also bei der Verfolgung ihrer Spur
+                           hauptsächlich das Wappen oder Siegel des Pfarrers von Scherzingen zu entdecken,
+                           ob es mit jenem des Hartmann von Ow Ähnlichkeit hat. Was Sie über Grimms
+                           Grammatik sagen, habe ich zum Teil schon selbst gefunden; aber dieser Mann hat
+                           eine große Autorität im nördlichen Deutschland; wir sind sehr gute Bekannte und
+                           Freunde, aber führen oft abweichende Meinungen in unserem epistolarischen
+                           Verkehr. Was Sie aber von Umwandlung der Selbstlaute in unserer Sprache sagen,
+                           ist nicht ganz begründet; denn das Gegenteil ist viel mehr faktisch erwiesen;
+                           wohl aber bin ich darin Ihrer Meinung, dass diese Mundarten (Dialekte) nicht
+                           erst aus dieser Umwandlung entsprungen sind. Es kommt bei diesen Dingen viel, ja
+                           das Meiste auf Zeit, Volk und Land an, von denen gerade die Rede ist. Meine
+                           alte, sich immer mehr befestigende Meinung ist, dass schon vor Ulfilas Zeit, ja
+                           bei der Einwanderung aus Asien, bei den germanischen Stämmen zwei Hauptdialekte
+                           gewesen sind, sowie sie noch sind; der ober- (deutsche) und niederdeutsche.
+                           Darüber sprechen wir besser einmal in der Villa Epponis. Sie sollen sowohl von
+                           meinem Nibelungenlied, als auch von dem III. Band des Liedersaals haben;
+                           allerdings muss ich erstes erst heraussuchen und von letzterem sind die
+                           Exemplare in Konstanz. Von Bezahlung kann hier keine Rede sein und [Sie] können
+                           glauben, dass jeder Anlass Ihnen einen Dienst zu erweisen, mir jederzeit sehr
+                           willkommen ist. Es tut mir leid, dass ich bei meinem letzten Abgang die Dauer
+                           meiner Abwesenheit von hier nicht wusste, sonst hätte ich Ihnen den "Episcopatus
+                           Constanc. des Neugart" geschickt, um ihn meiner Abwesenheit zu nutzen. Ich
+                           schreibe wirklich das Breviarium dieser Handschrift ab, welche wohl so bald noch
+                           nicht im Druck erscheinen wird. Es ist ein sehr wichtiges Werk für Schwaben und
+                           Schweiz: aber wer will jetzt gerne Latein lesen? Lassen Sie sich ja nicht
+                           abhalten, die Antirezension der Predigten des Bruders Berthold zu schreiben; es
+                           ist eine verdienstliche Sache und alle Freunde der altdeutschen Literatur werden
+                           es Ihnen danken. Der Rezensent kannte und verstand wahrscheinlich diese Sprache
+                           nicht. Über Berthold selbst und seine Zeit finden Sie gute Nachrichten bei dem
+                           Johann von Winterthur in ab Ekhardts Corp. histor: med: aevi. Tom: I. Der Mönch
+                           von Winterthur kannte noch Leute, die den Bruder Berthold predigen gehört
+                           hatten. Könnten Sie mir wohl eine Abschrift der Urkunde verschaffen, in welcher
+                           so viele Minnesänger oder doch deren Verwandte als Zeugen vorkommen? Ich glaube,
+                           Sie haben sie im Kantonsarchiv gefunden. Gerne würde ich die Gebühr bezahlen;
+                           aber die Kopie müsste kollationiert sein. Die Villa und Stadt sind so nahe
+                           beieinander, dass Sie wohl dieser Tage einen Spaziergang herüber machen und bei
+                           mir übernachten könnten, der Abend ist im Winter vorzüglich zu
+                           wissenschaftlicher Unterhaltung, und am Morgen sind Sie ja so früh Sie wollen
+                           wieder zu Hause. Es tut mir leid, dass Sie diesen Herbst so oft fortgegangen
+                           sind; aber ich hatte unverschiebbare Geschäfte in Heiligenberg, unter anderem
+                           die Pflanzung von 8000 jungen Eichen um den Schlossberg herum. In hundert Jahren
+                           wird das ein schöner Wald sein und niemand mehr wissen, durch wen sie
+                           hergekommen sind. Ich sende Ihnen das einzige Exemplar vom III. Bande des
+                           Liedersaales, das ich bei Händen habe, denn es ist besser, dass es Ihre
+                           Lesebegierde befriedigt, als unbenutzt bei mir liegt. Behalten Sie es als
+                           Andenken an Ihren ergebensten J. v. Laßberg</p>
+                        </div>
+                  </details>
+                  <details id="translation" class="text-version mb-4">
+                     <summary>Translation</summary>
+                     <div>
+                        
+                        <p>Eppishausen, November 4, 1825. My Most Esteemed Sir, Your letter from the 29th of
+                           Wine Month, which I received only today, has brought me great joy. It is always
+                           heartening for an old man when he is remembered, even more so when it is with
+                           affection. Please believe that I place great value on your friendly goodwill and
+                           will strive to reciprocate and deserve it in every way. As per your request, I
+                           am sending you Müller's collection. There is also a third part, which has never
+                           been in the book trade, and which I do not possess; it contains the War of Troy
+                           by Wolfram von Eschenbach. I am extremely pleased that you want to become more
+                           familiar with German medieval literature; the subject can only benefit from
+                           this, and it would make me very happy to gain a collaborator so close by. As an
+                           introduction to this study, I would recommend reading the outline of old German
+                           poetic literature by Dr. Hagen and Büsching. As imperfect as the book is, it is
+                           indispensable, as we have no other of its kind. You can find it with me. I would
+                           advise reading Gottfried von Strassburg's Tristan later. Every, even the darkest
+                           and most distant, trace to find the homeland of Hartmann von Aue is extremely
+                           important, as nothing is known about his origin: but the name leads us to
+                           nothing! There are still nobles of the name of Ow in Swabia, but they are in no
+                           way related to the singer Hartmann, who, as I have good reason to believe,
+                           carried a hare in his coat of arms, or at least on his helmet. The worst thing
+                           is that we do not even know his family name; for he himself says only in the
+                           "poor Heinrich" that he is a ministerialis (vassal) of Ow. So, in pursuing your
+                           lead, it is primarily important to discover the coat of arms or seal of the
+                           priest of Scherzingen, to see if it resembles that of Hartmann von Ow. What you
+                           say about Grimm's grammar, I have partly found myself; but this man has great
+                           authority in northern Germany; we are very good acquaintances and friends, but
+                           often have diverging opinions in our epistolary communication. However, what you
+                           say about the transformation of vowels in our language is not entirely founded;
+                           for the opposite is much more factually proven; but I do agree with you that
+                           these dialects did not originate from this transformation. Much, indeed most,
+                           depends on the time, people, and land being discussed. My old, ever more
+                           solidifying opinion is that even before Ulfilas' time, indeed, at the time of
+                           the migration from Asia, there were two main dialects among the Germanic tribes,
+                           as there still are; the Upper (German) and Lower German. We will better discuss
+                           this at Villa Epponis. You shall have both my Nibelungenlied and the third
+                           volume of the Liedersaal; of course, I have to search for the former first, and
+                           the copies of the latter are in Constance. There can be no question of payment
+                           here and [you] can believe that any opportunity to render you a service is
+                           always very welcome to me. I am sorry that I did not know the duration of my
+                           absence from here on my last departure, otherwise, I would have sent you
+                           Neugart's "Episcopatus Constanc." to make use of it during my absence. I am
+                           actually copying the breviary of this manuscript, which will probably not be
+                           printed anytime soon. It is a very important work for Swabia and Switzerland:
+                           but who wants to read Latin now? Do not let yourself be dissuaded from writing
+                           the anti-review of Brother Berthold's sermons; it is a meritorious thing, and
+                           all friends of old German literature will thank you for it. The reviewer
+                           probably did not know or understand this language. You will find good
+                           information about Berthold himself and his time with Johann von Winterthur in ab
+                           Ekhardt's Corp. histor: med: aevi. Tom: I. The monk of Winterthur knew people
+                           who had heard Brother Berthold preach. Could you possibly provide me with a copy
+                           of the document in which so many minnesingers or their relatives appear as
+                           witnesses? I believe you found it in the cantonal archive. I would gladly pay
+                           the fee; but the copy would have to be collated. The villa and the town are so
+                           close together that you could take a walk over here these days and stay
+                           overnight with me; the evening is especially good for scientific conversation in
+                           winter, and in the morning you are at home as early as you like. I am sorry that
+                           you have been away so often this fall; but I had unavoidable business in
+                           Heiligenberg, among other things, the planting of 8000 young oaks around the
+                           Schlossberg. In a hundred years, this will be a beautiful forest, and no one
+                           will know anymore who brought them here. I am sending you the only copy of the
+                           third volume of the Liedersaal that I have at hand, for it is better that it
+                           satisfies your reading desire than lies unused with me. Keep it as a memento of
+                           your most devoted J. v. Laßberg.</p>
+                        </div>
+                  </details>
+                  <div id="related-letters"></div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer class="bg-dark text-white text-center py-3">
+         <div class="container">
+            <p class="mb-0"><a href="../letters.html">Back to the Letters</a></p>
+         </div>
+      </footer><script src="../../js/related.js"></script><script src="https://unpkg.com/leaflet/dist/leaflet.js"></script><script>
+                    var letterPlaces = [];
+                    
+                    letterPlaces.push({ coords: [47.545,9.23759], label: "Eppishausen", kind: "sent" });
+                    
+                    letterPlaces.push({ coords: [48.37844, 9.963274], label: "Schwaben", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [47.631944444444, 9.2286111111111], label: "Scherzingen", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [51, 10], label: "Deutschland", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [43.681111111111115, 87.33111111111111], label: "Asien", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [47.66666667,9.18333333], label: "Konstanz", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [46.798562, 8.231973], label: "Schweiz", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [47.49888889,8.72861111], label: "Winterthur", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [47.82083333,9.3125], label: "Heiligenberg", kind: "mentioned" });
+                        
+
+                    if (letterPlaces.length === 0) {
+                        document.getElementById('map').style.display = 'none';
+                    } else {
+                        var map = L.map('mapid', { scrollWheelZoom: false });
+                        // Muted basemap (CARTO Positron) instead of the default colourful OSM
+                        // tiles, to match the edition's restrained palette.
+                        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+                            attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+                            subdomains: 'abcd',
+                            maxZoom: 19
+                        }).addTo(map);
+
+                        var bounds = [];
+                        letterPlaces.forEach(function (p) {
+                            var isSent = p.kind === 'sent';
+                            var marker = L.circleMarker(p.coords, isSent
+                                ? { radius: 8, color: '#143761', weight: 2, fillColor: '#1d4e89', fillOpacity: 0.85 }
+                                : { radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75 }
+                            ).addTo(map).bindPopup((isSent ? 'Sent from: ' : 'Mentioned: ') + p.label);
+                            bounds.push(p.coords);
+                        });
+                        if (bounds.length > 1) {
+                            map.fitBounds(bounds, { padding: [25, 25], maxZoom: 9 });
+                        } else {
+                            map.setView(bounds[0], 8);
+                        }
+                    }
+                </script><script>
+                    // Initialize all tooltips
+                    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+                    new bootstrap.Tooltip(tooltipTriggerEl)
+                    })
+                </script></body>
+</html>

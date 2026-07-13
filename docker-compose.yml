@@ -3,9 +3,9 @@ services:
     image: neo4j:5-community
     ports:
       - "7474:7474"  # browser UI
-      - "7687:7687"  # bolt
+      - "7687:7687"  # bolt neo4j
     environment:
-      - NEO4J_AUTH=neo4j/${NEO4J_PASSWORD:-lassberg-dev-pw123}
+      - NEO4J_AUTH=neo4j/${NEO4J_PASSWORD:-neo4j-pw-CHANGE}
       - NEO4J_PLUGINS=[]
     volumes:
       - neo4j-data:/data

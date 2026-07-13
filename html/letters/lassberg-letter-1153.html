@@ -1,0 +1,506 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0" lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>The Lassberg Letters</title>
+      <link href="../../css/styles.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script><link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"><script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script></head>
+   <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+         <div class="container"><a class="navbar-brand" href="../../index.html">The Laßberg Letters</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link" href="../../index.html">Welcome</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../persons.html">Persons</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../places.html">Places</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../explore.html">Explore</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <header class="page-header py-4">
+         <div class="container">
+            <h1 class="mb-2">Brief von Joseph von Laßberg an Johann Adam Pupikofer (04.03.1827).</h1>
+            <p class="lead mb-0">
+               
+               <p>Correspondence data based on Harris, Martin: Joseph Maria Christoph
+                  Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                  Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                  geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                  Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.. Briefe
+                  automatisiert mit GPT-3.5 normalisiert.</p>
+               </p>
+         </div>
+      </header>
+      <main class="py-4">
+         <div class="container">
+            <div class="alert alert-warning letter-preview-banner" role="alert"><strong>Unreviewed working text.</strong> The encoding of this letter
+               has not yet been editorially reviewed
+               (status: done).
+               The text may contain transcription or OCR errors — please cite with caution.
+               </div>
+            <div class="row g-4">
+               <div class="col-lg-4 order-lg-2">
+                  <aside class="letter-sidebar">
+                     <section id="metadata" class="mb-4">
+                        <h2 class="h5">Metadata</h2>
+                        <p><strong>Signatur: </strong>Winterthur, Stadtbibliothek, </p>
+                        <p><strong>Registernummer (Laßberg): </strong>44</p>
+                        <p><strong>Registernummer (Harris): </strong>574</p>
+                        <p><strong>Gedruck in: </strong><a href="https://books.google.de/books?id=dXkKAAAAIAAJ">Johannes Meyer, Briefwechsel zwischen J.
+                              von Laszberg und Johann Adam Pupikofer. In: Alemannia 15 (1887), S.
+                              231-88, S.
+                              236-39</a></p>
+                     </section>
+                     <section id="map" class="mb-4">
+                        <h2 class="h5">Places</h2>
+                        <div id="mapid"></div>
+                        <p class="map-legend small text-muted mt-1 mb-0"><span class="legend-dot" style="background:#1d4e89"></span> place of sending
+                           <span class="legend-dot ms-2" style="background:#b57cc0"></span> places mentioned
+                           </p>
+                     </section>
+                     <section id="mentioned" class="mb-4">
+                        <h2 class="h5">Mentioned in this letter</h2>
+                        <h3 class="h6 mt-3">Persons</h3>
+                        <ul class="list-unstyled small mb-2">
+                           <li><a href="../persons.html?q=Johann%20Caspar%20Zellweger">Johann Caspar Zellweger</a></li>
+                           <li><a href="../persons.html?q=Peter%20Scheitlin">Peter Scheitlin</a></li>
+                           <li><a href="../persons.html?q=Joseph%20von%20La%C3%9Fberg">Joseph von Laßberg</a></li>
+                           <li><a href="../persons.html?q=Ramschwag%20%28Geschlecht%29">Ramschwag (Geschlecht)</a></li>
+                           <li><a href="../persons.html?q=Melchior%20Goldast">Melchior Goldast</a></li>
+                           <li><a href="../persons.html?q=Notker%20Balbulus">Notker Balbulus</a></li>
+                           <li><a href="../persons.html?q=Einhard">Einhard</a></li>
+                           <li><a href="../persons.html?q=Karl%20der%20Gro%C3%9Fe">Karl der Große</a></li>
+                           <li><a href="../persons.html?q=Heinrich%20Canisius">Heinrich Canisius</a></li>
+                           <li><a href="../persons.html?q=Jacques%20Basnage">Jacques Basnage</a></li>
+                           <li><a href="../persons.html?q=Walafrid%20Strabo">Walafrid Strabo</a></li>
+                           <li><a href="../persons.html?q=Hermann%20von%20Reichenau">Hermann von Reichenau</a></li>
+                           <li><a href="../persons.html?q=Gerold%20vom%20Bu%C3%9Fen">Gerold vom Bußen</a></li>
+                           <li><a href="../persons.html?q=Elise%20%28Nichte%29%20Eberhard%20von%20Regensburg">Elise (Nichte) Eberhard von Regensburg</a></li>
+                           <li><a href="../persons.html?q=Niklaus%20Friedrich%20von%20M%C3%BClinen">Niklaus Friedrich von Mülinen</a></li>
+                           <li><a href="../persons.html?q=Amann%2C%20Pfarrer%20von%20Sulgen">Amann, Pfarrer von Sulgen</a></li>
+                           <li><a href="../persons.html?q=Georg%20Sigmund%20von%20Ems">Georg Sigmund von Ems</a></li>
+                        </ul>
+                        <h3 class="h6 mt-3">Places</h3>
+                        <ul class="list-unstyled small mb-2">
+                           <li><a href="../places.html?q=Eppishausen">Eppishausen</a></li>
+                           <li><a href="../places.html?q=St.%20Gallen">St. Gallen</a></li>
+                           <li><a href="../places.html?q=Konstanz">Konstanz</a></li>
+                           <li><a href="../places.html?q=H%C3%A4uptlisberg">Häuptlisberg</a></li>
+                           <li><a href="../places.html?q=Roggelsberg">Roggelsberg</a></li>
+                           <li><a href="../places.html?q=Appenzell">Appenzell</a></li>
+                           <li><a href="../places.html?q=Burg%20Blatten">Burg Blatten</a></li>
+                           <li><a href="../places.html?q=Rheintal">Rheintal</a></li>
+                           <li><a href="../places.html?q=Weinfelden">Weinfelden</a></li>
+                           <li><a href="../places.html?q=Wertb%C3%BChl">Wertbühl</a></li>
+                           <li><a href="../places.html?q=Stoss">Stoss</a></li>
+                        </ul>
+                        <h3 class="h6 mt-3">Literature</h3>
+                        <ul class="list-unstyled small mb-0">
+                           <li class="mb-1">Der Bär, als Wappen des Kantons Appenzell. In: Appenzellisches Monatsblatt 3 Heft
+                              2 (1827), S. 21-26. <a href="../explore.html?node=lassberg-literature-0062" title="Show in the knowledge graph" class="small">graph</a></li>
+                           <li class="mb-1">Thesaurus monumentorum ecclesiasticorum et historicorum, sive Henrici Canisii lectiones
+                              antiquae. Band: 2,2. <a href="../explore.html?node=lassberg-literature-0063" title="Show in the knowledge graph" class="small">graph</a></li>
+                           <li class="mb-1">Thurgauer Zeitung <a href="../explore.html?node=lassberg-literature-0051" title="Show in the knowledge graph" class="small">graph</a></li>
+                           <li class="mb-1">Helvetia: Denkwürdigkeiten für die XXII Freistaaten der Schweizerischen Eidgenossenschaft <a href="../explore.html?node=lassberg-literature-0065" title="Show in the knowledge graph" class="small">graph</a></li>
+                           <li class="mb-1">Schilter, Thesaurus Antiquitatum Teutonicarum <a href="../explore.html?node=lassberg-literature-0037" title="Show in the knowledge graph" class="small">graph</a></li>
+                        </ul>
+                     </section>
+                  </aside>
+               </div>
+               <div class="col-lg-8 order-lg-1">
+                  <section id="original-text" class="mb-4">
+                     <h2>Original Text
+                        <span class="transcription-source badge-print" title="OCR-Texterfassung aus der gedruckten Edition, siehe Metadaten/Gedruckt in">Transcribed from the printed edition (OCR)</span></h2>
+                     <div>
+                        
+                        <div class="letter-fw">Dem Herren Diaconus Pupicofer zu Bischofszelle mit einem paket Bücher.</div>
+                        
+                        <div class="letter-opener">
+                           
+                           <p class="letter-dateline"><span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Eppishausen</strong&gt;">Eppishausen<a href="https://www.wikidata.org/wiki/Q1423653"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> am 4. März 1827.</p>
+                           </div>
+                        
+                        <p>Den Aufsaz "<span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Georg Schläpfer: Der Bär, als Wappen des Kantons Appenzell. In: Appenzellisches Monatsblatt 3&#xA;        Heft 2 (1827), S. 21-26.</strong&gt;">der Bär als
+                              wappen des Kt. Appenzell<a href="https://doi.org/10.5169/seals-542143">📖</a></span>" hat sicher nichf Hr. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Caspar Zellweger</strong&gt;">Kaspar
+                              Zellweger<a href="https://d-nb.info/gnd/116978813"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> geschrieben; er würde mir gewiß nicht das lächerliche
+                           (:vielleicht ironische:) prädicat eines berümten altertumsforschers gegeben
+                           haben: ich rate auf den Hrn. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Peter Scheitlin</strong&gt;">Prof.
+                              Scheitlin<a href="https://d-nb.info/gnd/117194751"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>, dessen Schriften beinahe immer, wenn gleich vielleicht
+                           unwillkürlich einen Anflug von stiller Satyre haben. Wenn der Verf. aus dem
+                           Umstande, daß 2 st.gallische bürgerwappen unter dem <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Glasgemälde</span> der Bärenschlacht stehen, schließen will, daß die begebenbeit
+                           <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;St. Gallen</strong&gt;">St.
+                              Gallen<a href="https://www.wikidata.org/wiki/Q25607"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> angehöre; so könnte ich im auskunft geben, daß ich dieses
+                           Schlachtbild ganz einzeln in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Konstanz</strong&gt;">Constanz<a href="https://www.wikidata.org/wiki/Q3834"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> - den
+                           teil des fensters aber, welcher d. wappen und jarzal enthält, von dem Bauer N.
+                           im <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Roggelsberg</strong&gt;">Roggelsberg<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> gekauft habe und zwar one einen obern teil dazu zu finden; ich
+                           ließ erst später die teile so zusammen fügen. Daß der Bär im St. gallischen
+                           Wappen, als Städter, gegen den armen Bären von <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Appenzell</strong&gt;">Appenzell<a href="https://www.wikidata.org/wiki/Q12094"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, wie
+                           billig mit einem goldenen Halsbande geziert, war dem berümten Altertumsforscher
+                           <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Joseph von Laßberg</strong&gt;">v.
+                              Laßberg<a href="https://d-nb.info/gnd/118778862"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> wol auch bekannt; aber er wußte auch, daß im anfange des XVI.
+                           Iahrhunderts die teutschen Maler dergleichen Dingen noch nicht so genau namen,
+                           wie die durch strenge Kritik erzogenen des XIXten. Anomalien dieser art finden
+                           sich one Zal aus jener Zeit und selbst das befragte Glasgemälde hat sie; wie
+                           z.B. 2 graven von Tierstein auf dem boden liegen, da nach des Recensenten
+                           eigener angabe nur einer am <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Häuptlisberg</strong&gt;">Häuptlisberg<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>
+                           erschlagen wurde; daß die Bären und ire Feinde zum teil mit Feuerroren bewaffnet
+                           sind, von denen jedoch in den berichten über jene zeitbegebenheiten keine
+                           Erwänung geschieht u.s.w. Der <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Joseph von Laßberg</strong&gt;">H. v.
+                              Laßberg<a href="https://d-nb.info/gnd/118778862"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> besizt aber noch ein <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Glasgemälde</span>, und
+                           zwar von derselben Hand wie das befragte, auf diesem ist wieder eine Schaar
+                           Bären vorgestellt, diese haben alle wieder gelbe Halsbänder um; diese nun
+                           belagern eine burg im Vordergrunde sind Kanonen zwischen schanzkörben
+                           aufgestellt aus welchen tapfer gefeuert wird; nicht weniger tapfer sizen zwei
+                           Bären als Konstabler hinter den Schanzkärben und sind bemühet einer großen
+                           runden Flasche ir recht anzutun; zur linken ist ein teil dieser Bären im begriff
+                           unter iren Bannern die belagerte burg zu stürmen, einer der mutigsten trägt eine
+                           leiter voran; zur rechten ist ein anderer teil dieses belagerungsheeres
+                           aufgestellt, und ein befelshaberischer Bär mit einer mächtigen Hakenbüchse auf
+                           der Schulter, auf den rechten flügel deutend scheint seine gesellen zum
+                           sturmlaufen aufzumuntern. Auch diese darstellung hat der besizer ganz einzeln
+                           gekauft, und mit einem andern Glgemälde, das die Schlacht der St. Galler mit
+                           denen <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">v.
+                              Ramschwag<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> am Riederholz vorstellt (:1292:) verbunden. In der höhe über der
+                           belagerten burg stund das Wort Blaten, wurde aber von dem Glaser nebst der spize
+                           des einen turmes beim zusammensezen aufgeopfert. Nun wünschte der besizer recht
+                           sehr von dem H. Recensenten die belerung zu erhalten, ob es auch die von <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;St. Gallen</strong&gt;">St.
+                              Gallen<a href="https://www.wikidata.org/wiki/Q25607"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> waren, welche im appenzeller krieg die burg <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Burg&#xA;                        Blatten</strong&gt;">Blatten<a href="https://de.wikipedia.org/wiki/Burg_Blatten"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> im <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Rheintal</strong&gt;">Rheintal<a href="https://www.wikidata.org/wiki/Q95747"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> belagerten? In diesem falle würde er denn one weiteres bedenken,
+                           der Meinung, daß in dem zuerst angefürfen Gemälde die Schlacht am <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Häuptlisberg</strong&gt;">Häuptlisberg<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> vorgestellt sei, beitreten - und alle diese Bären auf beiden
+                           gemälden für ware und unverfälschte St. Galler halten; damit wir aber nicht von
+                           der ziegenwolle noch mer in die Bärenwolle geraten, so schließe ich diesen
+                           artikel mit dem einzigen Wunsche, daß der Recensent wenigstens mir dem berümten
+                           altertumsforscher, nicht zumuten wolle zu glauben, daß etwa ein mitkämpfer am
+                           <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Häuptlisberg</strong&gt;">Häuptlisberg<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> (:1405:) eines dieser beiden gl. gemälde, welche aus seiner
+                           Zeit und sicher nicht früher als 1505 gemacht sind, habe verfertigen laßen, und
+                           dann noch mit der Frage: welchem St. gallischen mannen wol das mit Federn
+                           gezierte Baret des Bärenanfürers zuzuschreiben sein möchte? So viel und
+                           vielleicht schon zu viel über die Bären mit und one halsband; mit dem monachus
+                           S. gallensis haben Sie mir eine ware freude gemacht. welch eine fundgrube für
+                           Romanzen und Balladen Dichter! auch ich halte es mit <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Melchior Goldast</strong&gt;">Goldast<a href="https://d-nb.info/gnd/118696130"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>,
+                           welcher diese vielleicht schon im noviziate gesammelte Anecdoten Reihe dem <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Notker Balbulus</strong&gt;">stammler Notker<a href="https://d-nb.info/gnd/118588850"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> zuschreibt; und darin halte ich es gänzlich mit Inen, daß
+                           die glaubwürdigkeit dieses mönchs nicht so völlig zu verwerfen und die meisten
+                           d. v. jm erzälten begebenheiten nichts weniger als unglaublich seien. Das ganze
+                           aber ist ohne zweifel das reichste Sittengemälde jener Zeit, one des <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Einhard</strong&gt;">Eginhards<a href="https://d-nb.info/gnd/118529560"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> annalen, in welch lezterem der höfische Biograf den charakter
+                           <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Karl der Große</strong&gt;">Karls<a href="https://d-nb.info/gnd/118560034"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           freilich nicht so frei und war schildern durfte, als der spätere mönch, der
+                           seine sammlung freilich weder für den Hof, noch für die äußere welt; sondern
+                           bloß für sich und vertraute Freunde machte und niederschrieb. Überdies enthält
+                           dieser <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jacques Basnage; Heinrich Canisius: Thesaurus monumentorum ecclesiasticorum et historicorum,&#xA;        sive Henrici Canisii lectiones antiquae. Band: 2,2.</strong&gt;">dieser
+                              Band<a href="https://gateway-bayern.de/BV011139785https://archive.org/details/thesaurusmonumentorumeccles2b">📖</a></span> noch eine menge interessanter sachen; aber daß er kein Register hat
+                           kann ich weder dem <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Heinrich Canisius</strong&gt;">Canisius<a href="https://d-nb.info/gnd/124372988"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>, noch weniger aber dem <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jacques Basnage</strong&gt;">Basnage<a href="https://d-nb.info/gnd/120538253"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           verzeihen. Die von Inen mir geschriebenen bemerkungen werde ich, so viel ich
+                           sehe, wahrscheinlich meistens beantworten können. Das Sonnet <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Walafrid Strabo</strong&gt;">Walafrieds<a href="https://d-nb.info/gnd/118628550"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> ad amicam, ist den besten unserer zeit gleich zu sezen - der
+                           schluß ist, wie es bei einem Mönche des IX. Iahrhunderts sein mußte; ein
+                           gegenstük dazu findet sich in einem kleinen ged. des späteren <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Hermann von Reichenau</strong&gt;">Hermannus
+                              contract.<a href="https://d-nb.info/gnd/118549693"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> ad mußam, die im helfen soll, ein lied auf seine Freundin
+                           dichten. Das schöne Epitaphium auf den <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Gerold vom Bußen</strong&gt;">Gerold vom
+                              Bußen<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jacques Basnage; Heinrich Canisius: Thesaurus monumentorum ecclesiasticorum et historicorum,&#xA;        sive Henrici Canisii lectiones antiquae. Band: 2,2.</strong&gt;">Tom. II, Part
+                              II. Pag. 73<a href="https://gateway-bayern.de/BV011139785https://archive.org/details/thesaurusmonumentorumeccles2b">📖</a></span> ist offenbar Reichenauer arbeit, vielleicht auch von <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Walafrid Strabo</strong&gt;">Walafried<a href="https://d-nb.info/gnd/118628550"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>. Da heute morgen ein so starkes morgenrot war; so zweifle ich
+                           beinahe kaum, daß Ir feuerwerk werde verregnet werden. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Elise (Nichte)</strong&gt;">Elise<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           und ich danken für die einladung. Vor einigen Tagen beflel mich ein rheumat.
+                           Kopffieber mit Katharr und Halswehe: nun gehet es wieder beßer, doch glaube ich
+                           noch nicht ganz fieberfrei zu sein, da sich die bei mir gewönl. kriterien des
+                           gebrochenen fiebers noch nicht einstellt haben. Wenn Sie Irem Vorsaze getreu,
+                           morgen abend herüberkommen, hoffe ich doch im stande zu sein am mittwoch die
+                           kleine ausflucht nach <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Weinfelden</strong&gt;">Weinfelden<a href="https://www.wikidata.org/wiki/Q68258"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> machen
+                           zu können. Ob wir aber in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wertbühl</strong&gt;">Wärtbühl<a href="https://www.wikidata.org/wiki/Q56289481"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>
+                           unangekündigt auf eine malzeit rechnung machen dürfen? bezweifle ich. <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wertbühl</strong&gt;">Wärtbühl<a href="https://www.wikidata.org/wiki/Q56289481"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> ist wol nichts anders als <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wertbühl</strong&gt;">Wartbühel<a href="https://www.wikidata.org/wiki/Q56289481"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>
+                           (:collis speculatorius:) und die dort befindliche specula vielleicht ein
+                           abhängiger posten von Pfin. Die 23 f. 20 x. für die bücher habe ich richtig
+                           erhalten. Von dem fastnachtkuchen, dessen Ihre frau gemalin die güte hat zu
+                           erwänen, weiß ich gar nichts. Mit vergnügen las ich in der <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Thurgauer Zeitung.</strong&gt;">Thurgauer
+                              zeitung<a href="https://de.wikipedia.org/wiki/Thurgauer_Zeitung">📖</a></span>, daß Hr. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Niklaus Friedrich von Mülinen</strong&gt;">v.
+                              Mülinen<a href="https://d-nb.info/gnd/117166111"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> endlich seine stelle niedergelegt hat. er wird nun one verdruß und
+                           desto länger leben, da er nur den musen lebt; keine unter jnen gibt aber mer mut
+                           das leben zu ertragen, als die muse der Geschichte. Nun leben Sie wol auf
+                           baldiges wiedersehen! viele grüße an die Irigen. Da kommt auch <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Schilter: Thesaurus Antiquitatum Tevtonicarum, Ecclesiasticarum, Civilium, Litterariarum. 3,&#xA;        Glossarium Ad Scriptores Linguae Francicae Et Alemannicae Veteris... .</strong&gt;">Schilter<a href="VD18:%0A        80333109-001">📖</a></span>. Vor einigen tagen besuchte mich <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Amann, Pfarrer von Sulgen</strong&gt;">h. pfarrer
+                              Amann v. Sulgen<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> und besah ein wenig meine <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">historica</span>.</p>
+                        
+                        <div class="letter-closer">
+                           
+                           <p class="letter-salute">Ir ergebenster</p>
+                           
+                           <p class="letter-signed"><span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Joseph von Laßberg</strong&gt;">J. v.
+                                 Laßberg<a href="https://d-nb.info/gnd/118778862"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span></p>,
+                           </div>
+                        
+                        <div class="letter-postscript">
+                           
+                           <p>Beikommende Ankündigung bitte ich unter Iren Freunden zu
+                              verbreiten; es ist ein gutes werk für solche männer wie Maßmann suscribenten zu
+                              sammeln. Warum verschweigt der St. Galler Recensent den auf dem bilde in der
+                              vordern reihe fallenden <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Georg Sigmund von Ems</strong&gt;">Georg v.
+                                 Emps<a href="https://d-nb.info/gnd/136925634"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> als Steinbock, da es doch historisch gewis ist, daß er am <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Stoss</strong&gt;">Stoß<a href="https://www.wikidata.org/wiki/Q681105"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, nicht am <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Häuptlisberg</strong&gt;">Häuptlisberg<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, in
+                              den vordertreffen geblieben sei. o, über die Bären! Das 1. heft der <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Balthasar, Joseph Anton von: Helvetia: Denkwürdigkeiten für die XXII Freistaaten der Schweizerischen&#xA;        Eidgenossenschaft.</strong&gt;">Helvetia<a href="https://swisscollections.ch/Record/991086841629705501">📖</a></span> hatten Sie mir schon einmal geliehen.</p>
+                           </div>
+                        </div>
+                  </section>
+                  <details id="normalised-text" class="text-version mb-4">
+                     <summary>Normalisierter Text</summary>
+                     <div>
+                        
+                        <p>Dem Herren Diaconus Pupicofer zu Bischofszelle mit einem paket Bücher.
+                           Eppishausen am 4. März 1827 Den Aufsatz "der Bär als Wappen des Kt. Appenzell"
+                           hat sicher nicht Hr. Kaspar Zellweger geschrieben; er würde mir gewiss nicht das
+                           lächerliche (vielleicht ironische:) Prädikat eines berühmten Altertumsforschers
+                           gegeben haben: ich rate auf den Herrn Prof. Scheitlin, dessen Schriften beinahe
+                           immer, wenn auch vielleicht unwillkürlich einen Anflug von stiller Satire haben.
+                           Wenn der Verf. aus dem Umstand, dass 2 st. gallische Bürgerwappen unter dem
+                           Glasgemälde der Bärenschlacht stehen, schließen will, dass die Begebenheit St.
+                           Gallen angehört; so könnte ich im Auskunft geben, dass ich dieses Schlachtbild
+                           ganz einzeln in Konstanz den Teil des Fensters aber, welcher das Wappen und
+                           Jahreszahl enthält, von dem Bauer N. im Roggelsberg gekauft habe und zwar ohne
+                           einen oberen Teil dazu zu finden; ich ließ erst später die Teile so
+                           zusammenfügen. Dass der Bär im St. gallischen Wappen, als Städter, gegen den
+                           armen Bären von Appenzell, wie billig mit einem goldenen Halsbande geziert, war
+                           dem berühmten Altertumsforscher v. Laßberg wohl auch bekannt; aber er wusste
+                           auch, dass im Anfange des XVI. Jahrhunderts die deutschen Maler es mit
+                           dergleichen Dingen noch nicht so genau nahmen, wie die durch strenge Kritik
+                           erzogenen des XIX. Anomalien dieser Art finden sich ohne Zahl aus jener Zeit und
+                           selbst das befragte Glasgemälde hat sie; wie z. B. 2 Grafen von Tierstein auf
+                           dem Boden liegen, da nach des Recensenten eigener Angabe nur einer am
+                           Háuptlisberg erschlagen wurde; dass die Bären und ihre Feinde zum Teil mit
+                           Feuerrohrn bewaffnet sind, von denen jedoch in den Berichten über jene
+                           Zeitbegebenheiten keine Erwähnung geschieht u. s. w. Der Herr v. Laßberg besitzt
+                           aber noch ein Glasgemälde, und zwar von derselben Hand wie das befragte. Auf
+                           diesem ist wieder eine Schar Bären vorgestellt, diese haben alle wieder gelbe
+                           Halsbänder um; diese nun belagern eine Burg; im Vordergründe sind Kanonen
+                           zwischen Schanzkörben aufgestellt aus welchen tapfer gefeuert wird; nicht
+                           weniger tapfer sitzen zwei Bären als Konstabler hinter den Schanzkörben und sind
+                           bemüht einer großen runden Flasche ihr recht anzutun; zur linken ist ein Teil
+                           dieser Bären im Begriff unter ihren Bannern die belagerte Burg zu stürmen, einer
+                           der mutigsten trägt eine Leiter voran; zur rechten ist ein anderer Teil dieses
+                           Belagerungsheeres aufgestellt, und ein befehlshaberischer Bär mit einer
+                           mächtigen Hakenbüchse auf der Schulter, auf den rechten Flügel deutend scheint
+                           seine Gesellen zum Sturmlaufen aufzumuntern. Auch diese Darstellung hat der
+                           Besitzer ganz einzeln gekauft, und mit einem anderen Gl.gemälde, das die
+                           Schlacht der St. Galler mit denen v. Ramschwag am Riederholz vorstellt (:1292:)
+                           verbunden. In der Höhe über der belagerten Burg stand das Wort Blaten, wurde
+                           aber von dem Glaser nebst der Spitze des einen Turmes beim Zusammensetzen
+                           aufgeopfert. Nun wünschte der Besitzer recht sehr von dem Herrn Recensenten die
+                           Belagerung zu erhalten, ob es auch die von St. Gallen waren, welche im
+                           Appenzeller Krieg die Burg Blatten im Rheintal belagerten? In diesem Falle würde
+                           er denn ohne weiteres Bedenken, der Meinung, dass in dem zuerst angefertigten
+                           Gemälde die Schlacht am Háuptlisberg vorgestellt sei, beitreten und alle diese
+                           Bären auf beiden Gemälden für wahre und unverfälschte St. Galler halten; damit
+                           wir aber nicht von der Ziegenwolle noch mehr in die Bärenwolle geraten, so
+                           schließe ich diesen Artikel mit dem einzigen Wunsche, dass der Recensent
+                           wenigstens mir dem berühmten Altertumsforscher, nicht zumuten wolle zu glauben,
+                           dass etwa ein Mitkämpfer am Háuptlisberg (:1405:) eines dieser beiden
+                           Gl.gemälde, welche aus seiner Zeit und sicher nicht früher als 1505 gemacht
+                           sind, habe verfertigen lassen, und dann noch mit der Frage: welchem St.
+                           gallischen Männer wohl das mit Federn gezierte Baret des Bärenanführers
+                           zuzuschreiben sein möchte? So viel und vielleicht schon zu viel über die Bären
+                           mit und ohne Halsband; mit dem Monachus S. gallensis haben Sie mir eine wahre
+                           Freude gemacht. Welch eine Fundgrube für Romanzen und Balladen Dichter! auch ich
+                           halte es mit Goldast, welcher diese vielleicht schon im Noviziat gesammelte
+                           Anekdoten Reihe dem Stammler Notker zuschreibt; und darin halte ich es ganz und
+                           gar mit Ihnen, dass die Glaubwürdigkeit dieses Mönchs nicht so völlig zu
+                           verwerfen und die meisten von ihm erzählten Begebenheiten nichts weniger als
+                           unglaublich seien. Das ganze aber ist ohne Zweifel das reichste Sittengemälde
+                           jener Zeit, ohne des Eginhards Annalen, in welchen letzterem der hofische
+                           Biograf den Charakter Karls freilich nicht so frei und wahr schildern durfte,
+                           als der spätere Mönch, der seine Sammlung freilich weder für den Hof, noch für
+                           die äußere Welt; sondern bloß für sich und vertraute Freunde machte und
+                           niederschrieb. Überdies enthält dieser Band noch eine Menge interessanter
+                           Sachen; aber dass er kein Register hat kann ich weder dem Canisius, noch weniger
+                           aber dem Basnage verzeihen. Die von Ihnen mir geschriebenen Bemerkungen werde
+                           ich, so viel ich sehe, wahrscheinlich meistens beantworten können. Das Sonnet
+                           Walafrieds: ad amicam, ist den besten unserer Zeit gleich zu setzen der Schluss
+                           ist, wie es bei einem Mönch des IX. Jahrhunderts sein musste; ein Gegenstück
+                           dazu findet sich in einem kleinen Ged. des späteren Hermannus contract. ad
+                           mulam, die ihm helfen soll, ein Lied auf seine Freundin dichten. Das schöne
+                           Epitaphium auf den Gerold vom Buße vom Tom. II, Part II. Pag. 73 ist offenbar
+                           Reichenauer Arbeit, vielleicht auch von Walafried. Da heute Morgen ein so
+                           starkes Morgenrot war; so zweifle ich beinahe kaum, dass Ihr Feuerwerk verregnet
+                           werden wird. Elise und ich danken für die Einladung. Vor einigen Tagen befiel
+                           mich ein Rheumat. Kopffieber mit Katarr und Halswehe: nun geht es wieder besser,
+                           doch glaube ich noch nicht ganz fieberfrei zu sein, da sich die bei mir
+                           gewöhnlichen Kriterien des gebrochenen Fiebers noch nicht einstellen haben. Wenn
+                           Sie Ihrem Vorsatze treu, morgen Abend herüberkommen, hoffe ich doch im Stande zu
+                           sein am Mittwoch die kleine Ausflucht nach Weinfelden machen zu können. Ob wir
+                           aber in Wartbühl unangekündigt auf eine Mahlzeit rechnung machen dürfen?
+                           bezweifle ich. Wartbühl ist wohl nichts anders als Wartbühel (:collis
+                           speculatorius:) und die dort befindliche specula vielleicht ein abhängiger
+                           Posten von Pfyn. Die 23 f. 20 x. für die Bücher habe ich richtig erhalten. Von
+                           dem Fastnachtkuchen, dessen Ihre Frau Gemahlin die Güte hat zu erwähnen, weiß
+                           ich gar nichts. Mit Vergnügen las ich in der Thurgauer Zeitung, dass Herr v.
+                           Mühlinen endlich seine Stelle niedergelegt hat. er wird nun ohne Verdruß und
+                           desto länger leben, da er nur den Musen lebt; keine unter ihnen gibt aber mehr
+                           Mut das Leben zu ertragen, als die Muse der Geschichte. Nun leben Sie wohl auf
+                           baldiges Wiedersehen! Viele Grüße an die Ihren. Da kommt auch Schilter. Vor
+                           einigen Tagen besuchte mich Herr Pfarrer Amann von Sulgen und besah ein wenig
+                           meine historica. Ihr ergebenster J. v. Laßberg, Beikommende Ankündigung bitte
+                           ich unter Ihren Freunden zu verbreiten; es ist ein gutes Werk für solche Männer
+                           wie Maßmann Suscribenten zu sammeln. Warum verschweigt der St. Galler Recensent
+                           den auf dem Bilde in der vordern Reihe fallenden Georg von Emps als Steinbock,
+                           da es doch historisch gewiss ist, dass er am Stoß, nicht am Häuptlisberg, in den
+                           Vordertreffen geblieben sei. o, über die Bären! Das 1. Heft der Helvetia hatten
+                           Sie mir schon einmal geliehen.</p>
+                        </div>
+                  </details>
+                  <details id="translation" class="text-version mb-4">
+                     <summary>Translation</summary>
+                     <div>
+                        
+                        <p> Eppishausen, March 4, 1827 The article "The Bear as the Coat of Arms of the
+                           Canton of Appenzell" was certainly not written by Mr. Kaspar Zellweger; he would
+                           surely not have given me the ridiculous (perhaps ironic) title of a famous
+                           antiquarian: I suspect it was written by Professor Scheitlin, whose writings
+                           almost always have a touch of quiet satire, even if perhaps unintended. The
+                           author's conclusion that the event of the "Bear Battle" belongs to St. Gallen,
+                           based on two St. Gallen citizen coats of arms under the stained glass painting,
+                           might be questionable. I can clarify that I bought the painting of the battle
+                           separately in Constance, and the part of the window containing the coat of arms
+                           and date from farmer N. in Roggelsberg, without finding an upper part; I only
+                           later had the parts assembled together. The bear in the St. Gallen coat of arms,
+                           as a citizen, is adorned with a golden collar, which was probably also known to
+                           the famous antiquarian v. Laßberg. However, he knew that in the early 16th
+                           century, German painters were not as precise with such details as those educated
+                           in strict criticism in the 19th century. There are countless such anomalies from
+                           that time, even in the stained glass painting in question, such as two counts of
+                           Tierstein lying on the ground, although according to the reviewer's own
+                           statement, only one was slain at Háuptlisberg; that the bears and their enemies
+                           are partly armed with firearms, which are not mentioned in reports of those
+                           events, and so on. Mr. v. Laßberg owns another stained glass painting, also by
+                           the same artist. This one depicts a group of bears, all with yellow collars,
+                           besieging a castle. In the foreground, cannons are set up between gabions,
+                           firing vigorously; two bears as gunners are busy behind the gabions, trying to
+                           open a large round bottle; to the left, a part of these bears is about to storm
+                           the besieged castle under their banners, one of the bravest carrying a ladder;
+                           to the right, another part of this besieging army is set up, and a commanding
+                           bear with a mighty hook gun on his shoulder, pointing to the right wing, seems
+                           to encourage his comrades to storm. This painting was also bought separately by
+                           the owner and combined with another stained glass painting depicting the battle
+                           of the St. Gallers with those of Ramschwag at Riederholz (1292). Above the
+                           besieged castle stood the word Blaten, but it was sacrificed by the glazier
+                           along with the top of one of the towers when assembling. Now the owner would
+                           very much like to know from the reviewer whether it was the St. Gallers who
+                           besieged the Blaten castle in the Rhine Valley during the Appenzell War? In this
+                           case, he would readily agree that the first painting depicts the battle at
+                           Háuptlisberg and consider all these bears in both paintings as true and genuine
+                           St. Gallers. I will conclude this article with the sole wish that the reviewer
+                           would not expect me, the famous antiquarian, to believe that perhaps a combatant
+                           at Háuptlisberg (1405) had one of these two stained glass paintings, which are
+                           from his time and certainly not made earlier than 1505, made, and then with the
+                           question: to which St. Gallen man might the bear leader's feather-adorned cap be
+                           attributed? So much, and perhaps already too much, about the bears with and
+                           without collars; with the Monachus S. gallensis, you have given me a true
+                           pleasure. What a treasure trove for romance and ballad poets! I also agree with
+                           Goldast, who attributes this perhaps already collected in the novitiate anecdote
+                           series to the stammerer Notker; and in this, I completely agree with you that
+                           the credibility of this monk is not to be completely rejected and that most of
+                           the events he narrates are anything but unbelievable. The whole is undoubtedly
+                           the richest painting of the morals of that time, without Eginhard's Annals, in
+                           which the latter court biographer certainly could not portray the character of
+                           Charlemagne as freely and truthfully as the later monk, who made and wrote down
+                           his collection neither for the court nor for the outside world, but solely for
+                           himself and trusted friends. Moreover, this volume contains a lot of interesting
+                           things; but that it has no index, I can forgive neither Canisius nor Basnage.
+                           The remarks you wrote to me, I will probably be able to answer most of them as
+                           far as I can see. Walafried's sonnet: ad amicam, is equal to the best of our
+                           time; the conclusion is, as it must be with a monk of the 9th century; a
+                           counterpart to it is found in a small poem by the later Hermannus contract. ad
+                           mulam, which is supposed to help him write a song about his girlfriend. The
+                           beautiful epitaphium on the Gerold vom Buße from Tom. II, Part II. Page 73 is
+                           obviously Reichenauer's work, perhaps also by Walafried. Since there was such a
+                           strong morning red this morning; I almost doubt that your fireworks will be
+                           rained out. Elise and I thank you for the invitation. A few days ago, a
+                           rheumatic head fever with catarrh and sore throat struck me: now it is better
+                           again, but I still do not believe to be completely fever-free, as the usual
+                           criteria for broken fever have not yet set in for me. If you stick to your plan
+                           to come over tomorrow evening, I hope to be able to make the small excursion to
+                           Weinfelden on Wednesday. Whether we can count on an unannounced meal in
+                           Wartbühl, I doubt. Wartbühl is probably nothing else but Wartbühel (collis
+                           speculatorius) and the specula located there perhaps a dependent post of Pfyn.
+                           The 23 f. 20 x. for the books I have received correctly. I know nothing about
+                           the Fastnachtkuchen, which your wife kindly mentions. I was pleased to read in
+                           the Thurgau newspaper that Mr. v. Mühlinen has finally resigned his position. He
+                           will now live without annoyance and all the longer, as he lives only for the
+                           Muses; but none of them gives more courage to bear life than the Muse of
+                           History. Now take care and see you soon! Many greetings to yours. Schilter is
+                           also coming. A few days ago, Pastor Amann from Sulgen visited me and looked at
+                           some of my historical things. Your obedient J. v. Laßberg, Please spread the
+                           accompanying announcement among your friends; it is a good deed to collect
+                           subscribers for such men as Maßmann. Why does the St. Gallen reviewer conceal
+                           that Georg von Emps, depicted as Steinbock falling in the front row of the
+                           picture, is historically certain to have remained at the Stoß, not at
+                           Häuptlisberg, in the vanguard? Oh, about the bears! You had already lent me the
+                           1st issue of Helvetia once. </p>
+                        </div>
+                  </details>
+                  <div id="related-letters"></div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer class="bg-dark text-white text-center py-3">
+         <div class="container">
+            <p class="mb-0"><a href="../letters.html">Back to the Letters</a></p>
+         </div>
+      </footer><script src="../../js/related.js"></script><script src="https://unpkg.com/leaflet/dist/leaflet.js"></script><script>
+                    var letterPlaces = [];
+                    
+                    letterPlaces.push({ coords: [47.545,9.23759], label: "Eppishausen", kind: "sent" });
+                    
+                    letterPlaces.push({ coords: [47.42416667,9.37083333], label: "St. Gallen", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [47.66666667,9.18333333], label: "Konstanz", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [47.4392, 9.37778], label: "Häuptlisberg", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [47.3, 9.4], label: "Appenzell", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [47.308034, 9.564818], label: "Burg Blatten", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [47.07013888888889, 9.483347222222223], label: "Rheintal", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [47.5698, 9.112], label: "Weinfelden", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [47.5337, 9.1409], label: "Wertbühl", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [47.360833333333, 9.495], label: "Stoss", kind: "mentioned" });
+                        
+
+                    if (letterPlaces.length === 0) {
+                        document.getElementById('map').style.display = 'none';
+                    } else {
+                        var map = L.map('mapid', { scrollWheelZoom: false });
+                        // Muted basemap (CARTO Positron) instead of the default colourful OSM
+                        // tiles, to match the edition's restrained palette.
+                        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+                            attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+                            subdomains: 'abcd',
+                            maxZoom: 19
+                        }).addTo(map);
+
+                        var bounds = [];
+                        letterPlaces.forEach(function (p) {
+                            var isSent = p.kind === 'sent';
+                            var marker = L.circleMarker(p.coords, isSent
+                                ? { radius: 8, color: '#143761', weight: 2, fillColor: '#1d4e89', fillOpacity: 0.85 }
+                                : { radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75 }
+                            ).addTo(map).bindPopup((isSent ? 'Sent from: ' : 'Mentioned: ') + p.label);
+                            bounds.push(p.coords);
+                        });
+                        if (bounds.length > 1) {
+                            map.fitBounds(bounds, { padding: [25, 25], maxZoom: 9 });
+                        } else {
+                            map.setView(bounds[0], 8);
+                        }
+                    }
+                </script><script>
+                    // Initialize all tooltips
+                    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+                    new bootstrap.Tooltip(tooltipTriggerEl)
+                    })
+                </script></body>
+</html>

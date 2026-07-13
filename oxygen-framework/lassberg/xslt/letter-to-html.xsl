@@ -47,6 +47,9 @@
                                     <a class="nav-link" href="../places.html">Places</a>
                                 </li>
                                 <li class="nav-item">
+                                    <a class="nav-link" href="../explore.html">Explore</a>
+                                </li>
+                                <li class="nav-item">
                                     <a class="nav-link"
                                         href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb"
                                         target="_blank">Data Analysis</a>
@@ -75,15 +78,28 @@
 
                 <main class="py-4">
                     <div class="container">
-                        <!-- Leaflet Map Section -->
-                        <section id="map" class="mb-4">
+                        <!-- Status banner (docs/TEI.md "Letter status model"): pages exist for
+                             every encoded letter (preview tier), but only letters whose latest
+                             revisionDesc status is "published" count as reviewed editions. -->
+                        <xsl:variable name="latestStatus"
+                            select="(/tei:TEI/tei:teiHeader/tei:revisionDesc//tei:change)[last()]/@status"/>
+                        <xsl:if test="not($latestStatus = 'published')">
+                            <div class="alert alert-warning letter-preview-banner" role="alert">
+                                <strong>Unreviewed working text.</strong> The encoding of this letter
+                                has not yet been editorially reviewed
+                                (status: <xsl:value-of select="if ($latestStatus) then $latestStatus else 'draft'"/>).
+                                The text may contain transcription or OCR errors &#8212; please cite with caution.
+                            </div>
+                        </xsl:if>
 
-                            <div id="mapid"/>
-                        </section>
+                        <div class="row g-4">
+                        <!-- Sidebar: metadata, map, mentioned entities -->
+                        <div class="col-lg-4 order-lg-2">
+                        <aside class="letter-sidebar">
 
                         <!-- Metadata Section -->
                         <section id="metadata" class="mb-4">
-                            <h2>Metadata</h2>
+                            <h2 class="h5">Metadata</h2>
                             <p> <strong>Signatur: </strong> <xsl:value-of
                                 select="//tei:msIdentifier/tei:settlement"/>, <xsl:value-of
                                 select="//tei:msIdentifier/tei:repository"/>, <xsl:value-of
@@ -109,6 +125,70 @@
                                 </a>
                             </p>
                         </section>
+
+                        <!-- Leaflet Map Section (hidden by the map script when no place has
+                             coordinates - see the script near the end of this stylesheet) -->
+                        <section id="map" class="mb-4">
+                            <h2 class="h5">Places</h2>
+                            <div id="mapid"/>
+                            <p class="map-legend small text-muted mt-1 mb-0">
+                                <span class="legend-dot" style="background:#1d4e89"/> place of sending
+                                <span class="legend-dot ms-2" style="background:#b57cc0"/> places mentioned
+                            </p>
+                        </section>
+
+                        <!-- Mentioned entities (from teiHeader note[type=mentioned]) -->
+                        <xsl:variable name="mentionedPersons" select="//tei:note[@type='mentioned']/tei:ref[@type='cmif:mentionsPerson']"/>
+                        <xsl:variable name="mentionedPlaces" select="//tei:note[@type='mentioned']/tei:ref[@type='cmif:mentionsPlace']"/>
+                        <xsl:variable name="mentionedBibl" select="//tei:note[@type='mentioned']/tei:ref[@type='cmif:mentionsBibl']"/>
+                        <xsl:if test="$mentionedPersons or $mentionedPlaces or $mentionedBibl">
+                            <section id="mentioned" class="mb-4">
+                                <h2 class="h5">Mentioned in this letter</h2>
+                                <xsl:if test="$mentionedPersons">
+                                    <h3 class="h6 mt-3">Persons</h3>
+                                    <ul class="list-unstyled small mb-2">
+                                        <xsl:for-each select="$mentionedPersons">
+                                            <li>
+                                                <a href="../persons.html?q={encode-for-uri(normalize-space(tei:rs))}">
+                                                    <xsl:value-of select="normalize-space(tei:rs)"/>
+                                                </a>
+                                            </li>
+                                        </xsl:for-each>
+                                    </ul>
+                                </xsl:if>
+                                <xsl:if test="$mentionedPlaces">
+                                    <h3 class="h6 mt-3">Places</h3>
+                                    <ul class="list-unstyled small mb-2">
+                                        <xsl:for-each select="$mentionedPlaces">
+                                            <li>
+                                                <a href="../places.html?q={encode-for-uri(normalize-space(tei:rs))}">
+                                                    <xsl:value-of select="normalize-space(tei:rs)"/>
+                                                </a>
+                                            </li>
+                                        </xsl:for-each>
+                                    </ul>
+                                </xsl:if>
+                                <xsl:if test="$mentionedBibl">
+                                    <h3 class="h6 mt-3">Literature</h3>
+                                    <ul class="list-unstyled small mb-0">
+                                        <xsl:for-each select="$mentionedBibl">
+                                            <li class="mb-1">
+                                                <xsl:value-of select="normalize-space(tei:rs)"/>
+                                                <xsl:text> </xsl:text>
+                                                <a href="../explore.html?node={substring-after(@target, '#')}"
+                                                    title="Show in the knowledge graph" class="small">graph</a>
+                                            </li>
+                                        </xsl:for-each>
+                                    </ul>
+                                </xsl:if>
+                            </section>
+                        </xsl:if>
+
+                        </aside>
+                        </div>
+
+                        <!-- Main column: the letter text(s) -->
+                        <div class="col-lg-8 order-lg-1">
                         <!-- Original Text Section -->
                         <xsl:variable name="transcriptionDiv"
                             select="(tei:text//tei:div[@type = 'original'] | tei:text//tei:div[@type = 'print'])[1]"/>
@@ -126,6 +206,21 @@
                                     <xsl:otherwise/>
                                 </xsl:choose>
                             </h2>
+                            <!-- Review provenance (docs/TEI.md "Letter status model"): show when
+                                 and by whom the encoding was reviewed, if it has been. -->
+                            <xsl:variable name="reviewEntry"
+                                select="(/tei:TEI/tei:teiHeader/tei:revisionDesc//tei:change[@status = 'reviewed'])[last()]"/>
+                            <xsl:if test="$reviewEntry">
+                                <p class="text-muted small mb-2">
+                                    <xsl:text>Encoding reviewed </xsl:text>
+                                    <xsl:value-of select="$reviewEntry/@when"/>
+                                    <xsl:if test="$reviewEntry/@who">
+                                        <xsl:text> (</xsl:text>
+                                        <xsl:value-of select="translate($reviewEntry/@who, '#', '')"/>
+                                        <xsl:text>)</xsl:text>
+                                    </xsl:if>
+                                </p>
+                            </xsl:if>
                             <div>
                                 <xsl:apply-templates select="$transcriptionDiv"/>
                             </div>
@@ -147,21 +242,30 @@
                         
                                   
                         
-                        <section id="normalised-text" class="mb-4">
-                            <h2>Normalisierter Text</h2>
-                            <div>
-                                <xsl:apply-templates
-                                    select="tei:text//tei:div[@type = 'normalized']"/>
-                            </div>
-                        </section>
+                        <xsl:if test="tei:text//tei:div[@type = 'normalized']">
+                            <details id="normalised-text" class="text-version mb-4">
+                                <summary>Normalisierter Text</summary>
+                                <div>
+                                    <xsl:apply-templates
+                                        select="tei:text//tei:div[@type = 'normalized']"/>
+                                </div>
+                            </details>
+                        </xsl:if>
                         <!-- Translation Section -->
-                        <section id="translation" class="mb-4">
-                            <h2>Translation</h2>
-                            <div>
-                                <xsl:apply-templates
-                                    select="tei:text//tei:div[@type = 'translation']"/>
-                            </div>
-                        </section>
+                        <xsl:if test="tei:text//tei:div[@type = 'translation']">
+                            <details id="translation" class="text-version mb-4">
+                                <summary>Translation</summary>
+                                <div>
+                                    <xsl:apply-templates
+                                        select="tei:text//tei:div[@type = 'translation']"/>
+                                </div>
+                            </details>
+                        </xsl:if>
+                        <!-- Related letters (filled client-side by js/related.js from the
+                             precomputed embedding+graph suggestions in json/explore/related.json) -->
+                        <div id="related-letters"/>
+                        </div>
+                        </div>
                     </div>
                 </main>
 
@@ -171,43 +275,66 @@
                     </div>
                 </footer>
 
+                <!-- Related-letters block (neuro-symbolic suggestions, precomputed) -->
+                <script src="../../js/related.js"/>
                 <!-- Leaflet JS from CDN -->
                 <script src="https://unpkg.com/leaflet/dist/leaflet.js"/>
-                <!-- Initialize the Leaflet map -->
+                <!-- Initialize the Leaflet map. Every marker is emitted only when its register
+                     entry actually has coordinates (the old version emitted setView([], 7) for
+                     letters whose place lacked coords or sat under correspAction[received] - the
+                     known place-under-received quirk - which crashed the whole script and left
+                     an empty map). No coordinates at all -> the map section is hidden. -->
                 <script>
-                    <xsl:variable name="sentPlaceName" select="//tei:correspAction[@type = 'sent']/tei:placeName"/>
-                    <xsl:variable name="sentPlace" select="substring-after(//tei:correspAction[@type = 'sent']/tei:placeName/@key, '#')"/>
-                    <xsl:variable name="sentPlaceCoord" select="document('../../../data/register/lassberg-places.xml')//tei:place[@xml:id = $sentPlace]/tei:location/tei:geo/text()"/>
-                    // Create the map and set its view to a default coordinate and zoom level.
-                    var map = L.map('mapid', { scrollWheelZoom: false }).setView([<xsl:value-of select="normalize-space($sentPlaceCoord)"/>], 7);
-                    // Muted basemap (CARTO Positron) instead of the default colourful OSM tiles,
-                    // to match the edition's restrained palette.
-                    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-                    attribution: '&amp;copy; <a href="https://carto.com/attributions">CARTO</a> &amp;copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
-                    subdomains: 'abcd',
-                    maxZoom: 19
-                    }).addTo(map);
+                    <!-- Departure place: docs/TEI.md defines placeName as the departure place
+                         regardless of which correspAction wraps it, so fall back to received. -->
+                    <xsl:variable name="sentPlaceName"
+                        select="(//tei:correspAction[@type = 'sent']/tei:placeName,
+                                 //tei:correspAction[@type = 'received']/tei:placeName)[1]"/>
+                    <xsl:variable name="sentPlace" select="substring-after($sentPlaceName/@key, '#')"/>
+                    <xsl:variable name="sentPlaceCoord" select="normalize-space(document('../../../data/register/lassberg-places.xml')//tei:place[@xml:id = $sentPlace]/tei:location/tei:geo/text())"/>
 
-                    // Sender's place: filled circle in the edition's accent colour.
-                    L.circleMarker([<xsl:value-of select="normalize-space($sentPlaceCoord)"/>], {
-                    radius: 8, color: '#143761', weight: 2, fillColor: '#1d4e89', fillOpacity: 0.85
-                    }).addTo(map)
-                    .bindPopup('<xsl:value-of select="normalize-space($sentPlaceName)"/>')
-                    .openPopup();
-
-                    // Mentioned places: smaller, lighter circles in a secondary tone.
+                    <!-- Some register entries hold a "-" placeholder in <geo> (coordinates
+                         unknown) - only a real "lat, lon" pair may be emitted into the JS. -->
+                    <xsl:variable name="coordPattern" select="'^-?[0-9]+(\.[0-9]+)?\s*,\s*-?[0-9]+(\.[0-9]+)?$'"/>
+                    var letterPlaces = [];
+                    <xsl:if test="matches($sentPlaceCoord, $coordPattern)">
+                    letterPlaces.push({ coords: [<xsl:value-of select="$sentPlaceCoord"/>], label: "<xsl:value-of select="normalize-space($sentPlaceName)"/>", kind: "sent" });
+                    </xsl:if>
                     <xsl:for-each select="//tei:ref[@type = 'cmif:mentionsPlace']">
-                        <xsl:variable name="mentionedPlaceName" select="./tei:rs"/>
                         <xsl:variable name="mentionedPlace" select="substring-after(./@target, '#')"/>
-                        <xsl:variable name="mentionedPlaceCoord" select="document('../../../data/register/lassberg-places.xml')//tei:place[@xml:id = $mentionedPlace]/tei:location/tei:geo/text()"/>
-
-                        var popupText = "<xsl:value-of select="normalize-space($mentionedPlaceName)"/>";
-                        L.circleMarker([<xsl:value-of select="normalize-space($mentionedPlaceCoord)"/>], {
-                        radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75
-                        }).addTo(map)
-                        .bindPopup(popupText);
+                        <xsl:variable name="mentionedPlaceCoord" select="normalize-space(document('../../../data/register/lassberg-places.xml')//tei:place[@xml:id = $mentionedPlace]/tei:location/tei:geo/text())"/>
+                        <xsl:if test="matches($mentionedPlaceCoord, $coordPattern) and $mentionedPlace != $sentPlace">
+                    letterPlaces.push({ coords: [<xsl:value-of select="$mentionedPlaceCoord"/>], label: "<xsl:value-of select="normalize-space(./tei:rs)"/>", kind: "mentioned" });
+                        </xsl:if>
                     </xsl:for-each>
-                    
+
+                    if (letterPlaces.length === 0) {
+                        document.getElementById('map').style.display = 'none';
+                    } else {
+                        var map = L.map('mapid', { scrollWheelZoom: false });
+                        // Muted basemap (CARTO Positron) instead of the default colourful OSM
+                        // tiles, to match the edition's restrained palette.
+                        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+                            attribution: '&amp;copy; <a href="https://carto.com/attributions">CARTO</a> &amp;copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+                            subdomains: 'abcd',
+                            maxZoom: 19
+                        }).addTo(map);
+
+                        var bounds = [];
+                        letterPlaces.forEach(function (p) {
+                            var isSent = p.kind === 'sent';
+                            var marker = L.circleMarker(p.coords, isSent
+                                ? { radius: 8, color: '#143761', weight: 2, fillColor: '#1d4e89', fillOpacity: 0.85 }
+                                : { radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75 }
+                            ).addTo(map).bindPopup((isSent ? 'Sent from: ' : 'Mentioned: ') + p.label);
+                            bounds.push(p.coords);
+                        });
+                        if (bounds.length > 1) {
+                            map.fitBounds(bounds, { padding: [25, 25], maxZoom: 9 });
+                        } else {
+                            map.setView(bounds[0], 8);
+                        }
+                    }
                 </script>
                 <!-- Bootstrap 5 JS Bundle (includes Popper) -->
                 <script>

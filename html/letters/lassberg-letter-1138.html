@@ -1,0 +1,205 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0" lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>The Lassberg Letters</title>
+      <link href="../../css/styles.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script><link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"><script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script></head>
+   <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+         <div class="container"><a class="navbar-brand" href="../../index.html">The Laßberg Letters</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link" href="../../index.html">Welcome</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../persons.html">Persons</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../places.html">Places</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../explore.html">Explore</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <header class="page-header py-4">
+         <div class="container">
+            <h1 class="mb-2">Brief von Johann Adam Pupikofer an Joseph von Laßberg (08.01.1827).</h1>
+            <p class="lead mb-0">
+               
+               <p>Correspondence data based on Harris, Martin: Joseph Maria Christoph
+                  Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                  Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                  geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                  Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.. Briefe
+                  automatisiert mit GPT-3.5 normalisiert.</p>
+               </p>
+         </div>
+      </header>
+      <main class="py-4">
+         <div class="container">
+            <div class="alert alert-warning letter-preview-banner" role="alert"><strong>Unreviewed working text.</strong> The encoding of this letter
+               has not yet been editorially reviewed
+               (status: done).
+               The text may contain transcription or OCR errors — please cite with caution.
+               </div>
+            <div class="row g-4">
+               <div class="col-lg-4 order-lg-2">
+                  <aside class="letter-sidebar">
+                     <section id="metadata" class="mb-4">
+                        <h2 class="h5">Metadata</h2>
+                        <p><strong>Signatur: </strong>Frauenfeld, Thurgauische Kantonsbibliothek, </p>
+                        <p><strong>Registernummer (Laßberg): </strong>nan</p>
+                        <p><strong>Registernummer (Harris): </strong>2147</p>
+                        <p><strong>Gedruck in: </strong><a href="https://books.google.de/books?id=XWY5AAAAMAAJ">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In:
+                              Alemannia 16 (1888), S.  1-32 und 97-154, S. 4</a></p>
+                     </section>
+                     <section id="map" class="mb-4">
+                        <h2 class="h5">Places</h2>
+                        <div id="mapid"></div>
+                        <p class="map-legend small text-muted mt-1 mb-0"><span class="legend-dot" style="background:#1d4e89"></span> place of sending
+                           <span class="legend-dot ms-2" style="background:#b57cc0"></span> places mentioned
+                           </p>
+                     </section>
+                     <section id="mentioned" class="mb-4">
+                        <h2 class="h5">Mentioned in this letter</h2>
+                        <h3 class="h6 mt-3">Persons</h3>
+                        <ul class="list-unstyled small mb-2">
+                           <li><a href="../persons.html?q=Johann%20Adam%20Pupikofer">Johann Adam Pupikofer</a></li>
+                        </ul>
+                        <h3 class="h6 mt-3">Places</h3>
+                        <ul class="list-unstyled small mb-2">
+                           <li><a href="../places.html?q=Bischofszell">Bischofszell</a></li>
+                           <li><a href="../places.html?q=Schweiz">Schweiz</a></li>
+                        </ul>
+                        <h3 class="h6 mt-3">Literature</h3>
+                        <ul class="list-unstyled small mb-0">
+                           <li class="mb-1">Episcopatus Constantiensis Alemannicus sub metropoli Moguntina chronologice et diplomatice
+                              illustratus <a href="../explore.html?node=lassberg-literature-0012" title="Show in the knowledge graph" class="small">graph</a></li>
+                           <li class="mb-1">Thesaurus Antiquitatum Tevtonicarum, Ecclesiasticarum, Civilium, Litterariarum. 3,
+                              Glossarium Ad Scriptores Linguae Francicae Et Alemannicae Veteris... . <a href="../explore.html?node=lassberg-literature-0037" title="Show in the knowledge graph" class="small">graph</a></li>
+                           <li class="mb-1">Glossarium Germanicum medii aevi, maximam partem e diplomatibus multis praeterea aliis
+                              monumentis ... adornatum in 1 Bd. (Vol. 1-2). <a href="../explore.html?node=lassberg-literature-0046" title="Show in the knowledge graph" class="small">graph</a></li>
+                        </ul>
+                     </section>
+                  </aside>
+               </div>
+               <div class="col-lg-8 order-lg-1">
+                  <section id="original-text" class="mb-4">
+                     <h2>Original Text
+                        <span class="transcription-source badge-print" title="OCR-Texterfassung aus der gedruckten Edition, siehe Metadaten/Gedruckt in">Transcribed from the printed edition (OCR)</span></h2>
+                     <div>
+                        
+                        <div class="letter-opener">
+                           
+                           <p class="letter-salute">Hochwohlgeborner Herr und Gönner!</p>
+                           </div>
+                        
+                        <p>Daß Sie gestern in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Bischofszell</strong&gt;">Bischofzell<a href="https://www.wikidata.org/wiki/Q64865"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> und in meiner Hütte waren, ohne daß
+                           ich das Vergnügen haben konnte, Sie zu sehen, trübte mein Vergnügen über die
+                           Nachricht von Ihrem Wohlbefinden. Die gütige Mittheilung der hier
+                           zurückkommenden Kataloge verdanke ich Ihnen sehr; es wäre mir sehr angenehm,
+                           wenn Sie mit Ihren Bestellungen zugleich für mich den <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Trutpert Neugart; Franz Josef Mone: Episcopatus Constantiensis Alemannicus sub metropoli Moguntina&#xA;        chronologice et diplomatice illustratus.</strong&gt;">Neugart<a href="http://opac.regesta-imperii.de/id/62260">📖</a></span>, <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Schilter: Thesaurus Antiquitatum Tevtonicarum, Ecclesiasticarum, Civilium, Litterariarum. 3,&#xA;        Glossarium Ad Scriptores Linguae Francicae Et Alemannicae Veteris... .</strong&gt;">Schilter<a href="VD18:%0A        80333109-001">📖</a></span> und <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Haltaus, Christian Gottlob: Glossarium Germanicum medii aevi, maximam partem e diplomatibus&#xA;        multis praeterea aliis monumentis ... adornatum in 1 Bd. (Vol. 1-2).</strong&gt;">Haltaus<a href="http://opac.regesta-imperii.de/id/60354">📖</a></span> kommen ließen. In der <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Schweiz</strong&gt;">Schweiz<a href="https://www.wikidata.org/wiki/Q39"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> bekommt man diese Sachen
+                           fast gar nicht. Auf andere Schriften, die ich wohl auch brauchen könnte,
+                           verzichte ich, da der Transport so ferne her geht. Mit der Bitte, Ihrer
+                           Gewogenheit mich ferner zu würdigen, bin ich Hochdero Ergebenster</p>
+                        
+                        <div class="letter-closer">
+                           
+                           <p class="letter-signed">Diac.
+                              <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Adam Pupikofer</strong&gt;">Pupikofer<a href="https://d-nb.info/gnd/11565108X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span></p>
+                           
+                           <p class="letter-dateline"><span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Bischofszell</strong&gt;">Bischofszell<a href="https://www.wikidata.org/wiki/Q64865"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, den 8. Jan. 1827</p>.
+                           </div>
+                        
+                        <div class="letter-add">(Von Laßbergs Hand mit Bleistift:)
+                           <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Schilter: Thesaurus Antiquitatum Tevtonicarum, Ecclesiasticarum, Civilium, Litterariarum. 3,&#xA;        Glossarium Ad Scriptores Linguae Francicae Et Alemannicae Veteris... .</strong&gt;">Schilter<a href="VD18:%0A        80333109-001">📖</a></span> 22 <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Trutpert Neugart; Franz Josef Mone: Episcopatus Constantiensis Alemannicus sub metropoli Moguntina&#xA;        chronologice et diplomatice illustratus.</strong&gt;">Neugart<a href="http://opac.regesta-imperii.de/id/62260">📖</a></span> - 2 = 48 <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Haltaus, Christian Gottlob: Glossarium Germanicum medii aevi, maximam partem e diplomatibus&#xA;        multis praeterea aliis monumentis ... adornatum in 1 Bd. (Vol. 1-2).</strong&gt;">Haltaus<a href="http://opac.regesta-imperii.de/id/60354">📖</a></span> - 11 = - x 35 f. 48 x</div>
+                        </div>
+                  </section>
+                  <details id="normalised-text" class="text-version mb-4">
+                     <summary>Normalisierter Text</summary>
+                     <div>
+                        
+                        <p>Hochwohlgeborener Herr und Gönner! Dass Sie gestern in Bischofzell und in meiner
+                           Hütte waren, ohne dass ich das Vergnügen haben konnte, Sie zu sehen, trübte mein
+                           Vergnügen über die Nachricht von Ihrem Wohlbefinden. Die gütige Mitteilung der
+                           hier zurückkommenden Kataloge verdanke ich Ihnen sehr; es wäre mir sehr
+                           angenehm, wenn Sie mit Ihren Bestellungen zugleich für mich den Neugart,
+                           Schilter und Haltaus kommen ließen. In der Schweiz bekommt man diese Sachen fast
+                           gar nicht. Auf andere Schriften, die ich wohl auch brauchen könnte, verzichte
+                           ich, da der Transport so ferne her geht. Mit der Bitte, Ihrer Gewogenheit mich
+                           ferner zu würdigen, bin ich Hoch der Ergebenster Diakon Pupikofer Bischofszell,
+                           den 8. Januar 1827. (Von Laßbergs Hand mit Bleistift:) Schilter 22 Neugart - 2 =
+                           48 Haltaus - 11 = - x 35 f. 48 x</p>
+                        </div>
+                  </details>
+                  <details id="translation" class="text-version mb-4">
+                     <summary>Translation</summary>
+                     <div>
+                        <p>Highly Born Sir and Patron,
+                           
+                           The fact that you were in Bischofszell and in my hut yesterday, without me having
+                           the pleasure of seeing you, dimmed my joy over the news of your well-being. I am very
+                           grateful for the kind notification of the returning catalogs; it would be very pleasant
+                           for me if you could include Neugart, Schilter, and Haltaus with your orders. These
+                           items are almost impossible to get in Switzerland. I forego other writings that I
+                           might also use, as the transport is from so far away. With the request to continue
+                           to honor me with your favor, I remain Most Devotedly, Diakon Pupikofer. Bischofszell,
+                           January 8, 1827. (In Laßberg's hand with pencil:) Schilter 22 Neugart - 2 = 48 Haltaus
+                           - 11 = - x 35 f. 48 x</p>
+                     </div>
+                  </details>
+                  <div id="related-letters"></div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer class="bg-dark text-white text-center py-3">
+         <div class="container">
+            <p class="mb-0"><a href="../letters.html">Back to the Letters</a></p>
+         </div>
+      </footer><script src="../../js/related.js"></script><script src="https://unpkg.com/leaflet/dist/leaflet.js"></script><script>
+                    var letterPlaces = [];
+                    
+                    letterPlaces.push({ coords: [47.5,9.23333333], label: "Bischofszell", kind: "sent" });
+                    
+                    letterPlaces.push({ coords: [46.798562, 8.231973], label: "Schweiz", kind: "mentioned" });
+                        
+
+                    if (letterPlaces.length === 0) {
+                        document.getElementById('map').style.display = 'none';
+                    } else {
+                        var map = L.map('mapid', { scrollWheelZoom: false });
+                        // Muted basemap (CARTO Positron) instead of the default colourful OSM
+                        // tiles, to match the edition's restrained palette.
+                        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+                            attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+                            subdomains: 'abcd',
+                            maxZoom: 19
+                        }).addTo(map);
+
+                        var bounds = [];
+                        letterPlaces.forEach(function (p) {
+                            var isSent = p.kind === 'sent';
+                            var marker = L.circleMarker(p.coords, isSent
+                                ? { radius: 8, color: '#143761', weight: 2, fillColor: '#1d4e89', fillOpacity: 0.85 }
+                                : { radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75 }
+                            ).addTo(map).bindPopup((isSent ? 'Sent from: ' : 'Mentioned: ') + p.label);
+                            bounds.push(p.coords);
+                        });
+                        if (bounds.length > 1) {
+                            map.fitBounds(bounds, { padding: [25, 25], maxZoom: 9 });
+                        } else {
+                            map.setView(bounds[0], 8);
+                        }
+                    }
+                </script><script>
+                    // Initialize all tooltips
+                    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+                    new bootstrap.Tooltip(tooltipTriggerEl)
+                    })
+                </script></body>
+</html>

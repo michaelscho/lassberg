@@ -6,9 +6,9 @@
 
 PYTHON := .venv-infra/bin/python
 
-.PHONY: all parse embed cluster graph rdf sparql frontend cmif graph-json test clean
+.PHONY: all parse embed cluster graph rdf sparql explore frontend cmif graph-json status status-write test clean
 
-all: parse embed cluster graph rdf frontend
+all: parse embed cluster graph rdf explore
 
 # --- Phase 1 ---
 build/letters.jsonl: $(wildcard data/letters/lassberg-letter-*.xml) $(wildcard data/register/lassberg-*.xml) scripts/parse_tei.py
@@ -50,13 +50,31 @@ sparql: rdf/edition.ttl
 	$(PYTHON) scripts/load_oxigraph.py
 
 # --- Phase 7 / 7b ---
-frontend/data/graph.json: build/letters.jsonl scripts/export_graph_json.py
+# Explore-page data artifacts (html/explore.html + js/explore/), served from json/explore/.
+# clustering/ is no longer shipped to the website (internal corpus-triage artifact only).
+json/explore/graph.json: build/letters.jsonl scripts/export_graph_json.py
 	$(PYTHON) scripts/export_graph_json.py
 
-graph-json: frontend/data/graph.json
+graph-json: json/explore/graph.json
 
-frontend: clustering/clusters.json rdf/edition.ttl frontend/data/graph.json scripts/export_frontend.py
+json/explore/overview.json: build/letters.jsonl scripts/export_overview.py
+	$(PYTHON) scripts/export_overview.py
+
+json/explore/related.json: embeddings/bge-m3/letters.safetensors build/letters.jsonl scripts/export_related.py
+	$(PYTHON) scripts/export_related.py
+
+explore: rdf/edition.ttl json/explore/graph.json json/explore/overview.json json/explore/related.json scripts/export_frontend.py
 	$(PYTHON) scripts/export_frontend.py
+
+# Backwards-compatible alias (the explore page was a separate frontend/ site until 2026-07).
+frontend: explore
+
+# --- Status model (docs/TEI.md "Letter status model") ---
+status:
+	$(PYTHON) scripts/sync_letter_status.py
+
+status-write:
+	$(PYTHON) scripts/sync_letter_status.py --write
 
 # --- Phase 8 ---
 test:

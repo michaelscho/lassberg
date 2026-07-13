@@ -1,0 +1,284 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0" lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>The Lassberg Letters</title>
+      <link href="../../css/styles.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script><link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"><script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script></head>
+   <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+         <div class="container"><a class="navbar-brand" href="../../index.html">The Laßberg Letters</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link" href="../../index.html">Welcome</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../persons.html">Persons</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../places.html">Places</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../explore.html">Explore</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <header class="page-header py-4">
+         <div class="container">
+            <h1 class="mb-2">Brief von Johann Adam Pupikofer an Joseph von Laßberg (20.12.1824).</h1>
+            <p class="lead mb-0">
+               
+               <p>Correspondence data based on Harris, Martin: Joseph Maria Christoph
+                  Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                  Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                  geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                  Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.. Briefe
+                  automatisiert mit GPT-3.5 normalisiert.</p>
+               </p>
+         </div>
+      </header>
+      <main class="py-4">
+         <div class="container">
+            <div class="row g-4">
+               <div class="col-lg-4 order-lg-2">
+                  <aside class="letter-sidebar">
+                     <section id="metadata" class="mb-4">
+                        <h2 class="h5">Metadata</h2>
+                        <p><strong>Signatur: </strong>Frauenfeld, Thurgauische Kantonsbibliothek, </p>
+                        <p><strong>Registernummer (Laßberg): </strong>nan</p>
+                        <p><strong>Registernummer (Harris): </strong>2034</p>
+                        <p><strong>Gedruck in: </strong><a href="https://books.google.de/books?id=dXkKAAAAIAAJ">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In:
+                              Alemannia 15 (1887), S. 231-88, S. 284</a></p>
+                     </section>
+                     <section id="map" class="mb-4">
+                        <h2 class="h5">Places</h2>
+                        <div id="mapid"></div>
+                        <p class="map-legend small text-muted mt-1 mb-0"><span class="legend-dot" style="background:#1d4e89"></span> place of sending
+                           <span class="legend-dot ms-2" style="background:#b57cc0"></span> places mentioned
+                           </p>
+                     </section>
+                     <section id="mentioned" class="mb-4">
+                        <h2 class="h5">Mentioned in this letter</h2>
+                        <h3 class="h6 mt-3">Persons</h3>
+                        <ul class="list-unstyled small mb-2">
+                           <li><a href="../persons.html?q=Johannes%20von%20Klingenberg%20%28d.%C3%84.%29">Johannes von Klingenberg (d.Ä.)</a></li>
+                           <li><a href="../persons.html?q=Johannes%20von%20Klingenberg%20%28d.J.%29">Johannes von Klingenberg (d.J.)</a></li>
+                           <li><a href="../persons.html?q=Johannes">Johannes</a></li>
+                        </ul>
+                        <h3 class="h6 mt-3">Places</h3>
+                        <ul class="list-unstyled small mb-2">
+                           <li><a href="../places.html?q=Bischofszell">Bischofszell</a></li>
+                           <li><a href="../places.html?q=Uri">Uri</a></li>
+                           <li><a href="../places.html?q=Schwyz">Schwyz</a></li>
+                           <li><a href="../places.html?q=Unterwalden">Unterwalden</a></li>
+                           <li><a href="../places.html?q=Thurgau">Thurgau</a></li>
+                           <li><a href="../places.html?q=N%C3%A4fels">Näfels</a></li>
+                           <li><a href="../places.html?q=Glarus">Glarus</a></li>
+                           <li><a href="../places.html?q=Schweiz">Schweiz</a></li>
+                        </ul>
+                        <h3 class="h6 mt-3">Literature</h3>
+                        <ul class="list-unstyled small mb-0">
+                           <li class="mb-1">Sammlung von Minnesingern aus dem schwäbischen Zeitpuncte <a href="../explore.html?node=lassberg-literature-0222" title="Show in the knowledge graph" class="small">graph</a></li>
+                           <li class="mb-1">Memorabilium omnis aetatis et omnium gentium chronici commentarii <a href="../explore.html?node=lassberg-literature-0002" title="Show in the knowledge graph" class="small">graph</a></li>
+                           <li class="mb-1">Bischofzell: dargestellt nach seinem gegenwärtigen Zustande und seinen bisherigen
+                              Schicksalen. Thurgauer Neujahrsblatt 2 <a href="../explore.html?node=lassberg-literature-0003" title="Show in the knowledge graph" class="small">graph</a></li>
+                           <li class="mb-1">Chronik, Klingenberger <a href="../explore.html?node=lassberg-literature-0004" title="Show in the knowledge graph" class="small">graph</a></li>
+                           <li class="mb-1">Chronicon Helveticum <a href="../explore.html?node=lassberg-literature-0005" title="Show in the knowledge graph" class="small">graph</a></li>
+                           <li class="mb-1">Hallers kritischem Verzeichnisse aller Schriften <a href="../explore.html?node=lassberg-literature-0006" title="Show in the knowledge graph" class="small">graph</a></li>
+                           <li class="mb-1">Bibliothek der Schweizergeschichte <a href="../explore.html?node=lassberg-literature-0007" title="Show in the knowledge graph" class="small">graph</a></li>
+                           <li class="mb-1">Von Auf- und Abgang der Herzogen von Zähringen. <a href="../explore.html?node=lassberg-literature-0008" title="Show in the knowledge graph" class="small">graph</a></li>
+                           <li class="mb-1">Habsburger-Chronik <a href="../explore.html?node=lassberg-literature-0009" title="Show in the knowledge graph" class="small">graph</a></li>
+                        </ul>
+                     </section>
+                  </aside>
+               </div>
+               <div class="col-lg-8 order-lg-1">
+                  <section id="original-text" class="mb-4">
+                     <h2>Original Text
+                        <span class="transcription-source badge-print" title="OCR-Texterfassung aus der gedruckten Edition, siehe Metadaten/Gedruckt in">Transcribed from the printed edition (OCR)</span></h2>
+                     <p class="text-muted small mb-2">Encoding reviewed 2026-07-10 (check-letter-annotations)</p>
+                     <div>
+                        
+                        <div class="letter-opener">
+                           
+                           <p class="letter-salute">Hochwohlgeborner Herr!</p>
+                           </div>
+                        
+                        <p>Indem ich Ihnen <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Bodmer, Johann Jakob; Breitinger, Johann Jakob: Sammlung von Minnesingern aus dem schwäbischen Zeitpuncte, durch Ruedger Manessen, weiland des Rathes der uralten Zyrich, aus der Handschrift der Königlich Französischen Bibliothek.</strong&gt;">Bodmers
+                              Ausgabe der Minnesånger<a href="VD18 11193093">📖</a></span> mit vielem Danke zurücksende, kann ich mich nicht
+                           enthalten, Ihnen meinen herzlichen Dank für Ihre Gastfreundschaft nochmals
+                           auszudrücken. <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Nauclerus, Johannes: Memorabilium omnis aetatis et omnium gentium chronici&#xA;        commentarii.</strong&gt;">Nauclers
+                              Chronik<a href="https://www.geschichtsquellen.de/werk/3584">📖</a></span> werde ich Ihnen, wenn sie für den Fußboten zu schwer sein sollte,
+                           mit erster günstiger Gelegenheit übermachen. Für das <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Adam Pupikofer: Bischofzell: dargestellt nach seinem gegenwärtigen Zustande und&#xA;        seinen bisherigen Schicksalen. Thurgauer Neujahrsblatt 2.</strong&gt;">thurgauische
+                              Neujahrsblatt<a href="http://opac.regesta-imperii.de/id/892798">📖</a></span>, besonders rücksichtlich der Erzählung der Erbauung <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Bischofszell</strong&gt;">Bischofszells<a href="https://www.wikidata.org/wiki/Q64865"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, bitte ich um Nachsicht. Ungelehrten Lesern dürfte manches
+                           noch zweifelhafte nicht als unzuverlässig dargeboten werden, und die
+                           Hindeutungen auf den damaligen Zustand des Volkes hätten vielleicht entweder
+                           ganz weggelassen oder mehr ausgeführt werden sollen. Ihre Belehrungen werden mir
+                           höchst willkommen sein, und ich bitte Sie angelegentlichst darum. Schon zwei
+                           Male habe ich Sie wegen der <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Klingenberger Chronik.</strong&gt;">Klingenbergischen Chronik<a href="https://handschriftencensus.de/werke/4111https://www.geschichtsquellen.de/werk/1096https://d-nb.info/gnd/7576582-2">📖</a></span> zum Nachschlagen veranlaßt. Damit das nicht zum
+                           dritten Male und wieder vergeblich geschehe, bemerke ich Ihnen folgende Notiz in
+                           <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Tschudi, Aegidius; Iselin, Johann Rudolf: Chronicon Helveticum.</strong&gt;">Tschudis
+                              Chronik. Tom. I. p. 104<a href="VD18-80117279">📖</a></span>. a. „Anno Domini 1206 im
+                           Hornung haben die drei Waldstätte: <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Uri</strong&gt;">Uri<a href="https://www.wikidata.org/wiki/Q12404"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Schwyz</strong&gt;">Schwyz<a href="https://www.wikidata.org/wiki/Q12433"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> und <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unterwalden</strong&gt;">Unterwalden<a href="https://www.wikidata.org/wiki/Q214069"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> sich
+                           10 Jahre lang zusammen verbunden, als Herr <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johannes von Klingenberg (d.Ä.)</strong&gt;">Johannes von
+                              Klingenberg<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>, Ritter, der Alte us dem <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Thurgau</strong&gt;">Turgöw<a href="https://www.wikidata.org/wiki/Q12713"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> beschribt,
+                           der anno 1240 und darnach gelebt hat, wie das bezügt sin Urenkel,
+                           auch Herr <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johannes von Klingenberg (d.J.)</strong&gt;">Johannes von
+                              Klingenberg<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> Ritter genannt, der zu <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Näfels</strong&gt;">Näfels<a href="https://www.wikidata.org/wiki/Q182806"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Glarus</strong&gt;">Glarus<a href="https://www.wikidata.org/wiki/Q11922"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> umkam, auch er und sin Sun, <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johannes</strong&gt;">Johannes<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           genannt, Irer Ziten Geschichten beschriben habend." In <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Gottlieb Emanuel Haller: Hallers kritischem Verzeichnisse aller Schriften.</strong&gt;">Hallers
+                              kritischem Verzeichnisse aller Schriften<a href="https://hallernet.org/data/publication/15002">📖</a></span>, welche die <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Schweiz</strong&gt;">Schweiz<a href="https://www.wikidata.org/wiki/Q39"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> betreffen
+                           (seine <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Gottlieb Emanuel Haller: Bibliothek der Schweizergeschichte.</strong&gt;">Bibliothek
+                              der Schweizergeschichte<a href="VD18-80175228">📖</a></span> besitze ich nicht) heißt es Bd. IV; p. 158 und 160,
+                           daß in <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johannes Langhans: Von Auf- und Abgang der Herzogen von Zähringen.</strong&gt;">J. Langhans:
+                              Von Auf- und Abgang der Herzogen von Zähringen</span>, ein Stück der <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Klingenberger Chronik.</strong&gt;">Klingenbergischen, 1388 geschriebenen Chronik<a href="https://handschriftencensus.de/werke/4111https://www.geschichtsquellen.de/werk/1096https://d-nb.info/gnd/7576582-2">📖</a></span> vorkomme. Wo nun wohl diese Chronik sich
+                           befinden möge? Von der <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Heinrich von Klingenberg: Habsburger-Chronik.</strong&gt;">Chronik
+                              Heinrichs von Klingenberg<a href="http://www.geschichtsquellen.de/werk/2711">📖</a></span> scheint sie bestimmt verschieden zu sein.</p>
+                        
+                        <div class="letter-closer">
+                           
+                           <p class="letter-salute">Genehmigen Sie, hochwohlgeborner, geehrtester Herr, die Versicherung wahrer
+                              Hochachtung und steter Dienstfertigkeit, mit der ich die Ehre habe zu sein Ihr
+                              ergebenster</p>
+                           
+                           <p class="letter-signed"><span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Adam Pupikofer</strong&gt;">Pupikofer<a href="https://d-nb.info/gnd/11565108X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span></p>.
+                           
+                           <p class="letter-dateline"><span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Bischofszell</strong&gt;">Bischofszell<a href="https://www.wikidata.org/wiki/Q64865"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, den 20 Dec.
+                              1824</p>.
+                           </div>
+                        </div>
+                  </section>
+                  <details id="normalised-text" class="text-version mb-4">
+                     <summary>Normalisierter Text</summary>
+                     <div>
+                        
+                        <p>Hochwohlgeborner Herr! Indem ich Ihnen Bodmers Ausgabe der Minnesänger mit vielem
+                           Dank zurücksende, kann ich mich nicht enthalten, Ihnen meinen herzlichen Dank
+                           für Ihre Gastfreundschaft nochmals auszudrücken. Nauclers Chronik werde ich
+                           Ihnen, wenn sie für den Fußboten zu schwer sein sollte, mit erster günstiger
+                           Gelegenheit übermachen. Für das thurgauische Neujahrsblatt, besonders
+                           rücksichtlich der Erzählung der Erbauung Bischofszells, bitte ich um Nachsicht.
+                           Ungelehrten Lesern dürfte manches noch zweifelhafte nicht als unzuverlässig
+                           dargeboten werden, und die Hindeutungen auf den damaligen Zustand des Volkes
+                           hätten vielleicht entweder ganz weggelassen oder mehr ausgeführt werden sollen.
+                           Ihre Belehrungen werden mir höchst willkommen sein, und ich bitte Sie
+                           angelegentlichst darum. Schon zwei Male habe ich Sie wegen der Klingenbergischen
+                           Chronik zum Nachschlagen veranlasst. Damit das nicht zum dritten Male und wieder
+                           vergeblich geschehe, bemerke ich Ihnen folgende Notiz in Tschudis Chronik. Tom.
+                           I. p. 104. a. „Anno Domini 1206 im Hornung haben die drei Waldstätte: Uri,
+                           Schwyz und Unterwalden sich 10 Jahre lang zusammen verbunden, als Herr Johannes
+                           von Klingenberg, Ritter, der Alte aus dem Turgöw beschrieben, der anno 1240 und
+                           danach gelebt hat, wie das bezügt sin Urenkel, auch Herr Johannes von
+                           Klingenberg  Ritter genannt, der zu Näfels in Glarus umkam, auch er und sin Sun,
+                           Johannes genannt, ihrer Ziten Geschichten beschrieben habend." In Hallers
+                           kritischem Verzeichnis aller Schriften, welche die Schweiz betreffen (seine
+                           Bibliothek der Schweizergeschichte besitze ich nicht) heißt es Bd. IV; p. 158
+                           und 160, dass in J. Langhans: Von Auf- und Abgang der Herzogen von Zähringen,
+                           ein Stück der Klingenbergischen, 1388 geschriebenen Chronik vorkomme. Wo nun
+                           wohl diese Chronik sich befinden möge? Von der Chronik Heinrichs von Klingenberg
+                           scheint sie bestimmt verschieden zu sein. Genehmigen Sie, hochwohlgeborner,
+                           geehrte Herr, die Versicherung wahrer Hochachtung und steter Dienstfertigkeit,
+                           mit der ich die Ehre habe zu sein Ihr ergebenster Pupikofer. Bischofszell, den
+                           20. Dez. 1824.</p>
+                        </div>
+                  </details>
+                  <details id="translation" class="text-version mb-4">
+                     <summary>Translation</summary>
+                     <div>
+                        <p>"Highly Born Sir!
+                           
+                           As I return to you Bodmer's edition of the Minnesingers with many thanks, I cannot
+                           refrain from expressing to you once more my heartfelt gratitude for your hospitality.
+                           I will send you Naucler's Chronicle, should it prove too heavy for the foot messenger,
+                           at the earliest favorable opportunity. Regarding the Thurgau New Year's sheet, particularly
+                           with respect to the account of the construction of Bischofszell, I ask for your indulgence.
+                           To unlearned readers, certain matters still in doubt should not be presented as unreliable,
+                           and the references to the then state of the people might perhaps have been either
+                           omitted entirely or more thoroughly elaborated. Your instructions will be most welcome
+                           to me, and I earnestly request them.
+                           
+                           I have already twice caused you trouble regarding the Klingenberg Chronicle for reference
+                           purposes. To avoid doing this a third time, and again in vain, I would like to point
+                           out the following note in Tschudi's Chronicle, Tom. I, p. 104, a: “Anno Domini 1206
+                           in February, the three forest cantons: Uri, Schwyz, and Unterwalden, entered into
+                           a 10-year alliance, as described by Sir Johannes von Klingenberg, Knight, the Elder
+                           from Thurgau, who lived in the year 1240 and thereafter, as testified by his great-grandson,
+                           also called Sir Johannes von Klingenberg, Knight, who perished in Näfels in Glarus,
+                           he and his son, also called Johannes, having written about their times."
+                           
+                           In Haller's critical directory of all writings concerning Switzerland (I do not possess
+                           his Library of Swiss History), it is mentioned in Vol. IV; p. 158 and 160, that in
+                           J. Langhans: On the Rise and Fall of the Dukes of Zähringen, a part of the Klingenberg
+                           Chronicle, written in 1388, appears. Where might this chronicle be now? It seems to
+                           be definitely different from the chronicle of Heinrich von Klingenberg.
+                           
+                           Please accept, highly born and honored sir, the assurance of my true respect and constant
+                           readiness to serve, with which I have the honor to be your most devoted Pupikofer.
+                           
+                           Bischofszell, 20th Dec. 1824."</p>
+                     </div>
+                  </details>
+                  <div id="related-letters"></div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer class="bg-dark text-white text-center py-3">
+         <div class="container">
+            <p class="mb-0"><a href="../letters.html">Back to the Letters</a></p>
+         </div>
+      </footer><script src="../../js/related.js"></script><script src="https://unpkg.com/leaflet/dist/leaflet.js"></script><script>
+                    var letterPlaces = [];
+                    
+                    letterPlaces.push({ coords: [47.5,9.23333333], label: "Bischofszell", kind: "sent" });
+                    
+                    letterPlaces.push({ coords: [46.783333, 8.616667], label: "Uri", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [47.020546, 8.658332], label: "Schwyz", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [46.87, 8.31], label: "Unterwalden", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [47.583333, 9.066667], label: "Thurgau", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [47.098889, 9.062778], label: "Näfels", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [46.983333, 9.066667], label: "Glarus", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [46.798562, 8.231973], label: "Schweiz", kind: "mentioned" });
+                        
+
+                    if (letterPlaces.length === 0) {
+                        document.getElementById('map').style.display = 'none';
+                    } else {
+                        var map = L.map('mapid', { scrollWheelZoom: false });
+                        // Muted basemap (CARTO Positron) instead of the default colourful OSM
+                        // tiles, to match the edition's restrained palette.
+                        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+                            attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+                            subdomains: 'abcd',
+                            maxZoom: 19
+                        }).addTo(map);
+
+                        var bounds = [];
+                        letterPlaces.forEach(function (p) {
+                            var isSent = p.kind === 'sent';
+                            var marker = L.circleMarker(p.coords, isSent
+                                ? { radius: 8, color: '#143761', weight: 2, fillColor: '#1d4e89', fillOpacity: 0.85 }
+                                : { radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75 }
+                            ).addTo(map).bindPopup((isSent ? 'Sent from: ' : 'Mentioned: ') + p.label);
+                            bounds.push(p.coords);
+                        });
+                        if (bounds.length > 1) {
+                            map.fitBounds(bounds, { padding: [25, 25], maxZoom: 9 });
+                        } else {
+                            map.setView(bounds[0], 8);
+                        }
+                    }
+                </script><script>
+                    // Initialize all tooltips
+                    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+                    new bootstrap.Tooltip(tooltipTriggerEl)
+                    })
+                </script></body>
+</html>

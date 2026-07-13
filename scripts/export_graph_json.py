@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
 Phase 7b.1: exports the JSON intermediate layer as a Graphology-serialization-format graph
-(`frontend/data/graph.json`) for client-side traversal (Sigma.js viz, GraphRAG expansion
-functions in frontend/graph.js) - no backend required.
+(`json/explore/graph.json`) for client-side traversal (Sigma.js viz, GraphRAG expansion
+functions in js/explore/graph.js) - no backend required.
 
 Same node/edge model and full entity/letter metadata as the Neo4j export (scripts/export_cypher.py)
 and RDF export (scripts/export_rdf.py) - one modelling (scripts/lib_pipeline.py's property
@@ -33,7 +33,7 @@ LABELS = {"persons": "person", "places": "place", "works": "work", "witnesses": 
 
 
 def letter_display_label(letter: dict, date: str | None) -> str:
-    """Short label for graph rendering (frontend/graph.js draws this next to each node) - the
+    """Short label for graph rendering (js/explore/graph.js draws this next to each node) - the
     full text/incipit are still in the node's attributes (see letter_properties()), just not used
     as the on-canvas label since they're far too long."""
     if not letter["incipit"]:
@@ -85,7 +85,7 @@ def main():
 
     graph = build_graph(entities, letters)
 
-    out_dir = repo_root / "frontend/data"
+    out_dir = repo_root / "json/explore"
     out_dir.mkdir(parents=True, exist_ok=True)
     out_path = out_dir / "graph.json"
     out_path.write_text(json.dumps(graph, ensure_ascii=False), encoding="utf-8")

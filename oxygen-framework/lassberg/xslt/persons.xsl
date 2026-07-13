@@ -47,6 +47,7 @@
                                 <li class="nav-item"><a class="nav-link" href="letters.html">Letters</a></li>
                                 <li class="nav-item"><a class="nav-link active" href="#">Persons</a></li>
                                 <li class="nav-item"><a class="nav-link" href="places.html">Places</a></li>
+                                <li class="nav-item"><a class="nav-link" href="explore.html">Explore</a></li>
                                 <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
                                 <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
                                 <li class="nav-item"><a class="nav-link" href="https://www.zotero.org/groups/6109140/joseph_von_laberg/library" target="_blank">Literature</a></li>
@@ -186,9 +187,9 @@
                             <span class="text-muted">0 letters</span>
                         </xsl:when>
                         <xsl:otherwise>
-                            <xsl:if test="count($sentLetters) &gt; 0">S <xsl:value-of select="count($sentLetters)"/></xsl:if>
-                            <xsl:if test="count($receivedLetters) &gt; 0"><xsl:if test="count($sentLetters) &gt; 0"> · </xsl:if>R <xsl:value-of select="count($receivedLetters)"/></xsl:if>
-                            <xsl:if test="count($mentionedRefs) &gt; 0"><xsl:if test="count($sentLetters) &gt; 0 or count($receivedLetters) &gt; 0"> · </xsl:if>M <xsl:value-of select="count($mentionedRefs)"/></xsl:if>
+                            <xsl:if test="count($sentLetters) &gt; 0">Sent <xsl:value-of select="count($sentLetters)"/></xsl:if>
+                            <xsl:if test="count($receivedLetters) &gt; 0"><xsl:if test="count($sentLetters) &gt; 0"> / </xsl:if>Received <xsl:value-of select="count($receivedLetters)"/></xsl:if>
+                            <xsl:if test="count($mentionedRefs) &gt; 0"><xsl:if test="count($sentLetters) &gt; 0 or count($receivedLetters) &gt; 0"> / </xsl:if>Mentioned <xsl:value-of select="count($mentionedRefs)"/></xsl:if>
                         </xsl:otherwise>
                     </xsl:choose>
                 </span>
@@ -219,6 +220,12 @@
                         <xsl:if test="tei:note[@type='review']"> <xsl:value-of select="normalize-space(tei:note[@type='review'])"/></xsl:if>
                     </div>
                 </xsl:if>
+
+                <p class="small mb-2">
+                    <a href="explore.html?node={$id}" class="btn btn-outline-secondary btn-sm">
+                        Show network graph
+                    </a>
+                </p>
 
                 <hr class="my-2"/>
                 <h6>Letters</h6>

@@ -1,0 +1,263 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0" lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>The Lassberg Letters</title>
+      <link href="../../css/styles.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script><link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"><script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script></head>
+   <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+         <div class="container"><a class="navbar-brand" href="../../index.html">The Laßberg Letters</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link" href="../../index.html">Welcome</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../persons.html">Persons</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../places.html">Places</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../explore.html">Explore</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <header class="page-header py-4">
+         <div class="container">
+            <h1 class="mb-2">Brief von Johann Adam Pupikofer an Joseph von Laßberg (12.12.1826).</h1>
+            <p class="lead mb-0">
+               
+               <p>Correspondence data based on Harris, Martin: Joseph Maria Christoph
+                  Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                  Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                  geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                  Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.. Briefe
+                  automatisiert mit GPT-3.5 normalisiert.</p>
+               </p>
+         </div>
+      </header>
+      <main class="py-4">
+         <div class="container">
+            <div class="alert alert-warning letter-preview-banner" role="alert"><strong>Unreviewed working text.</strong> The encoding of this letter
+               has not yet been editorially reviewed
+               (status: done).
+               The text may contain transcription or OCR errors — please cite with caution.
+               </div>
+            <div class="row g-4">
+               <div class="col-lg-4 order-lg-2">
+                  <aside class="letter-sidebar">
+                     <section id="metadata" class="mb-4">
+                        <h2 class="h5">Metadata</h2>
+                        <p><strong>Signatur: </strong>Frauenfeld, Thurgauische Kantonsbibliothek, </p>
+                        <p><strong>Registernummer (Laßberg): </strong>nan</p>
+                        <p><strong>Registernummer (Harris): </strong>2143</p>
+                        <p><strong>Gedruck in: </strong><a href="https://books.google.de/books?id=dXkKAAAAIAAJ">Johannes Meyer, Briefwechsel zwischen J. von Laszberg und Johann Adam Pupikofer. In:
+                              Alemannia 15 (1887), S. 231-88, S. 2</a></p>
+                     </section>
+                     <section id="map" class="mb-4">
+                        <h2 class="h5">Places</h2>
+                        <div id="mapid"></div>
+                        <p class="map-legend small text-muted mt-1 mb-0"><span class="legend-dot" style="background:#1d4e89"></span> place of sending
+                           <span class="legend-dot ms-2" style="background:#b57cc0"></span> places mentioned
+                           </p>
+                     </section>
+                     <section id="mentioned" class="mb-4">
+                        <h2 class="h5">Mentioned in this letter</h2>
+                        <h3 class="h6 mt-3">Persons</h3>
+                        <ul class="list-unstyled small mb-2">
+                           <li><a href="../persons.html?q=Jakob%20Christoph%20Scherb">Jakob Christoph Scherb</a></li>
+                           <li><a href="../persons.html?q=Neffe">Neffe</a></li>
+                           <li><a href="../persons.html?q=Brunschweiler">Brunschweiler</a></li>
+                           <li><a href="../persons.html?q=Johann%20Adam%20Pupikofer">Johann Adam Pupikofer</a></li>
+                        </ul>
+                        <h3 class="h6 mt-3">Places</h3>
+                        <ul class="list-unstyled small mb-2">
+                           <li><a href="../places.html?q=Bischofszell">Bischofszell</a></li>
+                        </ul>
+                        <h3 class="h6 mt-3">Literature</h3>
+                        <ul class="list-unstyled small mb-0">
+                           <li class="mb-1">Thesaurus Antiquitatum Tevtonicarum, Ecclesiasticarum, Civilium, Litterariarum. 3,
+                              Glossarium Ad Scriptores Linguae Francicae Et Alemannicae Veteris... . <a href="../explore.html?node=lassberg-literature-0037" title="Show in the knowledge graph" class="small">graph</a></li>
+                           <li class="mb-1">Ueberlieferungen zur Geschichte, Literatur und Kunst der Vor- und Mitwelt. <a href="../explore.html?node=lassberg-literature-0038" title="Show in the knowledge graph" class="small">graph</a></li>
+                           <li class="mb-1">Vulcans Jornandes (?) <a href="../explore.html?node=lassberg-literature-0039" title="Show in the knowledge graph" class="small">graph</a></li>
+                           <li class="mb-1">Idunna und Hermode: ein alterthumszeitung. <a href="../explore.html?node=lassberg-literature-0040" title="Show in the knowledge graph" class="small">graph</a></li>
+                           <li class="mb-1">Chronicarum libri IV (unbekannte Ausgabe) <a href="../explore.html?node=lassberg-literature-0041" title="Show in the knowledge graph" class="small">graph</a></li>
+                           <li class="mb-1">Historia Francorum (unbekannte Ausgabe) <a href="../explore.html?node=lassberg-literature-0042" title="Show in the knowledge graph" class="small">graph</a></li>
+                           <li class="mb-1">Antiquae Lectionis Tomus... Teil: 1: In Quo XVI. Antiqua Monumenta Ad Historiam Mediae
+                              Aetatis Illustrandam, Nunquam Edita Ingolstadiensi. <a href="../explore.html?node=lassberg-literature-0059" title="Show in the knowledge graph" class="small">graph</a></li>
+                           <li class="mb-1">Geschichte des Thurgaus. <a href="../explore.html?node=lassberg-literature-0044" title="Show in the knowledge graph" class="small">graph</a></li>
+                           <li class="mb-1">Tagebuch einer zweiten Reise [im Jahr 1825] über Paris nach London und einigen Fabrikstädten
+                              Englands vorzüglich in technologischer Hinsicht / von Johann Conrad Fischer, Oberstlieutenant
+                              der Artillerie. <a href="../explore.html?node=lassberg-literature-0045" title="Show in the knowledge graph" class="small">graph</a></li>
+                        </ul>
+                     </section>
+                  </aside>
+               </div>
+               <div class="col-lg-8 order-lg-1">
+                  <section id="original-text" class="mb-4">
+                     <h2>Original Text
+                        <span class="transcription-source badge-print" title="OCR-Texterfassung aus der gedruckten Edition, siehe Metadaten/Gedruckt in">Transcribed from the printed edition (OCR)</span></h2>
+                     <div>
+                        
+                        <div class="letter-opener">
+                           
+                           <p class="letter-salute">Hochwohlgeborner, verehrtester Herr und Gönner!</p>
+                           </div>
+                        
+                        <p>Schon die verflossene Woche hätte
+                           ich Ihnen gerne mit <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jakob Christoph Scherb</strong&gt;">Herrn
+                              Oberamtmann<a href="https://d-nb.info/gnd/100332471"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> einen Besuch abgestattet, und Ihnen einige Ihrer Bücher wieder
+                           zurückgestellt; allein die rheumatischen Schmerzen, die immer wie Cosaken, bald
+                           in den Zähnen, bald in den Ohren und in andern Theilen des Körpers
+                           herumstreifen, haben mich damals an der Erfüllung meines Wunsches gehindert, und
+                           haben immer noch so vielen Einfluß, daß ich mich aus Furcht vor einem Rückfall
+                           vielleicht mehr zu Hause halte, als gerade nöthig wäre. Für <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Schilter: Thesaurus Antiquitatum Tevtonicarum, Ecclesiasticarum, Civilium, Litterariarum. 3,&#xA;        Glossarium Ad Scriptores Linguae Francicae Et Alemannicae Veteris... .</strong&gt;">Schilters
+                              Glossar<a href="VD18:%0A        80333109-001">📖</a></span>, <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Friedrich Adolph Ebert: Ueberlieferungen zur Geschichte, Literatur und Kunst der Vor- und&#xA;        Mitwelt.</strong&gt;">Eberts
+                              Ueberlieferungen<a href="urn:nbn:de:bvb:12-bsb10539124-7">📖</a></span>, <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Vulcans Jornandes (?).</strong&gt;">Vulcans
+                              Jornandes</span>, <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Gräter, Friedrich David: Idunna und Hermode: ein alterthumszeitung.</strong&gt;">Gräters
+                              Iduna</span> bin ich Ihnen sehr dankbar. In der Enträthselung der <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Kaisersbacher Glockenschrift</span> glaube ich wenigstens
+                           einen Schritt vorwärts gethan zu haben. Ich finde nähmlich deutlich die
+                           Buchstaben: populi ob.li... dum sonare . . . ceter u. bin versucht zu lesen:
+                           populi ob colligendum sonare . . . ceter. Die Phrase wäre freilich nicht sehr
+                           gut Latein. Die Figur... wäre als Abkürzung für col zu nehmen, daß . . dum
+                           gelesen werden müsse, zeigt das gothische Alphabet. Was vor ceter hergehe,
+                           darüber mag ich keine Muthmaßung aufstellen. Darf ich Ihre Güte ferner in
+                           Anspruch nehmen, so möchte ich Sie um den <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Pseudo-Fredegar: Chronicarum libri IV (unbekannte Ausgabe).</strong&gt;">Nachlaß
+                              Fredegars<a href="https://www.geschichtsquellen.de/werk/2355">📖</a></span> und <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Aimoin von Fleury: Historia Francorum (unbekannte Ausgabe).</strong&gt;">Aimoins</span>
+                           bitten und um <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Heinrich Canisius: Antiquae Lectionis Tomus... Teil: 1: In Quo XVI. Antiqua Monumenta&#xA;        Ad Historiam Mediae Aetatis Illustrandam, Nunquam Edita Ingolstadiensi.</strong&gt;">Notkeri
+                              Balbuli vita Caroli M.<a href=" VD17 23:233688E">📖</a></span> Ich überarbeite soeben diese Periode der <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Adam Pupikofer: Geschichte des Thurgaus.</strong&gt;">Thurgauer Geschichte<a href="https://books.google.de/books?id=tz4PAAAAQAAJ">📖</a></span>, und möchte einige Citate nachsehen. Vielleicht macht
+                           es Ihnen Vergnügen die <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Conrad Fischer: Tagebuch einer zweiten Reise [im Jahr 1825] über Paris nach London&#xA;        und einigen Fabrikstädten Englands vorzüglich in technologischer Hinsicht / von Johann&#xA;        Conrad Fischer, Oberstlieutenant der Artillerie.</strong&gt;">Reise des
+                              Oberstl. Fischer<a href="https://doi.org/10.3931/e-rara-61119">📖</a></span> zu durchgehen, die ich deshalb beilege. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Neffe</strong&gt;">Ihr
+                              Neffe<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> befindet sich bei Herrn <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Brunschweiler</strong&gt;">Brunschwyler<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> wohl. Jedoch hat Herr <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Brunschweiler</strong&gt;">Brunschwyler<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>, in der
+                           Erwartung, daß Sie bald selbst nach <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Bischofszell</strong&gt;">Bischofzell<a href="https://www.wikidata.org/wiki/Q64865"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> kommen, noch für keinen Religions oder Musikunterricht
+                           gesorgt, wird Ihnen aber darüber Vorschläge machen.</p>
+                        
+                        <div class="letter-closer">
+                           
+                           <p class="letter-salute">Genehmigen Sie,
+                              Hochwohlgeborner, hochzuverehrender Herr und Gönner, die Versicherung meiner
+                              aufrichtigsten Hochachtung und Dankbarkeit, womit ich die Ehre habe zu sein
+                              Hochdero Ergebenster</p>
+                           
+                           <p class="letter-signed">Diac. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Adam Pupikofer</strong&gt;">Pupikofer<a href="https://d-nb.info/gnd/11565108X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span></p>.
+                           
+                           <p class="letter-dateline"><span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Bischofszell</strong&gt;">Bischofzell<a href="https://www.wikidata.org/wiki/Q64865"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> den 12. Dec. 1826</p>.
+                           </div>
+                        </div>
+                  </section>
+                  <details id="normalised-text" class="text-version mb-4">
+                     <summary>Normalisierter Text</summary>
+                     <div>
+                        
+                        <p>Sehr geehrter, verehrter Herr und Gönner! Schon die vergangene Woche hätte ich
+                           Ihnen gerne mit Herrn Oberamtmann einen Besuch abgestattet und Ihnen einige
+                           Ihrer Bücher zurückgegeben. Allerdings haben mich die rheumatischen Schmerzen,
+                           die immer wie Kosaken, mal in den Zähnen, mal in den Ohren und anderen Teilen
+                           des Körpers herumstreifen, daran gehindert, meinen Wunsch zu erfüllen. Sie haben
+                           immer noch so großen Einfluss, dass ich aus Angst vor einem Rückfall vielleicht
+                           öfter zu Hause bleibe, als notwendig wäre. Für Schilters Glossar, Eberts
+                           Überlieferungen, Vulcans Jornandes und Gräters Iduna danke ich Ihnen sehr. Bei
+                           der Entzifferung der Kaisersbacher Glockenschrift glaube ich zumindest einen
+                           Schritt nach vorne gemacht zu haben. Ich finde nämlich deutlich die Buchstaben:
+                           "populi ob.li... dum sonare . . . ceter" und bin versucht zu lesen: "populi ob
+                           colligendum sonare . . . ceter". Die Phrase wäre zwar nicht sehr gutes Latein.
+                           Die Figur "..." wäre als Abkürzung für "col" zu nehmen, dass "dum" gelesen
+                           werden müsse, zeigt das gotische Alphabet. Was vor "ceter" hergehe, darüber
+                           möchte ich keine Vermutung anstellen. Darf ich Ihre Güte weiterhin in Anspruch
+                           nehmen, würde ich Sie um den Nachlass Fredegars und Aimoins bitten sowie um
+                           Notkeri Balbuli vita Caroli M. Ich überarbeite gerade diesen Zeitabschnitt der
+                           Thurgauer Geschichte und möchte einige Zitate nachsehen. Vielleicht bereitet es
+                           Ihnen Vergnügen, die Reise des Oberstleutnants Fischer zu durchgehen, die ich
+                           deshalb beilege. Ihr Neffe befindet sich bei Herrn Brunschwyler gut. Allerdings
+                           hat Herr Brunschwyler, in Erwartung, dass Sie bald persönlich nach Bischofzell
+                           kommen, noch keine religiöse oder musikalische Unterweisung organisiert, wird
+                           Ihnen aber darüber Vorschläge machen. Bitte akzeptieren Sie, sehr geehrter Herr
+                           und Gönner, die Versicherung meiner aufrichtigsten Hochachtung und Dankbarkeit,
+                           mit der ich die Ehre habe, Ihr ergebenster Diac. Pupikofer zu sein. Bischofzell,
+                           den 12. Dezember 1826.</p>
+                        </div>
+                  </details>
+                  <details id="translation" class="text-version mb-4">
+                     <summary>Translation</summary>
+                     <div>
+                        <p>Dear and Esteemed Sir and Patron,
+                           
+                           I had intended to visit you last week along with Mr. Oberamtmann to return some of
+                           your books. However, rheumatic pains, which roam around like Cossacks, sometimes in
+                           the teeth, sometimes in the ears, and other parts of the body, prevented me from fulfilling
+                           this wish. They still have such a strong influence that, for fear of a relapse, I
+                           might often stay home more than necessary.
+                           
+                           I am very grateful for Schilter's Glossary, Ebert's Traditions, Vulcan's Jornandes,
+                           and Gräter's Iduna. In deciphering the Kaisersbach bell inscription, I believe I have
+                           made at least one step forward. I clearly find the letters: "populi ob.li... dum sonare
+                           . . . ceter" and am tempted to read: "populi ob colligendum sonare . . . ceter." Although
+                           the phrase is not very good Latin, the figure "..." should be taken as an abbreviation
+                           for "col," and the Gothic alphabet indicates that "dum" must be read. I do not want
+                           to speculate on what precedes "ceter."
+                           
+                           If I may continue to rely on your kindness, I would request Fredegar's Nachlass and
+                           Aimoin's work, as well as Notkeri Balbuli vita Caroli M. I am currently revising this
+                           period of Thurgau's history and would like to check some quotations. You might enjoy
+                           going through the journey of Lieutenant Colonel Fischer, which I therefore enclose.
+                           Your nephew is doing well with Mr. Brunschwyler. However, Mr. Brunschwyler, expecting
+                           you to come to Bischofszell soon, has not yet organized any religious or musical instruction
+                           but will make suggestions to you about this.
+                           
+                           Please accept, dear Sir and Patron, the assurance of my sincerest respect and gratitude,
+                           with which I have the honor to be your most devoted Diac. Pupikofer. Bischofszell,
+                           December 12, 1826.</p>
+                     </div>
+                  </details>
+                  <div id="related-letters"></div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer class="bg-dark text-white text-center py-3">
+         <div class="container">
+            <p class="mb-0"><a href="../letters.html">Back to the Letters</a></p>
+         </div>
+      </footer><script src="../../js/related.js"></script><script src="https://unpkg.com/leaflet/dist/leaflet.js"></script><script>
+                    var letterPlaces = [];
+                    
+                    letterPlaces.push({ coords: [47.5,9.23333333], label: "Bischofszell", kind: "sent" });
+                    
+
+                    if (letterPlaces.length === 0) {
+                        document.getElementById('map').style.display = 'none';
+                    } else {
+                        var map = L.map('mapid', { scrollWheelZoom: false });
+                        // Muted basemap (CARTO Positron) instead of the default colourful OSM
+                        // tiles, to match the edition's restrained palette.
+                        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+                            attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+                            subdomains: 'abcd',
+                            maxZoom: 19
+                        }).addTo(map);
+
+                        var bounds = [];
+                        letterPlaces.forEach(function (p) {
+                            var isSent = p.kind === 'sent';
+                            var marker = L.circleMarker(p.coords, isSent
+                                ? { radius: 8, color: '#143761', weight: 2, fillColor: '#1d4e89', fillOpacity: 0.85 }
+                                : { radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75 }
+                            ).addTo(map).bindPopup((isSent ? 'Sent from: ' : 'Mentioned: ') + p.label);
+                            bounds.push(p.coords);
+                        });
+                        if (bounds.length > 1) {
+                            map.fitBounds(bounds, { padding: [25, 25], maxZoom: 9 });
+                        } else {
+                            map.setView(bounds[0], 8);
+                        }
+                    }
+                </script><script>
+                    // Initialize all tooltips
+                    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+                    new bootstrap.Tooltip(tooltipTriggerEl)
+                    })
+                </script></body>
+</html>

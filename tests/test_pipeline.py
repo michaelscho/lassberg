@@ -2,7 +2,7 @@
 stage, run against small fixture letters, not the full corpus).
 
 Phase 1 (parse_tei.py) is tested thoroughly against tests/fixtures/mini_repo/ (2 full-text
-letters - one reviewed with clean rs<->mentions links, one raw/unreviewed with empty rs keys and a
+letters - one published with clean rs<->mentions links, one draft (no revisionDesc) with empty rs keys and a
 commented-out mentions template - plus one register-only letter, mirroring the three real letter
 states found in the actual corpus). Phases 4/5's small pure-function helpers (Cypher literal
 escaping, RDF date-precision typing, the sent-place corpus-quirk fallback) are unit-tested
@@ -88,21 +88,21 @@ def test_letters_jsonl_has_all_three_states(letters):
 
     reviewed = by_id["lassberg-letter-0001"]
     assert reviewed["has_fulltext"] is True
-    assert reviewed["status"] == "reviewed"
+    assert reviewed["status"] == "published"  # latest revisionDesc change entry
     assert reviewed["sent"] == {
         "person": "lassberg-correspondent-0001", "place": "lassberg-place-0001",
         "date": "1825-01-01", "date_precision": "day",
     }
     assert reviewed["mentions"]["works"] == ["lassberg-literature-0001"]
     assert "normalisiert" in reviewed["text"]  # prefers the normalized div over the transcription
-    assert reviewed["publication_status"] == "online"
+    assert reviewed["publication_status"] == "online_transcription"
     assert reviewed["register_meta"]["harris_number"] == "42"
     assert reviewed["register_meta"]["repository_place"] == "Testarchivstadt"
     assert reviewed["register_meta"]["published_in_url"] == "https://example.com/pub"
     assert reviewed["register_meta"]["journal_number"] is None  # empty <note> -> None, not ""
 
     raw = by_id["lassberg-letter-0002"]
-    assert raw["status"] == "raw"  # no <revisionDesc> in the fixture
+    assert raw["status"] == "draft"  # no <revisionDesc> in the fixture -> defaults to draft
     assert raw["mentions"] == {"persons": [], "places": [], "works": [], "witnesses": []}
     assert "unbekannte Buch" in raw["text"]  # falls back to the transcription div (no normalized one)
 
@@ -196,7 +196,7 @@ def test_letter_properties_includes_register_meta_and_fulltext(letters):
     by_id = {l["id"]: l for l in letters}
     props = letter_properties(by_id["lassberg-letter-0001"])
     assert props["harris_number"] == "42"
-    assert props["publication_status"] == "online"
+    assert props["publication_status"] == "online_transcription"
     assert "normalisiert" in props["text"]  # full text present for the has_fulltext letter
 
     register_only_props = letter_properties(by_id["lassberg-letter-0003"])
