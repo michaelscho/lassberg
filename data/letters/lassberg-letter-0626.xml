@@ -51,6 +51,45 @@
 
                 <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
                 <note type="mentioned">
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0022"
+                        ><rs>Liedersaal</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0222"
+                        ><rs>Manessische Sammlung</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0230"
+                        ><rs>Weingartner Handschrift der Minnesänger</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0231"
+                        ><rs>Heidelberger Handschrift Nr. 350</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0232"
+                        ><rs>Heidelb. Handschrift Nr. 357</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0229"
+                        ><rs>Renner</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0681"
+                        ><rs>Walther von der Vogelweide</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0682"
+                        ><rs>Truchsess von Singenberg</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0683"
+                        ><rs>Berthold von Falkenstein</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0288"
+                        ><rs>Ludwig Uhland</rs></ref>
+                    <ref type="cmif:mentionsPlace"
+                        target="../register/lassberg-places.xml#lassberg-place-0147"
+                        ><rs>Stuttgart</rs></ref>
+                    <ref type="cmif:mentionsPlace"
+                        target="../register/lassberg-places.xml#lassberg-place-0175"
+                        ><rs>Thurgau</rs></ref>
+                    <ref type="cmif:mentionsPlace"
+                        target="../register/lassberg-places.xml#lassberg-place-0141"
+                        ><rs>Sankt Gallen</rs></ref>
                 </note>
             </correspDesc>
         </profileDesc>
@@ -59,13 +98,86 @@
                 <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
                     zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
                     encoding not yet reviewed</change>
+                <change when="2026-07-14" who="#check-letter-annotations" status="reviewed">Checked via
+                    check-letter-annotations skill (Vollständigkeit, Verlinkung, Struktur,
+                    Header/Body-Konsistenz, Formeln)</change>
+                <change when="2026-07-14" who="#sync-letter-status" status="published">Published online</change>
             </listChange>
         </revisionDesc>
     </teiHeader>
     <text>
         <body>
             <div type="print" resp="ocr">
-                <p>Stuttgart, den 8. April 1820. Hochwohlgeborner Freiherr, Hochzuverehrender Herr! In der Vorrede des mir kürzlich zu Gesicht gekommenen Liedersaals haben Euer Hochwohlgeboren eine Galerie von Minnesängern des Thurgaus und der benachbarten Gegend aufgestellt, welche für mich um so anziehender war, als ich selbst mit mehreren dieser alten Dichter mich näher beschäftigt habe. Dieses Zusammentreffen in demselben Ideenkreise wird mich entschuldigen, wenn ich mir die Freiheit nehme, mich als Unbekannter mit gegenwärtiger Zuſchrift an Sie zu wenden. Es wird von mir eine Schrift im Druck erscheinen, worin ich den Meister Walther von der Vogelweide hauptsächlich aus seinen eigenen Liedern darzustellen versucht habe. Dabei mußte mir daran gelegen seyn, dem Ursprunge dieses Dichters auf die Spur zu kommen. Gewöhnlich wird angenommen, daß er aus dem Thurgau entsprossen sey. Diese Meinung erschien mir bei näherer Prüfung nicht zureichend erwiesen, wie ich solches im ersten Abschnitte meiner Schrift, wovon ein Auszug hier anliegt, ausgeführt habe. Nun finde ich in der Vorrede des Liedersaals bemerkt, daß zwar nicht mehr bekannt sey, wo Herr Walther in oder bei Sankt Gallen gehaust habe, wohl aber, daß er oft und lang dort gesungen. Diese Stelle hat mir von neuem die Hoffnung belebt, über die Heimath des Dichters etwas Bestimmteres zu erfahren. Bei meiner Arbeit konnte ich, ausser der Manessischen Sammlung, die Weingartner Handschrift der Minnesänger, welche jekt hier befindlich ist, sodann die Heidelberger Handschrift Nr. 350 benützen. Die bedeutendere Heidelb. Handschrift Nr. 357 ist mir noch zugesagt. Sollten nun Euer Hochwohlgeboren nähere Belege über den Ursprung Walthers von der Vogelweide besiken, oder Gedichte desselben, sowie des Truchsessen von Singenberg 2c. 2c., welche nicht in den vorbemerkten Sammlungen vorkommen, so würde mich deren gütige Mittheilung zu dem lebhaftesten Danke verbinden. Auch verschiedene Lesarten würden für mich von vielem Interesse seyn, sowie eine Nachweisung darüber, daß mit dem im Renner vorkommenden Abte von Sankt Gallen der Abt Berthold von Falkenstein gemeint sey. Ich fürchte jedoch, beschwerlich zu seyn, und schliesse mit der Versicherung der vollkommensten Verehrung, womit ich verharre Euer Hochwohlgeboren unterthäniger Diener D. Ludwig Uhland. NS. Daß der Truchseß von Singenberg Walthern:,, mein Meister ", nennt, ist mir bekannt, aber dieser damals öfters vorkommende Ausdruck scheint mehr einen Titel, als ein persönliches Verhältniß zu bezeichnen.</p>
+                <opener>
+                    <dateline><rs type="place"
+                        key="../register/lassberg-places.xml#lassberg-place-0147">Stuttgart</rs>, den
+                        <date when="1820-04-08">8. April 1820</date>.</dateline>
+                    <salute>Hochwohlgeborner Freiherr, Hochzuverehrender Herr!</salute>
+                </opener>
+                <p>In der Vorrede des mir kürzlich zu Gesicht gekommenen <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0022">Liedersaals</rs>
+                    haben Euer Hochwohlgeboren eine Galerie von Minnesängern des <rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0175">Thurgaus</rs> und der
+                    benachbarten Gegend aufgestellt, welche für mich um so anziehender war, als ich
+                    selbst mit mehreren dieser alten Dichter mich näher beschäftigt habe. Dieses
+                    Zusammentreffen in demselben Ideenkreise wird mich entschuldigen, wenn ich mir
+                    die Freiheit nehme, mich als Unbekannter mit gegenwärtiger Zuſchrift an Sie zu
+                    wenden. Es wird von mir eine Schrift im Druck erscheinen, worin ich den Meister
+                    <rs type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0681"
+                    >Walther von der Vogelweide</rs> hauptsächlich aus seinen eigenen Liedern
+                    darzustellen versucht habe. Dabei mußte mir daran gelegen seyn, dem Ursprunge
+                    dieses Dichters auf die Spur zu kommen. Gewöhnlich wird angenommen, daß er aus
+                    dem <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0175"
+                    >Thurgau</rs> entsprossen sey. Diese Meinung erschien mir bei näherer Prüfung
+                    nicht zureichend erwiesen, wie ich solches im ersten Abschnitte meiner Schrift,
+                    wovon ein Auszug hier anliegt, ausgeführt habe. Nun finde ich in der Vorrede des
+                    <rs type="bibl" key="../register/lassberg-literature.xml#lassberg-literature-0022"
+                    >Liedersaals</rs> bemerkt, daß zwar nicht mehr bekannt sey, wo Herr <rs
+                    type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0681"
+                    >Walther</rs> in oder bei <rs type="place"
+                    key="../register/lassberg-places.xml#lassberg-place-0141">Sankt Gallen</rs>
+                    gehaust habe, wohl aber, daß er oft und lang dort gesungen. Diese Stelle hat mir
+                    von neuem die Hoffnung belebt, über die Heimath des Dichters etwas Bestimmteres
+                    zu erfahren. Bei meiner Arbeit konnte ich, ausser der <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0222">Manessischen
+                    Sammlung</rs>, die <rs type="witness"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0230">Weingartner
+                    Handschrift der Minnesänger</rs>, welche jekt hier befindlich ist, sodann die
+                    <rs type="witness" key="../register/lassberg-literature.xml#lassberg-literature-0231"
+                    >Heidelberger Handschrift Nr. 350</rs> benützen. Die bedeutendere <rs
+                    type="witness" key="../register/lassberg-literature.xml#lassberg-literature-0232"
+                    >Heidelb. Handschrift Nr. 357</rs> ist mir noch zugesagt. Sollten nun Euer
+                    Hochwohlgeboren nähere Belege über den Ursprung <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0681">Walthers von
+                    der Vogelweide</rs> besiken, oder Gedichte desselben, sowie des <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0682">Truchsessen
+                    von Singenberg</rs> 2c. 2c., welche nicht in den vorbemerkten Sammlungen
+                    vorkommen, so würde mich deren gütige Mittheilung zu dem lebhaftesten Danke
+                    verbinden. Auch verschiedene Lesarten würden für mich von vielem Interesse seyn,
+                    sowie eine Nachweisung darüber, daß mit dem im <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0229">Renner</rs>
+                    vorkommenden <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0683">Abte von
+                    Sankt Gallen</rs> der Abt <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0683">Berthold von
+                    Falkenstein</rs> gemeint sey.</p>
+                <closer>
+                    <salute>Ich fürchte jedoch, beschwerlich zu seyn, und schliesse mit der
+                        Versicherung der vollkommensten Verehrung, womit ich verharre Euer
+                        Hochwohlgeboren</salute>
+                    <signed>unterthäniger Diener D. <rs type="person"
+                        key="../register/lassberg-persons.xml#lassberg-correspondent-0288">Ludwig
+                        Uhland</rs>.</signed>
+                </closer>
+                <postscript>
+                    <p>NS. Daß der <rs type="person"
+                        key="../register/lassberg-persons.xml#lassberg-correspondent-0682">Truchseß
+                        von Singenberg</rs> <rs type="person"
+                        key="../register/lassberg-persons.xml#lassberg-correspondent-0681"
+                        >Walthern</rs>:,, mein Meister ", nennt, ist mir bekannt, aber dieser damals
+                        öfters vorkommende Ausdruck scheint mehr einen Titel, als ein persönliches
+                        Verhältniß zu bezeichnen.</p>
+                </postscript>
             </div>
         </body>
     </text>
