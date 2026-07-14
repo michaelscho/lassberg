@@ -87,7 +87,8 @@
                   <section id="original-text" class="mb-4">
                      <h2>Original Text
                         <span class="transcription-source badge-manuscript" title="Diplomatische Transkription der Handschrift">Transcribed from the manuscript (Transkribus)</span></h2>
-                     <div>
+                     <div class="btn-group btn-group-sm mb-2" role="group" aria-label="Textansicht"><button type="button" id="view-lines-btn" class="btn btn-outline-secondary active" onclick="document.getElementById('view-lines').classList.remove('d-none'); document.getElementById('view-flow').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-flow-btn').classList.remove('active');">Zeilengenau</button><button type="button" id="view-flow-btn" class="btn btn-outline-secondary" onclick="document.getElementById('view-flow').classList.remove('d-none'); document.getElementById('view-lines').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-lines-btn').classList.remove('active');">Fließtext</button></div>
+                     <div id="view-lines">
                         
                         <p><br>Bad Ueberlingen am
                            9ten July. 1841. <br>Werter Herr und Freund! <br>Ich kann unsere tischnachbaren Herren <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Emanuel Burckhardt-Iselin</strong&gt;">Burkhard-Iselin<a href="https://d-nb.info/gnd/1089905092"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> und <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Anna Catharina (Line) Burckhardt</strong&gt;">seine
@@ -105,6 +106,27 @@
                            sollen es gerne lesen; denn auch für die sprache <br>des anfangenden
                            XV. Jarhunderts in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Schwaben</strong&gt;">Schwaben<a href="https://www.wikidata.org/wiki/Q11812551"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> ist es
                            merkwürdig. Leben Sie wol! gott behüte Inen <br>weib und kind,
+                           welche ich und <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jenny von Droste zu Hülshoff</strong&gt;">Jenny<a href="https://d-nb.info/gnd/118527541"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           von herzen grüssen. Joseph der alte Laßbergaere. </p>
+                        </div>
+                     <div id="view-flow" class="d-none">
+                        
+                        <p>Bad Ueberlingen am
+                           9ten July. 1841. Werter Herr und Freund! Ich kann unsere tischnachbaren Herren <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Emanuel Burckhardt-Iselin</strong&gt;">Burkhard-Iselin<a href="https://d-nb.info/gnd/1089905092"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> und <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Anna Catharina (Line) Burckhardt</strong&gt;">seine
+                              frau<a href="https://d-nb.info/gnd/1301827509"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> nicht nach <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Basel</strong&gt;">Basel<a href="https://www.wikidata.org/wiki/Q78"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> zurükreisen
+                           lassen, one
+                           inen einen eben so freundlichen als herzlichen gruß an Sie und die Irigen
+                           mitzugeben. allzulange schon /: die dinte ist ganz abscheulich und das papier nicht
+                           weniger schlecht:/ blieben meine briefe unbeantwortet, und doch verlangt uns ser zu
+                           wissen, wie es Inen und Irem hause ergehet? mein exemplar <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wilhelm Wackernagel: Deutsches Lesebuch.</strong&gt;">des
+                              Lesebuches<a href="https://digi.ub.uni-heidelberg.de/diglit/wackernagel1839gahttps://archive.org/details/deutscheslesebu00wackgoog">📖</a></span> ist noch immr one vorrede und nachrede und seitdeme haben Sie gewiss
+                           auch schon anderes zu tage gefördert. Auch ich werde Inen nächstens etwas
+                           schiken, zwar
+                           nicht aus der guten zeit; aber es wäre für <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Schwaben</strong&gt;">Schwaben<a href="https://www.wikidata.org/wiki/Q11812551"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> doch
+                           schade, wenn es unbekannt bliebe. Ich erhalte eben den 3ten correctur bogen; ich hoffe Sie
+                           sollen es gerne lesen; denn auch für die sprache des anfangenden
+                           XV. Jarhunderts in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Schwaben</strong&gt;">Schwaben<a href="https://www.wikidata.org/wiki/Q11812551"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> ist es
+                           merkwürdig. Leben Sie wol! gott behüte Inen weib und kind,
                            welche ich und <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jenny von Droste zu Hülshoff</strong&gt;">Jenny<a href="https://d-nb.info/gnd/118527541"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
                            von herzen grüssen. Joseph der alte Laßbergaere. </p>
                         </div>

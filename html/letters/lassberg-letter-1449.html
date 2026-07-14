@@ -103,7 +103,8 @@
                   <section id="original-text" class="mb-4">
                      <h2>Original Text
                         <span class="transcription-source badge-manuscript" title="Diplomatische Transkription der Handschrift">Transcribed from the manuscript (Transkribus)</span></h2>
-                     <div>
+                     <div class="btn-group btn-group-sm mb-2" role="group" aria-label="Textansicht"><button type="button" id="view-lines-btn" class="btn btn-outline-secondary active" onclick="document.getElementById('view-lines').classList.remove('d-none'); document.getElementById('view-flow').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-flow-btn').classList.remove('active');">Zeilengenau</button><button type="button" id="view-flow-btn" class="btn btn-outline-secondary" onclick="document.getElementById('view-flow').classList.remove('d-none'); document.getElementById('view-lines').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-lines-btn').classList.remove('active');">Fließtext</button></div>
+                     <div id="view-lines">
                         
                         <p><br>E. am 4. Juny 1830.
                            <br>Ich sende Inen,
@@ -158,6 +159,63 @@
                               Zeitung<a href="https://hls-dhs-dss.ch/de/articles/024758/2001-07-26/">📖</a></span> mitzubringen; worin H. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unbekannt</strong&gt;">Freimut<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
                            <br>so strenge gezwaget worden sein soll. Bei H. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jakob Christoph Scherb</strong&gt;">Oberamt<br>manns<a href="https://d-nb.info/gnd/100332471"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> viele empfelungen von dem hofpoeten
                            <br>Laßberg.
+                           </p>
+                        </div>
+                     <div id="view-flow" class="d-none">
+                        
+                        <p>E. am 4. Juny 1830.
+                           Ich sende Inen,
+                           mein vererter Herr und nachbar! die <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Adam Pupikofer: Angela.</strong&gt;">Angela<a href="https://musenalm.de/almanach/743/">📖</a></span>
+                           mit einem langen oder kurzen E. zurük und um nicht in den verdacht zu kommen, als ob Ich Sie
+                           um einen verdienten rum bringen wollte; so enthalte ich mich aller bemerkungen über die einzelheiten der
+                           composition, und erlaube mir blos die, jedoch ganz unvorgreifliche, meinungsäusserung, daß es mir in
+                           dieser gestalt noch kein so eigentliches gedicht zu sein scheint und einer völligen
+                           Umarbeitung bedarf; welche Sie sich bei einem so schönen und wirklich
+                           poetischen Stoffe, nicht werden reuen lassen. auch das dem <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Adolf Ludwig Follen</strong&gt;">H. Follen<a href="https://d-nb.info/gnd/116646772"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> gegebene versprechen macht es Inen
+                           gewissermaßen zum cathegorischen imperativ. Der <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">codex traditionum augiae albae</span> hält mich ser vest und freut mich alle
+                           tage mer; ich habe bereits 130 seiten abgeschrieben aber ich habe
+                           noch 60 weitere bis zur hälfte; dann mache ich eine pause;
+                           daneben arbeiten tapezirer, sattler, maurer und Schlosser auf wenige schritte von mir,
+                           und machen
+                           mir mit allerlei tönen und geräuschen die geduld kurz und die zeit lang. was wollen Sie?
+                           man muss
+                           leben und leben lassen! <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Karl Hartwig Gregor von Meusebach</strong&gt;">H. v.
+                              Meusebach<a href="https://d-nb.info/gnd/118733230"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> hat mir durch einen H. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;David Gessner</strong&gt;">David
+                              gessner<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> V.D.M. der von <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Berlin</strong&gt;">Berlin<a href="https://www.wikidata.org/wiki/Q64"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> nach dem
+                           nobile <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Zürich</strong&gt;">Turegum<a href="https://www.wikidata.org/wiki/Q72"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> heimgekert ist, zwei literar. Seltenheiten gesendet; aber
+                           nicht dazu geschrieben. Das eine ist der unvollendete III.
+                           band der <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Christoph Heinrich Myller: Samlung deutscher Gedichte aus dem XII., XIII. und XIV. Jahrhundert.&#xA;        3 Bde.</strong&gt;">Müllerschen
+                              Sammlung<a href="https://www.digitale-sammlungen.de/de/details/bsb10057384VD18 11205407">📖</a></span>, welcher nahe an 25000 verse von <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Konrad von Würzburg</strong&gt;">Conrads v.
+                              Würzburg<a href="https://d-nb.info/gnd/118565133"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Konrad von Würzburg: Trojanerkrieg.</strong&gt;">trojanischem
+                              Krieg<a href="https://handschriftencensus.de/werke/212">📖</a></span> und
+                           sonst noch einige gute Sachen enthält. Das andere ist <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Julius Erduin Koch: Compendium der deutschen Literatur-Geschichte.</strong&gt;">Kochs
+                              compendium der teutschen literatur. 2bde. in 8°<a href="https://www.digitale-sammlungen.de/de/view/bsb10733463">📖</a></span> welches Sie gewiss nicht one
+                           vergnügen lesen werden; ausserdem aber giebts nichts neues in Theotiscis. <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Oskar Ludwig Bernhard Wolff: Sammlung historischer Volkslieder und Gedichte der Deutschen.</strong&gt;">Wolffs
+                              Volkslieder<a href="https://archive.org/details/bub_gb_Y0EJAAAAQAAJ">📖</a></span> habe ich schon zu <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unbekannt</strong&gt;">H.
+                              Kunkler<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> bibliopega in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Amriswil</strong&gt;">Amriswil<a href="https://www.wikidata.org/wiki/Q69768"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> gesendet
+                           um zu sehen
+                           wie der man arbeitet? Follen hat mir auch die Zeichnung v. altenklingen geschikt, die
+                           aufnahme geschah von der seite der müle, und nimmt sich ganz gut aus. diese woche komme ich noch nicht
+                           an den <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Walter von Klingen</strong&gt;">Walter von
+                              klingen<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>, aber montags wollen wir den erenmann aufs brett nehmen. Sie haben einen
+                           ser schönen tag zu Irer reise über den den <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Tannenberg bei&#xA;                        Waldkirch</strong&gt;">Tannenberg<a href="https://www.wikidata.org/wiki/Q64630"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>
+                           gehabt, und ich bedaure den genuss dieser aussicht nicht mit Inen haben teilen zu können. aber meine
+                           handwerksleute werden diese woche noch nicht fertig. Hr. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unbekannt</strong&gt;">Huber<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           macht viele und große pausen, das fördert nicht. Gestern kam er gar nicht und heute erst abends 4 ur.
+                           ich war gestern
+                           ein wenig an der sonne, und sie machte mir ser heiss. ich dachte dabei an die gallischen
+                           männer, welche
+                           jezt auf dem afrikanischen Sande lagern werden und gewiss nicht in die holen
+                           hände hauchen. Da am Sonntage nicht gearbeitet wird;
+                           so könnte es
+                           wol sein, daß wir uns auf mittag in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Hauptwil</strong&gt;">Hauptwil<a href="https://www.wikidata.org/wiki/Q5682775"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>
+                           antreffen würden. Meine stutte leidet noch immer an einem fuße; es ist ein elend wenn man pferde
+                           hat; ich warte mit sensucht auf den augenblik, wo die Dampfwagen allgemein eingefürt werden, um mir auch einen anzu schaffen. Hoffentlich bekommen wir auch noch maschinen, welche wenn sie einmal aufgezogen sind, Codices abschreiben; dann will ich mir erst recht wol
+                           sein lassen und nichts als briefe schreiben. Leben Sie wol, mit groß und kleinen, die ich alle herzlich grüsse,
+                           und vergessen Sie ja nicht mir die <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Appenzeller Zeitung.</strong&gt;">appenzeller
+                              Zeitung<a href="https://hls-dhs-dss.ch/de/articles/024758/2001-07-26/">📖</a></span> mitzubringen; worin H. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unbekannt</strong&gt;">Freimut<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           so strenge gezwaget worden sein soll. Bei H. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jakob Christoph Scherb</strong&gt;">Oberamtmanns<a href="https://d-nb.info/gnd/100332471"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> viele empfelungen von dem hofpoeten
+                           Laßberg.
                            </p>
                         </div>
                   </section>

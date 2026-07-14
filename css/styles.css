@@ -243,7 +243,7 @@ main a:hover, .accordion-body a:hover {
 
 /* --- ENTITY SPANS --- */
 /* Subtle colored underline instead of solid highlighter backgrounds. */
-span.rs-person, span.rs-place, span.rs-bibl, span.rs-object {
+span.rs-person, span.rs-place, span.rs-bibl, span.rs-object, span.rs-witness {
     background: none;
     padding: 0;
     border-radius: 0;
@@ -251,10 +251,14 @@ span.rs-person, span.rs-place, span.rs-bibl, span.rs-object {
     cursor: help;
 }
 
-span.rs-person { border-bottom-color: #b5622b; }
-span.rs-place  { border-bottom-color: #8a3a91; }
-span.rs-bibl   { border-bottom-color: #3f7d4a; }
-span.rs-object { border-bottom-color: #b8860b; }
+span.rs-person  { border-bottom-color: #b5622b; }
+span.rs-place   { border-bottom-color: #8a3a91; }
+span.rs-bibl    { border-bottom-color: #3f7d4a; }
+span.rs-object  { border-bottom-color: #b8860b; }
+/* witness = a specific manuscript/print/charter exemplar (docs/TEI.md "Handschriften- und
+   Druckexemplare, Urkunden") - visually close to rs-bibl (both resolve into
+   lassberg-literature.xml) but a distinguishable shade to signal "specific copy, not the work". */
+span.rs-witness { border-bottom-color: #2b6e73; }
 
 #mapid {
     height: 300px;

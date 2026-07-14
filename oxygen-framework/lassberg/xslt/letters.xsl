@@ -461,6 +461,8 @@
                         aria-labelledby="acc-{$key}-head-objs" data-bs-parent="#acc-{$key}">
                         <div class="accordion-body">
                             <ul class="list-unstyled mb-0">
+                                <!-- Legacy witnesses from lassberg-manuscripts.xml (never actually
+                                     populated in practice, see docs/TEI.md) -->
                                 <xsl:for-each select="$resolvedWitnesses">
                                     <li class="mb-2">
                                         <xsl:value-of select="tei:bibl/tei:settlement"/>
@@ -481,7 +483,24 @@
                                         </xsl:if>
                                     </li>
                                 </xsl:for-each>
-                                <xsl:if test="not($resolvedWitnesses)">
+                                <!-- Current convention (since 2026-07-14): manuscript/print/charter
+                                     exemplars live in lassberg-literature.xml as <bibl type="charter">,
+                                     linked from the letter with <rs type="witness">, see docs/TEI.md
+                                     "Handschriften- und Druckexemplare, Urkunden". -->
+                                <xsl:for-each select="$resolvedBibl[@type='charter']">
+                                    <li class="mb-2">
+                                        <xsl:value-of select="tei:title"/>
+                                        <xsl:if test="normalize-space(tei:date)">
+                                            <xsl:text> (</xsl:text><xsl:value-of select="tei:date"/><xsl:text>)</xsl:text>
+                                        </xsl:if>
+                                        <xsl:variable name="idnoLink" select="normalize-space(tei:idno[1])"/>
+                                        <xsl:if test="starts-with($idnoLink, 'http')">
+                                            <xsl:text> </xsl:text>
+                                            <a href="{$idnoLink}" target="_blank" rel="noopener noreferrer">🔗</a>
+                                        </xsl:if>
+                                    </li>
+                                </xsl:for-each>
+                                <xsl:if test="not($resolvedWitnesses) and not($resolvedBibl[@type='charter'])">
                                     <li class="text-muted">Keine Handschriften-/Druckexemplare verzeichnet.</li>
                                 </xsl:if>
                             </ul>

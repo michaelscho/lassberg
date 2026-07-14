@@ -86,7 +86,8 @@
                   <section id="original-text" class="mb-4">
                      <h2>Original Text
                         <span class="transcription-source badge-manuscript" title="Diplomatische Transkription der Handschrift">Transcribed from the manuscript (Transkribus)</span></h2>
-                     <div>
+                     <div class="btn-group btn-group-sm mb-2" role="group" aria-label="Textansicht"><button type="button" id="view-lines-btn" class="btn btn-outline-secondary active" onclick="document.getElementById('view-lines').classList.remove('d-none'); document.getElementById('view-flow').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-flow-btn').classList.remove('active');">Zeilengenau</button><button type="button" id="view-flow-btn" class="btn btn-outline-secondary" onclick="document.getElementById('view-flow').classList.remove('d-none'); document.getElementById('view-lines').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-lines-btn').classList.remove('active');">Fließtext</button></div>
+                     <div id="view-lines">
                         
                         <p><br>Hochverehrter Herr
                            Baron, <br>meine
@@ -120,6 +121,42 @@
                            Sie mit dem ersten zufrieden sind. gönnen Sie mir darüber einige freund <br>liche
                            Zeilen. <br>Mit
                            Widerholung meiner Bitten und Wünsche <br>Ihr gehorsamst ergebener <br>Wilh.
+                           Wackernagel Dr. </p>
+                        </div>
+                     <div id="view-flow" class="d-none">
+                        
+                        <p>Hochverehrter Herr
+                           Baron, meine
+                           ergebensten und herzlichsten Glückwünsche zu dem neuen schoenen Leben das in der
+                           <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Eppishausen</strong&gt;">Villa
+                              Epponis<a href="https://www.wikidata.org/wiki/Q1423653"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, lange genug einem "armen Kloesterlein", begonnen hat. Die Nachricht hat
+                           mich um so mehr erfreut, als sie mir ganz und gar unerwartet kam: ich bin seit Jahr und Tag
+                           ohne Brief aus <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Göttingen</strong&gt;">Göttingen<a href="https://www.wikidata.org/wiki/Q3033"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>. Darf
+                           ich Sie bitten mich der Gnade Ihrer <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jenny von Droste zu Hülshoff</strong&gt;"> Frau
+                              Gemahlin<a href="https://d-nb.info/gnd/118527541"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> gehorsamst zu empfehlen? Nehmen Sie <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wilhelm Wackernagel: Deutsches Lesebuch.</strong&gt;">das
+                              altdeutsche Lesebuch<a href="https://digi.ub.uni-heidelberg.de/diglit/wackernagel1839gahttps://archive.org/details/deutscheslesebu00wackgoog">📖</a></span> ohne Zürnen an: betrachten Sie es als einen Versuch
+                           mich für so
+                           viel Güte einigermassen dankbar zu erweisen; nehmen Sie es, wenn Sie wollen, auch für
+                           ein Hochzeitsgeschenk. ich wusste mich nicht auf bessere Weise erkennt lich
+                           zu zeigen, und wollte is doch gerne irgendwie thun. Endlich kommen
+                           nun auch die vielen Bücher, die ich so lange habe hier behalten dürfen, zu ihrem Herrn
+                           zurück; mit ihnen einige andre, die Ihnen auch schon laengst gehoeren, von <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Karl Lachmann</strong&gt;">Lachmann<a href="https://d-nb.info/gnd/118568558"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> und <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;August Heinrich Hoffmann von Fallersleben</strong&gt;">Hoffmann<a href="https://d-nb.info/gnd/118552589"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           (mochten Sie so gütig seyn das andre Exemplar der Fragmenta theotisca nach <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;St. Gallen</strong&gt;">S.
+                              Gallen<a href="https://www.wikidata.org/wiki/Q25607"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> zu befördern?) so wie eine kürzlich von <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Karl Rudolf Hagenbach</strong&gt;">Prof.
+                              Hagenbach<a href="https://d-nb.info/gnd/119152711"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> und mir herausgegebene Sammlung neuerer Gedichte, die den Armen
+                           im Gebirge bereits tausend Franken eingetragen hat und, so Gott will, noch mehr
+                           eintragen wird. jenen Studenten, von dessen Unglück ich Ihnen vor bald einem Jahr geschrieben,
+                           habe ich seit
+                           dem December, wo ich ihn aus einer Heilanstalt im <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Baden-Baden</strong&gt;">Badischen<a href="https://www.wikidata.org/wiki/Q4100"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>
+                           abgeholt, wieder hier, er ist so gut wie hergestellt, nur dass ich immer noch der
+                           Einzige bin zu dem er Zutrauen besitzt (den Eltern ist er entfremdet, zum Theil nicht ohne
+                           ihre Schuld); er studiert und dichtet dass es eine Freude ist. ich weiss nicht
+                           ob ich auch für den zweyten Band, dessen Druck unverzüglich beginnen soll, ebenso
+                           förderliche Unterstützung von Ihrer Güte erwarten darf. Wenn ich nur recht bald
+                           erführe wie
+                           Sie mit dem ersten zufrieden sind. gönnen Sie mir darüber einige freund liche
+                           Zeilen. Mit
+                           Widerholung meiner Bitten und Wünsche Ihr gehorsamst ergebener Wilh.
                            Wackernagel Dr. </p>
                         </div>
                   </section>

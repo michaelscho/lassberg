@@ -81,7 +81,8 @@
                   <section id="original-text" class="mb-4">
                      <h2>Original Text
                         <span class="transcription-source badge-manuscript" title="Diplomatische Transkription der Handschrift">Transcribed from the manuscript (Transkribus)</span></h2>
-                     <div>
+                     <div class="btn-group btn-group-sm mb-2" role="group" aria-label="Textansicht"><button type="button" id="view-lines-btn" class="btn btn-outline-secondary active" onclick="document.getElementById('view-lines').classList.remove('d-none'); document.getElementById('view-flow').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-flow-btn').classList.remove('active');">Zeilengenau</button><button type="button" id="view-flow-btn" class="btn btn-outline-secondary" onclick="document.getElementById('view-flow').classList.remove('d-none'); document.getElementById('view-lines').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-lines-btn').classList.remove('active');">Fließtext</button></div>
+                     <div id="view-lines">
                         
                         <p><br>Basel
                            26. August 1836 <br>Hochverehrter Herr Freyherr, <br>es war mir eine grosse Freude und die liebste überraschung
@@ -110,6 +111,37 @@
                            meinen herzlichen Dank für Ihr "Gehe hin und sündige nicht <br>mehr!" und meine
                            besten Wünsche für Sie und die Ihrigen. <br>In Ergebenheit Ihnen zugethan <br>Wih. Wackenagel
                            Dr. <br>Basel
+                           </p>
+                        </div>
+                     <div id="view-flow" class="d-none">
+                        
+                        <p>Basel
+                           26. August 1836 Hochverehrter Herr Freyherr, es war mir eine grosse Freude und die liebste überraschung
+                           die mir werden konnte, als ich vor vierzehn Tagen bei meiner Rückehr von einer
+                           Ferienreise Ihren Brief vorfand, den ersten nach langer Unterbrechung. Nun waren
+                           jahrelange drückende Besorgnisse mit einem Mahle gehoben: ich sah, dass ich Ihre
+                           wohlwollende Gesinnung gegen mich, die mir so sehr viel werth ist, nicht
+                           verscherzt hatte, wenn auch in etwas gekrännt und verlezt. Aber auch dieses, weiß Gott,
+                           und Sie selber wissen es, insofern ganz ohne meine Schuld, als ich bei jener <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wilhelm Wackernagel: Deutsches Lesebuch.</strong&gt;">Zueignung<a href="https://digi.ub.uni-heidelberg.de/diglit/wackernagel1839gahttps://archive.org/details/deutscheslesebu00wackgoog">📖</a></span> grade das Gegentheil gewollt und gemeint hatte, als ich auch gar
+                           nicht beabsichtigt Ihnen vor dem Volk eine Ehre, sondern nur vor aller Welt
+                           Ihnen meinen auf richtigen und herrlichen Dank zu bezeugen. Denn daß mit
+                           dergleichen öffent lichen Ehrungen einem Manne von Ehre eigentlich gar nicht
+                           gedient sey, das wuste ich sehr wohl. Nun, verzeihen Sie mir! Aber Sie
+                           haben es schon. Von dem Unglück das Sie erlebt haben sich so ernstlich zu
+                           beschödigen, hatte mir bereits H. Diac. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Adam Pupikofer</strong&gt;">Pupikofer<a href="https://d-nb.info/gnd/11565108X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> erzählt, und es that mir nun Leid, aus Ihrem Briefe Briefe nichts von Fortschritten der Besserung zu
+                           erfahren. Jezt hoffe ich sey aber alles wieder gut: ich traue auf Baden und auf die
+                           häusliche Glückse ligkeit die Sie so wohlthuend umgiebt. Allen Segen Gottes
+                           über Sie und Ihr Haus und Ihre Familie! ich freue mich recht darauf, Sie im Herbste, falls ich nach <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;St. Gallen</strong&gt;">S.
+                              Gallen<a href="https://www.wikidata.org/wiki/Q25607"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> reise, heimsuchen zu dürfen. Beiliegend erhalten Sie eine gute Kampfel, den <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wilhelm Wackernagel: Deutsches Lesebuch.</strong&gt;">zweyten Theil des Lesebuches<a href="https://digi.ub.uni-heidelberg.de/diglit/wackernagel1839gahttps://archive.org/details/deutscheslesebu00wackgoog">📖</a></span>. Lassen Sie Sich denselben wohl gefallen, und mich auch
+                           gelegentlich erfahren ob er Ihnen gefalle. Über den ersten bin ich nun um Ihr
+                           Urtheil gekommen; und doch wie viel könnte es mir nützen, da ich im Winter
+                           höchst wahrscheinlich an eine zweyte Auflage muß, eben deren wegen ich auch nach
+                           <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;St. Gallen</strong&gt;">S.
+                              Gallen<a href="https://www.wikidata.org/wiki/Q25607"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> reisen will. Vielleicht lassen Sie mir auch in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Eppishausen</strong&gt;">Eppishausen<a href="https://www.wikidata.org/wiki/Q1423653"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> noch
+                           diess und jenes dafür in die Hand wachsen. Noch einmal
+                           meinen herzlichen Dank für Ihr "Gehe hin und sündige nicht mehr!" und meine
+                           besten Wünsche für Sie und die Ihrigen. In Ergebenheit Ihnen zugethan Wih. Wackenagel
+                           Dr. Basel
                            </p>
                         </div>
                   </section>

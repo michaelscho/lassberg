@@ -87,7 +87,8 @@
                   <section id="original-text" class="mb-4">
                      <h2>Original Text
                         <span class="transcription-source badge-manuscript" title="Diplomatische Transkription der Handschrift">Transcribed from the manuscript (Transkribus)</span></h2>
-                     <div>
+                     <div class="btn-group btn-group-sm mb-2" role="group" aria-label="Textansicht"><button type="button" id="view-lines-btn" class="btn btn-outline-secondary active" onclick="document.getElementById('view-lines').classList.remove('d-none'); document.getElementById('view-flow').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-flow-btn').classList.remove('active');">Zeilengenau</button><button type="button" id="view-flow-btn" class="btn btn-outline-secondary" onclick="document.getElementById('view-flow').classList.remove('d-none'); document.getElementById('view-lines').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-lines-btn').classList.remove('active');">Fließtext</button></div>
+                     <div id="view-lines">
                         
                         <p><br>Von Herzen
                            verehrter Herr und Freund! <br>Mit inniger Freude habe ich (freylich in Folge meiner <br>Vacanz-abwesenheit
@@ -152,6 +153,72 @@
                               Gemahlin<a href="https://d-nb.info/gnd/118527541"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> <br>angelegentlichst empfehlen, und wenn Sie (ich bitte nochmals <br>darum) über <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Basel</strong&gt;">Basel<a href="https://www.wikidata.org/wiki/Q78"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> kommen, soll Ihnen auch <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unbekannt</strong&gt;">mein
                               Bube<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> eine <br>tüchtige Patschhand geben. Von treuem Herzen <br>Ihr beständig
                            ergebener <br>Wilh. Wackernagel Dr. <br>Basel 11 Aug. 41 </p>
+                        </div>
+                     <div id="view-flow" class="d-none">
+                        
+                        <p>Von Herzen
+                           verehrter Herr und Freund! Mit inniger Freude habe ich (freylich in Folge meiner Vacanz-abwesenheit
+                           von <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Basel</strong&gt;">Basel<a href="https://www.wikidata.org/wiki/Q78"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> erst nach Verlauf eines vollen Monats) Ihren Brief vom 9 July durch meinen Nachbarn,
+                           Herrn <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Emanuel Burckhardt-Iselin</strong&gt;">R.H. Burckhardt-Iselen<a href="https://d-nb.info/gnd/1089905092"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> erhalten. Mit Freude, aber auch mit
+                           Wehmuth: denn bei diesen freundlichen Zeilen und den begleitenden Erzählungen des
+                           Ueberbringers fiel es mir von neuem schwer aufs Herz, wie lange ich Sie und die
+                           verehrten Ihrigen schon nicht mehr gesehen, dass ich Sie in
+                           Ihrem neuen Schlosse noch gar nicht besucht habe. Jedesmal dass Ferien eintraten, habe
+                           ich all
+                           diese Jahre gedacht: Geh. nach <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Meersburg</strong&gt;">Märsburg<a href="https://www.wikidata.org/wiki/Q498212"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, und
+                           niemals mehr
+                           habe ich es, bald durch Arbeitsdrang, bald durch häusliche
+                           Verhältnisse behindert, ausführen können. So auch wieder in
+                           den eben verflossenen Sommerferien: <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Caroline Luise Wackernagel-Bluntschli</strong&gt;">meine Frau<a href="https://d-nb.info/gnd/113182346X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> ist in
+                           Umständen die ihr eine groessere Reise unmoeglich und
+                           und mir (nachdem
+                           wir schon zweymal das Unglück einer zu frühen Niederkunft haben erleben müssen) eine längere
+                           Trennung
+                           unerwünscht machen: da haben wir uns denn nur sieben Stunden von hier in einem einsamen
+                           Gebirgsbade der
+                           Landschaft niedergelassen. Uebers Jahr aber komme ich sicherlich,
+                           wenn Gott mir diese Freude gönnen mag. Und Sie, geliebter und verehrter Herr und Freund, Sie
+                           sollten doch
+                           auch einmal, wenn Sie den <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Rhein</strong&gt;">Rhein<a href="https://www.wikidata.org/wiki/Q584"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> hinunter
+                           in die Heimat
+                           Ihrer <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jenny von Droste zu Hülshoff</strong&gt;">Frau
+                              Gemahlin<a href="https://d-nb.info/gnd/118527541"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> reisen, mit auf dem Weg unsre alte <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Basel</strong&gt;">Basilea<a href="https://www.wikidata.org/wiki/Q78"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> besuchen,
+                           wo Ihnen mehr als Ein Herz zugethan ist, keines aber (ich sage es getrost) so wie das
+                           meine. Aus
+                           Ihrem lieben Brief und aus den Berichten des Ritterlichen
+                           Ehepaars ersche ich dass ich Sie um die schöne Rüstigkeit Ihres Arbeitens zu beneiden habe.
+                           Mir geht es
+                           bei den Leiden nervoeser Reizbarkeit gar langsam langsam von Statten. Das <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wilhelm Wackernagel: Deutsches Lesebuch.</strong&gt;">Altd.
+                              Lesebuch<a href="https://digi.ub.uni-heidelberg.de/diglit/wackernagel1839gahttps://archive.org/details/deutscheslesebu00wackgoog">📖</a></span> ist allerdings noch immer nicht vollendet; und nicht mehr eraschienen als Sie
+                           in Händen
+                           haben: jedoch wird jezt mit Eifer am <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wilhelm Wackernagel: Glossar zum altdeutschen Lesebuch.</strong&gt;">Glossar<a href="https://books.google.de/books?id=ga0sAQAAMAAJ">📖</a></span>
+                           gedruckt. Vom
+                           dritten Theile des ganzen Werkes (Prosa seit MD.) wird nächstens der erste Band Geiler v. Keisersb. bis
+                           Zinzendorf heraus und natürlich auch zu Ihnen hinauf kommen. Gern hätte ich Ihnen vor einem Jahre
+                           geschickt was hier der Jubel des Buchdruckerfestes an Poesie u. Prosa
+                           (hystorischer u. oratorischer) zu Tage gefördert hat: aber ich habe aus dem Sturm und
+                           Drang des
+                           allgemeinen Zugreifens kaum für mich selbst (den Praesidenten der
+                           Festcommission) Exemplare retten können. Damit entschuldigen Sie mich falls Sie mir gezürnt
+                           haben. Auf
+                           das Buch, dessen Druck Sie jezo beschäftigt, bin ich um so
+                           begieriger, als Sie über Inhalt u. Form u. Verfasser noch gar nichts haben
+                           verrathen mögen. Aber (damit ich auch an Sie eine eine neckende Frage der Ungeduld richte) was macht
+                           der <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Weingartner Codex</span>? Soll diess Juwel der altdeutschen Liederdichtung noch
+                           länger in den Gewölben <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Meersburg</strong&gt;">Ihrer Burg<a href="https://www.wikidata.org/wiki/Q498212"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> vergraben liegen?
+                           Endlich
+                           diessmal lassen Sie mich eine grosse Bitte, die ich in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Eppishausen</strong&gt;">Eppishausen<a href="https://www.wikidata.org/wiki/Q1423653"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, die
+                           ich bisher in jedem Briefe nur mit Mühe unter drückt habe, frey
+                           heraus Ihnen vortragen: da Ihr Liedersaal doch nicht in den Buchhandel kommt, und da man ihn
+                           nur als
+                           Geschenk von Ihnen haben kann: so erweysen Sie auch mir diese
+                           Freundes gunst! Und jedesfalls zürnen Sie der freyen Bitte nicht! Lassen Sie mich
+                           mit diesem schweren Worte abbrechen. Gott erhalte mir Sie und Ihre Gewogenheit. Mit mir laest
+                           sich auch <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Caroline Luise Wackernagel-Bluntschli</strong&gt;">mein liebes
+                              Weib<a href="https://d-nb.info/gnd/113182346X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> Ihnen u. Ihrer hochverehrten <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jenny von Droste zu Hülshoff</strong&gt;">Frau
+                              Gemahlin<a href="https://d-nb.info/gnd/118527541"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> angelegentlichst empfehlen, und wenn Sie (ich bitte nochmals darum) über <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Basel</strong&gt;">Basel<a href="https://www.wikidata.org/wiki/Q78"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> kommen, soll Ihnen auch <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unbekannt</strong&gt;">mein
+                              Bube<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> eine tüchtige Patschhand geben. Von treuem Herzen Ihr beständig
+                           ergebener Wilh. Wackernagel Dr. Basel 11 Aug. 41 </p>
                         </div>
                   </section>
                   <details id="normalised-text" class="text-version mb-4">

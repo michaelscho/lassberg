@@ -221,9 +221,38 @@
                                     </xsl:if>
                                 </p>
                             </xsl:if>
-                            <div>
-                                <xsl:apply-templates select="$transcriptionDiv"/>
-                            </div>
+                            <!-- Line-accurate vs. running-text toggle: only meaningful for
+                                 manuscript transcriptions that actually carry <lb> (Transkribus
+                                 line data) — print/OCR divs never have <lb>, see docs/TEI.md "Die
+                                 vier <div>-Fassungen". Both renderings are pre-built at compile
+                                 time (mode="flowing" suppresses <lb>'s line break instead of
+                                 emitting one, see the tei:lb templates below); a tiny inline
+                                 script toggles which one is visible, so no client-side XSLT/JS
+                                 re-rendering is needed. -->
+                            <xsl:choose>
+                                <xsl:when test="$transcriptionDiv//tei:lb">
+                                    <div class="btn-group btn-group-sm mb-2" role="group"
+                                        aria-label="Textansicht">
+                                        <button type="button" id="view-lines-btn"
+                                            class="btn btn-outline-secondary active"
+                                            onclick="document.getElementById('view-lines').classList.remove('d-none'); document.getElementById('view-flow').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-flow-btn').classList.remove('active');">Zeilengenau</button>
+                                        <button type="button" id="view-flow-btn"
+                                            class="btn btn-outline-secondary"
+                                            onclick="document.getElementById('view-flow').classList.remove('d-none'); document.getElementById('view-lines').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-lines-btn').classList.remove('active');">Fließtext</button>
+                                    </div>
+                                    <div id="view-lines">
+                                        <xsl:apply-templates select="$transcriptionDiv"/>
+                                    </div>
+                                    <div id="view-flow" class="d-none">
+                                        <xsl:apply-templates select="$transcriptionDiv" mode="flowing"/>
+                                    </div>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <div>
+                                        <xsl:apply-templates select="$transcriptionDiv"/>
+                                    </div>
+                                </xsl:otherwise>
+                            </xsl:choose>
 
 
 
@@ -387,56 +416,65 @@
     <!-- Templates for the epistolary-formula elements introduced 2026-07-10 (docs/TEI.md,
          "opener/closer/dateline/salute/signed/address"). Without these, XSLT's built-in default
          template applies to their children with no HTML wrapper, so text from a <p>, an
-         <opener>, and a <closer> would all run together with no block separation. -->
-    <xsl:template match="tei:p">
-        <p><xsl:apply-templates/></p>
+         <opener>, and a <closer> would all run together with no block separation.
+         mode="#default flowing" so these also apply under mode="flowing" (the running-text view toggle,
+         see the tei:lb templates below) — without it, Saxon's built-in rules would take over in
+         that mode and strip all these wrappers/tooltips instead of reusing them. -->
+    <xsl:template match="tei:p" mode="#default flowing">
+        <p><xsl:apply-templates mode="#current"/></p>
     </xsl:template>
 
-    <xsl:template match="tei:opener">
-        <div class="letter-opener"><xsl:apply-templates/></div>
+    <xsl:template match="tei:opener" mode="#default flowing">
+        <div class="letter-opener"><xsl:apply-templates mode="#current"/></div>
     </xsl:template>
 
-    <xsl:template match="tei:closer">
-        <div class="letter-closer"><xsl:apply-templates/></div>
+    <xsl:template match="tei:closer" mode="#default flowing">
+        <div class="letter-closer"><xsl:apply-templates mode="#current"/></div>
     </xsl:template>
 
-    <xsl:template match="tei:address">
-        <p class="letter-address"><xsl:apply-templates/></p>
+    <xsl:template match="tei:address" mode="#default flowing">
+        <p class="letter-address"><xsl:apply-templates mode="#current"/></p>
     </xsl:template>
 
-    <xsl:template match="tei:dateline">
-        <p class="letter-dateline"><xsl:apply-templates/></p>
+    <xsl:template match="tei:dateline" mode="#default flowing">
+        <p class="letter-dateline"><xsl:apply-templates mode="#current"/></p>
     </xsl:template>
 
-    <xsl:template match="tei:salute">
-        <p class="letter-salute"><xsl:apply-templates/></p>
+    <xsl:template match="tei:salute" mode="#default flowing">
+        <p class="letter-salute"><xsl:apply-templates mode="#current"/></p>
     </xsl:template>
 
-    <xsl:template match="tei:signed">
-        <p class="letter-signed"><xsl:apply-templates/></p>
+    <xsl:template match="tei:signed" mode="#default flowing">
+        <p class="letter-signed"><xsl:apply-templates mode="#current"/></p>
     </xsl:template>
 
-    <xsl:template match="tei:postscript">
-        <div class="letter-postscript"><xsl:apply-templates/></div>
+    <xsl:template match="tei:postscript" mode="#default flowing">
+        <div class="letter-postscript"><xsl:apply-templates mode="#current"/></div>
     </xsl:template>
 
     <!-- Archival apparatus (docs/TEI.md, "Archivalische Apparate") — never the letter's own
          voice, kept visually distinct via CSS rather than blended into opener/closer/p. -->
-    <xsl:template match="tei:fw">
-        <div class="letter-fw"><xsl:apply-templates/></div>
+    <xsl:template match="tei:fw" mode="#default flowing">
+        <div class="letter-fw"><xsl:apply-templates mode="#current"/></div>
     </xsl:template>
 
-    <xsl:template match="tei:add">
-        <div class="letter-add"><xsl:apply-templates/></div>
+    <xsl:template match="tei:add" mode="#default flowing">
+        <div class="letter-add"><xsl:apply-templates mode="#current"/></div>
     </xsl:template>
 
-    <!-- Manuscript-transcription line breaks (only present in type="original" divs). -->
+    <!-- Manuscript-transcription line breaks (only present in type="original" divs). Default mode
+         renders the "zeilengenau" (line-accurate) view; mode="flowing" is the "Fließtext" toggle
+         target and suppresses the break entirely, letting the surrounding whitespace in the
+         source text (a plain space before/after most <lb/>) join the line back into running
+         prose instead. -->
     <xsl:template match="tei:lb">
         <br/>
     </xsl:template>
 
+    <xsl:template match="tei:lb" mode="flowing"/>
+
     <!-- Template for rs elements: using an attribute value template -->
-    <xsl:template match="tei:rs">
+    <xsl:template match="tei:rs" mode="#default flowing">
         <xsl:variable name="rsKey" select="substring-after(./@key, '#')"/>
         <xsl:variable name="rsType" select="./@type"/>
         <xsl:variable name="rsKeyText">
@@ -451,34 +489,39 @@
                     <xsl:value-of select="document('../../../data/register/lassberg-places.xml')//tei:place[@xml:id = $rsKey]/tei:placeName/text()"/>
                 </xsl:when>
                 
-                <xsl:when test="$rsType = 'bibl'">
+                <!-- "bibl" (abstract work/edition) and "witness" (specific manuscript/print/charter
+                     exemplar, @type="charter" on the <bibl>, see docs/TEI.md "Handschriften- und
+                     Druckexemplare, Urkunden") both resolve into lassberg-literature.xml as a
+                     <bibl> element with the same title/author/idno shape - only the corpus-facing
+                     @type on <rs> differs, not the underlying register structure. -->
+                <xsl:when test="$rsType = 'bibl' or $rsType = 'witness'">
                     <xsl:variable name="authors">
                         <xsl:for-each select="document('../../../data/register/lassberg-literature.xml')//tei:bibl[@xml:id = $rsKey]/tei:author">
                             <xsl:variable name="authorRef" select="substring-after(@key, '#')"/>
                             <xsl:variable name="authorName" select="document('../../../data/register/lassberg-persons.xml')//tei:person[@xml:id = $authorRef]/tei:persName/text()"/>
                             <xsl:value-of select="$authorName"/>
-                            <xsl:if test="position() != last()"> 
-                                <xsl:text>; </xsl:text> 
+                            <xsl:if test="position() != last()">
+                                <xsl:text>; </xsl:text>
                             </xsl:if>
                         </xsl:for-each>
                     </xsl:variable>
-                    
+
                     <xsl:variable name="title" select="document('../../../data/register/lassberg-literature.xml')//tei:bibl[@xml:id = $rsKey]/tei:title"/>
-                    
+
                     <xsl:if test="normalize-space($authors) != ''">
                         <xsl:value-of select="normalize-space($authors)"/>
                         <xsl:text>: </xsl:text>
                     </xsl:if>
-                    
+
                     <xsl:value-of select="$title"/>
-                    
+
                     <xsl:if test="not(ends-with(normalize-space($title), '.'))">
                         <xsl:text>.</xsl:text>
                     </xsl:if>
                 </xsl:when>
-                
-                
-                
+
+
+
                 <!-- Default case if none of the above match -->
                 <xsl:otherwise>
                     <xsl:text>Unknown</xsl:text>
@@ -492,7 +535,7 @@
             data-bs-html="true"
             data-bs-placement="auto"
             title="&lt;strong&gt;{$rsKeyText}&lt;/strong&gt;">
-            <xsl:apply-templates/>
+            <xsl:apply-templates mode="#current"/>
             <xsl:variable name="rsKey" select="substring-after(./@key, '#')"/>
             <xsl:variable name="rsType" select="./@type"/>
             <xsl:choose>
@@ -506,15 +549,15 @@
                     <a href="{string(document('../../../data/register/lassberg-places.xml')//tei:place[@xml:id = $rsKey]/tei:placeName/@ref)}"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"/></a>
                 </xsl:when>
                 
-                <!-- Case for Literature -->
-                <xsl:when test="$rsType = 'bibl'">
+                <!-- Case for Literature and Witness/Exemplar (see note above) -->
+                <xsl:when test="$rsType = 'bibl' or $rsType = 'witness'">
                     <xsl:variable name="link" select="document('../../../data/register/lassberg-literature.xml')//tei:bibl[@xml:id = $rsKey]/tei:idno/text()"/>
                     <xsl:if test="$link">
                         <xsl:text></xsl:text>
                         <a href="{$link}">📖</a>
                         <xsl:text></xsl:text>
                     </xsl:if>
-                    
+
                 </xsl:when>
                 
                 <!-- Default case if none of the above match -->

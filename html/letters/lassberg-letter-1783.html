@@ -88,7 +88,8 @@
                   <section id="original-text" class="mb-4">
                      <h2>Original Text
                         <span class="transcription-source badge-manuscript" title="Diplomatische Transkription der Handschrift">Transcribed from the manuscript (Transkribus)</span></h2>
-                     <div>
+                     <div class="btn-group btn-group-sm mb-2" role="group" aria-label="Textansicht"><button type="button" id="view-lines-btn" class="btn btn-outline-secondary active" onclick="document.getElementById('view-lines').classList.remove('d-none'); document.getElementById('view-flow').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-flow-btn').classList.remove('active');">Zeilengenau</button><button type="button" id="view-flow-btn" class="btn btn-outline-secondary" onclick="document.getElementById('view-flow').classList.remove('d-none'); document.getElementById('view-lines').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-lines-btn').classList.remove('active');">Fließtext</button></div>
+                     <div id="view-lines">
                         
                         <p><br>Basel, den 13 Juny
                            1834. <br>Sehr
@@ -138,6 +139,57 @@
                            besten einmahl selbst. <br>Leben Sie recht wohl. Gott erhalte Sie bei Gesundheit und
                            lasse es jetzt <br>immerhin noch fort regnen: dann haben Sie desto schöneres
                            Reisewetter. <br>Bleiben Sie geneigt. <br>Ihrem ergebensten <br>Wilh. Wackernagel. </p>
+                        </div>
+                     <div id="view-flow" class="d-none">
+                        
+                        <p>Basel, den 13 Juny
+                           1834. Sehr
+                           verehrter Herr Baron, mit Beschämung, (denn ich weiss nicht womit ich so grosse
+                           Güte verdiene) habe ich vor etwa einer Woche Ihren werthen Brief sammt den schoenen Beilagen
+                           erhalten. Was mich dabei am meisten freut, ist dass Sie nicht mehr von Hand gicht
+                           erzählen und das auch die Gedichte so fest und zierlich geschrieben sind als je. Gott erhalte
+                           Sie dabei! Sie
+                           lassen über das Register meines <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wilhelm Wackernagel: Deutsches Lesebuch.</strong&gt;">Lesebuches<a href="https://digi.ub.uni-heidelberg.de/diglit/wackernagel1839gahttps://archive.org/details/deutscheslesebu00wackgoog">📖</a></span> einen ganzen Sternenhimmel aufgehen. Es sollen da
+                           nämlich die bisher ungedruckten Sachen mit Sternen bezeichnet werden. Besondern Dank
+                           muss ich Ihnen noch für die ausführlichen Notizen sagen, mit denen die einzelnen
+                           Auszüge begleitet sind: in der Vorrede soll das alles getreulich nach erzählt werden. Ausser all dem was ich bereits empfangen laest Ihre grosse
+                           Gefälligkeit mich noch zwey Gaben hoffen: um die eine legen Sie die Bitte mir in den Mund,
+                           die andre
+                           haben Sie schon verheissen: <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Albert von Augsburg: Leben des heiligen Ulrich.</strong&gt;">den heil.
+                              Ulrich<a href="https://geschichtsquellen.de/werk/70https://www.handschriftencensus.de/werke/1009https://d-nb.info/gnd/1232969346">📖</a></span> und <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Amor: die Liebe.</strong&gt;">Amor<a href="GW 01619">📖</a></span> die
+                           Lieb. Machen
+                           Sies damit wie schon früher mit dem <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ulrich von Liechtenstein</strong&gt;">Ulrich v.
+                              L.<a href="https://d-nb.info/gnd/118625306"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> und mit der <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Hermann von Sachsenheim: Die&#xA;        Mörin.</strong&gt;">Moerin<a href="https://handschriftencensus.de/werke/889">📖</a></span>:
+                           vertrauen Sie der Post und mir, lassen Sie mich selber auswahlen und copieren, und Ihr Vertrauen
+                           soll nicht gemissbraucht werden: aus jedem nur eine kleine Stelle, nicht
+                           mehr und nichts weiter. Darf ich mich schon im Voraus freuen? Meinen herzlichen Dank für die Theilnahme die Sie
+                           meinem unglücklichen Freunde beweisen. Leider ist, was auch der Arzt köstliches sagen
+                           mag, wenig Hoffnung mehr, seitdem die frühere Tobsucht in Narrheit übergegangen
+                           ist, ich kann die Betrübniss nicht verwinden: ich vermisse ihn im Collegium,
+                           u. auch daheim fehlt mir sein Besuch. Ein privatissimum über <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Walter von der Vogelweide</strong&gt;">Walther
+                              vdW<a href="https://d-nb.info/gnd/118628976"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> wobei ich auf ihn besonders gerechnet hätte, ist mir nun ein betrübendes Geschäft.
+                           Guter Gott! Seit anderthalb Wochen ist <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Caspar von Orelli</strong&gt;">Orelli<a href="https://d-nb.info/gnd/118787179"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           hier als landschaftlicher Schatzungsexpert für die Bibliothek; er habe die Wahl angenommen,
+                           damit sie auf keinen Dummen und Boeswilligen falle. Er schätzt die Handschriften und
+                           alten Drucke, als wollte er sie einem engl. Lord zum Kauf anbieten. Und doch lautet
+                           die Instruction auf einen solchen Anschlag, dass eine etwanige Versteigerung
+                           dreymahl so viel ein bringen müsste. Sie reisen also nach <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Göttingen</strong&gt;">Göttingen<a href="https://www.wikidata.org/wiki/Q3033"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>. ich
+                           hoffe Sie werden mir Gelegenheit geben Ihnen vorher noch einmahl zu
+                           schreiben, damit ich Ihnen Glück zur Reise wünschen und Sie bitten kann; meine
+                           herzlichsten Grüsse und Empfehlungen auszurichten. Fesselte mich der Druck des
+                           <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wilhelm Wackernagel: Deutsches Lesebuch.</strong&gt;">Lesebuches<a href="https://digi.ub.uni-heidelberg.de/diglit/wackernagel1839gahttps://archive.org/details/deutscheslesebu00wackgoog">📖</a></span> (soeben ist der vierte Bogen corrigiert worden) nicht für
+                           diesen Sommer an <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Basel</strong&gt;">Basel<a href="https://www.wikidata.org/wiki/Q78"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, so würde
+                           mir Ihre Reise beinahe leid thun denn alsdann hätte ein Ausflug an
+                           den <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Bodensee</strong&gt;">Bodensee<a href="https://www.wikidata.org/wiki/Q4127"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> mich wohl auch an Ihrer Waldklause vorüber geführt. Nun, ich hoffe
+                           den <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Codex gemmens argentens</span> doch noch einmahl zu sehen.
+                           Die
+                           Abbildung der <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Krone</span> muss durchaus mitgekommen
+                           seyn: hier ist sie nicht; sie liegt, glaube ich, zwischen den ersten Blättern des <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ulrich von Liechtenstein: Frauendienst.</strong&gt;">Frauendienstes<a href="https://www.handschriftencensus.de/werke/386">📖</a></span>. Die Paar Batzen die der Zeichner dafür empfangen habe ich nicht
+                           notiert, weil ich Ihnen mit so kleiner Münze nicht beschwerlich fallen mag; auch würde
+                           die Post wegen ihrer Procente in Verlegenheit kommen. ich hole sie deshalb am
+                           besten einmahl selbst. Leben Sie recht wohl. Gott erhalte Sie bei Gesundheit und
+                           lasse es jetzt immerhin noch fort regnen: dann haben Sie desto schöneres
+                           Reisewetter. Bleiben Sie geneigt. Ihrem ergebensten Wilh. Wackernagel. </p>
                         </div>
                   </section>
                   <details id="normalised-text" class="text-version mb-4">

@@ -87,7 +87,8 @@
                   <section id="original-text" class="mb-4">
                      <h2>Original Text
                         <span class="transcription-source badge-manuscript" title="Diplomatische Transkription der Handschrift">Transcribed from the manuscript (Transkribus)</span></h2>
-                     <div>
+                     <div class="btn-group btn-group-sm mb-2" role="group" aria-label="Textansicht"><button type="button" id="view-lines-btn" class="btn btn-outline-secondary active" onclick="document.getElementById('view-lines').classList.remove('d-none'); document.getElementById('view-flow').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-flow-btn').classList.remove('active');">Zeilengenau</button><button type="button" id="view-flow-btn" class="btn btn-outline-secondary" onclick="document.getElementById('view-flow').classList.remove('d-none'); document.getElementById('view-lines').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-lines-btn').classList.remove('active');">Fließtext</button></div>
+                     <div id="view-lines">
                         
                         <p><br>erhalten am 20 März
                            abendes. <br>beantwortet und die bücher gesendet am 21. <br>Basel 16/3/34. <br>Hochgeehrter Herr
@@ -117,6 +118,38 @@
                            empfehle ich mich und meine Bitte Ihrem geneigten Wohlwollen und bin <br>in voller
                            Hochachtung und Ergebenheit. <br>Wilh. Wackernagel Dr. <br>S. Johan 40. <br>Befindet sich in
                            <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Eppishausen</strong&gt;">Epponis villa<a href="https://www.wikidata.org/wiki/Q1423653"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, vielleicht <br>auch eine <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Hermann von Sachsenheim: Die&#xA;        Mörin.</strong&gt;">Moerin<a href="https://handschriftencensus.de/werke/889">📖</a></span>,
+                           eine mitteilbare? </p>
+                        </div>
+                     <div id="view-flow" class="d-none">
+                        
+                        <p>erhalten am 20 März
+                           abendes. beantwortet und die bücher gesendet am 21. Basel 16/3/34. Hochgeehrter Herr
+                           Baron, hoffentlich treffen diese Zeilen Sie in der besten Gesundheit und mir so
+                           geneigt, daß ich Ihnen mit meinem Brief und meiner Bitte nicht gar zu beschwerlich
+                           falle. ich bin
+                           im Begriff, ein <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wilhelm Wackernagel: Deutsches Lesebuch.</strong&gt;">altdeutsches
+                              Lesebus für den academischen und höhren Schuluntericht<a href="https://digi.ub.uni-heidelberg.de/diglit/wackernagel1839gahttps://archive.org/details/deutscheslesebu00wackgoog">📖</a></span> drucken zu laßen,
+                           in der hiesigen Schweighäuserischen (Wielandischen) Buchhandlung. Mit dem April sollen
+                           die Pressen sich schon rühren. Leider fehlen mir aber für die mittelhochd. Litteratur
+                           einige Bücher, die ich mit Schmerzen vermisse, ungern nicht benutzen würde. Es ist der <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Christoph Heinrich Myller: Samlung deutscher Gedichte aus dem XII., XIII. und XIV. Jahrhundert.&#xA;        3 Bde.</strong&gt;">dritte Band der Müllerischen Sammlung<a href="https://www.digitale-sammlungen.de/de/details/bsb10057384VD18 11205407">📖</a></span> (des <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Konrad von Würzburg: Trojanerkrieg.</strong&gt;">Trojener
+                              Krieges<a href="https://handschriftencensus.de/werke/212">📖</a></span> wegen), <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wernher (Priester): Maria.</strong&gt;">Wernherrs
+                              Maria</span> von <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Friedrich Wilhelm Oetter: Wernher eines Geistlichen im zwölften Jahrhundert Gedicht zur Ehre&#xA;        der Jungfrau Maria.</strong&gt;">Oeter<a href="https://books.google.it/books?id=8VQ7AAAAcAAJ">📖</a></span>,
+                           und Ihr <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Joseph von Laßberg: Lieder-Saal, das ist: Sammelung altteutscher&#xA;        Gedichte.</strong&gt;">Liederaal<a href="http://dl.ub.uni-freiburg.de/diglit/liedersaal1825-3https://www.digitale-sammlungen.de/en/view/bsb10113516">📖</a></span>. Aus welchen Schätzen und von wessen Güte kann ich da Unterstützung
+                           erwarten, wenn sie nicht, hochverehrter Herr Baron, meiner Sich annehmen? Wollen Sie also
+                           die Gewogenheit haben, mir auf ganz kurze Zeit, nur damit ich schnell Abschrift nehmen
+                           kann, jene Bücher lieder anzuvertrauen? Wofern sie nicht gar (ich wage die Bitte, da
+                           Sie nicht ganz und gar eigennützig ist) die hiesige untheilbare Bibliothek mit einem
+                           bleibenden Exemplar des <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Joseph von Laßberg: Lieder-Saal, das ist: Sammelung altteutscher&#xA;        Gedichte.</strong&gt;">Liedersaales<a href="http://dl.ub.uni-freiburg.de/diglit/liedersaal1825-3https://www.digitale-sammlungen.de/en/view/bsb10113516">📖</a></span> schmücken wollen. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Franz Dorotheus Gerlach</strong&gt;">Hr. Prof.
+                              Gerlach<a href="https://d-nb.info/gnd/116586842"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> hat mich ermuntert, diess Gesuch an Sie zu stellen. Darf ich
+                           Verzeihung und gütigst baldige Gewährung hoffen? Sie würden damit meine Verbind
+                           lichkeit wo möglich noch vermehren, und gebe mir sicherlich alle Mühe, Ihnen
+                           das Buch zu Danke zu machen: es sollen viele und hübsche Sachen drin stehn, auch manches
+                           bisher ungedruckte. Der <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;August Geyder: Reinhart Fuchs.</strong&gt;">Fuchs
+                              Reinhart<a href="BSB-ID 991093365599707356">📖</a></span> hat doch den weg gefunden? Mit dem Buche ist der litterarischen
+                           Forschung eine neue Bahn gebrochen, und gleich bis zum Ziel. Noch einmahl
+                           empfehle ich mich und meine Bitte Ihrem geneigten Wohlwollen und bin in voller
+                           Hochachtung und Ergebenheit. Wilh. Wackernagel Dr. S. Johan 40. Befindet sich in
+                           <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Eppishausen</strong&gt;">Epponis villa<a href="https://www.wikidata.org/wiki/Q1423653"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, vielleicht auch eine <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Hermann von Sachsenheim: Die&#xA;        Mörin.</strong&gt;">Moerin<a href="https://handschriftencensus.de/werke/889">📖</a></span>,
                            eine mitteilbare? </p>
                         </div>
                   </section>

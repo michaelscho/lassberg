@@ -1,0 +1,160 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0" lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>The Lassberg Letters</title>
+      <link href="../../css/styles.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script><link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"><script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script></head>
+   <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+         <div class="container"><a class="navbar-brand" href="../../index.html">The Laßberg Letters</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link" href="../../index.html">Welcome</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../persons.html">Persons</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../places.html">Places</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../explore.html">Explore</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <header class="page-header py-4">
+         <div class="container">
+            <h1 class="mb-2">Brief von Joseph von Laßberg an Ludwig Uhland (13.10.1831).</h1>
+            <p class="lead mb-0">
+               
+               <p>Correspondence data based on Harris, Martin: Joseph Maria Christoph
+                  Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                  Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                  geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                  Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991..</p>
+               </p>
+         </div>
+      </header>
+      <main class="py-4">
+         <div class="container">
+            <div class="alert alert-warning letter-preview-banner" role="alert"><strong>Unreviewed working text.</strong> The encoding of this letter
+               has not yet been editorially reviewed
+               (status: draft).
+               The text may contain transcription or OCR errors — please cite with caution.
+               </div>
+            <div class="row g-4">
+               <div class="col-lg-4 order-lg-2">
+                  <aside class="letter-sidebar">
+                     <section id="metadata" class="mb-4">
+                        <h2 class="h5">Metadata</h2>
+                        <p><strong>Signatur: </strong>Marbach am Neckar, Schiller Nationalmuseum, </p>
+                        <p><strong>Registernummer (Laßberg): </strong>275</p>
+                        <p><strong>Registernummer (Harris): </strong>795</p>
+                        <p><strong>Gedruck in: </strong><a href="https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig
+                              Uhland. Wien 1870, S. 213</a></p>
+                     </section>
+                     <section id="map" class="mb-4">
+                        <h2 class="h5">Places</h2>
+                        <div id="mapid"></div>
+                        <p class="map-legend small text-muted mt-1 mb-0"><span class="legend-dot" style="background:#1d4e89"></span> place of sending
+                           <span class="legend-dot ms-2" style="background:#b57cc0"></span> places mentioned
+                           </p>
+                     </section>
+                  </aside>
+               </div>
+               <div class="col-lg-8 order-lg-1">
+                  <section id="original-text" class="mb-4">
+                     <h2>Original Text
+                        <span class="transcription-source badge-print" title="OCR-Texterfassung aus der gedruckten Edition, siehe Metadaten/Gedruckt in">Transcribed from the printed edition (OCR)</span></h2>
+                     <div>
+                        
+                        <p>Eppishausen am 13. Octobers 1831. Ich habe, mein teurer Uhlandus! Iren Brief vom 5.
+                           dieses aus Stuttgart, und die Bücher aus Tübingen lezten Dienstag mit einander erhalten:
+                           allein, Grimm ist schon am 7. abgereiset und wird warscheinlich die Freude gehabt
+                           haben Sie noch in Stuttgart anzutreffen; er war aber entschlossen Sie in Tübingen
+                           aufzusuchen und Sie haben also auf alle Fälle die persönliche Bekanntschaft dieses
+                           eben so liebenswürdigen als gelerten Mannes zu machen: ich habe in nur 8 Tage bei
+                           mir gehabt und diese sind entflohen wie wenn es nur so viel Stunden gewesen wären;
+                           so daß ich am Ende mich und in fragte; ist es der Mühe wert beinahe 100 Meilen zu
+                           reisen um einer Woche willen? aber, der Mensch ist nie ganz zufrieden, auch wenn er
+                           alt ist. Daß der gute Vater der lieben Mutter nachgezogen ist, habe ich wol erwartet!
+                           Wenn man lange beisammen in einem Nest gesessen ist, und das eine fliegt fort; so
+                           mags das Andere auch nimmer lange allein erleiden. Gegen die Ordnung der Natur wollen
+                           wir uns nicht vergeblich auflenen und die woltätige Hand der Zeit wirken lassen, Gott
+                           wird uns auch weiter forthelfen! Zwei Tage nach Grimms Abreise kam mein ältester Freund
+                           Hug aus Freiburg an er und ich sind allein noch aus dem sodalitium von 1787 übrig!
+                           Aber mein armer Freund Leonhard ist lebensmüde, und auch sein Körper scheint es zu
+                           sein; die injuriae temporum haben zu gewaltig auf in eingewirkt; er hat mich gestern
+                           Abends verlassen und ich zweifle, ob ich in diesseits der Asphodeluswiese wiedersehen
+                           werde! Der Gedanke von meinen Zeitgenossen bald nur noch allein da zu stehen, hat
+                           zwar für mich nichts Schrekliches; aber einer innigen Wehemut kann ich mich dabei
+                           doch nicht erweren danach folgt dann die Sensucht nach dem Lande wo die Vorangegangenen
+                           wonen, und zulezt kömint der lange Schlaf, in dem wir allerlei sehen werden. Genug
+                           von diesem! Hier folgt der König Oswa l d, die Schrift ist schlecht aber getreu, ich
+                           habe sie in einer traurigen Gemütsstimmung gemacht, wo es mir Woltat war meine ganze
+                           Aufmerksamkeit auf einen fremden Gegenstand zu richten. Meusebach hat, nach 3jährigem
+                           Stillschweigen, sich auch wieder vernemen lassen, er arbeitet noch fleißig an seinem
+                           Fischart; allein, er ist so voll aber, und wenn? als Hans Benedix der Schäfer des
+                           Abts von St. Gallen und so mache ich keine große Hofnungen auf die Herausgabe seiner
+                           Arbeit. Lachmann hat mir auch geschrieben, und seine beiden Abhandlungen: über die
+                           Nibelungen und über die alten Leiche geschikt, welche Sie vermutlich auch schon haben
+                           werden. Aus der ersten habe ich die Warheit zu gestehen nicht viel neues gelernt,
+                           auch scheint sie mir für den großen Gegenstand unzulänglich; der lezten aber muß ich
+                           allen meinen Beifall geben. Haben Sie auf den: Anzeiger des Herrn von Aufseß, für
+                           Kunde des deutschen Mittelalters noch nicht subscribirt, so bitte ich um die Erlaubniß
+                           Fren Namen auf meine Liste sezen zu dürfen. Der Constanzer Bote ist im Hause, ich
+                           muß schließen. Leben Sie wol und grüßen Sie herzlich Frau Emma von Frem Laßberg.</p>
+                        </div>
+                  </section>
+                  <div id="related-letters"></div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer class="bg-dark text-white text-center py-3">
+         <div class="container">
+            <p class="mb-0"><a href="../letters.html">Back to the Letters</a></p>
+         </div>
+      </footer><script src="../../js/related.js"></script><script src="https://unpkg.com/leaflet/dist/leaflet.js"></script><script>
+                    var letterPlaces = [];
+                    
+                    letterPlaces.push({ coords: [47.545,9.23759], label: "Eppishausen", kind: "sent" });
+                    
+
+                    if (letterPlaces.length === 0) {
+                        document.getElementById('map').style.display = 'none';
+                    } else {
+                        var map = L.map('mapid', { scrollWheelZoom: false });
+                        // Muted basemap (CARTO Positron) instead of the default colourful OSM
+                        // tiles, to match the edition's restrained palette.
+                        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+                            attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+                            subdomains: 'abcd',
+                            maxZoom: 19
+                        }).addTo(map);
+
+                        var bounds = [];
+                        letterPlaces.forEach(function (p) {
+                            var isSent = p.kind === 'sent';
+                            var marker = L.circleMarker(p.coords, isSent
+                                ? { radius: 8, color: '#143761', weight: 2, fillColor: '#1d4e89', fillOpacity: 0.85 }
+                                : { radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75 }
+                            ).addTo(map).bindPopup((isSent ? 'Sent from: ' : 'Mentioned: ') + p.label);
+                            bounds.push(p.coords);
+                        });
+                        if (bounds.length > 1) {
+                            map.fitBounds(bounds, { padding: [25, 25], maxZoom: 9 });
+                        } else {
+                            map.setView(bounds[0], 8);
+                        }
+                    }
+                </script><script>
+                    // Initialize all tooltips
+                    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+                    new bootstrap.Tooltip(tooltipTriggerEl)
+                    })
+                </script></body>
+</html>

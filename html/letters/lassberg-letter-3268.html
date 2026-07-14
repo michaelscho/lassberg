@@ -88,7 +88,8 @@
                   <section id="original-text" class="mb-4">
                      <h2>Original Text
                         <span class="transcription-source badge-manuscript" title="Diplomatische Transkription der Handschrift">Transcribed from the manuscript (Transkribus)</span></h2>
-                     <div>
+                     <div class="btn-group btn-group-sm mb-2" role="group" aria-label="Textansicht"><button type="button" id="view-lines-btn" class="btn btn-outline-secondary active" onclick="document.getElementById('view-lines').classList.remove('d-none'); document.getElementById('view-flow').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-flow-btn').classList.remove('active');">Zeilengenau</button><button type="button" id="view-flow-btn" class="btn btn-outline-secondary" onclick="document.getElementById('view-flow').classList.remove('d-none'); document.getElementById('view-lines').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-lines-btn').classList.remove('active');">Fließtext</button></div>
+                     <div id="view-lines">
                         
                         <p><br>Basel. 22. viii.
                            37. <br>Sehr
@@ -124,6 +125,44 @@
                            halb mit Freude, gewiss aber auch mit treuester <br>Ergebenheit meines
                            Herzens seste ich Ihrer geneigten Antwort <br>entgegen. Ihrer Frau <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jenny von Droste zu Hülshoff</strong&gt;">Gemahlinn<a href="https://d-nb.info/gnd/118527541"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> meine ergebensten Empfehlungen, <br>Ihnen die
                            aufrichtige Versicherung unwandelbarer Hochachtung. <br>Wilh. Wackernagel
+                           Dr. </p>
+                        </div>
+                     <div id="view-flow" class="d-none">
+                        
+                        <p>Basel. 22. viii.
+                           37. Sehr
+                           verehrter Herr Baron, die freundlichen Vorwürfe die Sie mir durch den <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unbekannt</strong&gt;">jungen Ammann<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> haben machen lassen, haben den schmerzlichen Verdruss womit ich
+                           vor einigen Wochen gar nicht weit von <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Eppishausen</strong&gt;">Ihrem Schlosse<a href="https://www.wikidata.org/wiki/Q1423653"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>
+                           vorüberreisen muste, verdoppelt in mir aufgefrischt. ich reiste von <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Zürich</strong&gt;">Zürich<a href="https://www.wikidata.org/wiki/Q72"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> aus mit
+                           <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Caroline Luise Wackernagel-Bluntschli</strong&gt;">meiner
+                              Braut<a href="https://d-nb.info/gnd/113182346X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> in die <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Appenzell</strong&gt;">appenzellischen<a href="https://www.wikidata.org/wiki/Q12094"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>
+                           Baeder; es war von Anfang an unser Plan auf dem Heim wege bei Ihnen
+                           anzuklopfen: da kam schlechtes Wetter; diehs und die Ungeduld unsers Begleiters,
+                           ohne den wir doch nicht reisen konnten, des <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Caspar Bluntschli</strong&gt;">Bruders
+                              meiner Braut<a href="https://d-nb.info/gnd/118512129"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>, trieben uns auf dem kürzesten Wege wieder heim. Und wie gern hätte ich Sie
+                           noch einmal in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Eppishausen</strong&gt;">Eppishausen<a href="https://www.wikidata.org/wiki/Q1423653"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>
+                           gesehen, wie gern Ihre Frau <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jenny von Droste zu Hülshoff</strong&gt;">Gemahlinn<a href="https://d-nb.info/gnd/118527541"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> und die <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Kindlein<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> begrüsst, wie gern Ihnen auch das Glück meines Lebens
+                           vorgestellt! ich habe schon an jenem boesen Regentage darauf gedacht,
+                           wann und wie ich mich wohl für diesen Verlust ent schaedigen
+                           könnte, und da ist mir der Wunsch gekommen etwa auf meiner
+                           Hochzeitreise d. h. gegen die Mitte October das Versäumte nachzu holen. zuholen: Zwar liegt <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Eppishausen</strong&gt;">Eppishausen<a href="https://www.wikidata.org/wiki/Q1423653"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> eben
+                           nicht in der Richtung von <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Zürich</strong&gt;">Zürich<a href="https://www.wikidata.org/wiki/Q72"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> nach <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Basel</strong&gt;">Basel<a href="https://www.wikidata.org/wiki/Q78"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>: aber ich hoffe, wir werden wohl zu einem solchen Umwege hinreichende
+                           Zeit finden. Nun ist meine Bitte dass Sie, sehr verehrter Herr Baron, mit der Rücksichtlosigkeit
+                           die ich von
+                           Ihrem Wohlwollen erwarte, mich bescheiden moegen ob Ihnen zu der Zeit mein
+                           oder vielmehr unser Besuch noch gelegen kaeme? Lassen Sie mich
+                           dieser bittenden Frage gleich noch eine zweyte hinzufügen. Es wird
+                           an einer <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wilhelm Wackernagel: Deutsches Lesebuch.</strong&gt;">zweyten
+                              Ausgabe meines Altd. Leseb.<a href="https://digi.ub.uni-heidelberg.de/diglit/wackernagel1839gahttps://archive.org/details/deutscheslesebu00wackgoog">📖</a></span> gedruckt. Die erste war Ihnen zugeeignet, Sie wissen aus
+                           welcher Gesinnung, aber ich weiss auch Ihnen zu welchem Verdruss. Soll ich nun wirklich bei
+                           dem neuen Druck dieses mir sehr liebe und werthe Dedicationsblatt fortlassen? oder darf ich
+                           die Zueignung widerholen, ohne dass ich fürchten muss Ihnen damit noch einmal und noch mehr zu
+                           missfallen? ich frage und bitte. Welches war,
+                           damit ich jenen zwey bedeutenderen Fragen endlich noch eine drite
+                           minder bedeutende, hinzufüge, der Vorname der Hätzlerinn? <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Clara Hätzler</strong&gt;">Clara<a href="https://d-nb.info/gnd/118719831"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> oder wie? ich finde ihn verschiedentlich an gegeben. Halb mit Furcht,
+                           halb mit Freude, gewiss aber auch mit treuester Ergebenheit meines
+                           Herzens seste ich Ihrer geneigten Antwort entgegen. Ihrer Frau <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jenny von Droste zu Hülshoff</strong&gt;">Gemahlinn<a href="https://d-nb.info/gnd/118527541"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> meine ergebensten Empfehlungen, Ihnen die
+                           aufrichtige Versicherung unwandelbarer Hochachtung. Wilh. Wackernagel
                            Dr. </p>
                         </div>
                      <div class="mirador-parent">

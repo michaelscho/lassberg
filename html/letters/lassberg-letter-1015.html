@@ -103,7 +103,8 @@
                   <section id="original-text" class="mb-4">
                      <h2>Original Text
                         <span class="transcription-source badge-manuscript" title="Diplomatische Transkription der Handschrift">Transcribed from the manuscript (Transkribus)</span></h2>
-                     <div>
+                     <div class="btn-group btn-group-sm mb-2" role="group" aria-label="Textansicht"><button type="button" id="view-lines-btn" class="btn btn-outline-secondary active" onclick="document.getElementById('view-lines').classList.remove('d-none'); document.getElementById('view-flow').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-flow-btn').classList.remove('active');">Zeilengenau</button><button type="button" id="view-flow-btn" class="btn btn-outline-secondary" onclick="document.getElementById('view-flow').classList.remove('d-none'); document.getElementById('view-lines').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-lines-btn').classList.remove('active');">Fließtext</button></div>
+                     <div id="view-lines">
                         
                         
                         <div class="letter-fw"><br>1264</div>
@@ -168,6 +169,73 @@
                            Laßberg</div>
                         
                         <div class="letter-add"><br>beantw.
+                           6. Aug.</div>
+                        </div>
+                     <div id="view-flow" class="d-none">
+                        
+                        
+                        <div class="letter-fw">1264</div>
+                        
+                        <div class="letter-fw">163.</div>
+                        
+                        <div class="letter-fw">No. 85.</div>
+                        
+                        <div class="letter-opener">
+                           
+                           <p class="letter-dateline">Constanz am 30 July
+                              1825.</p>
+                           </div>
+                        
+                        <p>Die
+                           schöne Gelegenheit, Inen mein teurer Freund, durch <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Rosenlächer</strong&gt;">H. Registrator Rosenlächer<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> einen freundlichen Gruß zuzurufen,
+                           will ich nicht versäumen und Inen sagen, daß ich lezten Montag meine Schwiegertochter,
+                           welche Inen mit mir noch viel mal herzlich für alle
+                           erwiesene Liebe u. Freundschaft danket, von hier nach <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Worblingen</strong&gt;">Worblingen<a href="https://www.wikidata.org/wiki/Q47501755"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> zu einem Freunde <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Charles de Voumard</strong&gt;">H. v.
+                              Voumard<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> begleitet habe und dort in der Registratur einige interessante <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Urkunden</span> fand, wovon besonders die Eine von 1444,
+                           über die Familie <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Holbein<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           einen ganz unerwarteten Aufschluss giebt. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Erik Holbein</strong&gt;">Erik Holbein<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> wird darin als der Stifter des Selhauses in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ravensburg</strong&gt;">Ravensburg<a href="https://www.wikidata.org/wiki/Q6832"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> aufgefüret. Ich
+                           hoffe dem H. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Albrecht Hegner</strong&gt;">Albr.
+                              Hegner<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> durch Mitteilung derselben einiges Vergnügen zu machen. Ich durchstrich
+                           v. <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Worblingen</strong&gt;">Worblingen<a href="https://www.wikidata.org/wiki/Q47501755"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> aus den sogenannten <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Schiener&#xA;                        Berg</strong&gt;">Schiener Berg<a href="https://www.wikidata.org/wiki/Q1697468"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>
+                           besuchte die uralte <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ruine Schrotzburg</strong&gt;">Schrotzburg<a href="https://www.wikidata.org/wiki/Q2175430"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> in
+                           welches vor
+                           ein Par Jaren einige 40 röm. Silbermünzen
+                           ausgegraben wurden, und fand der Sage nach, die von dem alten <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Jakob Hottinger: Helvetische Kirchen-Geschichten.</strong&gt;">Hattinger in
+                              seiner Kirchen Geschichte. I. pag. 482<a href="https://www.digitale-sammlungen.de/de/view/bsb10004814">📖</a></span> gewagte Angabe, daß dieses die <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Diepoldsburg</strong&gt;">Diepoldsburg<a href="https://www.wikidata.org/wiki/Q2175227"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>
+                           seie, wohin <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Berthold</strong&gt;">Berthold<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           u. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Erchanger</strong&gt;">Erchanger<a href="https://d-nb.info/gnd/135973988"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> den gefangenen Bischof <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Salomon III</strong&gt;">Salomon
+                              III<a href="https://d-nb.info/gnd/118964593"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> verborgen haben, ganz warscheinlich. Ich besuchte auch <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Schienen</strong&gt;">Schinen<a href="https://www.wikidata.org/wiki/Q1406230"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> wo der allgemeinen
+                           Sage nach die ersten Christen dieses Landes, vor den Verfolgungen der Römer fliehend, sich sollen angebaut
+                           haben: halte aber dafür, daß es wol möchten Leute gewesen sein, die zu Anfang des 10 Jarhunderts, vor den alles überschwemmenden und zerstörenden Hunnen,
+                           in diesen beinahe unentdekbaren Bergkessel sich geflüchtet haben. In <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Stein</strong&gt;">Stein<a href="https://www.wikidata.org/wiki/Q11939"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> fand ich <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Melchior Kirchhofer</strong&gt;">H. Pfarrer Kirchhofer<a href="https://d-nb.info/gnd/118842528"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> abwesend und ging unaufgehalten hieher
+                           zurück. Nun
+                           mein Freund! hätte ich eine kleine Bitte an den glüklichen
+                           Besizer des <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Codex Traditionum Sangallensium.</strong&gt;">Codex trad. S. Gallensium<a href="-">📖</a></span> In <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Trutpert Neugart</strong&gt;">Neugarts<a href="https://d-nb.info/gnd/119175533"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Trutpert Neugart: Codex Diplomaticus Alemanniae et Burgundiae Trans-Iuranae intra fines doecesis&#xA;        Constantiensis.</strong&gt;">Cod. diplom
+                              Alamanniae Tom. I.<a href="VD18 80098932">📖</a></span> Urkunde CIII. Traditis Gringi sind ausgelassene Stellen,
+                           besonders post Verba: Gallone Gringi und: Visus sum habere. Könnten Sie die Güte haben mir
+                           diese Lüken ergänzen, oder wenn die Urkunde nicht zu lange ist, lieber mir dieselbe ganz abschreiben zu
+                           lassen, so würden Sie mich recht ser verbinden; freilich könnte nur die allergrosste
+                           Genauigkeit der Abschrift den gehörigen Wert geben. Hier lege ich Ihnen auch ein Zettelchen für den <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Conrad Honnerlag</strong&gt;">H. Oberst Honerlage<a href="https://d-nb.info/gnd/132968800"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> bei, damit er siehet daß sein Name nicht von
+                           Gestern ist, und ursprünglich dem nördlichen <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Deutschland</strong&gt;">teutschlande<a href="https://www.wikidata.org/wiki/Q183"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>
+                           angehöret.</p>
+                        
+                        <div class="letter-closer">
+                           
+                           <p class="letter-salute">Übrigens leben Sie wol, von <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Eppishausen</strong&gt;">Eppishausen<a href="https://www.wikidata.org/wiki/Q1423653"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> aus
+                              ein Mereres
+                              von Irem Freunde</p>
+                           
+                           <p class="letter-signed"><span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Joseph von Laßberg</strong&gt;">JvLaßzberg<a href="https://d-nb.info/gnd/118778862"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span></p>
+                           </div>
+                        
+                        
+                        <div class="letter-fw">1267.</div>
+                        
+                        <div class="letter-fw">Constantz 30. July
+                           1825 Jos. von
+                           Laßberg</div>
+                        
+                        <div class="letter-add">beantw.
                            6. Aug.</div>
                         </div>
                   </section>

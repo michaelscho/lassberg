@@ -1,0 +1,216 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0" lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>The Lassberg Letters</title>
+      <link href="../../css/styles.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script><link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"><script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script></head>
+   <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+         <div class="container"><a class="navbar-brand" href="../../index.html">The Laßberg Letters</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link" href="../../index.html">Welcome</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../persons.html">Persons</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../places.html">Places</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../explore.html">Explore</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <header class="page-header py-4">
+         <div class="container">
+            <h1 class="mb-2">Brief von Ludwig Uhland an Joseph von Laßberg (10.03.1831).</h1>
+            <p class="lead mb-0">
+               
+               <p>Correspondence data based on Harris, Martin: Joseph Maria Christoph
+                  Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                  Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                  geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                  Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991..</p>
+               </p>
+         </div>
+      </header>
+      <main class="py-4">
+         <div class="container">
+            <div class="alert alert-warning letter-preview-banner" role="alert"><strong>Unreviewed working text.</strong> The encoding of this letter
+               has not yet been editorially reviewed
+               (status: draft).
+               The text may contain transcription or OCR errors — please cite with caution.
+               </div>
+            <div class="row g-4">
+               <div class="col-lg-4 order-lg-2">
+                  <aside class="letter-sidebar">
+                     <section id="metadata" class="mb-4">
+                        <h2 class="h5">Metadata</h2>
+                        <p><strong>Signatur: </strong>Marbach am Neckar, Schiller Nationalmuseum, </p>
+                        <p><strong>Registernummer (Laßberg): </strong></p>
+                        <p><strong>Registernummer (Harris): </strong>2351</p>
+                        <p><strong>Gedruck in: </strong><a href="https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig
+                              Uhland. Wien 1870, S. 194</a></p>
+                     </section>
+                     <section id="map" class="mb-4">
+                        <h2 class="h5">Places</h2>
+                        <div id="mapid"></div>
+                        <p class="map-legend small text-muted mt-1 mb-0"><span class="legend-dot" style="background:#1d4e89"></span> place of sending
+                           <span class="legend-dot ms-2" style="background:#b57cc0"></span> places mentioned
+                           </p>
+                     </section>
+                  </aside>
+               </div>
+               <div class="col-lg-8 order-lg-1">
+                  <section id="original-text" class="mb-4">
+                     <h2>Original Text
+                        <span class="transcription-source badge-print" title="OCR-Texterfassung aus der gedruckten Edition, siehe Metadaten/Gedruckt in">Transcribed from the printed edition (OCR)</span></h2>
+                     <div>
+                        
+                        <p>Tübingen d. 10. März 1831. Die 8 Bände der Wysschen Schweizerlieder, welche Sie, verehrtester
+                           Freund, sammt dem gedruckten Eckenliede mir zugehen ließen, sind mir wohlbehalten
+                           zugekommen. Empfangen Sie meinen herzlichsten Dank für diese Mittheilungen, besonders
+                           aber für das erfreuliche Geschenk, das Sie mir und jedem Freunde unserer alten Heldensage
+                           durch den Druck jenes nun in frührer Gestalt hervortretenden Liedes gemacht haben.
+                           In den Wyßschen Sammlungen bin ich, bei mancher Störung in der letzten Zeit, noch
+                           nicht so weit vorgerückt, als es in der zweiten Woche, seit ich solche in Händen habe,
+                           der Fall seyn sollte, werde mich aber beeifern, sie Ihnen zur gehörigen Zeit wieder
+                           zugehen zu lassen. Einstweilen wollte ich die Anzeige des richtigen Empfangs nicht
+                           länger verzögern, wenn ich auch noch keine bestimmte Ansicht darüber auszusprechen
+                           vermag. Im 6. Hefte steht eine Randglosse: „ Alle folgenden Lieder, bis Nr. 15 inclus.
+                           sind abgeschrieben aus einer alten han dschriftlichen Liedersammlung im Besitze des
+                           Herrn Schultheißen von Mülinen, welche jedoch mehr nichtschweizerische Stücke enthält.
+                           " Unter diesen nichtschweizerischen Stücken möchte doch auch noch manches sonst bemerkenswerthe
+                           Lied enthalten seyn. Ich erinnere mich, auf einer frühern Schweizerreise, von einem
+                           Schuhmacher Huber in Meiringen, der mir die Stiefel ausbesserte, einen dicken Band
+                           älterer gedruckter Volkslieder in Händen gehabt zu haben, worin sich unter andern
+                           das Lied von der Schweizer Ankunft aus Schweden befand. Ich schrieb mir Einiges daraus
+                           ab, namentlich zwei Balladen, welche nachher ins Wunderhorn kamen und wovon die eine:
+                           Graf Friedrich auch in der Wysschen Sammlung steht. Es hat mich nachher gereut, daß
+                           ich dem Manne seine Sammlung nicht feil machte; vielleicht ist sie noch in dem Hause.
+                           Schwab schreibt mir, daß er wegen des Contrakts mit Banhardt sogleich mit dem jüngern
+                           Cotta gesprochen, welcher sich die Sache sehr angelegen seyn lassen und deshalb an
+                           seinen Vater geschrieben. Allein das hat sich ja nun ohnedieß erledigt. Nächstes Semester
+                           will ich in meinen Vorlesungen auf die Geschichte der deutschen Dichtkunst im 15.
+                           und 16. Ihd. übergehen. Da ich hiebei auf den Meistergesang zu sprechen kommen werde,
+                           so wünschte ich später einmal einen Aufsak über Frauenlob wieder zu lesen, den ich
+                           einmal bei Ihnen auf einzelnen Blättern einer sonst wenig bekannten Zeitschrift gesehen
+                           habe. Vielleicht kommen Ihnen dieselben gelegenheitlich unter die Hände. Durch Besuch
+                           bin ich genöthigt, hier abzubrechen, um die Schweizerpost nicht zu versäumen. Voll
+                           Freundschaft und Verehrung L. Uhland. 13 * Laßberg au Uhland. Teurer Uhlandus! Eppishausen
+                           am 11. März 1831. Ich hoffe Sie haben die unterm 19. Hornungs an Sie abgesendete Wyßische
+                           Liedersammlung wol erhalten; allein, schon wieder muß ich Inen schreiben, ungeachtet
+                           des: Ecce iterum Crispinus, welches Sie vielleicht beim Erbrechen dieses Briefes ausrufen
+                           werden; ich denke aber die Nachricht die ich Inen zu geben habe, ist das Briefgeld
+                           schon wert. Hören Sie also! Eine vollständige, leserliche und genau verglichene Abschrift
+                           des Ulrich von Liechtenstein ist als Eigentum in meinen Händen, und folglich auch
+                           eben so wol in den Frigen. Ich glaube Inen schon gesagt zu haben, daß lezten Herbst
+                           Prof. Maßmann mich besuchte; mit Im kam ein junger Mann Son des Forstmeisters Braun
+                           aus Gotha; er hatte ein Far bei Benecke zu Göttingen über altteutsche Literatur Collegien
+                           gehört, und ließ merken, daß er in einer guten Schule gewesen. Sie können sich leicht
+                           einbilden, daß die Sprache auch auf den Ulrich von Liechtenstein kam; obschon ich,
+                           da Maßmann schon zweimal ganz unaufgefordert versprochen hatte mir in abzuschreiben,
+                           den Gegenstand nicht in Anregung bringen wollte. Auch diesmal wieder erneuerte Maßmann
+                           sein altes Versprechen, Herr Braun aber verhielt sich ganz stille und sprach gar kein
+                           Wörtchen darüber. Lezthin als ich eben beim Nachtessen in Ludens Geschichte die Schlacht
+                           des Ariovist mit dem Cäsar las, erhalte ich ein Paket mit unbekannter Aufschrift und
+                           nachdem ich es mit meiner gewöhnlichen Hastigkeit aufgebrochen hatte, fielen mir sogleich
+                           die Hefte des Frauendienstes in die Hände. O, du guter Mensch! rief ich aus, verdiene
+                           ich alter Mann denn auch so viel Liebe! Wie manche Stunde hat der Student sich von
+                           seinem Vergnügen abmüssigen müssen, um diese 20.000 Verse abzuschreiben. Ich muß gestehen
+                           daß ich in langer, ja ser langer Zeit nicht so tief gerüret war. Ja, die Pietas iſt
+                           in der Brust deutscher Jünglinge noch nicht ausgestorben, und wird es auch nimmermer!
+                           Nun ist also der Ulrich von Liechtenstein da und es kömmt nur darauf an, wann er die
+                           Reise nach Tübingen antretten soll? Ich kann mich nicht entschließen, in anderſt als
+                           in einem Zuge zu lesen und mich dabei nicht unterbrechen zu lassen, um den ganzen
+                           Eindruk und die volle Erinnerung davon zu behalten; dazu lassen mir aber andere angefangene
+                           Arbeiten jezt keine Zeit. Ich denke auf Ostern nach Sigmaringen zu reisen und wollte
+                           Inen denselben nach Tübingen mitbringen, allein bei näherer Betrachtung, hielt ich
+                           diese Ueberraschung doch nicht für recht, noch weniger die längere Vorenthaltung dieses
+                           Fundes, nach dem ich mich so lange gesenet hatte. So ist denn beinahe kein Far, das
+                           mir nicht etwas bringt, das lezte den Schwabenspiegel, das vorlezte den Wasserburger
+                           Codex, auch den geschichtlich wichtigen Weissenauer nicht zu vergessen. Ich bin ein
+                           wares Glükskind; aber kein undankbares. Gestern bekam ich endlich Graffs Ottfried,
+                           das ist nun einmal ein gescheider Druk, der alten Augen wol tut und den man auch bei
+                           Licht lesen kann. Nebst dem Ulrich von Liechtenstein hat mir der gute Emil Braun auch
+                           eine Abschrift von einer Legende des heil. Ulrich in teutschen Versen des XII. Jarhunderts
+                           geschikt, welche ich mit der lateinischen die 20 Jare nach dem Tode dieses Bischofs
+                           gemacht wurde, verglichen und ganz übereinstimmend gefunden habe. Von dem Episcopatus
+                           Constantiensis habe ich den 4. Bogen in der Correctur; allein, nun ist der Buchdruker
+                           gefärlich krank und alles liegt wieder darnieder. Wenn ich gesagt habe, daß ich ein
+                           Glükskind seie, so war es keineswegs in Beziehung auf die Buchdruker. Hier schike
+                           ich Inen auch den Thanhauser, wie er jezt noch im Entlibuch gesungen wird, ich erhielt
+                           in vorgestern von dem alten Stalder, die Weise war nicht dabei; ich habe aber neuerdings
+                           darum geschrieben und sie wird nachfolgen. Das Lied hat eine Magd geschrieben, ich
+                           folge also auch irer Schreibung. In Tübingen, höre ich soll ein Nibelungenlied herauskommen;
+                           aber, in der Ankündigung stehet eine Lüge, es heißt nämlich der Abdruk sei nach meiner
+                           Handschrift gemacht. Wenn, wie ich allerdings zu vermuten Ursache habe, Herr Schönhut
+                           der Editor ist, so tut es mir leid, daß er es mit der Warheit nicht so genau nimmt
+                           als man bei einem Manne seines Standes erwarten sollte. Mit meinem armen Friz gehet
+                           es zwar um vieles besser, wie er mir selbst schreibt, er hat auch wieder Arbeit von
+                           mir verlangt; aber meine Befürchtnisse vor der Zukunft sind nichts weniger als gehoben.
+                           Er will diesen Sommer in der Schweiz die Molkenkur brauchen und ich verspreche mir
+                           von seinem ungeschwächten Alter ( 33 ) noch Genesung, in so weit sie bei einem organischen
+                           Uebel möglich ist. Lieber Freund! Unverschuldetes Unglük muß man mit Geduld und mit
+                           Mut tragen, und seinen Freunden mit Paraphrasirung seiner Leiden keine lange Weile
+                           machen. Leben Sie wol, grüßen Sie mir herzlich Fre treffliche Hausfrau Emma und haben
+                           Sie immer ein wenig lieb Fren alten Lazzbergåre. Sehen Sie Herrn Professor Michaëlis;
+                           so bitte ich im zu sagen, er möchte mich doch gefälligst entschuldigen, daß ich sein
+                           Schreiben noch nicht beantwortet habe; es soll nächstens geschehen. Auch bei unserm
+                           guten Schwab bin ich in alter Schuld; aber bei dem bin ich wol gewiß, daß er mir darum
+                           nicht zürnt.</p>
+                        </div>
+                  </section>
+                  <div id="related-letters"></div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer class="bg-dark text-white text-center py-3">
+         <div class="container">
+            <p class="mb-0"><a href="../letters.html">Back to the Letters</a></p>
+         </div>
+      </footer><script src="../../js/related.js"></script><script src="https://unpkg.com/leaflet/dist/leaflet.js"></script><script>
+                    var letterPlaces = [];
+                    
+                    letterPlaces.push({ coords: [48.52,9.055556], label: "Tübingen", kind: "sent" });
+                    
+
+                    if (letterPlaces.length === 0) {
+                        document.getElementById('map').style.display = 'none';
+                    } else {
+                        var map = L.map('mapid', { scrollWheelZoom: false });
+                        // Muted basemap (CARTO Positron) instead of the default colourful OSM
+                        // tiles, to match the edition's restrained palette.
+                        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+                            attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+                            subdomains: 'abcd',
+                            maxZoom: 19
+                        }).addTo(map);
+
+                        var bounds = [];
+                        letterPlaces.forEach(function (p) {
+                            var isSent = p.kind === 'sent';
+                            var marker = L.circleMarker(p.coords, isSent
+                                ? { radius: 8, color: '#143761', weight: 2, fillColor: '#1d4e89', fillOpacity: 0.85 }
+                                : { radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75 }
+                            ).addTo(map).bindPopup((isSent ? 'Sent from: ' : 'Mentioned: ') + p.label);
+                            bounds.push(p.coords);
+                        });
+                        if (bounds.length > 1) {
+                            map.fitBounds(bounds, { padding: [25, 25], maxZoom: 9 });
+                        } else {
+                            map.setView(bounds[0], 8);
+                        }
+                    }
+                </script><script>
+                    // Initialize all tooltips
+                    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+                    new bootstrap.Tooltip(tooltipTriggerEl)
+                    })
+                </script></body>
+</html>

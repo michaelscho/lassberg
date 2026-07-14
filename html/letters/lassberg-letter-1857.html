@@ -91,7 +91,8 @@
                   <section id="original-text" class="mb-4">
                      <h2>Original Text
                         <span class="transcription-source badge-manuscript" title="Diplomatische Transkription der Handschrift">Transcribed from the manuscript (Transkribus)</span></h2>
-                     <div>
+                     <div class="btn-group btn-group-sm mb-2" role="group" aria-label="Textansicht"><button type="button" id="view-lines-btn" class="btn btn-outline-secondary active" onclick="document.getElementById('view-lines').classList.remove('d-none'); document.getElementById('view-flow').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-flow-btn').classList.remove('active');">Zeilengenau</button><button type="button" id="view-flow-btn" class="btn btn-outline-secondary" onclick="document.getElementById('view-flow').classList.remove('d-none'); document.getElementById('view-lines').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-lines-btn').classList.remove('active');">Fließtext</button></div>
+                     <div id="view-lines">
                         
                         <p><br>134. <br>Eppishausen am 3
                            August 1836. <br>Was muß ich hoeren 1 gestern abends kam herr <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Adam Pupikofer</strong&gt;">Diaconus Pupikofer<a href="https://d-nb.info/gnd/11565108X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> zu mir, <br>und sagte mir, daß Sie mich diesen kommenden herbst noch
@@ -132,6 +133,48 @@
                            die <br>freude
                            Ires besuches und seien Sie des herzlichsten empfanges ver <br>sichert, von
                            Irem <br>ergebenen <br>Joseph v. Laßberg. </p>
+                        </div>
+                     <div id="view-flow" class="d-none">
+                        
+                        <p>134. Eppishausen am 3
+                           August 1836. Was muß ich hoeren 1 gestern abends kam herr <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Adam Pupikofer</strong&gt;">Diaconus Pupikofer<a href="https://d-nb.info/gnd/11565108X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> zu mir, und sagte mir, daß Sie mich diesen kommenden herbst noch
+                           besuchen würden, wenn ich Inen durch einige zeilen dazu anlaß gaebe. ach lieber mann!
+                           was könnte mir lieberes geschehen, als der besuch eines mannes den ich von
+                           ganzem herzen hochschäze und dem ich dank schuldig bin, daß er mich
+                           hervorgezogen hat in seinem guten, <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wilhelm Wackernagel: Deutsches Lesebuch.</strong&gt;">schönen
+                              buche, indem
+                              er mich zu den guten Schwaben<a href="https://digi.ub.uni-heidelberg.de/diglit/wackernagel1839gahttps://archive.org/details/deutscheslesebu00wackgoog">📖</a></span> zälte. aber iezt kömmt ein schweres kapitel! ich
+                           soll mich bei Inen entschuldigen, daß ich auf die Dedication nicht
+                           geantwortet habe, daß ich dafür nicht gedankt habe. es ist eine ganz eigene
+                           sache, die bisher nicht ieder begriffen und verstanden hat, daß ich ein solcher
+                           homo inglorius bin, dem es von natur aus widerig ist, ins publicum zu
+                           gehen, dem die ieztlebende welt so gleichgiltig ist, daß er täglich sagt und
+                           wünscht: oblitus eorum, obliviscendus et illis! Nemen Sie es mir
+                           doch nicht übel, wenn ich daher sage, daß mir die zueignung Ihres
+                           buches, so ser es mir übrigens gefallen hat, gar keine freude machte;
+                           aber glauben Sie vest, daß ich Inen iezt, wo der ärger vorüber
+                           ist, doch aus dem herzen dank dafür habe. alles das kam in eine zeit, wo mich die häußlichen
+                           sorgen umgaben: kommen Sie zu mir; so treffen Sie in litterariis nichts
+                           neues an; aber ein par zwillinge <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Hildegund von Laßberg</strong&gt;">Hildegund<a href="https://d-nb.info/gnd/1073308979"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> und <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Hildegard von Laßberg</strong&gt;">Hildegard<a href="https://d-nb.info/gnd/116004126"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>, welche mir mein geliebtes <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jenny von Droste zu Hülshoff</strong&gt;">weib<a href="https://d-nb.info/gnd/118527541"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> im lezten frülinge brachte, hübsche gesunde fröliche kinder, die uns alle tage
+                           freude machen, weil sie wirklich mit 20 wochen schon mer sind, als andere
+                           kinder mit 40. Es wäre wirklich zu spät Inen iezt erst die grüße der
+                           beiden <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Grimme<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> auszurichten, die ich auf meiner hochzeits reise in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Göttingen</strong&gt;">Göttingen<a href="https://www.wikidata.org/wiki/Q3033"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> besuchte; aber es muß Inen genug sein zu wissen, daß Sie da in gutem
+                           angedenken stehen. auch der gute alte <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Georg Friedrich Benecke</strong&gt;">Benecke<a href="https://d-nb.info/gnd/11865537X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           hat Sie nicht
+                           vergessen. ich brachte einige ser vergnügte tage in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Göttingen</strong&gt;">Göttingen<a href="https://www.wikidata.org/wiki/Q3033"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> zu, noch mer wären
+                           sie es gewesen, wenn der gute <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wilhelm Grimm</strong&gt;">Willhelm
+                              Grimm<a href="https://d-nb.info/gnd/118542265"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> nicht kränkelte. Sie haben wol von H. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Adam Pupikofer</strong&gt;">Pupikofer<a href="https://d-nb.info/gnd/11565108X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> gehört, daß ich am 9ten may das unglük gehabt habe durch einen sturz aus
+                           dem wagen so
+                           beschädiget zu werden, daß ich noch an krüken gehen muß. morgen reise ich
+                           in das bad nach <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Baden (Aargau)</strong&gt;">Baden<a href="https://www.wikidata.org/wiki/Q63939"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, um mich da
+                           vollends aus
+                           zu heilen. gott gebe seine gnade dazu! aber das soll Sie nicht abhalten zu mir
+                           zu kommen, mein herz gehet nicht an krüken, und bis ende
+                           dieses monats bin ich wieder zu hause, nämlich von <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Baden (Aargau)</strong&gt;">Baden<a href="https://www.wikidata.org/wiki/Q63939"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> im <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Baden (Aargau)</strong&gt;">Aargau<a href="https://www.wikidata.org/wiki/Q63939"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, dem alten
+                           castellum thermarum. Ich wollte Inen herzlich gerne mer schreiben; aber <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jenny von Droste zu Hülshoff</strong&gt;">meine frau <a href="https://d-nb.info/gnd/118527541"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>manet mich einzupaken; machen Sie uns also auf den herbst
+                           die freude
+                           Ires besuches und seien Sie des herzlichsten empfanges ver sichert, von
+                           Irem ergebenen Joseph v. Laßberg. </p>
                         </div>
                   </section>
                   <details id="normalised-text" class="text-version mb-4">

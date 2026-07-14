@@ -1,0 +1,247 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0" lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>The Lassberg Letters</title>
+      <link href="../../css/styles.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script><link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"><script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script></head>
+   <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+         <div class="container"><a class="navbar-brand" href="../../index.html">The Laßberg Letters</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link" href="../../index.html">Welcome</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../persons.html">Persons</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../places.html">Places</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../explore.html">Explore</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <header class="page-header py-4">
+         <div class="container">
+            <h1 class="mb-2">Brief von Joseph von Laßberg an Ludwig Uhland (02.02.1831).</h1>
+            <p class="lead mb-0">
+               
+               <p>Correspondence data based on Harris, Martin: Joseph Maria Christoph
+                  Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                  Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                  geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                  Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991..</p>
+               </p>
+         </div>
+      </header>
+      <main class="py-4">
+         <div class="container">
+            <div class="alert alert-warning letter-preview-banner" role="alert"><strong>Unreviewed working text.</strong> The encoding of this letter
+               has not yet been editorially reviewed
+               (status: draft).
+               The text may contain transcription or OCR errors — please cite with caution.
+               </div>
+            <div class="row g-4">
+               <div class="col-lg-4 order-lg-2">
+                  <aside class="letter-sidebar">
+                     <section id="metadata" class="mb-4">
+                        <h2 class="h5">Metadata</h2>
+                        <p><strong>Signatur: </strong>Marbach am Neckar, Schiller Nationalmuseum, </p>
+                        <p><strong>Registernummer (Laßberg): </strong>32</p>
+                        <p><strong>Registernummer (Harris): </strong>758</p>
+                        <p><strong>Gedruck in: </strong><a href="https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig
+                              Uhland. Wien 1870, S. 184-89</a></p>
+                     </section>
+                     <section id="map" class="mb-4">
+                        <h2 class="h5">Places</h2>
+                        <div id="mapid"></div>
+                        <p class="map-legend small text-muted mt-1 mb-0"><span class="legend-dot" style="background:#1d4e89"></span> place of sending
+                           <span class="legend-dot ms-2" style="background:#b57cc0"></span> places mentioned
+                           </p>
+                     </section>
+                  </aside>
+               </div>
+               <div class="col-lg-8 order-lg-1">
+                  <section id="original-text" class="mb-4">
+                     <h2>Original Text
+                        <span class="transcription-source badge-print" title="OCR-Texterfassung aus der gedruckten Edition, siehe Metadaten/Gedruckt in">Transcribed from the printed edition (OCR)</span></h2>
+                     <div>
+                        
+                        <p>Eppishausen an Mariä Lichtmesse 1831. Teuerster Uhlandus! Da ich gestern Ir Paket
+                           samt dem Briefe vom 20. Januar erhielt, hatte ich eine große Freude; denn ich fieng
+                           schon um Ir Wolbefinden in Sorge zu stehen; nun ist alles gut, da Sie gesund und noch
+                           der alte Uhland sind. Hier schike ich Inen 323 neue und alte Lieder unter welchen
+                           Inen manches gefallen wird; die beigedrukten Namen halte ich für jene der Männer,
+                           welche die Weisen dazu gemacht, oder wenigstens sie aus dem Munde des Volkes aufgeschrieben
+                           haben. Auch sende ich Inen eine Schriftprobe von dem Maximilianischen Codex des Nibelungen
+                           Liedes, welche mir der unvergeßliche Primisser ein Iar vor seinem Tode besorgt hat,
+                           und von der ich bei Frem lezten Hiersein keine Abdrüke bei Handen hatte. Diese Recension
+                           scheint etwas mit der meinigen zu stimmen. Mir ist eingefallen, daß ich in München
+                           wol Manches für Ire Sammlung von teutschen Volksliedern finden möchte; ich schrieb
+                           also dahin und ein junger Herr Braun aus Gotha, ein Schüler Benecke's, antwortete
+                           mir folgendes: „ Was Herrn Uhland betrifft; so ist dieses alt Meistergesangbuch nicht
+                           für jn. Sämtliche Lieder in demselben sind von einem braven Meistersänger Peham, liegt
+                           es Inen daran etwas näheres von demselben zu wissen, so sende ich Inen das Register
+                           desselben. Aber ich tue gern was der alte Meister Sepp befielt und am liebsten sehe
+                           ich im etwas an den Augen ab, deswegen sende ich hiebei ein Verzeichniß dessen, was
+                           sich in den Docenianis auf der Münchner Centralbibliothek für einen Liederjäger findet.
+                           Schmeller hat erlaubt daß ich es copiere, ich sende es an Sie damit Sie auch wissen,
+                           was es in München zu jagen giebt. Um alles Weitere müssen Sie Schmeller bitten, so
+                           wie Uhland sich ebenfalls an diesen mit bestimmten Bitten zu wenden hat; ich aber
+                           bin Schmellers allzeit fertiger Schreiber und sende treue Copien auf seinen Befel
+                           an Sie und Iren lieben Uhland. Können Sie oder dieser etwas damit anfangen; so schriebe
+                           ich die übrigen nicht unbedeutenden Anfänge von historischen Liedern aus selbigem
+                           Verzeichnisse ab und sende sie ebenfalls. " Zugleich schrieb mir der gute Schmeller
+                           ebenfalls einen ser freundlichen Brief. Der Weg wäre also offen, und ich glaube, mit
+                           Ausname des Ulrich von Liechtenstein, der für Wilhelm Grimın durch Herrn Braun abgeschrieben
+                           wurde, könnte man von München wol alles bekommen. Ich habe die 6 Blättchen bezeichnet,
+                           wie sie auf einander folgen: wenn Sie daraus abgeschrieben haben, was Inen taugt;
+                           so bitte ich sie mir zurükzusenden; auch die Blätter von dem Archivar Stülz aus St.
+                           Florian möchte ich gerne haben, damit ich dem erlichen Landsmanne auch einmal eine
+                           ordentliche Antwort auf sein Geschenk senden kann. Graffs Ottfried ist erschienen,
+                           ich habe in noch nicht zu Gesicht gebracht, er hat an Schmeller geschrieben und wünscht
+                           Unterſtüzung von allen Seiten zur Herausgabe seines Wörterbuches. Wir sollten in Schwaben
+                           zusammen treten, um eine ergiebige Subscription zu bewerkstelligen, die Sache ist
+                           doch wirklich ser verdienstlich, und wenn Sie lieber Freund! sich derselben unterziehen
+                           wollten; so würde ich in meinem Kreise gern und mit allem Eifer mitwirken. Geben Sie
+                           mir eine Antwort hierüber; so will ich an Graff schreiben, daß er das Nähere an die
+                           Hand giebt. Ungemein hat mich erfreut, daß meine lezte Sendung Inen Anlaß gegeben
+                           hat, Iren Zuhörern ein Vergnügen durch die Anschaulichkeit der Handschriften des Nibelungen
+                           Liedes zu verschaffen. Ich kann mich ganz in die Zeit des Universitätslebens zurükdenken,
+                           ja meine Phantasie ist noch lebhaft genug, um es mir vergegenwärtigen zu können; wie
+                           selig würde ich mich gefült haben, wenn mir ein Professor hätte einen Codex des Theodosius,
+                           oder nur einen Schwabenspiegel zeigen können also kann ich auch verstehen, daß es
+                           Inen und Iren Schülern angenem war, Schriftproben von unserer teutschen Ilias zu zeigen
+                           und zu sehen. Der Hauptmann von Besserer, den Sie in Leutkirch begegneten, hatte mir
+                           schon ein par Mal geschrieben, daß er mich besuchen wolle, ist aber nichts draus geworden:
+                           er arbeitet, wie er sagt an einer teutschen Literaturgeschichte des Mittelalters.
+                           Die Nachrichten die er über die Bibliothek von Wolfegg giebt, sind mir nicht ser tröstlich;
+                           ich hatte einige Hofnungen, da etwas zu entdeken! wollen Sie die Wyssische Liedersammlung
+                           auf 3 Wochen haben; so kann ich Sie Inen senden; ich kann jezt vor der Fasten noch
+                           nicht daran gehen; weil ich verlegene Arbeit habe, die erst aufgeräumt werden muß.
+                           Sie werden nach Einsicht derselben im Stande sein Herrn von Cotta gelegenheitlich
+                           mündlich darüber Auskunft zu geben; denn ich habe im Sinne sie im anzubieten, jedoch
+                           blos in der Voraussezung, daß er Sie druken läßt; unser Schwab könnte die Herausgabe
+                           wol besorgen. Im Grunde ist es mir ser widerlich mit diesem Herren in Unterhandlung
+                           zu treten! Seit 8 Monden verweigert er dem Buchdruker Bannhart zu Constanz die Unterschrift
+                           des Contractes, wegen Druk des Episcopatus Constantiensis, den er doch in einem Schreiben
+                           an mich ausdrüklich genehmiget hatte. Die Sache bleibt steken und ich werde vor dem
+                           Publikum als ein Mann erscheinen, der viel anfangt und wenig ausrichtet. Herr von
+                           Cotta soll sich einen andern Narren schaffen. Den von Inen in Augsburg entdekten Druk
+                           vom Wilhelm von Orlenz finde ich nicht in Panzers Annalen der teutschen Literatur,
+                           er ist also eine der wichtigsten typographischen Seltenheiten: dieses schöne Gedicht
+                           sollte man einmal herausgeben zu Eren unseres Landsmannes des Rudolf von Ems. Benecke
+                           hat halb und halb in einem Briefe von Jacob Grimm an mich Lust dazu bezeigt; allein,
+                           er ist schon zu alt und zu reich, um sich einer solchen Anstrengung zu unterziehen.
+                           Die Ulmer Einladung, obschon ich keinen großen Erfolg erwarte, hat mich doch gefreut;
+                           ich bin mit Inen der Meinung, daß man mit solcher Sammlung jezt zu spät kommt; aber
+                           auch der Zufall hilft manchmal etwas entdeken, was man nicht mer verschollen, sondern
+                           längst be- und ver - graben wänte und es ist daher immer gut, daß sich noch Leute
+                           drum bekümmern. Im Kanton Luzern wird noch das Lied vom Thanhauser gesungen, und Stalder
+                           will mir die Melodie desselben verschaffen. Das ist freilich nur eins; aber da eins
+                           und dort eins, gibt zulezt mereres. Adde parum parvo, magnus acervus erit! Mone's
+                           Quellen und Forschungen, haben mich ser erfreut; es ist doch gut, daß wir in jener
+                           March jezt auch Jemanden haben, der sammelt, und herausgiebt. Auf die niederländschen
+                           Lieder baue ich in der Art keine große Erwartungen; weil ich nichts ser altes von
+                           daher kommen sehe; in der Zeit des allgemeinen Gesanges hat jnen der Rhein hie und
+                           da ein oberteutsches Lied herabgeschwemmt; aber eigenes Altes werden sie wol nicht
+                           viel aufzuweisen haben. Was Inen die Zeitungen von unsern politischen Begebenheiten
+                           berichtet haben mögen; so sind sie doch nur Folgen des allgemeinen äußeren Impulses,
+                           und auf keine Weise aus dem Volke selbst hervorgegangen, und das ist wol der Fall
+                           auch anderswo, d. i. die Sache kam am Ende wol aus der Quelle, nachdem man sie vorher
+                           in die Quelle gebracht hatte. Ein reform. Pfarrer Bornhauser, ein redlicher und tugendhafter
+                           Mann, mit einem etwas hyperpoëtischen Gemüte, hat den Handel angefangen; aber, weil
+                           er keine proper Handlung treiben konnte, mußte er sich um Associé's umsehen, und da
+                           fiel das Geschäft mitunter nicht in die besten Hände; indessen half die Regierung
+                           durch ire Elendigkeit treflich dazu die Sache in den Gang zu bringen und nun ist sie
+                           im Gange und in wenigen Wochen wird sie iren Lauf vollendet haben, das heißt wir werden
+                           eine neue Verfassung haben; aber sie wird eben so wenig für dieses wilde und verdorbene
+                           Volk passen, als man in der Mitte desselben tüchtige Männer finden wird, die im Stande
+                           wären sie in Vollzug zu sezen. Also, angenommen, eine moralisch rein gute Verfassung
+                           in den Händen untüchtiger Leute, was muß da für eine schwankende, mit sich und dem
+                           Geseze in ewigem Widerspruch befindliche Regierung herauskommen? So viel man weiß
+                           sollen 3 Tribunen ( triumviri? ) eine den venetianischen Saggi ähnliche inquisitorische
+                           Macht über den kleinen Rat ( die vollziehende Gewalt ) ausüben, das heißt, das öffentliche
+                           Bekenntniß ablegen, daß das Volk ewiges Mißtrauen in die von im gewälte Regierung
+                           sezet. Welcher Man von Ergefül wird in diesem Rate mer eine Stelle annemen? Allein,
+                           es ist nichts verspielt! Wenn die Wogen sich einmal gelegt haben, dann wird nach und
+                           nach Besinnung, Bewustsein und der Verstand zum Bessern wieder Plaz gewinnen. Gewalttätigkeiten
+                           sind ein paar Fälle ausgenommen, keine verübt worden und im allgemeinen lebt man ruhig.
+                           Da ich nicht Bürger bin, so habe ich mit der ganzen Geschichte, in welcher ein Esel
+                           den andern Langor geschimpft hat, nichts zu tun und danke Gott, daß ich das mir schon
+                           zweimal geschenkte Bürgerrecht nie angenommen habe. Wenn wir nur von außen ruhig bleiben,
+                           so laßt sich schon noch eine Weile mit den alten Handschriften handtieren: aber auf
+                           die bewaffnete Neutralität der Schweiz gebe ich nicht viel; eine Linie deren Länge
+                           die Breite mer als 10 Mal verschlingt, läßt sich in der Zeit worin wir leben, nicht
+                           militärisch behaupten und man macht jezt keine Feler mer, wie bei Morgarten, Sempach
+                           und am Stoß. Die moralische Cholera macht schnellere Fortschritte als die asiatische;
+                           ich wünsche nur, daß sie nicht ende, wie das Hornberger Schießen, d. i. faute de combattans.
+                           Unsere Leute dahier schreien alle nach Freiheit und Republik; das ließe ich mir gerne
+                           gefallen; aber wo sind die republikanischen Männer und die republikanischen Tugenden?
+                           Die Esel und Füchse in der Löwenhaut habe ich genug gesehen. Der Major Häberlin welchen
+                           Sie vor 2 Iaren bei mir sahen, ist der vorgebliche Mörder des Pfarrers Bornhauser:
+                           er ist wansinnig und singt den ganzen Tag Psalmen; die Krankheit liegt schon lang
+                           in im, und es ist nicht recht, daß man in so lange gefangen haltet. Frau Emma ist
+                           herzlich von mir gegrüßt und meinen Dank für Ire guten Wünsche. Möge es Inen beiden
+                           immer wol gehen. Ich habe diesen Winter außerordentlich viel, lang und stark gehustet;
+                           nun bin ich fertig. Auf den Sommer wills Gott! hoffe ich auch einmal auf der alma
+                           Eberhardina zu hospitiren und zwar bei einem gewissen Doctor Uhlandus, der mir ser
+                           ans Herz gewachsen ist. Auf Ostern ist mir ein Engelländer Cleasbj angesagt, der gelert
+                           und ein Freund der teutschen Geschichte und Poësie sein soll; ich mag zwar die Engelländer
+                           nicht; aber Schmeller mag diesen. Viele Grüße an Ire Alten, und auch dem wakern Tafel.
+                           Ir Laßberg.</p>
+                        </div>
+                  </section>
+                  <div id="related-letters"></div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer class="bg-dark text-white text-center py-3">
+         <div class="container">
+            <p class="mb-0"><a href="../letters.html">Back to the Letters</a></p>
+         </div>
+      </footer><script src="../../js/related.js"></script><script src="https://unpkg.com/leaflet/dist/leaflet.js"></script><script>
+                    var letterPlaces = [];
+                    
+                    letterPlaces.push({ coords: [47.545,9.23759], label: "Eppishausen", kind: "sent" });
+                    
+
+                    if (letterPlaces.length === 0) {
+                        document.getElementById('map').style.display = 'none';
+                    } else {
+                        var map = L.map('mapid', { scrollWheelZoom: false });
+                        // Muted basemap (CARTO Positron) instead of the default colourful OSM
+                        // tiles, to match the edition's restrained palette.
+                        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+                            attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+                            subdomains: 'abcd',
+                            maxZoom: 19
+                        }).addTo(map);
+
+                        var bounds = [];
+                        letterPlaces.forEach(function (p) {
+                            var isSent = p.kind === 'sent';
+                            var marker = L.circleMarker(p.coords, isSent
+                                ? { radius: 8, color: '#143761', weight: 2, fillColor: '#1d4e89', fillOpacity: 0.85 }
+                                : { radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75 }
+                            ).addTo(map).bindPopup((isSent ? 'Sent from: ' : 'Mentioned: ') + p.label);
+                            bounds.push(p.coords);
+                        });
+                        if (bounds.length > 1) {
+                            map.fitBounds(bounds, { padding: [25, 25], maxZoom: 9 });
+                        } else {
+                            map.setView(bounds[0], 8);
+                        }
+                    }
+                </script><script>
+                    // Initialize all tooltips
+                    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+                    new bootstrap.Tooltip(tooltipTriggerEl)
+                    })
+                </script></body>
+</html>

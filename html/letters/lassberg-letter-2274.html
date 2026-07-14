@@ -81,7 +81,8 @@
                   <section id="original-text" class="mb-4">
                      <h2>Original Text
                         <span class="transcription-source badge-manuscript" title="Diplomatische Transkription der Handschrift">Transcribed from the manuscript (Transkribus)</span></h2>
-                     <div>
+                     <div class="btn-group btn-group-sm mb-2" role="group" aria-label="Textansicht"><button type="button" id="view-lines-btn" class="btn btn-outline-secondary active" onclick="document.getElementById('view-lines').classList.remove('d-none'); document.getElementById('view-flow').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-flow-btn').classList.remove('active');">Zeilengenau</button><button type="button" id="view-flow-btn" class="btn btn-outline-secondary" onclick="document.getElementById('view-flow').classList.remove('d-none'); document.getElementById('view-lines').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-lines-btn').classList.remove('active');">Fließtext</button></div>
+                     <div id="view-lines">
                         
                         <p><br>Basel 23 Sept. 41.
                            <br>Verehrtester
@@ -105,6 +106,31 @@
                            niederdrücken. <br>Und nun, leben Sie wohl! Noch einmal: herzlichen <br>Dank herzlichen
                            Gruss in alter, staets erneuerter <br>Anhänglichkeit von Ihrem <br>aufrichtig
                            ergebenen <br>Wilh. Wackernagel Dr. </p>
+                        </div>
+                     <div id="view-flow" class="d-none">
+                        
+                        <p>Basel 23 Sept. 41.
+                           Verehrtester
+                           Herr und Freund! Herzlichen Dank für die so freundlich beschleunigte Uebersendung der
+                           beiden Bände des <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Joseph von Laßberg: Lieder-Saal, das ist: Sammelung altteutscher&#xA;        Gedichte.</strong&gt;">Liedersaals<a href="http://dl.ub.uni-freiburg.de/diglit/liedersaal1825-3https://www.digitale-sammlungen.de/en/view/bsb10113516">📖</a></span> (1. u. 3). meine Sammlung ist nun reicher um eine stattliche Zierde, und ich um
+                           einen Gegenstand widerholten Studiums und gelehrten Lustwandels: man braucht ja nur
+                           aufzuschlagen, so hat man ein schmuck abge schlossenes Bild
+                           vor sich. Meinen Dank für solche Freude auszusprechen hatte ich aufgeschoben, bis ich ihn zugleich
+                           noch durch eine kleine Gegengabe bethaetigen koennte. Hier
+                           ist diese nun: ein neuer Band meines <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wilhelm Wackernagel: Deutsches Lesebuch.</strong&gt;">Lesebuches<a href="https://digi.ub.uni-heidelberg.de/diglit/wackernagel1839gahttps://archive.org/details/deutscheslesebu00wackgoog">📖</a></span>, der erste des dritten Theiles. Vielleicht gewährt er Ihnen jetzt,
+                           wo Sie für einige Zeit auf Ihrer grossen <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Meersburg</strong&gt;">Meeresburg<a href="https://www.wikidata.org/wiki/Q498212"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> ganz,
+                           vereinsamt sind, die Ausfüllung einer müssigen Stunde, sich blätternd darin umzuschauen.
+                           Jedesfalls
+                           stellen Sie ihn zu den übrigen, und gedenken Sie meiner mit
+                           altem Wohlwollen. Hoffentlich gehts
+                           Ihnen und den fernen Ihrigen wohl, und besser als uns. Wir sind gestern vor acht Tagen durch eine zu frühe
+                           Niederkunft <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Caroline Luise Wackernagel-Bluntschli</strong&gt;">meiner
+                              Frau<a href="https://d-nb.info/gnd/113182346X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> (mit einem todten Töchterlein) in Schrecken und Trauer versetzt worden.
+                           Der Frau gehts besser als ich anfangs fürchten muste: aber wir sind aufs neue für jetzt und für
+                           laengere Zeit einer schönen Hoffnung beraubt worden. Das sind Kümmernisse, die mich etwas
+                           niederdrücken. Und nun, leben Sie wohl! Noch einmal: herzlichen Dank herzlichen
+                           Gruss in alter, staets erneuerter Anhänglichkeit von Ihrem aufrichtig
+                           ergebenen Wilh. Wackernagel Dr. </p>
                         </div>
                   </section>
                   <details id="normalised-text" class="text-version mb-4">

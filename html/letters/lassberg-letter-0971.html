@@ -100,7 +100,8 @@
                   <section id="original-text" class="mb-4">
                      <h2>Original Text
                         <span class="transcription-source badge-manuscript" title="Diplomatische Transkription der Handschrift">Transcribed from the manuscript (Transkribus)</span></h2>
-                     <div>
+                     <div class="btn-group btn-group-sm mb-2" role="group" aria-label="Textansicht"><button type="button" id="view-lines-btn" class="btn btn-outline-secondary active" onclick="document.getElementById('view-lines').classList.remove('d-none'); document.getElementById('view-flow').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-flow-btn').classList.remove('active');">Zeilengenau</button><button type="button" id="view-flow-btn" class="btn btn-outline-secondary" onclick="document.getElementById('view-flow').classList.remove('d-none'); document.getElementById('view-lines').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-lines-btn').classList.remove('active');">Fließtext</button></div>
+                     <div id="view-lines">
                         
                         
                         <div class="letter-opener">
@@ -145,6 +146,54 @@
                               Dieners.</p>
                            
                            <p class="letter-signed"><br><span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Joseph von Laßberg</strong&gt;">Joseph v. Laßberg<a href="https://d-nb.info/gnd/118778862"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>.</p>
+                           </div>
+                        </div>
+                     <div id="view-flow" class="d-none">
+                        
+                        
+                        <div class="letter-opener">
+                           kopi
+                           
+                           
+                           <p class="letter-dateline"><span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Eppishausen</strong&gt;">Eppishausen<a href="https://www.wikidata.org/wiki/Q1423653"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> den 11.
+                              März 1825</p> 
+                           <p class="letter-salute">Vererter Herr!</p>
+                           </div>
+                        
+                        <p>Mit der angelegensten Bitte: es mir zu gute zu halten, daß ich Jr Buch so lange behielt und
+                           mit dem besten
+                           Dank für dessen mir gestatteten Gebrauch, sende ich Inen den IV. Band von
+                           <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Raumer, Friedrich von: Geschichte der Hohenstaufen und ihrer Zeit.</strong&gt;">Raumers
+                              Geschichte der Hohenstaufen<a href="http://opac.regesta-imperii.de/id/40301">📖</a></span> hier zurük: die anhaltende Krankheit meines Freundes <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Joseph Albrecht von Ittner</strong&gt;">v. Ittner<a href="https://d-nb.info/gnd/117212555"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>, welche vorgestern mit dessen Hinscheiden endete, erlaubte mir nicht, an
+                           Etwas anderes zu denken. Seit gestern Abends bin ich mit
+                           seiner <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Walburga Frank</strong&gt;">Wittwe<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           und <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Karoline von Ittner</strong&gt;">Tochter<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           hier angekommen; sie wollen die ersten Tage der Trauer in dieser Einsamkeit zu
+                           bringen. Gerne würde ich Irem Wunsche entsprechen und Inen den II.
+                           Band von <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Zapf, Georg W.: Monumenta Anecdota Historiam Germaniae Illustrantia.</strong&gt;">Zapfs
+                              Monument: anecdot:<a href="VD18-90029372">📖</a></span> über machen; allein, ich habe jn nicht und zweifle, ob
+                           ein solcher herausgekommen ist; doch habe ich in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Augsburg</strong&gt;">Augsburg<a href="https://www.wikidata.org/wiki/Q2749"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> deshalb
+                           Erkundigungen anstellen lassen. Die Handschrift <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Trutpert Neugart</strong&gt;">Trutpert Neugarts<a href="https://d-nb.info/gnd/119175533"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           zum II. Band des <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Trutpert Neugart; Franz Josef Mone: Episcopatus Constantiensis Alemannicus sub metropoli Moguntina&#xA;        chronologice et diplomatice illustratus.</strong&gt;">Episcopatus
+                              Constantiensis<a href="http://opac.regesta-imperii.de/id/62260">📖</a></span>, liegt schon im zweiten Jare bei dem H. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Niklaus Friedrich von Mülinen</strong&gt;">Graven
+                              Mülinen<a href="https://d-nb.info/gnd/117166111"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> zu <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Bern</strong&gt;">Bern<a href="https://www.wikidata.org/wiki/Q70"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, welchem der
+                           Verfasser sie zur Herausgabe überlaßen hat; aber bei der
+                           geschwächten Gesundheit dieses würdigen Mannes, ist wol keine Hofnung zu Bewerkstelligung dieser
+                           Herausgabe. <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Appenzeller Reimchronik.</strong&gt;">Das Gedicht, welches eigentlich nur bis zum Anfange des Appenzeller
+                              Krieges<a href="https://handschriftencensus.de/werke/649https://www.geschichtsquellen.de/werk/4132https://d-nb.info/gnd/1266926364">📖</a></span> reicht, hat weder geschichtlichen noch poet. Werth und würde wol
+                           eben so gut ungedruckt geblieben sein, was ich mir die Freiheit nam, dem <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ildefons von Arx</strong&gt;">H. v.
+                              Arx<a href="https://d-nb.info/gnd/116353740"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> schon vor mer als drei Jaren zu äußern. Auch aus dem I. Bande von <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Anshelm, Valerius: Die Berner Chronik.</strong&gt;">Anshelms
+                              Bernerchronik<a href=" http://opac.regesta-imperii.de/id/26220">📖</a></span> habe ich wenig Trost geschöpft, und ziehe <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Konrad Justinger: Berner Stadtchronik.</strong&gt;">Justinger<a href="https://geschichtsquellen.de/werk/3179https://www.handschriftencensus.de/werke/2500https://d-nb.info/gnd/7750475-6">📖</a></span> und <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Benedikt Tschachtlan: Berner Chronik.</strong&gt;">Tschachtlan<a href="https://geschichtsquellen.de/werk/4575https://www.handschriftencensus.de/werke/6335">📖</a></span> weit vor. Eine nicht uninteressante <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Gabriel Tetzel: Reisebericht.</strong&gt;">Geschichte
+                              eines böhmischen Frey herren von Rozmital<a href="https://handschriftencensus.de/werke/5853https://www.geschichtsquellen.de/werk/4467">📖</a></span> aus dem xv. Jarhundert sende ich
+                           Inen von <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Konstanz</strong&gt;">Constanz<a href="https://www.wikidata.org/wiki/Q3834"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> aus.</p>
+                        
+                        <div class="letter-closer">
+                           
+                           <p class="letter-salute">Indeßen leben Sie wol und gedenken Sie
+                              zuweilen mit Liebe Ires herzlich betrübten gehorsamen
+                              Dieners.</p>
+                           
+                           <p class="letter-signed"><span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Joseph von Laßberg</strong&gt;">Joseph v. Laßberg<a href="https://d-nb.info/gnd/118778862"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>.</p>
                            </div>
                         </div>
                   </section>

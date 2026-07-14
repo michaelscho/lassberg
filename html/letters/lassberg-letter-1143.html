@@ -1,0 +1,279 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0" lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>The Lassberg Letters</title>
+      <link href="../../css/styles.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script><link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"><script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script></head>
+   <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+         <div class="container"><a class="navbar-brand" href="../../index.html">The Laßberg Letters</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link" href="../../index.html">Welcome</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../persons.html">Persons</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../places.html">Places</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../explore.html">Explore</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <header class="page-header py-4">
+         <div class="container">
+            <h1 class="mb-2">Brief von Joseph von Laßberg an Ludwig Uhland (05.02.1827).</h1>
+            <p class="lead mb-0">
+               
+               <p>Correspondence data based on Harris, Martin: Joseph Maria Christoph
+                  Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                  Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                  geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                  Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991..</p>
+               </p>
+         </div>
+      </header>
+      <main class="py-4">
+         <div class="container">
+            <div class="alert alert-warning letter-preview-banner" role="alert"><strong>Unreviewed working text.</strong> The encoding of this letter
+               has not yet been editorially reviewed
+               (status: draft).
+               The text may contain transcription or OCR errors — please cite with caution.
+               </div>
+            <div class="row g-4">
+               <div class="col-lg-4 order-lg-2">
+                  <aside class="letter-sidebar">
+                     <section id="metadata" class="mb-4">
+                        <h2 class="h5">Metadata</h2>
+                        <p><strong>Signatur: </strong>Marbach am Neckar, Schiller Nationalmuseum, </p>
+                        <p><strong>Registernummer (Laßberg): </strong>29</p>
+                        <p><strong>Registernummer (Harris): </strong>571</p>
+                        <p><strong>Gedruck in: </strong><a href="https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig
+                              Uhland. Wien 1870, S. 82-90</a></p>
+                     </section>
+                     <section id="map" class="mb-4">
+                        <h2 class="h5">Places</h2>
+                        <div id="mapid"></div>
+                        <p class="map-legend small text-muted mt-1 mb-0"><span class="legend-dot" style="background:#1d4e89"></span> place of sending
+                           <span class="legend-dot ms-2" style="background:#b57cc0"></span> places mentioned
+                           </p>
+                     </section>
+                  </aside>
+               </div>
+               <div class="col-lg-8 order-lg-1">
+                  <section id="original-text" class="mb-4">
+                     <h2>Original Text
+                        <span class="transcription-source badge-print" title="OCR-Texterfassung aus der gedruckten Edition, siehe Metadaten/Gedruckt in">Transcribed from the printed edition (OCR)</span></h2>
+                     <div>
+                        
+                        <p>Ex villa feria prima post purificationem. 1827. Ich schreibe Inen mit einen lamen
+                           Arme, mein verertester Freund! in den sich die böse ἀρθρίτις eingenistet hat: allein,
+                           das Vergnügen über Ire letzten Zeilen, läßt mich mit meiner Antwort nicht länger zögeren.
+                           Ich habe seit meiner Abreise aus Irem gastfreundlichen Hause doch zuweilen durch H.
+                           Prof. Schwab, Nachricht von Irem und der Irigen Befinden erhalten und sogar Grüße,
+                           was mich immer getröstet hat: seit einem Vierteljare aber ist auch H. Prof. Schwab
+                           verstummt und so war ich denn wirklich um Sie besorgt und wollte eben die Feder ergreifen;
+                           als die gewöhnliche Krankheit alter Jäger mich besuchte und seit mereren Wochen ein
+                           Interdikt auf alle Correspondenz legte; urteilen Sie also, ob Ir Brief vom 19. Jan.
+                           willkommen war? An den Trauerfällen in Irer Familie neme ich herzlichen Anteil; auch
+                           mich traf vor wenigen Tagen das Los, meine gute alte Schwiegermutter in Kempten zu
+                           verlieren, die freilich mit 77 Jaren nimmer viele Ansprüche an das Leben machen konnte.
+                           Für die mir stets interessanten Nachrichten, die Theotisca oder Diutiska betrefend,
+                           sage ich Inen vielen Dank. Auch an mich hat v. der Hagen geschrieben und seinen Gottfrid
+                           v. Straßburg zugeschikt, den ich schon beinahe 4 Jare lang aus dem Buchladen besize!!!
+                           Er versichert mich daß ich im meinen Liedersaal geschenkt habe; worüber mir freilich
+                           mein Gedächtniß keine Kunde gibt; dann hat er die Güte mir ein Blättchen Correcturen
+                           zu dem Littower zu senden, von denen auch nicht eine einzige Stich haltet und endlich
+                           verlangt er ich solle im die Aushängebogen von dem Weingartner Codex, sobald der Druk
+                           begonnen hat, posttäglich zusenden; dabei nennt er mich seinen verertesten Freund;
+                           so daß ich vor lauter Dank und Ere nicht weiß, was ich antworten soll. Ich bin von
+                           Natur nicht boshaft; aber ich muß gestehen, daß mir unwillkürlich hiebei das Horaziſche
+                           „ ibam forte via sacra etc. " einfiel. Was Sie für Lachmann z. Beförderung seiner
+                           Ausgabe des Walters v. der Vogelweide getan haben, dafür danke ich Inen, denn ich
+                           halte in allerdings für einen ser tüchtigen Mann in der Diutiska. Vor seinem W. von
+                           der Vogelweide wünschte ich die Beendigung des Ywains zu sehen: aber diese Nordteutschen
+                           laufen uns doch in allem guten zuvor! Maßmann hat mir auch aus München geschrieben;
+                           aber kein Wort v. einer Abschrift des Frauendienstes erwänt. Ich fragte in, wer denselben
+                           herausgeben werde? ( denn ich hatte vernommen, daß es in M. beabsichtet werde ) allein
+                           ich blieb 6 * one Antwort. Daß der geh. Hofrat v. Kohler etwas geschmeidiger und gefälliger
+                           geworden freut mich: ich habe auf meinen Brief, den ich bei Inen wegen seinem Ansinnen
+                           an mich schrieb, keine Antwort erhalten; ein Zeichen, daß er mit seinem Nibelungen
+                           Codex noch geheim tut und tun will. Von dem Fierabras hat man merere gedruckte Ausgaben:
+                           Geneve 1478, Lyon 1484 und 1486. Diese Sachen kann man nur in Paris bekommen, wohin
+                           ich schon längst gegangen wäre, wenn keine Franzosen da wären. Allerdings ist Graffs
+                           Diutiska ein trokenes Ding, aber doch ein verdienstliches; es soll ja vorzüglich der
+                           Sprachkunde gewidmet sein: aber das wünschte ich, daß er über die Quellen, aus denen
+                           er schöpft, etwas ausfürlicher spräche. Wo ist er nun wol? Das 2. Hefte erhielt ich
+                           im December mit einer Zeile von seiner Hand; hat denn die Reise nach Italien nicht
+                           stattgefunden? Sie sagen: ich habe mit H. Prof. Schwab fortwärend in Correspondenz
+                           gestanden; das ist das Wort; ich schrieb im am 5. Nov. das lezte Mal, erhielt aber
+                           keine Antwort; er hatte mir zerschiedenes seinen Bodensee betrefend zur Einsicht und
+                           Vernemlassung z. senden angekündiget, unter andern auch die Charte: allein ich erhielt
+                           nie etwas; einige 20 Druckbogen hatte ich mit aller Treue und Liebe corrigirt und
+                           redigirt: allein, ich muß unwillkürlich ( das weiß Gott ) in irgendwo verwundet haben:
+                           das tut mir leid, denn mein Wille konnte es nie sein Liebe mit Leid zu erwiedern.
+                           Dergleichen habe ich in 57 Jaren schon oft erlebt und stelle das dann immer den Göttern
+                           anheim, und oft entwikelt es sich wieder freundlich. Das muß man kommen lassen! indessen
+                           grüßen Sie diesen Mann hurtigen Geistes von mir, dem ich alles erfreuliche wünsche.
+                           Über Spervogel habe ich nun keinen Zweifel mer, daß er ein Schwizer war; seine Lieder
+                           haben unverkennbare Criterien der Mundart des Zürchersee's. Seine Gedichte ge hören
+                           ganz anz dem Meistersange an, er war ein Spruchtichter und hat warscheinlich um das
+                           Iar 1330-1335, da die soge nannte Maneß. Sammlung geschrieben wurde, noch gelebt.
+                           Die Strophe bei Bodmer II. 226. „ es zimt wol helden, das fro nach leide sin etc.
+                           " scheint mir eine Anspielung auf die ( 1315 ) verlorne Schlacht von Morgarten zu
+                           sein. Johann v. Schwanden, Abt zu Einsiedlen, eingedenk der im vorigen Jar von den
+                           Schwizeren begangenen Plünderung seines Klosters, war auf Seite Herzogs Leopold v.
+                           Österreich: die Spervögel waren Amtleute des Klosters E. zu Hurden; er konnte also
+                           wol singen: „ Dorumbe son wir nit verzagen. „ Es wirt noch bas versuochet. " Daß er
+                           arm und warscheinl. ein farender Sänger war, erscheint aus der Strophe, pag. 227:
+                           Ich sage iu lieben süne min etc., aber seine Voreltern waren doch im Wolstande; denn
+                           sie machten beträchtliche geistl. Stiftungen zu Hurden und Ufnan. Wer der Fruote von
+                           Tenemarken war ist nicht wol 3. entziffern, ein Mann der mit wenig anfieng und viel
+                           gewan. Von Husen Walther scheint blos des Reimes wegen da zu stehen, da der Sänger
+                           bekanntlich Friederich hieß vielleicht hieß er: Friederich Walter? Heinrich v. Gibichenstein
+                           iſt ganz unbekannt. „ Vnd von Stoufen we ir noch ein " deutet vielleicht auf die uneheliche
+                           Nachkommenschaft, die König Enzius von der Lucia Viadagola in Bologna verließ. Wernhart
+                           v. Steinsberg oder Steinberg ist mir nicht bekannt; aber da die Graven v. Dettingen
+                           in erbten, muß er wol mit diesem Hause verwandt gewesen sein; niemand sollte hierüber
+                           bessere Auskunft geben können als H. geh. Hofrat Kohler. Ich werde darüber Langs Regesta
+                           nachschlagen, von welchen er mir kürzlich den IV. Bd. zugeschikt hat. Pag. 227 „ man
+                           seit ze hove mere etc. scheint zu beweisen, daß er an dem Hofe, warscheinl. des Herzogs
+                           Leopold, bekannt und folgl. ein farender Sänger war, der Gransprunge man eben da ist
+                           mir unverständlich, warscheinlich ist der Text verdorben. pag. 228. „ Ein wolf und
+                           ein witzig man, saszen Schachzabel an " beziehet sich auf d. Fabel Nr. CLXI. im II.
+                           Bd. des Liedersaales Seite 605, welche also älter sein muß als Spervogels Getichte.
+                           Die Strophe pag. 230 „ mich wundert dike, das ein wolgeraten man „ vnder sinen friunden
+                           niht erben kan " etc. spielt vielleicht auf sein Verhältniß, mit seinen Verwandten
+                           zu Hurden an, welche so vieles den Kirchen vermachten. Auch ebenda: „ das ich vngelüke
+                           han, das tuot mir we, „ des muos ich ungetrunken gan, von einem see " mag sich wol
+                           auf keinen andern als den Züricher See bezie hen, an welchem Hurden, die Heimat des
+                           Tichters, liegt. Nemen wir noch dazu die Nachbarschaft v. Ratpertswil, gerade jenseits
+                           der Brüke, wo um diese Zeit und zuvor mer als ein Sänger war; so möchte es uns nicht
+                           schwer fallen, den Sänger Spervogel bei Bodmer zu den Spervögeln zu zählen, welche
+                           um diese Zeit zu Hurden wonten. Über Albrecht von Kemenaten ( Rud. v. Ems in der Alexandreis
+                           ) und seine Familie habe ich eine ganze Genealogie und an Urkunden von 1282-1285 wolerhaltene
+                           Siegel aufgefunden. Sie besaßen Arbon am Bodensee ( sagen Sie dieses dem H. Prof.
+                           Schwab ), waren Camerarii ducis Sueviae und König Conrad der Junge wonte 1266 den
+                           ganzen Sommer bei seinem Vater Volkmar von Kemenaten. Albrecht scheint mit Conradin
+                           nach Apulien gezogen zu sein; denn da seine Brüder 1282 Arbon an d. Bischof Rud. v.
+                           Constanz verkauften, war er nicht gegenwärtig und ist in der Urkunde nur in dem Ausdrucke:
+                           fratres mei begriffen; vermutlich lag er noch in dem Kerker des K. Karl v. Anjou,
+                           in dem viele schwäb. Ritter liegen blieben. In Langs Regesta fommen sie öfters vor.
+                           Der Vater Volkmar hat da in Urkunden den Beinamen: Sapiens. Wir finden bei Bodmer
+                           M. S. II. 19 einen Sänger unter dem Namen: der Diuring. Einige Worte und mundartliche
+                           Ausdrüke in seinen Liedern erlaubten mir nie zu glauben, daß dieser Sänger aus Thüringen
+                           seie. Unter vielen Urkunden die mir diesen Winter zu Gesicht kamen, war auch ein Compromißspruch,
+                           worin Wernher Türing Altlandammann zu Schwiz, Conrad ab Iberg Landammann daselbst,
+                           mit Jacob von Warte und Rudolf Müller Ritter einen Span zwischen dem Kloster Einsiedlen
+                           und denen von Schwiz vergleichen. actum VIII. kal. Jul. 1311. In einer Urkunde des
+                           lezten Graven v. Naperswil Rudolf, de anno 1261 dem Kloster Einsideln gegeben, finde
+                           ich unter den Zeugen einen: Heinricus miles de Owe der kein Schwabe, sondern ein Dienstmann
+                           des Graven gewesen zu sein scheint. Nun will ich Inen noch ein ganz Nest vol alte
+                           Tichter ausschütteln, von denen Inen gewiß mancher zum ersten male unter die Augen
+                           kommt. Johannes Müller in seiner handschriftl. Chronik und Geschichte der Freiherren
+                           von Zimbern, Blat. 1488a. sagt nachfolgendes: „ Ich hab von disem herren Konrad von
+                           Bickenbach in ainet „ gar alten geschribenen buoch ain lied gefunden das im wirt nam-
+                           „ lichen zuegeschrieben, und seitmals ouch anderer fürnemer leuten „ lieder, die sie
+                           selbs geticht vnd gemacht, daby gestanden, wie her- „ nach folgen wirt, so glaub ich
+                           genzlich her Conrat she dies orts „ ouch der author, und dem verborgenen sinn nach
+                           zu nemen; so „ mag das lied vff die obgehörte hystoria gedeutet werden. Ich kan „
+                           ouch sunderlichen nit vmbgehen, die zu vermelden, die vermög des Vgl. v. d. Hagens
+                           Minnesinger IV, 883 und III, 408. „ gar vralten buochs mit iren namen sint vffgeschriben
+                           worden vnd „ die Gedechtnuß bey iren getichten der lieder, den nach komen ha- „ bend
+                           bekannt gemacht, als: Her Hadamar v. Laber ain Bayer vnd „ Her Wolfram v. Eschenbach,
+                           baid Fryherren, Grav Peter v. Ar- „ burg, Her Rainhart v. Brennenberg vnd Her Hainrich
+                           v. Morun- „ gen, baid ritter, Her Conrat Fryherr v. Bickenbach vnd dann „ nachfolgende
+                           von adell, Walther v. Gachnang ( in Thurgau ) der „ v. Pawenberg, der von Sonneckh,
+                           vnd dann der Schenk von Land- „ egkh, item maister Frawenlob, maister Volzan, Maister
+                           Conrat „ von Würzburg, Maister Klingsor vnd maister Sueßkind v. Trim- „ berg, Desgleichen
+                           der Marner ( von Constanz ) der Muetinger „ ( warscheinlich ein Diener der Graven
+                           v. Dettingen, Moettingen „ liegt im Öttingschen ) der Öttinger ( von diesem besize
+                           ich einige „ handschriftliche Gedichte ) der Ellentrich, der Wild v. Veltkürch, „
+                           der Nupftdenmann, vnd dann ein Schweitzer genannt der Hayne „ Zelky, der was ain großer
+                           Delky, auch hat der zeit Bischof Niklas „ ( aus dem Sängergeschlechte v. Kiunzingen
+                           genannt Hofmeister von „ Franwenfeld ) von Costanntz einen Schriber gehapt, Her Hainrich,
+                           „ der ist gleichfalls mit den tütschen lieder vnd geruempten getichten „ vmbgangen,
+                           zue vermueten sy haben dazumal nit groesser oder mer „ geschafft gehapt; sonder nur
+                           de faire bon temps, aber das Bicken- „ bachisch Lied, das laut von Wort zu Wort wie
+                           hernach folgt: „ 1. Stilswigen vnd gedagt „ daz ist nu der beste sitt „ dann wer sich
+                           vil ruempt vnd sagt „ zwar der laydet sich dar mit „ sicherlich er wurt zu swach „
+                           er sy ritter oder knecht „ wer ez tut der tut nit recht „ der vil sagt daz nie beschach
+                           „ wer sich well lieben rainen wiben „ der hab sy in steter hut „ beschicht aim Mann
+                           dann icht ze gut „ daz kan im layd vertriben, „ 2. Mancher spricht er sy gelegen „
+                           by herzlieb dikh vnd dikh „ vnnd heb ouch liebe phlegen „ mund an mund blikh an blikh
+                           „ layder das entpfannd ich nie „ ez geschicht do ez geschehen sol „ mir ist am denckhen
+                           wol „ kuß von liebe ich nie entphie „ wer sich well lieben rainen wiben „ der hab
+                           sy in steter hut „ beschicht aim Mann dann icht ze gut „ daz kan im layd vertriben.
+                           „ 3. Swig ich zu der liebe gut „ hey so wer ich gar ain heldt „ sy kumpt mir selten
+                           vz dem mut " " „ die ich ze trost hab vzerwelt „ sy ist by rainen wiben clug „ die
+                           ich mit ganzen trewin [ minn? Pf. ] „ minß herzen trut ain Kayserin „ wer sy mir holt
+                           ich hett genug „ wer sich well lieben rainen wiben „ der hab sy in steter hut „ beschicht
+                           aim Mann dann icht ze gut „ daz kan im layd vertriben. " Sie wissen wol lieber Freund!
+                           wo dies Lied sonst noch stehet; aber das sehen wir doch hieraus, daß es um die Mitte
+                           des XVI. Jarhunderts dem Schenken Conrad von Bikenbach namlichen zugeschrieben worden.
+                           Sie fragen mich, was ich mache? ich bin hier in der Villa Epponis eingeschneit und
+                           habe eine so gute warme Stube, daß es mich gar nicht gelustet in die Stadt zu gehen.
+                           Der Codex Weingartensis hat mich einige Zeit beschäftiget: aber eine Menge interessanter
+                           Urkunden, die mir über einmal zukamen und die ich bald wieder zurükstellen muß, haben
+                           mich fürs erste von dieser Arbeit abgezogen, so daß ich vor einigen Wochen nicht wider
+                           daran kommen kann. Tausend herzliche Grüße an Ire liebe eheliche Wirtinne, ich habe
+                           drei Tage an diesem Briefe geschrieben und meine steife Hand will ausruhen. Leben
+                           Sie wol aufrichtig geliebt ond vereret von Frem Laßberg. Das Buch des H. Prof. Diez
+                           von der Poesie der Troubadours habe ich sogleich verschrieben, und danke für die Notiz.
+                           Explicit 5ta Februarij MDCCCXXVII.</p>
+                        </div>
+                  </section>
+                  <div id="related-letters"></div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer class="bg-dark text-white text-center py-3">
+         <div class="container">
+            <p class="mb-0"><a href="../letters.html">Back to the Letters</a></p>
+         </div>
+      </footer><script src="../../js/related.js"></script><script src="https://unpkg.com/leaflet/dist/leaflet.js"></script><script>
+                    var letterPlaces = [];
+                    
+                    letterPlaces.push({ coords: [47.545,9.23759], label: "Eppishausen", kind: "sent" });
+                    
+
+                    if (letterPlaces.length === 0) {
+                        document.getElementById('map').style.display = 'none';
+                    } else {
+                        var map = L.map('mapid', { scrollWheelZoom: false });
+                        // Muted basemap (CARTO Positron) instead of the default colourful OSM
+                        // tiles, to match the edition's restrained palette.
+                        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+                            attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+                            subdomains: 'abcd',
+                            maxZoom: 19
+                        }).addTo(map);
+
+                        var bounds = [];
+                        letterPlaces.forEach(function (p) {
+                            var isSent = p.kind === 'sent';
+                            var marker = L.circleMarker(p.coords, isSent
+                                ? { radius: 8, color: '#143761', weight: 2, fillColor: '#1d4e89', fillOpacity: 0.85 }
+                                : { radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75 }
+                            ).addTo(map).bindPopup((isSent ? 'Sent from: ' : 'Mentioned: ') + p.label);
+                            bounds.push(p.coords);
+                        });
+                        if (bounds.length > 1) {
+                            map.fitBounds(bounds, { padding: [25, 25], maxZoom: 9 });
+                        } else {
+                            map.setView(bounds[0], 8);
+                        }
+                    }
+                </script><script>
+                    // Initialize all tooltips
+                    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+                    new bootstrap.Tooltip(tooltipTriggerEl)
+                    })
+                </script></body>
+</html>

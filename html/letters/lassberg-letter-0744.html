@@ -1,0 +1,166 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0" lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>The Lassberg Letters</title>
+      <link href="../../css/styles.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script><link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"><script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script></head>
+   <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+         <div class="container"><a class="navbar-brand" href="../../index.html">The Laßberg Letters</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link" href="../../index.html">Welcome</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../persons.html">Persons</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../places.html">Places</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../explore.html">Explore</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <header class="page-header py-4">
+         <div class="container">
+            <h1 class="mb-2">Brief von Ludwig Uhland an Joseph von Laßberg (09.09.1821).</h1>
+            <p class="lead mb-0">
+               
+               <p>Correspondence data based on Harris, Martin: Joseph Maria Christoph
+                  Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                  Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                  geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                  Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991..</p>
+               </p>
+         </div>
+      </header>
+      <main class="py-4">
+         <div class="container">
+            <div class="alert alert-warning letter-preview-banner" role="alert"><strong>Unreviewed working text.</strong> The encoding of this letter
+               has not yet been editorially reviewed
+               (status: draft).
+               The text may contain transcription or OCR errors — please cite with caution.
+               </div>
+            <div class="row g-4">
+               <div class="col-lg-4 order-lg-2">
+                  <aside class="letter-sidebar">
+                     <section id="metadata" class="mb-4">
+                        <h2 class="h5">Metadata</h2>
+                        <p><strong>Signatur: </strong>Marbach am Neckar, Schiller Nationalmuseum, </p>
+                        <p><strong>Registernummer (Laßberg): </strong></p>
+                        <p><strong>Registernummer (Harris): </strong>1923</p>
+                        <p><strong>Gedruck in: </strong><a href="https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig
+                              Uhland. Wien 1870, S. 25</a></p>
+                     </section>
+                     <section id="map" class="mb-4">
+                        <h2 class="h5">Places</h2>
+                        <div id="mapid"></div>
+                        <p class="map-legend small text-muted mt-1 mb-0"><span class="legend-dot" style="background:#1d4e89"></span> place of sending
+                           <span class="legend-dot ms-2" style="background:#b57cc0"></span> places mentioned
+                           </p>
+                     </section>
+                  </aside>
+               </div>
+               <div class="col-lg-8 order-lg-1">
+                  <section id="original-text" class="mb-4">
+                     <h2>Original Text
+                        <span class="transcription-source badge-print" title="OCR-Texterfassung aus der gedruckten Edition, siehe Metadaten/Gedruckt in">Transcribed from the printed edition (OCR)</span></h2>
+                     <div>
+                        
+                        <p>Euer Hochwohlgeboren haben in Ihrem Schreiben vom 16. v. M. die Absicht ausgedrückt,
+                           die Weingartner Handschrift im 5. Bande des Liedersaals herauszugeben, und mich zur
+                           Erklärung aufgefordert, auf welchem Wege eine gute Abschrift von jenem Codex zu erlangen
+                           wäre. Aeusserst erfreulich war es mir, zu vernehmen, daß Sie unsrer poetischen Literatur
+                           von Neuem einen so wichtigen Dienst erweisen wollen. Da ich bezweifeln muß, ob hier
+                           eine geschickte Hand für zuverlässige Abschrift alter Manuscripte zu finden sey, so
+                           fragt es sich, ob Sie es nicht für zweckmässiger halten, daß der Codex Ihnen zugesendet
+                           werde? Zwar werden sonst Handschriften nicht von hier weggegeben, auch würden es die
+                           Angestellten der Königl. Privatbibliothek auf ihre eigene Faust nicht unternehmen.
+                           Dagegen glaube ich, daß es sicher zum Ziele führen würde, wenn Sie an den König unmittelbar
+                           mit dem Wunsche sich wendeten, den Codex zum Behufe des Abdrucks auf einige Zeit zu
+                           erhalten. Ich kann mir nicht vorstellen, daß ein so verdienstliches Unternehmen nicht
+                           bereitwilliges Entgegenkommen finden sollte. Zur Empfehlung würde es vielleicht gereichen,
+                           wenn Sie die früheren Theile des Liedersaals für die königl. Privatbibliothek beilegten.
+                           Die Mörin des Hermann von Sachsenheim ist mir nur im Auszuge bekannt geworden. Eine
+                           neue Ausgabe des Gedichts dürfte nur die Schwierigkeit haben, daß die Handschriften
+                           desselben sehr entfernt sind, zu Wien, Koppenhagen 2c. Die Vergleichung der Handschriften
+                           mit dem Druck wäre aber doch wohl erforderlich. Was den Verfasser betrifft, so befindet
+                           sich das Stammschloß desselben, noch bewohnbar, 7-8 Stunden von hier, bei dem Städtchen
+                           Groß - Sachsenheim im Oberamte Vaihingen. Es ist wohl möglich, daß unter den Grabmälern
+                           der hiesigen Stiftskirche sich der Grabstein eines Hermann von Sachsenheim findet.
+                           Zu Anfang des 15. Jahrh. war ein solcher Probst des hiesigen Stiftes zum h. Kreuz.
+                           Doch ist dieser, der Zeit nach, schwerlich Verfasser der Mörin. Der Name Hermann war
+                           in diesem Geschlechte herkömmlich. Bedauern muß ich, nicht Verfasser des Büchleins
+                           über die Minnehöfe zu seyn, da solches von Ihnen als das Beste über den Gegenstand
+                           gerühmt wird. Ich habe mir es sogleich angeschafft. Gegenwärtig habe ich die Heidelberg.
+                           Handschr. Nr. 329, das Liederbuch des Grafen Hugo von Montfort enthaltend, in Händen.
+                           Sie hat mich sehr angezogen und ich gedenke, Einiges darüber nieder zu schreiben.
+                           Wo findet man wohl die besten Nachrichten über die Grafen von Montfort? Auf Ihre gütige
+                           Frage bemerke ich, daß ich von den Nibelungen die Bogen 1-15, und späterhin 21-24,
+                           sowie vom 2. Bande des Liedersaals 1-18, erhalten habe, wofür ich meinen herzlichsten
+                           Dank bezeuge. Mein Walther v. d. Vogelweide ist jetzt fertig, doch bin ich noch nicht
+                           dazu gekommen, ihn einem Buchhändler zu überantworten. Einem Besuche des thurgauischen
+                           Sängerlandes, wozu Sie mich so freundlich einladen, muß ich bis zum nächsten Frühling
+                           entsagen, da ich kaum erst von einer Reise in die Rheinlande zurückgekommen bin. Ich
+                           hoffe, den Winter über in meinen altdeutschen Studien so weit vorzurücken, daß ich
+                           im Frühling jene Gegend mit so grösserem Nuken besuchen kann. In Köln sah ich bei
+                           Herrn de Groote den größtentheils vollendeten Abdruck seiner neuen Ausgabe des Tristan.
+                           Möchten wir doch einmal auch die noch ungedruckten Werke des trefflichen Hartmann
+                           von Owe, den guten Gerhard ( der eine eigenthümlich deutsche Sage enthalten soll )
+                           und den h. Georg, erscheinen sehen! Mit der vollkommensten Verehrung verharre ich
+                           Euer Hochwohlgeboren Stuttgart, den 9. September 1821. unterthäniger Diener L. Uhland.</p>
+                        </div>
+                  </section>
+                  <div id="related-letters"></div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer class="bg-dark text-white text-center py-3">
+         <div class="container">
+            <p class="mb-0"><a href="../letters.html">Back to the Letters</a></p>
+         </div>
+      </footer><script src="../../js/related.js"></script><script src="https://unpkg.com/leaflet/dist/leaflet.js"></script><script>
+                    var letterPlaces = [];
+                    
+                    letterPlaces.push({ coords: [48.7775,9.18], label: "Stuttgart", kind: "sent" });
+                    
+
+                    if (letterPlaces.length === 0) {
+                        document.getElementById('map').style.display = 'none';
+                    } else {
+                        var map = L.map('mapid', { scrollWheelZoom: false });
+                        // Muted basemap (CARTO Positron) instead of the default colourful OSM
+                        // tiles, to match the edition's restrained palette.
+                        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+                            attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+                            subdomains: 'abcd',
+                            maxZoom: 19
+                        }).addTo(map);
+
+                        var bounds = [];
+                        letterPlaces.forEach(function (p) {
+                            var isSent = p.kind === 'sent';
+                            var marker = L.circleMarker(p.coords, isSent
+                                ? { radius: 8, color: '#143761', weight: 2, fillColor: '#1d4e89', fillOpacity: 0.85 }
+                                : { radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75 }
+                            ).addTo(map).bindPopup((isSent ? 'Sent from: ' : 'Mentioned: ') + p.label);
+                            bounds.push(p.coords);
+                        });
+                        if (bounds.length > 1) {
+                            map.fitBounds(bounds, { padding: [25, 25], maxZoom: 9 });
+                        } else {
+                            map.setView(bounds[0], 8);
+                        }
+                    }
+                </script><script>
+                    // Initialize all tooltips
+                    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+                    new bootstrap.Tooltip(tooltipTriggerEl)
+                    })
+                </script></body>
+</html>

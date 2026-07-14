@@ -76,7 +76,8 @@
                   <section id="original-text" class="mb-4">
                      <h2>Original Text
                         <span class="transcription-source badge-manuscript" title="Diplomatische Transkription der Handschrift">Transcribed from the manuscript (Transkribus)</span></h2>
-                     <div>
+                     <div class="btn-group btn-group-sm mb-2" role="group" aria-label="Textansicht"><button type="button" id="view-lines-btn" class="btn btn-outline-secondary active" onclick="document.getElementById('view-lines').classList.remove('d-none'); document.getElementById('view-flow').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-flow-btn').classList.remove('active');">Zeilengenau</button><button type="button" id="view-flow-btn" class="btn btn-outline-secondary" onclick="document.getElementById('view-flow').classList.remove('d-none'); document.getElementById('view-lines').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-lines-btn').classList.remove('active');">Fließtext</button></div>
+                     <div id="view-lines">
                         
                         <p><br>Verehrter Herr Baron, <br>der Auftrag Ihnen
                            <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">beifolgendes Päcken</span> zu übersenden verschafft mir
@@ -94,6 +95,25 @@
                            weiter nichts zu schreiben als die Bitte mir Ihr freundliches Wohlwollen zu
                            erhalten. <br>In
                            aller Ergebenheit <br>Wilh. Wackernagel Dr. </p>
+                        </div>
+                     <div id="view-flow" class="d-none">
+                        
+                        <p>Verehrter Herr Baron, der Auftrag Ihnen
+                           <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">beifolgendes Päcken</span> zu übersenden verschafft mir
+                           die angenehme Gelegenheit, Ihnen wieder einmahl zu schreiben Sie werden an <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unbekannt: dem Buche.</strong&gt;">dem Buche<a href="-">📖</a></span> Ihre doppelte Freude haben: denn ich denke, es muss Sie auch von
+                           der weidmännischen Seite angenehm berühren. In Ihrem lezten werthen Briefe meinten Sie, das
+                           Universitätsgut würde die <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Schweiz</strong&gt;">Eidgenossenschaft<a href="https://www.wikidata.org/wiki/Q39"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>
+                           wohl
+                           unangetastet lassen. Die Prophezeyung war Freundschaftlich für beide Theile;
+                           aber wir erfahren es nun mit Schmerzen daß sie fehlgegangen ist. Man darf in
+                           dieser ganzen Angelegenheit immer nur das Boeseste fürchten. Wie meinen Sie dass mir
+                           Fremdlinge dabei zu Mutte seyn müsset? Inzwischen sind meine Studenten und ich noch immer
+                           gleich eifrig im Lesen und im Hoeren. Davon habe ich auch so
+                           viel zu thun, daß ich hier abbrechen muss. Zum Glück hätte ich Ihnen doch für
+                           diesmall
+                           weiter nichts zu schreiben als die Bitte mir Ihr freundliches Wohlwollen zu
+                           erhalten. In
+                           aller Ergebenheit Wilh. Wackernagel Dr. </p>
                         </div>
                   </section>
                   <details id="normalised-text" class="text-version mb-4">

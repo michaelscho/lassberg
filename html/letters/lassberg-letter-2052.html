@@ -79,7 +79,8 @@
                   <section id="original-text" class="mb-4">
                      <h2>Original Text
                         <span class="transcription-source badge-manuscript" title="Diplomatische Transkription der Handschrift">Transcribed from the manuscript (Transkribus)</span></h2>
-                     <div>
+                     <div class="btn-group btn-group-sm mb-2" role="group" aria-label="Textansicht"><button type="button" id="view-lines-btn" class="btn btn-outline-secondary active" onclick="document.getElementById('view-lines').classList.remove('d-none'); document.getElementById('view-flow').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-flow-btn').classList.remove('active');">Zeilengenau</button><button type="button" id="view-flow-btn" class="btn btn-outline-secondary" onclick="document.getElementById('view-flow').classList.remove('d-none'); document.getElementById('view-lines').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-lines-btn').classList.remove('active');">Fließtext</button></div>
+                     <div id="view-lines">
                         
                         <p><br>Basel 29 July 1838.
                            <br>Hochverehrter
@@ -97,6 +98,25 @@
                               Frau<a href="https://d-nb.info/gnd/118527541"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> <br>Baronin und unser beider beste Wünsche zu <br>glücklicher Reise
                            und leichtem Umzug und <br>baldiger Umgewöhnung. <br>Ew. Hochwohlgeboren <br>gehorsamst
                            ergebener dankbarer <br>Wilh. Wackernagel Dr. Prof. </p>
+                        </div>
+                     <div id="view-flow" class="d-none">
+                        
+                        <p>Basel 29 July 1838.
+                           Hochverehrter
+                           Herr Baron, hier endlich nach langer Verzögerung, aber doch gleich nach meiner
+                           Rückkehr aus dem Bade abgesendet, die drey Bücher die Sie mir vor nun bald Einem Jahre so gutig waren zu
+                           leihen: <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Rudolf von Ems: Barlaam und Josaphat.</strong&gt;">Rudolfs
+                              Barlaam<a href="https://handschriftencensus.de/werke/321https://d-nb.info/gnd/4303311-8">📖</a></span>, cod. <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Hugo von Montfort: Gedichte.</strong&gt;">Hugo v
+                              Montfort<a href="https://handschriftencensus.de/werke/948">📖</a></span>. , Abschrift, <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Translationen.</strong&gt;">Niclas v.
+                              Wyle<a href="https://www.gesamtkatalogderwiegendrucke.de/docs/M51838.htm">📖</a></span>, Druck alle drey mit Dank von mir benützt (obschon die beiden letzteren leider
+                           nun nicht vollständig), mit Dank und mit Bitte um wohlwollende Verzeihung von mir begleitet. Mit einem
+                           mehreren will ich Sie diessmal nicht aufhalten: Sie werden den Kopf u. alle Hände voll zu thun
+                           haben. Nur noch <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Caroline Luise Wackernagel-Bluntschli</strong&gt;">meiner
+                              Frau<a href="https://d-nb.info/gnd/113182346X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> ergebenste ergebenste
+                           Empfehlung auch an die <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jenny von Droste zu Hülshoff</strong&gt;">gnädige
+                              Frau<a href="https://d-nb.info/gnd/118527541"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> Baronin und unser beider beste Wünsche zu glücklicher Reise
+                           und leichtem Umzug und baldiger Umgewöhnung. Ew. Hochwohlgeboren gehorsamst
+                           ergebener dankbarer Wilh. Wackernagel Dr. Prof. </p>
                         </div>
                   </section>
                   <details id="normalised-text" class="text-version mb-4">

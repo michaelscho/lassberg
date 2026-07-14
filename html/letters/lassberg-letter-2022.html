@@ -86,7 +86,8 @@
                   <section id="original-text" class="mb-4">
                      <h2>Original Text
                         <span class="transcription-source badge-manuscript" title="Diplomatische Transkription der Handschrift">Transcribed from the manuscript (Transkribus)</span></h2>
-                     <div>
+                     <div class="btn-group btn-group-sm mb-2" role="group" aria-label="Textansicht"><button type="button" id="view-lines-btn" class="btn btn-outline-secondary active" onclick="document.getElementById('view-lines').classList.remove('d-none'); document.getElementById('view-flow').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-flow-btn').classList.remove('active');">Zeilengenau</button><button type="button" id="view-flow-btn" class="btn btn-outline-secondary" onclick="document.getElementById('view-flow').classList.remove('d-none'); document.getElementById('view-lines').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-lines-btn').classList.remove('active');">Fließtext</button></div>
+                     <div id="view-lines">
                         
                         <p><br>Eppishausen am 27
                            May 1838. <br>Verertester Herr Professor! <br>Als ich vorgestern abends durch die post ein paket von
@@ -120,6 +121,42 @@
                            bestellen; also gott befolen und von uns allen mit Irer ehelichen wirtinne <br>freundlichst
                            gegrüsst. In sichtbarer eile und mit emem steifen daumen <br>Ir ergebenster
                            <br>JvLaßberg.
+                           </p>
+                        </div>
+                     <div id="view-flow" class="d-none">
+                        
+                        <p>Eppishausen am 27
+                           May 1838. Verertester Herr Professor! Als ich vorgestern abends durch die post ein paket von
+                           unserm lieben <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jacob Grimm</strong&gt;">Jacob
+                              Grimm<a href="https://d-nb.info/gnd/118542257"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> erhielt, freute ich mich doppelt darinne auch etwas für Sie
+                           zu finden, einmal über die freude die Sie haben würden ob dem inhalte des buches
+                           und dann, dass
+                           ich nun auch etwas an Sie zu senden bekam, als eine kleine erwiederung der
+                           reichen sendung mit welcher Sie mich vor kurzem erfreuten. Durch die zuschrift dieses auf alle
+                           weise merkwürdigen buches eret mich unser guter <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jacob Grimm</strong&gt;">Jacob<a href="https://d-nb.info/gnd/118542257"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           mer, als ich ie verdienen kann, und dies mal muss ich gestehen, dass ich, beim
+                           lesen der zwei
+                           zeilen hinter dem titelblatte, wirklich eine gewisse wärme in meiner brust
+                           aufsteigen fülte, die sich sogar über meine 69iärigen wangen verbreitete; aber eine wenig
+                           erfreuliche nachricht giebt mir unser teurer freund. "warscheinlich werden wir
+                           noch diesen sommer nach <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Leipzig</strong&gt;">Leipzig<a href="https://www.wikidata.org/wiki/Q2079"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> ziehen, um
+                           wenigstens beisamen zu sein". so schreibt er, und da bleibt mir denn wenig
+                           hofnung in
+                           und <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wilhelm Grimm</strong&gt;">Wilhelm<a href="https://d-nb.info/gnd/118542265"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>,
+                           vor meiner lezten reise in das unbekannte land, noch einmal zu sehen. Am 10 dieses
+                           überraschte der alte <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Gustav Hugo</strong&gt;">Hugo<a href="https://d-nb.info/gnd/118707965"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> aus
+                           <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Göttingen</strong&gt;">Göttingen<a href="https://www.wikidata.org/wiki/Q3033"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> unsern <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jacob Grimm</strong&gt;">Jacob<a href="https://d-nb.info/gnd/118542257"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>,
+                           <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wilhelm Grimm</strong&gt;">Wilhelm<a href="https://d-nb.info/gnd/118542265"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           und <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Dorothea Grimm</strong&gt;">Dörtchen<a href="https://d-nb.info/gnd/116842857"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           mitbringend, in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Kassel</strong&gt;">Cassel<a href="https://www.wikidata.org/wiki/Q2865"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> wo er das 50te iaresfest seines iuristischen Doctorates mit im
+                           feierte. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jacob Grimm</strong&gt;">Jacob<a href="https://d-nb.info/gnd/118542257"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           gratulirte im dazu auf einem grossen Doctorbogen in ser rürenden ausdrüken, den er mir
+                           beischloss. Heute habe ich nicht zeit mer zu schreiben; denn morgen frühe soll ein grosses
+                           schif voll kisten nach der alten <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Meersburg</strong&gt;">Meersburg<a href="https://www.wikidata.org/wiki/Q498212"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> unter
+                           segel gehen; da habe ich denn den ganzen tag noch zu schreiben, zu paken und zu
+                           bestellen; also gott befolen und von uns allen mit Irer ehelichen wirtinne freundlichst
+                           gegrüsst. In sichtbarer eile und mit emem steifen daumen Ir ergebenster
+                           JvLaßberg.
                            </p>
                         </div>
                   </section>
