@@ -80,7 +80,8 @@
                   <section id="original-text" class="mb-4">
                      <h2>Original Text
                         <span class="transcription-source badge-manuscript" title="Diplomatische Transkription der Handschrift">Transcribed from the manuscript (Transkribus)</span></h2>
-                     <div>
+                     <div class="btn-group btn-group-sm mb-2" role="group" aria-label="Textansicht"><button type="button" id="view-lines-btn" class="btn btn-outline-secondary active" onclick="document.getElementById('view-lines').classList.remove('d-none'); document.getElementById('view-flow').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-flow-btn').classList.remove('active');">Zeilengenau</button><button type="button" id="view-flow-btn" class="btn btn-outline-secondary" onclick="document.getElementById('view-flow').classList.remove('d-none'); document.getElementById('view-lines').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-lines-btn').classList.remove('active');">Fließtext</button></div>
+                     <div id="view-lines">
                         
                         <p><br>erhalten und
                            beantwortet am 30 Junij 1833. <br>Basel 27/6/33. <br>Hochgeehrter Herr Baron <br>im Jahre 1827
@@ -107,6 +108,34 @@
                            Hochachtung bin ich, hoch zu <br>verehrender Herr Baron, <br>Ihr gehorsamster
                            <br>Wilh.
                            Wackernagel. <br>S. Johann Vorstadt 40. </p>
+                        </div>
+                     <div id="view-flow" class="d-none">
+                        
+                        <p>erhalten und
+                           beantwortet am 30 Junij 1833. Basel 27/6/33. Hochgeehrter Herr Baron im Jahre 1827
+                           schrieben Sie mir: "kommen Sie einmal in unser altes sängerland, in wenigen
+                           wochen werden Sie mer eigentümliches an unserer sprache kennen lernen, als wenn
+                           Sie Monate lang über den wörterbüchern liegen, besuchen Sie dann auch wenn sie
+                           des weges faren, den alten meister Sepp in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Eppishausen</strong&gt;">Eppishusen<a href="https://www.wikidata.org/wiki/Q1423653"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>,
+                           dessen handschlag Inen sagen wird, dass Sie in keinem fremden lande sind." Aus <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">beiliegendem <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wilhelm Wackernagel: Die Verdienste der Schweizer um die deutsche Literatur.&#xA;        Academische Antrittsrede.</strong&gt;">Büchlein<a href="https://books.google.de/books?id=Dqc-AAAAcAAJ">📖</a></span></span> können Sie ersehen, dass und wie ich her genommen bin und mich hier
+                           heimisch gemacht habe: endlich hat der Himmel einen Jahre lang gehegten
+                           sehnlichsten Wursch erfüllt. Es fehlt nur noch daß ich Ihrer freund lichen Einladung folge und mir den Handschlag hole. Ich möchte es gleich in
+                           den nächsten
+                           Ferien thun, die in der Mitte July anfangen. Aber vielleicht trifft Sie
+                           dieser Brief gar nicht einmahl: denn als ich in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Göttingen</strong&gt;">Göttingen<a href="https://www.wikidata.org/wiki/Q3033"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> war,
+                           freute freute man Sich
+                           dort auf Ihre Ankunft. ich wollte, Sie waeren daheim. vergönnen Sie mir den
+                           eigennützigen Wunsch! Darf ich Sie ersuchen, verehrter Herr Baron, mir melden zu
+                           wollen, ob Sie auf <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Eppishausen</strong&gt;">Eppishausen<a href="https://www.wikidata.org/wiki/Q1423653"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> sind
+                           und ob sie mir, wenn ich des Weges nach <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;St. Gallen</strong&gt;">S. Gallen<a href="https://www.wikidata.org/wiki/Q25607"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> und <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Appenzell</strong&gt;">Appenzell<a href="https://www.wikidata.org/wiki/Q12094"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> fahre, eine gastliche Ansprache erlauben? Und es mir bald melden zu
+                           wollen? ich
+                           würde Jhren meine ganze Achtung und Verehrung mittringen, meinen Dank für mehrfache
+                           schöne Geschenke, und von den Freunden in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Berlin</strong&gt;">Berlin<a href="https://www.wikidata.org/wiki/Q64"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> und <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Göttingen</strong&gt;">Göttingen<a href="https://www.wikidata.org/wiki/Q3033"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> die herzlichsten Grüsse. Daß ich nicht schon längst meine Schuldigkeit gethan und
+                           Ihnen meine Ankunft gemeldet habe, daran ist nur der Drucker Schuld, der mich
+                           auf das verdrießlichste hingehalten hat. Voll Hoffnung und Freude, mit ausgezeichneter
+                           Hochachtung bin ich, hoch zu verehrender Herr Baron, Ihr gehorsamster
+                           Wilh.
+                           Wackernagel. S. Johann Vorstadt 40. </p>
                         </div>
                   </section>
                   <details id="normalised-text" class="text-version mb-4">

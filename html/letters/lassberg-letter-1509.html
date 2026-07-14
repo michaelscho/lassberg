@@ -1,0 +1,196 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0" lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>The Lassberg Letters</title>
+      <link href="../../css/styles.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script><link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"><script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script></head>
+   <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+         <div class="container"><a class="navbar-brand" href="../../index.html">The Laßberg Letters</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link" href="../../index.html">Welcome</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../persons.html">Persons</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../places.html">Places</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../explore.html">Explore</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <header class="page-header py-4">
+         <div class="container">
+            <h1 class="mb-2">Brief von Ludwig Uhland an Joseph von Laßberg (20.01.1831).</h1>
+            <p class="lead mb-0">
+               
+               <p>Correspondence data based on Harris, Martin: Joseph Maria Christoph
+                  Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                  Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                  geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                  Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991..</p>
+               </p>
+         </div>
+      </header>
+      <main class="py-4">
+         <div class="container">
+            <div class="alert alert-warning letter-preview-banner" role="alert"><strong>Unreviewed working text.</strong> The encoding of this letter
+               has not yet been editorially reviewed
+               (status: draft).
+               The text may contain transcription or OCR errors — please cite with caution.
+               </div>
+            <div class="row g-4">
+               <div class="col-lg-4 order-lg-2">
+                  <aside class="letter-sidebar">
+                     <section id="metadata" class="mb-4">
+                        <h2 class="h5">Metadata</h2>
+                        <p><strong>Signatur: </strong>Marbach am Neckar, Schiller Nationalmuseum, </p>
+                        <p><strong>Registernummer (Laßberg): </strong></p>
+                        <p><strong>Registernummer (Harris): </strong>2341</p>
+                        <p><strong>Gedruck in: </strong><a href="https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig
+                              Uhland. Wien 1870, S. 180-83</a></p>
+                     </section>
+                     <section id="map" class="mb-4">
+                        <h2 class="h5">Places</h2>
+                        <div id="mapid"></div>
+                        <p class="map-legend small text-muted mt-1 mb-0"><span class="legend-dot" style="background:#1d4e89"></span> place of sending
+                           <span class="legend-dot ms-2" style="background:#b57cc0"></span> places mentioned
+                           </p>
+                     </section>
+                  </aside>
+               </div>
+               <div class="col-lg-8 order-lg-1">
+                  <section id="original-text" class="mb-4">
+                     <h2>Original Text
+                        <span class="transcription-source badge-print" title="OCR-Texterfassung aus der gedruckten Edition, siehe Metadaten/Gedruckt in">Transcribed from the printed edition (OCR)</span></h2>
+                     <div>
+                        
+                        <p>Hochverehrter Freund! Tübingen, d. 20. Jan. 1831, Mein jetziger Beruf, der mir im
+                           Ganzen wohl zusagt, hat doch für die erste Zeit das Nachtheilige mit sich gebracht,
+                           daß ich etwas stark an das jedesmal vorliegende Pensum gebunden bin und mich dadurch
+                           in der freieren Arbeit, zu der mich gerade die Neigung führen würde, und so auch im
+                           brieflichen Verkehr manigfach beschränkt fühle. Um so wohlthätiger ist es mir, wenn
+                           die Freunde mit mir Nachsicht haben, und innigen Dank sag ' ich Ihnen, daß Sie, noch
+                           eh ' ich seit der letzten freundlichen Aufnahme in Eppishausen Kunde von mir gegeben,
+                           mich durch so erfreuliche Mittheilungen überrascht haben.. Solang ich nicht auf eine
+                           schon gehaltene Vorlesung zurückkommen kann, sondern für jedes Semester eine neue
+                           auszuarbeiten habe, wird auch jene Gebundenheit mehr oder weniger fortdauern. Beim
+                           Nibelungenliede, das ich diesen Winter einer geringen Anzahl von Zuhörern vortrage,
+                           meint ' ich Erleichterung zu finden, habe mich aber darin getäuscht, denn die exegetische
+                           Erklärung, bei der man jeden Satz, jedes Wort, in Beziehung auf die Sprachformen in
+                           der Hand umdrehen muß, nimmt Zeit und Mühe auf eine Art in Anspruch, wovon ich mir
+                           beim Lesen zum freien Genusse wenig Begriff gemacht hatte. Ich bin darum auch noch
+                           bei Brünhilden auf dem Isenstein und werde nur dadurch bis Ostern zum Ziele kommen,
+                           daß ich weiterhin nur die schönsten Aventüren aushebe. Ich war eben daran, einen Excurs
+                           über Vers und Strophe des Liedes zu beendigen, als Abends Ihre gütige Sendung ankam,
+                           aus der ich dann sogleich die Facsimiles mit mir nahm, um meinen Zuhörern anschaulich
+                           zu machen, wie die verschiedenen Handschriften diese Formen behandelt haben. Meine
+                           kleine Ausbeute von der Ferienreise her liegt noch zusammengerollt, wie ich sie mitgebracht.
+                           Ich erwarte noch eine mir von Orelli zugesagte Mittheilung alter Liederdrucke, bevor
+                           ich ans Werk gehe, und darum bitt ' ich auch, mir mit dem Liederbüchlein der Ottilia
+                           Fenchlerin noch einige Geduld zu schenken. Von Eppishausen an war meine Wanderung
+                           nicht mehr ergiebig. Nach Wolfegg bin ich nicht gekommen; in Lautkirch traf ich den
+                           Hauptmann v. Besserer aus Ulm, der mir sagte, daß auf der Wolfegger Bibliothek, die
+                           er vor einiger Zeit eingesehen, nichts für die poetischen Studien vorhanden sey, als
+                           ein Theuerdank auf Pergament. Auf der Bibliothek zu Augsburg fand sich zwar ein Band
+                           einzelner Liederdrucke aus dem 15. und 16. Ihd., aber nicht von der volksmäßigen,
+                           romantischen Art, wie ich sie suche, sondern entweder historische, oder eigentliche
+                           Meistersängerlieder. Ueberhaupt wäre in Augsburg für die Kenntniß des Meistersängerwesens
+                           viel zu erlernen, ein großes Lieder buch, Tabulaturen 2c. sind dort vorhanden. Rector
+                           Beischlag hat sich zwar damit beschäftigt, ob er aber noch etwas öffentlich mittheilen
+                           werde, ist zweifelhaft. Noch ganz unbekannt war mir ein alter, nicht mehr vollständiger
+                           Druck des Wilhelm von Orleans. Was Sie mir vom Liederschatze des Wysschen Nachlasses
+                           schreiben, interessirt mich im höchsten Grade. Ein hier studierender Schweizer hat
+                           mir kürzlich gesagt, Wyß habe seine Sammlung in Gemeinschaft mit Münch herausgeben
+                           wollen und es sei davon in einer Münchischen Schrift: Aletheia, eine Probe gegeben
+                           und der Plan mitgetheilt. Wie heilsam ist es, daß sich nun das Ganze unter Ihrer Sorge
+                           befindet. Kommt dabei auch wesentlich der Vortheil der Familie in Betracht, so ist
+                           es doch gewiß auch darum zu thun, daß der geistige Zweck des eifrigen Sammlers nicht
+                           hintangesetzt werde. Cotta hat wohl sonst schon solche nachgelassene Sammlungen angekauft,
+                           z. B. die Collectaneen von Petersen, die jedoch ganz brach liegen geblieben sind.
+                           Es würde vielleicht darauf ankommen, ob Semand sich der Anordnung für die Herausgabe
+                           unterzöge. Bei Cotta ist im vorigen Jahre die Ihnen vermuthlich bekannte Sammlung
+                           histor. Volkslieder von Wolf herausgekommen, die, bei aller Mangelhaftigkeit, doch
+                           Beifall und Abgang zu finden scheint. Sehr dankbar sende ich hiebei die Bibliothèque
+                           des Poètes françois zurück, nebst dem Casparson. Wilhelm. Zugleich füge ich an, was
+                           Sie mir vom Liedersaale bogenweise zugeschickt, aber nachher durch gütige Beschenkung
+                           mit den vollen Bänden entbehrlich gemacht haben; es werden dadurch die Exemplare,
+                           denen es um diese Bogen mangelt, wieder completirt werden können. Für die Illustrations
+                           of northern antiquities, den handschriftl. Karl d. Gr. und die Ottil. Fenchlerin bitte
+                           ich, wenn Sie nicht selbst davon Gebrauch machen, noch um einige Frist. Ich weiß nicht,
+                           ob mitfolgende Aufforderung von Ulm Ihnen sonst schon zugekommen ist. Für unsre Gegend
+                           kommt man mit dem Sammeln der Sagen und Lieder wohl zu spät. Aber erfreulich ist es
+                           immer, daß in einer von so manigfachen andern Interessen bewegten Zeit, doch auch
+                           diese unschuldigen Dinge noch Liebe finden, wo man es oft gar nicht erwartet hätte.
+                           Mone hat im 2ten Hefte seiner Quellen und Forschungen doch manches für die Sprachgeschichte
+                           Wichtiges gegeben, aber viel begieriger bin ich auf den nächsten Band, in dem er uns
+                           die altniederländische Poesie aufzuschließen verheißt. Längst habe ich nach jener
+                           Seite erwartungsvoll geblickt. Wenn nur nicht wieder, wie in andern Fällen, das Unternehmen
+                           mit der ersten Lieferung stockt und das Beste zurückbleibt. Durch Mittheilung der
+                           Nürnberg. fröhlichen, frischen Liedlein würden Sie mich sehr verbinden. Sind es auch
+                           nur Liederanfänge, so ist doch von Interesse, auch von dem Verlorenen Kunde zu haben
+                           und von manchen Liedern, von denen ich früher nur die Anfänge kannte, bin ich allmählig
+                           auch zum ganzen Texte gekommen. Begierig habe ich bisher gelesen, was uns die Zeitungen
+                           von den Ereignissen im Thurgau meldeten. Der Major und Advocat Häberlin ist wohl derselbe,
+                           der vor zwei Jahren bei Ihnen im Quartiere lag. Mögen diese Stürme auch im Jahre 1831
+                           die Ruhe des Musensizes zu Eppishausen ungestört lassen. Meine Frau verbindet sich
+                           mit mir zu den herzlichsten Wünschen für Ihr Wohlseyn. Wir hoffen doch, der nächste
+                           Sommer könnte Sie auch einmal zu einem Ausfluge nach Tübingen veranlassen. Mit unveränderlicher
+                           Freundschaft und Verehrung L. Uhland.</p>
+                        </div>
+                  </section>
+                  <div id="related-letters"></div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer class="bg-dark text-white text-center py-3">
+         <div class="container">
+            <p class="mb-0"><a href="../letters.html">Back to the Letters</a></p>
+         </div>
+      </footer><script src="../../js/related.js"></script><script src="https://unpkg.com/leaflet/dist/leaflet.js"></script><script>
+                    var letterPlaces = [];
+                    
+                    letterPlaces.push({ coords: [48.52,9.055556], label: "Tübingen", kind: "sent" });
+                    
+
+                    if (letterPlaces.length === 0) {
+                        document.getElementById('map').style.display = 'none';
+                    } else {
+                        var map = L.map('mapid', { scrollWheelZoom: false });
+                        // Muted basemap (CARTO Positron) instead of the default colourful OSM
+                        // tiles, to match the edition's restrained palette.
+                        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+                            attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+                            subdomains: 'abcd',
+                            maxZoom: 19
+                        }).addTo(map);
+
+                        var bounds = [];
+                        letterPlaces.forEach(function (p) {
+                            var isSent = p.kind === 'sent';
+                            var marker = L.circleMarker(p.coords, isSent
+                                ? { radius: 8, color: '#143761', weight: 2, fillColor: '#1d4e89', fillOpacity: 0.85 }
+                                : { radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75 }
+                            ).addTo(map).bindPopup((isSent ? 'Sent from: ' : 'Mentioned: ') + p.label);
+                            bounds.push(p.coords);
+                        });
+                        if (bounds.length > 1) {
+                            map.fitBounds(bounds, { padding: [25, 25], maxZoom: 9 });
+                        } else {
+                            map.setView(bounds[0], 8);
+                        }
+                    }
+                </script><script>
+                    // Initialize all tooltips
+                    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+                    new bootstrap.Tooltip(tooltipTriggerEl)
+                    })
+                </script></body>
+</html>

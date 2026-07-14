@@ -103,7 +103,8 @@
                   <section id="original-text" class="mb-4">
                      <h2>Original Text
                         <span class="transcription-source badge-manuscript" title="Diplomatische Transkription der Handschrift">Transcribed from the manuscript (Transkribus)</span></h2>
-                     <div>
+                     <div class="btn-group btn-group-sm mb-2" role="group" aria-label="Textansicht"><button type="button" id="view-lines-btn" class="btn btn-outline-secondary active" onclick="document.getElementById('view-lines').classList.remove('d-none'); document.getElementById('view-flow').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-flow-btn').classList.remove('active');">Zeilengenau</button><button type="button" id="view-flow-btn" class="btn btn-outline-secondary" onclick="document.getElementById('view-flow').classList.remove('d-none'); document.getElementById('view-lines').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-lines-btn').classList.remove('active');">Fließtext</button></div>
+                     <div id="view-lines">
                         
                         <p><br>erhalten am 12
                            July. <br>Sonntags,
@@ -180,6 +181,84 @@
                            wünsche ich Ihnen von ganzem Herzen alles Glück <br>und alle Freude;
                            ergehe es Ihnen wohl und kehren Sie gesund <br>wieder. Gott
                            behüte Sie! <br>Ihr herzlichst ergebener <br>Wilh. Wackernagel. </p>
+                        </div>
+                     <div id="view-flow" class="d-none">
+                        
+                        <p>erhalten am 12
+                           July. Sonntags,
+                           6. Juny 1834. Hochverehrter Herr Baron, am vergangenen Donnerstag habe ich Ihre letze Sendung
+                           erhalten, zu
+                           meiner grössten Freude, da ich in diesem rückhaltlosen Anver trauen einer so
+                           prächtigen Abschrift eines <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Albert von Augsburg: Leben des heiligen Ulrich.</strong&gt;">gänzlich
+                              unbekannten Ge dichtes<a href="https://geschichtsquellen.de/werk/70https://www.handschriftencensus.de/werke/1009https://d-nb.info/gnd/1232969346">📖</a></span> ein besonderes Zeichen der Güte erkennen muss,
+                           mit der Sie mir
+                           und meinem Unternehmen freundlich geneigt sind. Da können Sie
+                           denken, wie mir zu Muthe war, als ich dennoch den ganzen Tag
+                           vor andern dringenden Arbeiten nicht dazu ge langen konnte,
+                           die <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Handschrift</span> nur einigermassen näher zu betrachten. Um
+                           so begieriger machte ich mich Freytags daran und schon am
+                           Nachmittag waren beide Gedichte, das eine gelesen, das andre, die
+                           <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Minneburg&#xA;        (Reimfassung).</strong&gt;">Minneburg<a href="https://handschriftencensus.de/werke/616">📖</a></span>, zum mindesten durchlaufen. Der <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Konrad von Stoffel: Gauriel von Muntabel.</strong&gt;">Gauriel<a href="https://handschriftencensus.de/werke/567">📖</a></span>
+                           ist als Nachahmung des <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Hartmann von Aue: Iwein.</strong&gt;">Iweins<a href="https://handschriftencensus.de/werke/150">📖</a></span>
+                           für die Litt. Gesch. von Bedeutung, und ich denke auch solche Stellen auszuheben,
+                           die jenes
+                           Verhältniss in deutliches Licht setzen, nämlich die beiden Kämpfe mit
+                           Walban und mit Iwan. Aus welcher Handschr. stammt denn die
+                           <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Minneburg&#xA;        (Reimfassung).</strong&gt;">Minneburg<a href="https://handschriftencensus.de/werke/616">📖</a></span>? Von der <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Wienerischen</span> weicht dieser Text
+                           wesentlich ab: die Stelle über <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Egen von Bamberg</strong&gt;">Meister
+                              Egen<a href="https://d-nb.info/gnd/118681680"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> die jene ent hält (<span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Friedrich Heinrich von der Hagen: Literarischer Grundriß zur Geschichte der&#xA;        deutschen Poesie.</strong&gt;">Grundriss<a href="BSB-ID 991057351239707356">📖</a></span> S.
+                           442) habe ich hier trotz allem Suchen nicht wieder finden
+                           können; die mehrfachen Beziehungen auf ihn lau ten jedesmahl
+                           anders. Auch
+                           <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Friedrich Heinrich von der Hagen</strong&gt;">Herr vd. H.<a href="https://d-nb.info/gnd/118829130"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Friedrich Heinrich von der Hagen: Minnesinger. Deutsche Liederdichter des&#xA;        zwölften, dreizehnten und vierzehnten Jahrhunderts, aus allen bekannten Handschriften und&#xA;        früheren Drucken.</strong&gt;">Lebensbeschreibungen<a href="https://archive.org/details/minnesingerdeut00hagegoog">📖</a></span> sind mir gar willkommen, so sehr ich mich
+                           auch theilweise darüber ärgere; z B. wegen des unverschaemten
+                           Streichs mit dem <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ulrich von Liechtenstein</strong&gt;">Ulrich von
+                              Lichtenstein<a href="https://d-nb.info/gnd/118625306"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> und der gnaedigen Protectormine mit der er <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Friedrich Heinrich von der Hagen: Minnesinger. Deutsche Liederdichter des&#xA;        zwölften, dreizehnten und vierzehnten Jahrhunderts, aus allen bekannten Handschriften und&#xA;        früheren Drucken.</strong&gt;">meine Arbeit
+                              über Nithart<a href="https://archive.org/details/minnesingerdeut00hagegoog">📖</a></span> bevorwortet. "Mein junger Freund W. W." ich dachte ich wäre
+                           jezt über
+                           das Alter und die Verhältnisse hinaus, unter denen eine solche
+                           Titulatur am Platze ist. Als er die <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Neidhart.</strong&gt;">Lieder
+                              Nitharts<a href="https://www.handschriftencensus.de/werke/269">📖</a></span> von mir bearbeiten liess, im J: 1826; damals war ich freylich noch jung; aber dies
+                           Datum verschweigt er weislich, und ich werde nun bei Gelegenheit
+                           jenen ganzen schülerhaften Versuch, den er freylich in seiner
+                           Bequemlichkeit ohne weiteres abdrucken laesst, désavou iren müssen. Möge sich Hr.
+                           <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Carl Gustav Abel</strong&gt;">Abel<a href="https://d-nb.info/gnd/116001410"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> um
+                           Gottes willen nicht mit ihm einlassen so viel ich weiss, besitzt <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Friedrich Heinrich von der Hagen</strong&gt;">vd. H.<a href="https://d-nb.info/gnd/118829130"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           nur von dem kleinern Theile der <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Pariser Bilder</span> wirkliche
+                           Durchzeichnungen; von dem grössern aber bloss die Beschreibungen. Da könnte es ihm freylich
+                           ganz er wünscht seyn, mit Jemanden der alle hat sich zu
+                           "vereinbaren." <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Caspar von Orelli</strong&gt;">Orelli<a href="https://d-nb.info/gnd/118787179"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           hat sich zu guter Lezt doch noch als braven Mann bewährt: indem der
+                           vorläufige Anschlag um 40 % reduciert worden, sind als einmuthige
+                           Schätzung der beiderseitigen Experten nur 44000 Fr. verblieben, wovon
+                           31000, auf die Bücher, 13000 auf die Münzen kommen. Man hatte
+                           100000 gefürchtet. Von einer Versteigerung kann nun noch weniger
+                           die Rede seyn. Ist das nicht honnet von ihm? Von ihm: denn er
+                           lenkte die andern. Wissen Sie schon dass man Sie hat ersuchen wollen, die
+                           definitive Schätzung der Kunst gegenstände als Oberexpert zu übernehmen? Hatten Sie es
+                           gethan, so wäre das, wie ich aus Ihrem Briefe ab nehme, wahrlich
+                           nicht zum Schaden <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Basel</strong&gt;">Basels<a href="https://www.wikidata.org/wiki/Q78"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> gewesen;
+                           und wie hätte ich mich gefreut, Sie hier begrüssen zu können! Man hat aber in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Aarau</strong&gt;">Arau<a href="https://www.wikidata.org/wiki/Q14274"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>
+                           einen Hrn. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Adelbert von Keller</strong&gt;">Keller<a href="https://d-nb.info/gnd/118831216"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           aus <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Schaffhausen</strong&gt;">Schafhausen<a href="https://www.wikidata.org/wiki/Q9009"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> vorgezogen; warum, weiss ich nicht. Sie erbieten
+                           Sich, Aushängebogen des Lesebuches mit nach <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Göttingen</strong&gt;">Göttingen<a href="https://www.wikidata.org/wiki/Q3033"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> nehmen zu
+                           wollen. Wenn ich aber jezt schon etwas davon zeigen möchte, So wären
+                           Sie, dem das Buch so viel verdankt, gewiss der erste gewesen
+                           dem ichs vorgelegt hätte. Aber ich stehe jetzt, mit Sp. 112., erst
+                           am Anfange des XII Jh., und nach dem bisherigen laest sich der
+                           Character der Sammlung nur ungenügend beurtheilen. Vor dem Schluss
+                           des XII Jh. möchte ich sie keinem vom Fache zeigen. Da mirs daran liegt, wo es mit meinem Plane sich
+                           verträgt mich an <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Karl Lachmann</strong&gt;">Lachmanns<a href="https://d-nb.info/gnd/118568558"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> Auswahl anzuschliessen, so werde ich aus dem <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Freidank: Sprüche.</strong&gt;">Freydank<a href="https://handschriftencensus.de/werke/115">📖</a></span>
+                           dieselben Stellen geben als er und in seinem Text: dann haben Sie auch
+                           nicht die erneute Mühe einer Uebersendung Ihres <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Joseph von Laßberg: Ein schoen alt Lied von Grave Friz von Zolre, dem Oettinger, und der&#xA;        Belagerung von Hohen Zolren.</strong&gt;">Liedersaales<a href="https://gateway-bayern.de/BV012184336">📖</a></span>. Gleich am Beginn der Ferien werde ich, namentlich des <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johannes Tauler: Predigten.</strong&gt;">Taulers<a href="https://handschriftencensus.de/werke/652%0A        https://d-nb.info/gnd/4322978-5">📖</a></span> wegen, auf einige Tage nach <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Straßburg</strong&gt;">Strassburg<a href="https://www.wikidata.org/wiki/Q6602"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>
+                           wandern, und dann die ganze übrige Zeit der Vollendung des <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wilhelm Wackernagel: Deutsches Lesebuch.</strong&gt;">Lesebuches<a href="https://digi.ub.uni-heidelberg.de/diglit/wackernagel1839gahttps://archive.org/details/deutscheslesebu00wackgoog">📖</a></span> widmen. Dann könnte freylich alles was ich noch von Ihrer Güte in
+                           Händen habe,
+                           nach <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Eppishausen</strong&gt;">Eppishausen<a href="https://www.wikidata.org/wiki/Q1423653"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> zurück; aber es ist doch wohl sicherer, wenn
+                           ich damit warte, bis Sie heimgekehrt sind. Und nun leben
+                           Sie recht wohl, sehr verehrter Herr Baron! Noch einmahl
+                           wünsche ich Ihnen von ganzem Herzen alles Glück und alle Freude;
+                           ergehe es Ihnen wohl und kehren Sie gesund wieder. Gott
+                           behüte Sie! Ihr herzlichst ergebener Wilh. Wackernagel. </p>
                         </div>
                   </section>
                   <details id="normalised-text" class="text-version mb-4">

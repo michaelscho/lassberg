@@ -81,7 +81,8 @@
                   <section id="original-text" class="mb-4">
                      <h2>Original Text
                         <span class="transcription-source badge-manuscript" title="Diplomatische Transkription der Handschrift">Transcribed from the manuscript (Transkribus)</span></h2>
-                     <div>
+                     <div class="btn-group btn-group-sm mb-2" role="group" aria-label="Textansicht"><button type="button" id="view-lines-btn" class="btn btn-outline-secondary active" onclick="document.getElementById('view-lines').classList.remove('d-none'); document.getElementById('view-flow').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-flow-btn').classList.remove('active');">Zeilengenau</button><button type="button" id="view-flow-btn" class="btn btn-outline-secondary" onclick="document.getElementById('view-flow').classList.remove('d-none'); document.getElementById('view-lines').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-lines-btn').classList.remove('active');">Fließtext</button></div>
+                     <div id="view-lines">
                         
                         <p><br>Lostorf zwischen
                            Arau u. Olten <br>21/7/38. <br>Hochverehrter Herr Baron! <br>Mit aufrichtig herzlicher Theilnahme habe ich den Trauer
@@ -101,6 +102,28 @@
                            gern <br>verschmerzen um einem grössern zu entgehn, dem Verlust Ihres Wohlwollens. <br>Unter
                            gehorsamsten Empfehlungen an Ihre gnaedige Frau <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jenny von Droste zu Hülshoff</strong&gt;">Gemahlinn<a href="https://d-nb.info/gnd/118527541"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> habe ich die Ehre zu seyn <br>Eu. Hochwohlgeboren <br>ergebenster
                            Diener <br>gez.
+                           Wilh. Wackernagel Dr. Prof. </p>
+                        </div>
+                     <div id="view-flow" class="d-none">
+                        
+                        <p>Lostorf zwischen
+                           Arau u. Olten 21/7/38. Hochverehrter Herr Baron! Mit aufrichtig herzlicher Theilnahme habe ich den Trauer
+                           fall vernommen der Sie und Ihr Haus betroffen hat; die Wissenschaft wird <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Friedrich von Laßberg</strong&gt;">ihn<a href="https://d-nb.info/gnd/100557929"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> auch zu beklagen haben. Möge der Herr Sie stärken, und Ihnen zum Trost und Ersatz
+                           Ihre <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">lieblichen Zwillinge<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> desto kräftiger gedeihen lassen. ich habe Ihren
+                           Brief hieher gesendet erhalten, nach <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Lostorf</strong&gt;">Lostorf<a href="https://www.wikidata.org/wiki/Q65421"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, einem
+                           freundlichen Badeorte, den ich meiner Gesundheit wegen für einige Ferienwochen habe
+                           beziehen müssen. Diess der Grund weshalb ich Ihrem Befehle die <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">geliehenen Bücher</span> zurück zusenden unmöglich sogleich Folge leisten kann; es
+                           soll aber geschehen so wie ich wieder in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Basel</strong&gt;">Basel<a href="https://www.wikidata.org/wiki/Q78"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> bin, damit
+                           Sie nicht in dem Verdachte bestärkt werden, ich wollte Ihre Güte
+                           missbrauchen. Denn zu meiner Betrübniss hegen Sie, glaube ich, diesen
+                           Verdacht. ich hatte Sie auf Ihre frühere Anmahnung ergebenst gebeten mir jene
+                           Bücher noch einige Zeit lassen zu wollen, damit ich dieselben wirklich auch brauchen
+                           könnte. Recht geschehen ist das noch nicht, da die Stücke vom <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Hugo von Montfort</strong&gt;">Gr. v. Montfort<a href="https://d-nb.info/gnd/118554603"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           und von <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Niklas von Wyle</strong&gt;">Niclas v.
+                              Wyle<a href="https://d-nb.info/gnd/118635735"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> noch nicht gedruckt und noch nicht nach Ihren Originalexemplaren corrigiert sind. Indessen will ich diesen kleineren Verlust
+                           gern verschmerzen um einem grössern zu entgehn, dem Verlust Ihres Wohlwollens. Unter
+                           gehorsamsten Empfehlungen an Ihre gnaedige Frau <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jenny von Droste zu Hülshoff</strong&gt;">Gemahlinn<a href="https://d-nb.info/gnd/118527541"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> habe ich die Ehre zu seyn Eu. Hochwohlgeboren ergebenster
+                           Diener gez.
                            Wilh. Wackernagel Dr. Prof. </p>
                         </div>
                   </section>

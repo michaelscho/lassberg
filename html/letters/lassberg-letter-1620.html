@@ -1,0 +1,186 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0" lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>The Lassberg Letters</title>
+      <link href="../../css/styles.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script><link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"><script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script></head>
+   <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+         <div class="container"><a class="navbar-brand" href="../../index.html">The Laßberg Letters</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link" href="../../index.html">Welcome</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../persons.html">Persons</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../places.html">Places</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../explore.html">Explore</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <header class="page-header py-4">
+         <div class="container">
+            <h1 class="mb-2">Brief von Joseph von Laßberg an Ludwig Uhland (26.01.1832).</h1>
+            <p class="lead mb-0">
+               
+               <p>Correspondence data based on Harris, Martin: Joseph Maria Christoph
+                  Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                  Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                  geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                  Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991..</p>
+               </p>
+         </div>
+      </header>
+      <main class="py-4">
+         <div class="container">
+            <div class="alert alert-warning letter-preview-banner" role="alert"><strong>Unreviewed working text.</strong> The encoding of this letter
+               has not yet been editorially reviewed
+               (status: draft).
+               The text may contain transcription or OCR errors — please cite with caution.
+               </div>
+            <div class="row g-4">
+               <div class="col-lg-4 order-lg-2">
+                  <aside class="letter-sidebar">
+                     <section id="metadata" class="mb-4">
+                        <h2 class="h5">Metadata</h2>
+                        <p><strong>Signatur: </strong>Marbach am Neckar, Schiller Nationalmuseum, </p>
+                        <p><strong>Registernummer (Laßberg): </strong>24</p>
+                        <p><strong>Registernummer (Harris): </strong>805</p>
+                        <p><strong>Gedruck in: </strong><a href="https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig
+                              Uhland. Wien 1870, S. 216-19</a></p>
+                     </section>
+                     <section id="map" class="mb-4">
+                        <h2 class="h5">Places</h2>
+                        <div id="mapid"></div>
+                        <p class="map-legend small text-muted mt-1 mb-0"><span class="legend-dot" style="background:#1d4e89"></span> place of sending
+                           <span class="legend-dot ms-2" style="background:#b57cc0"></span> places mentioned
+                           </p>
+                     </section>
+                  </aside>
+               </div>
+               <div class="col-lg-8 order-lg-1">
+                  <section id="original-text" class="mb-4">
+                     <h2>Original Text
+                        <span class="transcription-source badge-print" title="OCR-Texterfassung aus der gedruckten Edition, siehe Metadaten/Gedruckt in">Transcribed from the printed edition (OCR)</span></h2>
+                     <div>
+                        
+                        <p>Eppishausen am 26. Januar 1832. Schon 2 Monate sind verflossen, seit ich Fren lezten
+                           Brief und mit im, die neue Ausgabe Frer Gedichte erhielt; statt Inen lieber Freund!
+                           dafür zu danken, legte ich mich hin und ward krank; der Stof dieser Krankheit lag
+                           nicht in meinem Körper; sondern, eine herumfarende Sucht ergriff mich, die viele Leute
+                           in unserer Gegend aufs Bette warf; das Fieber steigerte sich bis zum Delirium, ich
+                           glaubte man wolle mich mit Gewalt zum Bischof machen, endlich genass ich. Ich war
+                           schon merere Tage aus dem Bette; als mich die Krankheit aufs neue befiel; aber ich
+                           war schon zu weit auf dem Wege der Genesung vorgeschritten, als daß sie mer etwas
+                           über mich vermocht hätte: nun bin ich schon merere Wochen frei von allem Fieber. Der
+                           Arzt nennte das Uebel eine Art Cholera benigna; sonderbar, daß ich mich an demselben
+                           Tage von der Krankheit befallen fühlte, da ich einen Brief von Hug aus Freiburg erhielt,
+                           der mir schrieb, daß er die sporadische Cholera mit den heftigsten Symptomen, die
+                           sie je gezeigt, überstanden habe. Jezt bin ich wieder frisch und gesund und füle keine
+                           Nachwehen mer. Die 9 neuen Lieder in Irem Buche, haben mir zwar alle gefallen; doch
+                           am besten das auf die Mutter; daß der Vater bald nachfolgen werde, habe ich wol vermutet,
+                           es kömmt gewönlich so. Die Note 67 in der Perzischen Ausgabe der Casus monasterii
+                           St. Galli, wo von Arx von den cantiunculis ſpricht, habe ich immer nur so verstanden,
+                           daß Arx sagen wolle, so wie auf den tragischen Tod des fränkischen Kammerboten Adalpert,
+                           so seien auch auf andere berümte Männer Lieder gemacht und im Volke gesungen worden.
+                           Ich gieng aber auf Iren vorlezten Brief im Herbste selbst wieder nach St. Gallen,
+                           um nachzuforschen; aber es war, wie ich voraussahe, vergeblich, dort ist außer den
+                           bereits aufgefundenen, kein teutsches Lied mer anzutreffen; daß aber in früherer Zeit
+                           manches dergleichen, und selbst noch in ser später Zeit ( 1712 ) dort war, beweiset
+                           beiliegendes Büchlein, welches ich pro strena von mir anzunemen bitte. Es hat mich
+                           dies schöne Geschenk des guten Aurelius Tigurinus unendlich gefreut: ein solches Zeichen
+                           der Liebe vor allem Volke gegeben, müßte auch dem Unempfindlichen wol tun. Bei der
+                           Plünderung des Klosters 1712 stalen die Zürcher die St. Galler Bibliotheke, vermutlich
+                           auf Angabe irer gelerten Mitbürger, so ziemlich aus, und viele der schäzbarsten Codices
+                           auf der Wasserkirche zu Zürich tragen noch das Bibliothek Zeichen des Klosters von
+                           St. Gallen. Lezten Sommer bin ich außer einem kleinen Ausfluge nach dem Zürcher See,
+                           Einsiedlen und auf den Rigi, gar nirgends hingekommen; denn meine Waldklause wurde
+                           bis in den Winter hinein nimmermer von Gästen leer, und ich bin dadurch nicht nur
+                           mit meinen Arbeiten; sondern auch mit meiner Correspondenz in Nükstand gekommen, was
+                           ich nun den Winter über nachzuholen habe. Ich habe Herren Cleasby wärend seinem Hiersein
+                           ser aufgemuntert in der Bodleyanischen Bibliotheke zu Oxford nachzuforschen, ob die
+                           von Franciscus Junius dahin geschenkte Handschrift von dem Liede auf den heiligen
+                           Anno noch vorhanden seie? und bin so glüklich gewesen von jm nachfolgende von einem
+                           Bibliothekare daselbst mitgeteilte Notizen zu erhalten. Annonis archiepiscopi coloniensis
+                           vita. Rhitmice. 1. The manuscript does exist in the Bodleian Library. 2. It is suppos'd
+                           by the Librarian to be in the hand writing of the Author. 3. It contains abrut 46
+                           Pages with perhaps 30 lines on each page. 4. A Stranger would be allow'd to examine
+                           it minutely ( of course in the Library ) or even to take a Copy, if introduc'd by
+                           a member of the University, an magister artium probably. Das ist es alles, aber es
+                           ist indessen schon viel; mir ist vorzüglich wichtig daß das Oxforder exemplum über
+                           500 Verse mer hat, als die Opizische Ausgabe, welche ich immer für beschnitten gehalten
+                           habe. Was er mit dem: „ writing in the hand of the author " sagen will? ist mir nicht
+                           ganz klar: wäre es buchstäblich von dem Dichter des Liedes zu verstehen; so müßte
+                           dies ein Colophon am Ende der Handschrift besagen, und wir lernten einen alten Sänger
+                           mer kennen. Nun! wir wollen sehen, was aus der Sache zu machen ist. Herzlich gefreut
+                           hat es mich, daß Sie diesen lezten Herbst das Vergnügen genossen haben den wakern
+                           Suabo und seine liebenswürdige Frau bei sich zu haben, grüßen Sie beide aufs freundlichste
+                           von mir. Schwab hält ein zu strenges Ettiquette mit mir; ich hatte im durch Cleasby
+                           geschrieben; daß er den Brief nicht erhielt, ist nicht meine Schuld. Ich wünsche daß
+                           es im und den Seinen wol gehe. Nun wird wol bald die erste Lieferung des Aufsessischen
+                           Anzeigers in München erscheinen, ich hoffe, daß er mit der Zeit etwas mer als bloßer
+                           Anzeiger werden wird. Herr Schönhuth will eine Schulausgabe meines Nibelungenliedes
+                           machen, die Sache soll schon im Gange sein: ich habe etwas bange, daß es mit der Kritik
+                           bei Abfassung des Wörterbuches nicht ganz glüklich gehen werde. Damit Sie sehen, daß
+                           ich nicht allein für mich, sondern auch für meine Freunde lese, lege ich Inen einige
+                           aufgehaschte Lesefrüchte bei. Tausend Grüße an Frau Emma; wann kommen Sie wieder einmal
+                           zu mir? Die flava gens Suevorum läßt sich schon lange nicht mer in der villa Epponis
+                           sehen. Gott befolen! von Frem Laßberg.</p>
+                        </div>
+                  </section>
+                  <div id="related-letters"></div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer class="bg-dark text-white text-center py-3">
+         <div class="container">
+            <p class="mb-0"><a href="../letters.html">Back to the Letters</a></p>
+         </div>
+      </footer><script src="../../js/related.js"></script><script src="https://unpkg.com/leaflet/dist/leaflet.js"></script><script>
+                    var letterPlaces = [];
+                    
+                    letterPlaces.push({ coords: [47.545,9.23759], label: "Eppishausen", kind: "sent" });
+                    
+
+                    if (letterPlaces.length === 0) {
+                        document.getElementById('map').style.display = 'none';
+                    } else {
+                        var map = L.map('mapid', { scrollWheelZoom: false });
+                        // Muted basemap (CARTO Positron) instead of the default colourful OSM
+                        // tiles, to match the edition's restrained palette.
+                        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+                            attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+                            subdomains: 'abcd',
+                            maxZoom: 19
+                        }).addTo(map);
+
+                        var bounds = [];
+                        letterPlaces.forEach(function (p) {
+                            var isSent = p.kind === 'sent';
+                            var marker = L.circleMarker(p.coords, isSent
+                                ? { radius: 8, color: '#143761', weight: 2, fillColor: '#1d4e89', fillOpacity: 0.85 }
+                                : { radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75 }
+                            ).addTo(map).bindPopup((isSent ? 'Sent from: ' : 'Mentioned: ') + p.label);
+                            bounds.push(p.coords);
+                        });
+                        if (bounds.length > 1) {
+                            map.fitBounds(bounds, { padding: [25, 25], maxZoom: 9 });
+                        } else {
+                            map.setView(bounds[0], 8);
+                        }
+                    }
+                </script><script>
+                    // Initialize all tooltips
+                    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+                    new bootstrap.Tooltip(tooltipTriggerEl)
+                    })
+                </script></body>
+</html>

@@ -86,7 +86,8 @@
                   <section id="original-text" class="mb-4">
                      <h2>Original Text
                         <span class="transcription-source badge-manuscript" title="Diplomatische Transkription der Handschrift">Transcribed from the manuscript (Transkribus)</span></h2>
-                     <div>
+                     <div class="btn-group btn-group-sm mb-2" role="group" aria-label="Textansicht"><button type="button" id="view-lines-btn" class="btn btn-outline-secondary active" onclick="document.getElementById('view-lines').classList.remove('d-none'); document.getElementById('view-flow').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-flow-btn').classList.remove('active');">Zeilengenau</button><button type="button" id="view-flow-btn" class="btn btn-outline-secondary" onclick="document.getElementById('view-flow').classList.remove('d-none'); document.getElementById('view-lines').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-lines-btn').classList.remove('active');">Fließtext</button></div>
+                     <div id="view-lines">
                         
                         <p><br>Basel 30 Nov. 37.
                            <br>Hochverehrter
@@ -120,6 +121,41 @@
                            und bewahren Sie mir Ihre freundliche Gewogenheit. <br>Sammt meinem
                            lieben Weibe Ihnen und Ihrer Frau <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jenny von Droste zu Hülshoff</strong&gt;">Gemahlinn<a href="https://d-nb.info/gnd/118527541"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> <br>mich auf das angelegentlichste empfehlend. <br>Ihr staets
                            ergebener <br>Wilh. Wackernagel Dr. </p>
+                        </div>
+                     <div id="view-flow" class="d-none">
+                        
+                        <p>Basel 30 Nov. 37.
+                           Hochverehrter
+                           Herr Baron, Ihrer Erlaubniss gemäss habe ich nachgefragt ob die <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Beyel</strong&gt;">Beyelsche
+                              Buchhandlung<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> Druck und Verlag des <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Weingartner
+                              Codes</span> als vierten Bandes des <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Joseph von Laßberg: Lieder-Saal, das ist: Sammelung altteutscher&#xA;        Gedichte.</strong&gt;">Liedersaals<a href="http://dl.ub.uni-freiburg.de/diglit/liedersaal1825-3https://www.digitale-sammlungen.de/en/view/bsb10113516">📖</a></span> übernehmen wollte. Die Antwort ist, wie ich es nicht anders
+                           voraussetzen durfte, ein freudiges ja gewesen. "Auch die Litrographien" schreibt mir <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Caspar Bluntschli</strong&gt;">mein
+                              Schwager<a href="https://d-nb.info/gnd/118512129"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> "wollen wir auf uns nehmen, wenn sie nicht gar zu zahl reich
+                           seyn müssen; im letztern Fall wenigstens theilweise". ich habe über das Buch selbst und
+                           über Ihre Bedingungen gesagt was ich zu sagen wusste, so dass,
+                           glaube ich, damit der Druck alsbald beginnen könne, nun nichts mehr
+                           fehlt als das <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Manuscript</span> und die näheren
+                           Anweisungen von Ihrer Seite. Quod felix faustum sit! Und wie geht es
+                           in Ihrem nun bald veroedeten Schlosse? wie Ihnen und Ihrer
+                           verehrten Frau <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jenny von Droste zu Hülshoff</strong&gt;">Gemahlinn<a href="https://d-nb.info/gnd/118527541"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> und den lieblichen Kindern? Uns hier geht es
+                           ganz wohl, und gienge es noch besser, wenn ich nicht um mich ganz zu
+                           erholen auf Befehl des Arztes, faulenzen und bloss vegetieren
+                           müste. Dass unter andern
+                           <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Göttingen</strong&gt;">Göttinger<a href="https://www.wikidata.org/wiki/Q3033"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> Professoren auch die Brüder <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Grimm<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> eine Verwahrung gegen den von <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ernst August I.</strong&gt;">Ernst
+                              August<a href="https://d-nb.info/gnd/118530925"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> vorgeschriebenen neuen Eid unterzeichnet d.h. dass sie Ruhe und Erdenglück muthig
+                           auf die Wage
+                           gesetzt haben (denn wie leicht können die übrigen Beamten sie feige im stich
+                           lassen?) das wird Ihnen keine neue Nachricht seyn, ich bin
+                           dieser braven Menschen wegen in ernstlicher Unruhe. Gott wende es zum
+                           besten. Für den
+                           <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Hugo von Montfort: Gedichte.</strong&gt;">Hugo von
+                              Montfort<a href="https://handschriftencensus.de/werke/948">📖</a></span> würde ich Ihnen danken müssen, auch wenn ich ihn nicht
+                           so schön für das <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wilhelm Wackernagel: Deutsches Lesebuch.</strong&gt;">Lesebuch<a href="https://digi.ub.uni-heidelberg.de/diglit/wackernagel1839gahttps://archive.org/details/deutscheslesebu00wackgoog">📖</a></span>
+                           brauchen könnte: solche Freude habe ich an diesem merkwürdigen
+                           dreydraethigen Gewebe von Minne-Meister- und Volksgesang gehabt. Leben Sie wohl,
+                           und bewahren Sie mir Ihre freundliche Gewogenheit. Sammt meinem
+                           lieben Weibe Ihnen und Ihrer Frau <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jenny von Droste zu Hülshoff</strong&gt;">Gemahlinn<a href="https://d-nb.info/gnd/118527541"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> mich auf das angelegentlichste empfehlend. Ihr staets
+                           ergebener Wilh. Wackernagel Dr. </p>
                         </div>
                   </section>
                   <details id="normalised-text" class="text-version mb-4">

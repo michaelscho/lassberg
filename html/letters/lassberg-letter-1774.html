@@ -92,7 +92,8 @@
                   <section id="original-text" class="mb-4">
                      <h2>Original Text
                         <span class="transcription-source badge-manuscript" title="Diplomatische Transkription der Handschrift">Transcribed from the manuscript (Transkribus)</span></h2>
-                     <div>
+                     <div class="btn-group btn-group-sm mb-2" role="group" aria-label="Textansicht"><button type="button" id="view-lines-btn" class="btn btn-outline-secondary active" onclick="document.getElementById('view-lines').classList.remove('d-none'); document.getElementById('view-flow').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-flow-btn').classList.remove('active');">Zeilengenau</button><button type="button" id="view-flow-btn" class="btn btn-outline-secondary" onclick="document.getElementById('view-flow').classList.remove('d-none'); document.getElementById('view-lines').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-lines-btn').classList.remove('active');">Fließtext</button></div>
+                     <div id="view-lines">
                         
                         <p><br>Eppishausen am 1.
                            may. 1834. <br>Verertester Herr! <br>Seit 5 wochen durch die gicht am rechten arme invalide <br>habe ich meine
@@ -123,6 +124,38 @@
                            hände kommen und <br>lösen sie mit Thalern aus. <br>Leben Sie wol;
                            ich habe eine ganz bleierne hand <br>und kann nicht weiter, obschon ich noch manches <br>zu sagen hätte.
                            Gott befohlen von Irem <br>ergebensten <br>JvLassberg. </p>
+                        </div>
+                     <div id="view-flow" class="d-none">
+                        
+                        <p>Eppishausen am 1.
+                           may. 1834. Verertester Herr! Seit 5 wochen durch die gicht am rechten arme invalide habe ich meine
+                           abschriften für Sie unterbrechen müssen. Sie sehen wol an meinen
+                           schriftzügen wie schlecht es mit dem schreiben gehet: Ich sende Inen
+                           daher, zugleich Irem eigenen wunsche gemäss, den <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ulrich von Liechtenstein: Frauendienst.</strong&gt;">Frauendienst<a href="https://www.handschriftencensus.de/werke/386">📖</a></span> um selbst darinne für Ire <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wilhelm Wackernagel: Deutsches Lesebuch.</strong&gt;">chrestomathie<a href="https://digi.ub.uni-heidelberg.de/diglit/wackernagel1839gahttps://archive.org/details/deutscheslesebu00wackgoog">📖</a></span> wälen zu können. Die mir zurükgesandten bücher habe ich richtig erhalten.
+                           was ich abgeschrieben habe, lege ich hier bei. es soll aber noch einiges folgen, wenn
+                           die schmerzen in der hand nachlassen wollen. es verstehet sich dass es lauter
+                           anecdota sein müssen. eine <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Albert von Augsburg: Leben des heiligen Ulrich.</strong&gt;">gereimte
+                              legende<a href="https://geschichtsquellen.de/werk/70https://www.handschriftencensus.de/werke/1009https://d-nb.info/gnd/1232969346">📖</a></span> aus dem XII. iarhundert von <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ulrich von Augsburg</strong&gt;">St.
+                              Ulrich<a href="https://d-nb.info/gnd/118625284"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> dem bischof von <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Augsburg</strong&gt;">Augsburg<a href="https://www.wikidata.org/wiki/Q2749"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> bedaure ich jezt
+                           nicht beihanden zu haben, sie ist der sprache wegen ser merkwürdig, <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ludwig Uhland</strong&gt;">Uhland<a href="https://d-nb.info/gnd/118625063"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           hat sie schon seit merern iaren von mir, und noch nie zurükgesendet! ich habe aber
+                           darum geschrieben, wenn sie nur noch zu rechter zeit kommt. Ich habe in der
+                           zeitung gelesen, dass zu <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Basel</strong&gt;">Basel<a href="https://www.wikidata.org/wiki/Q78"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> die
+                           kirchenschäze des domes geteilt werden, und dass darunter eine <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">krone</span> der <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Gertrud von Hohenberg</strong&gt;">königin
+                              Anna<a href="https://d-nb.info/gnd/123579783"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> /: warscheinlich der gemalin kais. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Kaiser Rudolf von Habsburg</strong&gt;">Rudolph
+                              I<a href="https://d-nb.info/gnd/11860371X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>.:/ befindlich seie. es
+                           ist vermutlich die ienige welche in irem grabe gefunden wurde, als
+                           in den 70er iaren des vorigen Jarhunderts die <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;St. Blasien</strong&gt;">St. Blasier<a href="https://www.wikidata.org/wiki/Q145008"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>
+                           mönche die habsburgischen leichen aus dem <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Basel</strong&gt;">Basler dome<a href="https://www.wikidata.org/wiki/Q78"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>
+                           abholten. ich vermute dass diese <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">krone</span> wol nur von kupfer und
+                           vergoldet sein wird; aber sie kann für die kunstgeschichte merkwürdig sein. wenn Sie,
+                           verertester herr! daher die güte haben wollten, mir diese <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">krone</span>, etwa in der grösse eines quartblattes, abzeichnen zu lassen; so würden Sie mich
+                           ser verbinden und ich die unkosten mit dem besten danke erstatten. einige nachrichten über
+                           den inhalt
+                           des hölzernen mit goldblech überzogenen <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">altarblattes</span> wären mir ser willkommen. ich denke doch die <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Basel</strong&gt;">Basler<a href="https://www.wikidata.org/wiki/Q78"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> lassen diese Cymelia nicht in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Liestal</strong&gt;">Liechstaller<a href="https://www.wikidata.org/wiki/Q68972"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>
+                           hände kommen und lösen sie mit Thalern aus. Leben Sie wol;
+                           ich habe eine ganz bleierne hand und kann nicht weiter, obschon ich noch manches zu sagen hätte.
+                           Gott befohlen von Irem ergebensten JvLassberg. </p>
                         </div>
                   </section>
                   <details id="normalised-text" class="text-version mb-4">

@@ -1,0 +1,214 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0" lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>The Lassberg Letters</title>
+      <link href="../../css/styles.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script><link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"><script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script></head>
+   <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+         <div class="container"><a class="navbar-brand" href="../../index.html">The Laßberg Letters</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link" href="../../index.html">Welcome</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../persons.html">Persons</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../places.html">Places</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../explore.html">Explore</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <header class="page-header py-4">
+         <div class="container">
+            <h1 class="mb-2">Brief von Joseph von Laßberg an Ludwig Uhland (14.12.1825).</h1>
+            <p class="lead mb-0">
+               
+               <p>Correspondence data based on Harris, Martin: Joseph Maria Christoph
+                  Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                  Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                  geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                  Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991..</p>
+               </p>
+         </div>
+      </header>
+      <main class="py-4">
+         <div class="container">
+            <div class="alert alert-warning letter-preview-banner" role="alert"><strong>Unreviewed working text.</strong> The encoding of this letter
+               has not yet been editorially reviewed
+               (status: draft).
+               The text may contain transcription or OCR errors — please cite with caution.
+               </div>
+            <div class="row g-4">
+               <div class="col-lg-4 order-lg-2">
+                  <aside class="letter-sidebar">
+                     <section id="metadata" class="mb-4">
+                        <h2 class="h5">Metadata</h2>
+                        <p><strong>Signatur: </strong>Marbach am Neckar, Schiller Nationalmuseum, </p>
+                        <p><strong>Registernummer (Laßberg): </strong></p>
+                        <p><strong>Registernummer (Harris): </strong>527</p>
+                        <p><strong>Gedruck in: </strong><a href="https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig
+                              Uhland. Wien 1870, S. 60-64</a></p>
+                     </section>
+                     <section id="map" class="mb-4">
+                        <h2 class="h5">Places</h2>
+                        <div id="mapid"></div>
+                        <p class="map-legend small text-muted mt-1 mb-0"><span class="legend-dot" style="background:#1d4e89"></span> place of sending
+                           <span class="legend-dot ms-2" style="background:#b57cc0"></span> places mentioned
+                           </p>
+                     </section>
+                  </aside>
+               </div>
+               <div class="col-lg-8 order-lg-1">
+                  <section id="original-text" class="mb-4">
+                     <h2>Original Text
+                        <span class="transcription-source badge-print" title="OCR-Texterfassung aus der gedruckten Edition, siehe Metadaten/Gedruckt in">Transcribed from the printed edition (OCR)</span></h2>
+                     <div>
+                        
+                        <p>Verertester Freund! Als ich gestern Mittags von meinem heiligen Berge hieher zurükkam
+                           fand ich ein Schreiben von Inen mit einem Einschluße von H. Dr. Maßmann, welches wieder
+                           drei Briefe von Iacob Grimm, Prof. Mone und Herrn von der Hagen von ser altem Datum
+                           enthielt. Der Inhalt von Maßmanns Schreiben konnte mir, da er auch Iren Beifall hatte,
+                           nicht anders als höchst angenem sein: allein, bei diesen Briefen lag ein späterer
+                           von Herrn Dr. Maßmann, der von Schwierigkeiten spricht, die sich dem Abschreiben des
+                           Weingartner Codex plözlich in den Weg gestellt haben und dann noch ein späterer von
+                           Herrn Prof. Schwab, der das Vorhaben Maßmanns als ganz aufgegeben angiebt und den
+                           Antrag enthält, in Gemeinschaft mit einem Herren Kaußler das Manuscript für mich zu
+                           copiren. Es muß also Etwas vorgefallen sein, was, nach meinem Dafürhalten nur die
+                           Person des Herrn Dr. Maßmann betreffen kann und mich und mein Vorhaben den Codex Weingartensis
+                           heraus zugeben, nicht berüret; und obschon ich in keinem der erhaltenen Briefe etwas
+                           davon erwänet finde; so glaube ich doch vermuten zu müssen, daß Herr Dr. Maßmann bereits
+                           Stuttgart verlassen und seinen Literarischen Zug weiters fortgesezt habe. Ich bin
+                           dadurch in der Verlegenheit nicht zu wissen, wohin ich im auf seine zwei Schreiben
+                           antworten soll; können Sie mir seinen Aufenthalt angeben, so bitte ich darum. Empfangen
+                           Sie meinen besten Dank, lieber Freund! für die Mitteilung des Inhaltes des Schlusses
+                           der Handschrift Nr. 69, worunter mir das vollständige Gedicht von Mezen Hochzit, besonders
+                           angenem ist; weil ich alle treue Schilderungen des Volkslebens der mittleren Zeit
+                           vorzüglich schäze. Man findet oft die leer gebliebenen Blätter an Manuscripten des
+                           Mittelalters mit einzelnen Liedern ausgefüllt, und ich habe von den mir vorgekommenen
+                           schon eine kleine Sammlung zu machen angefangen; welche einmal einen ganzen Band zum
+                           Liedersaal füllen könnte. Für jezt aber beschäftiget mein Gemüte vor allem die Sorge,
+                           um Vorbereitung zu Herausgabe des Weingartner Codex. Der Antrag der Herren G. Schwab
+                           und Kausler, mir diese Membrane abzuschreiben, ist gewiß des höchsten Dankes wert;
+                           ich füle das ganz: Αλλ ' ἐκ τοι ἐρεω, και επι μεγαν όρκον όμουμα, daß mir nichts angenemeres
+                           begegnen könnte, als es selbst zu tun: es ist nicht Eitelkeit, die mich dies wünschen
+                           heißt; sondern viel mer eine religiöse Ängstlichkeit, daß andere nicht die, nach meiner
+                           Ansicht, unerläßliche Geduld bei solcher Arbeit haben würden, one welche einem Dichter
+                           so oft durch einen scheinbar unbedeutenden Schreibfeler, großes Unrecht zugefügt werden
+                           kann. Ir in dem vorlezten Briefe geäussertes Anerbieten zu Vergleichung der Handschrift,
+                           könnte ich wol one große Unbescheidenheit nicht annemen. Männer die so Trefliches
+                           arbeiten können, sollte man mit solchen ermüdenden und trokenen Geschäften nicht behelligen.
+                           Ich hätte zwar große Lust auf den Früling oder Sommer eine Entdekungs Reise längs
+                           dem Rheine und Nekar in Beziehung auf alte teutsche Dichter zu machen; aber im lezten
+                           Iare sind mir 3 dergleichen Reise Plane so hässlich gescheitert, das ich ganz misstrauisch
+                           auf das Schiksal geworden bin, und mir vorgenommen habe, alle dergleichen Projekte
+                           den Göttern anheimzustellen, kurz, ich bin ganz ein Mann geworden, den wie Horaz sagt:
+                           quem duplici panno patientia velat. Von der Hagens Brief, den mir Dr. Maßmann mitgebracht
+                           hat, giebt Kunde über seine Ausgabe der Maneßischen Sammlung, zugleich schreibt mir
+                           Jakob Grimm: „ Hagen stehet „ vielleicht ab von seiner überschnellen Ausgabe der Maneßischen
+                           „ Sammlung wenn er die Schwierigkeit der Sache reiflicher be- „ denkt, oder darauf
+                           gefürt wird. " Wie wenig dies der Fall sei, sollen Sie nun aus Hagens eigenen Worten
+                           vernemen: „ Von meiner neuen Ausgabe der Maneßischen Sam- „ lung bemerke ich vorläufig.
+                           Der Maneßische Text bleibt „ im Ganzen (? ) unvermischt, alles aber berichtigt, „
+                           ergänzt aus der Urschrift. Orthographie und Grammatik „ berichtigt und gleichartig,
+                           so fern nicht örtliche und persön- „ liche Abweichung entscheiden, mangelhafte Lieder
+                           werden, so „ weit es noch geht ( ja wol! ) aus andern Handschriften er- „ gänzt (
+                           als solche mit * bezeichnet ) und besonders so die „ großen Sonnetartigen Strophenreihen
+                           mehrerer Dichter „ vervollständigt, und diese auch besser geordnet ( meist nach „
+                           andern Handschriften ) und zum Teile chronologisch herge- „ stellt ( z. B. bei Walther
+                           von der Vogel Weide ) ". Nun, ich gratuliere Freund Uhland! „ Ein starker Suplement
+                           - Band „ umfafft aber Alles, was diesem Dichter - Chor sonst noch zu- „ geschrieben
+                           wird, desgleichen die Lieder anderer namhafter „ Dichter dieser Zeit, so wie viele
+                           namenlose. Meine Aus- „ gabe des Meister Gottfried ist ungefähr Maaßstab, beson- „
+                           ders das Glossar ( dies bleibt hier aber weg, weil dem- „ nächst (!!! ) ein allgemeines
+                           mittel - hochdeutsches Wörter „ Buch folgen soll ) dagegen Lesarten und literarisch
+                           - biogra- „ phische Nachrichten über Alles. " In dieser verwirrten und gräuelvollen
+                           Manier gehet der ganze Brief fort und läßt billig zweifeln ob der böse Hagen die sogenannte
+                           Maneßische Sammelung auch nur einmal auf merksam und ganz durchlesen habe. Da möchte
+                           man doch des Teufels werden! Auch erfare ich von Im, daß nicht, wie anfangs versprochen,
+                           eine Umarbeitung des literarischen Grund Risses; sondern blos ein Nachtrag folgen
+                           soll. Wir wissen an Im, daß dergleichen Codicille manchmal erſt in Extremis gemacht
+                           werden, d. i. wenn die Messe vor der Türe ist und jm das Wasser an die Kele gehet;
+                           also auch von dieser Seite nichts zu erwarten. In Warheit, dieser Mann kömmt mir vor
+                           wie ein Taschenspieler, der alle seine Stücke mit sonderbarer Geschwindigkeit zu machen
+                           weiß; allein wie diese Künstler zu sagen pflegen: Praxis est multiplex 2c. Mit meiner
+                           kurzweiligen Historia von Graven Albrechten von Werdenberg, habe ich, wie die Franzosen
+                           sagen, nichts heur et malheur! der Mann der die Holzschnitte dazu machen soll, ist
+                           wegen falscher Tätigkeit, ins Zuchthaus gekommen; das ist nun ser langweilig, für
+                           mich und In. Der Iwain des Hartmann von Owe, kömmt nun auch heraus. Lachmann schreibt
+                           mir, daß er den Text bearbeite und Benecke Anmerkungen und das Wörterbuch dazu mache,
+                           lezterer hat auch den Aparat dazu zusamen gebracht. Der Abdruk von Lachmanns Nibelungen
+                           Lied rükt auch mit großen Schritten vor. Er giebt den Text der zu München befindlichen
+                           zweiten Hohen Emser Handschrift, ganz rein one Interpolation a la Hagen, übrigens
+                           soll die Ausgabe gehörig mit Lectionibus variis und notis ausgestattet werden. Ich
+                           traue Lachmann etwas ser gutes zu, und freue mich, daß nun auch einmal eine zweite
+                           Urkunde des Nibelungen Liedes edirt wird; zunächst sollte nun die St. Gallische folgen;
+                           allein, schwerlich wird sobald jemand die Herausgabe unternemen. Man muß gestehen,
+                           daß im Norden ungleich mer Liebe, Eifer und Tätigkeit für diesen Teil der teutschen
+                           Literatur ist, als bei uns, und die dortigen Buchhändler ungleich mer Mut haben, als
+                           selbst Cotta, der sich doch so gerne loben hört.. Herr Prof. Schwab wird Inen vielleicht
+                           von dem neuentdekten Sänger Hug von Langenstein, aus dem Höwgau, gesprochen haben,
+                           zu welchem Funde mir Benecke die Veranlassung gab. Ich habe nun in dem Manuscript
+                           vom II. Teile von Trutpert Neugarts Episcopatus Constantiensis, die Bestätigung meiner
+                           Sammlung gefunden, daß dieser Dichter noch bis 1318 teutschordens Komthur auf der
+                           Insel Maynau war. Nun hoffe ich lassen auch Sie mich bald eine erfreuliche Kunde über
+                           Ir literarisches Leben und Weben hören; denn mir sagt eine innere Andung, daß Sie
+                           an der Theotisca arbeiten und uns bald etwas mitteilen werden, wie wirs an unserm
+                           Uhland gewont sind. Indessen: Vale et fave Constanz am 14. December 1825.</p>
+                        </div>
+                  </section>
+                  <div id="related-letters"></div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer class="bg-dark text-white text-center py-3">
+         <div class="container">
+            <p class="mb-0"><a href="../letters.html">Back to the Letters</a></p>
+         </div>
+      </footer><script src="../../js/related.js"></script><script src="https://unpkg.com/leaflet/dist/leaflet.js"></script><script>
+                    var letterPlaces = [];
+                    
+                    letterPlaces.push({ coords: [47.66666667,9.18333333], label: "Konstanz", kind: "sent" });
+                    
+
+                    if (letterPlaces.length === 0) {
+                        document.getElementById('map').style.display = 'none';
+                    } else {
+                        var map = L.map('mapid', { scrollWheelZoom: false });
+                        // Muted basemap (CARTO Positron) instead of the default colourful OSM
+                        // tiles, to match the edition's restrained palette.
+                        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+                            attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+                            subdomains: 'abcd',
+                            maxZoom: 19
+                        }).addTo(map);
+
+                        var bounds = [];
+                        letterPlaces.forEach(function (p) {
+                            var isSent = p.kind === 'sent';
+                            var marker = L.circleMarker(p.coords, isSent
+                                ? { radius: 8, color: '#143761', weight: 2, fillColor: '#1d4e89', fillOpacity: 0.85 }
+                                : { radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75 }
+                            ).addTo(map).bindPopup((isSent ? 'Sent from: ' : 'Mentioned: ') + p.label);
+                            bounds.push(p.coords);
+                        });
+                        if (bounds.length > 1) {
+                            map.fitBounds(bounds, { padding: [25, 25], maxZoom: 9 });
+                        } else {
+                            map.setView(bounds[0], 8);
+                        }
+                    }
+                </script><script>
+                    // Initialize all tooltips
+                    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+                    new bootstrap.Tooltip(tooltipTriggerEl)
+                    })
+                </script></body>
+</html>

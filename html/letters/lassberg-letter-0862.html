@@ -1,0 +1,217 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0" lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>The Lassberg Letters</title>
+      <link href="../../css/styles.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script><link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"><script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script></head>
+   <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+         <div class="container"><a class="navbar-brand" href="../../index.html">The Laßberg Letters</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link" href="../../index.html">Welcome</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../persons.html">Persons</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../places.html">Places</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../explore.html">Explore</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <header class="page-header py-4">
+         <div class="container">
+            <h1 class="mb-2">Brief von Joseph von Laßberg an Ludwig Uhland (11.10.1823).</h1>
+            <p class="lead mb-0">
+               
+               <p>Correspondence data based on Harris, Martin: Joseph Maria Christoph
+                  Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                  Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                  geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                  Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991..</p>
+               </p>
+         </div>
+      </header>
+      <main class="py-4">
+         <div class="container">
+            <div class="alert alert-warning letter-preview-banner" role="alert"><strong>Unreviewed working text.</strong> The encoding of this letter
+               has not yet been editorially reviewed
+               (status: draft).
+               The text may contain transcription or OCR errors — please cite with caution.
+               </div>
+            <div class="row g-4">
+               <div class="col-lg-4 order-lg-2">
+                  <aside class="letter-sidebar">
+                     <section id="metadata" class="mb-4">
+                        <h2 class="h5">Metadata</h2>
+                        <p><strong>Signatur: </strong>Marbach am Neckar, Schiller Nationalmuseum, </p>
+                        <p><strong>Registernummer (Laßberg): </strong>171</p>
+                        <p><strong>Registernummer (Harris): </strong>446</p>
+                        <p><strong>Gedruck in: </strong><a href="https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig
+                              Uhland. Wien 1870, S. 38-42</a></p>
+                     </section>
+                     <section id="map" class="mb-4">
+                        <h2 class="h5">Places</h2>
+                        <div id="mapid"></div>
+                        <p class="map-legend small text-muted mt-1 mb-0"><span class="legend-dot" style="background:#1d4e89"></span> place of sending
+                           <span class="legend-dot ms-2" style="background:#b57cc0"></span> places mentioned
+                           </p>
+                     </section>
+                  </aside>
+               </div>
+               <div class="col-lg-8 order-lg-1">
+                  <section id="original-text" class="mb-4">
+                     <h2>Original Text
+                        <span class="transcription-source badge-print" title="OCR-Texterfassung aus der gedruckten Edition, siehe Metadaten/Gedruckt in">Transcribed from the printed edition (OCR)</span></h2>
+                     <div>
+                        
+                        <p>Lieber Herr! Ich möchte lieber sagen: Freund! wenn ich hoffen dürfte, diesen Namen
+                           bei Ihnen zu verdienen; jeder Andere, den Sie mir geben können, ist mir höchst gleichgiltig,
+                           und nach diesem werde ich streben, so lange Sie mir erlauben, von mir und meinem Treiben
+                           und Tun Ihnen Nachricht zu geben. Ihr Schreiben vom 2. dieses hab ich erst heute erhalten.
+                           Daß Sie die Erinnerung an die kurzen Stunden, die Sie der Villa Epponis und ihrem
+                           Einsiedler geschenkt, in Ihrem Herzen bewaren wollen, hat mich innig gerürt und so
+                           weit mich noch Etwas freuen kann, herzlich gefreut. Es schien mir als ob irgend eine
+                           mir unbekannte Ursache Sie zurükgehalten habe, sich ganz zu entschließen; daß diese
+                           meine Ansicht nicht die Einzige gewesen seie, mögen Sie aus folgenden Worten meines
+                           Freundes Ittner, die ich heute mit Ihrem Briefe erhalte, schließen: „ Diese Woche
+                           erhielt ich von dem Dichter Uhlandus, „ dem wir kein Lächeln abloken konnten, die
+                           lateinischen Oden „ von Gustav Schwab, die er unter dem fetten König Agag „ an die
+                           Landstände dichtete, fast alle im alkaischen Versmaße. „ Sie sind von verschiedenem
+                           Werte, doch meistenteils gut und „ stroken von Vaterlandsliebe und freisinnigen Gedanken,
+                           wie " sie die Könige nicht gerne hören. Das Beste aber dabei sind „ die herrlichen
+                           deutschen Übersetzungen von Uhland, die das „ Original bei weitem übertreffen und
+                           die verschloßenen „ Ideen hell und deutlich ans Tageslicht zichen. " Nun zu Beantwortung
+                           Ihres Briefes! - Von Ihrem Vorhaben eine Darstellung der teutschen Poesie im Zeitalter
+                           der Hohenstaufen zu geben, haben Sie mir weder_im Allgemeinen, noch in Bezug auf die
+                           Abteilungen Etwas gesagt; allein, als ich Ihren Walter von der Vogelweide gelesen
+                           hatte, war mir schon klar, daß in dieser Zeit nur Sie, oder sonst niemand, diese Arbeit
+                           mit Glük und Geschik unternemen und vollfüren könne. Daß Sie solche meiner Prüfung
+                           unterstellen möchten, sehe ich für eine bloße Höflichkeit an; denn Sie verstehen das
+                           in jeder Beziehung besser als ich, und wenn ich je Etwas war und konnte, so hat die
+                           Trauer nun zuviel Gewalt über mich gewonnen, als daß ich mir noch schmeicheln dürfte
+                           Etwas Gutes und Großes in meinem Sinne zu leisten. Non sum qualis eram, sub bonae
+                           regno Cynarae! - Gleichviel, wenn nur das Gute geschieht, durch wen es geschehe! Nicht
+                           nur die Abschrift des palatinischen Codex Nr. CCCLVII. und die Zeichnungen aus der
+                           Maneßischen Handschrift; sondern mein ganzer literarischer Apparat stehen Ihnen zu
+                           jeder Zeit und auf so lange Zeit als Sie ihn nüzen wollen zu Diensten. Wozu hätte
+                           ich ihn sonst erworben? Möchte ich im Stande sein Ihnen recht viele Dienste zu leisten
+                           und Ihnen zu zeigen, wie sehr ich einen Mann ehre und liebe, der seinem Vaterlande
+                           teuer sein muß, hätte er auch kein anderes Verdienst um dasselbe, als daß er so oft
+                           gezeigt hat, wie teuer ihm das Vaterland ist. Die Vergleichung der Maneßischen Ausgabe
+                           mit der Weingartner Handschrift und der Heidelberger muß Ihnen unzweifelbar wichtige
+                           Resultate gewären. Ich glaube daß der Weingartner Codex dem sogenannten Maneßschen
+                           zur Grundlage gedient hat, daß Lezterer für den Bischof Heinrich ( von Klingenberg
+                           ) von Konstanz geschrieben worden seie, ist mir beinah mehr als warscheinlich. Er
+                           war von seiner Mutter, einer gebornen von Costenz, ein halber Zürcher, er war Chorherr
+                           und Dechant zu Zürch - Johann von Kostenz ( sonst auch Klein Heinzelin von Costenz
+                           genannt ) warscheinlich sein Ohm, ist Verfasser des schönen Gedichtes: Gott Amur (
+                           was ich diplomatisch beweisen kann ). Eben so warscheinlich ist, daß er in Zürch seine
+                           Bildung erhielt, er wurde Chanzler Kaiser Rudolfs von Habsburg, aber erst nach des
+                           lezteren Tode ( 1293 ) Bischof zu Constanz. Einen solchen Aufwand als die Handschrift
+                           erforderte konnte damal kein Privatmann bestreiten; auch ist ganz falsch daß der Bürgermeister
+                           Rüdger Maneß die Handschrift fertigen ließ; es war ein gleichnamiger Vetter, Scholaster
+                           am großen Münster zu Zürch, der als solcher über alle Schönschreiber und Rubricarios
+                           zu befelen hatte. Ich halte den Heidelberger Codex CCCLVII. für Etwas älter als den
+                           Weingartner; aber er ist offenbar ein ἀπόγραφον, wovon seine große Unkorrektheit einen
+                           unwiderlegbaren Beweiß giebt. Auf jenen Abschnitt Ihres Werkes, der von der einheimischen
+                           Heldensage handelt, bin ich am meisten begierig und wünschte vorläufig zu wissen,
+                           welchen Zeit Raum Sie demselben einräumen? Mit Mayláths Handschrift habe ich schon
+                           viele Zeit verdorben, und hätte dieselbe schon längst weggeworfen, wenn ich nicht
+                           dem biedern Ungar zu lieb mir vorgenommen hätte, sie bis ans Ende zu lesen. Eine elendere
+                           Mönchs - Compilation aus Legenden und Klostertraditionen ist mir nicht bald vorgekommen;
+                           in den Fabelkreiß Karl des Großen möchte ich sie auf keinen Fall reihen; denn es ist
+                           offenbar ein Produkt des XV. Jar - Hunderts im Anfange warscheinlich auf einer lateinischen
+                           Legende beruhend, dann aber eine bloße langweilige Geschichte des Schotten Klosters
+                           zu Regensburg, welches von viel späterem Ursprunge ist als Karl des Großen Regierung.
+                           Da ist mein Gabriel von Montavel, gedichtet von unserm Landsmanne Konrad von Hohenstoffeln
+                           ( dem edlen, fryen manne ), der auch in den Kreiß der Tafelrunde gehört, ein ganz
+                           anderer Kerl. Wir haben heuer keine süßen Trauben, sonst würde ich bedauern, daß der
+                           gute Conz diesen Herbst seinen Ausflug in die Villa Epponis nicht unternommen hat;
+                           aber ich habe noch alten Wein und das ist für alte Knaben, wie er und ich sind, doch
+                           die Hauptsache; sagen Sie ihm dieses, und wenn er kommen will, so kann ich ihm meine
+                           Pferde bis Tuttlingen entgegen schiken. Ihre Subscription an Arx für das Gedicht auf
+                           den Appenzeller Krieg werde ich bei ihm anmelden, er hatte es mir vor ein Par Jaren
+                           zur Einsicht gesendet und ich ihm sehr mißraten, es heraus zugeben; es hat weder das
+                           Verdienst der Gleichzeitigkeit, noch irgend einen dichterischen Wert. Dies und Mayláths
+                           Handschrift sind nun 2 Sachen, die dem Geschmake an altteutscher Literatur mehr Schaden
+                           als Nuzen bringen werden. Im Anfange Augusts habe ich mit Ittner und einem Konstanzer
+                           Archivisten die Reise in das Rheintal gemacht, welche Sie hätten machen sollen; ich
+                           habe dabei mehr als 40 alte Burgen besucht und unter diesen mehrere Sängerburgen,
+                           als: Husen, Altstetten, Hohensax, Sevelen ( welches ich für die Burg des Milon von
+                           Sevelingen halte; denn Söflingen bei Ulm war schon im XIII. Iar Hundert ein Nonnen
+                           Kloster, und gehörte früher denen von Freiberg ), Gutenburg bei Balzers, drei Burgen
+                           der Montforter, und 3 deren von Hohen Ems. Ich werde den 20 Sängern im ersten Bande
+                           des Liedersaals im Vorberichte zum 2. noch zwanzig andere anreihen, welche alle nicht
+                           weiter von Eppishausen entfernt wonten, als die im ersten Bande erwänten. In Sargans
+                           ent dekte ich bei Herrn Altstatthalter Gallatin eine Handschrift des Gedichts von
+                           dem Ritter von Staufenberg und der Meerfeye, warscheinlich von Gilg Tschudy oder seinem
+                           Sone geschrieben, und einige noch unbekannte Schlachtlieder aus den Burgundischen
+                           Kriegen, vielleicht von Veit Weber aus Freiburg im Breisgau. Das ist aber auch Alles,
+                           was mir auf dieser Ausflucht von altteutscher Literatur vorkam. Höchst merkwürdig
+                           war mir Werdenberg. Das schönste Wetter begünstigte uns; aber mir felte die Sonne,
+                           die sonst alle meine Schritte so freundlich beschien! - Davon mag ich nicht weiter
+                           sprechen! Ich habe für diesen Winter den alten Helmsdorfischen Hof zu Konstanz gemietet;
+                           ich will versuchen mich über meine Empfindungen zu täuschen und mich zu bereden, daß
+                           ich mich noch in diese Welt und unter diese Menschen schiken kann; zugleich lasse
+                           ich den 3. Band meines Liedersaales dann dort unter meinen Augen druken. Leben Sie
+                           recht wol und vergnügt mit Ihrer liebenswürdigen, ſchlanken, ehelichen Wirtin und
+                           gedenken Sie zuweilen Ihres Sie aufrichtig verehrenden Eppishausen am 11. Oktober
+                           1823. I. v. Laßberg.</p>
+                        </div>
+                  </section>
+                  <div id="related-letters"></div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer class="bg-dark text-white text-center py-3">
+         <div class="container">
+            <p class="mb-0"><a href="../letters.html">Back to the Letters</a></p>
+         </div>
+      </footer><script src="../../js/related.js"></script><script src="https://unpkg.com/leaflet/dist/leaflet.js"></script><script>
+                    var letterPlaces = [];
+                    
+                    letterPlaces.push({ coords: [47.545,9.23759], label: "Eppishausen", kind: "sent" });
+                    
+
+                    if (letterPlaces.length === 0) {
+                        document.getElementById('map').style.display = 'none';
+                    } else {
+                        var map = L.map('mapid', { scrollWheelZoom: false });
+                        // Muted basemap (CARTO Positron) instead of the default colourful OSM
+                        // tiles, to match the edition's restrained palette.
+                        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+                            attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+                            subdomains: 'abcd',
+                            maxZoom: 19
+                        }).addTo(map);
+
+                        var bounds = [];
+                        letterPlaces.forEach(function (p) {
+                            var isSent = p.kind === 'sent';
+                            var marker = L.circleMarker(p.coords, isSent
+                                ? { radius: 8, color: '#143761', weight: 2, fillColor: '#1d4e89', fillOpacity: 0.85 }
+                                : { radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75 }
+                            ).addTo(map).bindPopup((isSent ? 'Sent from: ' : 'Mentioned: ') + p.label);
+                            bounds.push(p.coords);
+                        });
+                        if (bounds.length > 1) {
+                            map.fitBounds(bounds, { padding: [25, 25], maxZoom: 9 });
+                        } else {
+                            map.setView(bounds[0], 8);
+                        }
+                    }
+                </script><script>
+                    // Initialize all tooltips
+                    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+                    new bootstrap.Tooltip(tooltipTriggerEl)
+                    })
+                </script></body>
+</html>

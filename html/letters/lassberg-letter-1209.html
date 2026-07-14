@@ -87,7 +87,8 @@
                   <section id="original-text" class="mb-4">
                      <h2>Original Text
                         <span class="transcription-source badge-manuscript" title="Diplomatische Transkription der Handschrift">Transcribed from the manuscript (Transkribus)</span></h2>
-                     <div>
+                     <div class="btn-group btn-group-sm mb-2" role="group" aria-label="Textansicht"><button type="button" id="view-lines-btn" class="btn btn-outline-secondary active" onclick="document.getElementById('view-lines').classList.remove('d-none'); document.getElementById('view-flow').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-flow-btn').classList.remove('active');">Zeilengenau</button><button type="button" id="view-flow-btn" class="btn btn-outline-secondary" onclick="document.getElementById('view-flow').classList.remove('d-none'); document.getElementById('view-lines').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-lines-btn').classList.remove('active');">Fließtext</button></div>
+                     <div id="view-lines">
                         
                         <p><br>Herr Baron! <br>Von Ihrer Güte
                            erbitte ich dafür Verzeihung, dass ich erst jetzt, Mitte Decembers, auf Ihren
@@ -169,6 +170,89 @@
                            Sie auf <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Eppishausen</strong&gt;">Eppishausen<a href="https://www.wikidata.org/wiki/Q1423653"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>
                            besuchen zu können. Leben Sie wohl und erhalten Sie auch ferner <br>Ihr Wohlwollen
                            Ihrem <br>Wilhelm Wackernagel. <br>Berlin. 14/12/27. </p>
+                        </div>
+                     <div id="view-flow" class="d-none">
+                        
+                        <p>Herr Baron! Von Ihrer Güte
+                           erbitte ich dafür Verzeihung, dass ich erst jetzt, Mitte Decembers, auf Ihren
+                           Brief vom May
+                           antworte und herzlich für die mitgesandten Geschenke danke. Es gleich damals zu thun, war
+                           mir bei der Freude über Ihre gütige Aufmerksamkeit für mich un möglich, ich konnte
+                           keine Worte finden. Dann kamen allerhand verdriessliche Geschäfte, die mir die Lust an
+                           Allem raubten. Ich wollte nach <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Polen</strong&gt;">Polen<a href="https://www.wikidata.org/wiki/Q36"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> gehn für
+                           länger, vielleicht für immer; zum Glück ward nichts daraus. Mehrere codices hatte ich
+                           auch ab zu schreiben. Ich konnte kaum zu mir selbst kommen. Jetzt endlich, um mich nicht
+                           länger zu schaemen, benutze ich <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Karl Lachmann</strong&gt;">H. Prof.
+                              Lachmanns<a href="https://d-nb.info/gnd/118568558"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> Güte und schreibe Ihnen - eben wie herzlich ich Ihnen danke, wie
+                           sehr Sie
+                           mich erfreut haben. Ich hoffe, Sie haben durch <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Abraham Emanuel Fröhlich</strong&gt;">Froehlich<a href="https://d-nb.info/gnd/116830069"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> oder <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Adolf Ludwig Follen</strong&gt;">A. L.
+                              Follen<a href="https://d-nb.info/gnd/116646772"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> noch einige andre halbe und ganze Bogen erhalten. Gern hätte ich Ihnen
+                           auch noch zwey groessere, wenn gleich an sich kleine Bücher von mir geschickt, wenn
+                           mich nicht die Unsicherheit der Buch händler und die
+                           Kostspieligkeit des Postweges abgeschreckt hätten. Zuerst unter dem Titel, "<span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wilhelm Wackernagel: Spiritalia theotisca. Sermonum sex ecclesiasticorum et orationis&#xA;        Dominicae rhythmis expositae fragmenta.</strong&gt;">Spiri tualia theotisca<a href="https://books.google.de/books?id=BUsHAAAAQAAJ">📖</a></span>" eine Sammlung von
+                           Predigtbruchstücken des 12-15 Jhdts (<span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Breslau</strong&gt;">Bresslau<a href="https://www.wikidata.org/wiki/Q1799"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, Grass);
+                           dann eine
+                           Ausgabe des <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wilhelm Wackernagel: Das Wessobrunner Gebet &amp; die Wessobrunner Glossen.</strong&gt;">Wessobrunner
+                              Gebetes u. der Wessobr: Glossen<a href="https://www.digitale-sammlungen.de/de/view/bsb11262948">📖</a></span> (gegen <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Hans Ferdinand Maßmann</strong&gt;">Massmann<a href="https://d-nb.info/gnd/119059193"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>), <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Berlin</strong&gt;">Berlin<a href="https://www.wikidata.org/wiki/Q64"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, Schmidtsche
+                           Buchhdlg. Statt dessen lassen Sie mich Ihnen einige mhd. Lieder, selbst
+                           gemachte, abschreiben; es wäre mir lieb, hätten Sie sie nicht ungern gelesen. I.
+                           1. „Neumuoz, ich von dir scheiden. owê der herzenôt! und sol ich lange verre sîn in sorgen lig
+                           ich tôt. 2. Si want ir wîzen hende. neinâ vil lieber
+                           man! owê
+                           mich wê der leide, und wellest mich nu lân. 3.
+                           "Ich bin dir ie getrieuwe, in meine niuwan dich vil herzeliebin
+                           vrouwe. ne tuoz ouch umbe mich! 4.
+                           Nun welle got von himele deich breche mînen eit! nâch küssen
+                           weinden beidin: ir scheiden was in leit. 5. Dô zôch si ab ir hende ein
+                           guldîn vingerlîn. ir ougen weinden heize. dâbî
+                           gedenke mîn! 6. Adê adê vil lieber man! mîn
+                           herzelich var wol. aû ambeschen reit er hin. sîn
+                           lîp was kumbers vol. II. 1. Sol ich lachen? sol ich weinen vrouve, zwâr - in
+                           weiz es nicht. wîbe minnen, wîbe meinen. dem diz liebe leit geschiht. Zwâre, der
+                           enweiz des nicht, sül er lachen sül er weinen 2. Michel liebe
+                           Michel leide daz ist ein als wârez wort. Wil er einez, habe beide wil er hie, so
+                           sê ouch dort. Ez ist ein als wârez wort: michel liebe Michel leide. 3. Ich was vrô
+                           unt vrîs muotes; nû muoz ich dîn eigen sîn. Eigen lîbes unde
+                           guotes herzeliebez vrouwelin. Mac ich je dîn eigen sîn. ich bin vrô unt
+                           vries mustes III. 1. Al min leben muoz mir werden, sît ich, magt, dich hân gesehen. Schoenest wîp ob
+                           al der erden! heiles vil muoz ich mir jehen Nahtegal sô suoze sanc schône lûhte
+                           rôsebluome: deist ein saelec aneganc. 2. Sol ich, vrouwe, dir versmâhen so hât glücke
+                           mich getragen, Sol ich iestunt dir unnâhen sô hât mîr mîn
+                           sin gelogen. - sô bin ich der vroude vrî sinc dû mir ein süezer maere nahtegal am
+                           rôsenzwî! 3.
+                           Nahtegal, daz singen dîne hât mich nû gevangen gar. Rôse, süeziu
+                           rôse mîne, wan dîn einer nim ich war. Wol mich wol der herzenôt!- vrouwe lâ mich
+                           bî dit bliben; âne dich sô bin ich tôt. IV.
+                           1. Lieber vogel guoter heb dich ûf unde vliuc von dan Über walt und
+                           ouwen hin&nbsp;zuo&nbsp;der&nbsp;vrouwen&nbsp;wolgetân sô stât an der Zinnen liep mîn
+                           magedîn. wartend al mit sinnen an die strâzen mîn. 2. So vâlt dîn gevidere. deich dir je
+                           müeze holder sîn! Zwo der reinen megede wis dû der liebe
+                           bote mîn. Unde wirp den maere sit ich selb enmac. daz ist mir vil swaere und ein leider
+                           tac. 3. Sinc
+                           du mîner vrouwen mit sinnen also süez ein sanc. Nâch ir stât mit
+                           trûren mîn herz und aller mîn gedanc. "Abent unt den
+                           morgen hât er
+                           dîn gedâht; al die naht mit sorgen hât er sus verbrâht." V.
+                           1. Ist dir mîn staetez singen swaere. vil liebin reiniu vrouwe zart so sprich zuo mir
+                           ein liebez maere; und ist in liep mîn mit gekart. So schaff ich,
+                           daz min zunge dage: in weiz ouch danne, waz ich klage. 2. Ez singent
+                           nahtegaln als lange unz daz in leit volendet ist Und swîgent mêre
+                           mit ir sange ir leit daz birt ir süezen list. Ine sanc nie nahtegalen sanc; doch was ez
+                           leit, dâ von ich sanc.Und swîgent mêre mit ir sange 3. Sich, vrouw,
+                           ist der mîn liet unmaere, dun wendest liet, dun wendest leit, Den site hânt et
+                           sene daere: ir kumber ist nie ungekleit Du guote, meine dû ouch mich son sing ich,
+                           wan ich küsse dich. VI. 1. Dem swanen bin ich wol gelîch: der singet, sô
+                           er sterben sol. Mîn leben ist so kumberlich: ich zellez zuo
+                           dem tôde wol. Zer werlde bin ich gar ein zage: ich leb unt stirb iedoch von Tage zu tage. 2. Ein wîp, diu
+                           liebet mir den tôt. ein wîp, diu leidet mir min leben. E was ich stump;
+                           wan disiu nôt, diu hât mir sanges vil gegeben. sus lâz ich
+                           singend al min wê adê du toetaerim adê adê! 3. Waz hilfet mich mîns liedes klage? dui guote wil sîn
+                           nicht verstân: Sin hoeret niht, swie vil ich sage, noch troestet, wie si troesten kann Wan sterbest vroude
+                           Kranker lîp! der mort ist dîn: nu klag et statez wîp! Doch ich habe Sie schon lange genug gelangweilt um
+                           meinen Brief hier schliessen. Ich wünsche mir nichts mehr, als
+                           Sie auf <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Eppishausen</strong&gt;">Eppishausen<a href="https://www.wikidata.org/wiki/Q1423653"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>
+                           besuchen zu können. Leben Sie wohl und erhalten Sie auch ferner Ihr Wohlwollen
+                           Ihrem Wilhelm Wackernagel. Berlin. 14/12/27. </p>
                         </div>
                   </section>
                   <details id="normalised-text" class="text-version mb-4">

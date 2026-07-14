@@ -1,0 +1,190 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0" lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>The Lassberg Letters</title>
+      <link href="../../css/styles.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script><link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"><script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script></head>
+   <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+         <div class="container"><a class="navbar-brand" href="../../index.html">The Laßberg Letters</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link" href="../../index.html">Welcome</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../persons.html">Persons</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../places.html">Places</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../explore.html">Explore</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <header class="page-header py-4">
+         <div class="container">
+            <h1 class="mb-2">Brief von Joseph von Laßberg an Ludwig Uhland (05.09.1826).</h1>
+            <p class="lead mb-0">
+               
+               <p>Correspondence data based on Harris, Martin: Joseph Maria Christoph
+                  Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                  Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                  geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                  Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991..</p>
+               </p>
+         </div>
+      </header>
+      <main class="py-4">
+         <div class="container">
+            <div class="alert alert-warning letter-preview-banner" role="alert"><strong>Unreviewed working text.</strong> The encoding of this letter
+               has not yet been editorially reviewed
+               (status: draft).
+               The text may contain transcription or OCR errors — please cite with caution.
+               </div>
+            <div class="row g-4">
+               <div class="col-lg-4 order-lg-2">
+                  <aside class="letter-sidebar">
+                     <section id="metadata" class="mb-4">
+                        <h2 class="h5">Metadata</h2>
+                        <p><strong>Signatur: </strong>Marbach am Neckar, Schiller Nationalmuseum, </p>
+                        <p><strong>Registernummer (Laßberg): </strong></p>
+                        <p><strong>Registernummer (Harris): </strong>554</p>
+                        <p><strong>Gedruck in: </strong><a href="https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig
+                              Uhland. Wien 1870, S. 75-78</a></p>
+                     </section>
+                     <section id="map" class="mb-4">
+                        <h2 class="h5">Places</h2>
+                        <div id="mapid"></div>
+                        <p class="map-legend small text-muted mt-1 mb-0"><span class="legend-dot" style="background:#1d4e89"></span> place of sending
+                           <span class="legend-dot ms-2" style="background:#b57cc0"></span> places mentioned
+                           </p>
+                     </section>
+                  </aside>
+               </div>
+               <div class="col-lg-8 order-lg-1">
+                  <section id="original-text" class="mb-4">
+                     <h2>Original Text
+                        <span class="transcription-source badge-print" title="OCR-Texterfassung aus der gedruckten Edition, siehe Metadaten/Gedruckt in">Transcribed from the printed edition (OCR)</span></h2>
+                     <div>
+                        
+                        <p>Siegmaringen am 5. Septembers 1826. Ich wollte Inen mein teurer Freund! schon vorgestern
+                           aus Trochtelfingen schreiben; allein eine Erkältung, welche ich mir auf der Achalm
+                           zuzog machte mich zu allem untüchtig. In Tübingen ließ mich der gute alte Conz nimmer
+                           los und ich konnte es im nicht versagen, den Abend noch mit im in dem Museum zuzubringen,
+                           wo ich die Bekanntschaft des vielseitig unterrichteten Herrn Kanzlers Autenriet machte.
+                           Den folgenden Morgen fur ich durch das schöne Nekartal nach Rotenburg um da die alte
+                           Samulocensis aufzusuchen: da ich Herrn Jauman nicht zu Hause fand; so blieb mir nichts
+                           anders übrig, als mich an den mir vormals wolbekannten Bischof von Evara zu wenden,
+                           der sich meiner auch mit so großer Selbstaufopferung annam, dass er Abends bei unserer
+                           Heimkunft ganz erschöpft sich zu Bett legen musste. Ich sah manches und halte Leichtlens
+                           Behauptung über Samulocenis für hinreichend begründet; ich würde warscheinlich noch
+                           mer gesehen haben, wenn ich einen ganz unterrichteten Mann zum Begleiter gehabt hätte.
+                           Den folgenden Morgen fur ich an der Musenstadt vorbei nach Reutlingen und bestieg
+                           die alte Achalmin, nicht one viele Schweistropfen zu vergießen; mein Fürer ein alter
+                           Reichsbürger, gewärte mir gute Unterhaltung, er wusste vieles Geschichtliches von
+                           seiner Vaterstadt, manches ganz verkert; aber es war doch erfreulich zu sehen, wie
+                           einem sein Vaterort lieb ist. One mich lange bei der neumodischen Majerei aufzuhalten,
+                           eilte ich die Stammburg des Hauses zu erreichen, dem ich und meine Vorältern so manches
+                           Iar gedient haben; denn Achalm, Urach und Fürstenberg sind zwar drei Namen aber nur
+                           eine Sache. Von dem Turme, der vor kurzer Zeit noch zugänglich war, ist im vorigen
+                           Sommer die westliche Seite herabgefallen, und von den Eken hat man die behauenen Steine
+                           so weit man konnte, heraus gebrochen; rings umher ist nichts als Graus und Verwüstung.
+                           Ich sezte mich an die südöstliche Seite, wo die gröste Aussicht ist; durch eine Berglücke
+                           der Alpkette erblikte ich den Staufen: warum sol ich über dich klagen, du alte Achalm
+                           und deinen Sturz, da auch die hohe Kaiserburg gefallen ist, und die Krone der stolzen
+                           Schwaben! Ich gedachte da der ältesten Zeit und wie Kuno und Leuthold, der eine so
+                           tapfer als der andere fromm, lebensmüde aus der väterlichen Burg in das Kloster Zwifalten
+                           zogen, sich und die Welt da vergessend. Ich dachte an den Wandel der menschlichen
+                           Dinge, und wie diese Burg aus einer Hand in die andere kam, und wie Ulrich der son
+                           Eberhard des Greiners vermessen herabfiel mit einem Häuslein übermütiger Ritter und
+                           den kräftigen Streichen der Reutlinger erlag: mein Fürer zeigte mir die Stelle, wo
+                           S. Lienhards Kappel vor kurzem noch stund, und vierzig gefallene Ritter begraben wurden:
+                           da trat mich ein langhariges Völklein an, das vor wenig Iaren vom Fusse des ungeheuren
+                           Hymmelaja entfürt, in diesen Hügeln angekommen war, die im noch immer fremd zu sein
+                           schienen. Ich sollte vielleicht darüber erstaunen: aber ich hatte vor wenig Tagen
+                           über den gewölben der alten Burg Wirtemberg die traurigen Gesänge russischer Pfaffen
+                           ertönen gehört und es konnte nichts mer meine Verwunderung erregen; nur noch einen
+                           wehemütigen Blik warf ich auf den alten erwürdigen Turm, der in wenig Jaren vollends
+                           auf dem Boden liegen wird, und stieg wieder hinab durch das reichgesegnete Rebengelände
+                           in den sonntäglichen Lärm der gewerbfleißigen Stadt, die ich nach dem Mittagmale wieder
+                           verließ. In Pfullingen wollte ich Iren Schwager besuchen; aber er stund auf der Kanzel
+                           und streute die heilige Saat des Evangeliums über seine Gemeine, ich ließ eine Zeile
+                           des Grußes zurük und eilte den Höhen der Alp zu, von welchen herab mir das Felsennest
+                           Lichtenstein schon fernher winkte. Ich hatte mir in Reutlingen die Walter Scottische
+                           Nachamung des Herrn Hauff, überschrieben: Lichtenstein, gekauft und unterhielt mich
+                           mit diesem Reisegefärten ganz angenem bis Trochtelfingen, wo ich bei dem dortigen
+                           Amtmanne einem alten Schulkameraden übernachtete; ich wurde da etwas unpässlich und
+                           konnte erst den folgenden Mittag abreisen; auf den Abend traf ich durch das teilweise
+                           schöne Lauchert Tal herab, hier bei meinen Kindern ein, wo ich ein par Tage ruhen
+                           will. Da haben Sie mein Freund! den getreuen Bericht meimer kurzen, eben nicht ereignissreichen
+                           Reise, auf der ich so oft an Sie und Ire liebe eheliche Wirtin gedacht habe und an
+                           die Liebe und Freundschaft die ich empfing; nie one Empfindung herzlichen Dankes für
+                           den stillen Frieden den ich bei Inen genoß. Sonderbar, daß auch auf dieser kurzen
+                           Fart das Glük mich wieder in meinen Forschungen begünstigte und ich in dem Hause des
+                           Bischofs von Evara die Heimat eines Schweizerischen Sängergeschlechtes entdeken musste;
+                           wie Sie aus der Beilage ersehen werden. Ich denke in ein par Tagen die Ufer des Bodensee'es
+                           wieder zu sehen und von der villa Epponis aus Inen weitere Nachricht zu geben. Indessen
+                           tausend herzliche Grüße an die wakere Frau Emma, und den biedern Suabo, dem ich nochmals
+                           so wie Inen teurer Freund! für die große Hilfe an dem Codex Weingartensis innig danke.
+                           Die Frigen, ich meine Herrn Rosner und seine schöne Frau, auch den lieblichen kleinen
+                           Gustav, bitte ich von mir viel mal zu grüßen; kann ich Frem Herrn Schwager in der
+                           Umgebung des Bodensees oder in der Schweiz entomologische Aufträge besorgen? so werde
+                           ich es mit eben so viel Pünktlichkeit als Vergnügen tun. Bitten Sie Schwab in meinem
+                           Namen, auch an seine Frau einen schönen Gruß auszurichten. An sein Buch werde ich
+                           am ersten Tage meiner Zuhausekunft Hand anlegen und es ime sobald möglich zurüksenden.
+                           Vale et me amare perge explicit am Laßbergius.</p>
+                        </div>
+                  </section>
+                  <div id="related-letters"></div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer class="bg-dark text-white text-center py-3">
+         <div class="container">
+            <p class="mb-0"><a href="../letters.html">Back to the Letters</a></p>
+         </div>
+      </footer><script src="../../js/related.js"></script><script src="https://unpkg.com/leaflet/dist/leaflet.js"></script><script>
+                    var letterPlaces = [];
+                    
+                    letterPlaces.push({ coords: [48.08666667,9.21638889], label: "Sigmaringen", kind: "sent" });
+                    
+
+                    if (letterPlaces.length === 0) {
+                        document.getElementById('map').style.display = 'none';
+                    } else {
+                        var map = L.map('mapid', { scrollWheelZoom: false });
+                        // Muted basemap (CARTO Positron) instead of the default colourful OSM
+                        // tiles, to match the edition's restrained palette.
+                        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+                            attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+                            subdomains: 'abcd',
+                            maxZoom: 19
+                        }).addTo(map);
+
+                        var bounds = [];
+                        letterPlaces.forEach(function (p) {
+                            var isSent = p.kind === 'sent';
+                            var marker = L.circleMarker(p.coords, isSent
+                                ? { radius: 8, color: '#143761', weight: 2, fillColor: '#1d4e89', fillOpacity: 0.85 }
+                                : { radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75 }
+                            ).addTo(map).bindPopup((isSent ? 'Sent from: ' : 'Mentioned: ') + p.label);
+                            bounds.push(p.coords);
+                        });
+                        if (bounds.length > 1) {
+                            map.fitBounds(bounds, { padding: [25, 25], maxZoom: 9 });
+                        } else {
+                            map.setView(bounds[0], 8);
+                        }
+                    }
+                </script><script>
+                    // Initialize all tooltips
+                    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+                    new bootstrap.Tooltip(tooltipTriggerEl)
+                    })
+                </script></body>
+</html>

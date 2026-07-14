@@ -91,7 +91,8 @@
                   <section id="original-text" class="mb-4">
                      <h2>Original Text
                         <span class="transcription-source badge-manuscript" title="Diplomatische Transkription der Handschrift">Transcribed from the manuscript (Transkribus)</span></h2>
-                     <div>
+                     <div class="btn-group btn-group-sm mb-2" role="group" aria-label="Textansicht"><button type="button" id="view-lines-btn" class="btn btn-outline-secondary active" onclick="document.getElementById('view-lines').classList.remove('d-none'); document.getElementById('view-flow').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-flow-btn').classList.remove('active');">Zeilengenau</button><button type="button" id="view-flow-btn" class="btn btn-outline-secondary" onclick="document.getElementById('view-flow').classList.remove('d-none'); document.getElementById('view-lines').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-lines-btn').classList.remove('active');">Fließtext</button></div>
+                     <div id="view-lines">
                         
                         <p><br>Hochzuvererender
                            Herr Professor! <br>Da ich eine wolverdiente Schelte von Inen und dem guten <br>Zürcheren
@@ -121,6 +122,37 @@
                            zumuten darf, sie zu lesen. die hand ist mir zwar <br>nicht verdorrt,
                            wie einem Koenig in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Israel</strong&gt;">Israel<a href="https://www.wikidata.org/wiki/Q801"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>; aber der
                            teufel <br>weiss, was mir hinein gefaren ist! </p>
+                        </div>
+                     <div id="view-flow" class="d-none">
+                        
+                        <p>Hochzuvererender
+                           Herr Professor! Da ich eine wolverdiente Schelte von Inen und dem guten Zürcheren
+                           erwartete, werde ich nicht nur mit güte und nach sicht; sondern mit
+                           weunn hoechst angmemen geschenken über heuft!!! aber alten
+                           leuten muss man viel zu gut halten und es freut mich, daß man auch in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Zürich</strong&gt;">Zürich<a href="https://www.wikidata.org/wiki/Q72"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> so denket.
+                           Lieber Gott! und alt wollt Ir iunge Herren alle doch auch werden, und es wird euch dann
+                           eben so wol tun als iezt mir, wenn freundliche nachsicht gegen euch geübt wird. ich will mich
+                           also lieber selbst be als entschuldigen, und neme, die erwiesene vergebung, wie
+                           die Iuristen
+                           sagen, utiliter an! und nun zu den mir so werten geschenken. Die
+                           Geschichte der mir ser wol bekannten <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ufenau</strong&gt;">I. Ufenau<a href="https://www.wikidata.org/wiki/Q303431"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, hat mich ser
+                           erfreut und mir scheint, daß nun da alles beisammen stehet, was man
+                           davon weiss und ie wissen wird. nur eines habe ich ungern vermisst! eine erwaenurg des <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Ufenauer iarzeiten buchs</span>,
+                           welches nun wieder zu <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Einsiedeln</strong&gt;">Einsiedeln<a href="https://www.wikidata.org/wiki/Q693087"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> liegt
+                           und von merern merkwürdigen leuten meldet, die auf der <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ufenau</strong&gt;">Ufenau<a href="https://www.wikidata.org/wiki/Q303431"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> begraben liegen und da stiftungen gemacht haben.
+                           unter diesen fand ich auch das ganze <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unbekannt</strong&gt;">geschlecht
+                              der Spervoegel von Hurden<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>, welche da vom stifte <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Einsiedeln</strong&gt;">Einsiedlen<a href="https://www.wikidata.org/wiki/Q693087"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, durch
+                           merere generationen, das Amann amt trugen. und nach <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ufenau</strong&gt;">Ufenau<a href="https://www.wikidata.org/wiki/Q303431"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>
+                           kirchhoerig waren: warscheinlich ist <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ulrich von Hutten</strong&gt;">U. von
+                              Hutten<a href="https://d-nb.info/gnd/118555049"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> weder der erste noch der einzige teutsche saenger, welcher in der <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ufenau</strong&gt;">Ufenauer<a href="https://www.wikidata.org/wiki/Q303431"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> erde ruhet und der <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Spervogel</strong&gt;">Minnesaenger
+                              Spervogel<a href="https://d-nb.info/gnd/138478511"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> schon 200 iar früher da begraben worden. das <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Chorfenster</span> Tab: II. Nº. 6. moechte ich lieber in die
+                           zweite haelfte des XIV als ins XIII. iarhundert versezzen. Die 3 hefte der <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Mitteilungen der Antiquarischen Gesellschaft in Zürich.</strong&gt;">Zeitschrift der antiquar: gesellschaft</span>, waren mir alle 3 gleich willkommen, und
+                           ich moechte gerne ein langes und breites darüber sagen; aber das
+                           schreiben kommt mich iezt so hart an, und meine schrift hat sich sich auf
+                           eine so ungünstige weise veraendert, daß ich vast niemanden
+                           zumuten darf, sie zu lesen. die hand ist mir zwar nicht verdorrt,
+                           wie einem Koenig in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Israel</strong&gt;">Israel<a href="https://www.wikidata.org/wiki/Q801"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>; aber der
+                           teufel weiss, was mir hinein gefaren ist! </p>
                         </div>
                      <div class="mirador-parent">
                         <div id="mirador-viewer"></div>

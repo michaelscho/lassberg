@@ -94,7 +94,8 @@
                   <section id="original-text" class="mb-4">
                      <h2>Original Text
                         <span class="transcription-source badge-manuscript" title="Diplomatische Transkription der Handschrift">Transcribed from the manuscript (Transkribus)</span></h2>
-                     <div>
+                     <div class="btn-group btn-group-sm mb-2" role="group" aria-label="Textansicht"><button type="button" id="view-lines-btn" class="btn btn-outline-secondary active" onclick="document.getElementById('view-lines').classList.remove('d-none'); document.getElementById('view-flow').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-flow-btn').classList.remove('active');">Zeilengenau</button><button type="button" id="view-flow-btn" class="btn btn-outline-secondary" onclick="document.getElementById('view-flow').classList.remove('d-none'); document.getElementById('view-lines').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-lines-btn').classList.remove('active');">Fließtext</button></div>
+                     <div id="view-lines">
                         
                         <p><br>Mein verehrtester
                            Herr und Nachbar! <br>Wie übel es doch Ihrem Schneehuhn ergangen ist! Wohl war
@@ -140,6 +141,54 @@
                            Vergnügen, recht oft bey Ihnen zu sein. <br>Leben Sie wohl, wie es von Herzen wünscht. <br>Ihr
                            <br>Diac. Pupikofer
                            <br>Bischofzell den
+                           30. Dec. 1828. </p>
+                        </div>
+                     <div id="view-flow" class="d-none">
+                        
+                        <p>Mein verehrtester
+                           Herr und Nachbar! Wie übel es doch Ihrem Schneehuhn ergangen ist! Wohl war
+                           in der
+                           Todesstunde demselben kein geringer Trost die Hoffnung, von einem
+                           sachverständigen Gaumen der Feinheit und Schmack haftigkeit gerühmt
+                           zu werden und somit wenigstens einen Schatten des Nachruhms einzuernten. Wie schmeichelhaft
+                           mochte die
+                           Aussicht seyn, in der <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Eppishausen</strong&gt;">Zelle des heiligen
+                              Eppo<a href="https://www.wikidata.org/wiki/Q1423653"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> zum Opfer zu dienen, und von einem so hocherfahrenen des edlen Weidwerks durch und
+                           durch <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Joseph von Laßberg</strong&gt;">kundigen
+                              Jäger<a href="https://d-nb.info/gnd/118778862"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> gespeißt zu werden. Nun kommt es einem <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Adam Pupikofer</strong&gt;">armen
+                              Chorsänger<a href="https://d-nb.info/gnd/11565108X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> in die Hände, der nichts anders als Erdäpfel und Kalbsbraten zu beurtheilen
+                           versteht und
+                           alle Hoffnung auf eine auch nur augenblickliche Berühmtheit ist
+                           verschwunden. Was wird die gute <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unbekannt</strong&gt;">Frau
+                              Doctorin<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> dazu sagen? Unser einer denkt dabey an die Brosamen, die von des
+                           Reichen Tische fielen und dankt gar schön. Aber selbst im Alten Jahre nochmals zu Ihnen zu
+                           kommen will
+                           mir nicht gelingen; ich sollte die <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Rütiner, Johannes: Diarium.</strong&gt;">comentationes
+                              fatales<a href="https://d-nb.info/gnd/4423979-8">📖</a></span> des edelen Mannes <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johannes Rütiner</strong&gt;">Rütiner<a href="https://d-nb.info/gnd/119372673"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           in einigen Tagen zurück gehen lassen, und
+                           bin kaum zur Hälfte damit fertig. Was er doch von der Frau des gelehrten
+                           <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Fritz Jakob von Anwil</strong&gt;">Fritz Jakob
+                              vom Anwyl<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> schreibt! Tom. I. p. 31. heißt es: Uxor Jacobi Fritz von Anwyl tum
+                           cum libros biblio pola adfert: "supersunt aegrotanti podagra" vel immensum
+                           pretium dicit
+                           poscere, ne emat. Si vir sciret, contunderetur. Liest man dieß
+                           nicht auch im Gedichte der herrischen Frau auf Ihrer gemahlten
+                           Scheibe. Herr
+                           Dekan <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Däniker, Hans Kaspar</strong&gt;">Däniker<a href="https://www.hfls.ch/humo-gen/family/1/F10503?main_person=I29608"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           wünscht Ihnen guten Empfang der <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Morgenblatt für gebildete Stände.</strong&gt;">Morgen blätter<a href="https://d-nb.info/gnd/4345483-5">📖</a></span>, die Sie mit Muße durchgehen können. Die frühern Jahr gänge
+                           hat er nicht mehr. Mit der Abfassung des <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Adam Pupikofer: Weinfelden, dargestellt in seinen bisherigen Schicksalen und in&#xA;        seinem gegenwärtigen Zustande.</strong&gt;">Thurg.
+                              Neujahr stücks<a href=" http://opac.regesta-imperii.de/id/1415758">📖</a></span> bitte ich, Nachsicht zu tragen. Das <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Neujahrsgeschenke für die Jugend des Kantons Schaffhausen.</strong&gt;">Schafhausersche<a href="https://www.digitale-sammlungen.de/de/view/bsb11033452">📖</a></span> werden Sie wohl bereits bekommen haben: aber Herr Pfr. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Melchior Kirchhofer</strong&gt;">Kirchhofer<a href="https://d-nb.info/gnd/118842528"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> lobt die Empfänglichkeit dafür nicht sehr. Wir haben am
+                           Neujahr-Abend auf dem Schlosse ein Abendessen welchem Herr <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jakob Christoph Scherb</strong&gt;">Oberamtmann<a href="https://d-nb.info/gnd/100332471"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> und Herr Dekan <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Däniker, Hans Kaspar</strong&gt;">Däniker<a href="https://www.hfls.ch/humo-gen/family/1/F10503?main_person=I29608"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           mit ihren Frauen beiwohnen werden; wir werde auch Punsch anfertigen, und den jungen
+                           Leuten und den Laien Gelegenheit zum Tanz verschaffenen. Wollen Sie nicht auch dabey seyn? Am
+                           Tage des heil. Bertholdus, der im Kalender freylich nach dem unschuldigen Schäfer Abel den
+                           Ehrenplatz läßt, spreche ich um ein Süppchen in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Eppishausen</strong&gt;">Eppishausen<a href="https://www.wikidata.org/wiki/Q1423653"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> ein: da werden Sie doch wohl nicht ausweichen? Und nun Gott befohlen, das Alte Jahr! Das Neue bringe
+                           Ihnen recht
+                           viele Antiquitäten in's Haus, und nehme Ihnen keines der Güter, die Sie
+                           bereits besitzen. Mir erhalte es Ihr freundschaftliches Wohlwollen und das
+                           Vergnügen, recht oft bey Ihnen zu sein. Leben Sie wohl, wie es von Herzen wünscht. Ihr
+                           Diac. Pupikofer
+                           Bischofzell den
                            30. Dec. 1828. </p>
                         </div>
                   </section>

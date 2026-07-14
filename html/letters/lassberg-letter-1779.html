@@ -93,7 +93,8 @@
                   <section id="original-text" class="mb-4">
                      <h2>Original Text
                         <span class="transcription-source badge-manuscript" title="Diplomatische Transkription der Handschrift">Transcribed from the manuscript (Transkribus)</span></h2>
-                     <div>
+                     <div class="btn-group btn-group-sm mb-2" role="group" aria-label="Textansicht"><button type="button" id="view-lines-btn" class="btn btn-outline-secondary active" onclick="document.getElementById('view-lines').classList.remove('d-none'); document.getElementById('view-flow').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-flow-btn').classList.remove('active');">Zeilengenau</button><button type="button" id="view-flow-btn" class="btn btn-outline-secondary" onclick="document.getElementById('view-flow').classList.remove('d-none'); document.getElementById('view-lines').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-lines-btn').classList.remove('active');">Fließtext</button></div>
+                     <div id="view-lines">
                         
                         <p><br>Eppishausen am 5
                            Juny 1834. <br>Nemen Sie mit dem guten willen vorlieb lieber herre! ich habe warlich nicht
@@ -139,6 +140,54 @@
                            stunde der postaufgabe schon unvermerkt angekommen, <br>ich muß also
                            schließen, ich grüße Sie mein vererter herr Professor! ich <br>bin und bleibe
                            <br>Ir <br>ergebenster <br>JosephvLaßberg.
+                           </p>
+                        </div>
+                     <div id="view-flow" class="d-none">
+                        
+                        <p>Eppishausen am 5
+                           Juny 1834. Nemen Sie mit dem guten willen vorlieb lieber herre! ich habe warlich nicht
+                           mer zu wege
+                           bringen können. da liegt noch ein <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Albert von Augsburg: Leben des heiligen Ulrich.</strong&gt;">gedicht aus
+                              dem XII iarh.<a href="https://geschichtsquellen.de/werk/70https://www.handschriftencensus.de/werke/1009https://d-nb.info/gnd/1232969346">📖</a></span> nach einem <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">münchner codex</span> auf den
+                           erlichen biederen Schwaben, den heiligen <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ulrich von Augsburg</strong&gt;">Ulrich<a href="https://d-nb.info/gnd/118625284"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           bischof von <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Augsburg</strong&gt;">Augsburg<a href="https://www.wikidata.org/wiki/Q2749"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, non invita Minerva gedichtet; aber ich käme wol iezt zu späte wenn ich
+                           erst daraus abschreiben wollte, da ich fürchten muss mit der beilage zu
+                           spät zu kommen. ach, warum haben Sie mir nicht anfangs winters von
+                           Irem vorhaben gesagt! wie viel hätte ich abschreiben, wie viel bessere
+                           auswale hätte ich treffen können. Die abbildung der <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">krone</span> der
+                           kaiserin <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Gertrud von Hohenberg</strong&gt;">Anna<a href="https://d-nb.info/gnd/123579783"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>,
+                           deren Sie in Irer lezten sendung als beiliegend erwänen, so wie
+                           auch den beiliegen sollenden zettel, konnten meine augen, angewandter mühe ungeachtet,
+                           nicht entdeken, i. e. es lag nichts dergleichen bei. schreiben Sie es also nicht
+                           mir zu, wenn
+                           die auslagen welche Sie die güte hatten desfalls für mich zu machen, zur stunde mir
+                           unbekannt, noch nicht erstattet sind. Die goldne <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">altartafel</span> kaiser <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Kaiser Heinrich II.</strong&gt;">Heinr.
+                              II<a href="https://d-nb.info/gnd/118548255"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>. ist doch wirklich in ser würdige hände gefallen und da wo das liecht
+                           im stalle
+                           ist, vermutlich auch bestens aufgehoben. Was für schöne sachen werden Sie uns in Irem <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wilhelm Wackernagel: Deutsches Lesebuch.</strong&gt;">Alt Teutschen Lesebuch<a href="https://digi.ub.uni-heidelberg.de/diglit/wackernagel1839gahttps://archive.org/details/deutscheslesebu00wackgoog">📖</a></span> sehen lassen! ich freue mich recht
+                           ser darauf. Nun sollen Sie auch wissen, daß der <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">codex</span> oder das Evangeliarium kaiser <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ludwig der Fromme</strong&gt;">Ludw. des
+                              frommen<a href="https://d-nb.info/gnd/118640658"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> seit mereren wochen der <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Eppishausen</strong&gt;">villa Epponis<a href="https://www.wikidata.org/wiki/Q1423653"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> angehört. den
+                           theologischen wert dieser handschrift kann ich nicht hinlänglich beurteilen, aber für die
+                           kunstgeschichte scheint er mir nicht unwichtig zu sein, das verstehet sich von
+                           den beiden
+                           bücherdekeln. der obere ist ganz mit edelsteinen überdekt, dagegen enthält der untere in
+                           silber gegrabene zeichnungen, welche mir mit ienen, welche man auf schwedischen
+                           und dänischen Runensteinen findet, nahe verwandt zu sein scheinen. Doch Sie kommen
+                           wol einmal selbst in die waldklause um das alte buch zu sehen! Ich könnte Inen auch einen alten druk, den ich noch
+                           gar nirgends angezeigt gefunden habe, zum ausziehen geben. der titel ist: <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Amor: die Liebe.</strong&gt;">Amor: die Liebe<a href="GW 01619">📖</a></span>. das ditz büchlyn werd bekant, amor die lieb ist es genant. Dez
+                           Pfennigs art vnd vntrüw spyl, wird hye vngspart traktieret vyll, man spricht
+                           gekauft lieb hab nit wert, wird doch menicher damit versert, dise lieb kauf das
+                           ist min rot, vmb ain krützer git man ein lot. Dorynne lies vnd merk vf eben, vmb ain pfund
+                           würdst dus nit geben. es sind nur 52 blätter iedes zu 62 versen, weniges
+                           felet am ende. Soll ich es Inen schiken? Jezt muß ich mich auf die reise rüsten, um <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Georg Friedrich Benecke</strong&gt;">Beneke<a href="https://d-nb.info/gnd/11865537X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> und <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Grimms<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> bald sehen zu können; ich denke so bis zum 25! wird es heißen
+                           Hans spann ein. Ach
+                           wie traurig ist das was Sie mir von dem <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unbekannt</strong&gt;">unglüklichen
+                              schüler<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> sagen, den der wansinn ergriffen hat. O tausend mal lieber Tod;
+                           der tod dauert wenn er auch schmerzlich ist, nur einen augenblik; aber wansinn! ach gott! das ist
+                           ein täglicher stündlicher tod. gott gebe im ruhe dem armen! Nun ist die
+                           stunde der postaufgabe schon unvermerkt angekommen, ich muß also
+                           schließen, ich grüße Sie mein vererter herr Professor! ich bin und bleibe
+                           Ir ergebenster JosephvLaßberg.
                            </p>
                         </div>
                   </section>

@@ -91,7 +91,8 @@
                   <section id="original-text" class="mb-4">
                      <h2>Original Text
                         <span class="transcription-source badge-manuscript" title="Diplomatische Transkription der Handschrift">Transcribed from the manuscript (Transkribus)</span></h2>
-                     <div>
+                     <div class="btn-group btn-group-sm mb-2" role="group" aria-label="Textansicht"><button type="button" id="view-lines-btn" class="btn btn-outline-secondary active" onclick="document.getElementById('view-lines').classList.remove('d-none'); document.getElementById('view-flow').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-flow-btn').classList.remove('active');">Zeilengenau</button><button type="button" id="view-flow-btn" class="btn btn-outline-secondary" onclick="document.getElementById('view-flow').classList.remove('d-none'); document.getElementById('view-lines').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-lines-btn').classList.remove('active');">Fließtext</button></div>
+                     <div id="view-lines">
                         
                         <p><br>erhalten am 6
                            April. <br>Basel
@@ -133,6 +134,50 @@
                            zurückerfolgen, als dann denke ich auch ausführlicher über die <br>Einrichtung des
                            <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wilhelm Wackernagel: Deutsches Lesebuch.</strong&gt;">Lesebuchs<a href="https://digi.ub.uni-heidelberg.de/diglit/wackernagel1839gahttps://archive.org/details/deutscheslesebu00wackgoog">📖</a></span> schreiben zu können. Erhalten Sie, hoch <br>verehrter Herr
                            Baron, ein freundliches Wohlwollen <br>Ihrem ganz ergebenen <br>Wilh.
+                           Wackernagel Dr. </p>
+                        </div>
+                     <div id="view-flow" class="d-none">
+                        
+                        <p>erhalten am 6
+                           April. Basel
+                           2/4/24 Hochverehrter Herr Baron, vorgestern, am zweiten Ostertage, habe ich zu meiner
+                           grossen Freude Ihren werthen Brief sammt Beilagen erhalten: schon vorgestern,
+                           aber erst heute komme ich dazu Ihnen, wie Sie befohlen, den richtigen Empfang anzu zeigen:
+                           ich hatte diese Tage Besuch hier, der mich daran hinderte, Froelich aus <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Aarau</strong&gt;">Arau<a href="https://www.wikidata.org/wiki/Q14274"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>. Ihre grosse und schnelle Gefälligkeit verpflichtet mich zum innigsten Dank:
+                           noch mehr die Güte mit der Sie das Unternehmen billigen und mir
+                           sogar dazu und weitere Unterstützung verheissen. ich weiss nicht
+                           ob Sie aus dem was man schreibt errathen können was man gerne noch
+                           geschrieben hätte; aber es scheint so: denn in der Tat hätte ich die
+                           gern um Mittheilungen aus Ihren anecdotis ersucht, konnte mir aber
+                           nicht das Herz dazu faßen. Um so freudiger über raschen mich nun
+                           Ihre zuvorkommenden Anerbietungen. Was sagt doch <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unbekannt</strong&gt;">Hartmann<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> von der Milde u. Güte der Schwaben? Es ist viel gewagt daß ich
+                           es annehme, aber ich nehme es an, u. mit Begierde sehe ich nun einigen
+                           Strophen aus <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ulrich von Liechtenstein</strong&gt;">Ulrich v.
+                              Lichtenstein<a href="https://d-nb.info/gnd/118625306"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> einigen Liedern aus der Sammlung der Häßlerin, u. was Sie mir sonst
+                           noch wollen zukommen lassen lassen, entgegen.
+                           Schade dass vielleicht grade das Schoenste aus dem Frauen dienst weniger in
+                           ein auch für Schulen bestimmtes Buch passt. Wie erfreut mich
+                           Ihre grosse Güte! Ein schoener Erwerb, auch zum Besten der Sammlung, ist mir
+                           kürzlich zu <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Zürich</strong&gt;">Zürich<a href="https://www.wikidata.org/wiki/Q72"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> in der Füsslinschen Auction geglückt, nämlich eine bisher un bekannte
+                           Ausgabe vom <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Philipp Frankfurter: Der Pfaff vom Kahlenberg.</strong&gt;">Pfarrherren
+                              von Kalenberg</span>, <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Frankfurt am&#xA;                        Main</strong&gt;">Frankf<a href="https://www.wikidata.org/wiki/Q1794"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>. a/M.
+                           1550. 8°. Eine
+                           ältere ist noch nicht nachgewiesen; man erfährt aus ihr auch den Namen des Vf., der
+                           in den andern Edit: fehlt, <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Philipp Frankfurter</strong&gt;">Philipo
+                              Franckfurdter<a href="https://d-nb.info/gnd/104256133"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>. Freylich habe ich auch diess Büchlein u. <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Fischart:  Nachtrab oder Nebelkräh.</strong&gt;">Fischarts
+                              Nachtraben<a href="https://gateway-bayern.de/VD16+F+1154">📖</a></span> (beide zusammen gebunden) mit f.
+                           6 ß 16 zahlen müssen. Ihnen aber wünsche ich Glück zu dem ehrwürdigen <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Karolinger</span>. Enthält er nicht auch deutsche Sachen? Ob ich nach <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Bern</strong&gt;">Bern<a href="https://www.wikidata.org/wiki/Q70"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>
+                           gehen möchte? Sehr gern, falls ein Professor ungehudelt bleiben kann von
+                           dem politischen Treiben ich sässe da an der reichen Quelle einer
+                           schoenen Bibliothek und mein hiesiges Einkommen ist doch gar zu
+                           schmal. Wollen Sie mich also auch in dieser Beziehung Ihre freundliche
+                           Theilnahme erfahren lassen, so kann es mir nur will kommen seyn. Noch einmal
+                           meinen herzlichsten Dank für bereits erwiesene u. noch verheissene
+                           Güte. Ehestens werden <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Joseph von Laßberg: Ein schoen alt Lied von Grave Friz von Zolre, dem Oettinger, und der&#xA;        Belagerung von Hohen Zolren.</strong&gt;">Liedersaal<a href="https://gateway-bayern.de/BV012184336">📖</a></span> u: <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Christoph Heinrich Myller: Samlung deutscher Gedichte aus dem XII., XIII. und XIV. Jahrhundert.&#xA;        3 Bde.</strong&gt;">Müllersche
+                              Sammlung<a href="https://www.digitale-sammlungen.de/de/details/bsb10057384VD18 11205407">📖</a></span> und <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Hermann von Sachsenheim: Die&#xA;        Mörin.</strong&gt;">Mörin<a href="https://handschriftencensus.de/werke/889">📖</a></span>
+                           zurückerfolgen, als dann denke ich auch ausführlicher über die Einrichtung des
+                           <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wilhelm Wackernagel: Deutsches Lesebuch.</strong&gt;">Lesebuchs<a href="https://digi.ub.uni-heidelberg.de/diglit/wackernagel1839gahttps://archive.org/details/deutscheslesebu00wackgoog">📖</a></span> schreiben zu können. Erhalten Sie, hoch verehrter Herr
+                           Baron, ein freundliches Wohlwollen Ihrem ganz ergebenen Wilh.
                            Wackernagel Dr. </p>
                         </div>
                   </section>

@@ -1,0 +1,183 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0" lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>The Lassberg Letters</title>
+      <link href="../../css/styles.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script><link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"><script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script></head>
+   <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+         <div class="container"><a class="navbar-brand" href="../../index.html">The Laßberg Letters</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link" href="../../index.html">Welcome</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../persons.html">Persons</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../places.html">Places</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../explore.html">Explore</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <header class="page-header py-4">
+         <div class="container">
+            <h1 class="mb-2">Brief von Ludwig Uhland an Joseph von Laßberg (25.01.1826).</h1>
+            <p class="lead mb-0">
+               
+               <p>Correspondence data based on Harris, Martin: Joseph Maria Christoph
+                  Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                  Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                  geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                  Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991..</p>
+               </p>
+         </div>
+      </header>
+      <main class="py-4">
+         <div class="container">
+            <div class="alert alert-warning letter-preview-banner" role="alert"><strong>Unreviewed working text.</strong> The encoding of this letter
+               has not yet been editorially reviewed
+               (status: draft).
+               The text may contain transcription or OCR errors — please cite with caution.
+               </div>
+            <div class="row g-4">
+               <div class="col-lg-4 order-lg-2">
+                  <aside class="letter-sidebar">
+                     <section id="metadata" class="mb-4">
+                        <h2 class="h5">Metadata</h2>
+                        <p><strong>Signatur: </strong>Marbach am Neckar, Schiller Nationalmuseum, </p>
+                        <p><strong>Registernummer (Laßberg): </strong></p>
+                        <p><strong>Registernummer (Harris): </strong>2107</p>
+                        <p><strong>Gedruck in: </strong><a href="https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig
+                              Uhland. Wien 1870, S. 66</a></p>
+                     </section>
+                     <section id="map" class="mb-4">
+                        <h2 class="h5">Places</h2>
+                        <div id="mapid"></div>
+                        <p class="map-legend small text-muted mt-1 mb-0"><span class="legend-dot" style="background:#1d4e89"></span> place of sending
+                           <span class="legend-dot ms-2" style="background:#b57cc0"></span> places mentioned
+                           </p>
+                     </section>
+                  </aside>
+               </div>
+               <div class="col-lg-8 order-lg-1">
+                  <section id="original-text" class="mb-4">
+                     <h2>Original Text
+                        <span class="transcription-source badge-print" title="OCR-Texterfassung aus der gedruckten Edition, siehe Metadaten/Gedruckt in">Transcribed from the printed edition (OCR)</span></h2>
+                     <div>
+                        
+                        <p>Stuttgart, den 25. Jan. 1826. Verehrtester Herr und Freund! Ihre freundliche Neujahrsgabe
+                           hat mich und die übrigen Freunde des einheimischen Alterthums, denen ich solche zu
+                           übergeben beauftragt war, zum herzlichsten Danke verpflichtet. Sie ist ein neu erfreulicher
+                           Beweis, daß man in diesem Fache noch täglich neue Entdeckungen erwarten darf. Die
+                           Mythe hat für mich besondres Interesse in Beziehung auf den Fabelkreis vom Gral, wo
+                           gleichfalls die sichtbare Gestalt aus der Hostie hervortritt. Herrn Prälat Schmied
+                           konnte ich das Exemplar nicht persönlich übergeben. Er ist während der Synode hier
+                           erkrankt und ließ sich noch vor der Genesung nach Ulm führen, wohin ich ihm dasselbe
+                           nachgeschickt habe. Maßmann ist vor etwa 14 Tagen nach Straßburg abgereist, er will
+                           besonders auch der Kolmarer Handschrift nachspüren. Was veranlaßte, daß ihm der Gebrauch
+                           der Hofbibliothek gänzlich verweigert wurde, ist mir räthselhaft. Ihre Aeusserungen
+                           in Beziehung auf den Weingartner Codex geben mir die Hoffnung, daß Sie diesen Hort
+                           persönlich hier zu heben gedenken, und ich erlaube mir, meine frühere Einladung auf
+                           das angelegenste zu wiederholen. Die lateinischen Dichtungen bei Ebert sind auch mir
+                           als ein überaus merkwürdiger Fund erschienen. Schon die uralten deutschen Benennungen
+                           der Singweisen verdienen alle Aufmerksamkeit. Die Abtheilung in Verse ist schwierig
+                           und von Ebert nicht mit Glück versucht worden. Schon vor einiger Zeit machte ich Versuche,
+                           einige Kunde darüber zu erlangen, was etwa in den fürstl. Bibliotheken in Oberschwaben
+                           noch von Altdeutschem vorhanden seyn möchte. Das Resultat, welches auf anliegendem
+                           Blättchen enthalten ist, fiel zwar bis jetzt nicht glänzend aus, doch sind die Nachrichten
+                           von einer Handschrift des trojan. Kriegs von Konrad und von einem Drucke des Parcival,
+                           Ulm 1472, immerhin erfreulich; in Hagens Grundriß wird nur ein Druck von 1477. ohne
+                           Ort, angeführt. Der Manessische Codex sollte allerdings rein urkundlich herausgegeben
+                           werden; die Sammler desselben haben absichtlich nach dem Geschmack ihrer Zeit die
+                           ältern Lieder verändert und eben auch dieses Verfahren ungeschmälert kennen zu lernen,
+                           ist von Wichtigkeit für die Geschichte der Liederkunst. Ueber meine litterarische
+                           Beschäftigung, wovon Sie zu hören wünschen, weiß ich eben nicht viel zu sagen; nur
+                           die Ausführung selbst kann in solchen Dingen sprechen, Plane sind leicht gemacht,
+                           die Ausführung aber hat bei mir bisher allzu viele Unterbrechungen, auch Schwierigkeiten
+                           in Herbeischaffung der Quellen, gefunden. Was ich in diesem Jahre noch an das Licht
+                           zu fördern wünsche, ist eine geschichtliche, allgemein verständliche Darstellung über
+                           Heldenlied und Minnesang des deutschen Mittelalters. Sie erwähnen einer Sammlung einzelner
+                           Lieder, welche leergebliebenen Blättern anderartiger Manuscripte zur Ausfüllung gedient
+                           und welche leicht einmal einen Band des Liedersaals füllen könnten. Sollte darunter
+                           Einiges seyn, was zu näherer Kenntniß des Minnesanges dienen könnte, so würde ich,
+                           gerade mit diesem Gegenstand beschäftigt, es besonders dankbar erkennen, hierüber
+                           belehrende Notiz zu erhalten oder gütige Mittheilung. Zum Schlusse nochmals den herzlichen
+                           Wunsch, daß die litterarische Frühlingsreise Sie gewiß in mein Haus führen möge, von
+                           dem aus man zwar nicht das herrliche Thurgau, aber doch die Baumgärten unsres Thals
+                           überschaut und von 5 * wo aus ein bequemer und naher Weg zu den poetischen Handschriften
+                           führt. Mit unveränderlicher Verehrung der Ihrige L. Uhland. ( Beilage ). Auszug aus
+                           einem Schreiben des Herrn Pfarrer Fricker in Altham an Herrn Prof. v. Drey in Tübingen.
+                           In Wurzach, wie ich gewiß weiß, ist von Minne - Gesängen nichts vorzufinden. Diß gilt
+                           nach meiner bisherigen Erfahrung auch von Wolfegg, ( wo ich übrigens noch einmal nachsuchen
+                           will ). Hingegen in Zeil, wo ich unsere Freunde Dr. Spegele und Dekan Strohmaier gepflogener
+                           Verabrede zu Folge antraf, fanden wir von alten deutschen Dichtern eine alte prächtige
+                           Ausgabe von Parzival Ulm gedruckt im Jener 1472. Dann Conrads von Würzburg Geschichte
+                           des trojanischen Kriegs, von der auch Oberlin in einer besondern Dissertation von
+                           diesem Conrad handelt, und einen Codex aus der Johanniter Bibliothek zu Straßburg
+                           beschreibet, der aber viel unvollständiger war, als der Zeilische ist; denn dieser
+                           hat, wenn gleich im Anfange etwas manque, doch gegen das Ende wenigstens 10-12. Blatt
+                           mehr, und es fehlt in demselben am Ende höchstens ein halbes Blatt. Der brave Herr
+                           Fürst von Zeil freuete sich nicht nur über unsern Besuch, sondern ebensosehr darüber,
+                           daß sich auch Gelehrte von Tübingen seiner Bibliothek, die jedoch nicht außerordentlich
+                           ist, erinnern: Er erklärte sich zu jeder ihm möglichen Auskunfft und zu allen Diensten
+                           für Herrn Dr. Uhland erbötig: Desnahen könnten sich dieselben nöthigenfalls an den
+                           Herrn Fürsten wenden, dem es nach Seiner eigenen Aeußerung ein reines Vergnügen gewähren
+                           würde, zum schönen Vorhaben des Herrn Dr. Uhland einen kleinen Beitrag leisten zu
+                           können.</p>
+                        </div>
+                  </section>
+                  <div id="related-letters"></div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer class="bg-dark text-white text-center py-3">
+         <div class="container">
+            <p class="mb-0"><a href="../letters.html">Back to the Letters</a></p>
+         </div>
+      </footer><script src="../../js/related.js"></script><script src="https://unpkg.com/leaflet/dist/leaflet.js"></script><script>
+                    var letterPlaces = [];
+                    
+                    letterPlaces.push({ coords: [48.7775,9.18], label: "Stuttgart", kind: "sent" });
+                    
+
+                    if (letterPlaces.length === 0) {
+                        document.getElementById('map').style.display = 'none';
+                    } else {
+                        var map = L.map('mapid', { scrollWheelZoom: false });
+                        // Muted basemap (CARTO Positron) instead of the default colourful OSM
+                        // tiles, to match the edition's restrained palette.
+                        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+                            attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+                            subdomains: 'abcd',
+                            maxZoom: 19
+                        }).addTo(map);
+
+                        var bounds = [];
+                        letterPlaces.forEach(function (p) {
+                            var isSent = p.kind === 'sent';
+                            var marker = L.circleMarker(p.coords, isSent
+                                ? { radius: 8, color: '#143761', weight: 2, fillColor: '#1d4e89', fillOpacity: 0.85 }
+                                : { radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75 }
+                            ).addTo(map).bindPopup((isSent ? 'Sent from: ' : 'Mentioned: ') + p.label);
+                            bounds.push(p.coords);
+                        });
+                        if (bounds.length > 1) {
+                            map.fitBounds(bounds, { padding: [25, 25], maxZoom: 9 });
+                        } else {
+                            map.setView(bounds[0], 8);
+                        }
+                    }
+                </script><script>
+                    // Initialize all tooltips
+                    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+                    new bootstrap.Tooltip(tooltipTriggerEl)
+                    })
+                </script></body>
+</html>

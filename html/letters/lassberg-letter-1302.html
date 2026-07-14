@@ -1,0 +1,243 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0" lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>The Lassberg Letters</title>
+      <link href="../../css/styles.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script><link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"><script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script></head>
+   <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+         <div class="container"><a class="navbar-brand" href="../../index.html">The Laßberg Letters</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link" href="../../index.html">Welcome</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../persons.html">Persons</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../places.html">Places</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../explore.html">Explore</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <header class="page-header py-4">
+         <div class="container">
+            <h1 class="mb-2">Brief von Joseph von Laßberg an Ludwig Uhland (14.04.1829).</h1>
+            <p class="lead mb-0">
+               
+               <p>Correspondence data based on Harris, Martin: Joseph Maria Christoph
+                  Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                  Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                  geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                  Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991..</p>
+               </p>
+         </div>
+      </header>
+      <main class="py-4">
+         <div class="container">
+            <div class="alert alert-warning letter-preview-banner" role="alert"><strong>Unreviewed working text.</strong> The encoding of this letter
+               has not yet been editorially reviewed
+               (status: draft).
+               The text may contain transcription or OCR errors — please cite with caution.
+               </div>
+            <div class="row g-4">
+               <div class="col-lg-4 order-lg-2">
+                  <aside class="letter-sidebar">
+                     <section id="metadata" class="mb-4">
+                        <h2 class="h5">Metadata</h2>
+                        <p><strong>Signatur: </strong>Marbach am Neckar, Schiller Nationalmuseum, </p>
+                        <p><strong>Registernummer (Laßberg): </strong>75</p>
+                        <p><strong>Registernummer (Harris): </strong>640</p>
+                        <p><strong>Gedruck in: </strong><a href="https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig
+                              Uhland. Wien 1870, S. 116-21</a></p>
+                     </section>
+                     <section id="map" class="mb-4">
+                        <h2 class="h5">Places</h2>
+                        <div id="mapid"></div>
+                        <p class="map-legend small text-muted mt-1 mb-0"><span class="legend-dot" style="background:#1d4e89"></span> place of sending
+                           <span class="legend-dot ms-2" style="background:#b57cc0"></span> places mentioned
+                           </p>
+                     </section>
+                  </aside>
+               </div>
+               <div class="col-lg-8 order-lg-1">
+                  <section id="original-text" class="mb-4">
+                     <h2>Original Text
+                        <span class="transcription-source badge-print" title="OCR-Texterfassung aus der gedruckten Edition, siehe Metadaten/Gedruckt in">Transcribed from the printed edition (OCR)</span></h2>
+                     <div>
+                        
+                        <p>Eppishausen, am 14. April 1829. Hier mein verertester Freund! habe ich alles zusammen
+                           getragen, was ich bisher über das Geschlecht der Tanhuser habe aufsammeln können;
+                           es giebt wenig Aufschluß über d. Persönlichkeit des Dichters. Ir Tanhausen in Schwaben,
+                           was nun denen v. Stadion gehört, die es von Sinzendorf geerbt haben, könnte wol auch
+                           einmal dem Geschlechte des Sängers angehört haben, und dieses unter den Habsburgern
+                           in d. österreichschen Staaten gezogen sein; daß aber der Sänger bei dem Tode des lezten
+                           Babenbergers Friedrich des Streitbaren A. 1246 schon in Desterreich begütert ware,
+                           unterliegt wol keinem Zweifel. Ueber die Zerschiedenheit der Wappen könnte das Stadionsche
+                           Archiv zu Warthausen aus alten Siegeln vielleicht Auskunft geben und wenn sich das
+                           im Manes. Cod. abgebildete dort an einigen Urkunden fände; so müßte dies freilich
+                           für d. schwäb. Heimat des vielgereiseten Tanhusers entscheiden. Er scheint kein Freund
+                           Ottokars gewesen zu sein und mag wol nach der Einname des Landes von diesem verfolgt
+                           worden sein, wie auch Ulrich v. Liechtenstein begegnete. Ich bedaure daß ich Inen
+                           nicht mer mitteilen kann. Primisser in Wien wäre vielleicht über d. Geschlechter der
+                           österreich. Sänger besser unterrichtet als ich. Hr. Prof. v. der Hagen in Berlin,
+                           der immer nur zu schwimmen Lust bekömmt wenn im das Wasser in den Mund läuft; schrieb
+                           mir lezthin auf das dringendste um Abschriften aus dem Weingartner Codex; sie müssten
+                           aber alsobald gemacht werden; da sein Werk: die Minnesänger in 3 Quartbänden, schon
+                           in der Ostermesse sollte ausgegeben werden. Ich gestehe, daß ich diesem Manne von
+                           Hause aus eben nicht ser hold bin; aber um der guten Sache willen sezte ich mich in
+                           Gottes Namen hin u. schrieb im in kurzer Zeit 2510 Verse ab die ich im auch anfangs
+                           dieses Monats zugeschikt habe. Hr. Barth in Lpzg. welcher den Druck und Verlag dieses
+                           Werkes von v. der Hagen übernommen hat, schrieb mir, daß er von dem was bereits gedrukt
+                           ist, mir ein Exemplar durch Löflund und Son zugesendet habe. Wenn Sie einmal bei Löflund
+                           vorübergehen, so bitte ich jm zu sagen, er möchte mein Paket doch ungesäumt über Friederichshafen
+                           und Rorschach an mich nach Eppishausen spediren lassen. Ich bin ser begierig auf dies
+                           Werk; hege aber keine gar zu große Hofnungen davon; ich fürchte daß wieder eine Menge
+                           Flikwerk hineingeschiftet werden wird; denn Hagen spricht schon von einer reichlichen
+                           Nachlese im III. Bande. Ohe! - Aber eine Nachricht von einer kürzlich aufgefundenen
+                           handschriftl. Liedersammlung des XIV. Jarhunderts, welche auch Hagen mir mitteilte,
+                           wird Inen zu vernemen angenem sein. „ Eben lerne ich einen noch ganz unbekannten,
+                           und wie es „ scheint einzigen Codex kennen, welchen eine Augsburgerin Clara „ Hezlerin
+                           im XV. Sarh. geschrieben, welcher viele Erzählungen, „ Spruchgedichte und Lieder von
+                           Hermann von Sachsenheim,,, „ Suchenwirt, Freydank, Kaltenbach (? ) Jörg Schiller,
+                           Mönch „ von Salzburg, Suchs im Sinne, auch einen Nithart ( sein gefräß „ im alten
+                           Druk ) enthält; besonders aber gegen 100 Stüke sonst „ unbekannte Tage - Wächter -
+                           Liebes - Lieder 2c. welche zwar nicht „ mer in den eigentlichen Minnesang gehören,
+                           und auf die ich „ deshalb vergeblich Sagd machte, die aber einen willkommenen „ Uebergang
+                           von demselben zum spätern Volksliede bilden, dem „ XIV. I. H. noch angehören, und
+                           ser der Bekanntmachung,, wert sind. Abschriften stehen mir und also auch Inen zu gebote,
+                           „ gebieten Sie nur. 20. 2c. " Ich halte diesen Beitrag zu unserer Literatur des XIV.
+                           Jarhunderts für wichtig und allerdings der Bekanntmachung wert: allein, nie würde
+                           ich mich entschließen eine Abschrift herauszugeben, welche ich nicht selbst mit der
+                           Handschrift verglichen hätte. Es würde sich diese Handschrift ganz erwünscht zu den
+                           ersten III Bänden des Liedersaals fügen. Vorige Woche brachte mir ein Constanzer den
+                           schwäb. Merkur vom 1. April worin ich einen Trompeten Stoß, des H. Pf. I. fand, der
+                           mich auch namentlich mit betrift, und mir ser unangenem war; einmal weil alle Trompeter
+                           Stückchen überhaupt meiner Natur widerstreben, und ich nichts weniger liebe als in
+                           den Zeitungen herumzufaren, und dann, weil der Aussaz merere Unwarheiten enthält und
+                           also der Unternemung mer schaden als nüzen kann; endlich aber sichet das ganze, was
+                           wol nur von H. Pf. I. selbst herrüren kann, einer Art von compelle intrare änlich,
+                           die sich auf mich nie mit Erfolg anwenden läßt; weil mein ganzes Wesen sich sogleich
+                           gegen jeden Notzwang empört, und ich in solchen Fällen lieber gleich das Ganze zum
+                           Teufel schmeiße, als mich in einen Krieg um die Suprematie einlasse, welche der eingeborne
+                           Tod jedes gesellschaftl. Vereines ist. Auch halte ich für ser unverständig daß man
+                           den Namen eines Andern in irgend einem Geschäfte, one sein Wissen und Wollen druken
+                           lasse. Der höfliche Briefwechsel in welchem H. Pf. I. bisher mit mir gestanden, hätte
+                           mich berechtigen sollen zu erwarten, daß er mir seinen Aussaz für den schwäb. Merkur
+                           vor dem Druke mitteilen; oder doch wenigstens kund geben werde. Im ersten Falle wäre
+                           ich dann wenigstens im Stande gewesen, die chronologischen Schnizer welche er enthält,
+                           zu berichtigen. Nicht mer für heute lieber Freund! ich erwarte noch Fren Entschluß
+                           in betref der Berner Angelegenheit und kere indessen zu meinem episcopatus Constantiensis
+                           zurück. Viele herzliche Grüße an die Irige und Schwabs von Frem Tannhausen. Laßberg.
+                           Das Wappen der von Tannhausen findet sich unter den Bairischen Geschlechtern in dem
+                           sonst ser guten „ Erneuerten Wappenbuch, Nürnberg. Bei Paulus Fürst ". 1657. I. 86.
+                           Es stellet einen goldnen Greiffenfuß im blauen Felde vor, auf d. Helme eine goldne
+                           Greiffen Klaue, linksgekeret. In Rüxners Thurnierbuche findet sich das Wappen nicht.
+                           Wiguleius Hund in seinem „ bayerischen Stammenbuch “, welcher den Nüxner fleißig,
+                           doch meist one alle Critik, benuzt hat, füret nicht einmal den Namen des Geschlechtes
+                           an; woraus ich schließe, daß dasselbe erst später, nach Rüxner und Hund; also ungefär
+                           nach 1600 nach Baiern, vermutlich aus Tyrol oder Steyermark, gekommen seie. Prof.
+                           Sartorius in d. „ Burgvesten und Ritterschlössern der österreichischen Monarchie ".
+                           VI. 123. sagt vom Minnesänger Tannhauser, daß er wol dem Geschlechte der Freiherren
+                           von Thannhausenin Salzburg und Baiern angehöre und zwischen 1200 u. 1240 gelebt habe.
+                           Also zur Zeit Herzog Friederich des Streitbaren, an dessen Hofe er sich aufgehalten
+                           zu haben scheint. Die Güter Leopoldsdorf und Hinperg ( Hindberg ), welche Tannhauser,
+                           wie er in seinen Gedichten selbst sagt, besaß, lagen ganz nahe bei Wien, wo er einen
+                           Hof, curia, d. i. ein Haus mit einem ummauerten Hofraum hatte, sind warscheinlich
+                           Lehen von Herzg. Friederich d. Streitbaren, dem letzten Babenberger, gewesen und da
+                           er davon in der vergangenen Zeit spricht: Ze wiene hat ich einen hof Der lag so rehte
+                           schone Lupoldzdorf was dar zue min Daz lit bi luchse ( Lachsendorf ) nahen Ze hinperg
+                           hat ich schone gut. so fürchte ich, daß im diese Besizungen durch den nach Friederichs
+                           Tod eingedrungenen Kön. Ottokar von Böhmen, wie vielen andern Anhängern des Babenberg.
+                           Hauses geschahe, wieder genommen worden seien. Dükher in seiner „ Salzburg. Chronik
+                           ". Salzburg. 1666. füret das obengemeldete Wappen ( mit d. Greiffenfuß ) an und sagt,
+                           daß zu seiner Zeit die Graven von Tannhausen das Erbtruchsässenamt bei dem Erzstifte
+                           Salzburg haben. Loc. cit. pg. 4. Cyriac. Spangenberg im „ Adelsspiegel ". I. Cap.
+                           XXIII. „ vom Truchseß - Adel ". pg. 349. sagt folgendes: „ Auch die Bis- „ thümer:
+                           Als des Erzstifts Salzburg Truchsessen, waren etwan „ die von Albin, so anno 1561
+                           abgestorben, jezt die Freyherren „ von Thanhausen. " Der Adelsspiegel ist gedruckt:
+                           1591. Preuenhueber „ Annales Styrenses " hat über dies Geschlecht folgendes: 1537.
+                           Im Monat Dechr. ward auf Befel u. Anordnung Königs Ferdinandi ein großer Convent der
+                           fünf N. O. Lande zu Wien gehalten 2c. 2c. Dabei war unter andern auch: Franz v. Thannhausen,
+                           Hauptmann und Vizdom zu Friesach, Abgeordneter von dem Lande zu Kärnthen. Gabriel
+                           Bucelin in der „ Germania topo - chrono - stematographica " Part. II. pag. 20. sezet
+                           die von Tanhausen unter die Bairischen Adelsgeschlechter. 1452. obiit Guilielmus a
+                           Tannhausen abbas monasterii Urspergensis in Suevia. Bucelin. loc. cit. pg. 300. In
+                           dem Stammbaume der Graven Lobgott, Gotthilf und Chrgott von Kuefstein ( aus Desterreich
+                           ob der Ens ) bei Buzelin loc. cit. P. II. in genealog. pag. 191. finde ich: Balthassar
+                           d. Tanhausen und seine Gemalin Emerent. Tänzel de Trazberg, deren Sohn auch Balthassar
+                           de T. Euphrosine v. Apfenthal zu einer ehelichen Wirtin hatte, mit der er einen Son
+                           Conrad â T. zeugte, verheuratet mit Dorothea de Teuffenbach, deren Tochter Dorothea
+                           de T. den Freiherren Georg Hartmann von Stubenberg in Steyermark ehelichte. Idem,
+                           ibidem, hat pag. 232. in dem Stammbaume der Graven Palfi: eine Sydonia Maria Freyin
+                           von Thanhausen, welche die Gemalin des Fürsten Hans Ulrich von Eggenberg, und die
+                           Tochter des oben genannten Conrad Freiherrn v. Thanhausen und der Dorothea v. Teuffenbach
+                           war. Der schon oft angeführte Buzelin giebt uns endlich in der „ Germania " 2c. Part.
+                           II. genealogica pg. 307 den Stammbaum des Johann Antonius comes, den er familiae ultimum
+                           nennt, mit 32 Ahnen. Wir sehen daraus, daß die schon sepius memorata Dorothea de Teuffenbach
+                           irem Gemal Conrad v. Tannhausen einen Son Balthassar geboren hat, dem die Ursula von
+                           Holnek einen Son, den genannten Joh. Antonius schenkte, aus dessen unkräftigen Lenden
+                           kein fernerer Tannhausen hervorging. Das Wappen ist hier bei Buzelin mit einem andern,
+                           vermutlich angeheurateten, geviert, quadriert, ecartelé, dies stellt in einem der
+                           Länge nach geteilten, halb rot, halb weißen Felde, einen ausgerichteten Sparren vor,
+                           dessen eine Hälfte im weißen Felde schwarz und im roten Felde weiß ist. Warum in der
+                           kaum genannten Handschrift der Tanhuser auf dem Bilde das schwarze Kreuz des teutschen
+                           Ordens auf seinem Mantel führet, wird uns aus seinen Gedichten nicht klar; auf alle
+                           Fälle aber könnte es uns Ausschluß geben wie der Thannhuser ein weit und vielgereister
+                           Mann war, qui multorum hominum vidit mores et urbes. In fidem I. v. Laßberg.</p>
+                        </div>
+                  </section>
+                  <div id="related-letters"></div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer class="bg-dark text-white text-center py-3">
+         <div class="container">
+            <p class="mb-0"><a href="../letters.html">Back to the Letters</a></p>
+         </div>
+      </footer><script src="../../js/related.js"></script><script src="https://unpkg.com/leaflet/dist/leaflet.js"></script><script>
+                    var letterPlaces = [];
+                    
+                    letterPlaces.push({ coords: [47.545,9.23759], label: "Eppishausen", kind: "sent" });
+                    
+
+                    if (letterPlaces.length === 0) {
+                        document.getElementById('map').style.display = 'none';
+                    } else {
+                        var map = L.map('mapid', { scrollWheelZoom: false });
+                        // Muted basemap (CARTO Positron) instead of the default colourful OSM
+                        // tiles, to match the edition's restrained palette.
+                        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+                            attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+                            subdomains: 'abcd',
+                            maxZoom: 19
+                        }).addTo(map);
+
+                        var bounds = [];
+                        letterPlaces.forEach(function (p) {
+                            var isSent = p.kind === 'sent';
+                            var marker = L.circleMarker(p.coords, isSent
+                                ? { radius: 8, color: '#143761', weight: 2, fillColor: '#1d4e89', fillOpacity: 0.85 }
+                                : { radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75 }
+                            ).addTo(map).bindPopup((isSent ? 'Sent from: ' : 'Mentioned: ') + p.label);
+                            bounds.push(p.coords);
+                        });
+                        if (bounds.length > 1) {
+                            map.fitBounds(bounds, { padding: [25, 25], maxZoom: 9 });
+                        } else {
+                            map.setView(bounds[0], 8);
+                        }
+                    }
+                </script><script>
+                    // Initialize all tooltips
+                    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+                    new bootstrap.Tooltip(tooltipTriggerEl)
+                    })
+                </script></body>
+</html>

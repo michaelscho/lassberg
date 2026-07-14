@@ -83,7 +83,8 @@
                   <section id="original-text" class="mb-4">
                      <h2>Original Text
                         <span class="transcription-source badge-manuscript" title="Diplomatische Transkription der Handschrift">Transcribed from the manuscript (Transkribus)</span></h2>
-                     <div>
+                     <div class="btn-group btn-group-sm mb-2" role="group" aria-label="Textansicht"><button type="button" id="view-lines-btn" class="btn btn-outline-secondary active" onclick="document.getElementById('view-lines').classList.remove('d-none'); document.getElementById('view-flow').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-flow-btn').classList.remove('active');">Zeilengenau</button><button type="button" id="view-flow-btn" class="btn btn-outline-secondary" onclick="document.getElementById('view-flow').classList.remove('d-none'); document.getElementById('view-lines').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-lines-btn').classList.remove('active');">Fließtext</button></div>
+                     <div id="view-lines">
                         
                         <p><br>Basel 21/4/34. <br>Hochverehrter Herr
                            Baron, <br>mit dem
@@ -115,6 +116,40 @@
                            <br>Gott behüte
                            Sie, hochverehrter Herr Baron, in Ihrem stillen Kloe <br>sterli und
                            erhalte Sie im gewohnten Wollwollen für <br>Ihren ganz ergebenen <br>Wilh.
+                           Wackernagel Dr. </p>
+                        </div>
+                     <div id="view-flow" class="d-none">
+                        
+                        <p>Basel 21/4/34. Hochverehrter Herr
+                           Baron, mit dem
+                           besten und herzlichsten Danke für Ihre grosse Gefälligkeit sende ich Ihnen
+                           beifolgend die vier Bände <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Joseph von Laßberg: Lieder-Saal, das ist: Sammelung altteutscher&#xA;        Gedichte.</strong&gt;">Liedersaal<a href="http://dl.ub.uni-freiburg.de/diglit/liedersaal1825-3https://www.digitale-sammlungen.de/en/view/bsb10113516">📖</a></span>, den dritten Band der <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Christoph Heinrich Myller: Samlung deutscher Gedichte aus dem XII., XIII. und XIV. Jahrhundert.&#xA;        3 Bde.</strong&gt;">Myllerischen
+                              Samlung<a href="https://www.digitale-sammlungen.de/de/details/bsb10057384VD18 11205407">📖</a></span> und die <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Hermann von Sachsenheim: Die&#xA;        Mörin.</strong&gt;">Moerin<a href="https://handschriftencensus.de/werke/889">📖</a></span>
+                           wiederum zurück. Verzeihen Sie die lange Verzoegerung gütigst damit, dass ich den dritten Band des
+                           <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Joseph von Laßberg: Lieder-Saal, das ist: Sammelung altteutscher&#xA;        Gedichte.</strong&gt;">LS<a href="http://dl.ub.uni-freiburg.de/diglit/liedersaal1825-3https://www.digitale-sammlungen.de/en/view/bsb10113516">📖</a></span>. jezt
+                           zum ersten Mahle gelesen habe. Gleich das vorderste Stück, <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Joseph von Laßberg: Lieder-Saal, das ist: Sammelung altteutscher&#xA;        Gedichte.</strong&gt;">die listigen
+                              Weiber<a href="http://dl.ub.uni-freiburg.de/diglit/liedersaal1825-3https://www.digitale-sammlungen.de/en/view/bsb10113516">📖</a></span> ist meisterlich vorgetragen und muss noch in die ältesten besten Zeiten
+                           gehoeren. Zu
+                           den vielen Handschriften das Gedichtes von den <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Sieben weise&#xA;        Meister.</strong&gt;">vii. weisen
+                              Meistern<a href="https://handschriftencensus.de/werke/6078">📖</a></span> kommt noch eine hiesige, und sie allein enthält den Namen des
+                           Verfassers; es ist der <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Hans von Bühel</strong&gt;">Büheler<a href="https://d-nb.info/gnd/119011697"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>,
+                           der auch die <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Hans von Bühel: Die Königstochter von Frankreich.</strong&gt;">Koenigstochter von Frankreich<a href="https://handschriftencensus.de/werke/1751">📖</a></span> gedichtet hat. Ausserdem habe ich neulich noch
+                           manche andre nicht "unamüetige" Handschrift herausgesucht.
+                           Jezt sehe
+                           ich mit Begierde dem neuen Merkmale Ihres Wollwollens, der der verheissenen zweiten Sendung, und gar einer
+                           Sendung von anec dotis entgegen. Ist es Ihnen nicht bequemer, mir den ganzen
+                           <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ulrich von Liechtenstein: Frauendienst.</strong&gt;">Frau endienst<a href="https://www.handschriftencensus.de/werke/386">📖</a></span> selbst herzuschicken? Dann kann ich Ihnen die Mühe des Abschreibens
+                           ersparen. Er würde Ihnen dadurch nicht lange entzogen werden:
+                           ich weiss in dem Buche schon Bescheid, da ich es bereits einmahl
+                           ganz für <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Karl Lachmann</strong&gt;">Lachmann<a href="https://d-nb.info/gnd/118568558"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           abgeschrieben habe. ich schreibe diese wenigen Zeilen an dem ersten von dreyen
+                           für Lehrer und
+                           Schüler drangvollen Tagen, denen der öffentlichen Prüfung. Ist die abgethan,
+                           so kommen endlich anderthalb Wochen Ferien, auf die ich mich
+                           diesmahl freue, wie ich mich nie als Schüler darauf gefreut habe.
+                           Gott behüte
+                           Sie, hochverehrter Herr Baron, in Ihrem stillen Kloe sterli und
+                           erhalte Sie im gewohnten Wollwollen für Ihren ganz ergebenen Wilh.
                            Wackernagel Dr. </p>
                         </div>
                      <div class="mirador-parent">

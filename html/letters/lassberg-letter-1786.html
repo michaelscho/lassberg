@@ -94,7 +94,8 @@
                   <section id="original-text" class="mb-4">
                      <h2>Original Text
                         <span class="transcription-source badge-manuscript" title="Diplomatische Transkription der Handschrift">Transcribed from the manuscript (Transkribus)</span></h2>
-                     <div>
+                     <div class="btn-group btn-group-sm mb-2" role="group" aria-label="Textansicht"><button type="button" id="view-lines-btn" class="btn btn-outline-secondary active" onclick="document.getElementById('view-lines').classList.remove('d-none'); document.getElementById('view-flow').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-flow-btn').classList.remove('active');">Zeilengenau</button><button type="button" id="view-flow-btn" class="btn btn-outline-secondary" onclick="document.getElementById('view-flow').classList.remove('d-none'); document.getElementById('view-lines').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-lines-btn').classList.remove('active');">Fließtext</button></div>
+                     <div id="view-lines">
                         
                         <p>
                            <div class="letter-add"><br>erhalten am 26 Juny
@@ -164,6 +165,77 @@
                            leben Sie recht wohl! Mein aufrichtiger Dank und <br>meine besten
                            Wünsche begleiten sie. Bleiben Sie mir geneigt. <br>Von Herzen Ihr
                            ergebenster <br>Wilh. Wackernagel </p>
+                        </div>
+                     <div id="view-flow" class="d-none">
+                        
+                        <p>
+                           <div class="letter-add">erhalten am 26 Juny
+                              1834. am 29
+                              Juny habe ich <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Friedrich Heinrich von der Hagen: Minnesinger. Deutsche Liederdichter des&#xA;        zwölften, dreizehnten und vierzehnten Jahrhunderts, aus allen bekannten Handschriften und&#xA;        früheren Drucken.</strong&gt;">Im Hagens
+                                 dichterleben 4to<a href="https://archive.org/details/minnesingerdeut00hagegoog">📖</a></span> und <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Konrad von Stoffel: Gauriel von Muntabel.</strong&gt;">Gabriel:
+                                 Montavel<a href="https://handschriftencensus.de/werke/567">📖</a></span> in folio gesendet. </div>Basel 23. Juny 34.Hochverehrter Herr
+                           Baron, wenn ich
+                           einen Briefsteller schreiben wollte, so könnte ich jezt die schoensten studien machen für
+                           das Capitel von den Danksagungen: Sie geben mir dazu von Woche zu
+                           Woche immer neuen Anlaß. Die letzte sechsfache Sendung habe ich zu meiner großen
+                           Freude erhalten <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unser&#xA;        vrouwen klage.</strong&gt;">Marien
+                              Klage<a href="https://www.handschriftencensus.de/werke/393">📖</a></span> war mir noch von der Pfälzer Handschrift her in ange nehmer
+                           Erinnerung. <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Amor: die Liebe.</strong&gt;">Amor die
+                              lieb<a href="GW 01619">📖</a></span> hätte ich nach Sprache und Reim älter angeschlagen, als es dort ist (1492). Der <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Albert von Augsburg: Leben des heiligen Ulrich.</strong&gt;">h. Ulrich<a href="https://geschichtsquellen.de/werk/70https://www.handschriftencensus.de/werke/1009https://d-nb.info/gnd/1232969346">📖</a></span> hat ver wunderliche Alterthümlichkeiten. Alles ist mir höchst
+                           willkommen! Es waere eine Unschicklichkeit, wenn ich Ihnen unbequem machen wollte, um es
+                           nur selber bequem zu haben: wenn ich sie mit dem Ausziehen
+                           beschwerte. Auch ohne das ist die Güte gross genug. Nur ein Übelstand
+                           ist dabei: gern hätte ich noch vor Ihrer Abreise die sendung
+                           zurückwandern lassen, wenn mir nur Pädagogium und Universität (ich lese
+                           historische syntax) und die mühselige correctur der ersten Bogen Zeit ließen,
+                           jezt Zeit liessen, für die spaeteren zu copieren. Da muss ich nun auch
+                           noch Ihre Geduld in Anspruch nehmen. Erst in einigen Wochen kommt die
+                           Ruhezeit, die ich mir zu einer Arbeitzeit machen kann, die gesegneten
+                           Ferien. ich
+                           weiss nicht ob ich die <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Daniel Baradinus: Geistlich Artzney Für Ketzergifft vnd jetziger zeit böse&#xA;        Lüfft.</strong&gt;">geistl.
+                              Arzney</span> u. den <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Geistlicher&#xA;        Fastnachtskrapfen.</strong&gt;">Fastnachtskrapfen<a href="https://handschriftencensus.de/werke/3704">📖</a></span> behalten darf oder zurückschicken soll? Sie wollen mir, damit ich doch auch etwas von Ihrer
+                           schoenen Reise habe, während der Zeit die <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Friedrich Heinrich von der Hagen: Minnesinger. Deutsche Liederdichter des&#xA;        zwölften, dreizehnten und vierzehnten Jahrhunderts, aus allen bekannten Handschriften und&#xA;        früheren Drucken.</strong&gt;">hagenschen
+                              Dichterleben<a href="https://archive.org/details/minnesingerdeut00hagegoog">📖</a></span> anvertrauen: mir würde in der That damit der groeßte Gefalle
+                           geschehen: ich besitze nur die ersten zehn Bogen, und doch wurden mir die übrigen für
+                           mein Buch in chronologischer Beziehung nicht ohne Nutzern seyn; zudem
+                           wäre ich auf <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Neidhart.</strong&gt;">Nitharts<a href="https://www.handschriftencensus.de/werke/269">📖</a></span>
+                           Leben neugierig, ob es das von mir einmahl verfasste ist und wie es mir woll jezt noch
+                           gefällt. Dass
+                           <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Friedrich Heinrich von der Hagen</strong&gt;">Hr. vdH<a href="https://d-nb.info/gnd/118829130"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>.
+                           es versteht, sich die Mühe klein zu maden und Buch und Honorar desto groesser, ist
+                           an ihm freylich nicht neu; aber das mit dem <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Ulrich von Liechtenstein</strong&gt;">Liechtenstein<a href="https://d-nb.info/gnd/118625306"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> geht doch über meinen besten Glauben hinaus. Wenn Sie dann zu
+                           den Minnesängern noch den <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Konrad von Stoffel: Gauriel von Muntabel.</strong&gt;">Gabr. v.
+                              Montavel<a href="https://handschriftencensus.de/werke/567">📖</a></span> legen wollten (Ihre Auszüge enthalten nur den Anfang, nicht auch das
+                           gleichfalls verheissene Ende), so würde sie Ihre Güte, wenn ich so sagen könnte,
+                           als vollendet be trachten. In <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Caspar von Orelli</strong&gt;">Orelli<a href="https://d-nb.info/gnd/118787179"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           habe ich mich wieder finden gelernt. Ich glaube in der Hat, er hat die
+                           landschaftliche Wahl im besten Willen gegen uns angenommen (politische Parteyung kennt
+                           er wohl nur in so fern, als es ihm für die Zürcherische Ge Lehrsamkeit
+                           erspriesslich scheint), besonders aber aus Freude an vielen Bü chern und
+                           litterar. Entdeckungen. Mit dem hohen Taxieren hat er seit her etwas
+                           nachgelassen; zudem ist auch diese Schätzung nicht die definitive. ich habe
+                           ernsthaft und ruhig mit ihm über diese Angelegenheit gesprochen: da erklärte er
+                           es für schändlich und thoericht, es dahin zu bringen, dass die Bibliothek wegen
+                           zu hoher Veranschlagung müßte versteigert werden. Wenn er nur kein
+                           Bibliothecar waere, sondern ein Antiquar! Was meinen Sie zu der Taxe der Kunstsammlung? Die
+                           Experten der Stadt haben sie auf 16000. Fr., die der Landschaft auf 110000.
+                           geschätzt. Eins so unverschaemt als das andre. Und es kostet nur neue Directen für neue
+                           Experten. Und nun meine
+                           besten und herzlichsten Glückwünsche zu Ihrer Reise: Gesundheit und
+                           Fröhlichkeit während der Zeit und nachher, und litterarische und
+                           artistische Fünde, so viel der Wagen nur fassen mag. Und wenn sie
+                           nach <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Göttingen</strong&gt;">Göttingen<a href="https://www.wikidata.org/wiki/Q3033"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, kommen, so denken sie meiner bei <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Georg Friedrich Benecke</strong&gt;">Benecke<a href="https://d-nb.info/gnd/11865537X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           und den Br. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Grimm<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> und bestellen sie meine angelegentlichsten Grüße und Empfehlungen. Gern hätte ich
+                           Sie auch
+                           gebeten einen Brief mitzunehmen, wenn ich nur dazu kommen könnte, einen zu
+                           schreiben. Wenn Sie wollen, so erzählen sie von meinem altd.
+                           Lesebuch: noch weiss man dort niechts davon; ich würde, wenn erst mehr
+                           gedruckt wäre, Probeoegen schicken. Schoen waere es, wenn mir <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wilhelm Grimm</strong&gt;">Wilh. Gr.<a href="https://d-nb.info/gnd/118542265"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> den <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Freidank: Sprüche.</strong&gt;">Freydank<a href="https://handschriftencensus.de/werke/115">📖</a></span>
+                           zusammen ließe: vielleicht traefe er noch vor Thorschluss ein; ohne dies muss ich mit
+                           dem Müller schen Text vorlieb nehmen. Noch einmahl,
+                           leben Sie recht wohl! Mein aufrichtiger Dank und meine besten
+                           Wünsche begleiten sie. Bleiben Sie mir geneigt. Von Herzen Ihr
+                           ergebenster Wilh. Wackernagel </p>
                         </div>
                   </section>
                   <details id="normalised-text" class="text-version mb-4">

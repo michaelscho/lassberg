@@ -1,0 +1,208 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0" lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>The Lassberg Letters</title>
+      <link href="../../css/styles.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script><link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"><script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script></head>
+   <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+         <div class="container"><a class="navbar-brand" href="../../index.html">The Laßberg Letters</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link" href="../../index.html">Welcome</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../persons.html">Persons</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../places.html">Places</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../explore.html">Explore</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <header class="page-header py-4">
+         <div class="container">
+            <h1 class="mb-2">Brief von Ludwig Uhland an Joseph von Laßberg (03.08.1829).</h1>
+            <p class="lead mb-0">
+               
+               <p>Correspondence data based on Harris, Martin: Joseph Maria Christoph
+                  Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                  Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                  geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                  Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991..</p>
+               </p>
+         </div>
+      </header>
+      <main class="py-4">
+         <div class="container">
+            <div class="alert alert-warning letter-preview-banner" role="alert"><strong>Unreviewed working text.</strong> The encoding of this letter
+               has not yet been editorially reviewed
+               (status: draft).
+               The text may contain transcription or OCR errors — please cite with caution.
+               </div>
+            <div class="row g-4">
+               <div class="col-lg-4 order-lg-2">
+                  <aside class="letter-sidebar">
+                     <section id="metadata" class="mb-4">
+                        <h2 class="h5">Metadata</h2>
+                        <p><strong>Signatur: </strong>Marbach am Neckar, Schiller Nationalmuseum, </p>
+                        <p><strong>Registernummer (Laßberg): </strong></p>
+                        <p><strong>Registernummer (Harris): </strong>2259</p>
+                        <p><strong>Gedruck in: </strong><a href="https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig
+                              Uhland. Wien 1870, S. 133-37</a></p>
+                     </section>
+                     <section id="map" class="mb-4">
+                        <h2 class="h5">Places</h2>
+                        <div id="mapid"></div>
+                        <p class="map-legend small text-muted mt-1 mb-0"><span class="legend-dot" style="background:#1d4e89"></span> place of sending
+                           <span class="legend-dot ms-2" style="background:#b57cc0"></span> places mentioned
+                           </p>
+                     </section>
+                  </aside>
+               </div>
+               <div class="col-lg-8 order-lg-1">
+                  <section id="original-text" class="mb-4">
+                     <h2>Original Text
+                        <span class="transcription-source badge-print" title="OCR-Texterfassung aus der gedruckten Edition, siehe Metadaten/Gedruckt in">Transcribed from the printed edition (OCR)</span></h2>
+                     <div>
+                        
+                        <p>Stuttgart, den 3. Aug. 1829. Vor Allem, hochverehrter Freund! meinen wiederholten,
+                           innigsten Dank nicht bloß für all die gütige Gastfreundschaft, die mir in Ihrem Hause
+                           widerfahren, sondern vornehmlich auch für die Förderung, welche Sie durch die vielfachen
+                           Bemühungen um die alte Dichterhandschrift meinen Studien gegeben, für so viel Belehrendes
+                           und Erfreuendes, was mir in den Stunden der Erholung von der Handarbeit des Abschreibens
+                           und Ausziehens zu Theil geworden. Noch an dem Tage, da wir zu Stein schieden, gelangte
+                           ich bis Donaueschingen. Nach Besuchung des Rheinfalls ging ich Nachmittags von Schaffhausen
+                           weiter, setzte mich unterwegs auf eine rückkehrende Salzfuhr von Schwenningen, fuhr
+                           in Gewitter und Regenguß über den Randen und kam wohlgenekt auf dem Zollhaus an. Es
+                           war erst 7 Uhr, ich entschloß mich sogleich, hier Post zu nehmen, die mich vor 10
+                           Uhr nach Donaueschingen brachte. So gewann ich den nächsten Vormittag für die Bibliothek,
+                           die mir Hofprediger Becker, der in Tübingen studirt und sich der dortigen Verhältnisse
+                           gern erinnerte, mit der größten Gefälligkeit öffnete und zur Benützung stellte. Was
+                           ich in der kurzen Zeit hier einsah, traf auf das Schönste mit den Eppishauser Studien
+                           zusammen und ist so recht die Ergänzung derselben. Was ich in der Berner Handschr.
+                           im altfranzösischen Original gelesen, davon enthält der Donaueschinger Parcival die
+                           deutsche Bearbeitung, welche zugleich die Lücken jener Hdschr. ausfüllt. Dieses Donauesch.
+                           Dichtwerk ist eine höchst sonderbare Composition. Zwischen Wolframs Parcival, welcher
+                           hier der alte, auch der deutsche heißt, ist der neue, von Philipp Kolin von Straßburg
+                           1336 für Ulrich v. Rapolzstein bearbeitete eingefugt, in welchem ich sogleich das
+                           Gedicht der Berner Hdschr. erkannte. Auch der welsche Meister ist genannt: Daz het
+                           Maneschier gar bedoht Und allez zů eime ende broht In welsch wan ez waz och ein franczeis
+                           Wise vn dazů korteiz In alleme frangriche Lebete nut sin gliche. An tihtenden siñen
+                           Von manheit vn von minnē Het er getihtet in welsch so wol Daz man in iemer loben sol.
+                           Dieser Maneschier iſt Manessier, einer der Fortsetzer des Parc. von Crestien de Troyes.
+                           Aus letzterem Gedichte steht ein Auszug im 15. Bande der Histoire littéraire de la
+                           France, Par. 1820., dabei die Notiz, daß Gautier de Denet dasselbe fortgesetzt und
+                           Manessier es beendigt. Si com Manesiers le tesmoigne Qui à fin traist ceste besoigne
+                           El non Jehane la contesse Qui est de Flandres dame et maitresse. Eine frühere Stelle,
+                           wo Gautiers de Denet sich nennt, muß in der Berner Hdschr. gerade auf einem der ausgefallenen
+                           Blätter gestanden haben. Alle diese Verhältnisse werde ich soviel möglich ins Klare
+                           zu setzen suchen, wenn mir der Donauesch. Parcival hieher geschickt seyn wird, was
+                           mir Herr Becker mit voller Bereitwilligkeit zugesagt hat. Ich habe mir Dieses erst
+                           in einigen Monaten erbeten, um zunächst an der Heldensage fortzufahren. In demselben
+                           Codex fand ich 8 meist schon bekannte Strophen von Minneliedern. Leere Räume am Schlusse
+                           der Abschnitte des Hauptwerks wurden, der Schrift nach gleichzeitig, benützt, diese
+                           Lieder einzuschreiben. Ich werde davon seiner Zeit Abschrift nehmen. Hr. Becker hat
+                           sich auch erboten, die Stelle der Zimmrer Chronik, wonach ein Herr von Zimmern auf
+                           dem Schloſse Wildenstein vom Berner gedichtet, nachzusuchen und auszuziehen, wenn
+                           ihm Name und Zeit dieses Freiherrn nur einigermaßen näher angegeben würde. Ist Ihnen
+                           vielleicht hierüber noch etwas Bestimmteres erinnerlich? Mein Durchblättern der Chronik
+                           war fruchtlos. Über Garin le Loherens habe ich auf hiesiger Bibliothek nachgesucht;
+                           anfangs vergeblich in der ersten Ausgabe von Calmet Hist. de Lorraine; nachher aber
+                           fand sich am Schlusse des 1ten Bandes der neuern Ausgabe in 6 Bden. zwar keineswegs,
+                           wie Sinner angiebt, ein vollständiger Abdruck des Gedichts, aber ein gutes Stück Auszüge.
+                           Sinner hat sich ohne Zweifel dadurch verleiten lassen, daß diese Auszüge geradezu
+                           überschrieben sind: Roman de Garin le Loherens. Von Neubronner in Ulm habe ich nun
+                           doch das Meiste erhalten, was ich aus Haugs Bibliothek zu erhalten wünschte, darunter
+                           Percy's Reliq. of anc. engl. Poetry, die ich mit nächster Bücher - Zurücksendung überschicken
+                           werde. Freilich ist es nicht, wie die Titelangabe erwarten ließ, eine Londoner Ausgabe,
+                           sondern eine von London and Francfort und hat daher nur Werth als Erinnerung an den
+                           guten Haug, der sich viel mit diesem Buche beschäftigt. Von Koller in London habe
+                           ich wegen der kleinen Pergamenthandschrift noch keine Antwort angetroffen. Schönhut
+                           habe ich zu meinem Bedauern in Tübingen nicht gesprochen. Er hatte mich verfehlt und
+                           versprochen, noch vor meiner Abreise wieder zu kommen, muß aber verhindert gewesen
+                           seyn. Diese Zeilen kommen Ihnen wohl erst nach der Rückkehr vom Wallenstadter See
+                           zu, möge diese Reise, deren Aufschub ich verschuldet, vom Himmel bestens begünstigt
+                           gewesen seyn. Vielleicht ist auch indeß ein neuer Sturm auf Wasserburg versucht worden,
+                           vielleicht sind weitere poetische Schönheiten vom langen Zauberschlaf erlöst. Meine
+                           Frau, die während meiner Abwesenheit bis nach Würzburg ausgeflogen, empfiehlt sich
+                           mit mir Ihrem freundlichen Andenken. Voll Verehrung und Dankbarkeit der Ihrige L.
+                           Uhland. NS. Um über das Verhältniß des Berner Parc. zu den Notizen in der Hist. Littér.
+                           mich bestimmter zu unterrichten, erlaube ich mir noch eine Bitte: ob Sie, verehrtester
+                           Freund, sich wohl die Mühe nehmen möchten, mir die Ueberzeugung zu verschaffen, daß
+                           nachfolgende Stelle, welche in besagter Hist. Littér. abgedruckt ist, sich auch in
+                           den Berner Hdschr. finde. Ich glaube mich derselben zu erinnern, werde sie aber nicht
+                           abgeschrieben haben, da sie nur eine kurze Wiederholung dessen enthält, was früher
+                           ausführlich erzählt war. Sie müßte ungefähr auf dem dritt- oder viertlekten Blatte
+                           des Bern. Parcival stehen, wo der Name Bags. ( Bagomedes ) am Anfange der Abschnitte
+                           öfters vorkömmt: Es vos atant un chevalier Qui Bagomedes est nomez En la riche sale
+                           est entrez Trestoz armez sor son cheval. etc. etc. etc. Jaloie querant aventure Tant
+                           quen une forest obscure Mencontra Kex li seneschax Et avec lui ot trois vassax Qui
+                           de noient ne maraisnerent Il me prisent et laidengerent Si me fisent grant deshonor
+                           Kex meismes al chief del tor Ne me deporta de rien nee Ainz me pendi sans demoree
+                           A un arbre par les deus piez Des trois autres fuisse espargniez Mais ne soffri que
+                           il parlaissent Car volentiers me delivraissent Par che que iere chevaliers Kex qui
+                           fel ert et pantoniers Me pendi pendans les deus piez Encor ert mes hiaumez laciez
+                           Et mes haubers ens en mon dos Si mait Diex je ne vous os Dire comment il me batirent
+                           Ne le grant honte qu'ils me firent Car cest grant honte à chevalier De si faite ovre
+                           retraiter En cort où il a tant de gent Entrues que iere en tel torment I vint chevalchant
+                           Percevax Li bons li sages li loiaus Qui aloit al mont doleraus Ja fuisse mors tot
+                           à estrous. Quant de larbre me dependi. Schwab sagt mir, daß er gestern selbst Ihnen
+                           geschrieben. Er hat gegenwärtig die Handschrift zum zweiten Bande der Schweizer Burgen
+                           vor sich liegen.</p>
+                        </div>
+                  </section>
+                  <div id="related-letters"></div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer class="bg-dark text-white text-center py-3">
+         <div class="container">
+            <p class="mb-0"><a href="../letters.html">Back to the Letters</a></p>
+         </div>
+      </footer><script src="../../js/related.js"></script><script src="https://unpkg.com/leaflet/dist/leaflet.js"></script><script>
+                    var letterPlaces = [];
+                    
+                    letterPlaces.push({ coords: [48.7775,9.18], label: "Stuttgart", kind: "sent" });
+                    
+
+                    if (letterPlaces.length === 0) {
+                        document.getElementById('map').style.display = 'none';
+                    } else {
+                        var map = L.map('mapid', { scrollWheelZoom: false });
+                        // Muted basemap (CARTO Positron) instead of the default colourful OSM
+                        // tiles, to match the edition's restrained palette.
+                        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+                            attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+                            subdomains: 'abcd',
+                            maxZoom: 19
+                        }).addTo(map);
+
+                        var bounds = [];
+                        letterPlaces.forEach(function (p) {
+                            var isSent = p.kind === 'sent';
+                            var marker = L.circleMarker(p.coords, isSent
+                                ? { radius: 8, color: '#143761', weight: 2, fillColor: '#1d4e89', fillOpacity: 0.85 }
+                                : { radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75 }
+                            ).addTo(map).bindPopup((isSent ? 'Sent from: ' : 'Mentioned: ') + p.label);
+                            bounds.push(p.coords);
+                        });
+                        if (bounds.length > 1) {
+                            map.fitBounds(bounds, { padding: [25, 25], maxZoom: 9 });
+                        } else {
+                            map.setView(bounds[0], 8);
+                        }
+                    }
+                </script><script>
+                    // Initialize all tooltips
+                    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+                    new bootstrap.Tooltip(tooltipTriggerEl)
+                    })
+                </script></body>
+</html>

@@ -99,7 +99,8 @@
                   <section id="original-text" class="mb-4">
                      <h2>Original Text
                         <span class="transcription-source badge-manuscript" title="Diplomatische Transkription der Handschrift">Transcribed from the manuscript (Transkribus)</span></h2>
-                     <div>
+                     <div class="btn-group btn-group-sm mb-2" role="group" aria-label="Textansicht"><button type="button" id="view-lines-btn" class="btn btn-outline-secondary active" onclick="document.getElementById('view-lines').classList.remove('d-none'); document.getElementById('view-flow').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-flow-btn').classList.remove('active');">Zeilengenau</button><button type="button" id="view-flow-btn" class="btn btn-outline-secondary" onclick="document.getElementById('view-flow').classList.remove('d-none'); document.getElementById('view-lines').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-lines-btn').classList.remove('active');">Fließtext</button></div>
+                     <div id="view-lines">
                         
                         <p><br>Basel 30. Augst 33.
                            <br>Hochgeehrter
@@ -201,6 +202,110 @@
                            <br>Bald wieder
                            einige Zeilen von Ihnen, das würde mir troestlich seyn. Gewähren <br>Sie die Bitte
                            und bleiben Sie freundlich gewogen. Ihrem ergebensten <br>Wilh.
+                           Wackernagel. </p>
+                        </div>
+                     <div id="view-flow" class="d-none">
+                        
+                        <p>Basel 30. Augst 33.
+                           Hochgeehrter
+                           Herr Baron Gestern ist endlich die <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Kiste mit den Bildern</span>
+                           abgegangen. ich hoffe es werde alles so ankommen, dass Sie zufrieden
+                           sind. Den grossen centnerwichtigen Querbalken habe ich nicht mit schicken moegen: Kiste und
+                           Fracht waeren dadurch unmässig vertheuert worden, und so viel ich sehen kann ist nichts
+                           darauf gemahlt und geschrieben als ein Palmenvers. Die Kiste aber, in der die Bilder
+                           hergekommen, ist leider nicht mehr vorhanden: sie scheint bei der Versteigerung
+                           irgendwie mit
+                           drein gegangen zu seyn. Mir scheint die neue nicht zu theuer. Um Eins bitte ich Sie,
+                           verehrtester Herr Baron: lassen Sie Sich die Inscription auf dem Deckel ebenso
+                           lustig vorkommen, als ich mich darüber geärgert habe. Solche Schrei berey ist mir
+                           noch nicht vorgekommen, ich hatte in der Absicht, dass es recht schön werden sollte,
+                           <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unbekannt</strong&gt;">meinen
+                              Hauswirth<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> als einen "Mahler in der Kunst wie auch in Leim farben" (<span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Baseler Wochenblatt.</strong&gt;">Baseler Wochenblättli</span>) damit beauftragt: nun aber wollt ich ich hätte es
+                           selber
+                           geschrieben. Nun genug davon. Man ist hier jetzt, damit beschäftigt, <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Basel</strong&gt;">Basel<a href="https://www.wikidata.org/wiki/Q78"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> neu zu
+                           constituiren. Die Abtrennung des Landes ist gestern anerkannt. Freylich war das dritte
+                           Wort beiden betreffenden Verhandlungen des grossen Rathes immer: Wir thun es aber
+                           aus Zwang, nur aus Zwang. Allein was hilft das? Wenn der Wolf die Schafe fort
+                           hat, so prote stiert der Hirte zu spät. <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Reigoldswil</strong&gt;">Reigoldswyl<a href="https://www.wikidata.org/wiki/Q64668"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> und
+                           <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Gelterkinden</strong&gt;">Gelterkinden<a href="https://www.wikidata.org/wiki/Q65936"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> moegen nun schon wie sie mit ihren Würgern und Wütherichen fertig
+                           werden. Das
+                           nächste was nun geschieht ist: die bestehende Regierung von <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Basel</strong&gt;">Basel<a href="https://www.wikidata.org/wiki/Q78"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> Stadttheil
+                           wird, je
+                           nachdem das souveraine Volk entscheidet, provisorisch erklärt oder von einer neu erwählten
+                           abgelöst. Sodann Entwerfung und Berathung einer neuen Constitution. Natürlich, damit keine Majorität
+                           die Minorität einschüchtere, alles das unterm Schutze der eidgenössischen Waffen. Die ganze
+                           Betrachtung der <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Basel</strong&gt;">Basel<a href="https://www.wikidata.org/wiki/Q78"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>er
+                           Angelegenheiten kommt auf die eine Frage zurück: War es weise auf den Hilfruf der <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Reigoldswil</strong&gt;">Reigoldswyler<a href="https://www.wikidata.org/wiki/Q64668"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> zu hören? und dem stürmischen Verlangen der Stadtbürger, die den
+                           Auszug forderten, nach zugeben. Da die Unternehmung ausser allem Zusammenhang mit
+                           dem Vorfalle in
+                           <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Küsnacht</strong&gt;">Küssnacht<a href="https://www.wikidata.org/wiki/Q69216"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> war (davon muss jeder überzeugt sein, der sie hat werden sehen),
+                           <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Basel</strong&gt;">Basel<a href="https://www.wikidata.org/wiki/Q78"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> also keines Rückhaltes, keiner schnellen Unterstützung von Seiten
+                           der s. g. Reactionspartey gewiss seyn durfte, so beantwortet jene Frage sich von selbst.
+                           Die Stadt
+                           mochte nun gewinnen oder nicht (das letztere aber wird bei einem Kam pfe
+                           gegen guerillas immer wahrscheinlicher seyn, noch dazu wenn der Chef gegen Willen und
+                           Einsicht die Truppen hinausführt), gegen die Eidgenossen war die Sache auf beiden
+                           Seiten verloren. Was seit dem 3. August geschah und ge schieht, sind
+                           lauter unvermeidliche Folgen. Freylich hätte man mindestens ehren hafter fallen
+                           sollen. Da hatten die <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Berlin</strong&gt;">Berlin<a href="https://www.wikidata.org/wiki/Q64"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>er im J.
+                           13. andern Muth, als die <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Frankreich</strong&gt;">Franzosen<a href="https://www.wikidata.org/wiki/Q142"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> zwey
+                           Meilen davon standen und Brand und Plünderung und den <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Michel Ney</strong&gt;">Marschall Ney<a href="https://d-nb.info/gnd/118734725"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> als neuen Koenig bringen wollten. Und das war <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Berlin</strong&gt;">Berlin<a href="https://www.wikidata.org/wiki/Q64"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> mit seinen schnell gegrabenen Schanzen, und das waren
+                           Franzosen! Denn was hat <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Basel</strong&gt;">Basel<a href="https://www.wikidata.org/wiki/Q78"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> mit der
+                           friedlichen dienstwilligen Übergabe gewonnen. Höchstens ein gutes
+                           freundliches Bennehmen von Seiten der eingerückten Truppen, und günstige
+                           Berichte der eidgenössischen Commissarien. Dies Tagsatzung aber handelt nicht
+                           anders als hätte sie <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Basel</strong&gt;">Basel<a href="https://www.wikidata.org/wiki/Q78"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> mit der
+                           Schärfe des Schwertes erobert, und die Berichte der Commissarien nennt sie
+                           kurzweg parteyisch. Hätte sich <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Basel</strong&gt;">Basel<a href="https://www.wikidata.org/wiki/Q78"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> gewehrt:
+                           jene Truppen sind so, dass sie vielleicht vor langer Weile auseinander
+                           gelaufen wären; jedesfalls aber, wüsste man dann eher, wa rum die
+                           Tagsatzung sich als Siegerin und <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Basel</strong&gt;">Basel<a href="https://www.wikidata.org/wiki/Q78"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> als eine
+                           Verbrecherinn be trachtet. Die <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Kanton&#xA;                        Neuenburg</strong&gt;">Neuenburger<a href="https://www.wikidata.org/wiki/Q12738"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> haben ihre Lostrennung von der Eidgenossenschaft beschlossen
+                           und warten nur
+                           noch auf die Ratification des <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Friedrich Wilhelm IV.</strong&gt;">Koenigs<a href="https://d-nb.info/gnd/118535994"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>.
+                           ich fürchte er verweigert sie. Gaebe er sie, so könnte das vielleicht eine fremde
+                           Intervention herbeiführen. Ein schlechtes Mittel, aber doch wohl das einzige, um die <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Schweiz</strong&gt;">Schweiz<a href="https://www.wikidata.org/wiki/Q39"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> wieder in das rechte Gleis zu bringen. Ohne diess ist kein gutes Ende abzuschen.
+                           Denn welche Tage wird es geben, wenn die guten <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Schweiz</strong&gt;">Schweiz<a href="https://www.wikidata.org/wiki/Q39"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>er zuletzt inne werden, dass sie an den radi calen
+                           Stimmführern nur eine neue Oligarchie gewonnen haben, boeser und gefähr licher als irgend eine der alten
+                           Aristokratien? All diess Unglück trifft auch mich nicht
+                           gelinde. Schon seit langer Zeit hat man hier aus finanziellen und
+                           pietistischen Rücksichten die Aufhebung der Universität gewünscht. Jetzt
+                           wird das Verlangen dringender und begründeter. Denn die Stadt verarmt, zudem
+                           verlangen die Landschafter bei der allgemeinen Theilung der Staats güter auch die des Vermögens der Universität.
+                           Kurz sie wird nun wohl unter gehen. In diesem einen Fall mag man
+                           nichts vom Festhalten am Historischen wissen, und dass es Ehrensache wäre, den <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Zürich</strong&gt;">Zürchern<a href="https://www.wikidata.org/wiki/Q72"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> nicht auch noch diesen Tri umph zu gönnen,
+                           daran denkt man nicht. Bloss des Pädagogiums wegen bin ich aber
+                           nicht hieher gegangen. Verzeihen Sie, geehrtester Herr Baron, dass ich Sie soviel
+                           von Baslerischen und eigenen Angelegenheiten unterhalte oder auch nicht
+                           unterhalte. Aber Sie haben wie derholentlich mir selbst und in dem neulichen
+                           schönen Brief auch der guten Stadt <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Basel</strong&gt;">Basel<a href="https://www.wikidata.org/wiki/Q78"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> so viele
+                           Theilnahme bewiesen, dass ich mich damit entschuldigt glaube. Ihr Rath, bei
+                           den Musen Trost für die Unbilden der Zeit zu suchen, würde sich bewähren
+                           wenn ich mich einschliessen könnte und ausserdem die Ohren verstopfen; aber
+                           die eidgenössische Musik rasselt zu oft bei mir vorüber, und man kann
+                           keinen Schritt auf die Strasse thun, ohne durch bunte Röcke an das
+                           Elend erinnert zu werden, mit keinem Freunde sprechen ohne gleich
+                           davon und nur davon reden zu hören. Wer kann da die rechte Freude Ruhe und Sammlung gewinnen? ich studiere so
+                           viel ich muss, für Universität u. Pädagogium. Ausserdem beschäftigen mich die
+                           <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Handschriften</span> aus <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Muri</strong&gt;">Muri<a href="https://www.wikidata.org/wiki/Q69011"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>
+                           und <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Zürich</strong&gt;">Zürich<a href="https://www.wikidata.org/wiki/Q72"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, wo es zum Glück nicht viel mehr zu thun giebt als abzuschreiben. Sie
+                           wollen so gütig sein und mir den VII und IX Band von des <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt; Aretin, Johann Christoph</strong&gt;">Fr. v. Aretin<a href="https://d-nb.info/gnd/115664823"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Aretin, Johann Christoph:  Beyträge zur Geschichte und Literatur, vorzüglich aus den Schätzen&#xA;        der Königl. Hof- und Centralbibliothek zu München.</strong&gt;">Beiträgen<a href=" http://opac.regesta-imperii.de/id/1079584">📖</a></span> dennoch beschaffen? ich nehme es mit Dank an: die Aufsätze
+                           von <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Bernhard Joseph Docen</strong&gt;">Docen<a href="https://d-nb.info/gnd/100082505"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           sind mir für die rechte Nutzung der Zürcher Manuscripte
+                           unentbehrlich. Herrn <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Neukirch, Johann Georg</strong&gt;">Neukirchs<a href="https://d-nb.info/gnd/1037649648"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> Hs. ist der <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Colmarer Codex</span>, soviel ich
+                           aus dem was er sagt abneh men kann; er hat ihn auch aus dem <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Gottlieb Konrad Pfeffel</strong&gt;">Pfeffelschen<a href="https://d-nb.info/gnd/118740709"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> Hause, ich glaube durch Heirath,
+                           überkommen. Aber ihn zu zeigen, daran will er immer noch nicht. Es ist als
+                           fürchte er dann zur Herausgabe bewogen zu werden. Basler Buch händler
+                           unternehmen nichts. Man muss halt abwarten; genug dass er nicht aus der Welt
+                           ist. Meine
+                           Studenten haben sich über <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Egen von Bamberg</strong&gt;">Eggen<a href="https://d-nb.info/gnd/118681680"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           und <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Sigenot.</strong&gt;">Sigenot<a href="https://handschriftencensus.de/werke/541">📖</a></span>
+                           sehr gefreut: ich soll ih ren besten und ergebensten Dank ausrichten. Die
+                           Leute machen mich durch ihren Eifer und ihrem Sinn für alte Poesie ganz glücklich.
+                           Auch das wird aufhören, wenn die Univ. eingeht und die Leute anderswo etwas müssen zu lernen suchen.
+                           Bald wieder
+                           einige Zeilen von Ihnen, das würde mir troestlich seyn. Gewähren Sie die Bitte
+                           und bleiben Sie freundlich gewogen. Ihrem ergebensten Wilh.
                            Wackernagel. </p>
                         </div>
                   </section>

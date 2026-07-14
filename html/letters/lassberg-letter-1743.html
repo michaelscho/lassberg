@@ -97,7 +97,8 @@
                   <section id="original-text" class="mb-4">
                      <h2>Original Text
                         <span class="transcription-source badge-manuscript" title="Diplomatische Transkription der Handschrift">Transcribed from the manuscript (Transkribus)</span></h2>
-                     <div>
+                     <div class="btn-group btn-group-sm mb-2" role="group" aria-label="Textansicht"><button type="button" id="view-lines-btn" class="btn btn-outline-secondary active" onclick="document.getElementById('view-lines').classList.remove('d-none'); document.getElementById('view-flow').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-flow-btn').classList.remove('active');">Zeilengenau</button><button type="button" id="view-flow-btn" class="btn btn-outline-secondary" onclick="document.getElementById('view-flow').classList.remove('d-none'); document.getElementById('view-lines').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-lines-btn').classList.remove('active');">Fließtext</button></div>
+                     <div id="view-lines">
                         
                         <p><br>Eppishausen am 26
                            Sept. 1833. <br>Vererter Herr Professor! <br>Vierzehen tage nach empfang Ires lieben briefes erhielt ich
@@ -191,6 +192,101 @@
                            814. <br>dem
                            todesiare <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Karl der Große</strong&gt;">Karl des
                               großen<a href="https://d-nb.info/gnd/118560034"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>. <br>iterum vale! </p>
+                        </div>
+                     <div id="view-flow" class="d-none">
+                        
+                        <p>Eppishausen am 26
+                           Sept. 1833. Vererter Herr Professor! Vierzehen tage nach empfang Ires lieben briefes erhielt ich
+                           auch die kiste mit dem ehemaligen <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">gemälde</span> von <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Tobias Stimmer</strong&gt;">Tobias
+                              Stimmer<a href="https://d-nb.info/gnd/118755366"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> dem Maler von <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Schaffhausen</strong&gt;">Schafhausen<a href="https://www.wikidata.org/wiki/Q9009"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>,
+                           welcher es für den bischof <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Christoph Metzler</strong&gt;">Christoph
+                              Mezler<a href="https://d-nb.info/gnd/116958820"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> von <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Konstanz</strong&gt;">Constanz<a href="https://www.wikidata.org/wiki/Q3834"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> verfertigt hatte,
+                           wie solches wappen, iarzal und der dedications vers auf dem
+                           querbalken des altärchens anzeigen. darunter be fand sich noch ein
+                           antependium, worauf <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jesus Christus</strong&gt;">Christus<a href="https://d-nb.info/gnd/7505655-0"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           am abend male mit den aposteln gemalt war; dieses muß schon bei dem
+                           seligen Wocher verloren gegangen sein. es hatte die iarzal 1559. mit der
+                           wiedererstattung der gefälligst für mich gemachten auslage /: 56 bazen:/ bitte
+                           ich auch den verbindlichsten dank für die für mich diesfalls
+                           übernommene bemühung zu genemigen: kann ich in diesen gegenden, oder
+                           wo immer Inen etwas besorgen; so bitte ich mich nicht zu
+                           verschonen, Sie erweisen mir dadurch ein wares vergnügen. Nun
+                           ist das <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">gemälde</span> zwar durch die iniuria temporum
+                           zerstört;
+                           aber für mich bleibt es noch immer ein wertes andenken, und sein anblik
+                           wekt in mir allerlei süße und sauere erinnerungen: ich denke, wenn
+                           ein <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Schweiz</strong&gt;">Schweizer iezt sein vaterland <a href="https://www.wikidata.org/wiki/Q39"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>anschaut, über welches auch,
+                           wie über dies <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">gemälde</span>, ein hagelwetter gekommen
+                           ist; so mag
+                           er änliche empfindungen haben. wie hat sich binnen den 4 wochen, da Sie
+                           mir schrieben, alles verändert! doch nicht un erwartet, von dem
+                           augenblike an, da <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Basel</strong&gt;">Basel<a href="https://www.wikidata.org/wiki/Q78"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> und die
+                           urkantone sich selbst aufgaben. auf die frage: ob es weise war, auf den hilfruf der <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Reigoldswil</strong&gt;">Reigoldsweiler<a href="https://www.wikidata.org/wiki/Q64668"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> zu hören ? weiß ich nichts zu antworten: als: tue recht und
+                           siehe dich nicht um! aber wer den mut hat das rechte zu tun, muß auch nicht verzagen und so
+                           plözlich, wie
+                           hier geschahe, alles aufgeben. warum haben die <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Basel</strong&gt;">Basler<a href="https://www.wikidata.org/wiki/Q78"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> nicht
+                           einen auswärtigen kriegsmann von gutem rufe zum anfürer genommen? das wäre keine schande
+                           gewesen, die
+                           völker des altertums taten es oft, und mit erfolg. Leider haben Sie
+                           mein Vererter! richtig prophezeihet; der <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Friedrich Wilhelm IV.</strong&gt;">könig<a href="https://d-nb.info/gnd/118535994"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           hat nicht in die trennung <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Kanton&#xA;                        Neuenburg</strong&gt;">Neuenburgs<a href="https://www.wikidata.org/wiki/Q12738"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> von
+                           der eidgenossen schaft gewilligt; denn es sind vorerst wichtigere fragen
+                           zu lösen. die erste ist : to by, or not to by! denn die über krieg und frieden enthält
+                           doch nichts andres. die faden des polit. gewebes sind einmal so verworren, daß kaum etwas
+                           außer dem
+                           schwerte mer hinreichen dürfte, sie wieder in ordnung zu
+                           bringen! aber ich muß auch mit dem alten <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Marcus Porcius Cato</strong&gt;">Cato<a href="https://d-nb.info/gnd/118519700"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           rufen: ante omnia Carthaginem delendam esse! ehe die
+                           teutschen fanen nicht wieder auf dem <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Paris</strong&gt;">Montmartre<a href="https://www.wikidata.org/wiki/Q90"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> wehen, kann kein
+                           dauerhafter friede in der welt gegründet werden. ob es diesmal zum Kriege kommen wird? in dem
+                           augenblike, da ich dieses schreibe, ist es wol schon ent schieden; aber,
+                           wenn es auch diesmal nicht dazu kömmt; so ist doch gewiß, daß es bald dazu kommen muß. beide
+                           partheien verlangen
+                           mit zu großer sensucht einmal zu wissen, was aus inen werden
+                           soll, als daß dieser provisorische zustand lange mer bestehen
+                           könnte. es hat sich zu lange gebogen, es muß nun endlich brechen!
+                           <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Bern</strong&gt;">Berns<a href="https://www.wikidata.org/wiki/Q70"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> terroristische anträge an die tagsazung haben bei der
+                           siebenköpfigen concordia einigen anklang gefunden. <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Thurgau</strong&gt;">Thurgau<a href="https://www.wikidata.org/wiki/Q12713"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, welches
+                           in allem den affen von <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Zürich</strong&gt;">Zürich<a href="https://www.wikidata.org/wiki/Q72"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> macht,
+                           wird wirklich
+                           zu einer außerordentlichen großenratsversammelung gehezt; aber, da
+                           die zal der gemäßigten auch in diesem kanton seit einiger zeit
+                           beträchtlich zugenommen hat; ist es ser warschein lich, daß
+                           diesmal die versammelung nicht zu staude kommt; allein, wer kann
+                           lange für ein volk gut stehen? magis Pugnas et exactos Tyrannos Densum humeris
+                           bibit aure vulgus! Die <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Bern</strong&gt;">Bern<a href="https://www.wikidata.org/wiki/Q70"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>er,
+                           eifersüchtig auf die schnellen fortschritte der <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Zürich</strong&gt;">Zürcher<a href="https://www.wikidata.org/wiki/Q72"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> auf der ban des
+                           terrorismus, wollen sie nun durch die einricht ung von
+                           blutgerichten überbieten, und scheinen vergessen zu haben, daß
+                           beinahe alle blutmänner des französischen national convents durch
+                           die guillotine gefallen sind! aber <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Zürich</strong&gt;">Zürich<a href="https://www.wikidata.org/wiki/Q72"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> ist gewiß viel
+                           gefärlicher als <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Bern</strong&gt;">Bern<a href="https://www.wikidata.org/wiki/Q70"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, wo iezt
+                           meist nur unwissende männer am ruder sizen. Ich begreiffe eben so gut als ich
+                           es herzlich
+                           bedauere, daß auch Sie unter den gegenwärtigen verhältnissen
+                           leiden müßen: aber das kann ich doch kaum erwarten, daß auch die
+                           universität zu <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Basel</strong&gt;">Basel<a href="https://www.wikidata.org/wiki/Q78"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> in die
+                           allgemeine teilung ein geworfen werde. das würde doch ganz einer schlechten
+                           Ironie gleich sehen. haben
+                           Sie noch eine weile geduld mein wertester gastfreund! der alte gott lebt noch! lassen Sie uns
+                           vest an diesem
+                           glauben halten, ein einziger augenblik kann alles umgestalten. Nun bin ich doch
+                           frohe, daß der <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Colmarer liedercodex</span> wieder auf gefunden
+                           ist. natürlich denkt <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Neukirch, Johann Georg</strong&gt;">herr
+                              Neukirch<a href="https://d-nb.info/gnd/1037649648"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> iezt an keine herausgabe, die im auch gar nicht
+                           zuzumuten ist; allein, seine abneigung denselben sehen zu lassen,
+                           schreibe ich einer ganz andern ursache zu als Sie: er fürchtet
+                           warscheinlich, daß, bei bekanntwerdung derselben, von französischer
+                           seite reclamationen eintretten dürften: ich kenne beispiele
+                           hievon; und die <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Straßburg</strong&gt;">Strasburger<a href="https://www.wikidata.org/wiki/Q6602"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>
+                           würden himmel und erde bewegen, um in zu bekommen: in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Colmar</strong&gt;">Colmar<a href="https://www.wikidata.org/wiki/Q130994"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> selbst,
+                           denke ich, ist: ignoti nulla cupido. Unter wiederholung meines dankes, grüße ich Sie und die
+                           optimae spei
+                           tyrones herzlich und bleibe Ir ergebenster JvLaßberg. Teilen Sie meine
+                           freude! vor kurzem sind mir 8 noch unbekannte <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Carolingische urkunden</span> zugekommen, darunter eine von
+                           814. dem
+                           todesiare <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Karl der Große</strong&gt;">Karl des
+                              großen<a href="https://d-nb.info/gnd/118560034"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>. iterum vale! </p>
                         </div>
                   </section>
                   <details id="normalised-text" class="text-version mb-4">

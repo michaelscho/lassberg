@@ -78,7 +78,8 @@
                   <section id="original-text" class="mb-4">
                      <h2>Original Text
                         <span class="transcription-source badge-manuscript" title="Diplomatische Transkription der Handschrift">Transcribed from the manuscript (Transkribus)</span></h2>
-                     <div>
+                     <div class="btn-group btn-group-sm mb-2" role="group" aria-label="Textansicht"><button type="button" id="view-lines-btn" class="btn btn-outline-secondary active" onclick="document.getElementById('view-lines').classList.remove('d-none'); document.getElementById('view-flow').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-flow-btn').classList.remove('active');">Zeilengenau</button><button type="button" id="view-flow-btn" class="btn btn-outline-secondary" onclick="document.getElementById('view-flow').classList.remove('d-none'); document.getElementById('view-lines').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-lines-btn').classList.remove('active');">Fließtext</button></div>
+                     <div id="view-lines">
                         
                         <p><br>Hochgeehrter Herr
                            Baron, <br>diese
@@ -96,6 +97,25 @@
                            Sie zu besuchen. <br><span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Caroline Luise Wackernagel-Bluntschli</strong&gt;">Meine
                               Braut<a href="https://d-nb.info/gnd/113182346X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> und mich selbst Ihrem und Ihrer verehr <br>ten <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Caroline Luise Wackernagel-Bluntschli</strong&gt;">Frau Gemahlinn<a href="https://d-nb.info/gnd/113182346X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> geneigtem Wohlwollen angelegent <br>lich empfehlend,
                            bin ich in Erwartung eines heitern <br>Wiedersehens <br>Ihr ganz ergebener <br>gez: Wilh. Wackernagel Dr. <br>(bei <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Caspar Bluntschli</strong&gt;">Prof. Bluntschli<a href="https://d-nb.info/gnd/118512129"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> zum Steinböckli) <br>Zürich 11/10/37. </p>
+                        </div>
+                     <div id="view-flow" class="d-none">
+                        
+                        <p>Hochgeehrter Herr
+                           Baron, diese
+                           wenigen Zeilen sollen Sie nur benachrichtigen, dass ich in der
+                           künftigen Woche (wahrscheinlich schon am Dienstag) von Ihrer gütigen
+                           Erlaubniss Gebrauch zu machen und bei Ihnen „in gastes wise" einzusprechen gedenke. ich
+                           mache Ihnen
+                           diese Anzeige so spät, weil ich bis auf den heutigen Tag fürchten muste,
+                           die Nachwehen einer unwillkomme nen Krankheit, die mich sechs Wochen lang ans Haus
+                           und ans Bett
+                           gefesselt hat, würden mir jede, selbst die kleinste
+                           Hochzeitreise unmöglich machen. Der liebe Gott hat mir aber darüber weggeholfen, so dass mir
+                           nun auch die
+                           Freude nicht entgehen wird, in diesen meinen schönsten Tagen
+                           Sie zu besuchen. <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Caroline Luise Wackernagel-Bluntschli</strong&gt;">Meine
+                              Braut<a href="https://d-nb.info/gnd/113182346X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> und mich selbst Ihrem und Ihrer verehr ten <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Caroline Luise Wackernagel-Bluntschli</strong&gt;">Frau Gemahlinn<a href="https://d-nb.info/gnd/113182346X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> geneigtem Wohlwollen angelegent lich empfehlend,
+                           bin ich in Erwartung eines heitern Wiedersehens Ihr ganz ergebener gez: Wilh. Wackernagel Dr. (bei <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Johann Caspar Bluntschli</strong&gt;">Prof. Bluntschli<a href="https://d-nb.info/gnd/118512129"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> zum Steinböckli) Zürich 11/10/37. </p>
                         </div>
                   </section>
                   <details id="normalised-text" class="text-version mb-4">

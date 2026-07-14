@@ -85,7 +85,8 @@
                   <section id="original-text" class="mb-4">
                      <h2>Original Text
                         <span class="transcription-source badge-manuscript" title="Diplomatische Transkription der Handschrift">Transcribed from the manuscript (Transkribus)</span></h2>
-                     <div>
+                     <div class="btn-group btn-group-sm mb-2" role="group" aria-label="Textansicht"><button type="button" id="view-lines-btn" class="btn btn-outline-secondary active" onclick="document.getElementById('view-lines').classList.remove('d-none'); document.getElementById('view-flow').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-flow-btn').classList.remove('active');">Zeilengenau</button><button type="button" id="view-flow-btn" class="btn btn-outline-secondary" onclick="document.getElementById('view-flow').classList.remove('d-none'); document.getElementById('view-lines').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-lines-btn').classList.remove('active');">Fließtext</button></div>
+                     <div id="view-lines">
                         
                         <p><br>Basel
                            8/1/38 <br>Hochgeehrter Herr Baron, <br>die herzlichsten Glückwünsche zum neuen Jahre Ihnen und den
@@ -111,6 +112,33 @@
                            wo. <br>Gott behüte
                            Sie. Meine und <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Caroline Luise Wackernagel-Bluntschli</strong&gt;">meiner
                               Frau<a href="https://d-nb.info/gnd/113182346X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> beste Empfehlungen an <br>Ihre verehrte Frau <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jenny von Droste zu Hülshoff</strong&gt;">Gemahlinn<a href="https://d-nb.info/gnd/118527541"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> <br>Von Herzen Ihr ergebener <br>Wilh: Wackernagel Dr. </p>
+                        </div>
+                     <div id="view-flow" class="d-none">
+                        
+                        <p>Basel
+                           8/1/38 Hochgeehrter Herr Baron, die herzlichsten Glückwünsche zum neuen Jahre Ihnen und den
+                           Ihrigen. Wir
+                           beginnen es besser als unsre Freunde in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Göttingen</strong&gt;">Göttingen<a href="https://www.wikidata.org/wiki/Q3033"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>. Und
+                           doch, ich wüste
+                           nicht ob ich nicht mit ihnen tauschen möchte: man hat gern einmal in seinem
+                           Leben etwas grosses gethan, wenn man auch da für grosses leiden
+                           sollte. Dass
+                           Sie den Druck des <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Weingartner
+                              Codex</span> noch aufschieben möchten, hat mich unbehaglich berührt: ich hatte mich so darauf
+                           gefreut, diese älteste und beste Liederhandschrift sauber ediert bald vor mir liegen zu
+                           haben. Der <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Willehalm&#xA;        von Orlens.</strong&gt;">Wilhelm von
+                              Orleans<a href="https://handschriftencensus.de/werke/323">📖</a></span> besitzt doch nicht den Werth, dass er vor jener den Vorzug verdiente; und mit
+                           dem Frauendienste ist bereits <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Karl Lachmann</strong&gt;">Lachmann<a href="https://d-nb.info/gnd/118568558"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>
+                           beschäftigt. Der Basler <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Du Cange Charles Du Fresne&#xA;        Glossarium Ad Scriptores Mediae Et Infimae Latinitatis.</strong&gt;">Du Cange<a href="VD18 12072141-001">📖</a></span>
+                           ist jezt Eigenthum vom Verleger meines Lesebuches; ich kann Ihnen,
+                           wenn Sie michs wollen besorgen lassen, ein Exemplar für 16 Schw. Fr.
+                           verschaffen; ein andrer muss etwas mehr zahlen. ich seufze unter dem Druck beider <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wilhelm Wackernagel: Deutsches Lesebuch.</strong&gt;">Theile des
+                              Lesebuches<a href="https://digi.ub.uni-heidelberg.de/diglit/wackernagel1839gahttps://archive.org/details/deutscheslesebu00wackgoog">📖</a></span>: daher die Eilfertigkeit dieses Briefleins. Wie lange werden
+                           Sie noch in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Eppishausen</strong&gt;">Eppishausen<a href="https://www.wikidata.org/wiki/Q1423653"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>
+                           verweilen? Haben Sie bereits ein neues Heimwesen erworben? ich bin begierig zu wissen ob und
+                           wo. Gott behüte
+                           Sie. Meine und <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Caroline Luise Wackernagel-Bluntschli</strong&gt;">meiner
+                              Frau<a href="https://d-nb.info/gnd/113182346X"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> beste Empfehlungen an Ihre verehrte Frau <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Jenny von Droste zu Hülshoff</strong&gt;">Gemahlinn<a href="https://d-nb.info/gnd/118527541"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> Von Herzen Ihr ergebener Wilh: Wackernagel Dr. </p>
                         </div>
                   </section>
                   <details id="normalised-text" class="text-version mb-4">
