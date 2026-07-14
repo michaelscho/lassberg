@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1263">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Ludwig Uhland (02.12.1828).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">618</idno>
+                        <idno type="register-lassberg">222</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 105-10<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1263">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1828-12-02">1828-12-02</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Eppishausen, am 2. Christmonds. 1828. Theuerster Uhland! Der Tag an dem ich einige Zeilen von Inen erhalte, ist jedesmal ein Festtag für mich; ich lasse Sie also von meiner Freude urteilen, als ich diesen Morgen Iren Brief vom 28. Novbrs. empfieng. Daß auch Sie eine Reise in das Dichterland gemacht und ein heiliges Grab gesucht, auch we nigstens seine Stäte gefunden haben, war mir ser lieb zu vernemen. Für mich hat es etwas ganz eigenes, erhebendes auf der Stelle zu stehen, wo ein meinem Geiste oder Herzen verwandter Mann einst geatmet, gelebt und gewirkt hat. Aus der Gestalt des Landes, den Bäumen, Wiesen, dem Flusse und den Bergen bei denen er aufgewachsen, schliesse ich auf die ersten Empfindungen die in seiner Brust aufstiegen, auf die Wendung die sein Sinn genommen u. behalten hat, und ich lerne daraus seine Schriften weit besser verstehen. Sie haben sich also auch d. alten englischen Dichter kommen lassen; sind auch die von W. Scott, Jamieson u. Weber 1814 zu Edinbourgh herausgegebenen: Illustrations of Northern antiquities dabei? sonst stünde Inen mein Exemplar zu Dienste. Von französischen Sachen könnte ich Inen: „ Les poëtes français depuis le XII siècle etc. par P. R. Auguis. 6 Bände in 8 °. aº. 1824 und: Nouveau recueil des fabliaux et contes etc. par M. Méon. 1823, 2 Bände in 8 °. zusenden. Diese lezte Sammlung v. Fabliaux ist von der kurz zuvor erschienenen des Barbaçan in 4 Bänden z. unterscheiden. Von ältern franz. Sachen habe ich meist nur einzelne Bände, da mir durch Ausleihen viel verloren gieng; doch habe ich: „ le roman de la rose par Guil: de Lorris &amp; Jean de Meun, accompagné De plusieurs autres ouvrages, etc. et d'un glossaire, Amsterdam. 1785. 3 Tomes in 8 °. ancienne chronique de Gerard d ' Euphrate duc de Bourgogne remise en français moderne. Paris. 1783. 2 Tomes in 80. und: aventures &amp; plaisante education du courtois chevalier Charles le bon Seri d'Armagnac. Amsterdam. 1786. 2 tomes in 120 noch ganz. Renouard's choix des troubadours haben Sie selbst. Da ich längst im Sinne hatte einmal selbst nach Paris z. gehen; so habe ich mir von der alten franz. Poesie nicht viel angeschaft. In der Bibliotheke zu Donauöschingen sind ziemlich viel alte Druke von Romans de Chevallerie. Daß man in abgelegenen Gegenden noch einiges auf unsre alten Balladen bezügliches aussammeln könnte, will ich gerne glauben; aber wer gehet dahin? und wie lange wird es noch dauren, so ist alles vollends verschollen? Ich habe diesen Sommer im Berner Oberlande unablässig nach alten Sagen geforscht, aber nichts erfaren können, was nicht schon bekannt wäre. Daß Meusebach in Berlin die beträchtlichste Sammlung von volkstümlichen Gedichten besize, habe ich nicht nur von andern, sondern auch von im selbst vernommen: allein, da er selbst im Sinne hat über teutsche Volkspoesie ein Werk herauszugeben; so wird er vorderhand wol schwerlich etwas aus seinem Vorrate mitteilen. Jezt ist er mit seinem Fischart beschäftiget, der endlich erscheinen soll. Halling hat in durch Herausgabe des glükhaften Schifs gewekt. Was Sie mir von einer Handschrift des Rosengartenliedes in einer andern als der bekannten Versart sagen, die in Wallerstein sein soll, ist mir höchst wichtig; es käme darauf an welche Recension d. ältere ist: aber daß man Inen die Hdschft. nicht gezeigt hat, finde ich höchst engherzig ja recht unartig. Daß Sie diesen Winter wieder an Ir Werk über Heldensage u. Minnesang gehen wollen, das erfreuet mich über die Maßen; ich sene mich ordentlich darnach es kennen zu lernen und Schwab, der etwas davon vorlesen hörte, hat mich noch mer entzündet. Lassen Sie ja mein teurer und vererter Freund! diese Arbeit nimmer liegen! Meister und Gesellen werden sich daran erfreuen. Daß Wyß Bibliothecar in Bern geworden kann nicht anders als förderlich für Ire Zwecke sein. Er ist ser gefällig und ich glaube mir schmeicheln zu dürfen, daß ich etwas bei jm gelte. Wenn Sie sich entschließen könnten selbst nach Bern zu gehen; so würde alles sich leichter machen lassen. Und ich zweifle nicht daß man Inen die Handschriften in die Wonung geben würde; sollte aber dazu keine Aussicht sein; so wünschte ich wenigstens die Titel der Msspte. zu wissen, welche Sie zu benuzen wünschen, um dafür auch einen Versuch machen zu können. Hätte ich Wyß diesen Sommer nicht krank und bettliegerig gefunden; so hätte er mir auf der Bibliotheke ein eigenes Kämmerchen eingeräumt, um die Hdschrsten mit Musse benuzen zu können: ich denke, dieß tut er für Sie wol eben so gerne, denn wenn man bei im ist, so ist er ein gar wakerer und gefälliger Mann; sonst aber lässt er sich gerne treiben. Da Herr Schönhut etwas schnellen Gemütes ist, so mag sich wol begeben haben, daß er durch unvollständige Abschrift meiner Notaten über die Biblioth. zu Donauöschingen Sie, mein bester Uhlandus! in einen Irrtum gefüret hat. Die dortige Handschrift des Parcifal ist nicht wie Sie meinen teutsch und wälsch; sondern es sind 2 Parcifale, näml.: der des Wolfram v. E. und ein anderer, den Philipp Kolin, ein Goldschmit zu Straßburg, aus wälsch ( also warscheinlich französch. ) in teutsche Reimen gebracht hat, und dieser ist ao. 1336 gemacht worden. Ob nun Kolin einen andern Text vor sich gehabt hat als Wolfram? ich konnte meine Notizen weder so vollständig noch so deutlich machen als ich wünschte; weil eben da ich schrieb der Fürst dazu kam und ich also eilen mußte zum Schluß zu kommen. Der Bibliothekar Hofprediger Dr. Beker ist ein äusserst braver und gefälliger Mann und ich zweifle nicht, daß er sich ein Vergnügen daraus machen wird Inen diese und andere Handschriften zu verschaffen, wenn es in seiner Befugniß ſtehet, was ich nicht weiß: im entgegengesezten Falle würde es freilich einiger verbindlicher Zeilen an den Fürsten bedürfen. Das sicherste würde immer sein selbst nach Donauöschingen zu gehen, wo Sie für d. Benuzung der Msspte. keinem Hindernisse entgegen sehen dürften. Auch ich lese gegenwärtig meines lieben Gevatters Iac. Grimm teutsche Rechtsaltertümer mit vielem Vergnügen. Ich habe im Weistümer u. Offnungen von alemannischen Ortsgemeinden liefern müssen u. war so glüklich einige höchst Interessante zu bekommen: indessen felet dem guten Manne noch vieles und in einigen Jaren kann er seine beiden Bände wenigstens auf 4 ausdenen. H. v. der Hagen hat mir auch geschrieben, an seiner Ausgabe des Pariser Cod. der Minnelieder sind die 2 ersten Bände ganz und am 3. bereits 32 Bogen gedrukt. Ich musste im an den nithardischen Liedern des Weingartner Codex über 800 Verse abschreiben. Er will auch ein Glossarium der altteutschen Sprache herausgeben; aber was will der nicht alles? und was hat er nicht schon gewollt? indessen lebt er in einem Lande, wo man an in glaubt u. das ist die Hauptsache. Auch hat ein H. Pfarrer Dr. Jäger zu Bürg bei Heilbronn an mich geschrieben u. mich eingeladen einem historischen Vereine beizutretten, der auch Sie mein Freund, Pfarrer Pfister, le Brêt u. a. m. unter seine Mitglieder zäle, und eine dem Mittelalter gewidmete Zeitschrift unter dem Titel: Suevia herausgeben will. Ich habe mir die Einsicht des Planes ausgebeten, und bin überal gerne, wo mein lieber Uhland mit ist. Ich danke Inen für die fernere Nachweisung über die Alexandreis des Lambert, welche aber mit meiner Handschrift nichts gemein hat. Unterdessen habe ich in N. P. Sibbern idea hist. literar. Islandorum gefunden, daß Brandus Iona Bischof zu Hole in Island die Alexandreis des Gualterius a Castellione episcopi insulani ( im XIII. I. H. ) ins Isländische übersezt habe. Es freut mich von Inen zu vernemen, daß ein schweizerischer Buchhändler in London ist, der ein Freund von alt teutscher Literatur ist; dieser Mann könnte uns ja vielleicht zu der Handschrift des Liedes vom heil. Anno verhelfen, welche Franz Junius ( der Herausgeber des Wulfila ) der Universität z. Oxford geschenkt hat. Es ist noch die Einzige die in der Welt existirt. Wenigstens könnte er uns Nachricht verschaffen über den Codex und eine umständliche Beschreibung desselben. Obschon ich gegen ein teutsches Rossarzneybuch aus dem XIII. I. H. mit allem Rechte misstrauisch bin; und das Bruchstük eines Wächterliedes, das aus 10 Blättern bestehen soll eine nähere. Notiz erforderte; so bin ich doch bereit dem wakern Schweizer die 3 Bände des Liedersaales dagegen zu geben, wenn er mir sein Msspt. zuerst sendet. Ser gerne ließe ich durch diesen Herrn Koller, Percy's relikes of ancient english poëtry kommen, wenn Sie die Güte haben wollten es jm zu sagen. Ein Thurgauer Namens Stähele, aus Summery, eine Stunde von hier, soll d. Ver nemen nach in London auch einen Buchhandel angefangen haben, vielleicht kann H. Koller Auskunft über sein Treiben geben. Und nun mein verereter Freund! vielen und herzlichen Dank für Ire und der lieben Frau Emma freundliche Einladung in jr stilles und friedliches Hauswesen, in dem es mir so überaus wol gefiel. Es war mir wol bei Inen und es würde mir wieder wol sein; aber diesen Winter kann ich wegen meiner Sicht in d. Schultern nicht reisen, und auf den Früling wollen wir erst sehen: quid valeant humeri, quid ferre recusant. Aber diese Einladung hat meinem Herzen ser wol getan! Zu sehen, daß mich Iemand zu sich wünscht, gehet mir über alles; darum nochmals meinen innigen Dank für Ire Liebe. Gott befolen von Trem Freunde Laßberg. Empfelen Sie mich Schwabs, ich werde im nächstens schreiben.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

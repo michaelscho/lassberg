@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-0639">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Ludwig Uhland an Joseph von Laßberg (23.04.1820).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">1854</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 7<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-0639">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0147">Stuttgart</placeName>
+                    <date when="1820-04-23">1820-04-23</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Hochwohlgeborener Freiherr! Hochzuverehrender Herr! Durch die gütigen Schreiben vom 12. und 13. d. M. und deren Beilagen haben Eu. Wohlgeboren mich auf das Erfreulichste überrascht. Ich beeile mich, für diese schönen Geschenke und für die wohlwollende Bereitwilligkeit, womit Sie meinen Anfragen entgegengekommen, den aufrichtigsten Dank zu bezeigen. Meine dermaligen Geschäfte, als Mitglied der würtemberg. Ständeversammlung, werden mich zwar noch einige Zeit lang verhindern, an meine Arbeit über Walther v. d. Vogelweide die lekte Hand anzulegen. Die Zwischenzeit suche ich aber zu Einsammlung weiterer Notizen zu benutzen, um der kleinen Schrift so viel Vollständigkeit zu geben, als in meinen Mitteln liegt. Ich sehe daher Demjenigen, was Eu. Hochwohlgeboren mich hoffen lassen, froh erwartend entgegen. Die Stelle bei Stumpf steht im V. Buch der Chronik in dem Abschnitt: Von dem Turgow, nach der von mir gebrauchten Ausgabe, Zürich 1606. fol. 3735. Auf der Seite ist das Wappen der Vogelweider abgebildet. Docen, im Museum für altdeutsche Literat. und Kunst Bd. II., Heft 1, Seite 23, verspricht, Walthers Epitaphium zu Würzburg mitzutheilen. Ich habe an ihn deßhalb geschrieben, er hat es aber unter seinen Papieren nicht mehr auffinden können. Von dem Gedichte: Friedrich von Schwaben, befindet sich eine Handschrift auf der hiesigen Königl. Privatbibliothek, vermuthlich aus dem Kloster Weingarten hierher gekommen. Wollen Eu. Hochwohlgeboren mir hierüber Aufträge ertheilen, so werde ich mir deren Vollziehung zur angenehmen Pflicht machen. Sehr zu wünschen ist es, daß die von Ihnen beabsichtigte Galerie thurgauischer Sänger zur Ausführung kommen möchte. Die eigene Anschauung der Gegend ist äusserst förderlich für die Lebendigkeit einer solchen Darstellung. Mir war es bei meiner Beschäftigung mit jenen Dichtern schon Vieles werth, jene Gegend wenigstens einmal als flüchtiger Wanderer durchstrichen zu haben. Durch die Herausgabe des Nibelungen - Liedes und des Gedichtes von Walther und Hiltegunt bereiten Eu. Hochwohlgeboren den Freunden der altdeutschen Sage und Dichtung sehr interressante Erscheinungen. In der Anlage nehme ich mir die Freiheit, Ihnen die neue Auflage meiner Gedichte zu übersenden. Mögen Sie, mit den alten schwäbischen Meistern vielfach beschäftigt, diese neueren Klänge nicht ungeneigt aufnehmen. Mit größter Verehrung verharre ich Euer Hochwohlgeboren Stuttgart, den 23. April 1820, unterthäniger Diener L. Uhland. NS. In dem Weingartner Codex befindet sich vor Walthers Liedern das ähnliche Bild, wie das mir nach dem Manessischen gütig mitgetheilte. Doch fehlen in ersterem Schild und Helm. Das Bild ist ohne Zweifel nach dem Liede des Dichters gezeichnet: Ich saz uf einem steine 2c. Man. I., 102.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

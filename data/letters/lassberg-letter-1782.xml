@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1782">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Ludwig Uhland an Joseph von Laßberg (12.06.1834).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">2501</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 224<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1782">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0148">Tübingen</placeName>
+                    <date when="1834-06-12">1834-06-12</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Tübingen, d. 12. Juni 1834. Das Schreiben, mit dem Sie, verehrtester Freund! mich erfreut haben, versetzte mich wieder lebhaft in das stille Museum von Eppishausen und dessen schöne Umgebungen. Erwünscht war mir aber auch die Nachricht, daß sie dasselbe für einige Monate zum Behuf einer Reise verlassen werden, die gewiß mit manigfachem Genuß und Gewinn für Sie verbunden seyn wird. Schwab, der auf der Rückreise von Ihnen auch bei mir noch einen Rasttag hielt, sagte mir, daß Sie vielleicht nun bald sich auf die Fahrt begeben, und ich bitte daher angelegenst, daß Sie doch den Hin- oder Herweg, oder am liebsten beide, über Tübingen nehmen und bei uns ausruhen möchten. Möge Ihnen diese Reise nach allen Theilen besser gelingen: als Welfe, dô der Tüwingen ervaht. ( Wolfr. v. Eschenbach. ) Die Abhandlung Fauriel's, von der Sie schreiben, habe ich auch erhalten. Das größere Werk über provenzalische Poesie, dessen Vorläuferin sie ist, wird von bedeutendem Interesse seyn. Wenn F. auch zu einseitig den Südfranzosen das Karolingische Epos vindiciren will, so ist er doch ohne Zweifel der geistreichste und kundigste unter den französischen Literatoren dieses Faches. Schon seine Sammlung neugriechischer Volkslieder hat gezeigt, daß er das Wesen der Volkspoesie, wie man es in Deutschland erkannt hat, gleichfalls wohl aufgefaßt habe. Seine Vorlesungen in Paris haben dort eine Schule für diese Studien geweckt, wie solches die kleine Schrift von Monin über den Roman de Roncevaux und eine ähnliche von Barry über den Cyklus von Robin Hood beweisen. Ein andrer junger Gelehrter, Francisque Michel, der schon Verschiedenes von altfranzösischer Poesie herausgegeben hat, befindet sich jetzt aus Auftrag des Ministeriums, dem im neuesten Budget für solche Zwecke eine bedeutende Summe verwilligt wurde, in England um dort für Sammlung und Abschrift der normännischen Sprach- und Geschichtdenkmäler thätig zu seyn. Von Aufseß's Anzeigen sind nun auf einmal Lieferungen nachgekommen, die dessen Fortdauer unter Mone's Aegide bezeugen. Dieser wird wohl manches Interessante von seinem Aufenthalt in den Niederlanden her mittheilen können. Das lange Schweigen des Hrn. v. Aufseß mag mitunter in dem Mißgeschicke seinen Grund haben, das sein Anzeiger bei der antiquarischen Versammlung zu Nürnberg im letzten Herbst erfahren hat. Der Frhrr. F. K. v. Erlach in Mannheim hat eine Sammlung deutscher Volkslieder in 4 Bänden auf Subscription angekündigt. Er hat mir die Ehre erwiesen, mich in der Zueignung mitzunennen, und ich würde ihm sehr dankbar seyn, wenn von den 4 Bänden auch nur ein halber ächte, alte und bisher nicht zugängliche Volkslieder brächte, da meine eigenen Bemühungen in diesem mir so sehr am Herzen liegenden Theile unsrer alten Poesie nur langsame Fortschritte machen. Aber Hr. v. Erlach nimmt das deutsche Volkslied in einem sehr weiten Sinne, indem ihm nicht blos Luther und seine Zeitgenossen, sondern auch, wie es scheint, die meisten späteren Lyriker darunter fallen. So lange freilich Hr. v. Meusebach sich nicht entschließt, die große Lücke in der Kenntniß ächtdeutscher Volkspoesie zur Ehre Pfeiffer. Laßberg u. Uhland. des Vaterlandes auszufüllen, muß man auch mit wenigem Zuwachs vergnügt seyn. Ich habe, vielleicht von Ihnen selbst, einmal gehört, daß auch Hr. v. Harthausen Vieles von norddeutschen Volksliedern gesammelt habe. Da Ihre Reise gewiß auch zu ihm gerichtet ist, so könnte vielleicht Ihr Zuspruch ihn bewegen, seine Sammlung zur Kunde der Freunde des deutschen Volksgesanges zu bringen. Mit einigem Erschrecken habe ich aus Ihrem werthen Briefe ersehen, daß Sie unter meiner Rücksendung das altdeutsche Bruchstück vom h. Ulrich vermissen. Sollte ich dasselbe nicht mit dem, gleichfalls von Hrn. Braun gefertigten Verzeichniß des Docenschen Nachlasses früher zurückgeschickt haben, so muß es sich allerdings noch unter meinen Papieren befinden, in denen ich jedoch bis jetzt ohne Erfolg nachgesehen habe. Verloren kann es in keinem Falle seyn, da ich es weder nach Stuttgart mitgenommen, noch irgend Iemand mitgetheilt habe. Nur muß ich vorläufig bitten, die lange getragene Geduld noch um etwas zu verlängern. Herr Prof. Öchsle in Dehringen wünscht den Hug- und Wolfdietrich herauszugeben und hat vorläufig ein ansehnliches Stück des ersten aus der zu Dehringen befindlichen Hdschrift bekannt gemacht. Er sieht jedoch die ungenügende Beschaffenheit dieser späten Hds. selbst ein und würde der Ausgabe des Ganzen vermuthlich die Straßburger Hds. zu Grunde legen, wenn er überhaupt durch Subscription, zu höchstens 3 fl. für etwa 25 Bogen, dazu in Stand gesetzt würde. Voll freundschaftlicher Verehrung L. Uhland. 10. März. 2. August 1836.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

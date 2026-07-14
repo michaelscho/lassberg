@@ -54,6 +54,9 @@
                 <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
                 <note type="mentioned">
                     <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0226"
+                        ><rs>Herrlibergers Topographie</rs></ref>
+                    <ref type="cmif:mentionsBibl"
                         target="../register/lassberg-literature.xml#lassberg-literature-0043"
                         ><rs>Notkeri Balbuli vita Caroli M. (unbekannte Ausgabe)</rs></ref>
                     <ref type="cmif:mentionsBibl"
@@ -111,7 +114,11 @@
                 <change when="2023-08-01" who="#MiS" status="draft">File created and preprocessed automatically</change>
                 <change when="2023-08-29" who="#MiS" status="draft">Manual markup and proofreading</change>
                 <change when="2023-11-22" who="#MiS" status="draft">Finished markup</change>
+                <change when="2026-07-13" who="#check-letter-annotations" status="reviewed">Checked via
+                    check-letter-annotations skill (Vollständigkeit, Verlinkung, Struktur,
+                    Header/Body-Konsistenz, Formeln)</change>
                 <!-- <change when="" who="" status="published">Final proofreading</change> -->
+                <change when="2026-07-13" who="#sync-letter-status" status="published">Published online</change>
             </listChange>
         </revisionDesc>
         
@@ -134,9 +141,10 @@
                     >Heldenagger</rs> in <rs type="place"
                     key="../register/lassberg-places.xml#lassberg-place-0019">Basel</rs> dieselbe
                     auch wünschen. Ich werde ihm morgen schreiben, daß er bis nächsten Sonntag einer
-                    bestimmten Antwort gewärtig sein könne. Herrlibergers Topographie mögen Sie
-                    einige Wochen behalten; daß sie nicht besser conditionirt ist, habe nicht ich
-                    verursacht. Für die <rs type="bibl"
+                    bestimmten Antwort gewärtig sein könne. <rs type="bibl"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0226">Herrlibergers
+                    Topographie</rs> mögen Sie einige Wochen behalten; daß sie nicht besser
+                    conditionirt ist, habe nicht ich verursacht. Für die <rs type="bibl"
                     key="../register/lassberg-literature.xml#lassberg-literature-0043">vita
                     Caroli</rs> meinen herzlichen Dank. In den letzten Tagen las ich u. a. das <rs
                     type="bibl" key="../register/lassberg-literature.xml#lassberg-literature-0069"
@@ -175,8 +183,14 @@
                     Kirche zu bewegen. Hinter Ihrem Buchenhain sind Sie vor dem Westwinde wohl
                     beschützt; aber mein Häuschen bläst er ganz durch, und er spottet des quos volo!
                     Wenn ich nicht ende, so bläset er mir auch noch die Gedanken durcheinander, und
-                    dies darf nicht geschehen, da ich morgen predigen muß. Ganz der Ihrige Diac.
-                    Pupikofer Den 13. März 1827.</p>
+                    dies darf nicht geschehen, da ich morgen predigen muß.</p>
+                <closer>
+                    <salute>Ganz der Ihrige</salute>
+                    <signed>Diac. <rs type="person"
+                        key="../register/lassberg-persons.xml#lassberg-correspondent-0179"
+                        >Pupikofer</rs></signed>
+                    <dateline>Den <date when="1827-03-13">13. März 1827</date>.</dateline>
+                </closer>
             </div>
             <div type="normalized" resp="GPT3.5">
                 <p>Hochwohlgeborener Herr und Gönner! Gestern war ich schon im Begriff, über den

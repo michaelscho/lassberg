@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1168">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Ludwig Uhland an Joseph von Laßberg (06.04.1827).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">2168</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 92-96<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1168">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0147">Stuttgart</placeName>
+                    <date when="1827-04-06">1827-04-06</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Hochverehrter Freund! Stuttgart, den 6. April 1827. Die Beantwortung Ihrer beiden neuesten Schreiben hat sich mir dadurch verzögert, daß ich mit dem Aufsatze über Hartmann, den Sie mir mitzutheilen die Güte hatten, nicht so schnell abkommen konnte. Um die Zurücksendung nicht länger aufzuhalten, gebe ich meine Ansicht, wie ich sie bis jekt gefaßt. Ihre Vermuthung über des Dichters Herkunft ist durchaus neu und sinnreich, aber auch sie hat ihre Bedenk lichkeiten Wenn man in der Gegend selbst die Insel Reichenau ohne weiteres die Aue nennt, wenn man: in der Aue, aus der Aue 2c. sagt, hat man auch jemals ohne Artikel gesagt oder urkundlich geschrieben: von Owe, zů Owe, ze Owe? Doch Dieses mag unerheblich seyn und sich beseiti gen lassen. Ein wichtiger Uebelstand ist, daß die Erklärung nicht ausreicht, daß man eine doppelte Conjektur nöthig hat und neben dem Abte von Reichenau, als Lehnsherrn des Dichters, doch noch ein ritterliches Geschlecht aussuchen muß, worauf Dasjenige paßt, was im armen Heinrich von einem Herrn von Owe erzählt wird. Es legt sich doch allzu nahe, daß Hartmann, der Dienstmann zů Owe war und die wunderbaren Geschicke eines vielgerühmten schwäbischen Ritters Heinrich von Owe berichtet, etwas zur Verherrlichung des adelichen Hauses, dem er diente, habe thun wollen. Selbst der Schluß des Gedichtes, wie Heinrich seine gottbegabte Retterin zum Weibe nimmt, paßt hiezu am besten. Grimm ( S. 141 ) bemerkt gewiß richtig, daß nach dem Geiste der Legende die durch ein Wunder Geretteten zu reinem, gottgeweihten Leben verpflichtet sehen. Daß auch die Legende vom armen Heinrich, in ur sprünglicher Gestalt, solchen Schluß hatte, zeigt das etwas ungeschickte Einschiebsel des Ueberarbeiters. Hartmann konnte das geistliche Ende nicht gebrauchen, weil er die Legende auf ein fortblühendes Geschlecht anwendete. Eine weitere Andeutung, daß der geliebte Herr, dessen Tod Hartmann so tief betrauert, ein weltlicher Ritter war, liegt in dem Liede selbst, worin er diese Trauer ausspricht. ( Man. I. 180. b Sit mich der tot etc. ). Er ist bis daher der Welt nachgelaufen, jetzt, nachdem ihn der Tod seines Herren beraubt, will er durch die Kreuzfahrt „ ime ze helfe komen ". Hätte so der laische Dienstmann von einem heiligen Abte der Reichenau gesprochen? Doch dieses bezweifeln Sie selbst. Endlich, womit ich angefangen, taugt das artikellose von und zů Owe, dessen Anwendung auf die Insel ich bezweifelte, allerdings zur Bezeichnung einer lehnsherrlichen Burg und Familie, wobei die sinnliche Wortbedeutung schon zurückgetreten ist. Dieses sind die Zweifel, die ich mir nicht zu lösen vermochte; ich habe nicht die Hülfsmittel zur Hand, um zu ersehen, ob nicht etwa bei der Reichenauer Abtei ein Advokatengeschlecht bestand, welches vermittelnd eintreten könnte. Wenn ich über diesen erstern Punkt Bedenklichkeiten äußerte, deren Hebung ich nicht für unmöglich halte und selbst wünsche, so muß ich die zweite Vermuthung, in Betreff des Hasen, aus positiven Gründen bestreiten. Das Bild vom Hasen, im Tristan, bezieht sich nach meiner festesten Ueberzeugung und allen bisherigen Erklärungen nicht auf Hartmann von Aue, sondern gerade im Gegensatze zu ihm auf Wolfram von Eschenbach. Der schlichte Hartmann wird seiner lautern, reinen, krystallenen Wörtlein halber des Lorbeers würdig erkannt; dem originellen Wolfram werden seine wunderlichen Hasensprünge vorgeworfen. Damit ist nicht nur an sich die Verschie denheit des Styls der beiden Dichter deutlich bezeichnet, es ist auch unzweifelhaft auf den Eingang des Parcival angespielt, wo Eschenbach selbst seine fliegende Bildersprache mit einen schelbichen Hasen vergleicht ( V. 19 ), welche Stelle wieder am Anfang des Titurel glossirt wird. Die Alexandreis Rudolfs von Ems giebt eine Aufzählung der vorzüglichsten Aventürendichter, welche sichtbar derjenigen im Tristan nachgebildet ist. Da tritt denn an des Hasen Stelle namentlich Herr Wolfram von Eschenbach „ mit wilden aventüren "; nur daß Rudolf zum Guten spricht, während Gottfried auf den ihm der Zeit nach am nächsten stehenden Wolfram, bei dem er auch Manches gelernt hat, unverkennbar eifersüchtig ist. Wenn ich nicht irre, haben Sie von der Stelle der Alexandreis, die mir durch Maßmann mitgetheilt war, Abschrift genommen. Aehnliche Stellung ist dem von Eschenbach im Wilh. v. Orleans gegeben. ( Docens Miscell. II. 151. ) Wären Hartmanns Erek und Enite, zu Wien, und Gregor vom Steine, einst zu Straßburg, ( Görres soll eine Abschrift haben, ) zugänglich, so möchten sich leicht weitere Spuren über seine Heimath ergeben. Ueberaus merkwürdig ist die Nachricht der zimbern. Chronik von einer bisher völlig unbekannten Liedersammlung. Das Lied, welches Sie mir daraus mitgetheilt, ist mir noch nicht vorgekommen, besonders möchte ich dafür stehen, daß es nicht in den Bodmer. Minnesingern steht. Sollte man die Hoffnung ganz aufgeben, das alte Liederbuch wieder aufzufinden? hat der Verfasser der Chronik nicht, wie es sonst öfters vorkommt, ein Verzeichniß der gebrauchten Hülfsmittel seinem Werke ein verleibt? oder kann man nicht aus den Lebensumständen desselben schliessen, welche Bibliotheken und Archive er benüßt und worin dem Schatze nachgeforscht werden könnte? Ihr neuestes Schreiben an Schwab ist erst nach seiner Abreise angekommen, wird ihm aber nachgeschickt. Der Amethyst ist bei Hirsch in Empfang genommen und wird zugleich mit Gegenwärtigem auf die Post gegeben werden. Durch Schwab hoffe ich mehrere altfranzösische Romanzen aus einer Pariser Handschrift abschriftlich zu erhalten. Einige Stücke dieser Art besitze ich schon und weiß auch noch anderwärts solche aufzutreiben. Es würde sich mir dadurch eine kleine Sammlung bilden, die ich mit Hinweisungen auf die Romanzen und Balladenpoesie andrer Völker herauszugeben gedächte. Bei Ihrer Anwesenheit in Stuttgart war davon die Rede, daß mir vielleicht durch Ihre Verwendung auf einige Zeit die Benüzung einer altfranz. Handschrift zu Theil werden könnte, welche Görres, ohne Zweifel in einer Copie von Glöckle, besitzt und wovon er in der Vorrede zu den Volksund Meisterliedern XLVIII. ff. Nachricht gibt: Roman de la Rose de Vinne de Volce, unter Nr. 1725 in der Bibliothek der Königin Christine in Rom. In diesen Roman sind mehrere Romanzen eingewoben, mit denen ich, sofern es der Besizer gestattete, meine Sammlung verstärken könnte. Ein Landsmann, der nach Rom reist, hat mir zwar angeboten, Abschriften und Auszüge für mich zu machen, da er aber mit dem Altfranzösischen sich noch nicht beschäftiget hat, so mochte ich ihn in diesem Fache mit keinem Auftrag beschweren. Die Aussicht, jekt durch Schwab Mehreres zu erlangen, ist der Anlaß, daß ich diesen Gegenstand wieder anzuregen mir erlaube. Ich bin im Begriff eine kleine Reise nach Tübingen zu machen, und schließe daher für heute. Mit herzlicher Verehrung und Freundschaft L. Uhland.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

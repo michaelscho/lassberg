@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1324">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Ludwig Uhland (21.06.1829).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">655</idno>
+                        <idno type="register-lassberg">148</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 132<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1324">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1829-06-21">1829-06-21</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Eppishausen, am 21. Juny 1829. Nun, mein verertester Freund! ist es Ernst! heute morgen bekam ich von dem Herrn von Mülinen einen Brief folgenden Inhaltes: Karthause bei Thun am 18. Juny 1829. „ Ich komme eben von Bern zurück, mein wertester Herr „ und Freund! und habe daselbst meine Negociation für Iren „ gewünschten Parcifal glücklich geschlossen. Da die Bibliothek- „ Comission keine Handschriften an Nicht - Berner verabfolgen „ laßt; so habe ich den Parcifal für mich gefordert und gegen „ eine Bürgschaft von 20 Louisd'or erhalten. „ Da aber der Bibliothecar Prof. Wyß abwesend ist und „ man jn von Schinznach aus in 8 Tagen in Bern zurük erwartet; „ so habe ich die Veranstaltung getroffen, daß er Inen von dort- „ her die Handschrift zusende; nur bitte ich Sie lieber Laßberg, „ wenn Sie dieselbe erhalten haben werden, mich davon zu,, benachrichtigen. “ Sie sehen hierans, mein bester Uhlandus! daß warscheinlich der Parcifal noch vor Inen in der villa Epponis einrüken wird. Ich hoffe doch, Sie haben meine Zeilen vom 28. May und 13. Juny richtig erhalten, und auf alle Fälle sich reisefertig gemacht. Könnten Sie von demselben Papier mitbringen, auf welches wir den Weingartner Codex geschrieben haben; so wäre es ser gut; denn in dieser Gegend bekommt man kein so gutes. So viel in Eile, um die Mittags abgehende Post nicht zu versäumen; können Sie auch nur mit zwei Zeilen den Tag Irer Ankunft bestimmen, so verbinden Sie mich, damit ich denselben Tag zu Hause bleibe. Viele Grüße an Frau Emina; bringen Sie sie doch mit. Auch an Schwab alles freundliche, von Frem I. v. Laßberg.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

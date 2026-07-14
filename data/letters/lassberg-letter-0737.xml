@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-0737">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Ludwig Uhland (20.06.1821).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">389</idno>
+                        <idno type="register-lassberg">279</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 19-22<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-0737">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1821-06-20">1821-06-20</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Wolgeborener, hochverehrter Herr! Zur glüklichen Beendigung Ihres Walters von der Vogelweide wünsche ich Ihnen Heil und Segen. Möge das Publikum die Mühe, welche solche Forschungen, Untersuchungen und Bearbeitungen kosten, gehörig zu würdigen wissen! Leider ist das höchst selten der Fall! Eine große Freude haben Sie mir gemacht, durch die Hofnung, welche Sie mir geben, Sie diesen Herbst in dem alten Sänger - Lande zu sehen. Ich zäle darauf, daß Sie Ihr Hauptquartier in der Villa Epponis ausschlagen; von da aus wollen wir denn manchen Zug nach den alten Sänger - Burgen tun und auch die Theotisca in der St. Galler Bibliotheke etwas genauer in Augenschein nehmen, als Ihnen vorigen Sommer möglich wurde. 2 * Hier übermache ich Ihnen die ersten 18 Bogen vom zweiten Bande meines Liedersaales; ich hoffe daß er dem Ersten an Werte nicht nachstehen wird, besonders glaube ich daß das schöne Gedicht, welches ich das Kloster der Minne genannt habe, auf den Wert dieser Handschrift aufmerksam machen dürfte. Wenn ich so glüklich bin, in diesem Jare noch den dritten Band des Liedersaales aus derselben Handschrift zu beendigen; so will ich mich im Jar 1822 an die kleineren handschriftlichen Sammelungen machen, welche der großen Maneßischen um hundert Jare voran giengen. Leztere, die Maneßische nämlich, wurde warscheinlich nicht von dem Bürgermeister Rüdiger Maneß, wie Bodmer glaubte und nachher alle anderen nachschrieben, veranstaltet, sondern von einem Sone des Ritters Rüdger Maneß, welcher Mannegg an sein Geschlecht brachte. Dieser Sohn hieß auch Rüdger und war Chorherr und Scholaster des Chorherren Stiftes zu Zürich, hinterließ von drei Dirnen 4 unehliche Töchter, starb ums Iar 1304 und ward von seinem Vater überlebt, der mit dem Chorherren Stifte über die Erbschaft seines Sones in einen langwierigen Streit geriet. Über Klingsor von Ungerland, wenigstens über sein Geschlecht, habe ich nun auch eine Notiz aufgefunden, welche einstweilen die Vermutung giebt, daß sein Vaterland mit jenem des Marschalks von Rapperswyl dasselbe möchte gewesen sein. In der zu Bern befindlichen Handschrift von Tschachtlans Chronik findet sich unter den Burg - Männern von Rapperswyl, welche am Zinstag vor dem Sonntag Cantate 1433, mit ihrem Hauptmanne dem Ritter Ludwig Meyer ( von Altstätten? ) denen von Schwyz und ihren Helfern einen Absage - Brief zusandten, auch Lienhart Klingsor unterschrieben. Es ist merkwürdig, daß die Besazung zu Rapertswil ( ursprünglich eine Reichsburg ), welche meist aus Edelleuten bestand, eine der nur noch in der neuesten Zeit untergegangenen Reichsburg Friedberg ähnliche Verfassung hatte, und die Ämter und Dienste darinnen nach und nach erblich und die Benennungen derselben Familien Namen wurden, wie: Marschalk, Truchsäß, Mayer, Schultheiß, Amann 2c. 2c., auch der Otto von Thurn bei Maneß scheint einem dortigen Geschlechte angehört zu haben. Nach Erlöschen des Raperswyler Manns - Stammes kam der Besiz durch Weiber an die Graven von Homberg aus dem Friktal; die beiden lezten Werner, Vater und Sohu, welche bald nach einander starben, sind aus den Liedern ihrer Zeit bekannt genug; dann kam Rapperswyl an die Graven von Habsburg- Lauffenburg, von welchem Grav Hans, auch Hänsly genannt, uns das bekannte Lied: „ Ich weiß ain blowes Blümalin " 20. 20. hinterlassen hat. Der Gesang lebte also stets fort in der Veste zu Rapperswyl, in welcher, wie von Arx sagt, mehr Edelleute lebten, als oft in einem ganzen Land, und es ist mir gar nicht unwarscheinlich, daß die Lieder von dem Hofe des Graven von Rappertswyl, Homberg und Habsburg ( von welchen die ältere Linie doch sehr prosaisch war und blieb ) den See herab nach Zürch kamen, wo sie von den Maneßen, Hadloub, dem von Constanz, dem von Mure ( Chorherr zu Zürch ) und andern noch lange fortgesetzt wurden. Klingsor konnte den Beinamen: von Ungerland, von einem längern Aufenthalte daselbst bekommen haben, one daher zu Hause zu sein. Gegenwärtig befindet sich noch ein Fähndrich von Klingsöhr im dritten Garde - Battaillon der k. Hannöverschen Armee. Hat er Familien- Urkunden? Der sogenannte Maneßische Codex ist für einen Privatmann der damaligen Zeit ein zu kostbares Unternehmen; ich vermute daher, er sei für Heinrich von Klingenberg, Bischof zu Konstanz, erwält: 1293, geschrieben und gemalt worden. Heinrichs Mutter war eine Zürcherin, aus dem ritterlichen Geschlechte derer von Costenz; er war ein Freund des Gesanges und kam sehr oft nach Zürch, wo er sich manchmal lange aufhielt. In das Haus der Freiherren von Sax, von welchen er in die Sammlung des Winterkönigs Friedrich des Pfalzgraven nach Heidelberg kam, mag er durch einen Con stanzer Domherren gebracht worden sein. Das Haus Sax hatte gewönlich eine Pfründe in diesem Stifte besetzt. Unser guter Conz hat mir versprochen, mich in den Herbstferien zu besuchen; möchten Sie es doch so einrichten, daß sie zusammen träfen bei dem alten Einsiedler in Heremo Helvetiorum! Leben Sie wol, einen freundlichen Gruß an Ihre eheliche Hauswirtin! Eppishausen am 20. Juny 1821. Joseph v. Laßberg. Wie viele Bogen haben Sie von meinem Nibelungen Liede? der Text ist nun ganz gedrukt. Vielleicht dürfte es Ihnen oder einem Ihrer Freunde angenehm sein, anschauliche Kunde von den Ausgrabungen zu haben, welche in leztem Herbste und diesen Früling zu Höfingen, eine halbe Stunde von Donauöschingen, auf Befel und Kosten des Fürsten von Fürstenberg gemacht worden sind. Der Fürst gab mir lezthin Zeichnung davon, und ich ließ sie zur Mitteilung an Freunde vaterländischer Altertümer lithographiren.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

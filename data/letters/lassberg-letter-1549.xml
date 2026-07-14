@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1549">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Ludwig Uhland an Joseph von Laßberg (16.04.1831).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">2361</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 203<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1549">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0148">Tübingen</placeName>
+                    <date when="1831-04-16">1831-04-16</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Tübingen d. 16. Apr. 1831. Der Empfang Ihrer gütigen Sendung vom 2ten d. bescheine ich Ihnen, verehrtester Freund, durch Herrn Wagner von Lauffenburg, aus dem Kantone Aargau, welcher seine theologischen Studien hier absolvirt hat und jetzt durch die Bodenseegegend nach seiner Heimat zurückkehrt, um den Concurs für eine Lehrstelle in Rheinfelden, die er zu erhalten wünscht, in Aarau zu erstehen. Er hat mich ersucht, ihm einige Zeilen mitzugeben, die ihn auf seiner Reise bei Ihnen einführen könnten, und ich habe diesem Wunsche um so gerner entsprochen, als er mir durch sein schönes poetisches Talent und seine persönliche Bekanntschaft werth geworden ist. Gewiß ist es freilich nicht, ob Hr. Wagner Sie noch in Eppishausen finden wird; ich rathe ihm daher, sich, wenn er den Weg über Sigmaringen macht, dort zu erkundigen, ob Sie etwa schon angekommen. Wie sehr freue ich mich der guten Nachrichten, die Sie mir zum Voraus von dem Befinden Ihres Hrn. Sohnes geben konnten, und wie sehr des Besuches, den wir nun bald zu hoffen haben. Sie werden mich jeden Tag zu Hause treffen, denn unsere Ferien sind zu Ende und der Ausflug nach Stuttgart ist bereits abgemacht. Ich wollte mich nur auf wenige Tage entfernen, da die Gesundheitsumstände meines alten Vaters, die sich übrigens doch in der letztern Zeit etwas gebessert, mir keine längere Abwesenheit gestatteten. Aus Versehen habe ich das 14. und 15. Jahrhundert, statt des 15. und 16., als den Gegenstand meiner litterarhistor. Vorlesungen in diesem Sommer angegeben. Ich mache wohl vielleicht im Laufe des Semesters von Ihrem freundschaftlichen Beistande noch weitern Gebrauch. Hrn. Braun, der Sie in diesen Ferien besucht hat, bin ich sehr dankbar für die ausführlichen Notizen, die er mir durch Ihre Vermittlung über den Docen. Nachlaß zugehen ließ und die gar manches für mich Interessante enthielten. Nach den mitgetheilten Liederanfängen hatte Docen mehrere alte Balladen hochdeutsch vor sich, die ich in niederdeutscher Mundart besitze; andre auch, die ich gar nicht habe. Schmeller beabsichtigt aber, diese Doceniana als ein Denkmal für den Verstorbenen herauszugeben, und ich beschränke mich daher vorläufig auf den Wunsch, daß dieses bald geschehen möchte. Meine Frau freut sich mit mir, Sie in kurzem in unserem Hause zu begrüßen. Inzwischen mit hochachtungsvollem Gruße der Ihrige L. Uhland.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

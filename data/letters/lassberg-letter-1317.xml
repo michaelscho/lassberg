@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1317">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Ludwig Uhland (28.05.1829).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">650</idno>
+                        <idno type="register-lassberg">118</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 124-29<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1317">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1829-05-28">1829-05-28</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Eppishausen, den 28. May 1829. Accidit in puncto, quod non speratur in anno! Schon im September des letzten Sares schrieb mir mein erwürdiger alter Freund Mülinen: „ Vor einigen Tagen sah ich hier,, ( auf seinem Gute bei Thun ) einen Reisenden, der mir sagte, „ er habe zu Wasserburg bei Linden, bei einem alten Pfarrer „ einen uralten Codex altdeutscher Dichter gesehen. „ Ist Inen dieser bekannt? " Im October sandte ich einen Späher dahin, um schauen zu lassen, was an der Sache seie: allein der Pfarrer war auf merere Tage abwesend, und der Kaplan versicherte meinen Abgesandten, daß sein Pfarrer keinen Büchervorrat besitze, am allerwenigsten aber Manuscripte von irgend einer Art. Auf diese Nachricht resignirte ich mich wieder, so ser auch mein Blut durch den Brief des Graven von Mülinen in Bewegung geraten war, und dachte, der befragliche Reisende werde wol auch zu denjenigen gehören von denen Claudius singt: wenn einer eine Reise macht, so kann er was erzälen 2c. 2c. Vor einigen Tagen schrieb mir Herr Magister Schönhut, er werde Ende May's eine Ausflucht nach dem Bodensee und zwar in die Gegend von Lindau machen und mich bei diesem Anlasse besuchen; ich ersuchte jn, bei dem Vorbeireisen auf einen Augenblick bei dem Pfarrer in Wa fserburg einzusprechen, und sich nach dem bewußten Codex zu erkundigen; lezten Montag kam nun Herr Schönhut in die villa Epponis und berichtete, daß der parochus zu Wasserburg wirklich einen ser alten Codex alt teutscher Gedichte besize, welche a. den Wilhelm von Dranse des Rudolf von Em s β. et y zwei Gedichte auf die Jungfrau Maria und 8. et e zwei Gedichte aus dem Heldenbuch begreiffen. Am Dienstag hatte Herr Schönhut die Gefälligkeit für mich eine nochmalige Reise nach Wasserburg zu unternemen und seit diesem Morgen bin ich, titulo emti et venditi, rechtmäßiger Besizer und Eigentümer dieser in Teutschland wol nicht viel ältere Brüder oder Schwestern habenden ser schönen Handschrift. Ich weiß nicht, ob ich durch eine Art von Prädestination das officium habe alle altteutsche Handschriften dieser Gegend aus irer Gefangenschaft zu erlösen; aber das weiß ich mein teuerster Uhlandus! daß es mir nicht möglich wäre, einen Tag später als heute, Inen Nachricht von meinem neuen Funde zu geben, über den ich mich nicht weniger frene, als ein Vater zalreicher Nachkommenschaft, wenn jm wieder ein neues Kind geboren ist. Und diese Freude, ich weiß es gewiß, teilen Sie aufrichtig mit ihrem Freunde, besonders wenn ich Inen sage, daß dieser schätzbare Codex zwei Stücke aus dem Fabelkreise des Heldenbuches enthaltet. Doch, zur Beschreibung meines so erfreulichen Erwerbes! Die Größe und Gestalt der Handschrift ist klein Folio. Warscheinlich ist sie im XV. Iarhunderte zum zweiten Male in rotes Ziegenleder gebunden worden. Sie ist auf mäßig dickes Pergamen geschrieben und zält 74 Blätter, wovon das erste nichts als den Namen des ehemaligen Besitzers: Christoff Schulthais enthaltet, dessen mir wolbekannte Schriftzüge mir sagen, daß der Codex noch in der zweiten Hälfte des XVI. Jarhunderts zu Constanz gewesen ist, wo dieser Schulthais durch viele Sare Bürgermeister war, ein Bruder des ehemaligen Besizers des Weingartner Codex Nicolaus Schulthaiß, fleißiger und scharfsinniger Geschichtsforscher, der seiner Vaterstadt 9 Foliobände historischer Collectaneen zurükgelassen hat. Die Schrift gehört unter die zierlichsten, reinsten und kleinsten ( es stehen oft über 200 Verse auf einer Seite ) irer Zeit und ist one alles Bedenken in den Anfang des XIII. Jarhunderts zu setzen, ich habe Ursache zu glauben daß sie nicht später 1.26 als das Iar 1230 ist. Sie ist von einer geübten Hand; durchaus gleich und one alle Lüken; die Schreibung ist consequent und correct, meist in 3, zuweilen in 2 Colonnen auf einer Blatseite, in abgesezten Zeilen die am Ende mit einem Punkte bezeichnet sind und deren von 50 bis 70 in einer Spalte stehen. Zur Rubrication ist da wo Absätze sind Play gelassen, aber sie hat keine rote oder sonstfarbige Initialen. Eigenheiten der Handschrift sind, daß ser oft w für v geschrieben ist, wie: woll für voll, wall für vall 2c., daß die Infinitive der Zeitwörter öfter den Ausgang in on, statt en haben, z. B. betton, stritton, tihton, für betten, stritten, tihten u. s. w., daß manchmal an für ein ( unus ) geschrieben wird. Ich werde warscheinlich in der Folge noch mer solche Eigentümlichkeiten entdeken: übrigens scheint mir die Recension optimae notae zu sein, und ist gewiß die älteste und reinste die wir von nachfolgenden Gedichten haben, von welchen ich auch für ein gutes Zeichen halte, daß sie bei weitem nicht so versereich sind, als in andern und jüngern Handschriften. Nun zum Inhalte. Von Seite 1. bis 91. Wilhelm v. Orliens, durch Rudolf von Ems. Durchaus 3 Colonnen, jede zu 60-65 Zeilen oder Versen. Vergleichen Sie damit die Lesearten in von der Hagen's Grundriß Seite 192. a. sqq., so werden Sie die Vortrefflichkeit meiner Handschrift bald entdeken. Die Zal der Verse konnte ich noch nicht abzälen, ich schäze sie über 15.000. Seite 91. fängt ein anderes Gedicht an; es ist das Leben Mariä und Jesus Kindheit. Von derselben Hand, mit etwas größerer Schrift, zwei Colonnen auf einer Blatseite. Sie finden es im v. d. Hagenschen Grundriße Seite 260 und folgde., angeblich von einem Ungenannten, der aber hier einen Namen bekömmt: von fůoziz brunnen cunrat. Auf 15 Blättern, jedes zu 4 Colonnen, die Colonne zu wenigstens 50 Versen, stehen also ungefär 3.000 Verse, welche dies Gedicht des Conrad von Fusisbrunnen begreift: wo mag wol dieser Fuoziz brunnen quillen? ich erinnere mich nicht von einem gleichnamigen Geschlechte gehört zu haben. Auch die Geschichte, wie das Kind Jesus aus Leimen kleine Vögel gemacht hat, kommt unter merern andern darin vor. Seite 120 in der zweiten Spalte, fängt nun ein anderes Gedicht auf Marien an, dessen im mererwänten Grundrisse, Seite 271 und folgende unter dem Namen des Conrad von Hennesfurt, Meldung geschiehet. Dies Gedicht hat in allem 1104 Verse und ist ebenfalls mit größerer Schrift, von der nämlichen Hand wie die vorgehenden zu zwei Colonnen auf einer Seite geschrieben. Der Verfasser heißet hier: Pfaffe Cuonrat von Himmelsfurt und nicht von Hennesfurt. Ist dies vielleicht ein Kloster, das Himmelsporte, porta coelj, hieß? von welchem Namen es merere in Teutschland gab. Seite 132 beginnt, mit kleiner Schrift, und zu 3 Colonnen auf jeder Blatseite, der Riese Siegenot, ein Gedicht von 569 Versen, das mit der nachfolgenden Eken Ausfart zusamenhängt und worin sich eingangs, wenigstens implicite auf ein vorgehendes, aber nicht vorhandenes Gedichte aus demselben Fabelkreise bezogen wird. Auskunft über dasselbe und die davon vorhandenen Handschriften finden Sie in Hagens Grundriße, Seite 24 et sqq. wo lauter Papierhandschriften des XV. Jarhunderts angefürt werden; also wäre die meinige die erste auf Pergament und auch weit aus die älteste. Seite 134. Spalte 3. beginnt: Eggen Ausfart; siehe Hagens Grundriß S. 34 und folgende. Auch hievon ist meines Wissens noch keine Pergament Handschrift angefürt: aber leider ist auch in der meinigen das Gedicht unvollendet geblieben; denn der Schluß von da an, wo Dietrich die Nuz erschlägt, fehlt, obschon noch anderthalb Spalten Plaz vorhanden, der nicht beschrieben. Es sind in allem 3170 Verse, so daß dem Gedichte nur weniges an der Vollständigkeit abgehet. Die Handschrift ist im Ganzen recht wol erhalten und one alle Lüken, an dem Rande ist sie, besonders beim ersten vierten und fünften Gedichte ser abgegriffen, welches beweiset, daß sie oft abgeschrieben wurde. Kurz, es ist ein herrlicher Codex, der in Schwaben wol nicht viele seines gleichen haben dürfte. Ich weiß gewiß daß Sie meine Freude teilen und das erhöhet bei mir dieselbe; denn, wer möchte sich allein freuen? Da ich nächstens einen Fußlauf nach den rhätischen Burgen antreten werde; so könnte ich den Codex auf 14 Tage oder drei Wochen entberen: wollen Sie daß ich Inen denselben zuschiken soll? ich würde Inen auch den französischen codex picturatus vom voeu du paon beilegen. Von Bern habe ich noch immer keine Antwort, obschon es schon 4 Wochen ist, daß ich an den Grafen von Mülinen geschrieben; er muß krank geworden sein, sonst wüßte ich mir sein Stillschweigen nicht zu erklären; ich habe auch wegen den französischen Handschriften an meinen Gevatter Armin geschrieben, um die Gemüter in Bern vorzubereiten, und wenn ich diese Woche keine Antwort erhalte, so schreibe ich in der nächsten geradezu durch Wyß den Bibliothecar an die Bibliothek - Commission. Möchte ich Inen doch bald gute Nachricht geben können. In den Bienenkorb der teutschen Dichter des Mittelalters trage ich ruhig Notizen ein, wo mir welche aufstoßen; aber zu wirklicher Zusammenstellung und Verarbeitung des Werkes werde ich noch nicht sobald kommen, da mir dringendere Sachen vor der Hand liegen: sollten Sie mein teurer Freund! meine Materialien zur Vervollständigung Ires größeren Werkes über Helden und Minnesang brauchen können? so trete ich Inen dieselben mit warem Vergnügen ab, da sie unter Iren Händen nur gewinnen können und ich auf die Autorschaft gar nicht versessen bin. Wenn Sie wollen, so werde ich Inen vorerst ein onomastisches Verzeichniß derjenigen Dichter zusenden, über welche ich schon etwas aufgeschrieben habe. Schon 10mal habe ich mir vorgenommen an unsern guten Schwab zu schreiben, und immer werde ich wieder davon abgehalten; es ist ein wares Verhängniß. Grüßen Sie jn doch vielmal von mir. Ich habe Inen schon gemeldet, daß von der Hagen in Berlin einen noch ganz unbekannten Liedercodex aus dem XIV. Jarhundert aus Wien erhalten hat? Hagen bietet mir eine Abschrift davon an. Das würde allerdings ser gut in den Liedersaal passen: weil es den Uebergang vom Minnesang zum Volksliede machet. Es bleibt mir nur noch übrig Ire wakere Hausfrau Emma von ganzem Herzen zu grüßen; denn meine alten Augen versagen mir den Dienst. Gott befolen von Frem</p>
+            </div>
+        </body>
+    </text>
+</TEI>

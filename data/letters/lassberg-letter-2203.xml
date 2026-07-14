@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-2203">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Ludwig Uhland an Joseph von Laßberg (01.09.1840).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">2692</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 243<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-2203">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0148">Tübingen</placeName>
+                    <date when="1840-09-01">1840-09-01</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Hochverehrter Freund! Ir I. v. Laßberg. Tübingen, d. 1. Sept. 1840. In der Anlage stelle ich das Drostesche Liederbuch nebst den Leben der Minnesinger zurück und danke für die lange getragene Geduld, der ich unter den manigfachen Abhaltungen der letzten Zeit so sehr bedurfte. Die von der Hagenschen Minnesinger, die nun endlich im Buchhandel erschienen, habe ich mir jetzt selbst angeschafft. Ob das Lied: Venus du und dein Kind 2c. von dem Sammler selbst herrühre, scheint mir doch zweifelhaft, denn auch die übrigen Lieder sind meist solche, die um jene Zeit viel verbreitet waren; eher möchte ich einzelne, den Liedern angehängte Sprüche für Zuthat des ehemaligen Besizers der Handschrift ansehen. Professor Reyscher hat uns erfreuliche Nachricht von Ihrem und der Ihrigen Befinden gebracht, auch daß Sie viel 16 * leicht noch das Wildbad gebrauchen würden, und dieß gab uns Hoffnung, Sie wenigstens auf der Hin- oder Herreise bei uns zu sehen; bis jetzt aber fand ich Ihren Namen nicht auf der Liste der Wildbader Kurgäste. Meine Arbeit über das Volkslied rückt allmählich vor. Die Sammlung ist der Hauptsache nach geordnet, auch ein Stück Einleitung geschrieben, doch bleibt auch noch Vieles zu thun. Ich denke diesen Herbst noch einen Ausflug nach Frankfurt und in die Rheingegend zu machen, um etwa noch einige alte Liederdrucke zu erhaschen. Unter herzlichen Grüßen hochschätzend der Ihrige L. Uhland.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

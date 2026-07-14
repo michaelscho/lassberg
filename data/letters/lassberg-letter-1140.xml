@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1140">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Ludwig Uhland an Joseph von Laßberg (19.01.1827).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">2149</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 8<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1140">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0147">Stuttgart</placeName>
+                    <date when="1827-01-19">1827-01-19</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Hochverehrter Freund! Stuttgart, den 19. Jan. 1827. Indem ich die Feder ergreife, mich in Ihrem Andenken zu erneuern, fällt es mir schwer auf das Herz, wie lang ich, nicht ohne eigenes Verschulden, außer brieflichem Verkehr mit Ihnen geblieben bin und daß ich selbst noch nicht der mir so werthen Erinnerung an Ihren freundlichen Besuch in unsrem Hause Worte gegeben habe. Es ist aber auch Manches in dieser Zwischenzeit eingetreten, was mich in Briefwechsel und Studien zurückbringen mußte, früher meine leztmalige Beschäf tigung beim landständischen Ausschuß und neuerdings mehrmalige Abwesenheit von hier, veranlaßt durch Trauerfälle in der Familie, den Tod einer Schwägerin in Calw und den eines Kindes meiner Schwester. Von litterarischen Vorgängen hab ' ich Einiges zu berichten. Bald nach Ihrer Abreise kam ein Brief vom Prof. v. d. Hagen an, worin er zum Behuf seiner Ausgabe der Minnesänger, deren erster Band schon großentheils gedrukt sey, Abschriften aus dem Weingartner Codex verlangte, von den Liedern Kaiser Heinrichs, Veldekes u. s. f., am liebsten der ganzen Minnesängerreihe. Ich gab ihm Nachricht, daß wir von Ihnen eine reine und vollständige Herausgabe dieser Handschrift zu erwarten haben, und unterließ nicht, zu bemerken, daß die Vergleichung einiger einzelner Sänger hier zu nichts führen würde und eine bloße Variantensammlung bei manchen derselben gar nicht anwendbar sey. Lachmann beabsichtigt eine kritische Ausgabe der Lieder Walthers v. d. Vogelweide. Da ihm hiezu nur die Vergleichung der hiesigen Handschrift noch fehlte, so wendete er sich an mich, in der Voraussetzung, daß ich vollständige Abschrift der darin enthaltenen Gedichte Walthers besize. Dieses war jedoch nur theilweise der Fall, ich hielt es aber für Pflicht, Lachmanns gründliches Unternehmen zu fördern, trug deshalb das Fehlende nach und überschickte ihm den ganzen hiesigen Walther. Maßmann war hier auf der Durchreise nach München, wo er als Erzieher bei einer Familie eintreten wird und, wie es scheint, auf Verwendung bei der Bibliothek sein Absehen hat, was bei seinem Eifer und seiner Dienstfertigkeit für ihn und Andre wünschenswerth wäre. Geh. Hofrath Kohler aus Wallerstein war diesen Winter hier. Wenn ich früher über die Nichtbeantwortung meiner Ansuchen an ihn mich zu beklagen einige Ursache hatte, so muß ich jetzt nicht minder die Bereitwilligkeit rühmen, mit der er mir den provenzalischen Fierabras hier gelassen und die wallerstein. Nibelungenhandschrift auf das Frühjahr hieher mitzubringen versprochen hat. Graffs Diutiska ist doch, von der eigentlichen Sprachkunde abgesehen, etwas zu trocken ausgefallen. Da Sie mit Schwab fortwährend in Correspondenz gestanden, so bemerke ich blos, daß er sich mit den Seinigen wohl und munter befindet. Pfeiffer. Laßberg u. Uhland. Nun bin ich aber überaus begierig, von Ihrem Befinden den Winter über und von Ihren neuesten Bemühungen für unser vaterländisches Alterthum Nachricht zu empfangen. Auch hole ich meinen herzlichen Dank nach für die Mittheilung der Entdeckungen, welche Sie auf der Rückreise gemacht. Ob das aufgefundene Geschlecht der Spervogel ( Sperling ) mit dem der Sänger identisch sey, wird sich aus den Liedern ausmitteln lassen, in welchen mehrere Eigennamen vorkommen. Meine Frau fügt ihre besten Grüße den meinigen bei, wir empfehlen uns beide Ihrer freundlichen Erinnerung. Verehrungsvoll der Ihrige L. Uhland. NS. Eine sehr tüchtige Arbeit, worauf ich, wenn sie Ihnen nicht schon bekannt, Sie aufmerksam machen möchte, ist das eben erschienene Buch von Diez, Prof. in Bonn: die Poesie der Troubadours, Zwickau, bei Schumann. Maßmann will in München Ulrichs v. Lichtenst. Frauendienst abschreiben, wodurch man hoffen kann, dieses merkwürdige Buch einmal genauer kennen zu lernen.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

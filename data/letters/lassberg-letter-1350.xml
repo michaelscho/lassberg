@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1350">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Ludwig Uhland an Joseph von Laßberg (03.09.1829).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">2262</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 140-43<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1350">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0147">Stuttgart</placeName>
+                    <date when="1829-09-03">1829-09-03</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Stuttgart, den 3. Sept. 1829. Im Begriff, einen kurzen Ausflug zu den Heidelberger Handschriften zu machen, deren ich mir mehrere nach und nach hieher verschaffen möchte, sage ich zuvor noch Ihnen, verehrtester Freund! für die gütigen Mittheilungen Ihres lekten Schreibens meinen herzlichsten Dank. Vermuthlich sind Sie, bei Ankunft dieses, von der Gebirgreise zurück, von der ich Ihnen diejenige Erfrischung wünsche, welche mir stets solche Wanderungen zu Berg und See gegeben haben. Ihrer Vermuthung, daß die in der Hist. littér. angeführte Hdschr. eine andre Recension des Parcival enthalte, als der Cod. Bernens., setze ich noch einigen Zweifel entgegen und da mir dieser Punkt nicht unwichtig ist, so erlaube ich mir, sofern sie den Cod. noch bei Handen haben, ihre Güte für nochmaliges Nachschlagen in Anspruch zu nehmen. Das unglückliche Abenteuer des Bagomedes kommt nemlich dreimal in dem Gedichte vor; zuerst als es sich wirklich ereignet; sodann als Bagomedes seinem Befreier Parcival dasselbe erzählt, und dieß ist die mir von Ihnen gefälligst abgeschriebene Stelle; endlich und drittens wie er am Hofe des Königs Artus, wo er den Seneschall Kex zur Genugthuung ziehen will, diese Erzählung wiederholt. An diesem dritten Plaze nun würden die 31. Verse stehen, die ich meinem vorigen Schreiben aus der Hist. littér. beigelegt, anfangend: Ialoie querant aventure Tant quen une forest obscure Mencontra Kex li seneschax etc. und schließend: Quant de larbre me despendi. Nach meinen Auszügen zu schließen, müßten nun diese Verse, wenn die Berner Hdschr. solche wirklich hat, fol. 112. col. 2. 3. stehen und meine Bitte ist, daß Sie nicht etwa mit einer weitern Abschrift sich bemühen, sondern bloß nachsehen möchten, ob die fraglichen Verse nicht dort stehen, da doch die richtige Stellung des Berner Gedichts und somit auch des deutschen in Donaueschingen von dieser Frage abhängig ist. Für die Lieder von Tanner bin ich Ihnen sehr dankbar, es hat mich mancher Klang derselben innig angesprochen. Der kürzlich erschienene König Luarin ist eine Ausgabe des kleinen Rosengartens nach dem Muster der Lachmann Beneckeschen Bearbeitungen mittelhochdeutscher Gedichte. Der Herausgeber hat unter andern eine um 1750 genommene Abschrift eines zu Freiburg im Breisgau, vermuthlich im Privatbesitz gewesenen Pergamentcodex vor sich gehabt, über dessen jeziges Schicksal er nichts anzugeben weiß. Wenn v. d. Hagen zu lange zögert, Ihnen die versprochene Liederhandschrift zu übersenden, so wird man sie leicht auf andrem Wege erhalten können. Wenn ich mich recht erinnere, liegt diese abschriftliche Sammlung auf der Berliner Bibliothek, von wo sie Ihnen Meusebach oder Lachmann gewiß mit Vergnügen verschaffen werden. Was ich Ihnen von einem altböhmischen Nibelungenliede erzählt, hat sich, wie zu befürchten war, als ein Mißverständniß ergeben. Der Dichter Ebert aus Prag, welcher kürzlich hier durchreiste, hat mir den Aufschluß gegeben, daß die irrige Nachricht von ihm herrühre. Hanka hatte ein altböhmisches Gedicht aufgefunden, worin eine Jagd vorkömmt, in welcher er anfänglich die des Nib. Liedes zu erkennen glaubte. Diesen vermeintlichen Fund theilte Ebert sogleich an Hormayr und Letzterer dem Publikum im „ Inlande “ mit. Bald aber fand Hanka, daß er sich getäuscht hatte. Die von Letzterem so eben erschienene 2te Ausgabe der Königinhofer Hdschrift enthält unter mehreren beigegebenen altböhm. Liedern eines, welches gänzlich einem Minneliede des Königs Wenzel in der Maness. Sammlung entspricht. Dabei wird ausgeführt, daß das böhmische Gedicht das Original sey. Daß wir das Mariengedicht Konrads v. Fuzisbrunnen gedruckt erhalten sollen, ist sehr erfreulich. Mit meinen Arbeiten bin ich nun soweit vorangekommen, daß, wenn sie einmal den Cod. Wasserburg. bequem entbehren könnten, ich von Ihrem freundlichen Erbieten Gebrauch machen möchte, doch so, daß es mir ganz gleich lieb wäre, in welchem der bevorstehenden Herbstoder Wintermonate mir der Genuß des trefflichen Fundes zu Theil würde, also gerade so, wie es Ihnen selbst am wenigsten ungelegen ist. Schwab sagt mir, daß er Hrn. Abel immer nicht angetroffen habe, um mit ihm wegen der Zeichnungen zu sprechen, daß er aber, sobald er dessen Erklärung erhalten, Ihnen darüber schreiben werde. Mit der aufrichtigsten Freundschaft und Verehrung der Ihrige L. Uhland.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

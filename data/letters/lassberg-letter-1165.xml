@@ -71,6 +71,12 @@
                     <ref type="cmif:mentionsBibl"
                         target="../register/lassberg-literature.xml#lassberg-literature-0044"
                         ><rs>Geschichte des Thurgaus.</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0227"
+                        ><rs>Urkunde von 1222</rs></ref>
+                    <ref type="cmif:mentionsBibl"
+                        target="../register/lassberg-literature.xml#lassberg-literature-0228"
+                        ><rs>Urkunde von 880</rs></ref>
                     <ref type="cmif:mentionsPerson"
                         target="../register/lassberg-persons.xml#lassberg-correspondent-0407"
                         ><rs>Notker Balbulus</rs></ref>
@@ -132,8 +138,8 @@
                         target="../register/lassberg-places.xml#lassberg-place-0175"
                         ><rs>Thurgau</rs></ref>
                     <ref type="cmif:mentionsPlace"
-                        target="../register/lassberg-places.xml#lassberg-place-0213"
-                        ><rs>Clingenburg</rs></ref>
+                        target="../register/lassberg-places.xml#lassberg-place-0247"
+                        ><rs>Main</rs></ref>
                     <ref type="cmif:mentionsPlace"
                         target="../register/lassberg-places.xml#lassberg-place-0214"
                         ><rs>Hessen</rs></ref>
@@ -158,7 +164,11 @@
         <revisionDesc>
             <listChange>
                 <change when="2026-07-12" who="#status-migration" status="draft">Working transcription from manuscript scan (Transkribus), encoding not yet reviewed</change>
+                <change when="2026-07-14" who="#check-letter-annotations" status="reviewed">Checked via
+                    check-letter-annotations skill (Vollständigkeit, Verlinkung, Struktur,
+                    Header/Body-Konsistenz, Formeln)</change>
                 <!-- <change when="" who="" status="published">Final proofreading</change> -->
+                <change when="2026-07-14" who="#sync-letter-status" status="published">Published online</change>
             </listChange>
         </revisionDesc>
     </teiHeader>
@@ -208,23 +218,29 @@
                     idee, wenn sie auch noch so albern ist, und wie tyrannisch sie einen schwachen
                     Menschen beherrschen kann. Das Sprichwort sagt zwar, daß eine blinde Henne
                     zuweilen auch eine erbse findet: hier war es aber nicht der fall. Empfangen Sie
-                    meinen besten Dank für die abschrift der urkunde von 1222. Nach der <rs
+                    meinen besten Dank für die abschrift der <rs type="witness"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0227">urkunde
+                    von 1222</rs>. Nach der <rs
                     type="place" key="../register/lassberg-places.xml#lassberg-place-0152">ecclesia
                     Crawalininsis oder Erwalininsis</rs> habe ich schon im <rs type="bibl"
                     key="../register/lassberg-literature.xml#lassberg-literature-0077">Muratori</rs>
                     mer als einen band durchgegangen, aber nichts entdeckt; dagegen gebe ich Inen
-                    eine andere urkunde von 880 zum besten, welche vielleicht einen für Ire <rs
+                    eine andere <rs type="witness"
+                    key="../register/lassberg-literature.xml#lassberg-literature-0228">urkunde
+                    von 880</rs> zum besten, welche vielleicht einen für Ire <rs
                     type="bibl" key="../register/lassberg-literature.xml#lassberg-literature-0044"
                     >Turgauer geschichte</rs> brauchbaren beitrag zur alten gränzbeschreibung dieses
                     gaues liefert. Den Grav <rs type="person"
-                    key="../register/lassberg-persons.xml#lassberg-correspondent-0480">Atto</rs>
-                    oder Hatto findet man auch anderwärts als gr. v. <rs type="place"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0480">Atto
+                    oder Hatto</rs> findet man auch anderwärts als gr. v. <rs type="place"
                     key="../register/lassberg-places.xml#lassberg-place-0175">Thurgau</rs>; ob aber
                     gerade bei diesem iare? Auffallend war mir im <rs type="bibl"
                     key="../register/lassberg-literature.xml#lassberg-literature-0063">Canisius</rs>
                     Tom. II, Part. III. Pag. 230 die anmerkung a) zu der inschrift des von abt <rs
                     type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0483"
-                    >Burkhard</rs> ingenitus geschenkten elfenbeinernen Reliquienhornes, wo <rs
+                    >Burkhard</rs> ingenitus geschenkten <rs type="object"
+                    key="../register/lassberg-objects.xml#lassberg-object-0001">elfenbeinernen
+                    Reliquienhornes</rs>, wo <rs
                     type="person" key="../register/lassberg-persons.xml#lassberg-correspondent-0483"
                     >Burkhard</rs> ein son des graven <rs type="person"
                     key="../register/lassberg-persons.xml#lassberg-correspondent-0484">Ulrich von

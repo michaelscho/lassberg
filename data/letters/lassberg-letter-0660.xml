@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-0660">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Ludwig Uhland (23.09.1820).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">362</idno>
+                        <idno type="register-lassberg">377</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 11-14<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-0660">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0066">Heiligenberg</placeName>
+                    <date when="1820-09-23">1820-09-23</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Wolgeborener, hochverehrter Herr! Ihr Schreiben vom 19. dieses hat mich ungemein betrübt! ich hatte gehofft, daß Sie mich bei Ihrem Zuge durch die östliche Schweiz zum Fürer nehmen würden; nicht, weil ich citel genug bin zu glauben, daß meine Gesellschaft Ihren Genuß bei dieser Reise würde vermehrt oder erhöht haben, sondern weil ich mir bewußt bin, daß in jener ganzen Gegend niemand beßer im Stande gewesen wäre Ihnen bei geschichtlichen Erinnerungen das Örtliche bestimmter und umständlicher nachzuweisen; und darauf hatte ich mich so sehr gefreut! da Sie mir in Stuttgardt sagten, wie Sie noch nicht entschloßen wären, ob Sie den Weg nach dem Rheinlande, oder dem alten Sängerlande nehmen würden; so glaubte ich, daß Sie im lezten Falle mir hievon Kunde geben möchten auch noch von Constanz aus, wohin man von hier in 3 Stunden reitet; wäre mir die Nachricht früh genug zugekommen, um Sie nach St. Gallen, Eppishausen oder wo immerhin zu begleiten. Infelix dies nigro notanda lapillo! was mich ( ich sage es nicht in Bösem ) einigermaßen tröstet, ist, daß Sie die herrlichen Schätze der Theotisca in St. Gallen nicht gesehen haben, daß Sie vermutlich auch nicht in das schöne Rheintal gekommen sind, und die alten Sängerburgen nicht besucht haben; somit bleibt mir die Hofnung Sie noch einmal im Lande der alten Lieder zu sehen, aber dann sei es auch nicht nur, wie lezthin Hr. Minister v. Stein kam, Grüeß Gott und Bhüet Gott bei einander. Das lat. Werk des Magister Andreas über die Minnegerichte werde ich suchen, wo anders her zu bekommen. Ich habe seit deme noch eine zweite Handschrift der teutschen Übersetzung durch Dr. Johann Hartlieb aufgefunden; auch einen gleichzeitigen Codex des Chronikons Jacob Twingers von Königshoven, Presbyteri argentinensis, welches viele schäzbare Zusäze enthält, unter andern mehrere Notizen über die Familie Hemling, welche dem Hrn. Boisserée vielleicht angenehm sein dürften. Das „ Kloster der Minne " können Sie nicht nur so lange Sie wollen, sondern, wenn es Ihnen Vergnügen machen sollte, auch ganz und gar behalten. Einem Manne Ihrer Art etwas Angenehmes erweisen zu können, gehört zu den schönsten Genüßen meines Lebens. Das bescheint sich wol nicht sehr an der Langsamkeit, mit welcher ich mein Versprechen wegen Walter von der Vogelweide in Erfüllung gehen laße! - Das ist nun eine meiner Schattenseiten. Was ich mache, möchte ich gerne recht machen und dadurch geschieht dann oft, daß ich es sehr langsam zu Stande bringe. Über diesen Fürsten der Sänger selbst haben wir bekanntlich gar nichts Urkundliches, als einige Stellen in den Minnesängern; ich habe daher an mehrere meiner Bekannten geschrieben, um das Wenige was ich gesammelt habe zu vermehren, bisher ist nichts eingegangen, in Eppishausen war ich seit deme nur einmal auf einen Tag und konnte aus meinen Collektaneen das verlangte nicht zusammen lesen; ich gehe aber nun nächste Woche eigends dahin, um Ihnen mein Contingent abzuliefern. Machen Sie sich aber zu keiner großen Ausbeute Hofnung, das meiste, wenn gleich nicht das Beste, dürften Animadversiones ſein, welche aus Vergleichungen gleichzeitiger Notizen hervorgiengen. Wo steht denn die Nachricht, daß Walter zu Würzburg begraben sei? Ich ehre Ihre Gründe, aus welchen Sie Ihre Arbeit über Walthern besonders herausgeben wollen; es gieng mir wie den Gemälde - Sammlern, man hat nicht gerne lauter ekigte Martin Schoens, Wolgemute und Albr. Dürer 2c. Wer einen Hemling, Härlein oder Schorel erhalten kann, läßt sich einen Schritt darum nicht reuen. Nun hat uns Hr. v. der Hagen, nach einer Pause von 10 Jaren, mit dem 2. Teile der Sammelung a. t. Gedichte beschenkt, die Commentare zum Texte sollen ( vielleicht wieder nach einigen Jaren ) nachfolgen. Auch das was jezt erschienen, wäre ohne die Dazwischenkunft des wakern jungen Primisser ( Aufseher über die ambrasische Sammelung in Wien ) nicht zu Stande gekommen. Er gab die zwei herrlichen Gedichte: Gudrun und Bitterolf dazu her. Das Heldenbuch im österreichischbaierischen Dialekte aus der Dresdner Handschrift ist ein elendes Zeug und steht weit unter den älteren gedrukten Ausgaben dieser Gedichte, so selerhaft diese auch sind. Einen noch unbekannten Schwäbischen Sänger habe ich in einer mir vor einiger Zeit zugekommenen Handschrift entdekt; es ist Conrad von Stöffeln ( Hohenstoffeln im Höhgau ) ein Fryherr, welcher um die Zeit Meister Gottfrieds von Straßburg gelebt zu haben scheint. Er schrieb ein Gedicht von ungefär 8000 Versen, welches in den Fabelkreis von der alten Tafelrunde gehört, und Gabriel von Montavel oder der Ritter mit dem Boke genannt wird. Diesen Winter gedenke ich auch eine in Zürch gekaufte Handschrift des Gedichtes vom Schachzabelspiele von Conrad von Ammenhusen, einem Thurgauer und Leutpriester zu Stein am Rhein ( anno 1330 ) vorzunehmen. Leben Sie recht wol; sehen Sie die Herren Haug und Lebrêt, so bitte ich sie von mir zu grüßen. Euer Wolgeboren! Heiligenberg, am 23. Sept. 1820. gehorsamer Diener Joseph v. Laßberg.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

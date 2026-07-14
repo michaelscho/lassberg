@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-2448">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Ludwig Uhland an Joseph von Laßberg (08.10.1843).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">2814</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 249<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-2448">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0148">Tübingen</placeName>
+                    <date when="1843-10-08">1843-10-08</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Verehrtester Freund! Die neueste erwünschte Nachricht von Ihrem und der Ihrigen Wohlbefinden kommt mir von Hrn. Kirchhofer, der auf dem Rückwege von Kanstadt bei Ihnen angesprochen hat. Daß Sie so freundlich das Andenken dankbarer Freunde aufgenommen, hat gewiß Allen große Freude gebracht. Könnte nur an der Lehne des Stuhls das alte Schwert des Schenken von Winterstetten befestigt werden! Leider traf ich das Schreiben, worin Sie mich mit einer Nachfrage nach demselben beauftragen wollten, erst bei meiner Zurückkunft hier an. Allein ich muß auch sehr bezweifeln, ob ein Tauschvorschlag in Dresden Eingang gefunden hätte, nachdem durch die Bekanntmachung in Haupt's Zeitschrift eben erst der Werth dieses Besizes hervorgehoben war. Ich konnte dort nicht einmal das historische Museum besuchen, da ich bei kurzem Aufenthalt und herannahenden Pfingstfeiertagen mit meiner Arbeit auf der Bibliothek mich sehr gedrängt fand. Nach Berlin bin ich nicht gekommen, so sehr es mein Wunsch ist, die Brüder Grimm Nürnberg war dießmal auch einmal persönlich kennen zu lernen. für meine Liedersammlung ergiebiger, als bei früheren Besuchen, dagegen hat ein wiederholter Ausflug nach Straßburg, von dem ich erst vorige Woche zurückkam, geringe Ausbeute gewährt. Der durch diese und andere Nachforschungen verzögerte Druck meiner Sammlung ist auch Ursache meines läßigen Briefschreibens. Immer wünschte ich, den Freunden auch von meiner Seite einmal wieder etwas bieten zu können, während ich langeher nur ihre Mittheilungen, wie neuerlich die werthe Iohannisgabe, mit stillem Danke benütze. Doch soll nun im nächsten Monat der Druck der Liedertexte beginnen. Da ich bei diesem Unternehmen häufig in den Fall komme, Fischarts Geschichtklitterung anzuziehen, so ist es ein Uebelstand, daß mein Exemplar und sämmtliche in hiesiger Gegend vorhandene nur Drucke des 17ten Jahrhunderts sind; wenn ich mich recht erinnere, besitzen Sie eine der älteren Ausgaben und Sie geben mir vielleicht einmal Gelegenheit, meine Citate an solcher nachzuprüfen. Von Prof. Keller wird demnächst eine „ Romfahrt " herauskommen, eine ansehnliche Reihe von Auszügen, die er in Rom und Venedig aus altfranzösischen Gedichthandschriften gefertigt hat. Meine Frau wünscht mit mir herzlich, daß Sie Alle auf der weitausschauenden Meersburg einen heitern Winter verbringen mögen. In Freundschaft und Verehrung T. d. 8. October ( 1843 ). Ihr treuergebener L. Uhland.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

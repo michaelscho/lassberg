@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-0982">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Ludwig Uhland (06.04.1825).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">502</idno>
+                        <idno type="register-lassberg">91</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 5<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-0982">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0082">Konstanz</placeName>
+                    <date when="1825-04-06">1825-04-06</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Hochvercreter Freund! Constanz am 6. April 1825. One Zweifel haben Sie meinen unterm 9. December an Sie gesendeten zweiten Band des Liedersaales erhalten; ich lasse demselben die eben fertig gewordene erste Hälfte des dritten folgen, welcher noch im Laufe dieses Sommers seine Vollendung erhalten wird. Ich bin entschlossen Irem Wunsche gemäß, denselben mit einer kleinen geographischen Charte auszustatten, welche die Wonsize unserer alten Sänger angeben soll; es verstehet sich aber, daß diese Topographie die Gränzen des alten Herzogtums Alemannien nicht überschreitte. Mein guter lieber Ittner, welchen Sie in der Villa Epponis gesehen haben, hat uns am 9. März für immer verlassen; nach seinem im Leben geäusserten Wunsche, starb er one Schmerz, von den sanften Pfeilen des Helios getroffen. Ich entbere in täglich mer und füle mich ser alleine; er liebte mich und gab mir noch in den lezten Stunden seines Lebens Beweise davon; nun habe ich gar keinen Umgang mer, weder auf dem Lande noch in der Stadt. Das sind die Zweige, Blätter und Blüten, die vom Baume des Lebens abfallen und denen der Stamm bald selbst nachfolget. Er hatte im lezten Herbste von mir einen Stof zu einer Winterarbeit verlangt, und ich gab jm aus der Handschrift der Zimberischen Chronik die höchst romantische Legende: wie Grav Albrecht von Werdenberg eines Königs Tochter aus Portugal erwarb die auch im Thomas Lyrer stehet; aber mit veränderter Lection. Er sagte mir einige male, dies werde seine lezte Arbeit sein: wenige Tage vor seiner Krankheit vollendete er sie, und ich sollte nun historische Noten dazu machen, da starb er. Eine erfreuliche Nachricht schrieb mir kürzlich der H. Minister von Stein aus Nassau. Der erste Band der Monumenta historiae Germaniae medii aevi wird nun endlich auf Michaelis bei Hahn zu Hannover in Folio erscheinen: die Armut unserer Gesellschaft erlaubte nicht, so wünschenswert es gewesen wäre, den Selbstverlag zu übernemen, und so ist nun das Fortschreiten der Unternemung absolut an den Absaz ge bunden, was mich für die Zukunft manchen Stillstand befürchten lässt. Die teutschen Regierungen haben so viel wie nichts für die Sache getan! Conzius macht mir neuerdings Hofnung in diesen Herbst in meiner Einsiedelei zu sehen: allein, ich fürchte diese spes 4 * longa möchte wieder an irgend einem unvorgesehenen Hindernisse scheitern. Nach Beendigung des Landtages vermute ich Sie mein verertester Freund! wieder der Theotisca zugewendet und näre die süße Hofnung bald wieder Etwas über den alten Gesang und die Sänger von Inen zu lesen; auch habe ich von einer neuen und vermerten Ausgabe Irer Gedichte sprechen gehört; mögen Sie fortfaren auch hierin die Freude und Ere Ires Vaterlandes zu meren! Behalten Sie mich in Irem freundschaftlichen Andenken und seien Sie herzlich gegrüßt Von Irem ergebensten I. v. Laßberg.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

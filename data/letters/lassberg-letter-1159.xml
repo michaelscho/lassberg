@@ -67,7 +67,6 @@
                         target="../register/lassberg-literature.xml#lassberg-literature-0062"
                         ><rs>Der Bär, als Wappen des Kantons Appenzell. In: Appenzellisches
                         Monatsblatt 3 Heft 2 (1827), S. 21-26.</rs></ref>
-                    <ref type="unknownType" target=""><rs>Unknown</rs></ref>
                     <ref type="cmif:mentionsPerson"
                         target="../register/lassberg-persons.xml#lassberg-correspondent-0528"
                         ><rs>Kaufmann Ott</rs></ref>
@@ -83,6 +82,12 @@
                     <ref type="cmif:mentionsPerson"
                         target="../register/lassberg-persons.xml#lassberg-correspondent-0532"
                         ><rs>Ambrosius</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0677"
+                        ><rs>Eppo</rs></ref>
+                    <ref type="cmif:mentionsPerson"
+                        target="../register/lassberg-persons.xml#lassberg-correspondent-0458"
+                        ><rs>Besitzer</rs></ref>
                     <ref type="cmif:mentionsPerson"
                         target="../register/lassberg-persons.xml#lassberg-correspondent-0179"
                         ><rs>Johann Adam Pupikofer</rs></ref>
@@ -104,7 +109,11 @@
         <revisionDesc>
             <listChange>
                 <change when="2026-07-12" who="#status-migration" status="draft">Text from OCR of the printed edition, encoding not yet reviewed</change>
+                <change when="2026-07-13" who="#check-letter-annotations" status="reviewed">Checked via
+                    check-letter-annotations skill (Vollständigkeit, Verlinkung, Struktur,
+                    Header/Body-Konsistenz, Formeln)</change>
                 <!-- <change when="" who="" status="published">Final proofreading</change> -->
+                <change when="2026-07-13" who="#sync-letter-status" status="published">Published online</change>
             </listChange>
         </revisionDesc>
     </teiHeader>
@@ -135,13 +144,17 @@
                     Knöpfel</rs> in <rs type="place"
                     key="../register/lassberg-places.xml#lassberg-place-0141">St. Gallen</rs> kommen
                     lassen; bestimmen Sie aber auch die Farbe. Ihre Fragen, die <rs type="object"
-                    key="">Buchdruckerpresse</rs> betreffend, habe ich an den Besitzer abgegeben,
+                    key="">Buchdruckerpresse</rs> betreffend, habe ich an den <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0458"
+                    >Besitzer</rs> abgegeben,
                     derselbe antwortet mir heute, wie Beilage zeigt. <rs type="person"
                     key="../register/lassberg-persons.xml#lassberg-correspondent-0530">Dr.
                     Büsching</rs> hat nach den Buchhändler Anzeigen den „<rs type="bibl"
                     key="../register/lassberg-literature.xml#lassberg-literature-0029">Armen
                     Heinrich</rs>", wahrscheinlich verneudeutscht herausgegeben. Sonst weiß ich gar
-                    nichts neues. Der heilige Eppo ist überhaupt ein besserer Neuigkeits- und
+                    nichts neues. Der heilige <rs type="person"
+                    key="../register/lassberg-persons.xml#lassberg-correspondent-0677"
+                    >Eppo</rs> ist überhaupt ein besserer Neuigkeits- und
                     Alterthumsforscher als unser episcopus anonymus und seine Chorherren. Doch ja,
                     noch das, daß <rs type="person"
                     key="../register/lassberg-persons.xml#lassberg-correspondent-0531">Dr.
@@ -153,9 +166,17 @@
                     >Ambrosius</rs> mir stummen Fisch zu predigen kommen wird, damit ich wieder
                     singen könne; so lange das nicht geschieht, werde ich auch <rs type="place"
                     key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</rs>
-                    meiden. Genehmigen Sie unterdessen die Versicherung meiner ausgezeichneten
-                    Hochachtung, womit ich zu sein die Ehre habe Ihr ergebenster Diac. Pupikofer.
-                    Bischofzell, den 20. Mart. 1827.</p>
+                    meiden.</p>
+                <closer>
+                    <salute>Genehmigen Sie unterdessen die Versicherung meiner ausgezeichneten
+                        Hochachtung, womit ich zu sein die Ehre habe Ihr ergebenster</salute>
+                    <signed>Diac. <rs type="person"
+                        key="../register/lassberg-persons.xml#lassberg-correspondent-0179"
+                        >Pupikofer</rs>.</signed>
+                    <dateline><rs type="place"
+                        key="../register/lassberg-places.xml#lassberg-place-0025"
+                        >Bischofzell</rs>, den <date when="1827-03-20">20. Mart. 1827</date>.</dateline>
+                </closer>
             </div>
             <div type="normalized" resp="GPT3.5">
                 <p>Hochwohlgeborener Herr und Gönner! Wenn ein Wunsch post festum erlaubt ist, so

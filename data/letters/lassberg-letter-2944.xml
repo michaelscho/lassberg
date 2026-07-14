@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-2944">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Ludwig Uhland an Joseph von Laßberg (08.11.1850).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement></settlement>
+                        <repository></repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">3095</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 254<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-2944">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0148">Tübingen</placeName>
+                    <date when="1850-11-08">1850-11-08</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Hochverehrter Freund! Die gute Frau Sophie Schwab hat mich gestern beauftragt, Ihnen eine Trauerkunde zu geben, die Sie jedoch bereits durch öffentliche Blätter erhalten haben werden. Unser geliebter Freund Schwab war schon im vorigen Sommer von einem Erstickungsanfall auf dem Spaziergange betroffen, dessen schwerere Folge aber durch eine schleunige Aderlässe abgewendet worden. Davon hatte er sich in kurzem so gut erholt, bewegte sich so ganz wieder in gewohnter Thätigkeit, daß die Seinigen die beste Hoffnung hegten. Er selbst war auf eine Wiederkehr des Anfalls gefaßt und diese ist, nachdem er den Abend vergangenen Sonntags vollkommen heiter zugebracht, in der Nacht gegen drei Uhr plötzlich eingetreten. Er konnte der Frau und der jüngeren Tochter nur noch ein frommes Lebewohl zurufen, Arzt und Wundarzt fanden ihn nicht mehr am Leben. Es hat sich gezeigt, daß ein Herzübel die Ursache seines allzu frühen Todes war. Er ist 58 Jahre 4 Monate alt geworden. Schön war es, daß er kurze Zeit zuvor alle seine Kinder um sich versammelt hatte. Der jüngere Sohn, der in Newyork als Kaufmann ansäßig ist, brachte seine junge Gattin den Eltern, die er seit sieben Jahren nicht mehr gesehen, und aus diesem Anlaß kamen auch die andern Geschwister herbei. Die Eltern machten mit dem jungen Paare zu Ende Augusts eine Reise in die Schweiz und Schwab war so rüstig, daß er zu Fuß den Rigi besteigen konnte. Noch vierzehn Tage vor seinem Tode war er hier in Tübingen zu Besuch und wir freuten uns seines frischen, kräftigen Wesens. Es sollte das lezte irdische Zusammenleben sein; vorgestern fand die Beerdigung statt und der lange Zug der Begleitenden zeigte, wie viele Menschen er sich durch die Gaben seines Geistes wie durch sein überall thätiges Wohlwollen verbunden hatte. Für mich war es hart, auf den Sarg des jüngeren, so vieljährig und innig vertrauten Freundes die Scholle werfen zu müssen. Die tiefbetrübte Sophie liegt an der Gesichtsrose nieder, von der sie schon vor dem Hingang des Gatten befallen war. Dies ist auch der Grund, warum sie nicht selbst geschrieben hat. Sie gab mir noch besonders auf, Ihnen zu sagen, daß Schwab, der auf der kurzzugemessenen Schweizerreise nicht in Meersburg ankehren konnte, den Vorsatz hatte, Sie im nächsten Frühjahre eigens zu besuchen. Er war auch herzlich erfreut, daß wir bei unsrer Zurückkunft aus Ihrem gastfreundlichen Hause so erwünschte Nachricht von Ihrem Wohlbefinden mitbrachten. Die Freude des Wiedersehens war ihm nicht mehr vergönt. Meine Frau sagt mit mir Ihnen und den Ihrigen die angelegensten Grüße. In alter Freundschaft und Verehrung Tübingen, 8. November 1850, L. Uhland. 27. 28. März 2. April 1853.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

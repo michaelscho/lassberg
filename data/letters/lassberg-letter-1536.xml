@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1536">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Ludwig Uhland an Joseph von Laßberg (24.03.1831).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement></settlement>
+                        <repository></repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">2354</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 199<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1536">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0148">Tübingen</placeName>
+                    <date when="1831-03-24">1831-03-24</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Tübingen d. 24. März 31. Sie empfangen hiebei, verehrtester Freund, mit meinem herzlichen Danke die 8 Hefte Wyßscher Schweizerlieder zurück. Es sind zwar aus den 3 Wochen, welche Sie Anfangs bestimmt hatten, viere geworden, da Sie aber nach Ihrem neuesten Schreiben gerade in einer andern Arbeit begriffen waren, so glaubte ich noch eine Schweizerpost weiter abwarten zu dürfen. Die Sammlung hat unbestreitbar vieles Interesse, sie giebt eine fortlaufende Schweizergeschichte in Liedern und Vieles aus Quellen, die Andern nicht so leicht zugänglich wären. Ihre Herausgabe ist daher sehr wünschenswerth. Aber das glaube ich, daß der Ordner der Ausgabe eine nicht ganz unbedeutende Arbeit übernimmt. Die Zeitordnung der geschichtl. Ereignisse, worauf die Lieder sich beziehen, wäre wohl die natürlichste. Zu diesem Zweck wäre aber das Mspt. gewissermaaßen aufzulösen oder umzuschreiben. Es wird sich überhaupt ungefähr um 14 reduciren, wenn man die oft drei- oder mehrfach vorhandenen Stücke auf ein Exemplar beschränkt; es wäre dann etwa die beste der verschiedenen Abschriften zu Grund zu legen und die Varianten der andern zu benützen. Im Ganzen scheinen mir die Wyßschen Copieen mit Sinn und Sorgfalt behandelt zu seyn. Da aber Wyß von den sonst schon bekannten Liedern nur solche aufgenommen hat, von denen ihm noch ungebrauchte Handschriften oder seltenere alte Drucke zu Gebote standen, so fragt sich: sollten nicht auch die andern Lieder, die in den Chroniken und anderwärts stehen, beigefügt werden, damit das Corpus des historischen Schweizergesangs ein vollständiges sei? An absolute Vollständigkeit läßt sich freilich nicht denken, ich selbst glaube noch Einiges zu haben, was in den Heften nicht steht, wenn nicht etwa in dem Convolut der noch nicht abgeschriebenen Col lectaneen, deren das Schreiben des Vormunds der Wyßschen Kinder erwähnt. Sie selbst werden vielleicht auch noch Manches dieser Art besitzen. Sollten noch histor. Anmerkungen hinzukommen, was ich aber nicht für wesentlich halte, so würde dies ein specielles Studium der schweizerischen Geschichte voraussetzen. An der Freude, die Ihnen der nun auf einmal unerwartet herbeigekommene Frauendienst verursacht hat, habe ich lebhaften Antheil genommen. Daß Sie den Genuß auch sogleich mit mir theilen wollen, erfüllt mich mit innigem Danke; aber ich muß mir diesen Genuß für jetzt versagen und noch einige Zeit beim 14. und 15. Ihd. bleiben, die für das nächste Seme- ſter meine akademische Thätigkeit in Anspruch nehmen. Es ist mir genug, daß das Kleinod jetzt in Ihren Händen ist. Dagegen würde die Legende vom h. Ulrich in eine Materie einschlagen, die ich mir zum Gegenstand einer noch rückständigen Inauguralrede gemacht habe; und für jenes Collegium würde ich Sie einmal um Mittheilung von Rebmanns Gespräch zwischen Niessen und Stockhorn bitten. Als ich den alten Tannhäuser erhielt, kam mir vor Freude fast das Tanzen in die Beine, wie den schönen Jungfraun im Walde. Diese Ire gütige Mittheilung ist das Juwel von dem, was ich für meine Arbeit über die alten Balladen habe ersammeln können. Meine Erwartung, die ich Ihnen in einem der vorigen Briefe ausgedrückt, daß diese Ballade noch ächter, mythischer im Munde des Volkes vorhanden seyn dürfte, als in den Drucken des 16. Ihd. hat sich nun vollkommen bestätigt. Aber wo man ein solches Lied noch so recht alterthümlich singt, da singt man wohl noch mehrere dieser Art und der verdienstvolle Stalder würde sich ein neues Verdienst erwerben, wenn er noch Weiteres, soviel ihm irgend zugänglich ist, zur Aufzeichnung bringen wollte. Zehn Jahre später, wäre vielleicht dieser Tanhäuser, der mir so vielen Werth hat, auf immer verschollen gewesen. Aber, um vom Besten zuletzt zu reden, Ihr Brief giebt mir, wenn auch noch unbestimmte Hoffnung, Sie um Ostern bei uns zu sehen; ich bitte Sie angelegenst, mir diese Aussicht zu bestätigen. Ich gedenke in diesen Ferien keine Reise zu machen, nur auf kurze Zeit die Freunde in Stuttgart zu besuchen, was ich nach Belieben früher oder später einrichten kann. Damit ich aber sicher auf dem Plaze bin, wenn Sie uns mit Ihrem Besuche erfreuen wollen, so bitte ich um einige Zeilen, die uns die Zeit der Ankunft, wenn auch nur ungefähr, verkündigen. Wir wohnen nicht mehr so hoch, wie im vorigen Sommer, aber noch immer mit freier Aussicht ins Nekarthal. Möge Ihnen die Freude werden, Ihren Hn. Sohn in günstigem Zustand anzutreffen. Verehrungsvoll L. Uhland.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

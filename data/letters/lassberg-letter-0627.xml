@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-0627">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Ludwig Uhland (12.04.1820).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">347</idno>
+                        <idno type="register-lassberg">190</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 4<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-0627">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1820-04-12">1820-04-12</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Wolgeborner, hochzuverehrender Herr! Der Zeitraum zwischen Abgang und Ankunft der Post ist hier so kurz, daß ich Eu. Wolgeboren nur mit wenig Worten den Empfang Dero Schreibens vom 8. dieses anzeigen und Ihnen sagen kann, daß die Erfüllung eines lang genährten Wunsches mit Denselben in nähere Bekanntschaft zu kommen, ein für mich sehr erfreuliches Ereigniß war. Die Notizen und Auskunft über die in Dero Schreiben enthaltenen Gegenstände werden, so weit ich im Stande bin solche genügend zu ertheilen, nachfolgen. Die Stelle in Stumpf Chronik: „ Sonst ist Vogelweid ein alt Schloß gewesst im obern Thurgow " 2c. 2c. bitte ich mir näher zu bezeichnen, ich habe sie diesen ganzen Morgen vergebens in meiner Ausgabe von Stumpf Chr. 1548. Zürch, Froschauer gesucht. In Wirtemberg ist mir zu Reutlingen ein Vogelweider zur Krone bekannt, hat dieser keine Familien- Nachrichten? Walters Wappen, im Manesischen Kodex, von welchem ich eine flüchtige Abschrift beilege, ist freilich von jenem in Stumpf sehr abweichend; doch könnten beide ächt sein, wenn angenommen wird, daß Walter, welcher Ritter war, von den Hohenstauffen ein neues Wappen erhielt. Auf die etymolog. Untersuchungen meines mir sonst so lieben Freundes von Arx verlasse ich mich nicht immer, er ist hierin nicht immer glücklich. Von einer Würde eines Vogelweiders bei den Übten zu St. Gallen kommt in Urkunden eben so wenig etwas vor, als dies Prädikat irgendwo anders wird gefunden werden, denn mit dem Amte des Falkenmeisters ( Falconarius ) wird er es doch nicht identisiren wollen. Durch 3 ganze Jahre kriegten wir mit einander um den Abt von St. Gallen, der einen Hof voll Sänger hatte, welches er mir ganz und gar absprechen wollte, endlich mußte er mir beiſtimmen. Daß Ew. Wolgeboren den Codex palatinus Nr. 357 noch nicht haben, wundert mich; es sind schon über 2 Monate, daß ich ihn zurückgegeben habe. Ich habe ihn abgeschrieben, aber nicht viel Trost darinnen gefunden. Alles was ich an Handschriften, Abschriften oder Urkunden besize, steht Ihnen mit herzlicher Bereitwilligkeit zu Diensten. Vor wenig Tagen erhielt ich eine Handschrift des Gedichtes: Herzog Friedrich von Schwaben, welches Wolfram von Eschilbach zu geschrieben wird. Befindet sich in Wirtemberg kein Codex hievon? Ich sollte es eher für das Werk eines schwäbischen Dichters halten und würde, wenn ich einen Aparat von Handschriften dazu bekommen könnte, es in meinem Liedersaal herausgeben. Ich wollte keine Galerie der Minnesänger dieser Gegend aufstellen; sonst hätte ich mehrere genannt und mehr von ihnen gesagt: aber ich sammle an Materialien hiezu, und wäre sehr geneigt in der Folge es zu tun. Ich bitte in Ihrer Schrift, wenn Sie von Sankt Gallen sprechen, Ekehard I. von Ionswil nicht zu vergessen, von welchem wir das herrliche Gedicht: de Walthario manuforti haben, welches in den Kreis des Nibelungen - Liedes gehört, von welchem ich die älteste bekannte Handschrift besitze, die eben jetzt in Zürich abgedrukt wird. Nehmen Sie das inliegende Exemplar des Liedersaals als ein Zeichen der aufrichtigsten Hochachtung an von Euer Wolgeboren! Eppishausen, am 12. April 1820. gehorsamen Diener Jos. v. Laßberg, Freiherr.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

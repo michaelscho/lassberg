@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1981">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Ludwig Uhland (21.02.1838).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">970</idno>
+                        <idno type="register-lassberg">57</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 237<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1981">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1838-02-21">1838-02-21</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Eppishausen am 21. Hornungs 1838. Lieber Freund Uhlandus! In der Freude meines alten, aber noch immer grünen Herzens, kann ich nicht umhin, Inen zu sagen, daß ich vorige Woche die Nachricht erhielt, wie daß mir die alte bischöfliche Burg zu Meersburg, für den von mir gebotenen Preis, von der Domainenkammer zu Carlsruhe zugeschlagen worden ist. Eine schöne, große Burg, wolerhalten ( da vor einem Fare noch das Hofgericht sammt dem Hofrichter darinne saß ), hell, warm und in einer Lage, die eine der schönsten Aussichten am Bodensee gewäret. Sagen Sie dies auch Schwab und Abel, und daß man in einem Sommertage, von Stuttgart oder Tübingen, wenn man ein wenig frühe aufstehet, mit der Post bequem nach Meersburg kommen kann. Wie viele geschichtliche Erinnerungen knüpfen sich an diese Besizung. König Dagobert von Austrasien baute sie, Carl Martell erneuerte die Burg, die Welfen, die Hohenstaufen besaßen sie. Warscheinlich trat sie Conradin seinem Vormunde, dem biedern Bischofe Eberhard von Waldburg ab. Bischof Niclaus aus dem Minnesänger Geschlechte von Kiunzingen, hielt 1334 eine 14wöchentliche Belagerung gegen Kaiser Ludwig den Baier, darinne aus, und nötigte diesen mit Schimpf abzuziehen. Die Gegend so wie die ganze Nachbarschaft, ist fruchtbar, freundlich und wolangebaut; der Wein, welcher seit einigen Jaren da aus Traminer Trauben gezogen wird, gehört gewiß unter die vorzüglichsten Weine Schwabens, und ich hoffe, wir sollen in einem der runden Gemächer der guten alten Burg, welche die Aussicht auf die blauen Fluten des Potamus geben, mer als einmal die Erfarung hievon machen. Tezt gehet es ans Einpaken, das ist mühesam und langweilig; aber das Auspaken und Aufstellen ist hinwieder lustig, und dann will ich auch wieder mit erneutem Mut und Lust arbeiten; denn dort wird mir ein Wunsch gewärt, den ich bisher stets vergeblich närte, ich kann alle meine Bücher und Handschriften 2c. in einem schönen, hellen, gewölbten ( ehemaligen Archiv- ) Saale beisammen aufstellen und durch die Glastüre eines anstoßenden geräumigen Arbeitszimmers alles übersehen. Hoc erat in votis: dii melius et auctius fecere! bene est! nil amplius oro! Ich habe 6 Querfolioblätter Manuscript aus dem XVI. Sarhundert erhalten. Sie enthalten: Der Benzenauer in Tanz weis. Der Schwarz Knab, Tank weis geflorieret. Sankt Jacobis Danz. Der Moristgen Danny. Der Hoppen Dank. Die Weisen sind blos für die Laute gesezt; oder Zither. Aber der Text felet überall, es stehen immer nur ein paar Verse, der Anfang, unter den Noten. Die Noten selbst bestehen nur aus Buchstaben und Ziffern. Wer kann diese alte Musik lesen? Dann habe ich bekommen: Lautenbuch vieler neuer, erlesener, fleißiger schöner Lautenstuk, von artlichen Fantaseien, künstlichen Musikartlichen lateinischen Muteten 2c. durch Sixtum Kargel fürstlich bischöflich Straßburgischen Lautenisten. Gedrukt zu Straßburg, durch Bernhard Jobin. 1586. in Folio. Wer die jezt nicht mer gangbare Notenschrift entziffern könnte, würde vielleicht auf manche liebliche Entdekung geraten. Sie wissen nun mein Freund! wo Sie uns wieder finden können; hiemit sage ich Ade! Herzliche Grüße von Jenny und mir an Frau Emma. Wälzen Sie indessen den Stein des Sysiphus und lassen Sie es sich nicht verdrießen, quand même Ir treuer Freund 96.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

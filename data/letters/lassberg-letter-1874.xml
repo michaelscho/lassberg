@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1874">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Ludwig Uhland (17.09.1836).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">915</idno>
+                        <idno type="register-lassberg">162</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 234<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1874">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1836-09-17">1836-09-17</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Eppishausen am 17. September 1836. Es tut mir leid, teurer Freund! daß ich nicht auf einmal allen Iren Wünschen entsprechen kann. Hier sende ich Inen zuerst den III. Teil der Myllerischen Sammlung, in welchem weniger der unvollständige Trojanische Krieg des Konrad von Würzburg, als die demselben angehängten einzelnen Gedichte, Sie anziehen werden. Den Herzog Ernst in Reimen, den ich vor mer als 30 Faren in dem höwgauischen Städtchen Engen auf dem Jarmarkte kausste, konnte ich in dem zusammengeschnürten Convolute solcher Volksbücher, nicht wieder finden; indessen kann ich Inen sagen, daß ich solchen mit dem Abdruke in von der Hagens altteutschen Gedichten des Mittelalters Band I. verglichen und beinahe wörtlich übereinstimmend, aber wol um 3/4 kürzer gefunden habe, was bei älteren Recensionen gegen neuere beinahe immer der Fall zu sein pfleget. Das Münchner Bruchstük aus dem Ekenliet besize ich noch und werde es Inen nachsenden, sobald ich es wieder aufgefunden habe; es ist ser merkwürdig, denn es stimmt weder mit meiner Handschrift des XIII. Jarhunderts, noch viel weniger mit den späteren interpolirten Recensionen. Vor meiner Badereise wurde meine Stube, um sie in meiner Abwesenheit puzen zu können, von Schriften ausgeräumt; nun habe ich eine Weile zu tun bis der mächtige Papierhause wieder in eine etwaige Ordnung gebracht sein wird. Am 5. verließ ich Baden, one von meiner Kur eine vorteilhafte Wirkung verspürt zu haben, ich gieng über Donauöschingen meine einzige und liebe Schwester, die wie eine Inclusa da lebet, und die Gräber meiner Väter noch einmal zu besuchen; am 7. Morgens um 8 Ur kamen wir von Constanz hier an, und fanden gottlob! unsere kleinen Füchslein unter der Hut von Jennys Mutter ganz wol. Die so ungewönlich frühe eingetrettene rauhe Witterung, verdirbt uns alle Herbstfreuden und vorzüglich die Trauben, welche nun warscheinlich nimmer zur Reiffe kommen. Mone schreibt mir, daß der Verleger des Anzeigers, rüksichtlich des guten Abganges, sich entschlossen habe die Bogenzal dieser Zeitschrift zu vermeren, etwa auf 40: ich wollte lieber daß man die Zal der Hefte vermerte und die Zeit irer Erscheinung abkürzte; es gehet ja gar zu lange her, ehe ich in meinem angulus terrae erfare, was in der Theotisca geschiehet und gefunden wird? Jenny und ich grüßen die liebe Frau Emma und Sie und ich bitte auch Schwab und Tafel von mir zu grüßen. Ade für diesmal, und zeigen Sie mir den Empfang des Buches nur mit 2 Zeilen an; ich wüßte es nicht wieder zu bekommen, da die meisten Exemplare verbrannt sind. Gott befolen! von Irem alten hinkenden I. v. Laßberg.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

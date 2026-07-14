@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1032">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Ludwig Uhland an Joseph von Laßberg (26.09.1825).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">2086</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed"><ref></ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1032">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0147">Stuttgart</placeName>
+                    <date when="1825-09-26">1825-09-26</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Stuttgart, d. 26. Sept. 1825. Verehrtester Herr und Freund! Mein lieber Freund, Prof. Schwab, der im Begriff ist, eine Reise an den Bodensee anzutreten, hat mich um einige Zeilen der Empfehlung an Sie ersucht. Seine vor zwei Jahren erschienene Beschreibung der schwäbischen Alb, worin er mit der historisch - topographischen Darstellung die poetische Auffassung der Natur und Sagenwelt zu verbinden gesucht, ist Ihnen vielleicht bekannt. In gleichem Sinne unternimmt er jezt, den Bodensee und das Rheinthal zu beschreiben, und macht sich auf den Weg, um Alles wiederholt ins Auge zu fassen. Die Aufgabe ist interessanter, zugleich aber schwieriger, als die frühere. Durch Studien und Berufsgeschäft bisher vorzüglich dem griechischen und römischen Alterthum zugewendet, ( wiewohl er auch den Waltharius manufortis im Nibelungenmaße verdeutscht hat, ist ihm sehr angelegen, für das neue Unternehmen Rath und Beistand ortskundiger und in der mittleren Zeit einheimischer Männer zu gewinnen. Zu Erfüllung dieses Wunsches glaubte ich durch nichts so sehr behülflich seyn zu können, als indem ich mir gestatte, sein Vorhaben Ihrer wohlwollenden Aufmerksamkeit zu empfehlen. Für die gütige Zusendung vom dritten Bande des Liedersaals hole ich meinen wärmsten Dank nach; aber nur mit Ärger kann ich daran denken, daß die Mittheilung der Weingartner Handschrift für die Fortsetzung des Werkes verweigert worden. Die Consequenz wegen eines frühern Ablehnens nach andrer Seite mag der Grund davon seyn. Wäre mir nur ein brauchbarer Abschreiber für solchen Zweck bekannt, mit Vergnügen würde ich eine sorgfältige Vergleichung der Urschrift für den Liedersaal vornehmen. Oder würde mir nur der Codex auf ein halb Jahr ins Haus gegeben, ich würde wohl schon nach und nach damit fertig, besonders wenn etwa der schon gedruckte Gott Amur wegbleiben könnte. Ihrem freundlichen Andenken mich angelegenst empfehlend, mit unwandelbarer Verehrung L. Uhland.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

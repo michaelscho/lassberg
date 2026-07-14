@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1360">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Ludwig Uhland (12.10.1829).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">675</idno>
+                        <idno type="register-lassberg">224</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 148<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1360">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1829-10-12">1829-10-12</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Eppishausen, am 12. October 1829. Charissime Uhlande! Vorerst meinen Dank für Fren lieben Brief vom 1. dieses, dann meinen weitern Dank für die Königinhofer Handschrift, mit welcher Sie die Bibliotheca Villae Epponis beschenkt haben. Antworten kann ich Inen heute nicht; weil Schwabs schon morgen frühe wieder abreisen wollen; der Jupiter pluvius hat die wenigen Tage, welche diese lieben Leute mir schenkten, häßlich verdorben; so daß wir keine Ausflucht machen konnten. Ich würde Inen den Codex Wasserburgensis durch Schwab senden, wenn ich nicht noch Eggen Ausfart abschreiben möchte ehe ich In auf Reisen sende; denn ich bitte Sie, nach gemachtem Gebrauche, denselben an den Herrn Prof. Benecke, unsern Landsmann, durch den Postwagen nach Göttingen zu senden, meine Abschrift wird in wenigen Wochen vollendet sein. Unser Freund Schwab wird Inen sagen, wie oft und viel wir von Inen gesprochen und Sie in unsere Mitte gewunschen, one die Frau Emma zu vergessen. Viele herzliche Grüße an Sie alle beide von Frem unveränderlichen alten Meister Sepp. Die Handschrift der Klara Häzlerin, halte ich nicht für wert abgeschrieben zu werden, es ist zuviel Schofelzeug darinne, von der Hagen hat mich damit angeführt; weil Sie aber wünschen sie zu sehen; so will ich Inen solche mit dem Codex Wasserburgensis zuschiken; Sie haben mir nicht gesagt ob Sie den französischen Codex welcher le Voeu du Paon enthaltet haben wollen, ich gebe in auf gut Glük unserm Suabo mit. Noch einmal grüße ich Sie von ganzem Herzen, und nie genug.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1445">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Ludwig Uhland (11.05.1830).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">720</idno>
+                        <idno type="register-lassberg">158</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 167-71<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1445">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1830-05-11">1830-05-11</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Eppishausen am 11. Mai 1830. So eben, mein teurer Uhlandus! erhalte ich mit der Frau Clara Häzlerin, auch Tre freundschaftlichen Zeilen vom 2. dieses, und freue mich, daß Sie mit der lieben Frau Emma, deren Gruß mich eben so herzlich freuet, und den ich noch viel herzlicher erwiedere, wol auf der Pfalzgravenburg angekommen und darin schon völlig eingenistet sind. Wüßte ich, wo der Skythe Zamolxis seinen Pfeil gelassen hat; ich würde darauf zur Stunde nach den Ufern des Nekars reiten, um ein par Tage mit Inen zu kosen; aber me tenet nunc parthenope! das ist die Constantia sacra, wie Herr von Mülinen den episcopatus constantiensis des T. Neugart nennet, und ehe das Werk nicht im Gange ist, kann ich nicht reisen. Das Prof. Tafel mit seinem kurzen Aufenthalte in der villa Epponis zufrieden war und dem alten Meister Sepp auch in der Entfernung noch hold bleibet, tut meinem alten Herzen wol; denn der Mann gefiel mir gar zu gut, und sein männliches Wesen und anspruchslose Gelersamkeit, zogen mich ser an. Grüßen Sie in von mir, und sagen Sie jm, daß er sich um Schmidlins Beiträge zur Geschichte Wirtembergs für mich nicht bemühen solle; ich erhielt von verschiedenen Seiten 2 Exemplare dieses wegen den Graven von Achalm mir wichtigen Werkes beinahe zu gleicher Zeit. Ich glaube Inen die Erwerbung eines Schwabenspiegels von 1287. und zweier Exemplare des cod. trad. Sangallens. gemeldet zu haben: aber wol eben so merkwürdig ist mir die Ankunft eines um das Jar 1260 durch den dortigen Probst Hermann geschriebenen codex trad. augie albae ( Weissenau bei Ravensburg ), welcher höchst wichtige Beiträge zur Geschichte Schwabens enthält und bis auf König Conrad IV. gehet. Er ist mit 15 gemalten Bildern verziert, welche nebst einigen Bischöfen und weissenauischen Pröbsten, den Stifter von Weissenau Gebezo von Ravensburg, Kaiser Friederich I., seinen Son Heinrich als König, König Philipp, Friederich II., Heinrich den Löwen, Conrad von Staufen als Herzog von Schwaben den alten Welf anno 1180 und einen Graven Albert von Achalm, um das Iar 1150-1160 vorstellen. Dieser Albert welcher lange nach dem vermeintlichen Aussterben des Hauses Achalm hier diplomatisch erscheint, war der Schwiegervater Heinrichs von Nifen und wird advocatus in cholstetten genannt, welchen Ort ich im Lexicon von Schwaben nicht finde. Der Codex enthält auch merere bisher ganz unbekannte Hohenstaufische Urkunden, und muß schon vor 200 Jaren zu Weissenau abhanden gekommen sein. Kurz es ist ein warer Schaz, und ich glaube am Ende daß ich, wie Schwab in seinem Gedichte sagt, ein Schazgräber bin, one es zu wissen. Der Codex hat 451. Octavseiten und ist ganz unverseret. Des Leipziger Prof. Hänels catalogus librorum manuscriptorum möchte ich mir auch anschaffen, wo ist er gedrukt? Die von Inen ausgezogenen Notizen werde ich in St. Gallen verificiren und Inen über den Erfund berichten. Besonders merkwürdig wäre mir der codex picturatus der vadianischen Bibliothek, welcher warscheinlich die so oft abgeschriebene Weltchronik des Rudolf von Ems sein wird. Strikers Karl der Große ist auch in dem Nibelungen Codex auf der Klosterbibliotheke. Die angefürten Catalogs Numern beziehen sich wol auf den Handschriften Catalog des Priors Kolb, in 2 Foliobänden. Von Arx hat keinen gemacht. Die cantilena bibulorum, möchte wol die zum Volkslied gewordene des Diaconus Walter von Mappes sein, und wird warscheinlich als Lükenbüßer im Codex allein stehen. Münchs Geschichte von Fürstenberg, die ich nun aus Ingrimm zum zweiten Male lese, ist unter aller Kritik; wenn die sem Manne auch nicht der Begriff abgienge von dem was Geschichte schreiben heißt; so wäre er doch wegen seiner ungeheuren Unwissenheit unbedingt untüchtig dazu. Den Ferabras ( einige sagen Fierabras; aber ich meine: Eisen am Arm, Schwert in der Hand, wie man am Bodensee sagt: „ Leder am Schuh " sei eigentümlicher als: stolzer Arm, denn fier heißt doch wol eigentlich stolz, vermessen und die spätere Bedeutung: tapfer, ist schon Umbildung ), also Fierabras habe ich verschrieben, aber noch nicht erhalten. Durch I. Grimm wußte ich schon, daß Sie Lachmann altfranzösische Sachen zur Aufname darein gesendet haben. In dem Meßcatalog finde ich: Tegnér, E., Der Rise Tine. gr. 8 °. Lund. Ist das ein neu entdektes Gedicht? Was enthält denn Wolfs Sammlung historischer Volkslieder. Stuttgart, Cotta, und H. Dörings Galerie teutscher Dichter und Prosaisten, seit der Mitte des XII. Iarhunderts. Gotha, Hennings? Schmeller will mir seine Evangelienharmonie schiken, Lachmann arbeitet an der Herausgabe des Parcival, hat den Ulrich von Liechtenstein in München requirirt, allein, das Ministerium macht Schwierigkeiten, mir hat man eine Abschrift der Lieder daraus angetragen; allein, ich will das Ganze oder nichts. Der im vorigen Sommer in Oberösterreich aufgefundene Pergamentcodex des Nithart, mit 45 Melodien, liegt jezt bei dem alten Benecke zu Göttingen, welcher, wie I. Grimm hofft in bald herausgeben wird, was mich schon darum freut; weil dadurch von der Hagens nichtsnuziges Verfaren in seinen Editionen ans klare Licht gestellt werden wird. Bechsteins Haymonskinder, Simrocks armen Heinrich, Graffs Ottfrid, Ettmüllers Krieg auf der Wartburg und Weiske's Abhandlung: de septem clypeis militaribus hoffe ich bald zu Gesicht zu bekommen. Regnets nicht; so tröpfelts doch! Ueber Wilhelm Grimms Grave Rudolf habe ich eine eigene Idee. Nach seiner eigenen Meinung und der aller Leser, muß der Held ein Teutscher sein. Der König ( Balduin? ) von Jerusalem giebt es selbst zu verstehen: Der Kunic sprach da zestunt. rudolf dir ist wole kunt. vmme den kaiser und vogt von rome. swenne er trage die crone. so hat er hochgezite. sin gezelte daz ist wite. etc. etc. Ich kenne keinen teutschen Graven Rudolf der sich zu dieser Zeit in Syrien befunden hätte, als Grav Rudolf von Pfullendorf, der seine Güter an Kaiser Friederich den Rotbart abtrat und am heiligen Grabe starb. Daß das Gedicht früher einen französischen Frak anhatte, tut nichts zur Sache; die Hofleute zu Jerusalem waren ja lauter Franzoisen. Schade daß das schöne Gedicht zum grösten Teile verloren ist! In Frer Nachbarschaft ist ein Pfarrer Gratianus ( ich denke dabei an das Decretum Gratiani ) zu Sondelfingen, welcher durch ein eigenes decretum, die Pfalzgraven von Tübingen zu Graven von Achalm macht und beide aus Rhätien abstammen lasset. Ich fürchte der Mann schöpft Wasser mit dem Siebe. Sehen Sie den Herrn Prof. Michaëlis der mit Prof. Tafel bei mir war; so bitte ich im zu sagen, daß auch zu Freiburg in der Schweiz eine ser alte Handschrift des Schwabenspiegels sich im dortigen Staatsarchive befindet, welche noch niemal conferirt worden ist. Ich erwarte Fre Weisung, um Inen das Gedicht von Karl dem Großen, wovon Sie das Inhaltsverzeichniß haben, zu senden. Auch nimmt mich wunder, ob Sie nicht Lust haben die Bekanntschaft des Gabriel von Montavel; oder des Ritters mit dem Boke zu machen, das Conrad von Stoffelen, ein Straßburgischer Domher im XIII. Farhundert aus Spanien mitgebracht und übersezt hat. Auch das vermutlich einem lateinischen exemplum nachgebildete Gedicht auf König Oswald von Northumberland, hat einiges Interesse, wäre es auch nur jenes der Legende, aus welcher einiges in Wolframs Wilhelm den Heiligen übergegangen zu sein scheint, welchen ich Inen nach Frem Wunsche hier beilege. Das Gedicht von Oßwald habe ich aus der einzigen mir bekannten Schafhauser Handschrift abgeschrieben. Ich lege auch das Gedicht von Karl dem Großen bei, damit ich durch 2 besondere Sendungen Inen nicht das Porto vermere. Jezt aber schließe ich; sonst würde ich gar nie aufhören an Sie mein geliebter Freund zu schreiben. Der Frau Profes sorin, indem ich dies Wort zum ersten Male schreibe, habe ich meine rote cappa stultitiae ein wenig gelüftet, also der Frau Professorin gutes Angewönen in dem Nekar - Athen; aber sie soll acht geben, daß sie nicht unter die aristophanischen Syracuserinnen fällt. Gott befolen, von Irem Laßberg.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

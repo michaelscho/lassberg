@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-0859">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Ludwig Uhland an Joseph von Laßberg (02.10.1823).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">1986</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 36<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-0859">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0147">Stuttgart</placeName>
+                    <date when="1823-10-02">1823-10-02</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Hochwohlgeborner Stuttgart, den 2. Oktober 1823, Hochzuverehrender Herr Baron! Nur zu sehr fühle ich, wie der Schein des Undanks auf mir lastet, indem ich für alle die Güte, der ich mich bei meinem Aufenthalt in Eppishausen zu erfreuen hatte, so spät erst meinen innigen Dank ausspreche. Die Erinnerung an jene Tage, die mir durch Ihr gastfreundliches Wohlwollen so angenehm geworden, hab ' ich gleichwohl in treuem Herzen bewahrt. Sogleich bei meiner Ankunft zu Hause empfieng mich ein Auftrag, der den Gegenständen, die mich auf der Reise be schäftigt hatten, sehr fremdartig war. Die Rechtsvertheidigung eines wegen Todschlags Angeschuldigten war mir übertragen und nahm mich für geraume Zeit gänzlich in Anspruch. Ich habe Ihnen wohl schon früher gesagt, daß ich eine Darstellung der deutschen Poesie im Zeitalter der Hohenstaufen auszuarbeiten vorhabe. Sie wird in mehrere Abschnitte zerfallen, deren jeder für sich ein kleineres Ganze bilden soll. Mit dem Abschnitt über den Minnesang, der mir einer der schwierigsten schien, hab ' ich die Ausarbeitung begonnen. Diesen Abschnitt hoffte ich im vergangenen Sommer zu beendigen und es wäre mir überaus wünschenswerth gewesen, ihn Ihrer Prüfung unterstellen zu können. Allein eben jene Störung, wie so manche andre, verzögerten den Fortgang der Arbeit: doch trachte ich sehr, solche noch vor Einbruch des Winters zu Stande zu bringen, da mich dieser durch die bevorstehende Einberufung unsrer Ständeversammlung den litterarischen Beschäftigungen fast gänzlich entziehen wird. Darf ich auf so lange noch die mir gütig anvertraute Abschrift des Heidelberg. Codex sammt den Maneßischen Bildern in Händen behalten, so wird dieses meinen Studien sehr zu statten kommen. Die Vergleichung jener Handschrift mit der Weingartner und der Maneß. ist in mehrfacher Beziehung ersprießlich. Dem Abschnitt über den Minnesang soll zunächst derjenige über die einheimische Heldensage folgen. Die Mailathsche Handschrift, welche Sie in dem mich beschämenden Schreiben vom 31. Iul. verlangt haben, wird Ihnen längst durch die Cottaische Buchhandlung zugekommen seyn. Ich selbst habe das Gedicht noch nicht gelesen und mir solches für den Abschnitt über den Fabelkreis Karls d. Grossen vorbehalten, wofür ich schon früher Mehreres gesammelt. Conz, den ich bei einem Besuch in Tübingen gesprochen, ist durch meine Erzählung sehr lüstern geworden, das schöne Eppishausen zu besuchen. Doch hat er diesen Sommer eine Badreise gemacht und will darum den Herbst zu Hause bleiben. Angelegenst bitte ich Sie, mich den achtungswerthen Männern zu empfehlen, die ich in Ihrem Hause kennen gelernt. An Hrn. v. Ittner, der mir so vieles Wohlwollen erzeigt, schreib ' ich be sonders. H. v. Arx wird, wie ich aus öffentlichen Blättern sehe, nunmehr das Gedicht über den Appenzeller Krieg herausgeben. Gerne möcht ' ich mich ihm als Subscribenten nennen. Mit dankbarer Verehrung beharre ich Euer Hochwohlgeboren gehorsamster Diener L. Uhland.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

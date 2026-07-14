@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1420">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Ludwig Uhland (27.02.1830).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">707</idno>
+                        <idno type="register-lassberg">77</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 155<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1420">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1830-02-27">1830-02-27</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Eppishausen, am 27. Hornung 1830. Junk- Mein teurer Uhlandus! hier kommt die Frau frau kaum? Häzlerin, und mit dieser will ich Sie hezen, damit Sie mir den Cod. Wasserburg. quandocius zurüksenden, denn ich habe in meiner Abschrift des Conrad v. Fuozizbrunnen, welche sogleich unter die Presse gehen soll, zwei beträchtliche Feler entdekt, welche one Einsicht der Handschr. nicht hergestellt werden können. Ich befürchte, daß Sie bei Anblik dieser Zeilen ausrufen werden: O he! ecce iterum Crispinus! aber, ich kann mir nicht anderst helfen, und Meister Leonhard in Freiburg treibt gewaltig auf den Conrad v. Fusizbrunnen. Ich hoffe doch, Sie haben mein unterm 29. Januar an Sie abgesendetes Inhaltsverzeichniß v. dem Gedichte über Karl den Großen, von einem Regensburger Mönche, richtig erhalten? Ir ausgesprochener Wunsch: „ die verschiedenen Perioden des alten Gesanges, auch die des Verfalles, so vollständig als möglich kennen zu lernen, " konnte mich allein zur Uebersendung veranlassen. Hofprediger Becker von Donauöschingen hat mir geschrieben, daß er Inen den dortigen Parcifal überschikt habe, und wünscht, daß Sie noch mer Codices aus seiner Bibliotheke verlangen möchten, welche er Inen mit Freude zusenden würde. Schade also daß die dortige Bibliotheke nicht mer Interessantes besizt. - Ich sehe Sie in Gedanken unermüdet an Irer Vorlesung pro captanda et aperienda cathedra beschäftiget, von einer Menge alter Bücher und Handschriften umlagert, manchmal in Irer Stube auf und abschreitend, perlecta mente revolvens, und höre auf einmal Frau Emma rufen: aber Uhland! die Suppe stehet schon lange auf dem Tisch! Unser guter Arx in St. Gallen schwebt seit Weihenachten, wo in ein Schlagfluß getroffen hat, zwischen Leben und Tod und kann nicht sterben: ein zweiter Schlag wird dem Zweifel plözlich ein Ende machen. Seine Stelle an der Bibliotheke kann nicht besezt werden, es ist Niemand da, und ein Herr Henne, den Sie vielleicht als Dichter des „ Divico " kennen, ist wol nicht albae gallinae filius. Man sagt, er suche von Arxens Stelle. Schwab wird Inen gesagt haben, daß auch ich einen Spaziergang über den gefrornen Bodensee machte - seitdeme bin ich nicht mer aus dem Hause gekommen. Husten abgerechnet, ist meine Gesundheit gut und da der Schnee hinweg ist, warte ich nur bis der Auster den Boden aufgetroknet hat, um durch eine tüchtige Ausflucht wieder neue Lebensluft in meine alten Lungen zu pumpen. In der Theotiska ist meines Wissens, ut ajunt, nichts neues passirt. Lezte Woche haben Pupikofer und ich Schwabs Waltharius und den latein. Text mit einander verglichen: aber das sind zwei ganz verschiedene Gedichte! Herr Beker hat mir auch geschrieben, daß der Sigenot irgendwo öffentlich gerümet worden sei. Das wird warscheinlich von Stuttgart aus gegangen sein. Wissen Sie, wo etwas davon stehet, so bitte ich es mir zu sagen, damit ich es dann auch zu lesen bekomme. Der Abdruk hat Fehler und zwar nach einer zweimaligen Correctur! Wenn Sie, mein teurer Freund! mir den Tag melden wollen, an dem sie in Tübingen Ire Vorlesungen eröffnen, so will ich an diesem Tage ein eigenes Tronbesteigungsfest in meinem Hause anstellen. Ich meine man lebt doch etwas freier in Tübingen, als zwischen den Bergen in Stuttgart, und dann tut der schöne Fluß den Augen auch wol; ich freue mich schon zum voraus, Sie einmal in Frem Reiche zu besuchen. Viele herzliche Grüße an Frau Emma und gutes Angewönen in der Vaterstadt. Die Häzlerin bitte ich mir, nach gemachtem Gebrauche, - ich denke Sie werden bald genug dran kriegen — wieder hieher zurükzusenden; denn ich habe noch einige Wächterlieder daraus abzuschreiben. Der von Eselsberg darin ist sicher ein Wirtemberger; aber der von Kaltenbach ist ein Breisgauer, aus der Herrschaft Sausenberg, sie kommen schon im XII. Jarh. in St. Blasianer Urkunden vor. Gott befolen von Frem Laßberg. E. Münchs Gesch. des Hauses und Landes Fürstenberg ist unter aller Kritik.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1485">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Ludwig Uhland an Joseph von Laßberg (26.09.1830).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">2326</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 176<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1485">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0148">Tübingen</placeName>
+                    <date when="1830-09-26">1830-09-26</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Hochverehrter Freund! Tübingen, den 26. Spt. 1830. Nachdem ich vorgestern meine Vorlesungen geschlossen habe und nun erst nach geraumer Zeit wieder zu einiger Ruhe gelangt bin, fällt es mir schwer aufs Herz, wie sehr ich mich diesen Sommer über in Antwort und Dank auf Ihre gütigen Schreiben und Zusendungen versäumt habe. Mein Vorsatz war immer der beste, aber der Störungen so viele. Daß es keine allzu leichte Aufgabe sey, die Geschichte der deutschen Poesie im Mittelalter, ohne vollständige Vorarbeiten, in einem academischen Semestralvortrage abzuhandeln, habe ich mehr als genügend erfahren; außerdem hielt ich ein Stylistikum, welches von Seiten der Studirenden lebhafte Theilnahme fand, aber eben dadurch meine Zeit vielfach in Anspruch nahm. Hiezu die vielen Besuche zum Einstand, eine Wohnungsveränderung, eine Krankheit meines Vaters und manche erfreuliche Zerstreuung durch liebe Gäste so ist mir der Sommer hingegangen und ich begreife kaum, daß er schon vorüber ist. - Von Schönhuth, der nun nach Hohentwiel verpflanzt ist, habe ich kürzlich gehört, daß Sie eine Reise nach dem Gotthard gemacht, von dieser vielleicht kaum wieder zurück sind. Doch scheint Herr v. Harthausen, der mich auf der Durchreise besucht, darauf gerechnet zu haben, Sie wieder zu Hause zu treffen. Unter den Mittheilungen vom Schlosse Riedeck hat besonders der Auszug aus dem Gedichte Partenopier und Meliure, als einem noch unbekannten Werke Konrads von Würzburg, Interesse; er zeigt sich auch hier zu Basel eingenistet. Ein französisches Gedicht dieses Inhalts befindet sich in der Berner Handschrift ( Nr. 113 ), die ich im vorigen Jahre durch Ihre Güte benüßte. Ich würde diese Mittheilungen, nebst andern, hier beischließen, wenn ich mir nicht einige Hoffnung machte, selbst der Ueberbringer derselben und meines Dankes seyn zu können. Schon längere Zeit gehe ich damit um, etwas über altdeutsche Balladen niederzuschreiben. Nur war mir der Vorrath von ächten Stücken dieser Art noch zu gering; wie das Wunderhorn solche giebt, ist bekannt; alte fliegende Blätter mit Volksliedern und die älteren Liedersammlungen sind überaus selten. Ich hoffe nun, wie ich schon früher zu Nürnberg nachgespäht, jekt in Basel und Augspurg mit besserem Erfolge zu suchen. Nach Basel will ich mich in den nächsten Tagen über Freiburg auf den Weg machen; werde ich dort nicht zu lange aufgehalten ( was nur bei einem über mein Erwarten reichlichen Ertrage der dortigen Bibliothek der Fall seyn könnte, ) und wäre die Pfeiffer. Laßberg u. Uhland. Herbstwitterung nicht allzu ungünstig, so wünschte ich wohl den Weg von da am Rhein hinauf, über den Bodensee und durch das Allgäu nach Augspurg zu nehmen und auf dieser Wanderung besonders auch am Thore zu Eppishausen anzuklopfen. Doch vertraue ich, da wir mit unsern Ferien so spät im Jahre sind, noch immer nicht recht auf die vollständige Ausführung dieses Planes. Meine Frau, die mich auf der dießmaligen Reise nicht begleiten kann, weil sie eine Freundin erwartet, die nach langer Abwesenheit aus dem Vaterlande zurückkommt, verbindet ihre besten Grüße mit den meinigen. In unwandelbarer Freundschaft und Verehrung</p>
+            </div>
+        </body>
+    </text>
+</TEI>

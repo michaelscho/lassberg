@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-0990">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Ludwig Uhland an Joseph von Laßberg (11.05.1825).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">2058</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 54<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-0990">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0147">Stuttgart</placeName>
+                    <date when="1825-05-11">1825-05-11</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Stuttgart den 11. Mai 1825. Verehrtester Herr und Freund! Während mein Dank für den zweiten Band des Liedersaals sich auf dem Wege befindet, bin ich bereits mit der ersten Hälfte des dritten beschenkt und erfreue mich des nun bald vollständigen Erscheinens dieser reichen Sammlung, welche nun erst von der fortlebenden Poesie im 14. Jahrhundert lebendiges Bild giebt und auch für den früheren Zeitraum so Manches ergänzt und aufhellt. Ueberaus merkwürdig ist die Sage von den Nachtsfrauen; wichtig mir besonders die Anspielungen auf Nithart, auf ältere Tanzweise u. s. w. In Wallenstein ist ja nun auch eine Nibelungenhandschrift ruchtbar geworden, ein Rosengartenlied, ein provenzalischer Fierabras 2c. Die erstern werden aber bis jetzt sehr unzugänglich gehalten. v. d. Hagen hat um den Weingartner Codex angesucht, vermuthlich um ihn mit der Manessischen Sammlung herauszugeben. Der zweite Theil seines Heldenbuchs ist nun endlich auch erschienen. Doch fehlt noch immer Manches aus diesem Kreise: Alpharts Tod, der Wiener Wolfdietrich 2c. Mit Bedauern habe ich in Ihrem letzten Schreiben keine Bestätigung des Besuchs gefunden, den Sie uns für diesen Frühling hoffen ließen; jene frühere Aeußerung in Erinnerung zu bringen und zugleich für das neue Geschenk herzlich zu danken, ist der Zweck gegenwärtiger Zeilen. Mit aufrichtiger Verehrung und Freundschaft L. Uhland.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

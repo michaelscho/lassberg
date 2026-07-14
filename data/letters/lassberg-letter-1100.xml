@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1100">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Ludwig Uhland (29.06.1826).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">550</idno>
+                        <idno type="register-lassberg">98</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 7<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1100">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0066">Heiligenberg</placeName>
+                    <date when="1826-06-29">1826-06-29</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Verertester Freund! Heiligenberg, am 29. Juny 1826. Meinen besten und innigsten Dank für das große Opfer, das Sie mir mit Verwendung Irer kostbaren Zeit auf Abschreibung des Weingartner Codex bringen: wann und wie werde ich im Stande sein diesen Freundschafts Dienst zu erwiedern? doch, Inen bleibe ich gerne ein Schuldner. Herr Prof. Schwab hat mir von Zeit zu Zeit von dem Fortgange dieser Arbeit Kunde gegeben und mir Hofnung gemacht, sie bis Ende dieses Monats beendiget zu sehen; dann wollte ich zu Inen kommen, Sie besuchen und die Vergleichung mit der Urschrift vornemen. Ein gestern erhaltenes Schreiben des Herrn Prof. tut keine Erwänung von dem Weingartner Codex; ich schließe daraus, daß ich noch nicht kommen soll, und erwarte vorhero noch weitere Nachricht von Im, oder von Inen. Ich freue mich Sie nach so langer Zeit wieder einmal zu sehen und zu sprechen; dann wollen wir die Theotisca leben lassen, in welcher doch noch hie und da etwas getan wird; so muß Inen z. B. Lachmanns Ausgabe vom ältern Münchner Codex des Nibelungen Liedes gefallen haben, da sie uns die älteste Überlieferung desselben, so treu als möglich giebt. Der Ywain des Hartmann von Aue wird nun auch bald erscheinen, durch In und Beneke. In München wollen Sie den Frauendienst des Ulrich von Liechtenstein nach der Handschrift herausgeben. Lachmann schreibt mir, daß er den Walter von der Vogelweide besonders heraus zugeben wünsche: da muß er warten bis die Weingartner Membrane gedrukt ist. Herr Praelat von Schmid zu Ulm, wünschte daß ich die Mörin des Heinrich von Sachsenheim in den Liedersaal aufnemen möchte; ich fürchte das Gedicht möchte wegen seinen vielen örtlichen Beziehungen zu wenig allgemeines Interesse erregen. Ich sende Inen hier: die treue maid von Bodmann; Sie soll mich bei Inen und Irer eheligen Wirtin freundlich anmelden; in meinem Albrecht von Werdenberg ( zu dem ich noch immer die Holzschnitte nicht habe ) erscheint sie, als Episode weitläufiger. Es ist mancher weniger schöne Stof in der neueren Zeit zur Romanze verarbeitet worden: möchte er Sie mein Freund! zu einem guten schwäbischen Lied anregen! Leben Sie wol und schreiben Sie mir bald, daß dem Weingartner apographum, das: Explicit feliciter, ist beigesezt worden. I. v. Laßberg. vollendet zu Constanz am 4. July.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

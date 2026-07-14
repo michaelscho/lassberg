@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-0743">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Ludwig Uhland (16.08.1821).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">391</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 22<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-0743">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0066">Heiligenberg</placeName>
+                    <date when="1821-08-16">1821-08-16</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Hochverehrter Herr! Ich habe vor kurzem die „ Mörin " des Herrmann von Sachsenheim, gedrukt zu Worms 1538 erhalten. Dieses warhaft schwäbische Gedicht hat mich ungemein angezogen. Ist es gleich nicht ( ut ajunt ) aus der besten Zeit, so enthält es doch in Bezug auf Plan, Sprache und Ausführung so viele Anklänge und Anmanungen an die schönen Tage der schwäbischen Blüte Zeit, daß ich es für höchst würdig halte der Welt in einer neuen guten Ausgabe wieder vorgestellt zu werden. Hermann von Sachsenheim soll in Stuttgardt begraben sein. Wo und in welcher Kirche? Ist das Grab noch vorhanden? War Groß Sachsenheim bei Krailsheim sein Siz und Eigentum? und ist er nicht selbst, wie ich vermute, in dem Dienste des Graven von Wirtemberg gewesen? Sie mein hochverehrter Freund! sollten die Bearbeitung dieses Dichters und seiner Biographie übernehmen. Es ist doch beides Eigentum Ihres Vaterlandes und könnte in keine beßere Hände fallen. Ein Büchlein: „ die Minnehöfe des Mittelalters ", Lpzg. bei Brockhauß 1821, hat mir sehr wol gefallen und ist wol bei Weitem das Beste, was bisher über diesen Gegenstand zusammen gestellt worden ist; es ist mir während dem Lesen desselben oft eingefallen, daß Sie wol der Verfasser desselben sein könnten. Habe ich weit vom Ziele geschossen? Ich besize selbst 2 gleichzeitige Handschriften von der Übersezung des Dr. Hartlieb, und hätte Ihnen dieselben zu dieser Arbeit sehr gerne überlassen. Offenbar ist es daß Dr. Hartlieb nicht das Werk des Andreas Capellanus vor sich gehabt; sondern ein anderes, vermutlich eines Italiänischen Schriftstellers, in welches des Magister Andreas Buch de Arte amatoria nur aufgenommen ward. Wäre es in besserm Latein, so würde ich auf F. Petrarca raten. Glauben Sie nicht, daß der König erlauben würde, den Codex Weingartensis der Minnelieder abschreiben zu laßen? Und wie müste man es angehen, um diese Erlaubniß zu er halten? Wenn eine gute neue Ausgabe der Maneßischen Sammelung zu Stande kommen soll ( und man denkt ernstlicher daran als je ) so müßen one Anders die Pfälzische Handschrift Nr. 357 und die Weingartner, als die ältesten Urkunden, dieser Anthologie zum Grunde gelegt werden. Das Gedicht: „ die Minneburg ", von welchem Conz in Tübingen eine Handschrift hat, und von dem ich diesen Frühling aus einer schweizerischen Handschrift eine Abschrift genommen habe; scheint zwar mit Dr. Hartlieb gleichzeitig zu sein, ist aber doch mit dem von Hartlieb übersezten Werke nicht im entferntesten Grade verwandt. Als Gedicht hat es einen nur sehr geringen Wert, und ist mit meinem „ Kloster der Minne ", welches nun im 2. Bande des Liedersaales abgedrukt ist, nicht zu vergleichen. Von diesem Bande sind nun 26 Bogen abgedrukt und ich sehe seiner Beendigung in wenig Wochen entgegen, dann sollen Sie ihn haben. Ich habe in meinem lezten Schreiben Sie gefragt: wie viele Bogen von meinem Nibelungen Liede ich Ihnen übersendet habe? um Ihnen das Fehlende nachsenden zu können. Mit dem 3. Bande des Liedersaales, an den ich mich diesen Winter machen will, wird der Abdruk des Helfensteinischen Codex vollendet, jener meiner Handschrift des Liedes der Nibelungen macht den 4. Band aus; dann möchte ich die beiden Handschriften der Minne Lieder, die Weingartner und die Pfälzische Nr. 357 in dem 5. zusammen herausgeben, wozu mir denn eine gute in Stuttgardt zu nehmende Abschrift unumgänglich notwendig ist. Darum ( würde mich ) denn keinerlei Bewerbung gereuen lassen; nur bitte ich Sie mir den besten Weg hiezu ( anzugeben ). Werden Sie diesen Herbst keine Ausflucht in das alte Sänger Land machen? Auf die Weinlese kann ich Sie nicht einladen, denn, es ist leider mehr als warscheinlich, daß wir heuer keine werden halten können; allein, Sie wißen wol, daß Sie mir zu jeder Zeit der willkommenste Gast wären, nur wünschte ich auch die Zeit Ihrer Ankunft voraus zu wißen, damit ich nicht wie das lezte Mal das Unglük hätte, Sie zu verfehlen. Leben Sie wol, aufrichtig verehrt von Ihrem ergebensten Joseph v. Laßberg. Heiligenberg bei Pfullendorf am</p>
+            </div>
+        </body>
+    </text>
+</TEI>

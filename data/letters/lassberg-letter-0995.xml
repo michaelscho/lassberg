@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-0995">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Ludwig Uhland (30.05.1825).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">506</idno>
+                        <idno type="register-lassberg">141</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 55<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-0995">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0082">Konstanz</placeName>
+                    <date when="1825-05-30">1825-05-30</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Constanz am 30. May 1825. Mein lieber Freund! Explicit feliciter Liedersaals dritter Band; dies habe ich mit Vergnügen ausgerufen, als mir der Buchdruker vorgestern den lezten Bogen brachte. Vorrede und Titelkupfer werde ich nachsenden; indessen kann man das Buch lesen. Die Nachricht, welche Sie mir geben, daß von der Hagen den Weingartner Codex sollicitirt hat, macht, daß ich Morgen in die Villa Epponis zurüffere, um ein Exemplar des Liedersaales zusamenzupaken und bei Irem Könige ebenfalls um besagte Handschrift zu werben. Er ist ja der König der Schwaben und wird wol einem schwäbischen Manne lieber diese Arbeit gönnen, als einem Ausländer. Können Sie durch Freunde und Bekannte Etwas hiebei zu meinen Gunsten wirken; so weiß ich daß Sie es nicht unterlassen werden: es seie denn, daß Sie selbst Absichten auf den Codex hätten, dann tue ich mit Freuden Verzicht auf denselben. Wie wird mir meine liebe Villa vorkommen, one meinen teuren Ittnerus? quis desiderio sit pudor, aut modus, tam chari capitis? incorrupta fides, nudaque veritas! Was machen Sie, wie leben Sie, wo gehen Sie diesen Sommer hin? wüste ichs, ich würde Sie manchmal in Gedanken begleiten. Da ist Jemanden eingefallen, daß in unsern trübseligen Zeiten so gar nichts für die Gemütserheiterung des Volkes getan wird; der meint folgende drei Büchlein in Druk ausgehen zu lassen: I. Eine schöne neue Historia, von einer Künigs - Tochter aus Portugal und einem Graven von Werdenberg, wie er dieselbe aus jres Vaters Hof entfürt, und nach viel ausgestandenen Abenteuern, glüklich in sein Haimat nach Sargans bracht hett. Lustig und anmutig zu lesen, und dem Schwäbischen Volk zu Lust und Lieb, neuerlich ans Liecht gestellt durch Maister Seppen von Eppishusen, einen farenden Schueler. II. Ein schöne, neue und weltliche Historia von Herzog Friederich von Schwaben, wie der eines Künigs Tochter Angelburg genannt, so in einen Hirß verwunschen war, begegnet und dieselbe, nach viel erlittenen Färlichkeiten und Drangsalen, endlich erlöset, worauf sie noch viele Iar mit einander in aller Freud und Einigkeit gelebt und zulezt jre Tag gottselig beschlossen haben. Dem lieben Schwäbischen Volk, zu einiger Gemütsergözlichkeit, und Ler ans Liecht gestellt, und in Druk ausgeben, durch Meister Seppen von Eppishusen, einen farenden Schueler. III. Eine schöne und lerreiche Historia, von eines teutschen Künigs Son, genannt Konradin Herzog zu Schwabenland. Wie der sein väterlich Erb mit Kriegen wieder gewinnen wollt; darüber aber durch Schikung Gottes, in Gefangenschaft und Gewalt Künig Karls zu Napels ficl, und zulezt samt seinem besten Freund, Markgrav Frie derich von Baden, jämmerlich enthauptet ward. Allen redlichen Schwaben zu Nuz, und frommen Seelen zu Trost in betrübten Zeiten, zum ersten mal in Druk ausgeben, durch Maister Seppen von Eppishusen, einen farenden Schüler. Gedrukt in diesem Jar. Nu! ich hoffe, wenn der alte Sepp einmal mit seiner Kräzen auf den Stuttgarter Markt kommt, Sie kauffen jm da auch Etwas ab. Indessen, Gott befolen von Irem I. v. Laßberg.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

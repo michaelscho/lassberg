@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1107">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Ludwig Uhland (05.09.1826).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">554</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 75-78<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1107">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0136">Sigmaringen</placeName>
+                    <date when="1826-09-05">1826-09-05</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Siegmaringen am 5. Septembers 1826. Ich wollte Inen mein teurer Freund! schon vorgestern aus Trochtelfingen schreiben; allein eine Erkältung, welche ich mir auf der Achalm zuzog machte mich zu allem untüchtig. In Tübingen ließ mich der gute alte Conz nimmer los und ich konnte es im nicht versagen, den Abend noch mit im in dem Museum zuzubringen, wo ich die Bekanntschaft des vielseitig unterrichteten Herrn Kanzlers Autenriet machte. Den folgenden Morgen fur ich durch das schöne Nekartal nach Rotenburg um da die alte Samulocensis aufzusuchen: da ich Herrn Jauman nicht zu Hause fand; so blieb mir nichts anders übrig, als mich an den mir vormals wolbekannten Bischof von Evara zu wenden, der sich meiner auch mit so großer Selbstaufopferung annam, dass er Abends bei unserer Heimkunft ganz erschöpft sich zu Bett legen musste. Ich sah manches und halte Leichtlens Behauptung über Samulocenis für hinreichend begründet; ich würde warscheinlich noch mer gesehen haben, wenn ich einen ganz unterrichteten Mann zum Begleiter gehabt hätte. Den folgenden Morgen fur ich an der Musenstadt vorbei nach Reutlingen und bestieg die alte Achalmin, nicht one viele Schweistropfen zu vergießen; mein Fürer ein alter Reichsbürger, gewärte mir gute Unterhaltung, er wusste vieles Geschichtliches von seiner Vaterstadt, manches ganz verkert; aber es war doch erfreulich zu sehen, wie einem sein Vaterort lieb ist. One mich lange bei der neumodischen Majerei aufzuhalten, eilte ich die Stammburg des Hauses zu erreichen, dem ich und meine Vorältern so manches Iar gedient haben; denn Achalm, Urach und Fürstenberg sind zwar drei Namen aber nur eine Sache. Von dem Turme, der vor kurzer Zeit noch zugänglich war, ist im vorigen Sommer die westliche Seite herabgefallen, und von den Eken hat man die behauenen Steine so weit man konnte, heraus gebrochen; rings umher ist nichts als Graus und Verwüstung. Ich sezte mich an die südöstliche Seite, wo die gröste Aussicht ist; durch eine Berglücke der Alpkette erblikte ich den Staufen: warum sol ich über dich klagen, du alte Achalm und deinen Sturz, da auch die hohe Kaiserburg gefallen ist, und die Krone der stolzen Schwaben! Ich gedachte da der ältesten Zeit und wie Kuno und Leuthold, der eine so tapfer als der andere fromm, lebensmüde aus der väterlichen Burg in das Kloster Zwifalten zogen, sich und die Welt da vergessend. Ich dachte an den Wandel der menschlichen Dinge, und wie diese Burg aus einer Hand in die andere kam, und wie Ulrich der son Eberhard des Greiners vermessen herabfiel mit einem Häuslein übermütiger Ritter und den kräftigen Streichen der Reutlinger erlag: mein Fürer zeigte mir die Stelle, wo S. Lienhards Kappel vor kurzem noch stund, und vierzig gefallene Ritter begraben wurden: da trat mich ein langhariges Völklein an, das vor wenig Iaren vom Fusse des ungeheuren Hymmelaja entfürt, in diesen Hügeln angekommen war, die im noch immer fremd zu sein schienen. Ich sollte vielleicht darüber erstaunen: aber ich hatte vor wenig Tagen über den gewölben der alten Burg Wirtemberg die traurigen Gesänge russischer Pfaffen ertönen gehört und es konnte nichts mer meine Verwunderung erregen; nur noch einen wehemütigen Blik warf ich auf den alten erwürdigen Turm, der in wenig Jaren vollends auf dem Boden liegen wird, und stieg wieder hinab durch das reichgesegnete Rebengelände in den sonntäglichen Lärm der gewerbfleißigen Stadt, die ich nach dem Mittagmale wieder verließ. In Pfullingen wollte ich Iren Schwager besuchen; aber er stund auf der Kanzel und streute die heilige Saat des Evangeliums über seine Gemeine, ich ließ eine Zeile des Grußes zurük und eilte den Höhen der Alp zu, von welchen herab mir das Felsennest Lichtenstein schon fernher winkte. Ich hatte mir in Reutlingen die Walter Scottische Nachamung des Herrn Hauff, überschrieben: Lichtenstein, gekauft und unterhielt mich mit diesem Reisegefärten ganz angenem bis Trochtelfingen, wo ich bei dem dortigen Amtmanne einem alten Schulkameraden übernachtete; ich wurde da etwas unpässlich und konnte erst den folgenden Mittag abreisen; auf den Abend traf ich durch das teilweise schöne Lauchert Tal herab, hier bei meinen Kindern ein, wo ich ein par Tage ruhen will. Da haben Sie mein Freund! den getreuen Bericht meimer kurzen, eben nicht ereignissreichen Reise, auf der ich so oft an Sie und Ire liebe eheliche Wirtin gedacht habe und an die Liebe und Freundschaft die ich empfing; nie one Empfindung herzlichen Dankes für den stillen Frieden den ich bei Inen genoß. Sonderbar, daß auch auf dieser kurzen Fart das Glük mich wieder in meinen Forschungen begünstigte und ich in dem Hause des Bischofs von Evara die Heimat eines Schweizerischen Sängergeschlechtes entdeken musste; wie Sie aus der Beilage ersehen werden. Ich denke in ein par Tagen die Ufer des Bodensee'es wieder zu sehen und von der villa Epponis aus Inen weitere Nachricht zu geben. Indessen tausend herzliche Grüße an die wakere Frau Emma, und den biedern Suabo, dem ich nochmals so wie Inen teurer Freund! für die große Hilfe an dem Codex Weingartensis innig danke. Die Frigen, ich meine Herrn Rosner und seine schöne Frau, auch den lieblichen kleinen Gustav, bitte ich von mir viel mal zu grüßen; kann ich Frem Herrn Schwager in der Umgebung des Bodensees oder in der Schweiz entomologische Aufträge besorgen? so werde ich es mit eben so viel Pünktlichkeit als Vergnügen tun. Bitten Sie Schwab in meinem Namen, auch an seine Frau einen schönen Gruß auszurichten. An sein Buch werde ich am ersten Tage meiner Zuhausekunft Hand anlegen und es ime sobald möglich zurüksenden. Vale et me amare perge explicit am Laßbergius.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

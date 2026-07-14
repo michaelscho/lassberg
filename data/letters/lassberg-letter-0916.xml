@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-0916">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Ludwig Uhland an Joseph von Laßberg (13.06.1824).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">2014</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 42-45<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-0916">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0147">Stuttgart</placeName>
+                    <date when="1824-06-13">1824-06-13</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Verehrtester Freund! Wenn ich so spät erst das Schreiben erwidre, wodurch Sie mir diesen Namen gestatten, und wenn ich so lange im Besitz Ihrer gütigen Mittheilungen geblieben bin, so wird mir zu einiger Entschuldigung gereichen, daß ich nun seit mehr als sieben Monaten durch die landständischen Verhandlungen Demjenigen, wohin mich die Neigung trägt, fast gänzlich entfremdet bin. Doch kann ich den Sonntag, den ich im vorigen Sommer zu Eppishausen so angenehm zugebracht, nicht ohne einige Zeilen dankbarer Erinnerung vorübergehen lassen. Die Abschrift der Pfälzer ) Liederhandschrift, die ich mit innigem Dank zurücksende, hat mich in meinen Studien manigfach gefördert. Wenn gleich im Ganzen nachlässig und gedankenlos geschrieben, giebt dieser Codex doch eine Menge neuer Lesarten und berichtigt an vielen Stellen den gestörten Rhythmus, vorzüglich aber hat er manche werthvolle oder literarisch merkwürdige Lieder, die in der Maness. Sammlung fehlen, der Vergessenheit entrissen. Die Zeichnungen aus der Maness. Handschrift sind in mehrfacher Beziehung erläuternd. Manche stammen offenbar aus älteren Handschriften her, namentlich aus der Weingartner. Das Bild Ulrichs v. Lichtenstein ist ohne Zweifel, sammt den Liedern, aus einer Handschrift des Frauendiensts entnommen; Königin Venus erhebt sich aus dem Meere zu Mestre. Mehrere mögen nach alten Siegeln, welche den Ritter in voller Wappnung darstellen, gezeichnet seyn. Die Wappen zeigen, zu welchem von verschiedenen Geschlechtern des gleichen Namens man in so naher Zeit die Sänger gezählt; manche sind aber wohl auch, in Ermanglung festeren Anhalts, nach den Namen aus der Phantasie gemalt. Zu bedauern ist, nach Ihrer Beschreibung, daß Mailaths Handschrift nichts Besseres liefert. Warum nicht lieber weitere Erzählungen des Coloczaer Codex, mit dem nun der Liedersaal in trefflichen Stücken zusammentrifft? Warum geben uns die österreich. Literatoren immer nicht Hartmanns Erek und Enite, Ulrichs Itewiz, den Lancelot, Wolkensteins Lieder 2c.? Warum bleibt der Frauendienst, der ältere Herzog Ernst 2c. in München begraben? und wie Vieles in Heidelberg? Sehr erfreulich ist die Entdeckung des Gabriel v. Montavel. Auch diese Hegänburg tritt nun in den Glanz der Poesie. Neuerlich hat ein gewisser Heinrich Schreiber in der Bibliothek des protestant. Seminars in Straßburg die Handschrift einer älteren, als Rudolfs, Alexandreis gefunden und davon in der Zeitschrift „ Charis " Proben gegeben. Solche Stücke aus dem 12. Jahrhdt., mit unvollkommenen Reimen, wie der alte Tristan 2c. scheinen mir, wenn gleich einem ganz andern Kreise angehörend, über das Alter des Nibelungenlieds mehreres Licht verbreiten zu können. Von Méons altfranzösischen Fabliaux sind zwei Supplementbände erschienen. Aber noch immer geben die Franzosen ihr Bestes nicht, die Heldengedichte von Karl d. Großen und die romantischen Erzählungen, nach denen unsre Aventürendichter gearbeitet. Die Berner Bibliothek enthält Mehreres dieser Art. Mit Sehnsucht sehe ich der Zeit entgegen, die mir gestatten wird, der alten vaterländischen Dichtkunst wieder einige Musse zu widmen. Das Nächste wird dann wohl seyn, daß ich den Aufsatz über den Minnesang, wovon ich Ihnen schon früher gemeldet, ins Reine bringe. Sie haben wohl längst wieder das schöne Eppishausen bezogen und werden auch wieder von den Gästen des vorigen Jahrs besucht, denen ich mich freundlich zu empfehlen bitte. Mit aufrichtiger Verehrung und Freundschaft Stuttgart, den 13. Jun. 1824. der Ihrige L. Uhland. NS. Den Milon ( in der Weing. Hds. Meinlo ) von Sevelingen möchte ich doch in Söflingen suchen. Wenn ich nicht irre, kömmt ein solcher in der urkundl. Geschichte der Grafen von Kirchberg ( worunter auch ein Minnesänger ), welche im vorigen Jahre von der Münchner Akademie zum Druck befördert worden, als Zeuge vor. Prälat Schmid hat mir folgende Notiz mitgetheilt: „ Milon v. Sevelingen. Vermuthlich Meinlohus v. S., „ Ministeriale des Gr. Hartmann v. Dillingen, S. Lang „ Regesta Boica z. I. 1240. Es dürfte derselbe Men- „ lochus, ein Ritter seyn, der nach dem Lagerbuch des „ Teutschen Hauses in Ulm dem Orden die Kirche und „ die Wohnung daselbst gegeben hat, und dessen Todes- „ tag im Kalender dieses Ordenshauses bei dem 25. Okt. „ bemerkt ist. " Nach meiner Ansicht hat der Minnesänger Meinlo lange vor 1240 gesungen, er gehört zu den Trefflichsten des ältern Styls. Aber die Namen gehen ja in diesen Geschlechtern immer vom Vater auf den Sohn. Dietmar v. Ast stammt nach Docen aus dem Thurgau. Ich habe bei Arx und Andern, auch in der Vorrede des Liedersaals, nichts darüber gefunden.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1504">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Ludwig Uhland (27.12.1830).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">752</idno>
+                        <idno type="register-lassberg">350</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 178<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1504">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1830-12-27">1830-12-27</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>der Ihrige L. Uhland. Eppishausen am 27. Xbers 1830. Mein teurer Uhland! Vergebens warte ich auf eine Gelegenheit mein Paket nach Siegmaringen und von da nach Tübingen zu bringen: da am Ekken liet erst 5 Bogen gedrukt sind und keine Hofnung vorhanden, es auf Neujar versenden zu können; so muß nun mein Nibelungen Lied und Kochs Compendium an die Stelle tretten und das schon Gegebene als Lükenbüßer erschei nen. Ich glaube daß es nicht bald einmal so nötig war einander zum neuen Jar Glük zu wünschen; denn nie werden wir es mer brauchen als im nächstkommenden Sare; die politische Cholera macht noch schnellere Reisen als die phisische, und die Gesundheitsumstände unserer kaum 32järigen Thurgauischen Republik müssen ser bedenklich sein, da man lezthin nicht weniger als 20, sage zwanzig Aerzte und Tierärzte in den großen Rat gewälet hat. Gott habe den armen Pazienten in seiner gnädigen Obhut! Mich verlangt ser zu hören, was Sie auf Irer Liederjagd für Beute gemacht haben? - Wenige Tage nach Trer Abreise erhielt ich aus der Verlassenschaft des Prof. Rudolf Wyß zu Bern 8 Quartbände und einen Folioband handschriftlicher Schweizer Lieder, welche er vom Jare 1809 an gesammelt hat. Seine Wittwe sendet mir solche, um meinen Rat zu vernemen, wie sie am vorteilhaftesten für seine Kinder könnten verwertet werden? Ich habe nur erst eine ser flüchtige Durchsicht derselben vornemen können; es sind meist historische und großenteils Kriegs- und Schlachtgesänge; aber keines, das über das XIV. Jarhundert hinauf reichte. Ich habe im Sinne ein Register darüber zu machen, und dann werde ich Inen mer davon erzälen können. Glauben Sie nicht daß Cotta vielleicht Lust bekommen könnte, die ganze Sammlung zu kaufen? Einen solchen Reichtum von Liedern wird man wol sobald nicht wieder zusammen bringen. Zugleich erhielt ich einen Querquartband schöner, fröhlicher, frischer, alter und neuer teutscher Liedlein. Gedrukt zu Nürnberg, durch Johann von Berg vnd Ulrich Newber. 1552. Die Melodien sind überall dabey, aber von den Liedern immer nur die erste Strophe: ich denke aber daß sich der Text wol aus den Meusebachischen Sammlungen ergänzen ließe: ich habe 323 Lieder gezählt und ser hübsche Sachen darinnen gefunden. Soll ich Inen diesen Band schiken? Jezt aber hätte ich Les Poëts français wieder auf kurze Zeit nötig und bitte Sie mir sobald Sie solche entberen können, zu schiken. I. Grimm hat mir seine aus einem Juniusschen Codex zu Oxford herausgegebenen Altteutschen Hymnen geschikt, welche eine ganz Notkersche Phisiognomie haben. Dies ist eine schöne invitatio ad lectiones; aber ich möchte lieber bei Inen die Nibelungen hören. Dem Episcopatus Constantiensis ſtellen 12 * sich aufs neue Hindernisse entgegen; Herr von Cotta, der sich so bereitwillig zeigte, hat dem Buchdruker noch immer den Contract nicht unterzeichnet,. den er doch in einem Schreiben an mich gebilliget hatte; aber, ich lasse nicht nach, es muß doch zum Druke kommen. Leben Sie wol, grüßen Sie aufs freundlichste die Frigen von mir und bleiben Sie auch im neuen wie im alten Jare gewogen Frem I. Laßberg.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

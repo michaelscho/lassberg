@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-0706">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Ludwig Uhland (16.02.1821).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">381</idno>
+                        <idno type="register-lassberg">80</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 15-18<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-0706">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1821-02-16">1821-02-16</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Wolgeborner, hochverehrter Herr! Wenn Sie die Hälfte des Unmutes, den ich während des vergeblichen Suchens nach Walter v. der Vogelweide in meinen Collektaneen empfunden, kennten, so würden Sie Mitleid mit mir haben und mein langes Stillschweigen entschuldigen. Ich wuste, daß 16. Horn. 1821. ich mehreres über ihn aufgeschrieben hatte, und auch ungefär, wo die Blätter in meinem Schreibzimmer liegen sollten; allein, nachdem ich Alles zu unterst zu oberst gekeret hatte, fieng ich erst an zu zweifeln und durchsuchte in meinem Schriften - Kasten mehr als 60 Faszikel. Nichts fand ich mehr, als die wenigen Blätter, die ich Ihnen hier beilege: aber auf eine andere traurige Entdekung kam ich dabei. Ein ganzer Faszikel, worin sich mehr als 30 pergamentne Bücherdekel befanden, lauter Fragmente altteutscher Gedichte und Chroniken, sind zum Teufel und da ich vergangenen Früling einen sogenannten reisenden Gelerten einen ganzen Vormittag in meinem Studio allein schreiben ließ, so kann ich nicht anders glauben, als daß der Czernibog ihm Dieselben nebst einem kleinen Pak Notizen über die Thurgauer Sänger muß beim Weggehen in den Sak geschoben haben. Nemen Sie mit dem Wenigen hier Folgenden vorlieb, es tut mir leid, daß es nicht mehr ist. Ich wollte Ihnen nicht von St. Gallen einige dort noch vorhandene Traditiones kommen laßen, nach welchen die Vogelweider bei Handänderungen und Güter - Verkäufen, von der Mitte des XIV. biß in die Mitte des XV. Jarhunderts in öffentlichen Urkunden vorkommen, da ich vermutete, daß sie zu ihrem Zweke nicht taugen. Walter starb, warscheinlich unverheuratet, im Auslande ( Würzburg ), seine Verwandten mögen unbemittelt, wie hier zu Lande Beispiele genug davon vorhanden sind, sich in der Folge des Adels abgetan und einen Guts - Namen angenommen haben. Wenn Sie diese Blätter nicht mehr brauchen, so bitte ich mir sie einmal zurükzusenden. Das Wappen von Singenberg ( jenes von Walter habe ich Ihnen schon gesendet ) habe ich den Abzeichnungen aus dem Pariser Codex der Maneßischen Sammelung die ich habe, nachgezeichnet; es stimmt auch mit den St. Gallischen Siegeln überein. 16. Horn. 1821... Für das gütige Anerbieten mir Renouard Choix des Troubadours zu leihen, danke ich vielmal; ich besize es schon seit leztem Sommer, wo ich es auf der großen Bibliothek zu Stuttgard zum ersten Male sah. Schade daß seit dem 3. Bande nichts mehr erschienen ist! Ich besize 2 Handschriften von des Dr. Iohann Hartlieb Übersetzung der Ars amatoria &amp; de reprobatione Amoris, des Magister Andreas Francorum aulae regiae Capellani, wovon Aretin in seinen Aussprüchen der Minne - gerichte nur einen Teil herausgegeben hat, und welche für diesen Teil der poetischen Literatur des Mittelalters so wichtig sind. Eine meiner Handschriften ist eine Wiener und mit Dr. Hartlieb gleichzeitig. In der Folge dürfte ich mich vielleicht der Herausgabe des Ganzen unterziehen. Indessen rükt mein Liedersaal fort, am 2. Bande wird fleißig ge drukt und ich hoffe im Laufe dieses Jares auch noch den 3. zustande zu bringen, diese sind noch immer aus der nämlichen Handschrift, aus welcher der Erste. Das Nibelungen Lied, welches nun vollendet, und von welchem ich Ihnen nächstens die lezten Bogen senden werde, macht den IV. Band aus. Herrn v. der Hagens neueste Ausgabe hat mich überzeugt, daß er meine Handschrift in Heiligenberg nicht so benuzt hat, daß meine Ausgabe dadurch überflüßig geworden wäre; überhaupt war es nötig einmal einen reinen, vollständigen und unverfälschten Abdruk einer guten Handschrift zu haben, da Alles bisherige nur zusammengestoppeltes Flikwerk war, und es däucht mich unglüklich zu sein, daß es gerade eine Handschrift getroffen hat, welche vor Allen übrigen sich so sehr auszeichnet. Leben Sie wol, und verzeihen mein langes Schweigen, es hatte seinen Grund bloß in dem Wunsche, mein Wort zu halten und Ihnen Etwas über die Thurgauische Sängerschule zu senden. Noch eins! ich habe entdekt, daß um die Mitte des XIII. Far- hunderts hier in meinem Hause ein Sänger gelebt hat. Conrad von Helmsdorf schrieb eine teutsche Reimbibel; oder war vielleicht der Continuator von der Welt - Chronik des Rudolph von Ems. Im Literator celta des Löscher. Lipsiae 1726. 8 °, soll Meldung von ihm geschehen; wer mir das Buch brächte, dem wollte ich gerne eine Tagweide weit entgegen gehen. Leben Sie wol, empfelen Sie mich den Herrn Herrn Haug und Lebrêt, was macht Ihr Conradin? Eppishausen bei Constanz am 16. Hornungs 1821. Ihr ergebenster I. v. Laßberg.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

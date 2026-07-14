@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1346">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Ludwig Uhland (14.08.1829).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">667</idno>
+                        <idno type="register-lassberg">196</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 137-40<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1346">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1829-08-14">1829-08-14</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Eppishausen, am 14. August 1829. Ich habe, mein teurer Freund! Ir Schreiben vom 3. August am 11. in der Villa erhalten, eben als ich im Begriffe war für den guten Gevatter Grimm eine schon jarelang von im vergebens gesuchte Dorföffnung ( worin oder woraus das so viel besprochene Jus primae noctis diplomatisch erwiesen wird ), die ich in Zürich aufgetrieben, abzuschreiben. Sogleich legte ich alles bei Seite und nachdeme ich Iren Brief gelesen hatte, machte ich mich an den Codex Bernensis, und fand one vieles Nachsuchen die befragliche Stelle an dem von Inen nachgewiesenen Orte. In Fren Abschriften stand sie nicht; denn da ist eine Lüke von Fol. 95 bis 113. In Iren Excerpten fand ich zwar die Abenteuer von dem bei den Füssen aufgehängten Bagomedes; allein, nicht vollständig und glaubte daher sie ganz abschreiben zu müssen. Sie werden sehen, daß die histoire literaire eine Handschrift anderer Recension anfüret und ich gestehe daß mir jener Text besser gefällt als der Berner. Von Irer glüklichen Heimkunft hatte ich schon durch Schwab Nachricht und freue mich nun von Inen selbst zu vernemen, daß Sie nicht bedauren den Weg über meine Vaterstadt genommen zu haben und Herr Bekker so gefällig sein will Inen den dortigen Parcival zu senden. Die Stelle der Chronik von Zimbern, wo der alte Werner von Zimbern auf seiner Burg Wildenstein mit seinem Kaplane Verse auf Dietrich von Bern machte, findet sich nicht in dem pergamentenen Concepte dieser Chronik, welches auf der Bibliotheke stehet; sondern in dem ausgeführten Werke des Joh. Müller, welches sich im fürstlichen Archive in 2 auf Papier geschriebenen Foliobänden befindet; ich werde jm aber die Stelle so beschreiben, daß er mit einiger Geduld sie gewiß auffinden soll. Zugleich mit Frem Briefe erhalte ich von Varentrapp aus Frankfurt Reliques of ancient Poetry. Frankfort. printed for Varrentrapp and Wenner. 1803. 3 Vol. in 8vo one sie bestellt zu haben und weiß auch nicht, wer mir sie bestellt hat? vielleicht der gute Oberst Hoevel, der hier war wärend Frem Besuche. Indessen neme ich das von Inen für mich gekaufte Exemplar mit Dank und Vergnügen an; vergessen Sie nicht mir auch den Preis zu bemerken. Es wird mir immer eine liebe Erinnerung an den guten Haug sein. Zwei Tage nach Frer Abreise kam, da ich eben den Wanderstab ergreiffen wollte, ein Herr Dr. Mejer von Zürich zu mir, der eine Ausgabe des Quinctilian bereitet und meine Handschrift dazu benuzen wollte; alsbald nach diesem besuchte mich der beste aller Aurelier, der sprachkundige auch Inen bekannte Joh. Caspar von Orelly aus Zürich, welcher 8 Tage hier über meinen ciceronianischen Handschriften saß und nun in der Bibliotheke zu St. Gallen sizt. Wärend dieser Zeit schrieb ich aus dem Codex Wasserburgensis Maria Leben und Jesus Kindheit von Conrad von Fuozizbrunnen 3047 Verse für den Professor Hug in Freiburg ab, welcher dieses Gedicht in seiner Zeitschrift für das Erzbistum will abdruken lassen, ich habe es jm schon überschikt. Vielleicht erwekt es bei irgend einem jungen Geistlichen Liebe für unsere alte Literatur und Sprache! Sie sehen, mein teurer Uhlandus! daß ich seit Irer Abreise weder meine vorhabende See- und Landreise antreten konnte, noch dabei müßig war. Auf heute hat sich ein poëtischer oder halbpoëtischer Pfarrer aus dem Thurgau bei mir ansagen lassen da komme ich denn wieder nicht fort, und doch fordert meine Gesundheit notwendig eine Ausflucht und Luftveränderung. Wasserburg liegt mir auch gewaltig in dem Sinne, und es würde mir unendlich leid thun, wenn ich post festum dahin käme. Nun, wir haben immer noch schöne Tage zu erwarten und das schöne Wetter sollte jezt erst kommen. Schwab will mir die Freude machen mit seiner Frau in den ersten Octobertagen zu mir zu kommen, den Sigenot abschreiben und in wie den Waltarius bearbeiten; wenn nur kein Hinderniß dazwischen kommt! Aurelius tigurinus kannte den Waltarius noch nicht, ich habe jm meine Abschrift noch am lezten Abende seines Hierseins vorgelesen, und er hat mir ser gute und scharfsinnige Conjecturen über den Text desselben mitgeteilt. Follen will die 4 Heymonskinder, wozu ich jm eine Heidelberger Handschrift verschaft habe, in einem gleichgroßen Epos bearbeiten. Meusebach hat mir einen gar interessanten Brief geschrieben; von der Hagen, welcher nun hat, was er von mir verlangte, schweigt. Der komische Hamelburger Lang zu Ansbach schrieb mir einen langen historisch diplomatischen Brief, er arbeitet an etwas 8;; sagt mir aber nicht was. Ich hoffe in noch zu bereden, daß er ein Register zu seinen 5 Bänden Regesten macht, one welches das Werk ser beschwerlich zum Nachschlagen ist. In der Theotisca ist mir nichts neues vorgekommen. Haben Sie denn den in Jena erschienenen König Laurin schon gelesen? was ist daran? Ich bin recht frohe daß die treffliche Frau Emma jre Reiseflügel bis nach Würzburg getragen hat; die Lage dieser alten Stadt ist wunderschön, und, was freilich uns merkwürdiger ist, als einer Frau, der Leistenwein, der würzigſte unter allen teutschen Weinen; daher tragt sie mit Recht den Namen Würzburg; denn um die alte Burg wächst diese Würze. Viele herzliche Grüße an Sie lieber Freund! und an Ire eheliche Wirtinne von Frem aufrichtigen Freunde I. Laßberg. Mit vielem Danke sende ich Inen hier Fre scripta und daneben noch ein kleines Büchlein, das mir geschenkt worden.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

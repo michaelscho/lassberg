@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1374">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Ludwig Uhland (28.11.1829).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">681</idno>
+                        <idno type="register-lassberg">247</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 149-52<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1374">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1829-11-28">1829-11-28</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Eppishausen, am 28. November 1829. Hier kömmt endlich, mein teurer Uhlandus! die Handschrift von Wasserburg. Möge sie Inen so viel Vergnügen machen, als sie mir gemacht hat. Wilhelm von Orlenz ist ein herrliches Gedicht, one Zweifel das beste, das der so fruchtbare Rudolf von Ems gemacht hat. Für mich hat er Spracheigenheiten, die äußerst schäzbar sind und warscheinlich in den späteren Abschriften verloren giengen. Ich halte mein Exemplar für ein noch bei Lebzeiten des Dichters gemachtes; er starb unter Kaiser Conrad IV. in Italien, und der Kaiser selbst schon 1254, 21. May. Das Leben Mariä und Jesus Kindheit, den Sigenot und Ekken Ausfart, habe ich abgeschrieben, gegen 7000 Verse; ersteres wird Hug in Freiburg im 5. - 6. Hefte seiner geistlichen Zeitschrift herausgeben. Wenn Sie die Handschrift benuzt haben; so bitte ich mir solches zu sagen; ich werde Inen dann einen Brief für Benecke zuschiken, damit Sie im dieselbe nach Göttingen senden können, wo bis dahin auch Jacob und Wilhelm Grimm als Bibliothecare aufgezogen sein werden, ersterer zugleich als Professor ord., wie Sie aus meinem Briefe an Schwab des breitern ersehen werden. Aus meiner Bergreise ist diesmal nichts geworden. Mein Haus wurde vast nie von Besuchenden leer, und dann war das Wetter für Fußgänger auch gar zu schlecht. Ich habe Inen wol noch nicht gesagt, daß mir Wilken aus Berlin das Liederbuch der Häzlerin 1470 zugeschikt hat. Es enthält einige schäzbare Sachen aus der Zeit da das Minnelied in das Volkslied übergieng, aber doch nur weniges, der größere Teil ist eben so elend als schmuzig, so daß man nicht begreifft, wie eine weibliche Feder sich mit solchem Wuste befassen konnte, wenn sie nicht einer ἑταίρα angehörte. Das Buch ist also keiner vollständigen Abschrift wert. Einzelnes werde ich mir denn daraus abschreiben. Mein ieziges Geschäft ist der Episcopat. Constant. des seligen Trutpert Neugart, zu welchem ich einen Verleger suche, worüber Inen Schwab aus meinem Briefe mereres sagen wird, und wozu ich auch Sre bona officia in Anspruch neme, und zwar nicht blos in meinem, sondern im Namen des gesammten Vaterlandes, besonders Schwabens, und ich denke das lezte Wort reicht schon hin meinen wakern Uhland zu entzünden. Es wäre doch iammerschade wenn diese Geschichte ungedrukt bliebe. Videant ergo consules, ne quid detrimenti capiat res publica! - Nun aber, lieber Freund! zürnen Sie mir nicht, wenn ich auch einmal nach dem Fortgange Ires Werkes über die teutsche Heldensage und den Minnesang frage. Während Ires Hierseins, ich gestehe es, erwartete ich hierüber einige Mitteilung; denn ich wußte, daß Sie schon Andern einige Abteilungen daraus vorgelesen hatten: allein Sie schwiegen, und so getraute ich mich nicht davon anzuheben: nun aber da man allgemein weiß daß Ir Buch schon ser weit vorgerükt ist und selbst aus dem Norden hierüber Anfragen an mich geschehen, wage ich es mich zu erkundigen, ob wir nicht bald etwas von Irer Arbeit zu sehen bekommen. Sie haben mit Irem Walter von der Vogelweide alles auf dies noch nicht bearbeitete Feld unserer Literatur aufmerksam gemacht; aber nicht nur auf dieses; sondern eben so ser auf Sie selbst, da man nun sah, was Sie hierinn im Stande sind zu leisten. Ich, dem Ir literarischer Rum nicht weniger am Herzen liegt, als mich Ir bürgerlicher erfreut; bin also wol zu entschuldigen, wenn Inen meine Anfrage auch etwas zudringlich vorkommen sollte: wäre das? so sehen Sie solche als nicht geschehen an. Des biedern Schwab und seiner geistreichen Frau Besuch, hat mich über die maßen erfreut, und ich habe um so größern Genuß davon gehabt, als das abscheulichste Wetter uns alle die Tage ihres Hierseins in die Stube zusammen gesperrt hat. Dies klingt zwar eigennüzig; aber ich hoffe meine lieben Gastfreunde sind überzeugt, daß ich mit nicht weniger Freude mit Inen in dem alten Sängergaue herumgefaren wäre, wenn es der Jupiter pluvius erlaubt hätte. Wir haben, wie das zu geschehen pflegt, wenn man über Tische frölich ist, nach Berechnung der geringen Kosten, auf das künftige Iar eine Reise nach Mayland ( 3 Tagreisen von hier ) ausgemacht, wobei Sie lieber Freund! und Frau Emma das 2te Par und ich das fünfte Rad am Wagen ausmachen würden. Was sagen denn Sie zwei dazu? - Möchte doch aus dem Schimpf Ernst werden. Ir Herr von Aufseß hat an mich geschrieben; das erste Mal wars, um meinen Liedersaal zu haben, den ich im auch sandte, dann schrieb er mir einen wie es scheint herzlichen Brief, und will um meine nähere Bekanntschaft zu machen, mich sogar besuchen. Was er will; oder was er eigentlich kann? ist mir aber noch nicht klar. Vederemo! In Irem nächsten Briefe hoffe ich zu erfaren: ob ich Inen zum Professor oder zum Bibliothecar Glük wünschen soll? Eines und das andere wäre mir lieb, lieber das erstere; aber secundum leges baiuvariorum vivere, möchte ich meinen guten lieben Uhland nicht gerne sehen. Leben Sie wol und grüßen Sie aufs herzlichste die wakere Frau Emma, von Trem L. Laßberg.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

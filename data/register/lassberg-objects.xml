@@ -1,2 +1,41 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-register-objects">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Physische Gegenstände ohne (bekannten) Textinhalt, die in der
+                    Laßberg-Korrespondenz erwähnt werden</title>
+                <respStmt>
+                    <name xml:id="MiS">Michael Schonhardt</name>
+                    <resp>Konzeption, Datenmodell und Kodierung nach TEI</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Born digital. In Vorbereitung.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digital. Erstellt aus der Analyse der Laßberg-Korrespondenz.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <list>
+                <object xml:id="lassberg-object-0001" ana="needs-review">
+                    <objectIdentifier>
+                        <objectName>Elfenbeinernes Reliquienhorn (Geschenk Abt Burkharts)</objectName>
+                    </objectIdentifier>
+                    <desc>Elfenbeinernes Reliquienhorn mit Inschrift; laut Canisius (Tom. II, Part.
+                        III, Pag. 230, Anm. a) von Abt Burkhard (../register/lassberg-persons.xml#lassberg-correspondent-0483)
+                        gestiftet.</desc>
+                    <note type="review" resp="#check-letter-annotations">Neu angelegt bei der
+                        Prüfung von Brief 1165 (lassberg-letter-1165.xml, 02.04.1827) — erste
+                        Nutzung des Objektregisters. Laßberg erwähnt die Inschrift dieses
+                        Reliquienhorns als Fundstelle für die Abstammung Burkharts vom Grafen
+                        Ulrich von Linzgau, Buchhorn und Montfort. Kein Standort/keine Sammlung
+                        bekannt. Quelle: Brief 1165, bestätigt 2026-07-14.</note>
+                </object>
+            </list>
+        </body>
+    </text>
+</TEI>

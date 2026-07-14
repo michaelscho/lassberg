@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1518">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Ludwig Uhland an Joseph von Laßberg (13.02.1831).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">2343</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 189-92<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1518">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0148">Tübingen</placeName>
+                    <date when="1831-02-13">1831-02-13</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Verehrtester Freund! Tübingen d. 13. Febr. 31. Mit Ihrem neuesten Schreiben ist mir, wie mit jedem, wieder viel Erfreuliches und Dankwerthes zugegangen. Die Doceniana habe ich mir sogleich abgeschrieben und sende sie sehr dankbar hiebei zurück. Ich werde nun diese Notizen erst genauer mit den meinigen vergleichen und dann auf dem mir von Ihnen so gütig gezeigten und gebahnten Wege das Weitere versuchen. Das alte Liederbuch behalte ich noch bei Handen, um mir Auszüge daraus zu machen. Im Vergleich mit mehrern alten Musikalienbüchern dieser Art, die ich zuletzt in Basel benützt, finde ich in dem Ihrigen manches für mich Neue und Interessante, Auch stehen darin manchmal 2 oder mehr Strophen, wo die andern nur eine geben, und so kommt man doch immer um einen Zug weiter. Musikalisch erwarten diese Sammlungen auch erst ihre Würdigung; die Lieder scheinen zwar von den benannten Meistern neu componirt zu seyn, aber es bleibt doch die Frage: ob die neuen Compositionen etwa doch nur Umsetzungen und Ausstaffierungen alter Volksweisen seien. Was Sie über das Lied vom Tanhäuser schreiben, ist mir sehr merkwürdig; es ist mir nicht bekannt, daß man schon eine Melodie davon kenne, und wohl möglich, daß das Lied selbst im Volksmunde sich theilweise besser erhalten hat, als wie es in den Drucken des XVI. Ihd. vorkommt, wo es offenbar schon etwas trocken geworden ist. Aventin führt schon als Sprüchwort an: „ Den alten Danhauser singen, " und nun wird also im Canton Luzern noch immer der alte Tanhäuser gesungen. Von Ihrem Erbieten, mir die Wysschen Liedersammlungen auf 3 Wochen anzuvertrauen, mache ich mit Freuden Gebrauch. Es ist mir nicht nur wichtig, näher einzusehen, was denn der sel. Wyß in so großer Fülle zusammengebracht hat, sondern es wird sich auch nach genommener Einsicht mit Schwab bestimmter über die Sache ſprechen lassen. Ich weiß nicht, ob Sie es billigen, aber ich konnte mich nicht enthalten, heute an Schwab zu schreiben, daß er doch den jungen Cotta, der sich für den Episcopatus Constant. zu interessiren schien und den Namen seines Vaters auf dem Titel wünschte, bemerken möge, welche ärgerliche Stockung dieses so verdienstliche Unternehmen erfahren mußte. Graffs althochdeutschen Sprachschatz halte ich für ein den deutschen Studien geradezu unentbehrliches Werk. Leider aber wüßte ich, sowie jetzt die Sachen stehen, für unsere Gegenden nur auf drei Abnehmer mit Sicherheit zu zählen: mich selbst, die öffentl. Bibliothek in Stuttgart und etwa noch die hiesige Universitätsbibliothek. Man zeigt wohl Lust am vaterländischen Alterthum, aber man will keine Bretter bohren und noch Geld dazu aufwenden, Ein paar andere Liebhaber kann ich vorerst nur als wahrscheinlich be zeichnen. Doch wäre, wie Sie bemerken, vor Allem nöthig, daß Graff einen bestimmten Prospectus gäbe. Den Otfried, worauf ich subscribirt, habe ich noch nicht erhalten. Die Blätter vom Archivar Stülz, welche Sie zurückwünschen, werden sich, wie ich hoffe, bei Ihnen vorfinden; ich habe sie bei meinem Besuch im Herbste zurückgebracht. Sie waren mit meinen Basler Collectaneen zusammengepackt und sind sorgfältig in Acht genommen worden. Gleichwohl habe ich in meinen Papieren nachgesucht, aber wirklich nichts vorgefunden. Was darunter von Conrads von Würzburg persönl. Verhältnissen in Basel vorkommt, war mir besonders merkwürdig. Aus Anlaß des Docen. Nachlasses bemerke ich doch noch Folgendes: Docen sagt in seinen Miscellan. Bd. 1. S. 69: „ So habe ich noch unlängst ein Fragment aus einem Rittergedicht in leoninischen Versen entdeckt, wo die Namen Nudlieb, Immunch, und der Kampf des Ersten mit einem Zwerge ( nanus ) vorkommt. " V. d. Hagen hat im Grundriß, Einleit. S. XXIV. Nr. III., diese Notiz aufgenommen und in dem latein. Gedichte die Uebertragung eines deutschen Heldenliedes vermuthet. W. Grimm führt in seiner d. Heldensage die Namen Rudlieb und Immunch nicht auf. Nun zeigt aber Ihre Handschrift von Ecken Ausfahrt, in den beiden Strophen, welche den bisher bekannten Recensionen des Liedes fehlen, pag. 137: De sw't de was vil lank u'holn etc. und: Sus wůhs h'port ze ainē mā etc. den rechten Zusammenhang. Hier finden wir den König Rudlieb zusammt dem nanus. Wir erfahren aber auch, daß Rudlieb der Vater Herborts war, und damit ergiebt sich die Anknüpfung an die in der Vilkina Sage er zählte und im Gedichte von Biterolf und Dietleib angedeutete Herbortssage ( worüber Grimm's Register, unter Herbort, die nöthigen Nachweisungen liefert ). Auch den Namen des Riesen, den Herbort erschlagen: Huge bold, erfahren wir aus Ihrem Eckenliede. So eröffnen sich immer weitere Blicke in den einstigen Reichthum unseres deutschen Sagenkreises und wo so Vieles verloren ist, kann auch noch Manches wieder gefunden werden. Wir haben hier auch unsre Revolution gemacht. Seit 6 Jahren bestand für Tübingen eine außerordentliche Landjägerpolizei. Alle vernünftigen Vorstellungen dagegen waren vergeblich. Die Verwundung eines Weingärtners durch einen Landjäger hat nun aber auf einmal eine solche Gährung erzeugt, daß die Landjäger in der Nacht abziehen mußten. Sie kamen zwar pro forma auf 14 Tage, unter Gewährschaft der Bürger für ihre Sicherheit, zurück. Es wurde aber zugleich das Versprechen gegeben, daß nach dieser Zeit eine andre Polizei eintreten solle, was nun auch geschehen wird. Mit Bedauern habe ich gehört, daß Ihr Herr Sohn in Sigmaringen in neuester Zeit sehr an seiner Gesundheit leide. Von Herzen wünsche ich, daß Ihnen hierüber beruhigende Nachrichten zukommen mögen. Mein Vater, dessen Sie sich freundlich erinnern, ist zwar nicht eigentlich krank, aber doch sehr entkräftet, so daß er diesen Winter meist im Bette zubringt und mir oft große Sorge macht. Die Hoffnung, die Sie uns zu einem Besuch im Laufe des nächsten Sommers geben, bitten wir recht sehr, in Erfüllung zu bringen. Mit Verehrung und Freundschaft L. Uhland.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

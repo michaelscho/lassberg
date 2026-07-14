@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-0918">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Ludwig Uhland (23.06.1824).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">476</idno>
+                        <idno type="register-lassberg">138</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 45-48<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-0918">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1824-06-23">1824-06-23</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Eppishausen am 23. Juny 1824. Ieder Posttag, der mir einige Zeilen von Ihnen bringt, mein verehrter Freund! ist mir ein Festtag; aber der vorgestrige war es für mich doppelt, da ich Ihrem Briefe einen Namen vorgesetzt fand, den ich schon längst von Ihnen zu er halten wünschte. Nemen Sie mit einem, leider nur im Geiste gereichten, kräftigen Handschlage meinen guten treuen Dank dafür und glauben Sie daß ich diesen schönen Namen als ein teures Geschenk ansehe, mit dem das Geschik noch einen lieblichen Schein auf den sonst so freudenlosen Abend meines Lebens herab senden wollte. Ich habe die Handschrift und die Zeichnungen richtig erhalten, und freue mich, daß sie Ihnen nüzlich waren. Von den Zeichnungen hege ich dieselbe Ansicht wie Sie und glaube daß die Wappen nur mit äusserster Vorsicht zu gebrauchen sind; auch scheinen die Bodmerischen, von welchen die meinigen abgenommen sind, mit großer Eile gemacht worden zu sein; man wollte warscheinlich die Bilder alle, wie die Pariser Handschrift sie hat, abzeichnen; als aber die Zeit wegen Zurükgabe des Codex nicht mer hinreichte, begnügte man sich an den Wappen, wo dann bei Eintragung der Namen hie und da eine Verwechselung mag vorgegangen sein. Hievon habe ich unwiedersprechliche Beweise. Schöpflin schrieb an Bodmern, nach Zurüksendung der Handschrift, ganz verwundert über die kurze Zeit, welche man zur Abschrift verwendet; schon die Jarzalen des Drukes beweisen, daß die Handschrift bei der Correctur nicht mer zum Grunde gelegt werden konnte, hinc illæ lacrimæ! Aus Hagens neuer Ausgabe dieser Handschrift ist nichts geworden; ich verneme aus Paris, daß er sich dort meist mit provençalischen Handschriften beschäftiget habe. Sollen wir in seinem Gottfried v. Straßburg einen Teil jener Lesefrüchte bewundern; so hat der Teufel das Geld geholt, was auf der Reise aufgegangen ist. Ich habe dem Grafen Mailath dieselbe Bemerkung über die Herausgabe des magern und langweiligen Klausenburger Karls gemacht, welche in Ihrem Brief steht: allein, das ist nun ein mal eine Grille von ihm, er betrachtet sich hierinn als den Representanten der Ungarn, und will uns zeigen, daß sie auch nicht einen Fezen von unserer alten Literatur wollen zu Grunde gehen laßen! Von dem Kodex zu Colocza wird, wie er mir schreibt, nicht weiters erscheinen, warum? weiß ich nicht. Primisser sagt mir ( Sie kennen wol seine Beschreibung der ambrasischen Sammlung ) daß er aus dem Sinzendorfischen Codex und andern handschriftlichen Quellen den Wiener Spruchdichter Suchenwirt zur Herausgabe bearbeitet habe; aber keinen Verleger finde. Das macht nun, daß so manche gute Handschrift nicht ins Liecht tretten kann. Der Präfekt Heinrich Schreiber zu Freiburg in Breisgau, von welchem Ihnen eine neue Ausgabe der Kriegslieder von Veit Weber bekannt sein wird, hat aus Straßburg eines gewissen Ekenold ( C. Berthold ) aus Herboldsheim ( im Breisgau ) Alexandreis erhalten und hält diese für die älteste ich habe auch eine hier von Ulrich von Eschenbach und es soll mit der von Rud. von Ems noch eine Vierte geben. Er wird sie ganz herausgeben und da er ein sehr pünktlicher und fleißiger Mann ist, so dürfen wir eine gute Ausgabe erwarten. Ia wol ist zu wünschen, daß solche Sprachurkunden welche dem Nibelungen Liede am nächsten stehen, recht bald erscheinen. Bedaurungswert ist die große Lüke, welche zwischen dem 10. und 12. Jarhunderte in unserer Literatur sich findet, und die von dem Liede auf den Heiligen Anno nicht ausgefüllt wird. Von diesem Liede ist in Teutschland keine Handschrift mer; ich habe von hier aus in Engelland wieder Eine entdekt; sie kam mit dem literarischen Nachlaße des Franz Junius ( des Herausgebers des Ulphila ) dahin. Vielleicht ist es dieselbe, welche einst in der Redingerschen Bibliothek zu Breßlau war, und welche Opiz seiner Ausgabe zu Grunde gelegt hat. Wenn ein mal einer Ihrer Bekannten nach Oxford reiset, so geben Sie ihm ja auf sich nach dieser Handschrift zu erkundigen. Die Fabliaux des Herrn von Méon sind mir, wie so Manches Neue nicht bekannt; wüßte ich den Titel, so würde ich sie mir kommen laßen. Hingegen besaß ich die Fabliaux et Contes du XIIe et XIII® Siècle, par le Grand: allein, vom vielen Ausleihen ist mir leider nur noch der 3. Band übrig, in welchem sich merere Schwänke des Liedersaales befinden. Zu Toulouse ist lezthin eine Grammaire de la Langue des Troubadours erschienen die ich nächstens erwarte. In einem alten französischen Volksbuche: Les Escraignes Dijonnoises. Rouen. 1628 habe ich diese Tage auch einen Schwank gefunden der im Liedersaal steht. So haben wir überall entlehnt! das Gegenteil ist wol nicht zu vermuten. Was Sie mir über den Sänger von Sevelingen schreiben, wäre mir vor 14 Tagen sehr willkommen gewesen; aber leider ist der Bogen, der meine Animadversion über ihn enthält, schon gedrukt, und ich müßte damit noch andere umdruken laßen. Wo Urkunden sprechen, hört alle Meinung auf. Indeßen will mir der schottische oder irländische Name Meinlochus nicht in den Kopf; das Facsimile aus dem Weingartner Codex in Zapfs Reisen hat: Meingoz, einen Namen der öfters vorkömmt. Von Langs Regesta Bavar. habe ich nur erst den ersten Band, und die Geschichte der Graven von Kirchberg ( von welcher ich wußte daß die Handschrift eines Mönchs im Kloster Wiblingen lag ) welche kürzlich in München erschien, ist mir noch ganz unbekannt. Wie lautet der Titel? In Stuttgart wird man freilich mer innen als in der einsamen Villa Epponis. Dietmar von Ast gehört ungezweifelt dem Thurgau an, und zu den vielen Thurgauischen Familien, welche Einhorne im Wappen fürten, wie diesmal der Maneßische Codex richtig angiebt. Richtig traf Ihr Brief beinahe durchaus dieselbe Gesellschaft hier an, welche Sie selbst mein Freund! voriges Jar hier antrafen. Herr v. Ittner trug mir freundliche Grüße an Sie auf. Künftigen Monat erwarte ich den guten, lieben Conz hier, wenigstens hat er es mir versprochen. Leben Sie wol, aufrichtig geliebt und verehrt von Ihrem I. v. Laßberg. Morgen sind es 38 Sare, daß ich in der Burg zu Trifels, die unser Kaiser Friedrich der Rotbart neu baute, aus den Händen eines Biedermannes die ersten Waffen erhielt. 23.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

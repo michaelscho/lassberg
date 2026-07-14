@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-2515">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Ludwig Uhland (25.02.1845).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">1254</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 252<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-2515">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0101">Meersburg</placeName>
+                    <date when="1845-02-25">1845-02-25</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Mein teuerer Freund Uhlandus! Der Himmel schenke Inen und der lieben Frau Emma schöne Tage! Mir hat er eine lame Hand geschenkt uud die Ars lineandi ( wie die alten Mönche die Schreibekunst nannten ) beinahe gänzlich entzogen. Dies ist die Ursache, warum Inen mein herzlicher Dank so spät zukömmt, für Fren lieben Brief und für Ir nicht weniger liebes Buch, welche beide mich innig erfreut haben. Das lange erwartete, noch länger ersenete Buch ist wol das geworden, was ich mir von Inen versprochen habe; aber nun bin ich ungeduldig - begierig auf den codex probationum zu demselben; oder besser zu sagen auf den Comentar zu den Liedern. Es ging mir vor vielen Saren, als De Bock zum erstenmale die griechische Anthologie mit der Ueberzeugung des unsterblichen Hugo Grotius herausgab, gerade eben so, als der 4te Band, der die notas uberrimas enthalten sollte, so lange nicht erscheinen wollte. Indessen haben Sie vielen und großen Dank für das, was Sie uns gegeben haben! Es ist lauter gute Waare, die one Sie wol meist für uns verloren gegangen wäre. Aber, was würde es Inen verschlagen haben? wenn Sie vom ersten Bande nur die Hälfte, und die Geschichte der Lieder dazu gegeben hätten. Vielen Dank hätten Sie wenigstens von denen eingeärndet, die ein Pferd nicht ohne Zaum zu reiten verstehen. Ich armer Naturalist muß bekennen, daß ich über das Ganze kein Urtheil erwerben kann, bis ich auch ein Ganzes vor mir habe. Es wird aber Alles kommen, mit der Zeit und zu seiner Zeit! Und so sollen wirs dann erwarten! Ich, mit meinen am 10. April eintretenden 76 Saren, nicht ohne Besorgniß, daß ich früher die große Reise antreten werde: und was ist's dann? Bin ich fort: so kommen wol bessere als ich, denen Ire Lieder und Fre Worte die Brust warm machen werden. Das Merkwürdigste war mir Seite 329 Der Eber, und ich bin äußerst begierig auf die Herkunft dieser Verse des IX. oder X. Jarhunderts, die mir einer Art von Beschwörung anzugehören scheinen, gleich ienen, die I. Grimm aus dem Merseburger Kirchenbuch herausgegeben hat. Wir haben einen milden Winter gehabt, bis Anfangs dieses Monats; aber um so empfindlicher war uns der rauhe Frost, der so spät eintrat. Wir singen auch iezt schon: „ O Winter! wir haben dein genug, „ Nu heb ' dich auf dem Land mit Fug. " Gottlob! wir sind alle gesund. Ich in tantum in quantum, meine Hand voll Gicht ist mir oft ser beschwerlich; aber das Herz ist noch immer grün. Wir grüßen Sie und Frau Emma auf das herzlichste. Ir Auf der alten Meersburg am alter Freund I. v. Laßberg.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

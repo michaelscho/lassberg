@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-0950">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Ludwig Uhland (09.12.1824).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">490</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 49<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-0950">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1824-12-09">1824-12-09</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Hochverereter Herr und Freund! Hier kommt endlich der zweite Band des Liedersaales, wie ich hoffe, pro Strena noch zu rechter Zeit; den dritten laße ich unter meinen Augen zu Constanz, wo ich für diesen Winter eine Wonung genommen habe, druken. Diesen Sommer haben Zeune aus Berlin und Prof. Lachmann aus Königsberg mich in der Villa Epponis besucht: lezterer ist ein ser tüchtiger junger Mann, der einst in der Theotisca etwas leisten wird, er hat lezten Sommer merere Monate in der Handschriften Sammelung zu St. Gallen gearbeitet und macht seinem Lerer Benecke warhaft Ere. Es tat mir leide, daß ich Ire Auskunft über Milon von Sevelingen für die Vorrede zu diesem Bande nicht mer benuzen konnte; ich werde aber diesen Schnizer im dritten Bande getreulich beichten; weil es one dies bei uns ein Jubiläums Jar ist, wo man Nachlaß für alle Sünden erhält. Einiges in der Vorrede habe ich absichtlich hingeworffen, auf daß es widersprochen werde und das Ware an den Tag komme. Heinrich von Klingenberg hat mich lange vestgehalten, er war ein Mann dessen Geist mächtig und mannigfaltig in seine Zeit eingrif. Es sind viele Materialien zu seiner Biographie vorhanden und man könnte ein gutes Buch von jm machen. Haben Sie schon vernommen, daß der böse Hagen ( jezo in Berlin ), der dies Jar das Nibelungen Lied in einer neuen Übersezung verhunzt hat, nun in allem Ernste daran ist, eine neue Ausgabe der sogenannten Maneßischen Sammlung zu machen? Diese Arbeit hätte vor Allen einem schwäbischen Manne zugehört und Sie mein verertester Freund! hätten sich dieselbe von Keinem sollen entreißen lassen. Welchen Dienst würden Sie der Literatur unseres Vaterlandes geleistet, welche Freude würden Sie allen Freunden unserer lyrischen Anthologie ge macht haben! und noch wäre im Grunde nichts verspielt; denn ich zweifle nicht daß von der Hagen zurüktritt, wenn er hört daß Sie sich der Sache unterziehen. Von der Hagens wird eine andere Ausgabe nicht entberlich machen: aber es wird vergeblich viel Geld aufgewendet sein ( die Regierung unterstüzt jn ) und alle verständigen Leute bereuen das Buch gekauft zu haben. Sollte nicht Herr von Cotta eine Ere darin suchen die Arbeit und den Preiß einer solchen Unternemung dem Lande, welchem er angehört, zuzueignen? Künftigen Früling komme ich nach Haygerlohe, von wo aus ich den guten Conz zu besuchen gedenke, und wenn ich dann sicher bin Sie zu treffen; so komme ich auch nach Stuttgart und bringe Inen selbst den Gruß des alten Eppishausen am 9. December 1824. Laßbergäre. Ittnerus der einen Teil des Sommers bei mir zubrachte, und recht wol ist, lässt Sie grüssen.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

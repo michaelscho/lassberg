@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-2431">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Ludwig Uhland (03.06.1843).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">1226</idno>
+                        <idno type="register-lassberg">77</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 246-49<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-2431">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0101">Meersburg</placeName>
+                    <date when="1843-06-03">1843-06-03</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Auf der alten Meersburg am 3. Brachmonats 1843. Lieber Freund Uhland! Was soll ich Inen sagen zu dem wunderschönen Geschenke, das Sie mir zu meinem 74. Geburtstage gemacht haben? So wie der Dank im Herzen stund, und noch stehet und auch stehen bleiben wird, kann ich in doch nicht wiedergeben! Nemen Sie also mit einem aus dem innersten Herzen gesprochenen: Gott vergelts! vorlieb. Sa, die Freude war groß, so groß wie die Ueberraschung, und diese hätte nicht wol größer sein können! Wen, er sei alt oder jung, muß es nicht innig erfreuen, sich also von den Besten seines Volkes geliebt und geeret zu sehen? Gottlob! daß mein altes Herz noch frisch genug ist, um es recht lebendig zu fülen. Aber auch als vaterländisches Kunstwerk ist der wunderschöne Stul merkwürdig und muß den alten Schwaben erfreuen, da er eben so fein und sinnig gedacht, als künstlich und zierlich ausgefüret ist: aus altem schwäbischem Eichenholze und durch schwäbische Hände. Ich habe meine Leute gebeten, wenn es einmal mit mir zum Abschiednemen kommen sollte, mich in diesen Stul zu sezzen, damit ich beim Anschauen der druckt in diesem Jar. Danach neuerdings wiederholt in: Die historischen Volkslieder der Deutschen im 13. bis 16. Jahrhundert gesammelt und erläutert von N. v. Liliencron. I. Bd. ( Leipzig 1865 ). Nr. 59. Namen und Wappen so vieler biderber Männer, noch sagen kann: ich habe nicht umsonst gelebt! ich bin geliebt worden! testatus exibo, bonam conscientiam me amasse, bona studia; nullius libertatem per me imminutam fuisse, minime meam. Dies Zeugniß werden mir, ich glaube daran, meine Freunde nicht versagen, und mit diesem Passe hoffe ich, ienseits des tiefen Grabens, durch alle Zollvereine durchzukommen. Ser leide hat mir das Schiksal des sonst so gutmütigen Prof. Hoffmann von Fallersleben getan; bei seinem hiesigen Aufenthalte gab ich im mit meiner angeborenen schwäbischen Freimütigkeit zu verstehen, daß es wol an der Zeit sein möchte einmal den Studenten auszuziehen, bekam aber ein: ridendo dicere verum, quid vetat? zur Antwort. Zum Bedauren aller, die in kennen und im wolwollen, sind seine Gedichte nun im entgegengesezzten Sinne wirklich unpolitisch geworden. Maßmanns Eraclius ist eine wichtige und schäzenswerte Gabe und ein ungeheures Stück Arbeit; aber in Beziehung auf den teutschen Verfasser hat er mich nicht überzeugt. Ich habe aus der Sprache des teutschen Eraclius manches gelernt, aber für so alt als Maßmann meinet, kann ich sie doch nicht halten; wol aber durchgehend für schwäbisch. Lezten Winter hindurch habe ich mich ausschließend mit der vaterländischen Geschichte beschäftiget, und an der dicken Handschrift des Domkapitular von Vanotti über die Häuser Montfort und Werdenberg herrlich unterhalten. Sie soll nun dem Drucke übergeben werden, und ich wünsche uns Schwaben Glück dazu; sie wird von allen vaterländischen Geschichtsfreunden gut aufgenommen werden. Die nordliche Luft und Berliner Sandwüste, neben dem unruhigen Stadtleben, haben, wie ich voranssahe und sagte, unserm guten lieben Jakob Grimm nicht zugesagt. Seine Gesundheit ist schon so zerfallen, daß er diesen Sommer nicht lesen kann und einen milderen Himmelsstrich aussuchen muß. Ich habe im Meersburg vorgeschlagen, wollte Gott! daß ers annemen würde! Aber er wird wol daneben ein warmes Bad bedürfen. Es wäre für uns Teutsche ein harter Verlust, wenn wir in verlieren sollten. Albert Schott aus Stuttgart schreibt mir, daß Sie eine Reise nach Franken und selbst nach Chursachsen vorhaben, um abermal auf die Liederiagd zu gehen. Möge die Reise glüklich und die Ausbeute reich sein! Mein Büchlein, enthaltend einen Strauß meist schwäbischer Dichtergaben, werden Sie voriges Tar, bei Ihrer Zurükkunft aus dem Norden wol zu Hause gefunden haben; hoffentlich hat Inen mein Bestreben, unsere alten schwäbischen Liedermänner wieder an das Licht zu bringen, nicht mißfallen. Wir haben einen milden Winter in bester Gesundheit durchgelebet: die Kinder sind gewaltig gewachsen, kräftig, frölich und lernbegierig, sie singen und springen den ganzen Tag. Gottlob! der Abend meines Lebens ist voll stiller Freuden! Wir grüßen Sie und die liebe Frau Emma auf das herzlichste und wünschen Inen tausend Glük und Vergnügen auf Ire Reise, Möchte doch ein freundlicher Herbst Sie nach dem blauen Bodensee loken. Fr alter Lazzbergåre. Wenn Sie in Dresden das historische Museum besuchen und da das Schwert des Schenken Conrads von Winterstetten sehen, des Bruders des Minnesängers Ulrich, von welchem Schwerte Moriz Haupt in der Zeitschrift für deutsches Alterthum Band I. Heft 1. Seite 194 und flgde. Abbildung und Bericht über dasselbe erteilet, so würden Sie, lieber Freund! mir einen großen Gefallen erweisen, wenn Sie sich bei dem Director dieses Museums, Herrn Dr. Kraukling, erkundigen wollten: ob dies schwäbische Schwert nicht gegen ein anderes Altertum einzutauschen wäre? denn ans kaufen ist wol nicht zu denken, es wäre dann, daß Herr Director ein anderes altes Kunststük im Auge hätte, gegen welches er das Schwert hinzugeben geneigt wäre, und dessen Preis ich gerne erlegen, oder etwas anderes dagegen anbieten würde. Dies Schwert des innigen Freundes unseres Rudolphs von Ems, liegt mir schon lange im Kopfe und noch mer am Herzen; es sollte notwendig wieder nach Schwaben zurük; denn Conrad der Schenke war nicht nur einer der tapfersten Männer seiner Zeit, sondern Kenner, Beförderer und Freund des Gesanges und der Sänger, ewig würde ich Inen verbunden sein, wenn Sie etwas zur Erwerbung dieses vaterländischen Altertums beitragen könnten und wollten. Ich würde z. B. gerne einen ser schönen italienischen eisernen Schild, aus dem Anfange des XV. oder Ende des XIV. Tarhunderts, mit Figuren, der mich ser teuer zu stehen kommt, dafür geben. Lassen Sie sich, teuerster Freund! diese Sache doch bestens empfolen sein.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

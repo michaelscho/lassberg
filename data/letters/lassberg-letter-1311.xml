@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1311">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Ludwig Uhland an Joseph von Laßberg (30.04.1829).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">2246</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 121<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1311">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0147">Stuttgart</placeName>
+                    <date when="1829-04-30">1829-04-30</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Hochverehrter Freund! Stuttgart, den 30. April 1829. Ihre beiden Schreiben vom 31. März und 14. Apr., lezteres mit der Sammlung von Auguis und den Northern Antiquities, habe ich empfangen und bin für so Vieles, was Sie mir mittheilen, erbieten und ankündigen, von dem lebhaftesten Dank erfüllt. Ein zehntägiger Aufenthalt in Tübingen ist dazwischen eingetreten. Wie erfreulich ist mir Ihre gütige Verwendung für die Berner Handschriften und die Einladung, solche in Eppishausen zu durchforschen. Angenehmer könnte ich dieselben allerdings nicht benützen. Aber erhebliches Bedenken macht mir, daß ein vollständiger Gebrauch dickleibiger Membranen ( den altfranzös. Parcival wünschte ich, wo möglich, ganz abzuschreiben, längere Zeit erfordert, als ich Ihnen zur Last fallen und auch selbst von Hause entfernt seyn dürfte. Würde jedoch die Benützung einer oder mehrerer Handschriften nur auf schweizerischem Boden gestattet, dann freilich würde ich mich auf das Wesentlichste beschränken und den Vortheil haben, unter dem Titel gelehrter Bestrebungen eine Lustfahrt nach dem grünen Eppishausen anzutreten. Mögen Sie nun die Güte haben, mir von dem Bescheid und den Bedingungen der bernischen Bibliothekverwaltung seiner Zeit Kenntniß zu geben. Die reichhaltigen Notizen über das Geschlecht von Tannhausen sind mir höchst dankenswerth. Meine Anfrage war zunächst durch das alte Lied vom Tannhäuser im Venusberge veranlaßt. Allerdings wird hiebei eine größere Mythe zu Grund liegen, aber es schien mir der Nachforschung werth, ob sich solche nicht bei dem schwäbischen Thannhausen localisirt habe, denn unferne von demselben liegt der Weiler Venusberg. Bei Löflund habe ich gestern, sogleich nach Empfang des Briefes, nachgefragt. Er hat die Sendung der Barthschen Buchhandlung vor etwa 14 Tagen erhalten und unverzüglich mit dem Postwagen weiter spedirt, so daß sie nun hoffentlich in Ihren Händen seyn wird. Was Sie von der neuaufgefundenen Liederhandschrift schreiben, war mir von größter Wichtigkeit, so füllen sich überall die Zeiträume, welche stumm schienen, mit Lied und Gesang. Aber die Eppishauser Handschrift von den alten Dichtern, wovon wir in den Vorreden zum Liedersaale schon so erfreuliche Proben gesehen, möge diese zum Frommen der Dichterfreunde bald an das Licht treten. Meine Studien, deren sie hiebei so wohlwollend gedenken, sind gerade in diesem Fache sehr mangelhaft und ich habe mir die Persönlichkeiten der Sänger recht eigentlich an das Ende meiner Arbeiten gestellt, um erst abzuwarten, was sich mir bei einer vollständigen Kenntniß der Dicht werke selbst dafür abwerfen würde. Aus Ihrem lestern Schreiben ersche ich, daß Ihnen Primissers Tod, der etwa vor einem halben Jahre erfolgt ist, noch nicht bekannt war. Er hat die Ausgabe des Suchenwirt nicht lange überlebt und mit ihm ist die einzige Stütze der deutschen Alterthümer in Wien gefallen. Der Artikel im schwäbischen Merkur ist mir sogleich unheimlich vorgekommen und nun ich höre, daß er ganz auf eigene Faust abgefaßt und eingerückt worden ist, muß ich dieses Verfahren in hohem Grade ungebürlich finden. Diese lauten Heroldsrufe sind nur allzusehr an der Tagesordnung. Dennoch hoffe und wünsche ich, daß die würdige Sache nicht hierunter leiden werde. Ein Verzeichniß der Docenschen Verlassenschaft hat mir Maßmann zugesagt, aber bisher nicht geschickt; ich würd ' es Ihnen sogleich mittheilen. Die Berlinische Gesellschaft für deutsche Sprache hat eine Zeitschrift angekündigt, die auch Nachrichten von altdeutschen Hdschrften und Mittheilungen kleinerer Stücke alter Sprache und Poesie enthalten soll. Von I. Grimm erhielt ich dieser Tage einige Zeilen. Kausler, beim hiesigen Archiv, hatte mir ein altes Pergamentblatt gebracht, in welchem ich ein Bruchstück des Karls gedichts vom Pfaffen Chuonrat erkannte. Merkwürdig fällt dasselbe gerade in die Lücke der Straßburger Handschrift, so daß es, neben dem Heidelberger Codex, unicum ist. Ich schickte dasselbe an Wilh. Grimm, da ich wußte, daß dieser mit einer Ausgabe des Gedichts beschäftigt ist. Von ihm wird eine Schrift zur ältesten deutschen Poesie nächstens gedruckt seyn, eine vollständigere Bearbeitung der in den altdeutschen Wäldern enthaltenen Zeugnisse für die deutsche Heldensage. Der dritte Theil von I. Grimms Grammatik ist im Meßkatalog angekündigt. Zu der Neugart. Arbeit wünsche ich Ihnen den frohesten Muth. Unter unsern besten Grüßen mit freundschaftlicher Verehrung der Ihrige L. Uhland.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1115">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Ludwig Uhland (04.10.1826).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">558</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 78<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1115">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0082">Konstanz</placeName>
+                    <date when="1826-10-04">1826-10-04</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Constanz am 4. October 1826. Ich habe Inen mein verereter Freund! im Anfange des Septembers von Siegmaringen aus geschrieben und von meinem dortigen Tun und Leben Nachricht erteilt. Von da gieng ich noch einmal das von mir nie genug gesehene Donau Tal hinauf, und sahe die zwei wunderschöne Burgen bei Buchheim und den Kalenberg ( Kallenberg? ), welche lezte ein Muster kostbarer und vester Bauart ist; ich war auch zu Fridingen, wo auf einem Berge nahe daran noch die Stätte einer alten Stadt und Burg ist. Diese konnte ich durch die fernhintreffenden Stralen des Helios ermattet, nicht mer gehörig untersuchen und werde es auf meinem nächsten Gange dahin tun; dann besah ich 20, warscheinlich teutsche Grabhügel bei Neuhausen auf der Egg, im Wirtembergischen, deren einer nun auf meine Veranstaltung geöffnet wird. Bei meiner Zuhausekunft traf ich einen Brief von Suabo und darinne grüße von Inen und Irer lieben Hausfrau an, die mich alle herzlich erfreuten, da sie von guten Nachrichten über jr beider Wolbefinden Kunde gaben. Ich sende Inen, lieber Freund! hier Ir apographum des Codex weingartensis zurük, weil ich glaube daß Sie es behufs Irer literarischen Arbeiten gemacht haben und vielleicht diesen Winter brauchen könnten; ich habe es abschriftlich in mein apographum eingetragen. Es scheint mir, nach einem gemachten Ueberschlage, daß der Abdruk nebst Bildern und Vorrede gegen 600 Seiten einnemen werden, und folglich die Hinzufügung des Heidelberger Codex Nr. CCCLVII. nicht mer möglich sein wird. Ich lege Inen hier den ersten Abdruk von einem der zu Albrecht von Werdenberg gehörigen Holzschnitte bei; es scheint mir, daß sie das Büchlein anständig zieren werden und werde mir alle Mühe geben, es pro strena versenden zu können. Meine gegenwärtige Geschäfte gehen die Weinlese an, welche hier zu Lande bald beginnen wird; aber in der Güte keinen bessern Wein als den leztgemachten verspricht, doch, vom Wetter begünstiget, noch immer frölich genug werden kan; möchten Sie lieber Freund und die wakere Frau Emma mir doch dies Fest begehen helfen! warlich liebere Gäste könnte die Villa Epponis nicht aufnemen! Wie oft denke ich an Sie lieben Freunde! und an all freundliches und liebes, da ich bei Inen erfaren habe; jezt wo der Tag schon so kurz und die Abende lang zu werden anfangen, size ich oft halbe Stunden lang einsam auf meiner Stube im Dunkeln, da erscheint mir immer das Bild Ires stillen häuslichen Friedens; ich sehe Sie in Irem blauen und die tätige Frau Emma in irem amaranth farbnen Kleide vor mir wandeln, und denke dann an die glüklichen Zeiten, da auch ich nicht allein in der Welt war, und das fürt mich denn weit, weit über die Welt hinaus. Adieu! herzliche Grüße an die Irigen, auch die Kinder nicht zu vergessen. Ir Laßberg.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

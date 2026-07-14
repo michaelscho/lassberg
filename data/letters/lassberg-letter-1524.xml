@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1524">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Ludwig Uhland (19.02.1831).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">762</idno>
+                        <idno type="register-lassberg">56</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 192<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1524">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1831-02-19">1831-02-19</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Eppishausen am 19. Hornungs 1831. Ich kann mein teurer Freund! die Wyssische Liedersammlung nicht nach der alma Eberhardina abreisen lassen, one Inen einen Gruß an Sie und meinen Dank für das heute erhaltene Schreiben vom 13. dieses, mitzugeben. Sobald ich von Stalder den versprochenen Text und Weise des Thanhausers erhalte, werde ich Inen eine Abschrift senden. Sie werden in der Wyssischen Liedersammlung warscheinlich nicht finden, was man von einem solchen Manne erwarten sollte; allein, er war auch ein Mann von schnellen Begriffen, und manchmal sind bei jm die Hände diesen zuvorgeeilet: eine tiefe Kritik lag außer seinem Bereiche; daher auch die Abschriften von ser ungleichem Werte sind. Indessen bleibt es immer eine schäzbare und reiche Sammlung und jre Herausgabe höchst wünschenswerth, damit doch das gerettet werde, was noch vorhanden ist. Wie ser würde das Publikum dafür dankbar sein, wenn Sie und Schwab sich der Edition unterziehen wollten. Cotta würde wol nichts dabei wagen, wenn er die Handschrift den Wyßischen Erben abkaufen wollte und ich glaube, daß hundert Ducaten eben nicht zu viel dafür wären. Ich bin Inen vielen Dank schuldig mein Freund! daß Sie die Mühe namen wegen des Episcopatus Constantiensis zu schreiben. Ich hatte vor einigen Wochen selbst an den Herrn von Cotta geschrieben, und heute erhielt ich schon Bericht vom Buchdruker, daß er mir künftige Woche den ersten Correctur = Bogen senden werde. Nun bin ich wieder ein membranae adscriptus; aber ich werde doch mich nicht so beschränken lassen, daß ich nicht, wenn einmal ein paar Duzend Bogen gedrukt sind, auch hie und da einen Ausflug machen könnte. Wegen Graff wollen wir noch eine weitere Anzeige erwarten, ehe wir unsere Bewerbungen für seinen Sprachschaz anstellen. Ich habe deshalb an Schmeller geschrieben und Graff durch in auffordern lassen, daß er vorerst auch einen ordentlichen Prospectus herausgiebt. Herzlich hat mich erfreut, was Sie mir aus dem reichen Vorrate Irer Literaturkenntnisse über das Eggenlied mittheilen, was Docen, Hagen und Grimm über Rudlieb und Herport sagen, hatte ich mir zwar für meine Noten schon aufgezeichnet; Pfeiffer. Lakberg u. Uhland. aber es ist mir nun ser lieb die betrefenden Stellen in der Wilkina Sage und in Ditlieb und Biterolf aufzusuchen. Ich sende Inen hier so viel vom Eggenlied gedrukt ist: die Hauptsache, d. i. den Text; sobald der Buchdruker im Stande ist, will er mit erstem auch die paar Bogen Zugabe noch druken; iezt, dachte ich, während Ire Vorlesungen sich über diesen Dichtungskreis verbreiten, könnte Inen vielleicht dieser Text dienen. Und nun für dies Mal Gott befolen! Ich muß noch an meinen armen kranken Friz schreiben; dessen Gesundheits Zustand Sie am besten durch seinen Arzt, der Ir Dheim ist, erfaren können. Ich fürchte daß die Sache noch zulezt schlimm werden kann, warscheinlich eine Lungenschwindsucht, wenn im nicht seine sonst ungeschwächte Jugend noch heraushilft. Gott ist groß! Gott ist gnädig! Amen. Fr Laßberg.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1223">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Ludwig Uhland an Joseph von Laßberg (20.03.1828).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">2205</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 96-101<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1223">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0147">Stuttgart</placeName>
+                    <date when="1828-03-20">1828-03-20</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Stuttgart, den 20. März 1828. Hochverehrter Herr und Freund! Der Umstand, dessen Sie im Eingang Ihres mir so eben von Schwab mitgetheilten Schreibens erwähnen, die Ungewißheit, ob ich in Stuttgart oder Tübingen mich befinde, ist auch die Ursache, warum ich seit dem Besuche in Eppishausen, bei dem wir so viele Güte und Freundschaft erfahren und der so oft der Gegenstand unserer frohen Erinnerung ist, doch keine Sylbe von mir habe verlauten lassen. Denn wirklich war ich bisher zwischen beiden Orten schwebend; von Woche zu Woche, von Monat zu Monat ohne Entschei dung hingehalten, hat mich das Unvermögen, meinen Freunden hierüber etwas Bestimmtes mitzutheilen, in eine mich nur allzu leicht überwältigende Mißstimmung zum Briefschreiben versetzt. Sener Zustand der Ungewißheit dauert noch jetzt an, und man muß sein Ziel klar im Auge haben, um sich durch solche Erfahrungen nicht irre machen zu lassen. Zu meinem aufrichtigen Bedauern meldet die erste Nachricht, die uns von Ihnen wieder zu Theil wird, daß die Beschwerde des vorigen Winters sich wieder bei Ihnen eingestellt hat; möge der anrückende Frühling völlige Genesung bringen! Was ich über den altfranzösischen Fund, von dem Ihr Schreiben uns Kenntniß giebt, von litterarischen Notizen aufzutreiben vermocht habe, ist hierneben zusammengestellt. Die rechte, lebendige Poesie hat freilich im Zeitraum dieser Gedichte schon stark nachgelassen, aber zur Geschichte der Rittersitten scheinen sie ein merkwürdiges Denkmal zu seyn. Von neuen Erscheinungen im Gebiete der altdeutschen Litteratur weiß ich nichts zu benennen. Lachmann bereitet Mehreres vor, eine Abhandlung über die Nibelungen, eine Ausgabe der wenigen Lieder des 12. Jahrhunderts, den Parcival. Mit Wolfram v. Eschenbach hatte auch ich mich vor einigen Jahren anhaltend beschäftigt, aber die Vergeblichkeit aller Versuche, einige altfranzösische Handschriften der Berner Bibliothek, die mir für diese Arbeit unentbehrlich schienen, hieher mitgetheilt zu erhalten, wozu mir früher Hoffnung gemacht war, zwang mich, die Sache zurückzulegen. Ein junger Theologe in Tübingen, Namens Halling, der sich den deutschen Schriftstellern des 16. und 17. Ihderts mit Eifer widmet, hat über das auf hiesiger Bibliothek vorhandene Exemplar von Fischarts glückhaftem Schifflein eine solche Freude empfunden, daß er von dem seltenen Büchlein einen Abdruck, mit Notizen über Fischart, veranstalten will. Der Verleger wollte sich nur unter der Bedingung zur Uebernahme verstehen, wenn ich eine kleine Zugabe dazu stiftete, und ich habe keinen Anstand gefunden, darauf einzugehen. Dieses Denkmal kräftiger Bürgerlust verdient wohl, wieder bekannter zu werden. Aus einem Briefe von Lachmann ersehe ich, daß eine Bitte Hallings an Herrn von Meusebach um Unterstützung bei seinem Vorhaben, nicht so sehr von diesem selbst, als von seinen Freunden, sehr übel aufgenommen worden ist. Daß H. v. M. seit vielen Jahren die Herausgabe einer Auswahl Fischarts Werke mit ausführlichen Nachrichten über Leben und Litteratur dieses Schriftstellers vorbereitet, habe ich bei diesem Anlaß vernommen und wünsche von Herzen, daß wir diese Ausgabe, so wie diejenige seiner Volksliedersammlung, erleben mögen, welche lektere ich wirklich für ein wesentliches Bedürfniß unsrer poetischen Litteratur halte. Ich gebe auch gerne zu, daß die Studien des jungen Mannes neben solchen Vorarbeiten sehr unerheblich erscheinen müssen und daß sein Ansinnen an H. v. M. nicht in der rechten Art gestellt seyn mochte. Aber doch scheint mir die Beschäftigung mit Fischart kein Monopol zu seyn und das glückhafte Schifflein vorderhand füglich wieder abgedruckt werden zu können, womit bereits der Anfang gemacht ist, und ich finde auch keinen Anlaß, meine Zusage zurückzunehmen, ohne daß ich übrigens für die Anmerkungen und Einleitung, womit der Herausgeber den Abdruck versehen hat, einzustehen gedenke. Was ich beizugeben wünschte, wären einige Bemerkungen über Fischarts umfassende und innige Bekanntschaft mit dem deutschen Volksleben und namentlich der poetischen Volkslitteratur. Ich schreibe von dieser Sache so ausführlich, um die Bitte zu begründen, wenn Ihnen etwa Einiges, Fischart betreffend, zu Gebot stände, was Sie mir zu öffentlichem Gebrauch mitzutheilen geeignet fänden, Sie damit meinem Appendix einiges Gewicht beilegen möchten. Sollten Sie namentlich Fischarts Bearbeitungen des Peter von Stauffenberg oder des Eulenspiegels, sowie den Murnerschen, besitzen, so würde deren gütige Mittheilung meinem Zwecke überaus förderlich seyn. Ich schließe dieses lange Schreiben mit den herzlichsten Grüßen und Wünschen für Ihr Wohlbefinden von mir und meiner Frau. Auch Ihrer Fräulein Nichte, deren freundliche Aufnahme bei uns im dankbarsten Andenken lebt, bitte ich uns angelegenst zu empfehlen. Mit unwandelbarer Freundschaft und Verehrung der Ihrige L. Uhland. In den Mémoires sur l'ancienne Chevalerie par De la Curne de Sainte - Palaye. Paris, 1781. Tom. I. p. 242. werden folgende Handschriften des Gedichts angeführt: Voyez le Roman intitulé Des Voeux du paon et le retour du paon, manusc. du Roi, n. 7973, 7989, 7990 et 79902/3. In diesem Werke finden sich auch mehrere Notizen über die wirkliche Anwendung dieses Gelübdes bei Ritterfesten und für kriegerische Unternehmungen. Ein anderes Gedicht in Alexandrinern: Du Voeu du Heron, ist daselbst Tom. III. p. 119 sqq. abgedruckt. Sollten Sie dieses Buch, wovon meist nur die Klüber. Uebersetzung in Deutschland zu finden ist, nicht etwa selbst besitzen, so werde ich es Ihnen mit größtem Vergnügen übersenden. In dem Schriftstellerverzeichniß bei Roquefort, Glossaire de la Langue Romane, Paris 1808. Tom. II. p. 756 sq. ſteht Folgendes: Alexandre de Bernay, surnommé de Paris: Roman ou la Geste d'Alexandre, composé vers le commencement du XIIIe siècle, ns. 7190, 71902, 71904, 7190 A. B., 71905, 74983, 6987, fol. 164; et du fonds de S. Germain, 7633; de S. Victor, 894, et de Cangé, 7498. Ses différentes branches sont: 1. Le Voeu du Paon, les Accomplissemens et les Mariages; 2. le Restor ( rétablissement ) du Paon, par Brise - Barre; 3. le Testament d'Alexandre, par Pierre de S. Cloot; 4. la Vengeance d'Alexandre, par Jehan le Venelais, que Fauchet appelle le Névelois. Estace ( ou Vace, Wace, Wistace ), Lambert li Cors ( Court ), le Clerc Simon ou Simon de Bologne, auteur d'une traduction de Solin en françois, et Guy de Cambrai, on ( ont ) travaillé à ce Roman. On croit que les Romans d'Alexandre, en prose ( XIVe siècle ), sont une version de la Geste. 7 * Dans un exemplaire de la Belgique, Mss. nº. 299, in fol. divisés en deux parties, la première contient le Voeu du Paon, et le Restor du Paon, qui finit au mariage d'Alexandre avec la fille de Darius; la seconde partie comprend la suite du Roman avec la Vengeance; et le traducteur, qui se dit Picard, déclare avoir travaillé par ordre de Jehan de Bourgogne, Comte d'Etampes, Seigneur de Dourdan. Alexandre de Bernay est aussi auteur du Roman d'Atys et Profilias, Mss. nº. 7191 in - fol. Ibid. p. 758. Brise - Barre: Roman du Restor du Paon. Mss. fonds de la Valliere, in - 4., nº. 2704, et nº 2703, ancien fonds, in - fol. In dieser Notiz Roqueforts über die Verfasser der Alexandreiden scheint eine sonderbare Vermischung früherer und späterer Autoren obzuwalten. Roquefort selbst sagt in seiner Schrift: De l'État de la Poésie françoise dans les 12. &amp; 13. siècles, Par. 1815. pag. 158: Le Roman d'Alexandre fut publié, l'an 1184, par Alexandre de Paris et par Lambert li Cort. ( Voy. Notices des Manusc., tom. V. p. 101 121. Biographie universelle, art. Alexandre de Paris. ) Le commencement de cet ouvrage est un récit des principales actions de la vie du conquérant macédonien, entremêlé d'autres faits relatifs à ce qui se passa vers la fin du règne de Louis VII. et au commencement de celui de Philippe - Auguste. ( Von diesem Gedichte, in Alexandrinern, enthält die Histoire littéraire T. XV. einen Auszug. ) Ob die aus St. Palaye hievor angeführten Handschriften den Roman vom Pfauen in Versen oder in Prosa ausgelöst enthalten, könnte zweifelhaft erscheinen. Daß sie aber, zum Theil wenigstens, versificirte Dichtungen geben, dafür sprechen nachfolgende Excerpte, die ich mir einst aus dem Catalog der französischen Handschriften auf der königl. Bibliothek zu Paris gemacht und welche sich auf dieselben Nummern beziehen, auch noch eine weitere dazu liefern: No. 7596. Les voeux du Paon et les complissemens et le Mariage des pucelles. F. med. 7973. Roman d'Alexandre en vers. 40. No. 7989-90. Vieux Roman en vers intitulé les voeux du Paon d'Alexandre. 2 Vol. 40. 79902. Les voeux du Paon Roman ancien. 40.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

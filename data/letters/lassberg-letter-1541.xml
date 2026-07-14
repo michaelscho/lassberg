@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1541">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Ludwig Uhland (05.04.1831).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">770</idno>
+                        <idno type="register-lassberg">109</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 201<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1541">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1831-04-05">1831-04-05</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Eppishausen am 5. April 1831. Ich zeige Inen hiemit den Rükempfang der Wyssischen Liedersammlung an, welche vorgestern hier eingelaufen sind. Wie angenem war es mir mein teurer Freund! zu vernemen, daß ich so glüklich war Inen durch Uebersendung des Thanhausers eine kleine Freude zu machen. Bei Gelegenheit, als ich Staldern erinnerte mir auch die Melodie zum Liede zu senden, munterte ich in zugleich auf, doch in seiner alten Seelenheerde nach mer alten Liedern forschen zu lassen; aber, der gute Stalder ist schon ser alt und daher nimmer ser tätig. Meine Absicht war auf Ostern nach Siegmaringen zu kommen, und von dort nach 1 oder 2 Wochen Sie in Tübingen zu überfallen; allein ich erhielt vor meiner Abreise Briefe aus München, welche mir einen Besuch ankündigten, der auch wirklich am Charsamstage hier eintraf, und wie es scheint, die Ferien über hier zu bleiben denkt; wodurch also meine Reise nach Donau und Nekar vertaget wird; auf alle Fälle gebe ich Inen, wenn ich erst einmal in Siegmaringen bin, Nachricht und kann dann auch die Zeit meiner Ankunft bei Inen um so sicherer bestimmen. Ich habe die besten und tröstlichsten Nachrichten von der schnell voranschreitenden Genesung meines Sones. Ich sende Inen nicht nur die gereimte Legende des heil. Ulrich welche Docen noch in das XII. Iarhundert sezte; sondern ich lege auch die editio princeps des lateinischen Originales bei; weil ich glaube, daß eine Vergleichung zum Behuse Frer Dissertation Inen vielleicht erwünscht sein dürfte. Ich lege auch den Spiegel, gedichtet auf Maria, ebenfalls aus einem alten Münchner Codex bei, und dann noch das Convolut, in welchem die noch unabgeschriebenen Sachen der Wyssischen Liedersammlung liegen. Auch folgt nach Verlangen Rebmanns Gespräche zwischen Stokhorn und Niesen. Ich habe immer eine Freude etwas nach Tübingen zu schiken, denn beim Auspaken, so bilde ich mir ein, muß mein teurer Uhland doch immer auch ein wenig an mich denken. Die Woche vor der Charwoche war ich merere Tage in Schafhausen, wo ich an der dortigen Kantonsschule einen Herrn Gözinger, Lerer der teutschen Sprache und Literatur, kennen lernte, welcher wirklich ein Buch über Geschichte der teutschen Poësie druken läßt, und eine schöne erlesene Büchersammlung besizt, welche viele Seltenheiten aus der ältern teutschen poëtischen Literatur enthält; dieser Mann ist aber kein Schafhauser; sondern ein Sachse aus dem Erztgebirge. So eben fällt mir ein, daß, da Sie nun an das XIV. und XV. Jarhundert kommen, Inen vielleicht noch einige Abschriften und wol auch Handschriften, aus dieser Zeit welche ich besize, nüzlich sein könnten. Fürs erste lege ich eine Abschrift von 21 Fabeln und Bispeln bei, worunter sich einiges ser gutes befindet. Ich weiß nicht, ob Sie sich eines codex picturatus auf Pergament bei mir erinnern, der die Liebesgeschichte des Herrn Christus mit einer Nonne oder andern frommen Seele enthält und von hohem psychischen Interesse ist, soll ich Inen diesen nicht auch senden? Es würde mir innig und tief leid tun, lieber Freund! wenn Sie um meinetwillen Fre Reise nach Stuttgart auch nur um eine Stunde aufschieben wollten; es ist jezt schon nicht mer warscheinlich, daß ich vor 14 Tagen oder 3 Wochen nach Siegmaringen komme; weil mein Gast Herr Braun aus Gotha hier ist. Graffs Krist hat mich höchlich vergnügt und meinen Wünschen ser entsprochen, mir kömmt vor, das seie ein Specimen, an welches künftige Editoren der Sprachurkunden aus dem Karolingischen Zeitraume, sich zu halten haben werden. Nun aber mein teurer Uhlandus! neme ich Abschied von Inen, indem der Bote vor der Thüre stehet. Viele herzliche Grüße an Frau Emma Ire eheliche Wirtinne und in Erwartung Sie bald mit Handschlag zu grüßen, Ir alter Klausner Sepp. Wenn Sie die northern Illustrations nimmer brauchen, so würde ich sie gerne einmal wieder lesend durchforschen.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

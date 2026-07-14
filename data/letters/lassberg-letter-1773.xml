@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1773">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Ludwig Uhland (28.04.1834).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">864</idno>
+                        <idno type="register-lassberg">78</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 221-24<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1773">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1834-04-28">1834-04-28</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Eppishausen am 28. April 1834. Ich schreibe Inen mit einem durch die Sicht gelämten Arme, lieber Freund! aber ich kann meinen Dank für Fren lieben Brief und für die schönen und schäzbaren Geschenke, mit denen Sie mich erfreut haben, nicht verschieben. Ach, wie inniglich hat es mich erfreut nach so langer Zeit, wieder einmal des biedern Freundes Schriftzüge zu sehen. Nun sind Sie wieder in Irer lieben Vaterstadt, und das Auge freuet sich aufs Neue des immer teuren Jugendlandes und das Gemüte ist wieder zu den alten teuren Studien zurükgefert. O quid solutis est beatius curis? cum mens onus reponit, ac peregrino labore fessi, venimus ad larem nostrum. Ich denke die iezigen Zeiten sind wol darnach, einen fremder Arbeit müde zu machen, und so muß einem ja die Ruhe wol tun. Mir und allen Freunden der altteutschen Literatur wünsche ich Glük dazu, daß Sie, mein vererter Freund! wieder zu den Musen zurükgekeret sind; es ist nun zu hoffen daß Fre Geschichte unseres alten Sanges immer mer fortschreiten und dann bald im Publikum erscheinen werde. Ich habe diesen Winter mit Vergnügen erfaren, daß auch die Franzosen iezt eifrig daran sind, die Geschichte irer alten Poësie aufzuhellen. Herr Buchon, membre de l'institut, ehemaliger Generaldirector der Archive Frankreichs; der eine Sammlung alter Chroniken von 60 Bänden herausgibt, wovon schon 47 erschienen sind, hat mich schon ein paar Mal in meiner Einsiedelei besucht, und mir unter anderm auch die Revue des deux mondes vom Fare 1832. gebracht, in welcher Zeitschrift merere Vorlesungen des Herrn Fauriel, sur l'origine de l'epopée du moyen age, abgedrukt sind, welche viel Gutes enthalten und auch einige Bekanntschaft mit der altteutschen Literatur verraten. Aber, das kennen Sie Alles wol schon längst. Herr Wakernagel zu Basel, der mich lezten Herbst besucht hat, giebt ein Lesebuch, eine Chrestomathie für Schüler der altteutschen Sprache und Dichtkunst heraus, wozu ich auch einige anecdota geliefert habe. Wenn das Studium der altteutschen Sprache eine wirkliche Schulsache werden soll; so scheint mir die Herausgabe eines solchen Buches nicht wol entberlich zu sein. Beneke, Grimm und Lachmann, haben mir ire Bücher auch zugesendet. Die beiden erstern haben mich gar so freundlich dringend nach Göttingen eingeladen, daß ich mich wol entschließen werde sie diesen Sommer zu besuchen. Grimm hat mir über seine teutsche Mythologie geschrieben. Gewiß er wird etwas Besseres machen, als Mone im V. Theile der Kreuzerschen Symbolik; aber der Sache selbst widerstehet der Mangel an brauchbaren Quellen; und zweierlei Mythologien sind doch offenbar. Wie oft wird unser guter Jac. Grimm gezwungen sein, wie Yoriks Staar zu rufen: I can not ut! einwärts wird er es wol tun. Indessen ist auch war, daß, wer über die teutsche Mythologie schreiben will, nicht warten soll; denn wir können nun keine neue Quellen mer entdeken. Bisher wurde dergleichen immer von nordteutschen, sassischen Schriftstellern unternomen und diese hatte nicht genug Acht auf unsere hochteutsche Vorzeit. Mir ist unter so vielen nicht ein einziger oberteutscher Schriftsteller bekannt, der sich ex professo damit befaßt hätte; und so muß ich glauben daß alles was man iezt noch sagen kann, wenig mer als ein Versuch bleiben werde. Für den Aufsessischen Anzeiger habe ich gethan was ich vermochte, ich habe im 25 Subscribenten und 10 Freibogen verschaft. Zum Lone habe ich nicht einmal ein vollständiges Exemplar des ersten Jarganges erhalten. Ich hatte bereits ein Duzend nicht wertlose Beiträge und Zeichnungen für den zweiten Sargang bereit, als ich durch ein hartnäkiges Stillschweigen, das meinen wiederholten Bitten und Anfragen entgegen trat, belert wurde, daß ich mich nicht ferner aufdringen soll. Indessen bedaure ich das Aufhören dieser Zeitschrift, die im zweiten Sargange unverkennbar besser geworden ist. Sie fragen mich nach meinen Arbeiten? Lieber Freund! ich muß Inen mit den Worten des armen verwiesenen Ovidius antworten: Tempora labuntur, tacitisque senescimus annis! ich bin auch nicht müßig gewesen, das heißt, ich habe geschrieben, ich habe vieles abgeschrieben. Meist nur Urkunden. Man muß sie erhalten, die zukünftige Welt würde sie ungern vermissen. Ich weiß wol daß das kein Verdienst ist; aber ich habe keine Lust mer zum arbeiten. Der Haß, der allgemeine Haß, der alle Menschen ergriffen hat und immer giftiger zu werden drohet, hat mich so tief betrübt! In meinem teutschen schwäbischen Herzen ist nichts als Liebe: ich meine dies seie das Natürlichste. Warum sollen denn zwei Männer nicht mer mit einander sprechen können, one sich mit Bliken, Worten oder Händen zu schlagen? Und doch ist es leider so! Muß denn der Krieg der Meinungen auch ein Krieg der Herzen werden? Und doch ist es nun so! Genug davon. Ich danke Inen lieber Freund! für Fre und Frer lieben Frau Emma, die ich auf das herzlichste grüße, freundliche Einladung in die alte Stadt der Pfalzgraven. Ach, es hätte keiner Einladung bedurft; ich weiß, daß ich in Irem stillen freundlichen Hauswesen zu ieder Stunde so willkommen gewesen wäre als Sie beide bei mir. Schwab hat mir geschrieben, daß er auf Pfingsten mit seinen 2 ältesten Sönen zu mir kommen will. Ich freue mich, wir werden viel von Inen sprechen. Frau Sophie reiset wie er mir sagt zu gleicher Zeit nach Bremen, ich bedaure dies nicht früher gehört zu haben; wir hätten so gut bis Münster in Westphalen zusammenreisen können. Ich habe dies an Schwab geschrieben; sollte es sich iezt noch machen; so gehet mein Weg nach Stuttgart gewiß über Tübingen. Ach! da kömmt ein Besuch! ich muß enden um die Post nicht zu versäumen. Lieber Uhland! der Himmel erhalte sie und die liebe eheliche Wirtinne gesund und wol, Ir unveränderlicher Freund Laßberg. Mit der Vita S. Udalrici des Marcus Welser, Augustae. 1595. sandte ich Inen auch eine Abschrift eines altteutschen Gedichtes auf diesen Bischof, aus einem Münchner Codex des XII. Jarhunderts. Das Format ist in 8º und hinten ist auch ein Gedicht auf die Jungfrau Maria beigefügt. Ich bitte Sie gefälligst nachzusehen, ob dieses apographum sich nicht unter Iren Schriften verschoben hat: unter den zurükgesandten Sachen befindet es sich nicht.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

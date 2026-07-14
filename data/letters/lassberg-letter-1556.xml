@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1556">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Ludwig Uhland (12.05.1831).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">777</idno>
+                        <idno type="register-lassberg">154</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 205<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1556">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1831-05-12">1831-05-12</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Eppishausen am 12. May 1831. Fre Zeilen vom 5. dieses Monats habe ich am 10. erhalten. Es tut mir leid, mein teurer Uhlandus! Inen sagen zu müssen, daß unvorgesehene und unvorsehbare Ereignisse mich nötigen meine Reise zu Inen aufzuschieben. Der Buchdruker Bannhard ist plözlich gestorben, 4 Tage vor seinem Tode brachte er mir noch Correcturen zum II. Bande des Episcopatus Constant. und nam für merere Bogen Mspt. mit. Wie ich höre hat er sein Haus und Gewerbe in großer Unordnung und schlechtem Zustande verlassen, wobei ich auch in Rechnung komme zum Glüke mit keinem großen Vorschusse, das würde mich nicht abhalten zu reisen; allein vor allem muß ich meine Mspt. Bogen wieder zurük haben, und vor Pfingsten werden die amtl. Verhandlungen über die Verlassenschaft nicht vorgenominen. Zweitens schreibt mir mein Son Friz, welcher erst in der Mitte des Junius Sigmaringen verlassen wollte, daß er sich entschlossen habe sobald als möglich von da wegzugehen um in eine mildere Luft zu kommen; ich erwarte nun Antwort von jm, ob ich noch zu jm kommen; oder seine Ankunft hier erwarten soll? Ich kann also noch nicht einmal die Woche bestimmen wo ich Sie, teurer und lieber Freund! wieder sehen werde; indessen, lassen Sie sich dies nicht anfechten, wenn ich eines Abends wie ein warer farender Schueler in Ire Stube trette, so hoffe ich daß weder Sie, noch die wakere Hausfrau darüber erschreken werden. Was in dem Briefe stehet, welchen Sie dem Hrn. Wagner aus Lauffenburg für mich mitgegeben, werde ich ja wol erfaren, wenn er mir in bringt oder sendet, sollte er aber Aufträge oder Anfragen enthalten; so täte es mir ser leid sie nicht früher bestellen zu können; damit Sie aber sehen, daß ich auch one Auftrag an Sie denke; so sende ich Inen hier: 1. Die Weise des Tanhausers, welche bereits in Bischofszelle von den Kindern des Diaconus Pupikofer zum Klavier gesungen wird; was mir Stalder bei der Uebersendung derselben schrieb, seze ich Inen auch hieher. „ Die Singstimme wurde in der Ercholzmatt ( im Entlibuch ) „ in Musik aufgefaßt; allein, diesem Machwerk nicht trauend, „ gab ich das Zugesandte einem hiesigen Stiftskaplan in Zensur „ und dieser genehmigte die Composition, nachdem meine Köchin „ die erste Strophe wieder vorgesungen hatte; so sezte derselbe „ noch einen einfachen Baß hinzu, damit man das Lied zum „ Clavier singen kann. Es würde mich innig freuen, wenn ich „ Frem Wunsche, wie auch Frem verertesten Freund Uhland, dem,, ich mich durch Sie freundschaftlichst empfehlen lasse, würdig,, entsprochen hätte. Auch werde ich zugleich Nachfrage nach einigen „ alten Liedern halten; aber ich zweifle ser ob ich darinn glüklich „ sein werde. " 2. Ein genaues und vollständiges Verzeichniß des zu München befindlichen Würzburger Codex; weil ich glaube, daß Sie wol einiges daraus im Laufe dieses Halbjahres zu Iren Vorlesungen über das XIV. und XV. Jarh. benüzen könnten; wollen Sie, bei Zurüksendung der Schrift mir dieses bezeichnen; so wird es alsobald in München abgeschrieben werden. 3. Zwei Blätter der Agrippina, welche mir gestern die Schwester des Hrn. Bern. Hundeshagen in seinem Namen übergab. Sind sie gleich schon 7 Sar alt! ist der Verfasser des Aufsazes über die Nibelungen gleich ein wenig stark verrükt, ser unwissend und von allem kritischen judicium entblößt; so sind doch wieder einige Notizen darin, welche, obgleich verkehrt vor getragen, doch nicht auf den Boden fallen dürfen. Das Siegel des Heinr. v. Offterdingen allein ( wenn ich nur eine Copie davon hätte! ) hat mich für die lange Weile entschädiget, welche die Rasereien des Hrn. Hundeshagen jedem vernünftigen Menschen verursachen müssen. Dieser Hr. Hundeshagen tut alle 5-6 Sare einen Schrei in die Welt, um seinen codex picturatus auszutrompeten, wenn Ebbe in seinem Beutel, und Schmalhans Küchenmeister in seinem Hause ist, kommt den Iemand der Lust hätte in zu kauffen; und hat sich indessen die Flut wieder eingestellt; so wird man gewönlich mit aber und wen one Zal aufs weite gewiesen: aber was muß man denken, wenn d. Nibelungen Lied zu Bonn von solchen Nebeljungen vorgetragen wird? Und welche Begriffe müssen die Sünglinge die in hören, davon tragen! Doch die Sache ist zu toll, als daß sie Schaden anrichten könnte. Leben Sie wol vererter Freund! Für dies Mal will ichs kurz machen: ich bin so unruhig wie die Maus in dem Kindbette, bis ich meinen episcopatus const. wieder auf dem Trokenen habe. Herzliche Grüße an die Frigen und an unsern Gust. Schwab. Laßberg.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

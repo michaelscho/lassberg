@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-3020">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Ludwig Uhland (27.03.1853).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">1479</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 256<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-3020">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0101">Meersburg</placeName>
+                    <date when="1853-03-27">1853-03-27</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Meersburg am heil. Ostertag 1853 Lieber Freund Uhland, liebe Frau Emma! Der gute Justinus Kerner hat Euch seinen lezten Blütenstrauß geschickt, ich habe Euch nur eine einzelne Blume zu senden, gepflanzt von der Hand einer frommen Nonne, im Kloster Magdenau, in der ersten Hälfte des XIII. Jarhunderts; denn daß es Werk einer Nonne ist, zeigen zur genüge die Worte und die Singweise. Meine Hildegund hat daran den ersten Versuch gewagt, alte Schriftzüge und Tonzeichen nachzuamen. Wenn man wol daran denkt, daß man vor 600 Saren die Kinder schon mit 4-6 Jahren in die Klöster tat um den Kreis ihrer Begriffe nach irem künftigen Bedürfnisse zu beschränken, so darf einen gar nicht Wunder nemen, daß dies Lied so sonderbare Begriffe von der Wirtschaft ausspricht, die der liebe Gott in seinem Himmel angerichtet hat. Ich konnte gestern nicht fortschreiben, die Zeit, die ich dazu benuzzen konnte, wurde mir durch Festbesuche verdorben. Nun, guten Tag, alle beide! Es ist mir noch immer, als ob ich zu Euerer Türe herein träte und sehe Euch so stille und freundlich bei Euerem altväterischen Rauchfleische und sauren Rüben sizzen. Nun es einmal bei mir so weit gekommen ist, daß es mit dem Dasein wol bald ein Ende nemen muß und noch bälder ein Ende nemen kann, so will ich meinen Hermes Psychopompus seine Fakel doch nicht anzünden lassen, one den wenigen übergebliebenen Freunden noch einen Gruß zuzurufen, ehe ich den Fuß auf die dunkle Ban sezze. Es ist mir gut gegangen im Leben, Gott sei Dank und Lob dafür! ich habe Freunde gefunden, habe geliebt und bin geliebt worden; schön war das Leben bis in mein hohes Alter. Morgen über acht Tage begehe ich den 84 Geburtstag: kommt und helft mir meinen Elfer Wein vollends austrinken. Est mihi cadus vini Manlio sub consule nati! aber ach! wie könnten wir frölich sein? Der liebe Gott hat meiner guten Frau ire 80iärige Mutter weggeholt: sie starb am 1. dieses in irem Bette und so schmerzlos, daß sie warscheinlich schon vor der Himmelstüre stand, ehe sie sich dessen bewußt wurde. Wenn ir nun, Ir lieben Freunde, über eine Weile höret: den alten Jäger haben sie auch begraben, so sagt: wol im! er war ein treues schwäbisches Herz! er liebte uns und das alte teutsche Vaterland. Vivite felices quibus est fortuna peracta iam sua! aber ich fürchte es kommen noch weit trübere Tage als wir schon erlebten. Ich werde sie nicht erleben; aber wenn auch Euch einmal der Tag der Auswanderung nach der lezten Heimat erscheinet, aliquando dextræ coniungere dextram fas erit et notas audire ac reddere voces, dann erzälet Ir mir Alles. Bis dahin lebet wol! Sollte es aber gegen Wunsch und Erwartung, doch so weit gehen, daß ich die Sichel diesen Sommer noch zu Feld gehen sehe: so tut mir die Liebe und suchet mich auch im Bette auf und iezt in allem Ernste: Ade und Gott befolen! Von Eurem Explicit am 2. April 1853. Joseph von Laßberg.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

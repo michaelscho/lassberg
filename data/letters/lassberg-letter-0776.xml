@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-0776">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Ludwig Uhland an Joseph von Laßberg (08.04.1822).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">1942</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 3<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-0776">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0148">Tübingen</placeName>
+                    <date when="1822-04-08">1822-04-08</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Euer Hochwohlgeboren Tübingen, den 8. April 1822. habe ich die Ehre, hiebei meine so eben unter der Presse hervorgegangene Schrift über Walther v. d. Vogelweide zu übersenden. Ich kann solche, wie auch in der Vorrede gesagt ist, freilich nur als eine Vorarbeit betrachten, die ich aber um so eher dem Druck übergeben zu dürfen glaubte, als sie doch zu weiteren Forschungen Anstoß geben kann. Es ist meine Absicht, eine Darstellung der gesammten Poesie des zwölften und dreizehnten Jahrhunderts zu entwerfen, die, durchaus auf Quellenstudium gegründet, doch von allem gelehrten Apparat entkleidet, das poetische Leben jener Zeit in klaren Bildern entfalten soll. Für diesen Zweck habe ich mich neuerlich an die Aventürendichter gemacht. Heinrich von Veldecke und Hartmann von Aue habe ich bereits durchgearbeitet, so weit es bei Letzterem ohne Erek und Enite und Gregor vom Steine möglich war. Jetzt bin ich mit Wolfram von Eschenbach beschäftigt, der freilich schon für sich ein bedeutendes Pensum ausmacht. Nach Betrachtung der Dichter, welche nach wälschen Vorbildern gedichtet haben, glaube ich mit gehellterem Blicke zu den Dichtungen aus dem einheimischen Heldenkreise zurückkehren zu können. Nach einer Beschreibung der Denkmale in der Stiftskirche zu Stuttgart vom Jahr 1798 befanden sich damals in solcher folgende Monumente, die Herren von Sachsenheim betreffend: „ Auf der Emporkirche unterhalb der Orgel liegt das „ Sachsenheimische Wappen in Stein gehauen mit der „ Jahrzahl 1471. Anno 1508 starb der Streng und - „ Vöst Herr Herrmann von Sachsenheimb Landthoff- „ maister der ( l. des ) alten Herren Herrmanns Sohn an „ St. Othmars Abendt. Anno 1558. Am guten Tag „ vor St. Bonifacij Tag starb der Streng Vöst Herr- „ mann von Sachsenheimb Ritter, dem Gott und Maria „ gnädig seyn Amen. Ferner ist das Wappen unter „ sich gekehrt bei einem von Sachsenheimb, auf gedachter „ Emporkirche, in Stein gehauen, knieend, darbei die Jahr- „ zahl 1501. " - Die Stiftskirche hat seitdem verschiedene Veränderungen erfahren, wodurch Manches verrückt und verdeckt worden seyn mag. Da fast Alle von Sachsenheim Hermann geheissen, so wird es schwer seyn, über die Person des Dichters ins Klare zu kommen, wenn er nicht etwa selbst in seinem Gedichte nähere Hinweisung giebt. Eine Einberufung zum landständischen Ausschusse wird mich auf einige Zeit wieder den altdeutschen Studien entrücken. Nachher gedenke ich solche durch einen Ausflug an den Bodensee wieder anzufrischen, wobei es mir so besonders erfreulich seyn würde, mich von Ihrem Wohlbefinden und dem erwünschten Fortgang Ihrer litterarischen Unternehmungen persönlich überzeugen zu können. Der ich mit der aufrichtigsten Verehrung beharre Euer Hochwohlgeboren unterthäniger Diener L. Uhland. NS. Dürfte ich wohl bitten, daß Sie das eine der anliegenden Exemplare des Walth. v. d. Vogelw. Herrn Ildefons v. Arx in St. Gallen, der mir gleichfalls in meinen Nachfragen so gefällig an Hand gegangen, gelegenheitlich zugehen lassen? Hier in Tübingen bin ich gegenwärtig nur auf Besuch und werde zu Ende der Woche nach Stuttg. zurückkehren.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

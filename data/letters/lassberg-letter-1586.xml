@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1586">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Ludwig Uhland (25.09.1831).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">790</idno>
+                        <idno type="register-lassberg">257</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 21<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1586">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1831-09-25">1831-09-25</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Eppishausen am 25. September 1831. Mein teurer Uhlandus! Unterm 24. July schrieb ich Inen durch einen Herrn Cleasby aus London, welcher von München aus zu Inen und zu Schwab reisen wollte, und seitdeme, vorige Woche, zu mir kam, wo ich dann erfur, daß die Briefe nicht abgegeben sind und er erst jezt, auf seiner Rükreise von Freiburg im Breisgau zu Inen kommen wird. Das tat mir leide; denn ein anderer als Sie, mein Freund! könnte glauben, daß ich an dem gerechten Schmerze über den Verlust Irer Mutter nicht alle den Anteil genommen, den ich gewiß tiefer als Viele empfinde, da auch ich diesen Schmerz in aller seiner Schärfe empfand, und noch nicht one Wehemut an die Mutter denken kann, der ich alles verdanke was ich bin. Der Verlust einer Mutter ist immer der gröste, den man erleben kann; denn wo wäre mer, innigere und frommere Liebe, als im Mutter Herzen? Heute aber muß ich Sie bitten, mir die Wyssischen Lieder, die ich Inen, nebst dem Spiegel Mariä vnd St. Ulrichs Leben, unterm 5. April l. I. durch den Constanzer Postwagen übermachte, so schnell wie möglich zurükzusenden, da solche vorige Woche von mir abverlangt worden sind: bei dieser Gelegenheit werden Sie mich verbinden, wenn Sie auch die Northern illustrations mitsenden wollten, wie auch das Gedicht von Carl dem Großen aus dem Clausenburger Codex. Nach Briefen aus Cassel vom 11. d. ist Iacob Grimm auf der Reise hieher und soll in wenigen Tagen eintreffen; diesem lieben Freunde möchte ich dann auch alles zeigen, was ich besize, besonders diesen Regensburger Carol, den er noch nicht kennt. Meine auf diesen Sommer ausgesezte Reise nach Siegmaringen und zu Inen, ist durch die Anherokunft meines Sones Friedrich vereitelt worden. Gottlob ist er durch die gebrauchte Molkenkur ser gestärkt, nun auf dem Wege nach Hyeres bei Toulon, und hat im Sinne, mit dem alle Wochen 3 Mal von lezterem Orte abgehenden Dampfboote, diesen Winter selbst einen Abstecher nach Algier zu machen. Ich bin diesen ganzen Sommer nicht aus dem Meere von Urkunden herausgekommen, welches mich umgiebt und noch täglich neuen Zufluß erhält; so daß ich nicht zweifle, der codex diplomaticus, welches ich dem II. Bande des Episcopatus Constantiensis beizugeben gedenke, der auch zugleich als dritter Band von Neugarts codex diplomaticus Alamanniae dienen kann, werde diesem leztern an Reichtum und Interesse nichts nachgeben. Indessen ist mein Buchdruker gestorben und seine Erben, finden den von jm für dies Werk eingegangenen Drukvertrag schädlich, verlustbringend und wollen nicht halten. So wachsen diesem Unternehmen von Zeit zu Zeit wieder neue hemmende Hindernisse zu. Aber: Nil desperandum! zulezt geht's doch. Sie aber, mein Freund! sind, wie ich höre, auch wieder in die politische Arena geraten; ich fürchte daß diesmal das Opfer umsonst gebracht seie; es wird wieder überall trübe und trüber. Exspectata seges vanis delusit avenis! So viel für heute, nebst einem herzlichen Gruße an Frau Emma, von Frem</p>
+            </div>
+        </body>
+    </text>
+</TEI>

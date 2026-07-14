@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-2352">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Ludwig Uhland (27.07.1842).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">1185</idno>
+                        <idno type="register-lassberg">127</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 245<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-2352">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0101">Meersburg</placeName>
+                    <date when="1842-07-27">1842-07-27</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Auf der alten Meersburg, am 27. July 1842. Verertester Freund! Endlich kommt der Dettinger, zu dem sich auf dem Wege vom Schreibtisch zur Presse, noch andere Leute gesellet haben, die, so hoffe ich wenigstens, Inen nicht weniger gefallen sollen, als ir Vorreiter. Sind doch wieder ein par bisher noch unbekannte schwäbische Dichter ans Licht gezogen, freilich nicht aus der goldenen Staufenzeit, aber darum doch zu beachten, weil sie in die Lüke zwischen 1390 und 1430 fallen, von wo wir wenig specimina haben, und somit glaube ich das Papier nicht ganz umsonst schwarz gemacht zu haben: das nächstemal will ich suchen es besser zu machen, d. i. etwas Besseres zu liefern. Ich denke Ir ehemaliger Schüler, Professor A. Schott, hat Inen und Frau Emma auf seiner Durchreise mehrere Grüße ausgerichtet. Wir sind gottlob! alle wol und haben einen guten warmen Sommer gehabt, was alten Leuten wol tut. In theotiscis nihil novi! Die Entdekung, welche Jacob Grimm in dem Merseburger Meßbuch gemacht hat, will mir doch nicht so außerordentlich wichtig vorkommen. Eine Wolke mer oder weniger, macht den nordischen Götterhimmel noch nicht hell! Indessen: adde parum parvo etc. Wie mir A. Schott sagte, will Cotta eine Reihe mittelhochteutscher Dichter herausgeben: ich hoffe doch, daß es lauter inedita sein werden. Ich vermute, daß wir diesen Herbst recht süße Trauben essen werden; möchten Sie, lieber Freund! doch Lust bekommen, sie mit Frau Emma, die wir alle herzlich grüßen, bei uns zu versuchen! Und nun Gott befolen! von Frem I. v. Laßberg. Noch eines. Die Stiftdame Freiin von Wintgen, eine weitläufige Verwandte meiner Frau, welche sich mit irer Nichte seit einigen Wochen bei uns aufhält, machte in Wisbaden die Bekanntschaft von Miß Clara Graves, einer Irländerin, deren Vater am Hofe der Königin Viktoria zu London angestellt ist. Diese beschäftiget sich viel mit Uebersezzungen aus dem Teutschen, und schenkte der Stiftdame von Wintgen eine Uebersezzung von Uhlands kleinem Roland, welche leztere hinwieder an mich abtrat, um sie Inen zu senden, und da ist sie.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

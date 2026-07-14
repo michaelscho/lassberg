@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1771">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Ludwig Uhland an Joseph von Laßberg (23.04.1834).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">2495</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 219<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1771">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0148">Tübingen</placeName>
+                    <date when="1834-04-23">1834-04-23</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Hochverehrter Freund! Tübingen, d. 23. Apr. 1834. Es ist eine lange Zeit vergangen, während welcher ich großentheils von hier abwesend und noch mehr meinen Studien und dem freundschaftlichen Briefwechsel entfremdet war. Nun ich wieder hier heimisch bin, erfülle ich endlich auch die Pflicht, die mir von Ihnen gütig mitgetheilten Handschriften und Bücher mit meinem herzlichen Danke für die getragene Geduld hiebei zurückzusenden. Immer wollte ich dieselben nicht unbenützt abgehen lassen und war doch von der Benützung so manigfach abgehalten. Dadurch, daß mir von unsrer Regierung der Urlaub zur Annahme der wiederholt auf mich gefallenen Abgeordnetenwahl verweigert wurde, fand ich mich genöthigt, meine hiesige Lehrstelle aufzugeben. Gleichwohl habe ich meinen hiesigen Wohnort beibehalten und denke auch nach wie vor die deutschen Studien zu betreiben. Es ist seitdem für diese manches Erfreuliche erschienen, namentlich Lachmanns Wolfram von Eschenbach und I. Grimms Reinhart Fuchs, von Lesterem haben wir nun bald auch eine deutsche Mythologie zu hoffen, die gewiß an unerwarteten Aufschlüssen reich seyn wird. Der literarische Anzeiger von Aufseß bleibt schon seit längerer Zeit aus und ich befürchte, er möchte völligen Stillstand genommen haben. Nachdem ich zum eigenen Herde zurückgekehrt bin, gebe ich mit meiner Frau, die sich Ihnen angelegenst empfiehlt, dem langgehegten Wunsche wieder Raum, Sie einmal, während der schönen Jahrszeit, bei uns hier zu sehen, mich persönlich von Ihrem Wohlbefinden zu überzeugen, von Ihren Arbeiten, die inzwischen gewiß nicht gerastet haben, aus Ihrem Munde Näheres zu vernehmen. Mit unveränderlicher Verehrung und Freundschaft der Ihrige L. Uhland. NS. Die Reliques of Irish Poetry und die Dissertation sur le Roman de Roncevaux habe ich zufällig erhalten und wünsche, daß die Bibliotheca Eppishusana diese Doubletten nicht verschmähen möchte.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

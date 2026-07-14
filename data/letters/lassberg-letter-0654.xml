@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-0654">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Ludwig Uhland (29.07.1820).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">358</idno>
+                        <idno type="register-lassberg">316</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 9<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-0654">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0066">Heiligenberg</placeName>
+                    <date when="1820-07-29">1820-07-29</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Wolgeborner, hochverehrter Herr! Hier sende ich Ihnen die neuesten 4 Bogen meiner Ausgabe des Nibelungen - Liedes. Ich bin noch nicht in meinem Heimwesen angelangt, sonst hätte ich schon längst aus meinen Kollektaneen für Sie das Walter von der Vogelweide betrefende herausgehoben und Ihnen gesandt: es soll mein Erstes Geschäfte sein, wenn ich wieder auf der Villa Epponis angelangt bin. Mit dankbarem Gefüle habe ich Stuttgardt verlaßen; denn so kurz mein Aufenthalt war, so genußreich war er! Ich zäle darunter vorzüglich Ihre Bekanntschaft, wenn ich unser kurzes Gespräche so nennen darf. Ein alter Jäger von mehr denn fünfzig Jaren, kann einem jungen Dichter, der in der Lebensblüte auf alles Schöne und Gute vollen Anspruch zu machen hat, nicht viel zierliches sagen; doch erlauben Sie mir diese wenigen Worte: Es tat meinem Herzen wol wieder einen schwäbischen Mann von altem Schrot und Korn begegnet zu haben, der seine Zeit versteht und Herz und Kopf am rechten Fleke hat. Möchte uns das Schiksal noch oft zusammen füren und vor Allem der Besuch statt finden, zu dem Sie mir beim Abschiede Hofnung machten; dann wollten wir von Eppishausen aus die Sänger - Burgen im alten Herzogthum Alemannien zusammen besuchen. Ich glaube Ihnen gesagt zu haben, daß ich auf der Reise nach Stuttgardt eine Handschrift ( von 1440 ) erworben habe, welche eine auf Befel des Herzogs Albrecht v. Österreich durch Dr. Johann Hartlieb zu Wien gemachte Übersezung von magistri Andreae Francorum aulae regiae Capellani ( er lebte um 1160 ) Libro de arte amandi &amp; de reprobatione amoris, enthält. Aretin hat in seinen Aussprüchen der Minne gerichte, München 1803, 8 °. aus einer Münchner Handschrift Auszüge herausgegeben; aber das Buch ist zu wichtig, als daß cs nicht eine eigene Bearbeitung verdiente. Es sind in Teutschland Ausgaben des lateinischen Originals gemacht worden. Eine: Erotica seu amatoria Andreae Capellani regii, Scriptoris vetustissimi 2c. Dorpmundae Typis Westhovianis. 1610. Die andere: Tremoniae, Typis Westhovianis. 1614. Sie würden mich sehr verbinden, wenn Sie auf der großen Bibliothek zu Stuttgard wollten nachsehen lassen, ob keine dieser Ausgaben sich dort befindet. Es ist das einzige Werk, an welchem man die Cours d'amour diplomatisch erweisen kann. Vielleicht findet sich unter den Incunabeln der Bibliothek: Tractatus amoris &amp; de amoris remedio Andreae Capellani. Sine 1. &amp; a., dessen Mencken in den miscellaneis lips. novis Meldung tut. Hier sende ich Ihnen eine ( zwar nicht ganz getreue ) Abschrift eines größeren Gedichtes aus meinem Lieder - Kodex, welches mit anderen im II. Bande meines Liedersaals erscheinen wird. Mich däucht es lohnte sich wol der Mühe, es in die heutige Sprache zu übersehen. Hätten Sie wol Lust dazu? Über die in den Stuttgardter Bibliotheken gesehenen teutschen Handschriften kann ich Ihnen nur so viel sagen, daß ich genug gesehen habe, um zu wißen, daß ich einmal einen eigenen Pilgerzug nach diesen Heiltumen tun muß, biß wohin ich auch meine Betfart ins heilige Land der Stauffen verschieben muß. Ist es nicht unbescheiden, so möchte ich wol fragen: wollen Sie den Walter von d. Vogelweide als auctor classicus mit einem historischen und kritischen Kommentar ediren? oder bloß eine Dissertatiuncula über ihn schreiben? im letzten Falle seze ich mich mit den Buchhändlern um das Manuscript bei Ihnen in Concurrenz; ich möchte gerne in das Erste Heft einer Zeitschrift, die ich noch in diesem Jare zu beginnen gedenke, Etwas von Ihnen haben. Es giebt eine Menge einzelner Dinge, welche ich in meinem Liedersaale, worin ich nur ganze Codices aufneme, nicht geben kann; diese möchte ich denn auch nicht gerne zu Grunde gehen lassen: zudem dürfte mancher oberdeutsche Altertumsfreund froh sein, durch solches Mittel Nachrichten mitteilen zu können und Anfragen zu machen; freilich müßte die Sache nicht a la Gräter betrieben werden und zum Teile auch nicht wie v. d. Hagen und Büschings wochentliche Nachrichten; also beßer! und dazu sollten die Bessern unter den Alemannen helfen, darum frage ich Sie mein hochverehrter Lands - Mann! Von meiner Seite ist weder Geldgewinn, noch sogenannter Ehrgeiz im Spiele; ich gedenke auch keinen Trompeter vorauf zu senden; sondern die historischen und singenden Mannen gleich im ersten Geschwader anrüken zu laßen, an ihren Fähnlein mag man sie dann erkennen und nach Ehren, freundlich oder feindlich empfahen. Leben Sie wol und grüßen Sie herzlich von mir ihre eheliche Wirtin! auch seien Sie nicht weniger freundlich gegrüßt von Ihrem Heiligenberg, am 29. July 1820, aufrichtig ergebenen Joseph v. Laßberg. Ich gehe in diesem Augenblike nach Constanz, wohin Hr. Minister v. Stein mich beschieden hat.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

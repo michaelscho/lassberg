@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1588">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Ludwig Uhland an Joseph von Laßberg (05.10.1831).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">2382</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 211<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1588">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0147">Stuttgart</placeName>
+                    <date when="1831-10-05">1831-10-05</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>I. v. Laßberg. Stuttgart, den 5. Oct. 1831. Das Schreiben vom 25. Sept., worin Sie, verehrtester Freund, verschiedene mir gütig mitgetheilte Bücher und Handschriften zurückverlangen, hat mich hier in Stuttgart erreicht, wo ich einen Theil meiner Herbstferien zubringe. Ich habe sogleich meinen Schwager, Diaconus Meyer von Pfullingen, der über Tübingen zurückgieng, beauftragt, Alles, was Sie zur Zurückgabe bezeichnet hatten, sorgfältig verpacken zu lassen und dem nächsten Postwagen zu übergeben. Sie werden also gleichzeitig mit gegenwärtigen Zeilen zurückerhalten: die Mappe mit Wyssischen Liedern, den Spiegel Mariä und das Fragment vom Leben des h. Ulrichs, das Gedicht von Karl d. Großen, die Northern illustrations. Daß ich diese und einige weitere noch bei mir liegende Mittheilungen so lange in Händen behalten, muß ich freilich sehr entschuldigen. Aber das vergangene Jahr war all zu ungünstig für meine Plane und Arbeiten. Dem Tode meiner Mutter folgte, noch vor Abfluß eines Vierteljahrs, am 29. Aug., der meines Vaters und das vorhergehende Krankenlager nahm unsre Sorge und Pflege manigfach in Anspruch. Nehmen Sie meinen innigen Dank für die freundliche Theilnahme, die Sie mir an dem Verluste der Mutter bezeigt haben. Darf ich mir für die Arbeiten, die mich im nächsten Semester beschäftigen werden, abermals Ihre gütige Förderung erbitten, so wäre es zumeist die Abschrift des Gedichts vom h. Oswald, deren Benützung mir von großem Interesse seyn würde. Bei meinem letzten Besuche in Eppishausen habe ich von dem bedeutenden Werthe dieses Gedichts für Mythus und Sage mich überzeugt. Herr Cleasby hat mich hier aufgefunden, aber leider liegt das Schreiben, das er mir von Ihrer Hand überbringen sollte, noch in München, wohin er erst später, wenn die Cholera nicht vorschreitet, zurückkehren will. Er zeigt lebhaftes Interesse für die deutsche Literatur. Das Gleiche war der Fall bei einem Franzosen, Letellier aus Rouen, der mich kürzlich in Tübingen besucht hat. Ein Freund des Letztern, Quinet, wird diesen Winter den altfranzösischen Parcival herausgeben, aber freilich nicht den noch immer vermißten, dessen sich Wolfram bediente, sondern den von Chrestien de Troyes begonnenen, dessen in der Berner Hdschr. enthaltenes Fragment mir durch Ihre Güte zugänglich wurde. An unsern landständischen Verhandlungen wieder Theil zu nehmen, habe ich zwar eine Aufforderung erhalten, denke aber, wenigstens vorläufig noch, mich nicht zu binden, bis zur wirklichen Einberufung unsres Landtags, am Ende des nächsten Jahrs, kann sich noch Manches so oder anders gestalten. Der Besuch des trefflichen Iacob Grimm wird Ihnen und ihm viel reichen Genuß verschaffen. Möchte ihn seine Reise auch durch unsre Gegend führen! Voll Verehrung und Freundschaft der Ihrige L. Uhland.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

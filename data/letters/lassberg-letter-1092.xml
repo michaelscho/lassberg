@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1092">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Ludwig Uhland (20.05.1826).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">544</idno>
+                        <idno type="register-lassberg">85</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 69<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1092">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0066">Heiligenberg</placeName>
+                    <date when="1826-05-20">1826-05-20</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Heiligenberg, am 20. May 1826. Ich habe, mein verertester Freund! in allen meinen Schriften und Collectaneen aufmerksam nachgeforscht, aber nichts darunter gefunden, was zu näherer Kenntniß des Minnesanges vor dem XIV. Jarhundert dienen könnte; konnte Inen folglich auch nichts zum Behufe Irer geschichtlichen Darstellung des Heldenliedes und Minnesanges übersenden. Zwar hat auch das XIV. Iar Hundert noch Gedichte aufzuweisen, welche dieselbe Tendenz wie die Minnelieder der guten schwäbischen Zeit haben, allein das reichste Specimen hievon, die Lieder des Inen wolbekannten Hugo von Montfort, zeigen zur Genüge, daß Sprache, Darstellung und Bilder hier schon ein ganz anderes Wesen angenommen haben und in poetischer Beziehung sich dem eigentlichen Minnesang nicht mer anreihen lassen. Die einzelnen Blätter, von denen ich Inen schrieb, daß ich sie wie den Littower, nach und nach mit fortlaufenden Seitenzalen herauszugeben gedenke und welche zulezt gleichfalls zu einem Bande anwachsen dürften, sind meist geschichtlichen; oder scherzhaften Inhaltes, in Prosa und in Versen, und lassen sich jrem zufälligen Vorkommen nach nicht wol in eine ordentliche Einteilung bringen; sie scheinen mir daher vorzüglich zu kleinen Gaben an Freunde sich zu eignen. Sie wissen one Zweifel, daß ich seit einiger Zeit mit Herrn Prof. Schwab viel schriftlichen Verker gehabt habe; seine Beschreibung des Bodensees liegt mir ser am Herzen. Heiligenberg am 26. May. Ich war so weit gekommen, als ein heftiger, wie angeflogener Fieberanfall mich ins Bette warf. Da ich dergleichen nicht gewont bin; so gedachte ich bei ganz ruhigem Verhalten nach ein par Tagen wieder loszukommen; aber den zweiten Tag musste der Arzt gerufen werden und dieser erklärt die Krankheit für ein Schleimfieber; ich füle zwar, nach dem mörderischen Fieberanfalle, eine große Schwäche, aber ich bin dabei doch wolgemutet und bedaure nur, daß ich Sie mein Freund! nun wol viel später sehen werde, als ich mir vorgenommen hatte. Leben Sie wol, bald hoffe ich Inen bessere Nachrichten geben zu können. Ir Laßberg. 35.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

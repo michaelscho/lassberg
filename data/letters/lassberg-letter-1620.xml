@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1620">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Ludwig Uhland (26.01.1832).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">805</idno>
+                        <idno type="register-lassberg">24</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 216-19<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1620">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1832-01-26">1832-01-26</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Eppishausen am 26. Januar 1832. Schon 2 Monate sind verflossen, seit ich Fren lezten Brief und mit im, die neue Ausgabe Frer Gedichte erhielt; statt Inen lieber Freund! dafür zu danken, legte ich mich hin und ward krank; der Stof dieser Krankheit lag nicht in meinem Körper; sondern, eine herumfarende Sucht ergriff mich, die viele Leute in unserer Gegend aufs Bette warf; das Fieber steigerte sich bis zum Delirium, ich glaubte man wolle mich mit Gewalt zum Bischof machen, endlich genass ich. Ich war schon merere Tage aus dem Bette; als mich die Krankheit aufs neue befiel; aber ich war schon zu weit auf dem Wege der Genesung vorgeschritten, als daß sie mer etwas über mich vermocht hätte: nun bin ich schon merere Wochen frei von allem Fieber. Der Arzt nennte das Uebel eine Art Cholera benigna; sonderbar, daß ich mich an demselben Tage von der Krankheit befallen fühlte, da ich einen Brief von Hug aus Freiburg erhielt, der mir schrieb, daß er die sporadische Cholera mit den heftigsten Symptomen, die sie je gezeigt, überstanden habe. Jezt bin ich wieder frisch und gesund und füle keine Nachwehen mer. Die 9 neuen Lieder in Irem Buche, haben mir zwar alle gefallen; doch am besten das auf die Mutter; daß der Vater bald nachfolgen werde, habe ich wol vermutet, es kömmt gewönlich so. Die Note 67 in der Perzischen Ausgabe der Casus monasterii St. Galli, wo von Arx von den cantiunculis ſpricht, habe ich immer nur so verstanden, daß Arx sagen wolle, so wie auf den tragischen Tod des fränkischen Kammerboten Adalpert, so seien auch auf andere berümte Männer Lieder gemacht und im Volke gesungen worden. Ich gieng aber auf Iren vorlezten Brief im Herbste selbst wieder nach St. Gallen, um nachzuforschen; aber es war, wie ich voraussahe, vergeblich, dort ist außer den bereits aufgefundenen, kein teutsches Lied mer anzutreffen; daß aber in früherer Zeit manches dergleichen, und selbst noch in ser später Zeit ( 1712 ) dort war, beweiset beiliegendes Büchlein, welches ich pro strena von mir anzunemen bitte. Es hat mich dies schöne Geschenk des guten Aurelius Tigurinus unendlich gefreut: ein solches Zeichen der Liebe vor allem Volke gegeben, müßte auch dem Unempfindlichen wol tun. Bei der Plünderung des Klosters 1712 stalen die Zürcher die St. Galler Bibliotheke, vermutlich auf Angabe irer gelerten Mitbürger, so ziemlich aus, und viele der schäzbarsten Codices auf der Wasserkirche zu Zürich tragen noch das Bibliothek Zeichen des Klosters von St. Gallen. Lezten Sommer bin ich außer einem kleinen Ausfluge nach dem Zürcher See, Einsiedlen und auf den Rigi, gar nirgends hingekommen; denn meine Waldklause wurde bis in den Winter hinein nimmermer von Gästen leer, und ich bin dadurch nicht nur mit meinen Arbeiten; sondern auch mit meiner Correspondenz in Nükstand gekommen, was ich nun den Winter über nachzuholen habe. Ich habe Herren Cleasby wärend seinem Hiersein ser aufgemuntert in der Bodleyanischen Bibliotheke zu Oxford nachzuforschen, ob die von Franciscus Junius dahin geschenkte Handschrift von dem Liede auf den heiligen Anno noch vorhanden seie? und bin so glüklich gewesen von jm nachfolgende von einem Bibliothekare daselbst mitgeteilte Notizen zu erhalten. Annonis archiepiscopi coloniensis vita. Rhitmice. 1. The manuscript does exist in the Bodleian Library. 2. It is suppos'd by the Librarian to be in the hand writing of the Author. 3. It contains abrut 46 Pages with perhaps 30 lines on each page. 4. A Stranger would be allow'd to examine it minutely ( of course in the Library ) or even to take a Copy, if introduc'd by a member of the University, an magister artium probably. Das ist es alles, aber es ist indessen schon viel; mir ist vorzüglich wichtig daß das Oxforder exemplum über 500 Verse mer hat, als die Opizische Ausgabe, welche ich immer für beschnitten gehalten habe. Was er mit dem: „ writing in the hand of the author " sagen will? ist mir nicht ganz klar: wäre es buchstäblich von dem Dichter des Liedes zu verstehen; so müßte dies ein Colophon am Ende der Handschrift besagen, und wir lernten einen alten Sänger mer kennen. Nun! wir wollen sehen, was aus der Sache zu machen ist. Herzlich gefreut hat es mich, daß Sie diesen lezten Herbst das Vergnügen genossen haben den wakern Suabo und seine liebenswürdige Frau bei sich zu haben, grüßen Sie beide aufs freundlichste von mir. Schwab hält ein zu strenges Ettiquette mit mir; ich hatte im durch Cleasby geschrieben; daß er den Brief nicht erhielt, ist nicht meine Schuld. Ich wünsche daß es im und den Seinen wol gehe. Nun wird wol bald die erste Lieferung des Aufsessischen Anzeigers in München erscheinen, ich hoffe, daß er mit der Zeit etwas mer als bloßer Anzeiger werden wird. Herr Schönhuth will eine Schulausgabe meines Nibelungenliedes machen, die Sache soll schon im Gange sein: ich habe etwas bange, daß es mit der Kritik bei Abfassung des Wörterbuches nicht ganz glüklich gehen werde. Damit Sie sehen, daß ich nicht allein für mich, sondern auch für meine Freunde lese, lege ich Inen einige aufgehaschte Lesefrüchte bei. Tausend Grüße an Frau Emma; wann kommen Sie wieder einmal zu mir? Die flava gens Suevorum läßt sich schon lange nicht mer in der villa Epponis sehen. Gott befolen! von Frem Laßberg.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

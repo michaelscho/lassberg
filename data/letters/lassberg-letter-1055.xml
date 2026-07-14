@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1055">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Ludwig Uhland (14.12.1825).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">527</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 60-64<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1055">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0082">Konstanz</placeName>
+                    <date when="1825-12-14">1825-12-14</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Verertester Freund! Als ich gestern Mittags von meinem heiligen Berge hieher zurükkam fand ich ein Schreiben von Inen mit einem Einschluße von H. Dr. Maßmann, welches wieder drei Briefe von Iacob Grimm, Prof. Mone und Herrn von der Hagen von ser altem Datum enthielt. Der Inhalt von Maßmanns Schreiben konnte mir, da er auch Iren Beifall hatte, nicht anders als höchst angenem sein: allein, bei diesen Briefen lag ein späterer von Herrn Dr. Maßmann, der von Schwierigkeiten spricht, die sich dem Abschreiben des Weingartner Codex plözlich in den Weg gestellt haben und dann noch ein späterer von Herrn Prof. Schwab, der das Vorhaben Maßmanns als ganz aufgegeben angiebt und den Antrag enthält, in Gemeinschaft mit einem Herren Kaußler das Manuscript für mich zu copiren. Es muß also Etwas vorgefallen sein, was, nach meinem Dafürhalten nur die Person des Herrn Dr. Maßmann betreffen kann und mich und mein Vorhaben den Codex Weingartensis heraus zugeben, nicht berüret; und obschon ich in keinem der erhaltenen Briefe etwas davon erwänet finde; so glaube ich doch vermuten zu müssen, daß Herr Dr. Maßmann bereits Stuttgart verlassen und seinen Literarischen Zug weiters fortgesezt habe. Ich bin dadurch in der Verlegenheit nicht zu wissen, wohin ich im auf seine zwei Schreiben antworten soll; können Sie mir seinen Aufenthalt angeben, so bitte ich darum. Empfangen Sie meinen besten Dank, lieber Freund! für die Mitteilung des Inhaltes des Schlusses der Handschrift Nr. 69, worunter mir das vollständige Gedicht von Mezen Hochzit, besonders angenem ist; weil ich alle treue Schilderungen des Volkslebens der mittleren Zeit vorzüglich schäze. Man findet oft die leer gebliebenen Blätter an Manuscripten des Mittelalters mit einzelnen Liedern ausgefüllt, und ich habe von den mir vorgekommenen schon eine kleine Sammlung zu machen angefangen; welche einmal einen ganzen Band zum Liedersaal füllen könnte. Für jezt aber beschäftiget mein Gemüte vor allem die Sorge, um Vorbereitung zu Herausgabe des Weingartner Codex. Der Antrag der Herren G. Schwab und Kausler, mir diese Membrane abzuschreiben, ist gewiß des höchsten Dankes wert; ich füle das ganz: Αλλ ' ἐκ τοι ἐρεω, και επι μεγαν όρκον όμουμα, daß mir nichts angenemeres begegnen könnte, als es selbst zu tun: es ist nicht Eitelkeit, die mich dies wünschen heißt; sondern viel mer eine religiöse Ängstlichkeit, daß andere nicht die, nach meiner Ansicht, unerläßliche Geduld bei solcher Arbeit haben würden, one welche einem Dichter so oft durch einen scheinbar unbedeutenden Schreibfeler, großes Unrecht zugefügt werden kann. Ir in dem vorlezten Briefe geäussertes Anerbieten zu Vergleichung der Handschrift, könnte ich wol one große Unbescheidenheit nicht annemen. Männer die so Trefliches arbeiten können, sollte man mit solchen ermüdenden und trokenen Geschäften nicht behelligen. Ich hätte zwar große Lust auf den Früling oder Sommer eine Entdekungs Reise längs dem Rheine und Nekar in Beziehung auf alte teutsche Dichter zu machen; aber im lezten Iare sind mir 3 dergleichen Reise Plane so hässlich gescheitert, das ich ganz misstrauisch auf das Schiksal geworden bin, und mir vorgenommen habe, alle dergleichen Projekte den Göttern anheimzustellen, kurz, ich bin ganz ein Mann geworden, den wie Horaz sagt: quem duplici panno patientia velat. Von der Hagens Brief, den mir Dr. Maßmann mitgebracht hat, giebt Kunde über seine Ausgabe der Maneßischen Sammlung, zugleich schreibt mir Jakob Grimm: „ Hagen stehet „ vielleicht ab von seiner überschnellen Ausgabe der Maneßischen „ Sammlung wenn er die Schwierigkeit der Sache reiflicher be- „ denkt, oder darauf gefürt wird. " Wie wenig dies der Fall sei, sollen Sie nun aus Hagens eigenen Worten vernemen: „ Von meiner neuen Ausgabe der Maneßischen Sam- „ lung bemerke ich vorläufig. Der Maneßische Text bleibt „ im Ganzen (? ) unvermischt, alles aber berichtigt, „ ergänzt aus der Urschrift. Orthographie und Grammatik „ berichtigt und gleichartig, so fern nicht örtliche und persön- „ liche Abweichung entscheiden, mangelhafte Lieder werden, so „ weit es noch geht ( ja wol! ) aus andern Handschriften er- „ gänzt ( als solche mit * bezeichnet ) und besonders so die „ großen Sonnetartigen Strophenreihen mehrerer Dichter „ vervollständigt, und diese auch besser geordnet ( meist nach „ andern Handschriften ) und zum Teile chronologisch herge- „ stellt ( z. B. bei Walther von der Vogel Weide ) ". Nun, ich gratuliere Freund Uhland! „ Ein starker Suplement - Band „ umfafft aber Alles, was diesem Dichter - Chor sonst noch zu- „ geschrieben wird, desgleichen die Lieder anderer namhafter „ Dichter dieser Zeit, so wie viele namenlose. Meine Aus- „ gabe des Meister Gottfried ist ungefähr Maaßstab, beson- „ ders das Glossar ( dies bleibt hier aber weg, weil dem- „ nächst (!!! ) ein allgemeines mittel - hochdeutsches Wörter „ Buch folgen soll ) dagegen Lesarten und literarisch - biogra- „ phische Nachrichten über Alles. " In dieser verwirrten und gräuelvollen Manier gehet der ganze Brief fort und läßt billig zweifeln ob der böse Hagen die sogenannte Maneßische Sammelung auch nur einmal auf merksam und ganz durchlesen habe. Da möchte man doch des Teufels werden! Auch erfare ich von Im, daß nicht, wie anfangs versprochen, eine Umarbeitung des literarischen Grund Risses; sondern blos ein Nachtrag folgen soll. Wir wissen an Im, daß dergleichen Codicille manchmal erſt in Extremis gemacht werden, d. i. wenn die Messe vor der Türe ist und jm das Wasser an die Kele gehet; also auch von dieser Seite nichts zu erwarten. In Warheit, dieser Mann kömmt mir vor wie ein Taschenspieler, der alle seine Stücke mit sonderbarer Geschwindigkeit zu machen weiß; allein wie diese Künstler zu sagen pflegen: Praxis est multiplex 2c. Mit meiner kurzweiligen Historia von Graven Albrechten von Werdenberg, habe ich, wie die Franzosen sagen, nichts heur et malheur! der Mann der die Holzschnitte dazu machen soll, ist wegen falscher Tätigkeit, ins Zuchthaus gekommen; das ist nun ser langweilig, für mich und In. Der Iwain des Hartmann von Owe, kömmt nun auch heraus. Lachmann schreibt mir, daß er den Text bearbeite und Benecke Anmerkungen und das Wörterbuch dazu mache, lezterer hat auch den Aparat dazu zusamen gebracht. Der Abdruk von Lachmanns Nibelungen Lied rükt auch mit großen Schritten vor. Er giebt den Text der zu München befindlichen zweiten Hohen Emser Handschrift, ganz rein one Interpolation a la Hagen, übrigens soll die Ausgabe gehörig mit Lectionibus variis und notis ausgestattet werden. Ich traue Lachmann etwas ser gutes zu, und freue mich, daß nun auch einmal eine zweite Urkunde des Nibelungen Liedes edirt wird; zunächst sollte nun die St. Gallische folgen; allein, schwerlich wird sobald jemand die Herausgabe unternemen. Man muß gestehen, daß im Norden ungleich mer Liebe, Eifer und Tätigkeit für diesen Teil der teutschen Literatur ist, als bei uns, und die dortigen Buchhändler ungleich mer Mut haben, als selbst Cotta, der sich doch so gerne loben hört.. Herr Prof. Schwab wird Inen vielleicht von dem neuentdekten Sänger Hug von Langenstein, aus dem Höwgau, gesprochen haben, zu welchem Funde mir Benecke die Veranlassung gab. Ich habe nun in dem Manuscript vom II. Teile von Trutpert Neugarts Episcopatus Constantiensis, die Bestätigung meiner Sammlung gefunden, daß dieser Dichter noch bis 1318 teutschordens Komthur auf der Insel Maynau war. Nun hoffe ich lassen auch Sie mich bald eine erfreuliche Kunde über Ir literarisches Leben und Weben hören; denn mir sagt eine innere Andung, daß Sie an der Theotisca arbeiten und uns bald etwas mitteilen werden, wie wirs an unserm Uhland gewont sind. Indessen: Vale et fave Constanz am 14. December 1825.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

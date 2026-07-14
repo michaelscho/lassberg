@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-0745">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Ludwig Uhland (21.09.1821).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">392</idno>
+                        <idno type="register-lassberg">439</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 27<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-0745">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0016">Baden (Aargau)</placeName>
+                    <date when="1821-09-21">1821-09-21</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Baden im Aargau am 21. September 1821. Euer Wolgeboren Danke ich viel mal für die zur Erlangung der Weingartner Handschrift gegebene Anleitung. Ich werde sie befolgen, so bald der 2. Band des Liedersaals ( an dem nur wenige Bogen fehlen ) und die Vorrede zum 4. vollends abgedrukt sind; so daß ich dem König die 3 Bände zumal, in Begleitung meiner Bitte zu Füssen legen kann. Indessen werden auch die Vorarbeiten zu einer neuen, und wie ich hoffe, guten, Ausgabe der Maneßischen Handschrift eingeleitet. Ich war vor einigen Tagen bei Görres in Aarau, und möchte ihn bewegen, wärend seines Aufenthaltes in Paris ( er reiset nächsten Monat dahin ab ) diese Arbeit zu unternemen. Bei diesem Anlaß hörte ich von ihm, daß Sie altfranzösische Lieder von ihm verlangt haben, von welchen er glaubte, daß sie in Coblenz geblieben seien; sie wurden aber wärend meiner Anwesenheit nochmals unter seinen Papieren gesucht und gefunden; Sie werden sie nächstens erhalten. Wenn der Grabstein des Hermann von Sachsenheim aufgefunden werden könnte; so wäre es sehr gut und ich würde mit eben so viel Dank als Vergnügen alle für die Abzeichnung desselben ergehenden Kosten erstatten. Vielleicht wäre es nicht so gar unzeitig, nach ein Par Jaren dem Lieder Saal einen teutschen Sänger Saal zuzugesellen, und den Lebensbeschreibungen der Dichter alle noch vorhandene bildliche Denkmale beizufügen. Es wäre übrigens nicht unmöglich, daß der Stuttgardter Probst Hermann v. Sachsenheim Verfaßer der Mörin wäre. Wer den damaligen sittlichen Zustand des teutschen Klerus kennt, dem wird dieses gar nicht unbegreiflich vorkommen. Die Liedersammlung des Graven Haug von Montfort, dominus de Brigantia, habe ich auch abgeschrieben; aber zur Stunde noch keinen Tonkünstler gefunden, der den Schlüssel zu den derselben beigefügten Liederweisen finden könnte; dasselbe ist auch Görres damit begegnet. Die Gesellschaft für teutsche Sprache in Berlin hat mich beauftragt, die Handschrift für sie zur Herausgabe zu bearbeiten; aber, die Weisen gehören unumgänglich zu den Liedern, und welcher magnus Apollo wird mir diese entziffern? Über die Graven von Montfort findet man die Geschlechts Nachrichten nirgends zusammen gestellt, in der Nachbarschaft. von Eppishausen ist ein Mann, der für die Geschichte dieses Hauses sammelt, und in einiger Zeit Etwas darüber herausgeben will. Unser Sänger war ein viel gebrauchter Staatsmann, mehrere Jare Präses der österreichischen Regierung zu Ensisheim im Elsaß, einige Zeit in der Lombardey gebraucht, wo sein Vetter Wilhelm kaiserl. Reichsstatthalter war, und in dem nun zerstörten Pallaste zu Monza ( von Teudelinden erbaut ) wonte. Familien Zwiſtigkeiten verbitterten sein Alter, er war in seinen Kindern nicht glüklich, erlebte noch das Concilium von Constanz und sang nicht one Ursache: Wær ich von sünden fry, wurd ich in Selden gra. Burk ( i. e. Burkhard ) Mangold, der die Weisen zu seines Herren Liedern machte, war ein Constanzer. Von den beiden nun ihrer Beendigung nahen Bänden des Liedersaales werde ich Ihnen bald nach meiner Zuhausekunft Abdrüke senden. Jezt muß ich noch einige Zeit apud Aquenses verweilen und meinen armen Arm baden; dann mache ich noch eine kleine Ausflucht an den Hallwiler See, wo ich in einer alten Burg noch einige merkwürdige Membrane zu entdeken hoffe; auch im Kloster Mury soll ich ein teutsches Gebetbuch aus dem X. Jarhundert antreffen. Ieder Buchhändler wird gerne Ihren Walter von der Vogelweide übernemen; lassen Sie uns doch nicht mer lange darauf warten! Wollen Sie ihn wie meinen Liedersaal gedrukt haben? so besorge ich dies mit Vergnügen. Also auf den Früling soll ich Sie in dem Thur Gau erwarten! auch gut! im Frühling ist der Thurgau am schönsten, und im ganzen Jare ist einem nie so wol, als beim Wiedererwachen der Natur; ich freue mich jezt schon darauf, so wie auf Sie. Von Hartmann v. Owe, der die Herren von Ow zu Felldorf und Wachendorf nichts angeht, sind der Iwain und der Arme Heinrich gedrukt; den guten Gerhart hielt ich bisher für ein verloren gegangenes Gedicht meines Nachbars, des Rudolph von Emps; den Einige fälschlich Rudolf von Montfort nennen. Könnten Sie mir eine Handschrift vom guten Gerhardt nachweisen; so würden Sie mich höchlich verbinden. Von der Legende des heiligen Georg vom Steine sind noch Handschriften vorhanden; ich kenne das Gedicht nicht, aber es gehört in unsere beste Zeit und verdient schon deshalb die Herausgabe. Leben Sie wol, aufrichtig verehrt von Ihrem</p>
+            </div>
+        </body>
+    </text>
+</TEI>

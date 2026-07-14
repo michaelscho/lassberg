@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1943">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Ludwig Uhland (09.11.1837).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">946</idno>
+                        <idno type="register-lassberg">184</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 235<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1943">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1837-11-09">1837-11-09</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Eppishausen am 9. Novembers 1837. Ich muß Inen geschwind etwas senden, lieber Freund! damit Sie es, noch weil es warm ist, erhalten, wie die Straßburger den Zürcher Reisbrei. Endlich ist nun auch eine Ausgabe des h. Gregors of dem Steine von unserm Hartmann von Owe erschienen. Ich sage: von unserm; denn seine Schilderung des Knabenlebens im Kloster am See, in welcher ich mer als eine Dertlichkeit der Reichenau nachweisen wollte, bevestiget meine Vermutung, daß er uns Schwaben und nicht den Franken angehöre immer mer. Ich freue mich auch über die Herausgabe; weil ich, da Herr Greith noch in Rom war und deshalb bei mir anfragte, den ersten Anstoß dazu gab und auch im dann den Verleger dazu verschaffte. Zu lezt aber freut mich am meisten das Gedicht selbst, das, wenn gleich vielleicht sein frühestes, doch keinem andern des redlichen guten Hartmanns an innerm Gehalte nachzustehen scheint. Der Schluß erinnerte mich an jenen des Tannhauser Liedes. Daneben enthaltet das Büchlein noch manche merkwürdige und angeneme Notiz und wenn der Herausgeber gleich nicht viel für die Illustration des Gedichtes geleistet hat; weil er die Sprache nicht hinlänglich verstehet; so hat er doch auch nicht, wie andere, die sich ser gelert dünken, vieles am Texte verdorben, und Kenner werden es wol so wie es ist, gebrauchen können. Seit Irer Abreise, lieber Freund! haben wir beinahe täglich Besuch gehabt, zahlreichen, ununterbrochenen; sogar aus dem fernen Westphalen, eine ganze Stube voll. Auch W. Wakernagel hat uns mit seiner iungen Frau den nächsten Tag nach seiner Vermälung besucht. Jezt ist der Winter da, es hat schon geschneiet, da bin ich den fleißig hinter meinem Wilhelm von Orlenz her, und mit unter fange ich an meine Bücher einzupaken, bei deren Handhabung mir manche süße und saure Erinnerung aufstößt; beides giebt einigen Genuß, selbst das lezte, wenn es überstanden ist. In 10 Tagen wird es sich entscheiden, ob ich die alte Dagobertsburg zu Meersburg für mein Eigentum und leztes Nest erhalte; sollte nichts daraus werden; so ziehe ich war scheinlich nach Herblingen nahe bei Schafhausen, in eine große aber ser schöne Einsamkeit, wo auch noch guter Wein wächst. Wenn Sie mein altes Liederbuch nicht mer brauchen, so bitte ich es mir wieder zu senden; meine Frau möchte gerne einige Lieder für eine Freundin daraus abschreiben. Wir sind Alle wol, die Kinder gedeihen zusehends; Rötel kann schon lesen und schreiben, wenigstens bildet sie sichs ein. Die gute sanfte Hildegard übt sich fleißig im Tanzen und hat eine ware Freude daran. Meine Frau grüßet Sie und Frau Emma auf das herzlichste mit mir; wir sind beide begierig zu hören, wie es Inen gehet. Jacob Grimm hat mir den 4. Theil seiner Grammatik geschikt, und der närrische Benecke unser Landsmann hat mich am Jubiläum als Mitglied der Götting. Societät der Wissenschaften ausrufen lassen. Ohe! iam vesperascit! ich weiß nicht was mir lieber wäre! - Und nun, Gott befolen! von Frem I. v. Laßberg.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

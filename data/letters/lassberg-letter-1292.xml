@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1292">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Ludwig Uhland an Joseph von Laßberg (26.03.1829).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Berlin</settlement>
+                        <repository>Deutsche Staatsbibliothek</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">2240</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 110-13<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1292">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0147">Stuttgart</placeName>
+                    <date when="1829-03-26">1829-03-26</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Hochverehrter Freund! Stuttgart, den 26. März 1829. Der junge Schönhut wollte mich nach seiner Zurückkunft vom Bodensee hier besuchen, traf mich aber nicht an und dadurch kam ich um seine ausführlichern Nachrichten. Nur im Allgemeinen erfuhr ich, daß Sie von der Ungunst des Winters Einiges zu leiden hatten. Möge dieses mit der rauhesten Jahrszeit selbst vorübergegangen sehn! Diesen Winter lernte ich hier den Baron Aufseß aus Franken kennen. Er wohnt auf seinem Stammsize, der Burg Aufseß unweit Bamberg, und widmet sich mit vieler Liebe dem deutschen Alterthum. Namentlich bezweckt er, eine Geschichte seines alten Hauses zu schreiben und an diese allgemeinere Darstellungen aus der deutschen Cultur- und Sittengeschichte anzureihen. In den Urkunden des hiesigen Archivs hat er Mehreres gefunden, was zur Kenntniß seiner Familie dient, und aus den Handschriften der Bibliothek, namentlich der Weltchronik des Rudolf v. Ems, ließ er Abzeichnungen machen, indem er besonders auch für die Costüme der verschicdenen Jahrhunderte sammelt. In diesen Absichten gedenkt er die merkwürdigern deutschen Bibliotheken 2c. zu bereisen. Er hat den lebhaften Wunsch geäußert, für diese antiquarischen Bestrebungen Ihnen empfohlen zu seyn. Sein reger Eifer verdient es auch gewiß, durch Rath und Nachweisungen von Ihnen gefördert zu werden. Ohne Zweifel hat er inzwischen selbst an Sie geschrieben. Dieser Winter war überaus arm an neuen Erscheinungen aus der deutschen Vorzeit. Für Jac. Grimm wird gegenwärtig auf hiesigem Archiv Mehreres für die deutschen Rechtsalterthümer abgeschrieben. Pupikofers Geschichte des Thurgaus habe ich noch nicht kennen gelernt, der Verkehr der schweizerischen Buchhandlungen mit den deutschen ist langsam und mangelhaft; wir erfahren oft nur spät und zufällig, was in der Schweiz Neues erschienen. Für die Benachrichtigung über die Verhältnisse der Donauesching. Bibliothek meinen verbindlichsten Dank! ich denke später davon Gebrauch zu machen. Da ich nicht voraussehe, wie ich so bald auf längere Zeit nach Bern kommen könnte, so benenne ich nach Ihrer Erlaubniß die Mspte, die mich dort vorzüglich interessiren und für die mir Ihre gütige Verwendung vom größten Werthe seyn würde. Es sind ihrer 4, vor allen aber: Cod. Nro. 113: Li Romans de Loherens. Dieser Codex enthält nemlich ausser dem benannten Stücke noch manche andre und zwar zunächst auch einen Parcheval le Galois, dessen nähere Kenntniß mir für meine Studien des Wolfram von Eschenbach unentbehrlich erscheint. Die übrigen mir merkwürdigen Handschriften sind: Nr. 296. Les faits de Guillaume d'Orange. Nr. 349. Chansons diverses. ( Altfranzösischer Minnesängercodex. ) Nr. 573. Vers sur Charlemagne. Ein andrer französ. Parcival Nr. 354 ist durch Ausleihen nach Paris verloren gegangen und dieses scheint nun auch das Abgeben an ehrliche Leute so sehr zu erschweren. Um aber nicht durch Zuvielverlangen scheu zu machen, richte ich meine Bewerbung vorerst einzig auf den zuerst genannten Cod. Nr. 113., als den mir wichtigsten. Bei meiner Anwesenheit in Bern habe ich von diesen Schätzen nur flüchtige Ansicht nehmen können, die mich aber von ihrer Bedeutung für meine Arbeiten hinreichend überzeugt hat. Können Sie wirklich einmal die Poëtes français von Auguis und die Illustrations of northern antiquities auf einige Zeit entbehren, so werden sie mich durch deren freundliche Mittheilung sehr verbinden. Die neueren Fabliaux von Méon besitze ich selbst. Von Raynouard ſoll nun auch das längst ausstehende provenzal. Wörterbuch erschienen seyn. Sehr entschuldigen muß ich, Ihre Aufträge an Koller in London noch nicht vollzogen zu haben. Indem ich beständig Einiges von dort erwartete, unterließ ich neue Bestellung, werde aber in meinem nächsten Schreiben das Erforderliche besorgen. Vor einigen Wochen ist Maßmann mit der jungen Frau, die er sich aus Rheinbaiern heimgeholt, hier durchgereist. Er scheint entschlossen, eine Abschrift des Frauendienstes für Sie zu nehmen. Docens Verlassenschaft, worunter wohl manches von Werth, soll versteigert werden. Giebt es wohl von Thannhausen in Oberschwaben, unweit Waldsee und Winterstetten, ein altes Geschlecht, wohin man den Minnesänger dieses Namens und den fabelhaften Tanhäuser beziehen könnte? und wenn es ein solches gab, wo mögen sich Nachrichten darüber finden? Meine Frau empfiehlt sich mit mir Ihrem freundlichen Andenken. Erfreuen Sie uns bald wieder mit guter Nachricht. In aufrichtiger Verehrung und Freundschaft der Ihrige L. Uhland. NS. Pfarrer Jäger in Bürg ist ein sehr fleißiger Forscher und Sammler für schwäbische Geschichte. Er hat unlängst eine Geschichte der Reichsstadt Heilbronn herausgegeben. Kommt sein Unternehmen zu Stande, so würde auch ich gerne beitragen, wenn ich etwas dafür Taugliches zu geben hätte.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

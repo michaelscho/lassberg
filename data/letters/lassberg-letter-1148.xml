@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1148">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Ludwig Uhland (28.02.1827).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">572</idno>
+                        <idno type="register-lassberg">38</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 9<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1148">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1827-02-28">1827-02-28</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Eppishausen in die Cinerum. 1827. Mein teurer Uhlandus! ich kann nicht länger warten Inen meine Gedanken über Hartmann von Aue, die ich zwar schon lange mit mir herumtrage; aber nur erst in diesen lezten Fastnachtstagen niedergeschrieben habe, sogleich mitzuteilen. Warscheinlich habe ich zu viel hierüber geschrieben und zu wenig gesagt; ich gestehe daß die Besorgniß, nicht deutlich und gründlich genug zu sein, meine Feder etwas breit gemacht hat, und gebe Inen vollkommene Gewalt alles überflüssige wegzuschneiden und zu verwerfen, was Inen nicht wesentlich zur Sache zugehören scheint; nur darum bitte ich, daß Sie mir Ire Meinung und Ansicht über meine Entdekung, wenn sie je eine ist, frei und unumwunden mitteilen. Senden Sie mir nach gemachtem Gebrauche, den Aufsaz wieder zurük; ich erwarte aus Zürich noch diplomatische Auskunft über das Wappen von Westerspül und es könnten sich in der Folge noch weitere Aufschlüsse aus dem Reichenauer Archive zu Karlsruhe ergeben, wohin ich mich gleichfalls wenden werde. Schwab wird diese Notizen wol nimmer zu seinem Bodensee benuzen können. Er schrieb mir endlich auch wieder einmal und kündigte mir seine Reise nach Paris in den Osterferien an. Ich bin begierig zu erfahren, wie meine Ideen über Hartmann von Aue, dessen Bearbeitung Sie mir schon vor langer Zeit als beendiget ankündeten, mit Iren Ansichten über in zusammen- ſtimmen? Wie steht es und geht es denn mit der Geschichte des teutschen Heldenliedes und des Minnesanges? haben Sie Iren Vorsaz, diesen Winter die Bearbeitung dieses Gegenstandes zu vollbringen, ausgeführt? Jak. Grimm schreibt mir, daß er für dies Iar den III. Teil seiner Grammatik bei Seite gelegt habe und an eine andere Arbeit über das teutsche Recht geraten seie. Er wünscht aus dem südlichen Teutschland alte noch unedirte Rechtsbücher, besonders Dorfweistümer zu erhalten. Gibt es bei Inen nichts dergleichen? In den kleinen Kantonen der Schweiz giebt ( es ) solche uralte Rechtstitel; aber Strutthan von Winkelried hat nicht alle Drachen jener Gegend getötet; sie hüten diese alten Schäze noch ser scharf. Maßmann hat mir ein Berliner Neujarsblat, einen Schwank, den sich ein Studiosus Wakernagel zu machen erlaubt hat, zugeschikt, vermutlich Inen auch. Ich bin nicht getäuscht worden; der 87. Vers: Sazt er sines schiltes rant, By daz swert an die want gab mir mit dem Berliner Accusativ sogleich Ausschluß über den Verfasser; auch erkannte ich die beiden kämpfenden Hirsche hinten sogleich als ein Plagiat aus unseres Landsmannes Elias Riedingers Kupferstichen. Lachmann soll damit angefürt worden sein; es ist kaum zu glauben. Haben Sie die schwedische Volksharfe herausgegeben von einem Bündtner Staudacher, gelesen? Es sind ser schöne Sachen darin. Wir Schwaben sind doch gar zu arm an solchen Dingen! Auch das schwäbische Volksbüchlein vom Professor Auerbacher zu München, werden Sie gelesen haben. Die Schwabenstreiche und die Märe von den 7 Schwaben darin gefielen mir nicht übel. Das sind alle meine Neuigkeiten in unserem Fache. Regnets nicht, so tröpfelts doch! Ich habe noch immer eine Menge Urkunden um mich herumliegen, die ich ausziehe oder abschreibe. Dieses Spicilegium ist nicht so ganz undankbar, man findet hie und da eine merkwürdige geschichtliche Notiz: aber die Augen gehen darüber zum Teufel und ich habe bisher am meisten durch die Augen gelebt. Nun sind die Bachanalien vorüber und bald kommt der Früling; da wird denn meine Sicht auch aus dem steifen Arme ausziehen und wir: redeunt jam gramina campis, arboribusque comae singen; indessen leben Sie wol, et feliciter se habeat placens uxor, die ich von ganzem Herzen grüße. Ir Laßberg.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

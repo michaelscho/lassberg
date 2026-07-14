@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1403">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Ludwig Uhland (29.01.1830).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">698</idno>
+                        <idno type="register-lassberg">48</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 152-55<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1403">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1830-01-29">1830-01-29</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Eppishausen, am 29. Januar 1830. Hochvererter Freund! Ir Schreiben vom 11. Januar erhielt ich am 19. dieses und mit der herzlichsten Freude ersehe ich daraus, daß nun endlich Ire und der guten Frau Emma Wünsche in Erfüllung gegangen sind. Welche Freude für Ire erwürdigen Aeltern! ich teile sie von ganzem Herzen. Für das von Haug gebrauchte Buch, die Reliques of ancient english poetry und die neue Ausgabe Frer Gedichte danke ich vielmal. Dies sind mir die liebsten Neujarsgeschenke die ich bekommen habe. Der Himmel weiß, wann ich sie erwiedern kann; aber den Willen habe ich dazu. Der Eröffnung Frer Lerkanzel und besonders Irer Vorlesung über die Geschichte der Poësie des deutschen Mittelalters möchte ich beiwonen! überzeugt daß Sie den alten hospitirenden Pur- - schen nicht aus Frem Collegium weisen würden. Von Hrn. v. Cotta habe ich in Betreff des episcopatus Constantiensis einen Brief erhalten, der meinen Wünschen vollkommen entspricht. Das Buch wird in Constanz gedrukt: aber Ir allzu freundschaftliches Anerbieten zur Correctur verdanke ich Inen eben so herzlich, als wenn ich es angenommen und genossen hätte. Was die beiden Codd. des Voeu du Paon und Wasserburg betrifft, so bitte ich mir solche nach gemachtem Gebrauche hieher zu senden. Benecke befindet sich gegenwärtig nicht im Stande Gebrauch vom lezten zu machen. An der Membrane des Hrn. Buchhändler Koller in London habe ich das nicht gefunden, was von jm versprochen war. Erstlich ist die Schrift nicht die des XIII., sondern offenbar aus dem XV. Jarhundert, und dann sind die 76 Verse nicht einmal die Hälfte des Frauenlob- Gedichtes auf Maria. Ich werde im solches durch die angegebene Weinbrak. Buchhandlung in Leipzig wieder zurüksenden. Mein Liedersaal ist nicht so wolfeil. Das Liederbuch der Häzlerin sollen Sie haben. Der Elblin von Eselsberg, von dem einige nicht unebene Gedichte drin vorkommen, ist gewiß ein Wirtemberger; eben so gewiß ist der von Kalterpach kein Wirtenberger, sondern ein Breisgauer aus der Herrschaft Susenberg, wie ich diplomatisch erforscht habe. Das wirtemberg. Geschlecht hieß: von Kaltenthal. Als ein Denkmal des Verfalles teutscher Dichtkunst ist diese Handschrift wirklich beachtenswert. Die hinten befindlichen Wächterlieder oder Tagweisen halte ich für das älteste, was darinnen stehet. Uebrigens kann ich nicht begreifen, wie eine weibliche Hand solche Schweinereien niederschreiben konnte, wenn sie nicht einer Hetäre angehörte. Aber, da Sie doch zur Vorlesung den möglichsten Grad der Vollständigkeit geben wollen, so dächte ich, daß meine Abschrift von dem Gedichte auf Karl den Großen, welches ich von dem Hrn. Grafen v. Majlath habe, weniger vorübergegangen zu werden verdient, als das Liederbuch der Häzlerin. Ich halte es zwar seinem Ursprunge nach nicht für älter, als den Anfang des XV. Jarhunderts; aber gerade aus genannter Zeit sind die Epopoeen von so großem Umfange äußerst selten. Zwar können die latein. Quellen des Andreas ratisbonensis nachgewiesen werden; aber mir ist die Frage noch nicht entschieden, ob der teutsche Dichter aus dem latein. oder dieser aus jenem geschöpft. Allerdings mag ursprünglich ein latein. Gedicht dem teutschen zu Grunde gelegen haben, aber ein viel älteres als der fromme presbyter Andreas war. Ich glaube also nicht übel zu thun, wenn ich Inen hier beiliegend zuerst den Inhalt des Gedichtes zusende, um Sie in den Stand zu sezen, mir zu sagen, ob ich Inen den Text auch nachsenden soll? In Arau befindet sich auch, aus der Zurlaubenschen Bibliotheke, ein prosaisches Gedicht von Karl dem Großen, welches mir mit den Haymonskindern verwandt schien, und offenbar auf einem wälschen Boden wurzelt. Auch in Schafhausen befindet sich ein Gedicht auf den König Oswald v. Northumberland, das ich meinem Freunde Ittner zu lieb abgeschrieben habe, es scheint auch der Sprache nach aus dem XV. ( Sarh. ) zu sein, hat aber Anklänge, die ins höchste nordische Altertum hinaufreichen. Sie sagen mir nicht, ob Hr. Hofprediger Bekker Inen den Donauöschinger Parcifal gesendet hat? und ob Sie viel Merkwürdiges darin gefunden? Der Lachmannsche Ferabras ist noch nicht heraus; oder? Auf Graffs Ottfried freue ich mich. Maßmann in München scheint sowohl die Denkmäler, als auch seine Kaiserchronik ganz vergessen zu haben, und hierin dem Publikum zuvorgekommen zu sein. Auch Meusebach, dem ich, nach dem Ausdruke des badischen Exerzierreglements, kürzlich wieder einen Ermunterungshieb gegeben habe, scheint über seinen Fischart eingeschlafen zu sein. Vorige Woche habe ich von dem Hrn. Prof. Follen in Altikon Abschied genommen, er ziehet nächsten Monat auf ein Gut bei Höngg, eine kleine Stunde von Zürich, wo sein Schwiegervater ein Gütchen gekauft hat, es heißt: der Akerstein. Können Sie meine Notizen über die teutschen Sänger brauchen zu Frer Vorlesung, so sagen Sie nur ein Wort und ich sende sie Inen. „ Ire angelegentliche Empfelung in die Fortdauer meines freundschaftlichen Wolwollens und um meinen guten Rat bei Ihren bevorstehenden Arbeiten " war wol nur ein Neujarsscherz von meinem lieben Uhlandus! ich hätte dies vielleicht nicht sagen sollen; aber dies sei auch die einzige Rache Fres unveränderlichen I. v. Laßberg. Viele und herzliche Grüße an Frau Emma und auch an den biedern Schwab und seine Frau. Aus einem mir vor kurzem vorgekommenen Siegel, mit der Umschrift: RVDOLF GELTER, scheint mir, daß dies Geschlecht ( Geltar bei Bodmer II., 119 ) von St. Gallen war. Im Iar 1425 war ein Gelter Burgermeister zu St. Gallen. Zwar nennt der Dichter selbst sich einen wehen Flemming; allein die Aebte von St. Gallen, die stets den Kaiserhöfen nachzogen, brachten allerlei Leute mit sich nach Hause.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

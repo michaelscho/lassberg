@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-0726">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Ludwig Uhland an Joseph von Laßberg (17.05.1821).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">1909</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 18<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-0726">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0147">Stuttgart</placeName>
+                    <date when="1821-05-17">1821-05-17</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Euer Hochwohlgeboren verzeihen mir das lange Behalten der mir durch Ihre Güte gewordenen Mittheilungen über die Sänger des Thurgaus, welche ich nach gemachtem Gebrauche hiebei dankbar zurücksende. Der Drang der landständischen Geschäfte hat mich bisher von der völligen Beendigung meiner Arbeit über Walther von der Vogelweide abgehalten, doch glaube ich solche in einigen Wochen zum Drucke geben zu können. Unter den hier zurückfolgenden Collektaneen findet sich ein Citat: „ Epist. ad Dnum de la Loubêre, regis Galliae apud Confeder: Helvet: Oratorem, Soloduri. " Ist diese epistola etwa von Goldast? Die Stelle über Walthers Grabstätte zu Würzburg habe ich in Gropp's Sammlungen, woraus solche entnommen ist, vergeblich gesucht. Kann ich diesen Sommer bessere Musse gewinnen, als bisher, so gedenke ich auf die Untersuchung andrer altdeutscher Sänger überzugehen, und zwar zunächst derjenigen, welche den Stil des Minnesangs an den des Nibelungenliedes anknüpfen. Ueber den von Kürenberg finde ich in Ihren Notizen, daß er aus dem Breisgau stamme. Wo mag man hierüber Näheres lesen? Gelingt es mir, den Sommer über in diesen Forschungen vorzuschreiten, so werde ich mich um so mehr gedrungen fühlen, gegen den Herbst hin eine neue Wanderung an den Bodensee und nach St. Gallen anzutreten, wo der Gesang so heimisch war und noch so Manches aus dem Alterthum sich erhalten hat. Sehr oft bin ich in Gedanken in jener schönen Gegend. Unter Wiederholung meines herzlichen Dankes verharre ich mit größter Hochachtung Euer Hochwohlgeboren Stuttgart, den 17. Mai 1821. unterthäniger Diener L. Uhland.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-2144">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Ludwig Uhland (09.10.1839).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">1066</idno>
+                        <idno type="register-lassberg">155</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 241<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-2144">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0101">Meersburg</placeName>
+                    <date when="1839-10-09">1839-10-09</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Auf der alten Meersburg am 9. Octobers 1839. So eben, mein teurer Freund! erhalte ich Ire Zeilen vom 6. dieses samt dem Mayer Helmprehte und danke Inen für Beides, mich der Worte des persischen Dichters erinnernd: Freundesworte sind wie Goldsand, auch das kleinste Körnchen hat seinen Wert: um so teurer sind mir die Irigen von heute, da sie mir Gelegenheit geben etwas zu tun, was Inen angenem ist: ich sende daher den vierten Band der v. d. Hagenschen Minnesinger, in soweit ich in nämlich besize, durch den heutigen Postwagen. Ich stund im Zweifel, ob ich Inen nicht auch das Handschriftliche, was ich über diesen Gegenstand gesammelt habe, und was bereits zu einem diken Bande angewachsen ist, mitsenden solle? Allein ich dachte, daß Sie Irem Werke wol weder eine diplomatische noch eine genealogische Geschichte der Sänger einverleiben werden und so halte ich es einstweilen zurük, bis Sie es verlangen. Wie gerne, lieber Uhland! wollte und würde ich Inen auch dasienige senden, was Sie mir von der geflorirten Tanzweise des schwarzen Knaben erwänen, allein es muß noch mit andern Schriftfaszikeln irgendwo eingepakt liegen; denn, ungeachtet ich es diesen Morgen in dem alten Turme des Königs Dagobert, wo meine Schriften liegen, aufs emsigste suchte, konnte ich dies Fragment noch nicht auffinden; so bald ich es entdeke, sollen Sie es erhalten. In den Mayer Helmpreht habe ich nur ein paar schnelle Blike getan; aber mir fiel dabei sogleich ein: wenn doch Bergmann zu einer Ausgabe des Frauendienstes, die ia doch einmal erfolgen muß und wird, die Anmerkungen und Noten machen wollte, denn nur ein Einwohner Desterreichs oder der Steiermark kann dies leisten, wenn dies schöne Gedicht nicht zum größten Teile dem Leser unverständlich und genußlos bleiben soll. Mit großer Freude sehe ich aus Trem Briefe, daß Sie unverdrossen und frölich an Irem Volkssange arbeiten und der Sänger und Gelerte Schwabens nun bald wieder einmal auftretten und den Norddeutschen zeigen wird, daß sie kein privilegium exclusivum auf unsere altteutsche Literatur besizen, wie es seit einigen Saren den Anschein nemen wollte. Wir sind alle wol und gesund, Frau Jenny schreitet in irem gesegneten Zustande glüklich voran, und verspricht uns auf Weihenachten ein Christkindchen zu bescheren. Wir haben seit ein paar Tagen das Vergnügen unsern ältesten Son Karl, zeitlichen Commandanten der Zittadelle zu Mainz, zu besizen: wir grüßen Sie und Frau Emma auf das herzlichste und ich bin und bleibe Ir treuer Joseph v. Laßberg.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

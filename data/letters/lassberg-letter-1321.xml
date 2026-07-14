@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1321">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Ludwig Uhland (13.06.1829).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">653</idno>
+                        <idno type="register-lassberg">135</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 129-32<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1321">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1829-06-13">1829-06-13</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>aufrichtigen Freunde I. Laßberg. Eppishausen, am 13. Juny 1829. Daß ich Inen schon wieder schreibe, mein teurer Freund! geschiehet nicht weil ich närrisch geworden bin: ich habe viel mer die Hoffnung daß Sie mich einen ganz klugen Mann schelten werden; denn es sind gestern Abends Briefe angekommen, die es ser warscheinlich machen, daß wir den Parcisal fürs erste aus Bern hieher bekommen: von einer Versendung außer der Schweiz will man durchaus nichts hören. Glücklicherweise habe ich mich an den Graven von Mülinen zuerst gewant, der die Freundlichkeit und Gefälligkeit selbst ist. Er schreibt mir unterm 6. dieses von seinem Landgute bei Thun: „ Der zweite Grund warum ich Fren Brief nicht beant,, wortete, war durch den Wunsch veranlaßt, den derselbe enthielt, „ von der Berner Bibliothek auf einige Zeit den Parzifal zu „ erhalten. Nun wird Inen noch erinnerlich sein, daß seit dem Pfeiffer. Laßberg u Uhland. „ Verluste der Troubadours, die der vormaligen französischen „ Regierung mitgeteilt worden waren, unsere Bibliothek - Comis- „ sion sich zum Grundsaze gemacht hat, von ihrem vormaligen,, liberalen Systeme abzugehen; so daß seit einigen Jaren ihre „ Handschriften bis auf 2 oder 3 Ausnamen, nur auf der Bi- „ bliothek selbst haben benuzt werden können. Nun hatte es sich „ zugetragen, daß vor 2 bis 3 Monaten ich mit großer Mühe, „ vermittelst einer Bürgschaft von 20 Louisd'ors eine Handschrift „ von Buschât zum Behufe Pfarrer Kirchhofers erhalten hatte. „ Vor Rükgabe derselben konnte ich an keine neue Forderung „ dieser Art mit einiger Hofnung des Erfolges gedenken. Nun „ ist mir erst ganz lezthin dieses Manuscript von Stein her „ zurükgekommen, und nun hoffe ich, daß ich in der kün f- „ tigen Woche, die ich wegen unserm großen Rathe „ in Bern zubringen werde, Frem Wunsche werde „ entsprechen können. Prof. und Bibliothecar Wyß liegt „ sehr krank im Bade zu Schinznach, und man fürchtet ser für „ das Leben dieses schäzbaren Gelerten, der den ganzen Winter „ sein Zimmer nicht verlassen hat. " 2c. 2c. Nun mein Freund! machen Sie sich reisefertig; denn wir dürfen uns bei diesen strengen und gestrengen Herren von Bern eben auf keinen gar zu langen Termin Hofnung machen, wenn wir die andern codices auch noch in diesem Fare benuzen wollen. Ich schreibe Inen in gröster Eile, um Sie zu bitten, wenn ich Inen die Ankunft des edlen Ritters Parcifal melde, Frer Abreise ja keinen längern Aufschub zu gönnen: indessen werde ich bis zu Frem Eintreffen in der villa Epponis an dem Codex abschreiben, was ich vermag und alle andere Arbeit indessen beseitigen. Vielleicht kommt derselbe schon in der nächsten Woche; vielleicht machen auch die Herren zu Bern eben solche Schwierigkeiten wie die Basler einst mit Hug von Langensteins St. Martinun bich gemacht haben, die mir eine förmliche Capitulation vorlegten, die ich eingehen mußte. Also auf alle Fälle die Stifel geschmiert, und von der placens uxor vorläufig Abschied - genommen! denn ich hoffe doch, daß Sie mich nicht den ganzen Parcifal ( von dem ich auch eine teutsche Handschrift besize ) allein wollen abschreiben lassen? Ich sage Inen nichts von der Freude die ich habe, Sie mein Freund! wieder zu sehen; denn ich bin weit davon ein Herz bestechen zu wollen, auf das ich eben so wenig Ansprüche, als Verdienste habe: aber es sind noch merere alte Membrane und alte Druke da, die Sie noch nicht kennen, und Inen die Arme entgegen streken; auch erwarte ich mit morgiger Post aus Zürich über hundert großenteils der Theotisca ( die Diutiska mag ich nicht ) angehörige Stüke, welche ich aus der Versteigerung der Bibliotheke meines verstorbenen Freundes Martin Usterj erhalten solle. Kurz, Sie sollen in den Feierabenden bei dem alten Einsiedler am Fuße der Alpen ( wenigstens am Tage ) keine Langeweile haben. Aber eines zwingt mich das Gewissen Inen voraus zu sagen, ich habe nämlich, da meine alte Köchin närrisch geworden, d. i. nach dem Ittnerischen glossarium, geheuratet hat, gegenwärtig eine Haushälterin, die in der edlen Kunst des Apicius celius kaum die rudimenta inne hat, und da ich einer der wenigen Menschen zu sein das Unglük habe, die nicht vom Essen leben; so seze ich mich leichtsinniger weise darüber hinweg, und füle das Unbequeme davon erst dann, wenn ein Gast in mein Haus kommt, und ein Freund sollte von rechts wegen besser bewirtet werden als ein Gast. Nun wissen Sie es und damit: basta! Als Anhang zu meinem lehten Briefe vom 28. May folget hier eine Abschrift aus meinem vor kurzem eroberten codex Wasserburgensis, deren Vergleichung mit dem mir von Inen am 24. August 1826 mitgeteilten Auszuge aus des nämlichen Verfassers Alexandreis Inen wol angenem sein dürfte: wollen Sie mir denselben wieder mitbringen, so ersparen Sie mir die Mühe ein par hundert Verse noch einmal abzuschreiben, für meine Augen immer ein beneficium; sed flebile. Der Conrad von Fuozizbrunnen, der das Gedicht Nr. 2 in meinem Wasserburger Codex über Maria und Jesus 9 * Kindheit gemacht hat, und in dem Anschusse aber: von Suezesbrunnen heißet, hat auch schon seine Heimat gefunden, und der allzeit fertige Genealogist Grav von Mülinen macht einen Freiherrn von Signau daraus, welchem Hause der im heutigen Berner Gebiete liegende Ort noch im XIII. Jarhunderte angehörte. Bald mein verertester Freund! hoffe ich Inen für Sie, und noch mer für mich erfreuliche Nachrichten geben zu können; indessen leben Sie wol und grüßen Sie herzlich von mir die wakere Frau Emma, und unsern Schwab cum sua. Geschrieben in der Heuerndte, da Jupiter pluvius regierte. Ir aufrichtiger und unveränderlicher Freund Laßberg.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

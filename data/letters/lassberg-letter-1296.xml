@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1296">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Ludwig Uhland (31.03.1829).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">636</idno>
+                        <idno type="register-lassberg">62</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 113<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1296">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1829-03-31">1829-03-31</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Eppishausen, am 31. März 1829. Charissime Uhlande! Soeben erhalte ich Tren Brief vom 26. dieses und seze mich gleich hin um zu antworten: mir ist nämlich wärend dem Lesen desselben etwas eingefallen die Berner Handschriften betreffend. Sollte ( was ich jedoch auf keine Weise vermuten will ) es mir nicht gelingen die Erlaubniß zu erhalten sie Inen teilweise oder zusamen zuzusenden: würden Sie sich dann wol entschließen dieselben hier in dem armen Klösterlein zu Eppishausen zu benuzen wenn sie hieher abgegeben würden? Hierüber möchte ich bestimmte Antwort haben, ehe ich meine Bewerbung um diese Handschriften beginne; dann könnte ich, wenn der erste Antrag nicht gehet, hintennach noch mit dem zweiten komen; ich würde in mit dem Anerbieten unterstüzen: die Handschrift meines Nibelungenliedes solange in Bern das obstagium leisten zu lassen, bis die dortigen Pfeiffer. Laßberg u. Uhland. Franzmänner wieder zurük sind. Wie gerne böte ich Inen dann meine Aushilfe bei Irer Arbeit hier an, wenn sie Inen von einigem Nuzen sein könnte. Um Inen die Waldeinsamkeit bei mir etwas erträglicher zu machen könnte ja die gute Frau Emma mit Inen kommen; wir wollten recht friedlich und einig mit einander leben. Nun lieber Freund! die Hand aufs Herz! und alles recht wol und klug mit Frer ehelichen Wirtinne überlegt und dann aber eine freie teutsche Antwort: was Sie über meinen Vorschlag beschlossen haben? Was Sie mir von und über den Freiherrn von Aufseß sagen, hat mich ser erfreut. Es ist gut wenn die Edelleute auch einmal anfangen verständig zu werden. Das ist sonst bei uns in Oberteutschland noch selten der Fall; denn was hie und da Einer aus Liebhaberei oder gar pour tuer le tems tut, hat in meinen Augen keinen Wert. Da Sie in loben; so habe ich schon im voraus eine gute Meinung von diesem Manne; er hat noch nicht an mich geschrieben; aber meine Dienste stehen jm demongeachtet überall bereit. Am 2. April. Gestern Abends erhielt ich einen Brief von dem Oberbibliothekar Prof. Rud. Wyß aus Bern, der mir Anlaß giebt jm und der Bibliotheke einen Dienst zu erweisen, und davon habe ich sogleich diesen Morgen Anlas genommen, den ambitus wegen der Handschriften zu eröffnen. Ich bin nicht mer gewont mich allzuser sanguinischen Hoffnungen hinzugeben; allein, ich glaube doch daß meine Werbung nun nicht mer ganz fruchtlos sein werde. Die poëtes français par Auguis und Walter Scott's northern illustrations, werde ich Inen nicht durch den Postwagen, wegen des hohen Portos, sondern durch das Dampfbot über Friedrichshaven durch die Spedition der Gebrüder Beer daselbst übermachen. Aber haben Sie denn auch die frühere Sammlung der fabliaux et contes, par Barbazan et Méon. Paris. 1808. 4 dike Octavbände? - Diese enthalten eigentlich die interessan testen Stüke. In der späteren Sammlung von Méon in 2 Bänden, ist auch der verloren gegangene Berner Codex citirt, und ein Stük aus demselben abgedrukt. Wenn Sie an Koller schreiben; so sagen Sie jm nur, daß ich den Handel eingehe; aber er muß die kleine Handschrift zu erst schiken. Wegen Thanhausen und Tannhauser kann ich heute nicht antworten; weil mich die Post zuser drängt; es soll aber bald geschehen. Uebrigens halte ich den Sänger dieses Namens für einen Tyroler, wo dies alte Geschlecht noch bestehet, oder doch vor kurzem noch bestanden hat. Von Buwenburg und Stamheim sind alte Wirtemberger. Kommen Sie zu mir, so will ich Inen eine Handschrift von merern hundert Seiten über die alten Dichter zeigen; sie ist zwar nicht ser alt und kömmt von einem gewissen Meister Sepp, der schon mit Inen das Brot gebrochen und den Becher gehoben hat. Gerne will derselbe auf die Herausgabe dieser Blätter verzichten, wenn Sie mein teurer Freund! dieselben für Ir Werk brauchen können; es wäre ja unnüz wenn wir zwei dieselbe Arbeit machen wollten; bei diesen Worten habe ich meine rote Kappe abgezogen. Ich bin ein abscheulicher Mensch, daß ich dem guten wakern Suabo so lange nicht für seine lieben Geschenke gedankt habe, entschuldigen läßt sich das nicht, aber wol vergeben, bitten Sie in doch in meinem Namen darum und sagen Sie jm daß ich ganz lateinisch geworden bin; denn ich bearbeite wirklich mit aller Anstrengung, einem lieben Manne, dem alten Schultheißen von Mülinen, zu liebe den episcopatus Constantinesis des Trutpert Neugart. Noch einen schönen und herzlichen Gruß an Frau Emma und dann ade für heute. Geben Sie mir doch ja bald Nachricht in Beziehung auf meinen Vorschlag. Gott mit uns! Ihr Laßberg. Wenn Sie einen Catalog von Docens Auction bekommen, so teilen Sie in mir doch auch mit. 8 *</p>
+            </div>
+        </body>
+    </text>
+</TEI>

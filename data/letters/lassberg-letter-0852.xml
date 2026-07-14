@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-0852">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Ludwig Uhland (31.07.1823).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">440</idno>
+                        <idno type="register-lassberg">148</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 35<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-0852">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0066">Heiligenberg</placeName>
+                    <date when="1823-07-31">1823-07-31</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Wolgeborner! hochverehrter Herr! Heiligenberg am 31. July 1823. Hier am Grabe meiner ewig angebeteten, nie genug beweinten Gebieterin, deßen Umgebung ich noch immer auszuschmüken fortfare, erhielt ich ein Schreiben des Graven Johann Mayláth aus Wien; er trägt mir auf Sie freundlich zu grüßen und Ihnen zu sagen daß Sie ihm der Liebste unter den jezt lebenden teutschen Dichtern seien. Er meint, es wäre gut, wenn ich seine Abschrift des Carlsburger Codex von dem Gedichte auf Karl d. Gr. besonders in Bezug auf die Frage durchsehen würde, ob mir kein mit diesem stammverwandtes Ged. auf diesen Kaiser bekannt seie? Er hat zu diesem Ende an die Cotta'sche Buchhandlung geschrieben, und ich nehme mir die Freiheit Sie um Besorgung des Briefes zu bitten. Dieser Tage kam Iemand aus Tübingen hier über Nacht, der von einer Schweizer Reise zurükkehrte und ein Verwandter von Ihnen sein will, ein entschloßener und wie mir schien, mit sich selten im Streite befindlicher Mann. Es tat mir leid, ihm wegen seiner schnellen Abreise gar nichts Freundliches erweisen zu können. Hoffentlich sind ( Sie ) gesund und wolbehalten wieder bei Ihrem eigenen Herde angekommen; grüßen 3 * Sie freundlich von mir Ihre liebenswürdige Hauswirtin, und behalten Sie mich in Ihrem mir so teuren Angedenken. Recht sehr bedauerte ich, daß Ihr mir so lieber Besuch mich nicht allein traf und ich Sie nicht auf die Sängerburgen meiner Nachbarschaft begleiten konnte; laßen Sie sich den Gang auf ein ander Mal nicht veuen. Grüßen Sie unsern Conz von mir, suchen Sie ihn zu bereden in den Herbstferien die längst versprochene Reise nach der Villa Epponis anzutreten: ich will ihn dann mit Ittner zusamen bringen, und wir wollen einmal Tage leben, wie man sie vor 300 Saren lebte. Gott befolen! Ihr aufrichtiger Verehrer und Diener I. v. Laßberg.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

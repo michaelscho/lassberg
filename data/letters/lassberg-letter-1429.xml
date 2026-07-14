@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1429">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Ludwig Uhland an Joseph von Laßberg (19.03.1830).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">2299</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 157-61<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1429">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0147">Stuttgart</placeName>
+                    <date when="1830-03-19">1830-03-19</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Stuttgart, den 19. März 1830. Sie erhalten hiebei, verehrtester Freund, den Cod. Wasserburg. und den Voeu du Paon mit dem verbindlichsten Danke zurück. Das Liederbuch der Häzlerin ist mir wohlbehalten zugekommen und ich werde mich beeilen, es vor meinem Abzuge von hier, der in der Osterwoche erfolgt, Ihnen zurückzusenden. Dagegen wünsche ich die Northern Antiqu. und die Poètes français noch auf einige Zeit mit nach Tübingen zu nehmen, wenn Sie nicht gerade selbst davon Gebrauch machen. Für den Druck des Sigenot danke ich gar sehr; er ist eine schöne Verkündigung des neuen Fundes. Die Anzeige von Menzel lege ich hier bei, freilich meist nur Abdruck Ihrer Notizen. Den Cod. Wasserburg. habe ich für meine künftigen Vorträge tüchtig ausgebeutet. Ecken Ausfahrt giebt neue und überraschende Resultate zur Geschichte der deutschen Heldensage. Schon früher habe ich Inen meine Vermuthung mitgetheilt, daß Heinrich von Lînowe der Dichter dieses Liedes sey. Diese Vermuthung ist jedoch nicht neu, schon Docen hat sie gehabt. Aber das glaube ich neu gefunden zu haben, daß der Dichter sich selbst im Liede nennt. pag. 37. col. 1. Erst sait von lune helferich. muß bestimmt heißen: Erst sait von linow heinrich. Dieß ist gewiß viel ungezwungener, als die Erklärung dieser Strophe, welche noch neuerlich im Iwein von Benecke und Lachmann ( S. 399 zu V. 6497 ) gegeben worden. In der bekannten Stelle von Rudolfs Alexandreis wird ausdrücklich Her Heinrich von Linowe genannt. Eine Zusammenstellung aller hieher bezüglichen Stellen würde meines Erachtens diese Autorschaft außer Zweifel setzen. Auch findet sich Ecken Ausfahrt nun in einer Hdschr., welche, neben Rudolfs eigenem Gedichte, durchaus Werke von ihm benannter Dichter enthält. Dagegen muß ( wie schon Pri misser gemeint ) die Stelle im Wilh. v. Orleans pag. 41. col. 1. Von dem wallære Hern Ekkenes mære gewiß so gelesen werden: Von dem Ouwære Hern Erekes mære. denn das Abenteuer mit dem Sperber findet sich in Hartmanns Erek und Enite. ( Wiener Jahrb. d. Literat. Bd. XVI. Anzeig. Blatt. ) Ist lînow etwa Leinau im vormaligen Stifte Kempten? Es möchte wohl sehr einen nochmaligen Sturm auf Wasserburg verlohnen. Wo der eine Vogel ausgeflogen, mögen noch mehr im Neste seyn. Sie fragen mich: ob ich Ihre Notizen über die deutschen Sänger zu meinen Vorlesungen brauchen könne? Gewiß würde mir die gütige Mittheilung derselben vom größten Interesse seyn. Ich bezwecke gegen den Schluß meiner Vorträge eine geographische Uebersicht der Wohnsize und Straßenzüge des alten Gesanges zu geben und da würden mir Ihre Nachweisungen treffliche Hülfe leisten. Werden Sie nicht einmal, wie es in den Vorreden zum Liedersaale schon theilweise geschehen ist, den Freunden der altdeutschen Poesie die vollständige Sammlung dessen, was Sie über die Lebensumstände der Dichter erforscht haben, mittheilen? Das Mailathsche Manuscript habe ich einmal von Cotta in Händen gehabt, konnte es aber damals nicht benützen. Nach der Vorrede, welche Sie mir überschickt, scheint wenigstens der vordere Theil des Gedichts auf ältere Sage hinzuweisen und ich würde daher die Mittheilung desselben um so mehr mit Dank erkennen, als die meisten andern Gedichte aus dem Sagenkreise von Karl d. Gr. aus dem Französischen übersetzt sind, dieses aber mehr deutsche Lokalität zu haben scheint. Damit verbinde ich noch eine weitere Bitte. Den Wilhelm von Dranse, der zu diesem Stamme gehört, habe ich, alle 3 Theile, nach einer Heidelberg. Membrane excerpirt, den Abdruck von Casparson aber ( der sich aus dem Buchhandel verloren, ) längst vergeblich gesucht. Den 1sten Theil zwar besitze ich, aber nicht den wichtigern 2ten, der Eschenbachs Werk enthält. Diesen besitzen Sie, so viel ich mich zu erinnern glaube, und Sie würden mich sehr verbinden, wenn Sie mir denselben etwa bis zum nächsten Juni, wo ich in meinen Vorlesungen an diesen Gegenstand kommen dürfte, auf einige Zeit zugehen ließen. Ihre glückliche Ueberschreitung des frostgebändigten Bodensees hat Schwab im Liede gefeiert. Daß Sie Herrn v. Meusebach wegen Fischarts ermuntert, war sehr wohl angebracht. Nicht minder möchte eine energische Anregung wegen seiner Volkslieder an der Stelle seyn. Den Fischart besitzen wir wenigstens in seinen Hauptwerken, aber die alten fliegenden Blätter besitzt nur H. von Meusebach, nur er die reichhaltigen Notizen über diesen Volksgesang. Möchte er endlich für das deutsche Volkslied leisten, was Engländer, Dänen, Schweden, längst für das ihrige gethan. Arx, der rechte Hüter und Weiser des St. Gallen Horts, ist ein großer Verlust. Seine Scriptor. St. Gallens. sind nun im 2ten Theile der Perz. Sammlung gedruckt. Ob ihn das wohl noch interessirt hat? Den Donauesch. Parcival habe ich erhalten aber noch nicht soweit benügt, um etwas Befriedigendes darüber sagen zu können. Es ist eine höchst wunderliche Zusammensetzung 2 verschiedener Werke. Es sieht jezt wirklich in meiner Arbeitsstube aus, wie Sie es beschrieben haben, die Zeit des akadem. Berufs drängt gewaltig heran. Wir werden für das erste Vierteljahr auf der Pfalz Hohentübingen wohnen, mit schöner, weiter Aussicht und großem innerem Raume. Wie sehr werden Sie uns erfreuen, hochverehrter Freund, wenn Sie, wozu Ihr Brief Hoffnung giebt, uns dort besuchen werden, wo ( nach dem Tanhuser ) Hug ein Twinger ( Tuwinger, nach Präl. Schmids Conjectur ), als Freund der Sänger herrenwerc worhte. Mit Freundschaft und Hochachtung der Ihrige L. Uhland.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

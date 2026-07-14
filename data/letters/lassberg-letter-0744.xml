@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-0744">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Ludwig Uhland an Joseph von Laßberg (09.09.1821).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">1923</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 25<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-0744">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0147">Stuttgart</placeName>
+                    <date when="1821-09-09">1821-09-09</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Euer Hochwohlgeboren haben in Ihrem Schreiben vom 16. v. M. die Absicht ausgedrückt, die Weingartner Handschrift im 5. Bande des Liedersaals herauszugeben, und mich zur Erklärung aufgefordert, auf welchem Wege eine gute Abschrift von jenem Codex zu erlangen wäre. Aeusserst erfreulich war es mir, zu vernehmen, daß Sie unsrer poetischen Literatur von Neuem einen so wichtigen Dienst erweisen wollen. Da ich bezweifeln muß, ob hier eine geschickte Hand für zuverlässige Abschrift alter Manuscripte zu finden sey, so fragt es sich, ob Sie es nicht für zweckmässiger halten, daß der Codex Ihnen zugesendet werde? Zwar werden sonst Handschriften nicht von hier weggegeben, auch würden es die Angestellten der Königl. Privatbibliothek auf ihre eigene Faust nicht unternehmen. Dagegen glaube ich, daß es sicher zum Ziele führen würde, wenn Sie an den König unmittelbar mit dem Wunsche sich wendeten, den Codex zum Behufe des Abdrucks auf einige Zeit zu erhalten. Ich kann mir nicht vorstellen, daß ein so verdienstliches Unternehmen nicht bereitwilliges Entgegenkommen finden sollte. Zur Empfehlung würde es vielleicht gereichen, wenn Sie die früheren Theile des Liedersaals für die königl. Privatbibliothek beilegten. Die Mörin des Hermann von Sachsenheim ist mir nur im Auszuge bekannt geworden. Eine neue Ausgabe des Gedichts dürfte nur die Schwierigkeit haben, daß die Handschriften desselben sehr entfernt sind, zu Wien, Koppenhagen 2c. Die Vergleichung der Handschriften mit dem Druck wäre aber doch wohl erforderlich. Was den Verfasser betrifft, so befindet sich das Stammschloß desselben, noch bewohnbar, 7-8 Stunden von hier, bei dem Städtchen Groß - Sachsenheim im Oberamte Vaihingen. Es ist wohl möglich, daß unter den Grabmälern der hiesigen Stiftskirche sich der Grabstein eines Hermann von Sachsenheim findet. Zu Anfang des 15. Jahrh. war ein solcher Probst des hiesigen Stiftes zum h. Kreuz. Doch ist dieser, der Zeit nach, schwerlich Verfasser der Mörin. Der Name Hermann war in diesem Geschlechte herkömmlich. Bedauern muß ich, nicht Verfasser des Büchleins über die Minnehöfe zu seyn, da solches von Ihnen als das Beste über den Gegenstand gerühmt wird. Ich habe mir es sogleich angeschafft. Gegenwärtig habe ich die Heidelberg. Handschr. Nr. 329, das Liederbuch des Grafen Hugo von Montfort enthaltend, in Händen. Sie hat mich sehr angezogen und ich gedenke, Einiges darüber nieder zu schreiben. Wo findet man wohl die besten Nachrichten über die Grafen von Montfort? Auf Ihre gütige Frage bemerke ich, daß ich von den Nibelungen die Bogen 1-15, und späterhin 21-24, sowie vom 2. Bande des Liedersaals 1-18, erhalten habe, wofür ich meinen herzlichsten Dank bezeuge. Mein Walther v. d. Vogelweide ist jetzt fertig, doch bin ich noch nicht dazu gekommen, ihn einem Buchhändler zu überantworten. Einem Besuche des thurgauischen Sängerlandes, wozu Sie mich so freundlich einladen, muß ich bis zum nächsten Frühling entsagen, da ich kaum erst von einer Reise in die Rheinlande zurückgekommen bin. Ich hoffe, den Winter über in meinen altdeutschen Studien so weit vorzurücken, daß ich im Frühling jene Gegend mit so grösserem Nuken besuchen kann. In Köln sah ich bei Herrn de Groote den größtentheils vollendeten Abdruck seiner neuen Ausgabe des Tristan. Möchten wir doch einmal auch die noch ungedruckten Werke des trefflichen Hartmann von Owe, den guten Gerhard ( der eine eigenthümlich deutsche Sage enthalten soll ) und den h. Georg, erscheinen sehen! Mit der vollkommensten Verehrung verharre ich Euer Hochwohlgeboren Stuttgart, den 9. September 1821. unterthäniger Diener L. Uhland.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

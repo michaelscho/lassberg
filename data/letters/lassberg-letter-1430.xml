@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1430">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Ludwig Uhland (25.03.1830).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">712</idno>
+                        <idno type="register-lassberg">104</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 161-66<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1430">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1830-03-25">1830-03-25</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Eppishausen am 25. März 1830. Vorgestern, mein teurer Freund! erhielt ich von Constanz den codex wasserburg., le voeu du paön und Iren lieben Brief und sage Inen dieses schon heute, damit Sie später nicht wegen Ankunft dieser Bücher in Verlegenheit sind, und weil ich selbst über die Charwoche einen Lauf ins Rheintal versuchen will. Behalten Sie die andern Bücher so lange sie Inen nötig sind; das was Sie sonst noch verlangt haben, werde ich Inen nach Tübingen senden, sobald ich höre, daß Sie dort angelangt sind. Wie freue ich mich, daß Sie im codex wasserburgensis so vieles für Ire Arbeiten Brauchbares gefunden! Die von Inen vorgeschlagene Verbesserung der Lesart in Eggen Ausfart: Erst sait von Linow Heinerich, für: von Lune Helferich, ist unangreifbar; denn da Rudolf von Ems im Wilhelm von Orlenz ausdrüklich saget: der von Linowe habe Ekkenis manheit getihtet und gesait, und dies Gedicht nenne man den Wallere, dann auch in der Alexandreis: Her Heinrich von Linowe hat ouch vil sueze arbeit an den waller gelait; Pfeiffer. Laßberg u. Uhland. so folgt ja unwidersprechlich daraus, daß der Helferich von Lune in der Handschrift der Eggenausfart mißschrieben sein müsse. Dieser Schreiber war überhaupt in den eigenen Namen unglüklich, wie solches im Wilhelm von Orlenz klar erscheinet. Mein Papier- Codex hat im Wilhelm von Orlenz die Literatur gar nicht, ich konnte also keine Vergleichung anstellen. Aber nun kömmt es darauf an, die Heimat des Heinrich von Linowe aufzufinden! Ich schreibe Inen daher aus meinem Collectanéen - Buche ab, was ich vor ein par Saren, da Sie mir in Stuttgart die Literatur aus Rud. von Ems Alexandreis im Münchner Codex mitteilten, aus einer S. Galler Urkunde hinein geschrieben habe. Es trift sich sonderbarer weise, daß dieser Heinrich von Linowe gar nicht weit von Wasserburg gesessen ist: „ Anno 1271. XIX. Februarii. unter Bischof Eberhard „ von Waldburg, zu Constanz wird die Burg Bongarten an der „ Schussen bei Buchhorn mit Grund und Leuten ( possessionibus „ et hominibus ) also geteilt, daß Bischof und Capitel zu Con- „ stanz die eine, und Abt Bertold von Falkenstein und sein Kloster „ St. Gallen die andere Hälfte bekommen. Dabei waren Schied- „ leute: Hainricus de Laimovve, C. de Wachingen und „ Rud. von Ailingen. Dies Leimnau in der Montfortischen „ Herrschaft Tettnang, gehört jezt dem Spital zu Lindau mit „ Boden und niedern Gerichten. " „ Nun muß freilich der Dichter, der im Rudolf von Ems „ vorkommt eine geraume Zeit vor dem Heinrich in der Urkunde, „ gelebt haben; aber wir wissen, daß in den Geschlechtern Lieb-,, lingsnamen waren, die man von einem berümten Vorfaren „ annam und die hernach immer in der Familie, meist den erſt- „ gebornen Sönen gegeben wurden. Der Dichter Heinrich von „ Linowe konnte also der Vater; oder wenigstens der Großvater „ des Mannes mit dem gleichen Namen in der Urkunde gewe- „ sen sein. „ Die Verwandlung von Linowe oder Limowe in Laim- „ owe und dann in Laimnowe ist ganz dem Gange gemäß,,, nach welchem sich die Aussprache mit der Zeit in dem Munde „ des Volks verändert hat. Es ist aber noch ein Leinau im „ Algau nicht weit vom Kloster Irsee, das auch seine eigenen,, gleichnamigen Edelleute hatte; deren einige als benefactores „ daselbst begraben liegen sollen. Wenn an Urkunden oder Grab- „ steinen die Wappen gegen einander verglichen werden könnten; „ so würde sich wol bald zeigen, daß sie ein und dasselbe Geschlecht „ waren. Leinau und Laimnau sind im Grunde nur dialektisch „ zerschieden; da im Allgau wie immer im Berglande, das ei „ reiner und schärfer, in der Ebne hingegen besonders am Boden-,, see, schon weicher wie ai gesprochen wird ". Daß Heinrich von Linowe Gedicht der Wallere genannt wurde, kam warscheinlich daher; weil Ekke, gleich einem wallære, Wandersmann, überall herumfur, um Dieterichen aufzusuchen und zu bekämpfen; die Benennung des Gedichtes: Ekken Ausfart, stammt vielleicht erst aus der Zeit des ersten Drukes her. Rudolfs Stelle: das ist der wallere, würde unverständlich sein, wenn nicht hernach jene in der Alexandreis sie erklärte: Heinrich von Lînowe hat ouch vil sueze arbeit an den Waller gelait. Dadurch wird wenigstens mir die Sache ganz klar: Herr Heinrich von Linowe hat Eggenausfart gedichtet und dies Gedicht nannte man zu Rudolf von Ems Zeiten ( 1230 ) schlechthin den Wallaere. Die Stelle codex wasserburgensis pg. 41 col. 1 vers. 37. Swer hat uernomen alder gelesen, von dem wallåre hern ekkenes måre, dem ist wol kunt wie iårlich, an ( l. ein ) turnay hebet sich u. s. w. möchte nun wol stehen bleiben, wenn in Ekkenausfart etwas von einem Turnah und einem als Preis aufgesezten Sperber vorkäme; das ist aber nicht; folglich ist hier wieder offenbar mißschrieben; wenn nun in Hartmanns Erek und Eneit, etwas von einem Turnay und Sperber vorkömmt, was ich freilich aus Unkunde des Gedichtes nicht weiß; so ist doch wol kein Zweifel, daß die Stelle hierauf muß bezogen, und der Text nach Frem Vorschlage hergestellt werden. Der Siegsperber kömmt auch in 2 meiner Handschriften von Dr. Hartliebs Uebersezung ( 1440 ) von des capellanus Andreas Buch: de arte amatoria, vor: dort ist er aber nicht als Turnier Preis, sondern als Belonung gefärlicher Abenteuer ausgesezt. Einen Sturm auf Wasserburg habe ich selbst vor, nur war mir bisher das Wetter noch nicht schön und milde genug auf poëtische Handschriften habe ich zwar keine Hofnung, da der Herr Pfarrer so bestimmt geäußert, daß er keine mer besize: aber, wo eine Handschrift Christoff Schultheissens von Constanz lag, liegen wol auch noch andere die jm gehörten und da läßt sich vielleicht etwas. Geschichtliches auffinden. Allerdings habe ich Lust meine Notizen über die Dichter des Mittelalters einmal in einem Dichterbuche herauszugeben: allein, dies hindert gar nicht, daß Sie lieber Freund! dieselben zu Iren Vorlesungen benuzen. Ueber diejenigen deren Zeit, Heimat und Herkommen bereits bekannt sind, habe ich gar nichts aufgeschrieben; weil man das sobald man will haben kann. Meine Aufzeichnungen sind meist diplomatisch, nämlich aus Urkunden oder alten Geschichtsschreibern - und darin habe ich viele wichtige Entdekungen gemacht, und noch heute Frühe um 4 Ur, da ich im Bette las, entdeke ich in einer Basler Urkunde von 1237 einen Conradus Goely canonicus Basileensis. Sie wissen aus Gottfried von Straßburg daß um dieselbe Zeit ungefär, noch ein anderer Domherr dort war namens Dietherich, der dem Gesange und den Dichtern auch hold gewesen. Der Düring war auch von Basel, und der von Gliers aus der Nachbarschaft, so wie auch der Püller aus dem obern Elsaß. Zu Basel muß ein rechtes Adelsnest gewesen sein; auch kostete es den Baslern viele Zeit und Mühe sie auszutreiben. So bringt, ich will nicht sagen jeder Tag, aber doch mancher Tag im Fare etwas Neues. Menzels Anzeige des Sigenot, für deren Mitteilung ich Inen vielmal danke, hat mich gefreut; denn diese Art Lob mag ich wol ertragen, wo man nämlich sagt, daß man mich liebt; freilich läse ich es lieber geschrieben als gedrukt; aber doch bitte ich Herrn Menzel, wenn Sie In sehen, gelegentlich meinen schwäbischen ( ich meine das heißt aufrichtigen ) Dank dafür auszudrüken. Eigentlich gehet die Sache Sie an, und wenn Sie Irem alten Vorhaben eine Geschichte der teutschen Poësie des Mittelalters zu schreiben ungetreu werden könnten; so müßte ich und jeder Teutsche es herzlich beklagen: allein, das scheint mir bei einem Manne der wie Sie das Vaterland liebt, und die Kraft dazu in sich fült, beinahe unmöglich, und so gehet der größte Teil meines Dankes an Herrn Menzel dahin, daß er Sie öffentlich dazu aufgeruffen und vermanet hat. Was Görres betrift, den ich 7 Monate lang beinahe täglich sehe; so entberet er vast gänzlich des historischen Sinnes und der dabei unerläßlichen Kritik, und obschon er seit 20 Jaren an einer Sagengeschichte aller Völker sammelt, so erwarte ich von Im doch nichts als Poesie. Gebet uns die historischen Daten klar und rein, wie sie aus den Quellen hervorgehen; dann mögt jr hinterdrein paraphrasiren so viel jr könnt und wollt. Was nun die Klausenburger Handschrift von dem Gedichte über Karl den Großen, mir durch Maylath mitgetheilt, betrift, welches ich Inen schiken werde, so muß ich Inen vorläufig sagen, daß beinahe Alles aus dem Regensburger Mönche Andreas genommen ist, dessen literarischen Nachlaß Defele im I. Bande der Scriptores rerum boicarum genommen, der gegen die Mitte des XV. Jarhunderts schrieb. Man hat auch anfangs das schon frühe gedrukte Gedicht von Karl dem Großen und den Heiden von Regensburg ( wovon Meusebach einen Abdruk besizt ) drein verwoben, woraus hervorgehet, daß das ganze Machwerk nicht vor 1450 kann geschmiedet worden sein. Aber Sie sollen es haben. Aber Sie sollten alle meine Handschriften ( teutsche ) zu Irer Arbeit haben, und das könnte nach und nach wol gesche hen: noch besser wär aber, wenn Sie künftige Herbstferien mit Frau Emma zu mir kämen und alles recht ordentlich recognoscirten, um zu wissen, was Sie brauchen können; denn Sie haben meine Handschriften noch nie recht durchgegangen, und das könnte um so füglicher sein als ich jezt eine wirtembergische Köchin und Haushälterin bekomme, die Frau Schwab die Güte gehabt hat mir zu verschaffen und man dann doch wenigstens menschlich bei mir essen wird. Wissen Sie was? ich hole Sie Beide in Tübingen mit meinen Pferden ab und wenn Sie einmal in der alten Villa Epponis sind; so giebt sich dann eins ums andere. Ia es ist war, ich bin dem alten Potamus über seinen Panzer gelaufen; aber beim Heimfaren war der Schlitten mit 4 Schwaben bespannt. Der arme Arx lebt noch immer, seit Weihenacht Abend kämpft er mit dem Tode und ist nur selten und immer nur auf wenige Minuten seines Geistes mächtig. Ueber den Donauöschinger Parcifal wünschte ich nur ( zu seiner Zeit ) von Inen zu erfaren, wie er sich zu dem Berner Codex verhält? Von der Hagens Minnesinger, die Sie lezten Sommer bei mir sahen, sind noch immer nicht im Buchhandel, es ist doch ein erbärmlicher Kerl! Aber alle Erbärmlichkeit übertrift E. Münch's Geschichte des Hauses Fürstenberg; ich möchte doch wissen was Pfister dazu sagt? ich habe mir nichts anderes als schlechtes von Herrn Münch erwartet; aber auf ein solches studentisches Prello für 3000 fl. Honorar war ich nicht gefaßt. Sie können denken, wie diese Mißhandlung eines Hauses, dem ich und meine Vorältern über 100 Jare gedient haben, mich schmerzen muß. Aber jezt gute Nacht! und fröliche Ostern! und der guten Frau Emma meinen herzlichen Gruß, wie auch Tren lieben Aeltern in Tübingen. Bei Schwabs bitte mich nicht zu vergessen. Fr Laßberg.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

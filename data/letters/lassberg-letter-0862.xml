@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-0862">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Ludwig Uhland (11.10.1823).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">446</idno>
+                        <idno type="register-lassberg">171</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 38-42<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-0862">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1823-10-11">1823-10-11</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Lieber Herr! Ich möchte lieber sagen: Freund! wenn ich hoffen dürfte, diesen Namen bei Ihnen zu verdienen; jeder Andere, den Sie mir geben können, ist mir höchst gleichgiltig, und nach diesem werde ich streben, so lange Sie mir erlauben, von mir und meinem Treiben und Tun Ihnen Nachricht zu geben. Ihr Schreiben vom 2. dieses hab ich erst heute erhalten. Daß Sie die Erinnerung an die kurzen Stunden, die Sie der Villa Epponis und ihrem Einsiedler geschenkt, in Ihrem Herzen bewaren wollen, hat mich innig gerürt und so weit mich noch Etwas freuen kann, herzlich gefreut. Es schien mir als ob irgend eine mir unbekannte Ursache Sie zurükgehalten habe, sich ganz zu entschließen; daß diese meine Ansicht nicht die Einzige gewesen seie, mögen Sie aus folgenden Worten meines Freundes Ittner, die ich heute mit Ihrem Briefe erhalte, schließen: „ Diese Woche erhielt ich von dem Dichter Uhlandus, „ dem wir kein Lächeln abloken konnten, die lateinischen Oden „ von Gustav Schwab, die er unter dem fetten König Agag „ an die Landstände dichtete, fast alle im alkaischen Versmaße. „ Sie sind von verschiedenem Werte, doch meistenteils gut und „ stroken von Vaterlandsliebe und freisinnigen Gedanken, wie " sie die Könige nicht gerne hören. Das Beste aber dabei sind „ die herrlichen deutschen Übersetzungen von Uhland, die das „ Original bei weitem übertreffen und die verschloßenen „ Ideen hell und deutlich ans Tageslicht zichen. " Nun zu Beantwortung Ihres Briefes! - Von Ihrem Vorhaben eine Darstellung der teutschen Poesie im Zeitalter der Hohenstaufen zu geben, haben Sie mir weder_im Allgemeinen, noch in Bezug auf die Abteilungen Etwas gesagt; allein, als ich Ihren Walter von der Vogelweide gelesen hatte, war mir schon klar, daß in dieser Zeit nur Sie, oder sonst niemand, diese Arbeit mit Glük und Geschik unternemen und vollfüren könne. Daß Sie solche meiner Prüfung unterstellen möchten, sehe ich für eine bloße Höflichkeit an; denn Sie verstehen das in jeder Beziehung besser als ich, und wenn ich je Etwas war und konnte, so hat die Trauer nun zuviel Gewalt über mich gewonnen, als daß ich mir noch schmeicheln dürfte Etwas Gutes und Großes in meinem Sinne zu leisten. Non sum qualis eram, sub bonae regno Cynarae! - Gleichviel, wenn nur das Gute geschieht, durch wen es geschehe! Nicht nur die Abschrift des palatinischen Codex Nr. CCCLVII. und die Zeichnungen aus der Maneßischen Handschrift; sondern mein ganzer literarischer Apparat stehen Ihnen zu jeder Zeit und auf so lange Zeit als Sie ihn nüzen wollen zu Diensten. Wozu hätte ich ihn sonst erworben? Möchte ich im Stande sein Ihnen recht viele Dienste zu leisten und Ihnen zu zeigen, wie sehr ich einen Mann ehre und liebe, der seinem Vaterlande teuer sein muß, hätte er auch kein anderes Verdienst um dasselbe, als daß er so oft gezeigt hat, wie teuer ihm das Vaterland ist. Die Vergleichung der Maneßischen Ausgabe mit der Weingartner Handschrift und der Heidelberger muß Ihnen unzweifelbar wichtige Resultate gewären. Ich glaube daß der Weingartner Codex dem sogenannten Maneßschen zur Grundlage gedient hat, daß Lezterer für den Bischof Heinrich ( von Klingenberg ) von Konstanz geschrieben worden seie, ist mir beinah mehr als warscheinlich. Er war von seiner Mutter, einer gebornen von Costenz, ein halber Zürcher, er war Chorherr und Dechant zu Zürch - Johann von Kostenz ( sonst auch Klein Heinzelin von Costenz genannt ) warscheinlich sein Ohm, ist Verfasser des schönen Gedichtes: Gott Amur ( was ich diplomatisch beweisen kann ). Eben so warscheinlich ist, daß er in Zürch seine Bildung erhielt, er wurde Chanzler Kaiser Rudolfs von Habsburg, aber erst nach des lezteren Tode ( 1293 ) Bischof zu Constanz. Einen solchen Aufwand als die Handschrift erforderte konnte damal kein Privatmann bestreiten; auch ist ganz falsch daß der Bürgermeister Rüdger Maneß die Handschrift fertigen ließ; es war ein gleichnamiger Vetter, Scholaster am großen Münster zu Zürch, der als solcher über alle Schönschreiber und Rubricarios zu befelen hatte. Ich halte den Heidelberger Codex CCCLVII. für Etwas älter als den Weingartner; aber er ist offenbar ein ἀπόγραφον, wovon seine große Unkorrektheit einen unwiderlegbaren Beweiß giebt. Auf jenen Abschnitt Ihres Werkes, der von der einheimischen Heldensage handelt, bin ich am meisten begierig und wünschte vorläufig zu wissen, welchen Zeit Raum Sie demselben einräumen? Mit Mayláths Handschrift habe ich schon viele Zeit verdorben, und hätte dieselbe schon längst weggeworfen, wenn ich nicht dem biedern Ungar zu lieb mir vorgenommen hätte, sie bis ans Ende zu lesen. Eine elendere Mönchs - Compilation aus Legenden und Klostertraditionen ist mir nicht bald vorgekommen; in den Fabelkreiß Karl des Großen möchte ich sie auf keinen Fall reihen; denn es ist offenbar ein Produkt des XV. Jar - Hunderts im Anfange warscheinlich auf einer lateinischen Legende beruhend, dann aber eine bloße langweilige Geschichte des Schotten Klosters zu Regensburg, welches von viel späterem Ursprunge ist als Karl des Großen Regierung. Da ist mein Gabriel von Montavel, gedichtet von unserm Landsmanne Konrad von Hohenstoffeln ( dem edlen, fryen manne ), der auch in den Kreiß der Tafelrunde gehört, ein ganz anderer Kerl. Wir haben heuer keine süßen Trauben, sonst würde ich bedauern, daß der gute Conz diesen Herbst seinen Ausflug in die Villa Epponis nicht unternommen hat; aber ich habe noch alten Wein und das ist für alte Knaben, wie er und ich sind, doch die Hauptsache; sagen Sie ihm dieses, und wenn er kommen will, so kann ich ihm meine Pferde bis Tuttlingen entgegen schiken. Ihre Subscription an Arx für das Gedicht auf den Appenzeller Krieg werde ich bei ihm anmelden, er hatte es mir vor ein Par Jaren zur Einsicht gesendet und ich ihm sehr mißraten, es heraus zugeben; es hat weder das Verdienst der Gleichzeitigkeit, noch irgend einen dichterischen Wert. Dies und Mayláths Handschrift sind nun 2 Sachen, die dem Geschmake an altteutscher Literatur mehr Schaden als Nuzen bringen werden. Im Anfange Augusts habe ich mit Ittner und einem Konstanzer Archivisten die Reise in das Rheintal gemacht, welche Sie hätten machen sollen; ich habe dabei mehr als 40 alte Burgen besucht und unter diesen mehrere Sängerburgen, als: Husen, Altstetten, Hohensax, Sevelen ( welches ich für die Burg des Milon von Sevelingen halte; denn Söflingen bei Ulm war schon im XIII. Iar Hundert ein Nonnen Kloster, und gehörte früher denen von Freiberg ), Gutenburg bei Balzers, drei Burgen der Montforter, und 3 deren von Hohen Ems. Ich werde den 20 Sängern im ersten Bande des Liedersaals im Vorberichte zum 2. noch zwanzig andere anreihen, welche alle nicht weiter von Eppishausen entfernt wonten, als die im ersten Bande erwänten. In Sargans ent dekte ich bei Herrn Altstatthalter Gallatin eine Handschrift des Gedichts von dem Ritter von Staufenberg und der Meerfeye, warscheinlich von Gilg Tschudy oder seinem Sone geschrieben, und einige noch unbekannte Schlachtlieder aus den Burgundischen Kriegen, vielleicht von Veit Weber aus Freiburg im Breisgau. Das ist aber auch Alles, was mir auf dieser Ausflucht von altteutscher Literatur vorkam. Höchst merkwürdig war mir Werdenberg. Das schönste Wetter begünstigte uns; aber mir felte die Sonne, die sonst alle meine Schritte so freundlich beschien! - Davon mag ich nicht weiter sprechen! Ich habe für diesen Winter den alten Helmsdorfischen Hof zu Konstanz gemietet; ich will versuchen mich über meine Empfindungen zu täuschen und mich zu bereden, daß ich mich noch in diese Welt und unter diese Menschen schiken kann; zugleich lasse ich den 3. Band meines Liedersaales dann dort unter meinen Augen druken. Leben Sie recht wol und vergnügt mit Ihrer liebenswürdigen, ſchlanken, ehelichen Wirtin und gedenken Sie zuweilen Ihres Sie aufrichtig verehrenden Eppishausen am 11. Oktober 1823. I. v. Laßberg.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

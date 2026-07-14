@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1053">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Ludwig Uhland an Joseph von Laßberg (06.12.1825).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">2101</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 59<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1053">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0147">Stuttgart</placeName>
+                    <date when="1825-12-06">1825-12-06</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Verehrtester Freund! Stuttgart, den 6. Dec. 1825. Durch Maßmanns Aufenthalt bei uns, öffnet sich endlich die Aussicht, eine sorgfältige Abschrift des Weingartner Codex für den Liedersaal zu gewinnen. In beiliegendem Schreiben zeigt er selbst Ihnen seine Absicht an, eine solche Abschrift zu nehmen, und seine Bereitwilligkeit, sie für die Fortsetzung des Liedersaals abzugeben. Auch in Durchzeichnung von Bildern ist Maßmann sehr geschickt und er wird auch die Bilder der Sänger abzeichnen. Die Weing. Handschrift ist in der That zu eigenthümlich und wichtig, um etwa nur zu Varianten und Ergänzungen bei einer Ausgabe der Manessischen angewendet zu werden. Als älteste und ächteste Urkunde des Minnesangs erfodert sie einen besondern und vollständigen Abdruck. Herr Graff aus Königsberg, der zum Behuf eines althochdeutschen Sprachschatzes eine literarische Reise macht, war einige Wochen hier. Eine der nächsten Nummern des Morgenblatts wird eine kurze Relation über dasjenige enthalten, was er bisher von noch unbekannten oder wenig bekannten Denkmälern gefunden. Besonders war er über die reichen, uralten Glossensammlungen erfreut, die in Karlsruhe, aus der Reichenau und von St. Peter, befindlich sind. In einer hiesigen Handschrift, hinter einer deutschen Psalmenübersehung, hat er eine Reihe von Gedichten gefunden, worunter einige auch im Liedersaal vorkommende, namentlich Mezen Hochzeit. Die Lücken dieses Stücks im Lieders. werden durch das hiesige Cxemplar ergänzt, jedoch ist dieses durchgängig voll Varianten und im Ganzen weniger reichhaltig, als das Ihrige. Ein Verzeichniß von den Anfängen dieser Gedichte schließe ich hier bei, mit der Bemerkung, wo Einzelnes schon im Liedersaale steht. Auch in Büttners Franconia sind drei Stücke abgedruckt, ohne Angabe woher, aber ohne Zweifel aus hiesiger Handschrift, in der ich noch ein Zeichen mit Büttners Addresse bemerkte. Schwab ist noch voll Freude über die schönen Tage, die er in Ihrer Nähe verlebt. Mit der aufrichtigsten Verehrung und Freundschaft L. Uhland.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

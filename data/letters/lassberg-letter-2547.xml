@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-2547">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Ludwig Uhland an Joseph von Laßberg (12.07.1845).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement></settlement>
+                        <repository></repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">2876</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 253<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-2547">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0148">Tübingen</placeName>
+                    <date when="1845-07-12">1845-07-12</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Verehrtester Freund! Tübingen, den 12. Jul. 45. Ueberbringer dieser Zeilen ist mein lieber Freund Oberjustizrath Karl Mayer, der mit einer seiner Töchter eine Erho lungsreise an den Bodensee macht. Seine Liedersammlung voll frischer Naturbilder, namentlich auch aus dem Bereiche des Bodensees, ist Ihnen vielleicht bekannt geworden. Er wünscht, durch ein Blatt von meiner Hand in die alte Meersburg eingeführt zu werden, von deren schöner Lage und freundlichen Bewohnern ich ihm öfters erzählt habe. Seit seiner Anstellung beim hiesigen Kreisgerichtshofe täglich mit uns verkehrend, kann Mayer Ihnen auch am besten berichten, wie es uns geht, und wir hoffen nun gegenseitig, durch ihn von Ihrem und der Shrigen Wohlbefinden nähere Kunde zu erhalten. Meine Frau grüßt mit mir herzlich. Von der zweiten Abtheilung meiner Volksliedersammlung erwarte ich täglich fertige Exemplare. Sie hätte schon im vorigen Monat verschickt werden können, wenn nicht gerade noch an den zwei letzten Druckbogen die Papiersorte ausgegangen wäre. Am Schlusse dieser Abtheilung werden Sie nun auch eine umständliche Angabe der Quellen finden. In alter Freundschaft und Hochschätzung L. Uhland.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

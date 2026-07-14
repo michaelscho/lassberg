@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1864">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Ludwig Uhland (21.08.1836).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">911</idno>
+                        <idno type="register-lassberg">146</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 229-33<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1864">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0016">Baden (Aargau)</placeName>
+                    <date when="1836-08-21">1836-08-21</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Baden im Kanton Aargau am 21. August 1836. Welche Freude, mein teurer Freund! hat mit Ir Schreiben vom 2. dieses, das ich nebst dem Buche gestern durch meine Frau zugesendet bekam, gemacht. Als ich Inen am 10. März die glükliche Ankunft zweier blauaugiger, rothaariger Schwabenmädchen in Eppishausen meldete, wußte ich nicht, daß die Ständeversammlung noch in Stuttgart saß und sendete meinen Brief nach Tübingen, wo Sie in wenigstens bei der Heimkunft gefunden haben. Den Ankauf eines Hauses in Irer Vaterstadt hatte mir schon unser guter Schwab mitgeteilt, und ich freute mich, durch die Gründung eines vesten Sizes, Sie nun für immer Frem Vaterlande gesichert zu sehen; aber ach! die geliebte Schwester, welche so viel durch die Veststellung Ires Aufenthaltes gewonnen hätte, mußten Sie, lieber Freund! so frühe verlieren. Ich sahe sie ein einziges Mal in dem Hause der würdigen Aeltern und sie gefiel mir in der kurzen Zeit recht ser. Glauben Sie an meine herzliche Theilnahme an Irem unersezlichen Verluste; eine Schwester ist eine geborne Freundin, die man nur durch den Tod verlieren kann; ich habe nur noch eine behalten, und füle bei dem Gedanken an die Irige wieder doppelt wie tief mich Ir Verlust verwunden würde. Woher Herr Procurator v. Abel die Nachricht von meiner Wiederherstellung genommen weiß ich nicht; allein wiederhergestellt kann ich mich nur dann glauben, wenn ich wieder gehen kann; denn sich hinkend an zwei Stöken herumschleppen und bei iedem Schritte Schmerzen empfinden ist wol keine Herstellung zu nennen: in integrum ist sie auch wol kaum zu hoffen, ungeachtet dessen habe ich, den Wünschen meiner Familie nachgebend, mich am 9ten dieses hieher ins Bad verfügt, dem Versprechen der Aerzte zufolge meine völlige Heilung da zu holen. Nach 14tägigem Gebrauche des Wassers finde ich, daß die Schmerzen und die Steifheit meines geräderten Beines sich vermeren; aber, ich bin nichtsdestoweniger entschlossen die vorgeschriebene Kurzeit hier auszuharren, das ist noch 14 Tage zu bleiben, um mir hindennach keine Vorwürfe machen zu müssen; daher tut es mir leid, Irem Wunsche, durch Uebersendung der verlangten Handschrift und Bücher, nicht so plözlich entsprechen zu können, als ich gerne wollte; aber bei meiner Zuhausekunft soll es auch das erste sein, was ich vorneme. Ich werde dieser Sendung dann noch zwei Liedersammlungen beifügen, in deren Besiz ich seit einem Fare gekommen bin. Das eine gedrukte Buch in Querquarto, bestehet aus mereren zusammengebundenen Sammlungen zerschiedener Tonkünstler unter denen sich auch ein H. würtembergischer Kapellmeister befindet. Das andere ist eine Abschrift von etwa 44 Liedern mit Melodien, welche Prof. Maßmann von dem Kretschmarschen Codex des XV. Jarhunderts genommen und mir zur Abschrift mitgeteilt hat. Da die bei gefügten Weisen nur einfach die Singstimme enthalten; so hat meine Schwägerin Nette Droste ( der ich auch das erstgenannte Liederbuch verdanke ) zu iedem Liede einen Baß gesezt; so daß sie sich nun ser gut mit Klavierbegleitung spielen lassen. Vielleicht haben Sie von dieser lezten Sammlung schon etwas in der Münchner musikalischen Zeitung gelesen, wohin Maßmann etwas davon einrüken ließ. Mone's Anzeiger, der beinahe aufgehört hat ein Anzeiger zu sein, hat seit einiger Zeit wirklich an literarischem Gehalte gewonnen, und man kann jezt auch, one sich zu schämen und mit Vergnügen Beiträge dazu liefern. Ich bearbeite auch wirklich hier eine Anzal Urkunden des XI. und XII. Jarhunderts, die Stiftung des Klosters Allerheiligen zu Schafhausen betreffend, welche ich an Mone senden will und welche, wie ich hoffe, den schwäbischen Geschichtforscheren willkommen sein werden. Auch will ein Freund und Nachbar von mir, Herr von Imhof mir ein höchst merkwürdiges Minnesängerkästchen, das im Besize der verwittweten Königin von Baiern war, und gewiß dem XIII. Farhundert angehöret, abzeichnen, um es in Steindruk dem Moneschen Anzeiger beifügen zu können. Sie sehen, bei mir alten Manne trist nun das schwäbische Sprüchwort ein: regnets nicht, so tröpfelts doch, aber auch das Horazische: non sum qualis eram, bonae sub regno Cynarae! dem sei nun, wie im seie, testatus exibo, bonam conscientiam me amasse, bona studia: nullius libertatem per me imminutam esse, minime meam. Was sagen Sie zu I. Grimms deutscher Mythologie? Es ist wieder eine ganze Bibliotheke voll Gelersamkeit! Ich schrieb im: es sind eine Menge guter und schöner Steine, aus denen einmal ein herrliches Haus gebaut werden kann, und mündlich sagte ich im vorlezten Winter zu Göttingen: es seie noch allzufrühe zu einer teutschen Mythologie, man müsse noch warten bis ein größerer und reicherer Apparat zusammen gebracht seie. Dies füret mich nun auf Ire Sagenforschungen, für deren freundschaftliche Mitteilungen ich Inen herzlich danke: ich habe bereits ein halb hundert Seiten in Irem Thôr gelesen, und es kam mir oft vor als wenn ich es schon einmal gelesen hätte, als ich die Sache näher betrachtete, fand sich, daß es Ire Darstellung, Tre Ansicht, Ire Erklärung war, die mich so ansprach, ich möchte sagen: anheimelte; denn ich hatte von Anfang als ich mit diesen Mythen bekannt wurde bis nun, sie beinahe immer so angesehen und aufgenommen, wie ich sie in Irem Buche vorgetragen finde; auch habe ich wieder eine Klarheit und Gediegenheit in diesem opusculum gefunden, welche mich immer in Iren Schriften, selbst in den poëtischen, so ser erfreut haben. Aber welchen großen Plan mein Freund! haben Sie sich vorgezeichnet! Ich fürchte, daß die nordische Mythologie allein Fre Zeit auf viele Fare in Beschlag nemen werde; wo bleiben Zeit und Raum für unsere Lieder? Wann wird sich denn einmal ein tüchtiger Mann an unsre oberteutsche Mythologie machen und sie nach der Geschichte der Völkerstämme vortragen? So wenig man sich bei der niederteutschen des Nordens und seiner Götterlehre gänzlich entschlagen kann, so wenig wird man sich beim südlichen und westlichen Teutschlande ganz von den römischen und damit verwandten Mythen losmachen können; aber wir haben doch mer Geschichtliches, und mer Denkmale in Bild und Sprache für uns. Es wäre wol des Schweißes eines Edlen wert einmal einen Versuch zu machen, nur müßte man die vielschreibende und wenig sagende Academie celtique nicht zum Muster nemen. Sie haben wol vernommen, daß der Stuttgarter Hohenstaufen Verein mich zu seinem Vorstande gewält hat. Inen kann ich es wol gestehen, daß ich die Sache als einen Episcopat in partibus angesehen habe; aber nicht in partibus infidelium, denn, was könnte ich in dieser Entfernung wirken? Allein, die Sache ward wiederholt und auf eine so freundliche Weise an mich gebracht, daß ich, one als ein eigensinniger oder eingebildeter Mensch zu erscheinen, mich derselben nicht wol entziehen konnte. Es sind doch viele wakere Leute dabei, neben denen ich wol stehen mag; obschon ich den Namen, den ich am liebsten gelesen hätte, in dem Verzeichnisse nicht fand, was nun die guten Götter zu Ere und Frommen der seligen Hohenstaufen ( eigentlich Staufen; denn der Zusaz: Hohen, kömmt urkundlich nirgend vor ) uns eingeben werden? will ich in Geduld und Demut gewärtigen. Von Hause bekomme ich alle Wochen zweimal Briefe, und gottlob! ist noch immer alles gesund und munter, wie wir es nur wünschen können, die Kinder wachsen wie die Spargeln und Hildegard jauchzet schon so laut, daß man sie im obern Stok des Hauses hören kann. Meine Frau, die mir Iren Brief geschikt hat, grüßet mit mir Frau Emma auf das herzlichste, wollen Sie nicht mit einander kommen und unsre Trauben diesen Herbst bei uns versuchen, die Sie im vorlezten zu Tübingen so süß fanden? Sie versprechen auch diesmal gut zu werden, und der kleine Ludwig (? ) möchte wol Freude haben sie am Geländer zu lesen. Gott befolen, mein Freund! und geliebt und vereret von Frem I. v. Laßberg. Mein Son Fridericus Ahenobarbus, welcher auf der Heimreise von Interlachen, wo er die Molken trank, zu Bern den wiederaufgefundenen französchen Schwaben Spiegel verglich, welcher dem Bischofe Heinrich von Verdun gehörte, und ganz mit meinem Codex von 1287 stimmt, hat mich hier auf der Durchreise besucht und wird nun Anstalt machen seine Ausgabe des Schwabenspiegels, mit den Lesearten von 85 Handschriften, in Tübingen druken zu lassen. I. Grimm arbeitet am 4. Bande seiner Grammatik, welcher heuer noch unter die Presse soll. Wie haben es die Berliner angefangen auf einmal zwei Handschriften des Nibelungen Liedes zu bekommen? Von W. Wakernagels Lesebuch soll schon die zweite Auflage erscheinen. Lachmann arbeitet auch wieder in der Theotiska, er sagt aber nicht was es seie?</p>
+            </div>
+        </body>
+    </text>
+</TEI>

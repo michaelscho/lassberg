@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1531">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Ludwig Uhland an Joseph von Laßberg (10.03.1831).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">2351</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 194<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1531">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0148">Tübingen</placeName>
+                    <date when="1831-03-10">1831-03-10</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Tübingen d. 10. März 1831. Die 8 Bände der Wysschen Schweizerlieder, welche Sie, verehrtester Freund, sammt dem gedruckten Eckenliede mir zugehen ließen, sind mir wohlbehalten zugekommen. Empfangen Sie meinen herzlichsten Dank für diese Mittheilungen, besonders aber für das erfreuliche Geschenk, das Sie mir und jedem Freunde unserer alten Heldensage durch den Druck jenes nun in frührer Gestalt hervortretenden Liedes gemacht haben. In den Wyßschen Sammlungen bin ich, bei mancher Störung in der letzten Zeit, noch nicht so weit vorgerückt, als es in der zweiten Woche, seit ich solche in Händen habe, der Fall seyn sollte, werde mich aber beeifern, sie Ihnen zur gehörigen Zeit wieder zugehen zu lassen. Einstweilen wollte ich die Anzeige des richtigen Empfangs nicht länger verzögern, wenn ich auch noch keine bestimmte Ansicht darüber auszusprechen vermag. Im 6. Hefte steht eine Randglosse: „ Alle folgenden Lieder, bis Nr. 15 inclus. sind abgeschrieben aus einer alten han dschriftlichen Liedersammlung im Besitze des Herrn Schultheißen von Mülinen, welche jedoch mehr nichtschweizerische Stücke enthält. " Unter diesen nichtschweizerischen Stücken möchte doch auch noch manches sonst bemerkenswerthe Lied enthalten seyn. Ich erinnere mich, auf einer frühern Schweizerreise, von einem Schuhmacher Huber in Meiringen, der mir die Stiefel ausbesserte, einen dicken Band älterer gedruckter Volkslieder in Händen gehabt zu haben, worin sich unter andern das Lied von der Schweizer Ankunft aus Schweden befand. Ich schrieb mir Einiges daraus ab, namentlich zwei Balladen, welche nachher ins Wunderhorn kamen und wovon die eine: Graf Friedrich auch in der Wysschen Sammlung steht. Es hat mich nachher gereut, daß ich dem Manne seine Sammlung nicht feil machte; vielleicht ist sie noch in dem Hause. Schwab schreibt mir, daß er wegen des Contrakts mit Banhardt sogleich mit dem jüngern Cotta gesprochen, welcher sich die Sache sehr angelegen seyn lassen und deshalb an seinen Vater geschrieben. Allein das hat sich ja nun ohnedieß erledigt. Nächstes Semester will ich in meinen Vorlesungen auf die Geschichte der deutschen Dichtkunst im 15. und 16. Ihd. übergehen. Da ich hiebei auf den Meistergesang zu sprechen kommen werde, so wünschte ich später einmal einen Aufsak über Frauenlob wieder zu lesen, den ich einmal bei Ihnen auf einzelnen Blättern einer sonst wenig bekannten Zeitschrift gesehen habe. Vielleicht kommen Ihnen dieselben gelegenheitlich unter die Hände. Durch Besuch bin ich genöthigt, hier abzubrechen, um die Schweizerpost nicht zu versäumen. Voll Freundschaft und Verehrung L. Uhland. 13 * Laßberg au Uhland. Teurer Uhlandus! Eppishausen am 11. März 1831. Ich hoffe Sie haben die unterm 19. Hornungs an Sie abgesendete Wyßische Liedersammlung wol erhalten; allein, schon wieder muß ich Inen schreiben, ungeachtet des: Ecce iterum Crispinus, welches Sie vielleicht beim Erbrechen dieses Briefes ausrufen werden; ich denke aber die Nachricht die ich Inen zu geben habe, ist das Briefgeld schon wert. Hören Sie also! Eine vollständige, leserliche und genau verglichene Abschrift des Ulrich von Liechtenstein ist als Eigentum in meinen Händen, und folglich auch eben so wol in den Frigen. Ich glaube Inen schon gesagt zu haben, daß lezten Herbst Prof. Maßmann mich besuchte; mit Im kam ein junger Mann Son des Forstmeisters Braun aus Gotha; er hatte ein Far bei Benecke zu Göttingen über altteutsche Literatur Collegien gehört, und ließ merken, daß er in einer guten Schule gewesen. Sie können sich leicht einbilden, daß die Sprache auch auf den Ulrich von Liechtenstein kam; obschon ich, da Maßmann schon zweimal ganz unaufgefordert versprochen hatte mir in abzuschreiben, den Gegenstand nicht in Anregung bringen wollte. Auch diesmal wieder erneuerte Maßmann sein altes Versprechen, Herr Braun aber verhielt sich ganz stille und sprach gar kein Wörtchen darüber. Lezthin als ich eben beim Nachtessen in Ludens Geschichte die Schlacht des Ariovist mit dem Cäsar las, erhalte ich ein Paket mit unbekannter Aufschrift und nachdem ich es mit meiner gewöhnlichen Hastigkeit aufgebrochen hatte, fielen mir sogleich die Hefte des Frauendienstes in die Hände. O, du guter Mensch! rief ich aus, verdiene ich alter Mann denn auch so viel Liebe! Wie manche Stunde hat der Student sich von seinem Vergnügen abmüssigen müssen, um diese 20.000 Verse abzuschreiben. Ich muß gestehen daß ich in langer, ja ser langer Zeit nicht so tief gerüret war. Ja, die Pietas iſt in der Brust deutscher Jünglinge noch nicht ausgestorben, und wird es auch nimmermer! Nun ist also der Ulrich von Liechtenstein da und es kömmt nur darauf an, wann er die Reise nach Tübingen antretten soll? Ich kann mich nicht entschließen, in anderſt als in einem Zuge zu lesen und mich dabei nicht unterbrechen zu lassen, um den ganzen Eindruk und die volle Erinnerung davon zu behalten; dazu lassen mir aber andere angefangene Arbeiten jezt keine Zeit. Ich denke auf Ostern nach Sigmaringen zu reisen und wollte Inen denselben nach Tübingen mitbringen, allein bei näherer Betrachtung, hielt ich diese Ueberraschung doch nicht für recht, noch weniger die längere Vorenthaltung dieses Fundes, nach dem ich mich so lange gesenet hatte. So ist denn beinahe kein Far, das mir nicht etwas bringt, das lezte den Schwabenspiegel, das vorlezte den Wasserburger Codex, auch den geschichtlich wichtigen Weissenauer nicht zu vergessen. Ich bin ein wares Glükskind; aber kein undankbares. Gestern bekam ich endlich Graffs Ottfried, das ist nun einmal ein gescheider Druk, der alten Augen wol tut und den man auch bei Licht lesen kann. Nebst dem Ulrich von Liechtenstein hat mir der gute Emil Braun auch eine Abschrift von einer Legende des heil. Ulrich in teutschen Versen des XII. Jarhunderts geschikt, welche ich mit der lateinischen die 20 Jare nach dem Tode dieses Bischofs gemacht wurde, verglichen und ganz übereinstimmend gefunden habe. Von dem Episcopatus Constantiensis habe ich den 4. Bogen in der Correctur; allein, nun ist der Buchdruker gefärlich krank und alles liegt wieder darnieder. Wenn ich gesagt habe, daß ich ein Glükskind seie, so war es keineswegs in Beziehung auf die Buchdruker. Hier schike ich Inen auch den Thanhauser, wie er jezt noch im Entlibuch gesungen wird, ich erhielt in vorgestern von dem alten Stalder, die Weise war nicht dabei; ich habe aber neuerdings darum geschrieben und sie wird nachfolgen. Das Lied hat eine Magd geschrieben, ich folge also auch irer Schreibung. In Tübingen, höre ich soll ein Nibelungenlied herauskommen; aber, in der Ankündigung stehet eine Lüge, es heißt nämlich der Abdruk sei nach meiner Handschrift gemacht. Wenn, wie ich allerdings zu vermuten Ursache habe, Herr Schönhut der Editor ist, so tut es mir leid, daß er es mit der Warheit nicht so genau nimmt als man bei einem Manne seines Standes erwarten sollte. Mit meinem armen Friz gehet es zwar um vieles besser, wie er mir selbst schreibt, er hat auch wieder Arbeit von mir verlangt; aber meine Befürchtnisse vor der Zukunft sind nichts weniger als gehoben. Er will diesen Sommer in der Schweiz die Molkenkur brauchen und ich verspreche mir von seinem ungeschwächten Alter ( 33 ) noch Genesung, in so weit sie bei einem organischen Uebel möglich ist. Lieber Freund! Unverschuldetes Unglük muß man mit Geduld und mit Mut tragen, und seinen Freunden mit Paraphrasirung seiner Leiden keine lange Weile machen. Leben Sie wol, grüßen Sie mir herzlich Fre treffliche Hausfrau Emma und haben Sie immer ein wenig lieb Fren alten Lazzbergåre. Sehen Sie Herrn Professor Michaëlis; so bitte ich im zu sagen, er möchte mich doch gefälligst entschuldigen, daß ich sein Schreiben noch nicht beantwortet habe; es soll nächstens geschehen. Auch bei unserm guten Schwab bin ich in alter Schuld; aber bei dem bin ich wol gewiß, daß er mir darum nicht zürnt.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

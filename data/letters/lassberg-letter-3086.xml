@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-3086">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Ludwig Uhland (09.09.1854).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">1515</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 259<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-3086">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0101">Meersburg</placeName>
+                    <date when="1854-09-09">1854-09-09</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Welche große Freude haben Sie mir gemacht, mein teurer und herzlicher Freund! Einmal durch die Zeilen, in welchen Sie mir den Namen geben, den mein Herz schon seit bald 40 Jaren um Sie zu verdienen sucht und dann durch das mir so werte und so wichtige Buch, welches in der Geschichte unseres lieben alten Schwabenlandes, auf eine so verdienstliche Weise, eine so bedeutende Lüke ausfüllt. Nemen Sie meinen besten Dank für dies werte Geschenk an. Ich bin im Lesen desselben schon so weit gekommen, daß ich den unermüdlichen Fleiß, die seltene Gründlichkeit des Verfassers erkennen und mich dankbar darüber freuen muß. Vorzüglich befriedigend war mir auch zu sehen, daß er, wie ich seit mehr als 50 Saren, die Tübinger Graven im Gegensaz zu neueren Schriftstellern von den mit Karl dem Großen verschwägerten Buchhornern ableitet. Was die vielen, vielleicht nicht ganz nötigen Wiederholungen in dem Buche betrift, so schreibe ich sie auf Rechnung der religiosen Beeiferung des Verfassers vollständig zu sein: dies begegnet Leuten und begegnete auch mir in meinem langen Leben, welche sich bemühen verstanden zu werden, oft genug, one daß sie es inne werden. Sehen Sie, lieber Freund! diesen Herren Dr. Schmid, so bitte ich Sie, im meinen Dank auszurichten für sein Buch, das einem alten Schwaben schon viele vergnügte Stunden gemacht hat: ich lese täglich darinne. Ich frage nicht: haben Sie eine gute Reise gemacht? Haben Sie an der Quelle des Isters, wo Zeus ( nach der III. Pindarischen Ode ) seinen Son Herakles hinsandte, um da den Delbaum zu pflanzen, noch etwas gefunden: quod faciat ad rem? Ich sage auch nicht: schreiben Sie mir! denn ich weiß zu wol, daß Sie Anderes und Besseres zu tun haben. Wir alle, alt und iung, grüßen Sie und Frau Emma von ganzem Herzen: wir haben das Haus voll Gäste und ich sizze heute mit 9 Laßbergen zu Tische; das ist in meinem langen Leben nicht oft geschehen. An A. Keller und Holland und wer noch meiner gedenket, die besten Grüße. Leben Sie wol und lieben Sie immer ein wenig Fren Meersburg, 9. Herbstmonats 1854. alten Freund Dr. Joseph von Laßberg. Von Freund Justinus, der uns wenige Tage nach Inen verließ, hörten wir nichts mehr. Schwabs Sophie, die uns schon im August besuchen wollte, läßt auch nichts verlauten, am wenigsten Stälin, dem Sie doch meine Handschrift der Regesta Constantiensia überbracht haben.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

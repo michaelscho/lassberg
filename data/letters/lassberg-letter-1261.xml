@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1261">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Ludwig Uhland an Joseph von Laßberg (28.11.1828).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Stuttgart</settlement>
+                        <repository>Württembergische Landesbibliothek</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">2224</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 101-05<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1261">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0147">Stuttgart</placeName>
+                    <date when="1828-11-28">1828-11-28</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Hochverehrter Freund! A Stuttgart, den 28. Nov. 1828. Seit Sie uns von Ihren Wanderungen durch die Schweiz im vergangenen Sommer Kunde gegeben haben, entbehren wir von Ihnen aller erwünschten Nachricht. Ich rufe mich Ihnen ins Gedächtniß, indem ich meinerseits von einer kurzen Reise berichte, die ich in diesem Spätherbste noch nach Nürnberg gemacht habe. Dazu muß ich aber weiter ausholen, als der Erfolg rechtfertigen wird. In meinen Studien mittelaltriger Poesie war mir besonders eine bedeutende Lücke in Beziehung auf die poetischen Alterthümer Englands fühlbar geworden. Da hier nichts von dieser Litteratur zu finden ist, so ließ ich mir durch einen deutschen Buchhändler in London, Koller, der selbst für diese Gegenstände Sinn hat, die nöthigsten Sammlungen von Ritson, Ellis, Webber, W. Scott. Jamieson etc., ankaufen und habe mit solchen mich einen großen Theil des Sommers hindurch beschäftigt. Die Trefflichkeit der schottischen Balladen regte in mir lebhaft die Frage an, ob denn Deutschland wirklich nichts aufzuweisen habe, was mit dieser schottischen und englischen, mit der schwedischen und dänischen Balladenpoesie sich messen dürfte? Schlagen wir das Wunderhorn und andre Sammlungen dieser Art auf, so zeigen sich die meisten balladenartigen Stücke, auch wo die Herausgeber nicht hinein improvisirt haben, doch in überaus mangelhafter und verworrener Gestalt. Dennoch lassen sich auch durch diese hindurch die einst vollständigen und klaren Urbilder ahnen und man darf die Hoffnung nicht aufgeben, sie noch aufzufinden und herzustellen. Man wird hiebei zunächst auf die gedruckten Flugblätter des 16. Ihd. hingewiesen, obschon ich glaube, daß, wie es in Schottland und Schweden der Fall war, auch in den abgelegenern Gegenden unsres Vaterlandes noch immer das Lebendigste und Aechteste aus mündlicher Ueberlieferung zu erlangen seyn dürfte. Meinert in seinen Volksliedern des Kuhländchens hat hiezu einen schönen Beleg geliefert und Anklänge, die ich auf meiner vorjährigen Reise im Tirol vernommen, haben mich überzeugt daß dort von einem landeskundigen Sammler noch reiche Ausbeute zu Tage gefördert werden könnte. Bei all diesem haben jene alten Druckblätter ihre unbestreitbare Wichtigkeit, aber ihre Seltenheit macht sie schwer zugänglich; Herr von Meusebach in Berlin soll die bedeutendste Sammlung derselben besiken. Da dergleichen Stücke vorzüglich in Nürnberg und Augspurg gedruckt wurden, so war mir der Anlaß, einen Freund auf seiner Reise in's nördliche Deutschland bis Nürnberg zu begleiten, gerade erwünscht, um mich zu unterrichten, was dort in der Pflegstadt selbst noch für solche Zwecke vorhanden sey. Ich fand freilich Weniges, zu Mehrerem wurde mir durch zugesagte Nachforschung in Privatsammlungen einige Hoffnung gemacht und zuletzt noch auf der Rückreise, bei Gräter in Schorndorf, sah ich sehr Merkwürdiges dieser Art, dessen mir zugesagte Benützung ich gleichfalls noch zu hoffen habe. Im nächsten Jahre denke ich auch Augspurg zu besuchen. Die Rückreise machte ich zu Fuß, über Schwabach, Gunzenhausen, Wallerstein. Zwischen den zwei erstern Orten gieng ich eine gute Strecke rechts ab von der Strasse, um Wolframs von Eschenbach Heimath und Grabstätte zu besuchen. Stadt Eschenbach, burgartig mit Mauern und Thürmen befestigt, sonst von ganz geringem Umfang, ist nach meiner durch diese Anschauung bestätigten Ueberzeugung die Heimath des Dichters. Die den jetzt unerheblichen Schloßgebäuden zunächststehende Kirche erscheint alt genug, daß sie seine Gebeine bewahren könnte, aber der Fußboden in Chor und Schiff ist neu mit Steinplatten getäfelt und die Wände stehen glatt. So waren freilich Schild und Inschrift nicht mehr zu finden, die noch Püterich von Reicherzhausen, auch einst ein Waller zum Sängergrabe „ in Eschenbach dem Markt, in unser Frauen Münster " in Augenschein genommen hatte. Abenberg, Pleienfelden, im Parc. und Titur. genannt, sind nahgelegene Orte. In Wallerstein sah ich die Handschristen, namentlich die des Nibelungenliedes. Sie ist eine späte Papierhandschrift und beginnt mit der Fahrt nach Brunhilden. Statt des fehlenden Anfangs steht eine kurze prosaische Notiz über Dietrich von Bern, wann er gelebt habe 2c. Um dieser pros. Einleitung willen war ich längst auf die Hdschr. gespannt, indem davon verlautet hatte, daß sie Nachrichten von den Sängern enthalte. Nun weiß ich, daß nichts daran ist, und habe so, wie in manchen Fällen, meine Befriedigung erlangt. Merkwürdiger scheint eine Hdschr. des Rosengartenliedes, in andrer als der bekannten Versart; ich bekam sie nicht zu Gesicht, soll aber nähere Kunde davon erhalten. Die Sammlung oberdeutscher Gemälde, die sonst in Wallerstein zu sehen war, hat der König von Baiern angekauft. Sie wird zusammt der Boisseréeschen nach Nürnberg kommen; eine Capelle neben der Sebaldskirche wird zur Aufnahme der deutschen Schulen zugerichtet, die Juweele aus jeder bleiben aber in München für die Pinakothek. Dieß das Wenige, was Sie von meiner Reise interessiren könnte. Was meine Arbeiten anbelangt, so werden mich Heldensage und Minnesang wohl noch diesen Winter beschäftigen. Dann aber möchte ich mich wieder zu Wolfram wenden und, wenn ich seinen Grabstein nicht entdecken konnte, mir den Geist des Dichters aus seinen Werken aufsteigen lassen. Es ermuntert mich dabei, daß, nach Ihrem letzten Schreiben an Schwab, nunmehr Wyß bei der Bibliothek in Bern angestellt zu seyn scheint und so die altfranzösischen Schätze dort sich vielleicht eher öffnen dürften; nicht minder die Notiz, die sie mir über die Handschriften zu Donaueschingen durch Schönhut zugehen liessen, worunter ich mit frohem Erstaunen einen Cod. membr. des Parcival, deutsch und welsch, verzeichnet fand. Ob und auf welchem Wege die Benüzung dieses Cod. zu erlangen wäre, darüber würden wohl Sie am besten mich zu belehren wissen. Auch eine Reise nach Donaueschingen würde mich nöthigenfalls nicht verdriessen, wenn ich nur einer ruhigen Vergleichung sicher wäre. Gegenwärtig lese ich mit größtem Interesse Grimms deutsche Rechtsalterthümer. Auch der Liedersaal hat in diesem Buche manche schöne Frucht getragen. Nachträglich zu meinen früheren Notizen bemerke ich, daß in Tom. XI. der Histoire littéraire de la France über den altfranz. Dichter Alexandre de Paris und dessen und des Lambert - li - Cors Roman d'Alexandre ein ausführlicher Bericht steht. Der vorerwähnte Buchhändler Koller in London, ein Schweizer, schrieb mir unter andrem: „ Auch ich habe zufällig einen kleinen Tractat auf Pergament in 4º 10 Blätter aus dieser Zeit ( 13 Ihd. ) erhalten, der einen lustigen Aufsatz über Roßerzneyen und als Anhang ein Bruchstück eines Wächterlieds an Maria enthält, das ich Hrn. v. d. Hagen abschrieb. Gern würde ich dieses seltene Kabinetsstückchen der Sammlung des Hrn. Laßberg v. Eppishausen zustellen, um dafür seinen nicht in Buchhandel gekommenen interessanten Liedersaal für meine gedruckte Sammlung zu erhalten, und bin so frei, Sie, falls Sie den Sepp v. Eppishausen kennen, zu ersuchen, ihm gelegentlich diesen meinen Vorschlag mitzutheilen ". Ich vollziehe den Auftrag, den ich übrigens auf keine Weise veranlaßt habe. Meine Frau empfiehlt sich mit mir Ihnen bestens. Möchte bald wieder die Vergleichung eines alten Dichterwerks, etwa des Friedrich von Schwaben, Sie zu unsern stillen Laren führen. Wir wohnen jetzt ziemlich ländlich, in derselben Straße, in der Sie uns mit Ihrem ersten Besuch erfreut hatten. Mit der aufrichtigsten Freundschaft und Verehrung L. Uhland.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

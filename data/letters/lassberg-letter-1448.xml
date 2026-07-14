@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1448">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Ludwig Uhland (29.05.1830).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">722</idno>
+                        <idno type="register-lassberg">181</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 171-74<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1448">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1830-05-29">1830-05-29</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Eppishausen am 29. May 1830. Mein teurer Uhlandus! Der Leipziger Prof. Hänel mit seinem catalogus librorum manuscriptorum scheint eben auch in die Klasse von Reisenden zu gehören, die Notizen sammeln, um numerus zu machen, one sich dabei viel um die Handschriften zu bekümmern, die Verzeichnisse oder gar nur die Rükentitel abzuschreiben und am Ende ein Buch davon machen. So verhält es sich wenigstens mit denen in Irem lezten Briefe bemerkten Angaben des Herrn Hänel von St. Gallischen Manuscripten. Es nam mich doch Wunder, wie dieser Mann mer davon wissen sollte als ich? Ich gieng also am lezten Montag vor 8 Tagen selbst auf beide Bibliotheken, in Hofnung Inen erfreulichen Bericht abstatten zu können; aber helas! es war alles Wind. Der Codex 184. Prosper in psalmos, enthält wol ein kurzes Gedicht, welches: cantilena bibulorum überschrieben ist, wo warscheinlich einer aus der schola interior des Klosters den leeren Raum benuzt hat schlechtes Studenten Machwerk hinzu schmieren. Anfang: dulcis amice bibe, gratanter munera bachi si uiuas totum dulcis amice bibe fercula sume libens callata (? ) et uiscera cervi si non ut acrioris (? ) mors sit acerua tibi dente timendus aper tibi ponitur auipelatus - etc. Ich denke Sie haben schon genug an diesem introitus. Codex 1010. Das Leiden des Herren. Von der Müllerin 2c. sind nichts als theologische Fragen und Antworten, in schlechter Prose. Zwei Predigermönche kommen zu einer frommen Müllerin aufs Land und stellen jr mancherlei Fragen, welche sie in aller Andacht beantwortet. Codex 1027. Sermones sacri, teutonicae narrationes. Leztere sind nur wenige Zeilen, biblischen Inhaltes, warscheinlich Pericopen eines Predigers, one literarischen Wert. Codex 1028. Sermones sacri, sind allerdings aus dem XIII. Jarhundert. Aber die concio teutonica iſt Sec. XIV oder XV. und ad implendum spatium hinein geschrieben. Sie beginnt pag. 137 und läuft durch XII paginas, verspricht aber ser wenig. Der Codex insignis auf der Stadtbibliothek, nicht A. B. 15; sondern A. 8. enthält, wie ich vermutete, des Rudolf von Ems Weltchronik und Strikers Karl d. Gr. die figurae deauratae sind ser schlecht; aber im Striker waren sie mir merkwürdig; weil ich noch keinen codex picturatus von diesem Gedichte kannte. Die Weltchronik ist bei weitem vorn herein nicht ganz, und fängt erst bei den Versen an: von caucasus von caspia das ostirt ist gelegen da. Der Striker hingegen scheint ganz zu sein, wenigstens nach Anfang und Schluß, die Schrift ist ser schön, aber doch nicht älter als die im Striker der dem Nibelungen Codex auf der Stifts Bibliotheke angebunden ist, und von dem ich eine Abschrift besize, welche Inen zu Dienste stehet. Das ist also das Ergebniß von meiner St. Galler Reise; indessen habe ich gestern aus Berlin den III. Band von der Müllerschen Sammlung, so weit er nämlich gedrukt worden, und Kochs Compendium erhalten, welche mir immer noch mangelten. Ueber die Handschrift von Parthenopier und Meliure, welche vorigen Sommer aus dem Stahrenbergischen Schlosse Ried [ egg ] in Oberösterreich in das Kloster St. Florian kam, will mir der dortige Archivar Stülz, ein Schwabe von Bezau in Vorarlberg, eine umständliche Beschreibung und Auszüge senden. Vorläufig sagt er mir nur, daß die Handschrift ungefär 23000 Verse enthalte, aber dessen ungeachtet kaum die Hälfte des ganzen Gedichtes. Was für ein fruchtbares Genie war dieser Conrad von Würzburg! In gemelter Burg zu Riedegg, ein par Stunden von Laßberg, lag auch der schöne, gleichzeitige Nithart mit den Singweisen, der iezo wie I. Grimm schreibt bei Benecke in Göttingen ist, der in herausgeben will. Von Engelhardt und Bibliothekar Jung aus Straßburg habe ich auch Briefe erhalten, auf meine Bitte haben sie noch einmal die ganze Handschriften Bibliotheke umgekeret; aber den heil. Gregor im Steine des Hartmann von Owe nicht wieder auffinden können; er ist also definitiv verloren, da er doch vor 8-10 Saren noch vorhanden war; daher warscheinlich gestolen, und taucht vielleicht in späterer Zeit aus irgend einer nordischen Bibliotheke wieder auf. Jung, der Bibliothekar bearbeitet wirklich den Thomas Murner, und will in bald herausgeben. Er hat mir Oberlins Dissertationes de poëtis eroticis med. aevi, die Alsatia literata Sec. IX et X. und seinen Geiler von Kaisersberg gesendet, jene de Conrado herbipolita haben Sie schon früher bei mir gesehen. Der gute Engelhardt ist ganz mißmutig daß ein Herr Lenoble, der seine Herrad von Landsberg ausschrieb, von der academie des belles lettres eine goldene Medaille erhielt, und seiner dabei gar nicht einmal erwänet wurde. Sonst nichts Neues! Ich habe Handwerksleute im Hause, und kann nicht fort. Leben Sie wol und grüßen Sie die Frau Professorin von mir wie auch die lieben Aeltern. Laßberg.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-0843">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Ludwig Uhland (24.05.1823).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">434</idno>
+                        <idno type="register-lassberg">107</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 32<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-0843">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1823-05-24">1823-05-24</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Wolgeborner, hochverehrter Herr! So eben erhalte ich Ihre mir so werten Zeilen vom 20. dieses; möchten die Meinigen noch frühe genug eintreffen, um Ihnen noch vor Ihrer Abreise zu sagen, daß ich zu Hause bin und nun auf alle Fälle zu Hause bleibe, da mir die Hofnung gegeben ist, Sie in meiner ( einst so frohen ) Einsamkeit zu sehen. Seit wir uns sahen hat sich für mich Vieles, Alles möchte ich sagen, auf eine schmerzliche Weise umgewandelt und Sie treffen nur noch die Exuvias des Mannes an, den Sie in Stuttgardt sahen. An dem stärkern Schlag meines Herzens beim Lesen Ihres Briefes fülte ich seit zehn Monden wieder ein Mal, daß ich mich noch freuen kann; was mir, seit der Stern untergegangen, der so schön und freundlich auf die Ban meines Lebens geleuchtet, nicht begegnete. Seien Sie nichts desto weniger aufs herzlichste willkommen in meiner Klause und laßen Sie sich durch die traurige Aussenseite des Besizers nicht abschreken, recht lange zu bleiben. Warscheinlich geht Ihr Weg über Konstanz hier her und von da erst nach St. Gallen, ich bilde mir ein, daß Sie Ihren Reiseplan mit einem landeskundigen Manne, wie der Einsiedler von Eppishausen ist, besprechen werden. Den lezten Winter habe ich hier in der tiefsten Abgeschiedenheit, blos dem Schmerz um meine hingegangene Gebieterin, verlebt; arbeiten konnte ich nichts und noch bin ich nicht im Stande Anderes, als wie ein frommer Mönch Codices, abzuschreiben. Sehen Sie in der Durchreise den guten Conz, so grüßen Sie ihn herzlich von mir: er soll doch nicht grollen über mein freilich ungebürlich langes Stillschweigen. Sagen Sie ihm daß ich eine Arbeit unter den Händen habe, welche ihn auch freuen wird; es ist das wenig bekannte Gedicht von Friedrich dem Einäugigen von Hohenstaufen. Wissen Sie daß von der Hagen auf Kosten seiner Regierung diesen Sommer nach Paris reiset, um dort die Maneßische Anthologie zu bearbeiten. Owe! An Pfingsten war ich auf einer wunderschön gelegenen Sängerburg am Bodensee, anderthalb Stunden von Über- A lingen: Alt Hohenfels; bei dem ersten Band des Liedersaales war nämlich eine Verwechselung mit Neu Hohenfels vorgegangen, welche ich nun durch Untersuchung an Ort und Stelle berichtigen wollte. Leben Sie wol; ich freue mich, wie nur immer ein armer Mann, der den Preis des Lebens verloren hat, sich noch freuen kann, Sie in der Villa Epponis zu sehen. Eppishausen am 24. May 1823. Ihr gehorsamer Diener Joseph v. Laßberg. Wüßte ich den Tag Ihrer Ankunft in Constanz, ich würde Sie da abholen. Auf jeden Fall bitte ich bei meinem alten Freunde dem Staatsrate v. Ittner nach mir zu fragen; es würde den biedern alten Mann sehr freuen Sie zu sehen; er soll Sie zu Herrn Hofrat Issel füren, der eben die altertümlichen Baudenkmale von Constanz in getreuen Abbildungen sammelt.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

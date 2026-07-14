@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1104">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Joseph von Laßberg an Ludwig Uhland (18.07.1826).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">552</idno>
+                        <idno type="register-lassberg">109</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 73<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1104">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0043">Eppishausen</placeName>
+                    <date when="1826-07-18">1826-07-18</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Vereretester Freund! Eppishausen am 18. July 1826. Ire Zeilen vom 11. dieses erhalte ich soeben, und wenn ich bei dem Eintreffen dieses Briefes noch nicht bei Inen bin, so ist es nicht meine Schuld. am nächsten Freitag den 21. feiere ich die θανατόυσια meiner verklärten Gebieterin in Heiligenberg, eine für mich unerläßliche Wallfart. auf den 23. und 24. ist mir ein Besuch aus Arau angesagt, den ich nicht ablenen kann und am 27. ist das große schweizerische Fest auf dem Stoß bei Gaiß im Appenzeller Land, bei dem ich als Mitglied mererer schweizerischer Gesellschaften erscheinen sollte. Ich werde also schwerlich vor dem 30. abreisen können; um so ungestörter könnte ich dann bei Inen verweilen: nur ein Gedanke macht mich zuweilen unruhig, der nämlich, das meine Anwesenheit Sie mein Freund! und jre liebe Frau, von einer Bade- oder sonst von einer Lustreise abhalten könnte. Mir, dem die einfachste und mäßigste Kost die liebste ist, ist nicht bange Inen beschwerlich zu fallen und mit Freude mache ich von der Einladung unter Ir Tach Gebrauch. Ich bringe die Myllersche Sammlung worin der Gott Amur stehet mit, und wir können die Vergleichung vermittelst Eintragung der Varianten, von kurzer Hand abtun. Ich bringe aber auch noch etwas ser seltenes und schönes mit, worüber sich besonders Herr Sulpiz Boisserée freuen wird. Es ist ein alter Pergament Riss von einem Münster, den ich bei meiner Durchreise vor 8 Tagen in Constanz auffand und erwarb. obschon die Farzal 1360, die sich darauf befindet, von einer spätern Hand hinzu gesezt scheint; so gehört die Arbeit doch noch in die gute Zeit und zwar zu einer Kirche, welche 2 Türme bekommen sollte. Ich sende Inen hier Maßmanns Brief mit Dank zurük; über das Constanzer Gemälde von 1482 kann ich keine bestimmte Auskunft geben. offenbar stellt es einen Baumeister: vielleicht auch einen Goldschmied vor, der opera coelata machte; Wenn das Alter des Mannes ungefär angegeben wäre, könnte man raten. Um diese Zeit, oder etwas später, lebte ein berümter Künstler Maister Oxenhom, in Costenz, der um 1450 den Sarg des heiligen Pelagius ( Sant Polaye ) für den Dom machte, wozu 60 Mark Goldes und viele Edelsteine verwendet wurden. Um 1480-1490 kommt ein Steinmeze Ulrich Greifenberg vor, von dem noch schöne Arbeit vorhanden ist, um 1499 ein Baumeister Maister Lux, der eine Schnekenstiege am Dom gebaut hat. Simon Baider ein Bildhauer machte um 1470 die schönen Türen und die Chorstüle im Dom. Es ist noch sein Bild in Holz geschnizt vorhanden, welches einen Zirkel in der Hand hält; damal schien er zwischen 30 und 40 Iaren inne zu stehen. Das von Maßmann angegebene Wappen ist unzweifelhaft ein bürgerliches, und gehört einem Künstler an. Ich wünsche daß diese Notizen das Combinations Vermögen des Herrn Maßmann auf eine glükliche Spur leiten mögen; schreiben Sie jm; so bitte ich auch einen Gruß von mir beizusezen. Mit Irem Schreiben erhielt ich zugleich eines von Herrn Prof. Schwab von demselben Tage; welches ich mündlich beantworten will, da keine Gefar auf dem Verzug haftet. Wie viel Dank bin ich Inen, verertester Freund! und jme schuldig, für die große Mühe, die Sie um meinetwillen mit der Weingartner Handschrift auf sich genommen haben! ich hoffe es soll ein gutes Werk werden; denn ich lasse auf den Herbst den Codex palatinus No. 357 auch kommen, um in noch einmal recht genau zu vergleichen. Leben Sie wol und jmmer mir möglich wird. nun komme ich sobald als es nur Herzlich gegrüßt Von Frem I. Laßberg.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

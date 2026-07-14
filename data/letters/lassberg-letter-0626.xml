@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-0626">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Ludwig Uhland an Joseph von Laßberg (08.04.1820).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">1849</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 3<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-0626">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0147">Stuttgart</placeName>
+                    <date when="1820-04-08">1820-04-08</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Stuttgart, den 8. April 1820. Hochwohlgeborner Freiherr, Hochzuverehrender Herr! In der Vorrede des mir kürzlich zu Gesicht gekommenen Liedersaals haben Euer Hochwohlgeboren eine Galerie von Minnesängern des Thurgaus und der benachbarten Gegend aufgestellt, welche für mich um so anziehender war, als ich selbst mit mehreren dieser alten Dichter mich näher beschäftigt habe. Dieses Zusammentreffen in demselben Ideenkreise wird mich entschuldigen, wenn ich mir die Freiheit nehme, mich als Unbekannter mit gegenwärtiger Zuſchrift an Sie zu wenden. Es wird von mir eine Schrift im Druck erscheinen, worin ich den Meister Walther von der Vogelweide hauptsächlich aus seinen eigenen Liedern darzustellen versucht habe. Dabei mußte mir daran gelegen seyn, dem Ursprunge dieses Dichters auf die Spur zu kommen. Gewöhnlich wird angenommen, daß er aus dem Thurgau entsprossen sey. Diese Meinung erschien mir bei näherer Prüfung nicht zureichend erwiesen, wie ich solches im ersten Abschnitte meiner Schrift, wovon ein Auszug hier anliegt, ausgeführt habe. Nun finde ich in der Vorrede des Liedersaals bemerkt, daß zwar nicht mehr bekannt sey, wo Herr Walther in oder bei Sankt Gallen gehaust habe, wohl aber, daß er oft und lang dort gesungen. Diese Stelle hat mir von neuem die Hoffnung belebt, über die Heimath des Dichters etwas Bestimmteres zu erfahren. Bei meiner Arbeit konnte ich, ausser der Manessischen Sammlung, die Weingartner Handschrift der Minnesänger, welche jekt hier befindlich ist, sodann die Heidelberger Handschrift Nr. 350 benützen. Die bedeutendere Heidelb. Handschrift Nr. 357 ist mir noch zugesagt. Sollten nun Euer Hochwohlgeboren nähere Belege über den Ursprung Walthers von der Vogelweide besiken, oder Gedichte desselben, sowie des Truchsessen von Singenberg 2c. 2c., welche nicht in den vorbemerkten Sammlungen vorkommen, so würde mich deren gütige Mittheilung zu dem lebhaftesten Danke verbinden. Auch verschiedene Lesarten würden für mich von vielem Interesse seyn, sowie eine Nachweisung darüber, daß mit dem im Renner vorkommenden Abte von Sankt Gallen der Abt Berthold von Falkenstein gemeint sey. Ich fürchte jedoch, beschwerlich zu seyn, und schliesse mit der Versicherung der vollkommensten Verehrung, womit ich verharre Euer Hochwohlgeboren unterthäniger Diener D. Ludwig Uhland. NS. Daß der Truchseß von Singenberg Walthern:,, mein Meister ", nennt, ist mir bekannt, aber dieser damals öfters vorkommende Ausdruck scheint mehr einen Titel, als ein persönliches Verhältniß zu bezeichnen.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

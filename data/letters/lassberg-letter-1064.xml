@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1064">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Ludwig Uhland an Joseph von Laßberg (25.01.1826).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">2107</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 66<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1064">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0147">Stuttgart</placeName>
+                    <date when="1826-01-25">1826-01-25</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Stuttgart, den 25. Jan. 1826. Verehrtester Herr und Freund! Ihre freundliche Neujahrsgabe hat mich und die übrigen Freunde des einheimischen Alterthums, denen ich solche zu übergeben beauftragt war, zum herzlichsten Danke verpflichtet. Sie ist ein neu erfreulicher Beweis, daß man in diesem Fache noch täglich neue Entdeckungen erwarten darf. Die Mythe hat für mich besondres Interesse in Beziehung auf den Fabelkreis vom Gral, wo gleichfalls die sichtbare Gestalt aus der Hostie hervortritt. Herrn Prälat Schmied konnte ich das Exemplar nicht persönlich übergeben. Er ist während der Synode hier erkrankt und ließ sich noch vor der Genesung nach Ulm führen, wohin ich ihm dasselbe nachgeschickt habe. Maßmann ist vor etwa 14 Tagen nach Straßburg abgereist, er will besonders auch der Kolmarer Handschrift nachspüren. Was veranlaßte, daß ihm der Gebrauch der Hofbibliothek gänzlich verweigert wurde, ist mir räthselhaft. Ihre Aeusserungen in Beziehung auf den Weingartner Codex geben mir die Hoffnung, daß Sie diesen Hort persönlich hier zu heben gedenken, und ich erlaube mir, meine frühere Einladung auf das angelegenste zu wiederholen. Die lateinischen Dichtungen bei Ebert sind auch mir als ein überaus merkwürdiger Fund erschienen. Schon die uralten deutschen Benennungen der Singweisen verdienen alle Aufmerksamkeit. Die Abtheilung in Verse ist schwierig und von Ebert nicht mit Glück versucht worden. Schon vor einiger Zeit machte ich Versuche, einige Kunde darüber zu erlangen, was etwa in den fürstl. Bibliotheken in Oberschwaben noch von Altdeutschem vorhanden seyn möchte. Das Resultat, welches auf anliegendem Blättchen enthalten ist, fiel zwar bis jetzt nicht glänzend aus, doch sind die Nachrichten von einer Handschrift des trojan. Kriegs von Konrad und von einem Drucke des Parcival, Ulm 1472, immerhin erfreulich; in Hagens Grundriß wird nur ein Druck von 1477. ohne Ort, angeführt. Der Manessische Codex sollte allerdings rein urkundlich herausgegeben werden; die Sammler desselben haben absichtlich nach dem Geschmack ihrer Zeit die ältern Lieder verändert und eben auch dieses Verfahren ungeschmälert kennen zu lernen, ist von Wichtigkeit für die Geschichte der Liederkunst. Ueber meine litterarische Beschäftigung, wovon Sie zu hören wünschen, weiß ich eben nicht viel zu sagen; nur die Ausführung selbst kann in solchen Dingen sprechen, Plane sind leicht gemacht, die Ausführung aber hat bei mir bisher allzu viele Unterbrechungen, auch Schwierigkeiten in Herbeischaffung der Quellen, gefunden. Was ich in diesem Jahre noch an das Licht zu fördern wünsche, ist eine geschichtliche, allgemein verständliche Darstellung über Heldenlied und Minnesang des deutschen Mittelalters. Sie erwähnen einer Sammlung einzelner Lieder, welche leergebliebenen Blättern anderartiger Manuscripte zur Ausfüllung gedient und welche leicht einmal einen Band des Liedersaals füllen könnten. Sollte darunter Einiges seyn, was zu näherer Kenntniß des Minnesanges dienen könnte, so würde ich, gerade mit diesem Gegenstand beschäftigt, es besonders dankbar erkennen, hierüber belehrende Notiz zu erhalten oder gütige Mittheilung. Zum Schlusse nochmals den herzlichen Wunsch, daß die litterarische Frühlingsreise Sie gewiß in mein Haus führen möge, von dem aus man zwar nicht das herrliche Thurgau, aber doch die Baumgärten unsres Thals überschaut und von 5 * wo aus ein bequemer und naher Weg zu den poetischen Handschriften führt. Mit unveränderlicher Verehrung der Ihrige L. Uhland. ( Beilage ). Auszug aus einem Schreiben des Herrn Pfarrer Fricker in Altham an Herrn Prof. v. Drey in Tübingen. In Wurzach, wie ich gewiß weiß, ist von Minne - Gesängen nichts vorzufinden. Diß gilt nach meiner bisherigen Erfahrung auch von Wolfegg, ( wo ich übrigens noch einmal nachsuchen will ). Hingegen in Zeil, wo ich unsere Freunde Dr. Spegele und Dekan Strohmaier gepflogener Verabrede zu Folge antraf, fanden wir von alten deutschen Dichtern eine alte prächtige Ausgabe von Parzival Ulm gedruckt im Jener 1472. Dann Conrads von Würzburg Geschichte des trojanischen Kriegs, von der auch Oberlin in einer besondern Dissertation von diesem Conrad handelt, und einen Codex aus der Johanniter Bibliothek zu Straßburg beschreibet, der aber viel unvollständiger war, als der Zeilische ist; denn dieser hat, wenn gleich im Anfange etwas manque, doch gegen das Ende wenigstens 10-12. Blatt mehr, und es fehlt in demselben am Ende höchstens ein halbes Blatt. Der brave Herr Fürst von Zeil freuete sich nicht nur über unsern Besuch, sondern ebensosehr darüber, daß sich auch Gelehrte von Tübingen seiner Bibliothek, die jedoch nicht außerordentlich ist, erinnern: Er erklärte sich zu jeder ihm möglichen Auskunfft und zu allen Diensten für Herrn Dr. Uhland erbötig: Desnahen könnten sich dieselben nöthigenfalls an den Herrn Fürsten wenden, dem es nach Seiner eigenen Aeußerung ein reines Vergnügen gewähren würde, zum schönen Vorhaben des Herrn Dr. Uhland einen kleinen Beitrag leisten zu können.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

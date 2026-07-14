@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1359">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Ludwig Uhland an Joseph von Laßberg (01.10.1829).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">2266</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 146<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1359">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0147">Stuttgart</placeName>
+                    <date when="1829-10-01">1829-10-01</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Stuttgart, d. 1. Oct. 1829. Sie haben, verehrtester Freund! durch die weitere Abschrift aus dem Berner Parcival mir die Gewißheit von der Identität beider Gedichte verschafft und dadurch eine bedeutende Lücke meiner Excerpte ausgefüllt. Innigen Dank nicht blos für die Mühe, noch weit mehr für die Liebe und das Wohlwollen, womit Sie auch hierin meine Studien gefördert. In Heidelberg war ich nur 5 Tage, theils um Einzelnes in verschiedenen Handschriften nachzusehen, was nicht die Verschreibung derselben hierher verlohnt hätte, theils um mir wieder den Weg zu öffnen, Codices hieher zu erlangen. In beider Hinsicht bin ich mit dem Ergebniß meiner Reise zufrieden und habe bei Prof. Eiselen die gefälligste Bereitwilligkeit gefunden. Dieses Jahr hat mich der h. Gral besonders gesegnet und Priester Johann streckt überall die Hände nach mir aus; ich traf in Heidelberg von ihm eine deutsche, poetische Epistel an Kaiser Friedrich, wie sich in der Berner Hdschr. eine prosaische an den Kaiser Konstantin befindet. Die Ankunft des Liederbuchs der Häzlerin hat mich sehr erfreut. Herr Schönhuth ist bereits demselben entgegengereist. Auch hievon dürfen wir uns manche neue Aufhellung vergangener Zeit versprechen. Nimmt Schönhuth diese Gedichte zu Vollendung der Abschrift mit sich in unsre Gegend, so erlauben Sie mir wohl auch, davon Einsicht zu nehmen? Ueber Ettmüller weiß ich nichts Näheres zu sagen; vermöge der Dedication an einen Phil. Stud. wird er noch ein junger Mann seyn; erfreulich ist es aber, unerwartet da und dort einen tüchtigen Freund unsres poetischen Alterthums auftauchen zu sehen. Die Königinhofer Handschrift wird Schwab überbringen, von den 2 Ex., die ich besessen, bitte ich, das eine in die Bibliotheca villae Epponis gütig aufzunehmen. Grimms reichhaltig - gedrängtes Werk über die Heldensage zeigt mir schon beim ersten Anblick, wie schwierig es für mich seyn werde, über Gegenstände, die hier behandelt sind, noch einiges Neue zu sagen; was ich darüber gedacht und, fast bis zur letzten Ausarbeitung, niedergeschrieben habe, finde ich hier in wesentlichen Momenten aus der gründlichsten und schärfsten For schung bestätigt, und das ist auch ein schöner Gewinn. Die Hauptsache bleibt immer, daß in diesem wichtigsten Theile der Geschichte altvaterländischer Poesie endlich einmal die volle, gesunde Wahrheit hervortrete. Castiglione's gothisches Anekdoton habe ich noch nicht zu Gesicht bekommen und weiß nur durch eine kurze Anzeige in den Götting. Blättern davon. Können Sie mir durch Schwab den Cod. Wasserburg. zugehen lassen, so werde ich nicht säumen, denselben eifrigst zu benügen und sodann nach Ihrer Anweisung weiter zu befördern. Ich freue mich zum voraus des Genusses, den mir dieser werthvolle Fund gewähren wird. Orelli nicht mehr bei Ihnen getroffen zu haben, thut mir recht leid. Ungewiß bin ich darüber, ob nicht die Gebirgreise, welche Sie vor gehabt, uns, Ihren Gästen, leider zum Opfer gebracht worden sey. Schwabs sind am Montag von hier abgereist und ein heiteres Herbstwetter nach langen Regentagen scheint sie begünstigen zu wollen. Ich verseze mich beim Gedanken an diese Reisenden recht lebhaft nach Eppishausen. Indem ich Sie, nebst den Gästen, auf das herzlichste grüße, bin ich wie immer mit Verehrung und Liebe der Ihrige L. Uhland.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

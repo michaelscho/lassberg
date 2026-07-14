@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-0685">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Ludwig Uhland an Joseph von Laßberg (31.12.1820).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">1885</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 14<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-0685">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0147">Stuttgart</placeName>
+                    <date when="1820-12-31">1820-12-31</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Stuttgart, d. 31. Dec. 1820. Euer Hochwohlgeboren entschuldigen mich gütig, wenn ich mir erlaube, die Notizen, welche Sie mich über Walther v. d. Vogelweide hoffen liessen, in Erinnerung zu bringen. Meine Schrift über diesen Dichter ist nun so weit ausgearbeitet, daß ich sie mit nächstem zum Drucke fördern kann; und doch möchte ich keinen mir erreichbaren Aufschluß über Geschlecht und Heimath des Dichters missen. Ueber Walthers Grabstätte zu Würzburg findet sich das Nähere in den Götting. Gelehrten Anzeigen vom Jahr 1818, S. 2054-56. Die dort angezeigte Schrift von Oberthür habe ich mir verschreiben lassen. Hingegen habe auch ich 16. Horn. 1829. die Originalstelle in 4 Bänden von Gropps Würzburg. Geschichtsammlungen vergeblich gesucht. Neuerlich hat mich Schachts Schrift über Ottokar von Horneck sehr erfreut. Um dem Verhältniß unsrer schwäbischen Sänger zu den Provenzalen auf den Grund zu sehen, habe ich mir das Werk von Raynouard: Choix des Poésies originales des Troubadours, kommen lassen. Im zweiten Bande dieses Werks steht eine Abhandlung über die Liebeshöfe. Da ich weiß, daß Eu. Hochwohlgeboren sich mit diesem Gegenstande beschäftigt haben, so wollte ich Ienes bemerken. Mit vielem Vergnügen würde ich Ihnen die erwähnte Abhandlung mittheilen, wenn sie Ihnen nicht sonst schon bekannt ist. Heute schließt sich das Jahr, das mir zuerst Ihre persönliche Bekanntschaft verschaffte. Es ist mein angelegener Wunsch, daß Sie die Gewogenheit, welche Sie mir zugewendet, auch fernerhin mir erhalten mögen. Der ich mit der ausgezeichnetsten Hochachtung verharre Euer Hochwohlgeboren unterthäniger Diener L. Uhland.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

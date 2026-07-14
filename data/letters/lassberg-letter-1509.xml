@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1509">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Ludwig Uhland an Joseph von Laßberg (20.01.1831).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">2341</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 180-83<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1509">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0148">Tübingen</placeName>
+                    <date when="1831-01-20">1831-01-20</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Hochverehrter Freund! Tübingen, d. 20. Jan. 1831, Mein jetziger Beruf, der mir im Ganzen wohl zusagt, hat doch für die erste Zeit das Nachtheilige mit sich gebracht, daß ich etwas stark an das jedesmal vorliegende Pensum gebunden bin und mich dadurch in der freieren Arbeit, zu der mich gerade die Neigung führen würde, und so auch im brieflichen Verkehr manigfach beschränkt fühle. Um so wohlthätiger ist es mir, wenn die Freunde mit mir Nachsicht haben, und innigen Dank sag ' ich Ihnen, daß Sie, noch eh ' ich seit der letzten freundlichen Aufnahme in Eppishausen Kunde von mir gegeben, mich durch so erfreuliche Mittheilungen überrascht haben.. Solang ich nicht auf eine schon gehaltene Vorlesung zurückkommen kann, sondern für jedes Semester eine neue auszuarbeiten habe, wird auch jene Gebundenheit mehr oder weniger fortdauern. Beim Nibelungenliede, das ich diesen Winter einer geringen Anzahl von Zuhörern vortrage, meint ' ich Erleichterung zu finden, habe mich aber darin getäuscht, denn die exegetische Erklärung, bei der man jeden Satz, jedes Wort, in Beziehung auf die Sprachformen in der Hand umdrehen muß, nimmt Zeit und Mühe auf eine Art in Anspruch, wovon ich mir beim Lesen zum freien Genusse wenig Begriff gemacht hatte. Ich bin darum auch noch bei Brünhilden auf dem Isenstein und werde nur dadurch bis Ostern zum Ziele kommen, daß ich weiterhin nur die schönsten Aventüren aushebe. Ich war eben daran, einen Excurs über Vers und Strophe des Liedes zu beendigen, als Abends Ihre gütige Sendung ankam, aus der ich dann sogleich die Facsimiles mit mir nahm, um meinen Zuhörern anschaulich zu machen, wie die verschiedenen Handschriften diese Formen behandelt haben. Meine kleine Ausbeute von der Ferienreise her liegt noch zusammengerollt, wie ich sie mitgebracht. Ich erwarte noch eine mir von Orelli zugesagte Mittheilung alter Liederdrucke, bevor ich ans Werk gehe, und darum bitt ' ich auch, mir mit dem Liederbüchlein der Ottilia Fenchlerin noch einige Geduld zu schenken. Von Eppishausen an war meine Wanderung nicht mehr ergiebig. Nach Wolfegg bin ich nicht gekommen; in Lautkirch traf ich den Hauptmann v. Besserer aus Ulm, der mir sagte, daß auf der Wolfegger Bibliothek, die er vor einiger Zeit eingesehen, nichts für die poetischen Studien vorhanden sey, als ein Theuerdank auf Pergament. Auf der Bibliothek zu Augsburg fand sich zwar ein Band einzelner Liederdrucke aus dem 15. und 16. Ihd., aber nicht von der volksmäßigen, romantischen Art, wie ich sie suche, sondern entweder historische, oder eigentliche Meistersängerlieder. Ueberhaupt wäre in Augsburg für die Kenntniß des Meistersängerwesens viel zu erlernen, ein großes Lieder buch, Tabulaturen 2c. sind dort vorhanden. Rector Beischlag hat sich zwar damit beschäftigt, ob er aber noch etwas öffentlich mittheilen werde, ist zweifelhaft. Noch ganz unbekannt war mir ein alter, nicht mehr vollständiger Druck des Wilhelm von Orleans. Was Sie mir vom Liederschatze des Wysschen Nachlasses schreiben, interessirt mich im höchsten Grade. Ein hier studierender Schweizer hat mir kürzlich gesagt, Wyß habe seine Sammlung in Gemeinschaft mit Münch herausgeben wollen und es sei davon in einer Münchischen Schrift: Aletheia, eine Probe gegeben und der Plan mitgetheilt. Wie heilsam ist es, daß sich nun das Ganze unter Ihrer Sorge befindet. Kommt dabei auch wesentlich der Vortheil der Familie in Betracht, so ist es doch gewiß auch darum zu thun, daß der geistige Zweck des eifrigen Sammlers nicht hintangesetzt werde. Cotta hat wohl sonst schon solche nachgelassene Sammlungen angekauft, z. B. die Collectaneen von Petersen, die jedoch ganz brach liegen geblieben sind. Es würde vielleicht darauf ankommen, ob Semand sich der Anordnung für die Herausgabe unterzöge. Bei Cotta ist im vorigen Jahre die Ihnen vermuthlich bekannte Sammlung histor. Volkslieder von Wolf herausgekommen, die, bei aller Mangelhaftigkeit, doch Beifall und Abgang zu finden scheint. Sehr dankbar sende ich hiebei die Bibliothèque des Poètes françois zurück, nebst dem Casparson. Wilhelm. Zugleich füge ich an, was Sie mir vom Liedersaale bogenweise zugeschickt, aber nachher durch gütige Beschenkung mit den vollen Bänden entbehrlich gemacht haben; es werden dadurch die Exemplare, denen es um diese Bogen mangelt, wieder completirt werden können. Für die Illustrations of northern antiquities, den handschriftl. Karl d. Gr. und die Ottil. Fenchlerin bitte ich, wenn Sie nicht selbst davon Gebrauch machen, noch um einige Frist. Ich weiß nicht, ob mitfolgende Aufforderung von Ulm Ihnen sonst schon zugekommen ist. Für unsre Gegend kommt man mit dem Sammeln der Sagen und Lieder wohl zu spät. Aber erfreulich ist es immer, daß in einer von so manigfachen andern Interessen bewegten Zeit, doch auch diese unschuldigen Dinge noch Liebe finden, wo man es oft gar nicht erwartet hätte. Mone hat im 2ten Hefte seiner Quellen und Forschungen doch manches für die Sprachgeschichte Wichtiges gegeben, aber viel begieriger bin ich auf den nächsten Band, in dem er uns die altniederländische Poesie aufzuschließen verheißt. Längst habe ich nach jener Seite erwartungsvoll geblickt. Wenn nur nicht wieder, wie in andern Fällen, das Unternehmen mit der ersten Lieferung stockt und das Beste zurückbleibt. Durch Mittheilung der Nürnberg. fröhlichen, frischen Liedlein würden Sie mich sehr verbinden. Sind es auch nur Liederanfänge, so ist doch von Interesse, auch von dem Verlorenen Kunde zu haben und von manchen Liedern, von denen ich früher nur die Anfänge kannte, bin ich allmählig auch zum ganzen Texte gekommen. Begierig habe ich bisher gelesen, was uns die Zeitungen von den Ereignissen im Thurgau meldeten. Der Major und Advocat Häberlin ist wohl derselbe, der vor zwei Jahren bei Ihnen im Quartiere lag. Mögen diese Stürme auch im Jahre 1831 die Ruhe des Musensizes zu Eppishausen ungestört lassen. Meine Frau verbindet sich mit mir zu den herzlichsten Wünschen für Ihr Wohlseyn. Wir hoffen doch, der nächste Sommer könnte Sie auch einmal zu einem Ausfluge nach Tübingen veranlassen. Mit unveränderlicher Freundschaft und Verehrung L. Uhland.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

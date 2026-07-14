@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-3036">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Ludwig Uhland an Joseph von Laßberg (02.06.1853).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Marbach am Neckar</settlement>
+                        <repository>Schiller Nationalmuseum</repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">3155</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 257<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-3036">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0148">Tübingen</placeName>
+                    <date when="1853-06-02">1853-06-02</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Hochverehrter Freund! Mein wärmster Dank für Ihr erfreuendes Schreiben und dessen schöne Beilage würde sogleich erfolgt sein, wenn ich nicht damals in Aussicht genommen hätte, Ihnen denselben persönlich auszudrücken. Es war mein Plan, über Ravensburg, wo mein Neffe Ludwig Meyer als Hilfsarbeiter beim Oberamtsgerichte verwendet wird, einen Besuch in Meersburg zu machen, um Sie in Pfeiffer. Laßberg u. Uhland. vorschreitender Genesung, wovon Ihr Brief mir Zeugniß gab, zu begrüßen. Dem Blatte jedoch, worauf Sie am Osterfeste mir schrieben, war nicht umsonst eine Winterlandschaft übergesetzt und so ist die Frühlingsfahrt in Schnee und Eis verkommen. Aber auch zu Hause habe ich mit innigem Gedächtniß und Segenswunsch Ihren 84 jährigen Geburtstag gefeiert. Morgen will ich eine Reise nach Berlin in Gesellschaft meiner Frau antreten, nicht um mich im Glanze der Hauptstadt zu sonnen, sondern um der schlichten, alten Volkslieder willen, deren eine große Zahl aus Meusebachs Nachlaß nun der Berliner Bibliothek einverleibt ist. Diese Meusebachsche Sammlung lag immer nur im Dämmerlicht eines Märchens, jetzt aber ist es für meine Liederforschung eine Art Nothwendigkeit, einmal klar zu sehen, wieviel mir noch Unbekanntes und Unerreichtes dort zu finden sei. Unsre Reise ist übrigens nur auf etwa vier Wochen berechnet, ich hoffe daher und es verlangt mich sehr, im weiteren Laufe des Sommers dennoch zur gastlichen Meersburg kommen und Ihnen über den Nibelungenhort an der Spree und Ihre dortigen Freunde Bericht erstatten zu können. Das gütig mitgetheilte Klosterlied ist mir gänzlich neu und merkwürdig. Noch besonders dankbar bin ich der kunstreichen Hand, die von Wort und Weise ein so treues Abbild gefertigt hat. Meine Frau, die von Ihren theuern Zeilen gleichfalls innig bewegt und erfreut war, sagt mit mir Ihnen und den werthen Shrigen die angelegensten Grüße. Mit aufrichtiger Theilnahme hat uns die Nachricht von dem unerwarteten Hingang Ihrer ehrwürdigen Frau Schwiegermutter erfüllt, deren wohlwollender Sinn und geistige Lebendigkeit uns in ungetrübter Erinnerung steht. Mit alter Verehrung und Liebe der Shrige Tübingen 2. Jun. 1853. L. Uhland.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

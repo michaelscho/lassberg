@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1856">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Ludwig Uhland an Joseph von Laßberg (02.08.1836).</title>
+                <respStmt>
+                    <resp>Encoding to TEI</resp>
+                    <resp>Import from Pfeiffer 1870 edition (OCR)</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement></settlement>
+                        <repository></repository>
+                        <idno type="signature"/>
+                        <idno type="register-harris">2538</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl type="printed">Franz Pfeiffer (Hg.), Briefwechsel zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland. Wien 1870, S. 227<ref>https://www.digitale-sammlungen.de/en/view/bsb10620870?page=1</ref></bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1856">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0288" ref="https://d-nb.info/gnd/118625063"
+                        >Ludwig Uhland</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0148">Tübingen</placeName>
+                    <date when="1836-08-02">1836-08-02</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373" ref="https://d-nb.info/gnd/118778862"
+                        >Joseph von Laßberg</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-07-13" who="#import-pfeiffer-uhland" status="draft">Text from OCR of Franz Pfeiffer (Hg.), Briefwechsel
+                    zwischen Joseph Freiherrn von Laßberg und Ludwig Uhland (Wien 1870; BSB-Digitalisat bsb10620870),
+                    encoding not yet reviewed</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="print" resp="ocr">
+                <p>Hochverehrter Freund! Tübingen, d. 2. Aug. 1836. Nach achtmonatlicher Abwesenheit bin ich vor wenigen Tagen hieher zurückgekehrt und werde in dieser Woche noch ein kleines Eigenthum an Haus und Garten an der Neckarbrücke, mit freundlicher Aussicht in das Thal, beziehen, das ich mir im Frühjahr erkauft habe. 15 * Mit der herzlichsten Theilnahme bin ich mit meiner Frau den Nachrichten gefolgt, die uns seither von Ihnen und Ihrem Hause zugekommen sind. Die Kunde von der Geburt und dem Gedeihen Ihrer Zwillingstöchter war uns eine höchst erfreuende; mit großem Bedauern vernahmen wir dagegen den Unfall, der Sie auf einer Ausfahrt betroffen; daß Sie jetzt von demselben glücklich wiederhergestellt seyen, hat mich Hr. Procurator Abel zu meiner innigen Freude versichert. Die Rückkehr zum eigenen Heerde ist mir durch den Tod der einzigen Schwester, die vergangenen Monat im Wochenbette starb, sehr getrübt worden. Ueber die lange Dauer unsrer landständischen Verhandlungen konnte ich für die Studien meiner Neigung wenig Anderes thun, als daß ich die hier beifolgende Arbeit zum Drucke förderte und diesen überwachte. Nehmen Sie solche in ihrer fragmentarischen Gestalt freundlich auf! An diesen sagengeschichtlichen Forschungen gedenke ich jetzt fortzuarbeiten und daneben was ich über unsere älteren Volkslieder vorbereitet habe, zu ordnen und auszubilden. Auch für diese Beschäftigung nehme ich Ihre freundschaftliche Beihülfe in Anspruch, indem ich Sie, sofern es mit Ihrer eigenen Convenienz geschehen kann, um Mittheilung einiger in Ihrem Besize befindlicher Seltenheiten bitte. Es sind folgende: 1. Das Münchner Bruchstück des Ecken - Liedes, das Sie in einer von Hrn. Braun gefertigten Abschrift besitzen und das Ihrer Ausgabe jenes merkwürdigen Liedes zur Ergänzung zu dienen scheint; 2. Der unvollständige 3te Theil der Müllerschen Sammlung altdeutscher Gedichte, den keine Bibliothek hiesiger Gegend besitzt; 3. Das Volksbuch vom Herzog Ernst in Reimen, das ich sonst nirgends gesehen habe und das sich, nach der Angabe Schönhuths in seiner Geschichte von Reichenau, in Ihrer Bibliothek befindet. Mit Vergnügen habe ich neuerlich in Mone's Anzeiger Beiträge von Laßberg, Vater und Sohn, gelesen; Mone gibt in dieser Zeitschrift wirklich viel Dankenswerthes, so theilt er aus einer St. Georger Handschrift des 15. Ihd., im Karlsruher Archiv, von Zeit zu Zeit volksmäßige Lieder mit, die mir eine nähere Kenntniß besagter Handschrift, die eine größere Liedersammlung zu enthalten scheint, sehr wünschenswerth gemacht haben. Ihnen und Ihrer verehrten Frau Gemahlin empfehlen wir Beide uns bestens. Mit unveränderlicher Freundschaft und Hochschätzung L. Uhland.</p>
+            </div>
+        </body>
+    </text>
+</TEI>
