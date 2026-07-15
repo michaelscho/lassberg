@@ -72,7 +72,7 @@ async function embedQueryTransformersJs(query, onProgress) {
 }
 
 async function embedQueryHfApi(query, token) {
-  const resp = await fetch(`https://api-inference.huggingface.co/pipeline/feature-extraction/${vectorsMeta.model_name}`, {
+  const resp = await fetch(`https://router.huggingface.co/hf-inference/models/${vectorsMeta.model_name}/pipeline/feature-extraction`, {
     method: "POST",
     headers: {
       Authorization: `Bearer ${token}`,
