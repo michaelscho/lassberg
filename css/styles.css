@@ -524,6 +524,15 @@ nav.explore-tabs button.active {
 .result-card a { color: var(--accent); text-decoration: none; font-weight: 600; }
 .result-card a:hover { text-decoration: underline; }
 
+/* the matching passage (not the letter's opening line) - set apart like a quotation, since it's
+   an excerpt pulled from wherever in the letter the query actually matched */
+.result-snippet {
+    font-style: italic;
+    border-left: 2px solid var(--rule);
+    padding-left: 0.6rem;
+    margin: 0.4rem 0 0;
+}
+
 /* Overview tab: stat strip, timeline chart, correspondent table, map */
 .stat-strip {
     display: flex;

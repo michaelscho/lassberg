@@ -121,13 +121,22 @@
             </section>
 
             <section id="panel-search" class="explore-panel">
-                <p class="status">Searches by <em>meaning</em>, using BGE-M3 embeddings of the
-                    transcribed full-text letters. Letters that are only recorded in the register (no transcription
-                    yet) are not covered. The first search loads
-                    the ONNX model (~560 MB, cached afterwards).</p>
+                <p class="status">Searches by <em>meaning</em>, over ~300-token passages of the
+                    transcribed full-text letters (not whole letters at once - long letters get
+                    several passages, so a query can match the specific part that's relevant).
+                    Letters that are only recorded in the register (no transcription yet) are not
+                    covered.</p>
+                <div>
+                    <label for="embedding-model-select">Embedding model:</label>
+                    <select id="embedding-model-select"></select>
+                </div>
+                <p class="status">Models marked "HF API only" are too large to download into the
+                    browser and always need the Hugging Face Inference API below. For the other
+                    models, the first search loads the ONNX model instead (a few hundred MB,
+                    cached afterwards) unless you check the API option.</p>
                 <label><input type="checkbox" id="use-hf-api"> You can also use the Hugging Face Inference API instead of downloading the model</label>
                 <div>
-                    <label for="hf-token">HF token (stored locally only, needed only for the API variant):</label>
+                    <label for="hf-token">HF token (stored locally only, needed for the API variant and for any "HF API only" model):</label>
                     <input type="text" id="hf-token" placeholder="hf_...">
                 </div>
                 <form id="search-form" class="search-box">
@@ -203,9 +212,9 @@
                             placeholder="e.g. Mit wem diskutierte Laßberg den Ankauf von Handschriften, und in welchen Briefen?">
                         <button type="submit" class="primary" id="agent-send">Ask</button>
                     </form>
-                    <p class="status">Semantic search inside the chat uses the same BGE-M3 model as the
-                        Search tab (one-time ~560 MB download on first use, or the HF-API option set
-                        there).</p>
+                    <p class="status">Semantic search inside the chat uses whichever embedding model is
+                        selected in the Search tab (one-time download on first use for local models, or
+                        the HF-API option set there).</p>
                 </section>
 
                 <p class="status">Combines embedding search with graph expansion (shared mentions, correspondence

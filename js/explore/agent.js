@@ -1,6 +1,6 @@
 /**
  * LLM-orchestrated GraphRAG: instead of a fixed retrieve-then-summarize pipeline, the LLM
- * itself formulates the queries - semantic (BGE-M3 embedding search), formal (SPARQL over the
+ * itself formulates the queries - semantic (embedding search, model chosen in the Search tab), formal (SPARQL over the
  * edition RDF), and graph traversals - observes the results, iterates, and synthesizes a cited
  * answer. Runs entirely in the browser against the same static artifacts as the rest of the
  * Explore page; the only network calls are to the user's chosen LLM API (llm-providers.js).
@@ -58,13 +58,13 @@ const TOOLS = {
   },
 
   semantic_search: {
-    doc: 'semantic_search {"query": string, "top_k": number=8} - embedding search by MEANING over the 170 full-text letters (German queries work best). Use for thematic questions; it does NOT know names reliably.',
+    doc: 'semantic_search {"query": string, "top_k": number=8} - embedding search by MEANING over the full-text letters (German queries work best; uses whichever embedding model is selected in the Semantic Search tab). Use for thematic questions; it does NOT know names reliably. Each hit\'s "snippet" is the actual passage that matched, not just the letter\'s opening line - quote or paraphrase from it directly.',
     required: ["query"],
     run: async ({ query, top_k }) => {
       const hits = await search(String(query), { topK: Math.min(Number(top_k) || 8, 15) });
       return hits.map((r) => ({
         id: r.id, score: Number(r.score.toFixed(3)), date: r.date,
-        sender: r.sender, recipient: r.recipient, incipit: (r.incipit || "").slice(0, 160),
+        sender: r.sender, recipient: r.recipient, snippet: (r.snippet || "").slice(0, 500),
       }));
     },
   },
@@ -135,7 +135,7 @@ const TOOLS = {
 
 // --- system prompt ---------------------------------------------------------------------------
 
-const SYSTEM_PROMPT = `You are the research agent of the digital edition of Joseph von Lassberg's correspondence (1770-1855). Corpus: 3,268 letters catalogued with full metadata; 170 of them with full text and linked entities. Every letter involves Lassberg himself - his ID is lassberg-correspondent-0373, so to find a correspondence you only need to query for the OTHER person's ID (never guess IDs; resolve them with lookup_entity). ID schemes: letters lassberg-letter-NNNN, persons lassberg-correspondent-NNNN, places lassberg-place-NNNN, works lassberg-literature-NNNN.
+const SYSTEM_PROMPT = `You are the research agent of the digital edition of Joseph von Lassberg's correspondence (1770-1855). Corpus: 3,268 letters catalogued with full metadata; a growing subset of them (currently a few hundred) additionally has full text and linked entities - semantic_search/get_letter only cover that subset. Every letter involves Lassberg himself - his ID is lassberg-correspondent-0373, so to find a correspondence you only need to query for the OTHER person's ID (never guess IDs; resolve them with lookup_entity). ID schemes: letters lassberg-letter-NNNN, persons lassberg-correspondent-NNNN, places lassberg-place-NNNN, works lassberg-literature-NNNN.
 
 You answer questions by orchestrating tools over the edition's embeddings, knowledge graph, and RDF store. On EVERY turn reply with EXACTLY ONE JSON object and nothing else (no prose, no code fences):
   {"tool": "<name>", "args": {...}}   to call a tool
@@ -163,7 +163,7 @@ Method - combine BOTH evidence layers, that is the point of this system:
 4. Widen context from good hits with shared_mentions / correspondence_context / graph_neighbors - these often surface related letters that neither search found.
 An empty sparql result usually means a wrong URI or a filter on a typed literal without STR() - fix and retry once, don't repeat the same query. You have at most ${MAX_STEPS} tool calls - plan them.
 
-Answer rules: cite every claim with letter IDs in square brackets, e.g. [lassberg-letter-0952]. Distinguish clearly between the 170 full-text letters and metadata-only evidence. If the sources do not answer the question, say so plainly. Answer in the language of the user's question.`;
+Answer rules: cite every claim with letter IDs in square brackets, e.g. [lassberg-letter-0952]. Distinguish clearly between the full-text letters (semantic_search/get_letter can read their actual text) and metadata-only evidence (sparql/lookup_entity only, no transcription yet). If the sources do not answer the question, say so plainly. Answer in the language of the user's question.`;
 
 // --- JSON action parsing -----------------------------------------------------------------------
 
