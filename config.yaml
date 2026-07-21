@@ -4,14 +4,51 @@ paths:
   letters_register: data/register/lassberg-letters.xml
 
 embedding:
-  primary:
-    name: BAAI/bge-m3
-    dim: 1024
-    normalize: true
-    max_tokens: 8192
-  secondary:            # optional, per Flag aktivieren
-    name: Qwen/Qwen3-Embedding-0.6B
-    enabled: false
+  # Passage-level chunking for the search index (2026-07-15): letters are split into overlapping
+  # token windows before embedding, rather than pooled into one vector per letter, so search can
+  # surface (and the UI can show) the specific matching passage instead of just "here's a whole
+  # letter". Short letters (the corpus majority - typically a single paragraph) fall under
+  # chunk_tokens anyway and end up as exactly one chunk, same as before. A per-letter aggregate
+  # (mean of its chunk vectors, renormalized) is still written for scripts/cluster.py and
+  # scripts/export_related.py, which want one vector per letter, not per model/mode change needed
+  # in either.
+  chunk_tokens: 300
+  chunk_overlap_tokens: 60
+  # pooling/query_instruction are consumed client-side only (js/explore/search.js, via the
+  # exported embedding_models.json manifest) - embed.py's corpus-side encoding always uses each
+  # backend's own default (no instruction prefix; that's a query-time-only device, see the Qwen3
+  # model cards' "no need to add instruction for retrieval documents").
+  models:
+    bge-m3:
+      name: BAAI/bge-m3
+      backend: bge-m3            # scripts/embed.py: BgeM3Backend (FlagEmbedding, CLS pooling)
+      dim: 1024
+      max_tokens: 8192
+      enabled: true
+      browser_local: true        # offer the Transformers.js in-browser download path
+      onnx_repo: Xenova/bge-m3
+      pooling: cls
+      query_instruction: ""
+    qwen3-0.6b:
+      name: Qwen/Qwen3-Embedding-0.6B
+      backend: sentence-transformers   # last-token pooling + query instruction, see model card
+      dim: 1024
+      max_tokens: 32768
+      enabled: true
+      browser_local: true
+      onnx_repo: onnx-community/Qwen3-Embedding-0.6B-ONNX
+      pooling: last_token
+      query_instruction: "Instruct: Given a search query about a 19th-century German scholarly correspondence, retrieve relevant letter passages\nQuery:"
+    qwen3-4b:
+      name: Qwen/Qwen3-Embedding-4B
+      backend: sentence-transformers
+      dim: 2560
+      max_tokens: 40960
+      enabled: true
+      browser_local: false       # too large for a browser download - HF Inference API only
+      onnx_repo: null
+      pooling: last_token
+      query_instruction: "Instruct: Given a search query about a 19th-century German scholarly correspondence, retrieve relevant letter passages\nQuery:"
 
 clustering:
   umap: {n_neighbors: 10, min_dist: 0.1, metric: cosine, random_state: 42}
@@ -19,10 +56,9 @@ clustering:
 
 # Explore-Seite (html/explore.html + js/explore/, Artefakte in json/explore/);
 frontend:
-  matryoshka_dim: 512   # Dimension für Browser-Vektoren (BGE-M3: einfaches Truncate+Renorm testen; Fallback: volle 1024)
+  matryoshka_dim: 512   # Dimension für Browser-Vektoren (nur bge-m3: einfaches Truncate+Renorm
+                         # getestet; Qwen3-Modelle behalten stets ihre volle Dimension, s. u.)
   quantization: int8
-  browser_model: Xenova/bge-m3   # ONNX-Konvertierung für Transformers.js
-  browser_model_dtype: q8        # q8 (~560 MB) oder fp16 (~1,1 GB); Konsistenztest entscheidet
   hf_api_fallback: true          # optionaler Fallback ohne Modell-Download
   letter_url_pattern: html/letters/lassberg-letter-{id}.html   # bestehende HTML-Briefansichten des Repos
 

@@ -5,7 +5,7 @@ be imported and called from plain scripts, other agent frameworks, tests, etc.
 Data read (all static, no services required):
   build/letters.jsonl          - metadata (date, sender/receiver ids, incipit)
   build/entities.json          - id -> label lookups for sender/receiver
-  embeddings/bge-m3/letters.safetensors + ids.json - the corpus vectors (170 full-text letters)
+  embeddings/bge-m3/letters.safetensors + ids.json - the corpus vectors (count grows as more letters are transcribed - see build/manifest.json)
 
 The BGE-M3 query model is loaded lazily on first call and cached at module level so repeated tool
 calls in one server process don't reload it.
@@ -82,8 +82,9 @@ def semantic_search(
         List of {id, score, date, sender, recipient, incipit}, best match first. `id` is the
         canonical "lassberg-letter-NNNN" form (4-digit zero-padded) - always use and report this
         exact string (e.g. "lassberg-letter-0952"), not just the bare number, when referring to a
-        result; it's also what get_letter()/graph_query() expect. Only covers the ~170 letters
-        that have full text (has_fulltext=true) - register-only letters have no embedding.
+        result; it's also what get_letter()/graph_query() expect. Only covers the letters that
+        have full text (has_fulltext=true, see build/manifest.json for the current count) -
+        register-only letters have no embedding.
     """
     ids, matrix, letters_by_id, _ = _load_data()
     model = _load_model()

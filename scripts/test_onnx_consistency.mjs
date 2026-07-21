@@ -2,9 +2,15 @@
 /**
  * Phase 7 mandatory consistency test: runs the same BGE-M3 ONNX model + pooling setup that
  * js/explore/search.js uses in the browser (Transformers.js, q8, CLS pooling, normalized) against
- * the server-computed corpus vectors (json/explore/vectors_int8.bin, produced from
- * embeddings/bge-m3/letters.safetensors by scripts/export_frontend.py), for the same 20 test
- * queries used in that script's matryoshka validation.
+ * the server-computed corpus vectors (json/explore/vectors_bge-m3_int8.bin, produced from
+ * embeddings/bge-m3/chunks.safetensors by scripts/export_frontend.py), for the same 20 test
+ * queries used in that script's matryoshka validation. Only covers bge-m3 - the two Qwen3 models
+ * (2026-07-21) use last-token pooling + a query instruction prefix via sentence-transformers-style
+ * config, not Transformers.js's simple pooling modes alone, and have no equivalent validated here
+ * yet.
+ *
+ * Rankings are computed at the chunk level (top-10 chunk ids, not letter ids) since the search
+ * index is chunk-level - see js/explore/search.js and scripts/embed.py.
  *
  * This validates the ONNX retrieval path end-to-end (no shape mismatches, no degenerate/garbage
  * rankings) against the real, deployed corpus vectors. For a query-level cross-check between the
@@ -42,9 +48,9 @@ const TEST_QUERIES = [
 ];
 
 function dequantize(meta, raw) {
-  const { dim, n_letters, mins, maxs } = meta;
+  const { dim, n_chunks, mins, maxs } = meta;
   const vectors = [];
-  for (let i = 0; i < n_letters; i++) {
+  for (let i = 0; i < n_chunks; i++) {
     const vec = new Float32Array(dim);
     for (let d = 0; d < dim; d++) {
       const q = raw[i * dim + d];
@@ -75,11 +81,11 @@ function top10(scores, ids) {
 }
 
 async function main() {
-  const meta = JSON.parse(readFileSync(`${REPO_ROOT}json/explore/vectors_meta.json`, "utf-8"));
-  const raw = new Int8Array(readFileSync(`${REPO_ROOT}json/explore/vectors_int8.bin`).buffer);
+  const meta = JSON.parse(readFileSync(`${REPO_ROOT}json/explore/vectors_bge-m3_meta.json`, "utf-8"));
+  const raw = new Int8Array(readFileSync(`${REPO_ROOT}json/explore/vectors_bge-m3_int8.bin`).buffer);
   const corpusVectors = dequantize(meta, raw);
-  const ids = meta.ids;
-  const modelName = meta.model_name.replace("BAAI/", "Xenova/");
+  const ids = meta.chunks.map((c) => c.id); // chunk ids, not letter ids - the index is chunk-level
+  const modelName = meta.onnx_repo;
 
   console.log(`Loading ${modelName} (dtype=q8) and running ${TEST_QUERIES.length} test queries...`);
   const extractor = await pipeline("feature-extraction", modelName, { dtype: "q8" });
@@ -122,8 +128,8 @@ async function main() {
       decision: passed ? "q8 kept as primary (overlap >= 90%)" : "q8 below threshold - review fp16/HF-API fallback",
       tested_at: new Date().toISOString(),
     };
-    writeFileSync(`${REPO_ROOT}json/explore/vectors_meta.json`, JSON.stringify(meta, null, 2));
-    console.log("Wrote result to json/explore/vectors_meta.json (onnx_consistency_test).");
+    writeFileSync(`${REPO_ROOT}json/explore/vectors_bge-m3_meta.json`, JSON.stringify(meta));
+    console.log("Wrote result to json/explore/vectors_bge-m3_meta.json (onnx_consistency_test).");
   }
 }
 
