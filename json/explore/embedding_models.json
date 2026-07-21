@@ -6,7 +6,9 @@
     "browser_local": true,
     "onnx_repo": "Xenova/bge-m3",
     "pooling": "cls",
-    "query_instruction": ""
+    "query_instruction": "",
+    "api_provider": "hf-inference",
+    "api_available": true
   },
   "qwen3-0.6b": {
     "name": "Qwen/Qwen3-Embedding-0.6B",
@@ -15,15 +17,8 @@
     "browser_local": true,
     "onnx_repo": "onnx-community/Qwen3-Embedding-0.6B-ONNX",
     "pooling": "last_token",
-    "query_instruction": "Instruct: Given a search query about a 19th-century German scholarly correspondence, retrieve relevant letter passages\nQuery:"
-  },
-  "qwen3-4b": {
-    "name": "Qwen/Qwen3-Embedding-4B",
-    "dim": 2560,
-    "n_chunks": 655,
-    "browser_local": false,
-    "onnx_repo": null,
-    "pooling": "last_token",
-    "query_instruction": "Instruct: Given a search query about a 19th-century German scholarly correspondence, retrieve relevant letter passages\nQuery:"
+    "query_instruction": "Instruct: Given a search query about a 19th-century German scholarly correspondence, retrieve relevant letter passages\nQuery:",
+    "api_provider": "hf-inference",
+    "api_available": false
   }
 }
