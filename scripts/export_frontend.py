@@ -14,9 +14,13 @@ Per-model output (json/explore/), row order shared between the .bin and its meta
                              here so the frontend can show the matching excerpt without a second
                              request for full letter text.
 Shared output:
-  embedding_models.json    - {key: {name, dim, browser_local, onnx_repo, n_chunks}} manifest so
-                             the frontend can build the model dropdown without fetching every
-                             per-model meta file up front.
+  embedding_models.json    - {key: {name, dim, browser_local, onnx_repo, api_provider, n_chunks}}
+                             manifest so the frontend can build the model dropdown without
+                             fetching every per-model meta file up front. Models with
+                             config.yaml: embedding.models.<key>.frontend_visible: false (e.g.
+                             qwen3-4b, kept embedded for mcp_server use but with no working HF
+                             Inference provider) are skipped here entirely - enabled but not
+                             offered on the website.
   letters_index.json       - id, date, sender/recipient labels, incipit (model-independent;
                              everything the results list needs beyond the matched excerpt)
   graph.json                - copied from export_graph_json.py's output (already written there)
@@ -166,6 +170,8 @@ def export_model(key: str, model_cfg: dict, repo_root: Path, out_dir: Path, fron
         "onnx_repo": model_cfg.get("onnx_repo"),
         "pooling": model_cfg.get("pooling", "cls"),
         "query_instruction": model_cfg.get("query_instruction", ""),
+        "api_provider": model_cfg.get("api_provider", "hf-inference"),
+        "api_available": model_cfg.get("api_available", True),
         "chunks": chunk_meta,
     }
     if matryoshka_info:
@@ -178,6 +184,8 @@ def export_model(key: str, model_cfg: dict, repo_root: Path, out_dir: Path, fron
         "name": model_cfg["name"], "dim": dim_used, "n_chunks": len(chunk_meta),
         "browser_local": model_cfg.get("browser_local", False), "onnx_repo": model_cfg.get("onnx_repo"),
         "pooling": model_cfg.get("pooling", "cls"), "query_instruction": model_cfg.get("query_instruction", ""),
+        "api_provider": model_cfg.get("api_provider", "hf-inference"),
+        "api_available": model_cfg.get("api_available", True),
     }
 
 
@@ -197,6 +205,10 @@ def main():
     manifest = {}
     for key, model_cfg in models_cfg.items():
         if not model_cfg.get("enabled", False):
+            continue
+        if not model_cfg.get("frontend_visible", True):
+            print(f"[{key}] frontend_visible=false in config.yaml - keeping embeddings/{key}/ "
+                  f"but not exporting to json/explore/ (not offered on the website)")
             continue
         emb_dir = repo_root / "embeddings" / key
         if not (emb_dir / "chunks.safetensors").exists():

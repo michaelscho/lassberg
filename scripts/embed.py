@@ -189,18 +189,35 @@ def embed_model(key: str, model_cfg: dict, chunk_tokens: int, overlap: int,
 
     new_chunks_by_letter: dict[str, list] = {}
     n_chunks_total = 0
-    for i, letter in enumerate(to_process):
-        pieces = chunk_text(letter["text"], chunk_tokens, overlap)
-        vecs = backend.encode(pieces)
-        new_chunks_by_letter[letter["id"]] = list(zip(pieces, vecs))
-        n_chunks_total += len(pieces)
-        if (i + 1) % 20 == 0 or i + 1 == len(to_process):
-            print(f"  embedded {i + 1}/{len(to_process)} letters ({n_chunks_total} chunks so far)")
+    interrupted_error = None
+    try:
+        for i, letter in enumerate(to_process):
+            pieces = chunk_text(letter["text"], chunk_tokens, overlap)
+            vecs = backend.encode(pieces)
+            new_chunks_by_letter[letter["id"]] = list(zip(pieces, vecs))
+            n_chunks_total += len(pieces)
+            if (i + 1) % 20 == 0 or i + 1 == len(to_process):
+                print(f"  embedded {i + 1}/{len(to_process)} letters ({n_chunks_total} chunks so far)")
+    except Exception as exc:
+        # For paid/rate-limited backends (hf-api) especially, losing already-embedded letters to
+        # an error partway through would waste real API spend - save whatever completed so far
+        # (the merge below only touches letters actually in new_chunks_by_letter; the rest keep
+        # their existing_shas entry so the next run's incremental skip-logic retries just the
+        # ones that didn't finish) and re-raise after saving.
+        interrupted_error = exc
+        print(f"  ERROR after {len(new_chunks_by_letter)}/{len(to_process)} letters embedded - "
+              f"saving partial progress before re-raising: {exc}")
 
     # Merge: unchanged letters keep their old chunks, changed/new letters get the fresh ones,
-    # letters no longer in the corpus (removed) are dropped entirely.
+    # letters no longer in the corpus (removed) are dropped entirely. On a partial run (see
+    # except above), letters not yet reached keep whatever they had before (old chunks if any,
+    # none if new) and are simply not in all_shas-matching state, so the next run retries them.
     all_ids = [l["id"] for l in letters]
-    all_shas = {l["id"]: l["sha256"] for l in letters}
+    shas_by_id = {l["id"]: l["sha256"] for l in letters}
+    if interrupted_error:
+        all_shas = {**existing_shas, **{lid: shas_by_id[lid] for lid in new_chunks_by_letter}}
+    else:
+        all_shas = shas_by_id
     chunks_by_letter = {**existing_chunks, **new_chunks_by_letter}
 
     chunk_meta = []
@@ -244,6 +261,9 @@ def embed_model(key: str, model_cfg: dict, chunk_tokens: int, overlap: int,
 
     if backend:
         backend.unload()
+
+    if interrupted_error:
+        raise interrupted_error
 
 
 def main():

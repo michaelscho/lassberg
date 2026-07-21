@@ -36,6 +36,10 @@ embedding:
       max_tokens: 32768
       enabled: true
       browser_local: true
+      api_available: false       # 2026-07-21: HF Inference status for this model is "error" on
+                                  # hf-inference (confirmed via the /api/models?expand[]=
+                                  # inferenceProviderMapping check) - download-only in the UI,
+                                  # don't offer the HF-API fallback checkbox for it.
       onnx_repo: onnx-community/Qwen3-Embedding-0.6B-ONNX
       pooling: last_token
       query_instruction: "Instruct: Given a search query about a 19th-century German scholarly correspondence, retrieve relevant letter passages\nQuery:"
@@ -45,11 +49,21 @@ embedding:
       dim: 2560
       max_tokens: 40960
       enabled: true
+      frontend_visible: false    # 2026-07-21: no working HF Inference provider for this model at
+                                  # all (inferenceProviderMapping is empty) - kept embedded for
+                                  # mcp_server/possible future use, just not offered on the website
+                                  # since there is currently no way to query it live from there.
       browser_local: false       # too large for a browser download - HF Inference API only
       onnx_repo: null
       pooling: last_token
       query_instruction: "Instruct: Given a search query about a 19th-century German scholarly correspondence, retrieve relevant letter passages\nQuery:"
-
+  # BAAI/bge-multilingual-gemma2 (9B, Gemma2-based) was evaluated 2026-07-21 as a larger
+  # alternative: quality-tested well via the HF Inference API (scaleway provider), but a full
+  # corpus embedding run hit a 402 (monthly HF Inference credits exhausted) partway through, and
+  # local 4-bit loading was abandoned as not worth the effort - the checkpoint is ~36GB fp32
+  # (no bf16 release), so even downloading it once takes the better part of an hour before
+  # quantized loading can even be attempted. Revisit only if HF credits are topped up or a
+  # smaller/quantized release appears.
 clustering:
   umap: {n_neighbors: 10, min_dist: 0.1, metric: cosine, random_state: 42}
   hdbscan: {min_cluster_size: 3, min_samples: 2, cluster_selection_method: eom}

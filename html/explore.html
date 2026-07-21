@@ -133,8 +133,11 @@
                 <p class="status">Models marked "HF API only" are too large to download into the
                     browser and always need the Hugging Face Inference API below. For the other
                     models, the first search loads the ONNX model instead (a few hundred MB,
-                    cached afterwards) unless you check the API option.</p>
+                    cached afterwards) unless you check the API option - some models have no
+                    working Inference API provider and are download-only, in which case the
+                    option below is disabled.</p>
                 <label><input type="checkbox" id="use-hf-api"> You can also use the Hugging Face Inference API instead of downloading the model</label>
+                <p class="status" id="hf-api-unavailable-note" hidden>This model has no working Hugging Face Inference API provider - it must be downloaded.</p>
                 <div>
                     <label for="hf-token">HF token (stored locally only, needed for the API variant and for any "HF API only" model):</label>
                     <input type="text" id="hf-token" placeholder="hf_...">

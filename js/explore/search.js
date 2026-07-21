@@ -3,9 +3,12 @@
  *
  * Multi-model (2026-07-21): the corpus is embedded once per model listed in
  * json/explore/embedding_models.json (built from config.yaml: embedding.models by
- * scripts/export_frontend.py) - currently BGE-M3 and Qwen3-Embedding-0.6B/4B. The user picks one
- * from a dropdown (#embedding-model-select); the choice is shared by both the Semantic Search tab
- * and GraphRAG's semantic_search tool, since both call search() in this module.
+ * scripts/export_frontend.py) - currently BGE-M3 and Qwen3-Embedding-0.6B. (Qwen3-Embedding-4B is
+ * still embedded server-side for mcp_server's use but has config.yaml: frontend_visible: false -
+ * no HF Inference provider serves it at all, so it's not exported here and never appears in this
+ * dropdown.) The user picks one from a dropdown (#embedding-model-select); the choice is shared
+ * by both the Semantic Search tab and GraphRAG's semantic_search tool, since both call search() in
+ * this module.
  *
  * Chunk-level index (2026-07-21): corpus vectors are one row per ~300-token passage, not one row
  * per letter (see scripts/embed.py) - a long, multi-topic letter no longer dilutes into a single
@@ -20,12 +23,15 @@
  *     not hardcoded - get either wrong and query vectors land outside the corpus vectors' space
  *     and results become meaningless.
  *   - Fallback path: HF Inference API feature-extraction against meta.name (the original repo,
- *     not the ONNX mirror), for users who don't want the model download. Requires a user-supplied
- *     HF token, stored only in localStorage, never sent anywhere but huggingface.co. The same
- *     instruction prefix is prepended manually here too - the generic feature-extraction endpoint
- *     has no notion of sentence-transformers' named prompts.
- *   - qwen3-4b has no ONNX build offered (meta.browser_local is false, 4B params is not a
- *     reasonable browser download) - only the HF API path is available for it.
+ *     not the ONNX mirror), routed through meta.api_provider (different models are hosted by
+ *     different named HF Inference providers - "hf-inference", "scaleway", etc.; see
+ *     https://huggingface.co/api/models/{model}?expand[]=inferenceProviderMapping to check which
+ *     one serves a given model). Only offered when meta.api_available is true - requires a
+ *     user-supplied HF token, stored only in localStorage, never sent anywhere but
+ *     huggingface.co. The same instruction prefix is prepended manually here too - the generic
+ *     feature-extraction endpoint has no notion of sentence-transformers' named prompts.
+ *   - qwen3-0.6b has meta.api_available false (its hf-inference provider status is "error", as of
+ *     2026-07-21) - it is download-only, the HF-API checkbox is disabled when it's selected.
  *
  * Corpus vectors are int8-quantized (json/explore/vectors_<key>_int8.bin +
  * vectors_<key>_meta.json, dequantized here) - see scripts/export_frontend.py for the
@@ -120,7 +126,8 @@ async function embedQueryTransformersJs(modelKey, meta, query, onProgress) {
 
 async function embedQueryHfApi(meta, query, token) {
   const input = meta.query_instruction ? `${meta.query_instruction}${query}` : query;
-  const resp = await fetch(`https://router.huggingface.co/hf-inference/models/${meta.name}/pipeline/feature-extraction`, {
+  const provider = meta.api_provider || "hf-inference";
+  const resp = await fetch(`https://router.huggingface.co/${provider}/models/${meta.name}/pipeline/feature-extraction`, {
     method: "POST",
     headers: {
       Authorization: `Bearer ${token}`,
@@ -145,7 +152,12 @@ export async function search(query, { topK = 10, onProgress, modelKey } = {}) {
   const key = modelKey || getSelectedModelKey();
   const { vectors, meta } = await loadCorpusData(key);
 
-  const useHfApi = document.getElementById("use-hf-api")?.checked || !meta.browser_local;
+  const apiAvailable = meta.api_available !== false;
+  const wantsHfApi = document.getElementById("use-hf-api")?.checked || !meta.browser_local;
+  const useHfApi = wantsHfApi && apiAvailable;
+  if (wantsHfApi && !apiAvailable) {
+    throw new Error(`${meta.model_name || key} has no working HF Inference API provider - download the model instead.`);
+  }
   let queryVec;
   if (useHfApi) {
     const token = localStorage.getItem("hf_token");
@@ -197,6 +209,19 @@ function renderResults(results, container) {
   }
 }
 
+function updateHfApiAvailability(modelKey) {
+  const meta = modelsManifest?.[modelKey];
+  if (!meta) return;
+  const apiAvailable = meta.api_available !== false;
+  const checkbox = document.getElementById("use-hf-api");
+  const note = document.getElementById("hf-api-unavailable-note");
+  if (checkbox) {
+    checkbox.disabled = !apiAvailable;
+    if (!apiAvailable) checkbox.checked = false;
+  }
+  if (note) note.hidden = apiAvailable;
+}
+
 async function populateModelSelect(select) {
   await loadManifest();
   select.innerHTML = "";
@@ -208,7 +233,11 @@ async function populateModelSelect(select) {
     select.appendChild(opt);
   }
   select.value = getSelectedModelKey();
-  select.addEventListener("change", () => setSelectedModelKey(select.value));
+  updateHfApiAvailability(select.value);
+  select.addEventListener("change", () => {
+    setSelectedModelKey(select.value);
+    updateHfApiAvailability(select.value);
+  });
 }
 
 export function initSearchUI() {
