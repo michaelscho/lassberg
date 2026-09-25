@@ -1,0 +1,216 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_trocr_corpus",
+  "model": "trocr-kurrent",
+  "engine": "trocr",
+  "doc_id": "Basel/lassberg-letter-1961",
+  "source": {
+    "name": "PA 82a B 9_Seite_189.jpg",
+    "key": "Basel__lassberg-letter-1961__PA 82a B 9_Seite_189",
+    "sha256": "55338bb460e475f1668b0f5a1f508e7155a5df2919a1719e7f15da41a58a5d93",
+    "bytes": 159233
+  },
+  "text": "Rein sagt in bald\nWelrsehen\ndrinnen\nden Meinen",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          394.0,
+          514.0
+        ],
+        [
+          396.0,
+          720.0
+        ]
+      ],
+      "bbox": [
+        374.0,
+        513.0,
+        412.0,
+        720.0
+      ],
+      "text": "Rein sagt in bald",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          446.0,
+          704.0
+        ],
+        [
+          446.0,
+          582.0
+        ]
+      ],
+      "bbox": [
+        425.0,
+        582.0,
+        474.0,
+        704.0
+      ],
+      "text": "Welrsehen",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          575.0,
+          371.0
+        ],
+        [
+          577.0,
+          476.0
+        ]
+      ],
+      "bbox": [
+        553.0,
+        371.0,
+        595.0,
+        476.0
+      ],
+      "text": "drinnen",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          620.0,
+          497.0
+        ],
+        [
+          621.0,
+          375.0
+        ]
+      ],
+      "bbox": [
+        604.0,
+        374.0,
+        642.0,
+        497.0
+      ],
+      "text": "den Meinen",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 16364,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "Ministerie van Kolonien\nMonsieur: Le Marquis Le Courtedoub\nDen Weledelen Heere\nAfgedaen den",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            394.0,
+            514.0
+          ],
+          [
+            396.0,
+            720.0
+          ]
+        ],
+        "bbox": [
+          374.0,
+          513.0,
+          412.0,
+          720.0
+        ],
+        "text": "Ministerie van Kolonien",
+        "confidence": 0.8523746521576591,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            446.0,
+            704.0
+          ],
+          [
+            446.0,
+            582.0
+          ]
+        ],
+        "bbox": [
+          425.0,
+          582.0,
+          474.0,
+          704.0
+        ],
+        "text": "Monsieur: Le Marquis Le Courtedoub",
+        "confidence": 0.6607143033076736,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            575.0,
+            371.0
+          ],
+          [
+            577.0,
+            476.0
+          ]
+        ],
+        "bbox": [
+          553.0,
+          371.0,
+          595.0,
+          476.0
+        ],
+        "text": "Den Weledelen Heere",
+        "confidence": 0.8155038341095573,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            620.0,
+            497.0
+          ],
+          [
+            621.0,
+            375.0
+          ]
+        ],
+        "bbox": [
+          604.0,
+          374.0,
+          642.0,
+          497.0
+        ],
+        "text": "Afgedaen den",
+        "confidence": 0.7247659843415022,
+        "regions": []
+      }
+    ],
+    "confidence": 0.763339693479098,
+    "timing_ms": 9981,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-17T09:41:22+00:00"
+}

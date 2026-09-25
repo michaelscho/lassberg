@@ -1,0 +1,178 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_trocr_corpus",
+  "model": "trocr-kurrent",
+  "engine": "trocr",
+  "doc_id": "Aarau/upload/lassberg-letter-1869",
+  "source": {
+    "name": "00087-scan_2025-03-21_12-04-12l.jpg",
+    "key": "Aarau__upload__lassberg-letter-1869__00087-scan_2025-03-21_12-04-12l",
+    "sha256": "4b00f32fb01bb43191758a3ece75701029019d6e83054e424d5c0a99aab3dbc2",
+    "bytes": 895447
+  },
+  "text": " an\nrühren werden .\ndas",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          1115.0,
+          2137.0
+        ],
+        [
+          1124.0,
+          2197.0
+        ],
+        [
+          1124.0,
+          2400.0
+        ]
+      ],
+      "bbox": [
+        1041.0,
+        2135.0,
+        1184.0,
+        2400.0
+      ],
+      "text": " an",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1115.0,
+          1475.0
+        ],
+        [
+          1115.0,
+          2101.0
+        ]
+      ],
+      "bbox": [
+        1053.0,
+        1475.0,
+        1184.0,
+        2101.0
+      ],
+      "text": "rühren werden .",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1230.0,
+          1478.0
+        ],
+        [
+          1234.0,
+          1664.0
+        ]
+      ],
+      "bbox": [
+        1184.0,
+        1475.0,
+        1273.0,
+        1664.0
+      ],
+      "text": "das",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 11101,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "Luijcas pieters\nMontag nach Cantate\nMonsieur: Le Marquis",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            1115.0,
+            2137.0
+          ],
+          [
+            1124.0,
+            2197.0
+          ],
+          [
+            1124.0,
+            2400.0
+          ]
+        ],
+        "bbox": [
+          1041.0,
+          2135.0,
+          1184.0,
+          2400.0
+        ],
+        "text": "Luijcas pieters",
+        "confidence": 0.8043188939491908,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            1115.0,
+            1475.0
+          ],
+          [
+            1115.0,
+            2101.0
+          ]
+        ],
+        "bbox": [
+          1053.0,
+          1475.0,
+          1184.0,
+          2101.0
+        ],
+        "text": "Montag nach Cantate",
+        "confidence": 0.7835755332520133,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            1230.0,
+            1478.0
+          ],
+          [
+            1234.0,
+            1664.0
+          ]
+        ],
+        "bbox": [
+          1184.0,
+          1475.0,
+          1273.0,
+          1664.0
+        ],
+        "text": "Monsieur: Le Marquis",
+        "confidence": 0.6282959707081318,
+        "regions": []
+      }
+    ],
+    "confidence": 0.7387301326364453,
+    "timing_ms": 10503,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-17T08:06:11+00:00"
+}

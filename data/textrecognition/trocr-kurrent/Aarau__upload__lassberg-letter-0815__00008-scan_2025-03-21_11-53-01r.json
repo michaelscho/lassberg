@@ -1,0 +1,124 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_trocr_corpus",
+  "model": "trocr-kurrent",
+  "engine": "trocr",
+  "doc_id": "Aarau/upload/lassberg-letter-0815",
+  "source": {
+    "name": "00008-scan_2025-03-21_11-53-01r.jpg",
+    "key": "Aarau__upload__lassberg-letter-0815__00008-scan_2025-03-21_11-53-01r",
+    "sha256": "69f3ade2c436c62018d85eda768976182bc2a12d7a56b882bcd47d885bd97477",
+    "bytes": 867221
+  },
+  "text": "den |\nIngenier",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          2206.0,
+          1329.0
+        ],
+        [
+          2279.0,
+          1331.0
+        ]
+      ],
+      "bbox": [
+        2204.0,
+        1302.0,
+        2279.0,
+        1345.0
+      ],
+      "text": "den |",
+      "confidence": null,
+      "regions": [
+        "_f18d8016-0009-4dd2-81a3-02684898ac4a"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1225.0,
+          3051.0
+        ],
+        [
+          1427.0,
+          3053.0
+        ]
+      ],
+      "bbox": [
+        1223.0,
+        3020.0,
+        1427.0,
+        3085.0
+      ],
+      "text": "Ingenier",
+      "confidence": null,
+      "regions": [
+        "_8bd30a5a-68f7-44d5-b6ff-0c2ca6e90fe8"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla",
+  "timing_ms": 4926,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "Ingenieur\nen",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            1225.0,
+            3051.0
+          ],
+          [
+            1427.0,
+            3053.0
+          ]
+        ],
+        "bbox": [
+          1223.0,
+          3020.0,
+          1427.0,
+          3085.0
+        ],
+        "text": "Ingenieur",
+        "confidence": 0.9274014896816678,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            2206.0,
+            1329.0
+          ],
+          [
+            2279.0,
+            1331.0
+          ]
+        ],
+        "bbox": [
+          2204.0,
+          1302.0,
+          2279.0,
+          1345.0
+        ],
+        "text": "en",
+        "confidence": 0.5515986457467079,
+        "regions": []
+      }
+    ],
+    "confidence": 0.7395000677141879,
+    "timing_ms": 5748,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-17T06:36:21+00:00"
+}

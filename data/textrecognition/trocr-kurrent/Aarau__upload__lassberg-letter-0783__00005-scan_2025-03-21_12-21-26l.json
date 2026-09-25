@@ -1,0 +1,78 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_trocr_corpus",
+  "model": "trocr-kurrent",
+  "engine": "trocr",
+  "doc_id": "Aarau/upload/lassberg-letter-0783",
+  "source": {
+    "name": "00005-scan_2025-03-21_12-21-26l.jpg",
+    "key": "Aarau__upload__lassberg-letter-0783__00005-scan_2025-03-21_12-21-26l",
+    "sha256": "83ae33066dc439f8e2a72a02ea44fa7825a7d4275497ca2ce2a9bc78f762b783",
+    "bytes": 791824
+  },
+  "text": "der",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          968.0,
+          2246.0
+        ],
+        [
+          973.0,
+          2115.0
+        ]
+      ],
+      "bbox": [
+        926.0,
+        2111.0,
+        1004.0,
+        2246.0
+      ],
+      "text": "der",
+      "confidence": null,
+      "regions": [
+        "_84c4ddd3-04ca-4079-8d87-cad95d80aef3"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla",
+  "timing_ms": 4350,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "adsistent",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            968.0,
+            2246.0
+          ],
+          [
+            973.0,
+            2115.0
+          ]
+        ],
+        "bbox": [
+          926.0,
+          2111.0,
+          1004.0,
+          2246.0
+        ],
+        "text": "adsistent",
+        "confidence": 0.7186495098802779,
+        "regions": []
+      }
+    ],
+    "confidence": 0.7186495098802779,
+    "timing_ms": 5207,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-17T06:31:45+00:00"
+}

@@ -1,0 +1,324 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_trocr_corpus",
+  "model": "trocr-kurrent",
+  "engine": "trocr",
+  "doc_id": "Basel/lassberg-letter-3173",
+  "source": {
+    "name": "PA 82a B 9_Seite_175.jpg",
+    "key": "Basel__lassberg-letter-3173__PA 82a B 9_Seite_175",
+    "sha256": "2ff33b7a65afbfcc18301205e4021ee1c0f97df30d43394623c6b30f6a7af3fe",
+    "bytes": 221117
+  },
+  "text": "Klaus Grunden\nTante Wegen\nBergen und\nbergaben\nArbeiten\n5 .",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          651.0,
+          435.0
+        ],
+        [
+          652.0,
+          616.0
+        ]
+      ],
+      "bbox": [
+        616.0,
+        435.0,
+        673.0,
+        616.0
+      ],
+      "text": "Klaus Grunden",
+      "confidence": null,
+      "regions": [
+        "_af5181cd-7bc4-4607-8465-ebe9302b7640"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          691.0,
+          430.0
+        ],
+        [
+          694.0,
+          578.0
+        ]
+      ],
+      "bbox": [
+        672.0,
+        429.0,
+        709.0,
+        578.0
+      ],
+      "text": "Tante Wegen",
+      "confidence": null,
+      "regions": [
+        "_af5181cd-7bc4-4607-8465-ebe9302b7640"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          467.0,
+          541.0
+        ],
+        [
+          471.0,
+          635.0
+        ],
+        [
+          468.0,
+          696.0
+        ],
+        [
+          472.0,
+          728.0
+        ]
+      ],
+      "bbox": [
+        435.0,
+        540.0,
+        491.0,
+        728.0
+      ],
+      "text": "Bergen und",
+      "confidence": null,
+      "regions": [
+        "_fea30125-a2f4-474d-927c-cbdfaf511758"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          467.0,
+          855.0
+        ],
+        [
+          468.0,
+          753.0
+        ]
+      ],
+      "bbox": [
+        443.0,
+        752.0,
+        490.0,
+        855.0
+      ],
+      "text": "bergaben",
+      "confidence": null,
+      "regions": [
+        "_fea30125-a2f4-474d-927c-cbdfaf511758"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          526.0,
+          780.0
+        ],
+        [
+          528.0,
+          635.0
+        ]
+      ],
+      "bbox": [
+        503.0,
+        634.0,
+        550.0,
+        780.0
+      ],
+      "text": "Arbeiten",
+      "confidence": null,
+      "regions": [
+        "_fea30125-a2f4-474d-927c-cbdfaf511758"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          689.0,
+          926.0
+        ],
+        [
+          689.0,
+          921.0
+        ]
+      ],
+      "bbox": [
+        655.0,
+        921.0,
+        718.0,
+        926.0
+      ],
+      "text": "5 .",
+      "confidence": null,
+      "regions": [
+        "_884ae37b-95b0-4e7c-a0c8-6f013d74e15c"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 7626,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "Monsieur:\nFranca.\nMonsieur: Hendrik Lapper, Stiefforder van\nMinisterie van Kolonien\nDen Weledelen Heere\nFort",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            467.0,
+            541.0
+          ],
+          [
+            471.0,
+            635.0
+          ],
+          [
+            468.0,
+            696.0
+          ],
+          [
+            472.0,
+            728.0
+          ]
+        ],
+        "bbox": [
+          435.0,
+          540.0,
+          491.0,
+          728.0
+        ],
+        "text": "Monsieur:",
+        "confidence": 0.7157804899745517,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            467.0,
+            855.0
+          ],
+          [
+            468.0,
+            753.0
+          ]
+        ],
+        "bbox": [
+          443.0,
+          752.0,
+          490.0,
+          855.0
+        ],
+        "text": "Franca.",
+        "confidence": 0.5828118281705039,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            526.0,
+            780.0
+          ],
+          [
+            528.0,
+            635.0
+          ]
+        ],
+        "bbox": [
+          503.0,
+          634.0,
+          550.0,
+          780.0
+        ],
+        "text": "Monsieur: Hendrik Lapper, Stiefforder van",
+        "confidence": 0.6199560248997154,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            651.0,
+            435.0
+          ],
+          [
+            652.0,
+            616.0
+          ]
+        ],
+        "bbox": [
+          616.0,
+          435.0,
+          673.0,
+          616.0
+        ],
+        "text": "Ministerie van Kolonien",
+        "confidence": 0.8350262094451033,
+        "regions": []
+      },
+      {
+        "order": 4,
+        "baseline": [
+          [
+            691.0,
+            430.0
+          ],
+          [
+            694.0,
+            578.0
+          ]
+        ],
+        "bbox": [
+          672.0,
+          429.0,
+          709.0,
+          578.0
+        ],
+        "text": "Den Weledelen Heere",
+        "confidence": 0.8335060571369372,
+        "regions": []
+      },
+      {
+        "order": 5,
+        "baseline": [
+          [
+            689.0,
+            926.0
+          ],
+          [
+            689.0,
+            921.0
+          ]
+        ],
+        "bbox": [
+          655.0,
+          921.0,
+          718.0,
+          926.0
+        ],
+        "text": "Fort",
+        "confidence": 0.5262895151972771,
+        "regions": []
+      }
+    ],
+    "confidence": 0.6855616874706815,
+    "timing_ms": 10090,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-17T10:09:51+00:00"
+}

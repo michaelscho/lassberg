@@ -1,0 +1,170 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_trocr_corpus",
+  "model": "trocr-kurrent",
+  "engine": "trocr",
+  "doc_id": "Aarau/upload/lassberg-letter-1123",
+  "source": {
+    "name": "00020-scan_2025-03-21_11-11-46r.jpg",
+    "key": "Aarau__upload__lassberg-letter-1123__00020-scan_2025-03-21_11-11-46r",
+    "sha256": "fff5da6259ede302d004e0aa99ad5352ea3b62d5a486bc0efdadaf443c3e6827",
+    "bytes": 1084540
+  },
+  "text": "7\ndie |\nab |",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          1053.0,
+          945.0
+        ],
+        [
+          1053.0,
+          963.0
+        ]
+      ],
+      "bbox": [
+        1033.0,
+        945.0,
+        1087.0,
+        963.0
+      ],
+      "text": "7",
+      "confidence": null,
+      "regions": [
+        "_9e6a451d-93df-4c8a-9795-30ac3401a184"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          2133.0,
+          1426.0
+        ],
+        [
+          2175.0,
+          1424.0
+        ]
+      ],
+      "bbox": [
+        2132.0,
+        1401.0,
+        2175.0,
+        1442.0
+      ],
+      "text": "die |",
+      "confidence": null,
+      "regions": [
+        "_386a6d8d-1577-4325-a0f4-7638cc8fdecb"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          2133.0,
+          1577.0
+        ],
+        [
+          2331.0,
+          1575.0
+        ]
+      ],
+      "bbox": [
+        2132.0,
+        1534.0,
+        2331.0,
+        1611.0
+      ],
+      "text": "ab |",
+      "confidence": null,
+      "regions": [
+        "_386a6d8d-1577-4325-a0f4-7638cc8fdecb"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla",
+  "timing_ms": 7163,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "1\naugusti\nliab",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            1053.0,
+            945.0
+          ],
+          [
+            1053.0,
+            963.0
+          ]
+        ],
+        "bbox": [
+          1033.0,
+          945.0,
+          1087.0,
+          963.0
+        ],
+        "text": "1",
+        "confidence": 0.5075806975364685,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            2133.0,
+            1426.0
+          ],
+          [
+            2175.0,
+            1424.0
+          ]
+        ],
+        "bbox": [
+          2132.0,
+          1401.0,
+          2175.0,
+          1442.0
+        ],
+        "text": "augusti",
+        "confidence": 0.6035092792340687,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            2133.0,
+            1577.0
+          ],
+          [
+            2331.0,
+            1575.0
+          ]
+        ],
+        "bbox": [
+          2132.0,
+          1534.0,
+          2331.0,
+          1611.0
+        ],
+        "text": "liab",
+        "confidence": 0.6002004742622375,
+        "regions": []
+      }
+    ],
+    "confidence": 0.5704301503442583,
+    "timing_ms": 7113,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-17T06:56:12+00:00"
+}

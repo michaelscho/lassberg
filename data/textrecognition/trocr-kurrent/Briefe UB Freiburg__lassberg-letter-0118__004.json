@@ -1,0 +1,122 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_trocr_corpus",
+  "model": "trocr-kurrent",
+  "engine": "trocr",
+  "doc_id": "Briefe UB Freiburg/lassberg-letter-0118",
+  "source": {
+    "name": "004.jpg",
+    "key": "Briefe UB Freiburg__lassberg-letter-0118__004",
+    "sha256": "69b10dc0f51727239041243c588d4d99af038d4157146f3c099272468b15b75a",
+    "bytes": 469821
+  },
+  "text": "4\nin",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          109.0,
+          232.0
+        ],
+        [
+          109.0,
+          220.0
+        ]
+      ],
+      "bbox": [
+        70.0,
+        220.0,
+        155.0,
+        232.0
+      ],
+      "text": "4",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          675.0,
+          1165.0
+        ],
+        [
+          677.0,
+          1173.0
+        ]
+      ],
+      "bbox": [
+        661.0,
+        1157.0,
+        715.0,
+        1174.0
+      ],
+      "text": "in",
+      "confidence": null,
+      "regions": []
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 5829,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "33\nat",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            109.0,
+            232.0
+          ],
+          [
+            109.0,
+            220.0
+          ]
+        ],
+        "bbox": [
+          70.0,
+          220.0,
+          155.0,
+          232.0
+        ],
+        "text": "33",
+        "confidence": 0.7056283056735992,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            675.0,
+            1165.0
+          ],
+          [
+            677.0,
+            1173.0
+          ]
+        ],
+        "bbox": [
+          661.0,
+          1157.0,
+          715.0,
+          1174.0
+        ],
+        "text": "at",
+        "confidence": 0.744167685508728,
+        "regions": []
+      }
+    ],
+    "confidence": 0.7248979955911636,
+    "timing_ms": 6226,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-17T12:14:20+00:00"
+}

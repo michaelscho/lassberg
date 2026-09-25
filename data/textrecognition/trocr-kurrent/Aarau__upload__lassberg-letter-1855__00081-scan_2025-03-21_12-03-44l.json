@@ -1,0 +1,400 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_trocr_corpus",
+  "model": "trocr-kurrent",
+  "engine": "trocr",
+  "doc_id": "Aarau/upload/lassberg-letter-1855",
+  "source": {
+    "name": "00081-scan_2025-03-21_12-03-44l.jpg",
+    "key": "Aarau__upload__lassberg-letter-1855__00081-scan_2025-03-21_12-03-44l",
+    "sha256": "eba2e4d937171715eca7d84b60e7c112de99b2e2bf0710de113b4eaed3fbf0da",
+    "bytes": 722906
+  },
+  "text": "der .\naß der\nwerden ,\nwerden .\n2\nBarlach\n3\n3",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          1136.0,
+          908.0
+        ],
+        [
+          1141.0,
+          1022.0
+        ]
+      ],
+      "bbox": [
+        1077.0,
+        905.0,
+        1181.0,
+        1022.0
+      ],
+      "text": "der .",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1156.0,
+          1432.0
+        ],
+        [
+          1167.0,
+          1647.0
+        ]
+      ],
+      "bbox": [
+        1101.0,
+        1430.0,
+        1205.0,
+        1647.0
+      ],
+      "text": "aß der",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1143.0,
+          1084.0
+        ],
+        [
+          1156.0,
+          1382.0
+        ]
+      ],
+      "bbox": [
+        1099.0,
+        1082.0,
+        1203.0,
+        1382.0
+      ],
+      "text": "werden ,",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          1169.0,
+          1699.0
+        ],
+        [
+          1183.0,
+          1920.0
+        ]
+      ],
+      "bbox": [
+        1116.0,
+        1695.0,
+        1238.0,
+        1920.0
+      ],
+      "text": "werden .",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          1185.0,
+          2083.0
+        ],
+        [
+          1187.0,
+          2019.0
+        ]
+      ],
+      "bbox": [
+        1052.0,
+        2015.0,
+        1225.0,
+        2083.0
+      ],
+      "text": "2",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          1280.0,
+          1496.0
+        ],
+        [
+          1291.0,
+          1731.0
+        ]
+      ],
+      "bbox": [
+        1238.0,
+        1494.0,
+        1331.0,
+        1731.0
+      ],
+      "text": "Barlach",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          1370.0,
+          1194.0
+        ],
+        [
+          1370.0,
+          1111.0
+        ]
+      ],
+      "bbox": [
+        1342.0,
+        1111.0,
+        1432.0,
+        1194.0
+      ],
+      "text": "3",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 7,
+      "baseline": [
+        [
+          1438.0,
+          2136.0
+        ],
+        [
+          1439.0,
+          2183.0
+        ]
+      ],
+      "bbox": [
+        1401.0,
+        2134.0,
+        1480.0,
+        2183.0
+      ],
+      "text": "3",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 29418,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "(Autriche)\n(Angleterre)\nLondon\nDomaine de Drozdovo\nLondon\nLadite Margueritte\nLadienne Marie\npour",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            1136.0,
+            908.0
+          ],
+          [
+            1141.0,
+            1022.0
+          ]
+        ],
+        "bbox": [
+          1077.0,
+          905.0,
+          1181.0,
+          1022.0
+        ],
+        "text": "(Autriche)",
+        "confidence": 0.7378247052431106,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            1156.0,
+            1432.0
+          ],
+          [
+            1167.0,
+            1647.0
+          ]
+        ],
+        "bbox": [
+          1101.0,
+          1430.0,
+          1205.0,
+          1647.0
+        ],
+        "text": "(Angleterre)",
+        "confidence": 0.7676256131380796,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            1143.0,
+            1084.0
+          ],
+          [
+            1156.0,
+            1382.0
+          ]
+        ],
+        "bbox": [
+          1099.0,
+          1082.0,
+          1203.0,
+          1382.0
+        ],
+        "text": "London",
+        "confidence": 0.6582548518975576,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            1169.0,
+            1699.0
+          ],
+          [
+            1183.0,
+            1920.0
+          ]
+        ],
+        "bbox": [
+          1116.0,
+          1695.0,
+          1238.0,
+          1920.0
+        ],
+        "text": "Domaine de Drozdovo",
+        "confidence": 0.8356396791182066,
+        "regions": []
+      },
+      {
+        "order": 4,
+        "baseline": [
+          [
+            1185.0,
+            2083.0
+          ],
+          [
+            1187.0,
+            2019.0
+          ]
+        ],
+        "bbox": [
+          1052.0,
+          2015.0,
+          1225.0,
+          2083.0
+        ],
+        "text": "London",
+        "confidence": 0.6685224398970604,
+        "regions": []
+      },
+      {
+        "order": 5,
+        "baseline": [
+          [
+            1280.0,
+            1496.0
+          ],
+          [
+            1291.0,
+            1731.0
+          ]
+        ],
+        "bbox": [
+          1238.0,
+          1494.0,
+          1331.0,
+          1731.0
+        ],
+        "text": "Ladite Margueritte",
+        "confidence": 0.7900721422500081,
+        "regions": []
+      },
+      {
+        "order": 6,
+        "baseline": [
+          [
+            1370.0,
+            1194.0
+          ],
+          [
+            1370.0,
+            1111.0
+          ]
+        ],
+        "bbox": [
+          1342.0,
+          1111.0,
+          1432.0,
+          1194.0
+        ],
+        "text": "Ladienne Marie",
+        "confidence": 0.6174891580428395,
+        "regions": []
+      },
+      {
+        "order": 7,
+        "baseline": [
+          [
+            1438.0,
+            2136.0
+          ],
+          [
+            1439.0,
+            2183.0
+          ]
+        ],
+        "bbox": [
+          1401.0,
+          2134.0,
+          1480.0,
+          2183.0
+        ],
+        "text": "pour",
+        "confidence": 0.39490339532494545,
+        "regions": []
+      }
+    ],
+    "confidence": 0.683791498113976,
+    "timing_ms": 10239,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-17T08:05:39+00:00"
+}

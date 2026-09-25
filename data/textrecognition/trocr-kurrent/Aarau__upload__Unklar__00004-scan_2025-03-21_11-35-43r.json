@@ -1,0 +1,124 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_trocr_corpus",
+  "model": "trocr-kurrent",
+  "engine": "trocr",
+  "doc_id": "Aarau/upload/Unklar",
+  "source": {
+    "name": "00004-scan_2025-03-21_11-35-43r.jpg",
+    "key": "Aarau__upload__Unklar__00004-scan_2025-03-21_11-35-43r",
+    "sha256": "8ce0d02c333379ebfb934d7865030b97ef9b34a45b2467c12280c83225e6a5a3",
+    "bytes": 878520
+  },
+  "text": "73\nist",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          1740.0,
+          1158.0
+        ],
+        [
+          1740.0,
+          1192.0
+        ]
+      ],
+      "bbox": [
+        1674.0,
+        1158.0,
+        1792.0,
+        1192.0
+      ],
+      "text": "73",
+      "confidence": null,
+      "regions": [
+        "_79c079db-fe34-425e-aafc-94bec5499b7a"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          2164.0,
+          1398.0
+        ],
+        [
+          2458.0,
+          1392.0
+        ]
+      ],
+      "bbox": [
+        2162.0,
+        1326.0,
+        2458.0,
+        1501.0
+      ],
+      "text": "ist",
+      "confidence": null,
+      "regions": [
+        "_79c079db-fe34-425e-aafc-94bec5499b7a"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla",
+  "timing_ms": 4871,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "1677\n1 verschij",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            1740.0,
+            1158.0
+          ],
+          [
+            1740.0,
+            1192.0
+          ]
+        ],
+        "bbox": [
+          1674.0,
+          1158.0,
+          1792.0,
+          1192.0
+        ],
+        "text": "1677",
+        "confidence": 0.4704836308956146,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            2164.0,
+            1398.0
+          ],
+          [
+            2458.0,
+            1392.0
+          ]
+        ],
+        "bbox": [
+          2162.0,
+          1326.0,
+          2458.0,
+          1501.0
+        ],
+        "text": "1 verschij",
+        "confidence": 0.7229813136160373,
+        "regions": []
+      }
+    ],
+    "confidence": 0.596732472255826,
+    "timing_ms": 5827,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-17T06:30:47+00:00"
+}

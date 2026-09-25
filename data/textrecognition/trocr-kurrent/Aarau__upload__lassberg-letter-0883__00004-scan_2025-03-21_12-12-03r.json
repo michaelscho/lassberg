@@ -1,0 +1,262 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_trocr_corpus",
+  "model": "trocr-kurrent",
+  "engine": "trocr",
+  "doc_id": "Aarau/upload/lassberg-letter-0883",
+  "source": {
+    "name": "00004-scan_2025-03-21_12-12-03r.jpg",
+    "key": "Aarau__upload__lassberg-letter-0883__00004-scan_2025-03-21_12-12-03r",
+    "sha256": "711c8fb8310d5aa76f4486bbc7690ffda09e6a123dd908a8f773fb73ac139976",
+    "bytes": 755578
+  },
+  "text": "|\nEr sprach aus mir\ndenen man ist es nicht\n2\nUre .",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          2067.0,
+          198.0
+        ],
+        [
+          2143.0,
+          198.0
+        ]
+      ],
+      "bbox": [
+        2067.0,
+        145.0,
+        2143.0,
+        219.0
+      ],
+      "text": "|",
+      "confidence": null,
+      "regions": [
+        "_c2856b9e-e734-4d98-ab80-569d10d1f86f"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          274.0,
+          303.0
+        ],
+        [
+          600.0,
+          311.0
+        ]
+      ],
+      "bbox": [
+        272.0,
+        252.0,
+        600.0,
+        355.0
+      ],
+      "text": "Er sprach aus mir",
+      "confidence": null,
+      "regions": [
+        "_90ac505b-8be1-41ff-8acb-ba11aa1bb2db"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          263.0,
+          379.0
+        ],
+        [
+          713.0,
+          385.0
+        ]
+      ],
+      "bbox": [
+        261.0,
+        344.0,
+        713.0,
+        421.0
+      ],
+      "text": "denen man ist es nicht",
+      "confidence": null,
+      "regions": [
+        "_90ac505b-8be1-41ff-8acb-ba11aa1bb2db"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          2064.0,
+          1877.0
+        ],
+        [
+          2065.0,
+          1844.0
+        ]
+      ],
+      "bbox": [
+        2034.0,
+        1842.0,
+        2102.0,
+        1877.0
+      ],
+      "text": "2",
+      "confidence": null,
+      "regions": [
+        "_f56811a8-a5d8-4502-b2f7-5ff8a13db3d0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          2095.0,
+          1932.0
+        ],
+        [
+          2307.0,
+          1938.0
+        ]
+      ],
+      "bbox": [
+        2093.0,
+        1884.0,
+        2307.0,
+        1989.0
+      ],
+      "text": "Ure .",
+      "confidence": null,
+      "regions": [
+        "_f56811a8-a5d8-4502-b2f7-5ff8a13db3d0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla",
+  "timing_ms": 25093,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "Ex sprachbruomir\nFranca. man in den 1. „\n2.\n2\nN Herse",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            274.0,
+            303.0
+          ],
+          [
+            600.0,
+            311.0
+          ]
+        ],
+        "bbox": [
+          272.0,
+          252.0,
+          600.0,
+          355.0
+        ],
+        "text": "Ex sprachbruomir",
+        "confidence": 0.8378142584115267,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            263.0,
+            379.0
+          ],
+          [
+            713.0,
+            385.0
+          ]
+        ],
+        "bbox": [
+          261.0,
+          344.0,
+          713.0,
+          421.0
+        ],
+        "text": "Franca. man in den 1. „",
+        "confidence": 0.7583029341438542,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            2067.0,
+            198.0
+          ],
+          [
+            2143.0,
+            198.0
+          ]
+        ],
+        "bbox": [
+          2067.0,
+          145.0,
+          2143.0,
+          219.0
+        ],
+        "text": "2.",
+        "confidence": 0.9317858517169952,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            2064.0,
+            1877.0
+          ],
+          [
+            2065.0,
+            1844.0
+          ]
+        ],
+        "bbox": [
+          2034.0,
+          1842.0,
+          2102.0,
+          1877.0
+        ],
+        "text": "2",
+        "confidence": 0.9634215831756592,
+        "regions": []
+      },
+      {
+        "order": 4,
+        "baseline": [
+          [
+            2095.0,
+            1932.0
+          ],
+          [
+            2307.0,
+            1938.0
+          ]
+        ],
+        "bbox": [
+          2093.0,
+          1884.0,
+          2307.0,
+          1989.0
+        ],
+        "text": "N Herse",
+        "confidence": 0.7138464408261436,
+        "regions": []
+      }
+    ],
+    "confidence": 0.8410342136548359,
+    "timing_ms": 6275,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-17T06:38:47+00:00"
+}

@@ -1,0 +1,124 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_trocr_corpus",
+  "model": "trocr-kurrent",
+  "engine": "trocr",
+  "doc_id": "Aarau/upload/Unklar",
+  "source": {
+    "name": "00003-scan_2025-03-21_11-35-42l.jpg",
+    "key": "Aarau__upload__Unklar__00003-scan_2025-03-21_11-35-42l",
+    "sha256": "eeb023be719a39a2907907bbb565e105985a65b5b31c9e28ff9300a6794a2a0a",
+    "bytes": 1051768
+  },
+  "text": "den\n|",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          359.0,
+          2706.0
+        ],
+        [
+          579.0,
+          2706.0
+        ]
+      ],
+      "bbox": [
+        359.0,
+        2647.0,
+        579.0,
+        2741.0
+      ],
+      "text": "den",
+      "confidence": null,
+      "regions": [
+        "_f5be13b9-d42c-4c51-b763-c9c161900966"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          2045.0,
+          3128.0
+        ],
+        [
+          2145.0,
+          3137.0
+        ]
+      ],
+      "bbox": [
+        2042.0,
+        3094.0,
+        2145.0,
+        3161.0
+      ],
+      "text": "|",
+      "confidence": null,
+      "regions": [
+        "_983489c1-7bcb-4ac9-a14f-c3f6a1e41f37"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla",
+  "timing_ms": 9727,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "1777\n128",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            359.0,
+            2706.0
+          ],
+          [
+            579.0,
+            2706.0
+          ]
+        ],
+        "bbox": [
+          359.0,
+          2647.0,
+          579.0,
+          2741.0
+        ],
+        "text": "1777",
+        "confidence": 0.7182554006576538,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            2045.0,
+            3128.0
+          ],
+          [
+            2145.0,
+            3137.0
+          ]
+        ],
+        "bbox": [
+          2042.0,
+          3094.0,
+          2145.0,
+          3161.0
+        ],
+        "text": "128",
+        "confidence": 0.5448984305063883,
+        "regions": []
+      }
+    ],
+    "confidence": 0.631576915582021,
+    "timing_ms": 16689,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-17T06:31:03+00:00"
+}

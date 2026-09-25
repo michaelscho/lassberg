@@ -1,0 +1,166 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_trocr_corpus",
+  "model": "trocr-kurrent",
+  "engine": "trocr",
+  "doc_id": "Aarau/upload/lassberg-letter-0788",
+  "source": {
+    "name": "00005-scan_2025-03-21_11-52-51l.jpg",
+    "key": "Aarau__upload__lassberg-letter-0788__00005-scan_2025-03-21_11-52-51l",
+    "sha256": "7c46ff5466b73b0c3e15a806f50816248cf4ad4fd0cbe54074cc77e720ee4896",
+    "bytes": 969651
+  },
+  "text": " .\nden\n126 .",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          1762.0,
+          932.0
+        ],
+        [
+          1818.0,
+          932.0
+        ]
+      ],
+      "bbox": [
+        1762.0,
+        909.0,
+        1818.0,
+        974.0
+      ],
+      "text": " .",
+      "confidence": null,
+      "regions": [
+        "_94ebaecb-d912-44f1-9e6f-c07efb90c937"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          2369.0,
+          2789.0
+        ],
+        [
+          2460.0,
+          2785.0
+        ]
+      ],
+      "bbox": [
+        2367.0,
+        2742.0,
+        2460.0,
+        2814.0
+      ],
+      "text": "den",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          2179.0,
+          2789.0
+        ],
+        [
+          2233.0,
+          2789.0
+        ]
+      ],
+      "bbox": [
+        2179.0,
+        2751.0,
+        2233.0,
+        2834.0
+      ],
+      "text": "126 .",
+      "confidence": null,
+      "regions": []
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla",
+  "timing_ms": 20710,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "1528 .\n10. III. 16\n1391",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            1762.0,
+            932.0
+          ],
+          [
+            1818.0,
+            932.0
+          ]
+        ],
+        "bbox": [
+          1762.0,
+          909.0,
+          1818.0,
+          974.0
+        ],
+        "text": "1528 .",
+        "confidence": 0.4559929668903351,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            2179.0,
+            2789.0
+          ],
+          [
+            2233.0,
+            2789.0
+          ]
+        ],
+        "bbox": [
+          2179.0,
+          2751.0,
+          2233.0,
+          2834.0
+        ],
+        "text": "10. III. 16",
+        "confidence": 0.7138771685686979,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            2369.0,
+            2789.0
+          ],
+          [
+            2460.0,
+            2785.0
+          ]
+        ],
+        "bbox": [
+          2367.0,
+          2742.0,
+          2460.0,
+          2814.0
+        ],
+        "text": "1391",
+        "confidence": 0.4521845877170563,
+        "regions": []
+      }
+    ],
+    "confidence": 0.540684907725363,
+    "timing_ms": 5315,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-17T06:35:43+00:00"
+}

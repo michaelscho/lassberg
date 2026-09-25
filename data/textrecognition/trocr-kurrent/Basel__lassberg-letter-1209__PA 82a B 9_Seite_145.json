@@ -1,0 +1,178 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_trocr_corpus",
+  "model": "trocr-kurrent",
+  "engine": "trocr",
+  "doc_id": "Basel/lassberg-letter-1209",
+  "source": {
+    "name": "PA 82a B 9_Seite_145.jpg",
+    "key": "Basel__lassberg-letter-1209__PA 82a B 9_Seite_145",
+    "sha256": "25c82947b65cebb0c948b98a1ae61552911af9ac2d8f8b5a456519298be24c92",
+    "bytes": 192067
+  },
+  "text": "nach Barlach\nSchna Kann ,\nabends",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          749.0,
+          731.0
+        ],
+        [
+          749.0,
+          596.0
+        ]
+      ],
+      "bbox": [
+        730.0,
+        596.0,
+        780.0,
+        731.0
+      ],
+      "text": "nach Barlach",
+      "confidence": null,
+      "regions": [
+        "_bd6d9871-3bc6-4b00-bc75-68ecddb03182"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          592.0,
+          738.0
+        ],
+        [
+          597.0,
+          944.0
+        ]
+      ],
+      "bbox": [
+        569.0,
+        737.0,
+        619.0,
+        944.0
+      ],
+      "text": "Schna Kann ,",
+      "confidence": null,
+      "regions": [
+        "_e3392ad4-cf07-4cef-8915-34a33414d534"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          647.0,
+          838.0
+        ],
+        [
+          652.0,
+          824.0
+        ],
+        [
+          650.0,
+          757.0
+        ]
+      ],
+      "bbox": [
+        627.0,
+        756.0,
+        672.0,
+        838.0
+      ],
+      "text": "abends",
+      "confidence": null,
+      "regions": [
+        "_e3392ad4-cf07-4cef-8915-34a33414d534"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 41174,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "Merch^t @ W^m. Lyon\nMerch^t\nWilliamsburg",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            592.0,
+            738.0
+          ],
+          [
+            597.0,
+            944.0
+          ]
+        ],
+        "bbox": [
+          569.0,
+          737.0,
+          619.0,
+          944.0
+        ],
+        "text": "Merch^t @ W^m. Lyon",
+        "confidence": 0.571976059361508,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            647.0,
+            838.0
+          ],
+          [
+            652.0,
+            824.0
+          ],
+          [
+            650.0,
+            757.0
+          ]
+        ],
+        "bbox": [
+          627.0,
+          756.0,
+          672.0,
+          838.0
+        ],
+        "text": "Merch^t",
+        "confidence": 0.6664871083838599,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            749.0,
+            731.0
+          ],
+          [
+            749.0,
+            596.0
+          ]
+        ],
+        "bbox": [
+          730.0,
+          596.0,
+          780.0,
+          731.0
+        ],
+        "text": "Williamsburg",
+        "confidence": 0.7413592313726743,
+        "regions": []
+      }
+    ],
+    "confidence": 0.659940799706014,
+    "timing_ms": 8456,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-17T08:26:19+00:00"
+}

@@ -1,0 +1,170 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_trocr_corpus",
+  "model": "trocr-kurrent",
+  "engine": "trocr",
+  "doc_id": "Briefe UB Freiburg/lassberg-letter-0172",
+  "source": {
+    "name": "006.jpg",
+    "key": "Briefe UB Freiburg__lassberg-letter-0172__006",
+    "sha256": "98697e384e5bc497336aa7851638f71adf8f28a8c4927f139a8c7ea00a716af4",
+    "bytes": 280915
+  },
+  "text": "zu\nunter- |\naus einem",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          921.0,
+          432.0
+        ],
+        [
+          957.0,
+          432.0
+        ]
+      ],
+      "bbox": [
+        921.0,
+        410.0,
+        957.0,
+        454.0
+      ],
+      "text": "zu",
+      "confidence": null,
+      "regions": [
+        "_7b91a590-a06d-4ebe-91f2-8268898db74e"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          992.0,
+          973.0
+        ],
+        [
+          1124.0,
+          972.0
+        ]
+      ],
+      "bbox": [
+        991.0,
+        932.0,
+        1124.0,
+        996.0
+      ],
+      "text": "unter- |",
+      "confidence": null,
+      "regions": [
+        "_57f321d2-8eb4-4136-bbc8-b75b942988c4"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          968.0,
+          1407.0
+        ],
+        [
+          1086.0,
+          1403.0
+        ]
+      ],
+      "bbox": [
+        967.0,
+        1372.0,
+        1086.0,
+        1432.0
+      ],
+      "text": "aus einem",
+      "confidence": null,
+      "regions": [
+        "_597fd9c6-0e20-4767-af59-2e671d43619e"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 6772,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "17\n139\n18",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            921.0,
+            432.0
+          ],
+          [
+            957.0,
+            432.0
+          ]
+        ],
+        "bbox": [
+          921.0,
+          410.0,
+          957.0,
+          454.0
+        ],
+        "text": "17",
+        "confidence": 0.5345426052808762,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            992.0,
+            973.0
+          ],
+          [
+            1124.0,
+            972.0
+          ]
+        ],
+        "bbox": [
+          991.0,
+          932.0,
+          1124.0,
+          996.0
+        ],
+        "text": "139",
+        "confidence": 0.48087794085343677,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            968.0,
+            1407.0
+          ],
+          [
+            1086.0,
+            1403.0
+          ]
+        ],
+        "bbox": [
+          967.0,
+          1372.0,
+          1086.0,
+          1432.0
+        ],
+        "text": "18",
+        "confidence": 0.632741168141365,
+        "regions": []
+      }
+    ],
+    "confidence": 0.5493872380918926,
+    "timing_ms": 12678,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-17T13:55:39+00:00"
+}

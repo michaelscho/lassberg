@@ -1,0 +1,124 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_trocr_corpus",
+  "model": "trocr-kurrent",
+  "engine": "trocr",
+  "doc_id": "Aarau/upload/lassberg-letter-0888",
+  "source": {
+    "name": "00009-scan_2025-03-21_12-12-39l.jpg",
+    "key": "Aarau__upload__lassberg-letter-0888__00009-scan_2025-03-21_12-12-39l",
+    "sha256": "cd52a89e3ebb511d20917fc63419a9a017d2786b346c6c428800dc5653f73728",
+    "bytes": 915578
+  },
+  "text": "Herr v. Laßberg\n30 dkg 1823",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          1995.0,
+          193.0
+        ],
+        [
+          2498.0,
+          200.0
+        ]
+      ],
+      "bbox": [
+        1993.0,
+        135.0,
+        2498.0,
+        249.0
+      ],
+      "text": "Herr v. Laßberg",
+      "confidence": null,
+      "regions": [
+        "_e1054a36-07f5-4137-a359-0bd26ac77dec"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1949.0,
+          291.0
+        ],
+        [
+          2284.0,
+          286.0
+        ]
+      ],
+      "bbox": [
+        1947.0,
+        245.0,
+        2284.0,
+        323.0
+      ],
+      "text": "30 dkg 1823",
+      "confidence": null,
+      "regions": [
+        "_e1054a36-07f5-4137-a359-0bd26ac77dec"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla",
+  "timing_ms": 5731,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "Jan v. Laßberg\n30 dag 1823",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            1995.0,
+            193.0
+          ],
+          [
+            2498.0,
+            200.0
+          ]
+        ],
+        "bbox": [
+          1993.0,
+          135.0,
+          2498.0,
+          249.0
+        ],
+        "text": "Jan v. Laßberg",
+        "confidence": 0.6969553977251053,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            1949.0,
+            291.0
+          ],
+          [
+            2284.0,
+            286.0
+          ]
+        ],
+        "bbox": [
+          1947.0,
+          245.0,
+          2284.0,
+          323.0
+        ],
+        "text": "30 dag 1823",
+        "confidence": 0.8786698606881228,
+        "regions": []
+      }
+    ],
+    "confidence": 0.7878126292066141,
+    "timing_ms": 6819,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-17T06:43:22+00:00"
+}

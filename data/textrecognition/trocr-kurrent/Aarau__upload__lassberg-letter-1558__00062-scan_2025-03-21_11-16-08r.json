@@ -1,0 +1,262 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_trocr_corpus",
+  "model": "trocr-kurrent",
+  "engine": "trocr",
+  "doc_id": "Aarau/upload/lassberg-letter-1558",
+  "source": {
+    "name": "00062-scan_2025-03-21_11-16-08r.jpg",
+    "key": "Aarau__upload__lassberg-letter-1558__00062-scan_2025-03-21_11-16-08r",
+    "sha256": "878250b26871338bd8c8203d14e38e3d60511124578049b7de6b9ded0c523537",
+    "bytes": 961181
+  },
+  "text": "|\ndh .\nder¬\nder\n1836 .",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          2194.0,
+          1247.0
+        ],
+        [
+          2255.0,
+          1253.0
+        ]
+      ],
+      "bbox": [
+        2190.0,
+        1188.0,
+        2255.0,
+        1314.0
+      ],
+      "text": "|",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          2190.0,
+          1664.0
+        ],
+        [
+          2255.0,
+          1668.0
+        ]
+      ],
+      "bbox": [
+        2188.0,
+        1614.0,
+        2255.0,
+        1684.0
+      ],
+      "text": "dh .",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          2201.0,
+          2439.0
+        ],
+        [
+          2250.0,
+          2441.0
+        ]
+      ],
+      "bbox": [
+        2199.0,
+        2390.0,
+        2250.0,
+        2462.0
+      ],
+      "text": "der¬",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          2201.0,
+          2704.0
+        ],
+        [
+          2241.0,
+          2704.0
+        ]
+      ],
+      "bbox": [
+        2201.0,
+        2636.0,
+        2241.0,
+        2726.0
+      ],
+      "text": "der",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          276.0,
+          3136.0
+        ],
+        [
+          550.0,
+          3123.0
+        ]
+      ],
+      "bbox": [
+        272.0,
+        3053.0,
+        550.0,
+        3161.0
+      ],
+      "text": "1836 .",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 6003,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "1856.\n1751\nvan\nhen,\n1600",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            276.0,
+            3136.0
+          ],
+          [
+            550.0,
+            3123.0
+          ]
+        ],
+        "bbox": [
+          272.0,
+          3053.0,
+          550.0,
+          3161.0
+        ],
+        "text": "1856.",
+        "confidence": 0.8134428858757019,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            2194.0,
+            1247.0
+          ],
+          [
+            2255.0,
+            1253.0
+          ]
+        ],
+        "bbox": [
+          2190.0,
+          1188.0,
+          2255.0,
+          1314.0
+        ],
+        "text": "1751",
+        "confidence": 0.6119713541120291,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            2190.0,
+            1664.0
+          ],
+          [
+            2255.0,
+            1668.0
+          ]
+        ],
+        "bbox": [
+          2188.0,
+          1614.0,
+          2255.0,
+          1684.0
+        ],
+        "text": "van",
+        "confidence": 0.50156469643116,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            2201.0,
+            2439.0
+          ],
+          [
+            2250.0,
+            2441.0
+          ]
+        ],
+        "bbox": [
+          2199.0,
+          2390.0,
+          2250.0,
+          2462.0
+        ],
+        "text": "hen,",
+        "confidence": 0.5355900526046753,
+        "regions": []
+      },
+      {
+        "order": 4,
+        "baseline": [
+          [
+            2201.0,
+            2704.0
+          ],
+          [
+            2241.0,
+            2704.0
+          ]
+        ],
+        "bbox": [
+          2201.0,
+          2636.0,
+          2241.0,
+          2726.0
+        ],
+        "text": "1600",
+        "confidence": 0.645068883895874,
+        "regions": []
+      }
+    ],
+    "confidence": 0.6215275745838881,
+    "timing_ms": 6629,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-17T07:50:16+00:00"
+}
