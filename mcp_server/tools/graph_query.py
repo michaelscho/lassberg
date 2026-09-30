@@ -22,7 +22,7 @@ per-type property list):
              occupation?, education?, birth?, death?})
   (:Place  {id, label, wikidata?, gnd?, url?, desc?, lat?, lon?})
   (:Work   {id, label, lit_type?, ana?, date?, idno?, author_label?, pub_place_label?})
-  (:Witness{id, label, witness_type?, settlement?, repository?, signature?, note?})
+  (:Witness{id, label, witness_type?, settlement?, repository?, signature?, hsp_id?, note?})
   (l:Letter)-[:SENT_BY]->(p:Person)
   (l:Letter)-[:SENT_TO]->(p:Person)
   (l:Letter)-[:SENT_FROM]->(pl:Place)

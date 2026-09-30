@@ -17,7 +17,7 @@ field list, shared with export_rdf.py and export_graph_json.py so all three runt
              occupation?, education?})
   (:Place  {id, label, wikidata?, gnd?, url?, desc?, lat?, lon?})
   (:Work   {id, label, lit_type?, ana?, date?, idno?, author_label?, pub_place_label?})
-  (:Witness{id, label, witness_type?, settlement?, repository?, signature?, note?})
+  (:Witness{id, label, witness_type?, settlement?, repository?, signature?, hsp_id?, note?})
 
   (l:Letter)-[:SENT_BY]->(p:Person)     - from all 3268 register letters
   (l:Letter)-[:SENT_TO]->(p:Person)     - from all 3268 register letters

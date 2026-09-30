@@ -1,0 +1,55 @@
+{
+ "letter_id": "lassberg-letter-1999",
+ "model": "claude-sonnet-5",
+ "mentions": [
+  {
+   "quote": "Weingartner codex",
+   "occurrence": 1,
+   "existing_rs": {
+    "type": "object",
+    "key": ""
+   },
+   "action": "retype",
+   "manuscript": {
+    "witness_id": "lassberg-witness-0290",
+    "proposed": null
+   },
+   "confidence": 0.95,
+   "rationale": "Weingartner Liederhandschrift, im Register.",
+   "resolved": {
+    "witness_id": "lassberg-witness-0290",
+    "how": "scan"
+   }
+  },
+  {
+   "quote": "eine pergament handschrift des XIV. Jarhunderts",
+   "occurrence": 1,
+   "existing_rs": {
+    "type": "object",
+    "key": ""
+   },
+   "action": "retype",
+   "manuscript": {
+    "witness_id": null,
+    "proposed": {
+     "name": "Martyrologium (Pergamenthandschrift, 14. Jh.)",
+     "settlement": null,
+     "repository": null,
+     "shelfmark": null,
+     "hsp_query": null
+    }
+   },
+   "confidence": 0.8,
+   "rationale": "Neu erworbene lateinische Martyrologium-Handschrift, nicht identifizierbar.",
+   "resolved": {
+    "witness_id": "",
+    "how": "decision-key-empty"
+   },
+   "decision": {
+    "hsp_id": null,
+    "reason": "zu unspezifisch; viele Martyrologien im HSP",
+    "by": "claude-sonnet-5.5 (reviewer)"
+   }
+  }
+ ]
+}

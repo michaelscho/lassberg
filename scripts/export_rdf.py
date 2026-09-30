@@ -37,7 +37,8 @@ with export_cypher.py/export_graph_json.py so all three runtimes carry the same 
                           schema:author <person/ID>|Literal ; schema:locationCreated <place/ID>|Literal .
   <witness/ID>            a schema:CreativeWork ; rdfs:label ; schema:exampleOfWork <work/ID> ;
                           voc:witnessType ; voc:settlement ; voc:repository ; dcterms:identifier (signature) ;
-                          schema:description (note) .
+                          voc:hspId "HSP-..." (Handschriftenportal Kulturobjekt) ; rdfs:seeAlso <HSP portal URL> ;
+                          schema:description (note) ; also a schema:ArchiveComponent .
 
 Letter resources additionally carry flat literal properties (not just the reified correspAction
 structure above) for easy SPARQL access: schema:dateCreated, schema:abstract (incipit),
@@ -65,6 +66,7 @@ from rdflib import BNode, Graph, Literal, Namespace, RDF, RDFS, URIRef, XSD
 from rdflib.namespace import DCTERMS, OWL
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+from lib_hsp import portal_url as hsp_portal_url  # noqa: E402
 from lib_pipeline import (  # noqa: E402
     effective_sent_place,
     entity_relationships,
@@ -172,6 +174,7 @@ def add_entities(g: Graph, base: Namespace, voc: Namespace, entities: dict):
     for eid, ent in entities["witnesses"].items():
         uri = entity_uri(base, "witness", eid)
         g.add((uri, RDF.type, SCHEMA.CreativeWork))
+        g.add((uri, RDF.type, SCHEMA.ArchiveComponent))
         label = ent["label"] or ent["repository"] or ent["signature"] or eid
         g.add((uri, RDFS.label, Literal(label)))
         if ent.get("witness_type"):
@@ -182,6 +185,9 @@ def add_entities(g: Graph, base: Namespace, voc: Namespace, entities: dict):
             g.add((uri, voc.repository, Literal(ent["repository"])))
         if ent.get("signature"):
             g.add((uri, DCTERMS.identifier, Literal(ent["signature"])))
+        if ent.get("hsp_id"):
+            g.add((uri, voc.hspId, Literal(ent["hsp_id"])))
+            g.add((uri, RDFS.seeAlso, URIRef(hsp_portal_url(ent["hsp_id"]))))
         if ent.get("note"):
             g.add((uri, SCHEMA.description, Literal(ent["note"])))
         # WITNESS_OF (schema:exampleOfWork) is added below via entity_relationships().
