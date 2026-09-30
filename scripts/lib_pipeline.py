@@ -156,6 +156,7 @@ def witness_properties(ent: dict) -> dict:
         "settlement": ent.get("settlement"),
         "repository": ent.get("repository"),
         "signature": ent.get("signature"),
+        "hsp_id": ent.get("hsp_id"),
         "note": ent.get("note"),
     })
 

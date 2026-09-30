@@ -29,7 +29,7 @@ Lektüre der Wackernagel-Briefe (1730–1743) und aller `rs type="object"`-Beleg
 | 1766 | „Berliner codex“, „schönen carolingischen Codex“ | `object` | Berliner: `witness key=""` bzw. identifizieren; „carolingischer Codex“ spezifisch nach Kontext |
 | 1787 | „meine handschrift“ / „meiner eigenen Handschrift“ | `object` | `witness` nur, wenn Kontext eine bestimmte Hs. nennt; sonst nicht auszeichnen |
 | 1741, 1802, 1999, 2319 | „Handschriften“ (Plural, unspezifisch) | `object` | **nicht** auszeichnen (Regel 3); bestehendes `object` bleibt |
-| 1214 (u. a.) | „Myllers Sammlung“, „Müllersche Sammlung“ | `bibl` | bleibt `bibl` (gedruckte Sammlung) |
+| 1039, 1044, 1051 | „Myllers Sammlung“, „Müllersche Sammlung“ | `bibl` | bleibt `bibl` (gedruckte Sammlung) |
 | 1015, 1051, 1370 | „Codex trad. S. Gallensium“, „Cod. diplom. …“ | `bibl` | bleibt `bibl` (Urkundenbuch/Edition, kein einzelner Textzeuge) |
 | 1015, 1044, 1164, … | „Urkunde(n)“ | `object` | bleibt (Urkunden, nicht Gegenstand des Handschriftenscans) |
 | 2319 | „Merseburger Missale“ | `object` | `witness` (Hs., identifizierbar über HSP prüfen) |

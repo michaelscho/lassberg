@@ -3,15 +3,15 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Handschriften- und Druckexemplare (Textzeugen), die in der
-                    Laßberg-Korrespondenz erwähnt werden</title>
+                <title>Handschriften, die in der Laßberg-Korrespondenz erwähnt werden oder aus
+                    Laßbergs Besitz stammen</title>
                 <respStmt>
                     <name xml:id="MiS">Michael Schonhardt</name>
                     <resp>Konzeption, Datenmodell und Kodierung nach TEI</resp>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
-                <p>Born digital. In Vorbereitung.</p>
+                <p>Born digital. In Vorbereitung. Beschreibungen: Handschriftenportal (HSP).</p>
             </publicationStmt>
             <sourceDesc>
                 <p>Born digital. Erstellt aus der Analyse der Laßberg-Korrespondenz.</p>
@@ -20,30 +20,2708 @@
     </teiHeader>
     <text>
         <body>
-            <listWit>
-                <!-- Vorlage für neue Einträge, siehe docs/TEI.md, Abschnitt "Handschriften- und
-                     Druckexemplare (Textzeugen)":
+            <listBibl>
+                <!-- Vorlage für neue Einträge, siehe docs/TEI.md, Abschnitt "Handschriftenregister".
+                     Pflicht ist nur msIdentifier; @ana="needs-review" bei unsicherer Identifizierung.
 
-                <witness xml:id="lassberg-witness-0001" type="manuscript"
-                    corresp="../register/lassberg-literature.xml#lassberg-literature-NNNN">
-                    <bibl>
-                        <settlement></settlement>
-                        <repository></repository>
-                        <idno type="signature"></idno>
-                    </bibl>
-                </witness>
-
-                <witness xml:id="lassberg-witness-0002" type="print"
-                    corresp="../register/lassberg-literature.xml#lassberg-literature-NNNN">
-                    <bibl>
-                        <settlement></settlement>
-                        <repository></repository>
-                        <idno type="signature"></idno>
-                        <note>Provenienz-/Anmerkungshinweis, sofern bekannt.</note>
-                    </bibl>
-                </witness>
+                <msDesc xml:id="lassberg-witness-NNNN">
+                    <msIdentifier>
+                        <settlement>Ort</settlement>
+                        <repository>Bibliothek</repository>
+                        <idno type="shelfmark">Signatur</idno>
+                        <altIdentifier type="hsp"><idno>HSP-…</idno></altIdentifier>
+                        <msName>Name der Handschrift</msName>
+                    </msIdentifier>
+                    <msContents><msItem><title key="../register/lassberg-literature.xml#lassberg-literature-NNNN">Werk</title></msItem></msContents>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. NNN)</provenance></history>
+                    <note>Identifizierung/Quelle</note>
+                </msDesc>
                 -->
-            </listWit>
+                <msDesc xml:id="lassberg-witness-0001">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen B II 1</idno>
+                        <altIdentifier type="hsp"><idno>HSP-df2ddfa2-bf5e-3198-b936-0215ae620fae</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0002">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen C III b 1</idno>
+                        <altIdentifier type="hsp"><idno>HSP-d1dc28bc-a139-3810-bc9c-e327e8e45741</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0003">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen D 2,1</idno>
+                        <altIdentifier type="hsp"><idno>HSP-9e103eb4-2feb-3f22-b182-fb51bbe25326</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0004">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen E III 1</idno>
+                        <altIdentifier type="hsp"><idno>HSP-e7fc6ac5-e529-3008-b072-bda703d3a22b</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0005">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen A III 2</idno>
+                        <altIdentifier type="hsp"><idno>HSP-477e5c12-481d-348c-bfcf-e04c9b34cca2</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0006">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen C I 2</idno>
+                        <altIdentifier type="hsp"><idno>HSP-7659abc0-b392-3597-8a83-fd09fe84438a</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0007">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen B VI 2</idno>
+                        <altIdentifier type="hsp"><idno>HSP-05c56a5c-dde1-3fa7-8a8a-33ebfabdddf4</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0008">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen C III b 2</idno>
+                        <altIdentifier type="hsp"><idno>HSP-a30b360d-23d9-3cef-9635-d3cabb05ffdd</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0009">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen E III 2</idno>
+                        <altIdentifier type="hsp"><idno>HSP-8a9845d6-a492-3a8a-8dfc-03783edba690</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0010">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen D 2,2</idno>
+                        <altIdentifier type="hsp"><idno>HSP-c68a784e-6f52-3ec9-8602-8cf9af4aadcc</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0011">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen A III 3</idno>
+                        <altIdentifier type="hsp"><idno>HSP-9e9fb13b-fefe-3c69-826f-7488fda60e67</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0012">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen B IV 3</idno>
+                        <altIdentifier type="hsp"><idno>HSP-8850d028-ec2b-3883-bd73-20aa7cbdf6f3</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0013">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen C III b 3</idno>
+                        <altIdentifier type="hsp"><idno>HSP-76af8fc1-a7ce-3058-a670-d505226b727a</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0014">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen D 3</idno>
+                        <altIdentifier type="hsp"><idno>HSP-ac910d3f-2208-36a9-abe8-3433577e71f7</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0015">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen A III 4</idno>
+                        <altIdentifier type="hsp"><idno>HSP-579a03d9-1b84-3b81-be6c-af00705d4313</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0016">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen B V 4</idno>
+                        <altIdentifier type="hsp"><idno>HSP-0f9d74ad-028d-39ae-a6bd-89da4eb1a136</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0017">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen C III b 4</idno>
+                        <altIdentifier type="hsp"><idno>HSP-35af1e5d-2c45-3797-83ea-dc520e0bd842</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0018">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen A III 5</idno>
+                        <altIdentifier type="hsp"><idno>HSP-08960ffd-3b1e-39e1-99f3-b9f2d6352951</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0019">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen C III 5</idno>
+                        <altIdentifier type="hsp"><idno>HSP-036eda9a-2951-3b6b-98ac-e3caef3d17a4</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0020">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen D 5</idno>
+                        <altIdentifier type="hsp"><idno>HSP-870087bf-47b4-349d-839d-884beac033c8</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0021">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen A III 6</idno>
+                        <altIdentifier type="hsp"><idno>HSP-1278a46e-1122-32e6-a144-3d838df52978</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0022">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen A III 7</idno>
+                        <altIdentifier type="hsp"><idno>HSP-e04bb33e-e6d1-350b-91dc-fce3a448a249</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0023">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen B III 7</idno>
+                        <altIdentifier type="hsp"><idno>HSP-13e8e7c2-fd1f-3084-b1b8-04729593d578</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0024">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen C III b 7</idno>
+                        <altIdentifier type="hsp"><idno>HSP-fc80226b-e5b9-3569-a952-e52d9e0eb39b</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0025">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen A III 8</idno>
+                        <altIdentifier type="hsp"><idno>HSP-e2fe05f7-202a-308d-b43b-2cb711720f09</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0026">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen B II 8</idno>
+                        <altIdentifier type="hsp"><idno>HSP-9ae2ecce-09cd-38c3-b4b3-75ffeef92f71</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0027">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen B III 8</idno>
+                        <altIdentifier type="hsp"><idno>HSP-50f764e5-5375-353d-a2fc-38547560f2c7</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0028">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen B V 8</idno>
+                        <altIdentifier type="hsp"><idno>HSP-25841236-23fa-391f-9612-c8100f264490</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0029">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen B VI 8</idno>
+                        <altIdentifier type="hsp"><idno>HSP-a06fa467-1446-30b2-b371-fbc29a719315</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0030">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen A III 9</idno>
+                        <altIdentifier type="hsp"><idno>HSP-fe9c65d1-60ed-35c2-971e-d5ce98e65b3f</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0031">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen B VI 9</idno>
+                        <altIdentifier type="hsp"><idno>HSP-69457d8d-4c85-314e-aecb-10b2aa61eb51</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0032">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen C III b 9</idno>
+                        <altIdentifier type="hsp"><idno>HSP-8e4475f1-2dfc-3594-864d-4d895c4e4851</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0033">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen D 9</idno>
+                        <altIdentifier type="hsp"><idno>HSP-b17265d7-93f6-3d3f-832f-623f45bc31da</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0034">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen A II 10</idno>
+                        <altIdentifier type="hsp"><idno>HSP-7d6ce190-6d6c-319d-a5c4-393ed71536aa</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0035">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen A III 10</idno>
+                        <altIdentifier type="hsp"><idno>HSP-a93e0102-f249-33f4-b433-fd6c9aa34a7e</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0036">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen B III 10</idno>
+                        <altIdentifier type="hsp"><idno>HSP-6d7f2a9a-4aba-3d7d-91e3-03d65ef72c02</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0037">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen C III b 10</idno>
+                        <altIdentifier type="hsp"><idno>HSP-134849d0-9e56-361b-8cc6-54bd223678dc</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0038">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 11</idno>
+                        <altIdentifier type="hsp"><idno>HSP-941bdddc-a578-39a2-ba2c-0fa58bfcde88</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0039">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen A III 11</idno>
+                        <altIdentifier type="hsp"><idno>HSP-1134a844-cd57-3f41-b646-fb2563444ade</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0040">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen B III 11</idno>
+                        <altIdentifier type="hsp"><idno>HSP-98e8983a-f169-36f9-b311-ed53acf3cb99</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0041">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen A III 12</idno>
+                        <altIdentifier type="hsp"><idno>HSP-f9e7344b-6596-3668-a14f-66239c39570b</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0042">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen B III 12</idno>
+                        <altIdentifier type="hsp"><idno>HSP-20f77b95-53cb-316c-bd23-cf97a11defb8</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0043">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen B V 12</idno>
+                        <altIdentifier type="hsp"><idno>HSP-e6b86c31-d2da-3c21-8292-90ff80a21faa</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0044">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen C III b 12</idno>
+                        <altIdentifier type="hsp"><idno>HSP-36ea09c3-35ce-387c-b1db-6aa943f07988</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0045">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen B V 13</idno>
+                        <altIdentifier type="hsp"><idno>HSP-00a42778-6ec6-3c31-bbda-eb16797797b6</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0046">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen A II 14</idno>
+                        <altIdentifier type="hsp"><idno>HSP-4d0e65ac-8d39-3376-97d7-c04a0483500e</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0047">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen B V 16</idno>
+                        <altIdentifier type="hsp"><idno>HSP-4d8e0d4e-aea1-30f5-912d-d6de8f0b43bf</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0048">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen A III 19</idno>
+                        <altIdentifier type="hsp"><idno>HSP-9a92750c-8d5d-388c-914e-c5e85a621527</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0049">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen A III 20</idno>
+                        <altIdentifier type="hsp"><idno>HSP-644ede30-25c7-371d-9938-ba951cfd94f7</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0050">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen A III 22</idno>
+                        <altIdentifier type="hsp"><idno>HSP-433e4010-ce6f-360d-ade8-c0bfc8bfff07</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0051">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen A III 23</idno>
+                        <altIdentifier type="hsp"><idno>HSP-53d156e8-331b-3c07-be28-d322e5439ebd</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0052">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen A II 24</idno>
+                        <altIdentifier type="hsp"><idno>HSP-77aa73fb-d5ac-3575-8fde-77842356643a</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0053">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen A III 24</idno>
+                        <altIdentifier type="hsp"><idno>HSP-c8540b69-8a7f-3ffc-87c2-aea31b3e8c37</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0054">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen B III 24</idno>
+                        <altIdentifier type="hsp"><idno>HSP-73a6ecda-fcac-31dd-8dd2-c6607362c94f</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0055">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen A III 25</idno>
+                        <altIdentifier type="hsp"><idno>HSP-855f095d-26e0-30b0-b596-36fadd64c1cf</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0056">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen C III b 26</idno>
+                        <altIdentifier type="hsp"><idno>HSP-26b625e9-6718-3871-8b78-76ca7afa6e75</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0057">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen A III 27</idno>
+                        <altIdentifier type="hsp"><idno>HSP-8503c615-da5d-316f-8457-bb720ddef1ab</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0058">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen C III b 27</idno>
+                        <altIdentifier type="hsp"><idno>HSP-5d43fa81-13af-3295-adac-f604ad90b5ae</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0059">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen A III 28</idno>
+                        <altIdentifier type="hsp"><idno>HSP-beafff94-3ba2-3968-a2e6-7a2b840548fa</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0060">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen A III 29</idno>
+                        <altIdentifier type="hsp"><idno>HSP-5ca64c22-4fcc-3b46-8877-b87220024738</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0061">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen C III b 31</idno>
+                        <altIdentifier type="hsp"><idno>HSP-35e4f217-892d-3d16-9d31-55e50126554c</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0062">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen A III 32</idno>
+                        <altIdentifier type="hsp"><idno>HSP-06723de7-0f11-36ab-82a6-7fc952066bfd</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0063">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen A III 33</idno>
+                        <altIdentifier type="hsp"><idno>HSP-33e59cc2-cc87-3989-920d-4da037c06a51</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0064">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen A III 35</idno>
+                        <altIdentifier type="hsp"><idno>HSP-7e669195-6b55-3718-a084-916637eb0984</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0065">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen A III 48</idno>
+                        <altIdentifier type="hsp"><idno>HSP-a3e7b6fc-b211-3c6a-bdd5-557ff2728940</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0066">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen A III 49</idno>
+                        <altIdentifier type="hsp"><idno>HSP-63d69f31-ecfd-3bde-a571-b68778da4919</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0067">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 50</idno>
+                        <altIdentifier type="hsp"><idno>HSP-f8897fde-ccb6-35a8-ad96-5e29bd74208c</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0068">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen A III 50</idno>
+                        <altIdentifier type="hsp"><idno>HSP-9bd19867-9303-34f8-b017-cee9090708b9</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0069">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 51</idno>
+                        <altIdentifier type="hsp"><idno>HSP-6f5278ee-3026-3942-b9ae-89fd0b06b091</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0070">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 52</idno>
+                        <altIdentifier type="hsp"><idno>HSP-d7d19d70-4ab5-3862-972e-919576d06981</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0071">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 53</idno>
+                        <altIdentifier type="hsp"><idno>HSP-593a0e78-c1bf-307d-88e4-29526fa7b5cd</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0072">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen A III 53</idno>
+                        <altIdentifier type="hsp"><idno>HSP-7fe3b08c-e834-3a19-9fa4-3c821354904c</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0073">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 54</idno>
+                        <altIdentifier type="hsp"><idno>HSP-26fa3e6e-3488-3317-8b2c-f4fbc76467d8</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0074">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 55</idno>
+                        <altIdentifier type="hsp"><idno>HSP-4a4139e8-8bb3-3818-bcbc-3239198dbd1e</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0075">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 56</idno>
+                        <altIdentifier type="hsp"><idno>HSP-0e78d6f0-8cbf-3fa3-bb99-815ac0e1bf75</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0076">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 57</idno>
+                        <altIdentifier type="hsp"><idno>HSP-bb076424-cc7a-3045-ad68-b3523de26e60</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0077">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen A III 57</idno>
+                        <altIdentifier type="hsp"><idno>HSP-b06117d8-8826-37fb-a931-c583f131bdec</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0078">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 58</idno>
+                        <altIdentifier type="hsp"><idno>HSP-bc97293c-0d82-30eb-b574-c58da76f1a4d</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0079">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 63</idno>
+                        <altIdentifier type="hsp"><idno>HSP-ea91c7ad-4d93-3fb4-8faf-1301b1dba70c</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 174</idno></altIdentifier>
+                        <msName>Nibelungenlied, Handschrift C (Hohenems-Laßberg)</msName>
+                    </msIdentifier>
+                    <msContents><msItem><title key="../register/lassberg-literature.xml#lassberg-literature-0114">Nibelungenlied</title></msItem></msContents>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 174)</provenance></history>
+                    <note>Migriert aus lassberg-literature-0234 (Brief 0627); Nibelungen C = Cod. Donaueschingen 63, Laßberg-Nr. 174.</note>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0080">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 64</idno>
+                        <altIdentifier type="hsp"><idno>HSP-31655ad3-cde6-3c7d-b0a6-dff36cb6843e</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0081">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 66</idno>
+                        <altIdentifier type="hsp"><idno>HSP-1244bf27-76de-3d0b-a81e-d57aec934668</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 223</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 223)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0082">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 67</idno>
+                        <altIdentifier type="hsp"><idno>HSP-423feb6b-cf26-3213-974a-9a4af84f18a2</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 203</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 203)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0083">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 68</idno>
+                        <altIdentifier type="hsp"><idno>HSP-4c50f7dd-8057-3084-b9c7-5b4f0d7bd581</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 215</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 215)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0084">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 69</idno>
+                        <altIdentifier type="hsp"><idno>HSP-eca8b20a-a06a-3eb3-93aa-feb39410cf0c</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0085">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 70</idno>
+                        <altIdentifier type="hsp"><idno>HSP-66a860e9-f506-3899-b7ba-74f8a4d35727</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 186</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 186)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0086">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 71</idno>
+                        <altIdentifier type="hsp"><idno>HSP-1ac923bc-aca6-3067-93d4-240bf398fc5c</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0087">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 72</idno>
+                        <altIdentifier type="hsp"><idno>HSP-e8db0dc3-52f6-33c6-93e7-7d0b61b0c1a6</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 204</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 204)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0088">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 73</idno>
+                        <altIdentifier type="hsp"><idno>HSP-76153bee-8501-3630-93c1-aa943f85ba68</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 176</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 176)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0089">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 74</idno>
+                        <altIdentifier type="hsp"><idno>HSP-58bc2371-1364-31bf-b940-2959267f60ab</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 175</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 175)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0090">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 76</idno>
+                        <altIdentifier type="hsp"><idno>HSP-d1cea0b6-1d48-38ef-b142-f476fe3dfe75</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0091">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 77</idno>
+                        <altIdentifier type="hsp"><idno>HSP-5c995ce7-c173-37ac-a5b4-2f05414e1fbd</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 179</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 179)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0092">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 78</idno>
+                        <altIdentifier type="hsp"><idno>HSP-96b7a2a1-f5d8-37f4-bf65-1c6f4b472e68</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0093">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 79</idno>
+                        <altIdentifier type="hsp"><idno>HSP-9bc80794-51fd-3e33-94b8-4b1602ed6faa</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0094">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 80</idno>
+                        <altIdentifier type="hsp"><idno>HSP-c7d3f08b-deb5-3337-a399-e29e3296013d</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0095">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 81</idno>
+                        <altIdentifier type="hsp"><idno>HSP-ce654728-ebdf-3fe6-9515-02a5d79dfd87</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0096">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 82</idno>
+                        <altIdentifier type="hsp"><idno>HSP-7ecb5382-7f93-39c9-b79c-81638bfa2791</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0097">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 83</idno>
+                        <altIdentifier type="hsp"><idno>HSP-4f4b23e7-5199-3d31-9505-d81bfa27f08d</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 211</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 211)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0098">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 84</idno>
+                        <altIdentifier type="hsp"><idno>HSP-b7ae5441-aba8-3301-9b51-abc890acf22a</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 212</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 212)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0099">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 85</idno>
+                        <altIdentifier type="hsp"><idno>HSP-c3261d37-f225-3db5-b7ee-4ff3e37579a2</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0100">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 86</idno>
+                        <altIdentifier type="hsp"><idno>HSP-ea7b0851-7042-3a32-9bbe-f7aa7065f0ee</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0101">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 87</idno>
+                        <altIdentifier type="hsp"><idno>HSP-d5b9361b-dd78-3b52-b94a-ab877cbbb798</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0102">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 88</idno>
+                        <altIdentifier type="hsp"><idno>HSP-2176ef14-2e51-3ac4-b9c2-c9e4b1bb363c</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 218</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 218)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0103">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 89</idno>
+                        <altIdentifier type="hsp"><idno>HSP-59eeb9ec-c6ed-308d-9e50-c1d4d1fe0c83</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0104">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 90</idno>
+                        <altIdentifier type="hsp"><idno>HSP-5370d2d4-06fd-321b-91e6-09a372890a12</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0105">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 91</idno>
+                        <altIdentifier type="hsp"><idno>HSP-e2347514-4cdc-3081-a392-6c01ab449a9d</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0106">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 92</idno>
+                        <altIdentifier type="hsp"><idno>HSP-8df42ad4-2ba9-3daf-a420-8625cd037ac7</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 190</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 190)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0107">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 93</idno>
+                        <altIdentifier type="hsp"><idno>HSP-996a8ab7-2ad5-3dac-86dc-d9a7fc02637d</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0108">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 94</idno>
+                        <altIdentifier type="hsp"><idno>HSP-344ed4cd-0ae7-35e5-b8af-a15c841605a5</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0109">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 95</idno>
+                        <altIdentifier type="hsp"><idno>HSP-9bff85dc-55e4-31cb-8cde-2ae62e8d3ebc</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 214</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 214)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0110">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 96</idno>
+                        <altIdentifier type="hsp"><idno>HSP-6880d28c-ffc6-39f6-9e97-f62744364a6a</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0111">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 97</idno>
+                        <altIdentifier type="hsp"><idno>HSP-49df2b1e-34b8-3a54-b67e-0d1001e766ea</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0112">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 99</idno>
+                        <altIdentifier type="hsp"><idno>HSP-85e1ee08-8091-3c90-8b93-b1df50651de3</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0113">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 100</idno>
+                        <altIdentifier type="hsp"><idno>HSP-2af49c90-bf93-3042-b68d-1ac59f7faefd</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0114">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 101</idno>
+                        <altIdentifier type="hsp"><idno>HSP-9595b803-f48f-3c82-b6f2-8332c772cb0d</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0115">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 102</idno>
+                        <altIdentifier type="hsp"><idno>HSP-b62c17d8-bb06-3d10-adbc-fccfe9d83e07</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0116">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 103</idno>
+                        <altIdentifier type="hsp"><idno>HSP-3133e409-8a59-3b42-b433-1f285eb67042</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0117">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 104</idno>
+                        <altIdentifier type="hsp"><idno>HSP-96a15530-bf95-375e-a6a9-e34efb79e8fb</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 177</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 177)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0118">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 106</idno>
+                        <altIdentifier type="hsp"><idno>HSP-6c930a96-775e-3a48-80e6-596a1db0e274</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0119">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 107</idno>
+                        <altIdentifier type="hsp"><idno>HSP-8b29460e-0e02-3c1a-962d-7ffaf070b7f4</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 181</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 181)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0120">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 108</idno>
+                        <altIdentifier type="hsp"><idno>HSP-dd90c7ec-87e7-3716-a123-a3e987a52b55</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0121">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 109</idno>
+                        <altIdentifier type="hsp"><idno>HSP-d82573c4-e0c7-37dc-9208-ed9ee10f245d</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 195</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 195)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0122">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 110</idno>
+                        <altIdentifier type="hsp"><idno>HSP-2b779d49-b34a-3564-8e04-65a09a82b257</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 87</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 87)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0123">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 112</idno>
+                        <altIdentifier type="hsp"><idno>HSP-d1621618-141f-314e-b596-d50703f7bb42</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 182</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 182)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0124">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 113</idno>
+                        <altIdentifier type="hsp"><idno>HSP-9f926ebf-10bb-3d20-88e0-9c8c506be721</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 189</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 189)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0125">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 114</idno>
+                        <altIdentifier type="hsp"><idno>HSP-9ac7779f-d662-34a5-a8f8-6bccf87b549b</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 216</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 216)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0126">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 115</idno>
+                        <altIdentifier type="hsp"><idno>HSP-4016433d-33c4-30b2-979a-4d4d220fad94</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0127">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 116</idno>
+                        <altIdentifier type="hsp"><idno>HSP-c7be4edd-9935-3942-a1ba-615bd68da72a</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 31</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 31)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0128">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 117</idno>
+                        <altIdentifier type="hsp"><idno>HSP-6542ec5c-cf83-326d-97ae-105ce67e3756</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0129">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 118</idno>
+                        <altIdentifier type="hsp"><idno>HSP-8a28a11c-1699-3f3d-a959-981cbb7b2352</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 241</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 241)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0130">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 119</idno>
+                        <altIdentifier type="hsp"><idno>HSP-e03bca77-9acf-3204-9121-83cc03d95cd5</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 245</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 245)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0131">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 120</idno>
+                        <altIdentifier type="hsp"><idno>HSP-8f8428dc-9cb1-35dd-9c20-fdfab0749655</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 263</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 263)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0132">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 121</idno>
+                        <altIdentifier type="hsp"><idno>HSP-6d692352-5040-3daf-92e6-e10e6dadb784</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 196</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 196)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0133">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 122</idno>
+                        <altIdentifier type="hsp"><idno>HSP-0753b52f-d6d2-34a2-a599-4fca54fac7a5</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0134">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 129</idno>
+                        <altIdentifier type="hsp"><idno>HSP-025a0302-cbea-3a34-9c20-592e9c885e7b</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 205</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 205)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0135">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 130</idno>
+                        <altIdentifier type="hsp"><idno>HSP-2df880b2-2e84-3e5e-b266-fabe1deeef88</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 98</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 98)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0136">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 131</idno>
+                        <altIdentifier type="hsp"><idno>HSP-dbcc23ec-1f98-3853-b3b4-006e87e9d7d2</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 206</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 206)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0137">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 136</idno>
+                        <altIdentifier type="hsp"><idno>HSP-022dd26f-1d1b-3490-acff-8192d5d1ce1b</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0138">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 137</idno>
+                        <altIdentifier type="hsp"><idno>HSP-f6e236e2-f848-36da-8781-4244b5b2186a</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0139">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 140</idno>
+                        <altIdentifier type="hsp"><idno>HSP-9e585e03-1165-3d80-bc4a-35129d70b7d9</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0140">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 141</idno>
+                        <altIdentifier type="hsp"><idno>HSP-1f77ebc5-da60-3c69-87d9-413d452a02a5</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0141">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 142</idno>
+                        <altIdentifier type="hsp"><idno>HSP-9bf09489-f82c-377a-9ca0-88fe0aaae195</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 185</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 185)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0142">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 143</idno>
+                        <altIdentifier type="hsp"><idno>HSP-75128c7c-ff29-33af-bcb1-3c7811341c87</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0143">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 144</idno>
+                        <altIdentifier type="hsp"><idno>HSP-3dfe8c8d-5e25-3197-be1e-5be5eaa5e1b8</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 192</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 192)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0144">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 145</idno>
+                        <altIdentifier type="hsp"><idno>HSP-90160700-740b-331a-a019-337494845693</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0145">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 146</idno>
+                        <altIdentifier type="hsp"><idno>HSP-f88a15a1-5554-3cd7-a754-8cf53168c08a</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0146">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 147</idno>
+                        <altIdentifier type="hsp"><idno>HSP-c87a6c65-17c8-3fb0-b95f-840b5d024963</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0147">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 148</idno>
+                        <altIdentifier type="hsp"><idno>HSP-491f52f3-a36e-3472-af35-a6be58ec1ca9</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0148">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 149</idno>
+                        <altIdentifier type="hsp"><idno>HSP-fa6d2b67-fc8c-39fa-aab1-5bb48064e67d</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0149">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 150</idno>
+                        <altIdentifier type="hsp"><idno>HSP-c9a30c9d-8713-3440-87ac-0b3a765a2687</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0150">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 151</idno>
+                        <altIdentifier type="hsp"><idno>HSP-f6e4fc1d-97f9-3414-b6d4-6dd4628fece7</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 188</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 188)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0151">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 152</idno>
+                        <altIdentifier type="hsp"><idno>HSP-a0f8c101-ecf0-3442-86ac-9d212e7078eb</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 193</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 193)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0152">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 153</idno>
+                        <altIdentifier type="hsp"><idno>HSP-8218bdee-523b-33f6-9eef-7947a87c925c</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0153">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 156</idno>
+                        <altIdentifier type="hsp"><idno>HSP-8932aa0b-c54f-30a1-ace3-419fc4107a3d</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 213</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 213)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0154">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 179</idno>
+                        <altIdentifier type="hsp"><idno>HSP-6962ca26-be17-327c-8d84-9c57be1c72d0</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 29</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 29)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0155">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 187</idno>
+                        <altIdentifier type="hsp"><idno>HSP-f5183b0a-5777-3b4c-afe4-8905619a9bb3</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0156">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 189</idno>
+                        <altIdentifier type="hsp"><idno>HSP-ed1bed4e-a660-358d-8077-45ecae1055da</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 26</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 26)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0157">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 197</idno>
+                        <altIdentifier type="hsp"><idno>HSP-1e9dc518-01f6-36fc-841d-9de14ee29ae7</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0158">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 204</idno>
+                        <altIdentifier type="hsp"><idno>HSP-fd1cab3c-7c80-3361-a705-007fba3e9e46</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0159">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 205</idno>
+                        <altIdentifier type="hsp"><idno>HSP-baa7d49f-870d-33a1-9094-ec53b19f0f7d</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0160">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 206</idno>
+                        <altIdentifier type="hsp"><idno>HSP-f0e43cda-df76-393d-9f29-a4f7574e6e30</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0161">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 217</idno>
+                        <altIdentifier type="hsp"><idno>HSP-aefab952-dc72-34ac-9ccc-c919038999bf</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0162">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 239</idno>
+                        <altIdentifier type="hsp"><idno>HSP-6520f3d2-fada-3521-957c-f37c4064791f</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0163">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 240</idno>
+                        <altIdentifier type="hsp"><idno>HSP-29661e30-9c55-3e80-af8c-9b171460a3e1</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0164">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 241</idno>
+                        <altIdentifier type="hsp"><idno>HSP-551b19e2-01a3-3979-b32b-7919e5f57819</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0165">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 242</idno>
+                        <altIdentifier type="hsp"><idno>HSP-9f53a2ff-96da-30b7-8b5d-c5a6bdcda8a3</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 242</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 242)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0166">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 244</idno>
+                        <altIdentifier type="hsp"><idno>HSP-47bb7138-982c-3949-852c-52186b0189f7</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0167">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 245</idno>
+                        <altIdentifier type="hsp"><idno>HSP-ed85670e-d3dd-3e94-bd8c-531e77906fe5</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0168">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 273</idno>
+                        <altIdentifier type="hsp"><idno>HSP-670fab85-bda3-3cfa-9bba-70d30ef6f88a</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0169">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 290</idno>
+                        <altIdentifier type="hsp"><idno>HSP-67ffdfc2-472d-3232-bc99-839a51ead83a</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0170">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 291</idno>
+                        <altIdentifier type="hsp"><idno>HSP-1e9db40e-2903-393c-a523-461f9b8a0798</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 271</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 271)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0171">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 292</idno>
+                        <altIdentifier type="hsp"><idno>HSP-2aee421c-ea4e-3908-8edb-c57e17105730</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0172">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 293</idno>
+                        <altIdentifier type="hsp"><idno>HSP-1bedf64f-14ea-3417-a6ba-99ac30c589a6</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 18</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 18)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0173">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 294</idno>
+                        <altIdentifier type="hsp"><idno>HSP-93144b70-89df-3ced-8bf5-4afb4b1f3059</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0174">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 295</idno>
+                        <altIdentifier type="hsp"><idno>HSP-a432cab3-86aa-3b14-bfa8-7d86ce39d95a</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0175">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 296</idno>
+                        <altIdentifier type="hsp"><idno>HSP-a71309e5-943b-3177-a110-56539d4eed6d</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 25</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 25)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0176">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 297</idno>
+                        <altIdentifier type="hsp"><idno>HSP-7aec103d-4a1d-399f-9165-216dc4fc08d2</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0177">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 298</idno>
+                        <altIdentifier type="hsp"><idno>HSP-e8dd3dfc-1b6e-3b29-a33b-b85e07b57cfc</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0178">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 312</idno>
+                        <altIdentifier type="hsp"><idno>HSP-7c9e4639-d7be-3a4b-a7f2-fcbfa0b394cc</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0179">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 314</idno>
+                        <altIdentifier type="hsp"><idno>HSP-88e91ea1-5aee-339a-86dc-5cc7c3711369</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0180">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 319</idno>
+                        <altIdentifier type="hsp"><idno>HSP-d884c8d3-2ac9-38b2-8a4d-d403a0bbee61</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0181">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 331</idno>
+                        <altIdentifier type="hsp"><idno>HSP-7b3ce7be-2fcf-3752-b42d-331ee4d42ece</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0182">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 352</idno>
+                        <altIdentifier type="hsp"><idno>HSP-69ba850f-2a19-3eb6-ba1b-d94ebcf5adee</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0183">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 354</idno>
+                        <altIdentifier type="hsp"><idno>HSP-60a3235e-1f55-3185-a21d-30c0f6391cb7</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0184">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 356</idno>
+                        <altIdentifier type="hsp"><idno>HSP-9971770d-2521-3b11-b0da-6b61fb0ee319</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0185">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 357</idno>
+                        <altIdentifier type="hsp"><idno>HSP-0965d9c0-3689-30a3-8422-7a03edf58264</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0186">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 358</idno>
+                        <altIdentifier type="hsp"><idno>HSP-a725b967-4b28-31be-a30f-31c12f944506</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0187">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 359</idno>
+                        <altIdentifier type="hsp"><idno>HSP-fa53009d-67af-3ac0-8ffe-d081843dce6a</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 32</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 32)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0188">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 360</idno>
+                        <altIdentifier type="hsp"><idno>HSP-6c110261-9846-319a-b118-da4103431684</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0189">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 361</idno>
+                        <altIdentifier type="hsp"><idno>HSP-f7c27f09-d137-3d29-801c-dca41a02415d</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0190">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 362</idno>
+                        <altIdentifier type="hsp"><idno>HSP-bf8153fd-b02d-3dff-9a92-5c4271721862</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0191">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 363</idno>
+                        <altIdentifier type="hsp"><idno>HSP-b84c4e74-5202-3e5a-b353-61a35b774565</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0192">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 364</idno>
+                        <altIdentifier type="hsp"><idno>HSP-e5cebf03-8d10-3873-baf4-0b3d54d3a5b8</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0193">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 365</idno>
+                        <altIdentifier type="hsp"><idno>HSP-35228033-f26e-36b9-80be-ae1e3fc2c6c8</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0194">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 366</idno>
+                        <altIdentifier type="hsp"><idno>HSP-7303abbd-664b-3007-8fc8-58852dbc68e2</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0195">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 367</idno>
+                        <altIdentifier type="hsp"><idno>HSP-638bf99b-426d-376b-ae8a-ab7c8ef72b5d</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0196">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 403</idno>
+                        <altIdentifier type="hsp"><idno>HSP-d4378ed3-4a96-3f60-98b1-bdf1d67a32f6</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0197">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 420</idno>
+                        <altIdentifier type="hsp"><idno>HSP-f3a106a0-ccf2-3f62-a106-210fd39b8ba7</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 252</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 252)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0198">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 421</idno>
+                        <altIdentifier type="hsp"><idno>HSP-b029486d-df2d-3588-9904-0dffa29f3aa7</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0199">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 422</idno>
+                        <altIdentifier type="hsp"><idno>HSP-23f4289f-2dcd-3851-8d5d-7223a28c4959</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 20</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 20)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0200">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 423</idno>
+                        <altIdentifier type="hsp"><idno>HSP-7d591428-f8eb-3f54-9bb5-27884bed31e0</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0201">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 424</idno>
+                        <altIdentifier type="hsp"><idno>HSP-de4af3b9-3644-3e1a-9fa4-ad5d8d87450c</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0202">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 425</idno>
+                        <altIdentifier type="hsp"><idno>HSP-964d1283-1b3a-3b90-8982-dd2694a88aee</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0203">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 426</idno>
+                        <altIdentifier type="hsp"><idno>HSP-a72cefa4-fa54-3d9b-8f9b-d62be28aa238</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0204">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 436</idno>
+                        <altIdentifier type="hsp"><idno>HSP-44eb4c54-31ee-3a52-b49a-efa73d3f4f0e</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0205">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 437</idno>
+                        <altIdentifier type="hsp"><idno>HSP-1390d399-94ce-35ee-8ca1-016f214c2dc1</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0206">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 451</idno>
+                        <altIdentifier type="hsp"><idno>HSP-68ee596d-741d-30c8-8873-fc4d70eae1e5</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0207">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 452</idno>
+                        <altIdentifier type="hsp"><idno>HSP-7b3c9a68-06ee-303c-8a6f-114ca644c9b9</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 187</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 187)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0208">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 453</idno>
+                        <altIdentifier type="hsp"><idno>HSP-a113e2a8-69bf-3e21-b3e4-318622c15428</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0209">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 454</idno>
+                        <altIdentifier type="hsp"><idno>HSP-eecd201d-513e-3403-a4e4-c321d4117822</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0210">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 455</idno>
+                        <altIdentifier type="hsp"><idno>HSP-ee7c92a3-6665-3cd7-a94e-8fc7660d9916</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0211">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 456</idno>
+                        <altIdentifier type="hsp"><idno>HSP-eda7be67-7567-3c55-b36c-54527a9adcd8</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 243</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 243)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0212">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 467</idno>
+                        <altIdentifier type="hsp"><idno>HSP-ea80a0fc-9e8a-39e2-8b65-7e54c04d7507</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0213">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 480</idno>
+                        <altIdentifier type="hsp"><idno>HSP-0647aadd-1884-3a54-b71b-1da0dd4c2147</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 154</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 154)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0214">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 481</idno>
+                        <altIdentifier type="hsp"><idno>HSP-e318874a-8535-3665-9036-c5c666aceb05</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0215">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 482</idno>
+                        <altIdentifier type="hsp"><idno>HSP-062d9ffa-f9f4-3495-a444-e2ff4087070f</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 153</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 153)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0216">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 483</idno>
+                        <altIdentifier type="hsp"><idno>HSP-3521ac28-2d99-327f-b421-29af9cd3f47d</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0217">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 484</idno>
+                        <altIdentifier type="hsp"><idno>HSP-3d172f6d-539c-3a3f-a2d0-8ca0da79aaa5</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0218">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 495</idno>
+                        <altIdentifier type="hsp"><idno>HSP-2017cf67-3ae2-3ae2-a55f-f25cc010399e</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0219">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 496</idno>
+                        <altIdentifier type="hsp"><idno>HSP-989508a2-3c8f-3ceb-8f50-aa8409a609b6</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 163</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 163)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0220">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 513</idno>
+                        <altIdentifier type="hsp"><idno>HSP-6c51fd7a-f78e-378e-a13b-dee150081546</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 95</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 95)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0221">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 514</idno>
+                        <altIdentifier type="hsp"><idno>HSP-71e3acb0-d943-3ce2-8b23-dd8ecc8bab54</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0222">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 606</idno>
+                        <altIdentifier type="hsp"><idno>HSP-ff88cb7a-85ec-34be-bff8-92bbab395abf</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0223">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 612</idno>
+                        <altIdentifier type="hsp"><idno>HSP-8a170877-463e-31f4-a758-bdc6a3c09ecf</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 104</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 104)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0224">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 625</idno>
+                        <altIdentifier type="hsp"><idno>HSP-1c20d26f-9381-347f-ad7e-e9bc7da8c21d</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 103</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 103)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0225">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 635</idno>
+                        <altIdentifier type="hsp"><idno>HSP-788a00af-0518-33c0-bba2-4bdaa2047f3d</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0226">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 636</idno>
+                        <altIdentifier type="hsp"><idno>HSP-a9f02419-2f60-3ca7-9656-b0f404852253</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0227">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 637</idno>
+                        <altIdentifier type="hsp"><idno>HSP-edb6e8e0-198f-3bf8-ba07-d482f0e02024</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0228">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 638</idno>
+                        <altIdentifier type="hsp"><idno>HSP-9448ed16-fb4a-3188-b4cb-c6c489bc41b0</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0229">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 639</idno>
+                        <altIdentifier type="hsp"><idno>HSP-bf62b6d2-8ebc-3b62-b295-c9743df2e36d</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0230">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 641</idno>
+                        <altIdentifier type="hsp"><idno>HSP-24b55477-f7d1-3727-9f52-d8cae9fc9a04</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0231">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 642</idno>
+                        <altIdentifier type="hsp"><idno>HSP-51477140-a269-3ca5-84a2-50ad9ecf2862</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0232">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 650</idno>
+                        <altIdentifier type="hsp"><idno>HSP-19b15f9f-d104-3442-a027-1669aba3bce4</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 98</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 98)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0233">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 691</idno>
+                        <altIdentifier type="hsp"><idno>HSP-847dd3cc-9415-3b88-9b6d-2c1934ca43d9</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 94</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 94)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0234">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 738</idno>
+                        <altIdentifier type="hsp"><idno>HSP-e799980d-e78f-313b-9354-ce341b84dd20</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 39</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 39)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0235">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 739</idno>
+                        <altIdentifier type="hsp"><idno>HSP-86e7b57d-9e79-326a-9f37-1c23c1345116</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 41</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 41)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0236">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 740</idno>
+                        <altIdentifier type="hsp"><idno>HSP-e7d9d3ef-2580-3059-91c4-a54cb062b5d3</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 40</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 40)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0237">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 741</idno>
+                        <altIdentifier type="hsp"><idno>HSP-2ff70bf5-237a-33f2-87c4-974cfa9ff927</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 42</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 42)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0238">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 742</idno>
+                        <altIdentifier type="hsp"><idno>HSP-650bdd1e-398d-3572-a661-7941d5e6b6b0</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0239">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 743</idno>
+                        <altIdentifier type="hsp"><idno>HSP-87d1c54b-efc9-3e78-968d-27672b7e2f19</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0240">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 744</idno>
+                        <altIdentifier type="hsp"><idno>HSP-da6f60ea-984a-3807-bfad-1241246ce7fd</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0241">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 745</idno>
+                        <altIdentifier type="hsp"><idno>HSP-6e4ed855-b4f8-3386-9fbb-a3ccd0410a42</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0242">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 746</idno>
+                        <altIdentifier type="hsp"><idno>HSP-555ed29d-bcf2-3296-a1d1-ea9cb92b65f5</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 240</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 240)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0243">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 747</idno>
+                        <altIdentifier type="hsp"><idno>HSP-8b0d8370-1ccd-394d-a4aa-9845300a8f1a</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0244">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 748</idno>
+                        <altIdentifier type="hsp"><idno>HSP-9c6160b9-43c9-330b-97b3-63b6947398ae</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 46</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 46)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0245">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 762</idno>
+                        <altIdentifier type="hsp"><idno>HSP-d3384c82-8f74-3da1-ab03-a76d8b4c1ec9</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0246">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 785</idno>
+                        <altIdentifier type="hsp"><idno>HSP-6ebb0c23-9ced-3165-8da0-e33bb6b3ea2c</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0247">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 787</idno>
+                        <altIdentifier type="hsp"><idno>HSP-eb778584-0547-31ee-906d-3db165ec0fc0</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0248">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 788</idno>
+                        <altIdentifier type="hsp"><idno>HSP-70e6d59d-c145-3811-9029-e20adf812b2c</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0249">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 792</idno>
+                        <altIdentifier type="hsp"><idno>HSP-a84b438e-8984-3c4d-a05d-8dfa51c64554</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 68</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 68)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0250">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 793</idno>
+                        <altIdentifier type="hsp"><idno>HSP-09bc9f59-d645-3ebb-87ad-2519a07e0c25</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0251">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 794</idno>
+                        <altIdentifier type="hsp"><idno>HSP-4764ae0a-9c01-3f12-8dc0-46411747c7eb</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0252">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 809</idno>
+                        <altIdentifier type="hsp"><idno>HSP-5280aee1-8f35-3563-8438-6c28a0d44fb0</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0253">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 811</idno>
+                        <altIdentifier type="hsp"><idno>HSP-de7b9978-8496-30ec-9f10-1f15f7e8390c</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0254">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 815</idno>
+                        <altIdentifier type="hsp"><idno>HSP-94537526-b447-32e5-a3ed-d39c79adda14</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0255">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 830</idno>
+                        <altIdentifier type="hsp"><idno>HSP-f27db9e4-defe-3c45-ac6a-f44afab68de7</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0256">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 833</idno>
+                        <altIdentifier type="hsp"><idno>HSP-8edfa3c2-1632-3c31-85e9-4c3e0274ed06</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0257">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 834</idno>
+                        <altIdentifier type="hsp"><idno>HSP-7a76f4de-21ce-387b-acab-741c9e02918f</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0258">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 874</idno>
+                        <altIdentifier type="hsp"><idno>HSP-b37ea1da-2e2d-327c-9a1e-d7f287272faf</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0259">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 878</idno>
+                        <altIdentifier type="hsp"><idno>HSP-826ace3c-5a32-392a-892c-6a8a75b3f1cd</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0260">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 883</idno>
+                        <altIdentifier type="hsp"><idno>HSP-93d68fa0-2b62-38de-886c-d96243c17c38</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0261">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 909</idno>
+                        <altIdentifier type="hsp"><idno>HSP-2c416168-9d63-3f82-aaeb-2b565086a25d</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0262">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 105a</idno>
+                        <altIdentifier type="hsp"><idno>HSP-b03c17a8-959d-34aa-87be-d2a332e55ed1</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 202</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 202)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0263">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 105b</idno>
+                        <altIdentifier type="hsp"><idno>HSP-123c157d-d700-3442-abb2-41352424f203</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 202</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 202)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0264">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 105c</idno>
+                        <altIdentifier type="hsp"><idno>HSP-9d4c8ee0-be22-3b58-b547-534bc8c94b60</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 202</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 202)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0265">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 111a</idno>
+                        <altIdentifier type="hsp"><idno>HSP-c6afe163-f032-3b3f-a586-6cbfe17d9310</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0266">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 111b</idno>
+                        <altIdentifier type="hsp"><idno>HSP-e4711e72-a803-30d9-b262-4bf5e24ac487</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0267">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 138a</idno>
+                        <altIdentifier type="hsp"><idno>HSP-75905429-b774-34d9-947a-21cfc945a1ee</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0268">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 138b</idno>
+                        <altIdentifier type="hsp"><idno>HSP-136bc5c1-e43c-3500-8f1b-5afedf28c16f</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0269">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 157a</idno>
+                        <altIdentifier type="hsp"><idno>HSP-96f9b9e7-dffe-3fd8-957e-0ad7024577ba</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 234</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 234)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0270">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 157b</idno>
+                        <altIdentifier type="hsp"><idno>HSP-cc18fdce-a314-367f-93a6-6c5306576e43</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 232</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 232)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0271">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 158a</idno>
+                        <altIdentifier type="hsp"><idno>HSP-6b2b72cb-1ffe-375b-99c0-385236b3aa06</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0272">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 158b</idno>
+                        <altIdentifier type="hsp"><idno>HSP-62e7a0a8-4b71-3dce-809f-d09b4c2d7dee</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0273">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 447a</idno>
+                        <altIdentifier type="hsp"><idno>HSP-5b91eb93-d2c0-3ac1-acd1-ab7d77ca167b</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0274">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 447b</idno>
+                        <altIdentifier type="hsp"><idno>HSP-aa927260-4a2a-3805-b1b8-9cf5d29f3816</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0275">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 75a</idno>
+                        <altIdentifier type="hsp"><idno>HSP-01aad6fa-006e-363e-a1d0-1e45cf1981cb</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 221</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 221)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0276">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 75b</idno>
+                        <altIdentifier type="hsp"><idno>HSP-d6b6f250-4558-3188-b685-f16e8557de8e</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0277">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen A III 56a</idno>
+                        <altIdentifier type="hsp"><idno>HSP-2e9ef423-2910-34be-9b69-f95d83963db0</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0278">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen A III 56b</idno>
+                        <altIdentifier type="hsp"><idno>HSP-73276fd7-b647-3717-9195-179d8a2aa351</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0279">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 570a</idno>
+                        <altIdentifier type="hsp"><idno>HSP-93c760b4-5732-3838-b871-4493e9521ad4</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 166</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 166)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0280">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen D 10a</idno>
+                        <altIdentifier type="hsp"><idno>HSP-bd6cfa47-d6d9-3c40-971f-64f8a3796224</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0281">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 607a</idno>
+                        <altIdentifier type="hsp"><idno>HSP-dfc904cd-bdd0-3e9d-9b02-76e589aa419c</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0282">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 607b</idno>
+                        <altIdentifier type="hsp"><idno>HSP-5b0902f3-7bb4-3c49-acab-478656a7d79a</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0283">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 853a</idno>
+                        <altIdentifier type="hsp"><idno>HSP-e8c0cb63-7e73-372b-8335-748f96ab347e</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0284">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 853b</idno>
+                        <altIdentifier type="hsp"><idno>HSP-08a874c7-c4d4-3545-88e6-2f309153ca74</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0285">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 570b</idno>
+                        <altIdentifier type="hsp"><idno>HSP-b367b118-3f8c-32a9-b525-0c3216f2b8f2</idno></altIdentifier>
+                        <altIdentifier type="former"><idno>Laßberg-Nr. 167</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg (Laßberg-Nr. 167)</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0286">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen 570c</idno>
+                        <altIdentifier type="hsp"><idno>HSP-dcd2bd6f-7545-39e3-85ab-b12127f55b21</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0287">
+                    <msIdentifier>
+                        <settlement>Karlsruhe</settlement>
+                        <repository>Badische Landesbibliothek</repository>
+                        <idno type="shelfmark">Cod. Donaueschingen D 10b</idno>
+                        <altIdentifier type="hsp"><idno>HSP-47a236b9-6b83-3d0b-a7ba-58bcf15a4808</idno></altIdentifier>
+                    </msIdentifier>
+                    <history><provenance>Sammlung Laßberg</provenance></history>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0288" ana="needs-review">
+                    <msIdentifier>
+                        <settlement>Heidelberg</settlement>
+                        <repository>Universitätsbibliothek Heidelberg</repository>
+                        <idno type="shelfmark">Cod. Pal. germ. 357</idno>
+                        <altIdentifier type="hsp"><idno>HSP-4b0160e9-263b-347b-8c23-528960bebf90</idno></altIdentifier>
+                        <msName>Kleine Heidelberger Liederhandschrift</msName>
+                    </msIdentifier>
+                    <note>Migriert aus lassberg-literature-0232 (Briefe 0626, 0627); Handschriftencensus (Werk): https://handschriftencensus.de/werke/7033</note>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0289" ana="needs-review">
+                    <msIdentifier>
+                        <settlement>Heidelberg</settlement>
+                        <repository>Universitätsbibliothek Heidelberg</repository>
+                        <idno type="shelfmark">Cod. Pal. germ. 350</idno>
+                        <altIdentifier type="hsp"><idno>HSP-7e5691ec-8d27-3651-9775-f43312a9ea2b</idno></altIdentifier>
+                        <msName>Heidelberger Liederhandschrift</msName>
+                    </msIdentifier>
+                    <note>Migriert aus lassberg-literature-0231 (Brief 0626); Handschriftencensus (Werk): https://handschriftencensus.de/werke/1264</note>
+                </msDesc>
+                <msDesc xml:id="lassberg-witness-0290" ana="needs-review">
+                    <msIdentifier>
+                        <settlement>Stuttgart</settlement>
+                        <repository>Württembergische Landesbibliothek</repository>
+                        <idno type="shelfmark">HB XIII 1</idno>
+                        <altIdentifier type="hsp"><idno>HSP-b4834bbe-f848-336d-b90e-8325d333b3e4</idno></altIdentifier>
+                        <msName>Weingartner Liederhandschrift</msName>
+                    </msIdentifier>
+                    <note>Migriert aus lassberg-literature-0230 (Brief 0626); Handschriftencensus (Werk): https://handschriftencensus.de/werke/1515</note>
+                </msDesc>
+            </listBibl>
         </body>
     </text>
 </TEI>

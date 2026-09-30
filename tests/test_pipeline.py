@@ -60,6 +60,21 @@ def test_registers_parse_all_entity_types(entities):
     assert entities["works"]["lassberg-literature-0001"]["label"] == "Testwerk"
     assert entities["witnesses"]["lassberg-witness-0001"]["corresp"] == "lassberg-literature-0002"
 
+
+def test_manuscripts_parse_msdesc(entities):
+    ms = entities["witnesses"]
+    assert set(ms) == {"lassberg-witness-0001", "lassberg-witness-0002"}
+    a = ms["lassberg-witness-0001"]
+    assert a["label"] == "Testhandschrift"
+    assert (a["settlement"], a["repository"], a["signature"]) == ("Testort", "Testbibliothek", "Cod. Test 1")
+    assert a["hsp_id"] == "HSP-00000000-0000-0000-0000-000000000001"
+    assert a["alt_ids"]["former"] == ["Laßberg-Nr. 7"]
+    assert a["provenance"] == "Sammlung Laßberg"
+    assert a["witness_type"] == "manuscript"
+    b = ms["lassberg-witness-0002"]
+    assert b["label"] == "Anderswo, Andere Bibliothek, Ms. 2"  # no msName -> composed label
+    assert b["hsp_id"] is None and b["corresp"] is None and b["needs_review"] is True
+
     sender = entities["persons"]["lassberg-correspondent-0001"]
     assert sender["birth"] == "1780"
     assert sender["death"] == "1850"

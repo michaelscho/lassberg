@@ -279,27 +279,51 @@ def parse_literature(path: Path, warnings: Warnings) -> dict:
 
 
 def parse_manuscripts(path: Path, warnings: Warnings) -> dict:
+    """<msDesc xml:id="lassberg-witness-NNNN"> entries (see docs/TEI.md, Handschriftenregister)."""
     tree = etree.parse(str(path))
     root = tree.getroot()
     witnesses = {}
-    for el in root.iter(tei("witness")):
-        xml_id = el.get("{http://www.w3.org/XML/1998/namespace}id")
+    xml_id_attr = "{http://www.w3.org/XML/1998/namespace}id"
+    for el in root.iter(tei("msDesc")):
+        xml_id = el.get(xml_id_attr)
         if not xml_id:
             continue
-        bibl = el.find(tei("bibl"))
-        settlement = bibl.find(tei("settlement")) if bibl is not None else None
-        repository = bibl.find(tei("repository")) if bibl is not None else None
-        signature = bibl.find(tei("idno") + "[@type='signature']") if bibl is not None else None
-        note = bibl.find(tei("note")) if bibl is not None else None
+        ident = el.find(tei("msIdentifier"))
+
+        def field(tag, xpath=""):
+            if ident is None:
+                return None
+            return text_content(ident.find(tei(tag) + xpath)) or None
+
+        settlement = field("settlement")
+        repository = field("repository")
+        signature = field("idno", "[@type='shelfmark']")
+        ms_name = field("msName")
+        alt_ids: dict[str, list[str]] = {}
+        if ident is not None:
+            for alt in ident.findall(tei("altIdentifier")):
+                value = text_content(alt.find(tei("idno")))
+                if value:
+                    alt_ids.setdefault(alt.get("type") or "other", []).append(value)
+        hsp_ids = alt_ids.get("hsp", [])
+        item_title = el.find(tei("msContents") + "/" + tei("msItem") + "/" + tei("title"))
+        provenance = el.find(tei("history") + "/" + tei("provenance"))
+        note = el.find(tei("note"))
+        label = ms_name or ", ".join(x for x in (settlement, repository, signature) if x) or xml_id
         witnesses[xml_id] = {
             "id": xml_id,
             "type": "witness",
-            "witness_type": el.get("type"),  # manuscript|print
-            "corresp": bare_id(el.get("corresp")),
-            "settlement": text_content(settlement) or None,
-            "repository": text_content(repository) or None,
-            "signature": text_content(signature) or None,
+            "witness_type": "manuscript",
+            "label": label,
+            "settlement": settlement,
+            "repository": repository,
+            "signature": signature,
+            "hsp_id": hsp_ids[0] if hsp_ids else None,
+            "alt_ids": alt_ids,
+            "corresp": bare_id(item_title.get("key")) if item_title is not None else None,
+            "provenance": text_content(provenance) or None,
             "note": text_content(note) or None,
+            "needs_review": el.get("ana") == "needs-review",
         }
     return witnesses
 

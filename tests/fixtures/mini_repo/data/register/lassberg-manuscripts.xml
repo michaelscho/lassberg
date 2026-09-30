@@ -2,15 +2,27 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-register-manuscripts">
   <teiHeader><fileDesc><titleStmt><title>Fixture manuscripts</title></titleStmt></fileDesc></teiHeader>
   <text><body>
-    <listWit>
-      <witness xml:id="lassberg-witness-0001" type="manuscript"
-          corresp="../register/lassberg-literature.xml#lassberg-literature-0002">
-        <bibl>
+    <listBibl>
+      <msDesc xml:id="lassberg-witness-0001">
+        <msIdentifier>
           <settlement>Testort</settlement>
           <repository>Testbibliothek</repository>
-          <idno type="signature">Cod. Test 1</idno>
-        </bibl>
-      </witness>
-    </listWit>
+          <idno type="shelfmark">Cod. Test 1</idno>
+          <altIdentifier type="hsp"><idno>HSP-00000000-0000-0000-0000-000000000001</idno></altIdentifier>
+          <altIdentifier type="former"><idno>Laßberg-Nr. 7</idno></altIdentifier>
+          <msName>Testhandschrift</msName>
+        </msIdentifier>
+        <msContents><msItem><title key="../register/lassberg-literature.xml#lassberg-literature-0002">Testwerk 2</title></msItem></msContents>
+        <history><provenance>Sammlung Laßberg</provenance></history>
+        <note>Fixture</note>
+      </msDesc>
+      <msDesc xml:id="lassberg-witness-0002" ana="needs-review">
+        <msIdentifier>
+          <settlement>Anderswo</settlement>
+          <repository>Andere Bibliothek</repository>
+          <idno type="shelfmark">Ms. 2</idno>
+        </msIdentifier>
+      </msDesc>
+    </listBibl>
   </body></text>
 </TEI>
