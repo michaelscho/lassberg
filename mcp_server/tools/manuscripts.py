@@ -1,7 +1,7 @@
 """Manuscript tools (register + Handschriftenportal), plain functions with no MCP dependency.
 
 Ids: manuscripts are "lassberg-witness-NNNN" (4-digit zero-padded), letters
-"lassberg-letter-NNNN". HSP ids look like "HSP-666242f4-0675-3121-b0d6-be697c7a9b20".
+"lassberg-letter-NNNN". HSP ids look like "HSP-<uuid>".
 Data comes from build/entities.json + build/letters.jsonl (register, mentions) and the local HSP
 mirror data/hsp/ (gitignored; missing manuscripts are fetched live from the HSP and mirrored).
 The HSP data is a snapshot as of each file's `fetched_at`; description licences are always returned.

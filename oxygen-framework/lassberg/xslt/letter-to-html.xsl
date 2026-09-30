@@ -500,6 +500,13 @@
                     <xsl:value-of select="document('../../../data/register/lassberg-places.xml')//tei:place[@xml:id = $rsKey]/tei:placeName/text()"/>
                 </xsl:when>
                 
+                <!-- Manuscript (msDesc in lassberg-manuscripts.xml): "name – place, library, shelfmark" -->
+                <xsl:when test="$rsType = 'witness' and starts-with($rsKey, 'lassberg-witness-')">
+                    <xsl:variable name="ms" select="document('../../../data/register/lassberg-manuscripts.xml')//tei:msDesc[@xml:id = $rsKey]/tei:msIdentifier"/>
+                    <xsl:variable name="where" select="string-join(($ms/tei:settlement, $ms/tei:repository, $ms/tei:idno[@type = 'shelfmark'])[normalize-space(.) != ''], ', ')"/>
+                    <xsl:value-of select="string-join((normalize-space($ms/tei:msName), $where)[normalize-space(.) != ''], ' – ')"/>
+                </xsl:when>
+
                 <!-- "bibl" (abstract work/edition) and "witness" (specific manuscript/print/charter
                      exemplar, @type="charter" on the <bibl>, see docs/TEI.md "Handschriften- und
                      Druckexemplare, Urkunden") both resolve into lassberg-literature.xml as a
@@ -560,6 +567,14 @@
                     <a href="{string(document('../../../data/register/lassberg-places.xml')//tei:place[@xml:id = $rsKey]/tei:placeName/@ref)}"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"/></a>
                 </xsl:when>
                 
+                <!-- Case for manuscripts: link to the Handschriftenportal -->
+                <xsl:when test="$rsType = 'witness' and starts-with($rsKey, 'lassberg-witness-')">
+                    <xsl:variable name="hspId" select="document('../../../data/register/lassberg-manuscripts.xml')//tei:msDesc[@xml:id = $rsKey]/tei:msIdentifier/tei:altIdentifier[@type = 'hsp']/tei:idno"/>
+                    <xsl:if test="$hspId">
+                        <a href="https://handschriftenportal.de/search?hspobjectid={$hspId}">📜</a>
+                    </xsl:if>
+                </xsl:when>
+
                 <!-- Case for Literature and Witness/Exemplar (see note above) -->
                 <xsl:when test="$rsType = 'bibl' or $rsType = 'witness'">
                     <xsl:variable name="link" select="document('../../../data/register/lassberg-literature.xml')//tei:bibl[@xml:id = $rsKey]/tei:idno/text()"/>

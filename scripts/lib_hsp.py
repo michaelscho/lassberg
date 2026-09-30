@@ -162,7 +162,7 @@ def _txt(el) -> str:
 
 
 def clean_kod_title(title_display: str | None) -> str:
-    """title-display like '‘Kolmarer Liederhandschrift’' -> 'Kolmarer Liederhandschrift'."""
+    """title-display like '‘Weingartner Liederhandschrift’' -> 'Weingartner Liederhandschrift'."""
     return re.sub(r"[‘’‚“”„›‹]", "", title_display or "").strip()
 
 
@@ -274,7 +274,7 @@ def local_search(query: str, limit: int = 10) -> list[dict]:
         fts = " ".join(f'"{w}"*' for w in re.findall(r"\w+", q))
         if fts:
             rows = con.execute(
-                "SELECT hsp_id, witness_id, shelfmark, msname, bm25(ms_fts) AS s, "
+                "SELECT ms.hsp_id, ms.witness_id, ms.shelfmark, ms.msname, bm25(ms_fts) AS s, "
                 "snippet(ms_fts, -1, '[', ']', ' … ', 12) AS snip "
                 "FROM ms_fts JOIN ms ON ms.rowid = ms_fts.rowid WHERE ms_fts MATCH ? "
                 "ORDER BY s LIMIT ?", (fts, limit)).fetchall()

@@ -62,6 +62,7 @@
                 <button data-tab="overview" class="active">Overview</button>
                 <button data-tab="search">Semantic Search</button>
                 <button data-tab="graph">Graph / SPARQL</button>
+                <button data-tab="manuscripts">Manuscripts</button>
                 <button data-tab="graphrag">GraphRAG</button>
             </nav>
 
@@ -179,6 +180,21 @@
                 </details>
             </section>
 
+            <section id="panel-manuscripts" class="explore-panel">
+                <h2>Manuscripts</h2>
+                <p class="lead">Manuscripts of the register with their data from the
+                    <a href="https://handschriftenportal.de/" target="_blank" rel="noopener">Handschriftenportal</a>
+                    (snapshot). Catalogue descriptions are shown in full only where they are freely licensed;
+                    otherwise they are cited and linked.</p>
+                <input type="search" class="form-control mb-2" id="manuscripts-input"
+                    placeholder="Name, shelfmark, place &hellip;" autocomplete="off">
+                <p class="status" id="manuscripts-status"></p>
+                <div class="row">
+                    <div class="col-md-4"><div id="manuscripts-results" class="list-group overview-scroll"></div></div>
+                    <div class="col-md-8"><div id="manuscripts-detail"></div></div>
+                </div>
+            </section>
+
             <section id="panel-graphrag" class="explore-panel">
                 
 
@@ -259,6 +275,7 @@
         import { initGraphUI } from "../js/explore/graph.js";
         import { initSparqlUI } from "../js/explore/sparql.js";
         import { initGraphRagUI } from "../js/explore/graphrag.js";
+        import { initManuscriptsUI } from "../js/explore/manuscripts.js";
 
         const tabs = document.querySelectorAll("nav.explore-tabs button");
         const panels = document.querySelectorAll(".explore-panel");
@@ -269,6 +286,7 @@
             search: initSearchUI,
             graph: () => { initGraphUI(); initSparqlUI(); },
             graphrag: initGraphRagUI,
+            manuscripts: initManuscriptsUI,
         };
 
         function activate(tabName) {
@@ -285,7 +303,7 @@
         // Deep link: ?node=<id> (e.g. from the persons/places register pages) opens the graph
         // tab and renders that node's network; ?tab=<name> just opens a tab.
         const params = new URLSearchParams(window.location.search);
-        const tab = params.get("node") ? "graph" : (params.get("tab") || "overview");
+        const tab = params.get("node") ? "graph" : params.get("ms") ? "manuscripts" : (params.get("tab") || "overview");
         activate(tab); // offline-first: the default Overview needs no model download
     </script>
 </body>

@@ -9,7 +9,7 @@ JSON-Vorschläge; ein Skript setzt sie um.
 
 Für jeden Brief: `.venv-infra/bin/python scripts/manuscripts/extract_letter.py <Brief-ID>`
 (Text der Transkription; bestehendes Markup als `[[typ|register-id: Text]]`, z. B.
-`[[object|: Colmarer codex]]`). Register-Kontext: `build/manuscripts/register_digest.tsv`
+`[[object|: Weingartner codex]]`). Register-Kontext: `build/manuscripts/register_digest.tsv`
 (id, msName, Ort, Signatur, frühere Signaturen). Zum Prüfen einer vermuteten Handschrift:
 `.venv-infra/bin/python scripts/manuscripts/hsp_lookup.py "<Anfrage>" [--live]` (lokaler HSP-Index
 über Beschreibungsinhalt, Autor, frühere Signatur, Provenienz; `--live` fragt das
@@ -32,7 +32,7 @@ Handschriftenportal, Achtung Rechtschreibkorrektur: Signatur/Titel selbst prüfe
    Ist sie schon als `[[witness|…]]` mit einer `lassberg-witness-…`-ID markiert: nicht melden.
 6. `quote` ist der Text **exakt** so, wie er in der Extraktion steht (ohne die `[[…]]`-Klammern), mit
    nur einem Leerzeichen zwischen Wörtern und **ohne Silbentrennung** (die Extraktion hat sie schon
-   entfernt). Nimm die kürzeste Wortfolge, die die Handschrift bezeichnet („Colmarer liedercodex“,
+   entfernt). Nimm die kürzeste Wortfolge, die die Handschrift bezeichnet („Weingartner codex“,
    nicht den ganzen Satz). `occurrence` = wievielte Fundstelle dieses Textes im Brief (1 = erste).
 7. Einträge im Register schon vorhanden (digest) → `witness_id` setzen. Sonst `witness_id: null` und
    `proposed` ausfüllen (`name` = moderne Bezeichnung, `hsp_query` = Suchbegriff fürs HSP).
@@ -45,14 +45,14 @@ Handschriftenportal, Achtung Rechtschreibkorrektur: Signatur/Titel selbst prüfe
 Pro Brief **eine** Datei `build/manuscripts/proposals/<Brief-ID>.json` (auch leer):
 
 ```json
-{"letter_id": "lassberg-letter-1743", "model": "claude-sonnet-5", "mentions": [
-  {"quote": "Colmarer liedercodex", "occurrence": 1,
+{"letter_id": "lassberg-letter-1959", "model": "claude-sonnet-5", "mentions": [
+  {"quote": "Weingartner codex", "occurrence": 1,
    "existing_rs": {"type": "object", "key": ""},
    "action": "retype",
    "manuscript": {"witness_id": null,
-                  "proposed": {"name": "Kolmarer Liederhandschrift", "settlement": null,
+                  "proposed": {"name": "Weingartner Liederhandschrift", "settlement": null,
                                "repository": null, "shelfmark": null,
-                               "hsp_query": "Kolmarer Liederhandschrift"}},
+                               "hsp_query": "Weingartner Liederhandschrift"}},
    "confidence": 0.95,
    "rationale": "Kurze Begründung, keine längeren Zitate aus HSP-Beschreibungen."}]}
 ```
@@ -62,7 +62,7 @@ Zusammenfassung (Anzahl Briefe, Anzahl Vorschläge, unsichere Fälle) zurück.
 
 ## Beispiele aus dem Korpus
 
-1. Brief 1743: „der [[object|: Colmarer liedercodex]] wieder aufgefunden ist“ → `retype`, bestimmte
-   Handschrift, identifizierbar (Name, Colmar).
+1. Brief 1959: „der [[object|: Weingartner codex]] wieder aufgefunden ist“ → `retype`, bestimmte
+   Handschrift, identifizierbar (Name).
 2. Brief 1741: „[[object|: Handschriften]]“ (Plural, unspezifisch) → **nicht melden**.
 3. Brief 1015: „[[bibl|: Codex trad. S. Gallensium]]“ (Urkundenbuch/Edition) → **nicht melden**.

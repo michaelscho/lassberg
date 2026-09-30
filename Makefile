@@ -6,7 +6,7 @@
 
 PYTHON := .venv-infra/bin/python
 
-.PHONY: all parse embed cluster graph rdf sparql explore frontend cmif graph-json status status-write test clean
+.PHONY: hsp hsp-mirror hsp-index hsp-export test-network all parse embed cluster graph rdf sparql explore frontend cmif graph-json status status-write test clean
 
 all: parse embed cluster graph rdf explore
 
@@ -69,6 +69,19 @@ explore: rdf/edition.ttl json/explore/graph.json json/explore/overview.json json
 # Backwards-compatible alias (the explore page was a separate frontend/ site until 2026-07).
 frontend: explore
 
+# --- Manuscripts / Handschriftenportal (network; NOT part of `make all`; data/hsp/ is gitignored) ---
+hsp-mirror:
+	$(PYTHON) scripts/manuscripts/mirror_hsp.py
+
+hsp-index:
+	$(PYTHON) scripts/manuscripts/build_hsp_index.py
+
+hsp-export:
+	$(PYTHON) scripts/export_manuscripts.py
+	$(PYTHON) scripts/export_manuscripts.py --local
+
+hsp: hsp-mirror hsp-index hsp-export
+
 # --- Status model (docs/TEI.md "Letter status model") ---
 status:
 	$(PYTHON) scripts/sync_letter_status.py
@@ -78,8 +91,11 @@ status-write:
 
 # --- Phase 8 ---
 test:
-	$(PYTHON) -m pytest tests/test_pipeline.py -v
+	$(PYTHON) -m pytest tests/test_pipeline.py tests/test_hsp.py -v
 	node --test tests/test_graph_core.mjs
+
+test-network:
+	$(PYTHON) -m pytest tests/test_hsp.py -v --run-network
 
 clean:
 	rm -f build/letters.jsonl build/entities.json build/manifest.json build/warnings.log

@@ -12,6 +12,16 @@ correspondence graph, and SPARQL queries against the CMIF/correspSearch-style RD
 | `get_letter(letter_id)` | No (static files only) | Full metadata + mentions + text for one letter |
 | `graph_query(cypher, limit=100)` | Neo4j (`make graph`) | Read-only Cypher over the correspondence graph (all 3268 letters) |
 | `sparql_query(query)` | Oxigraph (`make sparql`) | SELECT/ASK SPARQL over `rdf/edition.ttl` |
+| `find_manuscript(query, limit=10)` | No | Fuzzy search in the manuscript register (name, shelfmark, place, HSP id) |
+| `manuscript_mentions(witness_id)` | No | Letters mentioning a manuscript, with sender/recipient and text excerpts |
+| `hsp_search(query, limit=10, live=False)` | No (`live=True`: network) | Handschriftenportal: local description index; optional live search |
+| `hsp_manuscript(id, description="summary")` | No (missing data is fetched live) | HSP core data + catalogue description(s) with licence, from `data/hsp/` |
+
+Manuscript workflow example: `find_manuscript("<name>")` -> `manuscript_mentions("lassberg-witness-NNNN")`
+-> `hsp_manuscript("lassberg-witness-NNNN")`. The HSP data lives in the gitignored local mirror
+`data/hsp/` (`make hsp-mirror hsp-index`); descriptions can be licence-restricted (in copyright), the
+licence is always returned. The HSP API is undocumented and has no CORS; only `scripts/lib_hsp.py`
+contains HSP URLs, so switching to the official API (announced) means changing that one module.
 
 `semantic_search` and `get_letter` work with no Docker services running at all - they read
 straight from `build/` and `embeddings/`. `graph_query`/`sparql_query` return a clear
@@ -42,7 +52,7 @@ so all three stay in sync.
            occupation?, education?, birth?, death?})
 (:Place  {id, label, wikidata?, gnd?, url?, desc?, lat?, lon?})
 (:Work   {id, label, lit_type?, ana?, date?, idno?, author_label?, pub_place_label?})
-(:Witness{id, label, witness_type?, settlement?, repository?, signature?, note?})
+(:Witness{id, label, witness_type?, settlement?, repository?, signature?, hsp_id?, note?})
 (l:Letter)-[:SENT_BY]->(p:Person)
 (l:Letter)-[:SENT_TO]->(p:Person)
 (l:Letter)-[:SENT_FROM]->(pl:Place)
@@ -70,7 +80,9 @@ standard term):
              schema:geo [ schema:latitude; schema:longitude ] .
 <work/ID>    a schema:CreativeWork ; rdfs:label ; voc:litType ; schema:dateCreated ; dcterms:identifier* (idno) ;
              schema:author <person/ID>|Literal ; schema:locationCreated <place/ID>|Literal .
-<witness/ID> a schema:CreativeWork ; rdfs:label ; schema:exampleOfWork <work/ID> .
+<witness/ID> a schema:CreativeWork, schema:ArchiveComponent ; rdfs:label ; schema:exampleOfWork <work/ID> ;
+             voc:hspId "HSP-..." ; rdfs:seeAlso <HSP portal URL> ; voc:settlement ; voc:repository ;
+             dcterms:identifier (shelfmark) .
 ```
 
 ## Setup

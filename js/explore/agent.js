@@ -18,6 +18,7 @@ import { neighbors, sharedMentions, correspondenceContext } from "./graph-core.j
 import { loadGraphIndex } from "./graphrag.js";
 import { runSparql } from "./sparql.js";
 import { chat } from "./llm-providers.js";
+import { findManuscripts, getManuscript } from "./manuscripts.js";
 
 const MAX_STEPS = 8;
 const MAX_TEXT_CHARS = 3000;
@@ -44,7 +45,7 @@ const TOOLS = {
       };
       let hits = matchAll(q);
       if (hits.length === 0) {
-        // fall back to individual words ("Kolmarer Liederhandschrift" -> "kolmarer", "liederhandschrift")
+        // fall back to individual words ("Weingartner Liederhandschrift" -> "weingartner", "liederhandschrift")
         for (const word of q.split(/\s+/).filter((w) => w.length > 3)) {
           hits = hits.concat(matchAll(word));
         }
@@ -122,6 +123,39 @@ const TOOLS = {
     },
   },
 
+  find_manuscript: {
+    doc: 'find_manuscript {"query": string} - find registered manuscripts (lassberg-witness-NNNN) by name, shelfmark, place or HSP id; returns id, label, shelfmark, place, hsp_id, n_letters (letters mentioning it).',
+    required: ["query"],
+    run: async ({ query }) => {
+      const rows = await findManuscripts(String(query), 8);
+      return rows.length ? rows.map((m) => ({
+        id: m.id, label: m.label, shelfmark: m.shelfmark, settlement: m.settlement,
+        repository: m.repository, hsp_id: m.hsp_id, n_letters: m.n_letters,
+      })) : "no manuscript matches - it may not be registered; try lookup_entity or semantic_search";
+    },
+  },
+
+  get_manuscript: {
+    doc: 'get_manuscript {"id": "lassberg-witness-NNNN"} - Handschriftenportal data of one manuscript (core data, portal URL, mentioning letters, catalogue descriptions). Descriptions without a free licence are only cited and linked (content null) unless the site runs with the local full export.',
+    required: ["id"],
+    run: async ({ id }) => {
+      const doc = await getManuscript(String(id));
+      return {
+        id: doc.id, label: doc.label, shelfmark: doc.shelfmark, settlement: doc.settlement, repository: doc.repository,
+        hsp_id: doc.hsp_id, portal_url: doc.portal_url, hsp_core: doc.hsp?.core, hsp_fetched_at: doc.hsp?.fetched_at,
+        letters: doc.letters.map((l) => ({ id: l.id, date: l.date, sender: l.sender, recipient: l.recipient })),
+        descriptions: doc.descriptions.map((d) => ({
+          citation: d.citation, portal_url: d.portal_url, licence: d.licence_status, fetched_at: d.fetched_at,
+          content: d.content ? {
+            headline: d.content.headline, summary: d.content.summary, items: (d.content.items || []).slice(0, 15),
+            history: (d.content.history || "").slice(0, 1500), fulltext: (d.content.fulltext || "").slice(0, 3000),
+          } : null,
+        })),
+        note: "HSP data is a snapshot (fetched_at); descriptions with content null are not freely licensed: cite and link only.",
+      };
+    },
+  },
+
   sparql: {
     doc: 'sparql {"query": string} - SPARQL over the edition RDF (all 3,268 letters). Use for exact/structural questions: counts, letters per year, everything sent by X, all letters mentioning Y.',
     required: ["query"],
@@ -135,7 +169,7 @@ const TOOLS = {
 
 // --- system prompt ---------------------------------------------------------------------------
 
-const SYSTEM_PROMPT = `You are the research agent of the digital edition of Joseph von Lassberg's correspondence (1770-1855). Corpus: 3,268 letters catalogued with full metadata; a growing subset of them (currently a few hundred) additionally has full text and linked entities - semantic_search/get_letter only cover that subset. Every letter involves Lassberg himself - his ID is lassberg-correspondent-0373, so to find a correspondence you only need to query for the OTHER person's ID (never guess IDs; resolve them with lookup_entity). ID schemes: letters lassberg-letter-NNNN, persons lassberg-correspondent-NNNN, places lassberg-place-NNNN, works lassberg-literature-NNNN.
+const SYSTEM_PROMPT = `You are the research agent of the digital edition of Joseph von Lassberg's correspondence (1770-1855). Corpus: 3,268 letters catalogued with full metadata; a growing subset of them (currently a few hundred) additionally has full text and linked entities - semantic_search/get_letter only cover that subset. Every letter involves Lassberg himself - his ID is lassberg-correspondent-0373, so to find a correspondence you only need to query for the OTHER person's ID (never guess IDs; resolve them with lookup_entity). ID schemes: letters lassberg-letter-NNNN, persons lassberg-correspondent-NNNN, places lassberg-place-NNNN, works lassberg-literature-NNNN, manuscripts lassberg-witness-NNNN (registered manuscripts, linked to the Handschriftenportal via voc:hspId; use find_manuscript/get_manuscript).
 
 You answer questions by orchestrating tools over the edition's embeddings, knowledge graph, and RDF store. On EVERY turn reply with EXACTLY ONE JSON object and nothing else (no prose, no code fences):
   {"tool": "<name>", "args": {...}}   to call a tool
@@ -148,11 +182,11 @@ SPARQL reference (endpoint holds the whole corpus):
 PREFIX csvoc: <https://lod.academy/correspsearch/vocab/terms#>
 PREFIX schema1: <http://schema.org/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-Entity URIs: <https://michaelscho.github.io/lassberg/letter/{letter-id}>, .../person/{person-id}, .../place/{place-id}, .../work/{work-id}
+Entity URIs: <https://michaelscho.github.io/lassberg/letter/{letter-id}>, .../person/{person-id}, .../place/{place-id}, .../work/{work-id}, .../witness/{witness-id}
 Letter properties: a csvoc:Letter ; schema1:dateCreated "YYYY-MM-DD" ; schema1:text "..." (only full-text letters) ; csvoc:mentions <entity-uri> ; csvoc:hasCorrespAction <letter-uri>/sent and <letter-uri>/received .
 CorrespAction: <letter-uri>/sent a csvoc:Sent ; csvoc:hasParticipant <person-uri> ; csvoc:tookPlaceAt <place-uri> ; csvoc:hasTimespan ?ts . ?ts csvoc:startsOn ?date . (<letter-uri>/received likewise, a csvoc:Received.)
 IMPORTANT: ?date is a typed xsd:date literal - always wrap in STR() for string ops: FILTER(STRSTARTS(STR(?date), "1830")).
-Entities: rdfs:label "..." ; owl:sameAs <GND/Wikidata URI>.
+Entities: rdfs:label "..." ; owl:sameAs <GND/Wikidata URI>. Manuscripts (witness): a schema1:ArchiveComponent ; <https://michaelscho.github.io/lassberg/vocab/hspId> "HSP-..." ; rdfs:seeAlso <HSP portal URL> ; letters mention them via csvoc:mentions. HSP data is a snapshot (fetched_at); descriptions without a free licence are only cited and linked.
 Example - all letters sent by a person in 1830:
 SELECT ?letter ?date WHERE { ?letter csvoc:hasCorrespAction ?a . ?a a csvoc:Sent ; csvoc:hasParticipant <https://michaelscho.github.io/lassberg/person/lassberg-correspondent-0179> ; csvoc:hasTimespan ?ts . ?ts csvoc:startsOn ?date . FILTER(STRSTARTS(STR(?date), "1830")) }
 

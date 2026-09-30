@@ -16,8 +16,8 @@ COLS = ["shelfmark", "former_shelfmarks", "msname", "title", "date", "orig_place
         "persons", "provenance", "fulltext"]
 
 
-def build() -> int:
-    entries = reg.load_entries()
+def build(register_path: Path = reg.REGISTER) -> int:
+    entries = reg.load_entries(register_path)
     hsp.INDEX_DB.parent.mkdir(parents=True, exist_ok=True)
     if hsp.INDEX_DB.exists():
         hsp.INDEX_DB.unlink()

@@ -223,3 +223,31 @@ def test_letters_jsonl_round_trips_as_json(letters):
     # build/letters.jsonl, one json.dumps() per line)
     for letter in letters:
         json.loads(json.dumps(letter, ensure_ascii=False))
+
+
+def test_manuscript_mentions_via_sparql_on_generated_rdf():
+    """Acceptance query (Plan 9.3): letters mentioning the manuscript with a given HSP id.
+    The HSP id is test data; scripts/mcp_server/js must not hard-code it. Runs on the committed
+    rdf/edition.ttl (regenerate with `make parse rdf`)."""
+    from rdflib import Graph
+    ttl = Path(__file__).resolve().parents[1] / "rdf" / "edition.ttl"
+    if not ttl.exists():
+        pytest.skip("rdf/edition.ttl not generated")
+    g = Graph()
+    g.parse(ttl)
+    q = """
+    PREFIX csvoc: <https://lod.academy/correspsearch/vocab/terms#>
+    PREFIX voc:   <https://michaelscho.github.io/lassberg/vocab/>
+    SELECT ?letter ?date WHERE {
+      ?ms voc:hspId "HSP-666242f4-0675-3121-b0d6-be697c7a9b20" .
+      ?letter csvoc:mentions ?ms ;
+              csvoc:hasCorrespAction/csvoc:hasTimespan/csvoc:startsOn ?date .
+    } ORDER BY ?date"""
+    rows = [(str(r.letter).rsplit("/", 1)[1], str(r.date)) for r in g.query(q)]
+    assert rows == [
+        ("lassberg-letter-1064", "1826-01-25"),
+        ("lassberg-letter-1730", "1833-06-30"),
+        ("lassberg-letter-1737", "1833-08-13"),
+        ("lassberg-letter-1741", "1833-08-30"),
+        ("lassberg-letter-1743", "1833-09-26"),
+    ]

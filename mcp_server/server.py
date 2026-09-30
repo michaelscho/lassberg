@@ -10,6 +10,10 @@ MCP-independent functions, importable from other agent frameworks or scripts too
   graph_query(cypher, limit=100)   - read-only Cypher against Neo4j (needs `make graph` running).
   get_letter(letter_id)            - full metadata+text for one letter, from JSON files only.
   sparql_query(query)              - SPARQL against Oxigraph (needs `make sparql` running).
+  find_manuscript(query)           - fuzzy search in the manuscript register (name/shelfmark/place/HSP id).
+  manuscript_mentions(witness_id)  - letters mentioning a manuscript, with text excerpts.
+  hsp_search(query, limit, live)   - Handschriftenportal: local description index (+ live search).
+  hsp_manuscript(id, description)  - HSP core data + catalogue description(s) from the local mirror.
 
 Id format (repeated in each tool's docstring since that's what the model actually reads before
 calling a tool): every letter/person/place/work/witness id in this corpus is a canonical string
@@ -29,6 +33,10 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from fastmcp import FastMCP
 
+from tools.manuscripts import find_manuscript as _find_manuscript
+from tools.manuscripts import hsp_manuscript as _hsp_manuscript
+from tools.manuscripts import hsp_search as _hsp_search
+from tools.manuscripts import manuscript_mentions as _manuscript_mentions
 from tools.graph_query import get_letter as _get_letter
 from tools.graph_query import graph_query as _graph_query
 from tools.semantic_search import semantic_search as _semantic_search
@@ -118,10 +126,65 @@ def sparql_query(query: str) -> dict:
                   schema:gender ; schema:birthDate ; schema:deathDate ; voc:personType .
       <place/ID>  a csvoc:Place ; rdfs:label ; owl:sameAs <wikidata> .
       <work/ID>   a schema:CreativeWork ; rdfs:label ; schema:author <person/ID>|Literal .
+      <witness/ID> a schema:CreativeWork, schema:ArchiveComponent ; rdfs:label ; voc:hspId "HSP-..." ;
+                  rdfs:seeAlso <HSP portal URL> ; voc:settlement ; voc:repository ; dcterms:identifier (shelfmark) ;
+                  schema:exampleOfWork <work/ID> . (manuscripts; find_manuscript/hsp_manuscript give details)
 
     Requires Oxigraph running (`make sparql`).
     """
     return _sparql_query(query)
+
+
+@mcp.tool
+def find_manuscript(query: str, limit: int = 10) -> list[dict]:
+    """Find manuscripts in the edition's manuscript register (fuzzy: name, shelfmark, former
+    shelfmark, place, repository, or an exact HSP id).
+
+    Ids: manuscripts are "lassberg-witness-NNNN" (4-digit zero-padded). Returns
+    [{witness_id, label, settlement, repository, shelfmark, hsp_id, n_letters, score}] where
+    n_letters counts letters that mention the manuscript. Next steps: manuscript_mentions(witness_id)
+    for the letters, hsp_manuscript(witness_id) for the Handschriftenportal data. Files only.
+    """
+    return _find_manuscript(query, limit=limit)
+
+
+@mcp.tool
+def manuscript_mentions(witness_id: str) -> list[dict]:
+    """Letters that mention a manuscript, sorted by date, with sender, recipient and text excerpts
+    around the annotated passage (transcription).
+
+    Args:
+        witness_id: canonical id, e.g. "lassberg-witness-0001" (from find_manuscript). Letter ids in
+            the result are canonical "lassberg-letter-NNNN" strings - report them in that form.
+    """
+    return _manuscript_mentions(witness_id)
+
+
+@mcp.tool
+def hsp_search(query: str, limit: int = 10, live: bool = False) -> list[dict]:
+    """Search the Handschriftenportal (HSP) data mirrored locally for the registered manuscripts:
+    by shelfmark or former shelfmark (e.g. "Cod. Donaueschingen 63"), or by content, author,
+    provenance and description text. live=True additionally queries the live HSP (spell
+    correction applies: verify shelfmark/title of every live hit).
+
+    Returns [{source: local|live, hsp_id, witness_id?, shelfmark, msname, score?, snippet?}].
+    """
+    return _hsp_search(query, limit=limit, live=live)
+
+
+@mcp.tool
+def hsp_manuscript(id: str, description: str = "summary") -> dict:
+    """Handschriftenportal data for one manuscript: core data (place, repository, shelfmark, date,
+    origin, extent), portal URL, and its catalogue descriptions with citation and licence.
+
+    Args:
+        id: "lassberg-witness-NNNN" (resolved via the register) or an HSP id ("HSP-...").
+        description: "summary" (headline, summary, contents, history), "full" (cleaned full text,
+            max 30,000 chars) or "none". Descriptions may be licence-restricted (in copyright):
+            the licence is always returned, use accordingly. Data is a snapshot (fetched_at).
+    Missing manuscripts are fetched live and mirrored.
+    """
+    return _hsp_manuscript(id, description=description)
 
 
 if __name__ == "__main__":
