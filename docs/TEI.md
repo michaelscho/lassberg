@@ -301,7 +301,7 @@ Elemente stehen (Pipeline liest sie als „unbekannt", nicht als leeren String).
 | `person` | `data/register/lassberg-persons.xml` | `key=""` lassen, nicht erfinden |
 | `place` | `data/register/lassberg-places.xml` | `key=""` lassen, nicht erfinden |
 | `bibl` | `data/register/lassberg-literature.xml` (das **Werk**, nicht das Exemplar) | `key=""` lassen |
-| `witness` | `data/register/lassberg-manuscripts.xml` (ein **konkretes** Handschriften-/Druckexemplar, s. u.) | `key=""` lassen |
+| `witness` | **Handschriften:** `data/register/lassberg-manuscripts.xml` (`<msDesc>`, s. u.); **Urkunden/Druckexemplare:** `bibl type="charter"` in `lassberg-literature.xml` (das Zielregister ergibt sich aus dem Key) | `key=""` lassen |
 | `object` | kein Register (Platzhalter für sonstige, nicht-textuelle Gegenstände) | immer `key=""` |
 | `misc` | kein Register | immer `key=""` |
 
@@ -517,14 +517,13 @@ unterscheidet: dem **Werk** als solchem (z. B. „der Tristan"), einer **konkret
 dieses Werks (z. B. „Gottfried von Straßburgs Tristan in der Ausgabe von Hagen/Büsching") oder
 einem **einzelnen physischen Exemplar** dieser Ausgabe bzw. einer Handschrift (z. B. „mein
 Exemplar, das ich Ihnen sende"). Alle drei werden unterschiedlich kodiert, aber im selben
-Literaturregister bzw. im Handschriften-/Druckexemplarregister geführt — es gibt kein viertes
-Register, nur eine bewusste Differenzierung innerhalb der bestehenden zwei:
+Literaturregister bzw. im Handschriftenregister (Handschriften) bzw. Literaturregister (Urkunden/Druckexemplare) geführt:
 
 | Ebene | Kodierung | Merkmale |
 |---|---|---|
 | **Werk** (abstrakt) | `<bibl>`/`<biblStruct type="work">` in `lassberg-literature.xml` | nur Titel + Normdaten (GND-Filter `type:Work`), **kein** `<pubPlace>`/`<date>` — die abstrakte Textidentität, unabhängig von einer bestimmten Druck- oder Editionsgeschichte |
 | **Ausgabe** (konkrete Edition) | `<bibl>`/`<biblStruct>` (ohne `type="work"`) in `lassberg-literature.xml`, mit `<pubPlace>`/`<date>`/`<idno type="vd16\|vd17\|vd18\|gw\|…">` | das ist bereits der faktische Regelfall der meisten bestehenden Einträge im Register — die meisten heutigen `<bibl>`-Einträge sind, auch wenn `docs/TEI.md` sie bisher unter „Werk" gefasst hat, tatsächlich Ausgaben-Einträge |
-| **Exemplar** (physische Kopie) | `<bibl type="charter">` in `lassberg-literature.xml` (s. u.) | seit 2026-07-14; ersetzt das nie tatsächlich genutzte separate Exemplarregister |
+| **Exemplar** (physische Kopie) | Handschriften: `<msDesc>` in `lassberg-manuscripts.xml`; Urkunden/Druckexemplare: `<bibl type="charter">` in `lassberg-literature.xml` (s. u.) | Handschriften seit 2026-09-30 im eigenen Register (revidiert die Regelung vom 2026-07-14) |
 
 In der Praxis lässt sich diese Zuordnung selten mechanisch aus dem Brieftext ableiten — ob eine
 Erwähnung das Werk allgemein, eine bestimmte Ausgabe oder ein konkretes Exemplar meint, erfordert
@@ -550,32 +549,86 @@ hat (sie *ist* meist beides zugleich — Text und Textzeuge in einem).
 Diese Unterscheidung Werk/Exemplar entspricht der aus der Handschriften- und Editionskunde
 bekannten Unterscheidung zwischen Text und **Textzeuge** (engl. *witness*).
 
-**Seit 2026-07-14** wird dafür kein eigenes Register mehr geführt — `lassberg-manuscripts.xml`
-existierte zwar als Vorlage, wurde aber im gesamten bisherigen Korpus nie tatsächlich befüllt
-(auch das ursprünglich in dieser Doku als Beispiel angeführte `lassberg-letter-1044.xml` verwendet
-faktisch `type="object"`, nicht `type="witness"`). Stattdessen werden Exemplare/Urkunden als
-eigener `<bibl>`-Eintrag mit `@type="charter"` direkt in `data/register/lassberg-literature.xml`
-angelegt (ID-Muster weiterhin `lassberg-literature-NNNN`, kein separates Präfix). `@type="charter"`
-tritt damit als vierter Wert neben `historicalSource`/`contemporaryPublication`/`unknown` hinzu.
-`lassberg-manuscripts.xml` bleibt unangetastet im Repo (falls doch einmal ein Fall auftritt, der
-eine echte Mehr-Exemplare-eines-Werks-Modellierung braucht), ist aber nicht der aktuelle Weg.
+**Seit 2026-09-30** gilt (revidiert die Festlegung vom 2026-07-14):
+
+- **Handschriften** (Codex, Fragment, Sammelhandschrift) stehen im eigenen Register
+  `data/register/lassberg-manuscripts.xml` als schlanke `<msDesc>` in einer `<listBibl>`
+  (ID-Muster `lassberg-witness-NNNN`). Die Katalogbeschreibung selbst liefert das
+  Handschriftenportal (HSP, `altIdentifier type="hsp"`), sie wird nicht im Register dupliziert.
+- **Urkunden und Druckexemplare** bleiben `<bibl type="charter">` in `lassberg-literature.xml`
+  (Regelung vom 2026-07-14, s. u.).
 
 ### Auszeichnung im Brief
 
-Im Fließtext weiterhin: `<rs type="witness" key="…">` — nur zeigt `@key` jetzt auf
-`lassberg-literature.xml`. In `<note type="mentioned">` weiterhin `<ref type="cmif:mentionsBibl">`
-(CMIF kennt keine eigene Kategorie für Exemplare; die Unterscheidung Werk/Exemplar ergibt sich rein
-aus `@type="charter"` am Zieleintrag).
+Im Fließtext: `<rs type="witness" key="…">`. Nur in der Transkriptions-`div`
+(`type="original"` oder `type="print"`). In `<note type="mentioned">` einmal pro Handschrift und
+Brief `<ref type="cmif:mentionsBibl">` (CMIF kennt keine eigene Kategorie für Textzeugen).
+
+```xml
+Nun bin ich doch frohe, daß der <rs type="witness"
+    key="../register/lassberg-manuscripts.xml#lassberg-witness-0001"
+    resp="#manuscript-scan">Colmarer liedercodex</rs> wieder aufgefunden ist.
+
+<!-- note type="mentioned" -->
+<ref type="cmif:mentionsBibl" target="../register/lassberg-manuscripts.xml#lassberg-witness-0001"
+    ><rs>Kolmarer Liederhandschrift</rs></ref>
+```
+
+Regeln:
+
+1. **`witness` = eine bestimmte, identifizierbare Handschrift**, egal ob über den Namen
+   („Weingartner Codex"), die Signatur („Cod. pal. 357"), den Besitzer („Neukirchs Hs.") oder den
+   Aufbewahrungsort genannt. Pronomen und Anaphern werden nicht ausgezeichnet.
+2. **Werk vs. Handschrift:** „das Nibelungenlied" → `rs type="bibl"`. „meine Handschrift der
+   Nibelungen" → `rs type="witness"`. Nicht verschachteln; der Werkbezug steht im Register
+   (`msItem/title/@key`).
+3. **Unspezifische Nennungen** („eine alte Handschrift", „einige Pergamentblätter") werden nicht
+   ausgezeichnet. Ist eine Handschrift spezifisch, aber nicht identifizierbar: `key=""`.
+4. **Urkunden und Druckexemplare** bleiben `rs type="witness"` mit Key auf einen
+   `bibl type="charter"` im Literaturregister.
+5. Bestehendes `rs type="object"|"misc"|"bibl"`, das eigentlich eine Handschrift meint, wird
+   **umtypisiert** (`@type` → `witness`, `@key` setzen).
+6. Maschinell gesetzte oder geänderte `<rs>` tragen `resp="#manuscript-scan"`. Es wird **kein**
+   `<change>` in `revisionDesc` geschrieben (das Statusmodell liest den letzten `change/@status`).
+
+Neue Briefe, die nicht über den Scan-Workflow (`scripts/manuscripts/`) gelaufen sind, werden
+dort nachgezogen.
+
+### Handschriftenregister (`lassberg-manuscripts.xml`)
+
+Pflicht ist nur `msIdentifier`, alles andere ist optional:
+
+```xml
+<listBibl>
+    <msDesc xml:id="lassberg-witness-0001">
+        <msIdentifier>
+            <settlement>München</settlement>
+            <repository>Bayerische Staatsbibliothek</repository>
+            <idno type="shelfmark">Cgm 4997</idno>
+            <altIdentifier type="hsp"><idno>HSP-…</idno></altIdentifier>
+            <msName>Kolmarer Liederhandschrift</msName>
+        </msIdentifier>
+        <msContents><msItem><title key="../register/lassberg-literature.xml#lassberg-literature-NNNN">…</title></msItem></msContents>
+        <history><provenance>Sammlung Laßberg (Laßberg-Nr. 174)</provenance></history>
+        <note>Identifizierung/Quelle</note>
+    </msDesc>
+</listBibl>
+```
+
+- `altIdentifier/@type`: `hsp` (HSP-ID des **Kulturobjekts**), `handschriftencensus`, `gnd`,
+  `former` (frühere Signatur, z. B. Laßberg-Nummer). HSP-IDs der Beschreibungen kommen nicht ins
+  Register.
+- `@ana="needs-review"` bei unsicherer Identifizierung.
+
+### Urkunden und Druckexemplare (`type="charter"`, Regelung vom 2026-07-14)
+
+Exemplare/Urkunden sind ein eigener `<bibl>`-Eintrag mit `@type="charter"` in
+`data/register/lassberg-literature.xml` (ID-Muster `lassberg-literature-NNNN`).
 
 ```xml
 <!-- Fließtext -->
 Empfangen Sie meinen besten Dank für die abschrift der <rs type="witness"
     key="../register/lassberg-literature.xml#lassberg-literature-0227">urkunde von 1222</rs>.
-
-<!-- note type="mentioned" -->
-<ref type="cmif:mentionsBibl" target="../register/lassberg-literature.xml#lassberg-literature-0227">
-    <rs>Urkunde von 1222</rs>
-</ref>
 
 <!-- Registereintrag -->
 <bibl xml:id="lassberg-literature-0227" type="charter" ana="needs-review">
@@ -588,9 +641,7 @@ Empfangen Sie meinen besten Dank für die abschrift der <rs type="witness"
 ```
 
 Ist der Aussteller/Autor nicht bekannt, bleibt `<author key=""/>` leer statt einen Verweis zu
-erfinden — analog zum Vorgehen bei Personen, Orten und Werken sonst auch. Für Handschriften gilt
-dasselbe Vorgehen (ebenfalls `@type="charter"` im Literaturregister, keine separate
-`lassberg-manuscripts.xml`-Eintragung), sobald ein entsprechender Fall im Korpus auftritt.
+erfinden.
 
 ### Abgrenzung zu `object`/`misc`
 

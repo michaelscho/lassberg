@@ -43,7 +43,8 @@ Registers actually parsed (lassberg-objects.xml is intentionally ignored, per CL
                               @gender="CorporateBody" marks an institution, still filed as "person".
   - lassberg-places.xml:     <place><placeName ref="wikidata-url">, <geo ana="wgs84">lat,lon</geo>
   - lassberg-literature.xml: <bibl xml:id=... type="contemporaryPublication|historicalSource|unknown">
-  - lassberg-manuscripts.xml:<witness xml:id=... type="manuscript|print" corresp="...literature...">
+  - lassberg-manuscripts.xml:<msDesc xml:id="lassberg-witness-NNNN"> (msIdentifier: settlement,
+                              repository, idno[@type=shelfmark], altIdentifier[@type=hsp], msName)
 
 Letter status = the latest `revisionDesc//change/@status` (draft|done|reviewed|published, see
 docs/TEI.md "Letter status model" and scripts/sync_letter_status.py). "draft" letters typically
