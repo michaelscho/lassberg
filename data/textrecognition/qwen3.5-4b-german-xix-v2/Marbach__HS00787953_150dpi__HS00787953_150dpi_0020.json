@@ -1,0 +1,241 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00787953_150dpi",
+  "source": {
+    "name": "HS00787953_150dpi_0020.jpg",
+    "bytes": 124815,
+    "sha256": "8b2da4b2da0d72fc87257bc534d1e1f475ef86c3a064a7cb9921cdfc6b6cc14a",
+    "remote": "digitalisate/Marbach/HS00787953_150dpi/HS00787953_150dpi_0020.jpg",
+    "key": "Marbach__HS00787953_150dpi__HS00787953_150dpi_0020",
+    "working_copy": "HS00787953_150dpi_0020.jpg"
+  },
+  "text": "A: Meiland\nlassen\nlebend,\ns¬\nserbe von\nLudwig\npischhausen, Weiligenberg u. a\n164-47167",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          606.0,
+          123.0
+        ],
+        [
+          801.0,
+          125.0
+        ]
+      ],
+      "bbox": [
+        605.0,
+        85.0,
+        801.0,
+        146.0
+      ],
+      "text": "A: Meiland",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          212.0,
+          312.0
+        ],
+        [
+          348.0,
+          313.0
+        ]
+      ],
+      "bbox": [
+        212.0,
+        267.0,
+        348.0,
+        329.0
+      ],
+      "text": "lassen",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          221.0,
+          424.0
+        ],
+        [
+          426.0,
+          419.0
+        ]
+      ],
+      "bbox": [
+        220.0,
+        378.0,
+        426.0,
+        444.0
+      ],
+      "text": "lebend,",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          363.0,
+          540.0
+        ],
+        [
+          401.0,
+          541.0
+        ]
+      ],
+      "bbox": [
+        362.0,
+        505.0,
+        401.0,
+        556.0
+      ],
+      "text": "s¬",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          460.0,
+          309.0
+        ],
+        [
+          519.0,
+          305.0
+        ],
+        [
+          643.0,
+          303.0
+        ]
+      ],
+      "bbox": [
+        459.0,
+        270.0,
+        643.0,
+        327.0
+      ],
+      "text": "serbe von",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          444.0,
+          417.0
+        ],
+        [
+          517.0,
+          412.0
+        ],
+        [
+          601.0,
+          413.0
+        ]
+      ],
+      "bbox": [
+        442.0,
+        371.0,
+        601.0,
+        445.0
+      ],
+      "text": "Ludwig",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          235.0,
+          652.0
+        ],
+        [
+          481.0,
+          653.0
+        ],
+        [
+          717.0,
+          645.0
+        ],
+        [
+          897.0,
+          651.0
+        ]
+      ],
+      "bbox": [
+        234.0,
+        610.0,
+        897.0,
+        676.0
+      ],
+      "text": "pischhausen, Weiligenberg u. a",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 7,
+      "baseline": [
+        [
+          601.0,
+          1225.0
+        ],
+        [
+          858.0,
+          1225.0
+        ]
+      ],
+      "bbox": [
+        601.0,
+        1192.0,
+        858.0,
+        1241.0
+      ],
+      "text": "164-47167",
+      "confidence": null,
+      "regions": [
+        "r2"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 6177,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T11:39:58+00:00"
+}

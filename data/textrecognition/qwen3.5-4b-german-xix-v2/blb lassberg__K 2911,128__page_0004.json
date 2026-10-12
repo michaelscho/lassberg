@@ -1,0 +1,101 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "blb lassberg/K 2911,128",
+  "source": {
+    "name": "page_0004.jpg",
+    "bytes": 1030184,
+    "sha256": "10c544ee76cf47c307689f3ad132376c701875f3f83acc34c1117f67855d1d88",
+    "remote": "digitalisate/blb lassberg/K 2911,128/page_0004.jpg",
+    "key": "blb lassberg__K 2911,128__page_0004",
+    "working_copy": "page_0004.jpg"
+  },
+  "text": "Test. Studÿ Wiennalis\nunverhältnisse\nin Capitulo",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          1399.0,
+          220.0
+        ],
+        [
+          2324.0,
+          209.0
+        ]
+      ],
+      "bbox": [
+        1398.0,
+        141.0,
+        2324.0,
+        251.0
+      ],
+      "text": "Test. Studÿ Wiennalis",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1752.0,
+          319.0
+        ],
+        [
+          2218.0,
+          314.0
+        ]
+      ],
+      "bbox": [
+        1751.0,
+        264.0,
+        2218.0,
+        342.0
+      ],
+      "text": "unverhältnisse",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          2144.0,
+          737.0
+        ],
+        [
+          2580.0,
+          741.0
+        ]
+      ],
+      "bbox": [
+        2143.0,
+        669.0,
+        2580.0,
+        787.0
+      ],
+      "text": "in Capitulo",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 11757,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T18:39:31+00:00"
+}

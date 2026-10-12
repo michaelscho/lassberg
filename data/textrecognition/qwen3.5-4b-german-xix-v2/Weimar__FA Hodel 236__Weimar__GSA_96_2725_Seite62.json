@@ -1,0 +1,126 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Weimar/FA Hodel 236/Weimar",
+  "source": {
+    "name": "GSA_96_2725_Seite62.jpg",
+    "bytes": 8504102,
+    "sha256": "53b7c2e376086a96ed21f8e8e84c6bc62f595c02d4ade2edb59cbe602470e020",
+    "remote": "digitalisate/Weimar/FA Hodel 236/Weimar/GSA_96_2725_Seite62.jpg",
+    "key": "Weimar__FA Hodel 236__Weimar__GSA_96_2725_Seite62",
+    "working_copy": "GSA_96_2725_Seite62.jpg"
+  },
+  "text": "Recker Classico\n1.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          64.0,
+          952.0
+        ],
+        [
+          336.0,
+          950.0
+        ]
+      ],
+      "bbox": [
+        63.0,
+        905.0,
+        336.0,
+        992.0
+      ],
+      "text": "Recker Classico",
+      "confidence": null,
+      "regions": [
+        "_bb0f61c1-a5b3-4d15-ac5f-c5cd5e8c0bcc"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          90.0,
+          2415.0
+        ],
+        [
+          257.0,
+          2417.0
+        ]
+      ],
+      "bbox": [
+        88.0,
+        2365.0,
+        257.0,
+        2446.0
+      ],
+      "text": "1.",
+      "confidence": null,
+      "regions": [
+        "_4f6f9e74-2000-4dfd-b307-9b0aa76f2bc0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 9141,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "NACKET CLASSIC\n1210",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            64.0,
+            952.0
+          ],
+          [
+            336.0,
+            950.0
+          ]
+        ],
+        "bbox": [
+          63.0,
+          905.0,
+          336.0,
+          992.0
+        ],
+        "text": "NACKET CLASSIC",
+        "confidence": 0.7733058546270642,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            90.0,
+            2415.0
+          ],
+          [
+            257.0,
+            2417.0
+          ]
+        ],
+        "bbox": [
+          88.0,
+          2365.0,
+          257.0,
+          2446.0
+        ],
+        "text": "1210",
+        "confidence": 0.4518923684954643,
+        "regions": []
+      }
+    ],
+    "confidence": 0.6125991115612643,
+    "timing_ms": 29462,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T12:38:37+00:00"
+}

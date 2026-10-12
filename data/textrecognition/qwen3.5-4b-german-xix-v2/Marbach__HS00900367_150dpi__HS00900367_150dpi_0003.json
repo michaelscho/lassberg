@@ -1,0 +1,225 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00900367_150dpi",
+  "source": {
+    "name": "HS00900367_150dpi_0003.jpg",
+    "bytes": 143075,
+    "sha256": "6ecf8707e4d7f4e761fae7d548e4ff3e355f8212ca389a792d5a804f4cdf8117",
+    "remote": "digitalisate/Marbach/HS00900367_150dpi/HS00900367_150dpi_0003.jpg",
+    "key": "Marbach__HS00900367_150dpi__HS00900367_150dpi_0003",
+    "working_copy": "HS00900367_150dpi_0003.jpg"
+  },
+  "text": "200000\nG. w.\nso\nMuster\ns¬\nder 1. April\nder\ns¬",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          696.0,
+          134.0
+        ],
+        [
+          800.0,
+          135.0
+        ]
+      ],
+      "bbox": [
+        695.0,
+        104.0,
+        800.0,
+        151.0
+      ],
+      "text": "200000",
+      "confidence": null,
+      "regions": [
+        "r2"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          192.0,
+          354.0
+        ],
+        [
+          324.0,
+          355.0
+        ]
+      ],
+      "bbox": [
+        192.0,
+        313.0,
+        324.0,
+        364.0
+      ],
+      "text": "G. w.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          205.0,
+          471.0
+        ],
+        [
+          276.0,
+          472.0
+        ]
+      ],
+      "bbox": [
+        204.0,
+        432.0,
+        276.0,
+        494.0
+      ],
+      "text": "so",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          384.0,
+          359.0
+        ],
+        [
+          528.0,
+          357.0
+        ]
+      ],
+      "bbox": [
+        383.0,
+        325.0,
+        528.0,
+        378.0
+      ],
+      "text": "Muster",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          383.0,
+          835.0
+        ],
+        [
+          396.0,
+          835.0
+        ]
+      ],
+      "bbox": [
+        383.0,
+        801.0,
+        396.0,
+        849.0
+      ],
+      "text": "s¬",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          411.0,
+          489.0
+        ],
+        [
+          581.0,
+          487.0
+        ]
+      ],
+      "bbox": [
+        410.0,
+        450.0,
+        581.0,
+        510.0
+      ],
+      "text": "der 1. April",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          410.0,
+          716.0
+        ],
+        [
+          457.0,
+          716.0
+        ]
+      ],
+      "bbox": [
+        410.0,
+        675.0,
+        457.0,
+        742.0
+      ],
+      "text": "der",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 7,
+      "baseline": [
+        [
+          704.0,
+          1210.0
+        ],
+        [
+          712.0,
+          1210.0
+        ]
+      ],
+      "bbox": [
+        701.0,
+        1178.0,
+        713.0,
+        1227.0
+      ],
+      "text": "s¬",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 5483,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 48,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T20:29:26+00:00"
+}

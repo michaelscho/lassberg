@@ -1,0 +1,249 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00848999_150dpi",
+  "source": {
+    "name": "HS00848999_150dpi_0007.jpg",
+    "bytes": 240556,
+    "sha256": "98c7492f4c1c2089970d1a09f99d436149dd4212815c8c76744d6100a90e2181",
+    "remote": "digitalisate/Marbach/HS00848999_150dpi/HS00848999_150dpi_0007.jpg",
+    "key": "Marbach__HS00848999_150dpi__HS00848999_150dpi_0007",
+    "working_copy": "HS00848999_150dpi_0007.jpg"
+  },
+  "text": "de\nMonsieur\n1849\n1871\n1865\nBern\nde\nMonsieur le\n1149",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          329.0,
+          460.0
+        ],
+        [
+          331.0,
+          412.0
+        ]
+      ],
+      "bbox": [
+        304.0,
+        410.0,
+        346.0,
+        460.0
+      ],
+      "text": "de",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          328.0,
+          579.0
+        ],
+        [
+          330.0,
+          634.0
+        ]
+      ],
+      "bbox": [
+        297.0,
+        577.0,
+        356.0,
+        634.0
+      ],
+      "text": "Monsieur",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          331.0,
+          660.0
+        ],
+        [
+          331.0,
+          655.0
+        ]
+      ],
+      "bbox": [
+        306.0,
+        655.0,
+        382.0,
+        660.0
+      ],
+      "text": "1849",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          455.0,
+          640.0
+        ],
+        [
+          455.0,
+          649.0
+        ]
+      ],
+      "bbox": [
+        432.0,
+        640.0,
+        471.0,
+        649.0
+      ],
+      "text": "1871",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          455.0,
+          838.0
+        ],
+        [
+          455.0,
+          822.0
+        ]
+      ],
+      "bbox": [
+        426.0,
+        822.0,
+        503.0,
+        838.0
+      ],
+      "text": "1865",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          455.0,
+          875.0
+        ],
+        [
+          457.0,
+          945.0
+        ]
+      ],
+      "bbox": [
+        420.0,
+        873.0,
+        504.0,
+        945.0
+      ],
+      "text": "Bern",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          572.0,
+          483.0
+        ],
+        [
+          572.0,
+          543.0
+        ]
+      ],
+      "bbox": [
+        551.0,
+        482.0,
+        586.0,
+        543.0
+      ],
+      "text": "de",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 7,
+      "baseline": [
+        [
+          618.0,
+          457.0
+        ],
+        [
+          620.0,
+          619.0
+        ]
+      ],
+      "bbox": [
+        594.0,
+        457.0,
+        650.0,
+        619.0
+      ],
+      "text": "Monsieur le",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 8,
+      "baseline": [
+        [
+          539.0,
+          1393.0
+        ],
+        [
+          593.0,
+          1393.0
+        ]
+      ],
+      "bbox": [
+        539.0,
+        1377.0,
+        593.0,
+        1415.0
+      ],
+      "text": "1149",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 6153,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T14:02:19+00:00"
+}

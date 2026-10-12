@@ -1,0 +1,218 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Briefe UB Freiburg/lassberg-letter-0301",
+  "source": {
+    "name": "002.tif",
+    "bytes": 9141238,
+    "sha256": "38906f63e002e3d65bc9c1edec7a5a3f71835ae0b0860c5cf59446c56f31836e",
+    "remote": "digitalisate/Briefe UB Freiburg/lassberg-letter-0301/002.tif",
+    "key": "Briefe UB Freiburg__lassberg-letter-0301__002",
+    "working_copy": "002.jpg"
+  },
+  "text": ".\nwerde.\n.\n31. Jan.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          688.0,
+          337.0
+        ],
+        [
+          724.0,
+          337.0
+        ]
+      ],
+      "bbox": [
+        688.0,
+        311.0,
+        724.0,
+        354.0
+      ],
+      "text": ".",
+      "confidence": null,
+      "regions": [
+        "_baba8efa-ab8a-4f4d-9fd4-dfce779320b0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          837.0,
+          333.0
+        ],
+        [
+          1067.0,
+          334.0
+        ]
+      ],
+      "bbox": [
+        836.0,
+        300.0,
+        1067.0,
+        360.0
+      ],
+      "text": "werde.",
+      "confidence": null,
+      "regions": [
+        "_baba8efa-ab8a-4f4d-9fd4-dfce779320b0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          980.0,
+          513.0
+        ],
+        [
+          996.0,
+          513.0
+        ]
+      ],
+      "bbox": [
+        980.0,
+        474.0,
+        996.0,
+        534.0
+      ],
+      "text": ".",
+      "confidence": null,
+      "regions": [
+        "_25ced721-620f-431a-a02f-fcfefb3466a7"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          1013.0,
+          513.0
+        ],
+        [
+          1201.0,
+          513.0
+        ]
+      ],
+      "bbox": [
+        1013.0,
+        485.0,
+        1201.0,
+        532.0
+      ],
+      "text": "31. Jan.",
+      "confidence": null,
+      "regions": [
+        "_25ced721-620f-431a-a02f-fcfefb3466a7"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 16217,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "2\n1727\n1\n1740",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            688.0,
+            337.0
+          ],
+          [
+            724.0,
+            337.0
+          ]
+        ],
+        "bbox": [
+          688.0,
+          311.0,
+          724.0,
+          354.0
+        ],
+        "text": "2",
+        "confidence": 0.9527831673622131,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            837.0,
+            333.0
+          ],
+          [
+            1067.0,
+            334.0
+          ]
+        ],
+        "bbox": [
+          836.0,
+          300.0,
+          1067.0,
+          360.0
+        ],
+        "text": "1727",
+        "confidence": 0.5021388679742813,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            980.0,
+            513.0
+          ],
+          [
+            996.0,
+            513.0
+          ]
+        ],
+        "bbox": [
+          980.0,
+          474.0,
+          996.0,
+          534.0
+        ],
+        "text": "1",
+        "confidence": 0.9595550894737244,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            1013.0,
+            513.0
+          ],
+          [
+            1201.0,
+            513.0
+          ]
+        ],
+        "bbox": [
+          1013.0,
+          485.0,
+          1201.0,
+          532.0
+        ],
+        "text": "1740",
+        "confidence": 0.6913454756140709,
+        "regions": []
+      }
+    ],
+    "confidence": 0.7764556501060724,
+    "timing_ms": 7116,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-21T23:58:29+00:00"
+}

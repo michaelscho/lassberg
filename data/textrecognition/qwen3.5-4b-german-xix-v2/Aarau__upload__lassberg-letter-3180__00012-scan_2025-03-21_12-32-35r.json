@@ -1,0 +1,212 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Aarau/upload/lassberg-letter-3180",
+  "source": {
+    "name": "00012-scan_2025-03-21_12-32-35r.tif",
+    "bytes": 788155,
+    "sha256": "25a952bc70a99ae0c3a432948c75df4d2373904b07389e5c69babb89abaa23c6",
+    "remote": "digitalisate/Aarau/upload/lassberg-letter-3180/00012-scan_2025-03-21_12-32-35r.tif",
+    "key": "Aarau__upload__lassberg-letter-3180__00012-scan_2025-03-21_12-32-35r",
+    "working_copy": "00012-scan_2025-03-21_12-32-35r.jpg"
+  },
+  "text": "mit im Sie zu wenden ist.\nMit aller Hochachtung empfieht sich Ihre Frau\nMaria Lunn v. Seitz.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          154.0,
+          668.0
+        ],
+        [
+          446.0,
+          677.0
+        ],
+        [
+          820.0,
+          666.0
+        ]
+      ],
+      "bbox": [
+        153.0,
+        591.0,
+        820.0,
+        702.0
+      ],
+      "text": "mit im Sie zu wenden ist.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          92.0,
+          863.0
+        ],
+        [
+          470.0,
+          857.0
+        ],
+        [
+          1109.0,
+          814.0
+        ],
+        [
+          1898.0,
+          790.0
+        ]
+      ],
+      "bbox": [
+        89.0,
+        704.0,
+        1898.0,
+        981.0
+      ],
+      "text": "Mit aller Hochachtung empfieht sich Ihre Frau",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          687.0,
+          1118.0
+        ],
+        [
+          976.0,
+          1119.0
+        ],
+        [
+          1208.0,
+          1103.0
+        ],
+        [
+          1293.0,
+          1105.0
+        ]
+      ],
+      "bbox": [
+        685.0,
+        1007.0,
+        1293.0,
+        1143.0
+      ],
+      "text": "Maria Lunn v. Seitz.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 10129,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "mich an Die zu wenden mich.\nMit edlen Herren verstiefft sich Geres Ihre Ihnen ergebene\nMeine züver gn. Seiller.",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            154.0,
+            668.0
+          ],
+          [
+            446.0,
+            677.0
+          ],
+          [
+            820.0,
+            666.0
+          ]
+        ],
+        "bbox": [
+          153.0,
+          591.0,
+          820.0,
+          702.0
+        ],
+        "text": "mich an Die zu wenden mich.",
+        "confidence": 0.8420205833735289,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            92.0,
+            863.0
+          ],
+          [
+            470.0,
+            857.0
+          ],
+          [
+            1109.0,
+            814.0
+          ],
+          [
+            1898.0,
+            790.0
+          ]
+        ],
+        "bbox": [
+          89.0,
+          704.0,
+          1898.0,
+          981.0
+        ],
+        "text": "Mit edlen Herren verstiefft sich Geres Ihre Ihnen ergebene",
+        "confidence": 0.7850594168593144,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            687.0,
+            1118.0
+          ],
+          [
+            976.0,
+            1119.0
+          ],
+          [
+            1208.0,
+            1103.0
+          ],
+          [
+            1293.0,
+            1105.0
+          ]
+        ],
+        "bbox": [
+          685.0,
+          1007.0,
+          1293.0,
+          1143.0
+        ],
+        "text": "Meine züver gn. Seiller.",
+        "confidence": 0.7621445745229721,
+        "regions": []
+      }
+    ],
+    "confidence": 0.7964081915852718,
+    "timing_ms": 11283,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-21T17:22:36+00:00"
+}

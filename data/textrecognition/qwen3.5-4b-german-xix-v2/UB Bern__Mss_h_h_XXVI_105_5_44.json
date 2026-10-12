@@ -1,0 +1,129 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "UB Bern",
+  "source": {
+    "name": "Mss_h_h_XXVI_105_5_44.tif",
+    "bytes": 28314300,
+    "sha256": "ce74ec3a805b812238160e8a1c463d9f4689453bfac077af5ad7c8a0d42628ad",
+    "remote": "digitalisate/UB Bern/Mss_h_h_XXVI_105_5_44.tif",
+    "key": "UB Bern__Mss_h_h_XXVI_105_5_44",
+    "working_copy": "Mss_h_h_XXVI_105_5_44.jpg"
+  },
+  "text": "calibrite\nlorchecker classica\nunentfernter\n10",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          96.0,
+          107.0
+        ],
+        [
+          239.0,
+          107.0
+        ]
+      ],
+      "bbox": [
+        96.0,
+        79.0,
+        239.0,
+        145.0
+      ],
+      "text": "calibrite",
+      "confidence": null,
+      "regions": [
+        "_82a10336-ff4e-49dc-a323-d9125d2d99b2"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          399.0,
+          109.0
+        ],
+        [
+          757.0,
+          111.0
+        ]
+      ],
+      "bbox": [
+        397.0,
+        75.0,
+        757.0,
+        138.0
+      ],
+      "text": "lorchecker classica",
+      "confidence": null,
+      "regions": [
+        "_918860ac-197c-480f-b46c-0c9c0382d1bb"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          90.0,
+          1303.0
+        ],
+        [
+          687.0,
+          1294.0
+        ]
+      ],
+      "bbox": [
+        88.0,
+        1269.0,
+        687.0,
+        1337.0
+      ],
+      "text": "unentfernter",
+      "confidence": null,
+      "regions": [
+        "_0cced633-d139-4cc0-9345-0f44bb23aa58"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          376.0,
+          3691.0
+        ],
+        [
+          391.0,
+          3691.0
+        ]
+      ],
+      "bbox": [
+        376.0,
+        3664.0,
+        391.0,
+        3725.0
+      ],
+      "text": "10",
+      "confidence": null,
+      "regions": [
+        "_800ff9e7-a4c5-45fb-a163-1d70a36374a8"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 5573,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 31,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T02:04:13+00:00"
+}

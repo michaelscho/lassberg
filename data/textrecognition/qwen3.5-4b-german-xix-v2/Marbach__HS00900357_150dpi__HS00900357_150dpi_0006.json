@@ -1,0 +1,255 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00900357_150dpi",
+  "source": {
+    "name": "HS00900357_150dpi_0006.jpg",
+    "bytes": 147501,
+    "sha256": "086a6300bad2966d26a98e49526b3c43d6560dc38b6718d114e27ebb8b3e72f8",
+    "remote": "digitalisate/Marbach/HS00900357_150dpi/HS00900357_150dpi_0006.jpg",
+    "key": "Marbach__HS00900357_150dpi__HS00900357_150dpi_0006",
+    "working_copy": "HS00900357_150dpi_0006.jpg"
+  },
+  "text": "Prof zu summariren wünszt und schon\nbald\nIhr\nRathsherr der\n9ten Mai 1874.\nFreitag\naddictirten aller\nAbends von 7 Jfs.\nV. Schenk.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          161.0,
+          211.0
+        ],
+        [
+          375.0,
+          206.0
+        ],
+        [
+          706.0,
+          207.0
+        ]
+      ],
+      "bbox": [
+        160.0,
+        171.0,
+        706.0,
+        227.0
+      ],
+      "text": "Prof zu summariren wünszt und schon",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          162.0,
+          256.0
+        ],
+        [
+          234.0,
+          254.0
+        ]
+      ],
+      "bbox": [
+        161.0,
+        229.0,
+        234.0,
+        272.0
+      ],
+      "text": "bald",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          294.0,
+          307.0
+        ],
+        [
+          352.0,
+          306.0
+        ]
+      ],
+      "bbox": [
+        293.0,
+        264.0,
+        352.0,
+        333.0
+      ],
+      "text": "Ihr",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          72.0,
+          498.0
+        ],
+        [
+          261.0,
+          492.0
+        ]
+      ],
+      "bbox": [
+        71.0,
+        449.0,
+        261.0,
+        509.0
+      ],
+      "text": "Rathsherr der",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          95.0,
+          537.0
+        ],
+        [
+          184.0,
+          533.0
+        ],
+        [
+          320.0,
+          533.0
+        ]
+      ],
+      "bbox": [
+        94.0,
+        498.0,
+        320.0,
+        560.0
+      ],
+      "text": "9ten Mai 1874.",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          127.0,
+          577.0
+        ],
+        [
+          242.0,
+          575.0
+        ]
+      ],
+      "bbox": [
+        127.0,
+        551.0,
+        242.0,
+        594.0
+      ],
+      "text": "Freitag",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          370.0,
+          500.0
+        ],
+        [
+          578.0,
+          488.0
+        ],
+        [
+          707.0,
+          486.0
+        ]
+      ],
+      "bbox": [
+        369.0,
+        455.0,
+        707.0,
+        515.0
+      ],
+      "text": "addictirten aller",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 7,
+      "baseline": [
+        [
+          135.0,
+          616.0
+        ],
+        [
+          387.0,
+          610.0
+        ]
+      ],
+      "bbox": [
+        133.0,
+        575.0,
+        387.0,
+        634.0
+      ],
+      "text": "Abends von 7 Jfs.",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 8,
+      "baseline": [
+        [
+          480.0,
+          560.0
+        ],
+        [
+          654.0,
+          556.0
+        ]
+      ],
+      "bbox": [
+        479.0,
+        524.0,
+        654.0,
+        575.0
+      ],
+      "text": "V. Schenk.",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 5323,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 31,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T20:23:36+00:00"
+}

@@ -1,0 +1,81 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Staatsarchiv Zürrich/499_hs_evan_scch_erledigt/FA_Escher_vL_140_174",
+  "source": {
+    "name": "FA_Escher_vL_140_174_0004.tif",
+    "bytes": 34201742,
+    "sha256": "60de7a76f0ea2c4087557a8454e2743a6c8a79df8bcb558aae665ae0617f7c85",
+    "remote": "digitalisate/Staatsarchiv Zürrich/499_hs_evan_scch_erledigt/FA_Escher_vL_140_174/FA_Escher_vL_140_174_0004.tif",
+    "key": "Staatsarchiv Zürrich__499_hs_evan_scch_erledigt__FA_Escher_vL_140_174__FA_Escher_vL_140_174_0004",
+    "working_copy": "FA_Escher_vL_140_174_0004.jpg"
+  },
+  "text": "der\nV. I.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          673.0,
+          3560.0
+        ],
+        [
+          805.0,
+          3562.0
+        ]
+      ],
+      "bbox": [
+        671.0,
+        3518.0,
+        805.0,
+        3582.0
+      ],
+      "text": "der",
+      "confidence": null,
+      "regions": [
+        "_a839f121-a1fc-423a-b49b-95ca0231fc3d"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          840.0,
+          3562.0
+        ],
+        [
+          1107.0,
+          3564.0
+        ]
+      ],
+      "bbox": [
+        838.0,
+        3491.0,
+        1107.0,
+        3601.0
+      ],
+      "text": "V. I.",
+      "confidence": null,
+      "regions": [
+        "_a839f121-a1fc-423a-b49b-95ca0231fc3d"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 7268,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 31,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T22:22:37+00:00"
+}

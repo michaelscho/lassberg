@@ -1,0 +1,234 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00787922_150dpi",
+  "source": {
+    "name": "HS00787922_0028_150dpi.jpg",
+    "bytes": 121426,
+    "sha256": "f35198a6842594ab8b0e4b15c1e3f882f31d1c8519c610e74be6381065135151",
+    "remote": "digitalisate/Marbach/HS00787922_150dpi/HS00787922_0028_150dpi.jpg",
+    "key": "Marbach__HS00787922_150dpi__HS00787922_0028_150dpi",
+    "working_copy": "HS00787922_0028_150dpi.jpg"
+  },
+  "text": "1.18.\n1865\ndiktirt an.\n1840.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          461.0,
+          434.0
+        ],
+        [
+          604.0,
+          431.0
+        ]
+      ],
+      "bbox": [
+        460.0,
+        400.0,
+        604.0,
+        444.0
+      ],
+      "text": "1.18.",
+      "confidence": null,
+      "regions": [
+        "_b9fc0ec5-7c77-459a-a676-38701532157f"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          476.0,
+          524.0
+        ],
+        [
+          599.0,
+          523.0
+        ]
+      ],
+      "bbox": [
+        475.0,
+        484.0,
+        599.0,
+        533.0
+      ],
+      "text": "1865",
+      "confidence": null,
+      "regions": [
+        "_b9fc0ec5-7c77-459a-a676-38701532157f"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          651.0,
+          614.0
+        ],
+        [
+          787.0,
+          606.0
+        ],
+        [
+          859.0,
+          604.0
+        ],
+        [
+          898.0,
+          600.0
+        ]
+      ],
+      "bbox": [
+        650.0,
+        570.0,
+        898.0,
+        625.0
+      ],
+      "text": "diktirt an.",
+      "confidence": null,
+      "regions": [
+        "_b9fc0ec5-7c77-459a-a676-38701532157f"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          911.0,
+          599.0
+        ],
+        [
+          925.0,
+          598.0
+        ]
+      ],
+      "bbox": [
+        910.0,
+        576.0,
+        925.0,
+        609.0
+      ],
+      "text": "1840.",
+      "confidence": null,
+      "regions": [
+        "_b9fc0ec5-7c77-459a-a676-38701532157f"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 47303,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "10. 1. 1855\nMeersburg\n4132 diktiert m. M.\n4.",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            461.0,
+            434.0
+          ],
+          [
+            604.0,
+            431.0
+          ]
+        ],
+        "bbox": [
+          460.0,
+          400.0,
+          604.0,
+          444.0
+        ],
+        "text": "10. 1. 1855",
+        "confidence": 0.8933429338715293,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            476.0,
+            524.0
+          ],
+          [
+            599.0,
+            523.0
+          ]
+        ],
+        "bbox": [
+          475.0,
+          484.0,
+          599.0,
+          533.0
+        ],
+        "text": "Meersburg",
+        "confidence": 0.9002956218189664,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            651.0,
+            614.0
+          ],
+          [
+            787.0,
+            606.0
+          ],
+          [
+            859.0,
+            604.0
+          ],
+          [
+            898.0,
+            600.0
+          ]
+        ],
+        "bbox": [
+          650.0,
+          570.0,
+          898.0,
+          625.0
+        ],
+        "text": "4132 diktiert m. M.",
+        "confidence": 0.8150648772716522,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            911.0,
+            599.0
+          ],
+          [
+            925.0,
+            598.0
+          ]
+        ],
+        "bbox": [
+          910.0,
+          576.0,
+          925.0,
+          609.0
+        ],
+        "text": "4.",
+        "confidence": 0.6613040566444397,
+        "regions": []
+      }
+    ],
+    "confidence": 0.817501872401647,
+    "timing_ms": 34807,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T04:41:43+00:00"
+}

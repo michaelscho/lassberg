@@ -1,0 +1,261 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00911714_150dpi",
+  "source": {
+    "name": "HS00911714_150dpi_0007.jpg",
+    "bytes": 263167,
+    "sha256": "57283db02e8d676093032919e880ca421ca5bcb7cf8dec34ce86f47114cd146e",
+    "remote": "digitalisate/Marbach/HS00911714_150dpi/HS00911714_150dpi_0007.jpg",
+    "key": "Marbach__HS00911714_150dpi__HS00911714_150dpi_0007",
+    "working_copy": "HS00911714_150dpi_0007.jpg"
+  },
+  "text": "Ihre Grüße an Herrn Dr. Pfeiffer habe ich bestellt, er ist mir\nein sehr lieber, Kenntnißreicher Mann.\nIndem ich den Ausdruck meines unbegängten Dankes wiederhole,\nverbleibe ich\nVerheimgsvollst\n545\nHochwohlgeboren\ngehorsamster\nStalin Prof. Diklitschwar.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          270.0,
+          343.0
+        ],
+        [
+          957.0,
+          345.0
+        ],
+        [
+          1202.0,
+          351.0
+        ]
+      ],
+      "bbox": [
+        269.0,
+        308.0,
+        1202.0,
+        376.0
+      ],
+      "text": "Ihre Grüße an Herrn Dr. Pfeiffer habe ich bestellt, er ist mir",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          225.0,
+          392.0
+        ],
+        [
+          726.0,
+          392.0
+        ]
+      ],
+      "bbox": [
+        225.0,
+        360.0,
+        726.0,
+        417.0
+      ],
+      "text": "ein sehr lieber, Kenntnißreicher Mann.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          301.0,
+          483.0
+        ],
+        [
+          790.0,
+          481.0
+        ],
+        [
+          1193.0,
+          494.0
+        ]
+      ],
+      "bbox": [
+        301.0,
+        446.0,
+        1193.0,
+        516.0
+      ],
+      "text": "Indem ich den Ausdruck meines unbegängten Dankes wiederhole,",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          237.0,
+          534.0
+        ],
+        [
+          382.0,
+          532.0
+        ]
+      ],
+      "bbox": [
+        236.0,
+        506.0,
+        382.0,
+        567.0
+      ],
+      "text": "verbleibe ich",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          560.0,
+          695.0
+        ],
+        [
+          807.0,
+          699.0
+        ]
+      ],
+      "bbox": [
+        559.0,
+        657.0,
+        807.0,
+        731.0
+      ],
+      "text": "Verheimgsvollst",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          612.0,
+          1554.0
+        ],
+        [
+          651.0,
+          1552.0
+        ]
+      ],
+      "bbox": [
+        611.0,
+        1522.0,
+        651.0,
+        1568.0
+      ],
+      "text": "545",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          770.0,
+          919.0
+        ],
+        [
+          1144.0,
+          919.0
+        ]
+      ],
+      "bbox": [
+        770.0,
+        880.0,
+        1144.0,
+        962.0
+      ],
+      "text": "Hochwohlgeboren",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 7,
+      "baseline": [
+        [
+          872.0,
+          1138.0
+        ],
+        [
+          1042.0,
+          1141.0
+        ]
+      ],
+      "bbox": [
+        871.0,
+        1096.0,
+        1042.0,
+        1175.0
+      ],
+      "text": "gehorsamster",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 8,
+      "baseline": [
+        [
+          828.0,
+          1297.0
+        ],
+        [
+          951.0,
+          1296.0
+        ],
+        [
+          1242.0,
+          1303.0
+        ]
+      ],
+      "bbox": [
+        827.0,
+        1242.0,
+        1242.0,
+        1334.0
+      ],
+      "text": "Stalin Prof. Diklitschwar.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 7833,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 32,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T20:37:17+00:00"
+}

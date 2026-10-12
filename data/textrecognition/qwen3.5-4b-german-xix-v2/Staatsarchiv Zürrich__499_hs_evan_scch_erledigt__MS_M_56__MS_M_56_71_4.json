@@ -1,0 +1,310 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Staatsarchiv Zürrich/499_hs_evan_scch_erledigt/MS_M_56",
+  "source": {
+    "name": "MS_M_56_71_4.tif",
+    "bytes": 41381628,
+    "sha256": "3eafc04657a6fc8e125e58ffbbdb57ceba9c063c98ca0e5381184c79f8a9e49e",
+    "remote": "digitalisate/Staatsarchiv Zürrich/499_hs_evan_scch_erledigt/MS_M_56/MS_M_56_71_4.tif",
+    "key": "Staatsarchiv Zürrich__499_hs_evan_scch_erledigt__MS_M_56__MS_M_56_71_4",
+    "working_copy": "MS_M_56_71_4.jpg"
+  },
+  "text": "Bern\nLuzern\nMärz\ner\n3\nDr. Gattin",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          941.0,
+          2118.0
+        ],
+        [
+          945.0,
+          2224.0
+        ]
+      ],
+      "bbox": [
+        872.0,
+        2113.0,
+        996.0,
+        2224.0
+      ],
+      "text": "Bern",
+      "confidence": null,
+      "regions": [
+        "_30498b7c-ed05-4497-b76e-cbb128b7c1b5"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          941.0,
+          2582.0
+        ],
+        [
+          950.0,
+          2297.0
+        ]
+      ],
+      "bbox": [
+        865.0,
+        2293.0,
+        984.0,
+        2582.0
+      ],
+      "text": "Luzern",
+      "confidence": null,
+      "regions": [
+        "_30498b7c-ed05-4497-b76e-cbb128b7c1b5"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1175.0,
+          1980.0
+        ],
+        [
+          1178.0,
+          2099.0
+        ]
+      ],
+      "bbox": [
+        1125.0,
+        1977.0,
+        1215.0,
+        2099.0
+      ],
+      "text": "März",
+      "confidence": null,
+      "regions": [
+        "_30498b7c-ed05-4497-b76e-cbb128b7c1b5"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          1636.0,
+          1458.0
+        ],
+        [
+          1636.0,
+          1485.0
+        ]
+      ],
+      "bbox": [
+        1604.0,
+        1458.0,
+        1682.0,
+        1485.0
+      ],
+      "text": "er",
+      "confidence": null,
+      "regions": [
+        "_30498b7c-ed05-4497-b76e-cbb128b7c1b5"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          1887.0,
+          2691.0
+        ],
+        [
+          1893.0,
+          2739.0
+        ]
+      ],
+      "bbox": [
+        1831.0,
+        2684.0,
+        1937.0,
+        2743.0
+      ],
+      "text": "3",
+      "confidence": null,
+      "regions": [
+        "_aa5143b9-0e5b-49da-952f-7e172d57d75e"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          1979.0,
+          2231.0
+        ],
+        [
+          1983.0,
+          2444.0
+        ]
+      ],
+      "bbox": [
+        1940.0,
+        2228.0,
+        2057.0,
+        2444.0
+      ],
+      "text": "Dr. Gattin",
+      "confidence": null,
+      "regions": [
+        "_aa5143b9-0e5b-49da-952f-7e172d57d75e"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 20646,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "1777\nF. van Holland\n2.60\nVisie A\nVijff en Vijff\nA. frans .",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            941.0,
+            2118.0
+          ],
+          [
+            945.0,
+            2224.0
+          ]
+        ],
+        "bbox": [
+          872.0,
+          2113.0,
+          996.0,
+          2224.0
+        ],
+        "text": "1777",
+        "confidence": 0.26166022196412086,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            941.0,
+            2582.0
+          ],
+          [
+            950.0,
+            2297.0
+          ]
+        ],
+        "bbox": [
+          865.0,
+          2293.0,
+          984.0,
+          2582.0
+        ],
+        "text": "F. van Holland",
+        "confidence": 0.6234771651881081,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            1175.0,
+            1980.0
+          ],
+          [
+            1178.0,
+            2099.0
+          ]
+        ],
+        "bbox": [
+          1125.0,
+          1977.0,
+          1215.0,
+          2099.0
+        ],
+        "text": "2.60",
+        "confidence": 0.20728649944067,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            1636.0,
+            1458.0
+          ],
+          [
+            1636.0,
+            1485.0
+          ]
+        ],
+        "bbox": [
+          1604.0,
+          1458.0,
+          1682.0,
+          1485.0
+        ],
+        "text": "Visie A",
+        "confidence": 0.5482750737241336,
+        "regions": []
+      },
+      {
+        "order": 4,
+        "baseline": [
+          [
+            1887.0,
+            2691.0
+          ],
+          [
+            1893.0,
+            2739.0
+          ]
+        ],
+        "bbox": [
+          1831.0,
+          2684.0,
+          1937.0,
+          2743.0
+        ],
+        "text": "Vijff en Vijff",
+        "confidence": 0.5489885636738369,
+        "regions": []
+      },
+      {
+        "order": 5,
+        "baseline": [
+          [
+            1979.0,
+            2231.0
+          ],
+          [
+            1983.0,
+            2444.0
+          ]
+        ],
+        "bbox": [
+          1940.0,
+          2228.0,
+          2057.0,
+          2444.0
+        ],
+        "text": "A. frans .",
+        "confidence": 0.5764709338545799,
+        "regions": []
+      }
+    ],
+    "confidence": 0.46102640964090824,
+    "timing_ms": 54700,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-21T13:39:53+00:00"
+}

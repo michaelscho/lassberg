@@ -1,0 +1,129 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Staatsarchiv Thurgau/lassberg-letter-1416",
+  "source": {
+    "name": "DERIVAT_StATG_9-45__1-1___75-1_00061.jpg",
+    "bytes": 2985668,
+    "sha256": "fb4f8dc1cd3e9fc81594263a9ff538218313fd2857a11765fa03ca7bb593032e",
+    "remote": "digitalisate/Staatsarchiv Thurgau/lassberg-letter-1416/DERIVAT_StATG_9-45__1-1___75-1_00061.jpg",
+    "key": "Staatsarchiv Thurgau__lassberg-letter-1416__DERIVAT_StATG_9-45__1-1___75-1_00061",
+    "working_copy": "DERIVAT_StATG_9-45__1-1___75-1_00061.jpg"
+  },
+  "text": "Ihr lieber Scheibe bekom̃e ich diesen Augenblick. Allerdings lege ich die\nHand auf die Mond und Farbe, der Herr hat 2 gesehen. Mage\nhabe ich Antopphistle, Donnerstags 77 Jahrmarkt und Besuch, Freitag\nallein bleibt mir übrige, und was dann die Witterung mehr.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          199.0,
+          250.0
+        ],
+        [
+          1444.0,
+          231.0
+        ]
+      ],
+      "bbox": [
+        198.0,
+        175.0,
+        1444.0,
+        277.0
+      ],
+      "text": "Ihr lieber Scheibe bekom̃e ich diesen Augenblick. Allerdings lege ich die",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          201.0,
+          330.0
+        ],
+        [
+          1467.0,
+          327.0
+        ]
+      ],
+      "bbox": [
+        199.0,
+        268.0,
+        1467.0,
+        375.0
+      ],
+      "text": "Hand auf die Mond und Farbe, der Herr hat 2 gesehen. Mage",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          195.0,
+          427.0
+        ],
+        [
+          1444.0,
+          421.0
+        ]
+      ],
+      "bbox": [
+        193.0,
+        361.0,
+        1444.0,
+        474.0
+      ],
+      "text": "habe ich Antopphistle, Donnerstags 77 Jahrmarkt und Besuch, Freitag",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          199.0,
+          516.0
+        ],
+        [
+          1408.0,
+          519.0
+        ]
+      ],
+      "bbox": [
+        198.0,
+        457.0,
+        1408.0,
+        562.0
+      ],
+      "text": "allein bleibt mir übrige, und was dann die Witterung mehr.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 9248,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 41,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T22:06:14+00:00"
+}

@@ -1,0 +1,86 @@
+{
+  "schema": "atr-batch/1",
+  "run": "gemini-300-final",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "blb lassberg/K 2911,128",
+  "source": {
+    "key": "blb lassberg__K 2911,128__page_0003",
+    "doc_id": "blb lassberg/K 2911,128",
+    "bestand": "blb lassberg",
+    "name": "page_0003.jpg",
+    "bytes": 1069388,
+    "sha256": "40282277af4875301b93c0d893b73c883a4c67939539cf5f1434addd0b828966",
+    "sha256_of": "original",
+    "remote": "digitalisate/blb lassberg/K 2911,128/page_0003.jpg",
+    "working_copy": "page_0003.jpg"
+  },
+  "text": "[fremde hand: [...]\n[...]]",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 3697,
+  "truncated": false,
+  "settings": "prompt-9e0503e8+think-low|max8192",
+  "quality": {
+    "verdict": "short",
+    "chars": 26,
+    "lines": 2,
+    "longest_char_run": 3,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 12.5,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.1154,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-9e0503e8+think-low",
+  "recognised_at": "2026-10-11T18:04:32+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "gemini-strict2-third",
+    "source": {
+      "key": "blb lassberg__K 2911,128__page_0003",
+      "doc_id": "blb lassberg/K 2911,128",
+      "bestand": "blb lassberg",
+      "name": "page_0003.jpg",
+      "bytes": 1069388,
+      "sha256": "40282277af4875301b93c0d893b73c883a4c67939539cf5f1434addd0b828966",
+      "sha256_of": "original",
+      "remote": "digitalisate/blb lassberg/K 2911,128/page_0003.jpg",
+      "working_copy": "page_0003.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-9e0503e8+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-10-11T18:04:32+00:00"
+  },
+  "merged_from": {
+    "run": "gemini-strict2-third",
+    "attempt": 3,
+    "verdict": "short",
+    "of": 3,
+    "considered": [
+      {
+        "run": "gemini-300-strict2",
+        "verdict": "empty"
+      },
+      {
+        "run": "gemini-strict2-repeat",
+        "verdict": "empty"
+      },
+      {
+        "run": "gemini-strict2-third",
+        "verdict": "short"
+      }
+    ]
+  }
+}

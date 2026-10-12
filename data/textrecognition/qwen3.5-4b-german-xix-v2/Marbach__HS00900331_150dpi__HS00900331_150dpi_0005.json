@@ -1,0 +1,81 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00900331_150dpi",
+  "source": {
+    "name": "HS00900331_150dpi_0005.jpg",
+    "bytes": 96079,
+    "sha256": "861500092318e1443185bcfc9e406f807639c274dd46a5723186151db960905e",
+    "remote": "digitalisate/Marbach/HS00900331_150dpi/HS00900331_150dpi_0005.jpg",
+    "key": "Marbach__HS00900331_150dpi__HS00900331_150dpi_0005",
+    "working_copy": "HS00900331_150dpi_0005.jpg"
+  },
+  "text": "s¬\ns¬",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          381.0,
+          511.0
+        ],
+        [
+          393.0,
+          511.0
+        ]
+      ],
+      "bbox": [
+        380.0,
+        487.0,
+        393.0,
+        522.0
+      ],
+      "text": "s¬",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          478.0,
+          730.0
+        ],
+        [
+          492.0,
+          730.0
+        ]
+      ],
+      "bbox": [
+        478.0,
+        689.0,
+        492.0,
+        740.0
+      ],
+      "text": "s¬",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 10343,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 32,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T20:01:11+00:00"
+}

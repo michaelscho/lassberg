@@ -1,0 +1,161 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Winterthur",
+  "source": {
+    "name": "30-MsBRH_319-1421.jpg",
+    "bytes": 4208892,
+    "sha256": "8b2cd5357494883fca43309ad3c0ed61c8fc493df9d5ada5957bbc286d921ab2",
+    "remote": "digitalisate/Winterthur/30-MsBRH_319-1421.jpg",
+    "key": "Winterthur__30-MsBRH_319-1421",
+    "working_copy": "30-MsBRH_319-1421.jpg"
+  },
+  "text": "Herrn Prof. Dähnert\nan des Freÿsern J. von Laßberg\nHochwohlgeborn\nan\n15 Bau sen.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          1641.0,
+          2446.0
+        ],
+        [
+          2446.0,
+          2384.0
+        ]
+      ],
+      "bbox": [
+        1630.0,
+        2266.0,
+        2449.0,
+        2472.0
+      ],
+      "text": "Herrn Prof. Dähnert",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1489.0,
+          2614.0
+        ],
+        [
+          1954.0,
+          2611.0
+        ],
+        [
+          2593.0,
+          2627.0
+        ],
+        [
+          3700.0,
+          2619.0
+        ]
+      ],
+      "bbox": [
+        1489.0,
+        2504.0,
+        3700.0,
+        2676.0
+      ],
+      "text": "an des Freÿsern J. von Laßberg",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          2138.0,
+          2889.0
+        ],
+        [
+          3170.0,
+          2897.0
+        ]
+      ],
+      "bbox": [
+        2136.0,
+        2774.0,
+        3170.0,
+        2962.0
+      ],
+      "text": "Hochwohlgeborn",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          2625.0,
+          3197.0
+        ],
+        [
+          2804.0,
+          3197.0
+        ]
+      ],
+      "bbox": [
+        2625.0,
+        3143.0,
+        2804.0,
+        3234.0
+      ],
+      "text": "an",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          2753.0,
+          3387.0
+        ],
+        [
+          3395.0,
+          3392.0
+        ]
+      ],
+      "bbox": [
+        2751.0,
+        3272.0,
+        3395.0,
+        3427.0
+      ],
+      "text": "15 Bau sen.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 10342,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T15:54:17+00:00"
+}

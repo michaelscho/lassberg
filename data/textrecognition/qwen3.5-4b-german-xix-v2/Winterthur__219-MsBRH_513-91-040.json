@@ -1,0 +1,177 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Winterthur",
+  "source": {
+    "name": "219-MsBRH_513-91-040.jpg",
+    "bytes": 5076928,
+    "sha256": "c92490ffc94f19b949b1e542779b581a5648e40557ea88790ae45f0226f5d2ec",
+    "remote": "digitalisate/Winterthur/219-MsBRH_513-91-040.jpg",
+    "key": "Winterthur__219-MsBRH_513-91-040",
+    "working_copy": "219-MsBRH_513-91-040.jpg"
+  },
+  "text": ".\nHochderckelgebohren\ndem Dreiherrn Joseph dem Caß Becker\n2. Camerer und Werklester-Litten\nAmarin Carl. Aargau",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          2303.0,
+          1302.0
+        ],
+        [
+          2360.0,
+          1302.0
+        ]
+      ],
+      "bbox": [
+        2303.0,
+        1250.0,
+        2360.0,
+        1341.0
+      ],
+      "text": ".",
+      "confidence": null,
+      "regions": [
+        "_c937e970-2ac5-4fad-9d2c-a2f81189e808"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          2148.0,
+          1420.0
+        ],
+        [
+          3644.0,
+          1423.0
+        ]
+      ],
+      "bbox": [
+        2146.0,
+        1320.0,
+        3644.0,
+        1490.0
+      ],
+      "text": "Hochderckelgebohren",
+      "confidence": null,
+      "regions": [
+        "_c937e970-2ac5-4fad-9d2c-a2f81189e808"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1617.0,
+          1869.0
+        ],
+        [
+          2447.0,
+          1895.0
+        ],
+        [
+          3737.0,
+          1903.0
+        ]
+      ],
+      "bbox": [
+        1617.0,
+        1748.0,
+        3737.0,
+        1941.0
+      ],
+      "text": "dem Dreiherrn Joseph dem Caß Becker",
+      "confidence": null,
+      "regions": [
+        "_c937e970-2ac5-4fad-9d2c-a2f81189e808"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          1601.0,
+          2047.0
+        ],
+        [
+          1857.0,
+          2052.0
+        ],
+        [
+          2207.0,
+          2078.0
+        ],
+        [
+          3167.0,
+          2094.0
+        ],
+        [
+          3894.0,
+          2088.0
+        ]
+      ],
+      "bbox": [
+        1599.0,
+        1988.0,
+        3894.0,
+        2137.0
+      ],
+      "text": "2. Camerer und Werklester-Litten",
+      "confidence": null,
+      "regions": [
+        "_c937e970-2ac5-4fad-9d2c-a2f81189e808"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          2437.0,
+          2831.0
+        ],
+        [
+          2899.0,
+          2836.0
+        ],
+        [
+          3136.0,
+          2859.0
+        ],
+        [
+          3729.0,
+          2854.0
+        ]
+      ],
+      "bbox": [
+        2434.0,
+        2725.0,
+        3729.0,
+        2927.0
+      ],
+      "text": "Amarin Carl. Aargau",
+      "confidence": null,
+      "regions": [
+        "_c937e970-2ac5-4fad-9d2c-a2f81189e808"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 9691,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T14:39:17+00:00"
+}

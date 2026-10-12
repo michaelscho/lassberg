@@ -1,0 +1,133 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Winterthur",
+  "source": {
+    "name": "386-MsUHBr_170-03.jpg",
+    "bytes": 4080957,
+    "sha256": "7259be311ada9d61f1e24a1d5cf48d46a38f9b86084406d945820fcb99ca13a8",
+    "remote": "digitalisate/Winterthur/386-MsUHBr_170-03.jpg",
+    "key": "Winterthur__386-MsUHBr_170-03",
+    "working_copy": "386-MsUHBr_170-03.jpg"
+  },
+  "text": "Steiner Wolgebornen\nDem Herrn Rath Herrn Ur: Hegner\nn\nWinterthur.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          2686.0,
+          2296.0
+        ],
+        [
+          4232.0,
+          2240.0
+        ]
+      ],
+      "bbox": [
+        2683.0,
+        2146.0,
+        4232.0,
+        2341.0
+      ],
+      "text": "Steiner Wolgebornen",
+      "confidence": null,
+      "regions": [
+        "_1d220723-780a-4af7-9cc2-a1662050e4e4"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1898.0,
+          2678.0
+        ],
+        [
+          2777.0,
+          2675.0
+        ],
+        [
+          4726.0,
+          2640.0
+        ]
+      ],
+      "bbox": [
+        1893.0,
+        2485.0,
+        4726.0,
+        2744.0
+      ],
+      "text": "Dem Herrn Rath Herrn Ur: Hegner",
+      "confidence": null,
+      "regions": [
+        "_1d220723-780a-4af7-9cc2-a1662050e4e4"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          3265.0,
+          2987.0
+        ],
+        [
+          3383.0,
+          2985.0
+        ]
+      ],
+      "bbox": [
+        3263.0,
+        2920.0,
+        3383.0,
+        3062.0
+      ],
+      "text": "n",
+      "confidence": null,
+      "regions": [
+        "_1d220723-780a-4af7-9cc2-a1662050e4e4"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          3487.0,
+          3489.0
+        ],
+        [
+          4283.0,
+          3473.0
+        ]
+      ],
+      "bbox": [
+        3481.0,
+        3324.0,
+        4283.0,
+        3532.0
+      ],
+      "text": "Winterthur.",
+      "confidence": null,
+      "regions": [
+        "_1d220723-780a-4af7-9cc2-a1662050e4e4"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 16853,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T17:01:50+00:00"
+}

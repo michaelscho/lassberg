@@ -1,0 +1,232 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Winterthur",
+  "source": {
+    "name": "211-MsBRH_513-91-032.jpg",
+    "bytes": 4793200,
+    "sha256": "b7115657aadd3370ccbef49e53e1d8697635dbcf2d900f2e60885fe0dbb2a715",
+    "remote": "digitalisate/Winterthur/211-MsBRH_513-91-032.jpg",
+    "key": "Winterthur__211-MsBRH_513-91-032",
+    "working_copy": "211-MsBRH_513-91-032.jpg"
+  },
+  "text": "Hochstatgeboren\nDem Droÿsenian J. von Caßburg\nMuhrbeckers-Ritter und K. K. Kämmerer\nin Ergriffhausen beant. Thurgau",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          2649.0,
+          1339.0
+        ],
+        [
+          3881.0,
+          1325.0
+        ]
+      ],
+      "bbox": [
+        2647.0,
+        1239.0,
+        3881.0,
+        1433.0
+      ],
+      "text": "Hochstatgeboren",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1817.0,
+          1816.0
+        ],
+        [
+          2762.0,
+          1843.0
+        ],
+        [
+          4128.0,
+          1835.0
+        ]
+      ],
+      "bbox": [
+        1814.0,
+        1703.0,
+        4128.0,
+        1877.0
+      ],
+      "text": "Dem Droÿsenian J. von Caßburg",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1827.0,
+          1977.0
+        ],
+        [
+          2484.0,
+          2005.0
+        ],
+        [
+          4220.0,
+          2000.0
+        ]
+      ],
+      "bbox": [
+        1825.0,
+        1887.0,
+        4220.0,
+        2068.0
+      ],
+      "text": "Muhrbeckers-Ritter und K. K. Kämmerer",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          2216.0,
+          2943.0
+        ],
+        [
+          4220.0,
+          2935.0
+        ]
+      ],
+      "bbox": [
+        2213.0,
+        2832.0,
+        4220.0,
+        3045.0
+      ],
+      "text": "in Ergriffhausen beant. Thurgau",
+      "confidence": null,
+      "regions": []
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 11189,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "Si Hochwolgeboren\ndem Clereyherrn J. von Zaßberg\nMattester Ritter und L. L. Körnmerer\nin Expischerussen Cant: Thurgeru",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            2649.0,
+            1339.0
+          ],
+          [
+            3881.0,
+            1325.0
+          ]
+        ],
+        "bbox": [
+          2647.0,
+          1239.0,
+          3881.0,
+          1433.0
+        ],
+        "text": "Si Hochwolgeboren",
+        "confidence": 0.8742715979323668,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            1817.0,
+            1816.0
+          ],
+          [
+            2762.0,
+            1843.0
+          ],
+          [
+            4128.0,
+            1835.0
+          ]
+        ],
+        "bbox": [
+          1814.0,
+          1703.0,
+          4128.0,
+          1877.0
+        ],
+        "text": "dem Clereyherrn J. von Zaßberg",
+        "confidence": 0.8360508183638254,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            1827.0,
+            1977.0
+          ],
+          [
+            2484.0,
+            2005.0
+          ],
+          [
+            4220.0,
+            2000.0
+          ]
+        ],
+        "bbox": [
+          1825.0,
+          1887.0,
+          4220.0,
+          2068.0
+        ],
+        "text": "Mattester Ritter und L. L. Körnmerer",
+        "confidence": 0.8434813675042745,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            2216.0,
+            2943.0
+          ],
+          [
+            4220.0,
+            2935.0
+          ]
+        ],
+        "bbox": [
+          2213.0,
+          2832.0,
+          4220.0,
+          3045.0
+        ],
+        "text": "in Expischerussen Cant: Thurgeru",
+        "confidence": 0.8420783751644194,
+        "regions": []
+      }
+    ],
+    "confidence": 0.8489705397412215,
+    "timing_ms": 15339,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-21T13:41:11+00:00"
+}

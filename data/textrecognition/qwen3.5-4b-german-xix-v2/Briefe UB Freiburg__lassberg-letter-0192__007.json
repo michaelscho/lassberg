@@ -1,0 +1,396 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Briefe UB Freiburg/lassberg-letter-0192",
+  "source": {
+    "name": "007.tif",
+    "bytes": 9197224,
+    "sha256": "22329871f7068444b60d618c60c2d8602b3724555464d97731f7a85526fe5fbd",
+    "remote": "digitalisate/Briefe UB Freiburg/lassberg-letter-0192/007.tif",
+    "key": "Briefe UB Freiburg__lassberg-letter-0192__007",
+    "working_copy": "007.jpg"
+  },
+  "text": "Das teutsche Vaterland ist\n1849.\nLebe wol einen einzigen geliebtefleck!\nLieb wol! noch 8 Tage und in Sagdikon\neinen nähern Veto aus: Röhren macht auf\ndem Kame der künftigen Demonstrator\nSalzer.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          187.0,
+          288.0
+        ],
+        [
+          862.0,
+          294.0
+        ]
+      ],
+      "bbox": [
+        186.0,
+        246.0,
+        862.0,
+        316.0
+      ],
+      "text": "Das teutsche Vaterland ist",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          874.0,
+          294.0
+        ],
+        [
+          896.0,
+          293.0
+        ]
+      ],
+      "bbox": [
+        872.0,
+        267.0,
+        896.0,
+        306.0
+      ],
+      "text": "1849.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          285.0,
+          403.0
+        ],
+        [
+          849.0,
+          400.0
+        ],
+        [
+          1023.0,
+          405.0
+        ],
+        [
+          1409.0,
+          406.0
+        ]
+      ],
+      "bbox": [
+        284.0,
+        361.0,
+        1409.0,
+        442.0
+      ],
+      "text": "Lebe wol einen einzigen geliebtefleck!",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          218.0,
+          504.0
+        ],
+        [
+          605.0,
+          502.0
+        ],
+        [
+          1131.0,
+          519.0
+        ],
+        [
+          1447.0,
+          521.0
+        ]
+      ],
+      "bbox": [
+        217.0,
+        461.0,
+        1447.0,
+        541.0
+      ],
+      "text": "Lieb wol! noch 8 Tage und in Sagdikon",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          216.0,
+          614.0
+        ],
+        [
+          1422.0,
+          632.0
+        ]
+      ],
+      "bbox": [
+        215.0,
+        580.0,
+        1422.0,
+        650.0
+      ],
+      "text": "einen nähern Veto aus: Röhren macht auf",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          223.0,
+          720.0
+        ],
+        [
+          1057.0,
+          748.0
+        ],
+        [
+          1176.0,
+          747.0
+        ]
+      ],
+      "bbox": [
+        222.0,
+        681.0,
+        1176.0,
+        774.0
+      ],
+      "text": "dem Kame der künftigen Demonstrator",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          904.0,
+          847.0
+        ],
+        [
+          1298.0,
+          851.0
+        ]
+      ],
+      "bbox": [
+        903.0,
+        796.0,
+        1298.0,
+        883.0
+      ],
+      "text": "Salzer.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 15183,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "das tentsche Vaterland ist.\nist\nLibe wol weine ein zige gehibte Colura!\nlibe wol ! noch 8 Tage und ich sage dir von\nnu enn nähern Orte aus: Dühmarent mit\ndem kosse der heilsesten Schusacht\nDin Salgar.",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            187.0,
+            288.0
+          ],
+          [
+            862.0,
+            294.0
+          ]
+        ],
+        "bbox": [
+          186.0,
+          246.0,
+          862.0,
+          316.0
+        ],
+        "text": "das tentsche Vaterland ist.",
+        "confidence": 0.8993378116024865,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            874.0,
+            294.0
+          ],
+          [
+            896.0,
+            293.0
+          ]
+        ],
+        "bbox": [
+          872.0,
+          267.0,
+          896.0,
+          306.0
+        ],
+        "text": "ist",
+        "confidence": 0.6517161428928375,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            285.0,
+            403.0
+          ],
+          [
+            849.0,
+            400.0
+          ],
+          [
+            1023.0,
+            405.0
+          ],
+          [
+            1409.0,
+            406.0
+          ]
+        ],
+        "bbox": [
+          284.0,
+          361.0,
+          1409.0,
+          442.0
+        ],
+        "text": "Libe wol weine ein zige gehibte Colura!",
+        "confidence": 0.8754107210880671,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            218.0,
+            504.0
+          ],
+          [
+            605.0,
+            502.0
+          ],
+          [
+            1131.0,
+            519.0
+          ],
+          [
+            1447.0,
+            521.0
+          ]
+        ],
+        "bbox": [
+          217.0,
+          461.0,
+          1447.0,
+          541.0
+        ],
+        "text": "libe wol ! noch 8 Tage und ich sage dir von",
+        "confidence": 0.8935555219650269,
+        "regions": []
+      },
+      {
+        "order": 4,
+        "baseline": [
+          [
+            216.0,
+            614.0
+          ],
+          [
+            1422.0,
+            632.0
+          ]
+        ],
+        "bbox": [
+          215.0,
+          580.0,
+          1422.0,
+          650.0
+        ],
+        "text": "nu enn nähern Orte aus: Dühmarent mit",
+        "confidence": 0.8594394226868948,
+        "regions": []
+      },
+      {
+        "order": 5,
+        "baseline": [
+          [
+            223.0,
+            720.0
+          ],
+          [
+            1057.0,
+            748.0
+          ],
+          [
+            1176.0,
+            747.0
+          ]
+        ],
+        "bbox": [
+          222.0,
+          681.0,
+          1176.0,
+          774.0
+        ],
+        "text": "dem kosse der heilsesten Schusacht",
+        "confidence": 0.8261767222600824,
+        "regions": []
+      },
+      {
+        "order": 6,
+        "baseline": [
+          [
+            904.0,
+            847.0
+          ],
+          [
+            1298.0,
+            851.0
+          ]
+        ],
+        "bbox": [
+          903.0,
+          796.0,
+          1298.0,
+          883.0
+        ],
+        "text": "Din Salgar.",
+        "confidence": 0.8414432298053395,
+        "regions": []
+      }
+    ],
+    "confidence": 0.8352970817572478,
+    "timing_ms": 17003,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-21T22:52:30+00:00"
+}

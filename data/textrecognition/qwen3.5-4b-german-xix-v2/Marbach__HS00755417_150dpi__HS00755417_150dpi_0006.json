@@ -1,0 +1,356 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00755417_150dpi",
+  "source": {
+    "name": "HS00755417_150dpi_0006.jpg",
+    "bytes": 170081,
+    "sha256": "32ec90c60fb540feade5dedaa42a86e1b6f61e56a29624b7a6afc0276e8911db",
+    "remote": "digitalisate/Marbach/HS00755417_150dpi/HS00755417_150dpi_0006.jpg",
+    "key": "Marbach__HS00755417_150dpi__HS00755417_150dpi_0006",
+    "working_copy": "HS00755417_150dpi_0006.jpg"
+  },
+  "text": "wichtigen Versicherung zu genehmigen, womit ich die Ehre\nteln zu verheeren.\nv. Hochwohlgeboren\nDenkbienst ergebener\nA. Koller.\nTübingen\n18 Febr. 1849.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          155.0,
+          230.0
+        ],
+        [
+          741.0,
+          231.0
+        ]
+      ],
+      "bbox": [
+        155.0,
+        198.0,
+        741.0,
+        253.0
+      ],
+      "text": "wichtigen Versicherung zu genehmigen, womit ich die Ehre",
+      "confidence": null,
+      "regions": [
+        "r2"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          161.0,
+          279.0
+        ],
+        [
+          424.0,
+          279.0
+        ]
+      ],
+      "bbox": [
+        161.0,
+        251.0,
+        424.0,
+        300.0
+      ],
+      "text": "teln zu verheeren.",
+      "confidence": null,
+      "regions": [
+        "r2"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          373.0,
+          342.0
+        ],
+        [
+          588.0,
+          339.0
+        ]
+      ],
+      "bbox": [
+        371.0,
+        301.0,
+        588.0,
+        366.0
+      ],
+      "text": "v. Hochwohlgeboren",
+      "confidence": null,
+      "regions": [
+        "r2"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          458.0,
+          706.0
+        ],
+        [
+          710.0,
+          702.0
+        ]
+      ],
+      "bbox": [
+        458.0,
+        677.0,
+        710.0,
+        725.0
+      ],
+      "text": "Denkbienst ergebener",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          530.0,
+          777.0
+        ],
+        [
+          686.0,
+          778.0
+        ]
+      ],
+      "bbox": [
+        530.0,
+        743.0,
+        686.0,
+        794.0
+      ],
+      "text": "A. Koller.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          184.0,
+          755.0
+        ],
+        [
+          278.0,
+          753.0
+        ]
+      ],
+      "bbox": [
+        183.0,
+        719.0,
+        278.0,
+        768.0
+      ],
+      "text": "Tübingen",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          166.0,
+          806.0
+        ],
+        [
+          322.0,
+          803.0
+        ]
+      ],
+      "bbox": [
+        165.0,
+        771.0,
+        322.0,
+        829.0
+      ],
+      "text": "18 Febr. 1849.",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 28942,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "richtigen Unrechnung zu pannhaupen, womit ich die Ehen\nhaben zu verharren\nEw. Hochenherbstam\nTübingen\n18 Febr. 1849.\ndankbacht nochmals\nA. Kuller.",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            155.0,
+            230.0
+          ],
+          [
+            741.0,
+            231.0
+          ]
+        ],
+        "bbox": [
+          155.0,
+          198.0,
+          741.0,
+          253.0
+        ],
+        "text": "richtigen Unrechnung zu pannhaupen, womit ich die Ehen",
+        "confidence": 0.8531745777085975,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            161.0,
+            279.0
+          ],
+          [
+            424.0,
+            279.0
+          ]
+        ],
+        "bbox": [
+          161.0,
+          251.0,
+          424.0,
+          300.0
+        ],
+        "text": "haben zu verharren",
+        "confidence": 0.9314544796943665,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            373.0,
+            342.0
+          ],
+          [
+            588.0,
+            339.0
+          ]
+        ],
+        "bbox": [
+          371.0,
+          301.0,
+          588.0,
+          366.0
+        ],
+        "text": "Ew. Hochenherbstam",
+        "confidence": 0.7884934544563293,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            184.0,
+            755.0
+          ],
+          [
+            278.0,
+            753.0
+          ]
+        ],
+        "bbox": [
+          183.0,
+          719.0,
+          278.0,
+          768.0
+        ],
+        "text": "Tübingen",
+        "confidence": 0.9432453744941287,
+        "regions": []
+      },
+      {
+        "order": 4,
+        "baseline": [
+          [
+            166.0,
+            806.0
+          ],
+          [
+            322.0,
+            803.0
+          ]
+        ],
+        "bbox": [
+          165.0,
+          771.0,
+          322.0,
+          829.0
+        ],
+        "text": "18 Febr. 1849.",
+        "confidence": 0.9280741938522884,
+        "regions": []
+      },
+      {
+        "order": 5,
+        "baseline": [
+          [
+            458.0,
+            706.0
+          ],
+          [
+            710.0,
+            702.0
+          ]
+        ],
+        "bbox": [
+          458.0,
+          677.0,
+          710.0,
+          725.0
+        ],
+        "text": "dankbacht nochmals",
+        "confidence": 0.8320189557141728,
+        "regions": []
+      },
+      {
+        "order": 6,
+        "baseline": [
+          [
+            530.0,
+            777.0
+          ],
+          [
+            686.0,
+            778.0
+          ]
+        ],
+        "bbox": [
+          530.0,
+          743.0,
+          686.0,
+          794.0
+        ],
+        "text": "A. Kuller.",
+        "confidence": 0.9010506689548492,
+        "regions": []
+      }
+    ],
+    "confidence": 0.8825016721249618,
+    "timing_ms": 12278,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T04:13:33+00:00"
+}

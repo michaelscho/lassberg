@@ -1,0 +1,189 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Winterthur",
+  "source": {
+    "name": "364-MsBRH_513-91-185.jpg",
+    "bytes": 4568871,
+    "sha256": "33637644bce6cd085e786c1c26faec1a276d697b66a8f39d072865d5a3989999",
+    "remote": "digitalisate/Winterthur/364-MsBRH_513-91-185.jpg",
+    "key": "Winterthur__364-MsBRH_513-91-185",
+    "working_copy": "364-MsBRH_513-91-185.jpg"
+  },
+  "text": "Gassewolgebene\nDem Dreiherrn Joseph dem Lastberg, d. R.\nLimmeren und Malbeser – Ritter\nin Meersburg\n1849.\n140",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          2384.0,
+          1233.0
+        ],
+        [
+          3457.0,
+          1254.0
+        ]
+      ],
+      "bbox": [
+        2381.0,
+        1118.0,
+        3457.0,
+        1318.0
+      ],
+      "text": "Gassewolgebene",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1352.0,
+          1778.0
+        ],
+        [
+          2445.0,
+          1804.0
+        ],
+        [
+          4114.0,
+          1799.0
+        ]
+      ],
+      "bbox": [
+        1350.0,
+        1666.0,
+        4114.0,
+        1873.0
+      ],
+      "text": "Dem Dreiherrn Joseph dem Lastberg, d. R.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1368.0,
+          1894.0
+        ],
+        [
+          2793.0,
+          1953.0
+        ],
+        [
+          3630.0,
+          1945.0
+        ]
+      ],
+      "bbox": [
+        1368.0,
+        1831.0,
+        3630.0,
+        2014.0
+      ],
+      "text": "Limmeren und Malbeser – Ritter",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          2105.0,
+          2952.0
+        ],
+        [
+          3213.0,
+          2976.0
+        ]
+      ],
+      "bbox": [
+        2105.0,
+        2825.0,
+        3213.0,
+        3029.0
+      ],
+      "text": "in Meersburg",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          5977.0,
+          292.0
+        ],
+        [
+          5980.0,
+          273.0
+        ]
+      ],
+      "bbox": [
+        5913.0,
+        265.0,
+        6030.0,
+        295.0
+      ],
+      "text": "1849.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          6232.0,
+          403.0
+        ],
+        [
+          6248.0,
+          313.0
+        ],
+        [
+          6238.0,
+          223.0
+        ]
+      ],
+      "bbox": [
+        6113.0,
+        220.0,
+        6317.0,
+        403.0
+      ],
+      "text": "140",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 13699,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T16:47:28+00:00"
+}

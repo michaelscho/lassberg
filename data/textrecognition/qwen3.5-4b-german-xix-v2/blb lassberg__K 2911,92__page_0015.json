@@ -1,0 +1,133 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "blb lassberg/K 2911,92",
+  "source": {
+    "name": "page_0015.jpg",
+    "bytes": 711280,
+    "sha256": "1123b0843e13372633e4b23cec2ecc1e6dcac50c636f9603d29e3810a303241c",
+    "remote": "digitalisate/blb lassberg/K 2911,92/page_0015.jpg",
+    "key": "blb lassberg__K 2911,92__page_0015",
+    "working_copy": "page_0015.jpg"
+  },
+  "text": "Unter dem Ausdrucke innigster Verwahrung empfiehlt sich Ihnen und Ihrer Familie\nAbschaffenburg am 6. Oktober 1845.\nung ergebenster\nHoffner",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          459.0,
+          1153.0
+        ],
+        [
+          1840.0,
+          1126.0
+        ],
+        [
+          2331.0,
+          1130.0
+        ]
+      ],
+      "bbox": [
+        457.0,
+        1054.0,
+        2331.0,
+        1219.0
+      ],
+      "text": "Unter dem Ausdrucke innigster Verwahrung empfiehlt sich Ihnen und Ihrer Familie",
+      "confidence": null,
+      "regions": [
+        "_8e9c3128-10e9-47c9-b848-a9f0e017e7b5"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          494.0,
+          1526.0
+        ],
+        [
+          1243.0,
+          1515.0
+        ]
+      ],
+      "bbox": [
+        492.0,
+        1437.0,
+        1243.0,
+        1581.0
+      ],
+      "text": "Abschaffenburg am 6. Oktober 1845.",
+      "confidence": null,
+      "regions": [
+        "_8e9c3128-10e9-47c9-b848-a9f0e017e7b5"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1901.0,
+          1511.0
+        ],
+        [
+          2216.0,
+          1509.0
+        ]
+      ],
+      "bbox": [
+        1901.0,
+        1439.0,
+        2216.0,
+        1561.0
+      ],
+      "text": "ung ergebenster",
+      "confidence": null,
+      "regions": [
+        "_8e9c3128-10e9-47c9-b848-a9f0e017e7b5"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          1910.0,
+          1591.0
+        ],
+        [
+          2183.0,
+          1592.0
+        ]
+      ],
+      "bbox": [
+        1908.0,
+        1536.0,
+        2183.0,
+        1686.0
+      ],
+      "text": "Hoffner",
+      "confidence": null,
+      "regions": [
+        "_8e9c3128-10e9-47c9-b848-a9f0e017e7b5"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 6274,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T19:37:45+00:00"
+}

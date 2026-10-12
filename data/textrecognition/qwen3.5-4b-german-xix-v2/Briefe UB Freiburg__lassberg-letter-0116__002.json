@@ -1,0 +1,312 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Briefe UB Freiburg/lassberg-letter-0116",
+  "source": {
+    "name": "002.tif",
+    "bytes": 18904060,
+    "sha256": "ce2d6881d8d81d0d7b49a3c2ac5804b6424c5e45e8d65510757e8fc101fe608b",
+    "remote": "digitalisate/Briefe UB Freiburg/lassberg-letter-0116/002.tif",
+    "key": "Briefe UB Freiburg__lassberg-letter-0116__002",
+    "working_copy": "002.jpg"
+  },
+  "text": "mit Beinahe rasind, und eine Gedanke suchen längst\nZinsites des Rheines, an den lezern des Lemans.\nOtty Egn und starke Eichel Gesundheit, doch ist das\newige Gebeth.\nDavier",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          128.0,
+          435.0
+        ],
+        [
+          598.0,
+          429.0
+        ],
+        [
+          1223.0,
+          408.0
+        ],
+        [
+          1718.0,
+          403.0
+        ]
+      ],
+      "bbox": [
+        126.0,
+        342.0,
+        1718.0,
+        482.0
+      ],
+      "text": "mit Beinahe rasind, und eine Gedanke suchen längst",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          150.0,
+          580.0
+        ],
+        [
+          458.0,
+          568.0
+        ],
+        [
+          1468.0,
+          550.0
+        ]
+      ],
+      "bbox": [
+        149.0,
+        496.0,
+        1468.0,
+        631.0
+      ],
+      "text": "Zinsites des Rheines, an den lezern des Lemans.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          333.0,
+          750.0
+        ],
+        [
+          584.0,
+          745.0
+        ],
+        [
+          1009.0,
+          721.0
+        ],
+        [
+          1323.0,
+          721.0
+        ],
+        [
+          1677.0,
+          733.0
+        ]
+      ],
+      "bbox": [
+        331.0,
+        647.0,
+        1677.0,
+        805.0
+      ],
+      "text": "Otty Egn und starke Eichel Gesundheit, doch ist das",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          284.0,
+          896.0
+        ],
+        [
+          686.0,
+          885.0
+        ]
+      ],
+      "bbox": [
+        282.0,
+        815.0,
+        686.0,
+        954.0
+      ],
+      "text": "ewige Gebeth.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          935.0,
+          905.0
+        ],
+        [
+          1135.0,
+          900.0
+        ]
+      ],
+      "bbox": [
+        933.0,
+        847.0,
+        1135.0,
+        943.0
+      ],
+      "text": "Davier",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 5145,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "mit beinahe rasend, und meine Gedanken stehen längst\njerseits des Rheines, an den ufern des Lemans.\nGott signe und stärke Elisens Gesundheit, dies ist das\nenige Gebeth.\nDanies",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            128.0,
+            435.0
+          ],
+          [
+            598.0,
+            429.0
+          ],
+          [
+            1223.0,
+            408.0
+          ],
+          [
+            1718.0,
+            403.0
+          ]
+        ],
+        "bbox": [
+          126.0,
+          342.0,
+          1718.0,
+          482.0
+        ],
+        "text": "mit beinahe rasend, und meine Gedanken stehen längst",
+        "confidence": 0.917519711660889,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            150.0,
+            580.0
+          ],
+          [
+            458.0,
+            568.0
+          ],
+          [
+            1468.0,
+            550.0
+          ]
+        ],
+        "bbox": [
+          149.0,
+          496.0,
+          1468.0,
+          631.0
+        ],
+        "text": "jerseits des Rheines, an den ufern des Lemans.",
+        "confidence": 0.8854737042084985,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            333.0,
+            750.0
+          ],
+          [
+            584.0,
+            745.0
+          ],
+          [
+            1009.0,
+            721.0
+          ],
+          [
+            1323.0,
+            721.0
+          ],
+          [
+            1677.0,
+            733.0
+          ]
+        ],
+        "bbox": [
+          331.0,
+          647.0,
+          1677.0,
+          805.0
+        ],
+        "text": "Gott signe und stärke Elisens Gesundheit, dies ist das",
+        "confidence": 0.9324500902132554,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            284.0,
+            896.0
+          ],
+          [
+            686.0,
+            885.0
+          ]
+        ],
+        "bbox": [
+          282.0,
+          815.0,
+          686.0,
+          954.0
+        ],
+        "text": "enige Gebeth.",
+        "confidence": 0.7937672665485969,
+        "regions": []
+      },
+      {
+        "order": 4,
+        "baseline": [
+          [
+            935.0,
+            905.0
+          ],
+          [
+            1135.0,
+            900.0
+          ]
+        ],
+        "bbox": [
+          933.0,
+          847.0,
+          1135.0,
+          943.0
+        ],
+        "text": "Danies",
+        "confidence": 0.8230401078859965,
+        "regions": []
+      }
+    ],
+    "confidence": 0.8704501761034471,
+    "timing_ms": 11617,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-21T20:29:48+00:00"
+}

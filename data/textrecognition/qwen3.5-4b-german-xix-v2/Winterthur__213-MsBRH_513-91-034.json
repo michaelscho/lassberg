@@ -1,0 +1,149 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Winterthur",
+  "source": {
+    "name": "213-MsBRH_513-91-034.jpg",
+    "bytes": 4709766,
+    "sha256": "b1681ccd8662c73b95b91b5205601d986cb6910883a8e4558d563058e269be7b",
+    "remote": "digitalisate/Winterthur/213-MsBRH_513-91-034.jpg",
+    "key": "Winterthur__213-MsBRH_513-91-034",
+    "working_copy": "213-MsBRH_513-91-034.jpg"
+  },
+  "text": "zu Waldgeboren\nDem Dreyserm Joh. von Caßburg\nMuhrbeckers Ritter und K. K. Kammerer\nin Hypotheken Cant. Thurgau",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          2756.0,
+          1331.0
+        ],
+        [
+          3228.0,
+          1350.0
+        ],
+        [
+          4152.0,
+          1334.0
+        ]
+      ],
+      "bbox": [
+        2754.0,
+        1229.0,
+        4152.0,
+        1460.0
+      ],
+      "text": "zu Waldgeboren",
+      "confidence": null,
+      "regions": [
+        "_89aad848-c2af-40d4-9039-c12f4df66fae"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          2080.0,
+          1900.0
+        ],
+        [
+          3172.0,
+          1897.0
+        ],
+        [
+          4057.0,
+          1866.0
+        ],
+        [
+          4355.0,
+          1868.0
+        ]
+      ],
+      "bbox": [
+        2077.0,
+        1724.0,
+        4355.0,
+        1939.0
+      ],
+      "text": "Dem Dreyserm Joh. von Caßburg",
+      "confidence": null,
+      "regions": [
+        "_89aad848-c2af-40d4-9039-c12f4df66fae"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1982.0,
+          2063.0
+        ],
+        [
+          4370.0,
+          2039.0
+        ]
+      ],
+      "bbox": [
+        1980.0,
+        1966.0,
+        4370.0,
+        2129.0
+      ],
+      "text": "Muhrbeckers Ritter und K. K. Kammerer",
+      "confidence": null,
+      "regions": [
+        "_89aad848-c2af-40d4-9039-c12f4df66fae"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          2567.0,
+          2945.0
+        ],
+        [
+          3344.0,
+          2934.0
+        ],
+        [
+          4031.0,
+          2908.0
+        ],
+        [
+          4426.0,
+          2913.0
+        ]
+      ],
+      "bbox": [
+        2564.0,
+        2779.0,
+        4426.0,
+        3053.0
+      ],
+      "text": "in Hypotheken Cant. Thurgau",
+      "confidence": null,
+      "regions": [
+        "_89aad848-c2af-40d4-9039-c12f4df66fae"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 12108,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T14:34:52+00:00"
+}

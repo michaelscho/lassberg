@@ -1,0 +1,201 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00900355_150dpi",
+  "source": {
+    "name": "HS00900355_150dpi_0004.jpg",
+    "bytes": 306658,
+    "sha256": "f1cf70c2b212b4645f469a6c0fcb6dff2a3221b8e84e22308dd5687f92d03ff4",
+    "remote": "digitalisate/Marbach/HS00900355_150dpi/HS00900355_150dpi_0004.jpg",
+    "key": "Marbach__HS00900355_150dpi__HS00900355_150dpi_0004",
+    "working_copy": "HS00900355_150dpi_0004.jpg"
+  },
+  "text": "Seiner Hochwohlgeboren\nHerrn Baron Hosaph von Sußburg\nich. etc. etc. etc.\nAuf\nLuzern\nim Thurgau über\nConstand",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          432.0,
+          510.0
+        ],
+        [
+          833.0,
+          506.0
+        ]
+      ],
+      "bbox": [
+        431.0,
+        471.0,
+        833.0,
+        531.0
+      ],
+      "text": "Seiner Hochwohlgeboren",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          457.0,
+          588.0
+        ],
+        [
+          1088.0,
+          593.0
+        ]
+      ],
+      "bbox": [
+        456.0,
+        555.0,
+        1088.0,
+        615.0
+      ],
+      "text": "Herrn Baron Hosaph von Sußburg",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          620.0,
+          648.0
+        ],
+        [
+          877.0,
+          650.0
+        ]
+      ],
+      "bbox": [
+        619.0,
+        621.0,
+        877.0,
+        665.0
+      ],
+      "text": "ich. etc. etc. etc.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          642.0,
+          721.0
+        ],
+        [
+          706.0,
+          719.0
+        ]
+      ],
+      "bbox": [
+        641.0,
+        697.0,
+        706.0,
+        756.0
+      ],
+      "text": "Auf",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          901.0,
+          813.0
+        ],
+        [
+          1017.0,
+          816.0
+        ]
+      ],
+      "bbox": [
+        899.0,
+        768.0,
+        1017.0,
+        847.0
+      ],
+      "text": "Luzern",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          671.0,
+          883.0
+        ],
+        [
+          1008.0,
+          881.0
+        ]
+      ],
+      "bbox": [
+        671.0,
+        844.0,
+        1008.0,
+        905.0
+      ],
+      "text": "im Thurgau über",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          943.0,
+          921.0
+        ],
+        [
+          1069.0,
+          918.0
+        ]
+      ],
+      "bbox": [
+        942.0,
+        881.0,
+        1069.0,
+        937.0
+      ],
+      "text": "Constand",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 11173,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 43,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T20:21:46+00:00"
+}

@@ -1,0 +1,204 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00787920_150dpi",
+  "source": {
+    "name": "HS00787920_150dpi_0007.jpg",
+    "bytes": 109843,
+    "sha256": "fcfc58807f42bd0e5ecf1ef2966967eb9a57f00bcb45c156ac33b987008cab8e",
+    "remote": "digitalisate/Marbach/HS00787920_150dpi/HS00787920_150dpi_0007.jpg",
+    "key": "Marbach__HS00787920_150dpi__HS00787920_150dpi_0007",
+    "working_copy": "HS00787920_150dpi_0007.jpg"
+  },
+  "text": "Seiner Nothwolggeboren\nDem Freiherrn Franz, von und zu\nBodmann.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          223.0,
+          452.0
+        ],
+        [
+          392.0,
+          451.0
+        ],
+        [
+          503.0,
+          447.0
+        ]
+      ],
+      "bbox": [
+        223.0,
+        422.0,
+        503.0,
+        464.0
+      ],
+      "text": "Seiner Nothwolggeboren",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          135.0,
+          502.0
+        ],
+        [
+          413.0,
+          508.0
+        ],
+        [
+          506.0,
+          508.0
+        ],
+        [
+          604.0,
+          504.0
+        ]
+      ],
+      "bbox": [
+        134.0,
+        475.0,
+        604.0,
+        535.0
+      ],
+      "text": "Dem Freiherrn Franz, von und zu",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          368.0,
+          610.0
+        ],
+        [
+          459.0,
+          605.0
+        ],
+        [
+          571.0,
+          604.0
+        ]
+      ],
+      "bbox": [
+        368.0,
+        562.0,
+        571.0,
+        619.0
+      ],
+      "text": "Bodmann.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 11555,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "Seiner Hochwolgeboren\nDem Freiherren Franz, von und zu\nBodmann.",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            223.0,
+            452.0
+          ],
+          [
+            392.0,
+            451.0
+          ],
+          [
+            503.0,
+            447.0
+          ]
+        ],
+        "bbox": [
+          223.0,
+          422.0,
+          503.0,
+          464.0
+        ],
+        "text": "Seiner Hochwolgeboren",
+        "confidence": 0.8654385336807796,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            135.0,
+            502.0
+          ],
+          [
+            413.0,
+            508.0
+          ],
+          [
+            506.0,
+            508.0
+          ],
+          [
+            604.0,
+            504.0
+          ]
+        ],
+        "bbox": [
+          134.0,
+          475.0,
+          604.0,
+          535.0
+        ],
+        "text": "Dem Freiherren Franz, von und zu",
+        "confidence": 0.9218890722841024,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            368.0,
+            610.0
+          ],
+          [
+            459.0,
+            605.0
+          ],
+          [
+            571.0,
+            604.0
+          ]
+        ],
+        "bbox": [
+          368.0,
+          562.0,
+          571.0,
+          619.0
+        ],
+        "text": "Bodmann.",
+        "confidence": 0.874247383326292,
+        "regions": []
+      }
+    ],
+    "confidence": 0.8871916630970581,
+    "timing_ms": 8522,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T04:31:40+00:00"
+}

@@ -1,0 +1,129 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "UB Bern",
+  "source": {
+    "name": "Mss_h_h_XXVI_105_5_22.tif",
+    "bytes": 66967860,
+    "sha256": "5a490a1424fe3eef217538c58bf8424c04ab70cb75e1fedb96110b7afd1f6cc1",
+    "remote": "digitalisate/UB Bern/Mss_h_h_XXVI_105_5_22.tif",
+    "key": "UB Bern__Mss_h_h_XXVI_105_5_22",
+    "working_copy": "Mss_h_h_XXVI_105_5_22.jpg"
+  },
+  "text": "1865\nbrite\nErchecker Classico\nmit dem 1sten",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          98.0,
+          105.0
+        ],
+        [
+          138.0,
+          105.0
+        ]
+      ],
+      "bbox": [
+        98.0,
+        69.0,
+        138.0,
+        157.0
+      ],
+      "text": "1865",
+      "confidence": null,
+      "regions": [
+        "_c1e8b5a7-a7b7-44ea-b93f-f5db7e7895bd"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          159.0,
+          105.0
+        ],
+        [
+          224.0,
+          103.0
+        ]
+      ],
+      "bbox": [
+        157.0,
+        71.0,
+        224.0,
+        142.0
+      ],
+      "text": "brite",
+      "confidence": null,
+      "regions": [
+        "_c1e8b5a7-a7b7-44ea-b93f-f5db7e7895bd"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          451.0,
+          109.0
+        ],
+        [
+          750.0,
+          107.0
+        ]
+      ],
+      "bbox": [
+        449.0,
+        71.0,
+        750.0,
+        142.0
+      ],
+      "text": "Erchecker Classico",
+      "confidence": null,
+      "regions": [
+        "_c0425478-9130-4301-b248-3b5be96ee687"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          113.0,
+          1301.0
+        ],
+        [
+          679.0,
+          1299.0
+        ]
+      ],
+      "bbox": [
+        111.0,
+        1269.0,
+        679.0,
+        1337.0
+      ],
+      "text": "mit dem 1sten",
+      "confidence": null,
+      "regions": [
+        "_4bcf4e13-3a49-463a-ae01-010c1f4be205"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 13116,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 32,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T01:59:14+00:00"
+}

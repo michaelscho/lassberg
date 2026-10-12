@@ -1,0 +1,109 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00926872_150dpi",
+  "source": {
+    "name": "HS00926872_0005.jpg",
+    "bytes": 276418,
+    "sha256": "efca1cb385a83e583506df49a072c674009bcb9994f49fce84aa7528342cdeba",
+    "remote": "digitalisate/Marbach/HS00926872_150dpi/HS00926872_0005.jpg",
+    "key": "Marbach__HS00926872_150dpi__HS00926872_0005",
+    "working_copy": "HS00926872_0005.jpg"
+  },
+  "text": "Stadtarchiv Stuttgard\nUhwand\nLuzern",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          722.0,
+          446.0
+        ],
+        [
+          785.0,
+          444.0
+        ],
+        [
+          1141.0,
+          453.0
+        ]
+      ],
+      "bbox": [
+        721.0,
+        410.0,
+        1141.0,
+        480.0
+      ],
+      "text": "Stadtarchiv Stuttgard",
+      "confidence": null,
+      "regions": [
+        "_375fbdb0-2a8e-474f-9618-b891f39f98af"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          160.0,
+          1644.0
+        ],
+        [
+          266.0,
+          1642.0
+        ]
+      ],
+      "bbox": [
+        159.0,
+        1609.0,
+        266.0,
+        1659.0
+      ],
+      "text": "Uhwand",
+      "confidence": null,
+      "regions": [
+        "_513f0d3f-6eee-4766-afa0-748117ba1454"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          217.0,
+          1696.0
+        ],
+        [
+          370.0,
+          1694.0
+        ]
+      ],
+      "bbox": [
+        216.0,
+        1659.0,
+        370.0,
+        1722.0
+      ],
+      "text": "Luzern",
+      "confidence": null,
+      "regions": [
+        "_513f0d3f-6eee-4766-afa0-748117ba1454"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 5475,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 22,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T21:31:52+00:00"
+}

@@ -1,0 +1,126 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Weimar/FA Hodel 236/Weimar",
+  "source": {
+    "name": "GSA_96_2725_Seite536.jpg",
+    "bytes": 3920927,
+    "sha256": "cf819624aff87b3df9fa15916544264ec307964ed416e43cecc52d7d0c806013",
+    "remote": "digitalisate/Weimar/FA Hodel 236/Weimar/GSA_96_2725_Seite536.jpg",
+    "key": "Weimar__FA Hodel 236__Weimar__GSA_96_2725_Seite536",
+    "working_copy": "GSA_96_2725_Seite536.jpg"
+  },
+  "text": "1871\n1849",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          1575.0,
+          698.0
+        ],
+        [
+          1593.0,
+          698.0
+        ]
+      ],
+      "bbox": [
+        1575.0,
+        690.0,
+        1593.0,
+        710.0
+      ],
+      "text": "1871",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1805.0,
+          531.0
+        ],
+        [
+          1848.0,
+          529.0
+        ]
+      ],
+      "bbox": [
+        1804.0,
+        523.0,
+        1848.0,
+        543.0
+      ],
+      "text": "1849",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 38348,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "artu\nfru",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            1575.0,
+            698.0
+          ],
+          [
+            1593.0,
+            698.0
+          ]
+        ],
+        "bbox": [
+          1575.0,
+          690.0,
+          1593.0,
+          710.0
+        ],
+        "text": "artu",
+        "confidence": 0.6907708793878555,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            1805.0,
+            531.0
+          ],
+          [
+            1848.0,
+            529.0
+          ]
+        ],
+        "bbox": [
+          1804.0,
+          523.0,
+          1848.0,
+          543.0
+        ],
+        "text": "fru",
+        "confidence": 0.5505816042423248,
+        "regions": []
+      }
+    ],
+    "confidence": 0.6206762418150902,
+    "timing_ms": 37505,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T12:16:24+00:00"
+}

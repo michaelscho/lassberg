@@ -1,0 +1,147 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Winterthur",
+  "source": {
+    "name": "45-MsBRH_466-56-015.jpg",
+    "bytes": 2323500,
+    "sha256": "4082ae74a942516ae955439cd384a72518e2c11edb181255a23ac4cc21b8eef0",
+    "remote": "digitalisate/Winterthur/45-MsBRH_466-56-015.jpg",
+    "key": "Winterthur__45-MsBRH_466-56-015",
+    "working_copy": "45-MsBRH_466-56-015.jpg"
+  },
+  "text": "Seiner Nothwendigen\ndem Herrn Directorium Popikhofer\nBischofszelle\nmit einem pact Bücher.\n2",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          401.0,
+          1796.0
+        ],
+        [
+          1813.0,
+          1785.0
+        ]
+      ],
+      "bbox": [
+        398.0,
+        1654.0,
+        1813.0,
+        1843.0
+      ],
+      "text": "Seiner Nothwendigen",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          296.0,
+          2055.0
+        ],
+        [
+          1256.0,
+          2042.0
+        ],
+        [
+          2408.0,
+          2045.0
+        ]
+      ],
+      "bbox": [
+        293.0,
+        1914.0,
+        2408.0,
+        2126.0
+      ],
+      "text": "dem Herrn Directorium Popikhofer",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1653.0,
+          2430.0
+        ],
+        [
+          2484.0,
+          2399.0
+        ]
+      ],
+      "bbox": [
+        1645.0,
+        2268.0,
+        2484.0,
+        2525.0
+      ],
+      "text": "Bischofszelle",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          453.0,
+          2934.0
+        ],
+        [
+          1878.0,
+          2905.0
+        ]
+      ],
+      "bbox": [
+        451.0,
+        2766.0,
+        1878.0,
+        2981.0
+      ],
+      "text": "mit einem pact Bücher.",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          2172.0,
+          2915.0
+        ],
+        [
+          2387.0,
+          2913.0
+        ]
+      ],
+      "bbox": [
+        2169.0,
+        2852.0,
+        2387.0,
+        3002.0
+      ],
+      "text": "2",
+      "confidence": null,
+      "regions": []
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 5551,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T17:16:04+00:00"
+}

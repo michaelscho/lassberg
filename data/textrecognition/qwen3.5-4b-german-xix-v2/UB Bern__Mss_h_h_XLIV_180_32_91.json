@@ -1,0 +1,105 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "UB Bern",
+  "source": {
+    "name": "Mss_h_h_XLIV_180_32_91.tif",
+    "bytes": 49835218,
+    "sha256": "22c816d84b81a4f8bb0d514f932a00ac4898621f502f5438bf463ab1c36a8183",
+    "remote": "digitalisate/UB Bern/Mss_h_h_XLIV_180_32_91.tif",
+    "key": "UB Bern__Mss_h_h_XLIV_180_32_91",
+    "working_copy": "Mss_h_h_XLIV_180_32_91.jpg"
+  },
+  "text": "alibrite\nRichter\nmit dem 10ten.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          97.0,
+          142.0
+        ],
+        [
+          225.0,
+          142.0
+        ]
+      ],
+      "bbox": [
+        97.0,
+        114.0,
+        225.0,
+        182.0
+      ],
+      "text": "alibrite",
+      "confidence": null,
+      "regions": [
+        "_76565809-6520-47db-b095-64313f9a7f04"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          382.0,
+          144.0
+        ],
+        [
+          743.0,
+          144.0
+        ]
+      ],
+      "bbox": [
+        382.0,
+        110.0,
+        743.0,
+        182.0
+      ],
+      "text": "Richter",
+      "confidence": null,
+      "regions": [
+        "_7f771aff-0a40-47c1-9462-4f99aa05c740"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          87.0,
+          1340.0
+        ],
+        [
+          682.0,
+          1331.0
+        ]
+      ],
+      "bbox": [
+        84.0,
+        1299.0,
+        682.0,
+        1378.0
+      ],
+      "text": "mit dem 10ten.",
+      "confidence": null,
+      "regions": [
+        "_1ef4e1bb-2bd6-47dd-ae8a-3d782ca0e134"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 7958,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 31,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T01:31:22+00:00"
+}

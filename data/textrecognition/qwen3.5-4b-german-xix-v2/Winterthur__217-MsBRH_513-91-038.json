@@ -1,0 +1,241 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Winterthur",
+  "source": {
+    "name": "217-MsBRH_513-91-038.jpg",
+    "bytes": 5265483,
+    "sha256": "d2fc58b811edc63266ebe0d17c41e5372ce73a84e2de7d2c2131fafaa74ff18d",
+    "remote": "digitalisate/Winterthur/217-MsBRH_513-91-038.jpg",
+    "key": "Winterthur__217-MsBRH_513-91-038",
+    "working_copy": "217-MsBRH_513-91-038.jpg"
+  },
+  "text": "Ergebenheit und meinen Danks für ihre herablaßenden\nGüte genehmigen zu machen, und mir zu erblicken\nmich zu zeichnen.\nser Hochwohlgeboren.\nergebensten Pomer\nProf. Zellinger\nKanzen S. 1. D. bis\n182",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          1480.0,
+          795.0
+        ],
+        [
+          2119.0,
+          788.0
+        ],
+        [
+          4352.0,
+          713.0
+        ],
+        [
+          4529.0,
+          720.0
+        ]
+      ],
+      "bbox": [
+        1477.0,
+        599.0,
+        4529.0,
+        873.0
+      ],
+      "text": "Ergebenheit und meinen Danks für ihre herablaßenden",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1382.0,
+          958.0
+        ],
+        [
+          2187.0,
+          945.0
+        ],
+        [
+          3616.0,
+          883.0
+        ],
+        [
+          4529.0,
+          873.0
+        ]
+      ],
+      "bbox": [
+        1379.0,
+        775.0,
+        4529.0,
+        1042.0
+      ],
+      "text": "Güte genehmigen zu machen, und mir zu erblicken",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1408.0,
+          1114.0
+        ],
+        [
+          2510.0,
+          1104.0
+        ]
+      ],
+      "bbox": [
+        1405.0,
+        1013.0,
+        2510.0,
+        1261.0
+      ],
+      "text": "mich zu zeichnen.",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          2292.0,
+          1499.0
+        ],
+        [
+          3788.0,
+          1479.0
+        ]
+      ],
+      "bbox": [
+        2288.0,
+        1345.0,
+        3788.0,
+        1616.0
+      ],
+      "text": "ser Hochwohlgeboren.",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          3081.0,
+          2082.0
+        ],
+        [
+          4401.0,
+          2105.0
+        ]
+      ],
+      "bbox": [
+        3078.0,
+        1978.0,
+        4401.0,
+        2170.0
+      ],
+      "text": "ergebensten Pomer",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          3293.0,
+          2284.0
+        ],
+        [
+          4352.0,
+          2268.0
+        ]
+      ],
+      "bbox": [
+        3289.0,
+        2154.0,
+        4352.0,
+        2512.0
+      ],
+      "text": "Prof. Zellinger",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          156.0,
+          2033.0
+        ],
+        [
+          1134.0,
+          2023.0
+        ]
+      ],
+      "bbox": [
+        153.0,
+        1916.0,
+        1134.0,
+        2147.0
+      ],
+      "text": "Kanzen S. 1. D. bis",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 7,
+      "baseline": [
+        [
+          674.0,
+          2189.0
+        ],
+        [
+          860.0,
+          2193.0
+        ]
+      ],
+      "bbox": [
+        671.0,
+        2098.0,
+        860.0,
+        2225.0
+      ],
+      "text": "182",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 14765,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T14:38:29+00:00"
+}

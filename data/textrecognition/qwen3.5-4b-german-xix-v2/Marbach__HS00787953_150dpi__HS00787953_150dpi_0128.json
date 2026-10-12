@@ -1,0 +1,273 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00787953_150dpi",
+  "source": {
+    "name": "HS00787953_150dpi_0128.jpg",
+    "bytes": 113065,
+    "sha256": "0c37c734f31aef518e00bf1d6a8919d33ab61609c0ef2c159758266315157504",
+    "remote": "digitalisate/Marbach/HS00787953_150dpi/HS00787953_150dpi_0128.jpg",
+    "key": "Marbach__HS00787953_150dpi__HS00787953_150dpi_0128",
+    "working_copy": "HS00787953_150dpi_0128.jpg"
+  },
+  "text": "soll an die\n1863\nde\n1869.\ns¬\n1849\n1851\ns¬\n1865\nDein",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          1022.0,
+          117.0
+        ],
+        [
+          1153.0,
+          117.0
+        ]
+      ],
+      "bbox": [
+        1022.0,
+        79.0,
+        1153.0,
+        129.0
+      ],
+      "text": "soll an die",
+      "confidence": null,
+      "regions": [
+        "r2"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          298.0,
+          271.0
+        ],
+        [
+          366.0,
+          271.0
+        ]
+      ],
+      "bbox": [
+        298.0,
+        239.0,
+        366.0,
+        284.0
+      ],
+      "text": "1863",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          288.0,
+          382.0
+        ],
+        [
+          325.0,
+          380.0
+        ]
+      ],
+      "bbox": [
+        287.0,
+        345.0,
+        326.0,
+        397.0
+      ],
+      "text": "de",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          374.0,
+          377.0
+        ],
+        [
+          406.0,
+          376.0
+        ]
+      ],
+      "bbox": [
+        372.0,
+        344.0,
+        406.0,
+        387.0
+      ],
+      "text": "1869.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          425.0,
+          376.0
+        ],
+        [
+          440.0,
+          375.0
+        ]
+      ],
+      "bbox": [
+        424.0,
+        331.0,
+        440.0,
+        386.0
+      ],
+      "text": "s¬",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          486.0,
+          375.0
+        ],
+        [
+          500.0,
+          374.0
+        ]
+      ],
+      "bbox": [
+        485.0,
+        367.0,
+        500.0,
+        381.0
+      ],
+      "text": "1849",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          517.0,
+          374.0
+        ],
+        [
+          555.0,
+          371.0
+        ]
+      ],
+      "bbox": [
+        516.0,
+        348.0,
+        556.0,
+        381.0
+      ],
+      "text": "1851",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 7,
+      "baseline": [
+        [
+          608.0,
+          368.0
+        ],
+        [
+          617.0,
+          368.0
+        ]
+      ],
+      "bbox": [
+        608.0,
+        339.0,
+        617.0,
+        378.0
+      ],
+      "text": "s¬",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 8,
+      "baseline": [
+        [
+          623.0,
+          265.0
+        ],
+        [
+          715.0,
+          263.0
+        ]
+      ],
+      "bbox": [
+        622.0,
+        235.0,
+        715.0,
+        275.0
+      ],
+      "text": "1865",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 9,
+      "baseline": [
+        [
+          539.0,
+          541.0
+        ],
+        [
+          663.0,
+          538.0
+        ]
+      ],
+      "bbox": [
+        538.0,
+        507.0,
+        663.0,
+        550.0
+      ],
+      "text": "Dein",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 12606,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T12:22:18+00:00"
+}

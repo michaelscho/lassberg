@@ -1,0 +1,195 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Winterthur",
+  "source": {
+    "name": "250-MsBRH_513-91-071.jpg",
+    "bytes": 5079698,
+    "sha256": "e93ad86ae7e6c6af8e0b33408ed115e2b5ab1f57471a48a48dd484558c2ec011",
+    "remote": "digitalisate/Winterthur/250-MsBRH_513-91-071.jpg",
+    "key": "Winterthur__250-MsBRH_513-91-071",
+    "working_copy": "250-MsBRH_513-91-071.jpg"
+  },
+  "text": "1\nHochderobgeborn\ndem Herrn Baron Joseph von Caßberg\n1. d. 2. Cammerer u. Wallensee.\ner\nErgriffen",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          2079.0,
+          1376.0
+        ],
+        [
+          2166.0,
+          1376.0
+        ]
+      ],
+      "bbox": [
+        2079.0,
+        1261.0,
+        2166.0,
+        1420.0
+      ],
+      "text": "1",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          2273.0,
+          1379.0
+        ],
+        [
+          3768.0,
+          1379.0
+        ]
+      ],
+      "bbox": [
+        2273.0,
+        1258.0,
+        3768.0,
+        1456.0
+      ],
+      "text": "Hochderobgeborn",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1420.0,
+          1815.0
+        ],
+        [
+          1829.0,
+          1837.0
+        ],
+        [
+          3842.0,
+          1883.0
+        ]
+      ],
+      "bbox": [
+        1418.0,
+        1689.0,
+        3842.0,
+        1946.0
+      ],
+      "text": "dem Herrn Baron Joseph von Caßberg",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          1407.0,
+          2012.0
+        ],
+        [
+          1974.0,
+          2015.0
+        ],
+        [
+          2490.0,
+          2048.0
+        ],
+        [
+          3039.0,
+          2053.0
+        ],
+        [
+          3653.0,
+          2089.0
+        ]
+      ],
+      "bbox": [
+        1404.0,
+        1936.0,
+        3653.0,
+        2127.0
+      ],
+      "text": "1. d. 2. Cammerer u. Wallensee.",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          3755.0,
+          2116.0
+        ],
+        [
+          3859.0,
+          2133.0
+        ]
+      ],
+      "bbox": [
+        3746.0,
+        2023.0,
+        3867.0,
+        2180.0
+      ],
+      "text": "er",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          2057.0,
+          2991.0
+        ],
+        [
+          2449.0,
+          3019.0
+        ],
+        [
+          3404.0,
+          3030.0
+        ]
+      ],
+      "bbox": [
+        2051.0,
+        2879.0,
+        3404.0,
+        3167.0
+      ],
+      "text": "Ergriffen",
+      "confidence": null,
+      "regions": []
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 11161,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T15:02:38+00:00"
+}

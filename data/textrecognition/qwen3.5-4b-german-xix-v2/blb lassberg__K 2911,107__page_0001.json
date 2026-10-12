@@ -1,0 +1,247 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "blb lassberg/K 2911,107",
+  "source": {
+    "name": "page_0001.jpg",
+    "bytes": 867493,
+    "sha256": "6a835a69628fc61171ab86759550315e0bef1039f194697bba85dc3955143ace",
+    "remote": "digitalisate/blb lassberg/K 2911,107/page_0001.jpg",
+    "key": "blb lassberg__K 2911,107__page_0001",
+    "working_copy": "page_0001.jpg"
+  },
+  "text": "12.29.11.197\nCopia.\nBerlin 3. Februar. 1853.\nHochwohlgeboren\nHochzuverehrender Friesheim.\nSchon längst würde ich es mir zur angenehmen pflicht gemacht haben.\nHinen und ihrer hochverehrten Frau Gemahlin für die viele gute\nwodurch Frö mir den nur Kurzenaufenthalb in dem schönen Meers¬\nburs un vergefflich gemacht höher, in einen wärmsten dank",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          2266.0,
+          135.0
+        ],
+        [
+          2560.0,
+          139.0
+        ]
+      ],
+      "bbox": [
+        2264.0,
+        98.0,
+        2560.0,
+        185.0
+      ],
+      "text": "12.29.11.197",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          162.0,
+          421.0
+        ],
+        [
+          325.0,
+          423.0
+        ]
+      ],
+      "bbox": [
+        160.0,
+        375.0,
+        325.0,
+        467.0
+      ],
+      "text": "Copia.",
+      "confidence": null,
+      "regions": [
+        "r2"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1207.0,
+          432.0
+        ],
+        [
+          1844.0,
+          437.0
+        ]
+      ],
+      "bbox": [
+        1205.0,
+        384.0,
+        1844.0,
+        474.0
+      ],
+      "text": "Berlin 3. Februar. 1853.",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          967.0,
+          540.0
+        ],
+        [
+          1455.0,
+          542.0
+        ]
+      ],
+      "bbox": [
+        964.0,
+        485.0,
+        1455.0,
+        584.0
+      ],
+      "text": "Hochwohlgeboren",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          781.0,
+          643.0
+        ],
+        [
+          1549.0,
+          648.0
+        ]
+      ],
+      "bbox": [
+        779.0,
+        581.0,
+        1549.0,
+        691.0
+      ],
+      "text": "Hochzuverehrender Friesheim.",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          485.0,
+          840.0
+        ],
+        [
+          2225.0,
+          854.0
+        ]
+      ],
+      "bbox": [
+        483.0,
+        778.0,
+        2225.0,
+        888.0
+      ],
+      "text": "Schon längst würde ich es mir zur angenehmen pflicht gemacht haben.",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          508.0,
+          945.0
+        ],
+        [
+          2140.0,
+          957.0
+        ]
+      ],
+      "bbox": [
+        506.0,
+        884.0,
+        2140.0,
+        978.0
+      ],
+      "text": "Hinen und ihrer hochverehrten Frau Gemahlin für die viele gute",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 7,
+      "baseline": [
+        [
+          504.0,
+          1051.0
+        ],
+        [
+          2257.0,
+          1062.0
+        ]
+      ],
+      "bbox": [
+        501.0,
+        994.0,
+        2257.0,
+        1094.0
+      ],
+      "text": "wodurch Frö mir den nur Kurzenaufenthalb in dem schönen Meers¬",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 8,
+      "baseline": [
+        [
+          522.0,
+          1156.0
+        ],
+        [
+          2177.0,
+          1161.0
+        ]
+      ],
+      "bbox": [
+        522.0,
+        1099.0,
+        2177.0,
+        1209.0
+      ],
+      "text": "burs un vergefflich gemacht höher, in einen wärmsten dank",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 6155,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T18:03:40+00:00"
+}

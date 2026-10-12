@@ -1,0 +1,310 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Basel/lassberg-letter-1934",
+  "source": {
+    "name": "PA 82a B 9_Seite_183.jpg",
+    "bytes": 1408647,
+    "sha256": "3977e6694abe9d7ae099841ea757b32e15fcfadfb48b9dd82f83a5274712a25a",
+    "remote": "digitalisate/Basel/lassberg-letter-1934/PA 82a B 9_Seite_183.jpg",
+    "key": "Basel__lassberg-letter-1934__PA 82a B 9_Seite_183",
+    "working_copy": "PA 82a B 9_Seite_183.jpg"
+  },
+  "text": "Erner Hochwohlgeboren\nDein\n1.\nauf Eppishausen\nThurgau.\nHerrn Freyherrn Joseph von Lapberg",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          1650.0,
+          1381.0
+        ],
+        [
+          2420.0,
+          1375.0
+        ]
+      ],
+      "bbox": [
+        1648.0,
+        1308.0,
+        2420.0,
+        1421.0
+      ],
+      "text": "Erner Hochwohlgeboren",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          2647.0,
+          1464.0
+        ],
+        [
+          2756.0,
+          1464.0
+        ]
+      ],
+      "bbox": [
+        2647.0,
+        1399.0,
+        2756.0,
+        1482.0
+      ],
+      "text": "Dein",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1506.0,
+          2105.0
+        ],
+        [
+          1541.0,
+          2103.0
+        ]
+      ],
+      "bbox": [
+        1502.0,
+        2064.0,
+        1541.0,
+        2121.0
+      ],
+      "text": "1.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          2329.0,
+          2016.0
+        ],
+        [
+          3005.0,
+          2010.0
+        ]
+      ],
+      "bbox": [
+        2327.0,
+        1951.0,
+        3005.0,
+        2082.0
+      ],
+      "text": "auf Eppishausen",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          2582.0,
+          2194.0
+        ],
+        [
+          2958.0,
+          2198.0
+        ]
+      ],
+      "bbox": [
+        2580.0,
+        2131.0,
+        2958.0,
+        2252.0
+      ],
+      "text": "Thurgau.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          1621.0,
+          1648.0
+        ],
+        [
+          2938.0,
+          1644.0
+        ]
+      ],
+      "bbox": [
+        1619.0,
+        1573.0,
+        2938.0,
+        1702.0
+      ],
+      "text": "Herrn Freyherrn Joseph von Lapberg",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 8574,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "Schnee Hochwoltscheben\n19\nThesen Freyherrn Joseph von Lassberg\nfrey\nauf Expishausen.\n(teon Thurgau.",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            1650.0,
+            1381.0
+          ],
+          [
+            2420.0,
+            1375.0
+          ]
+        ],
+        "bbox": [
+          1648.0,
+          1308.0,
+          2420.0,
+          1421.0
+        ],
+        "text": "Schnee Hochwoltscheben",
+        "confidence": 0.7478198585185137,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            2647.0,
+            1464.0
+          ],
+          [
+            2756.0,
+            1464.0
+          ]
+        ],
+        "bbox": [
+          2647.0,
+          1399.0,
+          2756.0,
+          1482.0
+        ],
+        "text": "19",
+        "confidence": 0.38490282744169235,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            1621.0,
+            1648.0
+          ],
+          [
+            2938.0,
+            1644.0
+          ]
+        ],
+        "bbox": [
+          1619.0,
+          1573.0,
+          2938.0,
+          1702.0
+        ],
+        "text": "Thesen Freyherrn Joseph von Lassberg",
+        "confidence": 0.8643149038155874,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            1506.0,
+            2105.0
+          ],
+          [
+            1541.0,
+            2103.0
+          ]
+        ],
+        "bbox": [
+          1502.0,
+          2064.0,
+          1541.0,
+          2121.0
+        ],
+        "text": "frey",
+        "confidence": 0.8316974490880966,
+        "regions": []
+      },
+      {
+        "order": 4,
+        "baseline": [
+          [
+            2329.0,
+            2016.0
+          ],
+          [
+            3005.0,
+            2010.0
+          ]
+        ],
+        "bbox": [
+          2327.0,
+          1951.0,
+          3005.0,
+          2082.0
+        ],
+        "text": "auf Expishausen.",
+        "confidence": 0.8706461377441883,
+        "regions": []
+      },
+      {
+        "order": 5,
+        "baseline": [
+          [
+            2582.0,
+            2194.0
+          ],
+          [
+            2958.0,
+            2198.0
+          ]
+        ],
+        "bbox": [
+          2580.0,
+          2131.0,
+          2958.0,
+          2252.0
+        ],
+        "text": "(teon Thurgau.",
+        "confidence": 0.7974627039262226,
+        "regions": []
+      }
+    ],
+    "confidence": 0.7494739800890501,
+    "timing_ms": 39548,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-21T18:31:20+00:00"
+}

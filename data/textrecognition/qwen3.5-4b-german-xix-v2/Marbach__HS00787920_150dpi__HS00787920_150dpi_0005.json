@@ -1,0 +1,218 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00787920_150dpi",
+  "source": {
+    "name": "HS00787920_150dpi_0005.jpg",
+    "bytes": 138620,
+    "sha256": "708daacc1cdb3ca580f24b1ed1c4bd68d6e0a5f348d17aa3b8d1418aa077bff2",
+    "remote": "digitalisate/Marbach/HS00787920_150dpi/HS00787920_150dpi_0005.jpg",
+    "key": "Marbach__HS00787920_150dpi__HS00787920_150dpi_0005",
+    "working_copy": "HS00787920_150dpi_0005.jpg"
+  },
+  "text": "1849\n2\ns¬\ns¬",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          529.0,
+          711.0
+        ],
+        [
+          534.0,
+          711.0
+        ]
+      ],
+      "bbox": [
+        529.0,
+        704.0,
+        534.0,
+        720.0
+      ],
+      "text": "1849",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          559.0,
+          85.0
+        ],
+        [
+          565.0,
+          85.0
+        ]
+      ],
+      "bbox": [
+        559.0,
+        76.0,
+        565.0,
+        111.0
+      ],
+      "text": "2",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          585.0,
+          111.0
+        ],
+        [
+          609.0,
+          112.0
+        ]
+      ],
+      "bbox": [
+        584.0,
+        99.0,
+        609.0,
+        123.0
+      ],
+      "text": "s¬",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          588.0,
+          440.0
+        ],
+        [
+          611.0,
+          440.0
+        ]
+      ],
+      "bbox": [
+        588.0,
+        418.0,
+        611.0,
+        453.0
+      ],
+      "text": "s¬",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 12837,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "10. III. 16\n10. III. 33\n16\n17",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            529.0,
+            711.0
+          ],
+          [
+            534.0,
+            711.0
+          ]
+        ],
+        "bbox": [
+          529.0,
+          704.0,
+          534.0,
+          720.0
+        ],
+        "text": "10. III. 16",
+        "confidence": 0.7375972447070208,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            559.0,
+            85.0
+          ],
+          [
+            565.0,
+            85.0
+          ]
+        ],
+        "bbox": [
+          559.0,
+          76.0,
+          565.0,
+          111.0
+        ],
+        "text": "10. III. 33",
+        "confidence": 0.6786887903105129,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            585.0,
+            111.0
+          ],
+          [
+            609.0,
+            112.0
+          ]
+        ],
+        "bbox": [
+          584.0,
+          99.0,
+          609.0,
+          123.0
+        ],
+        "text": "16",
+        "confidence": 0.3074313551187515,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            588.0,
+            440.0
+          ],
+          [
+            611.0,
+            440.0
+          ]
+        ],
+        "bbox": [
+          588.0,
+          418.0,
+          611.0,
+          453.0
+        ],
+        "text": "17",
+        "confidence": 0.1886002980172634,
+        "regions": []
+      }
+    ],
+    "confidence": 0.47807942203838716,
+    "timing_ms": 6638,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T04:31:32+00:00"
+}

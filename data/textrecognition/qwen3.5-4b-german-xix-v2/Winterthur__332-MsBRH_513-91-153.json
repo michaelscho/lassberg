@@ -1,0 +1,145 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Winterthur",
+  "source": {
+    "name": "332-MsBRH_513-91-153.jpg",
+    "bytes": 4602424,
+    "sha256": "5ff4144fd2365173bfc37f1a50cccd1a3c0d2e5032110e421b6375ee70d068dd",
+    "remote": "digitalisate/Winterthur/332-MsBRH_513-91-153.jpg",
+    "key": "Winterthur__332-MsBRH_513-91-153",
+    "working_copy": "332-MsBRH_513-91-153.jpg"
+  },
+  "text": "Hochwölgeboren\ndem Droiserradn Joseph von Daßberg\ndurch Armen des Herrn\nin Eppischen",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          2424.0,
+          1270.0
+        ],
+        [
+          3655.0,
+          1283.0
+        ]
+      ],
+      "bbox": [
+        2421.0,
+        1166.0,
+        3655.0,
+        1361.0
+      ],
+      "text": "Hochwölgeboren",
+      "confidence": null,
+      "regions": [
+        "_b26da1fe-069f-4c71-9a3f-59d345460666"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1325.0,
+          1792.0
+        ],
+        [
+          1769.0,
+          1794.0
+        ],
+        [
+          2353.0,
+          1841.0
+        ],
+        [
+          3264.0,
+          1865.0
+        ],
+        [
+          3932.0,
+          1896.0
+        ]
+      ],
+      "bbox": [
+        1322.0,
+        1651.0,
+        3932.0,
+        1987.0
+      ],
+      "text": "dem Droiserradn Joseph von Daßberg",
+      "confidence": null,
+      "regions": [
+        "_b26da1fe-069f-4c71-9a3f-59d345460666"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1294.0,
+          2392.0
+        ],
+        [
+          1891.0,
+          2353.0
+        ],
+        [
+          2724.0,
+          2337.0
+        ]
+      ],
+      "bbox": [
+        1289.0,
+        2209.0,
+        2724.0,
+        2462.0
+      ],
+      "text": "durch Armen des Herrn",
+      "confidence": null,
+      "regions": [
+        "_b26da1fe-069f-4c71-9a3f-59d345460666"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          2131.0,
+          2882.0
+        ],
+        [
+          3376.0,
+          2906.0
+        ]
+      ],
+      "bbox": [
+        2129.0,
+        2768.0,
+        3376.0,
+        3049.0
+      ],
+      "text": "in Eppischen",
+      "confidence": null,
+      "regions": [
+        "_b26da1fe-069f-4c71-9a3f-59d345460666"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 11571,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T16:20:25+00:00"
+}

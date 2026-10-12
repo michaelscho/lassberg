@@ -1,0 +1,170 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Basel/lassberg-letter- - Kopie (42)",
+  "source": {
+    "name": "PA 82a B 9_Seite_131.jpg",
+    "bytes": 278549,
+    "sha256": "25ac355df94c8f05f162330cef1dad3a8fd319ad6fb3176670bab040c1496cd4",
+    "remote": "digitalisate/Basel/lassberg-letter- - Kopie (42)/PA 82a B 9_Seite_131.jpg",
+    "key": "Basel__lassberg-letter- - Kopie (42)__PA 82a B 9_Seite_131",
+    "working_copy": "PA 82a B 9_Seite_131.jpg"
+  },
+  "text": "Dein\nJ.\n\"",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          743.0,
+          664.0
+        ],
+        [
+          746.0,
+          616.0
+        ]
+      ],
+      "bbox": [
+        720.0,
+        614.0,
+        797.0,
+        666.0
+      ],
+      "text": "Dein",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          760.0,
+          921.0
+        ],
+        [
+          763.0,
+          986.0
+        ]
+      ],
+      "bbox": [
+        715.0,
+        919.0,
+        783.0,
+        987.0
+      ],
+      "text": "J.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1261.0,
+          1424.0
+        ],
+        [
+          1272.0,
+          1423.0
+        ]
+      ],
+      "bbox": [
+        1257.0,
+        1384.0,
+        1273.0,
+        1441.0
+      ],
+      "text": "\"",
+      "confidence": null,
+      "regions": []
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 5640,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "Ministerie van\nvan hem verscheiden\nMinisterie",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            743.0,
+            664.0
+          ],
+          [
+            746.0,
+            616.0
+          ]
+        ],
+        "bbox": [
+          720.0,
+          614.0,
+          797.0,
+          666.0
+        ],
+        "text": "Ministerie van",
+        "confidence": 0.8026102270398822,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            760.0,
+            921.0
+          ],
+          [
+            763.0,
+            986.0
+          ]
+        ],
+        "bbox": [
+          715.0,
+          919.0,
+          783.0,
+          987.0
+        ],
+        "text": "van hem verscheiden",
+        "confidence": 0.6823414332772556,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            1261.0,
+            1424.0
+          ],
+          [
+            1272.0,
+            1423.0
+          ]
+        ],
+        "bbox": [
+          1257.0,
+          1384.0,
+          1273.0,
+          1441.0
+        ],
+        "text": "Ministerie",
+        "confidence": 0.7627935200929642,
+        "regions": []
+      }
+    ],
+    "confidence": 0.749248393470034,
+    "timing_ms": 9788,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-21T17:24:52+00:00"
+}

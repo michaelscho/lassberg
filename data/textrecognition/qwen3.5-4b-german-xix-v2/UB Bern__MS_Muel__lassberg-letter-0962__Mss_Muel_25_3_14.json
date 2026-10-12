@@ -1,0 +1,105 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "UB Bern/MS_Muel/lassberg-letter-0962",
+  "source": {
+    "name": "Mss_Muel_25_3_14.tif",
+    "bytes": 38478684,
+    "sha256": "99744fb7da164d2f5dcbc3fae6c6169fff93efaf1dfaac386682e769ac07badd",
+    "remote": "digitalisate/UB Bern/MS_Muel/lassberg-letter-0962/Mss_Muel_25_3_14.tif",
+    "key": "UB Bern__MS_Muel__lassberg-letter-0962__Mss_Muel_25_3_14",
+    "working_copy": "Mss_Muel_25_3_14.jpg"
+  },
+  "text": "Calibrite\norchecker classico\nmit dem 1sten",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          107.0,
+          80.0
+        ],
+        [
+          247.0,
+          75.0
+        ]
+      ],
+      "bbox": [
+        107.0,
+        25.0,
+        247.0,
+        116.0
+      ],
+      "text": "Calibrite",
+      "confidence": null,
+      "regions": [
+        "_9aae778e-0d1a-4b73-b617-bd24206a5639"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          434.0,
+          82.0
+        ],
+        [
+          760.0,
+          82.0
+        ]
+      ],
+      "bbox": [
+        434.0,
+        52.0,
+        760.0,
+        122.0
+      ],
+      "text": "orchecker classico",
+      "confidence": null,
+      "regions": [
+        "_05f5c2d9-dd25-42b3-ac4e-0eeab26a3c83"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          92.0,
+          1276.0
+        ],
+        [
+          692.0,
+          1272.0
+        ]
+      ],
+      "bbox": [
+        90.0,
+        1241.0,
+        692.0,
+        1310.0
+      ],
+      "text": "mit dem 1sten",
+      "confidence": null,
+      "regions": [
+        "_be050ea7-fd60-4edf-baea-540b6b70f443"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 6949,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 32,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T23:47:27+00:00"
+}

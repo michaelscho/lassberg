@@ -1,0 +1,57 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00926806_150dpi",
+  "source": {
+    "name": "HS00926806_0004.jpg",
+    "bytes": 88320,
+    "sha256": "5e1efe8982d6d2639d4216b1826fbe767b98ca990b7911e5eafdcc869deb0dfc",
+    "remote": "digitalisate/Marbach/HS00926806_150dpi/HS00926806_0004.jpg",
+    "key": "Marbach__HS00926806_150dpi__HS00926806_0004",
+    "working_copy": "HS00926806_0004.jpg"
+  },
+  "text": "s¬",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          443.0,
+          277.0
+        ],
+        [
+          462.0,
+          277.0
+        ]
+      ],
+      "bbox": [
+        442.0,
+        261.0,
+        462.0,
+        281.0
+      ],
+      "text": "s¬",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 11379,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 49,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T20:48:09+00:00"
+}

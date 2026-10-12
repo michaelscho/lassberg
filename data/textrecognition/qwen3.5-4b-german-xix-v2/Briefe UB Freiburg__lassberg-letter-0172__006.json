@@ -1,0 +1,172 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Briefe UB Freiburg/lassberg-letter-0172",
+  "source": {
+    "name": "006.tif",
+    "bytes": 8971936,
+    "sha256": "c9e6ec0e122ff4c85bc5a2e62b4c7ba4ddcc2fc0e5339b7707ca182d722d57f8",
+    "remote": "digitalisate/Briefe UB Freiburg/lassberg-letter-0172/006.tif",
+    "key": "Briefe UB Freiburg__lassberg-letter-0172__006",
+    "working_copy": "006.jpg"
+  },
+  "text": "1865\nBern\nnner",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          921.0,
+          432.0
+        ],
+        [
+          957.0,
+          432.0
+        ]
+      ],
+      "bbox": [
+        921.0,
+        410.0,
+        957.0,
+        454.0
+      ],
+      "text": "1865",
+      "confidence": null,
+      "regions": [
+        "_31b1f25e-15e9-447a-ae65-74a8626f267d"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          992.0,
+          973.0
+        ],
+        [
+          1124.0,
+          972.0
+        ]
+      ],
+      "bbox": [
+        991.0,
+        932.0,
+        1124.0,
+        996.0
+      ],
+      "text": "Bern",
+      "confidence": null,
+      "regions": [
+        "_026773b2-4c08-4faa-821c-1508d1f1ae5e"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          968.0,
+          1407.0
+        ],
+        [
+          1086.0,
+          1403.0
+        ]
+      ],
+      "bbox": [
+        967.0,
+        1372.0,
+        1086.0,
+        1432.0
+      ],
+      "text": "nner",
+      "confidence": null,
+      "regions": [
+        "_362156c8-3451-4254-b0e8-1ab764f5999a"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 19568,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "17\n139\n18",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            921.0,
+            432.0
+          ],
+          [
+            957.0,
+            432.0
+          ]
+        ],
+        "bbox": [
+          921.0,
+          410.0,
+          957.0,
+          454.0
+        ],
+        "text": "17",
+        "confidence": 0.5345426052808762,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            992.0,
+            973.0
+          ],
+          [
+            1124.0,
+            972.0
+          ]
+        ],
+        "bbox": [
+          991.0,
+          932.0,
+          1124.0,
+          996.0
+        ],
+        "text": "139",
+        "confidence": 0.48087794085343677,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            968.0,
+            1407.0
+          ],
+          [
+            1086.0,
+            1403.0
+          ]
+        ],
+        "bbox": [
+          967.0,
+          1372.0,
+          1086.0,
+          1432.0
+        ],
+        "text": "18",
+        "confidence": 0.632741168141365,
+        "regions": []
+      }
+    ],
+    "confidence": 0.5493872380918926,
+    "timing_ms": 41898,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-21T21:53:49+00:00"
+}

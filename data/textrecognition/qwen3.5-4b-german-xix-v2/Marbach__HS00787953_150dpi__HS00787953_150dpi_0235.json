@@ -1,0 +1,99 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00787953_150dpi",
+  "source": {
+    "name": "HS00787953_150dpi_0235.jpg",
+    "bytes": 122867,
+    "sha256": "8dce735c0bb47709cd1c5ad21026bcdd123a341076edf0f6373e7e612219c91e",
+    "remote": "digitalisate/Marbach/HS00787953_150dpi/HS00787953_150dpi_0235.jpg",
+    "key": "Marbach__HS00787953_150dpi__HS00787953_150dpi_0235",
+    "working_copy": "HS00787953_150dpi_0235.jpg"
+  },
+  "text": "--\n1849\n1865",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          362.0,
+          1016.0
+        ],
+        [
+          366.0,
+          1007.0
+        ]
+      ],
+      "bbox": [
+        350.0,
+        1001.0,
+        390.0,
+        1026.0
+      ],
+      "text": "--",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          411.0,
+          990.0
+        ],
+        [
+          419.0,
+          990.0
+        ]
+      ],
+      "bbox": [
+        410.0,
+        974.0,
+        419.0,
+        1004.0
+      ],
+      "text": "1849",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          807.0,
+          61.0
+        ],
+        [
+          829.0,
+          59.0
+        ]
+      ],
+      "bbox": [
+        806.0,
+        50.0,
+        830.0,
+        78.0
+      ],
+      "text": "1865",
+      "confidence": null,
+      "regions": []
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 4602,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T13:10:30+00:00"
+}

@@ -1,0 +1,310 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00787922_150dpi",
+  "source": {
+    "name": "HS00787922_0015_150dpi.jpg",
+    "bytes": 106342,
+    "sha256": "da540459d407c4971dea6d6dd5ef02c2b7fc92d3d22dd7453373feb10a03cd21",
+    "remote": "digitalisate/Marbach/HS00787922_150dpi/HS00787922_0015_150dpi.jpg",
+    "key": "Marbach__HS00787922_150dpi__HS00787922_0015_150dpi",
+    "working_copy": "HS00787922_0015_150dpi.jpg"
+  },
+  "text": "eersbun\n1849.\n1849\nvon\nMonsieur\nN 3368a, 3963",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          375.0,
+          602.0
+        ],
+        [
+          541.0,
+          603.0
+        ]
+      ],
+      "bbox": [
+        375.0,
+        567.0,
+        541.0,
+        624.0
+      ],
+      "text": "eersbun",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          419.0,
+          716.0
+        ],
+        [
+          426.0,
+          716.0
+        ]
+      ],
+      "bbox": [
+        419.0,
+        674.0,
+        426.0,
+        742.0
+      ],
+      "text": "1849.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          573.0,
+          714.0
+        ],
+        [
+          577.0,
+          714.0
+        ]
+      ],
+      "bbox": [
+        573.0,
+        699.0,
+        577.0,
+        726.0
+      ],
+      "text": "1849",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          642.0,
+          709.0
+        ],
+        [
+          713.0,
+          710.0
+        ]
+      ],
+      "bbox": [
+        642.0,
+        681.0,
+        713.0,
+        726.0
+      ],
+      "text": "von",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          694.0,
+          796.0
+        ],
+        [
+          799.0,
+          800.0
+        ]
+      ],
+      "bbox": [
+        693.0,
+        760.0,
+        800.0,
+        819.0
+      ],
+      "text": "Monsieur",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          585.0,
+          1219.0
+        ],
+        [
+          866.0,
+          1214.0
+        ]
+      ],
+      "bbox": [
+        584.0,
+        1178.0,
+        866.0,
+        1231.0
+      ],
+      "text": "N 3368a, 3963",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 14702,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "Meersburg\n5\ndavon\ndavon\nKopie\nKN 3968a; 3969",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            375.0,
+            602.0
+          ],
+          [
+            541.0,
+            603.0
+          ]
+        ],
+        "bbox": [
+          375.0,
+          567.0,
+          541.0,
+          624.0
+        ],
+        "text": "Meersburg",
+        "confidence": 0.881598432858785,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            419.0,
+            716.0
+          ],
+          [
+            426.0,
+            716.0
+          ]
+        ],
+        "bbox": [
+          419.0,
+          674.0,
+          426.0,
+          742.0
+        ],
+        "text": "5",
+        "confidence": 0.6439053416252136,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            573.0,
+            714.0
+          ],
+          [
+            577.0,
+            714.0
+          ]
+        ],
+        "bbox": [
+          573.0,
+          699.0,
+          577.0,
+          726.0
+        ],
+        "text": "davon",
+        "confidence": 0.7742296755313873,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            642.0,
+            709.0
+          ],
+          [
+            713.0,
+            710.0
+          ]
+        ],
+        "bbox": [
+          642.0,
+          681.0,
+          713.0,
+          726.0
+        ],
+        "text": "davon",
+        "confidence": 0.8436696648597717,
+        "regions": []
+      },
+      {
+        "order": 4,
+        "baseline": [
+          [
+            694.0,
+            796.0
+          ],
+          [
+            799.0,
+            800.0
+          ]
+        ],
+        "bbox": [
+          693.0,
+          760.0,
+          800.0,
+          819.0
+        ],
+        "text": "Kopie",
+        "confidence": 0.8796003580093383,
+        "regions": []
+      },
+      {
+        "order": 5,
+        "baseline": [
+          [
+            585.0,
+            1219.0
+          ],
+          [
+            866.0,
+            1214.0
+          ]
+        ],
+        "bbox": [
+          584.0,
+          1178.0,
+          866.0,
+          1231.0
+        ],
+        "text": "KN 3968a; 3969",
+        "confidence": 0.7829599593366895,
+        "regions": []
+      }
+    ],
+    "confidence": 0.8009939053701975,
+    "timing_ms": 35157,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T04:38:21+00:00"
+}

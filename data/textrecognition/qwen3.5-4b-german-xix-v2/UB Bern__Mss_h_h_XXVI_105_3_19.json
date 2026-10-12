@@ -1,0 +1,285 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "UB Bern",
+  "source": {
+    "name": "Mss_h_h_XXVI_105_3_19.tif",
+    "bytes": 27345972,
+    "sha256": "262b456fa465acb55a913be72e5b0c8332b1c3acb72c1c58e85f4e58c02e4901",
+    "remote": "digitalisate/UB Bern/Mss_h_h_XXVI_105_3_19.tif",
+    "key": "UB Bern__Mss_h_h_XXVI_105_3_19",
+    "working_copy": "Mss_h_h_XXVI_105_3_19.jpg"
+  },
+  "text": "alibrite\norchecker Classic\nund\nMonsieur\nDein\n9\nMonsieur\nCanton\n8\n8\n6",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          123.0,
+          118.0
+        ],
+        [
+          241.0,
+          114.0
+        ]
+      ],
+      "bbox": [
+        120.0,
+        84.0,
+        241.0,
+        148.0
+      ],
+      "text": "alibrite",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          443.0,
+          120.0
+        ],
+        [
+          768.0,
+          125.0
+        ]
+      ],
+      "bbox": [
+        441.0,
+        84.0,
+        768.0,
+        152.0
+      ],
+      "text": "orchecker Classic",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          95.0,
+          1315.0
+        ],
+        [
+          696.0,
+          1309.0
+        ]
+      ],
+      "bbox": [
+        93.0,
+        1273.0,
+        696.0,
+        1358.0
+      ],
+      "text": "und",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          1237.0,
+          1801.0
+        ],
+        [
+          1241.0,
+          1610.0
+        ]
+      ],
+      "bbox": [
+        1193.0,
+        1608.0,
+        1269.0,
+        1801.0
+      ],
+      "text": "Monsieur",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          1345.0,
+          1806.0
+        ],
+        [
+          1352.0,
+          1682.0
+        ]
+      ],
+      "bbox": [
+        1318.0,
+        1680.0,
+        1384.0,
+        1806.0
+      ],
+      "text": "Dein",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          1354.0,
+          1636.0
+        ],
+        [
+          1356.0,
+          1619.0
+        ]
+      ],
+      "bbox": [
+        1311.0,
+        1615.0,
+        1403.0,
+        1638.0
+      ],
+      "text": "9",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          1341.0,
+          1929.0
+        ],
+        [
+          1354.0,
+          2438.0
+        ]
+      ],
+      "bbox": [
+        1280.0,
+        1926.0,
+        1390.0,
+        2438.0
+      ],
+      "text": "Monsieur",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 7,
+      "baseline": [
+        [
+          1551.0,
+          1918.0
+        ],
+        [
+          1564.0,
+          1714.0
+        ]
+      ],
+      "bbox": [
+        1462.0,
+        1710.0,
+        1606.0,
+        1918.0
+      ],
+      "text": "Canton",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 8,
+      "baseline": [
+        [
+          384.0,
+          2400.0
+        ],
+        [
+          394.0,
+          2400.0
+        ]
+      ],
+      "bbox": [
+        384.0,
+        2370.0,
+        394.0,
+        2423.0
+      ],
+      "text": "8",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 9,
+      "baseline": [
+        [
+          386.0,
+          3592.0
+        ],
+        [
+          407.0,
+          3592.0
+        ]
+      ],
+      "bbox": [
+        386.0,
+        3563.0,
+        407.0,
+        3618.0
+      ],
+      "text": "8",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 10,
+      "baseline": [
+        [
+          386.0,
+          3709.0
+        ],
+        [
+          409.0,
+          3709.0
+        ]
+      ],
+      "bbox": [
+        386.0,
+        3679.0,
+        409.0,
+        3741.0
+      ],
+      "text": "6",
+      "confidence": null,
+      "regions": []
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 5335,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 31,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T01:43:25+00:00"
+}

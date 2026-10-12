@@ -1,0 +1,101 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Weimar/FA Hodel 236/Weimar",
+  "source": {
+    "name": "GSA_96_2725_Seite104.jpg",
+    "bytes": 7005430,
+    "sha256": "cb4263062e6dd2c0a3e912a40893fab0c3055ef9e3e94a05c73aa9d4d5ef5ce5",
+    "remote": "digitalisate/Weimar/FA Hodel 236/Weimar/GSA_96_2725_Seite104.jpg",
+    "key": "Weimar__FA Hodel 236__Weimar__GSA_96_2725_Seite104",
+    "working_copy": "GSA_96_2725_Seite104.jpg"
+  },
+  "text": "Classiker\ns¬\n1.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          120.0,
+          923.0
+        ],
+        [
+          425.0,
+          921.0
+        ]
+      ],
+      "bbox": [
+        118.0,
+        873.0,
+        425.0,
+        974.0
+      ],
+      "text": "Classiker",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          350.0,
+          2558.0
+        ],
+        [
+          388.0,
+          2560.0
+        ]
+      ],
+      "bbox": [
+        348.0,
+        2527.0,
+        388.0,
+        2576.0
+      ],
+      "text": "s¬",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          82.0,
+          2588.0
+        ],
+        [
+          321.0,
+          2592.0
+        ]
+      ],
+      "bbox": [
+        80.0,
+        2533.0,
+        321.0,
+        2625.0
+      ],
+      "text": "1.",
+      "confidence": null,
+      "regions": []
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 6523,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 29,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T05:22:41+00:00"
+}

@@ -1,0 +1,264 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00894009_150dpi",
+  "source": {
+    "name": "HS00894009_150dpi_0003.jpg",
+    "bytes": 97315,
+    "sha256": "d297215f7587c886a8f4528fe6fb40010035b904f328bc5422c889035c92a941",
+    "remote": "digitalisate/Marbach/HS00894009_150dpi/HS00894009_150dpi_0003.jpg",
+    "key": "Marbach__HS00894009_150dpi__HS00894009_150dpi_0003",
+    "working_copy": "HS00894009_150dpi_0003.jpg"
+  },
+  "text": "A: Loßber\nseph von\nAeberl\n1869.\nvon",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          580.0,
+          82.0
+        ],
+        [
+          694.0,
+          83.0
+        ]
+      ],
+      "bbox": [
+        579.0,
+        59.0,
+        694.0,
+        101.0
+      ],
+      "text": "A: Loßber",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          761.0,
+          83.0
+        ],
+        [
+          868.0,
+          81.0
+        ]
+      ],
+      "bbox": [
+        761.0,
+        64.0,
+        868.0,
+        96.0
+      ],
+      "text": "seph von",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          341.0,
+          241.0
+        ],
+        [
+          478.0,
+          240.0
+        ]
+      ],
+      "bbox": [
+        341.0,
+        218.0,
+        478.0,
+        252.0
+      ],
+      "text": "Aeberl",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          419.0,
+          294.0
+        ],
+        [
+          439.0,
+          294.0
+        ]
+      ],
+      "bbox": [
+        418.0,
+        268.0,
+        439.0,
+        307.0
+      ],
+      "text": "1869.",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          441.0,
+          294.0
+        ],
+        [
+          538.0,
+          290.0
+        ]
+      ],
+      "bbox": [
+        440.0,
+        270.0,
+        538.0,
+        305.0
+      ],
+      "text": "von",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 10978,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "Schott, Albert d. J.\nJoseph\nJoseph von\nA: Lapberg,\nJoseph von",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            341.0,
+            241.0
+          ],
+          [
+            478.0,
+            240.0
+          ]
+        ],
+        "bbox": [
+          341.0,
+          218.0,
+          478.0,
+          252.0
+        ],
+        "text": "Schott, Albert d. J.",
+        "confidence": 0.928833955526352,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            419.0,
+            294.0
+          ],
+          [
+            439.0,
+            294.0
+          ]
+        ],
+        "bbox": [
+          418.0,
+          268.0,
+          439.0,
+          307.0
+        ],
+        "text": "Joseph",
+        "confidence": 0.8827771544456482,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            441.0,
+            294.0
+          ],
+          [
+            538.0,
+            290.0
+          ]
+        ],
+        "bbox": [
+          440.0,
+          270.0,
+          538.0,
+          305.0
+        ],
+        "text": "Joseph von",
+        "confidence": 0.9188204169273376,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            580.0,
+            82.0
+          ],
+          [
+            694.0,
+            83.0
+          ]
+        ],
+        "bbox": [
+          579.0,
+          59.0,
+          694.0,
+          101.0
+        ],
+        "text": "A: Lapberg,",
+        "confidence": 0.8956142284653403,
+        "regions": []
+      },
+      {
+        "order": 4,
+        "baseline": [
+          [
+            761.0,
+            83.0
+          ],
+          [
+            868.0,
+            81.0
+          ]
+        ],
+        "bbox": [
+          761.0,
+          64.0,
+          868.0,
+          96.0
+        ],
+        "text": "Joseph von",
+        "confidence": 0.9029986262321472,
+        "regions": []
+      }
+    ],
+    "confidence": 0.905808876319365,
+    "timing_ms": 14455,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T15:12:26+00:00"
+}

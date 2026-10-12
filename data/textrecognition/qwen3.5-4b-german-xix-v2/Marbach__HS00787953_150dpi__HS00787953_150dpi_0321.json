@@ -1,0 +1,245 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00787953_150dpi",
+  "source": {
+    "name": "HS00787953_150dpi_0321.jpg",
+    "bytes": 121621,
+    "sha256": "dca2478604bc98b29907238c2ca5c7249957b33b22aa927b3b68a922ffac13db",
+    "remote": "digitalisate/Marbach/HS00787953_150dpi/HS00787953_150dpi_0321.jpg",
+    "key": "Marbach__HS00787953_150dpi__HS00787953_150dpi_0321",
+    "working_copy": "HS00787953_150dpi_0321.jpg"
+  },
+  "text": "A: Meiland\nassoci\nJoseph von\nMekana, Ludwig\nErschwing\n\"\ns¬\n1869.\n7225",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          652.0,
+          119.0
+        ],
+        [
+          855.0,
+          116.0
+        ]
+      ],
+      "bbox": [
+        650.0,
+        77.0,
+        855.0,
+        140.0
+      ],
+      "text": "A: Meiland",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          226.0,
+          329.0
+        ],
+        [
+          351.0,
+          331.0
+        ]
+      ],
+      "bbox": [
+        226.0,
+        298.0,
+        351.0,
+        339.0
+      ],
+      "text": "associ",
+      "confidence": null,
+      "regions": [
+        "r2"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          425.0,
+          334.0
+        ],
+        [
+          657.0,
+          332.0
+        ]
+      ],
+      "bbox": [
+        424.0,
+        300.0,
+        657.0,
+        364.0
+      ],
+      "text": "Joseph von",
+      "confidence": null,
+      "regions": [
+        "r2"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          223.0,
+          431.0
+        ],
+        [
+          596.0,
+          434.0
+        ]
+      ],
+      "bbox": [
+        222.0,
+        390.0,
+        596.0,
+        458.0
+      ],
+      "text": "Mekana, Ludwig",
+      "confidence": null,
+      "regions": [
+        "r2"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          363.0,
+          638.0
+        ],
+        [
+          531.0,
+          641.0
+        ]
+      ],
+      "bbox": [
+        362.0,
+        600.0,
+        531.0,
+        670.0
+      ],
+      "text": "Erschwing",
+      "confidence": null,
+      "regions": [
+        "r2"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          447.0,
+          761.0
+        ],
+        [
+          483.0,
+          760.0
+        ]
+      ],
+      "bbox": [
+        445.0,
+        716.0,
+        483.0,
+        769.0
+      ],
+      "text": "\"",
+      "confidence": null,
+      "regions": [
+        "r2"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          544.0,
+          761.0
+        ],
+        [
+          555.0,
+          761.0
+        ]
+      ],
+      "bbox": [
+        544.0,
+        722.0,
+        555.0,
+        780.0
+      ],
+      "text": "s¬",
+      "confidence": null,
+      "regions": [
+        "r2"
+      ]
+    },
+    {
+      "order": 7,
+      "baseline": [
+        [
+          676.0,
+          1210.0
+        ],
+        [
+          721.0,
+          1210.0
+        ]
+      ],
+      "bbox": [
+        675.0,
+        1177.0,
+        721.0,
+        1220.0
+      ],
+      "text": "1869.",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 8,
+      "baseline": [
+        [
+          819.0,
+          1214.0
+        ],
+        [
+          908.0,
+          1216.0
+        ]
+      ],
+      "bbox": [
+        818.0,
+        1183.0,
+        908.0,
+        1228.0
+      ],
+      "text": "7225",
+      "confidence": null,
+      "regions": []
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 5734,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T13:46:05+00:00"
+}

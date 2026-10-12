@@ -1,0 +1,218 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00588139_150dpi",
+  "source": {
+    "name": "HS00588139_150dpi_0004.jpg",
+    "bytes": 66131,
+    "sha256": "846674df1e5df3e7f6c7f573d66cc45bc60e0507e47dcf3684f698cd7874840d",
+    "remote": "digitalisate/Marbach/HS00588139_150dpi/HS00588139_150dpi_0004.jpg",
+    "key": "Marbach__HS00588139_150dpi__HS00588139_150dpi_0004",
+    "working_copy": "HS00588139_150dpi_0004.jpg"
+  },
+  "text": "1849\n1869\n18.\nder",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          459.0,
+          127.0
+        ],
+        [
+          479.0,
+          128.0
+        ]
+      ],
+      "bbox": [
+        459.0,
+        105.0,
+        480.0,
+        138.0
+      ],
+      "text": "1849",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          464.0,
+          191.0
+        ],
+        [
+          506.0,
+          191.0
+        ]
+      ],
+      "bbox": [
+        464.0,
+        155.0,
+        506.0,
+        202.0
+      ],
+      "text": "1869",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          530.0,
+          130.0
+        ],
+        [
+          544.0,
+          131.0
+        ]
+      ],
+      "bbox": [
+        530.0,
+        96.0,
+        546.0,
+        139.0
+      ],
+      "text": "18.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          562.0,
+          196.0
+        ],
+        [
+          594.0,
+          197.0
+        ]
+      ],
+      "bbox": [
+        562.0,
+        162.0,
+        595.0,
+        203.0
+      ],
+      "text": "der",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 33426,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "Otto A.\nArch.\nOtto A.\nOtto A.",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            459.0,
+            127.0
+          ],
+          [
+            479.0,
+            128.0
+          ]
+        ],
+        "bbox": [
+          459.0,
+          105.0,
+          480.0,
+          138.0
+        ],
+        "text": "Otto A.",
+        "confidence": 0.8078701751572746,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            464.0,
+            191.0
+          ],
+          [
+            506.0,
+            191.0
+          ]
+        ],
+        "bbox": [
+          464.0,
+          155.0,
+          506.0,
+          202.0
+        ],
+        "text": "Arch.",
+        "confidence": 0.6030385613441467,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            530.0,
+            130.0
+          ],
+          [
+            544.0,
+            131.0
+          ]
+        ],
+        "bbox": [
+          530.0,
+          96.0,
+          546.0,
+          139.0
+        ],
+        "text": "Otto A.",
+        "confidence": 0.7578094814504895,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            562.0,
+            196.0
+          ],
+          [
+            594.0,
+            197.0
+          ]
+        ],
+        "bbox": [
+          562.0,
+          162.0,
+          595.0,
+          203.0
+        ],
+        "text": "Otto A.",
+        "confidence": 0.7896037655217307,
+        "regions": []
+      }
+    ],
+    "confidence": 0.7395804958684103,
+    "timing_ms": 39419,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T02:28:34+00:00"
+}

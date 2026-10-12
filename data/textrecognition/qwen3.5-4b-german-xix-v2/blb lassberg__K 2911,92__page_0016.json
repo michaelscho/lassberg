@@ -1,0 +1,225 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "blb lassberg/K 2911,92",
+  "source": {
+    "name": "page_0016.jpg",
+    "bytes": 690317,
+    "sha256": "62f18293f8eaaff876ff2035c951ffbb2a85200b4fcfc6339b6052ebdf6a1076",
+    "remote": "digitalisate/blb lassberg/K 2911,92/page_0016.jpg",
+    "key": "blb lassberg__K 2911,92__page_0016",
+    "working_copy": "page_0016.jpg"
+  },
+  "text": "Joh.\nund\n1,2\nHochgeachteter Herr\n5\n1865\nder\nIm Leben",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          1025.0,
+          1890.0
+        ],
+        [
+          1033.0,
+          1682.0
+        ]
+      ],
+      "bbox": [
+        967.0,
+        1678.0,
+        1099.0,
+        1890.0
+      ],
+      "text": "Joh.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1027.0,
+          2123.0
+        ],
+        [
+          1033.0,
+          2246.0
+        ]
+      ],
+      "bbox": [
+        996.0,
+        2120.0,
+        1079.0,
+        2246.0
+      ],
+      "text": "und",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1220.0,
+          1410.0
+        ],
+        [
+          1222.0,
+          1482.0
+        ]
+      ],
+      "bbox": [
+        1163.0,
+        1408.0,
+        1272.0,
+        1482.0
+      ],
+      "text": "1,2",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          1220.0,
+          1556.0
+        ],
+        [
+          1227.0,
+          2108.0
+        ]
+      ],
+      "bbox": [
+        1165.0,
+        1554.0,
+        1288.0,
+        2108.0
+      ],
+      "text": "Hochgeachteter Herr",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          1231.0,
+          2260.0
+        ],
+        [
+          1231.0,
+          2246.0
+        ]
+      ],
+      "bbox": [
+        1202.0,
+        2246.0,
+        1272.0,
+        2260.0
+      ],
+      "text": "5",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          1523.0,
+          1592.0
+        ],
+        [
+          1533.0,
+          1591.0
+        ]
+      ],
+      "bbox": [
+        1513.0,
+        1534.0,
+        1543.0,
+        1649.0
+      ],
+      "text": "1865",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          1545.0,
+          1396.0
+        ],
+        [
+          1545.0,
+          1462.0
+        ]
+      ],
+      "bbox": [
+        1511.0,
+        1396.0,
+        1583.0,
+        1462.0
+      ],
+      "text": "der",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 7,
+      "baseline": [
+        [
+          1698.0,
+          1575.0
+        ],
+        [
+          1704.0,
+          1332.0
+        ]
+      ],
+      "bbox": [
+        1642.0,
+        1330.0,
+        1745.0,
+        1575.0
+      ],
+      "text": "Im Leben",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 5549,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T19:37:41+00:00"
+}

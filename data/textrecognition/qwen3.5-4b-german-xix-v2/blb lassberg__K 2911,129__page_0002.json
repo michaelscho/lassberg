@@ -1,0 +1,105 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "blb lassberg/K 2911,129",
+  "source": {
+    "name": "page_0002.jpg",
+    "bytes": 637971,
+    "sha256": "82e3adb01504d0091631cf25430c647794a3afabb5b131cd889e05a17170fb0a",
+    "remote": "digitalisate/blb lassberg/K 2911,129/page_0002.jpg",
+    "key": "blb lassberg__K 2911,129__page_0002",
+    "working_copy": "page_0002.jpg"
+  },
+  "text": "1849.\n1865\n1865",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          1836.0,
+          460.0
+        ],
+        [
+          1916.0,
+          458.0
+        ]
+      ],
+      "bbox": [
+        1836.0,
+        445.0,
+        1916.0,
+        472.0
+      ],
+      "text": "1849.",
+      "confidence": null,
+      "regions": [
+        "_82a4e5ed-2b82-4101-bd65-8ba4c1f0e821"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          914.0,
+          974.0
+        ],
+        [
+          925.0,
+          972.0
+        ]
+      ],
+      "bbox": [
+        908.0,
+        942.0,
+        927.0,
+        1003.0
+      ],
+      "text": "1865",
+      "confidence": null,
+      "regions": [
+        "_ebd4fbe0-0cc4-4f09-a8b0-8fadf985a786"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1253.0,
+          1170.0
+        ],
+        [
+          1309.0,
+          1168.0
+        ]
+      ],
+      "bbox": [
+        1252.0,
+        1116.0,
+        1309.0,
+        1213.0
+      ],
+      "text": "1865",
+      "confidence": null,
+      "regions": [
+        "_c3c3d9f3-830a-4792-9339-3888f5b27875"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 5931,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T18:40:10+00:00"
+}

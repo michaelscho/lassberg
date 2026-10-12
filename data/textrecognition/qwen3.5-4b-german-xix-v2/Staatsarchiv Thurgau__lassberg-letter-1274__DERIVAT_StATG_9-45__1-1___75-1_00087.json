@@ -1,0 +1,159 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Staatsarchiv Thurgau/lassberg-letter-1274",
+  "source": {
+    "name": "DERIVAT_StATG_9-45__1-1___75-1_00087.jpg",
+    "bytes": 3068395,
+    "sha256": "ab0ca4ff00d4aa922986d84680ae25b4583e0e59bba895a4903d996df6e68e4c",
+    "remote": "digitalisate/Staatsarchiv Thurgau/lassberg-letter-1274/DERIVAT_StATG_9-45__1-1___75-1_00087.jpg",
+    "key": "Staatsarchiv Thurgau__lassberg-letter-1274__DERIVAT_StATG_9-45__1-1___75-1_00087",
+    "working_copy": "DERIVAT_StATG_9-45__1-1___75-1_00087.jpg"
+  },
+  "text": "Maschinet sich alsbald an\n1869.\nmit unermesslichen voll-\nzu roß und zu fest u. zogen von 14\ns¬",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          131.0,
+          146.0
+        ],
+        [
+          730.0,
+          161.0
+        ]
+      ],
+      "bbox": [
+        129.0,
+        82.0,
+        730.0,
+        188.0
+      ],
+      "text": "Maschinet sich alsbald an",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          776.0,
+          162.0
+        ],
+        [
+          821.0,
+          159.0
+        ]
+      ],
+      "bbox": [
+        771.0,
+        110.0,
+        821.0,
+        188.0
+      ],
+      "text": "1869.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          825.0,
+          161.0
+        ],
+        [
+          912.0,
+          167.0
+        ],
+        [
+          1430.0,
+          168.0
+        ]
+      ],
+      "bbox": [
+        824.0,
+        103.0,
+        1430.0,
+        188.0
+      ],
+      "text": "mit unermesslichen voll-",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          147.0,
+          249.0
+        ],
+        [
+          434.0,
+          246.0
+        ],
+        [
+          1204.0,
+          255.0
+        ]
+      ],
+      "bbox": [
+        146.0,
+        185.0,
+        1204.0,
+        286.0
+      ],
+      "text": "zu roß und zu fest u. zogen von 14",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          644.0,
+          2628.0
+        ],
+        [
+          658.0,
+          2628.0
+        ]
+      ],
+      "bbox": [
+        644.0,
+        2543.0,
+        658.0,
+        2639.0
+      ],
+      "text": "s¬",
+      "confidence": null,
+      "regions": []
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 8145,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 32,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T22:01:05+00:00"
+}

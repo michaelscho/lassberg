@@ -1,0 +1,253 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Weimar/FA Hodel 236/Weimar",
+  "source": {
+    "name": "GSA_96_2725_Seite187.jpg",
+    "bytes": 4378959,
+    "sha256": "0222df45f404af94d69ebc8af9ebd4317c44b4d6de3b39e3210cafd14af43cdf",
+    "remote": "digitalisate/Weimar/FA Hodel 236/Weimar/GSA_96_2725_Seite187.jpg",
+    "key": "Weimar__FA Hodel 236__Weimar__GSA_96_2725_Seite187",
+    "working_copy": "GSA_96_2725_Seite187.jpg"
+  },
+  "text": "--\nder\n--\nund 6 hat\nMittel Sil\nkam\n12\n10\nDeclaration",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          435.0,
+          456.0
+        ],
+        [
+          613.0,
+          448.0
+        ]
+      ],
+      "bbox": [
+        433.0,
+        410.0,
+        613.0,
+        481.0
+      ],
+      "text": "--",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          305.0,
+          612.0
+        ],
+        [
+          439.0,
+          610.0
+        ]
+      ],
+      "bbox": [
+        303.0,
+        572.0,
+        439.0,
+        626.0
+      ],
+      "text": "der",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          400.0,
+          750.0
+        ],
+        [
+          452.0,
+          749.0
+        ]
+      ],
+      "bbox": [
+        399.0,
+        724.0,
+        452.0,
+        768.0
+      ],
+      "text": "--",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          730.0,
+          442.0
+        ],
+        [
+          948.0,
+          444.0
+        ],
+        [
+          1083.0,
+          437.0
+        ]
+      ],
+      "bbox": [
+        730.0,
+        399.0,
+        1083.0,
+        465.0
+      ],
+      "text": "und 6 hat",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          458.0,
+          609.0
+        ],
+        [
+          995.0,
+          604.0
+        ]
+      ],
+      "bbox": [
+        457.0,
+        539.0,
+        995.0,
+        633.0
+      ],
+      "text": "Mittel Sil",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          566.0,
+          894.0
+        ],
+        [
+          773.0,
+          888.0
+        ]
+      ],
+      "bbox": [
+        565.0,
+        846.0,
+        773.0,
+        919.0
+      ],
+      "text": "kam",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          966.0,
+          726.0
+        ],
+        [
+          1022.0,
+          724.0
+        ]
+      ],
+      "bbox": [
+        964.0,
+        690.0,
+        1022.0,
+        761.0
+      ],
+      "text": "12",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 7,
+      "baseline": [
+        [
+          2414.0,
+          1058.0
+        ],
+        [
+          2498.0,
+          1057.0
+        ]
+      ],
+      "bbox": [
+        2413.0,
+        1018.0,
+        2498.0,
+        1068.0
+      ],
+      "text": "10",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 8,
+      "baseline": [
+        [
+          2001.0,
+          1052.0
+        ],
+        [
+          2156.0,
+          1050.0
+        ],
+        [
+          2314.0,
+          1055.0
+        ]
+      ],
+      "bbox": [
+        2001.0,
+        1023.0,
+        2314.0,
+        1067.0
+      ],
+      "text": "Declaration",
+      "confidence": null,
+      "regions": []
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 20842,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 36,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T05:53:32+00:00"
+}

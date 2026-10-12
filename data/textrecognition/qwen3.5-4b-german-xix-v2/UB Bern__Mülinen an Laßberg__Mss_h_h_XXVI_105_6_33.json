@@ -1,0 +1,105 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "UB Bern/Mülinen an Laßberg",
+  "source": {
+    "name": "Mss_h_h_XXVI_105_6_33.tif",
+    "bytes": 37974990,
+    "sha256": "eca247597555375d96868601481455857186a0dfccad3a73dbd773894abd32a6",
+    "remote": "digitalisate/UB Bern/Mülinen an Laßberg/Mss_h_h_XXVI_105_6_33.tif",
+    "key": "UB Bern__Mülinen an Laßberg__Mss_h_h_XXVI_105_6_33",
+    "working_copy": "Mss_h_h_XXVI_105_6_33.jpg"
+  },
+  "text": "Calibrite\nOrchester Classic\nmit dem 1sten",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          150.0,
+          79.0
+        ],
+        [
+          284.0,
+          81.0
+        ]
+      ],
+      "bbox": [
+        148.0,
+        25.0,
+        284.0,
+        115.0
+      ],
+      "text": "Calibrite",
+      "confidence": null,
+      "regions": [
+        "_0c160ec0-ce42-4650-818b-f8074f9ba056"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          458.0,
+          83.0
+        ],
+        [
+          805.0,
+          85.0
+        ]
+      ],
+      "bbox": [
+        456.0,
+        41.0,
+        805.0,
+        123.0
+      ],
+      "text": "Orchester Classic",
+      "confidence": null,
+      "regions": [
+        "_1815c39d-c493-4c2c-982c-863003681279"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          150.0,
+          1269.0
+        ],
+        [
+          730.0,
+          1269.0
+        ]
+      ],
+      "bbox": [
+        150.0,
+        1238.0,
+        730.0,
+        1303.0
+      ],
+      "text": "mit dem 1sten",
+      "confidence": null,
+      "regions": [
+        "_83e1fe57-859f-459b-91b9-3696d77dafba"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 6246,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 31,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T02:56:12+00:00"
+}

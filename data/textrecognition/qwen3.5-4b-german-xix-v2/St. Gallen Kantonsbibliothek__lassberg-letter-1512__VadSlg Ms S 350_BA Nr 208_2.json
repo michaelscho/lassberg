@@ -1,0 +1,161 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "St. Gallen Kantonsbibliothek/lassberg-letter-1512",
+  "source": {
+    "name": "VadSlg Ms S 350_BA Nr 208_2.tif",
+    "bytes": 19851314,
+    "sha256": "808faabf42f88776198e1367fe7aa1429594c1d155f1d9d9448c3d716f60dbf4",
+    "remote": "digitalisate/St. Gallen Kantonsbibliothek/lassberg-letter-1512/VadSlg Ms S 350_BA Nr 208_2.tif",
+    "key": "St. Gallen Kantonsbibliothek__lassberg-letter-1512__VadSlg Ms S 350_BA Nr 208_2",
+    "working_copy": "VadSlg Ms S 350_BA Nr 208_2.jpg"
+  },
+  "text": "Seiner Wolgbank\nHerrn Wilhelm Hartmann, Mlle, 1 in der\nEhrverzellerchen Apotheker zu\nDr. Gallen.\n1881",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          177.0,
+          1279.0
+        ],
+        [
+          749.0,
+          1295.0
+        ]
+      ],
+      "bbox": [
+        176.0,
+        1212.0,
+        749.0,
+        1324.0
+      ],
+      "text": "Seiner Wolgbank",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          239.0,
+          1471.0
+        ],
+        [
+          820.0,
+          1480.0
+        ],
+        [
+          1844.0,
+          1464.0
+        ]
+      ],
+      "bbox": [
+        237.0,
+        1386.0,
+        1844.0,
+        1515.0
+      ],
+      "text": "Herrn Wilhelm Hartmann, Mlle, 1 in der",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          323.0,
+          1631.0
+        ],
+        [
+          697.0,
+          1647.0
+        ],
+        [
+          1534.0,
+          1633.0
+        ]
+      ],
+      "bbox": [
+        321.0,
+        1560.0,
+        1534.0,
+        1689.0
+      ],
+      "text": "Ehrverzellerchen Apotheker zu",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          1245.0,
+          1965.0
+        ],
+        [
+          1684.0,
+          1966.0
+        ]
+      ],
+      "bbox": [
+        1243.0,
+        1857.0,
+        1684.0,
+        2006.0
+      ],
+      "text": "Dr. Gallen.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          1817.0,
+          3178.0
+        ],
+        [
+          1907.0,
+          3184.0
+        ]
+      ],
+      "bbox": [
+        1815.0,
+        3120.0,
+        1907.0,
+        3195.0
+      ],
+      "text": "1881",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 5641,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 32,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T21:38:11+00:00"
+}

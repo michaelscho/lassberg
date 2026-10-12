@@ -1,0 +1,86 @@
+{
+  "schema": "atr-batch/1",
+  "run": "gemini-300-final",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "Donaueschingen (via UB Freiburg)/lassberg-letter-0346",
+  "source": {
+    "key": "Donaueschingen (via UB Freiburg)__lassberg-letter-0346__003",
+    "doc_id": "Donaueschingen (via UB Freiburg)/lassberg-letter-0346",
+    "bestand": "Donaueschingen (via UB Freiburg)",
+    "name": "003.tif",
+    "bytes": 19534022,
+    "sha256": "f1c03c9ce444d433dcce2c980507f686b30b3804835bef752c8ba069650a8938",
+    "sha256_of": "original",
+    "remote": "digitalisate/Donaueschingen (via UB Freiburg)/lassberg-letter-0346/003.tif",
+    "working_copy": "003.jpg"
+  },
+  "text": "",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 3575,
+  "truncated": false,
+  "settings": "prompt-9e0503e8+think-low|max8192",
+  "quality": {
+    "verdict": "empty",
+    "chars": 0,
+    "lines": 0,
+    "longest_char_run": 0,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 0.0,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-9e0503e8+think-low",
+  "recognised_at": "2026-10-11T14:09:39+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "gemini-300-strict2",
+    "source": {
+      "key": "Donaueschingen (via UB Freiburg)__lassberg-letter-0346__003",
+      "doc_id": "Donaueschingen (via UB Freiburg)/lassberg-letter-0346",
+      "bestand": "Donaueschingen (via UB Freiburg)",
+      "name": "003.tif",
+      "bytes": 19534022,
+      "sha256": "f1c03c9ce444d433dcce2c980507f686b30b3804835bef752c8ba069650a8938",
+      "sha256_of": "original",
+      "remote": "digitalisate/Donaueschingen (via UB Freiburg)/lassberg-letter-0346/003.tif",
+      "working_copy": "003.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-9e0503e8+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-10-11T14:09:39+00:00"
+  },
+  "merged_from": {
+    "run": "gemini-300-strict2",
+    "attempt": 1,
+    "verdict": "empty",
+    "of": 3,
+    "considered": [
+      {
+        "run": "gemini-300-strict2",
+        "verdict": "empty"
+      },
+      {
+        "run": "gemini-strict2-repeat",
+        "verdict": "empty"
+      },
+      {
+        "run": "gemini-strict2-third",
+        "verdict": "empty"
+      }
+    ]
+  }
+}

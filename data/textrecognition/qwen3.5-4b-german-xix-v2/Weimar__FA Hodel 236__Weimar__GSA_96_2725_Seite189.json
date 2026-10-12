@@ -1,0 +1,125 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Weimar/FA Hodel 236/Weimar",
+  "source": {
+    "name": "GSA_96_2725_Seite189.jpg",
+    "bytes": 8261908,
+    "sha256": "8493ff684a2d47646a7e88170ed8dcc19af02bc41673964aefcf994ec3c7bbac",
+    "remote": "digitalisate/Weimar/FA Hodel 236/Weimar/GSA_96_2725_Seite189.jpg",
+    "key": "Weimar__FA Hodel 236__Weimar__GSA_96_2725_Seite189",
+    "working_copy": "GSA_96_2725_Seite189.jpg"
+  },
+  "text": "s¬\ner\nS. Es\n10",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          3217.0,
+          342.0
+        ],
+        [
+          3440.0,
+          339.0
+        ]
+      ],
+      "bbox": [
+        3215.0,
+        328.0,
+        3440.0,
+        377.0
+      ],
+      "text": "s¬",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          921.0,
+          563.0
+        ],
+        [
+          1008.0,
+          560.0
+        ]
+      ],
+      "bbox": [
+        920.0,
+        525.0,
+        1008.0,
+        587.0
+      ],
+      "text": "er",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1116.0,
+          2026.0
+        ],
+        [
+          1277.0,
+          2028.0
+        ]
+      ],
+      "bbox": [
+        1114.0,
+        1958.0,
+        1277.0,
+        2055.0
+      ],
+      "text": "S. Es",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          479.0,
+          2296.0
+        ],
+        [
+          584.0,
+          2293.0
+        ]
+      ],
+      "bbox": [
+        478.0,
+        2209.0,
+        584.0,
+        2320.0
+      ],
+      "text": "10",
+      "confidence": null,
+      "regions": []
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 10277,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 31,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T05:53:45+00:00"
+}

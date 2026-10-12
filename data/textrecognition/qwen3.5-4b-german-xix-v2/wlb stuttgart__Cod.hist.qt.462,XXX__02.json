@@ -1,0 +1,253 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "wlb stuttgart/Cod.hist.qt.462,XXX",
+  "source": {
+    "name": "02.jpg",
+    "bytes": 4853541,
+    "sha256": "4985ca8e861de08436466ee926cfee05e49ebfd87e985978f92ce0b8256d8bb1",
+    "remote": "digitalisate/wlb stuttgart/Cod.hist.qt.462,XXX/02.jpg",
+    "key": "wlb stuttgart__Cod.hist.qt.462,XXX__02",
+    "working_copy": "02.jpg"
+  },
+  "text": "mit\n1\nder\nde\nDein\n1849\nDein\nmit\n1849.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          588.0,
+          1133.0
+        ],
+        [
+          594.0,
+          1331.0
+        ]
+      ],
+      "bbox": [
+        552.0,
+        1132.0,
+        625.0,
+        1331.0
+      ],
+      "text": "mit",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          601.0,
+          1625.0
+        ],
+        [
+          601.0,
+          1618.0
+        ]
+      ],
+      "bbox": [
+        543.0,
+        1618.0,
+        608.0,
+        1625.0
+      ],
+      "text": "1",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          682.0,
+          817.0
+        ],
+        [
+          686.0,
+          881.0
+        ]
+      ],
+      "bbox": [
+        658.0,
+        814.0,
+        713.0,
+        881.0
+      ],
+      "text": "der",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          688.0,
+          1100.0
+        ],
+        [
+          692.0,
+          1198.0
+        ]
+      ],
+      "bbox": [
+        661.0,
+        1097.0,
+        730.0,
+        1198.0
+      ],
+      "text": "de",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          686.0,
+          919.0
+        ],
+        [
+          688.0,
+          1047.0
+        ]
+      ],
+      "bbox": [
+        664.0,
+        918.0,
+        713.0,
+        1047.0
+      ],
+      "text": "Dein",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          685.0,
+          1386.0
+        ],
+        [
+          693.0,
+          1332.0
+        ],
+        [
+          692.0,
+          1247.0
+        ]
+      ],
+      "bbox": [
+        649.0,
+        1246.0,
+        737.0,
+        1386.0
+      ],
+      "text": "1849",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          689.0,
+          1426.0
+        ],
+        [
+          695.0,
+          1682.0
+        ]
+      ],
+      "bbox": [
+        668.0,
+        1425.0,
+        737.0,
+        1682.0
+      ],
+      "text": "Dein",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 7,
+      "baseline": [
+        [
+          782.0,
+          777.0
+        ],
+        [
+          782.0,
+          878.0
+        ]
+      ],
+      "bbox": [
+        761.0,
+        777.0,
+        818.0,
+        878.0
+      ],
+      "text": "mit",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 8,
+      "baseline": [
+        [
+          779.0,
+          941.0
+        ],
+        [
+          786.0,
+          1190.0
+        ]
+      ],
+      "bbox": [
+        761.0,
+        939.0,
+        824.0,
+        1190.0
+      ],
+      "text": "1849.",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 5715,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T20:45:59+00:00"
+}

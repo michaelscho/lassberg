@@ -1,0 +1,80 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Briefe UB Freiburg/lassberg-letter-0319",
+  "source": {
+    "name": "004.tif",
+    "bytes": 21067804,
+    "sha256": "a4614311a0bca513d6dc2f84fc810685a4e06244270441ffce2ebe5761302aae",
+    "remote": "digitalisate/Briefe UB Freiburg/lassberg-letter-0319/004.tif",
+    "key": "Briefe UB Freiburg__lassberg-letter-0319__004",
+    "working_copy": "004.jpg"
+  },
+  "text": "Vorausse dann Papier wol in 1￼ es giebt wägige Luft.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          232.0,
+          1117.0
+        ],
+        [
+          1962.0,
+          1181.0
+        ]
+      ],
+      "bbox": [
+        229.0,
+        1069.0,
+        1962.0,
+        1242.0
+      ],
+      "text": "Vorausse dann Papier wol in 1￼ es giebt wägige Luft.",
+      "confidence": null,
+      "regions": [
+        "_644fa0ee-1290-492e-a6fe-53a1b8575411"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 4813,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "Verwasre d'min Pagina wol in St. of girbs wenigienis et ute!",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            232.0,
+            1117.0
+          ],
+          [
+            1962.0,
+            1181.0
+          ]
+        ],
+        "bbox": [
+          229.0,
+          1069.0,
+          1962.0,
+          1242.0
+        ],
+        "text": "Verwasre d'min Pagina wol in St. of girbs wenigienis et ute!",
+        "confidence": 0.7442081128557523,
+        "regions": []
+      }
+    ],
+    "confidence": 0.7442081128557523,
+    "timing_ms": 13499,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T00:07:52+00:00"
+}

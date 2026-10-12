@@ -1,0 +1,105 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "blb lassberg/K 2911,110",
+  "source": {
+    "name": "page_0003.jpg",
+    "bytes": 537138,
+    "sha256": "8a7e1079ecd982f1b6cdf2e4fdf16eee830a924db134f44ed29ee192a1f3a2c6",
+    "remote": "digitalisate/blb lassberg/K 2911,110/page_0003.jpg",
+    "key": "blb lassberg__K 2911,110__page_0003",
+    "working_copy": "page_0003.jpg"
+  },
+  "text": "6\nDeine\nViel",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          46.0,
+          652.0
+        ],
+        [
+          71.0,
+          652.0
+        ]
+      ],
+      "bbox": [
+        46.0,
+        600.0,
+        71.0,
+        671.0
+      ],
+      "text": "6",
+      "confidence": null,
+      "regions": [
+        "_1bdb7c5f-1480-4b9e-9360-4fb6ea432d37"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          4.0,
+          719.0
+        ],
+        [
+          72.0,
+          719.0
+        ]
+      ],
+      "bbox": [
+        4.0,
+        696.0,
+        72.0,
+        739.0
+      ],
+      "text": "Deine",
+      "confidence": null,
+      "regions": [
+        "_1bdb7c5f-1480-4b9e-9360-4fb6ea432d37"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          10.0,
+          1252.0
+        ],
+        [
+          85.0,
+          1249.0
+        ]
+      ],
+      "bbox": [
+        9.0,
+        1217.0,
+        85.0,
+        1271.0
+      ],
+      "text": "Viel",
+      "confidence": null,
+      "regions": [
+        "_8ce60cec-ea3c-47b4-a5cd-894e4ec951b5"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 5226,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T18:10:10+00:00"
+}

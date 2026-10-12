@@ -1,0 +1,80 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00041611_150dpi",
+  "source": {
+    "name": "HS00041611_0011.jpg",
+    "bytes": 78138,
+    "sha256": "a8c1e48c7242a7acfbeec2d97c3a28a4ef9c6adbe66226413dc69cb20f6fd7bd",
+    "remote": "digitalisate/Marbach/HS00041611_150dpi/HS00041611_0011.jpg",
+    "key": "Marbach__HS00041611_150dpi__HS00041611_0011",
+    "working_copy": "HS00041611_0011.jpg"
+  },
+  "text": "Johann Freyherr von Laszerg",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          126.0,
+          561.0
+        ],
+        [
+          353.0,
+          559.0
+        ]
+      ],
+      "bbox": [
+        126.0,
+        544.0,
+        353.0,
+        571.0
+      ],
+      "text": "Johann Freyherr von Laszerg",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 5166,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "JOSEFH PREIREANGE LASZEERO",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            126.0,
+            561.0
+          ],
+          [
+            353.0,
+            559.0
+          ]
+        ],
+        "bbox": [
+          126.0,
+          544.0,
+          353.0,
+          571.0
+        ],
+        "text": "JOSEFH PREIREANGE LASZEERO",
+        "confidence": 0.7678765557133235,
+        "regions": []
+      }
+    ],
+    "confidence": 0.7678765557133235,
+    "timing_ms": 6126,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T02:17:58+00:00"
+}

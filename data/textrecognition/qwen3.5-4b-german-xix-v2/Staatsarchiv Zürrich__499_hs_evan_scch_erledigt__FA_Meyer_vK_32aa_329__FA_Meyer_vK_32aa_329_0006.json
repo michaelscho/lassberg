@@ -1,0 +1,57 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Staatsarchiv Zürrich/499_hs_evan_scch_erledigt/FA_Meyer_vK_32aa_329",
+  "source": {
+    "name": "FA_Meyer_vK_32aa_329_0006.tif",
+    "bytes": 14508456,
+    "sha256": "bf79b93aa09dd9b732980905fc08cccaf4c4fa9b90c9fc66078c7c4b0355b3d1",
+    "remote": "digitalisate/Staatsarchiv Zürrich/499_hs_evan_scch_erledigt/FA_Meyer_vK_32aa_329/FA_Meyer_vK_32aa_329_0006.tif",
+    "key": "Staatsarchiv Zürrich__499_hs_evan_scch_erledigt__FA_Meyer_vK_32aa_329__FA_Meyer_vK_32aa_329_0006",
+    "working_copy": "FA_Meyer_vK_32aa_329_0006.jpg"
+  },
+  "text": "1.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          792.0,
+          622.0
+        ],
+        [
+          846.0,
+          621.0
+        ]
+      ],
+      "bbox": [
+        792.0,
+        600.0,
+        846.0,
+        641.0
+      ],
+      "text": "1.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 8370,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 31,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T22:29:51+00:00"
+}

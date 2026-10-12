@@ -1,0 +1,109 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Winterthur",
+  "source": {
+    "name": "143-MsBRH_466-56-113.jpg",
+    "bytes": 3234291,
+    "sha256": "4684c270d54d49fcec5f873aa7b506766e7a449095cae9a4399462acf09a8f92",
+    "remote": "digitalisate/Winterthur/143-MsBRH_466-56-113.jpg",
+    "key": "Winterthur__143-MsBRH_466-56-113",
+    "working_copy": "143-MsBRH_466-56-113.jpg"
+  },
+  "text": "ner Doleriwrudern\nErne Directorn Suppikoser\nBischofszelle",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          1807.0,
+          1867.0
+        ],
+        [
+          2749.0,
+          1862.0
+        ]
+      ],
+      "bbox": [
+        1804.0,
+        1760.0,
+        2749.0,
+        1899.0
+      ],
+      "text": "ner Doleriwrudern",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1769.0,
+          2288.0
+        ],
+        [
+          3109.0,
+          2283.0
+        ]
+      ],
+      "bbox": [
+        1767.0,
+        2179.0,
+        3109.0,
+        2344.0
+      ],
+      "text": "Erne Directorn Suppikoser",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          2849.0,
+          2976.0
+        ],
+        [
+          3242.0,
+          2955.0
+        ],
+        [
+          3525.0,
+          2951.0
+        ]
+      ],
+      "bbox": [
+        2842.0,
+        2830.0,
+        3525.0,
+        3144.0
+      ],
+      "text": "Bischofszelle",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 11482,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T13:39:32+00:00"
+}

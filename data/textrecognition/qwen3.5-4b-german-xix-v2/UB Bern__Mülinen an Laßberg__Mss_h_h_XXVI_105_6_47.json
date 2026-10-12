@@ -1,0 +1,253 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "UB Bern/Mülinen an Laßberg",
+  "source": {
+    "name": "Mss_h_h_XXVI_105_6_47.tif",
+    "bytes": 32856996,
+    "sha256": "3ced4d3dbea597d9875eb4889f852afd5d4352de5aa14e79f19c6231126b52e9",
+    "remote": "digitalisate/UB Bern/Mülinen an Laßberg/Mss_h_h_XXVI_105_6_47.tif",
+    "key": "UB Bern__Mülinen an Laßberg__Mss_h_h_XXVI_105_6_47",
+    "working_copy": "Mss_h_h_XXVI_105_6_47.jpg"
+  },
+  "text": "Calibrite\norchecker classica\nmit dem\n5\n5\n8\n100\n6\nMonsieur l Baron Strassberg",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          123.0,
+          73.0
+        ],
+        [
+          247.0,
+          75.0
+        ]
+      ],
+      "bbox": [
+        121.0,
+        16.0,
+        247.0,
+        106.0
+      ],
+      "text": "Calibrite",
+      "confidence": null,
+      "regions": [
+        "_e85b92a1-388a-4511-9cd3-3c6acc70d3b4"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          431.0,
+          79.0
+        ],
+        [
+          772.0,
+          79.0
+        ]
+      ],
+      "bbox": [
+        431.0,
+        41.0,
+        772.0,
+        108.0
+      ],
+      "text": "orchecker classica",
+      "confidence": null,
+      "regions": [
+        "_0b36b3ec-20fd-4a89-bed7-bc839233c99a"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          113.0,
+          1265.0
+        ],
+        [
+          701.0,
+          1261.0
+        ]
+      ],
+      "bbox": [
+        110.0,
+        1230.0,
+        701.0,
+        1299.0
+      ],
+      "text": "mit dem",
+      "confidence": null,
+      "regions": [
+        "_888feed6-e05f-4a38-915c-d62c12d7fe17"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          381.0,
+          1991.0
+        ],
+        [
+          401.0,
+          1989.0
+        ]
+      ],
+      "bbox": [
+        378.0,
+        1958.0,
+        401.0,
+        2010.0
+      ],
+      "text": "5",
+      "confidence": null,
+      "regions": [
+        "_d3f01666-6ce4-488f-a9f0-921cdc0921c2"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          387.0,
+          3180.0
+        ],
+        [
+          393.0,
+          3155.0
+        ]
+      ],
+      "bbox": [
+        366.0,
+        3146.0,
+        429.0,
+        3186.0
+      ],
+      "text": "5",
+      "confidence": null,
+      "regions": [
+        "_ada50653-15b9-4365-a4ca-e2ac983fa07b"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          391.0,
+          3517.0
+        ],
+        [
+          401.0,
+          3529.0
+        ]
+      ],
+      "bbox": [
+        345.0,
+        3491.0,
+        420.0,
+        3565.0
+      ],
+      "text": "8",
+      "confidence": null,
+      "regions": [
+        "_ada50653-15b9-4365-a4ca-e2ac983fa07b"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          385.0,
+          3529.0
+        ],
+        [
+          404.0,
+          3529.0
+        ]
+      ],
+      "bbox": [
+        385.0,
+        3473.0,
+        404.0,
+        3552.0
+      ],
+      "text": "100",
+      "confidence": null,
+      "regions": [
+        "_ada50653-15b9-4365-a4ca-e2ac983fa07b"
+      ]
+    },
+    {
+      "order": 7,
+      "baseline": [
+        [
+          393.0,
+          3632.0
+        ],
+        [
+          393.0,
+          3642.0
+        ]
+      ],
+      "bbox": [
+        353.0,
+        3632.0,
+        420.0,
+        3642.0
+      ],
+      "text": "6",
+      "confidence": null,
+      "regions": [
+        "_ada50653-15b9-4365-a4ca-e2ac983fa07b"
+      ]
+    },
+    {
+      "order": 8,
+      "baseline": [
+        [
+          1465.0,
+          2205.0
+        ],
+        [
+          2256.0,
+          2236.0
+        ],
+        [
+          2577.0,
+          2259.0
+        ]
+      ],
+      "bbox": [
+        1463.0,
+        2123.0,
+        2577.0,
+        2309.0
+      ],
+      "text": "Monsieur l Baron Strassberg",
+      "confidence": null,
+      "regions": [
+        "_2407f665-1b81-43c2-964b-cb01c5eb4570"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 7181,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 22,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T03:02:10+00:00"
+}

@@ -1,0 +1,157 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00787953_150dpi",
+  "source": {
+    "name": "HS00787953_150dpi_0179.jpg",
+    "bytes": 286944,
+    "sha256": "a9ebfce3ff4abf72244418a1fce0dee9fc3c07f7563d9ef69320c95b190fae2c",
+    "remote": "digitalisate/Marbach/HS00787953_150dpi/HS00787953_150dpi_0179.jpg",
+    "key": "Marbach__HS00787953_150dpi__HS00787953_150dpi_0179",
+    "working_copy": "HS00787953_150dpi_0179.jpg"
+  },
+  "text": "28, Okt. 29.\nDein\nder\nde\nder",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          248.0,
+          100.0
+        ],
+        [
+          388.0,
+          94.0
+        ]
+      ],
+      "bbox": [
+        246.0,
+        64.0,
+        388.0,
+        124.0
+      ],
+      "text": "28, Okt. 29.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          582.0,
+          674.0
+        ],
+        [
+          584.0,
+          455.0
+        ]
+      ],
+      "bbox": [
+        561.0,
+        454.0,
+        609.0,
+        674.0
+      ],
+      "text": "Dein",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          657.0,
+          937.0
+        ],
+        [
+          657.0,
+          664.0
+        ],
+        [
+          662.0,
+          594.0
+        ]
+      ],
+      "bbox": [
+        636.0,
+        593.0,
+        683.0,
+        937.0
+      ],
+      "text": "der",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          664.0,
+          478.0
+        ],
+        [
+          664.0,
+          552.0
+        ]
+      ],
+      "bbox": [
+        648.0,
+        478.0,
+        689.0,
+        552.0
+      ],
+      "text": "de",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          662.0,
+          1174.0
+        ],
+        [
+          684.0,
+          1174.0
+        ]
+      ],
+      "bbox": [
+        662.0,
+        1161.0,
+        684.0,
+        1189.0
+      ],
+      "text": "der",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 6653,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T12:46:25+00:00"
+}

@@ -1,0 +1,105 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "UB Bern/MS_Muel/lassberg-letter-1271",
+  "source": {
+    "name": "Mss_Muel_25_3_44.tif",
+    "bytes": 38820594,
+    "sha256": "aac43cbb5c6184fe8e84b27c68fb2c00871b7790a380d930482fb07746060278",
+    "remote": "digitalisate/UB Bern/MS_Muel/lassberg-letter-1271/Mss_Muel_25_3_44.tif",
+    "key": "UB Bern__MS_Muel__lassberg-letter-1271__Mss_Muel_25_3_44",
+    "working_copy": "Mss_Muel_25_3_44.jpg"
+  },
+  "text": "librite\norchecker classica\nmit dem",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          149.0,
+          82.0
+        ],
+        [
+          247.0,
+          84.0
+        ]
+      ],
+      "bbox": [
+        147.0,
+        48.0,
+        247.0,
+        122.0
+      ],
+      "text": "librite",
+      "confidence": null,
+      "regions": [
+        "_6f587912-d75f-4ad4-9488-8d84421e9016"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          445.0,
+          84.0
+        ],
+        [
+          768.0,
+          86.0
+        ]
+      ],
+      "bbox": [
+        443.0,
+        52.0,
+        768.0,
+        128.0
+      ],
+      "text": "orchecker classica",
+      "confidence": null,
+      "regions": [
+        "_b38f2f8b-ce3e-4eec-bdce-6bd98aedb0c3"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          101.0,
+          1278.0
+        ],
+        [
+          696.0,
+          1274.0
+        ]
+      ],
+      "bbox": [
+        99.0,
+        1241.0,
+        696.0,
+        1319.0
+      ],
+      "text": "mit dem",
+      "confidence": null,
+      "regions": [
+        "_3675ce04-f893-4d75-9e00-fe738b95a171"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 6127,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 23,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T23:59:24+00:00"
+}

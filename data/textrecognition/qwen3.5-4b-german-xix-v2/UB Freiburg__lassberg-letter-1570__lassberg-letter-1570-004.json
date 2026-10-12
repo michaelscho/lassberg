@@ -1,0 +1,219 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "UB Freiburg/lassberg-letter-1570",
+  "source": {
+    "name": "lassberg-letter-1570-004.jpg",
+    "bytes": 209059,
+    "sha256": "4c444fae6e4b6fc6dcd6f96debb6e29987735226703d8f2aa7325333670556b3",
+    "remote": "digitalisate/UB Freiburg/lassberg-letter-1570/lassberg-letter-1570-004.jpg",
+    "key": "UB Freiburg__lassberg-letter-1570__lassberg-letter-1570-004",
+    "working_copy": "lassberg-letter-1570-004.jpg"
+  },
+  "text": "de Compie de\n1929 Cr 719\n1690\nFreisburg\ngefordert durch\nhapp. dgl. ub. uni-freiburg. de diktit autogr 1690/0004\nc. Universitätsbibliothek Freiburg\nBaden-Würtemberg",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          1181.0,
+          1674.0
+        ],
+        [
+          1306.0,
+          1671.0
+        ]
+      ],
+      "bbox": [
+        1180.0,
+        1629.0,
+        1306.0,
+        1702.0
+      ],
+      "text": "de Compie de",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          720.0,
+          1661.0
+        ],
+        [
+          876.0,
+          1660.0
+        ]
+      ],
+      "bbox": [
+        719.0,
+        1636.0,
+        876.0,
+        1678.0
+      ],
+      "text": "1929 Cr 719",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          772.0,
+          1721.0
+        ],
+        [
+          806.0,
+          1721.0
+        ]
+      ],
+      "bbox": [
+        772.0,
+        1701.0,
+        806.0,
+        1739.0
+      ],
+      "text": "1690",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          741.0,
+          1757.0
+        ],
+        [
+          810.0,
+          1758.0
+        ]
+      ],
+      "bbox": [
+        740.0,
+        1728.0,
+        810.0,
+        1783.0
+      ],
+      "text": "Freisburg",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          1405.0,
+          1955.0
+        ],
+        [
+          1498.0,
+          1953.0
+        ]
+      ],
+      "bbox": [
+        1404.0,
+        1941.0,
+        1498.0,
+        1968.0
+      ],
+      "text": "gefordert durch",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          418.0,
+          1984.0
+        ],
+        [
+          1128.0,
+          1981.0
+        ]
+      ],
+      "bbox": [
+        418.0,
+        1956.0,
+        1128.0,
+        1998.0
+      ],
+      "text": "happ. dgl. ub. uni-freiburg. de diktit autogr 1690/0004",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          564.0,
+          2031.0
+        ],
+        [
+          1004.0,
+          2031.0
+        ]
+      ],
+      "bbox": [
+        564.0,
+        2002.0,
+        1004.0,
+        2047.0
+      ],
+      "text": "c. Universitätsbibliothek Freiburg",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 7,
+      "baseline": [
+        [
+          1373.0,
+          2037.0
+        ],
+        [
+          1542.0,
+          2037.0
+        ]
+      ],
+      "bbox": [
+        1373.0,
+        2017.0,
+        1542.0,
+        2049.0
+      ],
+      "text": "Baden-Würtemberg",
+      "confidence": null,
+      "regions": []
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 6277,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 30,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T04:11:06+00:00"
+}

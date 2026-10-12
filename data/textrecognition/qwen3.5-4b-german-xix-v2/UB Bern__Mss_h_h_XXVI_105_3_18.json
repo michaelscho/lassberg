@@ -1,0 +1,105 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "UB Bern",
+  "source": {
+    "name": "Mss_h_h_XXVI_105_3_18.tif",
+    "bytes": 43435812,
+    "sha256": "503cf814f0ad169cf5676902ecd5cef0dacaed55d3253a8e9f10c501eb2ee74a",
+    "remote": "digitalisate/UB Bern/Mss_h_h_XXVI_105_3_18.tif",
+    "key": "UB Bern__Mss_h_h_XXVI_105_3_18",
+    "working_copy": "Mss_h_h_XXVI_105_3_18.jpg"
+  },
+  "text": "Calibrite\nOrchester Classica\nmit dem",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          125.0,
+          116.0
+        ],
+        [
+          250.0,
+          116.0
+        ]
+      ],
+      "bbox": [
+        125.0,
+        87.0,
+        250.0,
+        163.0
+      ],
+      "text": "Calibrite",
+      "confidence": null,
+      "regions": [
+        "_2908974f-351f-49ff-b7de-e43b2d3a7dbb"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          431.0,
+          118.0
+        ],
+        [
+          762.0,
+          120.0
+        ]
+      ],
+      "bbox": [
+        428.0,
+        84.0,
+        762.0,
+        152.0
+      ],
+      "text": "Orchester Classica",
+      "confidence": null,
+      "regions": [
+        "_a9f1aac6-f667-4741-a23e-2f8fe682d293"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          108.0,
+          1311.0
+        ],
+        [
+          687.0,
+          1309.0
+        ]
+      ],
+      "bbox": [
+        106.0,
+        1281.0,
+        687.0,
+        1351.0
+      ],
+      "text": "mit dem",
+      "confidence": null,
+      "regions": [
+        "_8cfa2cd8-41b3-4c93-a87b-3c5bee0beccf"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 6479,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 31,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T01:43:12+00:00"
+}

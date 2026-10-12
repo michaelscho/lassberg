@@ -1,0 +1,153 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Staatsarchiv Zürrich/499_hs_evan_scch_erledigt/MS_M_56",
+  "source": {
+    "name": "MS_M_56_71_3.tif",
+    "bytes": 41382424,
+    "sha256": "63f5432ec58744e28f6c5cdfd7eaae7a30af3e103e5fce03c1b4d8ccc6fbb831",
+    "remote": "digitalisate/Staatsarchiv Zürrich/499_hs_evan_scch_erledigt/MS_M_56/MS_M_56_71_3.tif",
+    "key": "Staatsarchiv Zürrich__499_hs_evan_scch_erledigt__MS_M_56__MS_M_56_71_3",
+    "working_copy": "MS_M_56_71_3.jpg"
+  },
+  "text": "1866\nBern\nEs\n1869.\nnächsten",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          41.0,
+          1446.0
+        ],
+        [
+          110.0,
+          1446.0
+        ]
+      ],
+      "bbox": [
+        41.0,
+        1446.0,
+        110.0,
+        1476.0
+      ],
+      "text": "1866",
+      "confidence": null,
+      "regions": [
+        "_2e30bb86-2829-4239-a585-63d82b20fa65"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          52.0,
+          1605.0
+        ],
+        [
+          117.0,
+          1609.0
+        ]
+      ],
+      "bbox": [
+        48.0,
+        1540.0,
+        119.0,
+        1644.0
+      ],
+      "text": "Bern",
+      "confidence": null,
+      "regions": [
+        "_3fae95dd-1ccb-4dfa-a1db-ae084bc933a9"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          41.0,
+          1761.0
+        ],
+        [
+          92.0,
+          1761.0
+        ]
+      ],
+      "bbox": [
+        41.0,
+        1704.0,
+        92.0,
+        1789.0
+      ],
+      "text": "Es",
+      "confidence": null,
+      "regions": [
+        "_23025d46-415c-41d2-a589-cb7730bed82f"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          13.0,
+          1918.0
+        ],
+        [
+          46.0,
+          1918.0
+        ]
+      ],
+      "bbox": [
+        13.0,
+        1874.0,
+        46.0,
+        1987.0
+      ],
+      "text": "1869.",
+      "confidence": null,
+      "regions": [
+        "_6c892192-b8d3-4da4-ba41-7b971f0ca5f3"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          66.0,
+          1920.0
+        ],
+        [
+          131.0,
+          1922.0
+        ]
+      ],
+      "bbox": [
+        64.0,
+        1865.0,
+        131.0,
+        1966.0
+      ],
+      "text": "nächsten",
+      "confidence": null,
+      "regions": [
+        "_6c892192-b8d3-4da4-ba41-7b971f0ca5f3"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 7406,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 31,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T22:46:30+00:00"
+}

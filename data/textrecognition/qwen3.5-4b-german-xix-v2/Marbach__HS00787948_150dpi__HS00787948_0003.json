@@ -1,0 +1,406 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00787948_150dpi",
+  "source": {
+    "name": "HS00787948_0003.jpg",
+    "bytes": 102660,
+    "sha256": "304ef0375890ff329c10263869f1bb4849415fdb4ac793d8db01b782ef9ee98f",
+    "remote": "digitalisate/Marbach/HS00787948_150dpi/HS00787948_0003.jpg",
+    "key": "Marbach__HS00787948_150dpi__HS00787948_0003",
+    "working_copy": "HS00787948_0003.jpg"
+  },
+  "text": "der\n1865.\n1849.\nHans\nsehr\nSara\nvon\ns¬",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          815.0,
+          100.0
+        ],
+        [
+          875.0,
+          100.0
+        ]
+      ],
+      "bbox": [
+        815.0,
+        75.0,
+        875.0,
+        114.0
+      ],
+      "text": "der",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          108.0,
+          116.0
+        ],
+        [
+          138.0,
+          115.0
+        ]
+      ],
+      "bbox": [
+        107.0,
+        91.0,
+        138.0,
+        127.0
+      ],
+      "text": "1865.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          803.0,
+          100.0
+        ],
+        [
+          805.0,
+          100.0
+        ]
+      ],
+      "bbox": [
+        803.0,
+        85.0,
+        805.0,
+        106.0
+      ],
+      "text": "1849.",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          416.0,
+          356.0
+        ],
+        [
+          502.0,
+          353.0
+        ]
+      ],
+      "bbox": [
+        416.0,
+        326.0,
+        502.0,
+        365.0
+      ],
+      "text": "Hans",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          512.0,
+          286.0
+        ],
+        [
+          584.0,
+          284.0
+        ]
+      ],
+      "bbox": [
+        511.0,
+        261.0,
+        584.0,
+        301.0
+      ],
+      "text": "sehr",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          578.0,
+          352.0
+        ],
+        [
+          631.0,
+          349.0
+        ],
+        [
+          664.0,
+          350.0
+        ]
+      ],
+      "bbox": [
+        578.0,
+        323.0,
+        664.0,
+        356.0
+      ],
+      "text": "Sara",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          713.0,
+          284.0
+        ],
+        [
+          798.0,
+          286.0
+        ]
+      ],
+      "bbox": [
+        713.0,
+        264.0,
+        798.0,
+        300.0
+      ],
+      "text": "von",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 7,
+      "baseline": [
+        [
+          750.0,
+          512.0
+        ],
+        [
+          793.0,
+          511.0
+        ]
+      ],
+      "bbox": [
+        750.0,
+        490.0,
+        793.0,
+        518.0
+      ],
+      "text": "s¬",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 25920,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "602\n5\n602\nau\n,\nSolvat\n~~~\nHeersburg",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            108.0,
+            116.0
+          ],
+          [
+            138.0,
+            115.0
+          ]
+        ],
+        "bbox": [
+          107.0,
+          91.0,
+          138.0,
+          127.0
+        ],
+        "text": "602",
+        "confidence": 0.83966592947642,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            803.0,
+            100.0
+          ],
+          [
+            805.0,
+            100.0
+          ]
+        ],
+        "bbox": [
+          803.0,
+          85.0,
+          805.0,
+          106.0
+        ],
+        "text": "5",
+        "confidence": 0.4837108850479126,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            815.0,
+            100.0
+          ],
+          [
+            875.0,
+            100.0
+          ]
+        ],
+        "bbox": [
+          815.0,
+          75.0,
+          875.0,
+          114.0
+        ],
+        "text": "602",
+        "confidence": 0.5775661170482635,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            416.0,
+            356.0
+          ],
+          [
+            502.0,
+            353.0
+          ]
+        ],
+        "bbox": [
+          416.0,
+          326.0,
+          502.0,
+          365.0
+        ],
+        "text": "au",
+        "confidence": 0.7213783860206604,
+        "regions": []
+      },
+      {
+        "order": 4,
+        "baseline": [
+          [
+            512.0,
+            286.0
+          ],
+          [
+            584.0,
+            284.0
+          ]
+        ],
+        "bbox": [
+          511.0,
+          261.0,
+          584.0,
+          301.0
+        ],
+        "text": ",",
+        "confidence": 0.6341515779495239,
+        "regions": []
+      },
+      {
+        "order": 5,
+        "baseline": [
+          [
+            578.0,
+            352.0
+          ],
+          [
+            631.0,
+            349.0
+          ],
+          [
+            664.0,
+            350.0
+          ]
+        ],
+        "bbox": [
+          578.0,
+          323.0,
+          664.0,
+          356.0
+        ],
+        "text": "Solvat",
+        "confidence": 0.6861914942661921,
+        "regions": []
+      },
+      {
+        "order": 6,
+        "baseline": [
+          [
+            713.0,
+            284.0
+          ],
+          [
+            798.0,
+            286.0
+          ]
+        ],
+        "bbox": [
+          713.0,
+          264.0,
+          798.0,
+          300.0
+        ],
+        "text": "~~~",
+        "confidence": 0.5192082623640696,
+        "regions": []
+      },
+      {
+        "order": 7,
+        "baseline": [
+          [
+            750.0,
+            512.0
+          ],
+          [
+            793.0,
+            511.0
+          ]
+        ],
+        "bbox": [
+          750.0,
+          490.0,
+          793.0,
+          518.0
+        ],
+        "text": "Heersburg",
+        "confidence": 0.7261509431733025,
+        "regions": []
+      }
+    ],
+    "confidence": 0.6485029494182931,
+    "timing_ms": 164195,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T05:03:11+00:00"
+}

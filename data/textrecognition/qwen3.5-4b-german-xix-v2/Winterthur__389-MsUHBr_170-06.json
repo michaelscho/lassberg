@@ -1,0 +1,125 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Winterthur",
+  "source": {
+    "name": "389-MsUHBr_170-06.jpg",
+    "bytes": 3922097,
+    "sha256": "9e0128c329ec73c45a2374100b9fa4a369e291724a998c72799135ebef0cec83",
+    "remote": "digitalisate/Winterthur/389-MsUHBr_170-06.jpg",
+    "key": "Winterthur__389-MsUHBr_170-06",
+    "working_copy": "389-MsUHBr_170-06.jpg"
+  },
+  "text": "Seiner Wolgeboren\ndem Herren Ulrich Hegner, des großen\nRaths des Kantons Zürich, zu\nWinterthur",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          2368.0,
+          2036.0
+        ],
+        [
+          3369.0,
+          2010.0
+        ]
+      ],
+      "bbox": [
+        2366.0,
+        1877.0,
+        3369.0,
+        2103.0
+      ],
+      "text": "Seiner Wolgeboren",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1748.0,
+          2373.0
+        ],
+        [
+          4016.0,
+          2360.0
+        ]
+      ],
+      "bbox": [
+        1745.0,
+        2230.0,
+        4016.0,
+        2455.0
+      ],
+      "text": "dem Herren Ulrich Hegner, des großen",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1817.0,
+          2612.0
+        ],
+        [
+          3416.0,
+          2588.0
+        ],
+        [
+          3668.0,
+          2572.0
+        ]
+      ],
+      "bbox": [
+        1814.0,
+        2479.0,
+        3668.0,
+        2678.0
+      ],
+      "text": "Raths des Kantons Zürich, zu",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          3013.0,
+          3307.0
+        ],
+        [
+          3727.0,
+          3278.0
+        ]
+      ],
+      "bbox": [
+        3005.0,
+        3142.0,
+        3727.0,
+        3341.0
+      ],
+      "text": "Winterthur",
+      "confidence": null,
+      "regions": []
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 11037,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T17:02:56+00:00"
+}

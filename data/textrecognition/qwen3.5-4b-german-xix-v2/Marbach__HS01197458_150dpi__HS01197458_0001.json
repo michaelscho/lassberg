@@ -1,0 +1,225 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS01197458_150dpi",
+  "source": {
+    "name": "HS01197458_0001.jpg",
+    "bytes": 411043,
+    "sha256": "9fedf6b657d3c0ae0b3b09832c03e7d41c5f0c552d7aa8783fe1a033913e0f68",
+    "remote": "digitalisate/Marbach/HS01197458_150dpi/HS01197458_0001.jpg",
+    "key": "Marbach__HS01197458_150dpi__HS01197458_0001",
+    "working_copy": "HS01197458_0001.jpg"
+  },
+  "text": "Cotta: Briefe\nCotta B's\nLassberg, Josef von\nZürich von ihnen an\n2. April\n1\nCotta: Eppischhausen, 17.3.1830. 1. Bzl.\nCotta: Eppishausen, 30.1.1831. 2 Bz[en].",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          164.0,
+          199.0
+        ],
+        [
+          429.0,
+          197.0
+        ]
+      ],
+      "bbox": [
+        164.0,
+        157.0,
+        429.0,
+        219.0
+      ],
+      "text": "Cotta: Briefe",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1077.0,
+          115.0
+        ],
+        [
+          1311.0,
+          107.0
+        ]
+      ],
+      "bbox": [
+        1076.0,
+        55.0,
+        1311.0,
+        158.0
+      ],
+      "text": "Cotta B's",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          589.0,
+          462.0
+        ],
+        [
+          1115.0,
+          462.0
+        ]
+      ],
+      "bbox": [
+        589.0,
+        426.0,
+        1115.0,
+        495.0
+      ],
+      "text": "Lassberg, Josef von",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          619.0,
+          683.0
+        ],
+        [
+          1168.0,
+          685.0
+        ]
+      ],
+      "bbox": [
+        618.0,
+        648.0,
+        1168.0,
+        702.0
+      ],
+      "text": "Zürich von ihnen an",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          1247.0,
+          774.0
+        ],
+        [
+          1344.0,
+          779.0
+        ]
+      ],
+      "bbox": [
+        1245.0,
+        730.0,
+        1344.0,
+        790.0
+      ],
+      "text": "2. April",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          75.0,
+          879.0
+        ],
+        [
+          109.0,
+          880.0
+        ]
+      ],
+      "bbox": [
+        73.0,
+        846.0,
+        109.0,
+        892.0
+      ],
+      "text": "1",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          170.0,
+          882.0
+        ],
+        [
+          1244.0,
+          880.0
+        ]
+      ],
+      "bbox": [
+        169.0,
+        844.0,
+        1244.0,
+        903.0
+      ],
+      "text": "Cotta: Eppischhausen, 17.3.1830. 1. Bzl.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 7,
+      "baseline": [
+        [
+          241.0,
+          965.0
+        ],
+        [
+          1243.0,
+          966.0
+        ]
+      ],
+      "bbox": [
+        239.0,
+        926.0,
+        1243.0,
+        989.0
+      ],
+      "text": "Cotta: Eppishausen, 30.1.1831. 2 Bz[en].",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 6371,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 32,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T21:32:18+00:00"
+}

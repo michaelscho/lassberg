@@ -1,0 +1,139 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Winterthur",
+  "source": {
+    "name": "276-MsBRH_513-91-097.jpg",
+    "bytes": 5000081,
+    "sha256": "9011fbe8ac3b642aecdc9555fac9a8bfa5fd2891ab7a5ae541a41d2ce5ef4b36",
+    "remote": "digitalisate/Winterthur/276-MsBRH_513-91-097.jpg",
+    "key": "Winterthur__276-MsBRH_513-91-097",
+    "working_copy": "276-MsBRH_513-91-097.jpg"
+  },
+  "text": "Sr. MHH. geborn\nDem Herrn Baron Joseph von Lustberg\n1. Cammerer und Weltbeßer Ritter\nin Egishausen d. Thurgau",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          2286.0,
+          1306.0
+        ],
+        [
+          3568.0,
+          1301.0
+        ]
+      ],
+      "bbox": [
+        2283.0,
+        1176.0,
+        3568.0,
+        1389.0
+      ],
+      "text": "Sr. MHH. geborn",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1503.0,
+          1797.0
+        ],
+        [
+          2200.0,
+          1831.0
+        ],
+        [
+          4054.0,
+          1864.0
+        ]
+      ],
+      "bbox": [
+        1503.0,
+        1675.0,
+        4054.0,
+        1917.0
+      ],
+      "text": "Dem Herrn Baron Joseph von Lustberg",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1712.0,
+          1997.0
+        ],
+        [
+          2791.0,
+          2053.0
+        ],
+        [
+          4059.0,
+          2083.0
+        ]
+      ],
+      "bbox": [
+        1709.0,
+        1928.0,
+        4059.0,
+        2136.0
+      ],
+      "text": "1. Cammerer und Weltbeßer Ritter",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          2081.0,
+          3032.0
+        ],
+        [
+          3726.0,
+          2988.0
+        ],
+        [
+          4106.0,
+          2996.0
+        ]
+      ],
+      "bbox": [
+        2078.0,
+        2857.0,
+        4106.0,
+        3235.0
+      ],
+      "text": "in Egishausen d. Thurgau",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 10657,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T15:27:18+00:00"
+}

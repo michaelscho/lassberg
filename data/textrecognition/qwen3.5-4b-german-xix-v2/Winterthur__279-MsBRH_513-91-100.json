@@ -1,0 +1,145 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Winterthur",
+  "source": {
+    "name": "279-MsBRH_513-91-100.jpg",
+    "bytes": 4669864,
+    "sha256": "de2694ab5f615f17b2e22f7b7e3fc59141f09e72228baa47d236e6218e517c9c",
+    "remote": "digitalisate/Winterthur/279-MsBRH_513-91-100.jpg",
+    "key": "Winterthur__279-MsBRH_513-91-100",
+    "working_copy": "279-MsBRH_513-91-100.jpg"
+  },
+  "text": "Hochwohlgeboren\nDem brechenen Joseph von Lastbach\n1. Lämmer und Wallaster botte\nin Erpißhausen 2. Thurgau",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          2881.0,
+          1331.0
+        ],
+        [
+          4235.0,
+          1347.0
+        ]
+      ],
+      "bbox": [
+        2881.0,
+        1213.0,
+        4235.0,
+        1429.0
+      ],
+      "text": "Hochwohlgeboren",
+      "confidence": null,
+      "regions": [
+        "_438d39b3-c2e1-4dbe-a573-79ffaea764ba"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1900.0,
+          1738.0
+        ],
+        [
+          2605.0,
+          1752.0
+        ],
+        [
+          2953.0,
+          1771.0
+        ],
+        [
+          4306.0,
+          1782.0
+        ]
+      ],
+      "bbox": [
+        1900.0,
+        1629.0,
+        4306.0,
+        1825.0
+      ],
+      "text": "Dem brechenen Joseph von Lastbach",
+      "confidence": null,
+      "regions": [
+        "_438d39b3-c2e1-4dbe-a573-79ffaea764ba"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          2001.0,
+          1880.0
+        ],
+        [
+          3212.0,
+          1929.0
+        ],
+        [
+          4052.0,
+          1946.0
+        ],
+        [
+          4322.0,
+          1970.0
+        ]
+      ],
+      "bbox": [
+        1998.0,
+        1831.0,
+        4322.0,
+        2003.0
+      ],
+      "text": "1. Lämmer und Wallaster botte",
+      "confidence": null,
+      "regions": [
+        "_438d39b3-c2e1-4dbe-a573-79ffaea764ba"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          2501.0,
+          3006.0
+        ],
+        [
+          4290.0,
+          3020.0
+        ]
+      ],
+      "bbox": [
+        2499.0,
+        2875.0,
+        4290.0,
+        3222.0
+      ],
+      "text": "in Erpißhausen 2. Thurgau",
+      "confidence": null,
+      "regions": [
+        "_1c932faf-c0f6-43ba-ab25-8dcff2f0c618"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 11416,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T15:30:55+00:00"
+}

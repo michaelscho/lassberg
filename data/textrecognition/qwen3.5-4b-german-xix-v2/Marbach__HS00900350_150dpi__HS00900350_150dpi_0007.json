@@ -1,0 +1,149 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00900350_150dpi",
+  "source": {
+    "name": "HS00900350_150dpi_0007.jpg",
+    "bytes": 161345,
+    "sha256": "71984eb03ebac959f069ee02fc6e42efe6da245012a2aaf6907aab84bacbc915",
+    "remote": "digitalisate/Marbach/HS00900350_150dpi/HS00900350_150dpi_0007.jpg",
+    "key": "Marbach__HS00900350_150dpi__HS00900350_150dpi_0007",
+    "working_copy": "HS00900350_150dpi_0007.jpg"
+  },
+  "text": "nebenso, in\nv. H. Z.\nVorschlags von Zürich einen\nmorgen herzlich, ein",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          191.0,
+          458.0
+        ],
+        [
+          453.0,
+          456.0
+        ]
+      ],
+      "bbox": [
+        190.0,
+        424.0,
+        453.0,
+        468.0
+      ],
+      "text": "nebenso, in",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          159.0,
+          538.0
+        ],
+        [
+          314.0,
+          539.0
+        ],
+        [
+          420.0,
+          543.0
+        ]
+      ],
+      "bbox": [
+        158.0,
+        510.0,
+        420.0,
+        577.0
+      ],
+      "text": "v. H. Z.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          142.0,
+          705.0
+        ],
+        [
+          209.0,
+          711.0
+        ],
+        [
+          304.0,
+          714.0
+        ],
+        [
+          614.0,
+          712.0
+        ],
+        [
+          653.0,
+          714.0
+        ]
+      ],
+      "bbox": [
+        142.0,
+        683.0,
+        653.0,
+        742.0
+      ],
+      "text": "Vorschlags von Zürich einen",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          227.0,
+          789.0
+        ],
+        [
+          415.0,
+          791.0
+        ],
+        [
+          648.0,
+          786.0
+        ]
+      ],
+      "bbox": [
+        227.0,
+        759.0,
+        648.0,
+        823.0
+      ],
+      "text": "morgen herzlich, ein",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 5011,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 49,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T20:19:32+00:00"
+}

@@ -1,0 +1,141 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Winterthur",
+  "source": {
+    "name": "261-MsBRH_513-91-082.jpg",
+    "bytes": 5009386,
+    "sha256": "7c3d18145f4e791457431cb5288c2fd6ac5205dbb7ca15d0bc794559b74dcef1",
+    "remote": "digitalisate/Winterthur/261-MsBRH_513-91-082.jpg",
+    "key": "Winterthur__261-MsBRH_513-91-082",
+    "working_copy": "261-MsBRH_513-91-082.jpg"
+  },
+  "text": "Se. Hochwohlgeboren\ndem Dreiherrn Hofteig von Caßburg\n2. R. R. Riemonen und Weltbester. Ritten\nin Egishausen dem Amt Thurgau",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          2133.0,
+          1454.0
+        ],
+        [
+          2443.0,
+          1443.0
+        ],
+        [
+          3725.0,
+          1446.0
+        ]
+      ],
+      "bbox": [
+        2130.0,
+        1331.0,
+        3725.0,
+        1547.0
+      ],
+      "text": "Se. Hochwohlgeboren",
+      "confidence": null,
+      "regions": [
+        "_27860fee-328a-42f5-a6e5-e92c405dfd9c"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1455.0,
+          1992.0
+        ],
+        [
+          2355.0,
+          2014.0
+        ],
+        [
+          3909.0,
+          2006.0
+        ]
+      ],
+      "bbox": [
+        1452.0,
+        1868.0,
+        3909.0,
+        2047.0
+      ],
+      "text": "dem Dreiherrn Hofteig von Caßburg",
+      "confidence": null,
+      "regions": [
+        "_27860fee-328a-42f5-a6e5-e92c405dfd9c"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1463.0,
+          2132.0
+        ],
+        [
+          2932.0,
+          2181.0
+        ],
+        [
+          3925.0,
+          2181.0
+        ]
+      ],
+      "bbox": [
+        1463.0,
+        2028.0,
+        3925.0,
+        2250.0
+      ],
+      "text": "2. R. R. Riemonen und Weltbester. Ritten",
+      "confidence": null,
+      "regions": [
+        "_27860fee-328a-42f5-a6e5-e92c405dfd9c"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          2067.0,
+          3016.0
+        ],
+        [
+          4046.0,
+          3040.0
+        ]
+      ],
+      "bbox": [
+        2064.0,
+        2906.0,
+        4046.0,
+        3156.0
+      ],
+      "text": "in Egishausen dem Amt Thurgau",
+      "confidence": null,
+      "regions": [
+        "_27860fee-328a-42f5-a6e5-e92c405dfd9c"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 11525,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T15:13:12+00:00"
+}

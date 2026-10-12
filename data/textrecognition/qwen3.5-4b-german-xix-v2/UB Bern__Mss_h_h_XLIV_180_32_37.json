@@ -1,0 +1,225 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "UB Bern",
+  "source": {
+    "name": "Mss_h_h_XLIV_180_32_37.tif",
+    "bytes": 30326448,
+    "sha256": "64452c0037be98dade2beb57798019d5f0718b97f659fd073a29f76e5fc7dc01",
+    "remote": "digitalisate/UB Bern/Mss_h_h_XLIV_180_32_37.tif",
+    "key": "UB Bern__Mss_h_h_XLIV_180_32_37",
+    "working_copy": "Mss_h_h_XLIV_180_32_37.jpg"
+  },
+  "text": "Calibrite\nLorchecker Classic\nmit dem\n5\n3\n4\n6\n3",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          91.0,
+          146.0
+        ],
+        [
+          235.0,
+          146.0
+        ]
+      ],
+      "bbox": [
+        91.0,
+        93.0,
+        235.0,
+        180.0
+      ],
+      "text": "Calibrite",
+      "confidence": null,
+      "regions": [
+        "_d43eb35e-cb96-4f84-8a5a-7783f8f89a43"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          408.0,
+          148.0
+        ],
+        [
+          754.0,
+          150.0
+        ]
+      ],
+      "bbox": [
+        405.0,
+        112.0,
+        754.0,
+        180.0
+      ],
+      "text": "Lorchecker Classic",
+      "confidence": null,
+      "regions": [
+        "_d43eb35e-cb96-4f84-8a5a-7783f8f89a43"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          82.0,
+          1342.0
+        ],
+        [
+          688.0,
+          1333.0
+        ]
+      ],
+      "bbox": [
+        82.0,
+        1299.0,
+        688.0,
+        1378.0
+      ],
+      "text": "mit dem",
+      "confidence": null,
+      "regions": [
+        "_ec6d518f-5864-47ec-9929-0a1fe0204799"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          374.0,
+          2183.0
+        ],
+        [
+          386.0,
+          2183.0
+        ]
+      ],
+      "bbox": [
+        374.0,
+        2147.0,
+        386.0,
+        2217.0
+      ],
+      "text": "5",
+      "confidence": null,
+      "regions": [
+        "_5092dd0f-7ee1-480a-b83d-d3661365a049"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          374.0,
+          3022.0
+        ],
+        [
+          386.0,
+          3022.0
+        ]
+      ],
+      "bbox": [
+        374.0,
+        2971.0,
+        386.0,
+        3052.0
+      ],
+      "text": "3",
+      "confidence": null,
+      "regions": [
+        "_37148561-a6fd-4666-89a0-fc991222c951"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          378.0,
+          3113.0
+        ],
+        [
+          382.0,
+          3145.0
+        ]
+      ],
+      "bbox": [
+        301.0,
+        3109.0,
+        408.0,
+        3153.0
+      ],
+      "text": "4",
+      "confidence": null,
+      "regions": [
+        "_37148561-a6fd-4666-89a0-fc991222c951"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          391.0,
+          3716.0
+        ],
+        [
+          395.0,
+          3727.0
+        ]
+      ],
+      "bbox": [
+        354.0,
+        3706.0,
+        414.0,
+        3738.0
+      ],
+      "text": "6",
+      "confidence": null,
+      "regions": [
+        "_6ab847b0-7516-4e1d-ba1c-2c2f6a9d5030"
+      ]
+    },
+    {
+      "order": 7,
+      "baseline": [
+        [
+          380.0,
+          3729.0
+        ],
+        [
+          395.0,
+          3725.0
+        ]
+      ],
+      "bbox": [
+        371.0,
+        3697.0,
+        399.0,
+        3755.0
+      ],
+      "text": "3",
+      "confidence": null,
+      "regions": [
+        "_6ab847b0-7516-4e1d-ba1c-2c2f6a9d5030"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 4680,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 32,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T01:23:12+00:00"
+}

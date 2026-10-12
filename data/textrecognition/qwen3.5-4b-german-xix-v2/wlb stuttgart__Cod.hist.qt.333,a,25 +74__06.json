@@ -1,0 +1,181 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "wlb stuttgart/Cod.hist.qt.333,a,25 +74",
+  "source": {
+    "name": "06.jpg",
+    "bytes": 410150,
+    "sha256": "ad632d4167a85c14822c522624920f42877c8e7155e819b012d00486ab79e1cf",
+    "remote": "digitalisate/wlb stuttgart/Cod.hist.qt.333,a,25 +74/06.jpg",
+    "key": "wlb stuttgart__Cod.hist.qt.333,a,25 +74__06",
+    "working_copy": "06.jpg"
+  },
+  "text": "1849.\nde\n24.\nde\nEscher\nDein",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          709.0,
+          1237.0
+        ],
+        [
+          709.0,
+          1232.0
+        ]
+      ],
+      "bbox": [
+        685.0,
+        1232.0,
+        725.0,
+        1237.0
+      ],
+      "text": "1849.",
+      "confidence": null,
+      "regions": [
+        "_4cb828cc-e271-4e3c-a4e3-65bd5ed2d8f3"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          793.0,
+          758.0
+        ],
+        [
+          798.0,
+          859.0
+        ]
+      ],
+      "bbox": [
+        759.0,
+        757.0,
+        827.0,
+        860.0
+      ],
+      "text": "de",
+      "confidence": null,
+      "regions": [
+        "_4cb828cc-e271-4e3c-a4e3-65bd5ed2d8f3"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          801.0,
+          927.0
+        ],
+        [
+          801.0,
+          956.0
+        ]
+      ],
+      "bbox": [
+        783.0,
+        927.0,
+        824.0,
+        956.0
+      ],
+      "text": "24.",
+      "confidence": null,
+      "regions": [
+        "_4cb828cc-e271-4e3c-a4e3-65bd5ed2d8f3"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          808.0,
+          1270.0
+        ],
+        [
+          810.0,
+          1317.0
+        ]
+      ],
+      "bbox": [
+        780.0,
+        1267.0,
+        827.0,
+        1317.0
+      ],
+      "text": "de",
+      "confidence": null,
+      "regions": [
+        "_4cb828cc-e271-4e3c-a4e3-65bd5ed2d8f3"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          804.0,
+          1038.0
+        ],
+        [
+          808.0,
+          1095.0
+        ]
+      ],
+      "bbox": [
+        787.0,
+        1036.0,
+        829.0,
+        1095.0
+      ],
+      "text": "Escher",
+      "confidence": null,
+      "regions": [
+        "_4cb828cc-e271-4e3c-a4e3-65bd5ed2d8f3"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          896.0,
+          1113.0
+        ],
+        [
+          895.0,
+          994.0
+        ],
+        [
+          904.0,
+          793.0
+        ]
+      ],
+      "bbox": [
+        866.0,
+        792.0,
+        931.0,
+        1113.0
+      ],
+      "text": "Dein",
+      "confidence": null,
+      "regions": [
+        "_4cb828cc-e271-4e3c-a4e3-65bd5ed2d8f3"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 5800,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T20:26:12+00:00"
+}

@@ -1,0 +1,105 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "UB Bern/MS_Muel/lassberg-letter-0773",
+  "source": {
+    "name": "Mss_Muel_25_3_08.tif",
+    "bytes": 38436718,
+    "sha256": "48ec8e5e0b7657e45025284369177714baef26c86feeb191965bb46f8454b8b5",
+    "remote": "digitalisate/UB Bern/MS_Muel/lassberg-letter-0773/Mss_Muel_25_3_08.tif",
+    "key": "UB Bern__MS_Muel__lassberg-letter-0773__Mss_Muel_25_3_08",
+    "working_copy": "Mss_Muel_25_3_08.jpg"
+  },
+  "text": "d.\norchecker classica\nen",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          211.0,
+          93.0
+        ],
+        [
+          310.0,
+          93.0
+        ]
+      ],
+      "bbox": [
+        211.0,
+        61.0,
+        310.0,
+        126.0
+      ],
+      "text": "d.",
+      "confidence": null,
+      "regions": [
+        "_fe13af58-8c38-45b9-979f-debcadd525ed"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          490.0,
+          101.0
+        ],
+        [
+          822.0,
+          105.0
+        ]
+      ],
+      "bbox": [
+        488.0,
+        59.0,
+        822.0,
+        145.0
+      ],
+      "text": "orchecker classica",
+      "confidence": null,
+      "regions": [
+        "_2003e749-e56d-4c1d-b04a-b8e987a60f58"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          143.0,
+          1278.0
+        ],
+        [
+          742.0,
+          1283.0
+        ]
+      ],
+      "bbox": [
+        141.0,
+        1242.0,
+        742.0,
+        1325.0
+      ],
+      "text": "en",
+      "confidence": null,
+      "regions": [
+        "_74f898c8-9aa2-4fd5-a610-3d84d7e21d3f"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 5763,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T09:32:59+00:00"
+}

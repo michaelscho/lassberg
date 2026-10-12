@@ -1,0 +1,223 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00900326_150dpi",
+  "source": {
+    "name": "HS00900326_150dpi_0007.jpg",
+    "bytes": 285487,
+    "sha256": "ef6dc98d02a1fc0bafaac979092642f5fcfa64106d9148bfd19fb77ed83f5235",
+    "remote": "digitalisate/Marbach/HS00900326_150dpi/HS00900326_150dpi_0007.jpg",
+    "key": "Marbach__HS00900326_150dpi__HS00900326_150dpi_0007",
+    "working_copy": "HS00900326_150dpi_0007.jpg"
+  },
+  "text": "M.\n32\nde\nde\n10\nMonsieur\n72\n1142",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          720.0,
+          693.0
+        ],
+        [
+          724.0,
+          658.0
+        ]
+      ],
+      "bbox": [
+        701.0,
+        654.0,
+        746.0,
+        694.0
+      ],
+      "text": "M.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          727.0,
+          565.0
+        ],
+        [
+          730.0,
+          548.0
+        ]
+      ],
+      "bbox": [
+        706.0,
+        543.0,
+        746.0,
+        567.0
+      ],
+      "text": "32",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          788.0,
+          809.0
+        ],
+        [
+          789.0,
+          928.0
+        ]
+      ],
+      "bbox": [
+        771.0,
+        808.0,
+        821.0,
+        928.0
+      ],
+      "text": "de",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          794.0,
+          654.0
+        ],
+        [
+          798.0,
+          594.0
+        ]
+      ],
+      "bbox": [
+        766.0,
+        592.0,
+        814.0,
+        654.0
+      ],
+      "text": "de",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          801.0,
+          514.0
+        ],
+        [
+          805.0,
+          487.0
+        ]
+      ],
+      "bbox": [
+        784.0,
+        484.0,
+        821.0,
+        516.0
+      ],
+      "text": "10",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          874.0,
+          845.0
+        ],
+        [
+          877.0,
+          783.0
+        ]
+      ],
+      "bbox": [
+        856.0,
+        782.0,
+        894.0,
+        845.0
+      ],
+      "text": "Monsieur",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          880.0,
+          747.0
+        ],
+        [
+          882.0,
+          735.0
+        ]
+      ],
+      "bbox": [
+        859.0,
+        732.0,
+        900.0,
+        749.0
+      ],
+      "text": "72",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 7,
+      "baseline": [
+        [
+          599.0,
+          1313.0
+        ],
+        [
+          648.0,
+          1314.0
+        ]
+      ],
+      "bbox": [
+        598.0,
+        1286.0,
+        648.0,
+        1326.0
+      ],
+      "text": "1142",
+      "confidence": null,
+      "regions": []
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 7483,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 32,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T19:57:02+00:00"
+}

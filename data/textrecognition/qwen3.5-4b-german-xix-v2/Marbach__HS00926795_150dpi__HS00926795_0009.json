@@ -1,0 +1,169 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00926795_150dpi",
+  "source": {
+    "name": "HS00926795_0009.jpg",
+    "bytes": 307176,
+    "sha256": "441580aae4961dc1834ebe95188f5cdbb8d50f07a6cc3bd681dacd826cb42660",
+    "remote": "digitalisate/Marbach/HS00926795_150dpi/HS00926795_0009.jpg",
+    "key": "Marbach__HS00926795_150dpi__HS00926795_0009",
+    "working_copy": "HS00926795_0009.jpg"
+  },
+  "text": "N.O.B. daß der Bruchfuß dem Siegreiberg Stalthein: einen Meister, nennt, ist\nmir bekannt, aber dieser damals öfters vorkommene Ausdruck scheint\nraths einen Titel, als ein persönliches Verhältniß zu bezeichnen.\n528.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          136.0,
+          327.0
+        ],
+        [
+          219.0,
+          328.0
+        ],
+        [
+          410.0,
+          319.0
+        ],
+        [
+          697.0,
+          318.0
+        ],
+        [
+          835.0,
+          322.0
+        ],
+        [
+          1179.0,
+          343.0
+        ]
+      ],
+      "bbox": [
+        136.0,
+        281.0,
+        1179.0,
+        357.0
+      ],
+      "text": "N.O.B. daß der Bruchfuß dem Siegreiberg Stalthein: einen Meister, nennt, ist",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          169.0,
+          363.0
+        ],
+        [
+          371.0,
+          357.0
+        ],
+        [
+          654.0,
+          357.0
+        ],
+        [
+          875.0,
+          363.0
+        ],
+        [
+          1007.0,
+          375.0
+        ],
+        [
+          1143.0,
+          376.0
+        ]
+      ],
+      "bbox": [
+        168.0,
+        327.0,
+        1143.0,
+        387.0
+      ],
+      "text": "mir bekannt, aber dieser damals öfters vorkommene Ausdruck scheint",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          163.0,
+          397.0
+        ],
+        [
+          278.0,
+          400.0
+        ],
+        [
+          679.0,
+          396.0
+        ],
+        [
+          1073.0,
+          414.0
+        ]
+      ],
+      "bbox": [
+        162.0,
+        361.0,
+        1073.0,
+        434.0
+      ],
+      "text": "raths einen Titel, als ein persönliches Verhältniß zu bezeichnen.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          658.0,
+          1374.0
+        ],
+        [
+          704.0,
+          1374.0
+        ]
+      ],
+      "bbox": [
+        658.0,
+        1344.0,
+        704.0,
+        1388.0
+      ],
+      "text": "528.",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 7972,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 32,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T20:42:35+00:00"
+}

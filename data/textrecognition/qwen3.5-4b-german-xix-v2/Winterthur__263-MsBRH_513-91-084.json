@@ -1,0 +1,141 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Winterthur",
+  "source": {
+    "name": "263-MsBRH_513-91-084.jpg",
+    "bytes": 5014744,
+    "sha256": "8eaa7a28cd92c36219eb9e17c55115939cf50b0b5d124ba083a3f4b0ae514d45",
+    "remote": "digitalisate/Winterthur/263-MsBRH_513-91-084.jpg",
+    "key": "Winterthur__263-MsBRH_513-91-084",
+    "working_copy": "263-MsBRH_513-91-084.jpg"
+  },
+  "text": "Hochwölge bauen.\ndem Herrn Taner Joh. von Kaßberg\n2. Limerader und Mollaster Ritter\nin Reppischauen Land. Thurgau",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          2459.0,
+          1379.0
+        ],
+        [
+          3700.0,
+          1376.0
+        ]
+      ],
+      "bbox": [
+        2456.0,
+        1276.0,
+        3700.0,
+        1481.0
+      ],
+      "text": "Hochwölge bauen.",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1492.0,
+          1827.0
+        ],
+        [
+          2345.0,
+          1875.0
+        ],
+        [
+          3690.0,
+          1883.0
+        ]
+      ],
+      "bbox": [
+        1490.0,
+        1738.0,
+        3690.0,
+        1929.0
+      ],
+      "text": "dem Herrn Taner Joh. von Kaßberg",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1519.0,
+          1994.0
+        ],
+        [
+          2977.0,
+          2053.0
+        ],
+        [
+          3897.0,
+          2053.0
+        ]
+      ],
+      "bbox": [
+        1517.0,
+        1932.0,
+        3897.0,
+        2129.0
+      ],
+      "text": "2. Limerader und Mollaster Ritter",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          1795.0,
+          2906.0
+        ],
+        [
+          3393.0,
+          2893.0
+        ],
+        [
+          3973.0,
+          2901.0
+        ]
+      ],
+      "bbox": [
+        1792.0,
+        2777.0,
+        3973.0,
+        3047.0
+      ],
+      "text": "in Reppischauen Land. Thurgau",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 11240,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T15:13:56+00:00"
+}

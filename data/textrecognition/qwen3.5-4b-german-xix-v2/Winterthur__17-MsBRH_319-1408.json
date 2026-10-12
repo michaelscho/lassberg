@@ -1,0 +1,129 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Winterthur",
+  "source": {
+    "name": "17-MsBRH_319-1408.jpg",
+    "bytes": 4402332,
+    "sha256": "2a9afec35e178b2c5eb4d51e5a15001c7ffe71457090bf3e419088353f613545",
+    "remote": "digitalisate/Winterthur/17-MsBRH_319-1408.jpg",
+    "key": "Winterthur__17-MsBRH_319-1408",
+    "working_copy": "17-MsBRH_319-1408.jpg"
+  },
+  "text": "Sr. Hochwohlgeboren\nDem Herrn Baron Joseph von\nLaßburg.\nConstan d.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          2830.0,
+          1199.0
+        ],
+        [
+          4181.0,
+          1191.0
+        ]
+      ],
+      "bbox": [
+        2827.0,
+        1081.0,
+        4181.0,
+        1250.0
+      ],
+      "text": "Sr. Hochwohlgeboren",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          2666.0,
+          1447.0
+        ],
+        [
+          4969.0,
+          1425.0
+        ]
+      ],
+      "bbox": [
+        2663.0,
+        1318.0,
+        4969.0,
+        1503.0
+      ],
+      "text": "Dem Herrn Baron Joseph von",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          3398.0,
+          1659.0
+        ],
+        [
+          4149.0,
+          1643.0
+        ]
+      ],
+      "bbox": [
+        3395.0,
+        1535.0,
+        4149.0,
+        1708.0
+      ],
+      "text": "Laßburg.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          3877.0,
+          2060.0
+        ],
+        [
+          4617.0,
+          2055.0
+        ]
+      ],
+      "bbox": [
+        3874.0,
+        1899.0,
+        4617.0,
+        2106.0
+      ],
+      "text": "Constan d.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 13619,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T13:59:58+00:00"
+}

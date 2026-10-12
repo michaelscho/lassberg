@@ -1,0 +1,356 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Aarau/upload/lassberg-letter-0815",
+  "source": {
+    "name": "00009-scan_2025-03-21_11-53-09l.tif",
+    "bytes": 939704,
+    "sha256": "76bad8cd6b88031153a4e709dad0d1de64c8decc4a1085de488fb143ee296782",
+    "remote": "digitalisate/Aarau/upload/lassberg-letter-0815/00009-scan_2025-03-21_11-53-09l.tif",
+    "key": "Aarau__upload__lassberg-letter-0815__00009-scan_2025-03-21_11-53-09l",
+    "working_copy": "00009-scan_2025-03-21_11-53-09l.jpg"
+  },
+  "text": "Depuis\nM.\nnur\nMonsieur\nDein\n17\nBern",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          658.0,
+          1501.0
+        ],
+        [
+          843.0,
+          1501.0
+        ]
+      ],
+      "bbox": [
+        658.0,
+        1446.0,
+        843.0,
+        1583.0
+      ],
+      "text": "Depuis",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1159.0,
+          1758.0
+        ],
+        [
+          1159.0,
+          1796.0
+        ]
+      ],
+      "bbox": [
+        1099.0,
+        1758.0,
+        1206.0,
+        1796.0
+      ],
+      "text": "M.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1601.0,
+          1130.0
+        ],
+        [
+          1605.0,
+          1062.0
+        ]
+      ],
+      "bbox": [
+        1569.0,
+        1059.0,
+        1626.0,
+        1130.0
+      ],
+      "text": "nur",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          1597.0,
+          1256.0
+        ],
+        [
+          1605.0,
+          1384.0
+        ]
+      ],
+      "bbox": [
+        1560.0,
+        1254.0,
+        1637.0,
+        1384.0
+      ],
+      "text": "Monsieur",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          1601.0,
+          1819.0
+        ],
+        [
+          1601.0,
+          1960.0
+        ]
+      ],
+      "bbox": [
+        1571.0,
+        1819.0,
+        1635.0,
+        1960.0
+      ],
+      "text": "Dein",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          1616.0,
+          1555.0
+        ],
+        [
+          1622.0,
+          1634.0
+        ]
+      ],
+      "bbox": [
+        1586.0,
+        1551.0,
+        1650.0,
+        1636.0
+      ],
+      "text": "17",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          1829.0,
+          1369.0
+        ],
+        [
+          1836.0,
+          1787.0
+        ]
+      ],
+      "bbox": [
+        1780.0,
+        1367.0,
+        1880.0,
+        1787.0
+      ],
+      "text": "Bern",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 18838,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "Dispositie\nTo\nTo\nMelchior Jansz\nFavoured by\nin\nVan Mallabaar",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            658.0,
+            1501.0
+          ],
+          [
+            843.0,
+            1501.0
+          ]
+        ],
+        "bbox": [
+          658.0,
+          1446.0,
+          843.0,
+          1583.0
+        ],
+        "text": "Dispositie",
+        "confidence": 0.7078096807003021,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            1159.0,
+            1758.0
+          ],
+          [
+            1159.0,
+            1796.0
+          ]
+        ],
+        "bbox": [
+          1099.0,
+          1758.0,
+          1206.0,
+          1796.0
+        ],
+        "text": "To",
+        "confidence": 0.3792465180158615,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            1601.0,
+            1130.0
+          ],
+          [
+            1605.0,
+            1062.0
+          ]
+        ],
+        "bbox": [
+          1569.0,
+          1059.0,
+          1626.0,
+          1130.0
+        ],
+        "text": "To",
+        "confidence": 0.2926158457994461,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            1597.0,
+            1256.0
+          ],
+          [
+            1605.0,
+            1384.0
+          ]
+        ],
+        "bbox": [
+          1560.0,
+          1254.0,
+          1637.0,
+          1384.0
+        ],
+        "text": "Melchior Jansz",
+        "confidence": 0.7308510084237371,
+        "regions": []
+      },
+      {
+        "order": 4,
+        "baseline": [
+          [
+            1601.0,
+            1819.0
+          ],
+          [
+            1601.0,
+            1960.0
+          ]
+        ],
+        "bbox": [
+          1571.0,
+          1819.0,
+          1635.0,
+          1960.0
+        ],
+        "text": "Favoured by",
+        "confidence": 0.7459813017736782,
+        "regions": []
+      },
+      {
+        "order": 5,
+        "baseline": [
+          [
+            1616.0,
+            1555.0
+          ],
+          [
+            1622.0,
+            1634.0
+          ]
+        ],
+        "bbox": [
+          1586.0,
+          1551.0,
+          1650.0,
+          1636.0
+        ],
+        "text": "in",
+        "confidence": 0.39048317074775696,
+        "regions": []
+      },
+      {
+        "order": 6,
+        "baseline": [
+          [
+            1829.0,
+            1369.0
+          ],
+          [
+            1836.0,
+            1787.0
+          ]
+        ],
+        "bbox": [
+          1780.0,
+          1367.0,
+          1880.0,
+          1787.0
+        ],
+        "text": "Van Mallabaar",
+        "confidence": 0.7112575144721911,
+        "regions": []
+      }
+    ],
+    "confidence": 0.5654635771332819,
+    "timing_ms": 26978,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-21T16:02:42+00:00"
+}

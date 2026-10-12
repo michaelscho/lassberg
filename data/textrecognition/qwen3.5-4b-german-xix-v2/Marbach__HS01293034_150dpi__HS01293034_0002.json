@@ -1,0 +1,247 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS01293034_150dpi",
+  "source": {
+    "name": "HS01293034_0002.jpg",
+    "bytes": 113918,
+    "sha256": "f61939ebb3e7dd5abc79cf54364d21478f3a1f9bb0b2f8354bc75f62418a005f",
+    "remote": "digitalisate/Marbach/HS01293034_150dpi/HS01293034_0002.jpg",
+    "key": "Marbach__HS01293034_150dpi__HS01293034_0002",
+    "working_copy": "HS01293034_0002.jpg"
+  },
+  "text": "Otto. 1849.\nN. 143; a.\nJassberg\nso sehr\nJorists von\n22. 12. 1825\n2 X.\nDabei.\n4. Mr.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          684.0,
+          115.0
+        ],
+        [
+          889.0,
+          115.0
+        ]
+      ],
+      "bbox": [
+        684.0,
+        82.0,
+        889.0,
+        127.0
+      ],
+      "text": "Otto. 1849.",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          745.0,
+          218.0
+        ],
+        [
+          904.0,
+          216.0
+        ]
+      ],
+      "bbox": [
+        744.0,
+        185.0,
+        904.0,
+        239.0
+      ],
+      "text": "N. 143; a.",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          309.0,
+          378.0
+        ],
+        [
+          419.0,
+          380.0
+        ]
+      ],
+      "bbox": [
+        308.0,
+        345.0,
+        419.0,
+        402.0
+      ],
+      "text": "Jassberg",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          303.0,
+          450.0
+        ],
+        [
+          369.0,
+          452.0
+        ]
+      ],
+      "bbox": [
+        302.0,
+        417.0,
+        369.0,
+        469.0
+      ],
+      "text": "so sehr",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          455.0,
+          382.0
+        ],
+        [
+          645.0,
+          387.0
+        ]
+      ],
+      "bbox": [
+        454.0,
+        354.0,
+        645.0,
+        407.0
+      ],
+      "text": "Jorists von",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          300.0,
+          518.0
+        ],
+        [
+          486.0,
+          517.0
+        ]
+      ],
+      "bbox": [
+        299.0,
+        486.0,
+        486.0,
+        541.0
+      ],
+      "text": "22. 12. 1825",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          293.0,
+          587.0
+        ],
+        [
+          366.0,
+          589.0
+        ]
+      ],
+      "bbox": [
+        292.0,
+        559.0,
+        366.0,
+        607.0
+      ],
+      "text": "2 X.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 7,
+      "baseline": [
+        [
+          298.0,
+          695.0
+        ],
+        [
+          382.0,
+          694.0
+        ]
+      ],
+      "bbox": [
+        297.0,
+        658.0,
+        382.0,
+        713.0
+      ],
+      "text": "Dabei.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 8,
+      "baseline": [
+        [
+          526.0,
+          1014.0
+        ],
+        [
+          655.0,
+          1014.0
+        ]
+      ],
+      "bbox": [
+        526.0,
+        990.0,
+        655.0,
+        1034.0
+      ],
+      "text": "4. Mr.",
+      "confidence": null,
+      "regions": []
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 6072,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 46,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T21:33:47+00:00"
+}

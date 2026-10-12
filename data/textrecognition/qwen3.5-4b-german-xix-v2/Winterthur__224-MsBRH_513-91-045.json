@@ -1,0 +1,135 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Winterthur",
+  "source": {
+    "name": "224-MsBRH_513-91-045.jpg",
+    "bytes": 4125808,
+    "sha256": "c56132fee375ded9d00b199ac19811bc0b58a9df1d9da047980d39673a50184b",
+    "remote": "digitalisate/Winterthur/224-MsBRH_513-91-045.jpg",
+    "key": "Winterthur__224-MsBRH_513-91-045",
+    "working_copy": "224-MsBRH_513-91-045.jpg"
+  },
+  "text": "Zahne abgebornen\nDem Dreiherrn Joseph von Küßberg\n1. Cammerer und Malletser Ritter\nin Spgr. Hauen d. Thurgau",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          2096.0,
+          1289.0
+        ],
+        [
+          2450.0,
+          1301.0
+        ],
+        [
+          3464.0,
+          1293.0
+        ]
+      ],
+      "bbox": [
+        2093.0,
+        1195.0,
+        3464.0,
+        1392.0
+      ],
+      "text": "Zahne abgebornen",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1308.0,
+          1687.0
+        ],
+        [
+          2056.0,
+          1699.0
+        ],
+        [
+          3538.0,
+          1690.0
+        ]
+      ],
+      "bbox": [
+        1308.0,
+        1564.0,
+        3538.0,
+        1803.0
+      ],
+      "text": "Dem Dreiherrn Joseph von Küßberg",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1466.0,
+          1859.0
+        ],
+        [
+          2421.0,
+          1867.0
+        ],
+        [
+          3579.0,
+          1842.0
+        ]
+      ],
+      "bbox": [
+        1466.0,
+        1776.0,
+        3579.0,
+        1918.0
+      ],
+      "text": "1. Cammerer und Malletser Ritter",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          1896.0,
+          2624.0
+        ],
+        [
+          3599.0,
+          2624.0
+        ]
+      ],
+      "bbox": [
+        1896.0,
+        2519.0,
+        3599.0,
+        2728.0
+      ],
+      "text": "in Spgr. Hauen d. Thurgau",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 10075,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T14:42:07+00:00"
+}

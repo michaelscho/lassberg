@@ -1,0 +1,220 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00787920_150dpi",
+  "source": {
+    "name": "HS00787920_150dpi_0003.jpg",
+    "bytes": 105808,
+    "sha256": "34934a02c3c09b37dbf3786eb1e9d0e5d715becc39d7b370722bd4432c5bab3e",
+    "remote": "digitalisate/Marbach/HS00787920_150dpi/HS00787920_150dpi_0003.jpg",
+    "key": "Marbach__HS00787920_150dpi__HS00787920_150dpi_0003",
+    "working_copy": "HS00787920_150dpi_0003.jpg"
+  },
+  "text": "s¬\nHerr von\nden Com-\ns¬",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          118.0,
+          113.0
+        ],
+        [
+          137.0,
+          115.0
+        ]
+      ],
+      "bbox": [
+        117.0,
+        89.0,
+        138.0,
+        123.0
+      ],
+      "text": "s¬",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          608.0,
+          284.0
+        ],
+        [
+          744.0,
+          283.0
+        ]
+      ],
+      "bbox": [
+        607.0,
+        264.0,
+        744.0,
+        297.0
+      ],
+      "text": "Herr von",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          675.0,
+          364.0
+        ],
+        [
+          741.0,
+          360.0
+        ],
+        [
+          844.0,
+          358.0
+        ]
+      ],
+      "bbox": [
+        674.0,
+        337.0,
+        844.0,
+        372.0
+      ],
+      "text": "den Com-",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          773.0,
+          527.0
+        ],
+        [
+          785.0,
+          525.0
+        ]
+      ],
+      "bbox": [
+        769.0,
+        498.0,
+        787.0,
+        539.0
+      ],
+      "text": "s¬",
+      "confidence": null,
+      "regions": []
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 29390,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "602\nFeitzer von\nBodmann\n2",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            118.0,
+            113.0
+          ],
+          [
+            137.0,
+            115.0
+          ]
+        ],
+        "bbox": [
+          117.0,
+          89.0,
+          138.0,
+          123.0
+        ],
+        "text": "602",
+        "confidence": 0.9262125690778097,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            608.0,
+            284.0
+          ],
+          [
+            744.0,
+            283.0
+          ]
+        ],
+        "bbox": [
+          607.0,
+          264.0,
+          744.0,
+          297.0
+        ],
+        "text": "Feitzer von",
+        "confidence": 0.8387260301546617,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            675.0,
+            364.0
+          ],
+          [
+            741.0,
+            360.0
+          ],
+          [
+            844.0,
+            358.0
+          ]
+        ],
+        "bbox": [
+          674.0,
+          337.0,
+          844.0,
+          372.0
+        ],
+        "text": "Bodmann",
+        "confidence": 0.8415417671203613,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            773.0,
+            527.0
+          ],
+          [
+            785.0,
+            525.0
+          ]
+        ],
+        "bbox": [
+          769.0,
+          498.0,
+          787.0,
+          539.0
+        ],
+        "text": "2",
+        "confidence": 0.867089569568634,
+        "regions": []
+      }
+    ],
+    "confidence": 0.8683924839803667,
+    "timing_ms": 33032,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T04:31:14+00:00"
+}

@@ -1,0 +1,234 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Briefe UB Freiburg/lassberg-letter-0384",
+  "source": {
+    "name": "006.tif",
+    "bytes": 21033202,
+    "sha256": "cbabbf2bab39e42b00a2447242195fe749eb3107a43b23a1d4747d3982dabd97",
+    "remote": "digitalisate/Briefe UB Freiburg/lassberg-letter-0384/006.tif",
+    "key": "Briefe UB Freiburg__lassberg-letter-0384__006",
+    "working_copy": "006.jpg"
+  },
+  "text": "pr. Postwagen zugesandt und um bin ich im Begriffe der Albis\nz. erstiegen, den ich aber, es ist nun: E. schon halb 3. Uhr, wol\nschwerlich mehr bei Tage erreichen wort. Tale carissima et\nme a mere perte.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          131.0,
+          391.0
+        ],
+        [
+          970.0,
+          400.0
+        ],
+        [
+          2007.0,
+          371.0
+        ]
+      ],
+      "bbox": [
+        131.0,
+        310.0,
+        2007.0,
+        449.0
+      ],
+      "text": "pr. Postwagen zugesandt und um bin ich im Begriffe der Albis",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          164.0,
+          570.0
+        ],
+        [
+          1855.0,
+          561.0
+        ]
+      ],
+      "bbox": [
+        162.0,
+        502.0,
+        1855.0,
+        626.0
+      ],
+      "text": "z. erstiegen, den ich aber, es ist nun: E. schon halb 3. Uhr, wol",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          159.0,
+          743.0
+        ],
+        [
+          769.0,
+          734.0
+        ],
+        [
+          1981.0,
+          736.0
+        ]
+      ],
+      "bbox": [
+        157.0,
+        668.0,
+        1981.0,
+        791.0
+      ],
+      "text": "schwerlich mehr bei Tage erreichen wort. Tale carissima et",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          146.0,
+          901.0
+        ],
+        [
+          815.0,
+          912.0
+        ]
+      ],
+      "bbox": [
+        144.0,
+        846.0,
+        815.0,
+        966.0
+      ],
+      "text": "me a mere perte.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 19221,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "pr. Postwagen zugesandt und mir bin ich im begriffnen von albis\nz. ersteigen, den ich aber, es ist münchen schon halb 3. Uhr, wol\nschwerlich mehr bei tuge vernichten werde. Vale carissima et\nme a mare perqe",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            131.0,
+            391.0
+          ],
+          [
+            970.0,
+            400.0
+          ],
+          [
+            2007.0,
+            371.0
+          ]
+        ],
+        "bbox": [
+          131.0,
+          310.0,
+          2007.0,
+          449.0
+        ],
+        "text": "pr. Postwagen zugesandt und mir bin ich im begriffnen von albis",
+        "confidence": 0.8736853646853614,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            164.0,
+            570.0
+          ],
+          [
+            1855.0,
+            561.0
+          ]
+        ],
+        "bbox": [
+          162.0,
+          502.0,
+          1855.0,
+          626.0
+        ],
+        "text": "z. ersteigen, den ich aber, es ist münchen schon halb 3. Uhr, wol",
+        "confidence": 0.8835416273637251,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            159.0,
+            743.0
+          ],
+          [
+            769.0,
+            734.0
+          ],
+          [
+            1981.0,
+            736.0
+          ]
+        ],
+        "bbox": [
+          157.0,
+          668.0,
+          1981.0,
+          791.0
+        ],
+        "text": "schwerlich mehr bei tuge vernichten werde. Vale carissima et",
+        "confidence": 0.8683402160803477,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            146.0,
+            901.0
+          ],
+          [
+            815.0,
+            912.0
+          ]
+        ],
+        "bbox": [
+          144.0,
+          846.0,
+          815.0,
+          966.0
+        ],
+        "text": "me a mare perqe",
+        "confidence": 0.8591607173283895,
+        "regions": []
+      }
+    ],
+    "confidence": 0.8711819813644559,
+    "timing_ms": 106487,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T01:12:36+00:00"
+}

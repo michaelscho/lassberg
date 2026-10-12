@@ -1,0 +1,124 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Weimar/FA Hodel 236/Weimar",
+  "source": {
+    "name": "GSA_96_2725_Seite476.jpg",
+    "bytes": 4587925,
+    "sha256": "cdcd0447e701e97a516d85f142097994ba222e89aba48bc6def25410eefda2cd",
+    "remote": "digitalisate/Weimar/FA Hodel 236/Weimar/GSA_96_2725_Seite476.jpg",
+    "key": "Weimar__FA Hodel 236__Weimar__GSA_96_2725_Seite476",
+    "working_copy": "GSA_96_2725_Seite476.jpg"
+  },
+  "text": "12. Febr.\nA",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          2435.0,
+          550.0
+        ],
+        [
+          2590.0,
+          550.0
+        ]
+      ],
+      "bbox": [
+        2434.0,
+        545.0,
+        2590.0,
+        568.0
+      ],
+      "text": "12. Febr.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          505.0,
+          460.0
+        ],
+        [
+          602.0,
+          460.0
+        ]
+      ],
+      "bbox": [
+        505.0,
+        393.0,
+        602.0,
+        471.0
+      ],
+      "text": "A",
+      "confidence": null,
+      "regions": []
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 20288,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "Classic\nmaater",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            505.0,
+            460.0
+          ],
+          [
+            602.0,
+            460.0
+          ]
+        ],
+        "bbox": [
+          505.0,
+          393.0,
+          602.0,
+          471.0
+        ],
+        "text": "Classic",
+        "confidence": 0.806009692805154,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            2435.0,
+            550.0
+          ],
+          [
+            2590.0,
+            550.0
+          ]
+        ],
+        "bbox": [
+          2434.0,
+          545.0,
+          2590.0,
+          568.0
+        ],
+        "text": "maater",
+        "confidence": 0.8303787608941396,
+        "regions": []
+      }
+    ],
+    "confidence": 0.8181942268496468,
+    "timing_ms": 18610,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T11:36:56+00:00"
+}

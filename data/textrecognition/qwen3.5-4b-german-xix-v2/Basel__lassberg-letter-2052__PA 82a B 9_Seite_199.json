@@ -1,0 +1,402 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Basel/lassberg-letter-2052",
+  "source": {
+    "name": "PA 82a B 9_Seite_199.jpg",
+    "bytes": 134813,
+    "sha256": "417572cfcb54f622f37d6d9b5eec3f9c34e4537cb71861e7a7ac4d3e37b79e4d",
+    "remote": "digitalisate/Basel/lassberg-letter-2052/PA 82a B 9_Seite_199.jpg",
+    "key": "Basel__lassberg-letter-2052__PA 82a B 9_Seite_199",
+    "working_copy": "PA 82a B 9_Seite_199.jpg"
+  },
+  "text": "ergebenste Empfehlung, auch an die gnädige Frau\n7\nvorrufen, und unser beider beste Wünsche in\nglücklicher Reise und leichtem Unangeneh-\nbel diger Unterstützung\nEw. Hochwohlgeboren\ngehabens auf ergebener Dauer baar\nWith Wimmerwagels Dr. Prof.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          185.0,
+          356.0
+        ],
+        [
+          620.0,
+          357.0
+        ]
+      ],
+      "bbox": [
+        184.0,
+        337.0,
+        620.0,
+        378.0
+      ],
+      "text": "ergebenste Empfehlung, auch an die gnädige Frau",
+      "confidence": null,
+      "regions": [
+        "_612dfbf8-776a-4f81-8732-813203e72346"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          187.0,
+          405.0
+        ],
+        [
+          196.0,
+          405.0
+        ]
+      ],
+      "bbox": [
+        187.0,
+        378.0,
+        196.0,
+        412.0
+      ],
+      "text": "7",
+      "confidence": null,
+      "regions": [
+        "_612dfbf8-776a-4f81-8732-813203e72346"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          214.0,
+          405.0
+        ],
+        [
+          590.0,
+          406.0
+        ]
+      ],
+      "bbox": [
+        213.0,
+        384.0,
+        590.0,
+        424.0
+      ],
+      "text": "vorrufen, und unser beider beste Wünsche in",
+      "confidence": null,
+      "regions": [
+        "_612dfbf8-776a-4f81-8732-813203e72346"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          188.0,
+          457.0
+        ],
+        [
+          597.0,
+          454.0
+        ]
+      ],
+      "bbox": [
+        187.0,
+        429.0,
+        597.0,
+        474.0
+      ],
+      "text": "glücklicher Reise und leichtem Unangeneh-",
+      "confidence": null,
+      "regions": [
+        "_612dfbf8-776a-4f81-8732-813203e72346"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          188.0,
+          505.0
+        ],
+        [
+          399.0,
+          506.0
+        ]
+      ],
+      "bbox": [
+        188.0,
+        479.0,
+        399.0,
+        525.0
+      ],
+      "text": "bel diger Unterstützung",
+      "confidence": null,
+      "regions": [
+        "_612dfbf8-776a-4f81-8732-813203e72346"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          340.0,
+          554.0
+        ],
+        [
+          524.0,
+          554.0
+        ]
+      ],
+      "bbox": [
+        340.0,
+        532.0,
+        524.0,
+        571.0
+      ],
+      "text": "Ew. Hochwohlgeboren",
+      "confidence": null,
+      "regions": [
+        "_612dfbf8-776a-4f81-8732-813203e72346"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          318.0,
+          607.0
+        ],
+        [
+          603.0,
+          603.0
+        ]
+      ],
+      "bbox": [
+        317.0,
+        582.0,
+        603.0,
+        623.0
+      ],
+      "text": "gehabens auf ergebener Dauer baar",
+      "confidence": null,
+      "regions": [
+        "_612dfbf8-776a-4f81-8732-813203e72346"
+      ]
+    },
+    {
+      "order": 7,
+      "baseline": [
+        [
+          348.0,
+          658.0
+        ],
+        [
+          577.0,
+          659.0
+        ]
+      ],
+      "bbox": [
+        348.0,
+        629.0,
+        577.0,
+        677.0
+      ],
+      "text": "With Wimmerwagels Dr. Prof.",
+      "confidence": null,
+      "regions": [
+        "_612dfbf8-776a-4f81-8732-813203e72346"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 14087,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "ergebenste Empfehlung, nuch an die gündige Frau\nBaronian,\nBaronian, und unser beider beste Wünsche zu\nglücklicher Reise und liebten Umzug und\nbaldiger Umgewöhnung.\nEw. Hochwohlgeboren\ngehortanist ergebener dann barer\nWilh. Wilhelm Pels. Vorf.",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            185.0,
+            356.0
+          ],
+          [
+            620.0,
+            357.0
+          ]
+        ],
+        "bbox": [
+          184.0,
+          337.0,
+          620.0,
+          378.0
+        ],
+        "text": "ergebenste Empfehlung, nuch an die gündige Frau",
+        "confidence": 0.894136612303555,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            187.0,
+            405.0
+          ],
+          [
+            196.0,
+            405.0
+          ]
+        ],
+        "bbox": [
+          187.0,
+          378.0,
+          196.0,
+          412.0
+        ],
+        "text": "Baronian,",
+        "confidence": 0.761025177107917,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            214.0,
+            405.0
+          ],
+          [
+            590.0,
+            406.0
+          ]
+        ],
+        "bbox": [
+          213.0,
+          384.0,
+          590.0,
+          424.0
+        ],
+        "text": "Baronian, und unser beider beste Wünsche zu",
+        "confidence": 0.8936764536933466,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            188.0,
+            457.0
+          ],
+          [
+            597.0,
+            454.0
+          ]
+        ],
+        "bbox": [
+          187.0,
+          429.0,
+          597.0,
+          474.0
+        ],
+        "text": "glücklicher Reise und liebten Umzug und",
+        "confidence": 0.8639399081468582,
+        "regions": []
+      },
+      {
+        "order": 4,
+        "baseline": [
+          [
+            188.0,
+            505.0
+          ],
+          [
+            399.0,
+            506.0
+          ]
+        ],
+        "bbox": [
+          188.0,
+          479.0,
+          399.0,
+          525.0
+        ],
+        "text": "baldiger Umgewöhnung.",
+        "confidence": 0.884432928128676,
+        "regions": []
+      },
+      {
+        "order": 5,
+        "baseline": [
+          [
+            340.0,
+            554.0
+          ],
+          [
+            524.0,
+            554.0
+          ]
+        ],
+        "bbox": [
+          340.0,
+          532.0,
+          524.0,
+          571.0
+        ],
+        "text": "Ew. Hochwohlgeboren",
+        "confidence": 0.8728955905688437,
+        "regions": []
+      },
+      {
+        "order": 6,
+        "baseline": [
+          [
+            318.0,
+            607.0
+          ],
+          [
+            603.0,
+            603.0
+          ]
+        ],
+        "bbox": [
+          317.0,
+          582.0,
+          603.0,
+          623.0
+        ],
+        "text": "gehortanist ergebener dann barer",
+        "confidence": 0.8486480498686433,
+        "regions": []
+      },
+      {
+        "order": 7,
+        "baseline": [
+          [
+            348.0,
+            658.0
+          ],
+          [
+            577.0,
+            659.0
+          ]
+        ],
+        "bbox": [
+          348.0,
+          629.0,
+          577.0,
+          677.0
+        ],
+        "text": "Wilh. Wilhelm Pels. Vorf.",
+        "confidence": 0.6976005148887634,
+        "regions": []
+      }
+    ],
+    "confidence": 0.8395444043383253,
+    "timing_ms": 25465,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-21T18:45:28+00:00"
+}

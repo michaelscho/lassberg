@@ -1,0 +1,264 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00865676_150dpi",
+  "source": {
+    "name": "HS00865676_150dpi_0003.jpg",
+    "bytes": 121260,
+    "sha256": "e456f9872c97fef56abd01fbff38bcb2e111d11a9089e3b467ac84009d92b597",
+    "remote": "digitalisate/Marbach/HS00865676_150dpi/HS00865676_150dpi_0003.jpg",
+    "key": "Marbach__HS00865676_150dpi__HS00865676_150dpi_0003",
+    "working_copy": "HS00865676_150dpi_0003.jpg"
+  },
+  "text": "der\ns¬\ns¬\ns¬\nVerschieden",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          413.0,
+          395.0
+        ],
+        [
+          448.0,
+          396.0
+        ]
+      ],
+      "bbox": [
+        413.0,
+        363.0,
+        449.0,
+        403.0
+      ],
+      "text": "der",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          248.0,
+          507.0
+        ],
+        [
+          288.0,
+          506.0
+        ]
+      ],
+      "bbox": [
+        246.0,
+        482.0,
+        288.0,
+        519.0
+      ],
+      "text": "s¬",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          371.0,
+          565.0
+        ],
+        [
+          386.0,
+          565.0
+        ]
+      ],
+      "bbox": [
+        371.0,
+        546.0,
+        386.0,
+        572.0
+      ],
+      "text": "s¬",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          425.0,
+          496.0
+        ],
+        [
+          434.0,
+          496.0
+        ]
+      ],
+      "bbox": [
+        424.0,
+        476.0,
+        435.0,
+        508.0
+      ],
+      "text": "s¬",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          621.0,
+          502.0
+        ],
+        [
+          749.0,
+          504.0
+        ]
+      ],
+      "bbox": [
+        620.0,
+        473.0,
+        749.0,
+        518.0
+      ],
+      "text": "Verschieden",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 11957,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "Tübingen\n(Essberg)\nNotizen\nJoseph\nVerschiedenes",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            413.0,
+            395.0
+          ],
+          [
+            448.0,
+            396.0
+          ]
+        ],
+        "bbox": [
+          413.0,
+          363.0,
+          449.0,
+          403.0
+        ],
+        "text": "Tübingen",
+        "confidence": 0.9170727166864607,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            248.0,
+            507.0
+          ],
+          [
+            288.0,
+            506.0
+          ]
+        ],
+        "bbox": [
+          246.0,
+          482.0,
+          288.0,
+          519.0
+        ],
+        "text": "(Essberg)",
+        "confidence": 0.7701391279697418,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            371.0,
+            565.0
+          ],
+          [
+            386.0,
+            565.0
+          ]
+        ],
+        "bbox": [
+          371.0,
+          546.0,
+          386.0,
+          572.0
+        ],
+        "text": "Notizen",
+        "confidence": 0.9270867960793632,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            425.0,
+            496.0
+          ],
+          [
+            434.0,
+            496.0
+          ]
+        ],
+        "bbox": [
+          424.0,
+          476.0,
+          435.0,
+          508.0
+        ],
+        "text": "Joseph",
+        "confidence": 0.847564364473025,
+        "regions": []
+      },
+      {
+        "order": 4,
+        "baseline": [
+          [
+            621.0,
+            502.0
+          ],
+          [
+            749.0,
+            504.0
+          ]
+        ],
+        "bbox": [
+          620.0,
+          473.0,
+          749.0,
+          518.0
+        ],
+        "text": "Verschiedenes",
+        "confidence": 0.9248327887975253,
+        "regions": []
+      }
+    ],
+    "confidence": 0.8773391588012232,
+    "timing_ms": 28937,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T15:00:13+00:00"
+}

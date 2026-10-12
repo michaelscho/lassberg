@@ -1,0 +1,153 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "UB Bern",
+  "source": {
+    "name": "Mss_h_h_XLIV_180_32_09.tif",
+    "bytes": 30773740,
+    "sha256": "58cd275d4712c05f21b238cf5d0bf6a253fda381fc4077b0b095ae9e2932a927",
+    "remote": "digitalisate/UB Bern/Mss_h_h_XLIV_180_32_09.tif",
+    "key": "UB Bern__Mss_h_h_XLIV_180_32_09",
+    "working_copy": "Mss_h_h_XLIV_180_32_09.jpg"
+  },
+  "text": "s¬\nHorchecker Classic\nmit dem\n8\n6",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          174.0,
+          114.0
+        ],
+        [
+          280.0,
+          114.0
+        ]
+      ],
+      "bbox": [
+        174.0,
+        80.0,
+        280.0,
+        148.0
+      ],
+      "text": "s¬",
+      "confidence": null,
+      "regions": [
+        "_44592a33-36b3-43aa-a8ef-fdcfe48006ad"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          456.0,
+          118.0
+        ],
+        [
+          800.0,
+          118.0
+        ]
+      ],
+      "bbox": [
+        456.0,
+        89.0,
+        800.0,
+        155.0
+      ],
+      "text": "Horchecker Classic",
+      "confidence": null,
+      "regions": [
+        "_a2c592ac-815e-45e1-b0bc-bae897d5b4f4"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          129.0,
+          1310.0
+        ],
+        [
+          726.0,
+          1306.0
+        ]
+      ],
+      "bbox": [
+        127.0,
+        1274.0,
+        726.0,
+        1348.0
+      ],
+      "text": "mit dem",
+      "confidence": null,
+      "regions": [
+        "_34c16455-049d-4661-9bf9-21121f96889a"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          384.0,
+          3587.0
+        ],
+        [
+          399.0,
+          3587.0
+        ]
+      ],
+      "bbox": [
+        384.0,
+        3557.0,
+        399.0,
+        3612.0
+      ],
+      "text": "8",
+      "confidence": null,
+      "regions": [
+        "_1191e042-05e6-460b-9850-5c5893838503"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          384.0,
+          3704.0
+        ],
+        [
+          390.0,
+          3693.0
+        ]
+      ],
+      "bbox": [
+        354.0,
+        3674.0,
+        422.0,
+        3723.0
+      ],
+      "text": "6",
+      "confidence": null,
+      "regions": [
+        "_1191e042-05e6-460b-9850-5c5893838503"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 5020,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 55,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T00:54:42+00:00"
+}

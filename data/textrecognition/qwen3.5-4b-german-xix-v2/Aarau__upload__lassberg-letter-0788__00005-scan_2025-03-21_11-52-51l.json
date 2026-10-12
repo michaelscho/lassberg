@@ -1,0 +1,168 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Aarau/upload/lassberg-letter-0788",
+  "source": {
+    "name": "00005-scan_2025-03-21_11-52-51l.tif",
+    "bytes": 935509,
+    "sha256": "6a7397caff7e9597105e4f633aacf536ed90b30c022e15874cb11921ea9b10a8",
+    "remote": "digitalisate/Aarau/upload/lassberg-letter-0788/00005-scan_2025-03-21_11-52-51l.tif",
+    "key": "Aarau__upload__lassberg-letter-0788__00005-scan_2025-03-21_11-52-51l",
+    "working_copy": "00005-scan_2025-03-21_11-52-51l.jpg"
+  },
+  "text": "\"\n1849.\n1865.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          1762.0,
+          932.0
+        ],
+        [
+          1818.0,
+          932.0
+        ]
+      ],
+      "bbox": [
+        1762.0,
+        909.0,
+        1818.0,
+        974.0
+      ],
+      "text": "\"",
+      "confidence": null,
+      "regions": [
+        "_a975c53f-b220-448b-a345-1d18e843c790"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          2369.0,
+          2789.0
+        ],
+        [
+          2460.0,
+          2785.0
+        ]
+      ],
+      "bbox": [
+        2367.0,
+        2742.0,
+        2460.0,
+        2814.0
+      ],
+      "text": "1849.",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          2179.0,
+          2789.0
+        ],
+        [
+          2233.0,
+          2789.0
+        ]
+      ],
+      "bbox": [
+        2179.0,
+        2751.0,
+        2233.0,
+        2834.0
+      ],
+      "text": "1865.",
+      "confidence": null,
+      "regions": []
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 14213,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "1528 .\n10. III. 16\n1391",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            1762.0,
+            932.0
+          ],
+          [
+            1818.0,
+            932.0
+          ]
+        ],
+        "bbox": [
+          1762.0,
+          909.0,
+          1818.0,
+          974.0
+        ],
+        "text": "1528 .",
+        "confidence": 0.4559929668903351,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            2179.0,
+            2789.0
+          ],
+          [
+            2233.0,
+            2789.0
+          ]
+        ],
+        "bbox": [
+          2179.0,
+          2751.0,
+          2233.0,
+          2834.0
+        ],
+        "text": "10. III. 16",
+        "confidence": 0.7138771685686979,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            2369.0,
+            2789.0
+          ],
+          [
+            2460.0,
+            2785.0
+          ]
+        ],
+        "bbox": [
+          2367.0,
+          2742.0,
+          2460.0,
+          2814.0
+        ],
+        "text": "1391",
+        "confidence": 0.4521845877170563,
+        "regions": []
+      }
+    ],
+    "confidence": 0.540684907725363,
+    "timing_ms": 9569,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-21T16:00:47+00:00"
+}

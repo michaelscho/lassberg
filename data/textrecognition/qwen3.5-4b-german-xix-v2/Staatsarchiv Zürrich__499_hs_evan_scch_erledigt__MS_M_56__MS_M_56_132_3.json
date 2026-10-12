@@ -1,0 +1,255 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Staatsarchiv Zürrich/499_hs_evan_scch_erledigt/MS_M_56",
+  "source": {
+    "name": "MS_M_56_132_3.tif",
+    "bytes": 41729404,
+    "sha256": "031a22854893cfc02009902717045ed786619a177ebc4e4f7f0a41ea59d3b688",
+    "remote": "digitalisate/Staatsarchiv Zürrich/499_hs_evan_scch_erledigt/MS_M_56/MS_M_56_132_3.tif",
+    "key": "Staatsarchiv Zürrich__499_hs_evan_scch_erledigt__MS_M_56__MS_M_56_132_3",
+    "working_copy": "MS_M_56_132_3.jpg"
+  },
+  "text": "Ich kann diesen Brief nicht abgeben lassen, um Sie versteren Herr! zu bitten, meinen\nlieben Aurelius Figurinus Ciero auf das herzlichste von mir zu gründen. möge\nes im wol gehen und die gründe, welche Lieurs Troß über den Verlust seiner Teullia\ngabe, auch im ebe untern Verlust beruhigung geworden!\ngegriffen\nals\nFreischaer\nnicht\n1867",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          567.0,
+          1238.0
+        ],
+        [
+          959.0,
+          1251.0
+        ],
+        [
+          1625.0,
+          1251.0
+        ],
+        [
+          2990.0,
+          1217.0
+        ]
+      ],
+      "bbox": [
+        567.0,
+        1155.0,
+        2990.0,
+        1304.0
+      ],
+      "text": "Ich kann diesen Brief nicht abgeben lassen, um Sie versteren Herr! zu bitten, meinen",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          585.0,
+          1431.0
+        ],
+        [
+          2958.0,
+          1378.0
+        ]
+      ],
+      "bbox": [
+        583.0,
+        1314.0,
+        2958.0,
+        1468.0
+      ],
+      "text": "lieben Aurelius Figurinus Ciero auf das herzlichste von mir zu gründen. möge",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          601.0,
+          1586.0
+        ],
+        [
+          1108.0,
+          1595.0
+        ],
+        [
+          2003.0,
+          1581.0
+        ],
+        [
+          2941.0,
+          1540.0
+        ]
+      ],
+      "bbox": [
+        599.0,
+        1487.0,
+        2941.0,
+        1643.0
+      ],
+      "text": "es im wol gehen und die gründe, welche Lieurs Troß über den Verlust seiner Teullia",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          604.0,
+          1756.0
+        ],
+        [
+          2439.0,
+          1713.0
+        ]
+      ],
+      "bbox": [
+        601.0,
+        1650.0,
+        2439.0,
+        1807.0
+      ],
+      "text": "gabe, auch im ebe untern Verlust beruhigung geworden!",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          36.0,
+          2347.0
+        ],
+        [
+          112.0,
+          2344.0
+        ]
+      ],
+      "bbox": [
+        34.0,
+        2298.0,
+        112.0,
+        2400.0
+      ],
+      "text": "gegriffen",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          16.0,
+          2492.0
+        ],
+        [
+          92.0,
+          2490.0
+        ]
+      ],
+      "bbox": [
+        13.0,
+        2443.0,
+        92.0,
+        2556.0
+      ],
+      "text": "als",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          55.0,
+          2642.0
+        ],
+        [
+          110.0,
+          2639.0
+        ]
+      ],
+      "bbox": [
+        50.0,
+        2579.0,
+        110.0,
+        2667.0
+      ],
+      "text": "Freischaer",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 7,
+      "baseline": [
+        [
+          39.0,
+          2934.0
+        ],
+        [
+          92.0,
+          2934.0
+        ]
+      ],
+      "bbox": [
+        39.0,
+        2907.0,
+        92.0,
+        2964.0
+      ],
+      "text": "nicht",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 8,
+      "baseline": [
+        [
+          43.0,
+          3243.0
+        ],
+        [
+          80.0,
+          3239.0
+        ]
+      ],
+      "bbox": [
+        36.0,
+        3188.0,
+        83.0,
+        3285.0
+      ],
+      "text": "1867",
+      "confidence": null,
+      "regions": []
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 8798,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 32,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T22:45:54+00:00"
+}

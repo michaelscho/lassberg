@@ -1,0 +1,277 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00787953_150dpi",
+  "source": {
+    "name": "HS00787953_150dpi_0138.jpg",
+    "bytes": 133404,
+    "sha256": "bff71fe081ac8177b30952ee30a0e00b8355fd234eb2c0d9edbfeec9dbd46fa2",
+    "remote": "digitalisate/Marbach/HS00787953_150dpi/HS00787953_150dpi_0138.jpg",
+    "key": "Marbach__HS00787953_150dpi__HS00787953_150dpi_0138",
+    "working_copy": "HS00787953_150dpi_0138.jpg"
+  },
+  "text": "Lassler\ntue und\ns¬\n1869.\nvotre\nDein\nFischhausen\n2132\nA: Melona\n187-47195",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          190.0,
+          310.0
+        ],
+        [
+          336.0,
+          308.0
+        ]
+      ],
+      "bbox": [
+        190.0,
+        266.0,
+        336.0,
+        326.0
+      ],
+      "text": "Lassler",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          194.0,
+          440.0
+        ],
+        [
+          406.0,
+          433.0
+        ]
+      ],
+      "bbox": [
+        193.0,
+        392.0,
+        406.0,
+        459.0
+      ],
+      "text": "tue und",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          393.0,
+          552.0
+        ],
+        [
+          396.0,
+          552.0
+        ]
+      ],
+      "bbox": [
+        393.0,
+        511.0,
+        396.0,
+        566.0
+      ],
+      "text": "s¬",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          409.0,
+          309.0
+        ],
+        [
+          418.0,
+          309.0
+        ]
+      ],
+      "bbox": [
+        409.0,
+        298.0,
+        418.0,
+        338.0
+      ],
+      "text": "1869.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          433.0,
+          309.0
+        ],
+        [
+          577.0,
+          302.0
+        ],
+        [
+          609.0,
+          304.0
+        ]
+      ],
+      "bbox": [
+        431.0,
+        269.0,
+        609.0,
+        334.0
+      ],
+      "text": "votre",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          440.0,
+          427.0
+        ],
+        [
+          579.0,
+          420.0
+        ]
+      ],
+      "bbox": [
+        437.0,
+        377.0,
+        580.0,
+        443.0
+      ],
+      "text": "Dein",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          288.0,
+          656.0
+        ],
+        [
+          532.0,
+          655.0
+        ]
+      ],
+      "bbox": [
+        288.0,
+        614.0,
+        532.0,
+        677.0
+      ],
+      "text": "Fischhausen",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 7,
+      "baseline": [
+        [
+          366.0,
+          782.0
+        ],
+        [
+          524.0,
+          781.0
+        ]
+      ],
+      "bbox": [
+        365.0,
+        738.0,
+        524.0,
+        798.0
+      ],
+      "text": "2132",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 8,
+      "baseline": [
+        [
+          596.0,
+          133.0
+        ],
+        [
+          819.0,
+          131.0
+        ]
+      ],
+      "bbox": [
+        595.0,
+        93.0,
+        819.0,
+        156.0
+      ],
+      "text": "A: Melona",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 9,
+      "baseline": [
+        [
+          676.0,
+          1218.0
+        ],
+        [
+          917.0,
+          1221.0
+        ]
+      ],
+      "bbox": [
+        675.0,
+        1183.0,
+        917.0,
+        1238.0
+      ],
+      "text": "187-47195",
+      "confidence": null,
+      "regions": [
+        "r2"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 5894,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T12:26:08+00:00"
+}

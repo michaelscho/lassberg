@@ -1,0 +1,81 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "wlb stuttgart/Cod.hist.qt.462,XXX",
+  "source": {
+    "name": "07.jpg",
+    "bytes": 1875414,
+    "sha256": "0c30af822606ad131a917d8ebac29d034cad6fd6e8e2ff01cca2fe6265bdb062",
+    "remote": "digitalisate/wlb stuttgart/Cod.hist.qt.462,XXX/07.jpg",
+    "key": "wlb stuttgart__Cod.hist.qt.462,XXX__07",
+    "working_copy": "07.jpg"
+  },
+  "text": "1865.\n11",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          1049.0,
+          377.0
+        ],
+        [
+          1056.0,
+          377.0
+        ]
+      ],
+      "bbox": [
+        1048.0,
+        363.0,
+        1056.0,
+        389.0
+      ],
+      "text": "1865.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1172.0,
+          268.0
+        ],
+        [
+          1183.0,
+          267.0
+        ]
+      ],
+      "bbox": [
+        1171.0,
+        258.0,
+        1184.0,
+        275.0
+      ],
+      "text": "11",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 10932,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T20:50:49+00:00"
+}

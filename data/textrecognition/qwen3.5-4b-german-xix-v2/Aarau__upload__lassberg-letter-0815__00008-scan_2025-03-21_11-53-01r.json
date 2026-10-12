@@ -1,0 +1,126 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Aarau/upload/lassberg-letter-0815",
+  "source": {
+    "name": "00008-scan_2025-03-21_11-53-01r.tif",
+    "bytes": 820171,
+    "sha256": "1f2262620f8d49363c65f8709fd478cf1b06172c1b67f44cff41e5aa92737536",
+    "remote": "digitalisate/Aarau/upload/lassberg-letter-0815/00008-scan_2025-03-21_11-53-01r.tif",
+    "key": "Aarau__upload__lassberg-letter-0815__00008-scan_2025-03-21_11-53-01r",
+    "working_copy": "00008-scan_2025-03-21_11-53-01r.jpg"
+  },
+  "text": "von\nRegiment",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          2206.0,
+          1329.0
+        ],
+        [
+          2279.0,
+          1331.0
+        ]
+      ],
+      "bbox": [
+        2204.0,
+        1302.0,
+        2279.0,
+        1345.0
+      ],
+      "text": "von",
+      "confidence": null,
+      "regions": [
+        "_677abc68-6de8-464d-8bf9-cadc2c362d9c"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1225.0,
+          3051.0
+        ],
+        [
+          1427.0,
+          3053.0
+        ]
+      ],
+      "bbox": [
+        1223.0,
+        3020.0,
+        1427.0,
+        3085.0
+      ],
+      "text": "Regiment",
+      "confidence": null,
+      "regions": [
+        "_15f172c0-e3df-42a8-92fc-f49a69c4dd08"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 13377,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "Ingenieur\nen",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            1225.0,
+            3051.0
+          ],
+          [
+            1427.0,
+            3053.0
+          ]
+        ],
+        "bbox": [
+          1223.0,
+          3020.0,
+          1427.0,
+          3085.0
+        ],
+        "text": "Ingenieur",
+        "confidence": 0.9274014896816678,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            2206.0,
+            1329.0
+          ],
+          [
+            2279.0,
+            1331.0
+          ]
+        ],
+        "bbox": [
+          2204.0,
+          1302.0,
+          2279.0,
+          1345.0
+        ],
+        "text": "en",
+        "confidence": 0.5515986457467079,
+        "regions": []
+      }
+    ],
+    "confidence": 0.7395000677141879,
+    "timing_ms": 7484,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-21T16:02:27+00:00"
+}

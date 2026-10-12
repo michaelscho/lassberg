@@ -1,0 +1,191 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "UB Freiburg/lassberg-letter-2164",
+  "source": {
+    "name": "lassberg-letter-2164-003.jpg",
+    "bytes": 575713,
+    "sha256": "b990c03048f2042ec650c091dafdd13efea5d4da1580d04e8208476cc41fd17e",
+    "remote": "digitalisate/UB Freiburg/lassberg-letter-2164/lassberg-letter-2164-003.jpg",
+    "key": "UB Freiburg__lassberg-letter-2164__lassberg-letter-2164-003",
+    "working_copy": "lassberg-letter-2164-003.jpg"
+  },
+  "text": "de\n\"\n1865.\ngefordert durch\nhupp. dlb. uni-freiburg. de diktit autogr 1564/0003\nc. Universitätsbibliothek Freiburg\nBaden-Wurtemberg",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          1909.0,
+          1229.0
+        ],
+        [
+          1957.0,
+          1232.0
+        ]
+      ],
+      "bbox": [
+        1904.0,
+        1205.0,
+        1957.0,
+        1296.0
+      ],
+      "text": "de",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          2000.0,
+          1239.0
+        ],
+        [
+          2016.0,
+          1245.0
+        ]
+      ],
+      "bbox": [
+        1992.0,
+        1222.0,
+        2019.0,
+        1265.0
+      ],
+      "text": "\"",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1153.0,
+          1700.0
+        ],
+        [
+          1213.0,
+          1699.0
+        ]
+      ],
+      "bbox": [
+        1152.0,
+        1659.0,
+        1213.0,
+        1746.0
+      ],
+      "text": "1865.",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          1848.0,
+          2549.0
+        ],
+        [
+          1970.0,
+          2546.0
+        ]
+      ],
+      "bbox": [
+        1846.0,
+        2533.0,
+        1970.0,
+        2567.0
+      ],
+      "text": "gefordert durch",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          554.0,
+          2589.0
+        ],
+        [
+          1484.0,
+          2583.0
+        ]
+      ],
+      "bbox": [
+        553.0,
+        2552.0,
+        1484.0,
+        2607.0
+      ],
+      "text": "hupp. dlb. uni-freiburg. de diktit autogr 1564/0003",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          746.0,
+          2649.0
+        ],
+        [
+          1322.0,
+          2652.0
+        ]
+      ],
+      "bbox": [
+        745.0,
+        2618.0,
+        1322.0,
+        2670.0
+      ],
+      "text": "c. Universitätsbibliothek Freiburg",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          1821.0,
+          2655.0
+        ],
+        [
+          2028.0,
+          2659.0
+        ]
+      ],
+      "bbox": [
+        1820.0,
+        2653.0,
+        2028.0,
+        2674.0
+      ],
+      "text": "Baden-Wurtemberg",
+      "confidence": null,
+      "regions": []
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 7466,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 50,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T04:35:15+00:00"
+}

@@ -1,0 +1,237 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Winterthur",
+  "source": {
+    "name": "278-MsBRH_513-91-099.jpg",
+    "bytes": 4984329,
+    "sha256": "e2e246c69f89417a2c4e9a3024d91c67af87787d3c34817f84d764d180858911",
+    "remote": "digitalisate/Winterthur/278-MsBRH_513-91-099.jpg",
+    "key": "Winterthur__278-MsBRH_513-91-099",
+    "working_copy": "278-MsBRH_513-91-099.jpg"
+  },
+  "text": "hren Ansuchungen, Ihren Arbeiten und Versieglich ab Sie\nwieder ohne Sorgen einen guten Gesundheitsgenießen\nGeben Sie davon doch einige Kneln, Ihrem Ihnen\nmit Hochachtung ergebenen Namen\nProf. Kellinger\nder\ntragen d. 15. 20. r.\n1827.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          1264.0,
+          378.0
+        ],
+        [
+          2414.0,
+          408.0
+        ],
+        [
+          4917.0,
+          417.0
+        ]
+      ],
+      "bbox": [
+        1261.0,
+        277.0,
+        4917.0,
+        466.0
+      ],
+      "text": "hren Ansuchungen, Ihren Arbeiten und Versieglich ab Sie",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1195.0,
+          512.0
+        ],
+        [
+          2254.0,
+          548.0
+        ],
+        [
+          4877.0,
+          558.0
+        ]
+      ],
+      "bbox": [
+        1192.0,
+        437.0,
+        4877.0,
+        636.0
+      ],
+      "text": "wieder ohne Sorgen einen guten Gesundheitsgenießen",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1783.0,
+          675.0
+        ],
+        [
+          4959.0,
+          721.0
+        ]
+      ],
+      "bbox": [
+        1783.0,
+        587.0,
+        4959.0,
+        786.0
+      ],
+      "text": "Geben Sie davon doch einige Kneln, Ihrem Ihnen",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          1199.0,
+          777.0
+        ],
+        [
+          2685.0,
+          822.0
+        ],
+        [
+          3780.0,
+          826.0
+        ]
+      ],
+      "bbox": [
+        1195.0,
+        702.0,
+        3780.0,
+        924.0
+      ],
+      "text": "mit Hochachtung ergebenen Namen",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          3832.0,
+          992.0
+        ],
+        [
+          4943.0,
+          995.0
+        ]
+      ],
+      "bbox": [
+        3829.0,
+        862.0,
+        4943.0,
+        1221.0
+      ],
+      "text": "Prof. Kellinger",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          1032.0,
+          793.0
+        ],
+        [
+          1087.0,
+          790.0
+        ]
+      ],
+      "bbox": [
+        1025.0,
+        695.0,
+        1087.0,
+        839.0
+      ],
+      "text": "der",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          225.0,
+          917.0
+        ],
+        [
+          1339.0,
+          907.0
+        ]
+      ],
+      "bbox": [
+        222.0,
+        813.0,
+        1339.0,
+        1035.0
+      ],
+      "text": "tragen d. 15. 20. r.",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 7,
+      "baseline": [
+        [
+          803.0,
+          1038.0
+        ],
+        [
+          1120.0,
+          1044.0
+        ]
+      ],
+      "bbox": [
+        800.0,
+        953.0,
+        1120.0,
+        1149.0
+      ],
+      "text": "1827.",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 9097,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T15:28:06+00:00"
+}

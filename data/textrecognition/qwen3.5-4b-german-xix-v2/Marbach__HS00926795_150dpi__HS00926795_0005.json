@@ -1,0 +1,81 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00926795_150dpi",
+  "source": {
+    "name": "HS00926795_0005.jpg",
+    "bytes": 97769,
+    "sha256": "89b47b79abb81df8efd8a9cadd1149ed312d3553012f918622e08dbc41480f08",
+    "remote": "digitalisate/Marbach/HS00926795_150dpi/HS00926795_0005.jpg",
+    "key": "Marbach__HS00926795_150dpi__HS00926795_0005",
+    "working_copy": "HS00926795_0005.jpg"
+  },
+  "text": "der\ns¬",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          561.0,
+          479.0
+        ],
+        [
+          586.0,
+          478.0
+        ]
+      ],
+      "bbox": [
+        559.0,
+        442.0,
+        587.0,
+        493.0
+      ],
+      "text": "der",
+      "confidence": null,
+      "regions": [
+        "_634ca3f8-ad17-45b4-bc39-e3b863ec73b0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          558.0,
+          650.0
+        ],
+        [
+          564.0,
+          650.0
+        ]
+      ],
+      "bbox": [
+        558.0,
+        619.0,
+        564.0,
+        666.0
+      ],
+      "text": "s¬",
+      "confidence": null,
+      "regions": [
+        "_634ca3f8-ad17-45b4-bc39-e3b863ec73b0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 13378,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 42,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T20:42:07+00:00"
+}

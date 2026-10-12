@@ -1,0 +1,153 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "UB Bern",
+  "source": {
+    "name": "Mss_h_h_XLIV_180_32_88.tif",
+    "bytes": 30395262,
+    "sha256": "8a481dd90e38121dbb610018a661213c5d5c250183de40e422558d08c187c706",
+    "remote": "digitalisate/UB Bern/Mss_h_h_XLIV_180_32_88.tif",
+    "key": "UB Bern__Mss_h_h_XLIV_180_32_88",
+    "working_copy": "Mss_h_h_XLIV_180_32_88.jpg"
+  },
+  "text": "alibrite\norchecker classie\nmit dem 10ten April 1849\n„\nC",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          106.0,
+          142.0
+        ],
+        [
+          223.0,
+          142.0
+        ]
+      ],
+      "bbox": [
+        106.0,
+        110.0,
+        223.0,
+        176.0
+      ],
+      "text": "alibrite",
+      "confidence": null,
+      "regions": [
+        "_711b8310-ec48-47f8-af7f-eea00d42b14b"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          422.0,
+          146.0
+        ],
+        [
+          752.0,
+          150.0
+        ]
+      ],
+      "bbox": [
+        420.0,
+        112.0,
+        752.0,
+        184.0
+      ],
+      "text": "orchecker classie",
+      "confidence": null,
+      "regions": [
+        "_821f2fce-9699-4a2e-8933-947e7a5f3ea5"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          85.0,
+          1340.0
+        ],
+        [
+          682.0,
+          1331.0
+        ]
+      ],
+      "bbox": [
+        82.0,
+        1299.0,
+        682.0,
+        1372.0
+      ],
+      "text": "mit dem 10ten April 1849",
+      "confidence": null,
+      "regions": [
+        "_3448407e-d70b-4e91-87fc-9e9ef9d9e8c2"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          380.0,
+          3610.0
+        ],
+        [
+          395.0,
+          3612.0
+        ]
+      ],
+      "bbox": [
+        376.0,
+        3553.0,
+        399.0,
+        3633.0
+      ],
+      "text": "„",
+      "confidence": null,
+      "regions": [
+        "_582a6d7c-1a9b-4940-9ec6-fac27606d656"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          378.0,
+          3727.0
+        ],
+        [
+          393.0,
+          3727.0
+        ]
+      ],
+      "bbox": [
+        378.0,
+        3699.0,
+        393.0,
+        3759.0
+      ],
+      "text": "C",
+      "confidence": null,
+      "regions": [
+        "_582a6d7c-1a9b-4940-9ec6-fac27606d656"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 5483,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 43,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T01:31:11+00:00"
+}

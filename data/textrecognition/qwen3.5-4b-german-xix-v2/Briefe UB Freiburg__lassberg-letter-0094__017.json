@@ -1,0 +1,350 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Briefe UB Freiburg/lassberg-letter-0094",
+  "source": {
+    "name": "017.tif",
+    "bytes": 8236306,
+    "sha256": "00694b3910755ab5cceafcef45732e5a02a784fc38dd7d99cb6d91cf366663cb",
+    "remote": "digitalisate/Briefe UB Freiburg/lassberg-letter-0094/017.tif",
+    "key": "Briefe UB Freiburg__lassberg-letter-0094__017",
+    "working_copy": "017.jpg"
+  },
+  "text": "Seite vollkommen vernachläßiget. Bei dieser Lage\nwar intigueanten Menschen ein weites fed geöffnet\nauf dem sie ungescheint ihr Spiel treiben konnten.\nDie hinterlassenen Räte seines Vaters waren alt, und\nmein Grosstädter, dessen raute Jugend allein noch\ngefürchtet werde, starb bald darnach.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          146.0,
+          325.0
+        ],
+        [
+          389.0,
+          339.0
+        ],
+        [
+          677.0,
+          346.0
+        ],
+        [
+          1357.0,
+          349.0
+        ]
+      ],
+      "bbox": [
+        145.0,
+        296.0,
+        1357.0,
+        378.0
+      ],
+      "text": "Seite vollkommen vernachläßiget. Bei dieser Lage",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          212.0,
+          444.0
+        ],
+        [
+          862.0,
+          450.0
+        ],
+        [
+          1401.0,
+          443.0
+        ]
+      ],
+      "bbox": [
+        212.0,
+        407.0,
+        1401.0,
+        474.0
+      ],
+      "text": "war intigueanten Menschen ein weites fed geöffnet",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          202.0,
+          536.0
+        ],
+        [
+          1398.0,
+          538.0
+        ]
+      ],
+      "bbox": [
+        201.0,
+        499.0,
+        1398.0,
+        561.0
+      ],
+      "text": "auf dem sie ungescheint ihr Spiel treiben konnten.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          188.0,
+          625.0
+        ],
+        [
+          1039.0,
+          626.0
+        ],
+        [
+          1356.0,
+          632.0
+        ]
+      ],
+      "bbox": [
+        187.0,
+        586.0,
+        1356.0,
+        646.0
+      ],
+      "text": "Die hinterlassenen Räte seines Vaters waren alt, und",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          202.0,
+          714.0
+        ],
+        [
+          887.0,
+          709.0
+        ],
+        [
+          1371.0,
+          711.0
+        ]
+      ],
+      "bbox": [
+        201.0,
+        671.0,
+        1371.0,
+        738.0
+      ],
+      "text": "mein Grosstädter, dessen raute Jugend allein noch",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          209.0,
+          808.0
+        ],
+        [
+          1114.0,
+          806.0
+        ]
+      ],
+      "bbox": [
+        208.0,
+        762.0,
+        1114.0,
+        854.0
+      ],
+      "text": "gefürchtet werde, starb bald darnach.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 19416,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "seite volckommen vernachlässiget. Bei dieser Lage\nwas intriguanten Minschen in weites feld geöffnet\nauf dem sie angescheut ihr spiel treiben konnten.\nDie hinterlassenen Räte seines Vaters waren als, und\nmein Gros Vater, dessen raacke Tugend alleen noch\ngefurchtet wurdt, staet bald darnach.",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            146.0,
+            325.0
+          ],
+          [
+            389.0,
+            339.0
+          ],
+          [
+            677.0,
+            346.0
+          ],
+          [
+            1357.0,
+            349.0
+          ]
+        ],
+        "bbox": [
+          145.0,
+          296.0,
+          1357.0,
+          378.0
+        ],
+        "text": "seite volckommen vernachlässiget. Bei dieser Lage",
+        "confidence": 0.9239469319581985,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            212.0,
+            444.0
+          ],
+          [
+            862.0,
+            450.0
+          ],
+          [
+            1401.0,
+            443.0
+          ]
+        ],
+        "bbox": [
+          212.0,
+          407.0,
+          1401.0,
+          474.0
+        ],
+        "text": "was intriguanten Minschen in weites feld geöffnet",
+        "confidence": 0.9087534898519516,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            202.0,
+            536.0
+          ],
+          [
+            1398.0,
+            538.0
+          ]
+        ],
+        "bbox": [
+          201.0,
+          499.0,
+          1398.0,
+          561.0
+        ],
+        "text": "auf dem sie angescheut ihr spiel treiben konnten.",
+        "confidence": 0.9375483770759738,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            188.0,
+            625.0
+          ],
+          [
+            1039.0,
+            626.0
+          ],
+          [
+            1356.0,
+            632.0
+          ]
+        ],
+        "bbox": [
+          187.0,
+          586.0,
+          1356.0,
+          646.0
+        ],
+        "text": "Die hinterlassenen Räte seines Vaters waren als, und",
+        "confidence": 0.9181489764519457,
+        "regions": []
+      },
+      {
+        "order": 4,
+        "baseline": [
+          [
+            202.0,
+            714.0
+          ],
+          [
+            887.0,
+            709.0
+          ],
+          [
+            1371.0,
+            711.0
+          ]
+        ],
+        "bbox": [
+          201.0,
+          671.0,
+          1371.0,
+          738.0
+        ],
+        "text": "mein Gros Vater, dessen raacke Tugend alleen noch",
+        "confidence": 0.9192710859434945,
+        "regions": []
+      },
+      {
+        "order": 5,
+        "baseline": [
+          [
+            209.0,
+            808.0
+          ],
+          [
+            1114.0,
+            806.0
+          ]
+        ],
+        "bbox": [
+          208.0,
+          762.0,
+          1114.0,
+          854.0
+        ],
+        "text": "gefurchtet wurdt, staet bald darnach.",
+        "confidence": 0.924559287122778,
+        "regions": []
+      }
+    ],
+    "confidence": 0.922038024734057,
+    "timing_ms": 62149,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-21T20:02:17+00:00"
+}

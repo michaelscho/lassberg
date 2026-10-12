@@ -1,0 +1,109 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Staatsarchiv Zürrich/499_hs_evan_scch_erledigt/Ms_M_8_35",
+  "source": {
+    "name": "Ms_M_8_32_35_0015.tif",
+    "bytes": 21708890,
+    "sha256": "0688bba2ec85056b81cfff6d563cb74fe54ed2479fb1254369e0394df0249292",
+    "remote": "digitalisate/Staatsarchiv Zürrich/499_hs_evan_scch_erledigt/Ms_M_8_35/Ms_M_8_32_35_0015.tif",
+    "key": "Staatsarchiv Zürrich__499_hs_evan_scch_erledigt__Ms_M_8_35__Ms_M_8_32_35_0015",
+    "working_copy": "Ms_M_8_32_35_0015.jpg"
+  },
+  "text": "Dr. Azy\nauf der kleinen silbermenge mit dem\nerbetene, ist wol im 8. Belliard.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          350.0,
+          299.0
+        ],
+        [
+          584.0,
+          301.0
+        ]
+      ],
+      "bbox": [
+        348.0,
+        247.0,
+        584.0,
+        350.0
+      ],
+      "text": "Dr. Azy",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          635.0,
+          308.0
+        ],
+        [
+          1198.0,
+          310.0
+        ],
+        [
+          1860.0,
+          286.0
+        ]
+      ],
+      "bbox": [
+        633.0,
+        235.0,
+        1860.0,
+        357.0
+      ],
+      "text": "auf der kleinen silbermenge mit dem",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          339.0,
+          451.0
+        ],
+        [
+          1618.0,
+          439.0
+        ]
+      ],
+      "bbox": [
+        337.0,
+        376.0,
+        1618.0,
+        490.0
+      ],
+      "text": "erbetene, ist wol im 8. Belliard.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 5515,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 50,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T23:25:15+00:00"
+}

@@ -1,0 +1,137 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00900340_150dpi",
+  "source": {
+    "name": "HS00900340_150dpi_0004.jpg",
+    "bytes": 117447,
+    "sha256": "ef8130de94419e82b28eace40467b43a189322f1700bb6493828091cac5c84db",
+    "remote": "digitalisate/Marbach/HS00900340_150dpi/HS00900340_150dpi_0004.jpg",
+    "key": "Marbach__HS00900340_150dpi__HS00900340_150dpi_0004",
+    "working_copy": "HS00900340_150dpi_0004.jpg"
+  },
+  "text": "Dabei: Heel, Gustav an Gustav Schwarz\n1825\n528,1\n1144",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          99.0,
+          883.0
+        ],
+        [
+          182.0,
+          883.0
+        ],
+        [
+          561.0,
+          892.0
+        ],
+        [
+          885.0,
+          894.0
+        ]
+      ],
+      "bbox": [
+        99.0,
+        842.0,
+        885.0,
+        911.0
+      ],
+      "text": "Dabei: Heel, Gustav an Gustav Schwarz",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          300.0,
+          957.0
+        ],
+        [
+          417.0,
+          961.0
+        ]
+      ],
+      "bbox": [
+        299.0,
+        921.0,
+        417.0,
+        979.0
+      ],
+      "text": "1825",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          623.0,
+          1228.0
+        ],
+        [
+          725.0,
+          1230.0
+        ]
+      ],
+      "bbox": [
+        623.0,
+        1199.0,
+        725.0,
+        1245.0
+      ],
+      "text": "528,1",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          703.0,
+          1265.0
+        ],
+        [
+          800.0,
+          1264.0
+        ]
+      ],
+      "bbox": [
+        702.0,
+        1239.0,
+        800.0,
+        1276.0
+      ],
+      "text": "1144",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 5652,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 25,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T20:09:15+00:00"
+}

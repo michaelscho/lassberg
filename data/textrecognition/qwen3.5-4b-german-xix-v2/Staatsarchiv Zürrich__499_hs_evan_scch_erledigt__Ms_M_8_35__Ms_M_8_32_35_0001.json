@@ -1,0 +1,350 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Staatsarchiv Zürrich/499_hs_evan_scch_erledigt/Ms_M_8_35",
+  "source": {
+    "name": "Ms_M_8_32_35_0001.tif",
+    "bytes": 15184704,
+    "sha256": "c1436e227e79bfe13ac3de491d376ada3a9a4f83bac33fd65b184733789aea16",
+    "remote": "digitalisate/Staatsarchiv Zürrich/499_hs_evan_scch_erledigt/Ms_M_8_35/Ms_M_8_32_35_0001.tif",
+    "key": "Staatsarchiv Zürrich__499_hs_evan_scch_erledigt__Ms_M_8_35__Ms_M_8_32_35_0001",
+    "working_copy": "Ms_M_8_32_35_0001.jpg"
+  },
+  "text": "Mars 80,000.\nDem Herrn Professor Moerich\n1849\n2\nund\nSoll",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          965.0,
+          259.0
+        ],
+        [
+          1122.0,
+          261.0
+        ],
+        [
+          1469.0,
+          277.0
+        ],
+        [
+          1682.0,
+          277.0
+        ]
+      ],
+      "bbox": [
+        964.0,
+        212.0,
+        1682.0,
+        298.0
+      ],
+      "text": "Mars 80,000.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          786.0,
+          561.0
+        ],
+        [
+          1101.0,
+          555.0
+        ],
+        [
+          1308.0,
+          558.0
+        ],
+        [
+          1589.0,
+          552.0
+        ],
+        [
+          1986.0,
+          550.0
+        ]
+      ],
+      "bbox": [
+        785.0,
+        481.0,
+        1986.0,
+        582.0
+      ],
+      "text": "Dem Herrn Professor Moerich",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          2051.0,
+          548.0
+        ],
+        [
+          2062.0,
+          548.0
+        ]
+      ],
+      "bbox": [
+        2051.0,
+        534.0,
+        2062.0,
+        564.0
+      ],
+      "text": "1849",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          1313.0,
+          842.0
+        ],
+        [
+          1342.0,
+          840.0
+        ]
+      ],
+      "bbox": [
+        1308.0,
+        789.0,
+        1343.0,
+        855.0
+      ],
+      "text": "2",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          1633.0,
+          1188.0
+        ],
+        [
+          1732.0,
+          1185.0
+        ]
+      ],
+      "bbox": [
+        1632.0,
+        1140.0,
+        1732.0,
+        1196.0
+      ],
+      "text": "und",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          1772.0,
+          1182.0
+        ],
+        [
+          1895.0,
+          1183.0
+        ]
+      ],
+      "bbox": [
+        1772.0,
+        1108.0,
+        1895.0,
+        1213.0
+      ],
+      "text": "Soll",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 14129,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "Surinis Holgeboren\nDem Herren Provisor Moerikofer\n,\n24\n„\n„",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            965.0,
+            259.0
+          ],
+          [
+            1122.0,
+            261.0
+          ],
+          [
+            1469.0,
+            277.0
+          ],
+          [
+            1682.0,
+            277.0
+          ]
+        ],
+        "bbox": [
+          964.0,
+          212.0,
+          1682.0,
+          298.0
+        ],
+        "text": "Surinis Holgeboren",
+        "confidence": 0.8406428330474429,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            786.0,
+            561.0
+          ],
+          [
+            1101.0,
+            555.0
+          ],
+          [
+            1308.0,
+            558.0
+          ],
+          [
+            1589.0,
+            552.0
+          ],
+          [
+            1986.0,
+            550.0
+          ]
+        ],
+        "bbox": [
+          785.0,
+          481.0,
+          1986.0,
+          582.0
+        ],
+        "text": "Dem Herren Provisor Moerikofer",
+        "confidence": 0.9320143759250641,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            2051.0,
+            548.0
+          ],
+          [
+            2062.0,
+            548.0
+          ]
+        ],
+        "bbox": [
+          2051.0,
+          534.0,
+          2062.0,
+          564.0
+        ],
+        "text": ",",
+        "confidence": 0.5933433771133423,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            1313.0,
+            842.0
+          ],
+          [
+            1342.0,
+            840.0
+          ]
+        ],
+        "bbox": [
+          1308.0,
+          789.0,
+          1343.0,
+          855.0
+        ],
+        "text": "24",
+        "confidence": 0.42501138150691986,
+        "regions": []
+      },
+      {
+        "order": 4,
+        "baseline": [
+          [
+            1633.0,
+            1188.0
+          ],
+          [
+            1732.0,
+            1185.0
+          ]
+        ],
+        "bbox": [
+          1632.0,
+          1140.0,
+          1732.0,
+          1196.0
+        ],
+        "text": "„",
+        "confidence": 0.5229925413926443,
+        "regions": []
+      },
+      {
+        "order": 5,
+        "baseline": [
+          [
+            1772.0,
+            1182.0
+          ],
+          [
+            1895.0,
+            1183.0
+          ]
+        ],
+        "bbox": [
+          1772.0,
+          1108.0,
+          1895.0,
+          1213.0
+        ],
+        "text": "„",
+        "confidence": 0.557669480641683,
+        "regions": []
+      }
+    ],
+    "confidence": 0.6452789982711827,
+    "timing_ms": 21368,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T09:28:32+00:00"
+}

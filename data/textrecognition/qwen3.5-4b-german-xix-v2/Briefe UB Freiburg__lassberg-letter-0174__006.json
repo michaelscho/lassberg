@@ -1,0 +1,404 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Briefe UB Freiburg/lassberg-letter-0174",
+  "source": {
+    "name": "006.tif",
+    "bytes": 8971936,
+    "sha256": "c2c3e7cb8c1ea84f878f527299541bdb2c4703d59391be46e04b77de48e6138f",
+    "remote": "digitalisate/Briefe UB Freiburg/lassberg-letter-0174/006.tif",
+    "key": "Briefe UB Freiburg__lassberg-letter-0174__006",
+    "working_copy": "006.jpg"
+  },
+  "text": "würde dieselbe sie heilen. Jezt noch an Mir zweifeln\nKönne! eine solche! Doch hätte ich nie für möglich\ngehalten. Nuziales, doch soll das lezte Wort hierüber\nSein.\nGute Nacht mein Dicker, mein einziger\nHeimel! gute Nacht! mein Holzes Leben! Erig\nDini Salgar.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          126.0,
+          261.0
+        ],
+        [
+          471.0,
+          255.0
+        ],
+        [
+          1071.0,
+          235.0
+        ],
+        [
+          1466.0,
+          233.0
+        ]
+      ],
+      "bbox": [
+        124.0,
+        182.0,
+        1466.0,
+        289.0
+      ],
+      "text": "würde dieselbe sie heilen. Jezt noch an Mir zweifeln",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          120.0,
+          375.0
+        ],
+        [
+          1465.0,
+          359.0
+        ]
+      ],
+      "bbox": [
+        119.0,
+        310.0,
+        1465.0,
+        397.0
+      ],
+      "text": "Könne! eine solche! Doch hätte ich nie für möglich",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          121.0,
+          485.0
+        ],
+        [
+          1465.0,
+          482.0
+        ]
+      ],
+      "bbox": [
+        120.0,
+        435.0,
+        1465.0,
+        527.0
+      ],
+      "text": "gehalten. Nuziales, doch soll das lezte Wort hierüber",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          131.0,
+          598.0
+        ],
+        [
+          296.0,
+          596.0
+        ]
+      ],
+      "bbox": [
+        130.0,
+        545.0,
+        296.0,
+        613.0
+      ],
+      "text": "Sein.",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          284.0,
+          709.0
+        ],
+        [
+          523.0,
+          710.0
+        ],
+        [
+          989.0,
+          723.0
+        ],
+        [
+          1383.0,
+          720.0
+        ]
+      ],
+      "bbox": [
+        284.0,
+        664.0,
+        1383.0,
+        755.0
+      ],
+      "text": "Gute Nacht mein Dicker, mein einziger",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          121.0,
+          826.0
+        ],
+        [
+          381.0,
+          840.0
+        ],
+        [
+          1399.0,
+          844.0
+        ]
+      ],
+      "bbox": [
+        121.0,
+        780.0,
+        1399.0,
+        884.0
+      ],
+      "text": "Heimel! gute Nacht! mein Holzes Leben! Erig",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          899.0,
+          961.0
+        ],
+        [
+          1140.0,
+          955.0
+        ],
+        [
+          1322.0,
+          956.0
+        ]
+      ],
+      "bbox": [
+        898.0,
+        899.0,
+        1322.0,
+        993.0
+      ],
+      "text": "Dini Salgar.",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 7779,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "svurde disselbe nu heilen. Jegt noch an mir zweifeln\nkommer! min Colma! dag hätte ikke nu før møgligt\ngehalten. Vergeihr, das soll das legte Wort hierüber\nsine.\nGute Nacht min susser, min eingiger\nHimmel! gute Nacht! mein holdes leben! ewig\nDeres Salgar.",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            126.0,
+            261.0
+          ],
+          [
+            471.0,
+            255.0
+          ],
+          [
+            1071.0,
+            235.0
+          ],
+          [
+            1466.0,
+            233.0
+          ]
+        ],
+        "bbox": [
+          124.0,
+          182.0,
+          1466.0,
+          289.0
+        ],
+        "text": "svurde disselbe nu heilen. Jegt noch an mir zweifeln",
+        "confidence": 0.9248525890020224,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            120.0,
+            375.0
+          ],
+          [
+            1465.0,
+            359.0
+          ]
+        ],
+        "bbox": [
+          119.0,
+          310.0,
+          1465.0,
+          397.0
+        ],
+        "text": "kommer! min Colma! dag hätte ikke nu før møgligt",
+        "confidence": 0.8786928465171736,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            121.0,
+            485.0
+          ],
+          [
+            1465.0,
+            482.0
+          ]
+        ],
+        "bbox": [
+          120.0,
+          435.0,
+          1465.0,
+          527.0
+        ],
+        "text": "gehalten. Vergeihr, das soll das legte Wort hierüber",
+        "confidence": 0.9089688242606397,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            131.0,
+            598.0
+          ],
+          [
+            296.0,
+            596.0
+          ]
+        ],
+        "bbox": [
+          130.0,
+          545.0,
+          296.0,
+          613.0
+        ],
+        "text": "sine.",
+        "confidence": 0.8886957406997681,
+        "regions": []
+      },
+      {
+        "order": 4,
+        "baseline": [
+          [
+            284.0,
+            709.0
+          ],
+          [
+            523.0,
+            710.0
+          ],
+          [
+            989.0,
+            723.0
+          ],
+          [
+            1383.0,
+            720.0
+          ]
+        ],
+        "bbox": [
+          284.0,
+          664.0,
+          1383.0,
+          755.0
+        ],
+        "text": "Gute Nacht min susser, min eingiger",
+        "confidence": 0.9170696003096445,
+        "regions": []
+      },
+      {
+        "order": 5,
+        "baseline": [
+          [
+            121.0,
+            826.0
+          ],
+          [
+            381.0,
+            840.0
+          ],
+          [
+            1399.0,
+            844.0
+          ]
+        ],
+        "bbox": [
+          121.0,
+          780.0,
+          1399.0,
+          884.0
+        ],
+        "text": "Himmel! gute Nacht! mein holdes leben! ewig",
+        "confidence": 0.9398475954698962,
+        "regions": []
+      },
+      {
+        "order": 6,
+        "baseline": [
+          [
+            899.0,
+            961.0
+          ],
+          [
+            1140.0,
+            955.0
+          ],
+          [
+            1322.0,
+            956.0
+          ]
+        ],
+        "bbox": [
+          898.0,
+          899.0,
+          1322.0,
+          993.0
+        ],
+        "text": "Deres Salgar.",
+        "confidence": 0.8415404099684495,
+        "regions": []
+      }
+    ],
+    "confidence": 0.8999525151753706,
+    "timing_ms": 20006,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-21T21:56:53+00:00"
+}

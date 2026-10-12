@@ -1,0 +1,57 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00787953_150dpi",
+  "source": {
+    "name": "HS00787953_150dpi_0202.jpg",
+    "bytes": 72909,
+    "sha256": "357d2cdb3b3e9c89bed57f4da41290928f8d8dcd9fb0b442b48f1d1709bd53bb",
+    "remote": "digitalisate/Marbach/HS00787953_150dpi/HS00787953_150dpi_0202.jpg",
+    "key": "Marbach__HS00787953_150dpi__HS00787953_150dpi_0202",
+    "working_copy": "HS00787953_150dpi_0202.jpg"
+  },
+  "text": "Dr. Auster",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          462.0,
+          430.0
+        ],
+        [
+          590.0,
+          430.0
+        ]
+      ],
+      "bbox": [
+        462.0,
+        399.0,
+        590.0,
+        444.0
+      ],
+      "text": "Dr. Auster",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 10414,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T12:55:20+00:00"
+}

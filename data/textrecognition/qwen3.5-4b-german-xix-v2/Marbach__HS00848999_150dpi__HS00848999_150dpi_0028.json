@@ -1,0 +1,157 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00848999_150dpi",
+  "source": {
+    "name": "HS00848999_150dpi_0028.jpg",
+    "bytes": 259900,
+    "sha256": "02ba82cb83ff2dd5a28a8cce54dc8249a0bb0e742fe845efb0fe515002ca9197",
+    "remote": "digitalisate/Marbach/HS00848999_150dpi/HS00848999_150dpi_0028.jpg",
+    "key": "Marbach__HS00848999_150dpi__HS00848999_150dpi_0028",
+    "working_copy": "HS00848999_150dpi_0028.jpg"
+  },
+  "text": "Herrn Oberst\n1869\nBern\nBern den 18.\n1500",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          285.0,
+          491.0
+        ],
+        [
+          283.0,
+          527.0
+        ],
+        [
+          286.0,
+          687.0
+        ]
+      ],
+      "bbox": [
+        254.0,
+        490.0,
+        314.0,
+        687.0
+      ],
+      "text": "Herrn Oberst",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          424.0,
+          741.0
+        ],
+        [
+          424.0,
+          725.0
+        ]
+      ],
+      "bbox": [
+        408.0,
+        725.0,
+        438.0,
+        741.0
+      ],
+      "text": "1869",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          431.0,
+          897.0
+        ],
+        [
+          434.0,
+          1021.0
+        ]
+      ],
+      "bbox": [
+        398.0,
+        896.0,
+        454.0,
+        1021.0
+      ],
+      "text": "Bern",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          621.0,
+          538.0
+        ],
+        [
+          621.0,
+          737.0
+        ]
+      ],
+      "bbox": [
+        602.0,
+        538.0,
+        648.0,
+        737.0
+      ],
+      "text": "Bern den 18.",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          594.0,
+          1575.0
+        ],
+        [
+          639.0,
+          1574.0
+        ]
+      ],
+      "bbox": [
+        593.0,
+        1549.0,
+        639.0,
+        1588.0
+      ],
+      "text": "1500",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 5751,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T14:09:51+00:00"
+}

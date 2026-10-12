@@ -1,0 +1,105 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "UB Bern",
+  "source": {
+    "name": "Mss_h_h_XXVI_105_2_03.tif",
+    "bytes": 39732088,
+    "sha256": "b641987622676553e9ccd75c189588bca8adb1a34704cc0a658878f2bb4d0ace",
+    "remote": "digitalisate/UB Bern/Mss_h_h_XXVI_105_2_03.tif",
+    "key": "UB Bern__Mss_h_h_XXVI_105_2_03",
+    "working_copy": "Mss_h_h_XXVI_105_2_03.jpg"
+  },
+  "text": "Calibrite\nNecker Classic\n1.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          131.0,
+          107.0
+        ],
+        [
+          249.0,
+          103.0
+        ]
+      ],
+      "bbox": [
+        129.0,
+        71.0,
+        249.0,
+        141.0
+      ],
+      "text": "Calibrite",
+      "confidence": null,
+      "regions": [
+        "_1cebb555-72b6-4d8f-a2c7-354328633476"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          514.0,
+          114.0
+        ],
+        [
+          766.0,
+          110.0
+        ]
+      ],
+      "bbox": [
+        512.0,
+        80.0,
+        766.0,
+        148.0
+      ],
+      "text": "Necker Classic",
+      "confidence": null,
+      "regions": [
+        "_8ad6466c-4a72-4528-a7d1-ab89245f5ff7"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          107.0,
+          1302.0
+        ],
+        [
+          690.0,
+          1302.0
+        ]
+      ],
+      "bbox": [
+        107.0,
+        1270.0,
+        690.0,
+        1348.0
+      ],
+      "text": "1.",
+      "confidence": null,
+      "regions": [
+        "_f502f9a0-fb7a-4891-b002-01c9d317fea4"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 7861,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 54,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T01:33:26+00:00"
+}

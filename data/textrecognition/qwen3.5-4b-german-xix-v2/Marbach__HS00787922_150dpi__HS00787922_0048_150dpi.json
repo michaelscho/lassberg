@@ -1,0 +1,310 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00787922_150dpi",
+  "source": {
+    "name": "HS00787922_0048_150dpi.jpg",
+    "bytes": 215134,
+    "sha256": "f343f2c0faaf3e4531f925f884f733104ace94f2270bda6f4efdb449abc52cc6",
+    "remote": "digitalisate/Marbach/HS00787922_150dpi/HS00787922_0048_150dpi.jpg",
+    "key": "Marbach__HS00787922_150dpi__HS00787922_0048_150dpi",
+    "working_copy": "HS00787922_0048_150dpi.jpg"
+  },
+  "text": "Decher\nder\nvon\nder\nMonsieur\ndo",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          549.0,
+          810.0
+        ],
+        [
+          551.0,
+          610.0
+        ]
+      ],
+      "bbox": [
+        514.0,
+        609.0,
+        578.0,
+        810.0
+      ],
+      "text": "Decher",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          550.0,
+          863.0
+        ],
+        [
+          551.0,
+          883.0
+        ]
+      ],
+      "bbox": [
+        511.0,
+        862.0,
+        567.0,
+        884.0
+      ],
+      "text": "der",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          550.0,
+          925.0
+        ],
+        [
+          550.0,
+          1114.0
+        ]
+      ],
+      "bbox": [
+        517.0,
+        925.0,
+        573.0,
+        1114.0
+      ],
+      "text": "von",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          626.0,
+          577.0
+        ],
+        [
+          627.0,
+          622.0
+        ]
+      ],
+      "bbox": [
+        601.0,
+        576.0,
+        646.0,
+        622.0
+      ],
+      "text": "der",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          787.0,
+          665.0
+        ],
+        [
+          790.0,
+          545.0
+        ]
+      ],
+      "bbox": [
+        757.0,
+        544.0,
+        813.0,
+        665.0
+      ],
+      "text": "Monsieur",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          786.0,
+          720.0
+        ],
+        [
+          788.0,
+          701.0
+        ]
+      ],
+      "bbox": [
+        775.0,
+        699.0,
+        807.0,
+        720.0
+      ],
+      "text": "do",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 36098,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "an Kön. hispanischen\n1646\nCanzley\nMeinen Gehaimben Rath Vnd\nFranz\nhov",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            549.0,
+            810.0
+          ],
+          [
+            551.0,
+            610.0
+          ]
+        ],
+        "bbox": [
+          514.0,
+          609.0,
+          578.0,
+          810.0
+        ],
+        "text": "an Kön. hispanischen",
+        "confidence": 0.9094848874069396,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            550.0,
+            863.0
+          ],
+          [
+            551.0,
+            883.0
+          ]
+        ],
+        "bbox": [
+          511.0,
+          862.0,
+          567.0,
+          884.0
+        ],
+        "text": "1646",
+        "confidence": 0.44504258781671524,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            550.0,
+            925.0
+          ],
+          [
+            550.0,
+            1114.0
+          ]
+        ],
+        "bbox": [
+          517.0,
+          925.0,
+          573.0,
+          1114.0
+        ],
+        "text": "Canzley",
+        "confidence": 0.7788872654948916,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            626.0,
+            577.0
+          ],
+          [
+            627.0,
+            622.0
+          ]
+        ],
+        "bbox": [
+          601.0,
+          576.0,
+          646.0,
+          622.0
+        ],
+        "text": "Meinen Gehaimben Rath Vnd",
+        "confidence": 0.8292222023010254,
+        "regions": []
+      },
+      {
+        "order": 4,
+        "baseline": [
+          [
+            787.0,
+            665.0
+          ],
+          [
+            790.0,
+            545.0
+          ]
+        ],
+        "bbox": [
+          757.0,
+          544.0,
+          813.0,
+          665.0
+        ],
+        "text": "Franz",
+        "confidence": 0.7959803462028503,
+        "regions": []
+      },
+      {
+        "order": 5,
+        "baseline": [
+          [
+            786.0,
+            720.0
+          ],
+          [
+            788.0,
+            701.0
+          ]
+        ],
+        "bbox": [
+          775.0,
+          699.0,
+          807.0,
+          720.0
+        ],
+        "text": "hov",
+        "confidence": 0.6537187298138937,
+        "regions": []
+      }
+    ],
+    "confidence": 0.7353893365060525,
+    "timing_ms": 7789,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T04:49:13+00:00"
+}

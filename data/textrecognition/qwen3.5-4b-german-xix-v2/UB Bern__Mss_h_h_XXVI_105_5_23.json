@@ -1,0 +1,195 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "UB Bern",
+  "source": {
+    "name": "Mss_h_h_XXVI_105_5_23.tif",
+    "bytes": 39178164,
+    "sha256": "4c3ed103729beca4903ff9866f6e216a6611dd8f82f1227defbeb0dc59fb888e",
+    "remote": "digitalisate/UB Bern/Mss_h_h_XXVI_105_5_23.tif",
+    "key": "UB Bern__Mss_h_h_XXVI_105_5_23",
+    "working_copy": "Mss_h_h_XXVI_105_5_23.jpg"
+  },
+  "text": "Erchecker Classica\nCalibrite\n\"\nden 11ten März\n3.\nKarl\nmit dem",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          445.0,
+          109.0
+        ],
+        [
+          752.0,
+          109.0
+        ]
+      ],
+      "bbox": [
+        445.0,
+        75.0,
+        752.0,
+        151.0
+      ],
+      "text": "Erchecker Classica",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          105.0,
+          107.0
+        ],
+        [
+          225.0,
+          107.0
+        ]
+      ],
+      "bbox": [
+        105.0,
+        77.0,
+        225.0,
+        145.0
+      ],
+      "text": "Calibrite",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1741.0,
+          1477.0
+        ],
+        [
+          1745.0,
+          1433.0
+        ]
+      ],
+      "bbox": [
+        1707.0,
+        1429.0,
+        1781.0,
+        1477.0
+      ],
+      "text": "\"",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          2142.0,
+          1435.0
+        ],
+        [
+          2149.0,
+          1721.0
+        ]
+      ],
+      "bbox": [
+        2088.0,
+        1433.0,
+        2185.0,
+        1721.0
+      ],
+      "text": "den 11ten März",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          2449.0,
+          1427.0
+        ],
+        [
+          2454.0,
+          1311.0
+        ]
+      ],
+      "bbox": [
+        2365.0,
+        1307.0,
+        2485.0,
+        1427.0
+      ],
+      "text": "3.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          2452.0,
+          1484.0
+        ],
+        [
+          2456.0,
+          1664.0
+        ]
+      ],
+      "bbox": [
+        2393.0,
+        1482.0,
+        2485.0,
+        1664.0
+      ],
+      "text": "Karl",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          92.0,
+          1303.0
+        ],
+        [
+          683.0,
+          1297.0
+        ]
+      ],
+      "bbox": [
+        90.0,
+        1278.0,
+        683.0,
+        1339.0
+      ],
+      "text": "mit dem",
+      "confidence": null,
+      "regions": []
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 7587,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 32,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T01:59:32+00:00"
+}

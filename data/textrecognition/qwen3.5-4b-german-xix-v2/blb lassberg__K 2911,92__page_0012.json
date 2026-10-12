@@ -1,0 +1,129 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "blb lassberg/K 2911,92",
+  "source": {
+    "name": "page_0012.jpg",
+    "bytes": 385386,
+    "sha256": "35e732e1e0943108736c9a529d32cef9674ff0ea19954f1d1ecf7c0fab20d892",
+    "remote": "digitalisate/blb lassberg/K 2911,92/page_0012.jpg",
+    "key": "blb lassberg__K 2911,92__page_0012",
+    "working_copy": "page_0012.jpg"
+  },
+  "text": "Dein\nEgalarum\nvon\nDein",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          648.0,
+          1196.0
+        ],
+        [
+          649.0,
+          1286.0
+        ]
+      ],
+      "bbox": [
+        603.0,
+        1194.0,
+        686.0,
+        1286.0
+      ],
+      "text": "Dein",
+      "confidence": null,
+      "regions": [
+        "_7040adb0-41b0-45af-a0b1-197a466917b4"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          644.0,
+          1396.0
+        ],
+        [
+          648.0,
+          1637.0
+        ]
+      ],
+      "bbox": [
+        600.0,
+        1395.0,
+        693.0,
+        1637.0
+      ],
+      "text": "Egalarum",
+      "confidence": null,
+      "regions": [
+        "_7040adb0-41b0-45af-a0b1-197a466917b4"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          758.0,
+          1390.0
+        ],
+        [
+          763.0,
+          1251.0
+        ]
+      ],
+      "bbox": [
+        725.0,
+        1249.0,
+        784.0,
+        1390.0
+      ],
+      "text": "von",
+      "confidence": null,
+      "regions": [
+        "_7040adb0-41b0-45af-a0b1-197a466917b4"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          757.0,
+          1655.0
+        ],
+        [
+          762.0,
+          1435.0
+        ]
+      ],
+      "bbox": [
+        707.0,
+        1433.0,
+        819.0,
+        1655.0
+      ],
+      "text": "Dein",
+      "confidence": null,
+      "regions": [
+        "_7040adb0-41b0-45af-a0b1-197a466917b4"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 4467,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T19:36:14+00:00"
+}

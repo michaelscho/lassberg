@@ -1,0 +1,125 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "UB Freiburg/lassberg-letter-2372",
+  "source": {
+    "name": "lassberg-letter-2372-003.jpg",
+    "bytes": 171613,
+    "sha256": "7eacfb073302e545040e6fa5c05acf35c5b162345887e153ac6a894ead932093",
+    "remote": "digitalisate/UB Freiburg/lassberg-letter-2372/lassberg-letter-2372-003.jpg",
+    "key": "UB Freiburg__lassberg-letter-2372__lassberg-letter-2372-003",
+    "working_copy": "lassberg-letter-2372-003.jpg"
+  },
+  "text": "gefordert durch\nHerrn Dr A. Escher, der den 17ten Juni 1833\nUniversitätsbibliothek Freiburg\nBaden-Würtemberg",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          890.0,
+          1605.0
+        ],
+        [
+          951.0,
+          1603.0
+        ]
+      ],
+      "bbox": [
+        889.0,
+        1593.0,
+        951.0,
+        1616.0
+      ],
+      "text": "gefordert durch",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          269.0,
+          1624.0
+        ],
+        [
+          717.0,
+          1621.0
+        ]
+      ],
+      "bbox": [
+        268.0,
+        1603.0,
+        717.0,
+        1637.0
+      ],
+      "text": "Herrn Dr A. Escher, der den 17ten Juni 1833",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          360.0,
+          1650.0
+        ],
+        [
+          639.0,
+          1654.0
+        ]
+      ],
+      "bbox": [
+        359.0,
+        1631.0,
+        639.0,
+        1665.0
+      ],
+      "text": "Universitätsbibliothek Freiburg",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          875.0,
+          1655.0
+        ],
+        [
+          981.0,
+          1657.0
+        ]
+      ],
+      "bbox": [
+        874.0,
+        1641.0,
+        981.0,
+        1665.0
+      ],
+      "text": "Baden-Würtemberg",
+      "confidence": null,
+      "regions": []
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 4671,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 49,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T04:42:11+00:00"
+}

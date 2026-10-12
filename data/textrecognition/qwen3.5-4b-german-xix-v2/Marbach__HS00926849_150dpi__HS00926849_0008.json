@@ -1,0 +1,245 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00926849_150dpi",
+  "source": {
+    "name": "HS00926849_0008.jpg",
+    "bytes": 304842,
+    "sha256": "0a684b1b7fff736ae99814355e78fd9e0f2a906ff487195fbdae66e804fddb94",
+    "remote": "digitalisate/Marbach/HS00926849_150dpi/HS00926849_0008.jpg",
+    "key": "Marbach__HS00926849_150dpi__HS00926849_0008",
+    "working_copy": "HS00926849_0008.jpg"
+  },
+  "text": "nicht\nDein\nden\n--\nde\n3\nDein\n1870.\n186.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          420.0,
+          1062.0
+        ],
+        [
+          423.0,
+          1096.0
+        ]
+      ],
+      "bbox": [
+        393.0,
+        1059.0,
+        448.0,
+        1097.0
+      ],
+      "text": "nicht",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          419.0,
+          1247.0
+        ],
+        [
+          421.0,
+          1141.0
+        ]
+      ],
+      "bbox": [
+        394.0,
+        1140.0,
+        449.0,
+        1247.0
+      ],
+      "text": "Dein",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          656.0,
+          972.0
+        ],
+        [
+          658.0,
+          898.0
+        ]
+      ],
+      "bbox": [
+        642.0,
+        897.0,
+        684.0,
+        972.0
+      ],
+      "text": "den",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          657.0,
+          1236.0
+        ],
+        [
+          658.0,
+          1270.0
+        ]
+      ],
+      "bbox": [
+        606.0,
+        1235.0,
+        678.0,
+        1271.0
+      ],
+      "text": "--",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          658.0,
+          1175.0
+        ],
+        [
+          658.0,
+          1098.0
+        ]
+      ],
+      "bbox": [
+        637.0,
+        1098.0,
+        685.0,
+        1175.0
+      ],
+      "text": "de",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          742.0,
+          862.0
+        ],
+        [
+          743.0,
+          878.0
+        ]
+      ],
+      "bbox": [
+        728.0,
+        861.0,
+        758.0,
+        878.0
+      ],
+      "text": "3",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          738.0,
+          1081.0
+        ],
+        [
+          743.0,
+          934.0
+        ]
+      ],
+      "bbox": [
+        728.0,
+        933.0,
+        778.0,
+        1081.0
+      ],
+      "text": "Dein",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 7,
+      "baseline": [
+        [
+          1112.0,
+          1354.0
+        ],
+        [
+          1134.0,
+          1355.0
+        ]
+      ],
+      "bbox": [
+        1112.0,
+        1320.0,
+        1134.0,
+        1365.0
+      ],
+      "text": "1870.",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 8,
+      "baseline": [
+        [
+          1113.0,
+          1389.0
+        ],
+        [
+          1141.0,
+          1389.0
+        ]
+      ],
+      "bbox": [
+        1113.0,
+        1370.0,
+        1141.0,
+        1409.0
+      ],
+      "text": "186.",
+      "confidence": null,
+      "regions": []
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 6733,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 47,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T21:26:43+00:00"
+}

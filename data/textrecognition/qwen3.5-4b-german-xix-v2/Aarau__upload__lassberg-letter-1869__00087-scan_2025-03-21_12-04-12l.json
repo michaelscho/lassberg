@@ -1,0 +1,180 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Aarau/upload/lassberg-letter-1869",
+  "source": {
+    "name": "00087-scan_2025-03-21_12-04-12l.tif",
+    "bytes": 854490,
+    "sha256": "11f42ae9648d58c9d541416246b1b0e3b1bc578c9d221bab87b95c648e1ac61d",
+    "remote": "digitalisate/Aarau/upload/lassberg-letter-1869/00087-scan_2025-03-21_12-04-12l.tif",
+    "key": "Aarau__upload__lassberg-letter-1869__00087-scan_2025-03-21_12-04-12l",
+    "working_copy": "00087-scan_2025-03-21_12-04-12l.jpg"
+  },
+  "text": "de\nPräsidenten Furrer,\n1868",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          1115.0,
+          2137.0
+        ],
+        [
+          1124.0,
+          2197.0
+        ],
+        [
+          1124.0,
+          2400.0
+        ]
+      ],
+      "bbox": [
+        1041.0,
+        2135.0,
+        1184.0,
+        2400.0
+      ],
+      "text": "de",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1115.0,
+          1475.0
+        ],
+        [
+          1115.0,
+          2101.0
+        ]
+      ],
+      "bbox": [
+        1053.0,
+        1475.0,
+        1184.0,
+        2101.0
+      ],
+      "text": "Präsidenten Furrer,",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1230.0,
+          1478.0
+        ],
+        [
+          1234.0,
+          1664.0
+        ]
+      ],
+      "bbox": [
+        1184.0,
+        1475.0,
+        1273.0,
+        1664.0
+      ],
+      "text": "1868",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 4142,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "Luijcas pieters\nMontag nach Cantate\nMonsieur: Le Marquis",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            1115.0,
+            2137.0
+          ],
+          [
+            1124.0,
+            2197.0
+          ],
+          [
+            1124.0,
+            2400.0
+          ]
+        ],
+        "bbox": [
+          1041.0,
+          2135.0,
+          1184.0,
+          2400.0
+        ],
+        "text": "Luijcas pieters",
+        "confidence": 0.8043188939491908,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            1115.0,
+            1475.0
+          ],
+          [
+            1115.0,
+            2101.0
+          ]
+        ],
+        "bbox": [
+          1053.0,
+          1475.0,
+          1184.0,
+          2101.0
+        ],
+        "text": "Montag nach Cantate",
+        "confidence": 0.7835755332520133,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            1230.0,
+            1478.0
+          ],
+          [
+            1234.0,
+            1664.0
+          ]
+        ],
+        "bbox": [
+          1184.0,
+          1475.0,
+          1273.0,
+          1664.0
+        ],
+        "text": "Monsieur: Le Marquis",
+        "confidence": 0.6282959707081318,
+        "regions": []
+      }
+    ],
+    "confidence": 0.7387301326364453,
+    "timing_ms": 7554,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-21T17:16:33+00:00"
+}

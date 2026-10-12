@@ -1,0 +1,105 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "UB Bern",
+  "source": {
+    "name": "Mss_h_h_XXVI_106_06.tif",
+    "bytes": 35399046,
+    "sha256": "dcf736b40217b9e1392d111c4c88726735be49d40f6ed4fc6c7236e682117248",
+    "remote": "digitalisate/UB Bern/Mss_h_h_XXVI_106_06.tif",
+    "key": "UB Bern__Mss_h_h_XXVI_106_06",
+    "working_copy": "Mss_h_h_XXVI_106_06.jpg"
+  },
+  "text": "Calibrite\nFlorchecker Classico\nund",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          106.0,
+          73.0
+        ],
+        [
+          219.0,
+          73.0
+        ]
+      ],
+      "bbox": [
+        106.0,
+        25.0,
+        219.0,
+        108.0
+      ],
+      "text": "Calibrite",
+      "confidence": null,
+      "regions": [
+        "_3323d1fa-ca8d-4ae4-bef5-d6bb53dbf43e"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          387.0,
+          75.0
+        ],
+        [
+          736.0,
+          73.0
+        ]
+      ],
+      "bbox": [
+        385.0,
+        35.0,
+        736.0,
+        117.0
+      ],
+      "text": "Florchecker Classico",
+      "confidence": null,
+      "regions": [
+        "_4c695754-cbd3-46c4-bdfd-b929c1cb6291"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          83.0,
+          1269.0
+        ],
+        [
+          673.0,
+          1261.0
+        ]
+      ],
+      "bbox": [
+        81.0,
+        1230.0,
+        673.0,
+        1311.0
+      ],
+      "text": "und",
+      "confidence": null,
+      "regions": [
+        "_fb676e1c-4165-4d96-9a86-a5b3378b4267"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 7352,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 31,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T02:22:18+00:00"
+}

@@ -1,0 +1,117 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Winterthur",
+  "source": {
+    "name": "27-MsBRH_319-1418.jpg",
+    "bytes": 4525581,
+    "sha256": "84dac477356de7a4cfe698994f50078f20b9c85f77c9836f86fbc62a0b9f6dd9",
+    "remote": "digitalisate/Winterthur/27-MsBRH_319-1418.jpg",
+    "key": "Winterthur__27-MsBRH_319-1418",
+    "working_copy": "27-MsBRH_319-1418.jpg"
+  },
+  "text": "Sr. Hochwohlgeboren\nHerrn Baron Frieder. von Caßberg.\nSigmaringen.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          2372.0,
+          2355.0
+        ],
+        [
+          3563.0,
+          2326.0
+        ],
+        [
+          3891.0,
+          2329.0
+        ]
+      ],
+      "bbox": [
+        2366.0,
+        2221.0,
+        3891.0,
+        2404.0
+      ],
+      "text": "Sr. Hochwohlgeboren",
+      "confidence": null,
+      "regions": [
+        "_8ce8c43a-1c52-42f4-b14f-635bfa630b05"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1545.0,
+          2626.0
+        ],
+        [
+          3663.0,
+          2597.0
+        ],
+        [
+          3950.0,
+          2602.0
+        ]
+      ],
+      "bbox": [
+        1543.0,
+        2492.0,
+        3950.0,
+        2691.0
+      ],
+      "text": "Herrn Baron Frieder. von Caßberg.",
+      "confidence": null,
+      "regions": [
+        "_8ce8c43a-1c52-42f4-b14f-635bfa630b05"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          2930.0,
+          3330.0
+        ],
+        [
+          3504.0,
+          3313.0
+        ],
+        [
+          3982.0,
+          3316.0
+        ]
+      ],
+      "bbox": [
+        2927.0,
+        3206.0,
+        3982.0,
+        3378.0
+      ],
+      "text": "Sigmaringen.",
+      "confidence": null,
+      "regions": [
+        "_770e9565-47f8-4c77-bfda-c3312f6dd0f5"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 11009,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T15:24:02+00:00"
+}

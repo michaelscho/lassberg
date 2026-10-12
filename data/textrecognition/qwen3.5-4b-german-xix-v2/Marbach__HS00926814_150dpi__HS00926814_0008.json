@@ -1,0 +1,153 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00926814_150dpi",
+  "source": {
+    "name": "HS00926814_0008.jpg",
+    "bytes": 291733,
+    "sha256": "eb6cd74359800bf491b34361c54d984d1c2c226c009a137e3c22ff553000203e",
+    "remote": "digitalisate/Marbach/HS00926814_150dpi/HS00926814_0008.jpg",
+    "key": "Marbach__HS00926814_150dpi__HS00926814_0008",
+    "working_copy": "HS00926814_0008.jpg"
+  },
+  "text": "der\n1850\nBern\n1\nBern",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          436.0,
+          665.0
+        ],
+        [
+          436.0,
+          732.0
+        ]
+      ],
+      "bbox": [
+        391.0,
+        665.0,
+        454.0,
+        732.0
+      ],
+      "text": "der",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          545.0,
+          643.0
+        ],
+        [
+          546.0,
+          650.0
+        ]
+      ],
+      "bbox": [
+        534.0,
+        640.0,
+        565.0,
+        650.0
+      ],
+      "text": "1850",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          548.0,
+          893.0
+        ],
+        [
+          548.0,
+          845.0
+        ]
+      ],
+      "bbox": [
+        533.0,
+        845.0,
+        684.0,
+        893.0
+      ],
+      "text": "Bern",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          865.0,
+          704.0
+        ],
+        [
+          866.0,
+          729.0
+        ]
+      ],
+      "bbox": [
+        842.0,
+        703.0,
+        887.0,
+        729.0
+      ],
+      "text": "1",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          865.0,
+          523.0
+        ],
+        [
+          865.0,
+          643.0
+        ]
+      ],
+      "bbox": [
+        833.0,
+        522.0,
+        895.0,
+        643.0
+      ],
+      "text": "Bern",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 5902,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 31,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T20:55:46+00:00"
+}

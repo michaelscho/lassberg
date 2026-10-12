@@ -1,0 +1,105 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00900333_150dpi",
+  "source": {
+    "name": "HS00900333_150dpi_0003.jpg",
+    "bytes": 138587,
+    "sha256": "c0f377e1f3abd8b512f0bb1e0e00386c055f74fb0c5ae392a6761d9848576a84",
+    "remote": "digitalisate/Marbach/HS00900333_150dpi/HS00900333_150dpi_0003.jpg",
+    "key": "Marbach__HS00900333_150dpi__HS00900333_150dpi_0003",
+    "working_copy": "HS00900333_150dpi_0003.jpg"
+  },
+  "text": "s¬\n28\n145",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          602.0,
+          1177.0
+        ],
+        [
+          616.0,
+          1177.0
+        ]
+      ],
+      "bbox": [
+        602.0,
+        1133.0,
+        617.0,
+        1189.0
+      ],
+      "text": "s¬",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          627.0,
+          1177.0
+        ],
+        [
+          666.0,
+          1178.0
+        ]
+      ],
+      "bbox": [
+        626.0,
+        1143.0,
+        666.0,
+        1189.0
+      ],
+      "text": "28",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          747.0,
+          1101.0
+        ],
+        [
+          814.0,
+          1104.0
+        ]
+      ],
+      "bbox": [
+        747.0,
+        1067.0,
+        814.0,
+        1115.0
+      ],
+      "text": "145",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 4094,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 32,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T20:04:12+00:00"
+}

@@ -1,0 +1,326 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Basel/lassberg-letter-3173",
+  "source": {
+    "name": "PA 82a B 9_Seite_175.jpg",
+    "bytes": 221117,
+    "sha256": "2ff33b7a65afbfcc18301205e4021ee1c0f97df30d43394623c6b30f6a7af3fe",
+    "remote": "digitalisate/Basel/lassberg-letter-3173/PA 82a B 9_Seite_175.jpg",
+    "key": "Basel__lassberg-letter-3173__PA 82a B 9_Seite_175",
+    "working_copy": "PA 82a B 9_Seite_175.jpg"
+  },
+  "text": "Escher\nEscher\nEscher\nHerrn\nHochwohlgeboren\n1849",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          651.0,
+          435.0
+        ],
+        [
+          652.0,
+          616.0
+        ]
+      ],
+      "bbox": [
+        616.0,
+        435.0,
+        673.0,
+        616.0
+      ],
+      "text": "Escher",
+      "confidence": null,
+      "regions": [
+        "_0b5b56c2-5869-429d-927e-c960c7bf8f7f"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          691.0,
+          430.0
+        ],
+        [
+          694.0,
+          578.0
+        ]
+      ],
+      "bbox": [
+        672.0,
+        429.0,
+        709.0,
+        578.0
+      ],
+      "text": "Escher",
+      "confidence": null,
+      "regions": [
+        "_0b5b56c2-5869-429d-927e-c960c7bf8f7f"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          467.0,
+          541.0
+        ],
+        [
+          471.0,
+          635.0
+        ],
+        [
+          468.0,
+          696.0
+        ],
+        [
+          472.0,
+          728.0
+        ]
+      ],
+      "bbox": [
+        435.0,
+        540.0,
+        491.0,
+        728.0
+      ],
+      "text": "Escher",
+      "confidence": null,
+      "regions": [
+        "_e7bf2a6a-fc85-4c3e-b862-a0f201221384"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          467.0,
+          855.0
+        ],
+        [
+          468.0,
+          753.0
+        ]
+      ],
+      "bbox": [
+        443.0,
+        752.0,
+        490.0,
+        855.0
+      ],
+      "text": "Herrn",
+      "confidence": null,
+      "regions": [
+        "_e7bf2a6a-fc85-4c3e-b862-a0f201221384"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          526.0,
+          780.0
+        ],
+        [
+          528.0,
+          635.0
+        ]
+      ],
+      "bbox": [
+        503.0,
+        634.0,
+        550.0,
+        780.0
+      ],
+      "text": "Hochwohlgeboren",
+      "confidence": null,
+      "regions": [
+        "_e7bf2a6a-fc85-4c3e-b862-a0f201221384"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          689.0,
+          926.0
+        ],
+        [
+          689.0,
+          921.0
+        ]
+      ],
+      "bbox": [
+        655.0,
+        921.0,
+        718.0,
+        926.0
+      ],
+      "text": "1849",
+      "confidence": null,
+      "regions": [
+        "_b9e8cbd8-a22b-4ba2-8600-794a900abe8c"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 24058,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "Monsieur:\nFranca.\nMonsieur: Hendrik Lapper, Stiefforder van\nMinisterie van Kolonien\nDen Weledelen Heere\nFort",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            467.0,
+            541.0
+          ],
+          [
+            471.0,
+            635.0
+          ],
+          [
+            468.0,
+            696.0
+          ],
+          [
+            472.0,
+            728.0
+          ]
+        ],
+        "bbox": [
+          435.0,
+          540.0,
+          491.0,
+          728.0
+        ],
+        "text": "Monsieur:",
+        "confidence": 0.7157804899745517,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            467.0,
+            855.0
+          ],
+          [
+            468.0,
+            753.0
+          ]
+        ],
+        "bbox": [
+          443.0,
+          752.0,
+          490.0,
+          855.0
+        ],
+        "text": "Franca.",
+        "confidence": 0.5828118281705039,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            526.0,
+            780.0
+          ],
+          [
+            528.0,
+            635.0
+          ]
+        ],
+        "bbox": [
+          503.0,
+          634.0,
+          550.0,
+          780.0
+        ],
+        "text": "Monsieur: Hendrik Lapper, Stiefforder van",
+        "confidence": 0.6199560248997154,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            651.0,
+            435.0
+          ],
+          [
+            652.0,
+            616.0
+          ]
+        ],
+        "bbox": [
+          616.0,
+          435.0,
+          673.0,
+          616.0
+        ],
+        "text": "Ministerie van Kolonien",
+        "confidence": 0.8350262094451033,
+        "regions": []
+      },
+      {
+        "order": 4,
+        "baseline": [
+          [
+            691.0,
+            430.0
+          ],
+          [
+            694.0,
+            578.0
+          ]
+        ],
+        "bbox": [
+          672.0,
+          429.0,
+          709.0,
+          578.0
+        ],
+        "text": "Den Weledelen Heere",
+        "confidence": 0.8335060571369372,
+        "regions": []
+      },
+      {
+        "order": 5,
+        "baseline": [
+          [
+            689.0,
+            926.0
+          ],
+          [
+            689.0,
+            921.0
+          ]
+        ],
+        "bbox": [
+          655.0,
+          921.0,
+          718.0,
+          926.0
+        ],
+        "text": "Fort",
+        "confidence": 0.5262895151972771,
+        "regions": []
+      }
+    ],
+    "confidence": 0.6855616874706815,
+    "timing_ms": 11202,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-21T18:59:06+00:00"
+}

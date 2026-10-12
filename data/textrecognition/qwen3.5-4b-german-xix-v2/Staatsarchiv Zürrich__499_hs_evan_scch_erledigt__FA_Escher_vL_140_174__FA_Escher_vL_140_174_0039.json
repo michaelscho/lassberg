@@ -1,0 +1,229 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Staatsarchiv Zürrich/499_hs_evan_scch_erledigt/FA_Escher_vL_140_174",
+  "source": {
+    "name": "FA_Escher_vL_140_174_0039.tif",
+    "bytes": 33976268,
+    "sha256": "d804898594a9d1ed9a786ab5a25082fde3f1c30f7ba59b326b448714e250ac86",
+    "remote": "digitalisate/Staatsarchiv Zürrich/499_hs_evan_scch_erledigt/FA_Escher_vL_140_174/FA_Escher_vL_140_174_0039.tif",
+    "key": "Staatsarchiv Zürrich__499_hs_evan_scch_erledigt__FA_Escher_vL_140_174__FA_Escher_vL_140_174_0039",
+    "working_copy": "FA_Escher_vL_140_174_0039.jpg"
+  },
+  "text": "N. S. Der Garten mußte ich, so ungern ich mit dem Blut, wohin\nendlich doch verspiken. Er hatte sich gänzlich in der Lage gesagt wir\naltes zu Leick zu tun, was er konnte, u. da blieb nun nichts übrig, als daß\nEine an uns zween den Plaz raumen mußte. Dieser Mensch wird\nwir etwas red, denn er ist ein Hofferts Reer, will nichts kommen u.\nhat sich für Klagen od. gesekten als Alle anderen Leute; er ist die heutige\nPeyernd.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          197.0,
+          481.0
+        ],
+        [
+          1596.0,
+          491.0
+        ],
+        [
+          2901.0,
+          462.0
+        ]
+      ],
+      "bbox": [
+        195.0,
+        388.0,
+        2901.0,
+        545.0
+      ],
+      "text": "N. S. Der Garten mußte ich, so ungern ich mit dem Blut, wohin",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          395.0,
+          633.0
+        ],
+        [
+          961.0,
+          627.0
+        ],
+        [
+          2862.0,
+          637.0
+        ]
+      ],
+      "bbox": [
+        393.0,
+        559.0,
+        2862.0,
+        695.0
+      ],
+      "text": "endlich doch verspiken. Er hatte sich gänzlich in der Lage gesagt wir",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          430.0,
+          800.0
+        ],
+        [
+          2286.0,
+          785.0
+        ],
+        [
+          2901.0,
+          789.0
+        ]
+      ],
+      "bbox": [
+        428.0,
+        709.0,
+        2901.0,
+        843.0
+      ],
+      "text": "altes zu Leick zu tun, was er konnte, u. da blieb nun nichts übrig, als daß",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          417.0,
+          974.0
+        ],
+        [
+          1771.0,
+          958.0
+        ],
+        [
+          2848.0,
+          964.0
+        ]
+      ],
+      "bbox": [
+        415.0,
+        886.0,
+        2848.0,
+        1032.0
+      ],
+      "text": "Eine an uns zween den Plaz raumen mußte. Dieser Mensch wird",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          403.0,
+          1145.0
+        ],
+        [
+          2846.0,
+          1124.0
+        ]
+      ],
+      "bbox": [
+        401.0,
+        1063.0,
+        2846.0,
+        1186.0
+      ],
+      "text": "wir etwas red, denn er ist ein Hofferts Reer, will nichts kommen u.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          428.0,
+          1314.0
+        ],
+        [
+          1642.0,
+          1301.0
+        ],
+        [
+          2035.0,
+          1303.0
+        ],
+        [
+          2156.0,
+          1314.0
+        ],
+        [
+          2949.0,
+          1316.0
+        ]
+      ],
+      "bbox": [
+        425.0,
+        1209.0,
+        2949.0,
+        1380.0
+      ],
+      "text": "hat sich für Klagen od. gesekten als Alle anderen Leute; er ist die heutige",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          409.0,
+          1480.0
+        ],
+        [
+          773.0,
+          1474.0
+        ]
+      ],
+      "bbox": [
+        407.0,
+        1404.0,
+        773.0,
+        1544.0
+      ],
+      "text": "Peyernd.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 7859,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 31,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T22:28:47+00:00"
+}

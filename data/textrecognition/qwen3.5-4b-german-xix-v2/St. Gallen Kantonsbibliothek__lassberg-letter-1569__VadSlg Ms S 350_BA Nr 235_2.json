@@ -1,0 +1,141 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "St. Gallen Kantonsbibliothek/lassberg-letter-1569",
+  "source": {
+    "name": "VadSlg Ms S 350_BA Nr 235_2.tif",
+    "bytes": 40937306,
+    "sha256": "c601d1a20ef2e84c82e71f47202f6c3312e66bda9313eb6450b988e3a770da7d",
+    "remote": "digitalisate/St. Gallen Kantonsbibliothek/lassberg-letter-1569/VadSlg Ms S 350_BA Nr 235_2.tif",
+    "key": "St. Gallen Kantonsbibliothek__lassberg-letter-1569__VadSlg Ms S 350_BA Nr 235_2",
+    "working_copy": "VadSlg Ms S 350_BA Nr 235_2.jpg"
+  },
+  "text": "Es\nHerrn Wilzelin Hartmann, Miler,\nbei den drei Hasen vor dem Platz Tode,\nGallen.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          980.0,
+          861.0
+        ],
+        [
+          1053.0,
+          865.0
+        ]
+      ],
+      "bbox": [
+        978.0,
+        801.0,
+        1053.0,
+        891.0
+      ],
+      "text": "Es",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1108.0,
+          1006.0
+        ],
+        [
+          1627.0,
+          1008.0
+        ],
+        [
+          2316.0,
+          981.0
+        ]
+      ],
+      "bbox": [
+        1106.0,
+        921.0,
+        2316.0,
+        1045.0
+      ],
+      "text": "Herrn Wilzelin Hartmann, Miler,",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1091.0,
+          1126.0
+        ],
+        [
+          1636.0,
+          1126.0
+        ],
+        [
+          2195.0,
+          1098.0
+        ],
+        [
+          2299.0,
+          1100.0
+        ]
+      ],
+      "bbox": [
+        1089.0,
+        1042.0,
+        2299.0,
+        1170.0
+      ],
+      "text": "bei den drei Hasen vor dem Platz Tode,",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          1894.0,
+          1424.0
+        ],
+        [
+          2105.0,
+          1425.0
+        ]
+      ],
+      "bbox": [
+        1892.0,
+        1354.0,
+        2105.0,
+        1508.0
+      ],
+      "text": "Gallen.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 10442,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 32,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T21:39:29+00:00"
+}

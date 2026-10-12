@@ -1,0 +1,264 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00787922_150dpi",
+  "source": {
+    "name": "HS00787922_0027_150dpi.jpg",
+    "bytes": 103451,
+    "sha256": "cac84b5236dbc722b634291dd2f40c6118df97fd6049390e56cc22653d9ff701",
+    "remote": "digitalisate/Marbach/HS00787922_150dpi/HS00787922_0027_150dpi.jpg",
+    "key": "Marbach__HS00787922_150dpi__HS00787922_0027_150dpi",
+    "working_copy": "HS00787922_0027_150dpi.jpg"
+  },
+  "text": "eersbur\nditiert\n10. Mr.\ns¬\n3.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          341.0,
+          614.0
+        ],
+        [
+          488.0,
+          610.0
+        ]
+      ],
+      "bbox": [
+        340.0,
+        571.0,
+        488.0,
+        631.0
+      ],
+      "text": "eersbur",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          396.0,
+          722.0
+        ],
+        [
+          597.0,
+          717.0
+        ]
+      ],
+      "bbox": [
+        396.0,
+        675.0,
+        597.0,
+        736.0
+      ],
+      "text": "ditiert",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          670.0,
+          718.0
+        ],
+        [
+          771.0,
+          720.0
+        ]
+      ],
+      "bbox": [
+        669.0,
+        681.0,
+        771.0,
+        736.0
+      ],
+      "text": "10. Mr.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          819.0,
+          1176.0
+        ],
+        [
+          825.0,
+          1176.0
+        ]
+      ],
+      "bbox": [
+        819.0,
+        1154.0,
+        825.0,
+        1188.0
+      ],
+      "text": "s¬",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          837.0,
+          1176.0
+        ],
+        [
+          852.0,
+          1174.0
+        ]
+      ],
+      "bbox": [
+        837.0,
+        1151.0,
+        852.0,
+        1187.0
+      ],
+      "text": "3.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 7387,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "Meersburg\ndiktiert\n10 Ise.\n1\n1",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            341.0,
+            614.0
+          ],
+          [
+            488.0,
+            610.0
+          ]
+        ],
+        "bbox": [
+          340.0,
+          571.0,
+          488.0,
+          631.0
+        ],
+        "text": "Meersburg",
+        "confidence": 0.883302821053399,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            396.0,
+            722.0
+          ],
+          [
+            597.0,
+            717.0
+          ]
+        ],
+        "bbox": [
+          396.0,
+          675.0,
+          597.0,
+          736.0
+        ],
+        "text": "diktiert",
+        "confidence": 0.8434920199215412,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            670.0,
+            718.0
+          ],
+          [
+            771.0,
+            720.0
+          ]
+        ],
+        "bbox": [
+          669.0,
+          681.0,
+          771.0,
+          736.0
+        ],
+        "text": "10 Ise.",
+        "confidence": 0.691764737878527,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            819.0,
+            1176.0
+          ],
+          [
+            825.0,
+            1176.0
+          ]
+        ],
+        "bbox": [
+          819.0,
+          1154.0,
+          825.0,
+          1188.0
+        ],
+        "text": "1",
+        "confidence": 0.5025015473365784,
+        "regions": []
+      },
+      {
+        "order": 4,
+        "baseline": [
+          [
+            837.0,
+            1176.0
+          ],
+          [
+            852.0,
+            1174.0
+          ]
+        ],
+        "bbox": [
+          837.0,
+          1151.0,
+          852.0,
+          1187.0
+        ],
+        "text": "1",
+        "confidence": 0.47159820795059204,
+        "regions": []
+      }
+    ],
+    "confidence": 0.6785318668281275,
+    "timing_ms": 5520,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T04:40:54+00:00"
+}

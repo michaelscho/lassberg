@@ -1,0 +1,225 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "blb lassberg/K 2911,112",
+  "source": {
+    "name": "page_0004.jpg",
+    "bytes": 595571,
+    "sha256": "5bd2a057ad43a53c6a1dc3e35e8e6b01b1cd1203b7fe9ad7d6a13e7cac3db8fe",
+    "remote": "digitalisate/blb lassberg/K 2911,112/page_0004.jpg",
+    "key": "blb lassberg__K 2911,112__page_0004",
+    "working_copy": "page_0004.jpg"
+  },
+  "text": "Monsieur\n1869\nBaron\nMonsieur\nad\nDein\nde\nC.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          789.0,
+          2010.0
+        ],
+        [
+          792.0,
+          2197.0
+        ]
+      ],
+      "bbox": [
+        743.0,
+        2009.0,
+        833.0,
+        2197.0
+      ],
+      "text": "Monsieur",
+      "confidence": null,
+      "regions": [
+        "_8812ae50-265b-489c-8143-fcdb6dca0e92"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          870.0,
+          1017.0
+        ],
+        [
+          872.0,
+          1124.0
+        ]
+      ],
+      "bbox": [
+        819.0,
+        1016.0,
+        902.0,
+        1124.0
+      ],
+      "text": "1869",
+      "confidence": null,
+      "regions": [
+        "_8812ae50-265b-489c-8143-fcdb6dca0e92"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          888.0,
+          1447.0
+        ],
+        [
+          895.0,
+          1700.0
+        ]
+      ],
+      "bbox": [
+        828.0,
+        1445.0,
+        941.0,
+        1700.0
+      ],
+      "text": "Baron",
+      "confidence": null,
+      "regions": [
+        "_8812ae50-265b-489c-8143-fcdb6dca0e92"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          904.0,
+          1849.0
+        ],
+        [
+          908.0,
+          2065.0
+        ]
+      ],
+      "bbox": [
+        865.0,
+        1847.0,
+        943.0,
+        2065.0
+      ],
+      "text": "Monsieur",
+      "confidence": null,
+      "regions": [
+        "_8812ae50-265b-489c-8143-fcdb6dca0e92"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          1126.0,
+          987.0
+        ],
+        [
+          1128.0,
+          962.0
+        ]
+      ],
+      "bbox": [
+        1089.0,
+        959.0,
+        1160.0,
+        989.0
+      ],
+      "text": "ad",
+      "confidence": null,
+      "regions": [
+        "_8812ae50-265b-489c-8143-fcdb6dca0e92"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          1153.0,
+          1416.0
+        ],
+        [
+          1156.0,
+          1537.0
+        ]
+      ],
+      "bbox": [
+        1119.0,
+        1415.0,
+        1183.0,
+        1537.0
+      ],
+      "text": "Dein",
+      "confidence": null,
+      "regions": [
+        "_8812ae50-265b-489c-8143-fcdb6dca0e92"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          1158.0,
+          1760.0
+        ],
+        [
+          1165.0,
+          1860.0
+        ]
+      ],
+      "bbox": [
+        1129.0,
+        1757.0,
+        1199.0,
+        1862.0
+      ],
+      "text": "de",
+      "confidence": null,
+      "regions": [
+        "_8812ae50-265b-489c-8143-fcdb6dca0e92"
+      ]
+    },
+    {
+      "order": 7,
+      "baseline": [
+        [
+          1481.0,
+          2188.0
+        ],
+        [
+          1491.0,
+          2057.0
+        ]
+      ],
+      "bbox": [
+        1449.0,
+        2051.0,
+        1516.0,
+        2188.0
+      ],
+      "text": "C.",
+      "confidence": null,
+      "regions": [
+        "_8812ae50-265b-489c-8143-fcdb6dca0e92"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 6289,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T18:12:22+00:00"
+}

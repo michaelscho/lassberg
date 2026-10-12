@@ -1,0 +1,157 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Staatsarchiv Zürrich/499_hs_evan_scch_erledigt/Ms_M_8_32_a",
+  "source": {
+    "name": "Ms_M_8_32_a_0061.tif",
+    "bytes": 41282640,
+    "sha256": "4d527963a42d4e9938fb4b87d4a54d0d84d2fb052f4fbec781a31d716b1b324d",
+    "remote": "digitalisate/Staatsarchiv Zürrich/499_hs_evan_scch_erledigt/Ms_M_8_32_a/Ms_M_8_32_a_0061.tif",
+    "key": "Staatsarchiv Zürrich__499_hs_evan_scch_erledigt__Ms_M_8_32_a__Ms_M_8_32_a_0061",
+    "working_copy": "Ms_M_8_32_a_0061.jpg"
+  },
+  "text": "er\nJ.\n5\n1870\nDecher",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          1340.0,
+          2688.0
+        ],
+        [
+          1340.0,
+          2796.0
+        ]
+      ],
+      "bbox": [
+        1279.0,
+        2688.0,
+        1391.0,
+        2796.0
+      ],
+      "text": "er",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1342.0,
+          2439.0
+        ],
+        [
+          1346.0,
+          2340.0
+        ]
+      ],
+      "bbox": [
+        1272.0,
+        2336.0,
+        1412.0,
+        2439.0
+      ],
+      "text": "J.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1926.0,
+          1631.0
+        ],
+        [
+          1932.0,
+          1449.0
+        ]
+      ],
+      "bbox": [
+        1874.0,
+        1445.0,
+        1971.0,
+        1631.0
+      ],
+      "text": "5",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          1930.0,
+          2358.0
+        ],
+        [
+          1937.0,
+          2096.0
+        ]
+      ],
+      "bbox": [
+        1878.0,
+        2094.0,
+        1984.0,
+        2358.0
+      ],
+      "text": "1870",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          2184.0,
+          2796.0
+        ],
+        [
+          2195.0,
+          2724.0
+        ],
+        [
+          2199.0,
+          2491.0
+        ]
+      ],
+      "bbox": [
+        2146.0,
+        2489.0,
+        2267.0,
+        2796.0
+      ],
+      "text": "Decher",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 6619,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 47,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T23:20:38+00:00"
+}

@@ -1,0 +1,177 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS01197458_150dpi",
+  "source": {
+    "name": "HS01197458_0009.jpg",
+    "bytes": 183450,
+    "sha256": "a2cbc22eea373ea3f1db8d2f0e1426c2e267b4ec8bb261cff8f3636ad836c625",
+    "remote": "digitalisate/Marbach/HS01197458_150dpi/HS01197458_0009.jpg",
+    "key": "Marbach__HS01197458_150dpi__HS01197458_0009",
+    "working_copy": "HS01197458_0009.jpg"
+  },
+  "text": "Lassberg, Josef Reich. v. Gerwänt, Schweizer der\nAnmette v. Drosch-Hüschoff\nTessinhausen & Konstanz\ngeb. 10. April 1870 zu Frauenkirchen\ngert. 15. März 1855 auf schon Maaß-",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          122.0,
+          576.0
+        ],
+        [
+          342.0,
+          573.0
+        ],
+        [
+          380.0,
+          568.0
+        ],
+        [
+          517.0,
+          563.0
+        ],
+        [
+          747.0,
+          563.0
+        ],
+        [
+          852.0,
+          558.0
+        ]
+      ],
+      "bbox": [
+        121.0,
+        524.0,
+        852.0,
+        599.0
+      ],
+      "text": "Lassberg, Josef Reich. v. Gerwänt, Schweizer der",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          362.0,
+          627.0
+        ],
+        [
+          718.0,
+          624.0
+        ]
+      ],
+      "bbox": [
+        361.0,
+        592.0,
+        718.0,
+        644.0
+      ],
+      "text": "Anmette v. Drosch-Hüschoff",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          528.0,
+          717.0
+        ],
+        [
+          679.0,
+          719.0
+        ],
+        [
+          731.0,
+          713.0
+        ],
+        [
+          832.0,
+          713.0
+        ]
+      ],
+      "bbox": [
+        528.0,
+        676.0,
+        832.0,
+        739.0
+      ],
+      "text": "Tessinhausen & Konstanz",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          487.0,
+          795.0
+        ],
+        [
+          914.0,
+          797.0
+        ]
+      ],
+      "bbox": [
+        486.0,
+        756.0,
+        914.0,
+        818.0
+      ],
+      "text": "geb. 10. April 1870 zu Frauenkirchen",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          476.0,
+          853.0
+        ],
+        [
+          885.0,
+          853.0
+        ]
+      ],
+      "bbox": [
+        476.0,
+        819.0,
+        885.0,
+        874.0
+      ],
+      "text": "gert. 15. März 1855 auf schon Maaß-",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 6536,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 30,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T21:33:08+00:00"
+}

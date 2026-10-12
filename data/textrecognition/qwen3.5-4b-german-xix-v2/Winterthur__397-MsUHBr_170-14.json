@@ -1,0 +1,113 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Winterthur",
+  "source": {
+    "name": "397-MsUHBr_170-14.jpg",
+    "bytes": 4152875,
+    "sha256": "ae723713d8d4cf537ed9fe4ff9dff627fbc9a025a4e6bc9f560cf9695bab3c42",
+    "remote": "digitalisate/Winterthur/397-MsUHBr_170-14.jpg",
+    "key": "Winterthur__397-MsUHBr_170-14",
+    "working_copy": "397-MsUHBr_170-14.jpg"
+  },
+  "text": "die Tessina, welche ich bis beizulegen die Freiheit eien, ist von so geringem\nworte, daß die dortigen nichts entires beifügen zu dürfen glaube, als die\nbitte, da beide fidekaten guten willen für das Werk aufzunehmen.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          492.0,
+          1689.0
+        ],
+        [
+          4065.0,
+          1710.0
+        ]
+      ],
+      "bbox": [
+        489.0,
+        1592.0,
+        4065.0,
+        1787.0
+      ],
+      "text": "die Tessina, welche ich bis beizulegen die Freiheit eien, ist von so geringem",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          501.0,
+          1946.0
+        ],
+        [
+          1127.0,
+          1937.0
+        ],
+        [
+          3956.0,
+          1955.0
+        ]
+      ],
+      "bbox": [
+        501.0,
+        1831.0,
+        3956.0,
+        2025.0
+      ],
+      "text": "worte, daß die dortigen nichts entires beifügen zu dürfen glaube, als die",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          528.0,
+          2179.0
+        ],
+        [
+          1985.0,
+          2214.0
+        ],
+        [
+          4195.0,
+          2214.0
+        ]
+      ],
+      "bbox": [
+        525.0,
+        2078.0,
+        4195.0,
+        2291.0
+      ],
+      "text": "bitte, da beide fidekaten guten willen für das Werk aufzunehmen.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 9503,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T17:08:33+00:00"
+}

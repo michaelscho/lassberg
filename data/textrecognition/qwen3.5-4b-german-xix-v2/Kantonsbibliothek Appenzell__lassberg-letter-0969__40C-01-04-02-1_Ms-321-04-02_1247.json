@@ -1,0 +1,234 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Kantonsbibliothek Appenzell/lassberg-letter-0969",
+  "source": {
+    "name": "40C-01-04-02-1_Ms-321-04-02_1247.tif",
+    "bytes": 20854660,
+    "sha256": "6977198db3d6d1520e6530c63bb5d4904f99189a82df59b3a652a3cca75ffdfb",
+    "remote": "digitalisate/Kantonsbibliothek Appenzell/lassberg-letter-0969/40C-01-04-02-1_Ms-321-04-02_1247.tif",
+    "key": "Kantonsbibliothek Appenzell__lassberg-letter-0969__40C-01-04-02-1_Ms-321-04-02_1247",
+    "working_copy": "40C-01-04-02-1_Ms-321-04-02_1247.jpg"
+  },
+  "text": "nigsten Augusten 1825\nsperch am Kaßberg\nLembk. E. 193\n1.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          1342.0,
+          171.0
+        ],
+        [
+          2195.0,
+          176.0
+        ]
+      ],
+      "bbox": [
+        1340.0,
+        115.0,
+        2195.0,
+        232.0
+      ],
+      "text": "nigsten Augusten 1825",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1609.0,
+          267.0
+        ],
+        [
+          1870.0,
+          268.0
+        ],
+        [
+          2232.0,
+          259.0
+        ]
+      ],
+      "bbox": [
+        1608.0,
+        209.0,
+        2232.0,
+        320.0
+      ],
+      "text": "sperch am Kaßberg",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1628.0,
+          357.0
+        ],
+        [
+          1856.0,
+          361.0
+        ],
+        [
+          2040.0,
+          353.0
+        ]
+      ],
+      "bbox": [
+        1627.0,
+        317.0,
+        2040.0,
+        425.0
+      ],
+      "text": "Lembk. E. 193",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          171.0,
+          171.0
+        ],
+        [
+          197.0,
+          168.0
+        ]
+      ],
+      "bbox": [
+        164.0,
+        128.0,
+        201.0,
+        222.0
+      ],
+      "text": "1.",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 14534,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "1247\nExpischausen 11. Maii 1825\nJostenh von Zaßbang\nbeantr. E. 19 d",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            171.0,
+            171.0
+          ],
+          [
+            197.0,
+            168.0
+          ]
+        ],
+        "bbox": [
+          164.0,
+          128.0,
+          201.0,
+          222.0
+        ],
+        "text": "1247",
+        "confidence": 0.8379879593849182,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            1342.0,
+            171.0
+          ],
+          [
+            2195.0,
+            176.0
+          ]
+        ],
+        "bbox": [
+          1340.0,
+          115.0,
+          2195.0,
+          232.0
+        ],
+        "text": "Expischausen 11. Maii 1825",
+        "confidence": 0.7846841820730612,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            1609.0,
+            267.0
+          ],
+          [
+            1870.0,
+            268.0
+          ],
+          [
+            2232.0,
+            259.0
+          ]
+        ],
+        "bbox": [
+          1608.0,
+          209.0,
+          2232.0,
+          320.0
+        ],
+        "text": "Jostenh von Zaßbang",
+        "confidence": 0.7696107069128438,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            1628.0,
+            357.0
+          ],
+          [
+            1856.0,
+            361.0
+          ],
+          [
+            2040.0,
+            353.0
+          ]
+        ],
+        "bbox": [
+          1627.0,
+          317.0,
+          2040.0,
+          425.0
+        ],
+        "text": "beantr. E. 19 d",
+        "confidence": 0.7874410669008891,
+        "regions": []
+      }
+    ],
+    "confidence": 0.7949309788179281,
+    "timing_ms": 9125,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T02:07:10+00:00"
+}

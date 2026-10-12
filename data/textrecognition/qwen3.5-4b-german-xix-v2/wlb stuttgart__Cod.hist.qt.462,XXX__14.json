@@ -1,0 +1,201 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "wlb stuttgart/Cod.hist.qt.462,XXX",
+  "source": {
+    "name": "14.jpg",
+    "bytes": 10851293,
+    "sha256": "2ae619b3005a6d4b92c9aff6e5d99b7bf5276ba9f9a3f3d66c545853008b5d4f",
+    "remote": "digitalisate/wlb stuttgart/Cod.hist.qt.462,XXX/14.jpg",
+    "key": "wlb stuttgart__Cod.hist.qt.462,XXX__14",
+    "working_copy": "14.jpg"
+  },
+  "text": "--\n3. 1501.\nAlber\nGeboren\n(1)\nFressor\nmit",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          686.0,
+          1181.0
+        ],
+        [
+          739.0,
+          1183.0
+        ]
+      ],
+      "bbox": [
+        684.0,
+        1137.0,
+        739.0,
+        1204.0
+      ],
+      "text": "--",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1195.0,
+          959.0
+        ],
+        [
+          1367.0,
+          962.0
+        ]
+      ],
+      "bbox": [
+        1194.0,
+        905.0,
+        1367.0,
+        978.0
+      ],
+      "text": "3. 1501.",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1074.0,
+          1075.0
+        ],
+        [
+          1328.0,
+          1078.0
+        ]
+      ],
+      "bbox": [
+        1072.0,
+        1026.0,
+        1328.0,
+        1101.0
+      ],
+      "text": "Alber",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          1405.0,
+          964.0
+        ],
+        [
+          1577.0,
+          964.0
+        ]
+      ],
+      "bbox": [
+        1405.0,
+        920.0,
+        1577.0,
+        982.0
+      ],
+      "text": "Geboren",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          1504.0,
+          1186.0
+        ],
+        [
+          1547.0,
+          1184.0
+        ]
+      ],
+      "bbox": [
+        1503.0,
+        1149.0,
+        1547.0,
+        1198.0
+      ],
+      "text": "(1)",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          1617.0,
+          1081.0
+        ],
+        [
+          1743.0,
+          1083.0
+        ]
+      ],
+      "bbox": [
+        1615.0,
+        1029.0,
+        1743.0,
+        1104.0
+      ],
+      "text": "Fressor",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          1666.0,
+          1180.0
+        ],
+        [
+          1693.0,
+          1181.0
+        ]
+      ],
+      "bbox": [
+        1663.0,
+        1136.0,
+        1693.0,
+        1213.0
+      ],
+      "text": "mit",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 8838,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T20:53:48+00:00"
+}

@@ -1,0 +1,462 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00894009_150dpi",
+  "source": {
+    "name": "HS00894009_150dpi_0008.jpg",
+    "bytes": 152744,
+    "sha256": "32c5e6a952e71bba35a6bec078f31dd6ba62396a294ede991574a44637749cd2",
+    "remote": "digitalisate/Marbach/HS00894009_150dpi/HS00894009_150dpi_0008.jpg",
+    "key": "Marbach__HS00894009_150dpi__HS00894009_150dpi_0008",
+    "working_copy": "HS00894009_150dpi_0008.jpg"
+  },
+  "text": "du sollte dießmal Verzeichnung hoffen dürfen, wenn die Werke\nden Worten des Briefs widersprechen. Erlauben Eur. Hochwohlge-\nBern daß ich den herzlichsten Dank aussprache bei Zürich ge-\nbe eines Buchs der mir, um zu lang, sehr wesentliche Dienste\ngeleistet hat. Wenn nun die alten Cameraden es auch noch\nerkennen u. annehmen!",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          213.0,
+          196.0
+        ],
+        [
+          491.0,
+          193.0
+        ],
+        [
+          605.0,
+          189.0
+        ],
+        [
+          891.0,
+          190.0
+        ],
+        [
+          1060.0,
+          188.0
+        ]
+      ],
+      "bbox": [
+        213.0,
+        161.0,
+        1060.0,
+        225.0
+      ],
+      "text": "du sollte dießmal Verzeichnung hoffen dürfen, wenn die Werke",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          162.0,
+          262.0
+        ],
+        [
+          659.0,
+          242.0
+        ],
+        [
+          1058.0,
+          238.0
+        ]
+      ],
+      "bbox": [
+        162.0,
+        210.0,
+        1058.0,
+        273.0
+      ],
+      "text": "den Worten des Briefs widersprechen. Erlauben Eur. Hochwohlge-",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          165.0,
+          319.0
+        ],
+        [
+          299.0,
+          314.0
+        ],
+        [
+          470.0,
+          303.0
+        ],
+        [
+          757.0,
+          288.0
+        ],
+        [
+          861.0,
+          287.0
+        ],
+        [
+          1065.0,
+          288.0
+        ]
+      ],
+      "bbox": [
+        163.0,
+        258.0,
+        1065.0,
+        331.0
+      ],
+      "text": "Bern daß ich den herzlichsten Dank aussprache bei Zürich ge-",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          169.0,
+          373.0
+        ],
+        [
+          281.0,
+          370.0
+        ],
+        [
+          610.0,
+          350.0
+        ],
+        [
+          685.0,
+          343.0
+        ],
+        [
+          942.0,
+          333.0
+        ],
+        [
+          1075.0,
+          330.0
+        ]
+      ],
+      "bbox": [
+        168.0,
+        301.0,
+        1075.0,
+        382.0
+      ],
+      "text": "be eines Buchs der mir, um zu lang, sehr wesentliche Dienste",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          172.0,
+          423.0
+        ],
+        [
+          284.0,
+          421.0
+        ],
+        [
+          384.0,
+          415.0
+        ],
+        [
+          584.0,
+          399.0
+        ],
+        [
+          726.0,
+          392.0
+        ],
+        [
+          864.0,
+          386.0
+        ],
+        [
+          1094.0,
+          380.0
+        ]
+      ],
+      "bbox": [
+        171.0,
+        353.0,
+        1095.0,
+        443.0
+      ],
+      "text": "geleistet hat. Wenn nun die alten Cameraden es auch noch",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          176.0,
+          478.0
+        ],
+        [
+          304.0,
+          475.0
+        ],
+        [
+          382.0,
+          466.0
+        ],
+        [
+          538.0,
+          459.0
+        ]
+      ],
+      "bbox": [
+        174.0,
+        436.0,
+        538.0,
+        489.0
+      ],
+      "text": "erkennen u. annehmen!",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 13495,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "Es sollte dissmal Verzeihung hoffen dürfen, wenn die Werke\nden Worten des Briefs mitten sprechen. Erlauben Ew. Hochwolge-\nboren dass ich den herzlichsten Dank ausspreche bei Zurückga-\nbe eines Buchs das mir, um zu lang, sehr wesentliche Dienst\ngeleiset hat. Wenn nun die alten Cameraden es auch noch\nerkennen u. annehmen!",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            213.0,
+            196.0
+          ],
+          [
+            491.0,
+            193.0
+          ],
+          [
+            605.0,
+            189.0
+          ],
+          [
+            891.0,
+            190.0
+          ],
+          [
+            1060.0,
+            188.0
+          ]
+        ],
+        "bbox": [
+          213.0,
+          161.0,
+          1060.0,
+          225.0
+        ],
+        "text": "Es sollte dissmal Verzeihung hoffen dürfen, wenn die Werke",
+        "confidence": 0.9297517330969794,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            162.0,
+            262.0
+          ],
+          [
+            659.0,
+            242.0
+          ],
+          [
+            1058.0,
+            238.0
+          ]
+        ],
+        "bbox": [
+          162.0,
+          210.0,
+          1058.0,
+          273.0
+        ],
+        "text": "den Worten des Briefs mitten sprechen. Erlauben Ew. Hochwolge-",
+        "confidence": 0.9114791044304448,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            165.0,
+            319.0
+          ],
+          [
+            299.0,
+            314.0
+          ],
+          [
+            470.0,
+            303.0
+          ],
+          [
+            757.0,
+            288.0
+          ],
+          [
+            861.0,
+            287.0
+          ],
+          [
+            1065.0,
+            288.0
+          ]
+        ],
+        "bbox": [
+          163.0,
+          258.0,
+          1065.0,
+          331.0
+        ],
+        "text": "boren dass ich den herzlichsten Dank ausspreche bei Zurückga-",
+        "confidence": 0.9448093411422545,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            169.0,
+            373.0
+          ],
+          [
+            281.0,
+            370.0
+          ],
+          [
+            610.0,
+            350.0
+          ],
+          [
+            685.0,
+            343.0
+          ],
+          [
+            942.0,
+            333.0
+          ],
+          [
+            1075.0,
+            330.0
+          ]
+        ],
+        "bbox": [
+          168.0,
+          301.0,
+          1075.0,
+          382.0
+        ],
+        "text": "be eines Buchs das mir, um zu lang, sehr wesentliche Dienst",
+        "confidence": 0.9362069893691499,
+        "regions": []
+      },
+      {
+        "order": 4,
+        "baseline": [
+          [
+            172.0,
+            423.0
+          ],
+          [
+            284.0,
+            421.0
+          ],
+          [
+            384.0,
+            415.0
+          ],
+          [
+            584.0,
+            399.0
+          ],
+          [
+            726.0,
+            392.0
+          ],
+          [
+            864.0,
+            386.0
+          ],
+          [
+            1094.0,
+            380.0
+          ]
+        ],
+        "bbox": [
+          171.0,
+          353.0,
+          1095.0,
+          443.0
+        ],
+        "text": "geleiset hat. Wenn nun die alten Cameraden es auch noch",
+        "confidence": 0.9278654613278129,
+        "regions": []
+      },
+      {
+        "order": 5,
+        "baseline": [
+          [
+            176.0,
+            478.0
+          ],
+          [
+            304.0,
+            475.0
+          ],
+          [
+            382.0,
+            466.0
+          ],
+          [
+            538.0,
+            459.0
+          ]
+        ],
+        "bbox": [
+          174.0,
+          436.0,
+          538.0,
+          489.0
+        ],
+        "text": "erkennen u. annehmen!",
+        "confidence": 0.9126702830905006,
+        "regions": []
+      }
+    ],
+    "confidence": 0.9271304854095237,
+    "timing_ms": 22777,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T15:13:58+00:00"
+}

@@ -1,0 +1,126 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00755414_150dpi",
+  "source": {
+    "name": "HS00755414_150dpi_0003.jpg",
+    "bytes": 102228,
+    "sha256": "9e75ef41c04fb9ddd156e6ed566785b2f35671a2322cc0a947e26a99eaddf7cf",
+    "remote": "digitalisate/Marbach/HS00755414_150dpi/HS00755414_150dpi_0003.jpg",
+    "key": "Marbach__HS00755414_150dpi__HS00755414_150dpi_0003",
+    "working_copy": "HS00755414_150dpi_0003.jpg"
+  },
+  "text": "1.\n1865",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          405.0,
+          396.0
+        ],
+        [
+          426.0,
+          395.0
+        ]
+      ],
+      "bbox": [
+        404.0,
+        379.0,
+        426.0,
+        402.0
+      ],
+      "text": "1.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          543.0,
+          574.0
+        ],
+        [
+          560.0,
+          574.0
+        ]
+      ],
+      "bbox": [
+        542.0,
+        548.0,
+        560.0,
+        589.0
+      ],
+      "text": "1865",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 20724,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "21. 1. 1847\n161. beschädigt",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            405.0,
+            396.0
+          ],
+          [
+            426.0,
+            395.0
+          ]
+        ],
+        "bbox": [
+          404.0,
+          379.0,
+          426.0,
+          402.0
+        ],
+        "text": "21. 1. 1847",
+        "confidence": 0.9306616891514171,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            543.0,
+            574.0
+          ],
+          [
+            560.0,
+            574.0
+          ]
+        ],
+        "bbox": [
+          542.0,
+          548.0,
+          560.0,
+          589.0
+        ],
+        "text": "161. beschädigt",
+        "confidence": 0.8125563468784094,
+        "regions": []
+      }
+    ],
+    "confidence": 0.8716090180149132,
+    "timing_ms": 21428,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T04:11:37+00:00"
+}

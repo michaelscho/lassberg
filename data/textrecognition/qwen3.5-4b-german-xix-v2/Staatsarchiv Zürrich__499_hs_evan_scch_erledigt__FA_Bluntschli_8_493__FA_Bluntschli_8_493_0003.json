@@ -1,0 +1,133 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Staatsarchiv Zürrich/499_hs_evan_scch_erledigt/FA_Bluntschli_8_493",
+  "source": {
+    "name": "FA_Bluntschli_8_493_0003.tif",
+    "bytes": 22368404,
+    "sha256": "07f51bcf9d141fa25bd8dbc869715670e3c35539829aebed1d8831eb5f4b1e3e",
+    "remote": "digitalisate/Staatsarchiv Zürrich/499_hs_evan_scch_erledigt/FA_Bluntschli_8_493/FA_Bluntschli_8_493_0003.tif",
+    "key": "Staatsarchiv Zürrich__499_hs_evan_scch_erledigt__FA_Bluntschli_8_493__FA_Bluntschli_8_493_0003",
+    "working_copy": "FA_Bluntschli_8_493_0003.jpg"
+  },
+  "text": "der rheinischen Staatsschrift zur Löber Angelegenheit, im\nKreisschicken, sollen schon 2 überdungen erscheinen\nbin; ich bitte mir die eine derselben zu verschaffen.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          498.0,
+          634.0
+        ],
+        [
+          723.0,
+          664.0
+        ],
+        [
+          1229.0,
+          680.0
+        ],
+        [
+          1627.0,
+          710.0
+        ],
+        [
+          1923.0,
+          717.0
+        ]
+      ],
+      "bbox": [
+        494.0,
+        587.0,
+        1923.0,
+        758.0
+      ],
+      "text": "der rheinischen Staatsschrift zur Löber Angelegenheit, im",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          610.0,
+          848.0
+        ],
+        [
+          853.0,
+          868.0
+        ],
+        [
+          1423.0,
+          874.0
+        ],
+        [
+          2037.0,
+          924.0
+        ]
+      ],
+      "bbox": [
+        608.0,
+        768.0,
+        2037.0,
+        948.0
+      ],
+      "text": "Kreisschicken, sollen schon 2 überdungen erscheinen",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          271.0,
+          1009.0
+        ],
+        [
+          452.0,
+          1015.0
+        ],
+        [
+          959.0,
+          1054.0
+        ],
+        [
+          1776.0,
+          1060.0
+        ]
+      ],
+      "bbox": [
+        269.0,
+        956.0,
+        1776.0,
+        1106.0
+      ],
+      "text": "bin; ich bitte mir die eine derselben zu verschaffen.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 6378,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 32,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T22:21:42+00:00"
+}

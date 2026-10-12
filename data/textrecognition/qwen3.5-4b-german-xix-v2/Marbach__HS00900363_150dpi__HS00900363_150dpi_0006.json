@@ -1,0 +1,209 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00900363_150dpi",
+  "source": {
+    "name": "HS00900363_150dpi_0006.jpg",
+    "bytes": 311086,
+    "sha256": "98d5ab169f88fbfb3b71af93ea09a9d9d8ddd70a67b82e7e94c40ff156e6d8e6",
+    "remote": "digitalisate/Marbach/HS00900363_150dpi/HS00900363_150dpi_0006.jpg",
+    "key": "Marbach__HS00900363_150dpi__HS00900363_150dpi_0006",
+    "working_copy": "HS00900363_150dpi_0006.jpg"
+  },
+  "text": "Deiner hochwohlgeborenen\nHerrn Geheimrath\nBardon\nvon Aßburg\n1865\nMarsburg\nBern",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          594.0,
+          417.0
+        ],
+        [
+          726.0,
+          414.0
+        ],
+        [
+          1004.0,
+          416.0
+        ]
+      ],
+      "bbox": [
+        593.0,
+        370.0,
+        1004.0,
+        437.0
+      ],
+      "text": "Deiner hochwohlgeborenen",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          577.0,
+          492.0
+        ],
+        [
+          928.0,
+          493.0
+        ]
+      ],
+      "bbox": [
+        576.0,
+        455.0,
+        928.0,
+        516.0
+      ],
+      "text": "Herrn Geheimrath",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          955.0,
+          494.0
+        ],
+        [
+          1093.0,
+          500.0
+        ]
+      ],
+      "bbox": [
+        954.0,
+        452.0,
+        1093.0,
+        513.0
+      ],
+      "text": "Bardon",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          760.0,
+          563.0
+        ],
+        [
+          1050.0,
+          562.0
+        ]
+      ],
+      "bbox": [
+        760.0,
+        517.0,
+        1050.0,
+        596.0
+      ],
+      "text": "von Aßburg",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          773.0,
+          625.0
+        ],
+        [
+          803.0,
+          626.0
+        ]
+      ],
+      "bbox": [
+        772.0,
+        603.0,
+        803.0,
+        635.0
+      ],
+      "text": "1865",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          777.0,
+          703.0
+        ],
+        [
+          935.0,
+          698.0
+        ],
+        [
+          1058.0,
+          698.0
+        ]
+      ],
+      "bbox": [
+        776.0,
+        663.0,
+        1058.0,
+        713.0
+      ],
+      "text": "Marsburg",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          1033.0,
+          749.0
+        ],
+        [
+          1120.0,
+          752.0
+        ]
+      ],
+      "bbox": [
+        1031.0,
+        704.0,
+        1121.0,
+        773.0
+      ],
+      "text": "Bern",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 8899,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 32,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T20:27:46+00:00"
+}

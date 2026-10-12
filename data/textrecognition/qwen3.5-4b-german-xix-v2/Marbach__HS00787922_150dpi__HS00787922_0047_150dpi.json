@@ -1,0 +1,264 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00787922_150dpi",
+  "source": {
+    "name": "HS00787922_0047_150dpi.jpg",
+    "bytes": 187410,
+    "sha256": "1d90c03bf4f216f8a89fa1c9489d6761502010f8b7d4bb74727853332c22d9b2",
+    "remote": "digitalisate/Marbach/HS00787922_150dpi/HS00787922_0047_150dpi.jpg",
+    "key": "Marbach__HS00787922_150dpi__HS00787922_0047_150dpi",
+    "working_copy": "HS00787922_0047_150dpi.jpg"
+  },
+  "text": "de\n1865\nde\naber\nals",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          3.0,
+          383.0
+        ],
+        [
+          25.0,
+          383.0
+        ]
+      ],
+      "bbox": [
+        3.0,
+        367.0,
+        25.0,
+        403.0
+      ],
+      "text": "de",
+      "confidence": null,
+      "regions": [
+        "_b2ea1b89-cc2a-4ad8-9e6f-51bec6604f6b"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          4.0,
+          434.0
+        ],
+        [
+          27.0,
+          433.0
+        ]
+      ],
+      "bbox": [
+        2.0,
+        416.0,
+        27.0,
+        444.0
+      ],
+      "text": "1865",
+      "confidence": null,
+      "regions": [
+        "_b2ea1b89-cc2a-4ad8-9e6f-51bec6604f6b"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          3.0,
+          535.0
+        ],
+        [
+          30.0,
+          534.0
+        ]
+      ],
+      "bbox": [
+        2.0,
+        511.0,
+        30.0,
+        554.0
+      ],
+      "text": "de",
+      "confidence": null,
+      "regions": [
+        "_2e351b22-cb66-41f9-96a3-3461246dd48a"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          1.0,
+          601.0
+        ],
+        [
+          49.0,
+          602.0
+        ]
+      ],
+      "bbox": [
+        0.0,
+        570.0,
+        49.0,
+        618.0
+      ],
+      "text": "aber",
+      "confidence": null,
+      "regions": [
+        "_2e351b22-cb66-41f9-96a3-3461246dd48a"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          4.0,
+          668.0
+        ],
+        [
+          39.0,
+          667.0
+        ]
+      ],
+      "bbox": [
+        3.0,
+        636.0,
+        39.0,
+        684.0
+      ],
+      "text": "als",
+      "confidence": null,
+      "regions": [
+        "_2e351b22-cb66-41f9-96a3-3461246dd48a"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 37984,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "1\n1\n✳\n2\n1111",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            3.0,
+            383.0
+          ],
+          [
+            25.0,
+            383.0
+          ]
+        ],
+        "bbox": [
+          3.0,
+          367.0,
+          25.0,
+          403.0
+        ],
+        "text": "1",
+        "confidence": 0.08700118213891983,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            4.0,
+            434.0
+          ],
+          [
+            27.0,
+            433.0
+          ]
+        ],
+        "bbox": [
+          2.0,
+          416.0,
+          27.0,
+          444.0
+        ],
+        "text": "1",
+        "confidence": 0.07963403314352036,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            3.0,
+            535.0
+          ],
+          [
+            30.0,
+            534.0
+          ]
+        ],
+        "bbox": [
+          2.0,
+          511.0,
+          30.0,
+          554.0
+        ],
+        "text": "✳",
+        "confidence": 0.3294302547971408,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            1.0,
+            601.0
+          ],
+          [
+            49.0,
+            602.0
+          ]
+        ],
+        "bbox": [
+          0.0,
+          570.0,
+          49.0,
+          618.0
+        ],
+        "text": "2",
+        "confidence": 0.08657128363847733,
+        "regions": []
+      },
+      {
+        "order": 4,
+        "baseline": [
+          [
+            4.0,
+            668.0
+          ],
+          [
+            39.0,
+            667.0
+          ]
+        ],
+        "bbox": [
+          3.0,
+          636.0,
+          39.0,
+          684.0
+        ],
+        "text": "1111",
+        "confidence": 0.27794610150158405,
+        "regions": []
+      }
+    ],
+    "confidence": 0.17211657104392847,
+    "timing_ms": 22748,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T04:49:20+00:00"
+}

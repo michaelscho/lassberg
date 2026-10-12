@@ -1,0 +1,242 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Winterthur",
+  "source": {
+    "name": "03-MsAS_12a-02.jpg",
+    "bytes": 4075084,
+    "sha256": "7cd5e002405579400567475ca27a2e90e5c24d29b34994ce067ffc27bd3d4897",
+    "remote": "digitalisate/Winterthur/03-MsAS_12a-02.jpg",
+    "key": "Winterthur__03-MsAS_12a-02",
+    "working_copy": "03-MsAS_12a-02.jpg"
+  },
+  "text": "Siner Dolgebornen\nDem Herrn Kaufmann\nA. Amstorf\nWilber",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          2872.0,
+          1696.0
+        ],
+        [
+          4116.0,
+          1674.0
+        ]
+      ],
+      "bbox": [
+        2869.0,
+        1579.0,
+        4116.0,
+        1743.0
+      ],
+      "text": "Siner Dolgebornen",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          2722.0,
+          2283.0
+        ],
+        [
+          3150.0,
+          2281.0
+        ],
+        [
+          3573.0,
+          2251.0
+        ],
+        [
+          4380.0,
+          2219.0
+        ]
+      ],
+      "bbox": [
+        2720.0,
+        2114.0,
+        4380.0,
+        2340.0
+      ],
+      "text": "Dem Herrn Kaufmann",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          3018.0,
+          2522.0
+        ],
+        [
+          3603.0,
+          2527.0
+        ]
+      ],
+      "bbox": [
+        3016.0,
+        2373.0,
+        3603.0,
+        2572.0
+      ],
+      "text": "A. Amstorf",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          3708.0,
+          2858.0
+        ],
+        [
+          3952.0,
+          2836.0
+        ],
+        [
+          4243.0,
+          2826.0
+        ]
+      ],
+      "bbox": [
+        3698.0,
+        2671.0,
+        4243.0,
+        2888.0
+      ],
+      "text": "Wilber",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 13058,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "Siiner Wolgeboren\nDem Heeren Kurfersteegen\nN. Amsler,\nWildeck.",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            2872.0,
+            1696.0
+          ],
+          [
+            4116.0,
+            1674.0
+          ]
+        ],
+        "bbox": [
+          2869.0,
+          1579.0,
+          4116.0,
+          1743.0
+        ],
+        "text": "Siiner Wolgeboren",
+        "confidence": 0.8924059797735775,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            2722.0,
+            2283.0
+          ],
+          [
+            3150.0,
+            2281.0
+          ],
+          [
+            3573.0,
+            2251.0
+          ],
+          [
+            4380.0,
+            2219.0
+          ]
+        ],
+        "bbox": [
+          2720.0,
+          2114.0,
+          4380.0,
+          2340.0
+        ],
+        "text": "Dem Heeren Kurfersteegen",
+        "confidence": 0.8172837980091572,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            3018.0,
+            2522.0
+          ],
+          [
+            3603.0,
+            2527.0
+          ]
+        ],
+        "bbox": [
+          3016.0,
+          2373.0,
+          3603.0,
+          2572.0
+        ],
+        "text": "N. Amsler,",
+        "confidence": 0.8758796989917755,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            3708.0,
+            2858.0
+          ],
+          [
+            3952.0,
+            2836.0
+          ],
+          [
+            4243.0,
+            2826.0
+          ]
+        ],
+        "bbox": [
+          3698.0,
+          2671.0,
+          4243.0,
+          2888.0
+        ],
+        "text": "Wildeck.",
+        "confidence": 0.9151577353477478,
+        "regions": []
+      }
+    ],
+    "confidence": 0.8751818030305645,
+    "timing_ms": 21215,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T13:10:26+00:00"
+}

@@ -1,0 +1,229 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "UB Bern",
+  "source": {
+    "name": "Mss_h_h_XLIV_180_32_124.tif",
+    "bytes": 29240922,
+    "sha256": "c1be5537dc2195f3a46c7030fecc6733cf8eccc4ad9c0862a73241ef95f0663b",
+    "remote": "digitalisate/UB Bern/Mss_h_h_XLIV_180_32_124.tif",
+    "key": "UB Bern__Mss_h_h_XLIV_180_32_124",
+    "working_copy": "Mss_h_h_XLIV_180_32_124.jpg"
+  },
+  "text": "Calibrite\nFlorchecker Classica\nmit dem 10ten\n8\n5\nI\n8\n80",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          92.0,
+          89.0
+        ],
+        [
+          228.0,
+          89.0
+        ]
+      ],
+      "bbox": [
+        92.0,
+        35.0,
+        228.0,
+        123.0
+      ],
+      "text": "Calibrite",
+      "confidence": null,
+      "regions": [
+        "_38b47b84-5860-4366-bd10-e89427d6293f"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          389.0,
+          94.0
+        ],
+        [
+          742.0,
+          94.0
+        ]
+      ],
+      "bbox": [
+        389.0,
+        58.0,
+        742.0,
+        135.0
+      ],
+      "text": "Florchecker Classica",
+      "confidence": null,
+      "regions": [
+        "_38b47b84-5860-4366-bd10-e89427d6293f"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          92.0,
+          1285.0
+        ],
+        [
+          659.0,
+          1281.0
+        ]
+      ],
+      "bbox": [
+        89.0,
+        1254.0,
+        659.0,
+        1323.0
+      ],
+      "text": "mit dem 10ten",
+      "confidence": null,
+      "regions": [
+        "_72797fad-53c3-43a2-8e41-3c5ef403b0c1"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          374.0,
+          2613.0
+        ],
+        [
+          374.0,
+          2592.0
+        ]
+      ],
+      "bbox": [
+        343.0,
+        2592.0,
+        418.0,
+        2613.0
+      ],
+      "text": "8",
+      "confidence": null,
+      "regions": [
+        "_a1d92837-c5ff-4738-817e-953c00d4fe78"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          374.0,
+          3200.0
+        ],
+        [
+          378.0,
+          3186.0
+        ]
+      ],
+      "bbox": [
+        343.0,
+        3175.0,
+        430.0,
+        3215.0
+      ],
+      "text": "5",
+      "confidence": null,
+      "regions": [
+        "_95613b4a-9fba-4dd4-9265-3351103e2c81"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          376.0,
+          3436.0
+        ],
+        [
+          380.0,
+          3411.0
+        ]
+      ],
+      "bbox": [
+        349.0,
+        3405.0,
+        418.0,
+        3441.0
+      ],
+      "text": "I",
+      "confidence": null,
+      "regions": [
+        "_95613b4a-9fba-4dd4-9265-3351103e2c81"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          378.0,
+          3533.0
+        ],
+        [
+          382.0,
+          3547.0
+        ],
+        [
+          397.0,
+          3553.0
+        ]
+      ],
+      "bbox": [
+        343.0,
+        3503.0,
+        424.0,
+        3585.0
+      ],
+      "text": "8",
+      "confidence": null,
+      "regions": [
+        "_95613b4a-9fba-4dd4-9265-3351103e2c81"
+      ]
+    },
+    {
+      "order": 7,
+      "baseline": [
+        [
+          382.0,
+          3664.0
+        ],
+        [
+          382.0,
+          3648.0
+        ]
+      ],
+      "bbox": [
+        357.0,
+        3648.0,
+        422.0,
+        3664.0
+      ],
+      "text": "80",
+      "confidence": null,
+      "regions": [
+        "_95613b4a-9fba-4dd4-9265-3351103e2c81"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 6419,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 21,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T00:59:23+00:00"
+}

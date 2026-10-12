@@ -1,0 +1,225 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00894013_150dpi",
+  "source": {
+    "name": "HS00894013_150dpi_0007.jpg",
+    "bytes": 278195,
+    "sha256": "3cee38eae33c48d51600b36d771cae1dc420591cb33136bee53edd1701f2fccc",
+    "remote": "digitalisate/Marbach/HS00894013_150dpi/HS00894013_150dpi_0007.jpg",
+    "key": "Marbach__HS00894013_150dpi__HS00894013_150dpi_0007",
+    "working_copy": "HS00894013_150dpi_0007.jpg"
+  },
+  "text": "Dein\n1865\nden\nBern\nde\nein\nHerrn\n1871",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          802.0,
+          526.0
+        ],
+        [
+          804.0,
+          810.0
+        ]
+      ],
+      "bbox": [
+        763.0,
+        525.0,
+        822.0,
+        810.0
+      ],
+      "text": "Dein",
+      "confidence": null,
+      "regions": [
+        "_ff23b909-0a02-4b44-bf3d-fa18d1a9576e"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          805.0,
+          852.0
+        ],
+        [
+          805.0,
+          873.0
+        ]
+      ],
+      "bbox": [
+        793.0,
+        852.0,
+        824.0,
+        873.0
+      ],
+      "text": "1865",
+      "confidence": null,
+      "regions": [
+        "_ff23b909-0a02-4b44-bf3d-fa18d1a9576e"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          876.0,
+          842.0
+        ],
+        [
+          876.0,
+          793.0
+        ]
+      ],
+      "bbox": [
+        851.0,
+        793.0,
+        900.0,
+        842.0
+      ],
+      "text": "den",
+      "confidence": null,
+      "regions": [
+        "_ff23b909-0a02-4b44-bf3d-fa18d1a9576e"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          874.0,
+          659.0
+        ],
+        [
+          876.0,
+          778.0
+        ]
+      ],
+      "bbox": [
+        838.0,
+        658.0,
+        899.0,
+        778.0
+      ],
+      "text": "Bern",
+      "confidence": null,
+      "regions": [
+        "_ff23b909-0a02-4b44-bf3d-fa18d1a9576e"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          530.0,
+          816.0
+        ],
+        [
+          531.0,
+          872.0
+        ]
+      ],
+      "bbox": [
+        504.0,
+        815.0,
+        550.0,
+        872.0
+      ],
+      "text": "de",
+      "confidence": null,
+      "regions": [
+        "_812ac2b3-ead4-4cd4-b136-840f1a818e38"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          533.0,
+          1068.0
+        ],
+        [
+          534.0,
+          1102.0
+        ]
+      ],
+      "bbox": [
+        513.0,
+        1067.0,
+        549.0,
+        1102.0
+      ],
+      "text": "ein",
+      "confidence": null,
+      "regions": [
+        "_812ac2b3-ead4-4cd4-b136-840f1a818e38"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          634.0,
+          883.0
+        ],
+        [
+          638.0,
+          1095.0
+        ]
+      ],
+      "bbox": [
+        612.0,
+        883.0,
+        658.0,
+        1095.0
+      ],
+      "text": "Herrn",
+      "confidence": null,
+      "regions": [
+        "_812ac2b3-ead4-4cd4-b136-840f1a818e38"
+      ]
+    },
+    {
+      "order": 7,
+      "baseline": [
+        [
+          637.0,
+          1120.0
+        ],
+        [
+          640.0,
+          1153.0
+        ]
+      ],
+      "bbox": [
+        600.0,
+        1118.0,
+        655.0,
+        1154.0
+      ],
+      "text": "1871",
+      "confidence": null,
+      "regions": [
+        "_812ac2b3-ead4-4cd4-b136-840f1a818e38"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 6118,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T15:18:28+00:00"
+}

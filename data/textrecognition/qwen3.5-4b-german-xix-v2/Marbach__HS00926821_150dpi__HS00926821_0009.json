@@ -1,0 +1,249 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00926821_150dpi",
+  "source": {
+    "name": "HS00926821_0009.jpg",
+    "bytes": 267708,
+    "sha256": "9d47ac70e0248863149aa6af4334b07cbe7e52c4635b03615e553bffca7b9d91",
+    "remote": "digitalisate/Marbach/HS00926821_150dpi/HS00926821_0009.jpg",
+    "key": "Marbach__HS00926821_150dpi__HS00926821_0009",
+    "working_copy": "HS00926821_0009.jpg"
+  },
+  "text": "3\nBern\n1869\n1869\nden\nBern\nde\n1869\nBern",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          307.0,
+          969.0
+        ],
+        [
+          309.0,
+          988.0
+        ]
+      ],
+      "bbox": [
+        261.0,
+        967.0,
+        332.0,
+        990.0
+      ],
+      "text": "3",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          311.0,
+          782.0
+        ],
+        [
+          312.0,
+          670.0
+        ]
+      ],
+      "bbox": [
+        278.0,
+        669.0,
+        329.0,
+        782.0
+      ],
+      "text": "Bern",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          388.0,
+          807.0
+        ],
+        [
+          389.0,
+          844.0
+        ]
+      ],
+      "bbox": [
+        373.0,
+        805.0,
+        407.0,
+        844.0
+      ],
+      "text": "1869",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          391.0,
+          585.0
+        ],
+        [
+          393.0,
+          558.0
+        ]
+      ],
+      "bbox": [
+        364.0,
+        555.0,
+        409.0,
+        585.0
+      ],
+      "text": "1869",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          393.0,
+          520.0
+        ],
+        [
+          393.0,
+          466.0
+        ]
+      ],
+      "bbox": [
+        353.0,
+        466.0,
+        404.0,
+        520.0
+      ],
+      "text": "den",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          391.0,
+          662.0
+        ],
+        [
+          394.0,
+          620.0
+        ]
+      ],
+      "bbox": [
+        337.0,
+        616.0,
+        414.0,
+        663.0
+      ],
+      "text": "Bern",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          625.0,
+          510.0
+        ],
+        [
+          626.0,
+          477.0
+        ]
+      ],
+      "bbox": [
+        586.0,
+        475.0,
+        639.0,
+        510.0
+      ],
+      "text": "de",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 7,
+      "baseline": [
+        [
+          682.0,
+          684.0
+        ],
+        [
+          683.0,
+          720.0
+        ]
+      ],
+      "bbox": [
+        658.0,
+        683.0,
+        702.0,
+        720.0
+      ],
+      "text": "1869",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 8,
+      "baseline": [
+        [
+          683.0,
+          633.0
+        ],
+        [
+          686.0,
+          513.0
+        ]
+      ],
+      "bbox": [
+        658.0,
+        513.0,
+        715.0,
+        633.0
+      ],
+      "text": "Bern",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 6110,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 50,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T21:00:41+00:00"
+}

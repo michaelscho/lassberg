@@ -1,0 +1,153 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Staatsarchiv Zürrich/499_hs_evan_scch_erledigt/Ms_Briefe_Usteri_3_7",
+  "source": {
+    "name": "Ms_Briefe_Usteri_3_7_0010.tif",
+    "bytes": 37337878,
+    "sha256": "f758dfcbaca7acf56808ab844cc73bf70e92a6f6049e97db00ed9258379b6f7d",
+    "remote": "digitalisate/Staatsarchiv Zürrich/499_hs_evan_scch_erledigt/Ms_Briefe_Usteri_3_7/Ms_Briefe_Usteri_3_7_0010.tif",
+    "key": "Staatsarchiv Zürrich__499_hs_evan_scch_erledigt__Ms_Briefe_Usteri_3_7__Ms_Briefe_Usteri_3_7_0010",
+    "working_copy": "Ms_Briefe_Usteri_3_7_0010.jpg"
+  },
+  "text": "Escher\n1\nJ.\nintere-\nSchwef.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          901.0,
+          1356.0
+        ],
+        [
+          910.0,
+          1195.0
+        ]
+      ],
+      "bbox": [
+        810.0,
+        1190.0,
+        955.0,
+        1356.0
+      ],
+      "text": "Escher",
+      "confidence": null,
+      "regions": [
+        "_3b9911cb-4e96-4a96-bfc4-56c4b2adc32c"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          912.0,
+          1507.0
+        ],
+        [
+          914.0,
+          1467.0
+        ]
+      ],
+      "bbox": [
+        855.0,
+        1463.0,
+        944.0,
+        1507.0
+      ],
+      "text": "1",
+      "confidence": null,
+      "regions": [
+        "_3b9911cb-4e96-4a96-bfc4-56c4b2adc32c"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1210.0,
+          1516.0
+        ],
+        [
+          1214.0,
+          1771.0
+        ]
+      ],
+      "bbox": [
+        1169.0,
+        1514.0,
+        1263.0,
+        1771.0
+      ],
+      "text": "J.",
+      "confidence": null,
+      "regions": [
+        "_3b9911cb-4e96-4a96-bfc4-56c4b2adc32c"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          1482.0,
+          1290.0
+        ],
+        [
+          1482.0,
+          1401.0
+        ]
+      ],
+      "bbox": [
+        1444.0,
+        1290.0,
+        1531.0,
+        1401.0
+      ],
+      "text": "intere-",
+      "confidence": null,
+      "regions": [
+        "_3b9911cb-4e96-4a96-bfc4-56c4b2adc32c"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          1839.0,
+          1167.0
+        ],
+        [
+          1848.0,
+          1426.0
+        ]
+      ],
+      "bbox": [
+        1784.0,
+        1165.0,
+        1901.0,
+        1426.0
+      ],
+      "text": "Schwef.",
+      "confidence": null,
+      "regions": [
+        "_3b9911cb-4e96-4a96-bfc4-56c4b2adc32c"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 7080,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 39,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T22:52:06+00:00"
+}

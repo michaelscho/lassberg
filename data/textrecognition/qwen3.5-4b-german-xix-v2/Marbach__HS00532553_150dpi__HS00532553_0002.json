@@ -1,0 +1,126 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00532553_150dpi",
+  "source": {
+    "name": "HS00532553_0002.jpg",
+    "bytes": 95133,
+    "sha256": "6bc3c46821392d43fadd338d88c2985adbf01a92c3f4a848af41513e530fcc54",
+    "remote": "digitalisate/Marbach/HS00532553_150dpi/HS00532553_0002.jpg",
+    "key": "Marbach__HS00532553_150dpi__HS00532553_0002",
+    "working_copy": "HS00532553_0002.jpg"
+  },
+  "text": "Obert\nLieber",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          757.0,
+          120.0
+        ],
+        [
+          843.0,
+          121.0
+        ]
+      ],
+      "bbox": [
+        756.0,
+        85.0,
+        843.0,
+        132.0
+      ],
+      "text": "Obert",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          363.0,
+          343.0
+        ],
+        [
+          421.0,
+          345.0
+        ]
+      ],
+      "bbox": [
+        362.0,
+        312.0,
+        421.0,
+        356.0
+      ],
+      "text": "Lieber",
+      "confidence": null,
+      "regions": [
+        "r2"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 21598,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "Sophie\nNoltenius",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            363.0,
+            343.0
+          ],
+          [
+            421.0,
+            345.0
+          ]
+        ],
+        "bbox": [
+          362.0,
+          312.0,
+          421.0,
+          356.0
+        ],
+        "text": "Sophie",
+        "confidence": 0.8994697034358978,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            757.0,
+            120.0
+          ],
+          [
+            843.0,
+            121.0
+          ]
+        ],
+        "bbox": [
+          756.0,
+          85.0,
+          843.0,
+          132.0
+        ],
+        "text": "Noltenius",
+        "confidence": 0.9014024469587538,
+        "regions": []
+      }
+    ],
+    "confidence": 0.9004360751973258,
+    "timing_ms": 56544,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T02:19:24+00:00"
+}

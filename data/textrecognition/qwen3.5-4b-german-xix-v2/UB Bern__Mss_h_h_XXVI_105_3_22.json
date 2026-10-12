@@ -1,0 +1,225 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "UB Bern",
+  "source": {
+    "name": "Mss_h_h_XXVI_105_3_22.tif",
+    "bytes": 36697332,
+    "sha256": "89a93cf9c1b8c2a8afe71ab187b235fa49efb70671c0aaa16edd599078b00b3c",
+    "remote": "digitalisate/UB Bern/Mss_h_h_XXVI_105_3_22.tif",
+    "key": "UB Bern__Mss_h_h_XXVI_105_3_22",
+    "working_copy": "Mss_h_h_XXVI_105_3_22.jpg"
+  },
+  "text": "Calibrite\nOrchester Classic\nmit dem 1sten\nhier\nde votre\nMonsieur\n1\nCours",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          110.0,
+          116.0
+        ],
+        [
+          248.0,
+          116.0
+        ]
+      ],
+      "bbox": [
+        110.0,
+        89.0,
+        248.0,
+        146.0
+      ],
+      "text": "Calibrite",
+      "confidence": null,
+      "regions": [
+        "_beae3827-926d-4196-ad03-a5ecf789a9f2"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          452.0,
+          120.0
+        ],
+        [
+          764.0,
+          123.0
+        ]
+      ],
+      "bbox": [
+        450.0,
+        84.0,
+        764.0,
+        159.0
+      ],
+      "text": "Orchester Classic",
+      "confidence": null,
+      "regions": [
+        "_e2386f10-cee1-46a4-bb97-f0192424f50f"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          97.0,
+          1313.0
+        ],
+        [
+          694.0,
+          1309.0
+        ]
+      ],
+      "bbox": [
+        95.0,
+        1277.0,
+        694.0,
+        1351.0
+      ],
+      "text": "mit dem 1sten",
+      "confidence": null,
+      "regions": [
+        "_cfb2ab06-d271-41cf-8055-92fe10e3ba69"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          1418.0,
+          1578.0
+        ],
+        [
+          1420.0,
+          1695.0
+        ]
+      ],
+      "bbox": [
+        1356.0,
+        1576.0,
+        1460.0,
+        1695.0
+      ],
+      "text": "hier",
+      "confidence": null,
+      "regions": [
+        "_9a9ae4b2-146b-466b-9076-b9dc593c1ea7"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          1573.0,
+          1551.0
+        ],
+        [
+          1581.0,
+          2003.0
+        ]
+      ],
+      "bbox": [
+        1524.0,
+        1549.0,
+        1626.0,
+        2003.0
+      ],
+      "text": "de votre",
+      "confidence": null,
+      "regions": [
+        "_9a9ae4b2-146b-466b-9076-b9dc593c1ea7"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          1584.0,
+          2120.0
+        ],
+        [
+          1590.0,
+          2370.0
+        ]
+      ],
+      "bbox": [
+        1518.0,
+        2117.0,
+        1630.0,
+        2370.0
+      ],
+      "text": "Monsieur",
+      "confidence": null,
+      "regions": [
+        "_9a9ae4b2-146b-466b-9076-b9dc593c1ea7"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          1823.0,
+          2079.0
+        ],
+        [
+          1826.0,
+          2101.0
+        ]
+      ],
+      "bbox": [
+        1789.0,
+        2075.0,
+        1853.0,
+        2101.0
+      ],
+      "text": "1",
+      "confidence": null,
+      "regions": [
+        "_9a9ae4b2-146b-466b-9076-b9dc593c1ea7"
+      ]
+    },
+    {
+      "order": 7,
+      "baseline": [
+        [
+          1823.0,
+          1761.0
+        ],
+        [
+          1823.0,
+          2016.0
+        ]
+      ],
+      "bbox": [
+        1783.0,
+        1761.0,
+        1860.0,
+        2016.0
+      ],
+      "text": "Cours",
+      "confidence": null,
+      "regions": [
+        "_9a9ae4b2-146b-466b-9076-b9dc593c1ea7"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 6991,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 31,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T01:43:42+00:00"
+}

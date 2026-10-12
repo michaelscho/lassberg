@@ -1,0 +1,400 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Basel/lassberg-letter-1959",
+  "source": {
+    "name": "PA 82a B 9_Seite_089.jpg",
+    "bytes": 349464,
+    "sha256": "18c175aa2215e7c6d22da5129dc161e69626caa282ec5753b188ce0f0395fd62",
+    "remote": "digitalisate/Basel/lassberg-letter-1959/PA 82a B 9_Seite_089.jpg",
+    "key": "Basel__lassberg-letter-1959__PA 82a B 9_Seite_089",
+    "working_copy": "PA 82a B 9_Seite_089.jpg"
+  },
+  "text": "von Tatinzer\nlassen.\num eine große\nBern den 18.\nauf\n1883\nDein\n8",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          297.0,
+          392.0
+        ],
+        [
+          392.0,
+          395.0
+        ]
+      ],
+      "bbox": [
+        296.0,
+        368.0,
+        392.0,
+        404.0
+      ],
+      "text": "von Tatinzer",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          304.0,
+          443.0
+        ],
+        [
+          395.0,
+          447.0
+        ]
+      ],
+      "bbox": [
+        303.0,
+        414.0,
+        395.0,
+        462.0
+      ],
+      "text": "lassen.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          310.0,
+          490.0
+        ],
+        [
+          407.0,
+          495.0
+        ]
+      ],
+      "bbox": [
+        309.0,
+        472.0,
+        407.0,
+        519.0
+      ],
+      "text": "um eine große",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          306.0,
+          541.0
+        ],
+        [
+          400.0,
+          550.0
+        ]
+      ],
+      "bbox": [
+        304.0,
+        519.0,
+        401.0,
+        568.0
+      ],
+      "text": "Bern den 18.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          328.0,
+          597.0
+        ],
+        [
+          381.0,
+          598.0
+        ]
+      ],
+      "bbox": [
+        327.0,
+        580.0,
+        381.0,
+        612.0
+      ],
+      "text": "auf",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          410.0,
+          551.0
+        ],
+        [
+          417.0,
+          551.0
+        ]
+      ],
+      "bbox": [
+        410.0,
+        538.0,
+        417.0,
+        571.0
+      ],
+      "text": "1883",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          350.0,
+          791.0
+        ],
+        [
+          390.0,
+          798.0
+        ]
+      ],
+      "bbox": [
+        341.0,
+        778.0,
+        391.0,
+        847.0
+      ],
+      "text": "Dein",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 7,
+      "baseline": [
+        [
+          1078.0,
+          204.0
+        ],
+        [
+          1106.0,
+          206.0
+        ]
+      ],
+      "bbox": [
+        1074.0,
+        175.0,
+        1106.0,
+        252.0
+      ],
+      "text": "8",
+      "confidence": null,
+      "regions": []
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 20057,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "van Jakingar\nleden. UHEg\nmen alle gegeven\nStaatgast . . . . . .\nauf der Engelschen gewesten\n1777\n1760\n83",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            297.0,
+            392.0
+          ],
+          [
+            392.0,
+            395.0
+          ]
+        ],
+        "bbox": [
+          296.0,
+          368.0,
+          392.0,
+          404.0
+        ],
+        "text": "van Jakingar",
+        "confidence": 0.8214682303369045,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            304.0,
+            443.0
+          ],
+          [
+            395.0,
+            447.0
+          ]
+        ],
+        "bbox": [
+          303.0,
+          414.0,
+          395.0,
+          462.0
+        ],
+        "text": "leden. UHEg",
+        "confidence": 0.7741517532955516,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            310.0,
+            490.0
+          ],
+          [
+            407.0,
+            495.0
+          ]
+        ],
+        "bbox": [
+          309.0,
+          472.0,
+          407.0,
+          519.0
+        ],
+        "text": "men alle gegeven",
+        "confidence": 0.8471960332244635,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            306.0,
+            541.0
+          ],
+          [
+            400.0,
+            550.0
+          ]
+        ],
+        "bbox": [
+          304.0,
+          519.0,
+          401.0,
+          568.0
+        ],
+        "text": "Staatgast . . . . . .",
+        "confidence": 0.6755855282147726,
+        "regions": []
+      },
+      {
+        "order": 4,
+        "baseline": [
+          [
+            328.0,
+            597.0
+          ],
+          [
+            381.0,
+            598.0
+          ]
+        ],
+        "bbox": [
+          327.0,
+          580.0,
+          381.0,
+          612.0
+        ],
+        "text": "auf der Engelschen gewesten",
+        "confidence": 0.6220028615660138,
+        "regions": []
+      },
+      {
+        "order": 5,
+        "baseline": [
+          [
+            410.0,
+            551.0
+          ],
+          [
+            417.0,
+            551.0
+          ]
+        ],
+        "bbox": [
+          410.0,
+          538.0,
+          417.0,
+          571.0
+        ],
+        "text": "1777",
+        "confidence": 0.5552351027727127,
+        "regions": []
+      },
+      {
+        "order": 6,
+        "baseline": [
+          [
+            350.0,
+            791.0
+          ],
+          [
+            390.0,
+            798.0
+          ]
+        ],
+        "bbox": [
+          341.0,
+          778.0,
+          391.0,
+          847.0
+        ],
+        "text": "1760",
+        "confidence": 0.4503988865762949,
+        "regions": []
+      },
+      {
+        "order": 7,
+        "baseline": [
+          [
+            1078.0,
+            204.0
+          ],
+          [
+            1106.0,
+            206.0
+          ]
+        ],
+        "bbox": [
+          1074.0,
+          175.0,
+          1106.0,
+          252.0
+        ],
+        "text": "83",
+        "confidence": 0.9068549275398254,
+        "regions": []
+      }
+    ],
+    "confidence": 0.7066116654408174,
+    "timing_ms": 25827,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-21T18:35:39+00:00"
+}

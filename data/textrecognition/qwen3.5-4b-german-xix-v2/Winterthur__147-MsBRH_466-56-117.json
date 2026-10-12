@@ -1,0 +1,183 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Winterthur",
+  "source": {
+    "name": "147-MsBRH_466-56-117.jpg",
+    "bytes": 4694014,
+    "sha256": "bd03667e70272f32b8b01dfe90ea400d7fa5e901fb586379b60f0a99fdd40f1a",
+    "remote": "digitalisate/Winterthur/147-MsBRH_466-56-117.jpg",
+    "key": "Winterthur__147-MsBRH_466-56-117",
+    "working_copy": "147-MsBRH_466-56-117.jpg"
+  },
+  "text": "Seiner Hochwürden, Hochwohlgeboren\nDem Herrn Donc capitulax, Ritter v. Durg\n1.\nper forstane\nzu Freiburg, im Hof Preissquare\n300.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          3198.0,
+          1939.0
+        ],
+        [
+          3734.0,
+          1955.0
+        ],
+        [
+          5440.0,
+          1955.0
+        ]
+      ],
+      "bbox": [
+        3195.0,
+        1820.0,
+        5440.0,
+        2016.0
+      ],
+      "text": "Seiner Hochwürden, Hochwohlgeboren",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          2879.0,
+          2276.0
+        ],
+        [
+          4129.0,
+          2297.0
+        ],
+        [
+          5172.0,
+          2284.0
+        ]
+      ],
+      "bbox": [
+        2879.0,
+        2133.0,
+        5172.0,
+        2353.0
+      ],
+      "text": "Dem Herrn Donc capitulax, Ritter v. Durg",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          3399.0,
+          2618.0
+        ],
+        [
+          3686.0,
+          2616.0
+        ]
+      ],
+      "bbox": [
+        3397.0,
+        2555.0,
+        3686.0,
+        2735.0
+      ],
+      "text": "1.",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          3097.0,
+          2926.0
+        ],
+        [
+          3643.0,
+          2942.0
+        ]
+      ],
+      "bbox": [
+        3094.0,
+        2799.0,
+        3643.0,
+        2987.0
+      ],
+      "text": "per forstane",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          3750.0,
+          2618.0
+        ],
+        [
+          5278.0,
+          2645.0
+        ]
+      ],
+      "bbox": [
+        3747.0,
+        2499.0,
+        5278.0,
+        2717.0
+      ],
+      "text": "zu Freiburg, im Hof Preissquare",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          5905.0,
+          2366.0
+        ],
+        [
+          5910.0,
+          2581.0
+        ]
+      ],
+      "bbox": [
+        5838.0,
+        2366.0,
+        5992.0,
+        2581.0
+      ],
+      "text": "300.",
+      "confidence": null,
+      "regions": []
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 15061,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T13:43:19+00:00"
+}

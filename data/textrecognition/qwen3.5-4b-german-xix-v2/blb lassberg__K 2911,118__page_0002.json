@@ -1,0 +1,65 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "blb lassberg/K 2911,118",
+  "source": {
+    "name": "page_0002.jpg",
+    "bytes": 643372,
+    "sha256": "1e54052d2534da8812ebc5cf5504c3538c8d87caaf20ad97d489e08942b9cdac",
+    "remote": "digitalisate/blb lassberg/K 2911,118/page_0002.jpg",
+    "key": "blb lassberg__K 2911,118__page_0002",
+    "working_copy": "page_0002.jpg"
+  },
+  "text": "Ebsogen tractat v. Meck",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          1032.0,
+          503.0
+        ],
+        [
+          1159.0,
+          487.0
+        ],
+        [
+          1388.0,
+          478.0
+        ],
+        [
+          2221.0,
+          474.0
+        ]
+      ],
+      "bbox": [
+        1030.0,
+        374.0,
+        2221.0,
+        539.0
+      ],
+      "text": "Ebsogen tractat v. Meck",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 5516,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T18:21:55+00:00"
+}

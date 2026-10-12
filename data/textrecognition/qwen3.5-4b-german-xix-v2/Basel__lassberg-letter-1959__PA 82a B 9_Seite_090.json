@@ -1,0 +1,88 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Basel/lassberg-letter-1959",
+  "source": {
+    "name": "PA 82a B 9_Seite_090.jpg",
+    "bytes": 356554,
+    "sha256": "ce4364ab6bc3ff6f7f0c037f65341bf3647d05db4a58a537871f28c812621307",
+    "remote": "digitalisate/Basel/lassberg-letter-1959/PA 82a B 9_Seite_090.jpg",
+    "key": "Basel__lassberg-letter-1959__PA 82a B 9_Seite_090",
+    "working_copy": "PA 82a B 9_Seite_090.jpg"
+  },
+  "text": "84",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          133.0,
+          188.0
+        ],
+        [
+          150.0,
+          181.0
+        ],
+        [
+          154.0,
+          172.0
+        ]
+      ],
+      "bbox": [
+        121.0,
+        155.0,
+        168.0,
+        208.0
+      ],
+      "text": "84",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 5467,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "84",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            133.0,
+            188.0
+          ],
+          [
+            150.0,
+            181.0
+          ],
+          [
+            154.0,
+            172.0
+          ]
+        ],
+        "bbox": [
+          121.0,
+          155.0,
+          168.0,
+          208.0
+        ],
+        "text": "84",
+        "confidence": 0.9476235210895538,
+        "regions": []
+      }
+    ],
+    "confidence": 0.9476235210895538,
+    "timing_ms": 7861,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-21T18:35:17+00:00"
+}

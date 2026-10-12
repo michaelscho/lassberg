@@ -1,0 +1,221 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "UB Freiburg/lassberg-letter-1634",
+  "source": {
+    "name": "lassberg-letter-1634-004.jpg",
+    "bytes": 125706,
+    "sha256": "1cdcb49e4c8bc2840ee8b07897e48f1d5d32be0c3cc8b6d0ea4719706c588e65",
+    "remote": "digitalisate/UB Freiburg/lassberg-letter-1634/lassberg-letter-1634-004.jpg",
+    "key": "UB Freiburg__lassberg-letter-1634__lassberg-letter-1634-004",
+    "working_copy": "lassberg-letter-1634-004.jpg"
+  },
+  "text": "1929 C 719\nnicht\n1631\n1869.\ngefordert durch\nHerrn Dr A. Escher, der\nc. Universitätsbibliothek Freiburg\nBaden-Würtemberg",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          563.0,
+          1223.0
+        ],
+        [
+          683.0,
+          1221.0
+        ]
+      ],
+      "bbox": [
+        563.0,
+        1208.0,
+        683.0,
+        1236.0
+      ],
+      "text": "1929 C 719",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          584.0,
+          1253.0
+        ],
+        [
+          611.0,
+          1252.0
+        ]
+      ],
+      "bbox": [
+        582.0,
+        1227.0,
+        611.0,
+        1272.0
+      ],
+      "text": "nicht",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          585.0,
+          1275.0
+        ],
+        [
+          652.0,
+          1274.0
+        ]
+      ],
+      "bbox": [
+        585.0,
+        1256.0,
+        652.0,
+        1286.0
+      ],
+      "text": "1631",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          588.0,
+          1302.0
+        ],
+        [
+          618.0,
+          1303.0
+        ]
+      ],
+      "bbox": [
+        586.0,
+        1277.0,
+        618.0,
+        1330.0
+      ],
+      "text": "1869.",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          1125.0,
+          1535.0
+        ],
+        [
+          1197.0,
+          1533.0
+        ]
+      ],
+      "bbox": [
+        1124.0,
+        1526.0,
+        1197.0,
+        1546.0
+      ],
+      "text": "gefordert durch",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          344.0,
+          1559.0
+        ],
+        [
+          903.0,
+          1556.0
+        ]
+      ],
+      "bbox": [
+        344.0,
+        1536.0,
+        903.0,
+        1572.0
+      ],
+      "text": "Herrn Dr A. Escher, der",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          452.0,
+          1596.0
+        ],
+        [
+          803.0,
+          1597.0
+        ]
+      ],
+      "bbox": [
+        451.0,
+        1576.0,
+        803.0,
+        1611.0
+      ],
+      "text": "c. Universitätsbibliothek Freiburg",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 7,
+      "baseline": [
+        [
+          1105.0,
+          1600.0
+        ],
+        [
+          1232.0,
+          1601.0
+        ]
+      ],
+      "bbox": [
+        1104.0,
+        1583.0,
+        1232.0,
+        1611.0
+      ],
+      "text": "Baden-Würtemberg",
+      "confidence": null,
+      "regions": []
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 6326,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 32,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T04:15:03+00:00"
+}

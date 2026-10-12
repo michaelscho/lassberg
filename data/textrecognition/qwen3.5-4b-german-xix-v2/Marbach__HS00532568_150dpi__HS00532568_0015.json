@@ -1,0 +1,216 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00532568_150dpi",
+  "source": {
+    "name": "HS00532568_0015.jpg",
+    "bytes": 79085,
+    "sha256": "72fe10e13e95c3348f5df272b6d857d53d9395c35e93d5f6b7f1243cad9dd475",
+    "remote": "digitalisate/Marbach/HS00532568_150dpi/HS00532568_0015.jpg",
+    "key": "Marbach__HS00532568_150dpi__HS00532568_0015",
+    "working_copy": "HS00532568_0015.jpg"
+  },
+  "text": "Schwob\ns¬\nund der\ns¬",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          648.0,
+          85.0
+        ],
+        [
+          734.0,
+          83.0
+        ]
+      ],
+      "bbox": [
+        646.0,
+        51.0,
+        734.0,
+        98.0
+      ],
+      "text": "Schwob",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          243.0,
+          358.0
+        ],
+        [
+          268.0,
+          357.0
+        ]
+      ],
+      "bbox": [
+        241.0,
+        322.0,
+        268.0,
+        364.0
+      ],
+      "text": "s¬",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          350.0,
+          356.0
+        ],
+        [
+          408.0,
+          352.0
+        ]
+      ],
+      "bbox": [
+        348.0,
+        319.0,
+        409.0,
+        365.0
+      ],
+      "text": "und der",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          441.0,
+          278.0
+        ],
+        [
+          469.0,
+          277.0
+        ]
+      ],
+      "bbox": [
+        440.0,
+        258.0,
+        469.0,
+        283.0
+      ],
+      "text": "s¬",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 11830,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "Ouvrier\nOustar\nvon\nA. Schwab 1",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            243.0,
+            358.0
+          ],
+          [
+            268.0,
+            357.0
+          ]
+        ],
+        "bbox": [
+          241.0,
+          322.0,
+          268.0,
+          364.0
+        ],
+        "text": "Ouvrier",
+        "confidence": 0.6608261274439948,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            350.0,
+            356.0
+          ],
+          [
+            408.0,
+            352.0
+          ]
+        ],
+        "bbox": [
+          348.0,
+          319.0,
+          409.0,
+          365.0
+        ],
+        "text": "Oustar",
+        "confidence": 0.6310137063264847,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            441.0,
+            278.0
+          ],
+          [
+            469.0,
+            277.0
+          ]
+        ],
+        "bbox": [
+          440.0,
+          258.0,
+          469.0,
+          283.0
+        ],
+        "text": "von",
+        "confidence": 0.7995378375053406,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            648.0,
+            85.0
+          ],
+          [
+            734.0,
+            83.0
+          ]
+        ],
+        "bbox": [
+          646.0,
+          51.0,
+          734.0,
+          98.0
+        ],
+        "text": "A. Schwab 1",
+        "confidence": 0.8112416619604285,
+        "regions": []
+      }
+    ],
+    "confidence": 0.7256548333090621,
+    "timing_ms": 11322,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T02:25:50+00:00"
+}

@@ -1,0 +1,242 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Winterthur",
+  "source": {
+    "name": "100-MsBRH_466-56-070.jpg",
+    "bytes": 2569044,
+    "sha256": "e3cd2f652aa434b0ea3672694e38c23deb570a28713c9676b893905357945a8f",
+    "remote": "digitalisate/Winterthur/100-MsBRH_466-56-070.jpg",
+    "key": "Winterthur__100-MsBRH_466-56-070",
+    "working_copy": "100-MsBRH_466-56-070.jpg"
+  },
+  "text": "Seiner Holzgeradeck\ndem Herrn Pfarrer Sÿndiker\nzu\nBischofsfeld.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          577.0,
+          1859.0
+        ],
+        [
+          786.0,
+          1864.0
+        ],
+        [
+          1063.0,
+          1893.0
+        ],
+        [
+          1662.0,
+          1896.0
+        ]
+      ],
+      "bbox": [
+        575.0,
+        1775.0,
+        1662.0,
+        1973.0
+      ],
+      "text": "Seiner Holzgeradeck",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          704.0,
+          2257.0
+        ],
+        [
+          1427.0,
+          2260.0
+        ],
+        [
+          2274.0,
+          2239.0
+        ]
+      ],
+      "bbox": [
+        701.0,
+        2147.0,
+        2274.0,
+        2339.0
+      ],
+      "text": "dem Herrn Pfarrer Sÿndiker",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1744.0,
+          2516.0
+        ],
+        [
+          1847.0,
+          2511.0
+        ]
+      ],
+      "bbox": [
+        1739.0,
+        2461.0,
+        1847.0,
+        2574.0
+      ],
+      "text": "zu",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          1926.0,
+          2722.0
+        ],
+        [
+          2617.0,
+          2714.0
+        ]
+      ],
+      "bbox": [
+        1923.0,
+        2606.0,
+        2617.0,
+        2777.0
+      ],
+      "text": "Bischofsfeld.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 5811,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "Sinner Gottewärden\nDem Herren Pfarrer Pupikofer\nzu\nBischoffs zelle.",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            577.0,
+            1859.0
+          ],
+          [
+            786.0,
+            1864.0
+          ],
+          [
+            1063.0,
+            1893.0
+          ],
+          [
+            1662.0,
+            1896.0
+          ]
+        ],
+        "bbox": [
+          575.0,
+          1775.0,
+          1662.0,
+          1973.0
+        ],
+        "text": "Sinner Gottewärden",
+        "confidence": 0.7998763997303812,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            704.0,
+            2257.0
+          ],
+          [
+            1427.0,
+            2260.0
+          ],
+          [
+            2274.0,
+            2239.0
+          ]
+        ],
+        "bbox": [
+          701.0,
+          2147.0,
+          2274.0,
+          2339.0
+        ],
+        "text": "Dem Herren Pfarrer Pupikofer",
+        "confidence": 0.9011952387435096,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            1744.0,
+            2516.0
+          ],
+          [
+            1847.0,
+            2511.0
+          ]
+        ],
+        "bbox": [
+          1739.0,
+          2461.0,
+          1847.0,
+          2574.0
+        ],
+        "text": "zu",
+        "confidence": 0.6047003865242004,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            1926.0,
+            2722.0
+          ],
+          [
+            2617.0,
+            2714.0
+          ]
+        ],
+        "bbox": [
+          1923.0,
+          2606.0,
+          2617.0,
+          2777.0
+        ],
+        "text": "Bischoffs zelle.",
+        "confidence": 0.8523461744189262,
+        "regions": []
+      }
+    ],
+    "confidence": 0.7895295498542544,
+    "timing_ms": 7680,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T13:13:59+00:00"
+}

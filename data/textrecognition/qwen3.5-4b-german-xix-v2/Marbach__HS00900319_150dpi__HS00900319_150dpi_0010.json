@@ -1,0 +1,189 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00900319_150dpi",
+  "source": {
+    "name": "HS00900319_150dpi_0010.jpg",
+    "bytes": 300565,
+    "sha256": "0a14594ecc3df0b976f5cb0f1986be9ba1911c35e9578c736734555a026f2a88",
+    "remote": "digitalisate/Marbach/HS00900319_150dpi/HS00900319_150dpi_0010.jpg",
+    "key": "Marbach__HS00900319_150dpi__HS00900319_150dpi_0010",
+    "working_copy": "HS00900319_150dpi_0010.jpg"
+  },
+  "text": "Seiner Hochwohlgeboren\nHerrn. Baron J. v. Teßburg\n20.\nin Hausen\n11459\nCours",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          408.0,
+          505.0
+        ],
+        [
+          802.0,
+          481.0
+        ],
+        [
+          862.0,
+          482.0
+        ]
+      ],
+      "bbox": [
+        407.0,
+        454.0,
+        862.0,
+        525.0
+      ],
+      "text": "Seiner Hochwohlgeboren",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          396.0,
+          590.0
+        ],
+        [
+          636.0,
+          585.0
+        ],
+        [
+          926.0,
+          588.0
+        ]
+      ],
+      "bbox": [
+        395.0,
+        551.0,
+        926.0,
+        615.0
+      ],
+      "text": "Herrn. Baron J. v. Teßburg",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          571.0,
+          658.0
+        ],
+        [
+          658.0,
+          656.0
+        ]
+      ],
+      "bbox": [
+        570.0,
+        613.0,
+        658.0,
+        693.0
+      ],
+      "text": "20.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          709.0,
+          651.0
+        ],
+        [
+          812.0,
+          647.0
+        ],
+        [
+          864.0,
+          649.0
+        ]
+      ],
+      "bbox": [
+        708.0,
+        610.0,
+        864.0,
+        672.0
+      ],
+      "text": "in Hausen",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          456.0,
+          1142.0
+        ],
+        [
+          514.0,
+          1144.0
+        ]
+      ],
+      "bbox": [
+        455.0,
+        1122.0,
+        514.0,
+        1167.0
+      ],
+      "text": "11459",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          682.0,
+          914.0
+        ],
+        [
+          823.0,
+          904.0
+        ]
+      ],
+      "bbox": [
+        680.0,
+        877.0,
+        824.0,
+        950.0
+      ],
+      "text": "Cours",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 6229,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 46,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T19:52:22+00:00"
+}

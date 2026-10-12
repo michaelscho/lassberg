@@ -1,0 +1,201 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "UB Bern",
+  "source": {
+    "name": "Mss_h_h_XXVI_106_09.tif",
+    "bytes": 27840684,
+    "sha256": "2e27cd133fc462dbd5e5e34db2421e642eb3228929715bf784413b91962920e7",
+    "remote": "digitalisate/UB Bern/Mss_h_h_XXVI_106_09.tif",
+    "key": "UB Bern__Mss_h_h_XXVI_106_09",
+    "working_copy": "Mss_h_h_XXVI_106_09.jpg"
+  },
+  "text": "D.\norchecker classica\nmit dem 1sten\n8\n5\n88\n1865",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          142.0,
+          81.0
+        ],
+        [
+          253.0,
+          81.0
+        ]
+      ],
+      "bbox": [
+        142.0,
+        27.0,
+        253.0,
+        127.0
+      ],
+      "text": "D.",
+      "confidence": null,
+      "regions": [
+        "_bb646579-aa05-45d1-93a3-79dd79cfdd79"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          433.0,
+          89.0
+        ],
+        [
+          766.0,
+          89.0
+        ]
+      ],
+      "bbox": [
+        433.0,
+        52.0,
+        766.0,
+        127.0
+      ],
+      "text": "orchecker classica",
+      "confidence": null,
+      "regions": [
+        "_626659ec-eb3e-480b-bcd3-3bb5d0df69e5"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          98.0,
+          1274.0
+        ],
+        [
+          697.0,
+          1269.0
+        ]
+      ],
+      "bbox": [
+        96.0,
+        1238.0,
+        697.0,
+        1309.0
+      ],
+      "text": "mit dem 1sten",
+      "confidence": null,
+      "regions": [
+        "_72af9930-e80e-41f8-939b-29ab779f6a71"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          374.0,
+          2343.0
+        ],
+        [
+          385.0,
+          2343.0
+        ]
+      ],
+      "bbox": [
+        374.0,
+        2301.0,
+        385.0,
+        2370.0
+      ],
+      "text": "8",
+      "confidence": null,
+      "regions": [
+        "_ad6bb3b2-fcb8-436c-b01a-8f2ff7db7ce2"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          383.0,
+          3165.0
+        ],
+        [
+          389.0,
+          3180.0
+        ]
+      ],
+      "bbox": [
+        339.0,
+        3150.0,
+        418.0,
+        3196.0
+      ],
+      "text": "5",
+      "confidence": null,
+      "regions": [
+        "_13f23342-1e62-42bf-84eb-81eade554171"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          381.0,
+          3529.0
+        ],
+        [
+          397.0,
+          3531.0
+        ]
+      ],
+      "bbox": [
+        378.0,
+        3498.0,
+        397.0,
+        3550.0
+      ],
+      "text": "88",
+      "confidence": null,
+      "regions": [
+        "_97b4fbb4-cd6c-4d8e-9fd2-4dca5283689e"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          376.0,
+          3646.0
+        ],
+        [
+          393.0,
+          3644.0
+        ]
+      ],
+      "bbox": [
+        372.0,
+        3617.0,
+        397.0,
+        3690.0
+      ],
+      "text": "1865",
+      "confidence": null,
+      "regions": [
+        "_97b4fbb4-cd6c-4d8e-9fd2-4dca5283689e"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 5553,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 32,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T02:23:10+00:00"
+}

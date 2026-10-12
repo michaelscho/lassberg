@@ -1,0 +1,239 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "UB Freiburg/lassberg-letter-1285",
+  "source": {
+    "name": "lassberg-letter-1285-004.jpg",
+    "bytes": 571310,
+    "sha256": "02b65f63e542a47e1058a86b9f633b8eb4113bdfdf8bd8c2231bae7004048aa6",
+    "remote": "digitalisate/UB Freiburg/lassberg-letter-1285/lassberg-letter-1285-004.jpg",
+    "key": "UB Freiburg__lassberg-letter-1285__lassberg-letter-1285-004",
+    "working_copy": "lassberg-letter-1285-004.jpg"
+  },
+  "text": "19\nBern den 1.\nC.\n1869\ngefordert durch\nh.\nc. Universitätsbibliothek Freiburg\nBaden-Würtemberg\n1849.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          684.0,
+          2096.0
+        ],
+        [
+          747.0,
+          2093.0
+        ]
+      ],
+      "bbox": [
+        682.0,
+        2058.0,
+        747.0,
+        2115.0
+      ],
+      "text": "19",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          743.0,
+          2189.0
+        ],
+        [
+          851.0,
+          2185.0
+        ]
+      ],
+      "bbox": [
+        741.0,
+        2155.0,
+        853.0,
+        2284.0
+      ],
+      "text": "Bern den 1.",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1164.0,
+          2474.0
+        ],
+        [
+          1223.0,
+          2477.0
+        ]
+      ],
+      "bbox": [
+        1162.0,
+        2415.0,
+        1223.0,
+        2501.0
+      ],
+      "text": "C.",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          1022.0,
+          2619.0
+        ],
+        [
+          1082.0,
+          2618.0
+        ]
+      ],
+      "bbox": [
+        1018.0,
+        2555.0,
+        1082.0,
+        2641.0
+      ],
+      "text": "1869",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          1498.0,
+          2766.0
+        ],
+        [
+          1586.0,
+          2766.0
+        ]
+      ],
+      "bbox": [
+        1498.0,
+        2747.0,
+        1586.0,
+        2787.0
+      ],
+      "text": "gefordert durch",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          444.0,
+          2798.0
+        ],
+        [
+          1203.0,
+          2791.0
+        ]
+      ],
+      "bbox": [
+        443.0,
+        2767.0,
+        1203.0,
+        2815.0
+      ],
+      "text": "h.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          598.0,
+          2847.0
+        ],
+        [
+          1070.0,
+          2850.0
+        ]
+      ],
+      "bbox": [
+        596.0,
+        2818.0,
+        1070.0,
+        2866.0
+      ],
+      "text": "c. Universitätsbibliothek Freiburg",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 7,
+      "baseline": [
+        [
+          1459.0,
+          2852.0
+        ],
+        [
+          1644.0,
+          2857.0
+        ]
+      ],
+      "bbox": [
+        1457.0,
+        2830.0,
+        1644.0,
+        2868.0
+      ],
+      "text": "Baden-Würtemberg",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 8,
+      "baseline": [
+        [
+          68.0,
+          2852.0
+        ],
+        [
+          81.0,
+          2852.0
+        ]
+      ],
+      "bbox": [
+        68.0,
+        2852.0,
+        81.0,
+        2868.0
+      ],
+      "text": "1849.",
+      "confidence": null,
+      "regions": []
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 4539,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 32,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T03:56:40+00:00"
+}

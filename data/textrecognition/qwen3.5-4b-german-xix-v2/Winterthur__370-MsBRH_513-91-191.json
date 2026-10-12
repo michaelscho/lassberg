@@ -1,0 +1,117 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Winterthur",
+  "source": {
+    "name": "370-MsBRH_513-91-191.jpg",
+    "bytes": 4931407,
+    "sha256": "b9048a5a116c7983955a0837e3e336b5b5b22b271cd65276a8b21aa1b8acc16c",
+    "remote": "digitalisate/Winterthur/370-MsBRH_513-91-191.jpg",
+    "key": "Winterthur__370-MsBRH_513-91-191",
+    "working_copy": "370-MsBRH_513-91-191.jpg"
+  },
+  "text": "S. Wohlgeboren\ndem Kleisenen Josephum Loßberg\nin Meersburg",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          2376.0,
+          1234.0
+        ],
+        [
+          3569.0,
+          1240.0
+        ]
+      ],
+      "bbox": [
+        2373.0,
+        1105.0,
+        3569.0,
+        1318.0
+      ],
+      "text": "S. Wohlgeboren",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1426.0,
+          1670.0
+        ],
+        [
+          3268.0,
+          1645.0
+        ],
+        [
+          3704.0,
+          1625.0
+        ],
+        [
+          4160.0,
+          1631.0
+        ]
+      ],
+      "bbox": [
+        1423.0,
+        1501.0,
+        4160.0,
+        1768.0
+      ],
+      "text": "dem Kleisenen Josephum Loßberg",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          2219.0,
+          3042.0
+        ],
+        [
+          2793.0,
+          3054.0
+        ],
+        [
+          3507.0,
+          3028.0
+        ]
+      ],
+      "bbox": [
+        2216.0,
+        2862.0,
+        3507.0,
+        3101.0
+      ],
+      "text": "in Meersburg",
+      "confidence": null,
+      "regions": [
+        "r2"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 10924,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T16:51:11+00:00"
+}

@@ -1,0 +1,221 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Winterthur",
+  "source": {
+    "name": "196-MsBRH_513-91-017.jpg",
+    "bytes": 5006671,
+    "sha256": "27df5e93aeeded8761cc6ec2912d40db38f7a92e08aa3db35df989fdfcef605d",
+    "remote": "digitalisate/Winterthur/196-MsBRH_513-91-017.jpg",
+    "key": "Winterthur__196-MsBRH_513-91-017",
+    "working_copy": "196-MsBRH_513-91-017.jpg"
+  },
+  "text": "Hochwohlgeboren\nDem Weisherrn J. von Caßborn\n2. M. K. Cammerer und geheurer Rath\nu Durchlaucht daß Fürsten von\nDir stehend\nin Eggis laufen beÿ solten.\nLand. Thurgau",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          2992.0,
+          1412.0
+        ],
+        [
+          3848.0,
+          1407.0
+        ],
+        [
+          4157.0,
+          1420.0
+        ]
+      ],
+      "bbox": [
+        2990.0,
+        1320.0,
+        4157.0,
+        1510.0
+      ],
+      "text": "Hochwohlgeboren",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1999.0,
+          1840.0
+        ],
+        [
+          3079.0,
+          1864.0
+        ],
+        [
+          4102.0,
+          1859.0
+        ]
+      ],
+      "bbox": [
+        1999.0,
+        1719.0,
+        4102.0,
+        1914.0
+      ],
+      "text": "Dem Weisherrn J. von Caßborn",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          2015.0,
+          1994.0
+        ],
+        [
+          2348.0,
+          1994.0
+        ],
+        [
+          2900.0,
+          2015.0
+        ],
+        [
+          4086.0,
+          2007.0
+        ]
+      ],
+      "bbox": [
+        2015.0,
+        1901.0,
+        4086.0,
+        2070.0
+      ],
+      "text": "2. M. K. Cammerer und geheurer Rath",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          2176.0,
+          2120.0
+        ],
+        [
+          2979.0,
+          2147.0
+        ],
+        [
+          4239.0,
+          2131.0
+        ]
+      ],
+      "bbox": [
+        2176.0,
+        2054.0,
+        4239.0,
+        2215.0
+      ],
+      "text": "u Durchlaucht daß Fürsten von",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          2744.0,
+          2276.0
+        ],
+        [
+          3465.0,
+          2289.0
+        ]
+      ],
+      "bbox": [
+        2741.0,
+        2186.0,
+        3465.0,
+        2342.0
+      ],
+      "text": "Dir stehend",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          2319.0,
+          2886.0
+        ],
+        [
+          2781.0,
+          2865.0
+        ],
+        [
+          4012.0,
+          2849.0
+        ]
+      ],
+      "bbox": [
+        2316.0,
+        2746.0,
+        4012.0,
+        2958.0
+      ],
+      "text": "in Eggis laufen beÿ solten.",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          3119.0,
+          2995.0
+        ],
+        [
+          4088.0,
+          2987.0
+        ]
+      ],
+      "bbox": [
+        3119.0,
+        2889.0,
+        4088.0,
+        3066.0
+      ],
+      "text": "Land. Thurgau",
+      "confidence": null,
+      "regions": []
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 13325,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T14:23:19+00:00"
+}

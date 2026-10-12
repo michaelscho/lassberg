@@ -1,0 +1,169 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Winterthur",
+  "source": {
+    "name": "254-MsBRH_513-91-075.jpg",
+    "bytes": 4882402,
+    "sha256": "4c3dc75491709d1cafcfb7ca7ad0434f5e93e5ea52b4faf9fe928fb08aa9527d",
+    "remote": "digitalisate/Winterthur/254-MsBRH_513-91-075.jpg",
+    "key": "Winterthur__254-MsBRH_513-91-075",
+    "working_copy": "254-MsBRH_513-91-075.jpg"
+  },
+  "text": "Hofstralsgeborn\ndem Herrn Baron J. von Caßbe¬\n1. M. D. Cammerer und Wallaster-Ritter\n\"\nin Rppischauften u. Thurgau",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          2322.0,
+          1351.0
+        ],
+        [
+          3657.0,
+          1359.0
+        ]
+      ],
+      "bbox": [
+        2322.0,
+        1247.0,
+        3657.0,
+        1441.0
+      ],
+      "text": "Hofstralsgeborn",
+      "confidence": null,
+      "regions": [
+        "r2"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1531.0,
+          1892.0
+        ],
+        [
+          2972.0,
+          1944.0
+        ],
+        [
+          3771.0,
+          1952.0
+        ]
+      ],
+      "bbox": [
+        1528.0,
+        1824.0,
+        3771.0,
+        1990.0
+      ],
+      "text": "dem Herrn Baron J. von Caßbe¬",
+      "confidence": null,
+      "regions": [
+        "r2"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1397.0,
+          2077.0
+        ],
+        [
+          1762.0,
+          2074.0
+        ],
+        [
+          2406.0,
+          2107.0
+        ],
+        [
+          3905.0,
+          2142.0
+        ]
+      ],
+      "bbox": [
+        1395.0,
+        2011.0,
+        3905.0,
+        2194.0
+      ],
+      "text": "1. M. D. Cammerer und Wallaster-Ritter",
+      "confidence": null,
+      "regions": [
+        "r2"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          682.0,
+          2354.0
+        ],
+        [
+          690.0,
+          2270.0
+        ]
+      ],
+      "bbox": [
+        647.0,
+        2264.0,
+        734.0,
+        2354.0
+      ],
+      "text": "\"",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          2126.0,
+          3056.0
+        ],
+        [
+          2499.0,
+          3036.0
+        ],
+        [
+          3877.0,
+          3036.0
+        ]
+      ],
+      "bbox": [
+        2123.0,
+        2920.0,
+        3877.0,
+        3126.0
+      ],
+      "text": "in Rppischauften u. Thurgau",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 11435,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T15:05:19+00:00"
+}

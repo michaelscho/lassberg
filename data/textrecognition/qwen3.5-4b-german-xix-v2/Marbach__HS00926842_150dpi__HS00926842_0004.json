@@ -1,0 +1,129 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00926842_150dpi",
+  "source": {
+    "name": "HS00926842_0004.jpg",
+    "bytes": 119086,
+    "sha256": "c3d949fb85d0cc091631e4b41cbf5e8d468817b5b18ef4d3cb93d1d3b27fc7a2",
+    "remote": "digitalisate/Marbach/HS00926842_150dpi/HS00926842_0004.jpg",
+    "key": "Marbach__HS00926842_150dpi__HS00926842_0004",
+    "working_copy": "HS00926842_0004.jpg"
+  },
+  "text": "355\nübingen, Schützgart\n1812\n1849.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          708.0,
+          1209.0
+        ],
+        [
+          827.0,
+          1208.0
+        ]
+      ],
+      "bbox": [
+        707.0,
+        1168.0,
+        827.0,
+        1224.0
+      ],
+      "text": "355",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          267.0,
+          712.0
+        ],
+        [
+          640.0,
+          709.0
+        ]
+      ],
+      "bbox": [
+        267.0,
+        667.0,
+        640.0,
+        740.0
+      ],
+      "text": "übingen, Schützgart",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          419.0,
+          834.0
+        ],
+        [
+          514.0,
+          836.0
+        ]
+      ],
+      "bbox": [
+        419.0,
+        792.0,
+        514.0,
+        851.0
+      ],
+      "text": "1812",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          605.0,
+          1212.0
+        ],
+        [
+          609.0,
+          1212.0
+        ]
+      ],
+      "bbox": [
+        605.0,
+        1166.0,
+        609.0,
+        1222.0
+      ],
+      "text": "1849.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 6841,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 40,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T21:20:06+00:00"
+}

@@ -1,0 +1,400 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00755392_150dpi",
+  "source": {
+    "name": "HS00755392_150dpi_0004.jpg",
+    "bytes": 318349,
+    "sha256": "b7e7523b95f54300f6e5d991706b33f56e0c5f5c5a5134cc495777a20236d857",
+    "remote": "digitalisate/Marbach/HS00755392_150dpi/HS00755392_150dpi_0004.jpg",
+    "key": "Marbach__HS00755392_150dpi__HS00755392_150dpi_0004",
+    "working_copy": "HS00755392_150dpi_0004.jpg"
+  },
+  "text": "Hochwohlgeboren,\nHochverehrtester Herr freiherr!\nEn. Hochwohlgeboren haben mich durch die hochgeneigte er-\nsendung Ihres schönen nadelalterlichen Blumenspreußes auf das an-\ngenehmste überrascht und zum herrlichsten Danke verpflichtet.\nStatte ich nur Gelegenheit mit Kampf, die schonen gabe mit etwas\ngleich verwollen zu erwiedern!",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          459.0,
+          594.0
+        ],
+        [
+          613.0,
+          586.0
+        ],
+        [
+          710.0,
+          586.0
+        ]
+      ],
+      "bbox": [
+        457.0,
+        554.0,
+        710.0,
+        606.0
+      ],
+      "text": "Hochwohlgeboren,",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          525.0,
+          657.0
+        ],
+        [
+          895.0,
+          644.0
+        ]
+      ],
+      "bbox": [
+        523.0,
+        613.0,
+        895.0,
+        677.0
+      ],
+      "text": "Hochverehrtester Herr freiherr!",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          430.0,
+          957.0
+        ],
+        [
+          708.0,
+          950.0
+        ],
+        [
+          871.0,
+          938.0
+        ],
+        [
+          1243.0,
+          925.0
+        ]
+      ],
+      "bbox": [
+        428.0,
+        899.0,
+        1243.0,
+        973.0
+      ],
+      "text": "En. Hochwohlgeboren haben mich durch die hochgeneigte er-",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          363.0,
+          1011.0
+        ],
+        [
+          602.0,
+          1004.0
+        ],
+        [
+          909.0,
+          987.0
+        ],
+        [
+          1240.0,
+          977.0
+        ]
+      ],
+      "bbox": [
+        361.0,
+        950.0,
+        1240.0,
+        1027.0
+      ],
+      "text": "sendung Ihres schönen nadelalterlichen Blumenspreußes auf das an-",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          363.0,
+          1059.0
+        ],
+        [
+          1217.0,
+          1032.0
+        ]
+      ],
+      "bbox": [
+        362.0,
+        1002.0,
+        1217.0,
+        1077.0
+      ],
+      "text": "genehmste überrascht und zum herrlichsten Danke verpflichtet.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          357.0,
+          1122.0
+        ],
+        [
+          541.0,
+          1108.0
+        ],
+        [
+          1226.0,
+          1086.0
+        ]
+      ],
+      "bbox": [
+        356.0,
+        1055.0,
+        1226.0,
+        1138.0
+      ],
+      "text": "Statte ich nur Gelegenheit mit Kampf, die schonen gabe mit etwas",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          363.0,
+          1172.0
+        ],
+        [
+          752.0,
+          1151.0
+        ]
+      ],
+      "bbox": [
+        361.0,
+        1120.0,
+        752.0,
+        1188.0
+      ],
+      "text": "gleich verwollen zu erwiedern!",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 8397,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "Hochwollgeborner,\nhochverehrtester herr freiherr!\nEw. hockwohlgeboren haben mich durch die hochgeneigte zu-\nSendung Ihres Schoenen mittelalterlichen blamenstraußes auf das an-\ngenehmste übernascht und rum's herklichsten danke verpflichtet.\nHætte ich nur gelegenheit must, die Schoene gabe mit choas\ngleich wertvollem zu erwiedern!",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            459.0,
+            594.0
+          ],
+          [
+            613.0,
+            586.0
+          ],
+          [
+            710.0,
+            586.0
+          ]
+        ],
+        "bbox": [
+          457.0,
+          554.0,
+          710.0,
+          606.0
+        ],
+        "text": "Hochwollgeborner,",
+        "confidence": 0.8692254985080046,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            525.0,
+            657.0
+          ],
+          [
+            895.0,
+            644.0
+          ]
+        ],
+        "bbox": [
+          523.0,
+          613.0,
+          895.0,
+          677.0
+        ],
+        "text": "hochverehrtester herr freiherr!",
+        "confidence": 0.9183230400085449,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            430.0,
+            957.0
+          ],
+          [
+            708.0,
+            950.0
+          ],
+          [
+            871.0,
+            938.0
+          ],
+          [
+            1243.0,
+            925.0
+          ]
+        ],
+        "bbox": [
+          428.0,
+          899.0,
+          1243.0,
+          973.0
+        ],
+        "text": "Ew. hockwohlgeboren haben mich durch die hochgeneigte zu-",
+        "confidence": 0.9025348702020812,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            363.0,
+            1011.0
+          ],
+          [
+            602.0,
+            1004.0
+          ],
+          [
+            909.0,
+            987.0
+          ],
+          [
+            1240.0,
+            977.0
+          ]
+        ],
+        "bbox": [
+          361.0,
+          950.0,
+          1240.0,
+          1027.0
+        ],
+        "text": "Sendung Ihres Schoenen mittelalterlichen blamenstraußes auf das an-",
+        "confidence": 0.9050530844659948,
+        "regions": []
+      },
+      {
+        "order": 4,
+        "baseline": [
+          [
+            363.0,
+            1059.0
+          ],
+          [
+            1217.0,
+            1032.0
+          ]
+        ],
+        "bbox": [
+          362.0,
+          1002.0,
+          1217.0,
+          1077.0
+        ],
+        "text": "genehmste übernascht und rum's herklichsten danke verpflichtet.",
+        "confidence": 0.8980028918012977,
+        "regions": []
+      },
+      {
+        "order": 5,
+        "baseline": [
+          [
+            357.0,
+            1122.0
+          ],
+          [
+            541.0,
+            1108.0
+          ],
+          [
+            1226.0,
+            1086.0
+          ]
+        ],
+        "bbox": [
+          356.0,
+          1055.0,
+          1226.0,
+          1138.0
+        ],
+        "text": "Hætte ich nur gelegenheit must, die Schoene gabe mit choas",
+        "confidence": 0.8803095910055884,
+        "regions": []
+      },
+      {
+        "order": 6,
+        "baseline": [
+          [
+            363.0,
+            1172.0
+          ],
+          [
+            752.0,
+            1151.0
+          ]
+        ],
+        "bbox": [
+          361.0,
+          1120.0,
+          752.0,
+          1188.0
+        ],
+        "text": "gleich wertvollem zu erwiedern!",
+        "confidence": 0.8855034651294831,
+        "regions": []
+      }
+    ],
+    "confidence": 0.894136063017285,
+    "timing_ms": 16908,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T03:58:34+00:00"
+}

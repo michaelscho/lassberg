@@ -1,0 +1,169 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Winterthur",
+  "source": {
+    "name": "350-MsBRH_513-91-171.jpg",
+    "bytes": 4033834,
+    "sha256": "0bb5e128da0b80e8175221120346336be5fb90f65e2fe736b1dc3be01cdceed5",
+    "remote": "digitalisate/Winterthur/350-MsBRH_513-91-171.jpg",
+    "key": "Winterthur__350-MsBRH_513-91-171",
+    "working_copy": "350-MsBRH_513-91-171.jpg"
+  },
+  "text": "Hochwobgebornen\nDem Herrn Lunnen Joseph von Lastber\n1.\nP. Kellmann und Stuckleser Rükken\nin Eggishausen Cant. Thurgau",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          2383.0,
+          1134.0
+        ],
+        [
+          2932.0,
+          1149.0
+        ],
+        [
+          3672.0,
+          1144.0
+        ]
+      ],
+      "bbox": [
+        2381.0,
+        1042.0,
+        3672.0,
+        1236.0
+      ],
+      "text": "Hochwobgebornen",
+      "confidence": null,
+      "regions": [
+        "_1b0c2cd8-27ad-4eb0-8822-40c028dd4d2d"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1317.0,
+          1612.0
+        ],
+        [
+          2778.0,
+          1630.0
+        ],
+        [
+          3853.0,
+          1615.0
+        ]
+      ],
+      "bbox": [
+        1314.0,
+        1494.0,
+        3853.0,
+        1675.0
+      ],
+      "text": "Dem Herrn Lunnen Joseph von Lastber",
+      "confidence": null,
+      "regions": [
+        "_1b0c2cd8-27ad-4eb0-8822-40c028dd4d2d"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1325.0,
+          1758.0
+        ],
+        [
+          1340.0,
+          1758.0
+        ]
+      ],
+      "bbox": [
+        1325.0,
+        1711.0,
+        1340.0,
+        1805.0
+      ],
+      "text": "1.",
+      "confidence": null,
+      "regions": [
+        "_1b0c2cd8-27ad-4eb0-8822-40c028dd4d2d"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          1456.0,
+          1764.0
+        ],
+        [
+          3249.0,
+          1782.0
+        ],
+        [
+          3965.0,
+          1774.0
+        ]
+      ],
+      "bbox": [
+        1456.0,
+        1656.0,
+        3965.0,
+        1852.0
+      ],
+      "text": "P. Kellmann und Stuckleser Rükken",
+      "confidence": null,
+      "regions": [
+        "_1b0c2cd8-27ad-4eb0-8822-40c028dd4d2d"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          1816.0,
+          2848.0
+        ],
+        [
+          2857.0,
+          2843.0
+        ],
+        [
+          3978.0,
+          2817.0
+        ]
+      ],
+      "bbox": [
+        1814.0,
+        2704.0,
+        3978.0,
+        2973.0
+      ],
+      "text": "in Eggishausen Cant. Thurgau",
+      "confidence": null,
+      "regions": [
+        "_820e754d-07f0-4ec6-a7aa-8b5ca52977e8"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 15046,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T16:34:46+00:00"
+}

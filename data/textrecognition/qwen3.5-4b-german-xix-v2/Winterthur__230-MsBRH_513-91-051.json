@@ -1,0 +1,191 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Winterthur",
+  "source": {
+    "name": "230-MsBRH_513-91-051.jpg",
+    "bytes": 5170691,
+    "sha256": "da6bec5b897b9c3f08dcba31d27c89dc3110c3c85ae367c7232a0b5bdcb81601",
+    "remote": "digitalisate/Winterthur/230-MsBRH_513-91-051.jpg",
+    "key": "Winterthur__230-MsBRH_513-91-051",
+    "working_copy": "230-MsBRH_513-91-051.jpg"
+  },
+  "text": "Hochserobabaren.\nDem Herrn Baron J. von Lüßburg\n2. 2. Linnenrod u. Markteschen\nRitter\n2\nin Eggishausen Land. Thurgau",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          2670.0,
+          1427.0
+        ],
+        [
+          4205.0,
+          1435.0
+        ]
+      ],
+      "bbox": [
+        2667.0,
+        1306.0,
+        4205.0,
+        1510.0
+      ],
+      "text": "Hochserobabaren.",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1805.0,
+          1888.0
+        ],
+        [
+          3432.0,
+          1930.0
+        ],
+        [
+          4189.0,
+          1932.0
+        ]
+      ],
+      "bbox": [
+        1803.0,
+        1747.0,
+        4189.0,
+        1960.0
+      ],
+      "text": "Dem Herrn Baron J. von Lüßburg",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1803.0,
+          2090.0
+        ],
+        [
+          2377.0,
+          2087.0
+        ],
+        [
+          3435.0,
+          2123.0
+        ],
+        [
+          4144.0,
+          2117.0
+        ]
+      ],
+      "bbox": [
+        1800.0,
+        1999.0,
+        4144.0,
+        2181.0
+      ],
+      "text": "2. 2. Linnenrod u. Markteschen",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          2667.0,
+          2261.0
+        ],
+        [
+          3222.0,
+          2266.0
+        ]
+      ],
+      "bbox": [
+        2664.0,
+        2148.0,
+        3222.0,
+        2305.0
+      ],
+      "text": "Ritter",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          2316.0,
+          2705.0
+        ],
+        [
+          2534.0,
+          2703.0
+        ]
+      ],
+      "bbox": [
+        2314.0,
+        2567.0,
+        2534.0,
+        2727.0
+      ],
+      "text": "2",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          2029.0,
+          3180.0
+        ],
+        [
+          3805.0,
+          3164.0
+        ],
+        [
+          4266.0,
+          3172.0
+        ]
+      ],
+      "bbox": [
+        2026.0,
+        3023.0,
+        4266.0,
+        3285.0
+      ],
+      "text": "in Eggishausen Land. Thurgau",
+      "confidence": null,
+      "regions": [
+        "r2"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 10781,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T14:45:35+00:00"
+}

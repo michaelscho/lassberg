@@ -1,0 +1,201 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "UB Bern",
+  "source": {
+    "name": "Mss_h_h_XXVI_105_7_28.tif",
+    "bytes": 26476572,
+    "sha256": "b45f27d5b7689861be96be9386bceabcb189aa40019e3e6fa3e7318fde21fb8e",
+    "remote": "digitalisate/UB Bern/Mss_h_h_XXVI_105_7_28.tif",
+    "key": "UB Bern__Mss_h_h_XXVI_105_7_28",
+    "working_copy": "Mss_h_h_XXVI_105_7_28.jpg"
+  },
+  "text": "Calibrite\nPolorchecker Classic\nmit dem\n4\n18\n3\n6",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          121.0,
+          98.0
+        ],
+        [
+          259.0,
+          96.0
+        ]
+      ],
+      "bbox": [
+        119.0,
+        41.0,
+        259.0,
+        133.0
+      ],
+      "text": "Calibrite",
+      "confidence": null,
+      "regions": [
+        "_5ddc8682-373b-4396-96bc-fe83ea6f0acd"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          422.0,
+          102.0
+        ],
+        [
+          781.0,
+          106.0
+        ]
+      ],
+      "bbox": [
+        420.0,
+        66.0,
+        781.0,
+        133.0
+      ],
+      "text": "Polorchecker Classic",
+      "confidence": null,
+      "regions": [
+        "_42c1a33a-c705-4d4d-802f-913298b0a612"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          110.0,
+          1286.0
+        ],
+        [
+          700.0,
+          1286.0
+        ]
+      ],
+      "bbox": [
+        110.0,
+        1253.0,
+        700.0,
+        1328.0
+      ],
+      "text": "mit dem",
+      "confidence": null,
+      "regions": [
+        "_1e323e2c-5bff-4cbf-9668-d74ae6ec4089"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          374.0,
+          3074.0
+        ],
+        [
+          378.0,
+          3058.0
+        ]
+      ],
+      "bbox": [
+        351.0,
+        3049.0,
+        411.0,
+        3081.0
+      ],
+      "text": "4",
+      "confidence": null,
+      "regions": [
+        "_71447db4-e43f-4431-8046-3f09f544d2a7"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          369.0,
+          3549.0
+        ],
+        [
+          399.0,
+          3549.0
+        ]
+      ],
+      "bbox": [
+        369.0,
+        3490.0,
+        399.0,
+        3569.0
+      ],
+      "text": "18",
+      "confidence": null,
+      "regions": [
+        "_71447db4-e43f-4431-8046-3f09f544d2a7"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          376.0,
+          3647.0
+        ],
+        [
+          390.0,
+          3666.0
+        ]
+      ],
+      "bbox": [
+        346.0,
+        3624.0,
+        407.0,
+        3682.0
+      ],
+      "text": "3",
+      "confidence": null,
+      "regions": [
+        "_71447db4-e43f-4431-8046-3f09f544d2a7"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          365.0,
+          3663.0
+        ],
+        [
+          394.0,
+          3663.0
+        ]
+      ],
+      "bbox": [
+        365.0,
+        3634.0,
+        394.0,
+        3691.0
+      ],
+      "text": "6",
+      "confidence": null,
+      "regions": [
+        "_71447db4-e43f-4431-8046-3f09f544d2a7"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 5052,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 32,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T02:15:38+00:00"
+}

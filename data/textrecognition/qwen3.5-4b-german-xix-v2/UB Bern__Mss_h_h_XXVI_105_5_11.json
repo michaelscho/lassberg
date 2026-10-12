@@ -1,0 +1,99 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "UB Bern",
+  "source": {
+    "name": "Mss_h_h_XXVI_105_5_11.tif",
+    "bytes": 35023332,
+    "sha256": "2a14d9c178f179368718421e1017f8084a53160474de5b931eebbd754b092abd",
+    "remote": "digitalisate/UB Bern/Mss_h_h_XXVI_105_5_11.tif",
+    "key": "UB Bern__Mss_h_h_XXVI_105_5_11",
+    "working_copy": "Mss_h_h_XXVI_105_5_11.jpg"
+  },
+  "text": "Calibrite\norchecker classie\nmit dem 10ten",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          124.0,
+          107.0
+        ],
+        [
+          233.0,
+          103.0
+        ]
+      ],
+      "bbox": [
+        121.0,
+        60.0,
+        233.0,
+        140.0
+      ],
+      "text": "Calibrite",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          435.0,
+          111.0
+        ],
+        [
+          761.0,
+          113.0
+        ]
+      ],
+      "bbox": [
+        433.0,
+        69.0,
+        761.0,
+        151.0
+      ],
+      "text": "orchecker classie",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          92.0,
+          1303.0
+        ],
+        [
+          691.0,
+          1297.0
+        ]
+      ],
+      "bbox": [
+        90.0,
+        1269.0,
+        691.0,
+        1341.0
+      ],
+      "text": "mit dem 10ten",
+      "confidence": null,
+      "regions": []
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 6803,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 45,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T01:55:16+00:00"
+}

@@ -1,0 +1,273 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS01197458_150dpi",
+  "source": {
+    "name": "HS01197458_0011.jpg",
+    "bytes": 176241,
+    "sha256": "8c84e8dac792139dbc7405faec818faeb8ea637686b44fc2478d77fd90f4ffa7",
+    "remote": "digitalisate/Marbach/HS01197458_150dpi/HS01197458_0011.jpg",
+    "key": "Marbach__HS01197458_150dpi__HS01197458_0011",
+    "working_copy": "HS01197458_0011.jpg"
+  },
+  "text": "Alles\nLassberg\nZürich\n12.\nBern\nich grüßen l. Kan-\n1869.\nBern\nDeiner\nzu",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          198.0,
+          1042.0
+        ],
+        [
+          267.0,
+          1041.0
+        ]
+      ],
+      "bbox": [
+        196.0,
+        1001.0,
+        267.0,
+        1063.0
+      ],
+      "text": "Alles",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          93.0,
+          402.0
+        ],
+        [
+          231.0,
+          403.0
+        ]
+      ],
+      "bbox": [
+        92.0,
+        366.0,
+        231.0,
+        415.0
+      ],
+      "text": "Lassberg",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          329.0,
+          407.0
+        ],
+        [
+          438.0,
+          401.0
+        ]
+      ],
+      "bbox": [
+        326.0,
+        355.0,
+        440.0,
+        438.0
+      ],
+      "text": "Zürich",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          444.0,
+          401.0
+        ],
+        [
+          493.0,
+          401.0
+        ]
+      ],
+      "bbox": [
+        442.0,
+        368.0,
+        493.0,
+        413.0
+      ],
+      "text": "12.",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          504.0,
+          652.0
+        ],
+        [
+          575.0,
+          652.0
+        ]
+      ],
+      "bbox": [
+        504.0,
+        611.0,
+        575.0,
+        663.0
+      ],
+      "text": "Bern",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          598.0,
+          398.0
+        ],
+        [
+          894.0,
+          399.0
+        ]
+      ],
+      "bbox": [
+        597.0,
+        366.0,
+        894.0,
+        420.0
+      ],
+      "text": "ich grüßen l. Kan-",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          632.0,
+          534.0
+        ],
+        [
+          647.0,
+          534.0
+        ]
+      ],
+      "bbox": [
+        631.0,
+        504.0,
+        647.0,
+        550.0
+      ],
+      "text": "1869.",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 7,
+      "baseline": [
+        [
+          778.0,
+          452.0
+        ],
+        [
+          834.0,
+          449.0
+        ]
+      ],
+      "bbox": [
+        776.0,
+        412.0,
+        834.0,
+        483.0
+      ],
+      "text": "Bern",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 8,
+      "baseline": [
+        [
+          731.0,
+          524.0
+        ],
+        [
+          818.0,
+          524.0
+        ]
+      ],
+      "bbox": [
+        730.0,
+        497.0,
+        818.0,
+        537.0
+      ],
+      "text": "Deiner",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 9,
+      "baseline": [
+        [
+          751.0,
+          593.0
+        ],
+        [
+          846.0,
+          593.0
+        ]
+      ],
+      "bbox": [
+        751.0,
+        576.0,
+        846.0,
+        619.0
+      ],
+      "text": "zu",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 5832,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 31,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T21:33:20+00:00"
+}

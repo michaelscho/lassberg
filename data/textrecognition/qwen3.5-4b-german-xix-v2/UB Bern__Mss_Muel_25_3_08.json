@@ -1,0 +1,105 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "UB Bern",
+  "source": {
+    "name": "Mss_Muel_25_3_08.tif",
+    "bytes": 38436718,
+    "sha256": "48ec8e5e0b7657e45025284369177714baef26c86feeb191965bb46f8454b8b5",
+    "remote": "digitalisate/UB Bern/Mss_Muel_25_3_08.tif",
+    "key": "UB Bern__Mss_Muel_25_3_08",
+    "working_copy": "Mss_Muel_25_3_08.jpg"
+  },
+  "text": "sich\norchecker classica\nen",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          211.0,
+          93.0
+        ],
+        [
+          310.0,
+          93.0
+        ]
+      ],
+      "bbox": [
+        211.0,
+        61.0,
+        310.0,
+        126.0
+      ],
+      "text": "sich",
+      "confidence": null,
+      "regions": [
+        "_05a5deba-290a-4f0a-ba11-f177aadc9eea"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          490.0,
+          101.0
+        ],
+        [
+          822.0,
+          105.0
+        ]
+      ],
+      "bbox": [
+        488.0,
+        59.0,
+        822.0,
+        145.0
+      ],
+      "text": "orchecker classica",
+      "confidence": null,
+      "regions": [
+        "_5e1dee79-0c28-441b-95e0-563ffb54c835"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          143.0,
+          1278.0
+        ],
+        [
+          742.0,
+          1283.0
+        ]
+      ],
+      "bbox": [
+        141.0,
+        1242.0,
+        742.0,
+        1325.0
+      ],
+      "text": "en",
+      "confidence": null,
+      "regions": [
+        "_9939b157-4b14-4fe3-8fb4-96d68da35ed7"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 7195,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 41,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T00:21:46+00:00"
+}

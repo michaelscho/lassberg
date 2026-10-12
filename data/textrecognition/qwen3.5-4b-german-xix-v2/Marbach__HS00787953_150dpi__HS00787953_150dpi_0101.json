@@ -1,0 +1,172 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00787953_150dpi",
+  "source": {
+    "name": "HS00787953_150dpi_0101.jpg",
+    "bytes": 138961,
+    "sha256": "9e647fb1a2340d30763a4babff4309925ac46f8f348c4c796f155929721a402d",
+    "remote": "digitalisate/Marbach/HS00787953_150dpi/HS00787953_150dpi_0101.jpg",
+    "key": "Marbach__HS00787953_150dpi__HS00787953_150dpi_0101",
+    "working_copy": "HS00787953_150dpi_0101.jpg"
+  },
+  "text": "16\nJuni 1820\nvon meiner Besuch",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          129.0,
+          63.0
+        ],
+        [
+          154.0,
+          58.0
+        ]
+      ],
+      "bbox": [
+        125.0,
+        39.0,
+        155.0,
+        75.0
+      ],
+      "text": "16",
+      "confidence": null,
+      "regions": [
+        "r3"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          314.0,
+          82.0
+        ],
+        [
+          493.0,
+          82.0
+        ]
+      ],
+      "bbox": [
+        314.0,
+        52.0,
+        493.0,
+        95.0
+      ],
+      "text": "Juni 1820",
+      "confidence": null,
+      "regions": [
+        "r2"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          249.0,
+          152.0
+        ],
+        [
+          562.0,
+          153.0
+        ]
+      ],
+      "bbox": [
+        249.0,
+        123.0,
+        562.0,
+        174.0
+      ],
+      "text": "von meiner Besuch",
+      "confidence": null,
+      "regions": [
+        "r2"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 5819,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "26.\nJuni 1826\nein seinem Leef und",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            129.0,
+            63.0
+          ],
+          [
+            154.0,
+            58.0
+          ]
+        ],
+        "bbox": [
+          125.0,
+          39.0,
+          155.0,
+          75.0
+        ],
+        "text": "26.",
+        "confidence": 0.909513254960378,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            314.0,
+            82.0
+          ],
+          [
+            493.0,
+            82.0
+          ]
+        ],
+        "bbox": [
+          314.0,
+          52.0,
+          493.0,
+          95.0
+        ],
+        "text": "Juni 1826",
+        "confidence": 0.9178706275092231,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            249.0,
+            152.0
+          ],
+          [
+            562.0,
+            153.0
+          ]
+        ],
+        "bbox": [
+          249.0,
+          123.0,
+          562.0,
+          174.0
+        ],
+        "text": "ein seinem Leef und",
+        "confidence": 0.6523842309650622,
+        "regions": []
+      }
+    ],
+    "confidence": 0.8265893711448878,
+    "timing_ms": 33010,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T12:11:55+00:00"
+}

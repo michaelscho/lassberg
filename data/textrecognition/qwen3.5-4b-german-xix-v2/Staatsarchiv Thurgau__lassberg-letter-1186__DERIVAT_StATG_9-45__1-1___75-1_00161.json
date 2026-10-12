@@ -1,0 +1,233 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Staatsarchiv Thurgau/lassberg-letter-1186",
+  "source": {
+    "name": "DERIVAT_StATG_9-45__1-1___75-1_00161.jpg",
+    "bytes": 3039384,
+    "sha256": "f8a5df68160fdf53d859e32f05ae0ed9b986ff3dc40c10ea3be7272661417a48",
+    "remote": "digitalisate/Staatsarchiv Thurgau/lassberg-letter-1186/DERIVAT_StATG_9-45__1-1___75-1_00161.jpg",
+    "key": "Staatsarchiv Thurgau__lassberg-letter-1186__DERIVAT_StATG_9-45__1-1___75-1_00161",
+    "working_copy": "DERIVAT_StATG_9-45__1-1___75-1_00161.jpg"
+  },
+  "text": "Gujus Aufsicht von Schweden ist Ihnen vielleicht auf der Reise\nanfangen. Ich lasse dieselbe mit vielen Vergnügen, und lege sie\nIhnen bey. Die Andeutungen auf Atltdische Fühlung mangelt es\ndarin nicht.\nMein liebe Frau freut sich Ihrer Wiederkauf von sehr. Wie liegt\nempfehle uns Ihre freere Gangeheit.\nSchaffhall den 4. Aug. 1837.\nDien. Präsidenten",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          294.0,
+          727.0
+        ],
+        [
+          1419.0,
+          714.0
+        ]
+      ],
+      "bbox": [
+        294.0,
+        654.0,
+        1419.0,
+        756.0
+      ],
+      "text": "Gujus Aufsicht von Schweden ist Ihnen vielleicht auf der Reise",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          288.0,
+          795.0
+        ],
+        [
+          1405.0,
+          802.0
+        ]
+      ],
+      "bbox": [
+        287.0,
+        738.0,
+        1405.0,
+        829.0
+      ],
+      "text": "anfangen. Ich lasse dieselbe mit vielen Vergnügen, und lege sie",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          301.0,
+          880.0
+        ],
+        [
+          630.0,
+          889.0
+        ],
+        [
+          1456.0,
+          884.0
+        ]
+      ],
+      "bbox": [
+        301.0,
+        825.0,
+        1456.0,
+        927.0
+      ],
+      "text": "Ihnen bey. Die Andeutungen auf Atltdische Fühlung mangelt es",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          294.0,
+          968.0
+        ],
+        [
+          507.0,
+          971.0
+        ]
+      ],
+      "bbox": [
+        293.0,
+        923.0,
+        507.0,
+        991.0
+      ],
+      "text": "darin nicht.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          301.0,
+          1084.0
+        ],
+        [
+          1464.0,
+          1087.0
+        ]
+      ],
+      "bbox": [
+        301.0,
+        1021.0,
+        1464.0,
+        1131.0
+      ],
+      "text": "Mein liebe Frau freut sich Ihrer Wiederkauf von sehr. Wie liegt",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          301.0,
+          1159.0
+        ],
+        [
+          802.0,
+          1170.0
+        ],
+        [
+          1061.0,
+          1168.0
+        ]
+      ],
+      "bbox": [
+        300.0,
+        1116.0,
+        1061.0,
+        1229.0
+      ],
+      "text": "empfehle uns Ihre freere Gangeheit.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          321.0,
+          1296.0
+        ],
+        [
+          758.0,
+          1303.0
+        ]
+      ],
+      "bbox": [
+        320.0,
+        1233.0,
+        758.0,
+        1345.0
+      ],
+      "text": "Schaffhall den 4. Aug. 1837.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 7,
+      "baseline": [
+        [
+          1038.0,
+          1405.0
+        ],
+        [
+          1388.0,
+          1408.0
+        ]
+      ],
+      "bbox": [
+        1037.0,
+        1327.0,
+        1388.0,
+        1468.0
+      ],
+      "text": "Dien. Präsidenten",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 9503,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 32,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T21:56:32+00:00"
+}

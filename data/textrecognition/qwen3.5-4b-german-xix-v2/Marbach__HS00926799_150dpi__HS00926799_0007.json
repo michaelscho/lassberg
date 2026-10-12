@@ -1,0 +1,205 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00926799_150dpi",
+  "source": {
+    "name": "HS00926799_0007.jpg",
+    "bytes": 315889,
+    "sha256": "205346d361b5b5f101b7371420a8abc22293edbc79e3625d2f9071156c0e802a",
+    "remote": "digitalisate/Marbach/HS00926799_150dpi/HS00926799_0007.jpg",
+    "key": "Marbach__HS00926799_150dpi__HS00926799_0007",
+    "working_copy": "HS00926799_0007.jpg"
+  },
+  "text": "NO. In dem Oberingenieur-Codex befindet sich der Weltfonds Lindern ganz\ndas ähnliche Bild, wie das mir nach dem Unmaßlichen gütig mitgetheilt\nAuch fühlen in ersterm Schild und Zehle. Das Bild ist ohne Zweifel\nhabe ich einem Freund H. Mon. d. 16\nnach dem Leide des Richters gezeichnet:",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          141.0,
+          220.0
+        ],
+        [
+          380.0,
+          227.0
+        ],
+        [
+          618.0,
+          241.0
+        ],
+        [
+          933.0,
+          254.0
+        ],
+        [
+          1221.0,
+          276.0
+        ]
+      ],
+      "bbox": [
+        140.0,
+        181.0,
+        1221.0,
+        292.0
+      ],
+      "text": "NO. In dem Oberingenieur-Codex befindet sich der Weltfonds Lindern ganz",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          213.0,
+          266.0
+        ],
+        [
+          424.0,
+          270.0
+        ],
+        [
+          609.0,
+          284.0
+        ],
+        [
+          716.0,
+          287.0
+        ],
+        [
+          856.0,
+          298.0
+        ],
+        [
+          1016.0,
+          304.0
+        ],
+        [
+          1175.0,
+          321.0
+        ]
+      ],
+      "bbox": [
+        212.0,
+        232.0,
+        1175.0,
+        334.0
+      ],
+      "text": "das ähnliche Bild, wie das mir nach dem Unmaßlichen gütig mitgetheilt",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          203.0,
+          312.0
+        ],
+        [
+          477.0,
+          320.0
+        ],
+        [
+          688.0,
+          336.0
+        ],
+        [
+          889.0,
+          345.0
+        ],
+        [
+          1134.0,
+          367.0
+        ],
+        [
+          1209.0,
+          368.0
+        ]
+      ],
+      "bbox": [
+        202.0,
+        274.0,
+        1209.0,
+        386.0
+      ],
+      "text": "Auch fühlen in ersterm Schild und Zehle. Das Bild ist ohne Zweifel",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          817.0,
+          388.0
+        ],
+        [
+          1226.0,
+          424.0
+        ]
+      ],
+      "bbox": [
+        816.0,
+        358.0,
+        1228.0,
+        448.0
+      ],
+      "text": "habe ich einem Freund H. Mon. d. 16",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          212.0,
+          355.0
+        ],
+        [
+          497.0,
+          367.0
+        ],
+        [
+          762.0,
+          384.0
+        ]
+      ],
+      "bbox": [
+        210.0,
+        328.0,
+        763.0,
+        411.0
+      ],
+      "text": "nach dem Leide des Richters gezeichnet:",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 7349,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 32,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T20:44:20+00:00"
+}

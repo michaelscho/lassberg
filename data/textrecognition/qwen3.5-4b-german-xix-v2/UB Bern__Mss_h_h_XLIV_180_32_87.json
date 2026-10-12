@@ -1,0 +1,267 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "UB Bern",
+  "source": {
+    "name": "Mss_h_h_XLIV_180_32_87.tif",
+    "bytes": 49628776,
+    "sha256": "758ca5e48b8c4dc437c0a75075cdedaecd53c54cfd56b55c166ce63a54e96a6d",
+    "remote": "digitalisate/UB Bern/Mss_h_h_XLIV_180_32_87.tif",
+    "key": "UB Bern__Mss_h_h_XLIV_180_32_87",
+    "working_copy": "Mss_h_h_XLIV_180_32_87.jpg"
+  },
+  "text": "d.\nSchercker Classicus\nlegen lande sind, welche sie ableset, den\nmit dem\nmäßig uns einige tausend Mann in\nFebr. stellte.\nte ergeben.\n2\nW. D. 11. Okt. 1841.\n1868",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          140.0,
+          144.0
+        ],
+        [
+          220.0,
+          146.0
+        ]
+      ],
+      "bbox": [
+        138.0,
+        110.0,
+        220.0,
+        180.0
+      ],
+      "text": "d.",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          448.0,
+          146.0
+        ],
+        [
+          745.0,
+          148.0
+        ]
+      ],
+      "bbox": [
+        446.0,
+        118.0,
+        745.0,
+        174.0
+      ],
+      "text": "Schercker Classicus",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          962.0,
+          1365.0
+        ],
+        [
+          2173.0,
+          1380.0
+        ],
+        [
+          2508.0,
+          1401.0
+        ]
+      ],
+      "bbox": [
+        960.0,
+        1287.0,
+        2508.0,
+        1429.0
+      ],
+      "text": "legen lande sind, welche sie ableset, den",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          87.0,
+          1340.0
+        ],
+        [
+          673.0,
+          1331.0
+        ]
+      ],
+      "bbox": [
+        84.0,
+        1295.0,
+        673.0,
+        1374.0
+      ],
+      "text": "mit dem",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          947.0,
+          1469.0
+        ],
+        [
+          1421.0,
+          1473.0
+        ],
+        [
+          2527.0,
+          1505.0
+        ]
+      ],
+      "bbox": [
+        947.0,
+        1399.0,
+        2527.0,
+        1548.0
+      ],
+      "text": "mäßig uns einige tausend Mann in",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          966.0,
+          1590.0
+        ],
+        [
+          1497.0,
+          1582.0
+        ]
+      ],
+      "bbox": [
+        964.0,
+        1505.0,
+        1497.0,
+        1652.0
+      ],
+      "text": "Febr. stellte.",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          1571.0,
+          1718.0
+        ],
+        [
+          2124.0,
+          1724.0
+        ]
+      ],
+      "bbox": [
+        1569.0,
+        1648.0,
+        2124.0,
+        1784.0
+      ],
+      "text": "te ergeben.",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 7,
+      "baseline": [
+        [
+          2427.0,
+          1930.0
+        ],
+        [
+          2525.0,
+          1930.0
+        ]
+      ],
+      "bbox": [
+        2427.0,
+        1830.0,
+        2525.0,
+        1953.0
+      ],
+      "text": "2",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 8,
+      "baseline": [
+        [
+          994.0,
+          2032.0
+        ],
+        [
+          1229.0,
+          2030.0
+        ],
+        [
+          1888.0,
+          2049.0
+        ]
+      ],
+      "bbox": [
+        992.0,
+        1953.0,
+        1888.0,
+        2081.0
+      ],
+      "text": "W. D. 11. Okt. 1841.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 9,
+      "baseline": [
+        [
+          373.0,
+          3612.0
+        ],
+        [
+          397.0,
+          3612.0
+        ]
+      ],
+      "bbox": [
+        373.0,
+        3555.0,
+        397.0,
+        3638.0
+      ],
+      "text": "1868",
+      "confidence": null,
+      "regions": []
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 10805,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 31,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T01:30:56+00:00"
+}

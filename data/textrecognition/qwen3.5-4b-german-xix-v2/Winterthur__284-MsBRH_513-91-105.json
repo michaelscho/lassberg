@@ -1,0 +1,157 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Winterthur",
+  "source": {
+    "name": "284-MsBRH_513-91-105.jpg",
+    "bytes": 4706005,
+    "sha256": "69d59b79f3d467603a4ea6b210692007b071bea536d6c9b6240d06147fe8b084",
+    "remote": "digitalisate/Winterthur/284-MsBRH_513-91-105.jpg",
+    "key": "Winterthur__284-MsBRH_513-91-105",
+    "working_copy": "284-MsBRH_513-91-105.jpg"
+  },
+  "text": "Hochderckgeboren.\n1\nHerren Baron Joseph von Teßberg, u. 2.\nKimmerer und Muhrbeckers Ritten\nin Eggihausen an S. Thurgau",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          2246.0,
+          1178.0
+        ],
+        [
+          3702.0,
+          1205.0
+        ]
+      ],
+      "bbox": [
+        2244.0,
+        1076.0,
+        3702.0,
+        1261.0
+      ],
+      "text": "Hochderckgeboren.",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          2171.0,
+          1178.0
+        ],
+        [
+          2227.0,
+          1178.0
+        ]
+      ],
+      "bbox": [
+        2171.0,
+        1086.0,
+        2227.0,
+        1207.0
+      ],
+      "text": "1",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1474.0,
+          1740.0
+        ],
+        [
+          2176.0,
+          1743.0
+        ],
+        [
+          2962.0,
+          1775.0
+        ],
+        [
+          3931.0,
+          1791.0
+        ]
+      ],
+      "bbox": [
+        1474.0,
+        1622.0,
+        3931.0,
+        1842.0
+      ],
+      "text": "Herren Baron Joseph von Teßberg, u. 2.",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          1485.0,
+          1891.0
+        ],
+        [
+          2198.0,
+          1923.0
+        ],
+        [
+          3737.0,
+          1950.0
+        ]
+      ],
+      "bbox": [
+        1482.0,
+        1810.0,
+        3737.0,
+        2006.0
+      ],
+      "text": "Kimmerer und Muhrbeckers Ritten",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          2004.0,
+          2859.0
+        ],
+        [
+          3882.0,
+          2872.0
+        ]
+      ],
+      "bbox": [
+        2001.0,
+        2746.0,
+        3882.0,
+        3004.0
+      ],
+      "text": "in Eggihausen an S. Thurgau",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 10603,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T15:35:59+00:00"
+}

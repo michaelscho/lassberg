@@ -1,0 +1,105 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "UB Bern",
+  "source": {
+    "name": "Mss_h_h_XXVI_105_2_02.tif",
+    "bytes": 68165958,
+    "sha256": "df44516ebee82e4937a144cf8853315fffa97be151dcc1c168f3d1f648391791",
+    "remote": "digitalisate/UB Bern/Mss_h_h_XXVI_105_2_02.tif",
+    "key": "UB Bern__Mss_h_h_XXVI_105_2_02",
+    "working_copy": "Mss_h_h_XXVI_105_2_02.jpg"
+  },
+  "text": "librite\ncker Classico\nmit dem",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          146.0,
+          107.0
+        ],
+        [
+          243.0,
+          101.0
+        ]
+      ],
+      "bbox": [
+        144.0,
+        71.0,
+        245.0,
+        141.0
+      ],
+      "text": "librite",
+      "confidence": null,
+      "regions": [
+        "_15ff4591-833f-48e5-8471-d960c286b656"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          546.0,
+          112.0
+        ],
+        [
+          760.0,
+          112.0
+        ]
+      ],
+      "bbox": [
+        546.0,
+        80.0,
+        760.0,
+        156.0
+      ],
+      "text": "cker Classico",
+      "confidence": null,
+      "regions": [
+        "_505ea7c5-017a-47e6-bf95-5c7af432c66c"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          129.0,
+          1302.0
+        ],
+        [
+          675.0,
+          1302.0
+        ]
+      ],
+      "bbox": [
+        129.0,
+        1270.0,
+        675.0,
+        1344.0
+      ],
+      "text": "mit dem",
+      "confidence": null,
+      "regions": [
+        "_0030add1-98e0-47da-a75b-409813466f38"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 11544,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 41,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T01:33:11+00:00"
+}

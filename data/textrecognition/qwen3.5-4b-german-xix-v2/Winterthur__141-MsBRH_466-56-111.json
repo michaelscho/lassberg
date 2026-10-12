@@ -1,0 +1,133 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Winterthur",
+  "source": {
+    "name": "141-MsBRH_466-56-111.jpg",
+    "bytes": 2281730,
+    "sha256": "73524ed76b7be03911d5a79d82d3704315f321077e42fe95d3d37de825e16cab",
+    "remote": "digitalisate/Winterthur/141-MsBRH_466-56-111.jpg",
+    "key": "Winterthur__141-MsBRH_466-56-111",
+    "working_copy": "141-MsBRH_466-56-111.jpg"
+  },
+  "text": "Steiner Doche würde\nDem Herrn Diacon\n3.\nzelle",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          456.0,
+          1843.0
+        ],
+        [
+          1443.0,
+          1832.0
+        ]
+      ],
+      "bbox": [
+        453.0,
+        1727.0,
+        1443.0,
+        1890.0
+      ],
+      "text": "Steiner Doche würde",
+      "confidence": null,
+      "regions": [
+        "_b9dcc221-8e50-4719-89da-d53308702523"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          428.0,
+          2065.0
+        ],
+        [
+          672.0,
+          2076.0
+        ],
+        [
+          1369.0,
+          2045.0
+        ]
+      ],
+      "bbox": [
+        426.0,
+        1957.0,
+        1369.0,
+        2123.0
+      ],
+      "text": "Dem Herrn Diacon",
+      "confidence": null,
+      "regions": [
+        "_b9dcc221-8e50-4719-89da-d53308702523"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1964.0,
+          2015.0
+        ],
+        [
+          2002.0,
+          2012.0
+        ]
+      ],
+      "bbox": [
+        1961.0,
+        1965.0,
+        2002.0,
+        2053.0
+      ],
+      "text": "3.",
+      "confidence": null,
+      "regions": [
+        "_b9dcc221-8e50-4719-89da-d53308702523"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          2542.0,
+          2219.0
+        ],
+        [
+          2749.0,
+          2222.0
+        ]
+      ],
+      "bbox": [
+        2539.0,
+        2145.0,
+        2749.0,
+        2283.0
+      ],
+      "text": "zelle",
+      "confidence": null,
+      "regions": [
+        "_6fc2c7e2-61d2-42f6-9adc-61b54f4bdd3a"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 5946,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T13:38:32+00:00"
+}

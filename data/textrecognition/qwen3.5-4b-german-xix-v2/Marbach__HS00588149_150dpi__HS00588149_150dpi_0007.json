@@ -1,0 +1,354 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00588149_150dpi",
+  "source": {
+    "name": "HS00588149_150dpi_0007.jpg",
+    "bytes": 214406,
+    "sha256": "c03301d6f2c9fab36374900b8bf07c5f1511832b61527bbf89fcf99e81207871",
+    "remote": "digitalisate/Marbach/HS00588149_150dpi/HS00588149_150dpi_0007.jpg",
+    "key": "Marbach__HS00588149_150dpi__HS00588149_150dpi_0007",
+    "working_copy": "HS00588149_150dpi_0007.jpg"
+  },
+  "text": "Bern\n5\n3\nde\nder\n1527 a\ns¬",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          227.0,
+          542.0
+        ],
+        [
+          230.0,
+          515.0
+        ]
+      ],
+      "bbox": [
+        193.0,
+        510.0,
+        262.0,
+        545.0
+      ],
+      "text": "Bern",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          232.0,
+          415.0
+        ],
+        [
+          233.0,
+          438.0
+        ]
+      ],
+      "bbox": [
+        214.0,
+        414.0,
+        253.0,
+        438.0
+      ],
+      "text": "5",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          306.0,
+          672.0
+        ],
+        [
+          307.0,
+          653.0
+        ]
+      ],
+      "bbox": [
+        291.0,
+        652.0,
+        326.0,
+        672.0
+      ],
+      "text": "3",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          310.0,
+          616.0
+        ],
+        [
+          315.0,
+          593.0
+        ]
+      ],
+      "bbox": [
+        287.0,
+        588.0,
+        336.0,
+        620.0
+      ],
+      "text": "de",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          319.0,
+          467.0
+        ],
+        [
+          323.0,
+          397.0
+        ]
+      ],
+      "bbox": [
+        296.0,
+        396.0,
+        340.0,
+        467.0
+      ],
+      "text": "der",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          303.0,
+          1237.0
+        ],
+        [
+          363.0,
+          1237.0
+        ]
+      ],
+      "bbox": [
+        302.0,
+        1220.0,
+        363.0,
+        1255.0
+      ],
+      "text": "1527 a",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          850.0,
+          564.0
+        ],
+        [
+          865.0,
+          566.0
+        ]
+      ],
+      "bbox": [
+        848.0,
+        549.0,
+        865.0,
+        580.0
+      ],
+      "text": "s¬",
+      "confidence": null,
+      "regions": []
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 13639,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "de manoel\nfrey Maria\ntada\nClo Copir\nCarvalho\n11527a\n02",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            227.0,
+            542.0
+          ],
+          [
+            230.0,
+            515.0
+          ]
+        ],
+        "bbox": [
+          193.0,
+          510.0,
+          262.0,
+          545.0
+        ],
+        "text": "de manoel",
+        "confidence": 0.6168863144185808,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            232.0,
+            415.0
+          ],
+          [
+            233.0,
+            438.0
+          ]
+        ],
+        "bbox": [
+          214.0,
+          414.0,
+          253.0,
+          438.0
+        ],
+        "text": "frey Maria",
+        "confidence": 0.5306289449334145,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            306.0,
+            672.0
+          ],
+          [
+            307.0,
+            653.0
+          ]
+        ],
+        "bbox": [
+          291.0,
+          652.0,
+          326.0,
+          672.0
+        ],
+        "text": "tada",
+        "confidence": 0.31597141921520233,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            310.0,
+            616.0
+          ],
+          [
+            315.0,
+            593.0
+          ]
+        ],
+        "bbox": [
+          287.0,
+          588.0,
+          336.0,
+          620.0
+        ],
+        "text": "Clo Copir",
+        "confidence": 0.4485403216547436,
+        "regions": []
+      },
+      {
+        "order": 4,
+        "baseline": [
+          [
+            319.0,
+            467.0
+          ],
+          [
+            323.0,
+            397.0
+          ]
+        ],
+        "bbox": [
+          296.0,
+          396.0,
+          340.0,
+          467.0
+        ],
+        "text": "Carvalho",
+        "confidence": 0.5436135977506638,
+        "regions": []
+      },
+      {
+        "order": 5,
+        "baseline": [
+          [
+            303.0,
+            1237.0
+          ],
+          [
+            363.0,
+            1237.0
+          ]
+        ],
+        "bbox": [
+          302.0,
+          1220.0,
+          363.0,
+          1255.0
+        ],
+        "text": "11527a",
+        "confidence": 0.860395759344101,
+        "regions": []
+      },
+      {
+        "order": 6,
+        "baseline": [
+          [
+            850.0,
+            564.0
+          ],
+          [
+            865.0,
+            566.0
+          ]
+        ],
+        "bbox": [
+          848.0,
+          549.0,
+          865.0,
+          580.0
+        ],
+        "text": "02",
+        "confidence": 0.3711131662130356,
+        "regions": []
+      }
+    ],
+    "confidence": 0.5267356462185345,
+    "timing_ms": 8367,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T02:54:12+00:00"
+}

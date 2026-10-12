@@ -1,0 +1,172 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Weimar/FA Hodel 236/Weimar",
+  "source": {
+    "name": "GSA_96_2725_Seite339.jpg",
+    "bytes": 7345386,
+    "sha256": "543fba09178de7594c251d03d961a0681a1fbcf42b8a99828605bda34f89d105",
+    "remote": "digitalisate/Weimar/FA Hodel 236/Weimar/GSA_96_2725_Seite339.jpg",
+    "key": "Weimar__FA Hodel 236__Weimar__GSA_96_2725_Seite339",
+    "working_copy": "GSA_96_2725_Seite339.jpg"
+  },
+  "text": "1.\nClass\n165",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          2860.0,
+          974.0
+        ],
+        [
+          2988.0,
+          974.0
+        ]
+      ],
+      "bbox": [
+        2860.0,
+        944.0,
+        2988.0,
+        1029.0
+      ],
+      "text": "1.",
+      "confidence": null,
+      "regions": [
+        "_bff8b324-f695-4cdf-8831-84d254efc753"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          2651.0,
+          2592.0
+        ],
+        [
+          3035.0,
+          2582.0
+        ]
+      ],
+      "bbox": [
+        2649.0,
+        2547.0,
+        3035.0,
+        2631.0
+      ],
+      "text": "Class",
+      "confidence": null,
+      "regions": [
+        "_be7ec88c-31f6-4b4f-aaef-b67ff74f2e29"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          330.0,
+          3334.0
+        ],
+        [
+          458.0,
+          3338.0
+        ]
+      ],
+      "bbox": [
+        328.0,
+        3283.0,
+        458.0,
+        3357.0
+      ],
+      "text": "165",
+      "confidence": null,
+      "regions": [
+        "_8c56400e-1b1a-4258-9582-0489761937c6"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 6601,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "165 ✳\n1411 III. 11. III. 111\nStaatsarchiv",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            330.0,
+            3334.0
+          ],
+          [
+            458.0,
+            3338.0
+          ]
+        ],
+        "bbox": [
+          328.0,
+          3283.0,
+          458.0,
+          3357.0
+        ],
+        "text": "165 ✳",
+        "confidence": 0.9269449313481649,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            2860.0,
+            974.0
+          ],
+          [
+            2988.0,
+            974.0
+          ]
+        ],
+        "bbox": [
+          2860.0,
+          944.0,
+          2988.0,
+          1029.0
+        ],
+        "text": "1411 III. 11. III. 111",
+        "confidence": 0.7981324344873428,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            2651.0,
+            2592.0
+          ],
+          [
+            3035.0,
+            2582.0
+          ]
+        ],
+        "bbox": [
+          2649.0,
+          2547.0,
+          3035.0,
+          2631.0
+        ],
+        "text": "Staatsarchiv",
+        "confidence": 0.8429726002116998,
+        "regions": []
+      }
+    ],
+    "confidence": 0.8560166553490692,
+    "timing_ms": 19126,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T10:20:35+00:00"
+}

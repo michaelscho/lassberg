@@ -1,0 +1,366 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Winterthur",
+  "source": {
+    "name": "01-Ms4_588-11-02.jpg",
+    "bytes": 5646379,
+    "sha256": "5603ca255dda7c138f237558e774a829318960d492c3ffb769cc2ea0c55ac917",
+    "remote": "digitalisate/Winterthur/01-Ms4_588-11-02.jpg",
+    "key": "Winterthur__01-Ms4_588-11-02",
+    "working_copy": "01-Ms4_588-11-02.jpg"
+  },
+  "text": "Interthurg\nSeiner Hochwohlgeboren\nFreiherrn D. von Lapber\nRitter.\näheren\nüber Weinfelden.\nThurgau",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          1962.0,
+          1984.0
+        ],
+        [
+          2796.0,
+          1990.0
+        ]
+      ],
+      "bbox": [
+        1960.0,
+        1851.0,
+        2796.0,
+        2035.0
+      ],
+      "text": "Interthurg",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1879.0,
+          2216.0
+        ],
+        [
+          3066.0,
+          2246.0
+        ]
+      ],
+      "bbox": [
+        1876.0,
+        2127.0,
+        3066.0,
+        2344.0
+      ],
+      "text": "Seiner Hochwohlgeboren",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1901.0,
+          2514.0
+        ],
+        [
+          2643.0,
+          2525.0
+        ],
+        [
+          3401.0,
+          2561.0
+        ]
+      ],
+      "bbox": [
+        1898.0,
+        2383.0,
+        3401.0,
+        2637.0
+      ],
+      "text": "Freiherrn D. von Lapber",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          3515.0,
+          2564.0
+        ],
+        [
+          3964.0,
+          2564.0
+        ]
+      ],
+      "bbox": [
+        3515.0,
+        2442.0,
+        3964.0,
+        2614.0
+      ],
+      "text": "Ritter.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          3722.0,
+          3197.0
+        ],
+        [
+          4042.0,
+          3194.0
+        ]
+      ],
+      "bbox": [
+        3719.0,
+        3102.0,
+        4042.0,
+        3222.0
+      ],
+      "text": "äheren",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          2855.0,
+          3395.0
+        ],
+        [
+          4087.0,
+          3395.0
+        ]
+      ],
+      "bbox": [
+        2855.0,
+        3334.0,
+        4087.0,
+        3459.0
+      ],
+      "text": "über Weinfelden.",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          3340.0,
+          3532.0
+        ],
+        [
+          3716.0,
+          3551.0
+        ],
+        [
+          3931.0,
+          3548.0
+        ]
+      ],
+      "bbox": [
+        3334.0,
+        3459.0,
+        3931.0,
+        3691.0
+      ],
+      "text": "Thurgau",
+      "confidence": null,
+      "regions": []
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 10069,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "Joenlerthur\nSeiner Hognerslgeborn\nFreiherren J. von Lassberg,\nRitter.\nCxpischausen.\nüber Weinfelden.\nThurgau.",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            1962.0,
+            1984.0
+          ],
+          [
+            2796.0,
+            1990.0
+          ]
+        ],
+        "bbox": [
+          1960.0,
+          1851.0,
+          2796.0,
+          2035.0
+        ],
+        "text": "Joenlerthur",
+        "confidence": 0.6136998303911902,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            1879.0,
+            2216.0
+          ],
+          [
+            3066.0,
+            2246.0
+          ]
+        ],
+        "bbox": [
+          1876.0,
+          2127.0,
+          3066.0,
+          2344.0
+        ],
+        "text": "Seiner Hognerslgeborn",
+        "confidence": 0.8277965457666487,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            1901.0,
+            2514.0
+          ],
+          [
+            2643.0,
+            2525.0
+          ],
+          [
+            3401.0,
+            2561.0
+          ]
+        ],
+        "bbox": [
+          1898.0,
+          2383.0,
+          3401.0,
+          2637.0
+        ],
+        "text": "Freiherren J. von Lassberg,",
+        "confidence": 0.9297590145358333,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            3515.0,
+            2564.0
+          ],
+          [
+            3964.0,
+            2564.0
+          ]
+        ],
+        "bbox": [
+          3515.0,
+          2442.0,
+          3964.0,
+          2614.0
+        ],
+        "text": "Ritter.",
+        "confidence": 0.8464619261877877,
+        "regions": []
+      },
+      {
+        "order": 4,
+        "baseline": [
+          [
+            3722.0,
+            3197.0
+          ],
+          [
+            4042.0,
+            3194.0
+          ]
+        ],
+        "bbox": [
+          3719.0,
+          3102.0,
+          4042.0,
+          3222.0
+        ],
+        "text": "Cxpischausen.",
+        "confidence": 0.7028024408679742,
+        "regions": []
+      },
+      {
+        "order": 5,
+        "baseline": [
+          [
+            2855.0,
+            3395.0
+          ],
+          [
+            4087.0,
+            3395.0
+          ]
+        ],
+        "bbox": [
+          2855.0,
+          3334.0,
+          4087.0,
+          3459.0
+        ],
+        "text": "über Weinfelden.",
+        "confidence": 0.8825087231748244,
+        "regions": []
+      },
+      {
+        "order": 6,
+        "baseline": [
+          [
+            3340.0,
+            3532.0
+          ],
+          [
+            3716.0,
+            3551.0
+          ],
+          [
+            3931.0,
+            3548.0
+          ]
+        ],
+        "bbox": [
+          3334.0,
+          3459.0,
+          3931.0,
+          3691.0
+        ],
+        "text": "Thurgau.",
+        "confidence": 0.8217834793031216,
+        "regions": []
+      }
+    ],
+    "confidence": 0.8035445657467687,
+    "timing_ms": 36807,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T13:09:43+00:00"
+}

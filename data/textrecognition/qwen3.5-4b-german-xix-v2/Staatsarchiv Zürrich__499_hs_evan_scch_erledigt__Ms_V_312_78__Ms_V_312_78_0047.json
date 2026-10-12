@@ -1,0 +1,213 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Staatsarchiv Zürrich/499_hs_evan_scch_erledigt/Ms_V_312_78",
+  "source": {
+    "name": "Ms_V_312_78_0047.tif",
+    "bytes": 20385976,
+    "sha256": "a719fa4e18a32ac4c7f56d1c0ff5046aa054c0ace5ca79f7578f55835354fd8c",
+    "remote": "digitalisate/Staatsarchiv Zürrich/499_hs_evan_scch_erledigt/Ms_V_312_78/Ms_V_312_78_0047.tif",
+    "key": "Staatsarchiv Zürrich__499_hs_evan_scch_erledigt__Ms_V_312_78__Ms_V_312_78_0047",
+    "working_copy": "Ms_V_312_78_0047.jpg"
+  },
+  "text": "us jene ein so traurer, rotellarisch Gesinnungen\nwelche von ganzem Herzen zu erwinken breit\nsein wird.\nLeo\nZeitigntorf am 11. May 1869.\ngefangenen Puncte.\nFrau Goretting",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          164.0,
+          410.0
+        ],
+        [
+          760.0,
+          434.0
+        ],
+        [
+          1371.0,
+          428.0
+        ],
+        [
+          1869.0,
+          434.0
+        ]
+      ],
+      "bbox": [
+        162.0,
+        354.0,
+        1869.0,
+        484.0
+      ],
+      "text": "us jene ein so traurer, rotellarisch Gesinnungen",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          129.0,
+          633.0
+        ],
+        [
+          614.0,
+          624.0
+        ],
+        [
+          1957.0,
+          628.0
+        ]
+      ],
+      "bbox": [
+        127.0,
+        570.0,
+        1957.0,
+        684.0
+      ],
+      "text": "welche von ganzem Herzen zu erwinken breit",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          147.0,
+          835.0
+        ],
+        [
+          499.0,
+          819.0
+        ]
+      ],
+      "bbox": [
+        146.0,
+        754.0,
+        499.0,
+        855.0
+      ],
+      "text": "sein wird.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          877.0,
+          896.0
+        ],
+        [
+          1231.0,
+          884.0
+        ]
+      ],
+      "bbox": [
+        876.0,
+        832.0,
+        1231.0,
+        952.0
+      ],
+      "text": "Leo",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          124.0,
+          1123.0
+        ],
+        [
+          1005.0,
+          1127.0
+        ]
+      ],
+      "bbox": [
+        122.0,
+        1059.0,
+        1005.0,
+        1179.0
+      ],
+      "text": "Zeitigntorf am 11. May 1869.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          1177.0,
+          1086.0
+        ],
+        [
+          1876.0,
+          1078.0
+        ]
+      ],
+      "bbox": [
+        1175.0,
+        994.0,
+        1876.0,
+        1134.0
+      ],
+      "text": "gefangenen Puncte.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          1159.0,
+          1221.0
+        ],
+        [
+          1903.0,
+          1231.0
+        ]
+      ],
+      "bbox": [
+        1159.0,
+        1141.0,
+        1903.0,
+        1296.0
+      ],
+      "text": "Frau Goretting",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 6177,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 31,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T23:35:54+00:00"
+}

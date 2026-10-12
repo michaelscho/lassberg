@@ -1,0 +1,402 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Aarau/upload/lassberg-letter-1163",
+  "source": {
+    "name": "00033-scan_2025-03-21_11-12-59l.tif",
+    "bytes": 27596666,
+    "sha256": "a9e56fa3f1cd7cc4e6c00229a5c9f7f631f0fe91b9e368457e366eaf4c1192b7",
+    "remote": "digitalisate/Aarau/upload/lassberg-letter-1163/00033-scan_2025-03-21_11-12-59l.tif",
+    "key": "Aarau__upload__lassberg-letter-1163__00033-scan_2025-03-21_11-12-59l",
+    "working_copy": "00033-scan_2025-03-21_11-12-59l.jpg"
+  },
+  "text": "Escher\nin\n\"\nder\ndo\nfür\n.\nung",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          1292.0,
+          1995.0
+        ],
+        [
+          1292.0,
+          1800.0
+        ]
+      ],
+      "bbox": [
+        1247.0,
+        1800.0,
+        1314.0,
+        1995.0
+      ],
+      "text": "Escher",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1442.0,
+          1805.0
+        ],
+        [
+          1442.0,
+          1853.0
+        ]
+      ],
+      "bbox": [
+        1425.0,
+        1805.0,
+        1482.0,
+        1853.0
+      ],
+      "text": "in",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1445.0,
+          1931.0
+        ],
+        [
+          1445.0,
+          1966.0
+        ]
+      ],
+      "bbox": [
+        1418.0,
+        1931.0,
+        1480.0,
+        1966.0
+      ],
+      "text": "\"",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          1547.0,
+          1295.0
+        ],
+        [
+          1551.0,
+          1377.0
+        ]
+      ],
+      "bbox": [
+        1527.0,
+        1291.0,
+        1580.0,
+        1377.0
+      ],
+      "text": "der",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          1673.0,
+          1514.0
+        ],
+        [
+          1677.0,
+          1558.0
+        ]
+      ],
+      "bbox": [
+        1648.0,
+        1510.0,
+        1700.0,
+        1558.0
+      ],
+      "text": "do",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          1679.0,
+          1421.0
+        ],
+        [
+          1682.0,
+          1148.0
+        ]
+      ],
+      "bbox": [
+        1618.0,
+        1146.0,
+        1779.0,
+        1421.0
+      ],
+      "text": "für",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          1684.0,
+          1018.0
+        ],
+        [
+          1686.0,
+          984.0
+        ]
+      ],
+      "bbox": [
+        1659.0,
+        982.0,
+        1710.0,
+        1018.0
+      ],
+      "text": ".",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 7,
+      "baseline": [
+        [
+          1855.0,
+          1809.0
+        ],
+        [
+          1861.0,
+          1889.0
+        ]
+      ],
+      "bbox": [
+        1832.0,
+        1805.0,
+        1883.0,
+        1889.0
+      ],
+      "text": "ung",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 21958,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "Contra\nContra\nContra\nDen Weledelen Heere\nMinisterie\nvan Straelsond\nN=o 32\nFredrick Jansz",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            1292.0,
+            1995.0
+          ],
+          [
+            1292.0,
+            1800.0
+          ]
+        ],
+        "bbox": [
+          1247.0,
+          1800.0,
+          1314.0,
+          1995.0
+        ],
+        "text": "Contra",
+        "confidence": 0.6401786034305891,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            1442.0,
+            1805.0
+          ],
+          [
+            1442.0,
+            1853.0
+          ]
+        ],
+        "bbox": [
+          1425.0,
+          1805.0,
+          1482.0,
+          1853.0
+        ],
+        "text": "Contra",
+        "confidence": 0.6348485139509042,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            1445.0,
+            1931.0
+          ],
+          [
+            1445.0,
+            1966.0
+          ]
+        ],
+        "bbox": [
+          1418.0,
+          1931.0,
+          1480.0,
+          1966.0
+        ],
+        "text": "Contra",
+        "confidence": 0.6330443471670151,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            1547.0,
+            1295.0
+          ],
+          [
+            1551.0,
+            1377.0
+          ]
+        ],
+        "bbox": [
+          1527.0,
+          1291.0,
+          1580.0,
+          1377.0
+        ],
+        "text": "Den Weledelen Heere",
+        "confidence": 0.78016780944247,
+        "regions": []
+      },
+      {
+        "order": 4,
+        "baseline": [
+          [
+            1673.0,
+            1514.0
+          ],
+          [
+            1677.0,
+            1558.0
+          ]
+        ],
+        "bbox": [
+          1648.0,
+          1510.0,
+          1700.0,
+          1558.0
+        ],
+        "text": "Ministerie",
+        "confidence": 0.6356333680450916,
+        "regions": []
+      },
+      {
+        "order": 5,
+        "baseline": [
+          [
+            1679.0,
+            1421.0
+          ],
+          [
+            1682.0,
+            1148.0
+          ]
+        ],
+        "bbox": [
+          1618.0,
+          1146.0,
+          1779.0,
+          1421.0
+        ],
+        "text": "van Straelsond",
+        "confidence": 0.7687907937381949,
+        "regions": []
+      },
+      {
+        "order": 6,
+        "baseline": [
+          [
+            1684.0,
+            1018.0
+          ],
+          [
+            1686.0,
+            984.0
+          ]
+        ],
+        "bbox": [
+          1659.0,
+          982.0,
+          1710.0,
+          1018.0
+        ],
+        "text": "N=o 32",
+        "confidence": 0.5555484754343828,
+        "regions": []
+      },
+      {
+        "order": 7,
+        "baseline": [
+          [
+            1855.0,
+            1809.0
+          ],
+          [
+            1861.0,
+            1889.0
+          ]
+        ],
+        "bbox": [
+          1832.0,
+          1805.0,
+          1883.0,
+          1889.0
+        ],
+        "text": "Fredrick Jansz",
+        "confidence": 0.5898689739406109,
+        "regions": []
+      }
+    ],
+    "confidence": 0.6547601106436574,
+    "timing_ms": 16552,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-21T16:23:55+00:00"
+}

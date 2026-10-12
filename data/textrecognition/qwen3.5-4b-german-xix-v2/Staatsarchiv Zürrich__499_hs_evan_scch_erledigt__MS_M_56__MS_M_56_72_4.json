@@ -1,0 +1,273 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Staatsarchiv Zürrich/499_hs_evan_scch_erledigt/MS_M_56",
+  "source": {
+    "name": "MS_M_56_72_4.tif",
+    "bytes": 41132496,
+    "sha256": "15467af201a9808c1394e9bcb13e40566c944c7bc9a8b0ca3e9ac0619261d3bd",
+    "remote": "digitalisate/Staatsarchiv Zürrich/499_hs_evan_scch_erledigt/MS_M_56/MS_M_56_72_4.tif",
+    "key": "Staatsarchiv Zürrich__499_hs_evan_scch_erledigt__MS_M_56__MS_M_56_72_4",
+    "working_copy": "MS_M_56_72_4.jpg"
+  },
+  "text": "Dein\nsich\nder\nso\nnicht\neinen\nGott\nMn\ndie\nBern",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          3224.0,
+          1136.0
+        ],
+        [
+          3289.0,
+          1129.0
+        ]
+      ],
+      "bbox": [
+        3217.0,
+        1071.0,
+        3291.0,
+        1163.0
+      ],
+      "text": "Dein",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          3222.0,
+          1428.0
+        ],
+        [
+          3261.0,
+          1423.0
+        ]
+      ],
+      "bbox": [
+        3217.0,
+        1391.0,
+        3263.0,
+        1453.0
+      ],
+      "text": "sich",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          3217.0,
+          1520.0
+        ],
+        [
+          3247.0,
+          1513.0
+        ]
+      ],
+      "bbox": [
+        3204.0,
+        1455.0,
+        3250.0,
+        1540.0
+      ],
+      "text": "der",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          3211.0,
+          1609.0
+        ],
+        [
+          3250.0,
+          1607.0
+        ]
+      ],
+      "bbox": [
+        3206.0,
+        1531.0,
+        3250.0,
+        1644.0
+      ],
+      "text": "so",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          3215.0,
+          1881.0
+        ],
+        [
+          3238.0,
+          1881.0
+        ]
+      ],
+      "bbox": [
+        3215.0,
+        1851.0,
+        3238.0,
+        1915.0
+      ],
+      "text": "nicht",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          3204.0,
+          1968.0
+        ],
+        [
+          3280.0,
+          1964.0
+        ]
+      ],
+      "bbox": [
+        3199.0,
+        1902.0,
+        3280.0,
+        1989.0
+      ],
+      "text": "einen",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          3208.0,
+          2060.0
+        ],
+        [
+          3277.0,
+          2056.0
+        ]
+      ],
+      "bbox": [
+        3204.0,
+        2019.0,
+        3277.0,
+        2086.0
+      ],
+      "text": "Gott",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 7,
+      "baseline": [
+        [
+          3204.0,
+          2143.0
+        ],
+        [
+          3250.0,
+          2141.0
+        ]
+      ],
+      "bbox": [
+        3199.0,
+        2086.0,
+        3250.0,
+        2166.0
+      ],
+      "text": "Mn",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 8,
+      "baseline": [
+        [
+          3204.0,
+          2233.0
+        ],
+        [
+          3245.0,
+          2231.0
+        ]
+      ],
+      "bbox": [
+        3199.0,
+        2173.0,
+        3245.0,
+        2258.0
+      ],
+      "text": "die",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 9,
+      "baseline": [
+        [
+          3213.0,
+          2410.0
+        ],
+        [
+          3268.0,
+          2410.0
+        ]
+      ],
+      "bbox": [
+        3213.0,
+        2334.0,
+        3268.0,
+        2440.0
+      ],
+      "text": "Bern",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 5920,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 43,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T22:47:17+00:00"
+}

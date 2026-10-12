@@ -1,0 +1,218 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00893517_150dpi",
+  "source": {
+    "name": "HS00893517_0006.jpg",
+    "bytes": 129957,
+    "sha256": "a9be4187193c7b701acad1c7ae1a0be5762de61bafc0a6080b760574911cbc4c",
+    "remote": "digitalisate/Marbach/HS00893517_150dpi/HS00893517_0006.jpg",
+    "key": "Marbach__HS00893517_150dpi__HS00893517_0006",
+    "working_copy": "HS00893517_0006.jpg"
+  },
+  "text": "weisen\ngeheiße\nDie von\nBubenberg",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          343.0,
+          447.0
+        ],
+        [
+          398.0,
+          449.0
+        ]
+      ],
+      "bbox": [
+        343.0,
+        427.0,
+        398.0,
+        472.0
+      ],
+      "text": "weisen",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          493.0,
+          334.0
+        ],
+        [
+          534.0,
+          334.0
+        ]
+      ],
+      "bbox": [
+        493.0,
+        316.0,
+        534.0,
+        354.0
+      ],
+      "text": "geheiße",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          153.0,
+          1087.0
+        ],
+        [
+          319.0,
+          1084.0
+        ]
+      ],
+      "bbox": [
+        152.0,
+        1051.0,
+        319.0,
+        1112.0
+      ],
+      "text": "Die von",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          364.0,
+          1088.0
+        ],
+        [
+          589.0,
+          1081.0
+        ]
+      ],
+      "bbox": [
+        362.0,
+        1046.0,
+        589.0,
+        1111.0
+      ],
+      "text": "Bubenberg",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 4983,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "weise\nweiſe\nDie von Bübenberg\nBübenberg",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            343.0,
+            447.0
+          ],
+          [
+            398.0,
+            449.0
+          ]
+        ],
+        "bbox": [
+          343.0,
+          427.0,
+          398.0,
+          472.0
+        ],
+        "text": "weise",
+        "confidence": 0.8318879187107087,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            493.0,
+            334.0
+          ],
+          [
+            534.0,
+            334.0
+          ]
+        ],
+        "bbox": [
+          493.0,
+          316.0,
+          534.0,
+          354.0
+        ],
+        "text": "weiſe",
+        "confidence": 0.8867887109518051,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            153.0,
+            1087.0
+          ],
+          [
+            319.0,
+            1084.0
+          ]
+        ],
+        "bbox": [
+          152.0,
+          1051.0,
+          319.0,
+          1112.0
+        ],
+        "text": "Die von Bübenberg",
+        "confidence": 0.9191738482978609,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            364.0,
+            1088.0
+          ],
+          [
+            589.0,
+            1081.0
+          ]
+        ],
+        "bbox": [
+          362.0,
+          1046.0,
+          589.0,
+          1111.0
+        ],
+        "text": "Bübenberg",
+        "confidence": 0.9438982099294663,
+        "regions": []
+      }
+    ],
+    "confidence": 0.8954371719724602,
+    "timing_ms": 6775,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T15:10:55+00:00"
+}

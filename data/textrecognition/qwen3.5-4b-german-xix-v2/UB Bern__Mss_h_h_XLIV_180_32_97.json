@@ -1,0 +1,249 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "UB Bern",
+  "source": {
+    "name": "Mss_h_h_XLIV_180_32_97.tif",
+    "bytes": 49009450,
+    "sha256": "77f17adf98b6192a069b624be6583e3411b69852b121c38bfc03fc289c53f5b6",
+    "remote": "digitalisate/UB Bern/Mss_h_h_XLIV_180_32_97.tif",
+    "key": "UB Bern__Mss_h_h_XLIV_180_32_97",
+    "working_copy": "Mss_h_h_XLIV_180_32_97.jpg"
+  },
+  "text": "d.\nOrchester Class\nmit dem\n3\n4\n-\n5\n8\n5",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          150.0,
+          142.0
+        ],
+        [
+          212.0,
+          142.0
+        ]
+      ],
+      "bbox": [
+        150.0,
+        108.0,
+        212.0,
+        182.0
+      ],
+      "text": "d.",
+      "confidence": null,
+      "regions": [
+        "_aa2bfc6d-b30c-4648-b0da-331677fe0fa2"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          429.0,
+          144.0
+        ],
+        [
+          720.0,
+          142.0
+        ]
+      ],
+      "bbox": [
+        427.0,
+        110.0,
+        720.0,
+        178.0
+      ],
+      "text": "Orchester Class",
+      "confidence": null,
+      "regions": [
+        "_aa2bfc6d-b30c-4648-b0da-331677fe0fa2"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          99.0,
+          1338.0
+        ],
+        [
+          671.0,
+          1333.0
+        ]
+      ],
+      "bbox": [
+        97.0,
+        1299.0,
+        671.0,
+        1378.0
+      ],
+      "text": "mit dem",
+      "confidence": null,
+      "regions": [
+        "_e4d36952-9a03-4730-91e5-7bf5bda2b6a5"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          373.0,
+          3011.0
+        ],
+        [
+          373.0,
+          3024.0
+        ]
+      ],
+      "bbox": [
+        288.0,
+        3011.0,
+        412.0,
+        3024.0
+      ],
+      "text": "3",
+      "confidence": null,
+      "regions": [
+        "_0b6feaff-148f-43e2-bd72-97add080709f"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          378.0,
+          3107.0
+        ],
+        [
+          378.0,
+          3149.0
+        ]
+      ],
+      "bbox": [
+        310.0,
+        3107.0,
+        418.0,
+        3149.0
+      ],
+      "text": "4",
+      "confidence": null,
+      "regions": [
+        "_0b6feaff-148f-43e2-bd72-97add080709f"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          380.0,
+          3489.0
+        ],
+        [
+          382.0,
+          3476.0
+        ]
+      ],
+      "bbox": [
+        356.0,
+        3472.0,
+        416.0,
+        3493.0
+      ],
+      "text": "-",
+      "confidence": null,
+      "regions": [
+        "_0b6feaff-148f-43e2-bd72-97add080709f"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          373.0,
+          3270.0
+        ],
+        [
+          380.0,
+          3226.0
+        ]
+      ],
+      "bbox": [
+        359.0,
+        3221.0,
+        446.0,
+        3277.0
+      ],
+      "text": "5",
+      "confidence": null,
+      "regions": [
+        "_0b6feaff-148f-43e2-bd72-97add080709f"
+      ]
+    },
+    {
+      "order": 7,
+      "baseline": [
+        [
+          378.0,
+          3612.0
+        ],
+        [
+          395.0,
+          3612.0
+        ]
+      ],
+      "bbox": [
+        378.0,
+        3580.0,
+        395.0,
+        3636.0
+      ],
+      "text": "8",
+      "confidence": null,
+      "regions": [
+        "_0b6feaff-148f-43e2-bd72-97add080709f"
+      ]
+    },
+    {
+      "order": 8,
+      "baseline": [
+        [
+          382.0,
+          3727.0
+        ],
+        [
+          386.0,
+          3701.0
+        ]
+      ],
+      "bbox": [
+        356.0,
+        3695.0,
+        420.0,
+        3731.0
+      ],
+      "text": "5",
+      "confidence": null,
+      "regions": [
+        "_0b6feaff-148f-43e2-bd72-97add080709f"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 8263,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 31,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T01:32:15+00:00"
+}

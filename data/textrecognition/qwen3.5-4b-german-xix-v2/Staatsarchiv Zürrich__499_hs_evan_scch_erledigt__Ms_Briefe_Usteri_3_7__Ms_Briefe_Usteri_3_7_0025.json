@@ -1,0 +1,105 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Staatsarchiv Zürrich/499_hs_evan_scch_erledigt/Ms_Briefe_Usteri_3_7",
+  "source": {
+    "name": "Ms_Briefe_Usteri_3_7_0025.tif",
+    "bytes": 36895026,
+    "sha256": "a4b31c059a9af55253bf4fddb6e5d2062e3da81f61dd67782acd3483a9fa1154",
+    "remote": "digitalisate/Staatsarchiv Zürrich/499_hs_evan_scch_erledigt/Ms_Briefe_Usteri_3_7/Ms_Briefe_Usteri_3_7_0025.tif",
+    "key": "Staatsarchiv Zürrich__499_hs_evan_scch_erledigt__Ms_Briefe_Usteri_3_7__Ms_Briefe_Usteri_3_7_0025",
+    "working_copy": "Ms_Briefe_Usteri_3_7_0025.jpg"
+  },
+  "text": "???\nde\nBern den 11. März 1869",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          1791.0,
+          2153.0
+        ],
+        [
+          1800.0,
+          1847.0
+        ]
+      ],
+      "bbox": [
+        1787.0,
+        1845.0,
+        1869.0,
+        2153.0
+      ],
+      "text": "???",
+      "confidence": null,
+      "regions": [
+        "_0e4d34cb-c70d-40da-ad95-6c2ae1d11870"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1806.0,
+          1422.0
+        ],
+        [
+          1806.0,
+          1435.0
+        ]
+      ],
+      "bbox": [
+        1730.0,
+        1422.0,
+        1891.0,
+        1435.0
+      ],
+      "text": "de",
+      "confidence": null,
+      "regions": [
+        "_0e4d34cb-c70d-40da-ad95-6c2ae1d11870"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          2080.0,
+          1706.0
+        ],
+        [
+          2090.0,
+          1325.0
+        ]
+      ],
+      "bbox": [
+        2027.0,
+        1323.0,
+        2142.0,
+        1706.0
+      ],
+      "text": "Bern den 11. März 1869",
+      "confidence": null,
+      "regions": [
+        "_0e4d34cb-c70d-40da-ad95-6c2ae1d11870"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 6049,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 49,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T22:53:52+00:00"
+}

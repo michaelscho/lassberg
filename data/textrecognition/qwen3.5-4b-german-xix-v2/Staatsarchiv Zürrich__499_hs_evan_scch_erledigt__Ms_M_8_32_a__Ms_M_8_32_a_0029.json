@@ -1,0 +1,81 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Staatsarchiv Zürrich/499_hs_evan_scch_erledigt/Ms_M_8_32_a",
+  "source": {
+    "name": "Ms_M_8_32_a_0029.tif",
+    "bytes": 41926872,
+    "sha256": "0927ecf449422d2894492c2ee7c66464788677616c98ebfa157f1807669a905b",
+    "remote": "digitalisate/Staatsarchiv Zürrich/499_hs_evan_scch_erledigt/Ms_M_8_32_a/Ms_M_8_32_a_0029.tif",
+    "key": "Staatsarchiv Zürrich__499_hs_evan_scch_erledigt__Ms_M_8_32_a__Ms_M_8_32_a_0029",
+    "working_copy": "Ms_M_8_32_a_0029.jpg"
+  },
+  "text": ".\n--",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          1170.0,
+          1549.0
+        ],
+        [
+          1173.0,
+          1574.0
+        ]
+      ],
+      "bbox": [
+        1129.0,
+        1545.0,
+        1207.0,
+        1576.0
+      ],
+      "text": ".",
+      "confidence": null,
+      "regions": [
+        "_135a4f1b-08c0-41b5-a9d3-caccfb0dc478"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1170.0,
+          1737.0
+        ],
+        [
+          1175.0,
+          1663.0
+        ]
+      ],
+      "bbox": [
+        1104.0,
+        1656.0,
+        1236.0,
+        1740.0
+      ],
+      "text": "--",
+      "confidence": null,
+      "regions": [
+        "_135a4f1b-08c0-41b5-a9d3-caccfb0dc478"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 6371,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 31,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T23:16:14+00:00"
+}

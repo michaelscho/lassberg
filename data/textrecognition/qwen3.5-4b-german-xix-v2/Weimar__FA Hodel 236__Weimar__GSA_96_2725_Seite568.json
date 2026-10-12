@@ -1,0 +1,80 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Weimar/FA Hodel 236/Weimar",
+  "source": {
+    "name": "GSA_96_2725_Seite568.jpg",
+    "bytes": 5851495,
+    "sha256": "8686c6988dcd4725deb228a1e5b528fb6e81a3b9214e365f4a41199d4f35d7c5",
+    "remote": "digitalisate/Weimar/FA Hodel 236/Weimar/GSA_96_2725_Seite568.jpg",
+    "key": "Weimar__FA Hodel 236__Weimar__GSA_96_2725_Seite568",
+    "working_copy": "GSA_96_2725_Seite568.jpg"
+  },
+  "text": "Class",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          414.0,
+          400.0
+        ],
+        [
+          571.0,
+          400.0
+        ]
+      ],
+      "bbox": [
+        414.0,
+        331.0,
+        571.0,
+        414.0
+      ],
+      "text": "Class",
+      "confidence": null,
+      "regions": [
+        "_3027c6c3-8374-4a3f-b059-b6822bc74f7e"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 16419,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "1526",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            414.0,
+            400.0
+          ],
+          [
+            571.0,
+            400.0
+          ]
+        ],
+        "bbox": [
+          414.0,
+          331.0,
+          571.0,
+          414.0
+        ],
+        "text": "1526",
+        "confidence": 0.5481066107749939,
+        "regions": []
+      }
+    ],
+    "confidence": 0.5481066107749939,
+    "timing_ms": 15820,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T12:32:23+00:00"
+}

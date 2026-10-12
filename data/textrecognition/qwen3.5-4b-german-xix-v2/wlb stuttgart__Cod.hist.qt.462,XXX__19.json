@@ -1,0 +1,271 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "wlb stuttgart/Cod.hist.qt.462,XXX",
+  "source": {
+    "name": "19.jpg",
+    "bytes": 2642594,
+    "sha256": "5647dafab755cf9241dd9513b435e7661717028ddbdce20d5d75b0a3342f652a",
+    "remote": "digitalisate/wlb stuttgart/Cod.hist.qt.462,XXX/19.jpg",
+    "key": "wlb stuttgart__Cod.hist.qt.462,XXX__19",
+    "working_copy": "19.jpg"
+  },
+  "text": "1865\nMeersburg\n23. r.\n*Doſt.\n*Obv°ote iſt.\nDer irte\n1849\nAlberit.\nErren Professor\ntrittgart.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          1338.0,
+          157.0
+        ],
+        [
+          1386.0,
+          158.0
+        ]
+      ],
+      "bbox": [
+        1338.0,
+        123.0,
+        1386.0,
+        165.0
+      ],
+      "text": "1865",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          107.0,
+          182.0
+        ],
+        [
+          599.0,
+          180.0
+        ]
+      ],
+      "bbox": [
+        106.0,
+        124.0,
+        599.0,
+        200.0
+      ],
+      "text": "Meersburg",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          237.0,
+          254.0
+        ],
+        [
+          467.0,
+          259.0
+        ]
+      ],
+      "bbox": [
+        237.0,
+        206.0,
+        467.0,
+        274.0
+      ],
+      "text": "23. r.",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          987.0,
+          280.0
+        ],
+        [
+          1113.0,
+          279.0
+        ]
+      ],
+      "bbox": [
+        986.0,
+        226.0,
+        1113.0,
+        290.0
+      ],
+      "text": "*Doſt.",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          1162.0,
+          280.0
+        ],
+        [
+          1216.0,
+          282.0
+        ],
+        [
+          1356.0,
+          281.0
+        ]
+      ],
+      "bbox": [
+        1161.0,
+        241.0,
+        1356.0,
+        292.0
+      ],
+      "text": "*Obv°ote iſt.",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          731.0,
+          280.0
+        ],
+        [
+          793.0,
+          278.0
+        ],
+        [
+          901.0,
+          282.0
+        ]
+      ],
+      "bbox": [
+        731.0,
+        248.0,
+        901.0,
+        291.0
+      ],
+      "text": "Der irte",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          670.0,
+          296.0
+        ],
+        [
+          673.0,
+          296.0
+        ]
+      ],
+      "bbox": [
+        670.0,
+        285.0,
+        673.0,
+        312.0
+      ],
+      "text": "1849",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 7,
+      "baseline": [
+        [
+          694.0,
+          424.0
+        ],
+        [
+          926.0,
+          420.0
+        ]
+      ],
+      "bbox": [
+        693.0,
+        374.0,
+        926.0,
+        438.0
+      ],
+      "text": "Alberit.",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 8,
+      "baseline": [
+        [
+          262.0,
+          416.0
+        ],
+        [
+          377.0,
+          421.0
+        ],
+        [
+          672.0,
+          424.0
+        ]
+      ],
+      "bbox": [
+        261.0,
+        382.0,
+        672.0,
+        438.0
+      ],
+      "text": "Erren Professor",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 9,
+      "baseline": [
+        [
+          1106.0,
+          545.0
+        ],
+        [
+          1284.0,
+          543.0
+        ],
+        [
+          1368.0,
+          548.0
+        ]
+      ],
+      "bbox": [
+        1105.0,
+        506.0,
+        1368.0,
+        563.0
+      ],
+      "text": "trittgart.",
+      "confidence": null,
+      "regions": []
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 9616,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T20:55:24+00:00"
+}

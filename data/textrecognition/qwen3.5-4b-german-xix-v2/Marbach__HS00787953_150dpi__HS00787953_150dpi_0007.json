@@ -1,0 +1,80 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00787953_150dpi",
+  "source": {
+    "name": "HS00787953_150dpi_0007.jpg",
+    "bytes": 226540,
+    "sha256": "4097a76549926736902fb708c3c097c9c8055576b2295bc5aa25da6689109d91",
+    "remote": "digitalisate/Marbach/HS00787953_150dpi/HS00787953_150dpi_0007.jpg",
+    "key": "Marbach__HS00787953_150dpi__HS00787953_150dpi_0007",
+    "working_copy": "HS00787953_150dpi_0007.jpg"
+  },
+  "text": "1820.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          700.0,
+          78.0
+        ],
+        [
+          828.0,
+          70.0
+        ]
+      ],
+      "bbox": [
+        698.0,
+        46.0,
+        828.0,
+        99.0
+      ],
+      "text": "1820.",
+      "confidence": null,
+      "regions": [
+        "_d2096e29-9b66-4bb4-8d46-776d1092091c"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 7644,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "April 1820.",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            700.0,
+            78.0
+          ],
+          [
+            828.0,
+            70.0
+          ]
+        ],
+        "bbox": [
+          698.0,
+          46.0,
+          828.0,
+          99.0
+        ],
+        "text": "April 1820.",
+        "confidence": 0.840610761534084,
+        "regions": []
+      }
+    ],
+    "confidence": 0.840610761534084,
+    "timing_ms": 6008,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T05:09:34+00:00"
+}

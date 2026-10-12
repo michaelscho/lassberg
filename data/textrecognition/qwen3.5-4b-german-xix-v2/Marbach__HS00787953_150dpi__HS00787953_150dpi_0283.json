@@ -1,0 +1,211 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00787953_150dpi",
+  "source": {
+    "name": "HS00787953_150dpi_0283.jpg",
+    "bytes": 128565,
+    "sha256": "c8f066c58581ccc704c8678d1f82552df3e9a81c680779645f06019f50225d3a",
+    "remote": "digitalisate/Marbach/HS00787953_150dpi/HS00787953_150dpi_0283.jpg",
+    "key": "Marbach__HS00787953_150dpi__HS00787953_150dpi_0283",
+    "working_copy": "HS00787953_150dpi_0283.jpg"
+  },
+  "text": "A: le nouveau\nEscher\nJorper von\nMeina, Ludwig\nEishausen, Neersburg\n1850.\n7216-47217",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          609.0,
+          132.0
+        ],
+        [
+          820.0,
+          129.0
+        ]
+      ],
+      "bbox": [
+        608.0,
+        92.0,
+        820.0,
+        147.0
+      ],
+      "text": "A: le nouveau",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          262.0,
+          304.0
+        ],
+        [
+          381.0,
+          301.0
+        ]
+      ],
+      "bbox": [
+        260.0,
+        266.0,
+        381.0,
+        319.0
+      ],
+      "text": "Escher",
+      "confidence": null,
+      "regions": [
+        "r2"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          442.0,
+          301.0
+        ],
+        [
+          637.0,
+          298.0
+        ]
+      ],
+      "bbox": [
+        441.0,
+        264.0,
+        637.0,
+        327.0
+      ],
+      "text": "Jorper von",
+      "confidence": null,
+      "regions": [
+        "r2"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          236.0,
+          416.0
+        ],
+        [
+          526.0,
+          407.0
+        ],
+        [
+          631.0,
+          407.0
+        ]
+      ],
+      "bbox": [
+        235.0,
+        362.0,
+        631.0,
+        440.0
+      ],
+      "text": "Meina, Ludwig",
+      "confidence": null,
+      "regions": [
+        "r2"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          243.0,
+          632.0
+        ],
+        [
+          694.0,
+          625.0
+        ]
+      ],
+      "bbox": [
+        241.0,
+        585.0,
+        694.0,
+        655.0
+      ],
+      "text": "Eishausen, Neersburg",
+      "confidence": null,
+      "regions": [
+        "r2"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          321.0,
+          754.0
+        ],
+        [
+          341.0,
+          754.0
+        ]
+      ],
+      "bbox": [
+        320.0,
+        715.0,
+        341.0,
+        768.0
+      ],
+      "text": "1850.",
+      "confidence": null,
+      "regions": [
+        "r2"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          640.0,
+          1237.0
+        ],
+        [
+          768.0,
+          1237.0
+        ],
+        [
+          828.0,
+          1243.0
+        ],
+        [
+          883.0,
+          1243.0
+        ]
+      ],
+      "bbox": [
+        640.0,
+        1204.0,
+        883.0,
+        1259.0
+      ],
+      "text": "7216-47217",
+      "confidence": null,
+      "regions": []
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 6306,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T13:31:32+00:00"
+}

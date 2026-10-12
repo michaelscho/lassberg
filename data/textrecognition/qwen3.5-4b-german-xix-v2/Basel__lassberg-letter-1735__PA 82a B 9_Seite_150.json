@@ -1,0 +1,472 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Basel/lassberg-letter-1735",
+  "source": {
+    "name": "PA 82a B 9_Seite_150.jpg",
+    "bytes": 145291,
+    "sha256": "f541e3ff5efd363fc96153adf6edf78ad1d58e9b8f540cfc61616ef4bf22b4fe",
+    "remote": "digitalisate/Basel/lassberg-letter-1735/PA 82a B 9_Seite_150.jpg",
+    "key": "Basel__lassberg-letter-1735__PA 82a B 9_Seite_150",
+    "working_copy": "PA 82a B 9_Seite_150.jpg"
+  },
+  "text": "Versprechen Sie mir geneigter die schlechte Schrift u. die Eilfertigkeit Ihres\nspriches, ist mehr von Appell u. dann wahrscheinlich auf die Woche. Von dem\nStudieren wird in diesen Zeiten nicht viel.\nDarf ich Sie, schon des Materialismus, um eine recht baldige Antwort\nhätten? Empfehlen sie mit Ihren meisten Verwandten und\nerhalten die mir Ihre freundlichen Weltwillen, der ich bin,\nLehenwehler von Bern,\nIn gekannt ergebener\nW. W. W. W. W.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          131.0,
+          160.0
+        ],
+        [
+          672.0,
+          155.0
+        ]
+      ],
+      "bbox": [
+        130.0,
+        139.0,
+        672.0,
+        173.0
+      ],
+      "text": "Versprechen Sie mir geneigter die schlechte Schrift u. die Eilfertigkeit Ihres",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          117.0,
+          205.0
+        ],
+        [
+          300.0,
+          200.0
+        ],
+        [
+          663.0,
+          198.0
+        ]
+      ],
+      "bbox": [
+        116.0,
+        179.0,
+        663.0,
+        216.0
+      ],
+      "text": "spriches, ist mehr von Appell u. dann wahrscheinlich auf die Woche. Von dem",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          114.0,
+          245.0
+        ],
+        [
+          268.0,
+          241.0
+        ],
+        [
+          436.0,
+          241.0
+        ]
+      ],
+      "bbox": [
+        113.0,
+        224.0,
+        436.0,
+        253.0
+      ],
+      "text": "Studieren wird in diesen Zeiten nicht viel.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          122.0,
+          287.0
+        ],
+        [
+          655.0,
+          278.0
+        ]
+      ],
+      "bbox": [
+        121.0,
+        260.0,
+        655.0,
+        299.0
+      ],
+      "text": "Darf ich Sie, schon des Materialismus, um eine recht baldige Antwort",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          118.0,
+          326.0
+        ],
+        [
+          302.0,
+          320.0
+        ],
+        [
+          650.0,
+          316.0
+        ]
+      ],
+      "bbox": [
+        118.0,
+        296.0,
+        650.0,
+        339.0
+      ],
+      "text": "hätten? Empfehlen sie mit Ihren meisten Verwandten und",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          120.0,
+          364.0
+        ],
+        [
+          551.0,
+          356.0
+        ]
+      ],
+      "bbox": [
+        119.0,
+        336.0,
+        551.0,
+        386.0
+      ],
+      "text": "erhalten die mir Ihre freundlichen Weltwillen, der ich bin,",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          326.0,
+          404.0
+        ],
+        [
+          559.0,
+          401.0
+        ]
+      ],
+      "bbox": [
+        326.0,
+        382.0,
+        559.0,
+        421.0
+      ],
+      "text": "Lehenwehler von Bern,",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 7,
+      "baseline": [
+        [
+          435.0,
+          634.0
+        ],
+        [
+          634.0,
+          629.0
+        ]
+      ],
+      "bbox": [
+        434.0,
+        606.0,
+        634.0,
+        651.0
+      ],
+      "text": "In gekannt ergebener",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 8,
+      "baseline": [
+        [
+          429.0,
+          690.0
+        ],
+        [
+          604.0,
+          687.0
+        ]
+      ],
+      "bbox": [
+        428.0,
+        669.0,
+        604.0,
+        705.0
+      ],
+      "text": "W. W. W. W. W.",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 19360,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "Verzeiken Str mir geneigtert die schutte Schrift n. die Estfestigheit diens\nPriefen. id meest zoon Appell n. dans watscheinlich auf die zieder. Aus der\nStudieren wierd in dienen zeiden niet.\nDarf ich Siehen des Altarbildes wegen, von eine recht baldige Antwort\nbitten? Empfehlen hie mich Herrn werthen Hausgenossen bestens und\nerhalten sie mir the freundliches Woltvollen, das ich bin,\nhochzuverehrende Herr Paron,\nTh. gehornen ergebener\nWackernapel.",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            131.0,
+            160.0
+          ],
+          [
+            672.0,
+            155.0
+          ]
+        ],
+        "bbox": [
+          130.0,
+          139.0,
+          672.0,
+          173.0
+        ],
+        "text": "Verzeiken Str mir geneigtert die schutte Schrift n. die Estfestigheit diens",
+        "confidence": 0.848167636791865,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            117.0,
+            205.0
+          ],
+          [
+            300.0,
+            200.0
+          ],
+          [
+            663.0,
+            198.0
+          ]
+        ],
+        "bbox": [
+          116.0,
+          179.0,
+          663.0,
+          216.0
+        ],
+        "text": "Priefen. id meest zoon Appell n. dans watscheinlich auf die zieder. Aus der",
+        "confidence": 0.8394313236077626,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            114.0,
+            245.0
+          ],
+          [
+            268.0,
+            241.0
+          ],
+          [
+            436.0,
+            241.0
+          ]
+        ],
+        "bbox": [
+          113.0,
+          224.0,
+          436.0,
+          253.0
+        ],
+        "text": "Studieren wierd in dienen zeiden niet.",
+        "confidence": 0.8788643926382065,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            122.0,
+            287.0
+          ],
+          [
+            655.0,
+            278.0
+          ]
+        ],
+        "bbox": [
+          121.0,
+          260.0,
+          655.0,
+          299.0
+        ],
+        "text": "Darf ich Siehen des Altarbildes wegen, von eine recht baldige Antwort",
+        "confidence": 0.8910998434260271,
+        "regions": []
+      },
+      {
+        "order": 4,
+        "baseline": [
+          [
+            118.0,
+            326.0
+          ],
+          [
+            302.0,
+            320.0
+          ],
+          [
+            650.0,
+            316.0
+          ]
+        ],
+        "bbox": [
+          118.0,
+          296.0,
+          650.0,
+          339.0
+        ],
+        "text": "bitten? Empfehlen hie mich Herrn werthen Hausgenossen bestens und",
+        "confidence": 0.8934101086396438,
+        "regions": []
+      },
+      {
+        "order": 5,
+        "baseline": [
+          [
+            120.0,
+            364.0
+          ],
+          [
+            551.0,
+            356.0
+          ]
+        ],
+        "bbox": [
+          119.0,
+          336.0,
+          551.0,
+          386.0
+        ],
+        "text": "erhalten sie mir the freundliches Woltvollen, das ich bin,",
+        "confidence": 0.8403882533311844,
+        "regions": []
+      },
+      {
+        "order": 6,
+        "baseline": [
+          [
+            326.0,
+            404.0
+          ],
+          [
+            559.0,
+            401.0
+          ]
+        ],
+        "bbox": [
+          326.0,
+          382.0,
+          559.0,
+          421.0
+        ],
+        "text": "hochzuverehrende Herr Paron,",
+        "confidence": 0.8528934025338718,
+        "regions": []
+      },
+      {
+        "order": 7,
+        "baseline": [
+          [
+            435.0,
+            634.0
+          ],
+          [
+            634.0,
+            629.0
+          ]
+        ],
+        "bbox": [
+          434.0,
+          606.0,
+          634.0,
+          651.0
+        ],
+        "text": "Th. gehornen ergebener",
+        "confidence": 0.7962010028687391,
+        "regions": []
+      },
+      {
+        "order": 8,
+        "baseline": [
+          [
+            429.0,
+            690.0
+          ],
+          [
+            604.0,
+            687.0
+          ]
+        ],
+        "bbox": [
+          428.0,
+          669.0,
+          604.0,
+          705.0
+        ],
+        "text": "Wackernapel.",
+        "confidence": 0.6522267187635103,
+        "regions": []
+      }
+    ],
+    "confidence": 0.8325202980667568,
+    "timing_ms": 57323,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-21T17:41:19+00:00"
+}

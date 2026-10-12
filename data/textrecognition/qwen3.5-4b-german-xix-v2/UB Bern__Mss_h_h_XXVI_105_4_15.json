@@ -1,0 +1,105 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "UB Bern",
+  "source": {
+    "name": "Mss_h_h_XXVI_105_4_15.tif",
+    "bytes": 38769168,
+    "sha256": "d7b9e289aa950d08f409cbfaf09e8a75c5fdf95a075ef4bb681484bd026db195",
+    "remote": "digitalisate/UB Bern/Mss_h_h_XXVI_105_4_15.tif",
+    "key": "UB Bern__Mss_h_h_XXVI_105_4_15",
+    "working_copy": "Mss_h_h_XXVI_105_4_15.jpg"
+  },
+  "text": "der\nOrchester Classis\nmit dem",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          191.0,
+          141.0
+        ],
+        [
+          246.0,
+          139.0
+        ]
+      ],
+      "bbox": [
+        186.0,
+        66.0,
+        246.0,
+        169.0
+      ],
+      "text": "der",
+      "confidence": null,
+      "regions": [
+        "_c36a4a60-ad86-48ac-8ff3-13b2585450ba"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          461.0,
+          143.0
+        ],
+        [
+          766.0,
+          141.0
+        ]
+      ],
+      "bbox": [
+        459.0,
+        111.0,
+        766.0,
+        180.0
+      ],
+      "text": "Orchester Classis",
+      "confidence": null,
+      "regions": [
+        "_0f8be5c5-cead-42ef-9631-64fdda0a31ef"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          115.0,
+          1336.0
+        ],
+        [
+          693.0,
+          1336.0
+        ]
+      ],
+      "bbox": [
+        115.0,
+        1304.0,
+        693.0,
+        1377.0
+      ],
+      "text": "mit dem",
+      "confidence": null,
+      "regions": [
+        "_27cf5cf7-8778-4d01-819c-f537cbe8474c"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 6769,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 19,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T01:50:53+00:00"
+}

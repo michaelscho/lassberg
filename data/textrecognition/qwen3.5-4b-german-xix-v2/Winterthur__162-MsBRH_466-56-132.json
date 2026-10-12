@@ -1,0 +1,157 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Winterthur",
+  "source": {
+    "name": "162-MsBRH_466-56-132.jpg",
+    "bytes": 2240010,
+    "sha256": "83808f6e79e999783f6ade6aaf9774ab97e30c9dae8cc44b55f2b56e66e2a45b",
+    "remote": "digitalisate/Winterthur/162-MsBRH_466-56-132.jpg",
+    "key": "Winterthur__162-MsBRH_466-56-132",
+    "working_copy": "162-MsBRH_466-56-132.jpg"
+  },
+  "text": "Seiner, Aßolernwürdere\nDerre Camerer und Diakorn Pupikoher, zu\nsomit einer Ripe Bücher enthaltend.\nBischofszelle\nfrei",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          330.0,
+          1809.0
+        ],
+        [
+          1619.0,
+          1821.0
+        ]
+      ],
+      "bbox": [
+        327.0,
+        1707.0,
+        1619.0,
+        1861.0
+      ],
+      "text": "Seiner, Aßolernwürdere",
+      "confidence": null,
+      "regions": [
+        "_db25cf60-223f-4d75-b85f-29cf9df2dd7d"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          427.0,
+          2066.0
+        ],
+        [
+          2811.0,
+          2071.0
+        ]
+      ],
+      "bbox": [
+        427.0,
+        1963.0,
+        2811.0,
+        2126.0
+      ],
+      "text": "Derre Camerer und Diakorn Pupikoher, zu",
+      "confidence": null,
+      "regions": [
+        "_db25cf60-223f-4d75-b85f-29cf9df2dd7d"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          330.0,
+          2345.0
+        ],
+        [
+          1667.0,
+          2342.0
+        ],
+        [
+          1910.0,
+          2331.0
+        ]
+      ],
+      "bbox": [
+        327.0,
+        2245.0,
+        1910.0,
+        2396.0
+      ],
+      "text": "somit einer Ripe Bücher enthaltend.",
+      "confidence": null,
+      "regions": [
+        "_db25cf60-223f-4d75-b85f-29cf9df2dd7d"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          1990.0,
+          2331.0
+        ],
+        [
+          2702.0,
+          2322.0
+        ]
+      ],
+      "bbox": [
+        1987.0,
+        2200.0,
+        2702.0,
+        2394.0
+      ],
+      "text": "Bischofszelle",
+      "confidence": null,
+      "regions": [
+        "_db25cf60-223f-4d75-b85f-29cf9df2dd7d"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          1454.0,
+          2907.0
+        ],
+        [
+          1565.0,
+          2898.0
+        ]
+      ],
+      "bbox": [
+        1445.0,
+        2830.0,
+        1570.0,
+        3029.0
+      ],
+      "text": "frei",
+      "confidence": null,
+      "regions": [
+        "_45815592-2bbf-493f-927e-4d2dd815c90c"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 9419,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T13:54:42+00:00"
+}

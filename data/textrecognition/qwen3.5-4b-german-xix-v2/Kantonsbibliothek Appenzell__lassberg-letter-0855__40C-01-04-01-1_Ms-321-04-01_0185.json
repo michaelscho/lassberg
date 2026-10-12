@@ -1,0 +1,176 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Kantonsbibliothek Appenzell/lassberg-letter-0855",
+  "source": {
+    "name": "40C-01-04-01-1_Ms-321-04-01_0185.tif",
+    "bytes": 24995010,
+    "sha256": "0de654b848e48b5f2aa6c0cfa6f166bab2082d69e7facac6431343176f81081b",
+    "remote": "digitalisate/Kantonsbibliothek Appenzell/lassberg-letter-0855/40C-01-04-01-1_Ms-321-04-01_0185.tif",
+    "key": "Kantonsbibliothek Appenzell__lassberg-letter-0855__40C-01-04-01-1_Ms-321-04-01_0185",
+    "working_copy": "40C-01-04-01-1_Ms-321-04-01_0185.jpg"
+  },
+  "text": "ichhausen 31. August 48\n185\nJ. H. von Loßler",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          1795.0,
+          174.0
+        ],
+        [
+          1975.0,
+          178.0
+        ],
+        [
+          2403.0,
+          166.0
+        ]
+      ],
+      "bbox": [
+        1791.0,
+        116.0,
+        2403.0,
+        234.0
+      ],
+      "text": "ichhausen 31. August 48",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          137.0,
+          159.0
+        ],
+        [
+          242.0,
+          153.0
+        ]
+      ],
+      "bbox": [
+        134.0,
+        120.0,
+        243.0,
+        201.0
+      ],
+      "text": "185",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1950.0,
+          284.0
+        ],
+        [
+          2434.0,
+          289.0
+        ]
+      ],
+      "bbox": [
+        1949.0,
+        224.0,
+        2434.0,
+        374.0
+      ],
+      "text": "J. H. von Loßler",
+      "confidence": null,
+      "regions": []
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 7071,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "185\nErgischaussen 31. Nov. 1823\nJoseph von Laßberg",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            137.0,
+            159.0
+          ],
+          [
+            242.0,
+            153.0
+          ]
+        ],
+        "bbox": [
+          134.0,
+          120.0,
+          243.0,
+          201.0
+        ],
+        "text": "185",
+        "confidence": 0.8655801812807719,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            1795.0,
+            174.0
+          ],
+          [
+            1975.0,
+            178.0
+          ],
+          [
+            2403.0,
+            166.0
+          ]
+        ],
+        "bbox": [
+          1791.0,
+          116.0,
+          2403.0,
+          234.0
+        ],
+        "text": "Ergischaussen 31. Nov. 1823",
+        "confidence": 0.8243830932511224,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            1950.0,
+            284.0
+          ],
+          [
+            2434.0,
+            289.0
+          ]
+        ],
+        "bbox": [
+          1949.0,
+          224.0,
+          2434.0,
+          374.0
+        ],
+        "text": "Joseph von Laßberg",
+        "confidence": 0.8320265296432707,
+        "regions": []
+      }
+    ],
+    "confidence": 0.8406632680583884,
+    "timing_ms": 62274,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T01:51:17+00:00"
+}

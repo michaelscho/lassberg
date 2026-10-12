@@ -1,0 +1,482 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Basel/lassberg-letter-2214",
+  "source": {
+    "name": "PA 82a B 9_Seite_108.jpg",
+    "bytes": 301226,
+    "sha256": "d636ea6098409569857e425ee44e9c954582228faf8321daef37e06c01b9a7a9",
+    "remote": "digitalisate/Basel/lassberg-letter-2214/PA 82a B 9_Seite_108.jpg",
+    "key": "Basel__lassberg-letter-2214__PA 82a B 9_Seite_108",
+    "working_copy": "PA 82a B 9_Seite_108.jpg"
+  },
+  "text": "Marsburg. 17 Okt. 48\nter aus Solothurn haben Treu viel mein\neines Frey-Verwabsinquisits gemacht hat, um\nAbend gesagt, den Weg in unserer Art\n& wird\n13.\nDein\nder\net\nde fer de la Société.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          189.0,
+          468.0
+        ],
+        [
+          193.0,
+          300.0
+        ]
+      ],
+      "bbox": [
+        175.0,
+        299.0,
+        208.0,
+        468.0
+      ],
+      "text": "Marsburg. 17 Okt. 48",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          666.0,
+          359.0
+        ],
+        [
+          1038.0,
+          349.0
+        ]
+      ],
+      "bbox": [
+        665.0,
+        323.0,
+        1038.0,
+        375.0
+      ],
+      "text": "ter aus Solothurn haben Treu viel mein",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          668.0,
+          426.0
+        ],
+        [
+          1027.0,
+          418.0
+        ]
+      ],
+      "bbox": [
+        667.0,
+        386.0,
+        1027.0,
+        448.0
+      ],
+      "text": "eines Frey-Verwabsinquisits gemacht hat, um",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          686.0,
+          488.0
+        ],
+        [
+          1003.0,
+          478.0
+        ]
+      ],
+      "bbox": [
+        684.0,
+        448.0,
+        1003.0,
+        509.0
+      ],
+      "text": "Abend gesagt, den Weg in unserer Art",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          833.0,
+          541.0
+        ],
+        [
+          908.0,
+          540.0
+        ]
+      ],
+      "bbox": [
+        832.0,
+        512.0,
+        908.0,
+        558.0
+      ],
+      "text": "& wird",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          897.0,
+          861.0
+        ],
+        [
+          897.0,
+          898.0
+        ]
+      ],
+      "bbox": [
+        883.0,
+        861.0,
+        920.0,
+        898.0
+      ],
+      "text": "13.",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          950.0,
+          912.0
+        ],
+        [
+          950.0,
+          1092.0
+        ]
+      ],
+      "bbox": [
+        928.0,
+        912.0,
+        977.0,
+        1092.0
+      ],
+      "text": "Dein",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 7,
+      "baseline": [
+        [
+          1005.0,
+          1133.0
+        ],
+        [
+          1008.0,
+          1189.0
+        ]
+      ],
+      "bbox": [
+        987.0,
+        1131.0,
+        1027.0,
+        1189.0
+      ],
+      "text": "der",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 8,
+      "baseline": [
+        [
+          893.0,
+          1231.0
+        ],
+        [
+          896.0,
+          1151.0
+        ]
+      ],
+      "bbox": [
+        874.0,
+        1150.0,
+        918.0,
+        1232.0
+      ],
+      "text": "et",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 9,
+      "baseline": [
+        [
+          709.0,
+          1355.0
+        ],
+        [
+          864.0,
+          1348.0
+        ]
+      ],
+      "bbox": [
+        707.0,
+        1325.0,
+        864.0,
+        1377.0
+      ],
+      "text": "de fer de la Société.",
+      "confidence": null,
+      "regions": []
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 5581,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "Amsterdam\nter ans Solothurn hadden Trien wol meer\nnieuw brief schroobenspringel gemaeckt het in\nbekoon geleegt, den weg in misere alte\nen trans:\nContra\nAengaende het Slachtervande ende\nAfgedaen den 4=en\nContra\nacte van eerwarden.",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            189.0,
+            468.0
+          ],
+          [
+            193.0,
+            300.0
+          ]
+        ],
+        "bbox": [
+          175.0,
+          299.0,
+          208.0,
+          468.0
+        ],
+        "text": "Amsterdam",
+        "confidence": 0.7542484468883939,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            666.0,
+            359.0
+          ],
+          [
+            1038.0,
+            349.0
+          ]
+        ],
+        "bbox": [
+          665.0,
+          323.0,
+          1038.0,
+          375.0
+        ],
+        "text": "ter ans Solothurn hadden Trien wol meer",
+        "confidence": 0.8690657890759982,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            668.0,
+            426.0
+          ],
+          [
+            1027.0,
+            418.0
+          ]
+        ],
+        "bbox": [
+          667.0,
+          386.0,
+          1027.0,
+          448.0
+        ],
+        "text": "nieuw brief schroobenspringel gemaeckt het in",
+        "confidence": 0.8060592936144935,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            686.0,
+            488.0
+          ],
+          [
+            1003.0,
+            478.0
+          ]
+        ],
+        "bbox": [
+          684.0,
+          448.0,
+          1003.0,
+          509.0
+        ],
+        "text": "bekoon geleegt, den weg in misere alte",
+        "confidence": 0.7809488522379022,
+        "regions": []
+      },
+      {
+        "order": 4,
+        "baseline": [
+          [
+            833.0,
+            541.0
+          ],
+          [
+            908.0,
+            540.0
+          ]
+        ],
+        "bbox": [
+          832.0,
+          512.0,
+          908.0,
+          558.0
+        ],
+        "text": "en trans:",
+        "confidence": 0.8081921074125502,
+        "regions": []
+      },
+      {
+        "order": 5,
+        "baseline": [
+          [
+            893.0,
+            1231.0
+          ],
+          [
+            896.0,
+            1151.0
+          ]
+        ],
+        "bbox": [
+          874.0,
+          1150.0,
+          918.0,
+          1232.0
+        ],
+        "text": "Contra",
+        "confidence": 0.7461217368642489,
+        "regions": []
+      },
+      {
+        "order": 6,
+        "baseline": [
+          [
+            897.0,
+            861.0
+          ],
+          [
+            897.0,
+            898.0
+          ]
+        ],
+        "bbox": [
+          883.0,
+          861.0,
+          920.0,
+          898.0
+        ],
+        "text": "Aengaende het Slachtervande ende",
+        "confidence": 0.7445404117461294,
+        "regions": []
+      },
+      {
+        "order": 7,
+        "baseline": [
+          [
+            950.0,
+            912.0
+          ],
+          [
+            950.0,
+            1092.0
+          ]
+        ],
+        "bbox": [
+          928.0,
+          912.0,
+          977.0,
+          1092.0
+        ],
+        "text": "Afgedaen den 4=en",
+        "confidence": 0.8272739964372972,
+        "regions": []
+      },
+      {
+        "order": 8,
+        "baseline": [
+          [
+            1005.0,
+            1133.0
+          ],
+          [
+            1008.0,
+            1189.0
+          ]
+        ],
+        "bbox": [
+          987.0,
+          1131.0,
+          1027.0,
+          1189.0
+        ],
+        "text": "Contra",
+        "confidence": 0.7647671699523926,
+        "regions": []
+      },
+      {
+        "order": 9,
+        "baseline": [
+          [
+            709.0,
+            1355.0
+          ],
+          [
+            864.0,
+            1348.0
+          ]
+        ],
+        "bbox": [
+          707.0,
+          1325.0,
+          864.0,
+          1377.0
+        ],
+        "text": "acte van eerwarden.",
+        "confidence": 0.7039438619425422,
+        "regions": []
+      }
+    ],
+    "confidence": 0.7805161666171948,
+    "timing_ms": 18915,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-21T18:45:48+00:00"
+}

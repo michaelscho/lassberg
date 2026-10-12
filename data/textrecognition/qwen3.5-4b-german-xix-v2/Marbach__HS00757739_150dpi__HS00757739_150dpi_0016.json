@@ -1,0 +1,218 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00757739_150dpi",
+  "source": {
+    "name": "HS00757739_150dpi_0016.jpg",
+    "bytes": 365689,
+    "sha256": "dc01583d70d8cd0d36af8d3be550926204b869ee945acffe43b3e12091ea1ffe",
+    "remote": "digitalisate/Marbach/HS00757739_150dpi/HS00757739_150dpi_0016.jpg",
+    "key": "Marbach__HS00757739_150dpi__HS00757739_150dpi_0016",
+    "working_copy": "HS00757739_150dpi_0016.jpg"
+  },
+  "text": "Dein lieber\n682\n1.\n16",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          342.0,
+          663.0
+        ],
+        [
+          506.0,
+          661.0
+        ]
+      ],
+      "bbox": [
+        341.0,
+        623.0,
+        506.0,
+        679.0
+      ],
+      "text": "Dein lieber",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          410.0,
+          791.0
+        ],
+        [
+          519.0,
+          788.0
+        ]
+      ],
+      "bbox": [
+        409.0,
+        745.0,
+        519.0,
+        812.0
+      ],
+      "text": "682",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          707.0,
+          1224.0
+        ],
+        [
+          738.0,
+          1223.0
+        ]
+      ],
+      "bbox": [
+        705.0,
+        1192.0,
+        738.0,
+        1233.0
+      ],
+      "text": "1.",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          826.0,
+          1163.0
+        ],
+        [
+          868.0,
+          1164.0
+        ]
+      ],
+      "bbox": [
+        825.0,
+        1137.0,
+        868.0,
+        1178.0
+      ],
+      "text": "16",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 23247,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "Weinsberg\n3 Br. 6 UBE\n11414\n11415",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            342.0,
+            663.0
+          ],
+          [
+            506.0,
+            661.0
+          ]
+        ],
+        "bbox": [
+          341.0,
+          623.0,
+          506.0,
+          679.0
+        ],
+        "text": "Weinsberg",
+        "confidence": 0.9218164682388306,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            410.0,
+            791.0
+          ],
+          [
+            519.0,
+            788.0
+          ]
+        ],
+        "bbox": [
+          409.0,
+          745.0,
+          519.0,
+          812.0
+        ],
+        "text": "3 Br. 6 UBE",
+        "confidence": 0.7035432227633216,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            707.0,
+            1224.0
+          ],
+          [
+            738.0,
+            1223.0
+          ]
+        ],
+        "bbox": [
+          705.0,
+          1192.0,
+          738.0,
+          1233.0
+        ],
+        "text": "11414",
+        "confidence": 0.8226781010627746,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            826.0,
+            1163.0
+          ],
+          [
+            868.0,
+            1164.0
+          ]
+        ],
+        "bbox": [
+          825.0,
+          1137.0,
+          868.0,
+          1178.0
+        ],
+        "text": "11415",
+        "confidence": 0.7698782086372375,
+        "regions": []
+      }
+    ],
+    "confidence": 0.8044790001755411,
+    "timing_ms": 8803,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T04:24:39+00:00"
+}

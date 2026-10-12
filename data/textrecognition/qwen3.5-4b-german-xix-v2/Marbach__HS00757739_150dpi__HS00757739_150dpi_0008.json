@@ -1,0 +1,172 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00757739_150dpi",
+  "source": {
+    "name": "HS00757739_150dpi_0008.jpg",
+    "bytes": 303909,
+    "sha256": "624c648f3d14a7d96f4d52e4b9d1f41fa7de4561222e921ca26941e4291d7f8d",
+    "remote": "digitalisate/Marbach/HS00757739_150dpi/HS00757739_150dpi_0008.jpg",
+    "key": "Marbach__HS00757739_150dpi__HS00757739_150dpi_0008",
+    "working_copy": "HS00757739_150dpi_0008.jpg"
+  },
+  "text": "der\n1869.\n3",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          511.0,
+          970.0
+        ],
+        [
+          514.0,
+          1010.0
+        ]
+      ],
+      "bbox": [
+        488.0,
+        968.0,
+        536.0,
+        1010.0
+      ],
+      "text": "der",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          515.0,
+          1192.0
+        ],
+        [
+          515.0,
+          1144.0
+        ]
+      ],
+      "bbox": [
+        482.0,
+        1144.0,
+        546.0,
+        1192.0
+      ],
+      "text": "1869.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          763.0,
+          673.0
+        ],
+        [
+          765.0,
+          635.0
+        ]
+      ],
+      "bbox": [
+        714.0,
+        632.0,
+        780.0,
+        673.0
+      ],
+      "text": "3",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 6744,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "per favor of\nfavoured by\nMerch^t",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            511.0,
+            970.0
+          ],
+          [
+            514.0,
+            1010.0
+          ]
+        ],
+        "bbox": [
+          488.0,
+          968.0,
+          536.0,
+          1010.0
+        ],
+        "text": "per favor of",
+        "confidence": 0.7622289371987184,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            515.0,
+            1192.0
+          ],
+          [
+            515.0,
+            1144.0
+          ]
+        ],
+        "bbox": [
+          482.0,
+          1144.0,
+          546.0,
+          1192.0
+        ],
+        "text": "favoured by",
+        "confidence": 0.733361036262729,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            763.0,
+            673.0
+          ],
+          [
+            765.0,
+            635.0
+          ]
+        ],
+        "bbox": [
+          714.0,
+          632.0,
+          780.0,
+          673.0
+        ],
+        "text": "Merch^t",
+        "confidence": 0.766866324203355,
+        "regions": []
+      }
+    ],
+    "confidence": 0.7541520992216008,
+    "timing_ms": 9046,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T04:22:35+00:00"
+}

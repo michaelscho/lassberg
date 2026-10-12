@@ -1,0 +1,153 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "blb lassberg/K 2911,16",
+  "source": {
+    "name": "page_0006.jpg",
+    "bytes": 573974,
+    "sha256": "060b3db234d691ee4c3b49718ec999272f018724d212466b665e710659702fec",
+    "remote": "digitalisate/blb lassberg/K 2911,16/page_0006.jpg",
+    "key": "blb lassberg__K 2911,16__page_0006",
+    "working_copy": "page_0006.jpg"
+  },
+  "text": "131\nzu\nMonsieur\n396\nMonsieur",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          1171.0,
+          2221.0
+        ],
+        [
+          1174.0,
+          2257.0
+        ]
+      ],
+      "bbox": [
+        1146.0,
+        2218.0,
+        1203.0,
+        2257.0
+      ],
+      "text": "131",
+      "confidence": null,
+      "regions": [
+        "_aa429388-25e9-4e80-9bfb-00e4fee73f2d"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1168.0,
+          2096.0
+        ],
+        [
+          1171.0,
+          2169.0
+        ]
+      ],
+      "bbox": [
+        1134.0,
+        2095.0,
+        1213.0,
+        2169.0
+      ],
+      "text": "zu",
+      "confidence": null,
+      "regions": [
+        "_aa429388-25e9-4e80-9bfb-00e4fee73f2d"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1171.0,
+          2312.0
+        ],
+        [
+          1174.0,
+          2422.0
+        ]
+      ],
+      "bbox": [
+        1073.0,
+        2311.0,
+        1196.0,
+        2424.0
+      ],
+      "text": "Monsieur",
+      "confidence": null,
+      "regions": [
+        "_aa429388-25e9-4e80-9bfb-00e4fee73f2d"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          1383.0,
+          1676.0
+        ],
+        [
+          1383.0,
+          1795.0
+        ]
+      ],
+      "bbox": [
+        1356.0,
+        1676.0,
+        1434.0,
+        1795.0
+      ],
+      "text": "396",
+      "confidence": null,
+      "regions": [
+        "_aa429388-25e9-4e80-9bfb-00e4fee73f2d"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          1387.0,
+          1869.0
+        ],
+        [
+          1390.0,
+          2053.0
+        ]
+      ],
+      "bbox": [
+        1358.0,
+        1867.0,
+        1427.0,
+        2053.0
+      ],
+      "text": "Monsieur",
+      "confidence": null,
+      "regions": [
+        "_aa429388-25e9-4e80-9bfb-00e4fee73f2d"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 5633,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T18:54:12+00:00"
+}

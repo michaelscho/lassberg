@@ -1,0 +1,172 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00787922_150dpi",
+  "source": {
+    "name": "HS00787922_0003_150dpi.jpg",
+    "bytes": 172356,
+    "sha256": "7077efcaeb8ac25e3853e6918029cf8ed12c0d10d819abcaab43b546371f3f66",
+    "remote": "digitalisate/Marbach/HS00787922_150dpi/HS00787922_0003_150dpi.jpg",
+    "key": "Marbach__HS00787922_150dpi__HS00787922_0003_150dpi",
+    "working_copy": "HS00787922_0003_150dpi.jpg"
+  },
+  "text": "185\n13 3368 a\n368. 35",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          698.0,
+          666.0
+        ],
+        [
+          789.0,
+          662.0
+        ]
+      ],
+      "bbox": [
+        695.0,
+        623.0,
+        789.0,
+        679.0
+      ],
+      "text": "185",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          866.0,
+          1664.0
+        ],
+        [
+          1029.0,
+          1660.0
+        ]
+      ],
+      "bbox": [
+        865.0,
+        1622.0,
+        1029.0,
+        1680.0
+      ],
+      "text": "13 3368 a",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1093.0,
+          1595.0
+        ],
+        [
+          1218.0,
+          1590.0
+        ]
+      ],
+      "bbox": [
+        1092.0,
+        1556.0,
+        1218.0,
+        1606.0
+      ],
+      "text": "368. 35",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 6509,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "1855\n4N 3968a\n3975",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            698.0,
+            666.0
+          ],
+          [
+            789.0,
+            662.0
+          ]
+        ],
+        "bbox": [
+          695.0,
+          623.0,
+          789.0,
+          679.0
+        ],
+        "text": "1855",
+        "confidence": 0.9184062331914902,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            866.0,
+            1664.0
+          ],
+          [
+            1029.0,
+            1660.0
+          ]
+        ],
+        "bbox": [
+          865.0,
+          1622.0,
+          1029.0,
+          1680.0
+        ],
+        "text": "4N 3968a",
+        "confidence": 0.7877305671572685,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            1093.0,
+            1595.0
+          ],
+          [
+            1218.0,
+            1590.0
+          ]
+        ],
+        "bbox": [
+          1092.0,
+          1556.0,
+          1218.0,
+          1606.0
+        ],
+        "text": "3975",
+        "confidence": 0.9183318018913269,
+        "regions": []
+      }
+    ],
+    "confidence": 0.8748228674133619,
+    "timing_ms": 7985,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T04:32:04+00:00"
+}

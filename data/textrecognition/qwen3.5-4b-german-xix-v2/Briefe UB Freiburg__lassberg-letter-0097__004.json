@@ -1,0 +1,178 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Briefe UB Freiburg/lassberg-letter-0097",
+  "source": {
+    "name": "004.tif",
+    "bytes": 16829464,
+    "sha256": "1ffb00d65ff57c0edb72992b596ba166e4282628ff4857bddfce67bd5badfe5e",
+    "remote": "digitalisate/Briefe UB Freiburg/lassberg-letter-0097/004.tif",
+    "key": "Briefe UB Freiburg__lassberg-letter-0097__004",
+    "working_copy": "004.jpg"
+  },
+  "text": "D. 22. Febr. 1806.\n56.\n3",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          1070.0,
+          109.0
+        ],
+        [
+          1282.0,
+          93.0
+        ],
+        [
+          1542.0,
+          89.0
+        ]
+      ],
+      "bbox": [
+        1066.0,
+        41.0,
+        1542.0,
+        139.0
+      ],
+      "text": "D. 22. Febr. 1806.",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          67.0,
+          101.0
+        ],
+        [
+          163.0,
+          101.0
+        ]
+      ],
+      "bbox": [
+        67.0,
+        51.0,
+        163.0,
+        123.0
+      ],
+      "text": "56.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          869.0,
+          1731.0
+        ],
+        [
+          933.0,
+          1732.0
+        ]
+      ],
+      "bbox": [
+        867.0,
+        1686.0,
+        933.0,
+        1745.0
+      ],
+      "text": "3",
+      "confidence": null,
+      "regions": []
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 24615,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "56.\nhie.\nD. 22 febr: 1806.",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            67.0,
+            101.0
+          ],
+          [
+            163.0,
+            101.0
+          ]
+        ],
+        "bbox": [
+          67.0,
+          51.0,
+          163.0,
+          123.0
+        ],
+        "text": "56.",
+        "confidence": 0.9552213152249655,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            869.0,
+            1731.0
+          ],
+          [
+            933.0,
+            1732.0
+          ]
+        ],
+        "bbox": [
+          867.0,
+          1686.0,
+          933.0,
+          1745.0
+        ],
+        "text": "hie.",
+        "confidence": 0.8397840708494186,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            1070.0,
+            109.0
+          ],
+          [
+            1282.0,
+            93.0
+          ],
+          [
+            1542.0,
+            89.0
+          ]
+        ],
+        "bbox": [
+          1066.0,
+          41.0,
+          1542.0,
+          139.0
+        ],
+        "text": "D. 22 febr: 1806.",
+        "confidence": 0.9460546093828538,
+        "regions": []
+      }
+    ],
+    "confidence": 0.9136866651524126,
+    "timing_ms": 7870,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-21T20:08:07+00:00"
+}

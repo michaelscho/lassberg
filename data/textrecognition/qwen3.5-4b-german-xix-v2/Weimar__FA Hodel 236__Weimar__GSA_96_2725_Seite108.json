@@ -1,0 +1,81 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Weimar/FA Hodel 236/Weimar",
+  "source": {
+    "name": "GSA_96_2725_Seite108.jpg",
+    "bytes": 8128091,
+    "sha256": "efa2e354070f2cac3195f4db7cdd46884ea1f9b61c275681caf46d5845f68363",
+    "remote": "digitalisate/Weimar/FA Hodel 236/Weimar/GSA_96_2725_Seite108.jpg",
+    "key": "Weimar__FA Hodel 236__Weimar__GSA_96_2725_Seite108",
+    "working_copy": "GSA_96_2725_Seite108.jpg"
+  },
+  "text": "Classico\n1.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          165.0,
+          1003.0
+        ],
+        [
+          372.0,
+          999.0
+        ]
+      ],
+      "bbox": [
+        163.0,
+        968.0,
+        372.0,
+        1066.0
+      ],
+      "text": "Classico",
+      "confidence": null,
+      "regions": [
+        "_0d658ac6-3e06-496d-ac2a-b25a64b7643f"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          80.0,
+          2389.0
+        ],
+        [
+          259.0,
+          2393.0
+        ]
+      ],
+      "bbox": [
+        78.0,
+        2354.0,
+        259.0,
+        2442.0
+      ],
+      "text": "1.",
+      "confidence": null,
+      "regions": [
+        "_f6c8e371-ace6-49b4-8ffc-d3c0eda59f8c"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 7789,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 31,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T05:23:16+00:00"
+}

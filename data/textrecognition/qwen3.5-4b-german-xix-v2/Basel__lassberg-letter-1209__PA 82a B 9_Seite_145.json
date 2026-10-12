@@ -1,0 +1,180 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Basel/lassberg-letter-1209",
+  "source": {
+    "name": "PA 82a B 9_Seite_145.jpg",
+    "bytes": 192067,
+    "sha256": "25c82947b65cebb0c948b98a1ae61552911af9ac2d8f8b5a456519298be24c92",
+    "remote": "digitalisate/Basel/lassberg-letter-1209/PA 82a B 9_Seite_145.jpg",
+    "key": "Basel__lassberg-letter-1209__PA 82a B 9_Seite_145",
+    "working_copy": "PA 82a B 9_Seite_145.jpg"
+  },
+  "text": "auf\nHerrn Baron\nHerrn",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          749.0,
+          731.0
+        ],
+        [
+          749.0,
+          596.0
+        ]
+      ],
+      "bbox": [
+        730.0,
+        596.0,
+        780.0,
+        731.0
+      ],
+      "text": "auf",
+      "confidence": null,
+      "regions": [
+        "_e0049a1c-94a8-4c33-9eec-40f8c77c2870"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          592.0,
+          738.0
+        ],
+        [
+          597.0,
+          944.0
+        ]
+      ],
+      "bbox": [
+        569.0,
+        737.0,
+        619.0,
+        944.0
+      ],
+      "text": "Herrn Baron",
+      "confidence": null,
+      "regions": [
+        "_f4adca02-4ffd-4ee4-b6a7-9edddaddc3fc"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          647.0,
+          838.0
+        ],
+        [
+          652.0,
+          824.0
+        ],
+        [
+          650.0,
+          757.0
+        ]
+      ],
+      "bbox": [
+        627.0,
+        756.0,
+        672.0,
+        838.0
+      ],
+      "text": "Herrn",
+      "confidence": null,
+      "regions": [
+        "_f4adca02-4ffd-4ee4-b6a7-9edddaddc3fc"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 26362,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "Merch^t @ W^m. Lyon\nMerch^t\nWilliamsburg",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            592.0,
+            738.0
+          ],
+          [
+            597.0,
+            944.0
+          ]
+        ],
+        "bbox": [
+          569.0,
+          737.0,
+          619.0,
+          944.0
+        ],
+        "text": "Merch^t @ W^m. Lyon",
+        "confidence": 0.571976059361508,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            647.0,
+            838.0
+          ],
+          [
+            652.0,
+            824.0
+          ],
+          [
+            650.0,
+            757.0
+          ]
+        ],
+        "bbox": [
+          627.0,
+          756.0,
+          672.0,
+          838.0
+        ],
+        "text": "Merch^t",
+        "confidence": 0.6664871083838599,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            749.0,
+            731.0
+          ],
+          [
+            749.0,
+            596.0
+          ]
+        ],
+        "bbox": [
+          730.0,
+          596.0,
+          780.0,
+          731.0
+        ],
+        "text": "Williamsburg",
+        "confidence": 0.7413592313726743,
+        "regions": []
+      }
+    ],
+    "confidence": 0.659940799706014,
+    "timing_ms": 13506,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-21T17:32:41+00:00"
+}

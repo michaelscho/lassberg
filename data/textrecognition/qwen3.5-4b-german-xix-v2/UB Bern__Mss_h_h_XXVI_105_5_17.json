@@ -1,0 +1,105 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "UB Bern",
+  "source": {
+    "name": "Mss_h_h_XXVI_105_5_17.tif",
+    "bytes": 36453684,
+    "sha256": "4c807623844dcd9e6c2c42194ef0c2946ec7d91301e84a655b4a6cc116af0042",
+    "remote": "digitalisate/UB Bern/Mss_h_h_XXVI_105_5_17.tif",
+    "key": "UB Bern__Mss_h_h_XXVI_105_5_17",
+    "working_copy": "Mss_h_h_XXVI_105_5_17.jpg"
+  },
+  "text": "Calibrite\nZucker\nmit dem",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          105.0,
+          107.0
+        ],
+        [
+          233.0,
+          103.0
+        ]
+      ],
+      "bbox": [
+        103.0,
+        58.0,
+        233.0,
+        145.0
+      ],
+      "text": "Calibrite",
+      "confidence": null,
+      "regions": [
+        "_d45e8b95-b721-44f3-96a8-f369e90f3d49"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          447.0,
+          109.0
+        ],
+        [
+          748.0,
+          111.0
+        ]
+      ],
+      "bbox": [
+        445.0,
+        75.0,
+        748.0,
+        140.0
+      ],
+      "text": "Zucker",
+      "confidence": null,
+      "regions": [
+        "_d4a58a1b-541f-4477-835f-74118ffeadc3"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          92.0,
+          1303.0
+        ],
+        [
+          685.0,
+          1297.0
+        ]
+      ],
+      "bbox": [
+        90.0,
+        1269.0,
+        685.0,
+        1343.0
+      ],
+      "text": "mit dem",
+      "confidence": null,
+      "regions": [
+        "_170b62c8-5d7d-4685-a0a5-3ab3905fb80f"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 7263,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 32,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T01:57:21+00:00"
+}

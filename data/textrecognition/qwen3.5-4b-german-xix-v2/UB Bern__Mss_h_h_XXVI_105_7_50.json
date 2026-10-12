@@ -1,0 +1,105 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "UB Bern",
+  "source": {
+    "name": "Mss_h_h_XXVI_105_7_50.tif",
+    "bytes": 38016012,
+    "sha256": "2370ce4efe1616d70c27f5db9a7707ff0b6dec72173e27417837f0857a050f0b",
+    "remote": "digitalisate/UB Bern/Mss_h_h_XXVI_105_7_50.tif",
+    "key": "UB Bern__Mss_h_h_XXVI_105_7_50",
+    "working_copy": "Mss_h_h_XXVI_105_7_50.jpg"
+  },
+  "text": "Calibrite\norchecker Classic\nund",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          129.0,
+          96.0
+        ],
+        [
+          254.0,
+          94.0
+        ]
+      ],
+      "bbox": [
+        127.0,
+        66.0,
+        254.0,
+        129.0
+      ],
+      "text": "Calibrite",
+      "confidence": null,
+      "regions": [
+        "_69308043-61d6-4eec-b3dd-fff22a0c17aa"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          438.0,
+          100.0
+        ],
+        [
+          777.0,
+          102.0
+        ]
+      ],
+      "bbox": [
+        436.0,
+        66.0,
+        777.0,
+        142.0
+      ],
+      "text": "orchecker Classic",
+      "confidence": null,
+      "regions": [
+        "_02fbc130-0b33-4837-802a-8838bcbd6813"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          112.0,
+          1284.0
+        ],
+        [
+          699.0,
+          1284.0
+        ]
+      ],
+      "bbox": [
+        112.0,
+        1253.0,
+        699.0,
+        1328.0
+      ],
+      "text": "und",
+      "confidence": null,
+      "regions": [
+        "_7394fbca-b84f-4083-9d32-e26a1630edc8"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 6349,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 41,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T02:20:16+00:00"
+}

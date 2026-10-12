@@ -1,0 +1,225 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "blb lassberg/K 2911,18",
+  "source": {
+    "name": "page_0004.jpg",
+    "bytes": 619260,
+    "sha256": "44063dafe34da2c5162c74514f911d008a74699c8c3f657c94284aeef8165c37",
+    "remote": "digitalisate/blb lassberg/K 2911,18/page_0004.jpg",
+    "key": "blb lassberg__K 2911,18__page_0004",
+    "working_copy": "page_0004.jpg"
+  },
+  "text": "Dein\nOtector\nder\nMißi\nDein\n32.\nde\nEscher",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          1299.0,
+          1809.0
+        ],
+        [
+          1302.0,
+          1899.0
+        ]
+      ],
+      "bbox": [
+        1267.0,
+        1807.0,
+        1368.0,
+        1899.0
+      ],
+      "text": "Dein",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1299.0,
+          2298.0
+        ],
+        [
+          1299.0,
+          1975.0
+        ]
+      ],
+      "bbox": [
+        1244.0,
+        1975.0,
+        1362.0,
+        2298.0
+      ],
+      "text": "Otector",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1418.0,
+          1951.0
+        ],
+        [
+          1422.0,
+          1729.0
+        ]
+      ],
+      "bbox": [
+        1383.0,
+        1727.0,
+        1485.0,
+        1951.0
+      ],
+      "text": "der",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          1424.0,
+          2039.0
+        ],
+        [
+          1427.0,
+          2152.0
+        ]
+      ],
+      "bbox": [
+        1392.0,
+        2035.0,
+        1485.0,
+        2152.0
+      ],
+      "text": "Mißi",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          1426.0,
+          2294.0
+        ],
+        [
+          1429.0,
+          2195.0
+        ]
+      ],
+      "bbox": [
+        1377.0,
+        2192.0,
+        1474.0,
+        2294.0
+      ],
+      "text": "Dein",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          1427.0,
+          2404.0
+        ],
+        [
+          1427.0,
+          2490.0
+        ]
+      ],
+      "bbox": [
+        1384.0,
+        2404.0,
+        1476.0,
+        2490.0
+      ],
+      "text": "32.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          1538.0,
+          1776.0
+        ],
+        [
+          1538.0,
+          1686.0
+        ]
+      ],
+      "bbox": [
+        1513.0,
+        1686.0,
+        1573.0,
+        1776.0
+      ],
+      "text": "de",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 7,
+      "baseline": [
+        [
+          1534.0,
+          2005.0
+        ],
+        [
+          1538.0,
+          1839.0
+        ]
+      ],
+      "bbox": [
+        1495.0,
+        1837.0,
+        1586.0,
+        2005.0
+      ],
+      "text": "Escher",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 5918,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T19:18:46+00:00"
+}

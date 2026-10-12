@@ -1,0 +1,83 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Staatsarchiv Zürrich/499_hs_evan_scch_erledigt/FA_Escher_vL_140_174",
+  "source": {
+    "name": "FA_Escher_vL_140_174_0028.tif",
+    "bytes": 34572272,
+    "sha256": "c52a639c026e89474454b6c7ff843582a6a750e7466c471c316e920f0eb2f988",
+    "remote": "digitalisate/Staatsarchiv Zürrich/499_hs_evan_scch_erledigt/FA_Escher_vL_140_174/FA_Escher_vL_140_174_0028.tif",
+    "key": "Staatsarchiv Zürrich__499_hs_evan_scch_erledigt__FA_Escher_vL_140_174__FA_Escher_vL_140_174_0028",
+    "working_copy": "FA_Escher_vL_140_174_0028.jpg"
+  },
+  "text": "haftliche Briefe v: 1828, 1829, d 20\nscher V. L. 140.-",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          723.0,
+          519.0
+        ],
+        [
+          1055.0,
+          531.0
+        ],
+        [
+          1761.0,
+          538.0
+        ]
+      ],
+      "bbox": [
+        720.0,
+        429.0,
+        1761.0,
+        579.0
+      ],
+      "text": "haftliche Briefe v: 1828, 1829, d 20",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          444.0,
+          3593.0
+        ],
+        [
+          1188.0,
+          3583.0
+        ]
+      ],
+      "bbox": [
+        442.0,
+        3520.0,
+        1188.0,
+        3624.0
+      ],
+      "text": "scher V. L. 140.-",
+      "confidence": null,
+      "regions": []
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 9486,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 43,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T22:27:20+00:00"
+}

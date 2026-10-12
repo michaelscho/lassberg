@@ -1,0 +1,165 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Winterthur",
+  "source": {
+    "name": "260-MsBRH_513-91-081.jpg",
+    "bytes": 5525337,
+    "sha256": "751d79234af8a5f530b8f63e44b09b383212cbce244bb8bbbc89299cc72c8464",
+    "remote": "digitalisate/Winterthur/260-MsBRH_513-91-081.jpg",
+    "key": "Winterthur__260-MsBRH_513-91-081",
+    "working_copy": "260-MsBRH_513-91-081.jpg"
+  },
+  "text": "Da Pfarrer Orei wird sein Nachsprechen wegen der\nKann sein Paar alten Stücke lösen, indeßen empfiehlt er\nIsten, und ich nun anme Se. im Geist mit dem größten\nHochachtung und freundschaftlichen Ergebenheit\nR. Prof. H. Kellmann",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          1552.0,
+          406.0
+        ],
+        [
+          4850.0,
+          456.0
+        ]
+      ],
+      "bbox": [
+        1552.0,
+        296.0,
+        4850.0,
+        496.0
+      ],
+      "text": "Da Pfarrer Orei wird sein Nachsprechen wegen der",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1019.0,
+          546.0
+        ],
+        [
+          2648.0,
+          572.0
+        ],
+        [
+          3987.0,
+          569.0
+        ],
+        [
+          4814.0,
+          589.0
+        ]
+      ],
+      "bbox": [
+        1016.0,
+        446.0,
+        4814.0,
+        656.0
+      ],
+      "text": "Kann sein Paar alten Stücke lösen, indeßen empfiehlt er",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1066.0,
+          706.0
+        ],
+        [
+          4760.0,
+          736.0
+        ]
+      ],
+      "bbox": [
+        1066.0,
+        609.0,
+        4760.0,
+        779.0
+      ],
+      "text": "Isten, und ich nun anme Se. im Geist mit dem größten",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          1016.0,
+          866.0
+        ],
+        [
+          2355.0,
+          849.0
+        ],
+        [
+          4231.0,
+          872.0
+        ]
+      ],
+      "bbox": [
+        1012.0,
+        752.0,
+        4231.0,
+        989.0
+      ],
+      "text": "Hochachtung und freundschaftlichen Ergebenheit",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          3568.0,
+          1055.0
+        ],
+        [
+          4844.0,
+          1059.0
+        ]
+      ],
+      "bbox": [
+        3564.0,
+        916.0,
+        4844.0,
+        1249.0
+      ],
+      "text": "R. Prof. H. Kellmann",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 9475,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T15:13:13+00:00"
+}

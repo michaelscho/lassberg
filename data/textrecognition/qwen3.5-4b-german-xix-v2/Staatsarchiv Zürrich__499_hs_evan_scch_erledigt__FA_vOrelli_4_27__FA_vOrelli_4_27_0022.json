@@ -1,0 +1,57 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Staatsarchiv Zürrich/499_hs_evan_scch_erledigt/FA_vOrelli_4_27",
+  "source": {
+    "name": "FA_vOrelli_4_27_0022.tif",
+    "bytes": 20874724,
+    "sha256": "58447c950ec630c350f8c7df07dd58f4547620b6b7d41693bf68959bd62e5d1c",
+    "remote": "digitalisate/Staatsarchiv Zürrich/499_hs_evan_scch_erledigt/FA_vOrelli_4_27/FA_vOrelli_4_27_0022.tif",
+    "key": "Staatsarchiv Zürrich__499_hs_evan_scch_erledigt__FA_vOrelli_4_27__FA_vOrelli_4_27_0022",
+    "working_copy": "FA_vOrelli_4_27_0022.jpg"
+  },
+  "text": ".",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          1590.0,
+          913.0
+        ],
+        [
+          1680.0,
+          910.0
+        ]
+      ],
+      "bbox": [
+        1587.0,
+        852.0,
+        1680.0,
+        942.0
+      ],
+      "text": ".",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 5789,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 26,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T22:37:56+00:00"
+}

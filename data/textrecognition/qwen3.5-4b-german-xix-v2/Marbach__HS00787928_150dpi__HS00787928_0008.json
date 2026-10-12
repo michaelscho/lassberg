@@ -1,0 +1,126 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00787928_150dpi",
+  "source": {
+    "name": "HS00787928_0008.jpg",
+    "bytes": 138172,
+    "sha256": "4539186255f2a8852534922675f7fa5af4a8a586500a1a11feeb89ac90662dc9",
+    "remote": "digitalisate/Marbach/HS00787928_150dpi/HS00787928_0008.jpg",
+    "key": "Marbach__HS00787928_150dpi__HS00787928_0008",
+    "working_copy": "HS00787928_0008.jpg"
+  },
+  "text": "1869.\n1.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          870.0,
+          61.0
+        ],
+        [
+          876.0,
+          61.0
+        ]
+      ],
+      "bbox": [
+        870.0,
+        48.0,
+        876.0,
+        80.0
+      ],
+      "text": "1869.",
+      "confidence": null,
+      "regions": [
+        "_2db6d45d-a804-42b9-9ae6-b21fd8a7c09b"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          734.0,
+          1270.0
+        ],
+        [
+          787.0,
+          1268.0
+        ]
+      ],
+      "bbox": [
+        733.0,
+        1243.0,
+        787.0,
+        1287.0
+      ],
+      "text": "1.",
+      "confidence": null,
+      "regions": [
+        "_d1f4ff75-108b-4ee0-b768-b9f2e803a10f"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 29379,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "9. 4. 1. 1\n74.",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            734.0,
+            1270.0
+          ],
+          [
+            787.0,
+            1268.0
+          ]
+        ],
+        "bbox": [
+          733.0,
+          1243.0,
+          787.0,
+          1287.0
+        ],
+        "text": "9. 4. 1. 1",
+        "confidence": 0.6039967000484466,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            870.0,
+            61.0
+          ],
+          [
+            876.0,
+            61.0
+          ]
+        ],
+        "bbox": [
+          870.0,
+          48.0,
+          876.0,
+          80.0
+        ],
+        "text": "74.",
+        "confidence": 0.6935601482788721,
+        "regions": []
+      }
+    ],
+    "confidence": 0.6487784241636594,
+    "timing_ms": 16897,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T05:00:23+00:00"
+}

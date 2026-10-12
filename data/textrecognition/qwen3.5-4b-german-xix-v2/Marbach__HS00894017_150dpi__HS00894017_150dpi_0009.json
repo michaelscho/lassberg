@@ -1,0 +1,172 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00894017_150dpi",
+  "source": {
+    "name": "HS00894017_150dpi_0009.jpg",
+    "bytes": 169529,
+    "sha256": "1aab3c04e8748817ca113f842934b38171b68e339c00d31a89bc292d0509fb22",
+    "remote": "digitalisate/Marbach/HS00894017_150dpi/HS00894017_150dpi_0009.jpg",
+    "key": "Marbach__HS00894017_150dpi__HS00894017_150dpi_0009",
+    "working_copy": "HS00894017_150dpi_0009.jpg"
+  },
+  "text": "1869\n1850\nder",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          907.0,
+          195.0
+        ],
+        [
+          908.0,
+          226.0
+        ]
+      ],
+      "bbox": [
+        897.0,
+        194.0,
+        923.0,
+        226.0
+      ],
+      "text": "1869",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          913.0,
+          392.0
+        ],
+        [
+          913.0,
+          353.0
+        ]
+      ],
+      "bbox": [
+        902.0,
+        352.0,
+        925.0,
+        392.0
+      ],
+      "text": "1850",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          912.0,
+          450.0
+        ],
+        [
+          913.0,
+          401.0
+        ]
+      ],
+      "bbox": [
+        897.0,
+        401.0,
+        925.0,
+        450.0
+      ],
+      "text": "der",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 13778,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "Merch^t\nM^r Davis\nFrom",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            907.0,
+            195.0
+          ],
+          [
+            908.0,
+            226.0
+          ]
+        ],
+        "bbox": [
+          897.0,
+          194.0,
+          923.0,
+          226.0
+        ],
+        "text": "Merch^t",
+        "confidence": 0.7925936984164375,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            913.0,
+            392.0
+          ],
+          [
+            913.0,
+            353.0
+          ]
+        ],
+        "bbox": [
+          902.0,
+          352.0,
+          925.0,
+          392.0
+        ],
+        "text": "M^r Davis",
+        "confidence": 0.6731487214565277,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            912.0,
+            450.0
+          ],
+          [
+            913.0,
+            401.0
+          ]
+        ],
+        "bbox": [
+          897.0,
+          401.0,
+          925.0,
+          450.0
+        ],
+        "text": "From",
+        "confidence": 0.5927855186164379,
+        "regions": []
+      }
+    ],
+    "confidence": 0.6861759794964678,
+    "timing_ms": 18786,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T15:24:32+00:00"
+}

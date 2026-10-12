@@ -1,0 +1,137 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Winterthur",
+  "source": {
+    "name": "337-MsBRH_513-91-158.jpg",
+    "bytes": 4386427,
+    "sha256": "bf064a8b2b8da20b5851cdf794001bd238b2b33cc67b5517b5f8b9ea8f84e7fa",
+    "remote": "digitalisate/Winterthur/337-MsBRH_513-91-158.jpg",
+    "key": "Winterthur__337-MsBRH_513-91-158",
+    "working_copy": "337-MsBRH_513-91-158.jpg"
+  },
+  "text": "Se. Hochwohlgeboren\ndem Dreiherrn hochgeachteten Lastbarn,\nP. S. Rumer und Maltester Richter\nin Eÿdischauen",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          2331.0,
+          1139.0
+        ],
+        [
+          3730.0,
+          1165.0
+        ]
+      ],
+      "bbox": [
+        2328.0,
+        1039.0,
+        3730.0,
+        1223.0
+      ],
+      "text": "Se. Hochwohlgeboren",
+      "confidence": null,
+      "regions": [
+        "_39af614b-f2c7-4f43-8ad6-187070d3e395"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1459.0,
+          1600.0
+        ],
+        [
+          2273.0,
+          1636.0
+        ],
+        [
+          3801.0,
+          1644.0
+        ]
+      ],
+      "bbox": [
+        1459.0,
+        1495.0,
+        3801.0,
+        1689.0
+      ],
+      "text": "dem Dreiherrn hochgeachteten Lastbarn,",
+      "confidence": null,
+      "regions": [
+        "_39af614b-f2c7-4f43-8ad6-187070d3e395"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1406.0,
+          1741.0
+        ],
+        [
+          2559.0,
+          1788.0
+        ],
+        [
+          3916.0,
+          1793.0
+        ]
+      ],
+      "bbox": [
+        1404.0,
+        1644.0,
+        3916.0,
+        1867.0
+      ],
+      "text": "P. S. Rumer und Maltester Richter",
+      "confidence": null,
+      "regions": [
+        "_39af614b-f2c7-4f43-8ad6-187070d3e395"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          2061.0,
+          2739.0
+        ],
+        [
+          3429.0,
+          2728.0
+        ]
+      ],
+      "bbox": [
+        2059.0,
+        2629.0,
+        3429.0,
+        2880.0
+      ],
+      "text": "in Eÿdischauen",
+      "confidence": null,
+      "regions": [
+        "_3e483c78-93cf-4900-a38a-cc990b7274d3"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 20225,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T16:25:50+00:00"
+}

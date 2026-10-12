@@ -1,0 +1,218 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Kantonsbibliothek Appenzell/lassberg-letter-1015",
+  "source": {
+    "name": "40C-01-04-02-2_1267.tif",
+    "bytes": 13170712,
+    "sha256": "6a4b54f7413cbc87c809fede8d22aa5bbe023b605f0188d3b13a48a51b1c0483",
+    "remote": "digitalisate/Kantonsbibliothek Appenzell/lassberg-letter-1015/40C-01-04-02-2_1267.tif",
+    "key": "Kantonsbibliothek Appenzell__lassberg-letter-1015__40C-01-04-02-2_1267",
+    "working_copy": "40C-01-04-02-2_1267.jpg"
+  },
+  "text": "Conferenz 30. July 1821\nist: am Lastberg\nbeantwoh. 5.\n1267",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          747.0,
+          165.0
+        ],
+        [
+          1373.0,
+          162.0
+        ]
+      ],
+      "bbox": [
+        746.0,
+        116.0,
+        1373.0,
+        223.0
+      ],
+      "text": "Conferenz 30. July 1821",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          988.0,
+          254.0
+        ],
+        [
+          1495.0,
+          249.0
+        ]
+      ],
+      "bbox": [
+        986.0,
+        188.0,
+        1495.0,
+        280.0
+      ],
+      "text": "ist: am Lastberg",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          972.0,
+          327.0
+        ],
+        [
+          1400.0,
+          327.0
+        ]
+      ],
+      "bbox": [
+        972.0,
+        275.0,
+        1400.0,
+        378.0
+      ],
+      "text": "beantwoh. 5.",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          151.0,
+          152.0
+        ],
+        [
+          262.0,
+          157.0
+        ]
+      ],
+      "bbox": [
+        149.0,
+        115.0,
+        262.0,
+        187.0
+      ],
+      "text": "1267",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 5718,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "1267\nLonstrass 30. July 1825\nJustinum Zerstbarg\nbeautech: 6. Aug",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            151.0,
+            152.0
+          ],
+          [
+            262.0,
+            157.0
+          ]
+        ],
+        "bbox": [
+          149.0,
+          115.0,
+          262.0,
+          187.0
+        ],
+        "text": "1267",
+        "confidence": 0.8935163766145706,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            747.0,
+            165.0
+          ],
+          [
+            1373.0,
+            162.0
+          ]
+        ],
+        "bbox": [
+          746.0,
+          116.0,
+          1373.0,
+          223.0
+        ],
+        "text": "Lonstrass 30. July 1825",
+        "confidence": 0.8270637665105902,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            988.0,
+            254.0
+          ],
+          [
+            1495.0,
+            249.0
+          ]
+        ],
+        "bbox": [
+          986.0,
+          188.0,
+          1495.0,
+          280.0
+        ],
+        "text": "Justinum Zerstbarg",
+        "confidence": 0.8017511549923155,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            972.0,
+            327.0
+          ],
+          [
+            1400.0,
+            327.0
+          ]
+        ],
+        "bbox": [
+          972.0,
+          275.0,
+          1400.0,
+          378.0
+        ],
+        "text": "beautech: 6. Aug",
+        "confidence": 0.7871139589697123,
+        "regions": []
+      }
+    ],
+    "confidence": 0.8273613142717972,
+    "timing_ms": 10009,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T02:14:16+00:00"
+}

@@ -1,0 +1,81 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "UB Bern",
+  "source": {
+    "name": "Mss_h_h_XXVI_105_4_17.tif",
+    "bytes": 67409760,
+    "sha256": "47df22e70eb8faf3e58d68aabbdcee203539b23723afa1720b6e13e39e3c32cd",
+    "remote": "digitalisate/UB Bern/Mss_h_h_XXVI_105_4_17.tif",
+    "key": "UB Bern__Mss_h_h_XXVI_105_4_17",
+    "working_copy": "Mss_h_h_XXVI_105_4_17.jpg"
+  },
+  "text": "Checker Classico\nmit dem",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          506.0,
+          143.0
+        ],
+        [
+          766.0,
+          143.0
+        ]
+      ],
+      "bbox": [
+        506.0,
+        111.0,
+        766.0,
+        186.0
+      ],
+      "text": "Checker Classico",
+      "confidence": null,
+      "regions": [
+        "_f1605d90-1638-4509-be93-5f71b2b697e4"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          122.0,
+          1334.0
+        ],
+        [
+          682.0,
+          1334.0
+        ]
+      ],
+      "bbox": [
+        122.0,
+        1308.0,
+        682.0,
+        1375.0
+      ],
+      "text": "mit dem",
+      "confidence": null,
+      "regions": [
+        "_23207333-f5ec-474b-9f32-22de5ac1420c"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 14641,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 31,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T01:52:38+00:00"
+}

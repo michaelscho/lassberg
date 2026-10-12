@@ -1,0 +1,172 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Aarau/upload/lassberg-letter-1123",
+  "source": {
+    "name": "00020-scan_2025-03-21_11-11-46r.tif",
+    "bytes": 25586906,
+    "sha256": "9b5ad638a76a091498fce2ece6263184169a25592b8fea06d1e9e4b1ccd5fa7b",
+    "remote": "digitalisate/Aarau/upload/lassberg-letter-1123/00020-scan_2025-03-21_11-11-46r.tif",
+    "key": "Aarau__upload__lassberg-letter-1123__00020-scan_2025-03-21_11-11-46r",
+    "working_copy": "00020-scan_2025-03-21_11-11-46r.jpg"
+  },
+  "text": "1870\n.\nob",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          1053.0,
+          945.0
+        ],
+        [
+          1053.0,
+          963.0
+        ]
+      ],
+      "bbox": [
+        1033.0,
+        945.0,
+        1087.0,
+        963.0
+      ],
+      "text": "1870",
+      "confidence": null,
+      "regions": [
+        "_2bde3648-4cb2-4450-9434-c04cd0c0f4e1"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          2133.0,
+          1426.0
+        ],
+        [
+          2175.0,
+          1424.0
+        ]
+      ],
+      "bbox": [
+        2132.0,
+        1401.0,
+        2175.0,
+        1442.0
+      ],
+      "text": ".",
+      "confidence": null,
+      "regions": [
+        "_ca902684-0993-401e-a9e8-03a4c6a30d5b"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          2133.0,
+          1577.0
+        ],
+        [
+          2331.0,
+          1575.0
+        ]
+      ],
+      "bbox": [
+        2132.0,
+        1534.0,
+        2331.0,
+        1611.0
+      ],
+      "text": "ob",
+      "confidence": null,
+      "regions": [
+        "_ca902684-0993-401e-a9e8-03a4c6a30d5b"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 9104,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "1\naugusti\nliab",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            1053.0,
+            945.0
+          ],
+          [
+            1053.0,
+            963.0
+          ]
+        ],
+        "bbox": [
+          1033.0,
+          945.0,
+          1087.0,
+          963.0
+        ],
+        "text": "1",
+        "confidence": 0.5075806975364685,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            2133.0,
+            1426.0
+          ],
+          [
+            2175.0,
+            1424.0
+          ]
+        ],
+        "bbox": [
+          2132.0,
+          1401.0,
+          2175.0,
+          1442.0
+        ],
+        "text": "augusti",
+        "confidence": 0.6035092792340687,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            2133.0,
+            1577.0
+          ],
+          [
+            2331.0,
+            1575.0
+          ]
+        ],
+        "bbox": [
+          2132.0,
+          1534.0,
+          2331.0,
+          1611.0
+        ],
+        "text": "liab",
+        "confidence": 0.6002004742622375,
+        "regions": []
+      }
+    ],
+    "confidence": 0.5704301503442583,
+    "timing_ms": 14109,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-21T16:19:21+00:00"
+}

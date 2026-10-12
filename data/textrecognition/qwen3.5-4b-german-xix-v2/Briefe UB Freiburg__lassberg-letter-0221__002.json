@@ -1,0 +1,382 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Briefe UB Freiburg/lassberg-letter-0221",
+  "source": {
+    "name": "002.tif",
+    "bytes": 37285216,
+    "sha256": "c162631adba4393c7277bfa66809ce92f293127dd6f3a6834c6e58c57039b8f6",
+    "remote": "digitalisate/Briefe UB Freiburg/lassberg-letter-0221/002.tif",
+    "key": "Briefe UB Freiburg__lassberg-letter-0221__002",
+    "working_copy": "002.jpg"
+  },
+  "text": "oder 4 andere, bis wie endlich Morgen und selbst im Zähringer Hof unterkennen.\nUm Bur Druklarck nicht mit unnöthigem Detail zu erwähnen begnüge ich mich\nzusagen, daß der bunter Oberst Kamerer Heer v. Gausau etwa war konnte reden hat,\num das Hinsein eines Durchlauf ist gütigster Herr es annehmen zu machen als\nschon der Natur der Sache noch fein muß. So haben z. B. der Gratsengees König, Hoheit\nden Finstern in Rücksicht der Treue dahin zu disponiren zuerst, daß Er in seiner Bedich-",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          136.0,
+          2400.0
+        ],
+        [
+          1190.0,
+          2417.0
+        ],
+        [
+          2853.0,
+          2417.0
+        ]
+      ],
+      "bbox": [
+        136.0,
+        2322.0,
+        2853.0,
+        2476.0
+      ],
+      "text": "oder 4 andere, bis wie endlich Morgen und selbst im Zähringer Hof unterkennen.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          153.0,
+          2605.0
+        ],
+        [
+          1610.0,
+          2610.0
+        ],
+        [
+          2294.0,
+          2595.0
+        ],
+        [
+          3056.0,
+          2601.0
+        ]
+      ],
+      "bbox": [
+        151.0,
+        2480.0,
+        3056.0,
+        2651.0
+      ],
+      "text": "Um Bur Druklarck nicht mit unnöthigem Detail zu erwähnen begnüge ich mich",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          173.0,
+          2792.0
+        ],
+        [
+          1615.0,
+          2792.0
+        ],
+        [
+          2374.0,
+          2774.0
+        ],
+        [
+          3063.0,
+          2772.0
+        ]
+      ],
+      "bbox": [
+        171.0,
+        2690.0,
+        3063.0,
+        2835.0
+      ],
+      "text": "zusagen, daß der bunter Oberst Kamerer Heer v. Gausau etwa war konnte reden hat,",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          171.0,
+          2976.0
+        ],
+        [
+          1902.0,
+          2982.0
+        ],
+        [
+          2615.0,
+          2958.0
+        ],
+        [
+          3030.0,
+          2954.0
+        ]
+      ],
+      "bbox": [
+        168.0,
+        2889.0,
+        3030.0,
+        3045.0
+      ],
+      "text": "um das Hinsein eines Durchlauf ist gütigster Herr es annehmen zu machen als",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          177.0,
+          3170.0
+        ],
+        [
+          1812.0,
+          3155.0
+        ],
+        [
+          2981.0,
+          3168.0
+        ]
+      ],
+      "bbox": [
+        175.0,
+        3077.0,
+        2981.0,
+        3240.0
+      ],
+      "text": "schon der Natur der Sache noch fein muß. So haben z. B. der Gratsengees König, Hoheit",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          171.0,
+          3367.0
+        ],
+        [
+          1387.0,
+          3352.0
+        ],
+        [
+          2955.0,
+          3350.0
+        ]
+      ],
+      "bbox": [
+        168.0,
+        3261.0,
+        2955.0,
+        3428.0
+      ],
+      "text": "den Finstern in Rücksicht der Treue dahin zu disponiren zuerst, daß Er in seiner Bedich-",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 18941,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "reden 4 emken, bis vier und tich Morgens und halb ein Zähringer Hof unterkamen.\nUm Buer Curchlaucht nicht innenötigen Detail zu ermüden beynüge ich mich\nzusagen, daß der bindere Oberst Kummer Fher v. Gensau alles war er konnte getan hat,\num das Hiersein meiner durchlieüftigst gündigsten Herren angenehmer zu enthan als es\nschon der Ratur der Sache und frie muß. So haben g. B. des Groschenzogs Königl. Hoheit\ndem Einsten in Rücksicht der Trauer dahin zu dispensiren genuht, also Er in seiner bediesenden",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            136.0,
+            2400.0
+          ],
+          [
+            1190.0,
+            2417.0
+          ],
+          [
+            2853.0,
+            2417.0
+          ]
+        ],
+        "bbox": [
+          136.0,
+          2322.0,
+          2853.0,
+          2476.0
+        ],
+        "text": "reden 4 emken, bis vier und tich Morgens und halb ein Zähringer Hof unterkamen.",
+        "confidence": 0.8536911454051733,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            153.0,
+            2605.0
+          ],
+          [
+            1610.0,
+            2610.0
+          ],
+          [
+            2294.0,
+            2595.0
+          ],
+          [
+            3056.0,
+            2601.0
+          ]
+        ],
+        "bbox": [
+          151.0,
+          2480.0,
+          3056.0,
+          2651.0
+        ],
+        "text": "Um Buer Curchlaucht nicht innenötigen Detail zu ermüden beynüge ich mich",
+        "confidence": 0.8549451367060343,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            173.0,
+            2792.0
+          ],
+          [
+            1615.0,
+            2792.0
+          ],
+          [
+            2374.0,
+            2774.0
+          ],
+          [
+            3063.0,
+            2772.0
+          ]
+        ],
+        "bbox": [
+          171.0,
+          2690.0,
+          3063.0,
+          2835.0
+        ],
+        "text": "zusagen, daß der bindere Oberst Kummer Fher v. Gensau alles war er konnte getan hat,",
+        "confidence": 0.8982686485563006,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            171.0,
+            2976.0
+          ],
+          [
+            1902.0,
+            2982.0
+          ],
+          [
+            2615.0,
+            2958.0
+          ],
+          [
+            3030.0,
+            2954.0
+          ]
+        ],
+        "bbox": [
+          168.0,
+          2889.0,
+          3030.0,
+          3045.0
+        ],
+        "text": "um das Hiersein meiner durchlieüftigst gündigsten Herren angenehmer zu enthan als es",
+        "confidence": 0.877201817583206,
+        "regions": []
+      },
+      {
+        "order": 4,
+        "baseline": [
+          [
+            177.0,
+            3170.0
+          ],
+          [
+            1812.0,
+            3155.0
+          ],
+          [
+            2981.0,
+            3168.0
+          ]
+        ],
+        "bbox": [
+          175.0,
+          3077.0,
+          2981.0,
+          3240.0
+        ],
+        "text": "schon der Ratur der Sache und frie muß. So haben g. B. des Groschenzogs Königl. Hoheit",
+        "confidence": 0.8606715457535338,
+        "regions": []
+      },
+      {
+        "order": 5,
+        "baseline": [
+          [
+            171.0,
+            3367.0
+          ],
+          [
+            1387.0,
+            3352.0
+          ],
+          [
+            2955.0,
+            3350.0
+          ]
+        ],
+        "bbox": [
+          168.0,
+          3261.0,
+          2955.0,
+          3428.0
+        ],
+        "text": "dem Einsten in Rücksicht der Trauer dahin zu dispensiren genuht, also Er in seiner bediesenden",
+        "confidence": 0.8461098357250816,
+        "regions": []
+      }
+    ],
+    "confidence": 0.8651480216215549,
+    "timing_ms": 59221,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-21T23:03:28+00:00"
+}

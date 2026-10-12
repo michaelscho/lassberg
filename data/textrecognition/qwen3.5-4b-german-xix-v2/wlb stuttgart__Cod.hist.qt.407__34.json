@@ -1,0 +1,205 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "wlb stuttgart/Cod.hist.qt.407",
+  "source": {
+    "name": "34.jpg",
+    "bytes": 2634423,
+    "sha256": "d0b6ef2337cb0b480a38bbdd9ab74d84ba6fd4562392eb0032976a6b5696a011",
+    "remote": "digitalisate/wlb stuttgart/Cod.hist.qt.407/34.jpg",
+    "key": "wlb stuttgart__Cod.hist.qt.407__34",
+    "working_copy": "34.jpg"
+  },
+  "text": "nun\nsein\n\"\ner\n1.\nmit\n19. März 1849.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          539.0,
+          959.0
+        ],
+        [
+          545.0,
+          853.0
+        ]
+      ],
+      "bbox": [
+        523.0,
+        851.0,
+        569.0,
+        959.0
+      ],
+      "text": "nun",
+      "confidence": null,
+      "regions": [
+        "_0b2ce53c-d507-4bae-887b-900b23f3b85a"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          664.0,
+          703.0
+        ],
+        [
+          665.0,
+          646.0
+        ]
+      ],
+      "bbox": [
+        624.0,
+        644.0,
+        685.0,
+        703.0
+      ],
+      "text": "sein",
+      "confidence": null,
+      "regions": [
+        "_0b2ce53c-d507-4bae-887b-900b23f3b85a"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          664.0,
+          877.0
+        ],
+        [
+          665.0,
+          864.0
+        ]
+      ],
+      "bbox": [
+        642.0,
+        860.0,
+        694.0,
+        880.0
+      ],
+      "text": "\"",
+      "confidence": null,
+      "regions": [
+        "_0b2ce53c-d507-4bae-887b-900b23f3b85a"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          665.0,
+          1332.0
+        ],
+        [
+          665.0,
+          1350.0
+        ]
+      ],
+      "bbox": [
+        640.0,
+        1332.0,
+        684.0,
+        1350.0
+      ],
+      "text": "er",
+      "confidence": null,
+      "regions": [
+        "_0b2ce53c-d507-4bae-887b-900b23f3b85a"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          663.0,
+          1080.0
+        ],
+        [
+          665.0,
+          1126.0
+        ]
+      ],
+      "bbox": [
+        651.0,
+        1078.0,
+        687.0,
+        1126.0
+      ],
+      "text": "1.",
+      "confidence": null,
+      "regions": [
+        "_0b2ce53c-d507-4bae-887b-900b23f3b85a"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          665.0,
+          1199.0
+        ],
+        [
+          665.0,
+          1285.0
+        ]
+      ],
+      "bbox": [
+        642.0,
+        1199.0,
+        681.0,
+        1285.0
+      ],
+      "text": "mit",
+      "confidence": null,
+      "regions": [
+        "_0b2ce53c-d507-4bae-887b-900b23f3b85a"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          669.0,
+          556.0
+        ],
+        [
+          677.0,
+          461.0
+        ],
+        [
+          679.0,
+          312.0
+        ]
+      ],
+      "bbox": [
+        650.0,
+        310.0,
+        701.0,
+        556.0
+      ],
+      "text": "19. März 1849.",
+      "confidence": null,
+      "regions": [
+        "_0b2ce53c-d507-4bae-887b-900b23f3b85a"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 4799,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T20:44:29+00:00"
+}

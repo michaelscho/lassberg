@@ -1,0 +1,139 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Winterthur",
+  "source": {
+    "name": "237-MsBRH_513-91-058.jpg",
+    "bytes": 5151366,
+    "sha256": "429f29635ff91b40c39a42b080df37b0d8ea51a95fae3b4d1d3e7bb39d3230fe",
+    "remote": "digitalisate/Winterthur/237-MsBRH_513-91-058.jpg",
+    "key": "Winterthur__237-MsBRH_513-91-058",
+    "working_copy": "237-MsBRH_513-91-058.jpg"
+  },
+  "text": "ballen\ndem Kreichern Joseph von Lustberg\n1. Cammerer und Malletaster = Bötter\nin Eggi'shausen Land. Thurgau",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          3227.0,
+          1457.0
+        ],
+        [
+          3717.0,
+          1465.0
+        ]
+      ],
+      "bbox": [
+        3224.0,
+        1369.0,
+        3717.0,
+        1566.0
+      ],
+      "text": "ballen",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          2182.0,
+          1963.0
+        ],
+        [
+          3492.0,
+          2001.0
+        ],
+        [
+          4559.0,
+          2004.0
+        ]
+      ],
+      "bbox": [
+        2182.0,
+        1832.0,
+        4559.0,
+        2050.0
+      ],
+      "text": "dem Kreichern Joseph von Lustberg",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          2272.0,
+          2141.0
+        ],
+        [
+          4020.0,
+          2193.0
+        ],
+        [
+          4652.0,
+          2195.0
+        ]
+      ],
+      "bbox": [
+        2270.0,
+        2083.0,
+        4652.0,
+        2255.0
+      ],
+      "text": "1. Cammerer und Malletaster = Bötter",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          2483.0,
+          3139.0
+        ],
+        [
+          4171.0,
+          3169.0
+        ],
+        [
+          4584.0,
+          3196.0
+        ]
+      ],
+      "bbox": [
+        2480.0,
+        3010.0,
+        4584.0,
+        3284.0
+      ],
+      "text": "in Eggi'shausen Land. Thurgau",
+      "confidence": null,
+      "regions": []
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 11730,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T14:50:07+00:00"
+}

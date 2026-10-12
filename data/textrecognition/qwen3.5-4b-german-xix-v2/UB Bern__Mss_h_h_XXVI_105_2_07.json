@@ -1,0 +1,199 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "UB Bern",
+  "source": {
+    "name": "Mss_h_h_XXVI_105_2_07.tif",
+    "bytes": 38668818,
+    "sha256": "cb53aa86c4506140eebd6f149802ecf2b9de9f0d0fe05f4fad66fc164f74fbe0",
+    "remote": "digitalisate/UB Bern/Mss_h_h_XXVI_105_2_07.tif",
+    "key": "UB Bern__Mss_h_h_XXVI_105_2_07",
+    "working_copy": "Mss_h_h_XXVI_105_2_07.jpg"
+  },
+  "text": "Calibrite\nFlorchecker Classica\ndie Sie etwa begehren, mitbringen\nEntschuldigen Sie hochgeehrter Herr, er\nIhren mit Beobachtung ergebensten\nFerdinand Keller\ndenen, die den 1sten.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          135.0,
+          105.0
+        ],
+        [
+          241.0,
+          107.0
+        ]
+      ],
+      "bbox": [
+        133.0,
+        67.0,
+        241.0,
+        133.0
+      ],
+      "text": "Calibrite",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          419.0,
+          110.0
+        ],
+        [
+          768.0,
+          105.0
+        ]
+      ],
+      "bbox": [
+        417.0,
+        76.0,
+        768.0,
+        150.0
+      ],
+      "text": "Florchecker Classica",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1075.0,
+          645.0
+        ],
+        [
+          2505.0,
+          658.0
+        ]
+      ],
+      "bbox": [
+        1073.0,
+        584.0,
+        2505.0,
+        698.0
+      ],
+      "text": "die Sie etwa begehren, mitbringen",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          1230.0,
+          874.0
+        ],
+        [
+          2268.0,
+          872.0
+        ],
+        [
+          2782.0,
+          884.0
+        ]
+      ],
+      "bbox": [
+        1230.0,
+        810.0,
+        2782.0,
+        914.0
+      ],
+      "text": "Entschuldigen Sie hochgeehrter Herr, er",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          1118.0,
+          1003.0
+        ],
+        [
+          2719.0,
+          1012.0
+        ]
+      ],
+      "bbox": [
+        1116.0,
+        948.0,
+        2719.0,
+        1054.0
+      ],
+      "text": "Ihren mit Beobachtung ergebensten",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          1802.0,
+          1164.0
+        ],
+        [
+          2625.0,
+          1164.0
+        ]
+      ],
+      "bbox": [
+        1802.0,
+        1071.0,
+        2625.0,
+        1200.0
+      ],
+      "text": "Ferdinand Keller",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          99.0,
+          1299.0
+        ],
+        [
+          688.0,
+          1297.0
+        ]
+      ],
+      "bbox": [
+        97.0,
+        1270.0,
+        688.0,
+        1333.0
+      ],
+      "text": "denen, die den 1sten.",
+      "confidence": null,
+      "regions": []
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 9323,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 24,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T01:35:16+00:00"
+}

@@ -1,0 +1,126 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00757739_150dpi",
+  "source": {
+    "name": "HS00757739_150dpi_0020.jpg",
+    "bytes": 214071,
+    "sha256": "4ba738802668ebad466b431087f798567d1642264c462bc5eb23a1c925f06f4a",
+    "remote": "digitalisate/Marbach/HS00757739_150dpi/HS00757739_150dpi_0020.jpg",
+    "key": "Marbach__HS00757739_150dpi__HS00757739_150dpi_0020",
+    "working_copy": "HS00757739_150dpi_0020.jpg"
+  },
+  "text": "1869\n1141",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          465.0,
+          367.0
+        ],
+        [
+          465.0,
+          330.0
+        ]
+      ],
+      "bbox": [
+        444.0,
+        329.0,
+        485.0,
+        367.0
+      ],
+      "text": "1869",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          492.0,
+          1127.0
+        ],
+        [
+          544.0,
+          1126.0
+        ]
+      ],
+      "bbox": [
+        492.0,
+        1104.0,
+        544.0,
+        1140.0
+      ],
+      "text": "1141",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 25092,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "To\n11415",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            465.0,
+            367.0
+          ],
+          [
+            465.0,
+            330.0
+          ]
+        ],
+        "bbox": [
+          444.0,
+          329.0,
+          485.0,
+          367.0
+        ],
+        "text": "To",
+        "confidence": 0.27434638142585754,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            492.0,
+            1127.0
+          ],
+          [
+            544.0,
+            1126.0
+          ]
+        ],
+        "bbox": [
+          492.0,
+          1104.0,
+          544.0,
+          1140.0
+        ],
+        "text": "11415",
+        "confidence": 0.807541298866272,
+        "regions": []
+      }
+    ],
+    "confidence": 0.5409438401460648,
+    "timing_ms": 42520,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T04:25:41+00:00"
+}

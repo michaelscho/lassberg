@@ -1,0 +1,80 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00755409_150dpi",
+  "source": {
+    "name": "HS00755409_150dpi_0003.jpg",
+    "bytes": 111435,
+    "sha256": "54897da2104b05f467cb27dbce1dd8a2f32493f521826be6c573b66791abd960",
+    "remote": "digitalisate/Marbach/HS00755409_150dpi/HS00755409_150dpi_0003.jpg",
+    "key": "Marbach__HS00755409_150dpi__HS00755409_150dpi_0003",
+    "working_copy": "HS00755409_150dpi_0003.jpg"
+  },
+  "text": "s¬",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          371.0,
+          445.0
+        ],
+        [
+          413.0,
+          445.0
+        ]
+      ],
+      "bbox": [
+        371.0,
+        407.0,
+        413.0,
+        452.0
+      ],
+      "text": "s¬",
+      "confidence": null,
+      "regions": [
+        "r2"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 11505,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "Tübingen",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            371.0,
+            445.0
+          ],
+          [
+            413.0,
+            445.0
+          ]
+        ],
+        "bbox": [
+          371.0,
+          407.0,
+          413.0,
+          452.0
+        ],
+        "text": "Tübingen",
+        "confidence": 0.9373044967651367,
+        "regions": []
+      }
+    ],
+    "confidence": 0.9373044967651367,
+    "timing_ms": 91988,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T04:08:31+00:00"
+}

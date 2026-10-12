@@ -1,0 +1,207 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00900364_150dpi",
+  "source": {
+    "name": "HS00900364_150dpi_0006.jpg",
+    "bytes": 307509,
+    "sha256": "e41fa9ad062cf801e3dd90c960f8ce71ffb4d5c262c883804076583f484575d1",
+    "remote": "digitalisate/Marbach/HS00900364_150dpi/HS00900364_150dpi_0006.jpg",
+    "key": "Marbach__HS00900364_150dpi__HS00900364_150dpi_0006",
+    "working_copy": "HS00900364_150dpi_0006.jpg"
+  },
+  "text": "Alles gewünschte erhalten.\nNun aber nicht mich meine Familie, und ich ziehe\nimmer noch voll Dank und ehrerbietigen Freundschaft es\nGenehmigen\nden 22sten Jul.\nDeiner Verehrten\nL. Schraab.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          247.0,
+          266.0
+        ],
+        [
+          528.0,
+          259.0
+        ],
+        [
+          682.0,
+          260.0
+        ]
+      ],
+      "bbox": [
+        246.0,
+        219.0,
+        682.0,
+        284.0
+      ],
+      "text": "Alles gewünschte erhalten.",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          375.0,
+          341.0
+        ],
+        [
+          933.0,
+          338.0
+        ],
+        [
+          1164.0,
+          329.0
+        ],
+        [
+          1224.0,
+          331.0
+        ]
+      ],
+      "bbox": [
+        374.0,
+        293.0,
+        1224.0,
+        357.0
+      ],
+      "text": "Nun aber nicht mich meine Familie, und ich ziehe",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          252.0,
+          391.0
+        ],
+        [
+          1189.0,
+          368.0
+        ]
+      ],
+      "bbox": [
+        251.0,
+        333.0,
+        1189.0,
+        413.0
+      ],
+      "text": "immer noch voll Dank und ehrerbietigen Freundschaft es",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          247.0,
+          806.0
+        ],
+        [
+          438.0,
+          798.0
+        ]
+      ],
+      "bbox": [
+        245.0,
+        754.0,
+        438.0,
+        822.0
+      ],
+      "text": "Genehmigen",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          227.0,
+          863.0
+        ],
+        [
+          535.0,
+          856.0
+        ]
+      ],
+      "bbox": [
+        225.0,
+        810.0,
+        535.0,
+        881.0
+      ],
+      "text": "den 22sten Jul.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          799.0,
+          825.0
+        ],
+        [
+          1066.0,
+          821.0
+        ]
+      ],
+      "bbox": [
+        798.0,
+        783.0,
+        1066.0,
+        842.0
+      ],
+      "text": "Deiner Verehrten",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          851.0,
+          905.0
+        ],
+        [
+          1036.0,
+          900.0
+        ]
+      ],
+      "bbox": [
+        850.0,
+        851.0,
+        1036.0,
+        930.0
+      ],
+      "text": "L. Schraab.",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 6548,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 55,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T20:28:33+00:00"
+}

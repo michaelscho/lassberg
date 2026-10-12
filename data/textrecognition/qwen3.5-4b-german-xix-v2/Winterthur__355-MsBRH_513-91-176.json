@@ -1,0 +1,177 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Winterthur",
+  "source": {
+    "name": "355-MsBRH_513-91-176.jpg",
+    "bytes": 3788084,
+    "sha256": "5780bcf9510da30498611982ead737f28e3360f8f7dccbb058079662e8628f19",
+    "remote": "digitalisate/Winterthur/355-MsBRH_513-91-176.jpg",
+    "key": "Winterthur__355-MsBRH_513-91-176",
+    "working_copy": "355-MsBRH_513-91-176.jpg"
+  },
+  "text": "der\nMu. Wolgeborn\ndem Dreiherrn Joseph von Kastberg\n2. 2. Camerer und Mollhofen 2.\nMaaßrung",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          1857.0,
+          1209.0
+        ],
+        [
+          1972.0,
+          1206.0
+        ]
+      ],
+      "bbox": [
+        1855.0,
+        1149.0,
+        1972.0,
+        1234.0
+      ],
+      "text": "der",
+      "confidence": null,
+      "regions": [
+        "_97f1fd36-d26b-4078-a92f-68c08a142966"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          2350.0,
+          1144.0
+        ],
+        [
+          3604.0,
+          1177.0
+        ]
+      ],
+      "bbox": [
+        2348.0,
+        1045.0,
+        3604.0,
+        1237.0
+      ],
+      "text": "Mu. Wolgeborn",
+      "confidence": null,
+      "regions": [
+        "_97f1fd36-d26b-4078-a92f-68c08a142966"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1445.0,
+          1626.0
+        ],
+        [
+          1767.0,
+          1631.0
+        ],
+        [
+          2410.0,
+          1670.0
+        ],
+        [
+          3892.0,
+          1688.0
+        ]
+      ],
+      "bbox": [
+        1442.0,
+        1520.0,
+        3892.0,
+        1738.0
+      ],
+      "text": "dem Dreiherrn Joseph von Kastberg",
+      "confidence": null,
+      "regions": [
+        "_97f1fd36-d26b-4078-a92f-68c08a142966"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          1302.0,
+          1774.0
+        ],
+        [
+          1676.0,
+          1772.0
+        ],
+        [
+          2075.0,
+          1795.0
+        ],
+        [
+          3679.0,
+          1839.0
+        ]
+      ],
+      "bbox": [
+        1302.0,
+        1663.0,
+        3679.0,
+        1943.0
+      ],
+      "text": "2. 2. Camerer und Mollhofen 2.",
+      "confidence": null,
+      "regions": [
+        "_97f1fd36-d26b-4078-a92f-68c08a142966"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          2197.0,
+          2843.0
+        ],
+        [
+          2371.0,
+          2872.0
+        ],
+        [
+          2540.0,
+          2879.0
+        ],
+        [
+          3310.0,
+          2877.0
+        ]
+      ],
+      "bbox": [
+        2195.0,
+        2713.0,
+        3310.0,
+        2986.0
+      ],
+      "text": "Maaßrung",
+      "confidence": null,
+      "regions": [
+        "_97f1fd36-d26b-4078-a92f-68c08a142966"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 12992,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T16:39:58+00:00"
+}

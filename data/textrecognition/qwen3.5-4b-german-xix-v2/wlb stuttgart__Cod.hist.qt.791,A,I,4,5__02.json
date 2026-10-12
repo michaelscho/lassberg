@@ -1,0 +1,219 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "wlb stuttgart/Cod.hist.qt.791,A,I,4,5",
+  "source": {
+    "name": "02.jpg",
+    "bytes": 169020,
+    "sha256": "23f3edc10aa6285983d9d6ad6e934fe786942761e796a176dd5125a7760b21d7",
+    "remote": "digitalisate/wlb stuttgart/Cod.hist.qt.791,A,I,4,5/02.jpg",
+    "key": "wlb stuttgart__Cod.hist.qt.791,A,I,4,5__02",
+    "working_copy": "02.jpg"
+  },
+  "text": "einer Wolgeboren,\nDent d(er) herreit.\nD.\nConrrector\nvon Stuttgard.\nLingen\nsoll.\n1/50",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          397.0,
+          154.0
+        ],
+        [
+          524.0,
+          153.0
+        ],
+        [
+          631.0,
+          159.0
+        ],
+        [
+          749.0,
+          160.0
+        ]
+      ],
+      "bbox": [
+        396.0,
+        122.0,
+        749.0,
+        177.0
+      ],
+      "text": "einer Wolgeboren,",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          194.0,
+          254.0
+        ],
+        [
+          426.0,
+          255.0
+        ]
+      ],
+      "bbox": [
+        193.0,
+        217.0,
+        426.0,
+        268.0
+      ],
+      "text": "Dent d(er) herreit.",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          631.0,
+          257.0
+        ],
+        [
+          670.0,
+          257.0
+        ]
+      ],
+      "bbox": [
+        631.0,
+        218.0,
+        670.0,
+        277.0
+      ],
+      "text": "D.",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          439.0,
+          255.0
+        ],
+        [
+          603.0,
+          255.0
+        ]
+      ],
+      "bbox": [
+        439.0,
+        230.0,
+        603.0,
+        272.0
+      ],
+      "text": "Conrrector",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          173.0,
+          341.0
+        ],
+        [
+          385.0,
+          339.0
+        ]
+      ],
+      "bbox": [
+        173.0,
+        309.0,
+        385.0,
+        368.0
+      ],
+      "text": "von Stuttgard.",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          920.0,
+          348.0
+        ],
+        [
+          1062.0,
+          348.0
+        ]
+      ],
+      "bbox": [
+        919.0,
+        313.0,
+        1062.0,
+        369.0
+      ],
+      "text": "Lingen",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          571.0,
+          473.0
+        ],
+        [
+          612.0,
+          475.0
+        ]
+      ],
+      "bbox": [
+        571.0,
+        442.0,
+        612.0,
+        486.0
+      ],
+      "text": "soll.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 7,
+      "baseline": [
+        [
+          835.0,
+          672.0
+        ],
+        [
+          922.0,
+          671.0
+        ]
+      ],
+      "bbox": [
+        834.0,
+        643.0,
+        922.0,
+        686.0
+      ],
+      "text": "1/50",
+      "confidence": null,
+      "regions": []
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 8184,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T21:03:47+00:00"
+}

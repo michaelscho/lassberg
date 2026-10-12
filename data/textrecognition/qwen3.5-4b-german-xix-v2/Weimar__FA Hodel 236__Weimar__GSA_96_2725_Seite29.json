@@ -1,0 +1,226 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Weimar/FA Hodel 236/Weimar",
+  "source": {
+    "name": "GSA_96_2725_Seite29.jpg",
+    "bytes": 7102088,
+    "sha256": "fe02e0ed087d45d4d4f40efd480aa00e843c4093bc26e0cc06d869aab8226c72",
+    "remote": "digitalisate/Weimar/FA Hodel 236/Weimar/GSA_96_2725_Seite29.jpg",
+    "key": "Weimar__FA Hodel 236__Weimar__GSA_96_2725_Seite29",
+    "working_copy": "GSA_96_2725_Seite29.jpg"
+  },
+  "text": "s¬\n„\n1.\nClassiker",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          2382.0,
+          986.0
+        ],
+        [
+          2409.0,
+          980.0
+        ]
+      ],
+      "bbox": [
+        2368.0,
+        925.0,
+        2417.0,
+        1025.0
+      ],
+      "text": "s¬",
+      "confidence": null,
+      "regions": [
+        "_f49a658e-d2e4-439b-a79d-92e899818287"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          2620.0,
+          948.0
+        ],
+        [
+          2630.0,
+          948.0
+        ]
+      ],
+      "bbox": [
+        2620.0,
+        913.0,
+        2630.0,
+        1035.0
+      ],
+      "text": "„",
+      "confidence": null,
+      "regions": [
+        "_f49a658e-d2e4-439b-a79d-92e899818287"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          2703.0,
+          948.0
+        ],
+        [
+          2799.0,
+          944.0
+        ]
+      ],
+      "bbox": [
+        2701.0,
+        913.0,
+        2799.0,
+        1003.0
+      ],
+      "text": "1.",
+      "confidence": null,
+      "regions": [
+        "_f49a658e-d2e4-439b-a79d-92e899818287"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          2388.0,
+          2659.0
+        ],
+        [
+          2512.0,
+          2647.0
+        ],
+        [
+          2807.0,
+          2639.0
+        ]
+      ],
+      "bbox": [
+        2386.0,
+        2606.0,
+        2807.0,
+        2704.0
+      ],
+      "text": "Classiker",
+      "confidence": null,
+      "regions": [
+        "_178d7631-16be-4cf4-afa6-de50118d24e1"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 9554,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "vom pfarr\nF. Aargau .\nF. Aargau .\neissvie lehen",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            2382.0,
+            986.0
+          ],
+          [
+            2409.0,
+            980.0
+          ]
+        ],
+        "bbox": [
+          2368.0,
+          925.0,
+          2417.0,
+          1025.0
+        ],
+        "text": "vom pfarr",
+        "confidence": 0.6484249002403684,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            2620.0,
+            948.0
+          ],
+          [
+            2630.0,
+            948.0
+          ]
+        ],
+        "bbox": [
+          2620.0,
+          913.0,
+          2630.0,
+          1035.0
+        ],
+        "text": "F. Aargau .",
+        "confidence": 0.7900899662212892,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            2703.0,
+            948.0
+          ],
+          [
+            2799.0,
+            944.0
+          ]
+        ],
+        "bbox": [
+          2701.0,
+          913.0,
+          2799.0,
+          1003.0
+        ],
+        "text": "F. Aargau .",
+        "confidence": 0.8083663501522758,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            2388.0,
+            2659.0
+          ],
+          [
+            2512.0,
+            2647.0
+          ],
+          [
+            2807.0,
+            2639.0
+          ]
+        ],
+        "bbox": [
+          2386.0,
+          2606.0,
+          2807.0,
+          2704.0
+        ],
+        "text": "eissvie lehen",
+        "confidence": 0.6751123575063852,
+        "regions": []
+      }
+    ],
+    "confidence": 0.7304983935300796,
+    "timing_ms": 8431,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T09:48:44+00:00"
+}

@@ -1,0 +1,191 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "UB Freiburg/lassberg-letter-0875",
+  "source": {
+    "name": "lassberg-letter-0875-004.jpg",
+    "bytes": 206202,
+    "sha256": "6eb62e67d0aa95ae7cbb5da2307db56ffe7aff6feb7a2376fa38cb0a5610688f",
+    "remote": "digitalisate/UB Freiburg/lassberg-letter-0875/lassberg-letter-0875-004.jpg",
+    "key": "UB Freiburg__lassberg-letter-0875__lassberg-letter-0875-004",
+    "working_copy": "lassberg-letter-0875-004.jpg"
+  },
+  "text": "gibt\nden\nnicht\ngefordert durch\n1849.\nc. Universitätsbibliothek Freiburg\nBaden-Würtemberg",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          916.0,
+          565.0
+        ],
+        [
+          986.0,
+          564.0
+        ]
+      ],
+      "bbox": [
+        915.0,
+        548.0,
+        986.0,
+        580.0
+      ],
+      "text": "gibt",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          179.0,
+          615.0
+        ],
+        [
+          248.0,
+          615.0
+        ]
+      ],
+      "bbox": [
+        179.0,
+        600.0,
+        248.0,
+        636.0
+      ],
+      "text": "den",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          578.0,
+          979.0
+        ],
+        [
+          642.0,
+          977.0
+        ]
+      ],
+      "bbox": [
+        577.0,
+        948.0,
+        642.0,
+        994.0
+      ],
+      "text": "nicht",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          1291.0,
+          1833.0
+        ],
+        [
+          1383.0,
+          1831.0
+        ]
+      ],
+      "bbox": [
+        1290.0,
+        1816.0,
+        1383.0,
+        1843.0
+      ],
+      "text": "gefordert durch",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          386.0,
+          1860.0
+        ],
+        [
+          1042.0,
+          1855.0
+        ]
+      ],
+      "bbox": [
+        385.0,
+        1832.0,
+        1042.0,
+        1877.0
+      ],
+      "text": "1849.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          519.0,
+          1901.0
+        ],
+        [
+          926.0,
+          1903.0
+        ]
+      ],
+      "bbox": [
+        518.0,
+        1879.0,
+        926.0,
+        1918.0
+      ],
+      "text": "c. Universitätsbibliothek Freiburg",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          1271.0,
+          1907.0
+        ],
+        [
+          1423.0,
+          1910.0
+        ]
+      ],
+      "bbox": [
+        1270.0,
+        1886.0,
+        1423.0,
+        1919.0
+      ],
+      "text": "Baden-Würtemberg",
+      "confidence": null,
+      "regions": []
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 5952,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 32,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T03:37:38+00:00"
+}

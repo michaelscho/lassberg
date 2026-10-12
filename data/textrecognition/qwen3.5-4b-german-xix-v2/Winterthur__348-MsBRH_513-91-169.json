@@ -1,0 +1,169 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Winterthur",
+  "source": {
+    "name": "348-MsBRH_513-91-169.jpg",
+    "bytes": 4484125,
+    "sha256": "82f4e909c944b23dad23e25cd95714963265db82da4b8e4a676245c68d9eebf0",
+    "remote": "digitalisate/Winterthur/348-MsBRH_513-91-169.jpg",
+    "key": "Winterthur__348-MsBRH_513-91-169",
+    "working_copy": "348-MsBRH_513-91-169.jpg"
+  },
+  "text": "Alle die Meinigen verbinden sich mit ein, Ihnen recht viel\nFreundschaftliches zu sagen. Auf's Wiedersehen im Reichs Jahr\nSo alter, Hiemberncker\nkann\nH. Zeller",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          1113.0,
+          532.0
+        ],
+        [
+          1890.0,
+          553.0
+        ],
+        [
+          2790.0,
+          549.0
+        ],
+        [
+          4622.0,
+          515.0
+        ]
+      ],
+      "bbox": [
+        1109.0,
+        412.0,
+        4622.0,
+        601.0
+      ],
+      "text": "Alle die Meinigen verbinden sich mit ein, Ihnen recht viel",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          869.0,
+          676.0
+        ],
+        [
+          2907.0,
+          697.0
+        ],
+        [
+          3948.0,
+          669.0
+        ],
+        [
+          4752.0,
+          669.0
+        ]
+      ],
+      "bbox": [
+        866.0,
+        559.0,
+        4752.0,
+        800.0
+      ],
+      "text": "Freundschaftliches zu sagen. Auf's Wiedersehen im Reichs Jahr",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          3371.0,
+          941.0
+        ],
+        [
+          4735.0,
+          958.0
+        ]
+      ],
+      "bbox": [
+        3367.0,
+        827.0,
+        4735.0,
+        1020.0
+      ],
+      "text": "So alter, Hiemberncker",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          3958.0,
+          1082.0
+        ],
+        [
+          4261.0,
+          1078.0
+        ]
+      ],
+      "bbox": [
+        3955.0,
+        979.0,
+        4261.0,
+        1123.0
+      ],
+      "text": "kann",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          3677.0,
+          1212.0
+        ],
+        [
+          4625.0,
+          1223.0
+        ]
+      ],
+      "bbox": [
+        3673.0,
+        1089.0,
+        4625.0,
+        1442.0
+      ],
+      "text": "H. Zeller",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 12743,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T16:33:57+00:00"
+}

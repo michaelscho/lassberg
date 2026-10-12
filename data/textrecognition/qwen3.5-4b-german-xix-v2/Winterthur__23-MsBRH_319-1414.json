@@ -1,0 +1,185 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Winterthur",
+  "source": {
+    "name": "23-MsBRH_319-1414.jpg",
+    "bytes": 2453825,
+    "sha256": "6f498cd93560849f0b9c690bc16b29864004f45d90fa25ccf07698e1e89d2645",
+    "remote": "digitalisate/Winterthur/23-MsBRH_319-1414.jpg",
+    "key": "Winterthur__23-MsBRH_319-1414",
+    "working_copy": "23-MsBRH_319-1414.jpg"
+  },
+  "text": "Winterthur\n1\nin der\nin Freÿsern von Caßbe¬\nGrosch wackgeboren.\n8500.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          2581.0,
+          1026.0
+        ],
+        [
+          3047.0,
+          1017.0
+        ]
+      ],
+      "bbox": [
+        2578.0,
+        941.0,
+        3047.0,
+        1055.0
+      ],
+      "text": "Winterthur",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          2715.0,
+          1323.0
+        ],
+        [
+          2755.0,
+          1323.0
+        ]
+      ],
+      "bbox": [
+        2715.0,
+        1286.0,
+        2755.0,
+        1354.0
+      ],
+      "text": "1",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          2764.0,
+          1323.0
+        ],
+        [
+          3056.0,
+          1317.0
+        ]
+      ],
+      "bbox": [
+        2762.0,
+        1237.0,
+        3056.0,
+        1343.0
+      ],
+      "text": "in der",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          2813.0,
+          1521.0
+        ],
+        [
+          3858.0,
+          1521.0
+        ],
+        [
+          4554.0,
+          1514.0
+        ]
+      ],
+      "bbox": [
+        2812.0,
+        1425.0,
+        4554.0,
+        1595.0
+      ],
+      "text": "in Freÿsern von Caßbe¬",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          3235.0,
+          1725.0
+        ],
+        [
+          3657.0,
+          1708.0
+        ],
+        [
+          4303.0,
+          1708.0
+        ]
+      ],
+      "bbox": [
+        3233.0,
+        1620.0,
+        4303.0,
+        1752.0
+      ],
+      "text": "Grosch wackgeboren.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          3951.0,
+          2123.0
+        ],
+        [
+          4486.0,
+          2134.0
+        ]
+      ],
+      "bbox": [
+        3949.0,
+        2025.0,
+        4486.0,
+        2168.0
+      ],
+      "text": "8500.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 17556,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T14:45:39+00:00"
+}

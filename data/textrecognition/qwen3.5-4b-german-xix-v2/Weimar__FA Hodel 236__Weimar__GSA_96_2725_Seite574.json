@@ -1,0 +1,172 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Weimar/FA Hodel 236/Weimar",
+  "source": {
+    "name": "GSA_96_2725_Seite574.jpg",
+    "bytes": 6997226,
+    "sha256": "0af479e8db2fb51bf2ad2723b1d03fe063e7072cf8b2be5470570d17210594e6",
+    "remote": "digitalisate/Weimar/FA Hodel 236/Weimar/GSA_96_2725_Seite574.jpg",
+    "key": "Weimar__FA Hodel 236__Weimar__GSA_96_2725_Seite574",
+    "working_copy": "GSA_96_2725_Seite574.jpg"
+  },
+  "text": "der\nClass\nn,",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          194.0,
+          337.0
+        ],
+        [
+          311.0,
+          337.0
+        ]
+      ],
+      "bbox": [
+        194.0,
+        280.0,
+        311.0,
+        371.0
+      ],
+      "text": "der",
+      "confidence": null,
+      "regions": [
+        "_2aa7f327-b662-4d7d-9348-18b3c6a3a1a0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          321.0,
+          337.0
+        ],
+        [
+          506.0,
+          336.0
+        ]
+      ],
+      "bbox": [
+        319.0,
+        282.0,
+        506.0,
+        385.0
+      ],
+      "text": "Class",
+      "confidence": null,
+      "regions": [
+        "_2aa7f327-b662-4d7d-9348-18b3c6a3a1a0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          473.0,
+          2456.0
+        ],
+        [
+          512.0,
+          2455.0
+        ]
+      ],
+      "bbox": [
+        472.0,
+        2427.0,
+        512.0,
+        2484.0
+      ],
+      "text": "n,",
+      "confidence": null,
+      "regions": [
+        "_7adab8fd-1200-4ada-b1c8-6950bbe72b27"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 9131,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "172. IX. 3\nCLASSIC\n1741",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            194.0,
+            337.0
+          ],
+          [
+            311.0,
+            337.0
+          ]
+        ],
+        "bbox": [
+          194.0,
+          280.0,
+          311.0,
+          371.0
+        ],
+        "text": "172. IX. 3",
+        "confidence": 0.7626107335090637,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            321.0,
+            337.0
+          ],
+          [
+            506.0,
+            336.0
+          ]
+        ],
+        "bbox": [
+          319.0,
+          282.0,
+          506.0,
+          385.0
+        ],
+        "text": "CLASSIC",
+        "confidence": 0.8452372465814862,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            473.0,
+            2456.0
+          ],
+          [
+            512.0,
+            2455.0
+          ]
+        ],
+        "bbox": [
+          472.0,
+          2427.0,
+          512.0,
+          2484.0
+        ],
+        "text": "1741",
+        "confidence": 0.4870334751904011,
+        "regions": []
+      }
+    ],
+    "confidence": 0.6982938184269837,
+    "timing_ms": 9877,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T12:34:42+00:00"
+}

@@ -1,0 +1,126 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Aarau/upload/Unklar",
+  "source": {
+    "name": "00004-scan_2025-03-21_11-35-43r.tif",
+    "bytes": 25704254,
+    "sha256": "c7ab40f9ebeee2564aaa1b9e4894765d001e6eb989e6dcd5b6095a93a4d113d4",
+    "remote": "digitalisate/Aarau/upload/Unklar/00004-scan_2025-03-21_11-35-43r.tif",
+    "key": "Aarau__upload__Unklar__00004-scan_2025-03-21_11-35-43r",
+    "working_copy": "00004-scan_2025-03-21_11-35-43r.jpg"
+  },
+  "text": "1865\nvorschlägt",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          1740.0,
+          1158.0
+        ],
+        [
+          1740.0,
+          1192.0
+        ]
+      ],
+      "bbox": [
+        1674.0,
+        1158.0,
+        1792.0,
+        1192.0
+      ],
+      "text": "1865",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          2164.0,
+          1398.0
+        ],
+        [
+          2458.0,
+          1392.0
+        ]
+      ],
+      "bbox": [
+        2162.0,
+        1326.0,
+        2458.0,
+        1501.0
+      ],
+      "text": "vorschlägt",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 7397,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "1677\n1 verschij",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            1740.0,
+            1158.0
+          ],
+          [
+            1740.0,
+            1192.0
+          ]
+        ],
+        "bbox": [
+          1674.0,
+          1158.0,
+          1792.0,
+          1192.0
+        ],
+        "text": "1677",
+        "confidence": 0.4704836308956146,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            2164.0,
+            1398.0
+          ],
+          [
+            2458.0,
+            1392.0
+          ]
+        ],
+        "bbox": [
+          2162.0,
+          1326.0,
+          2458.0,
+          1501.0
+        ],
+        "text": "1 verschij",
+        "confidence": 0.7229813136160373,
+        "regions": []
+      }
+    ],
+    "confidence": 0.596732472255826,
+    "timing_ms": 9966,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-21T15:56:43+00:00"
+}

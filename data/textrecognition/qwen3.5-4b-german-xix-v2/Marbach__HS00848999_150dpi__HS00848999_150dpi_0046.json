@@ -1,0 +1,129 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00848999_150dpi",
+  "source": {
+    "name": "HS00848999_150dpi_0046.jpg",
+    "bytes": 137941,
+    "sha256": "9afa97d1ac66ee1d986027917144b9082c96e75852f3a433ac74c6dcb768e8cd",
+    "remote": "digitalisate/Marbach/HS00848999_150dpi/HS00848999_150dpi_0046.jpg",
+    "key": "Marbach__HS00848999_150dpi__HS00848999_150dpi_0046",
+    "working_copy": "HS00848999_150dpi_0046.jpg"
+  },
+  "text": "1849.\nder\nde\nMonsieur",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          3.0,
+          654.0
+        ],
+        [
+          8.0,
+          654.0
+        ]
+      ],
+      "bbox": [
+        3.0,
+        641.0,
+        8.0,
+        672.0
+      ],
+      "text": "1849.",
+      "confidence": null,
+      "regions": [
+        "_7a192e2a-cfcb-4c8b-bb72-de7c55fd64ff"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          2.0,
+          910.0
+        ],
+        [
+          30.0,
+          910.0
+        ]
+      ],
+      "bbox": [
+        1.0,
+        896.0,
+        30.0,
+        924.0
+      ],
+      "text": "der",
+      "confidence": null,
+      "regions": [
+        "_7d738897-f4a5-42ad-b5f4-2076294faf5d"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          6.0,
+          948.0
+        ],
+        [
+          28.0,
+          949.0
+        ]
+      ],
+      "bbox": [
+        5.0,
+        927.0,
+        28.0,
+        969.0
+      ],
+      "text": "de",
+      "confidence": null,
+      "regions": [
+        "_14e12f13-3ed5-473b-9cdc-35c0d1915452"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          8.0,
+          995.0
+        ],
+        [
+          19.0,
+          996.0
+        ]
+      ],
+      "bbox": [
+        6.0,
+        979.0,
+        19.0,
+        1013.0
+      ],
+      "text": "Monsieur",
+      "confidence": null,
+      "regions": [
+        "_1a2aac3e-1b88-4435-98fb-743340ad74c2"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 4816,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T14:16:06+00:00"
+}

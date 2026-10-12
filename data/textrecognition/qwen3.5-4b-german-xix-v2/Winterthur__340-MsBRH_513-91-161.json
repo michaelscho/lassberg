@@ -1,0 +1,189 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Winterthur",
+  "source": {
+    "name": "340-MsBRH_513-91-161.jpg",
+    "bytes": 4386018,
+    "sha256": "ed74dd382fc09bfa78a8c69c530e2c96d175d874647c3ee01cf296ebcff878c9",
+    "remote": "digitalisate/Winterthur/340-MsBRH_513-91-161.jpg",
+    "key": "Winterthur__340-MsBRH_513-91-161",
+    "working_copy": "340-MsBRH_513-91-161.jpg"
+  },
+  "text": "Hochwohlgeboren\nDem Dreiherrn Joseph von Lastbevor\n2. L. Cammerad und MeldesteRitter-Ritter\n1\nin Egishausen d. Thurgau",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          2522.0,
+          1216.0
+        ],
+        [
+          2993.0,
+          1237.0
+        ],
+        [
+          3793.0,
+          1229.0
+        ]
+      ],
+      "bbox": [
+        2522.0,
+        1110.0,
+        3793.0,
+        1326.0
+      ],
+      "text": "Hochwohlgeboren",
+      "confidence": null,
+      "regions": [
+        "_522441d3-097c-4bd3-b8d5-e0b9b39cf43d"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1443.0,
+          1710.0
+        ],
+        [
+          1794.0,
+          1718.0
+        ],
+        [
+          2181.0,
+          1757.0
+        ],
+        [
+          2743.0,
+          1786.0
+        ],
+        [
+          3937.0,
+          1796.0
+        ]
+      ],
+      "bbox": [
+        1440.0,
+        1596.0,
+        3937.0,
+        1843.0
+      ],
+      "text": "Dem Dreiherrn Joseph von Lastbevor",
+      "confidence": null,
+      "regions": [
+        "_522441d3-097c-4bd3-b8d5-e0b9b39cf43d"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1552.0,
+          1890.0
+        ],
+        [
+          1973.0,
+          1898.0
+        ],
+        [
+          2361.0,
+          1939.0
+        ],
+        [
+          3162.0,
+          1968.0
+        ],
+        [
+          3492.0,
+          1994.0
+        ],
+        [
+          3983.0,
+          2004.0
+        ]
+      ],
+      "bbox": [
+        1549.0,
+        1822.0,
+        3983.0,
+        2041.0
+      ],
+      "text": "2. L. Cammerad und MeldesteRitter-Ritter",
+      "confidence": null,
+      "regions": [
+        "_522441d3-097c-4bd3-b8d5-e0b9b39cf43d"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          3367.0,
+          2308.0
+        ],
+        [
+          3627.0,
+          2311.0
+        ]
+      ],
+      "bbox": [
+        3364.0,
+        2238.0,
+        3627.0,
+        2334.0
+      ],
+      "text": "1",
+      "confidence": null,
+      "regions": [
+        "_522441d3-097c-4bd3-b8d5-e0b9b39cf43d"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          2095.0,
+          2828.0
+        ],
+        [
+          2993.0,
+          2847.0
+        ],
+        [
+          3986.0,
+          2849.0
+        ]
+      ],
+      "bbox": [
+        2093.0,
+        2704.0,
+        3986.0,
+        2969.0
+      ],
+      "text": "in Egishausen d. Thurgau",
+      "confidence": null,
+      "regions": [
+        "_522441d3-097c-4bd3-b8d5-e0b9b39cf43d"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 20794,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T16:29:29+00:00"
+}

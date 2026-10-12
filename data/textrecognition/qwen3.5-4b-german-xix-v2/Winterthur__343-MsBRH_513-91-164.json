@@ -1,0 +1,169 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Winterthur",
+  "source": {
+    "name": "343-MsBRH_513-91-164.jpg",
+    "bytes": 4557956,
+    "sha256": "db3918b18c2e09c9882002d8859147e05fc3b63d1de33564e56def953ff2caf1",
+    "remote": "digitalisate/Winterthur/343-MsBRH_513-91-164.jpg",
+    "key": "Winterthur__343-MsBRH_513-91-164",
+    "working_copy": "343-MsBRH_513-91-164.jpg"
+  },
+  "text": "Gassevolgebaren\ndem Dreiherrn Joseph von Kaßberg d. R.\nKammerer\nund Weltesen = Rittens\nin Ergriffhausen 3. Thurgau",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          2324.0,
+          1220.0
+        ],
+        [
+          3002.0,
+          1239.0
+        ],
+        [
+          3543.0,
+          1231.0
+        ]
+      ],
+      "bbox": [
+        2322.0,
+        1113.0,
+        3543.0,
+        1315.0
+      ],
+      "text": "Gassevolgebaren",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1336.0,
+          1681.0
+        ],
+        [
+          1592.0,
+          1688.0
+        ],
+        [
+          2191.0,
+          1738.0
+        ],
+        [
+          3049.0,
+          1767.0
+        ],
+        [
+          3480.0,
+          1767.0
+        ],
+        [
+          3885.0,
+          1746.0
+        ]
+      ],
+      "bbox": [
+        1333.0,
+        1558.0,
+        3885.0,
+        1848.0
+      ],
+      "text": "dem Dreiherrn Joseph von Kaßberg d. R.",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1396.0,
+          1830.0
+        ],
+        [
+          1961.0,
+          1866.0
+        ]
+      ],
+      "bbox": [
+        1393.0,
+        1730.0,
+        1963.0,
+        1908.0
+      ],
+      "text": "Kammerer",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          2068.0,
+          1885.0
+        ],
+        [
+          2703.0,
+          1932.0
+        ],
+        [
+          3509.0,
+          1947.0
+        ]
+      ],
+      "bbox": [
+        2065.0,
+        1809.0,
+        3509.0,
+        2013.0
+      ],
+      "text": "und Weltesen = Rittens",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          2191.0,
+          2904.0
+        ],
+        [
+          3872.0,
+          2917.0
+        ]
+      ],
+      "bbox": [
+        2191.0,
+        2763.0,
+        3872.0,
+        3077.0
+      ],
+      "text": "in Ergriffhausen 3. Thurgau",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 17426,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T16:30:30+00:00"
+}

@@ -1,0 +1,218 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Aarau/upload/lassberg-letter-1126",
+  "source": {
+    "name": "00025-scan_2025-03-21_11-12-14l.tif",
+    "bytes": 27376826,
+    "sha256": "705272e06e9516bc95908210a60521b869bb2e15b5b23c711f86e954a29de904",
+    "remote": "digitalisate/Aarau/upload/lassberg-letter-1126/00025-scan_2025-03-21_11-12-14l.tif",
+    "key": "Aarau__upload__lassberg-letter-1126__00025-scan_2025-03-21_11-12-14l",
+    "working_copy": "00025-scan_2025-03-21_11-12-14l.jpg"
+  },
+  "text": "die\nMärz 1861\nMonsieur\nRomine",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          759.0,
+          156.0
+        ],
+        [
+          894.0,
+          160.0
+        ]
+      ],
+      "bbox": [
+        758.0,
+        84.0,
+        894.0,
+        187.0
+      ],
+      "text": "die",
+      "confidence": null,
+      "regions": [
+        "_75a271fa-7cc4-4da3-83a3-b6b8af3c9b9e"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1652.0,
+          226.0
+        ],
+        [
+          1964.0,
+          228.0
+        ]
+      ],
+      "bbox": [
+        1651.0,
+        158.0,
+        1964.0,
+        264.0
+      ],
+      "text": "März 1861",
+      "confidence": null,
+      "regions": [
+        "_75a271fa-7cc4-4da3-83a3-b6b8af3c9b9e"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          2112.0,
+          225.0
+        ],
+        [
+          2292.0,
+          230.0
+        ]
+      ],
+      "bbox": [
+        2110.0,
+        158.0,
+        2292.0,
+        253.0
+      ],
+      "text": "Monsieur",
+      "confidence": null,
+      "regions": [
+        "_75a271fa-7cc4-4da3-83a3-b6b8af3c9b9e"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          1566.0,
+          552.0
+        ],
+        [
+          1757.0,
+          556.0
+        ]
+      ],
+      "bbox": [
+        1564.0,
+        520.0,
+        1757.0,
+        586.0
+      ],
+      "text": "Romine",
+      "confidence": null,
+      "regions": [
+        "_543aeb98-81d1-4f7e-81f8-12a026f7346b"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 15746,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "OP HET\nROMANCIE STR\nDER VAN\nPromine",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            759.0,
+            156.0
+          ],
+          [
+            894.0,
+            160.0
+          ]
+        ],
+        "bbox": [
+          758.0,
+          84.0,
+          894.0,
+          187.0
+        ],
+        "text": "OP HET",
+        "confidence": 0.5961429079373678,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            1652.0,
+            226.0
+          ],
+          [
+            1964.0,
+            228.0
+          ]
+        ],
+        "bbox": [
+          1651.0,
+          158.0,
+          1964.0,
+          264.0
+        ],
+        "text": "ROMANCIE STR",
+        "confidence": 0.5573075686891874,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            2112.0,
+            225.0
+          ],
+          [
+            2292.0,
+            230.0
+          ]
+        ],
+        "bbox": [
+          2110.0,
+          158.0,
+          2292.0,
+          253.0
+        ],
+        "text": "DER VAN",
+        "confidence": 0.514318721635001,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            1566.0,
+            552.0
+          ],
+          [
+            1757.0,
+            556.0
+          ]
+        ],
+        "bbox": [
+          1564.0,
+          520.0,
+          1757.0,
+          586.0
+        ],
+        "text": "Promine",
+        "confidence": 0.7732488938740322,
+        "regions": []
+      }
+    ],
+    "confidence": 0.6102545230338972,
+    "timing_ms": 8401,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-21T16:20:59+00:00"
+}

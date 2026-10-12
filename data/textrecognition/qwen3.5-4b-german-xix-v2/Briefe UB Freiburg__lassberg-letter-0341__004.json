@@ -1,0 +1,126 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Briefe UB Freiburg/lassberg-letter-0341",
+  "source": {
+    "name": "004.tif",
+    "bytes": 18909530,
+    "sha256": "b472d54aee75d91f0fdc46c9a0dc2f31b3a3645c312e7f9f8d580a7a760cada9",
+    "remote": "digitalisate/Briefe UB Freiburg/lassberg-letter-0341/004.tif",
+    "key": "Briefe UB Freiburg__lassberg-letter-0341__004",
+    "working_copy": "004.jpg"
+  },
+  "text": "on dem\n.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          790.0,
+          306.0
+        ],
+        [
+          1143.0,
+          302.0
+        ]
+      ],
+      "bbox": [
+        788.0,
+        246.0,
+        1143.0,
+        341.0
+      ],
+      "text": "on dem",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1263.0,
+          295.0
+        ],
+        [
+          1349.0,
+          290.0
+        ]
+      ],
+      "bbox": [
+        1260.0,
+        248.0,
+        1351.0,
+        337.0
+      ],
+      "text": ".",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 23346,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "1740\n17",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            790.0,
+            306.0
+          ],
+          [
+            1143.0,
+            302.0
+          ]
+        ],
+        "bbox": [
+          788.0,
+          246.0,
+          1143.0,
+          341.0
+        ],
+        "text": "1740",
+        "confidence": 0.5343775078654289,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            1263.0,
+            295.0
+          ],
+          [
+            1349.0,
+            290.0
+          ]
+        ],
+        "bbox": [
+          1260.0,
+          248.0,
+          1351.0,
+          337.0
+        ],
+        "text": "17",
+        "confidence": 0.6096465289592743,
+        "regions": []
+      }
+    ],
+    "confidence": 0.5720120184123516,
+    "timing_ms": 9998,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T00:28:54+00:00"
+}

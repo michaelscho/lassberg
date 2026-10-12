@@ -1,0 +1,221 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "UB Freiburg/lassberg-letter-1677",
+  "source": {
+    "name": "lassberg-letter-1677-004.jpg",
+    "bytes": 516798,
+    "sha256": "4c9a0b299a193c304fd6906bfb10dd8f4580c6dbc5ddb21fed417e526616f127",
+    "remote": "digitalisate/UB Freiburg/lassberg-letter-1677/lassberg-letter-1677-004.jpg",
+    "key": "UB Freiburg__lassberg-letter-1677__lassberg-letter-1677-004",
+    "working_copy": "lassberg-letter-1677-004.jpg"
+  },
+  "text": "de\n1929\n16.\n11.\ngefordert durch\nh.\nc. Universitätsbibliothek Freiburg\nBaden-Würtemberg",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          1053.0,
+          1937.0
+        ],
+        [
+          1069.0,
+          1937.0
+        ]
+      ],
+      "bbox": [
+        1053.0,
+        1860.0,
+        1069.0,
+        1956.0
+      ],
+      "text": "de",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          725.0,
+          2133.0
+        ],
+        [
+          844.0,
+          2128.0
+        ]
+      ],
+      "bbox": [
+        723.0,
+        2090.0,
+        844.0,
+        2149.0
+      ],
+      "text": "1929",
+      "confidence": null,
+      "regions": [
+        "r2"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          781.0,
+          2233.0
+        ],
+        [
+          849.0,
+          2228.0
+        ]
+      ],
+      "bbox": [
+        778.0,
+        2188.0,
+        855.0,
+        2324.0
+      ],
+      "text": "16.",
+      "confidence": null,
+      "regions": [
+        "r2"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          900.0,
+          2130.0
+        ],
+        [
+          1035.0,
+          2130.0
+        ]
+      ],
+      "bbox": [
+        900.0,
+        2090.0,
+        1035.0,
+        2159.0
+      ],
+      "text": "11.",
+      "confidence": null,
+      "regions": [
+        "r2"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          1569.0,
+          2787.0
+        ],
+        [
+          1669.0,
+          2784.0
+        ]
+      ],
+      "bbox": [
+        1567.0,
+        2765.0,
+        1669.0,
+        2803.0
+      ],
+      "text": "gefordert durch",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          466.0,
+          2818.0
+        ],
+        [
+          1263.0,
+          2813.0
+        ]
+      ],
+      "bbox": [
+        464.0,
+        2787.0,
+        1263.0,
+        2839.0
+      ],
+      "text": "h.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          630.0,
+          2866.0
+        ],
+        [
+          1124.0,
+          2871.0
+        ]
+      ],
+      "bbox": [
+        628.0,
+        2834.0,
+        1124.0,
+        2885.0
+      ],
+      "text": "c. Universitätsbibliothek Freiburg",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 7,
+      "baseline": [
+        [
+          1532.0,
+          2876.0
+        ],
+        [
+          1723.0,
+          2879.0
+        ]
+      ],
+      "bbox": [
+        1530.0,
+        2852.0,
+        1723.0,
+        2892.0
+      ],
+      "text": "Baden-Würtemberg",
+      "confidence": null,
+      "regions": []
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 4970,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 31,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T04:16:17+00:00"
+}

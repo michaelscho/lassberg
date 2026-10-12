@@ -1,0 +1,159 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "St. Gallen Kantonsbibliothek/lassberg-letter-1550",
+  "source": {
+    "name": "VadSlg Ms S 350_BA Nr 223_2.tif",
+    "bytes": 19610474,
+    "sha256": "7ea29cc531a25cbac44f10eb6b999a236eec54bba1aba221ccaee80bc0eeaee1",
+    "remote": "digitalisate/St. Gallen Kantonsbibliothek/lassberg-letter-1550/VadSlg Ms S 350_BA Nr 223_2.tif",
+    "key": "St. Gallen Kantonsbibliothek__lassberg-letter-1550__VadSlg Ms S 350_BA Nr 223_2",
+    "working_copy": "VadSlg Ms S 350_BA Nr 223_2.jpg"
+  },
+  "text": "Seiner Wolgeboren,\nDem Herrn Wilhelm Hartmann, Meiler,\nin der Ehrenzellerschen Apotheker zu\nDr. Grollen.\nZürich, 1861",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          330.0,
+          1408.0
+        ],
+        [
+          1013.0,
+          1401.0
+        ]
+      ],
+      "bbox": [
+        328.0,
+        1341.0,
+        1013.0,
+        1443.0
+      ],
+      "text": "Seiner Wolgeboren,",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          396.0,
+          1683.0
+        ],
+        [
+          801.0,
+          1680.0
+        ],
+        [
+          1893.0,
+          1691.0
+        ]
+      ],
+      "bbox": [
+        396.0,
+        1595.0,
+        1893.0,
+        1731.0
+      ],
+      "text": "Dem Herrn Wilhelm Hartmann, Meiler,",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          465.0,
+          1865.0
+        ],
+        [
+          1116.0,
+          1878.0
+        ],
+        [
+          1789.0,
+          1878.0
+        ]
+      ],
+      "bbox": [
+        463.0,
+        1801.0,
+        1789.0,
+        1932.0
+      ],
+      "text": "in der Ehrenzellerschen Apotheker zu",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          1189.0,
+          2163.0
+        ],
+        [
+          1668.0,
+          2158.0
+        ]
+      ],
+      "bbox": [
+        1188.0,
+        2090.0,
+        1668.0,
+        2242.0
+      ],
+      "text": "Dr. Grollen.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          1562.0,
+          3178.0
+        ],
+        [
+          1915.0,
+          3191.0
+        ]
+      ],
+      "bbox": [
+        1560.0,
+        3098.0,
+        1915.0,
+        3215.0
+      ],
+      "text": "Zürich, 1861",
+      "confidence": null,
+      "regions": []
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 5683,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 31,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T21:38:50+00:00"
+}

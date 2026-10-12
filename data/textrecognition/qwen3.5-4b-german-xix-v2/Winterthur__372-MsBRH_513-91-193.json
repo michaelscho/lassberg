@@ -1,0 +1,155 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Winterthur",
+  "source": {
+    "name": "372-MsBRH_513-91-193.jpg",
+    "bytes": 4843141,
+    "sha256": "ba0567265c12457083051a3ba28b1ba68ec5aba66d68e5a7aabfc613b977a67e",
+    "remote": "digitalisate/Winterthur/372-MsBRH_513-91-193.jpg",
+    "key": "Winterthur__372-MsBRH_513-91-193",
+    "working_copy": "372-MsBRH_513-91-193.jpg"
+  },
+  "text": "Sr. Hochwölgebam̅en\ndem Herrn Generaln Prof. von Lußburg\nMuhrbeckler-Rittwe\nin Durchlaug Großfestigkeit\nanlen",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          2304.0,
+          1381.0
+        ],
+        [
+          3756.0,
+          1403.0
+        ]
+      ],
+      "bbox": [
+        2301.0,
+        1271.0,
+        3756.0,
+        1485.0
+      ],
+      "text": "Sr. Hochwölgebam̅en",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1359.0,
+          1834.0
+        ],
+        [
+          4105.0,
+          1814.0
+        ]
+      ],
+      "bbox": [
+        1356.0,
+        1710.0,
+        4105.0,
+        1932.0
+      ],
+      "text": "dem Herrn Generaln Prof. von Lußburg",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          2411.0,
+          1977.0
+        ],
+        [
+          3748.0,
+          1966.0
+        ]
+      ],
+      "bbox": [
+        2408.0,
+        1870.0,
+        3748.0,
+        2045.0
+      ],
+      "text": "Muhrbeckler-Rittwe",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          2034.0,
+          3224.0
+        ],
+        [
+          2909.0,
+          3229.0
+        ],
+        [
+          3787.0,
+          3201.0
+        ],
+        [
+          4136.0,
+          3204.0
+        ]
+      ],
+      "bbox": [
+        2034.0,
+        3072.0,
+        4136.0,
+        3423.0
+      ],
+      "text": "in Durchlaug Großfestigkeit",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          3449.0,
+          3361.0
+        ],
+        [
+          3900.0,
+          3350.0
+        ]
+      ],
+      "bbox": [
+        3447.0,
+        3288.0,
+        3900.0,
+        3415.0
+      ],
+      "text": "anlen",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 11446,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T16:52:06+00:00"
+}

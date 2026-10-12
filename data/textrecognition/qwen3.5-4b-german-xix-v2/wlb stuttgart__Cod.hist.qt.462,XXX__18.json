@@ -1,0 +1,165 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "wlb stuttgart/Cod.hist.qt.462,XXX",
+  "source": {
+    "name": "18.jpg",
+    "bytes": 10332463,
+    "sha256": "d5b55abc7257f64cfa71ea2e22dce542832cc7fc598188f19b1c365373d36061",
+    "remote": "digitalisate/wlb stuttgart/Cod.hist.qt.462,XXX/18.jpg",
+    "key": "wlb stuttgart__Cod.hist.qt.462,XXX__18",
+    "working_copy": "18.jpg"
+  },
+  "text": "Dein\nder\n13.\nHerrn\n30.\nvermehrt",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          964.0,
+          2032.0
+        ],
+        [
+          970.0,
+          1718.0
+        ]
+      ],
+      "bbox": [
+        923.0,
+        1716.0,
+        1036.0,
+        2032.0
+      ],
+      "text": "Dein",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1136.0,
+          2281.0
+        ],
+        [
+          1145.0,
+          2105.0
+        ]
+      ],
+      "bbox": [
+        1093.0,
+        2101.0,
+        1193.0,
+        2281.0
+      ],
+      "text": "der",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1134.0,
+          2499.0
+        ],
+        [
+          1139.0,
+          2360.0
+        ]
+      ],
+      "bbox": [
+        1089.0,
+        2358.0,
+        1182.0,
+        2499.0
+      ],
+      "text": "13.",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          1145.0,
+          2094.0
+        ],
+        [
+          1148.0,
+          1896.0
+        ]
+      ],
+      "bbox": [
+        1089.0,
+        1895.0,
+        1184.0,
+        2094.0
+      ],
+      "text": "Herrn",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          1150.0,
+          1859.0
+        ],
+        [
+          1154.0,
+          1716.0
+        ]
+      ],
+      "bbox": [
+        1089.0,
+        1715.0,
+        1221.0,
+        1859.0
+      ],
+      "text": "30.",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          1284.0,
+          2303.0
+        ],
+        [
+          1291.0,
+          2125.0
+        ]
+      ],
+      "bbox": [
+        1252.0,
+        2123.0,
+        1325.0,
+        2303.0
+      ],
+      "text": "vermehrt",
+      "confidence": null,
+      "regions": []
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 6129,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T20:55:23+00:00"
+}

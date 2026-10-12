@@ -1,0 +1,438 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Briefe UB Freiburg/lassberg-letter-0071",
+  "source": {
+    "name": "003.tif",
+    "bytes": 12971858,
+    "sha256": "6099f15cf3ef7c7cb4f184a29fd873aaf2b178973a602aa17afb90778f814ef1",
+    "remote": "digitalisate/Briefe UB Freiburg/lassberg-letter-0071/003.tif",
+    "key": "Briefe UB Freiburg__lassberg-letter-0071__003",
+    "working_copy": "003.jpg"
+  },
+  "text": "unentförmlich mit ihm sprechen. Könnte mich Elise!\nund 100000, Secko miner Sacke! Ue glücklich und froh\ndieser doch ich nur indis lebe, und dorge für deine Ge-\nsundthut, für den Leben, andas die die Dauer des\nmeinigen unaufloslich gewünscht ist. Gott seÿn\ndich und deinen Knaben!  Eig dein\nWenn du mir schreibt, Heuerth! so sei es nach Donau=\nEatingen und numérire deine Briefe.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          148.0,
+          310.0
+        ],
+        [
+          902.0,
+          321.0
+        ],
+        [
+          1487.0,
+          318.0
+        ]
+      ],
+      "bbox": [
+        147.0,
+        267.0,
+        1487.0,
+        345.0
+      ],
+      "text": "unentförmlich mit ihm sprechen. Könnte mich Elise!",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          153.0,
+          426.0
+        ],
+        [
+          1577.0,
+          440.0
+        ]
+      ],
+      "bbox": [
+        151.0,
+        380.0,
+        1577.0,
+        468.0
+      ],
+      "text": "und 100000, Secko miner Sacke! Ue glücklich und froh",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          150.0,
+          539.0
+        ],
+        [
+          670.0,
+          529.0
+        ],
+        [
+          1547.0,
+          525.0
+        ]
+      ],
+      "bbox": [
+        148.0,
+        477.0,
+        1547.0,
+        562.0
+      ],
+      "text": "dieser doch ich nur indis lebe, und dorge für deine Ge-",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          148.0,
+          655.0
+        ],
+        [
+          562.0,
+          634.0
+        ],
+        [
+          1458.0,
+          620.0
+        ]
+      ],
+      "bbox": [
+        147.0,
+        570.0,
+        1458.0,
+        665.0
+      ],
+      "text": "sundthut, für den Leben, andas die die Dauer des",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          165.0,
+          757.0
+        ],
+        [
+          573.0,
+          739.0
+        ],
+        [
+          1516.0,
+          736.0
+        ]
+      ],
+      "bbox": [
+        164.0,
+        689.0,
+        1516.0,
+        791.0
+      ],
+      "text": "meinigen unaufloslich gewünscht ist. Gott seÿn",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          172.0,
+          872.0
+        ],
+        [
+          816.0,
+          858.0
+        ],
+        [
+          1183.0,
+          836.0
+        ]
+      ],
+      "bbox": [
+        171.0,
+        797.0,
+        1183.0,
+        896.0
+      ],
+      "text": "dich und deinen Knaben!  Eig dein",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          151.0,
+          1333.0
+        ],
+        [
+          755.0,
+          1339.0
+        ],
+        [
+          1489.0,
+          1328.0
+        ]
+      ],
+      "bbox": [
+        151.0,
+        1280.0,
+        1489.0,
+        1350.0
+      ],
+      "text": "Wenn du mir schreibt, Heuerth! so sei es nach Donau=",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 7,
+      "baseline": [
+        [
+          177.0,
+          1452.0
+        ],
+        [
+          1147.0,
+          1435.0
+        ]
+      ],
+      "bbox": [
+        175.0,
+        1387.0,
+        1147.0,
+        1493.0
+      ],
+      "text": "Eatingen und numérire deine Briefe.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 14101,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "unaufhörlich mit ihm sprechen. Beneide mich Elise!\nund lebe wol, Seele meiner Seele! lebe glüklich und froh,\ndenke das ich mer inder lebe, und sorge für diene Ge-\nsundheit, für dein Leben, andas die Die Dauer des\nmeinigen unauflochlich geknüpft ist. Gott segne\ndich und deinen Knaben! Ewig dein\nWenn die mir schneibst heuerste ! so sei es nach Donau=\nExhingen und numenire deine Briefe.",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            148.0,
+            310.0
+          ],
+          [
+            902.0,
+            321.0
+          ],
+          [
+            1487.0,
+            318.0
+          ]
+        ],
+        "bbox": [
+          147.0,
+          267.0,
+          1487.0,
+          345.0
+        ],
+        "text": "unaufhörlich mit ihm sprechen. Beneide mich Elise!",
+        "confidence": 0.9102873100953943,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            153.0,
+            426.0
+          ],
+          [
+            1577.0,
+            440.0
+          ]
+        ],
+        "bbox": [
+          151.0,
+          380.0,
+          1577.0,
+          468.0
+        ],
+        "text": "und lebe wol, Seele meiner Seele! lebe glüklich und froh,",
+        "confidence": 0.8981762343439562,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            150.0,
+            539.0
+          ],
+          [
+            670.0,
+            529.0
+          ],
+          [
+            1547.0,
+            525.0
+          ]
+        ],
+        "bbox": [
+          148.0,
+          477.0,
+          1547.0,
+          562.0
+        ],
+        "text": "denke das ich mer inder lebe, und sorge für diene Ge-",
+        "confidence": 0.8901639233032862,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            148.0,
+            655.0
+          ],
+          [
+            562.0,
+            634.0
+          ],
+          [
+            1458.0,
+            620.0
+          ]
+        ],
+        "bbox": [
+          147.0,
+          570.0,
+          1458.0,
+          665.0
+        ],
+        "text": "sundheit, für dein Leben, andas die Die Dauer des",
+        "confidence": 0.9305584973096848,
+        "regions": []
+      },
+      {
+        "order": 4,
+        "baseline": [
+          [
+            165.0,
+            757.0
+          ],
+          [
+            573.0,
+            739.0
+          ],
+          [
+            1516.0,
+            736.0
+          ]
+        ],
+        "bbox": [
+          164.0,
+          689.0,
+          1516.0,
+          791.0
+        ],
+        "text": "meinigen unauflochlich geknüpft ist. Gott segne",
+        "confidence": 0.9056515134871006,
+        "regions": []
+      },
+      {
+        "order": 5,
+        "baseline": [
+          [
+            172.0,
+            872.0
+          ],
+          [
+            816.0,
+            858.0
+          ],
+          [
+            1183.0,
+            836.0
+          ]
+        ],
+        "bbox": [
+          171.0,
+          797.0,
+          1183.0,
+          896.0
+        ],
+        "text": "dich und deinen Knaben! Ewig dein",
+        "confidence": 0.9152705786806165,
+        "regions": []
+      },
+      {
+        "order": 6,
+        "baseline": [
+          [
+            151.0,
+            1333.0
+          ],
+          [
+            755.0,
+            1339.0
+          ],
+          [
+            1489.0,
+            1328.0
+          ]
+        ],
+        "bbox": [
+          151.0,
+          1280.0,
+          1489.0,
+          1350.0
+        ],
+        "text": "Wenn die mir schneibst heuerste ! so sei es nach Donau=",
+        "confidence": 0.892228872125799,
+        "regions": []
+      },
+      {
+        "order": 7,
+        "baseline": [
+          [
+            177.0,
+            1452.0
+          ],
+          [
+            1147.0,
+            1435.0
+          ]
+        ],
+        "bbox": [
+          175.0,
+          1387.0,
+          1147.0,
+          1493.0
+        ],
+        "text": "Exhingen und numenire deine Briefe.",
+        "confidence": 0.8860402958733695,
+        "regions": []
+      }
+    ],
+    "confidence": 0.9035471531524009,
+    "timing_ms": 70328,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-21T19:11:40+00:00"
+}

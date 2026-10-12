@@ -1,0 +1,126 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Aarau/upload/lassberg-letter-0888",
+  "source": {
+    "name": "00009-scan_2025-03-21_12-12-39l.tif",
+    "bytes": 882486,
+    "sha256": "f482870dd9aa6e869242f53501838c9195d0900f1d76467293b78619a39d2ce5",
+    "remote": "digitalisate/Aarau/upload/lassberg-letter-0888/00009-scan_2025-03-21_12-12-39l.tif",
+    "key": "Aarau__upload__lassberg-letter-0888__00009-scan_2025-03-21_12-12-39l",
+    "working_copy": "00009-scan_2025-03-21_12-12-39l.jpg"
+  },
+  "text": "Herr v. Laßbach\n30 Dez 1823",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          1995.0,
+          193.0
+        ],
+        [
+          2498.0,
+          200.0
+        ]
+      ],
+      "bbox": [
+        1993.0,
+        135.0,
+        2498.0,
+        249.0
+      ],
+      "text": "Herr v. Laßbach",
+      "confidence": null,
+      "regions": [
+        "_b0159c4a-559a-4742-b4ee-c99576ced11b"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1949.0,
+          291.0
+        ],
+        [
+          2284.0,
+          286.0
+        ]
+      ],
+      "bbox": [
+        1947.0,
+        245.0,
+        2284.0,
+        323.0
+      ],
+      "text": "30 Dez 1823",
+      "confidence": null,
+      "regions": [
+        "_b0159c4a-559a-4742-b4ee-c99576ced11b"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 12779,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "Jan v. Laßberg\n30 dag 1823",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            1995.0,
+            193.0
+          ],
+          [
+            2498.0,
+            200.0
+          ]
+        ],
+        "bbox": [
+          1993.0,
+          135.0,
+          2498.0,
+          249.0
+        ],
+        "text": "Jan v. Laßberg",
+        "confidence": 0.6969553977251053,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            1949.0,
+            291.0
+          ],
+          [
+            2284.0,
+            286.0
+          ]
+        ],
+        "bbox": [
+          1947.0,
+          245.0,
+          2284.0,
+          323.0
+        ],
+        "text": "30 dag 1823",
+        "confidence": 0.8786698606881228,
+        "regions": []
+      }
+    ],
+    "confidence": 0.7878126292066141,
+    "timing_ms": 11215,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-21T16:07:58+00:00"
+}

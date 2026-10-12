@@ -1,0 +1,80 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Kantonsbibliothek Appenzell/lassberg-letter-1013",
+  "source": {
+    "name": "40C-01-04-02-2_1262.tif",
+    "bytes": 13178158,
+    "sha256": "fa142262ac378383c58e11ddc99dc1acd69af99636be1922595f73e7e3f9eb94",
+    "remote": "digitalisate/Kantonsbibliothek Appenzell/lassberg-letter-1013/40C-01-04-02-2_1262.tif",
+    "key": "Kantonsbibliothek Appenzell__lassberg-letter-1013__40C-01-04-02-2_1262",
+    "working_copy": "40C-01-04-02-2_1262.jpg"
+  },
+  "text": "126",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          1435.0,
+          162.0
+        ],
+        [
+          1538.0,
+          158.0
+        ]
+      ],
+      "bbox": [
+        1433.0,
+        128.0,
+        1538.0,
+        188.0
+      ],
+      "text": "126",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 3909,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "1262.",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            1435.0,
+            162.0
+          ],
+          [
+            1538.0,
+            158.0
+          ]
+        ],
+        "bbox": [
+          1433.0,
+          128.0,
+          1538.0,
+          188.0
+        ],
+        "text": "1262.",
+        "confidence": 0.8800869584083557,
+        "regions": []
+      }
+    ],
+    "confidence": 0.8800869584083557,
+    "timing_ms": 5337,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T02:13:35+00:00"
+}

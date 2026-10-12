@@ -1,0 +1,157 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00926848_150dpi",
+  "source": {
+    "name": "HS00926848_0007.jpg",
+    "bytes": 199281,
+    "sha256": "54dfe789f038e1b2a7dc513834345220e485e14aedb6bd8f7206f162ffbda485",
+    "remote": "digitalisate/Marbach/HS00926848_150dpi/HS00926848_0007.jpg",
+    "key": "Marbach__HS00926848_150dpi__HS00926848_0007",
+    "working_copy": "HS00926848_0007.jpg"
+  },
+  "text": "N.O. Die Reliques of Miss Betsy und die Disertation\nsur le Romän de Roncevaux habe ich zufällig doppelt\nerhalten und wünsche, daß die Bibliotheca Gyriksens\ndiese Druckletten nicht verschmähen möchte.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          129.0,
+          154.0
+        ],
+        [
+          512.0,
+          151.0
+        ],
+        [
+          907.0,
+          158.0
+        ]
+      ],
+      "bbox": [
+        129.0,
+        118.0,
+        907.0,
+        172.0
+      ],
+      "text": "N.O. Die Reliques of Miss Betsy und die Disertation",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          154.0,
+          194.0
+        ],
+        [
+          279.0,
+          190.0
+        ],
+        [
+          533.0,
+          192.0
+        ],
+        [
+          950.0,
+          205.0
+        ]
+      ],
+      "bbox": [
+        154.0,
+        160.0,
+        950.0,
+        222.0
+      ],
+      "text": "sur le Romän de Roncevaux habe ich zufällig doppelt",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          157.0,
+          239.0
+        ],
+        [
+          271.0,
+          238.0
+        ],
+        [
+          619.0,
+          246.0
+        ],
+        [
+          815.0,
+          246.0
+        ],
+        [
+          965.0,
+          253.0
+        ]
+      ],
+      "bbox": [
+        156.0,
+        207.0,
+        965.0,
+        272.0
+      ],
+      "text": "erhalten und wünsche, daß die Bibliotheca Gyriksens",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          154.0,
+          286.0
+        ],
+        [
+          347.0,
+          283.0
+        ],
+        [
+          812.0,
+          289.0
+        ]
+      ],
+      "bbox": [
+        153.0,
+        250.0,
+        812.0,
+        316.0
+      ],
+      "text": "diese Druckletten nicht verschmähen möchte.",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 9449,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 32,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T21:25:21+00:00"
+}

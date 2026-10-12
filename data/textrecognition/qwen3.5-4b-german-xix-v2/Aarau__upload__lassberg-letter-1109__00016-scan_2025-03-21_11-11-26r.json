@@ -1,0 +1,214 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Aarau/upload/lassberg-letter-1109",
+  "source": {
+    "name": "00016-scan_2025-03-21_11-11-26r.tif",
+    "bytes": 25754414,
+    "sha256": "3e9acb6f64067e7858f6a5aa340cf61cd54f215b1ba5f63e5a0d14e6b76d6662",
+    "remote": "digitalisate/Aarau/upload/lassberg-letter-1109/00016-scan_2025-03-21_11-11-26r.tif",
+    "key": "Aarau__upload__lassberg-letter-1109__00016-scan_2025-03-21_11-11-26r",
+    "working_copy": "00016-scan_2025-03-21_11-11-26r.jpg"
+  },
+  "text": "der\nbe\n1848\n„",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          2190.0,
+          1453.0
+        ],
+        [
+          2292.0,
+          1451.0
+        ]
+      ],
+      "bbox": [
+        2188.0,
+        1396.0,
+        2292.0,
+        1484.0
+      ],
+      "text": "der",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          2247.0,
+          1521.0
+        ],
+        [
+          2373.0,
+          1521.0
+        ]
+      ],
+      "bbox": [
+        2247.0,
+        1457.0,
+        2373.0,
+        1552.0
+      ],
+      "text": "be",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          269.0,
+          1534.0
+        ],
+        [
+          345.0,
+          1534.0
+        ]
+      ],
+      "bbox": [
+        269.0,
+        1439.0,
+        345.0,
+        1636.0
+      ],
+      "text": "1848",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          970.0,
+          2012.0
+        ],
+        [
+          973.0,
+          2060.0
+        ]
+      ],
+      "bbox": [
+        948.0,
+        2006.0,
+        1011.0,
+        2060.0
+      ],
+      "text": "„",
+      "confidence": null,
+      "regions": []
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 5408,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "aug\npro fisco\n17 inclos\nbidder",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            269.0,
+            1534.0
+          ],
+          [
+            345.0,
+            1534.0
+          ]
+        ],
+        "bbox": [
+          269.0,
+          1439.0,
+          345.0,
+          1636.0
+        ],
+        "text": "aug",
+        "confidence": 0.6899020324150721,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            970.0,
+            2012.0
+          ],
+          [
+            973.0,
+            2060.0
+          ]
+        ],
+        "bbox": [
+          948.0,
+          2006.0,
+          1011.0,
+          2060.0
+        ],
+        "text": "pro fisco",
+        "confidence": 0.766133780280749,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            2190.0,
+            1453.0
+          ],
+          [
+            2292.0,
+            1451.0
+          ]
+        ],
+        "bbox": [
+          2188.0,
+          1396.0,
+          2292.0,
+          1484.0
+        ],
+        "text": "17 inclos",
+        "confidence": 0.6912789642810822,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            2247.0,
+            1521.0
+          ],
+          [
+            2373.0,
+            1521.0
+          ]
+        ],
+        "bbox": [
+          2247.0,
+          1457.0,
+          2373.0,
+          1552.0
+        ],
+        "text": "bidder",
+        "confidence": 0.5897374252478281,
+        "regions": []
+      }
+    ],
+    "confidence": 0.6842630505561829,
+    "timing_ms": 10781,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-21T16:12:52+00:00"
+}

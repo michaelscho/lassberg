@@ -1,0 +1,129 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "UB Bern",
+  "source": {
+    "name": "Mss_h_h_XXVI_105_4_21.tif",
+    "bytes": 34737240,
+    "sha256": "f3dbb37c19165d94940c8a3da14510ecc59e5843236d93d16f9e277aa820b639",
+    "remote": "digitalisate/UB Bern/Mss_h_h_XXVI_105_4_21.tif",
+    "key": "UB Bern__Mss_h_h_XXVI_105_4_21",
+    "working_copy": "Mss_h_h_XXVI_105_4_21.jpg"
+  },
+  "text": "brite\nLorchecker Classic\nmit dem\n5",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          169.0,
+          141.0
+        ],
+        [
+          255.0,
+          141.0
+        ]
+      ],
+      "bbox": [
+        169.0,
+        109.0,
+        255.0,
+        178.0
+      ],
+      "text": "brite",
+      "confidence": null,
+      "regions": [
+        "_02a26771-b360-4fbf-a0d6-b900350836cf"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          427.0,
+          143.0
+        ],
+        [
+          776.0,
+          143.0
+        ]
+      ],
+      "bbox": [
+        427.0,
+        113.0,
+        776.0,
+        186.0
+      ],
+      "text": "Lorchecker Classic",
+      "confidence": null,
+      "regions": [
+        "_d31f4f73-3f50-49ad-9479-e7846f705843"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          107.0,
+          1336.0
+        ],
+        [
+          699.0,
+          1332.0
+        ]
+      ],
+      "bbox": [
+        105.0,
+        1304.0,
+        699.0,
+        1368.0
+      ],
+      "text": "mit dem",
+      "confidence": null,
+      "regions": [
+        "_d7f4aef5-3b5c-4e40-b541-6b5f19451317"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          388.0,
+          3259.0
+        ],
+        [
+          392.0,
+          3246.0
+        ]
+      ],
+      "bbox": [
+        360.0,
+        3235.0,
+        444.0,
+        3274.0
+      ],
+      "text": "5",
+      "confidence": null,
+      "regions": [
+        "_dd1da595-37b3-444d-843a-d857b6eb0791"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 7434,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 31,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T01:53:08+00:00"
+}

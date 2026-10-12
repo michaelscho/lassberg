@@ -1,0 +1,398 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Aarau/upload/lassberg-letter-1118",
+  "source": {
+    "name": "00023-scan_2025-03-21_11-54-41l.tif",
+    "bytes": 926941,
+    "sha256": "724f198119b90031f39b46c5cc568fab6db3fcd8e5705be27e0939dcf35a87a3",
+    "remote": "digitalisate/Aarau/upload/lassberg-letter-1118/00023-scan_2025-03-21_11-54-41l.tif",
+    "key": "Aarau__upload__lassberg-letter-1118__00023-scan_2025-03-21_11-54-41l",
+    "working_copy": "00023-scan_2025-03-21_11-54-41l.jpg"
+  },
+  "text": "Dein\nMonsieur\nEscher\nLotte\nin\nsub Kat. Parzellen\ndes Me-\nLuzern",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          1611.0,
+          1490.0
+        ],
+        [
+          1611.0,
+          1417.0
+        ]
+      ],
+      "bbox": [
+        1575.0,
+        1417.0,
+        1644.0,
+        1490.0
+      ],
+      "text": "Dein",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1724.0,
+          1720.0
+        ],
+        [
+          1724.0,
+          1905.0
+        ]
+      ],
+      "bbox": [
+        1695.0,
+        1720.0,
+        1763.0,
+        1905.0
+      ],
+      "text": "Monsieur",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1728.0,
+          1166.0
+        ],
+        [
+          1740.0,
+          1057.0
+        ]
+      ],
+      "bbox": [
+        1697.0,
+        1051.0,
+        1768.0,
+        1168.0
+      ],
+      "text": "Escher",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          1724.0,
+          1520.0
+        ],
+        [
+          1732.0,
+          1248.0
+        ]
+      ],
+      "bbox": [
+        1688.0,
+        1247.0,
+        1778.0,
+        1520.0
+      ],
+      "text": "Lotte",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          1740.0,
+          900.0
+        ],
+        [
+          1740.0,
+          963.0
+        ]
+      ],
+      "bbox": [
+        1707.0,
+        900.0,
+        1768.0,
+        963.0
+      ],
+      "text": "in",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          1902.0,
+          1291.0
+        ],
+        [
+          1906.0,
+          858.0
+        ]
+      ],
+      "bbox": [
+        1876.0,
+        856.0,
+        1954.0,
+        1291.0
+      ],
+      "text": "sub Kat. Parzellen",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          806.0,
+          1287.0
+        ],
+        [
+          983.0,
+          1285.0
+        ]
+      ],
+      "bbox": [
+        804.0,
+        1227.0,
+        983.0,
+        1319.0
+      ],
+      "text": "des Me-",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 7,
+      "baseline": [
+        [
+          912.0,
+          1421.0
+        ],
+        [
+          1046.0,
+          1415.0
+        ]
+      ],
+      "bbox": [
+        908.0,
+        1319.0,
+        1046.0,
+        1450.0
+      ],
+      "text": "Luzern",
+      "confidence": null,
+      "regions": []
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 7068,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "des Maes\nLig\nMelchior Jansz\nTernate\nMilitaire Hindern\nMallabaar\nBurgemeester\nVerpachting",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            806.0,
+            1287.0
+          ],
+          [
+            983.0,
+            1285.0
+          ]
+        ],
+        "bbox": [
+          804.0,
+          1227.0,
+          983.0,
+          1319.0
+        ],
+        "text": "des Maes",
+        "confidence": 0.7534166499972343,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            912.0,
+            1421.0
+          ],
+          [
+            1046.0,
+            1415.0
+          ]
+        ],
+        "bbox": [
+          908.0,
+          1319.0,
+          1046.0,
+          1450.0
+        ],
+        "text": "Lig",
+        "confidence": 0.6823311348756155,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            1611.0,
+            1490.0
+          ],
+          [
+            1611.0,
+            1417.0
+          ]
+        ],
+        "bbox": [
+          1575.0,
+          1417.0,
+          1644.0,
+          1490.0
+        ],
+        "text": "Melchior Jansz",
+        "confidence": 0.7519540786743164,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            1724.0,
+            1720.0
+          ],
+          [
+            1724.0,
+            1905.0
+          ]
+        ],
+        "bbox": [
+          1695.0,
+          1720.0,
+          1763.0,
+          1905.0
+        ],
+        "text": "Ternate",
+        "confidence": 0.8090667639459882,
+        "regions": []
+      },
+      {
+        "order": 4,
+        "baseline": [
+          [
+            1728.0,
+            1166.0
+          ],
+          [
+            1740.0,
+            1057.0
+          ]
+        ],
+        "bbox": [
+          1697.0,
+          1051.0,
+          1768.0,
+          1168.0
+        ],
+        "text": "Militaire Hindern",
+        "confidence": 0.6312802284955978,
+        "regions": []
+      },
+      {
+        "order": 5,
+        "baseline": [
+          [
+            1724.0,
+            1520.0
+          ],
+          [
+            1732.0,
+            1248.0
+          ]
+        ],
+        "bbox": [
+          1688.0,
+          1247.0,
+          1778.0,
+          1520.0
+        ],
+        "text": "Mallabaar",
+        "confidence": 0.7442532488041453,
+        "regions": []
+      },
+      {
+        "order": 6,
+        "baseline": [
+          [
+            1740.0,
+            900.0
+          ],
+          [
+            1740.0,
+            963.0
+          ]
+        ],
+        "bbox": [
+          1707.0,
+          900.0,
+          1768.0,
+          963.0
+        ],
+        "text": "Burgemeester",
+        "confidence": 0.7575253577282032,
+        "regions": []
+      },
+      {
+        "order": 7,
+        "baseline": [
+          [
+            1902.0,
+            1291.0
+          ],
+          [
+            1906.0,
+            858.0
+          ]
+        ],
+        "bbox": [
+          1876.0,
+          856.0,
+          1954.0,
+          1291.0
+        ],
+        "text": "Verpachting",
+        "confidence": 0.7819652184844017,
+        "regions": []
+      }
+    ],
+    "confidence": 0.7389740851256879,
+    "timing_ms": 18468,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-21T16:14:26+00:00"
+}

@@ -1,0 +1,57 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Staatsarchiv Thurgau/Neuer Ordner - Kopie (74) - Kopie - Kopie - Kopie - Kopie - Kopie",
+  "source": {
+    "name": "DERIVAT_StATG_9-45__1-1___75-1_00164.jpg",
+    "bytes": 814001,
+    "sha256": "ea3e60d6a14318c8990330eaf72e2df3b58a511f07d5e7b0eda64730b85a726b",
+    "remote": "digitalisate/Staatsarchiv Thurgau/Neuer Ordner - Kopie (74) - Kopie - Kopie - Kopie - Kopie - Kopie/DERIVAT_StATG_9-45__1-1___75-1_00164.jpg",
+    "key": "Staatsarchiv Thurgau__Neuer Ordner - Kopie (74) - Kopie - Kopie - Kopie - Kopie - Kopie__DERIVAT_StATG_9-45__1-1___75-1_00164",
+    "working_copy": "DERIVAT_StATG_9-45__1-1___75-1_00164.jpg"
+  },
+  "text": "ein Lieber.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          580.0,
+          533.0
+        ],
+        [
+          809.0,
+          539.0
+        ]
+      ],
+      "bbox": [
+        580.0,
+        505.0,
+        809.0,
+        550.0
+      ],
+      "text": "ein Lieber.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 7154,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 44,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T21:48:45+00:00"
+}

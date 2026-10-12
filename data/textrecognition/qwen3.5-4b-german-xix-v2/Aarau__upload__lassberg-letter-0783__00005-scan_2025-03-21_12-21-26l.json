@@ -1,0 +1,80 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Aarau/upload/lassberg-letter-0783",
+  "source": {
+    "name": "00005-scan_2025-03-21_12-21-26l.tif",
+    "bytes": 25427678,
+    "sha256": "0918d0a648daea75dba3deac2386a38eaf4b2bb5f6e43b0d5feead574519f9c0",
+    "remote": "digitalisate/Aarau/upload/lassberg-letter-0783/00005-scan_2025-03-21_12-21-26l.tif",
+    "key": "Aarau__upload__lassberg-letter-0783__00005-scan_2025-03-21_12-21-26l",
+    "working_copy": "00005-scan_2025-03-21_12-21-26l.jpg"
+  },
+  "text": "14",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          968.0,
+          2246.0
+        ],
+        [
+          973.0,
+          2115.0
+        ]
+      ],
+      "bbox": [
+        926.0,
+        2111.0,
+        1004.0,
+        2246.0
+      ],
+      "text": "14",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 9094,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "adsistent",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            968.0,
+            2246.0
+          ],
+          [
+            973.0,
+            2115.0
+          ]
+        ],
+        "bbox": [
+          926.0,
+          2111.0,
+          1004.0,
+          2246.0
+        ],
+        "text": "adsistent",
+        "confidence": 0.7186495098802779,
+        "regions": []
+      }
+    ],
+    "confidence": 0.7186495098802779,
+    "timing_ms": 8463,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-21T15:57:32+00:00"
+}

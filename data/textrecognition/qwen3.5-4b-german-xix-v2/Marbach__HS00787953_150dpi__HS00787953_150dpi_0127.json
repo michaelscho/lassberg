@@ -1,0 +1,105 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00787953_150dpi",
+  "source": {
+    "name": "HS00787953_150dpi_0127.jpg",
+    "bytes": 143692,
+    "sha256": "4e2fc4ae638494662b1fea88fc4ef291640c8244574503d82a91fb089e722007",
+    "remote": "digitalisate/Marbach/HS00787953_150dpi/HS00787953_150dpi_0127.jpg",
+    "key": "Marbach__HS00787953_150dpi__HS00787953_150dpi_0127",
+    "working_copy": "HS00787953_150dpi_0127.jpg"
+  },
+  "text": "38\n181\ns¬",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          789.0,
+          68.0
+        ],
+        [
+          818.0,
+          68.0
+        ]
+      ],
+      "bbox": [
+        789.0,
+        58.0,
+        818.0,
+        80.0
+      ],
+      "text": "38",
+      "confidence": null,
+      "regions": [
+        "_9eab8436-50a7-4857-842f-1de169c90c2f"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          395.0,
+          1188.0
+        ],
+        [
+          436.0,
+          1186.0
+        ]
+      ],
+      "bbox": [
+        394.0,
+        1160.0,
+        436.0,
+        1197.0
+      ],
+      "text": "181",
+      "confidence": null,
+      "regions": [
+        "_290ef0bc-5cb4-476a-9c55-a501f4522f4a"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          460.0,
+          1185.0
+        ],
+        [
+          477.0,
+          1183.0
+        ]
+      ],
+      "bbox": [
+        458.0,
+        1158.0,
+        477.0,
+        1195.0
+      ],
+      "text": "s¬",
+      "confidence": null,
+      "regions": [
+        "_290ef0bc-5cb4-476a-9c55-a501f4522f4a"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 4213,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T12:22:13+00:00"
+}

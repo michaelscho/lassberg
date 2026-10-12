@@ -1,0 +1,231 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "UB Bern",
+  "source": {
+    "name": "Mss_h_h_XXVI_105_5_35.tif",
+    "bytes": 39791172,
+    "sha256": "e0140501350beb0d33f9cbf3cb08a4030d6c9f8336edbf3aa5f4da560ab5438c",
+    "remote": "digitalisate/UB Bern/Mss_h_h_XXVI_105_5_35.tif",
+    "key": "UB Bern__Mss_h_h_XXVI_105_5_35",
+    "working_copy": "Mss_h_h_XXVI_105_5_35.jpg"
+  },
+  "text": "Calibrite\nRichter\nund\n4\n5\n3\n8\n6\n6",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          105.0,
+          107.0
+        ],
+        [
+          227.0,
+          103.0
+        ]
+      ],
+      "bbox": [
+        103.0,
+        50.0,
+        227.0,
+        134.0
+      ],
+      "text": "Calibrite",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          397.0,
+          111.0
+        ],
+        [
+          756.0,
+          111.0
+        ]
+      ],
+      "bbox": [
+        397.0,
+        75.0,
+        756.0,
+        149.0
+      ],
+      "text": "Richter",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          98.0,
+          1301.0
+        ],
+        [
+          685.0,
+          1301.0
+        ]
+      ],
+      "bbox": [
+        98.0,
+        1269.0,
+        685.0,
+        1337.0
+      ],
+      "text": "und",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          376.0,
+          3079.0
+        ],
+        [
+          380.0,
+          3102.0
+        ]
+      ],
+      "bbox": [
+        351.0,
+        3073.0,
+        405.0,
+        3104.0
+      ],
+      "text": "4",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          372.0,
+          3220.0
+        ],
+        [
+          380.0,
+          3205.0
+        ]
+      ],
+      "bbox": [
+        353.0,
+        3191.0,
+        441.0,
+        3254.0
+      ],
+      "text": "5",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          372.0,
+          3220.0
+        ],
+        [
+          386.0,
+          3220.0
+        ]
+      ],
+      "bbox": [
+        372.0,
+        3191.0,
+        386.0,
+        3252.0
+      ],
+      "text": "3",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          376.0,
+          3573.0
+        ],
+        [
+          395.0,
+          3573.0
+        ]
+      ],
+      "bbox": [
+        376.0,
+        3544.0,
+        395.0,
+        3599.0
+      ],
+      "text": "8",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 7,
+      "baseline": [
+        [
+          378.0,
+          3697.0
+        ],
+        [
+          386.0,
+          3676.0
+        ]
+      ],
+      "bbox": [
+        367.0,
+        3670.0,
+        418.0,
+        3710.0
+      ],
+      "text": "6",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 8,
+      "baseline": [
+        [
+          374.0,
+          3693.0
+        ],
+        [
+          393.0,
+          3689.0
+        ]
+      ],
+      "bbox": [
+        365.0,
+        3638.0,
+        395.0,
+        3718.0
+      ],
+      "text": "6",
+      "confidence": null,
+      "regions": []
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 7724,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 45,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T02:01:51+00:00"
+}

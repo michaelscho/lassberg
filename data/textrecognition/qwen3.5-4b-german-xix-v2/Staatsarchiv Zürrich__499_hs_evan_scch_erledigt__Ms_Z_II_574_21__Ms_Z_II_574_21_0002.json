@@ -1,0 +1,253 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Staatsarchiv Zürrich/499_hs_evan_scch_erledigt/Ms_Z_II_574_21",
+  "source": {
+    "name": "Ms_Z_II_574_21_0002.tif",
+    "bytes": 25080360,
+    "sha256": "652af2c0c7e0d874d432588767251cd8dffe6190c02ff42753a36a73c90ec655",
+    "remote": "digitalisate/Staatsarchiv Zürrich/499_hs_evan_scch_erledigt/Ms_Z_II_574_21/Ms_Z_II_574_21_0002.tif",
+    "key": "Staatsarchiv Zürrich__499_hs_evan_scch_erledigt__Ms_Z_II_574_21__Ms_Z_II_574_21_0002",
+    "working_copy": "Ms_Z_II_574_21_0002.jpg"
+  },
+  "text": "daß er etwas anderes als:\n--\nhelperic heissen solle.\ngenehmigen Sie den Ausdruck der vollkommensten Hochachtung\nmit welcher ich die ere habe zu verharren\nEngisshausen\t\tam 8. April\t1833\nHerrn  Wundert.\ngehorsamer Diner\nJoseph von Latzbberg",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          324.0,
+          1112.0
+        ],
+        [
+          1138.0,
+          1098.0
+        ],
+        [
+          1358.0,
+          1086.0
+        ]
+      ],
+      "bbox": [
+        322.0,
+        1033.0,
+        1358.0,
+        1141.0
+      ],
+      "text": "daß er etwas anderes als:",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1547.0,
+          1079.0
+        ],
+        [
+          1581.0,
+          1079.0
+        ]
+      ],
+      "bbox": [
+        1547.0,
+        1024.0,
+        1581.0,
+        1093.0
+      ],
+      "text": "--",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1586.0,
+          1079.0
+        ],
+        [
+          2318.0,
+          1058.0
+        ]
+      ],
+      "bbox": [
+        1583.0,
+        994.0,
+        2318.0,
+        1100.0
+      ],
+      "text": "helperic heissen solle.",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          386.0,
+          1242.0
+        ],
+        [
+          2471.0,
+          1189.0
+        ]
+      ],
+      "bbox": [
+        384.0,
+        1128.0,
+        2471.0,
+        1272.0
+      ],
+      "text": "genehmigen Sie den Ausdruck der vollkommensten Hochachtung",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          409.0,
+          1359.0
+        ],
+        [
+          2012.0,
+          1325.0
+        ]
+      ],
+      "bbox": [
+        407.0,
+        1263.0,
+        2012.0,
+        1384.0
+      ],
+      "text": "mit welcher ich die ere habe zu verharren",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          361.0,
+          1667.0
+        ],
+        [
+          1297.0,
+          1639.0
+        ]
+      ],
+      "bbox": [
+        358.0,
+        1573.0,
+        1297.0,
+        1736.0
+      ],
+      "text": "Engisshausen\t\tam 8. April\t1833",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          1437.0,
+          1465.0
+        ],
+        [
+          1859.0,
+          1453.0
+        ]
+      ],
+      "bbox": [
+        1434.0,
+        1389.0,
+        1859.0,
+        1499.0
+      ],
+      "text": "Herrn  Wundert.",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 7,
+      "baseline": [
+        [
+          1565.0,
+          2015.0
+        ],
+        [
+          2157.0,
+          1990.0
+        ]
+      ],
+      "bbox": [
+        1561.0,
+        1942.0,
+        2157.0,
+        2045.0
+      ],
+      "text": "gehorsamer Diner",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 8,
+      "baseline": [
+        [
+          1570.0,
+          2124.0
+        ],
+        [
+          2090.0,
+          2101.0
+        ]
+      ],
+      "bbox": [
+        1567.0,
+        2032.0,
+        2092.0,
+        2179.0
+      ],
+      "text": "Joseph von Latzbberg",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 7431,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 32,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T23:42:57+00:00"
+}

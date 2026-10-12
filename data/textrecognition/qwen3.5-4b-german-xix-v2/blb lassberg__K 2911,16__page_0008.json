@@ -1,0 +1,121 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "blb lassberg/K 2911,16",
+  "source": {
+    "name": "page_0008.jpg",
+    "bytes": 383850,
+    "sha256": "1249e2934bc94c10a6560f7d7ef6956e5a0bab13410f7ccbce33c3ae22d3f172",
+    "remote": "digitalisate/blb lassberg/K 2911,16/page_0008.jpg",
+    "key": "blb lassberg__K 2911,16__page_0008",
+    "working_copy": "page_0008.jpg"
+  },
+  "text": "An demselben Tage als die in Transport der Feier des 18.\nOctober einwand, weil Georg Kroske, Ludwinn\nund Sophie Herzhausen auch da und dahin zu.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          199.0,
+          315.0
+        ],
+        [
+          733.0,
+          315.0
+        ],
+        [
+          1549.0,
+          300.0
+        ]
+      ],
+      "bbox": [
+        199.0,
+        241.0,
+        1549.0,
+        348.0
+      ],
+      "text": "An demselben Tage als die in Transport der Feier des 18.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          218.0,
+          426.0
+        ],
+        [
+          626.0,
+          426.0
+        ],
+        [
+          1077.0,
+          407.0
+        ],
+        [
+          1528.0,
+          399.0
+        ]
+      ],
+      "bbox": [
+        217.0,
+        343.0,
+        1528.0,
+        453.0
+      ],
+      "text": "October einwand, weil Georg Kroske, Ludwinn",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          224.0,
+          527.0
+        ],
+        [
+          583.0,
+          527.0
+        ],
+        [
+          1462.0,
+          500.0
+        ]
+      ],
+      "bbox": [
+        223.0,
+        444.0,
+        1462.0,
+        569.0
+      ],
+      "text": "und Sophie Herzhausen auch da und dahin zu.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 6038,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T18:54:50+00:00"
+}

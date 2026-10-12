@@ -1,0 +1,234 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00787950_150dpi",
+  "source": {
+    "name": "HS00787950_0002.jpg",
+    "bytes": 112026,
+    "sha256": "440de229345d4078c15b12729904c0fdc2139fa8da672788e7bfa9706bde3c1a",
+    "remote": "digitalisate/Marbach/HS00787950_150dpi/HS00787950_0002.jpg",
+    "key": "Marbach__HS00787950_150dpi__HS00787950_0002",
+    "working_copy": "HS00787950_0002.jpg"
+  },
+  "text": "J. Escher\ns¬\ns¬\n\t+\tAltmühl",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          759.0,
+          102.0
+        ],
+        [
+          832.0,
+          102.0
+        ]
+      ],
+      "bbox": [
+        759.0,
+        75.0,
+        832.0,
+        109.0
+      ],
+      "text": "J. Escher",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          563.0,
+          270.0
+        ],
+        [
+          592.0,
+          268.0
+        ]
+      ],
+      "bbox": [
+        562.0,
+        242.0,
+        592.0,
+        275.0
+      ],
+      "text": "s¬",
+      "confidence": null,
+      "regions": [
+        "r2"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          387.0,
+          623.0
+        ],
+        [
+          397.0,
+          623.0
+        ]
+      ],
+      "bbox": [
+        385.0,
+        587.0,
+        397.0,
+        634.0
+      ],
+      "text": "s¬",
+      "confidence": null,
+      "regions": [
+        "r2"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          441.0,
+          618.0
+        ],
+        [
+          472.0,
+          616.0
+        ],
+        [
+          518.0,
+          616.0
+        ],
+        [
+          609.0,
+          618.0
+        ]
+      ],
+      "bbox": [
+        440.0,
+        588.0,
+        609.0,
+        627.0
+      ],
+      "text": "\t+\tAltmühl",
+      "confidence": null,
+      "regions": [
+        "r2"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 43886,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "von\n41\nMinschl.\nA: Schweb",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            563.0,
+            270.0
+          ],
+          [
+            592.0,
+            268.0
+          ]
+        ],
+        "bbox": [
+          562.0,
+          242.0,
+          592.0,
+          275.0
+        ],
+        "text": "von",
+        "confidence": 0.7284414370854696,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            387.0,
+            623.0
+          ],
+          [
+            397.0,
+            623.0
+          ]
+        ],
+        "bbox": [
+          385.0,
+          587.0,
+          397.0,
+          634.0
+        ],
+        "text": "41",
+        "confidence": 0.7839390635490417,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            441.0,
+            618.0
+          ],
+          [
+            472.0,
+            616.0
+          ],
+          [
+            518.0,
+            616.0
+          ],
+          [
+            609.0,
+            618.0
+          ]
+        ],
+        "bbox": [
+          440.0,
+          588.0,
+          609.0,
+          627.0
+        ],
+        "text": "Minschl.",
+        "confidence": 0.7073239684104919,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            759.0,
+            102.0
+          ],
+          [
+            832.0,
+            102.0
+          ]
+        ],
+        "bbox": [
+          759.0,
+          75.0,
+          832.0,
+          109.0
+        ],
+        "text": "A: Schweb",
+        "confidence": 0.8704963591363695,
+        "regions": []
+      }
+    ],
+    "confidence": 0.7725502070453432,
+    "timing_ms": 20362,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T05:04:06+00:00"
+}

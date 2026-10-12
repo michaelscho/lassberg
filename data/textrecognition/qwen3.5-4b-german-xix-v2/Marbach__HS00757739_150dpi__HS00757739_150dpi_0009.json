@@ -1,0 +1,172 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00757739_150dpi",
+  "source": {
+    "name": "HS00757739_150dpi_0009.jpg",
+    "bytes": 75936,
+    "sha256": "60f6dfc8bfd22e4f63ec2a0acc4c6bdb0e6df7812dc8794f2f10c4c8e57d58a2",
+    "remote": "digitalisate/Marbach/HS00757739_150dpi/HS00757739_150dpi_0009.jpg",
+    "key": "Marbach__HS00757739_150dpi__HS00757739_150dpi_0009",
+    "working_copy": "HS00757739_150dpi_0009.jpg"
+  },
+  "text": "11. 18.\nsich\ns¬",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          422.0,
+          342.0
+        ],
+        [
+          535.0,
+          340.0
+        ]
+      ],
+      "bbox": [
+        421.0,
+        309.0,
+        535.0,
+        353.0
+      ],
+      "text": "11. 18.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          406.0,
+          422.0
+        ],
+        [
+          455.0,
+          423.0
+        ]
+      ],
+      "bbox": [
+        406.0,
+        392.0,
+        455.0,
+        434.0
+      ],
+      "text": "sich",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          481.0,
+          515.0
+        ],
+        [
+          496.0,
+          513.0
+        ]
+      ],
+      "bbox": [
+        477.0,
+        483.0,
+        497.0,
+        524.0
+      ],
+      "text": "s¬",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 33953,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "17. II. 1850\nWeinsberg\n3 Bl.",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            422.0,
+            342.0
+          ],
+          [
+            535.0,
+            340.0
+          ]
+        ],
+        "bbox": [
+          421.0,
+          309.0,
+          535.0,
+          353.0
+        ],
+        "text": "17. II. 1850",
+        "confidence": 0.903519369661808,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            406.0,
+            422.0
+          ],
+          [
+            455.0,
+            423.0
+          ]
+        ],
+        "bbox": [
+          406.0,
+          392.0,
+          455.0,
+          434.0
+        ],
+        "text": "Weinsberg",
+        "confidence": 0.8697746263609992,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            481.0,
+            515.0
+          ],
+          [
+            496.0,
+            513.0
+          ]
+        ],
+        "bbox": [
+          477.0,
+          483.0,
+          497.0,
+          524.0
+        ],
+        "text": "3 Bl.",
+        "confidence": 0.7240129351615906,
+        "regions": []
+      }
+    ],
+    "confidence": 0.8324356437281327,
+    "timing_ms": 56772,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T04:24:13+00:00"
+}

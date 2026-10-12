@@ -1,0 +1,105 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00787953_150dpi",
+  "source": {
+    "name": "HS00787953_150dpi_0332.jpg",
+    "bytes": 112939,
+    "sha256": "f4f2c883bebaced3237b61696b2aacc3d6933100b668c80d106ce76051e58300",
+    "remote": "digitalisate/Marbach/HS00787953_150dpi/HS00787953_150dpi_0332.jpg",
+    "key": "Marbach__HS00787953_150dpi__HS00787953_150dpi_0332",
+    "working_copy": "HS00787953_150dpi_0332.jpg"
+  },
+  "text": "der\ns¬\ns¬",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          699.0,
+          117.0
+        ],
+        [
+          745.0,
+          118.0
+        ]
+      ],
+      "bbox": [
+        698.0,
+        85.0,
+        745.0,
+        130.0
+      ],
+      "text": "der",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          809.0,
+          615.0
+        ],
+        [
+          814.0,
+          615.0
+        ]
+      ],
+      "bbox": [
+        809.0,
+        604.0,
+        814.0,
+        624.0
+      ],
+      "text": "s¬",
+      "confidence": null,
+      "regions": [
+        "r2"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          448.0,
+          549.0
+        ],
+        [
+          468.0,
+          550.0
+        ]
+      ],
+      "bbox": [
+        447.0,
+        522.0,
+        468.0,
+        560.0
+      ],
+      "text": "s¬",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 10677,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T13:50:08+00:00"
+}

@@ -1,0 +1,218 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Kantonsbibliothek Appenzell/lassberg-letter-0857",
+  "source": {
+    "name": "40C-01-04-01-1_Ms-321-04-01_0261.tif",
+    "bytes": 25055564,
+    "sha256": "129f7cebf644dd3efe1fb6efb613ea0c2e1376af96acf12d257886e28a9fba67",
+    "remote": "digitalisate/Kantonsbibliothek Appenzell/lassberg-letter-0857/40C-01-04-01-1_Ms-321-04-01_0261.tif",
+    "key": "Kantonsbibliothek Appenzell__lassberg-letter-0857__40C-01-04-01-1_Ms-321-04-01_0261",
+    "working_copy": "40C-01-04-01-1_Ms-321-04-01_0261.jpg"
+  },
+  "text": "Hauften 19. Juli 1822.\nsprech vom Lastberg\nFrankreich. 29.\n261.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          1674.0,
+          187.0
+        ],
+        [
+          2291.0,
+          174.0
+        ]
+      ],
+      "bbox": [
+        1671.0,
+        120.0,
+        2291.0,
+        254.0
+      ],
+      "text": "Hauften 19. Juli 1822.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1782.0,
+          294.0
+        ],
+        [
+          2398.0,
+          291.0
+        ]
+      ],
+      "bbox": [
+        1780.0,
+        234.0,
+        2398.0,
+        349.0
+      ],
+      "text": "sprech vom Lastberg",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1842.0,
+          388.0
+        ],
+        [
+          2257.0,
+          395.0
+        ]
+      ],
+      "bbox": [
+        1840.0,
+        342.0,
+        2257.0,
+        450.0
+      ],
+      "text": "Frankreich. 29.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          123.0,
+          155.0
+        ],
+        [
+          210.0,
+          158.0
+        ]
+      ],
+      "bbox": [
+        121.0,
+        112.0,
+        210.0,
+        188.0
+      ],
+      "text": "261.",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 6446,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "261.\nExpössausan 19. J. u. 1823\nJostagh von Zustbrug\nbeantreffende",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            123.0,
+            155.0
+          ],
+          [
+            210.0,
+            158.0
+          ]
+        ],
+        "bbox": [
+          121.0,
+          112.0,
+          210.0,
+          188.0
+        ],
+        "text": "261.",
+        "confidence": 0.8278096169233322,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            1674.0,
+            187.0
+          ],
+          [
+            2291.0,
+            174.0
+          ]
+        ],
+        "bbox": [
+          1671.0,
+          120.0,
+          2291.0,
+          254.0
+        ],
+        "text": "Expössausan 19. J. u. 1823",
+        "confidence": 0.7704439717862341,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            1782.0,
+            294.0
+          ],
+          [
+            2398.0,
+            291.0
+          ]
+        ],
+        "bbox": [
+          1780.0,
+          234.0,
+          2398.0,
+          349.0
+        ],
+        "text": "Jostagh von Zustbrug",
+        "confidence": 0.7668319135904312,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            1842.0,
+            388.0
+          ],
+          [
+            2257.0,
+            395.0
+          ]
+        ],
+        "bbox": [
+          1840.0,
+          342.0,
+          2257.0,
+          450.0
+        ],
+        "text": "beantreffende",
+        "confidence": 0.7743717294472915,
+        "regions": []
+      }
+    ],
+    "confidence": 0.7848643079368223,
+    "timing_ms": 11846,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T01:51:32+00:00"
+}

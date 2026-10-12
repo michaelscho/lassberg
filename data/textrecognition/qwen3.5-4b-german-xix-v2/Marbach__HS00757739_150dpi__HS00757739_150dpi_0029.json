@@ -1,0 +1,356 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00757739_150dpi",
+  "source": {
+    "name": "HS00757739_150dpi_0029.jpg",
+    "bytes": 123695,
+    "sha256": "e09fc26e9dfe33920a9eeb1a1b1bf86d6ed3836caaee596c00574654ba3e5fe3",
+    "remote": "digitalisate/Marbach/HS00757739_150dpi/HS00757739_150dpi_0029.jpg",
+    "key": "Marbach__HS00757739_150dpi__HS00757739_150dpi_0029",
+    "working_copy": "HS00757739_150dpi_0029.jpg"
+  },
+  "text": "Dabei: Kerner\n1.1855\nWeinberg\nchristinus: Gedicke\nDieß soll ich\n18.\n1411",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          99.0,
+          803.0
+        ],
+        [
+          334.0,
+          801.0
+        ]
+      ],
+      "bbox": [
+        99.0,
+        760.0,
+        334.0,
+        819.0
+      ],
+      "text": "Dabei: Kerner",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          392.0,
+          477.0
+        ],
+        [
+          538.0,
+          475.0
+        ]
+      ],
+      "bbox": [
+        391.0,
+        438.0,
+        538.0,
+        488.0
+      ],
+      "text": "1.1855",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          341.0,
+          581.0
+        ],
+        [
+          535.0,
+          581.0
+        ]
+      ],
+      "bbox": [
+        341.0,
+        541.0,
+        535.0,
+        605.0
+      ],
+      "text": "Weinberg",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          385.0,
+          802.0
+        ],
+        [
+          777.0,
+          799.0
+        ]
+      ],
+      "bbox": [
+        384.0,
+        762.0,
+        777.0,
+        819.0
+      ],
+      "text": "christinus: Gedicke",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          243.0,
+          878.0
+        ],
+        [
+          495.0,
+          872.0
+        ]
+      ],
+      "bbox": [
+        242.0,
+        832.0,
+        495.0,
+        893.0
+      ],
+      "text": "Dieß soll ich",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          729.0,
+          1166.0
+        ],
+        [
+          765.0,
+          1167.0
+        ]
+      ],
+      "bbox": [
+        728.0,
+        1137.0,
+        765.0,
+        1180.0
+      ],
+      "text": "18.",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          674.0,
+          1225.0
+        ],
+        [
+          776.0,
+          1226.0
+        ]
+      ],
+      "bbox": [
+        673.0,
+        1194.0,
+        776.0,
+        1241.0
+      ],
+      "text": "1411",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 6489,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "Давсі: Кеннеі, Јизѣйсь\n15.1.1855\nЮетъвесь\nJustinus : Gedichte\n\"Дір Зосе і я ...\"\n11418\n1141а",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            99.0,
+            803.0
+          ],
+          [
+            334.0,
+            801.0
+          ]
+        ],
+        "bbox": [
+          99.0,
+          760.0,
+          334.0,
+          819.0
+        ],
+        "text": "Давсі: Кеннеі, Јизѣйсь",
+        "confidence": 0.7664553296306859,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            392.0,
+            477.0
+          ],
+          [
+            538.0,
+            475.0
+          ]
+        ],
+        "bbox": [
+          391.0,
+          438.0,
+          538.0,
+          488.0
+        ],
+        "text": "15.1.1855",
+        "confidence": 0.8698130448659261,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            341.0,
+            581.0
+          ],
+          [
+            535.0,
+            581.0
+          ]
+        ],
+        "bbox": [
+          341.0,
+          541.0,
+          535.0,
+          605.0
+        ],
+        "text": "Юетъвесь",
+        "confidence": 0.6902453256770968,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            385.0,
+            802.0
+          ],
+          [
+            777.0,
+            799.0
+          ]
+        ],
+        "bbox": [
+          384.0,
+          762.0,
+          777.0,
+          819.0
+        ],
+        "text": "Justinus : Gedichte",
+        "confidence": 0.8245048648432681,
+        "regions": []
+      },
+      {
+        "order": 4,
+        "baseline": [
+          [
+            243.0,
+            878.0
+          ],
+          [
+            495.0,
+            872.0
+          ]
+        ],
+        "bbox": [
+          242.0,
+          832.0,
+          495.0,
+          893.0
+        ],
+        "text": "\"Дір Зосе і я ...\"",
+        "confidence": 0.8173980770839585,
+        "regions": []
+      },
+      {
+        "order": 5,
+        "baseline": [
+          [
+            729.0,
+            1166.0
+          ],
+          [
+            765.0,
+            1167.0
+          ]
+        ],
+        "bbox": [
+          728.0,
+          1137.0,
+          765.0,
+          1180.0
+        ],
+        "text": "11418",
+        "confidence": 0.7707218825817108,
+        "regions": []
+      },
+      {
+        "order": 6,
+        "baseline": [
+          [
+            674.0,
+            1225.0
+          ],
+          [
+            776.0,
+            1226.0
+          ]
+        ],
+        "bbox": [
+          673.0,
+          1194.0,
+          776.0,
+          1241.0
+        ],
+        "text": "1141а",
+        "confidence": 0.6716889500617981,
+        "regions": []
+      }
+    ],
+    "confidence": 0.7729753535349205,
+    "timing_ms": 8646,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T04:28:40+00:00"
+}

@@ -1,0 +1,218 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00900341_150dpi",
+  "source": {
+    "name": "HS00900341_150dpi_0013.jpg",
+    "bytes": 174416,
+    "sha256": "db23fdfa602133b73282f3142d1491872dc6eda8676f3a8e4bedef5e35291d72",
+    "remote": "digitalisate/Marbach/HS00900341_150dpi/HS00900341_150dpi_0013.jpg",
+    "key": "Marbach__HS00900341_150dpi__HS00900341_150dpi_0013",
+    "working_copy": "HS00900341_150dpi_0013.jpg"
+  },
+  "text": "Licht\nde\nnoch sofort, vor der\nvorgelesen, wenn",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          268.0,
+          952.0
+        ],
+        [
+          323.0,
+          953.0
+        ]
+      ],
+      "bbox": [
+        267.0,
+        915.0,
+        323.0,
+        987.0
+      ],
+      "text": "Licht",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          333.0,
+          1086.0
+        ],
+        [
+          378.0,
+          1086.0
+        ]
+      ],
+      "bbox": [
+        333.0,
+        1058.0,
+        378.0,
+        1130.0
+      ],
+      "text": "de",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          405.0,
+          1087.0
+        ],
+        [
+          773.0,
+          1087.0
+        ]
+      ],
+      "bbox": [
+        404.0,
+        1054.0,
+        773.0,
+        1116.0
+      ],
+      "text": "noch sofort, vor der",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          425.0,
+          1170.0
+        ],
+        [
+          771.0,
+          1166.0
+        ]
+      ],
+      "bbox": [
+        424.0,
+        1138.0,
+        771.0,
+        1207.0
+      ],
+      "text": "vorgelesen, wenn",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 13410,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "schaffter an Kon.\ngrachten\nansezend den Teüffen zu ernen¬\nvergeben und zu erbleiben er¬",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            268.0,
+            952.0
+          ],
+          [
+            323.0,
+            953.0
+          ]
+        ],
+        "bbox": [
+          267.0,
+          915.0,
+          323.0,
+          987.0
+        ],
+        "text": "schaffter an Kon.",
+        "confidence": 0.7792840459767509,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            333.0,
+            1086.0
+          ],
+          [
+            378.0,
+            1086.0
+          ]
+        ],
+        "bbox": [
+          333.0,
+          1058.0,
+          378.0,
+          1130.0
+        ],
+        "text": "grachten",
+        "confidence": 0.6644511856138706,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            405.0,
+            1087.0
+          ],
+          [
+            773.0,
+            1087.0
+          ]
+        ],
+        "bbox": [
+          404.0,
+          1054.0,
+          773.0,
+          1116.0
+        ],
+        "text": "ansezend den Teüffen zu ernen¬",
+        "confidence": 0.6343483249506643,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            425.0,
+            1170.0
+          ],
+          [
+            771.0,
+            1166.0
+          ]
+        ],
+        "bbox": [
+          424.0,
+          1138.0,
+          771.0,
+          1207.0
+        ],
+        "text": "vergeben und zu erbleiben er¬",
+        "confidence": 0.6883969016630074,
+        "regions": []
+      }
+    ],
+    "confidence": 0.6916201145510733,
+    "timing_ms": 12203,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-21T13:39:03+00:00"
+}

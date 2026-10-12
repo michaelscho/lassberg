@@ -1,0 +1,243 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00787953_150dpi",
+  "source": {
+    "name": "HS00787953_150dpi_0041.jpg",
+    "bytes": 182851,
+    "sha256": "01f234d6c711edf68906b2d91204dffb3ab5bbb4d83c0e8e529bbfc0c4475a49",
+    "remote": "digitalisate/Marbach/HS00787953_150dpi/HS00787953_150dpi_0041.jpg",
+    "key": "Marbach__HS00787953_150dpi__HS00787953_150dpi_0041",
+    "working_copy": "HS00787953_150dpi_0041.jpg"
+  },
+  "text": "2, Mai 1869\nWießte ich den Tag Vor Ankunft in Constanz, ich würde Sie als abholen.\nauf jeden Fall bitte ich den wenigen acten Freunde der Staatsver-\nv. Ihnen noch nie zu sorgen; es würde der weitern Alter\nMan sehr freuen Sie zu hören; er soll Sie zu 10 Hofart\nIpsel ferner, der eben die alt Bundesrath: Baudenksorte von\nConstanz in getrenn. Abdingen gemerkt.\nne",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          52.0,
+          77.0
+        ],
+        [
+          197.0,
+          66.0
+        ]
+      ],
+      "bbox": [
+        50.0,
+        40.0,
+        197.0,
+        91.0
+      ],
+      "text": "2, Mai 1869",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          78.0,
+          218.0
+        ],
+        [
+          264.0,
+          220.0
+        ],
+        [
+          755.0,
+          212.0
+        ],
+        [
+          896.0,
+          213.0
+        ]
+      ],
+      "bbox": [
+        78.0,
+        179.0,
+        896.0,
+        243.0
+      ],
+      "text": "Wießte ich den Tag Vor Ankunft in Constanz, ich würde Sie als abholen.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          89.0,
+          289.0
+        ],
+        [
+          556.0,
+          291.0
+        ],
+        [
+          746.0,
+          285.0
+        ],
+        [
+          896.0,
+          285.0
+        ]
+      ],
+      "bbox": [
+        88.0,
+        246.0,
+        896.0,
+        310.0
+      ],
+      "text": "auf jeden Fall bitte ich den wenigen acten Freunde der Staatsver-",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          88.0,
+          356.0
+        ],
+        [
+          858.0,
+          350.0
+        ]
+      ],
+      "bbox": [
+        87.0,
+        318.0,
+        858.0,
+        378.0
+      ],
+      "text": "v. Ihnen noch nie zu sorgen; es würde der weitern Alter",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          90.0,
+          418.0
+        ],
+        [
+          854.0,
+          418.0
+        ]
+      ],
+      "bbox": [
+        90.0,
+        383.0,
+        854.0,
+        441.0
+      ],
+      "text": "Man sehr freuen Sie zu hören; er soll Sie zu 10 Hofart",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          86.0,
+          485.0
+        ],
+        [
+          481.0,
+          477.0
+        ],
+        [
+          878.0,
+          478.0
+        ]
+      ],
+      "bbox": [
+        85.0,
+        443.0,
+        878.0,
+        502.0
+      ],
+      "text": "Ipsel ferner, der eben die alt Bundesrath: Baudenksorte von",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          96.0,
+          537.0
+        ],
+        [
+          739.0,
+          536.0
+        ]
+      ],
+      "bbox": [
+        95.0,
+        507.0,
+        739.0,
+        566.0
+      ],
+      "text": "Constanz in getrenn. Abdingen gemerkt.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 7,
+      "baseline": [
+        [
+          404.0,
+          841.0
+        ],
+        [
+          442.0,
+          842.0
+        ]
+      ],
+      "bbox": [
+        404.0,
+        827.0,
+        442.0,
+        854.0
+      ],
+      "text": "ne",
+      "confidence": null,
+      "regions": []
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 7815,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T11:49:07+00:00"
+}

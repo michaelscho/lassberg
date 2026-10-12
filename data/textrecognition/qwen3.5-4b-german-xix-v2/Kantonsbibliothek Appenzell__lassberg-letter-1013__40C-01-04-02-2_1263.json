@@ -1,0 +1,218 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Kantonsbibliothek Appenzell/lassberg-letter-1013",
+  "source": {
+    "name": "40C-01-04-02-2_1263.tif",
+    "bytes": 13172720,
+    "sha256": "cb0ae3819a9ef4984ffaad7ec2fc69db68709942cae8155d76a011c37247b3ac",
+    "remote": "digitalisate/Kantonsbibliothek Appenzell/lassberg-letter-1013/40C-01-04-02-2_1263.tif",
+    "key": "Kantonsbibliothek Appenzell__lassberg-letter-1013__40C-01-04-02-2_1263",
+    "working_copy": "40C-01-04-02-2_1263.jpg"
+  },
+  "text": "1263.\ngistrusten 20 July 1825\nTessin von Kaßbe\nConclusum",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          142.0,
+          150.0
+        ],
+        [
+          265.0,
+          147.0
+        ]
+      ],
+      "bbox": [
+        141.0,
+        108.0,
+        265.0,
+        167.0
+      ],
+      "text": "1263.",
+      "confidence": null,
+      "regions": [
+        "r2"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          853.0,
+          173.0
+        ],
+        [
+          1528.0,
+          171.0
+        ]
+      ],
+      "bbox": [
+        852.0,
+        122.0,
+        1528.0,
+        229.0
+      ],
+      "text": "gistrusten 20 July 1825",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1008.0,
+          259.0
+        ],
+        [
+          1492.0,
+          252.0
+        ]
+      ],
+      "bbox": [
+        1006.0,
+        191.0,
+        1492.0,
+        304.0
+      ],
+      "text": "Tessin von Kaßbe",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          1008.0,
+          340.0
+        ],
+        [
+          1453.0,
+          340.0
+        ]
+      ],
+      "bbox": [
+        1008.0,
+        292.0,
+        1453.0,
+        396.0
+      ],
+      "text": "Conclusum",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 12064,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "1263\nExpischousten 20 July 1825\nJost: von Zuffbaum\nharat a. C. 3. Aug.",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            142.0,
+            150.0
+          ],
+          [
+            265.0,
+            147.0
+          ]
+        ],
+        "bbox": [
+          141.0,
+          108.0,
+          265.0,
+          167.0
+        ],
+        "text": "1263",
+        "confidence": 0.9055438190698624,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            853.0,
+            173.0
+          ],
+          [
+            1528.0,
+            171.0
+          ]
+        ],
+        "bbox": [
+          852.0,
+          122.0,
+          1528.0,
+          229.0
+        ],
+        "text": "Expischousten 20 July 1825",
+        "confidence": 0.8545940506916779,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            1008.0,
+            259.0
+          ],
+          [
+            1492.0,
+            252.0
+          ]
+        ],
+        "bbox": [
+          1006.0,
+          191.0,
+          1492.0,
+          304.0
+        ],
+        "text": "Jost: von Zuffbaum",
+        "confidence": 0.794657438993454,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            1008.0,
+            340.0
+          ],
+          [
+            1453.0,
+            340.0
+          ]
+        ],
+        "bbox": [
+          1008.0,
+          292.0,
+          1453.0,
+          396.0
+        ],
+        "text": "harat a. C. 3. Aug.",
+        "confidence": 0.6549262859319386,
+        "regions": []
+      }
+    ],
+    "confidence": 0.8024303986717332,
+    "timing_ms": 23497,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T02:13:56+00:00"
+}

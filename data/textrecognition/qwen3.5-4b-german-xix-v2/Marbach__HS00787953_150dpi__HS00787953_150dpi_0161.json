@@ -1,0 +1,173 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00787953_150dpi",
+  "source": {
+    "name": "HS00787953_150dpi_0161.jpg",
+    "bytes": 115840,
+    "sha256": "cf71c95f1f5ece4d4ef37ebdc3b2499be9a407dcf89895bb446d376452e3a689",
+    "remote": "digitalisate/Marbach/HS00787953_150dpi/HS00787953_150dpi_0161.jpg",
+    "key": "Marbach__HS00787953_150dpi__HS00787953_150dpi_0161",
+    "working_copy": "HS00787953_150dpi_0161.jpg"
+  },
+  "text": "consiert – brüchig\n6.\n2.\nishausen\ns¬\n190",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          258.0,
+          201.0
+        ],
+        [
+          518.0,
+          201.0
+        ]
+      ],
+      "bbox": [
+        258.0,
+        166.0,
+        518.0,
+        222.0
+      ],
+      "text": "consiert – brüchig",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          399.0,
+          570.0
+        ],
+        [
+          457.0,
+          570.0
+        ]
+      ],
+      "bbox": [
+        399.0,
+        541.0,
+        457.0,
+        585.0
+      ],
+      "text": "6.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          500.0,
+          567.0
+        ],
+        [
+          527.0,
+          565.0
+        ]
+      ],
+      "bbox": [
+        498.0,
+        539.0,
+        527.0,
+        578.0
+      ],
+      "text": "2.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          415.0,
+          650.0
+        ],
+        [
+          580.0,
+          654.0
+        ]
+      ],
+      "bbox": [
+        414.0,
+        612.0,
+        580.0,
+        668.0
+      ],
+      "text": "ishausen",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          464.0,
+          748.0
+        ],
+        [
+          471.0,
+          748.0
+        ]
+      ],
+      "bbox": [
+        464.0,
+        713.0,
+        471.0,
+        766.0
+      ],
+      "text": "s¬",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          684.0,
+          1207.0
+        ],
+        [
+          768.0,
+          1205.0
+        ]
+      ],
+      "bbox": [
+        682.0,
+        1176.0,
+        768.0,
+        1221.0
+      ],
+      "text": "190",
+      "confidence": null,
+      "regions": []
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 4765,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T12:37:35+00:00"
+}

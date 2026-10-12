@@ -1,0 +1,306 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Aarau/upload/lassberg-letter-0970",
+  "source": {
+    "name": "00009-scan_2025-03-21_13-08-59l.tif",
+    "bytes": 18004098,
+    "sha256": "88d17e1709fd74b4d0b20f1871eba629bcde939bb6a0833d6cb34c76897daf43",
+    "remote": "digitalisate/Aarau/upload/lassberg-letter-0970/00009-scan_2025-03-21_13-08-59l.tif",
+    "key": "Aarau__upload__lassberg-letter-0970__00009-scan_2025-03-21_13-08-59l",
+    "working_copy": "00009-scan_2025-03-21_13-08-59l.jpg"
+  },
+  "text": "30\n111\n6\nad\nBern\nFremdi",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          1028.0,
+          874.0
+        ],
+        [
+          1028.0,
+          901.0
+        ]
+      ],
+      "bbox": [
+        997.0,
+        874.0,
+        1062.0,
+        901.0
+      ],
+      "text": "30",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1048.0,
+          1509.0
+        ],
+        [
+          1050.0,
+          1587.0
+        ]
+      ],
+      "bbox": [
+        1013.0,
+        1507.0,
+        1079.0,
+        1587.0
+      ],
+      "text": "111",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1048.0,
+          1803.0
+        ],
+        [
+          1050.0,
+          1766.0
+        ]
+      ],
+      "bbox": [
+        994.0,
+        1763.0,
+        1079.0,
+        1803.0
+      ],
+      "text": "6",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          1232.0,
+          1489.0
+        ],
+        [
+          1234.0,
+          1584.0
+        ]
+      ],
+      "bbox": [
+        1197.0,
+        1488.0,
+        1256.0,
+        1584.0
+      ],
+      "text": "ad",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          172.0,
+          1472.0
+        ],
+        [
+          325.0,
+          1467.0
+        ]
+      ],
+      "bbox": [
+        169.0,
+        1392.0,
+        325.0,
+        1486.0
+      ],
+      "text": "Bern",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          154.0,
+          1590.0
+        ],
+        [
+          413.0,
+          1585.0
+        ]
+      ],
+      "bbox": [
+        153.0,
+        1517.0,
+        413.0,
+        1609.0
+      ],
+      "text": "Fremdi",
+      "confidence": null,
+      "regions": []
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 11596,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "Freand\nFreande\n100\nMerch^t\nM^r Davis\nMerch^t",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            172.0,
+            1472.0
+          ],
+          [
+            325.0,
+            1467.0
+          ]
+        ],
+        "bbox": [
+          169.0,
+          1392.0,
+          325.0,
+          1486.0
+        ],
+        "text": "Freand",
+        "confidence": 0.784667581319809,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            154.0,
+            1590.0
+          ],
+          [
+            413.0,
+            1585.0
+          ]
+        ],
+        "bbox": [
+          153.0,
+          1517.0,
+          413.0,
+          1609.0
+        ],
+        "text": "Freande",
+        "confidence": 0.8445177333695548,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            1028.0,
+            874.0
+          ],
+          [
+            1028.0,
+            901.0
+          ]
+        ],
+        "bbox": [
+          997.0,
+          874.0,
+          1062.0,
+          901.0
+        ],
+        "text": "100",
+        "confidence": 0.5675586660703024,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            1048.0,
+            1509.0
+          ],
+          [
+            1050.0,
+            1587.0
+          ]
+        ],
+        "bbox": [
+          1013.0,
+          1507.0,
+          1079.0,
+          1587.0
+        ],
+        "text": "Merch^t",
+        "confidence": 0.8566924461296627,
+        "regions": []
+      },
+      {
+        "order": 4,
+        "baseline": [
+          [
+            1048.0,
+            1803.0
+          ],
+          [
+            1050.0,
+            1766.0
+          ]
+        ],
+        "bbox": [
+          994.0,
+          1763.0,
+          1079.0,
+          1803.0
+        ],
+        "text": "M^r Davis",
+        "confidence": 0.7274502416451772,
+        "regions": []
+      },
+      {
+        "order": 5,
+        "baseline": [
+          [
+            1232.0,
+            1489.0
+          ],
+          [
+            1234.0,
+            1584.0
+          ]
+        ],
+        "bbox": [
+          1197.0,
+          1488.0,
+          1256.0,
+          1584.0
+        ],
+        "text": "Merch^t",
+        "confidence": 0.8387336773531777,
+        "regions": []
+      }
+    ],
+    "confidence": 0.769936724314614,
+    "timing_ms": 13930,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-21T16:08:58+00:00"
+}

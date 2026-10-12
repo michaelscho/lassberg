@@ -1,0 +1,205 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00926850_150dpi",
+  "source": {
+    "name": "HS00926850_0006.jpg",
+    "bytes": 176004,
+    "sha256": "fcc9765482c6c0ecf96b28633f5241f775f88295e73c80f334cc0efebf495a32",
+    "remote": "digitalisate/Marbach/HS00926850_150dpi/HS00926850_0006.jpg",
+    "key": "Marbach__HS00926850_150dpi__HS00926850_0006",
+    "working_copy": "HS00926850_0006.jpg"
+  },
+  "text": "Uhrland an Laßben\nNubingen,\n1865\n13. Oct. 1836\nvor. Briefwechsel III.\n6\nBern den 169.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          320.0,
+          436.0
+        ],
+        [
+          513.0,
+          440.0
+        ],
+        [
+          783.0,
+          437.0
+        ]
+      ],
+      "bbox": [
+        320.0,
+        404.0,
+        783.0,
+        456.0
+      ],
+      "text": "Uhrland an Laßben",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          323.0,
+          517.0
+        ],
+        [
+          500.0,
+          515.0
+        ]
+      ],
+      "bbox": [
+        322.0,
+        488.0,
+        500.0,
+        533.0
+      ],
+      "text": "Nubingen,",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          333.0,
+          580.0
+        ],
+        [
+          337.0,
+          580.0
+        ]
+      ],
+      "bbox": [
+        331.0,
+        555.0,
+        339.0,
+        594.0
+      ],
+      "text": "1865",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          514.0,
+          516.0
+        ],
+        [
+          764.0,
+          512.0
+        ]
+      ],
+      "bbox": [
+        513.0,
+        479.0,
+        764.0,
+        526.0
+      ],
+      "text": "13. Oct. 1836",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          389.0,
+          581.0
+        ],
+        [
+          736.0,
+          583.0
+        ]
+      ],
+      "bbox": [
+        389.0,
+        554.0,
+        736.0,
+        603.0
+      ],
+      "text": "vor. Briefwechsel III.",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          775.0,
+          583.0
+        ],
+        [
+          799.0,
+          583.0
+        ]
+      ],
+      "bbox": [
+        775.0,
+        555.0,
+        799.0,
+        595.0
+      ],
+      "text": "6",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          821.0,
+          582.0
+        ],
+        [
+          1004.0,
+          579.0
+        ]
+      ],
+      "bbox": [
+        821.0,
+        548.0,
+        1004.0,
+        596.0
+      ],
+      "text": "Bern den 169.",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 13262,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 32,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T21:27:31+00:00"
+}

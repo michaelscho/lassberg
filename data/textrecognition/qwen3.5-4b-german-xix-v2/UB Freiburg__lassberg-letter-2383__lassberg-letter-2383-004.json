@@ -1,0 +1,125 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "UB Freiburg/lassberg-letter-2383",
+  "source": {
+    "name": "lassberg-letter-2383-004.jpg",
+    "bytes": 420970,
+    "sha256": "33ff0b5fbad39112fe15f044bbff78c81fbf22c1d92e23b5af6739efe8f53ce6",
+    "remote": "digitalisate/UB Freiburg/lassberg-letter-2383/lassberg-letter-2383-004.jpg",
+    "key": "UB Freiburg__lassberg-letter-2383__lassberg-letter-2383-004",
+    "working_copy": "lassberg-letter-2383-004.jpg"
+  },
+  "text": "gefordert durch\n1700/000\nc. Universitätsbibliothek Freiburg\nBaden-Würtemberg",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          1922.0,
+          2680.0
+        ],
+        [
+          2060.0,
+          2677.0
+        ]
+      ],
+      "bbox": [
+        1921.0,
+        2660.0,
+        2060.0,
+        2697.0
+      ],
+      "text": "gefordert durch",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          573.0,
+          2719.0
+        ],
+        [
+          1546.0,
+          2710.0
+        ]
+      ],
+      "bbox": [
+        571.0,
+        2686.0,
+        1546.0,
+        2744.0
+      ],
+      "text": "1700/000",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          774.0,
+          2783.0
+        ],
+        [
+          1379.0,
+          2783.0
+        ]
+      ],
+      "bbox": [
+        774.0,
+        2755.0,
+        1379.0,
+        2799.0
+      ],
+      "text": "c. Universitätsbibliothek Freiburg",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          1879.0,
+          2789.0
+        ],
+        [
+          2114.0,
+          2792.0
+        ]
+      ],
+      "bbox": [
+        1877.0,
+        2763.0,
+        2114.0,
+        2808.0
+      ],
+      "text": "Baden-Würtemberg",
+      "confidence": null,
+      "regions": []
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 6180,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 13,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T04:42:57+00:00"
+}

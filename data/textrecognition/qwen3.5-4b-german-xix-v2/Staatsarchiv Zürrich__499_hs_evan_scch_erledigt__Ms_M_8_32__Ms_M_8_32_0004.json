@@ -1,0 +1,177 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Staatsarchiv Zürrich/499_hs_evan_scch_erledigt/Ms_M_8_32",
+  "source": {
+    "name": "Ms_M_8_32_0004.tif",
+    "bytes": 36683186,
+    "sha256": "66da41b5a9c1b05d138f242e10123427672fb723a053f2794b49d10c45762ea0",
+    "remote": "digitalisate/Staatsarchiv Zürrich/499_hs_evan_scch_erledigt/Ms_M_8_32/Ms_M_8_32_0004.tif",
+    "key": "Staatsarchiv Zürrich__499_hs_evan_scch_erledigt__Ms_M_8_32__Ms_M_8_32_0004",
+    "working_copy": "Ms_M_8_32_0004.jpg"
+  },
+  "text": "Vater\nin\nDein\nJ.\nin\nEscher",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          1134.0,
+          1719.0
+        ],
+        [
+          1147.0,
+          1881.0
+        ]
+      ],
+      "bbox": [
+        1093.0,
+        1715.0,
+        1197.0,
+        1884.0
+      ],
+      "text": "Vater",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1387.0,
+          1391.0
+        ],
+        [
+          1387.0,
+          1311.0
+        ]
+      ],
+      "bbox": [
+        1340.0,
+        1311.0,
+        1424.0,
+        1391.0
+      ],
+      "text": "in",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1385.0,
+          1490.0
+        ],
+        [
+          1390.0,
+          1663.0
+        ]
+      ],
+      "bbox": [
+        1364.0,
+        1488.0,
+        1424.0,
+        1663.0
+      ],
+      "text": "Dein",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          1398.0,
+          2264.0
+        ],
+        [
+          1398.0,
+          2333.0
+        ]
+      ],
+      "bbox": [
+        1342.0,
+        2264.0,
+        1478.0,
+        2333.0
+      ],
+      "text": "J.",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          1400.0,
+          2387.0
+        ],
+        [
+          1403.0,
+          2651.0
+        ]
+      ],
+      "bbox": [
+        1288.0,
+        2387.0,
+        1470.0,
+        2651.0
+      ],
+      "text": "in",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          1599.0,
+          1983.0
+        ],
+        [
+          1608.0,
+          2160.0
+        ]
+      ],
+      "bbox": [
+        1554.0,
+        1979.0,
+        1692.0,
+        2160.0
+      ],
+      "text": "Escher",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 6645,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 17,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T22:58:41+00:00"
+}

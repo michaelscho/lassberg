@@ -1,0 +1,229 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00848999_150dpi",
+  "source": {
+    "name": "HS00848999_150dpi_0005.jpg",
+    "bytes": 237177,
+    "sha256": "0c52de764d5d443f20527aaf91072356e2851b5b383d9ecb4f89f5bbd868c99f",
+    "remote": "digitalisate/Marbach/HS00848999_150dpi/HS00848999_150dpi_0005.jpg",
+    "key": "Marbach__HS00848999_150dpi__HS00848999_150dpi_0005",
+    "working_copy": "HS00848999_150dpi_0005.jpg"
+  },
+  "text": "Sollten sie in nächster Zeit von meinen geringen Kräften Gebrauch\nzu machen Veranlassung finden, so wollen die Ihre Briefe gefälligst\n«reste replante» nach Strassburg adressieren.\nMit herzlichen Grüßen an Ihre verehrte Frau Generalin und\ndie gute Gindel und liebe Hilvel verharre ich\nEuer Hochwohlgeboren\nverehrungsvollst ergebener\nFranz Pfeiffer.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          156.0,
+          189.0
+        ],
+        [
+          1115.0,
+          195.0
+        ]
+      ],
+      "bbox": [
+        155.0,
+        160.0,
+        1115.0,
+        217.0
+      ],
+      "text": "Sollten sie in nächster Zeit von meinen geringen Kräften Gebrauch",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          130.0,
+          233.0
+        ],
+        [
+          1103.0,
+          237.0
+        ]
+      ],
+      "bbox": [
+        130.0,
+        207.0,
+        1103.0,
+        258.0
+      ],
+      "text": "zu machen Veranlassung finden, so wollen die Ihre Briefe gefälligst",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          131.0,
+          277.0
+        ],
+        [
+          617.0,
+          275.0
+        ],
+        [
+          737.0,
+          279.0
+        ]
+      ],
+      "bbox": [
+        130.0,
+        249.0,
+        737.0,
+        300.0
+      ],
+      "text": "«reste replante» nach Strassburg adressieren.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          179.0,
+          362.0
+        ],
+        [
+          1097.0,
+          358.0
+        ]
+      ],
+      "bbox": [
+        178.0,
+        320.0,
+        1097.0,
+        386.0
+      ],
+      "text": "Mit herzlichen Grüßen an Ihre verehrte Frau Generalin und",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          137.0,
+          408.0
+        ],
+        [
+          834.0,
+          405.0
+        ]
+      ],
+      "bbox": [
+        136.0,
+        377.0,
+        834.0,
+        430.0
+      ],
+      "text": "die gute Gindel und liebe Hilvel verharre ich",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          419.0,
+          490.0
+        ],
+        [
+          769.0,
+          492.0
+        ]
+      ],
+      "bbox": [
+        418.0,
+        461.0,
+        769.0,
+        518.0
+      ],
+      "text": "Euer Hochwohlgeboren",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          568.0,
+          536.0
+        ],
+        [
+          983.0,
+          538.0
+        ]
+      ],
+      "bbox": [
+        567.0,
+        508.0,
+        983.0,
+        565.0
+      ],
+      "text": "verehrungsvollst ergebener",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 7,
+      "baseline": [
+        [
+          717.0,
+          625.0
+        ],
+        [
+          1011.0,
+          630.0
+        ]
+      ],
+      "bbox": [
+        717.0,
+        591.0,
+        1011.0,
+        659.0
+      ],
+      "text": "Franz Pfeiffer.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 8005,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T14:01:40+00:00"
+}

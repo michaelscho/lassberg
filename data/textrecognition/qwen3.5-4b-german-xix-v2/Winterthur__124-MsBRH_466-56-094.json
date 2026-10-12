@@ -1,0 +1,165 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Winterthur",
+  "source": {
+    "name": "124-MsBRH_466-56-094.jpg",
+    "bytes": 2495407,
+    "sha256": "c2dcca29a8bd0e55ee7819b99fcf4177d8f1ff24a6a1e6df1346a904fadc1d11",
+    "remote": "digitalisate/Winterthur/124-MsBRH_466-56-094.jpg",
+    "key": "Winterthur__124-MsBRH_466-56-094",
+    "working_copy": "124-MsBRH_466-56-094.jpg"
+  },
+  "text": "tu worden durch H. Prof. Land. von Liebmann der mir gelühern\nband von der Lezion und im Paquet v. H. Pfarrer Schön¬\nhuck empfangirt haben.\nMein Gärtle, welche man bald absuchen wollten,\nempfeln sich darnach der Körper säm̃dlicht.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          219.0,
+          422.0
+        ],
+        [
+          3039.0,
+          422.0
+        ]
+      ],
+      "bbox": [
+        219.0,
+        308.0,
+        3039.0,
+        490.0
+      ],
+      "text": "tu worden durch H. Prof. Land. von Liebmann der mir gelühern",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          173.0,
+          693.0
+        ],
+        [
+          3023.0,
+          685.0
+        ]
+      ],
+      "bbox": [
+        170.0,
+        569.0,
+        3023.0,
+        750.0
+      ],
+      "text": "band von der Lezion und im Paquet v. H. Pfarrer Schön¬",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          197.0,
+          921.0
+        ],
+        [
+          1507.0,
+          948.0
+        ]
+      ],
+      "bbox": [
+        195.0,
+        826.0,
+        1507.0,
+        1002.0
+      ],
+      "text": "huck empfangirt haben.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          336.0,
+          1154.0
+        ],
+        [
+          1928.0,
+          1200.0
+        ],
+        [
+          2993.0,
+          1200.0
+        ]
+      ],
+      "bbox": [
+        333.0,
+        1070.0,
+        2993.0,
+        1254.0
+      ],
+      "text": "Mein Gärtle, welche man bald absuchen wollten,",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          246.0,
+          1382.0
+        ],
+        [
+          843.0,
+          1392.0
+        ],
+        [
+          1700.0,
+          1441.0
+        ],
+        [
+          3029.0,
+          1444.0
+        ]
+      ],
+      "bbox": [
+        246.0,
+        1281.0,
+        3029.0,
+        1517.0
+      ],
+      "text": "empfeln sich darnach der Körper säm̃dlicht.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 10534,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T13:30:10+00:00"
+}

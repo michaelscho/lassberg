@@ -1,0 +1,201 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "wlb stuttgart/Cod.hist.fol.767,X",
+  "source": {
+    "name": "10.jpg",
+    "bytes": 492882,
+    "sha256": "7295ed2009b9f76890e9ed6ed7e8b56d7eb94775d6b1a42c2e7b01caf247edf4",
+    "remote": "digitalisate/wlb stuttgart/Cod.hist.fol.767,X/10.jpg",
+    "key": "wlb stuttgart__Cod.hist.fol.767,X__10",
+    "working_copy": "10.jpg"
+  },
+  "text": "der\nde\ner\nden\ndie\nHerrn\nvorerzählte mir",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          537.0,
+          1129.0
+        ],
+        [
+          538.0,
+          978.0
+        ]
+      ],
+      "bbox": [
+        500.0,
+        977.0,
+        571.0,
+        1129.0
+      ],
+      "text": "der",
+      "confidence": null,
+      "regions": [
+        "_d63c4895-7b07-4755-ba4e-a2d0a1af78ef"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          539.0,
+          1179.0
+        ],
+        [
+          539.0,
+          1275.0
+        ]
+      ],
+      "bbox": [
+        511.0,
+        1179.0,
+        567.0,
+        1275.0
+      ],
+      "text": "de",
+      "confidence": null,
+      "regions": [
+        "_d63c4895-7b07-4755-ba4e-a2d0a1af78ef"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          611.0,
+          1152.0
+        ],
+        [
+          612.0,
+          1195.0
+        ]
+      ],
+      "bbox": [
+        581.0,
+        1150.0,
+        638.0,
+        1195.0
+      ],
+      "text": "er",
+      "confidence": null,
+      "regions": [
+        "_d63c4895-7b07-4755-ba4e-a2d0a1af78ef"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          610.0,
+          1335.0
+        ],
+        [
+          611.0,
+          1242.0
+        ]
+      ],
+      "bbox": [
+        593.0,
+        1241.0,
+        634.0,
+        1335.0
+      ],
+      "text": "den",
+      "confidence": null,
+      "regions": [
+        "_d63c4895-7b07-4755-ba4e-a2d0a1af78ef"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          612.0,
+          1445.0
+        ],
+        [
+          612.0,
+          1393.0
+        ]
+      ],
+      "bbox": [
+        588.0,
+        1393.0,
+        640.0,
+        1445.0
+      ],
+      "text": "die",
+      "confidence": null,
+      "regions": [
+        "_d63c4895-7b07-4755-ba4e-a2d0a1af78ef"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          688.0,
+          904.0
+        ],
+        [
+          690.0,
+          795.0
+        ]
+      ],
+      "bbox": [
+        666.0,
+        793.0,
+        730.0,
+        904.0
+      ],
+      "text": "Herrn",
+      "confidence": null,
+      "regions": [
+        "_d63c4895-7b07-4755-ba4e-a2d0a1af78ef"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          692.0,
+          1320.0
+        ],
+        [
+          985.0,
+          1313.0
+        ]
+      ],
+      "bbox": [
+        691.0,
+        1279.0,
+        985.0,
+        1347.0
+      ],
+      "text": "vorerzählte mir",
+      "confidence": null,
+      "regions": [
+        "_d63c4895-7b07-4755-ba4e-a2d0a1af78ef"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 6293,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T20:01:58+00:00"
+}

@@ -1,0 +1,153 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Winterthur",
+  "source": {
+    "name": "202-MsBRH_513-91-023.jpg",
+    "bytes": 5044756,
+    "sha256": "d88a567d1e90b82585af11aed0897eb906f53dec55e662a3a935b69651245b55",
+    "remote": "digitalisate/Winterthur/202-MsBRH_513-91-023.jpg",
+    "key": "Winterthur__202-MsBRH_513-91-023",
+    "working_copy": "202-MsBRH_513-91-023.jpg"
+  },
+  "text": "Hochachtungsvoll und mit vollkommenen Ergebenheit hieher sich\nbei Hochwohlgeboren!\nTragen d. 18. J.\ngefaßtester kleiner\nProf. Kellinger",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          986.0,
+          771.0
+        ],
+        [
+          2502.0,
+          785.0
+        ],
+        [
+          4657.0,
+          768.0
+        ]
+      ],
+      "bbox": [
+        983.0,
+        659.0,
+        4657.0,
+        890.0
+      ],
+      "text": "Hochachtungsvoll und mit vollkommenen Ergebenheit hieher sich",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1515.0,
+          1115.0
+        ],
+        [
+          3182.0,
+          1058.0
+        ]
+      ],
+      "bbox": [
+        1508.0,
+        959.0,
+        3182.0,
+        1220.0
+      ],
+      "text": "bei Hochwohlgeboren!",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          95.0,
+          1642.0
+        ],
+        [
+          947.0,
+          1619.0
+        ]
+      ],
+      "bbox": [
+        89.0,
+        1514.0,
+        947.0,
+        1827.0
+      ],
+      "text": "Tragen d. 18. J.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          2723.0,
+          1758.0
+        ],
+        [
+          4284.0,
+          1751.0
+        ]
+      ],
+      "bbox": [
+        2719.0,
+        1659.0,
+        4284.0,
+        1824.0
+      ],
+      "text": "gefaßtester kleiner",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          3076.0,
+          1923.0
+        ],
+        [
+          4234.0,
+          1926.0
+        ]
+      ],
+      "bbox": [
+        3073.0,
+        1801.0,
+        4234.0,
+        2091.0
+      ],
+      "text": "Prof. Kellinger",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 7801,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T14:27:10+00:00"
+}

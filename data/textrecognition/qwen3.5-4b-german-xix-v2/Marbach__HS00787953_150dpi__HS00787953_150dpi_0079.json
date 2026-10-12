@@ -1,0 +1,264 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00787953_150dpi",
+  "source": {
+    "name": "HS00787953_150dpi_0079.jpg",
+    "bytes": 140373,
+    "sha256": "f2f92f396cfe242e1f5778ef24314a51093aa2a3bc16afd695e371131d86782b",
+    "remote": "digitalisate/Marbach/HS00787953_150dpi/HS00787953_150dpi_0079.jpg",
+    "key": "Marbach__HS00787953_150dpi__HS00787953_150dpi_0079",
+    "working_copy": "HS00787953_150dpi_0079.jpg"
+  },
+  "text": "Escher\nder\ngünstigste\n1849\ng.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          193.0,
+          349.0
+        ],
+        [
+          300.0,
+          350.0
+        ]
+      ],
+      "bbox": [
+        192.0,
+        335.0,
+        300.0,
+        412.0
+      ],
+      "text": "Escher",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          440.0,
+          121.0
+        ],
+        [
+          494.0,
+          122.0
+        ]
+      ],
+      "bbox": [
+        440.0,
+        90.0,
+        494.0,
+        132.0
+      ],
+      "text": "der",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          402.0,
+          475.0
+        ],
+        [
+          525.0,
+          472.0
+        ]
+      ],
+      "bbox": [
+        402.0,
+        449.0,
+        525.0,
+        508.0
+      ],
+      "text": "günstigste",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          517.0,
+          493.0
+        ],
+        [
+          535.0,
+          493.0
+        ]
+      ],
+      "bbox": [
+        517.0,
+        483.0,
+        535.0,
+        506.0
+      ],
+      "text": "1849",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          471.0,
+          590.0
+        ],
+        [
+          612.0,
+          591.0
+        ]
+      ],
+      "bbox": [
+        471.0,
+        567.0,
+        612.0,
+        632.0
+      ],
+      "text": "g.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 3916,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "Innern\n92. 1744\nCambray Vo\nzu\nDem Edlen Gestreng",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            193.0,
+            349.0
+          ],
+          [
+            300.0,
+            350.0
+          ]
+        ],
+        "bbox": [
+          192.0,
+          335.0,
+          300.0,
+          412.0
+        ],
+        "text": "Innern",
+        "confidence": 0.5270900925000509,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            440.0,
+            121.0
+          ],
+          [
+            494.0,
+            122.0
+          ]
+        ],
+        "bbox": [
+          440.0,
+          90.0,
+          494.0,
+          132.0
+        ],
+        "text": "92. 1744",
+        "confidence": 0.521250830963254,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            402.0,
+            475.0
+          ],
+          [
+            525.0,
+            472.0
+          ]
+        ],
+        "bbox": [
+          402.0,
+          449.0,
+          525.0,
+          508.0
+        ],
+        "text": "Cambray Vo",
+        "confidence": 0.5033618535846471,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            517.0,
+            493.0
+          ],
+          [
+            535.0,
+            493.0
+          ]
+        ],
+        "bbox": [
+          517.0,
+          483.0,
+          535.0,
+          506.0
+        ],
+        "text": "zu",
+        "confidence": 0.41002222895622253,
+        "regions": []
+      },
+      {
+        "order": 4,
+        "baseline": [
+          [
+            471.0,
+            590.0
+          ],
+          [
+            612.0,
+            591.0
+          ]
+        ],
+        "bbox": [
+          471.0,
+          567.0,
+          612.0,
+          632.0
+        ],
+        "text": "Dem Edlen Gestreng",
+        "confidence": 0.7370486958987184,
+        "regions": []
+      }
+    ],
+    "confidence": 0.5397547403805786,
+    "timing_ms": 6245,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T12:03:27+00:00"
+}

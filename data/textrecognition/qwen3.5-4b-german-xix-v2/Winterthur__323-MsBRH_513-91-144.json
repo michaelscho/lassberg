@@ -1,0 +1,127 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Winterthur",
+  "source": {
+    "name": "323-MsBRH_513-91-144.jpg",
+    "bytes": 4643586,
+    "sha256": "9eb76d3f1c9fe9e321b1ba73af321b364ee5215bee874a626da9025df9bacb31",
+    "remote": "digitalisate/Winterthur/323-MsBRH_513-91-144.jpg",
+    "key": "Winterthur__323-MsBRH_513-91-144",
+    "working_copy": "323-MsBRH_513-91-144.jpg"
+  },
+  "text": "Den Creisaurum\nstoph vom Lastberg, K. K. Kämmer\nund Maltesten Ritter\nin Engi'shausen d. Thurgau",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          2101.0,
+          1270.0
+        ],
+        [
+          3328.0,
+          1288.0
+        ]
+      ],
+      "bbox": [
+        2101.0,
+        1153.0,
+        3328.0,
+        1335.0
+      ],
+      "text": "Den Creisaurum",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1492.0,
+          1666.0
+        ],
+        [
+          3302.0,
+          1686.0
+        ],
+        [
+          3997.0,
+          1710.0
+        ]
+      ],
+      "bbox": [
+        1489.0,
+        1546.0,
+        3997.0,
+        1749.0
+      ],
+      "text": "stoph vom Lastberg, K. K. Kämmer",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1927.0,
+          1809.0
+        ],
+        [
+          3554.0,
+          1848.0
+        ]
+      ],
+      "bbox": [
+        1924.0,
+        1699.0,
+        3554.0,
+        1897.0
+      ],
+      "text": "und Maltesten Ritter",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          1973.0,
+          2850.0
+        ],
+        [
+          4025.0,
+          2819.0
+        ]
+      ],
+      "bbox": [
+        1971.0,
+        2702.0,
+        4025.0,
+        3009.0
+      ],
+      "text": "in Engi'shausen d. Thurgau",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 16358,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T16:11:17+00:00"
+}

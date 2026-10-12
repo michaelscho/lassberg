@@ -1,0 +1,134 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Winterthur",
+  "source": {
+    "name": "05-MsAS_12b-02.jpg",
+    "bytes": 1814934,
+    "sha256": "a5192509498ccbba0d136ed95cdadf5ef7ac38e6d44f58cedbf601dda182a8d7",
+    "remote": "digitalisate/Winterthur/05-MsAS_12b-02.jpg",
+    "key": "Winterthur__05-MsAS_12b-02",
+    "working_copy": "05-MsAS_12b-02.jpg"
+  },
+  "text": "Reitsherrn Joseph v. Kastberg,\nSternanist,",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          659.0,
+          734.0
+        ],
+        [
+          1651.0,
+          755.0
+        ],
+        [
+          2601.0,
+          766.0
+        ]
+      ],
+      "bbox": [
+        658.0,
+        685.0,
+        2601.0,
+        807.0
+      ],
+      "text": "Reitsherrn Joseph v. Kastberg,",
+      "confidence": null,
+      "regions": [
+        "_99ea6970-d238-4a92-86d3-b27a59ed17a2"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          484.0,
+          957.0
+        ],
+        [
+          1265.0,
+          968.0
+        ]
+      ],
+      "bbox": [
+        482.0,
+        907.0,
+        1265.0,
+        995.0
+      ],
+      "text": "Sternanist,",
+      "confidence": null,
+      "regions": [
+        "_5876433a-4387-498f-9013-a58325967b39"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 15858,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "Freiherr Joseph v. Lassberg,\nGermanist.",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            659.0,
+            734.0
+          ],
+          [
+            1651.0,
+            755.0
+          ],
+          [
+            2601.0,
+            766.0
+          ]
+        ],
+        "bbox": [
+          658.0,
+          685.0,
+          2601.0,
+          807.0
+        ],
+        "text": "Freiherr Joseph v. Lassberg,",
+        "confidence": 0.9307989520686013,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            484.0,
+            957.0
+          ],
+          [
+            1265.0,
+            968.0
+          ]
+        ],
+        "bbox": [
+          482.0,
+          907.0,
+          1265.0,
+          995.0
+        ],
+        "text": "Germanist.",
+        "confidence": 0.9476049065589904,
+        "regions": []
+      }
+    ],
+    "confidence": 0.9392019293137959,
+    "timing_ms": 26621,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T13:10:55+00:00"
+}

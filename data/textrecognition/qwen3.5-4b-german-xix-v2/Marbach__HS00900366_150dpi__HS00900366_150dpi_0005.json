@@ -1,0 +1,153 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00900366_150dpi",
+  "source": {
+    "name": "HS00900366_150dpi_0005.jpg",
+    "bytes": 298884,
+    "sha256": "0f48da5742c28f415b50332f3c23ed74a68b28f1d27f7d0f7db1bbabc2e4f123",
+    "remote": "digitalisate/Marbach/HS00900366_150dpi/HS00900366_150dpi_0005.jpg",
+    "key": "Marbach__HS00900366_150dpi__HS00900366_150dpi_0005",
+    "working_copy": "HS00900366_150dpi_0005.jpg"
+  },
+  "text": "deiner\n1865\n1849\n1849\n1455",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          624.0,
+          457.0
+        ],
+        [
+          728.0,
+          456.0
+        ]
+      ],
+      "bbox": [
+        623.0,
+        430.0,
+        728.0,
+        477.0
+      ],
+      "text": "deiner",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          873.0,
+          455.0
+        ],
+        [
+          886.0,
+          454.0
+        ]
+      ],
+      "bbox": [
+        871.0,
+        433.0,
+        886.0,
+        468.0
+      ],
+      "text": "1865",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          896.0,
+          518.0
+        ],
+        [
+          901.0,
+          518.0
+        ]
+      ],
+      "bbox": [
+        896.0,
+        496.0,
+        901.0,
+        532.0
+      ],
+      "text": "1849",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          1065.0,
+          585.0
+        ],
+        [
+          1073.0,
+          584.0
+        ]
+      ],
+      "bbox": [
+        1064.0,
+        571.0,
+        1073.0,
+        603.0
+      ],
+      "text": "1849",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          536.0,
+          1344.0
+        ],
+        [
+          584.0,
+          1345.0
+        ]
+      ],
+      "bbox": [
+        535.0,
+        1322.0,
+        584.0,
+        1359.0
+      ],
+      "text": "1455",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 5534,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 32,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T20:29:12+00:00"
+}

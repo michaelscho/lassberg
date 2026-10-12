@@ -1,0 +1,105 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Weimar/FA Hodel 236/Weimar",
+  "source": {
+    "name": "GSA_96_2725_Seite14.jpg",
+    "bytes": 8443790,
+    "sha256": "16777717ba434df93958543eec8fcfd588a81506136599f5257f883d0b205709",
+    "remote": "digitalisate/Weimar/FA Hodel 236/Weimar/GSA_96_2725_Seite14.jpg",
+    "key": "Weimar__FA Hodel 236__Weimar__GSA_96_2725_Seite14",
+    "working_copy": "GSA_96_2725_Seite14.jpg"
+  },
+  "text": "Classiker\n1.\ns¬",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          98.0,
+          978.0
+        ],
+        [
+          378.0,
+          980.0
+        ]
+      ],
+      "bbox": [
+        96.0,
+        932.0,
+        378.0,
+        1033.0
+      ],
+      "text": "Classiker",
+      "confidence": null,
+      "regions": [
+        "_e6a8680d-7fd8-4b9a-a4c4-95ee84442d69"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          100.0,
+          2440.0
+        ],
+        [
+          267.0,
+          2442.0
+        ]
+      ],
+      "bbox": [
+        98.0,
+        2399.0,
+        267.0,
+        2472.0
+      ],
+      "text": "1.",
+      "confidence": null,
+      "regions": [
+        "_4bfcd420-3444-41b2-a507-bc919c3548e7"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          305.0,
+          2415.0
+        ],
+        [
+          338.0,
+          2419.0
+        ]
+      ],
+      "bbox": [
+        295.0,
+        2393.0,
+        338.0,
+        2493.0
+      ],
+      "text": "s¬",
+      "confidence": null,
+      "regions": [
+        "_4bfcd420-3444-41b2-a507-bc919c3548e7"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 7200,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 32,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T05:39:34+00:00"
+}

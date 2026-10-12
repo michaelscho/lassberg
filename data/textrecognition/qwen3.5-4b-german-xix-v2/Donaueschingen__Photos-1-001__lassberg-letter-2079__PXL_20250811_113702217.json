@@ -1,0 +1,80 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Donaueschingen/Photos-1-001/lassberg-letter-2079",
+  "source": {
+    "name": "PXL_20250811_113702217.jpg",
+    "bytes": 2713852,
+    "sha256": "9569674893b80c1c236c717d840ad7c6a173792a5006d0fa1f9e95315cc3e6d4",
+    "remote": "digitalisate/Donaueschingen/Photos-1-001/lassberg-letter-2079/PXL_20250811_113702217.jpg",
+    "key": "Donaueschingen__Photos-1-001__lassberg-letter-2079__PXL_20250811_113702217",
+    "working_copy": "PXL_20250811_113702217.jpg"
+  },
+  "text": "1865",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          2085.0,
+          2366.0
+        ],
+        [
+          2115.0,
+          2366.0
+        ]
+      ],
+      "bbox": [
+        2085.0,
+        2291.0,
+        2115.0,
+        2402.0
+      ],
+      "text": "1865",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 22499,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "✳",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            2085.0,
+            2366.0
+          ],
+          [
+            2115.0,
+            2366.0
+          ]
+        ],
+        "bbox": [
+          2085.0,
+          2291.0,
+          2115.0,
+          2402.0
+        ],
+        "text": "✳",
+        "confidence": 0.8340074221293131,
+        "regions": []
+      }
+    ],
+    "confidence": 0.8340074221293131,
+    "timing_ms": 20651,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T01:44:34+00:00"
+}

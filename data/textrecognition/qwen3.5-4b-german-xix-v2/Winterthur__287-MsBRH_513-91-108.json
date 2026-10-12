@@ -1,0 +1,169 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Winterthur",
+  "source": {
+    "name": "287-MsBRH_513-91-108.jpg",
+    "bytes": 4829503,
+    "sha256": "33f666f54e5e5b72f583e1b39bc2c037ae9d8206a7da7a6e962c51e57f3b19ca",
+    "remote": "digitalisate/Winterthur/287-MsBRH_513-91-108.jpg",
+    "key": "Winterthur__287-MsBRH_513-91-108",
+    "working_copy": "287-MsBRH_513-91-108.jpg"
+  },
+  "text": "„\nWohlgebohren\ndem Dreisernen so stehen Caßberg\n2. 2. Cammerer und Weltster Ritten\nin Eggishausen 2. Thurgau",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          2403.0,
+          1401.0
+        ],
+        [
+          2417.0,
+          1401.0
+        ]
+      ],
+      "bbox": [
+        2403.0,
+        1361.0,
+        2417.0,
+        1423.0
+      ],
+      "text": "„",
+      "confidence": null,
+      "regions": [
+        "_c68edb31-01ff-4abd-975b-35574c8795f7"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          2477.0,
+          1407.0
+        ],
+        [
+          3631.0,
+          1418.0
+        ]
+      ],
+      "bbox": [
+        2474.0,
+        1301.0,
+        3631.0,
+        1502.0
+      ],
+      "text": "Wohlgebohren",
+      "confidence": null,
+      "regions": [
+        "_c68edb31-01ff-4abd-975b-35574c8795f7"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1682.0,
+          1881.0
+        ],
+        [
+          2616.0,
+          1897.0
+        ],
+        [
+          3961.0,
+          1883.0
+        ]
+      ],
+      "bbox": [
+        1679.0,
+        1764.0,
+        3961.0,
+        1940.0
+      ],
+      "text": "dem Dreisernen so stehen Caßberg",
+      "confidence": null,
+      "regions": [
+        "_c68edb31-01ff-4abd-975b-35574c8795f7"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          1682.0,
+          2036.0
+        ],
+        [
+          2765.0,
+          2066.0
+        ],
+        [
+          4056.0,
+          2071.0
+        ]
+      ],
+      "bbox": [
+        1679.0,
+        1965.0,
+        4056.0,
+        2109.0
+      ],
+      "text": "2. 2. Cammerer und Weltster Ritten",
+      "confidence": null,
+      "regions": [
+        "_c68edb31-01ff-4abd-975b-35574c8795f7"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          2066.0,
+          2907.0
+        ],
+        [
+          3013.0,
+          2912.0
+        ],
+        [
+          3487.0,
+          2893.0
+        ],
+        [
+          3903.0,
+          2893.0
+        ]
+      ],
+      "bbox": [
+        2066.0,
+        2773.0,
+        3903.0,
+        3029.0
+      ],
+      "text": "in Eggishausen 2. Thurgau",
+      "confidence": null,
+      "regions": [
+        "_c68edb31-01ff-4abd-975b-35574c8795f7"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 10041,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T15:39:09+00:00"
+}

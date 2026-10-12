@@ -1,0 +1,169 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Winterthur",
+  "source": {
+    "name": "330-MsBRH_513-91-151.jpg",
+    "bytes": 4731672,
+    "sha256": "8c1fa13fa9d105d6d3b553588311f571f8b3fb29e0be4d630524521495552c7d",
+    "remote": "digitalisate/Winterthur/330-MsBRH_513-91-151.jpg",
+    "key": "Winterthur__330-MsBRH_513-91-151",
+    "working_copy": "330-MsBRH_513-91-151.jpg"
+  },
+  "text": "Sr. Hochwohlgeboren\nAadein\ndem Kreisschauen Joseph von Kaßberg, K. K.\nLimmerer und Wallaster = Ritter\nin Eggihausen unten thungen",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          2249.0,
+          1097.0
+        ],
+        [
+          3050.0,
+          1118.0
+        ],
+        [
+          3666.0,
+          1115.0
+        ]
+      ],
+      "bbox": [
+        2246.0,
+        977.0,
+        3666.0,
+        1177.0
+      ],
+      "text": "Sr. Hochwohlgeboren",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          3224.0,
+          1359.0
+        ],
+        [
+          3815.0,
+          1359.0
+        ]
+      ],
+      "bbox": [
+        3224.0,
+        1177.0,
+        3815.0,
+        1414.0
+      ],
+      "text": "Aadein",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1341.0,
+          1567.0
+        ],
+        [
+          3991.0,
+          1554.0
+        ]
+      ],
+      "bbox": [
+        1339.0,
+        1435.0,
+        3991.0,
+        1632.0
+      ],
+      "text": "dem Kreisschauen Joseph von Kaßberg, K. K.",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          1362.0,
+          1692.0
+        ],
+        [
+          2106.0,
+          1723.0
+        ],
+        [
+          3622.0,
+          1739.0
+        ]
+      ],
+      "bbox": [
+        1360.0,
+        1617.0,
+        3622.0,
+        1807.0
+      ],
+      "text": "Limmerer und Wallaster = Ritter",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          1872.0,
+          2657.0
+        ],
+        [
+          2538.0,
+          2652.0
+        ],
+        [
+          3440.0,
+          2626.0
+        ],
+        [
+          3997.0,
+          2626.0
+        ]
+      ],
+      "bbox": [
+        1869.0,
+        2509.0,
+        3997.0,
+        2802.0
+      ],
+      "text": "in Eggihausen unten thungen",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 12638,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T16:19:39+00:00"
+}

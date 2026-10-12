@@ -1,0 +1,86 @@
+{
+  "schema": "atr-batch/1",
+  "run": "gemini-300-final",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "Marbach/HS00787922_150dpi",
+  "source": {
+    "key": "Marbach__HS00787922_150dpi__HS00787922_0047_150dpi",
+    "doc_id": "Marbach/HS00787922_150dpi",
+    "bestand": "Marbach",
+    "name": "HS00787922_0047_150dpi.jpg",
+    "bytes": 187410,
+    "sha256": "1d90c03bf4f216f8a89fa1c9489d6761502010f8b7d4bb74727853332c22d9b2",
+    "sha256_of": "original",
+    "remote": "digitalisate/Marbach/HS00787922_150dpi/HS00787922_0047_150dpi.jpg",
+    "working_copy": "HS00787922_0047_150dpi.jpg"
+  },
+  "text": "en,\nd\n[...];\nnden\nstels\neiten\nmir,",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 5065,
+  "truncated": false,
+  "settings": "prompt-9e0503e8+think-low|max8192",
+  "quality": {
+    "verdict": "short",
+    "chars": 34,
+    "lines": 7,
+    "longest_char_run": 3,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 4.0,
+    "deliberation_ratio": 0.0,
+    "run_share": 0.0882,
+    "run_on_own_line": false
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-9e0503e8+think-low",
+  "recognised_at": "2026-10-11T18:03:20+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "gemini-strict2-third",
+    "source": {
+      "key": "Marbach__HS00787922_150dpi__HS00787922_0047_150dpi",
+      "doc_id": "Marbach/HS00787922_150dpi",
+      "bestand": "Marbach",
+      "name": "HS00787922_0047_150dpi.jpg",
+      "bytes": 187410,
+      "sha256": "1d90c03bf4f216f8a89fa1c9489d6761502010f8b7d4bb74727853332c22d9b2",
+      "sha256_of": "original",
+      "remote": "digitalisate/Marbach/HS00787922_150dpi/HS00787922_0047_150dpi.jpg",
+      "working_copy": "HS00787922_0047_150dpi.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-9e0503e8+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-10-11T18:03:20+00:00"
+  },
+  "merged_from": {
+    "run": "gemini-strict2-third",
+    "attempt": 3,
+    "verdict": "short",
+    "of": 3,
+    "considered": [
+      {
+        "run": "gemini-300-strict2",
+        "verdict": "empty"
+      },
+      {
+        "run": "gemini-strict2-repeat",
+        "verdict": "empty"
+      },
+      {
+        "run": "gemini-strict2-third",
+        "verdict": "short"
+      }
+    ]
+  }
+}

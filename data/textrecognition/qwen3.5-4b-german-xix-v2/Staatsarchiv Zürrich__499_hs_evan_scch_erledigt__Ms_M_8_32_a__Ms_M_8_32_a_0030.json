@@ -1,0 +1,133 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Staatsarchiv Zürrich/499_hs_evan_scch_erledigt/Ms_M_8_32_a",
+  "source": {
+    "name": "Ms_M_8_32_a_0030.tif",
+    "bytes": 41927558,
+    "sha256": "5508ccfde8d266468c428e1098db16c304aa895a952ba24a527f2ab6bd44e34a",
+    "remote": "digitalisate/Staatsarchiv Zürrich/499_hs_evan_scch_erledigt/Ms_M_8_32_a/Ms_M_8_32_a_0030.tif",
+    "key": "Staatsarchiv Zürrich__499_hs_evan_scch_erledigt__Ms_M_8_32_a__Ms_M_8_32_a_0030",
+    "working_copy": "Ms_M_8_32_a_0030.jpg"
+  },
+  "text": "Jochgeber̅er\nvon\nDeinem\nDein",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          1561.0,
+          1908.0
+        ],
+        [
+          1551.0,
+          1613.0
+        ],
+        [
+          1563.0,
+          1320.0
+        ]
+      ],
+      "bbox": [
+        1477.0,
+        1318.0,
+        1620.0,
+        1908.0
+      ],
+      "text": "Jochgeber̅er",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1819.0,
+          1361.0
+        ],
+        [
+          1824.0,
+          1685.0
+        ]
+      ],
+      "bbox": [
+        1772.0,
+        1359.0,
+        1876.0,
+        1685.0
+      ],
+      "text": "von",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          2007.0,
+          1765.0
+        ],
+        [
+          2012.0,
+          2082.0
+        ]
+      ],
+      "bbox": [
+        1946.0,
+        1762.0,
+        2060.0,
+        2082.0
+      ],
+      "text": "Deinem",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          2545.0,
+          1855.0
+        ],
+        [
+          2550.0,
+          2103.0
+        ]
+      ],
+      "bbox": [
+        2477.0,
+        1853.0,
+        2593.0,
+        2103.0
+      ],
+      "text": "Dein",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 6963,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 31,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T23:16:26+00:00"
+}

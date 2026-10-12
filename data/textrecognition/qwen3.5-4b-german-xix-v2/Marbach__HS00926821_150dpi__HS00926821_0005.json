@@ -1,0 +1,129 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00926821_150dpi",
+  "source": {
+    "name": "HS00926821_0005.jpg",
+    "bytes": 74484,
+    "sha256": "cbb4bab1c6de6dc9c4f795700725a6862755caa92c42e19e8d962226b0aff843",
+    "remote": "digitalisate/Marbach/HS00926821_150dpi/HS00926821_0005.jpg",
+    "key": "Marbach__HS00926821_150dpi__HS00926821_0005",
+    "working_copy": "HS00926821_0005.jpg"
+  },
+  "text": "sich\n1869.\n1.\n1860.",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          427.0,
+          588.0
+        ],
+        [
+          460.0,
+          587.0
+        ]
+      ],
+      "bbox": [
+        425.0,
+        553.0,
+        460.0,
+        596.0
+      ],
+      "text": "sich",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          492.0,
+          363.0
+        ],
+        [
+          523.0,
+          363.0
+        ]
+      ],
+      "bbox": [
+        491.0,
+        330.0,
+        523.0,
+        377.0
+      ],
+      "text": "1869.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          479.0,
+          586.0
+        ],
+        [
+          494.0,
+          585.0
+        ]
+      ],
+      "bbox": [
+        478.0,
+        571.0,
+        494.0,
+        594.0
+      ],
+      "text": "1.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          513.0,
+          586.0
+        ],
+        [
+          529.0,
+          586.0
+        ]
+      ],
+      "bbox": [
+        513.0,
+        566.0,
+        529.0,
+        596.0
+      ],
+      "text": "1860.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 13605,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 42,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T21:00:12+00:00"
+}

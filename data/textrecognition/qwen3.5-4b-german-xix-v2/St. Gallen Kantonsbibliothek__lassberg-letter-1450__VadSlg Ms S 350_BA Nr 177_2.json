@@ -1,0 +1,149 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "St. Gallen Kantonsbibliothek/lassberg-letter-1450",
+  "source": {
+    "name": "VadSlg Ms S 350_BA Nr 177_2.tif",
+    "bytes": 24571456,
+    "sha256": "ba0d87a57c0964f55bf5e35c4003c1c107c50bd5acf4e958409b6f17610fb3fc",
+    "remote": "digitalisate/St. Gallen Kantonsbibliothek/lassberg-letter-1450/VadSlg Ms S 350_BA Nr 177_2.tif",
+    "key": "St. Gallen Kantonsbibliothek__lassberg-letter-1450__VadSlg Ms S 350_BA Nr 177_2",
+    "working_copy": "VadSlg Ms S 350_BA Nr 177_2.jpg"
+  },
+  "text": "nerer Kupferstürzer Hartmann,\nin der Ehrenzellerischen apostekke\nGottin.\nder\n1",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          1052.0,
+          1579.0
+        ],
+        [
+          2170.0,
+          1574.0
+        ]
+      ],
+      "bbox": [
+        1050.0,
+        1503.0,
+        2170.0,
+        1622.0
+      ],
+      "text": "nerer Kupferstürzer Hartmann,",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1119.0,
+          1766.0
+        ],
+        [
+          2359.0,
+          1741.0
+        ]
+      ],
+      "bbox": [
+        1117.0,
+        1680.0,
+        2359.0,
+        1802.0
+      ],
+      "text": "in der Ehrenzellerischen apostekke",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1896.0,
+          2079.0
+        ],
+        [
+          2209.0,
+          2074.0
+        ]
+      ],
+      "bbox": [
+        1894.0,
+        1993.0,
+        2209.0,
+        2120.0
+      ],
+      "text": "Gottin.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          127.0,
+          2878.0
+        ],
+        [
+          129.0,
+          2835.0
+        ]
+      ],
+      "bbox": [
+        70.0,
+        2831.0,
+        174.0,
+        2878.0
+      ],
+      "text": "der",
+      "confidence": null,
+      "regions": []
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          122.0,
+          3052.0
+        ],
+        [
+          124.0,
+          3074.0
+        ]
+      ],
+      "bbox": [
+        71.0,
+        3047.0,
+        170.0,
+        3076.0
+      ],
+      "text": "1",
+      "confidence": null,
+      "regions": []
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 9319,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 52,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T21:35:29+00:00"
+}

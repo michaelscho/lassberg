@@ -1,0 +1,85 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "St. Gallen Kantonsbibliothek/lassberg-letter-1823",
+  "source": {
+    "name": "VadSlg Ms S 350_BA Nr 348_2.tif",
+    "bytes": 31298426,
+    "sha256": "5337c4618260c17deab12a027fa468caf51a1945a5a57ce9f1df579cde07b3b4",
+    "remote": "digitalisate/St. Gallen Kantonsbibliothek/lassberg-letter-1823/VadSlg Ms S 350_BA Nr 348_2.tif",
+    "key": "St. Gallen Kantonsbibliothek__lassberg-letter-1823__VadSlg Ms S 350_BA Nr 348_2",
+    "working_copy": "VadSlg Ms S 350_BA Nr 348_2.jpg"
+  },
+  "text": "Herrmann Males zu\nad 100",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          1981.0,
+          1053.0
+        ],
+        [
+          2210.0,
+          1064.0
+        ],
+        [
+          2721.0,
+          1068.0
+        ]
+      ],
+      "bbox": [
+        1981.0,
+        965.0,
+        2721.0,
+        1111.0
+      ],
+      "text": "Herrmann Males zu",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          2540.0,
+          1430.0
+        ],
+        [
+          2713.0,
+          1429.0
+        ]
+      ],
+      "bbox": [
+        2539.0,
+        1328.0,
+        2713.0,
+        1460.0
+      ],
+      "text": "ad 100",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 9735,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 31,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T21:42:55+00:00"
+}

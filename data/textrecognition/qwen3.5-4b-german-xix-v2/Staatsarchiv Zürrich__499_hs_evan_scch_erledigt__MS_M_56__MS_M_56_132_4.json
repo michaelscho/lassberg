@@ -1,0 +1,177 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Staatsarchiv Zürrich/499_hs_evan_scch_erledigt/MS_M_56",
+  "source": {
+    "name": "MS_M_56_132_4.tif",
+    "bytes": 41730384,
+    "sha256": "76ec4e07cd8b5a82facc2c328f2fceac8dd4fe8b651cf6c5436d3e428f000758",
+    "remote": "digitalisate/Staatsarchiv Zürrich/499_hs_evan_scch_erledigt/MS_M_56/MS_M_56_132_4.tif",
+    "key": "Staatsarchiv Zürrich__499_hs_evan_scch_erledigt__MS_M_56__MS_M_56_132_4",
+    "working_copy": "MS_M_56_132_4.jpg"
+  },
+  "text": "1.\nder\n.\nnicht\nde\ngebotene",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          1648.0,
+          2162.0
+        ],
+        [
+          1653.0,
+          2077.0
+        ]
+      ],
+      "bbox": [
+        1595.0,
+        2072.0,
+        1694.0,
+        2162.0
+      ],
+      "text": "1.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1650.0,
+          2194.0
+        ],
+        [
+          1655.0,
+          2443.0
+        ]
+      ],
+      "bbox": [
+        1611.0,
+        2192.0,
+        1701.0,
+        2443.0
+      ],
+      "text": "der",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1653.0,
+          2821.0
+        ],
+        [
+          1653.0,
+          2792.0
+        ]
+      ],
+      "bbox": [
+        1611.0,
+        2792.0,
+        1701.0,
+        2821.0
+      ],
+      "text": ".",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          1655.0,
+          2720.0
+        ],
+        [
+          1655.0,
+          2704.0
+        ]
+      ],
+      "bbox": [
+        1600.0,
+        2704.0,
+        1719.0,
+        2720.0
+      ],
+      "text": "nicht",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          1828.0,
+          2275.0
+        ],
+        [
+          1835.0,
+          2404.0
+        ]
+      ],
+      "bbox": [
+        1802.0,
+        2270.0,
+        1876.0,
+        2404.0
+      ],
+      "text": "de",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          1832.0,
+          2529.0
+        ],
+        [
+          1832.0,
+          2881.0
+        ]
+      ],
+      "bbox": [
+        1786.0,
+        2529.0,
+        1899.0,
+        2881.0
+      ],
+      "text": "gebotene",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 7307,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 31,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T22:46:11+00:00"
+}

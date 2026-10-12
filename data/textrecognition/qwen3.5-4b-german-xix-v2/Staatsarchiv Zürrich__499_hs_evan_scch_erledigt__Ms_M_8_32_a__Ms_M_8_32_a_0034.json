@@ -1,0 +1,249 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Staatsarchiv Zürrich/499_hs_evan_scch_erledigt/Ms_M_8_32_a",
+  "source": {
+    "name": "Ms_M_8_32_a_0034.tif",
+    "bytes": 41118808,
+    "sha256": "d8e6c8485fb87005734082f332ec62a2a19060b7b1d214c547320a808a208c78",
+    "remote": "digitalisate/Staatsarchiv Zürrich/499_hs_evan_scch_erledigt/Ms_M_8_32_a/Ms_M_8_32_a_0034.tif",
+    "key": "Staatsarchiv Zürrich__499_hs_evan_scch_erledigt__Ms_M_8_32_a__Ms_M_8_32_a_0034",
+    "working_copy": "Ms_M_8_32_a_0034.jpg"
+  },
+  "text": "172\n--\nDein\nBern\n1\nDein\nes\n5\nDein",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          1305.0,
+          1455.0
+        ],
+        [
+          1310.0,
+          1553.0
+        ]
+      ],
+      "bbox": [
+        1265.0,
+        1450.0,
+        1363.0,
+        1553.0
+      ],
+      "text": "172",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1312.0,
+          1625.0
+        ],
+        [
+          1312.0,
+          1605.0
+        ]
+      ],
+      "bbox": [
+        1265.0,
+        1605.0,
+        1375.0,
+        1625.0
+      ],
+      "text": "--",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1547.0,
+          1994.0
+        ],
+        [
+          1554.0,
+          1855.0
+        ]
+      ],
+      "bbox": [
+        1495.0,
+        1853.0,
+        1605.0,
+        1994.0
+      ],
+      "text": "Dein",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          1547.0,
+          2713.0
+        ],
+        [
+          1554.0,
+          2383.0
+        ]
+      ],
+      "bbox": [
+        1495.0,
+        2380.0,
+        1603.0,
+        2713.0
+      ],
+      "text": "Bern",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          1712.0,
+          2564.0
+        ],
+        [
+          1715.0,
+          2622.0
+        ]
+      ],
+      "bbox": [
+        1641.0,
+        2559.0,
+        1761.0,
+        2622.0
+      ],
+      "text": "1",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          1710.0,
+          2389.0
+        ],
+        [
+          1712.0,
+          2036.0
+        ]
+      ],
+      "bbox": [
+        1632.0,
+        2034.0,
+        1759.0,
+        2389.0
+      ],
+      "text": "Dein",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          2079.0,
+          1775.0
+        ],
+        [
+          2081.0,
+          1687.0
+        ]
+      ],
+      "bbox": [
+        1987.0,
+        1683.0,
+        2115.0,
+        1775.0
+      ],
+      "text": "es",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 7,
+      "baseline": [
+        [
+          2238.0,
+          1620.0
+        ],
+        [
+          2240.0,
+          1553.0
+        ]
+      ],
+      "bbox": [
+        2177.0,
+        1551.0,
+        2280.0,
+        1620.0
+      ],
+      "text": "5",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 8,
+      "baseline": [
+        [
+          2238.0,
+          2210.0
+        ],
+        [
+          2244.0,
+          2409.0
+        ]
+      ],
+      "bbox": [
+        2186.0,
+        2206.0,
+        2278.0,
+        2409.0
+      ],
+      "text": "Dein",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 6685,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 46,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T23:17:06+00:00"
+}

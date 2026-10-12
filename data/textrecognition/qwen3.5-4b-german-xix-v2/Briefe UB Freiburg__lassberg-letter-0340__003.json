@@ -1,0 +1,288 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Briefe UB Freiburg/lassberg-letter-0340",
+  "source": {
+    "name": "003.tif",
+    "bytes": 17865856,
+    "sha256": "6956e858caf30bbbd75cb495d474075230f70323e93760764e942f61f231c705",
+    "remote": "digitalisate/Briefe UB Freiburg/lassberg-letter-0340/003.tif",
+    "key": "Briefe UB Freiburg__lassberg-letter-0340__003",
+    "working_copy": "003.jpg"
+  },
+  "text": "brechens. Joseph Finker soll gesagt haben man kennen 8 Vedicale\nLarissimae nicht unter jährlich 16000 fl bestim̃en.\nder leitet man zur Befehl – in Eile\nunterthänigster\nsie erba¬",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          175.0,
+          453.0
+        ],
+        [
+          1097.0,
+          466.0
+        ],
+        [
+          1810.0,
+          449.0
+        ]
+      ],
+      "bbox": [
+        175.0,
+        396.0,
+        1810.0,
+        507.0
+      ],
+      "text": "brechens. Joseph Finker soll gesagt haben man kennen 8 Vedicale",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          182.0,
+          623.0
+        ],
+        [
+          972.0,
+          606.0
+        ],
+        [
+          1672.0,
+          611.0
+        ]
+      ],
+      "bbox": [
+        180.0,
+        546.0,
+        1672.0,
+        666.0
+      ],
+      "text": "Larissimae nicht unter jährlich 16000 fl bestim̃en.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          448.0,
+          790.0
+        ],
+        [
+          1672.0,
+          768.0
+        ]
+      ],
+      "bbox": [
+        446.0,
+        713.0,
+        1672.0,
+        834.0
+      ],
+      "text": "der leitet man zur Befehl – in Eile",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          998.0,
+          1067.0
+        ],
+        [
+          1262.0,
+          1049.0
+        ],
+        [
+          1475.0,
+          1050.0
+        ]
+      ],
+      "bbox": [
+        996.0,
+        993.0,
+        1475.0,
+        1112.0
+      ],
+      "text": "unterthänigster",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          1233.0,
+          1253.0
+        ],
+        [
+          1546.0,
+          1250.0
+        ]
+      ],
+      "bbox": [
+        1231.0,
+        1137.0,
+        1546.0,
+        1297.0
+      ],
+      "text": "sie erba¬",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 6130,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "trechant. Hofruh Finker holl gesagt haben man kennen et videamus\nLaurissimae miht auser güetig 16000 Fl bestimmen.\nDen leütet mein zur Arfel – in Eile\nverünssere\nIch anbeg",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            175.0,
+            453.0
+          ],
+          [
+            1097.0,
+            466.0
+          ],
+          [
+            1810.0,
+            449.0
+          ]
+        ],
+        "bbox": [
+          175.0,
+          396.0,
+          1810.0,
+          507.0
+        ],
+        "text": "trechant. Hofruh Finker holl gesagt haben man kennen et videamus",
+        "confidence": 0.8156922212801874,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            182.0,
+            623.0
+          ],
+          [
+            972.0,
+            606.0
+          ],
+          [
+            1672.0,
+            611.0
+          ]
+        ],
+        "bbox": [
+          180.0,
+          546.0,
+          1672.0,
+          666.0
+        ],
+        "text": "Laurissimae miht auser güetig 16000 Fl bestimmen.",
+        "confidence": 0.8136984938383103,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            448.0,
+            790.0
+          ],
+          [
+            1672.0,
+            768.0
+          ]
+        ],
+        "bbox": [
+          446.0,
+          713.0,
+          1672.0,
+          834.0
+        ],
+        "text": "Den leütet mein zur Arfel – in Eile",
+        "confidence": 0.7912901664773623,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            998.0,
+            1067.0
+          ],
+          [
+            1262.0,
+            1049.0
+          ],
+          [
+            1475.0,
+            1050.0
+          ]
+        ],
+        "bbox": [
+          996.0,
+          993.0,
+          1475.0,
+          1112.0
+        ],
+        "text": "verünssere",
+        "confidence": 0.6324923099441961,
+        "regions": []
+      },
+      {
+        "order": 4,
+        "baseline": [
+          [
+            1233.0,
+            1253.0
+          ],
+          [
+            1546.0,
+            1250.0
+          ]
+        ],
+        "bbox": [
+          1231.0,
+          1137.0,
+          1546.0,
+          1297.0
+        ],
+        "text": "Ich anbeg",
+        "confidence": 0.6923389633496603,
+        "regions": []
+      }
+    ],
+    "confidence": 0.7491024309779433,
+    "timing_ms": 15008,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T00:26:07+00:00"
+}

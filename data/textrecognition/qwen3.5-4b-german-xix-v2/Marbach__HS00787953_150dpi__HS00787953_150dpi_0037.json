@@ -1,0 +1,237 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Marbach/HS00787953_150dpi",
+  "source": {
+    "name": "HS00787953_150dpi_0037.jpg",
+    "bytes": 124222,
+    "sha256": "862fa07a52d099872ee6eef11680c6f89ef9b284646b7de6345609f9787fdb55",
+    "remote": "digitalisate/Marbach/HS00787953_150dpi/HS00787953_150dpi_0037.jpg",
+    "key": "Marbach__HS00787953_150dpi__HS00787953_150dpi_0037",
+    "working_copy": "HS00787953_150dpi_0037.jpg"
+  },
+  "text": "Lassier\nverehre von\nMevand, Ludwig\n823\nischausen, Heiligender\n512.\nA: Mebaner\n168-4717",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          215.0,
+          338.0
+        ],
+        [
+          355.0,
+          335.0
+        ]
+      ],
+      "bbox": [
+        214.0,
+        296.0,
+        355.0,
+        352.0
+      ],
+      "text": "Lassier",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          439.0,
+          333.0
+        ],
+        [
+          608.0,
+          330.0
+        ]
+      ],
+      "bbox": [
+        439.0,
+        295.0,
+        608.0,
+        352.0
+      ],
+      "text": "verehre von",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          219.0,
+          468.0
+        ],
+        [
+          409.0,
+          466.0
+        ],
+        [
+          539.0,
+          458.0
+        ],
+        [
+          586.0,
+          459.0
+        ]
+      ],
+      "bbox": [
+        218.0,
+        418.0,
+        586.0,
+        490.0
+      ],
+      "text": "Mevand, Ludwig",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          350.0,
+          592.0
+        ],
+        [
+          418.0,
+          594.0
+        ]
+      ],
+      "bbox": [
+        350.0,
+        554.0,
+        418.0,
+        608.0
+      ],
+      "text": "823",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          287.0,
+          696.0
+        ],
+        [
+          467.0,
+          697.0
+        ],
+        [
+          728.0,
+          686.0
+        ]
+      ],
+      "bbox": [
+        286.0,
+        648.0,
+        728.0,
+        719.0
+      ],
+      "text": "ischausen, Heiligender",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          395.0,
+          810.0
+        ],
+        [
+          548.0,
+          813.0
+        ]
+      ],
+      "bbox": [
+        395.0,
+        769.0,
+        548.0,
+        830.0
+      ],
+      "text": "512.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 6,
+      "baseline": [
+        [
+          593.0,
+          135.0
+        ],
+        [
+          804.0,
+          128.0
+        ]
+      ],
+      "bbox": [
+        592.0,
+        92.0,
+        804.0,
+        153.0
+      ],
+      "text": "A: Mebaner",
+      "confidence": null,
+      "regions": [
+        "r1"
+      ]
+    },
+    {
+      "order": 7,
+      "baseline": [
+        [
+          590.0,
+          1211.0
+        ],
+        [
+          844.0,
+          1205.0
+        ]
+      ],
+      "bbox": [
+        589.0,
+        1172.0,
+        844.0,
+        1222.0
+      ],
+      "text": "168-4717",
+      "confidence": null,
+      "regions": [
+        "r2"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 6025,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-22T11:47:25+00:00"
+}

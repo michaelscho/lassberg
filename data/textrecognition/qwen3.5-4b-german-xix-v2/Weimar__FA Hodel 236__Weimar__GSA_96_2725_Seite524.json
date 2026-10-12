@@ -1,0 +1,172 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Weimar/FA Hodel 236/Weimar",
+  "source": {
+    "name": "GSA_96_2725_Seite524.jpg",
+    "bytes": 3037601,
+    "sha256": "17bfe4887513ca8b438184ee46f5ef3d0360abd8a92dc20972b472f121677dd6",
+    "remote": "digitalisate/Weimar/FA Hodel 236/Weimar/GSA_96_2725_Seite524.jpg",
+    "key": "Weimar__FA Hodel 236__Weimar__GSA_96_2725_Seite524",
+    "working_copy": "GSA_96_2725_Seite524.jpg"
+  },
+  "text": "1849\n1849\n1849",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          2075.0,
+          328.0
+        ],
+        [
+          2127.0,
+          329.0
+        ]
+      ],
+      "bbox": [
+        2075.0,
+        296.0,
+        2127.0,
+        337.0
+      ],
+      "text": "1849",
+      "confidence": null,
+      "regions": [
+        "_b94cd0a1-a5f0-4627-ba14-fecbda1a24d7"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          419.0,
+          711.0
+        ],
+        [
+          447.0,
+          710.0
+        ]
+      ],
+      "bbox": [
+        419.0,
+        698.0,
+        447.0,
+        727.0
+      ],
+      "text": "1849",
+      "confidence": null,
+      "regions": [
+        "_ce8378e0-8d43-4cf2-87e5-c8b470c18768"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          473.0,
+          710.0
+        ],
+        [
+          494.0,
+          710.0
+        ]
+      ],
+      "bbox": [
+        472.0,
+        697.0,
+        494.0,
+        725.0
+      ],
+      "text": "1849",
+      "confidence": null,
+      "regions": [
+        "_ce8378e0-8d43-4cf2-87e5-c8b470c18768"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 44040,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "✳\n✳\nIIOA",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            419.0,
+            711.0
+          ],
+          [
+            447.0,
+            710.0
+          ]
+        ],
+        "bbox": [
+          419.0,
+          698.0,
+          447.0,
+          727.0
+        ],
+        "text": "✳",
+        "confidence": 0.4841100126504898,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            473.0,
+            710.0
+          ],
+          [
+            494.0,
+            710.0
+          ]
+        ],
+        "bbox": [
+          472.0,
+          697.0,
+          494.0,
+          725.0
+        ],
+        "text": "✳",
+        "confidence": 0.48964644471804303,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            2075.0,
+            328.0
+          ],
+          [
+            2127.0,
+            329.0
+          ]
+        ],
+        "bbox": [
+          2075.0,
+          296.0,
+          2127.0,
+          337.0
+        ],
+        "text": "IIOA",
+        "confidence": 0.5174933411180973,
+        "regions": []
+      }
+    ],
+    "confidence": 0.49708326616221005,
+    "timing_ms": 45311,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T12:08:46+00:00"
+}

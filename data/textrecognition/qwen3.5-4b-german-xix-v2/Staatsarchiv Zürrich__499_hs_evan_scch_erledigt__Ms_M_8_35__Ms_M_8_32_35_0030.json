@@ -1,0 +1,137 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Staatsarchiv Zürrich/499_hs_evan_scch_erledigt/Ms_M_8_35",
+  "source": {
+    "name": "Ms_M_8_32_35_0030.tif",
+    "bytes": 11879562,
+    "sha256": "ca083be6d456190e92d91c2bdc0b13a05d6de377ba5067aa0f4bad902b9646a7",
+    "remote": "digitalisate/Staatsarchiv Zürrich/499_hs_evan_scch_erledigt/Ms_M_8_35/Ms_M_8_32_35_0030.tif",
+    "key": "Staatsarchiv Zürrich__499_hs_evan_scch_erledigt__Ms_M_8_35__Ms_M_8_32_35_0030",
+    "working_copy": "Ms_M_8_32_35_0030.jpg"
+  },
+  "text": "dem Derrer Dom Capitilaren, Ritter von Frug zu Frischburg im Be\nSendet durch Herrn Rektor Morikofer vor Frauenfeld, seinen\nserlichen große und empfehlung des Überbringers, sind alte Pfrund",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          219.0,
+          251.0
+        ],
+        [
+          1164.0,
+          268.0
+        ],
+        [
+          1952.0,
+          275.0
+        ]
+      ],
+      "bbox": [
+        218.0,
+        209.0,
+        1952.0,
+        299.0
+      ],
+      "text": "dem Derrer Dom Capitilaren, Ritter von Frug zu Frischburg im Be",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          303.0,
+          373.0
+        ],
+        [
+          827.0,
+          374.0
+        ],
+        [
+          1426.0,
+          393.0
+        ],
+        [
+          1949.0,
+          398.0
+        ]
+      ],
+      "bbox": [
+        302.0,
+        317.0,
+        1949.0,
+        420.0
+      ],
+      "text": "Sendet durch Herrn Rektor Morikofer vor Frauenfeld, seinen",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          170.0,
+          495.0
+        ],
+        [
+          385.0,
+          492.0
+        ],
+        [
+          720.0,
+          497.0
+        ],
+        [
+          976.0,
+          507.0
+        ],
+        [
+          1285.0,
+          510.0
+        ],
+        [
+          1430.0,
+          516.0
+        ],
+        [
+          1795.0,
+          514.0
+        ]
+      ],
+      "bbox": [
+        169.0,
+        439.0,
+        1795.0,
+        545.0
+      ],
+      "text": "serlichen große und empfehlung des Überbringers, sind alte Pfrund",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 8364,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 47,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T23:27:05+00:00"
+}

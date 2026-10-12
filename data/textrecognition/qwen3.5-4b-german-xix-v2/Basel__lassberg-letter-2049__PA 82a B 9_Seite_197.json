@@ -1,0 +1,264 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Basel/lassberg-letter-2049",
+  "source": {
+    "name": "PA 82a B 9_Seite_197.jpg",
+    "bytes": 231632,
+    "sha256": "f2e62d7bc1fff1fd85cfcbf687e603156089f2336e46468a108d7ccbf5002669",
+    "remote": "digitalisate/Basel/lassberg-letter-2049/PA 82a B 9_Seite_197.jpg",
+    "key": "Basel__lassberg-letter-2049__PA 82a B 9_Seite_197",
+    "working_copy": "PA 82a B 9_Seite_197.jpg"
+  },
+  "text": "Seiner Hochwohlgeboren\nHerrn Baron Joseph von Laßberg.\n1900\nBelloff Tschippenhausen\nCet. Thurgau",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          571.0,
+          525.0
+        ],
+        [
+          800.0,
+          529.0
+        ]
+      ],
+      "bbox": [
+        570.0,
+        502.0,
+        800.0,
+        545.0
+      ],
+      "text": "Seiner Hochwohlgeboren",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          624.0,
+          615.0
+        ],
+        [
+          957.0,
+          616.0
+        ]
+      ],
+      "bbox": [
+        624.0,
+        593.0,
+        957.0,
+        646.0
+      ],
+      "text": "Herrn Baron Joseph von Laßberg.",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          636.0,
+          813.0
+        ],
+        [
+          674.0,
+          809.0
+        ]
+      ],
+      "bbox": [
+        632.0,
+        768.0,
+        675.0,
+        827.0
+      ],
+      "text": "1900",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          805.0,
+          775.0
+        ],
+        [
+          1032.0,
+          771.0
+        ]
+      ],
+      "bbox": [
+        805.0,
+        748.0,
+        1032.0,
+        793.0
+      ],
+      "text": "Belloff Tschippenhausen",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          855.0,
+          821.0
+        ],
+        [
+          1014.0,
+          817.0
+        ]
+      ],
+      "bbox": [
+        854.0,
+        795.0,
+        1014.0,
+        843.0
+      ],
+      "text": "Cet. Thurgau",
+      "confidence": null,
+      "regions": [
+        "r0"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 8490,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "Scinar Hoelwolfschoren\nHerrn Baron Joseph von Lassberg\nPH\nS Hop Eppisterijen\nCant. Thurgau.",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            571.0,
+            525.0
+          ],
+          [
+            800.0,
+            529.0
+          ]
+        ],
+        "bbox": [
+          570.0,
+          502.0,
+          800.0,
+          545.0
+        ],
+        "text": "Scinar Hoelwolfschoren",
+        "confidence": 0.840044845234264,
+        "regions": []
+      },
+      {
+        "order": 1,
+        "baseline": [
+          [
+            624.0,
+            615.0
+          ],
+          [
+            957.0,
+            616.0
+          ]
+        ],
+        "bbox": [
+          624.0,
+          593.0,
+          957.0,
+          646.0
+        ],
+        "text": "Herrn Baron Joseph von Lassberg",
+        "confidence": 0.9257562179719249,
+        "regions": []
+      },
+      {
+        "order": 2,
+        "baseline": [
+          [
+            636.0,
+            813.0
+          ],
+          [
+            674.0,
+            809.0
+          ]
+        ],
+        "bbox": [
+          632.0,
+          768.0,
+          675.0,
+          827.0
+        ],
+        "text": "PH",
+        "confidence": 0.7042639851570129,
+        "regions": []
+      },
+      {
+        "order": 3,
+        "baseline": [
+          [
+            805.0,
+            775.0
+          ],
+          [
+            1032.0,
+            771.0
+          ]
+        ],
+        "bbox": [
+          805.0,
+          748.0,
+          1032.0,
+          793.0
+        ],
+        "text": "S Hop Eppisterijen",
+        "confidence": 0.7323842247327169,
+        "regions": []
+      },
+      {
+        "order": 4,
+        "baseline": [
+          [
+            855.0,
+            821.0
+          ],
+          [
+            1014.0,
+            817.0
+          ]
+        ],
+        "bbox": [
+          854.0,
+          795.0,
+          1014.0,
+          843.0
+        ],
+        "text": "Cant. Thurgau.",
+        "confidence": 0.8905068295342582,
+        "regions": []
+      }
+    ],
+    "confidence": 0.8185912205260355,
+    "timing_ms": 13018,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-21T18:43:48+00:00"
+}

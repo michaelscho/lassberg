@@ -1,0 +1,80 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Briefe UB Freiburg/lassberg-letter-0197",
+  "source": {
+    "name": "006.tif",
+    "bytes": 13275100,
+    "sha256": "1eb3bbe105bf9c24b8f851cbf32f02c928adf25daa30aa283fd86436d5ec02d4",
+    "remote": "digitalisate/Briefe UB Freiburg/lassberg-letter-0197/006.tif",
+    "key": "Briefe UB Freiburg__lassberg-letter-0197__006",
+    "working_copy": "006.jpg"
+  },
+  "text": "und",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          982.0,
+          565.0
+        ],
+        [
+          1039.0,
+          562.0
+        ]
+      ],
+      "bbox": [
+        980.0,
+        531.0,
+        1039.0,
+        602.0
+      ],
+      "text": "und",
+      "confidence": null,
+      "regions": [
+        "_0a67b687-ac11-4464-a5ef-02e48457dd7a"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 4841,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "10.5281/zenodo.20642057",
+    "text": "1",
+    "lines": [
+      {
+        "order": 0,
+        "baseline": [
+          [
+            982.0,
+            565.0
+          ],
+          [
+            1039.0,
+            562.0
+          ]
+        ],
+        "bbox": [
+          980.0,
+          531.0,
+          1039.0,
+          602.0
+        ],
+        "text": "1",
+        "confidence": 0.9739199280738831,
+        "regions": []
+      }
+    ],
+    "confidence": 0.9739199280738831,
+    "timing_ms": 5872,
+    "error": null
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-21T23:00:59+00:00"
+}

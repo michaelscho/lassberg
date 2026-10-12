@@ -1,0 +1,133 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "wlb stuttgart/Cod.hist.fol.767,I",
+  "source": {
+    "name": "06.jpg",
+    "bytes": 243186,
+    "sha256": "4eb8099d221ec9908645b6b4637812668d1b37806008e634ea18a95c677205c9",
+    "remote": "digitalisate/wlb stuttgart/Cod.hist.fol.767,I/06.jpg",
+    "key": "wlb stuttgart__Cod.hist.fol.767,I__06",
+    "working_copy": "06.jpg"
+  },
+  "text": "In Übrigen bitte ich Sie die Versiedlung meiner besondern Hochachtung\nzu genehmigen.\nBayerl 13. Apr. 1843.\nMHH. Wackerapels",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          220.0,
+          381.0
+        ],
+        [
+          432.0,
+          388.0
+        ],
+        [
+          1057.0,
+          386.0
+        ]
+      ],
+      "bbox": [
+        220.0,
+        355.0,
+        1057.0,
+        414.0
+      ],
+      "text": "In Übrigen bitte ich Sie die Versiedlung meiner besondern Hochachtung",
+      "confidence": null,
+      "regions": [
+        "_9f6ccd38-28f1-4a66-aa41-b9270ac69e36"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          221.0,
+          458.0
+        ],
+        [
+          402.0,
+          463.0
+        ]
+      ],
+      "bbox": [
+        220.0,
+        433.0,
+        402.0,
+        483.0
+      ],
+      "text": "zu genehmigen.",
+      "confidence": null,
+      "regions": [
+        "_9f6ccd38-28f1-4a66-aa41-b9270ac69e36"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          219.0,
+          532.0
+        ],
+        [
+          468.0,
+          534.0
+        ]
+      ],
+      "bbox": [
+        218.0,
+        504.0,
+        468.0,
+        561.0
+      ],
+      "text": "Bayerl 13. Apr. 1843.",
+      "confidence": null,
+      "regions": [
+        "_9f6ccd38-28f1-4a66-aa41-b9270ac69e36"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          706.0,
+          607.0
+        ],
+        [
+          981.0,
+          615.0
+        ]
+      ],
+      "bbox": [
+        705.0,
+        578.0,
+        981.0,
+        642.0
+      ],
+      "text": "MHH. Wackerapels",
+      "confidence": null,
+      "regions": [
+        "_0e9b95c7-7def-4296-827c-8391b8130870"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 5892,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 0,
+    "error": "timed out: no answer within 30s of the primary result"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-24T19:57:56+00:00"
+}

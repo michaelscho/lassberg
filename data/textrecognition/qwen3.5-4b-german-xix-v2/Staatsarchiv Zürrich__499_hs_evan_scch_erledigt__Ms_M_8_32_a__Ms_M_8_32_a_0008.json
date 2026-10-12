@@ -1,0 +1,177 @@
+{
+  "schema": "atr-batch/1",
+  "run": "atr_corpus_qwen35_line",
+  "model": "qwen3.5-4b-german-xix-v2",
+  "engine": "vllm",
+  "doc_id": "Staatsarchiv Zürrich/499_hs_evan_scch_erledigt/Ms_M_8_32_a",
+  "source": {
+    "name": "Ms_M_8_32_a_0008.tif",
+    "bytes": 41882578,
+    "sha256": "7cbe0da744303f6a93cfe7c14a2692d1fb7c30e833c35254ef1debb55530bf05",
+    "remote": "digitalisate/Staatsarchiv Zürrich/499_hs_evan_scch_erledigt/Ms_M_8_32_a/Ms_M_8_32_a_0008.tif",
+    "key": "Staatsarchiv Zürrich__499_hs_evan_scch_erledigt__Ms_M_8_32_a__Ms_M_8_32_a_0008",
+    "working_copy": "Ms_M_8_32_a_0008.jpg"
+  },
+  "text": "Februar\nder\nDein\n\"\nDein\nConseil",
+  "lines": [
+    {
+      "order": 0,
+      "baseline": [
+        [
+          1407.0,
+          1406.0
+        ],
+        [
+          1418.0,
+          1668.0
+        ]
+      ],
+      "bbox": [
+        1336.0,
+        1404.0,
+        1454.0,
+        1668.0
+      ],
+      "text": "Februar",
+      "confidence": null,
+      "regions": [
+        "_e8544c8a-e5a9-41fa-b38e-3ffc088f44da"
+      ]
+    },
+    {
+      "order": 1,
+      "baseline": [
+        [
+          1717.0,
+          2075.0
+        ],
+        [
+          1719.0,
+          1906.0
+        ]
+      ],
+      "bbox": [
+        1669.0,
+        1903.0,
+        1760.0,
+        2075.0
+      ],
+      "text": "der",
+      "confidence": null,
+      "regions": [
+        "_e8544c8a-e5a9-41fa-b38e-3ffc088f44da"
+      ]
+    },
+    {
+      "order": 2,
+      "baseline": [
+        [
+          1983.0,
+          1761.0
+        ],
+        [
+          1990.0,
+          1912.0
+        ]
+      ],
+      "bbox": [
+        1940.0,
+        1759.0,
+        2024.0,
+        1912.0
+      ],
+      "text": "Dein",
+      "confidence": null,
+      "regions": [
+        "_e8544c8a-e5a9-41fa-b38e-3ffc088f44da"
+      ]
+    },
+    {
+      "order": 3,
+      "baseline": [
+        [
+          1993.0,
+          2001.0
+        ],
+        [
+          1997.0,
+          2050.0
+        ]
+      ],
+      "bbox": [
+        1974.0,
+        1998.0,
+        2020.0,
+        2050.0
+      ],
+      "text": "\"",
+      "confidence": null,
+      "regions": [
+        "_e8544c8a-e5a9-41fa-b38e-3ffc088f44da"
+      ]
+    },
+    {
+      "order": 4,
+      "baseline": [
+        [
+          2393.0,
+          1958.0
+        ],
+        [
+          2400.0,
+          2077.0
+        ]
+      ],
+      "bbox": [
+        2361.0,
+        1955.0,
+        2445.0,
+        2077.0
+      ],
+      "text": "Dein",
+      "confidence": null,
+      "regions": [
+        "_e8544c8a-e5a9-41fa-b38e-3ffc088f44da"
+      ]
+    },
+    {
+      "order": 5,
+      "baseline": [
+        [
+          2382.0,
+          1476.0
+        ],
+        [
+          2393.0,
+          1885.0
+        ]
+      ],
+      "bbox": [
+        2334.0,
+        1474.0,
+        2436.0,
+        1885.0
+      ],
+      "text": "Conseil",
+      "confidence": null,
+      "regions": [
+        "_e8544c8a-e5a9-41fa-b38e-3ffc088f44da"
+      ]
+    }
+  ],
+  "confidence": null,
+  "segmented_by": "kraken-blla+Riksarkivet/yolov9-regions-1",
+  "timing_ms": 6447,
+  "truncated": false,
+  "second_opinion": {
+    "engine": "party",
+    "model": "party",
+    "text": "",
+    "lines": [],
+    "confidence": null,
+    "timing_ms": 32,
+    "error": "party engine unreachable at http://127.0.0.1:8203/recognize: All connection attempts failed"
+  },
+  "gateway_version": "0.1.0",
+  "recognised_at": "2026-09-23T23:13:26+00:00"
+}
