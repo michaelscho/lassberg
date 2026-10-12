@@ -1,0 +1,84 @@
+{
+  "schema": "atr-batch/1",
+  "run": "gemini-300-final",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "blb lassberg/K 2911,93",
+  "source": {
+    "key": "blb lassberg__K 2911,93__page_0001",
+    "doc_id": "blb lassberg/K 2911,93",
+    "bestand": "blb lassberg",
+    "name": "page_0001.jpg",
+    "bytes": 578831,
+    "sha256": "e5ba2f2b1bc9b4561a155162eba6157b919c9aed5e25d9c398aa1900d942dd42",
+    "sha256_of": "original",
+    "remote": "digitalisate/blb lassberg/K 2911,93/page_0001.jpg",
+    "working_copy": "page_0001.jpg"
+  },
+  "text": "",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 5577,
+  "truncated": false,
+  "settings": "prompt-9e0503e8+think-low|max8192",
+  "quality": {
+    "verdict": "empty",
+    "chars": 0,
+    "lines": 0,
+    "longest_char_run": 0,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 0.0,
+    "deliberation_ratio": 0.0
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-9e0503e8+think-low",
+  "recognised_at": "2026-10-11T14:44:49+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "gemini-300-strict2",
+    "source": {
+      "key": "blb lassberg__K 2911,93__page_0001",
+      "doc_id": "blb lassberg/K 2911,93",
+      "bestand": "blb lassberg",
+      "name": "page_0001.jpg",
+      "bytes": 578831,
+      "sha256": "e5ba2f2b1bc9b4561a155162eba6157b919c9aed5e25d9c398aa1900d942dd42",
+      "sha256_of": "original",
+      "remote": "digitalisate/blb lassberg/K 2911,93/page_0001.jpg",
+      "working_copy": "page_0001.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-9e0503e8+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-10-11T14:44:49+00:00"
+  },
+  "merged_from": {
+    "run": "gemini-300-strict2",
+    "attempt": 1,
+    "verdict": "empty",
+    "of": 3,
+    "considered": [
+      {
+        "run": "gemini-300-strict2",
+        "verdict": "empty"
+      },
+      {
+        "run": "gemini-strict2-repeat",
+        "verdict": "empty"
+      },
+      {
+        "run": "gemini-strict2-third",
+        "verdict": "empty"
+      }
+    ]
+  }
+}

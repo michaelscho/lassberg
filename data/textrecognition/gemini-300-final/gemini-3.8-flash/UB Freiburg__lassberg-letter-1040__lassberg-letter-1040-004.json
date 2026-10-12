@@ -1,0 +1,76 @@
+{
+  "schema": "atr-batch/1",
+  "run": "gemini-300-final",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "UB Freiburg/lassberg-letter-1040",
+  "source": {
+    "key": "UB Freiburg__lassberg-letter-1040__lassberg-letter-1040-004",
+    "doc_id": "UB Freiburg/lassberg-letter-1040",
+    "bestand": "UB Freiburg",
+    "name": "lassberg-letter-1040-004.jpg",
+    "bytes": 308366,
+    "sha256": "1b7f71d4269519d99a9e1af522455afd0e83ad594ea4e100ead665a00ee9a5d2",
+    "sha256_of": "original",
+    "remote": "digitalisate/UB Freiburg/lassberg-letter-1040/lassberg-letter-1040-004.jpg",
+    "working_copy": "lassberg-letter-1040-004.jpg"
+  },
+  "text": "[stempel: STEIN]\n\nSr. Hochwohlgeboren\n\nHerrn Freiherrn Joseph von Laß=\nberg\n\nEppishausen.\nim Thurgau.\n\n[fremde hand: 1929 C 719] [stempel: Univ. Bibl. Freiburg i. B. 1633]\n\n[fremde hand: da ich noch]\n[fremde hand: meine [...]",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 4953,
+  "truncated": false,
+  "settings": "prompt-9e0503e8+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 225,
+    "lines": 9,
+    "longest_char_run": 3,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 23.56,
+    "deliberation_ratio": 0.0
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-9e0503e8+think-low",
+  "recognised_at": "2026-10-11T14:33:02+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "gemini-300-strict2",
+    "source": {
+      "key": "UB Freiburg__lassberg-letter-1040__lassberg-letter-1040-004",
+      "doc_id": "UB Freiburg/lassberg-letter-1040",
+      "bestand": "UB Freiburg",
+      "name": "lassberg-letter-1040-004.jpg",
+      "bytes": 308366,
+      "sha256": "1b7f71d4269519d99a9e1af522455afd0e83ad594ea4e100ead665a00ee9a5d2",
+      "sha256_of": "original",
+      "remote": "digitalisate/UB Freiburg/lassberg-letter-1040/lassberg-letter-1040-004.jpg",
+      "working_copy": "lassberg-letter-1040-004.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-9e0503e8+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-10-11T14:33:02+00:00"
+  },
+  "merged_from": {
+    "run": "gemini-300-strict2",
+    "attempt": 1,
+    "verdict": "ok",
+    "of": 1,
+    "considered": [
+      {
+        "run": "gemini-300-strict2",
+        "verdict": "ok"
+      }
+    ]
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "schema": "atr-batch/1",
+  "run": "gemini-300-final",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "UB Freiburg/lassberg-letter-1570",
+  "source": {
+    "key": "UB Freiburg__lassberg-letter-1570__lassberg-letter-1570-004",
+    "doc_id": "UB Freiburg/lassberg-letter-1570",
+    "bestand": "UB Freiburg",
+    "name": "lassberg-letter-1570-004.jpg",
+    "bytes": 209059,
+    "sha256": "4c444fae6e4b6fc6dcd6f96debb6e29987735226703d8f2aa7325333670556b3",
+    "sha256_of": "original",
+    "remote": "digitalisate/UB Freiburg/lassberg-letter-1570/lassberg-letter-1570-004.jpg",
+    "working_copy": "lassberg-letter-1570-004.jpg"
+  },
+  "text": "[fremde hand: 1929 Cl 719]\n[stempel: Univ.-Bibl. 1690 Freiburg i. B.]",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 11116,
+  "truncated": false,
+  "settings": "prompt-9e0503e8+think-low|max8192",
+  "quality": {
+    "verdict": "short",
+    "chars": 69,
+    "lines": 2,
+    "longest_char_run": 1,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 34.0,
+    "deliberation_ratio": 0.0
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-9e0503e8+think-low",
+  "recognised_at": "2026-10-11T14:33:29+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "gemini-300-strict2",
+    "source": {
+      "key": "UB Freiburg__lassberg-letter-1570__lassberg-letter-1570-004",
+      "doc_id": "UB Freiburg/lassberg-letter-1570",
+      "bestand": "UB Freiburg",
+      "name": "lassberg-letter-1570-004.jpg",
+      "bytes": 209059,
+      "sha256": "4c444fae6e4b6fc6dcd6f96debb6e29987735226703d8f2aa7325333670556b3",
+      "sha256_of": "original",
+      "remote": "digitalisate/UB Freiburg/lassberg-letter-1570/lassberg-letter-1570-004.jpg",
+      "working_copy": "lassberg-letter-1570-004.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-9e0503e8+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-10-11T14:33:29+00:00"
+  },
+  "merged_from": {
+    "run": "gemini-300-strict2",
+    "attempt": 1,
+    "verdict": "short",
+    "of": 1,
+    "considered": [
+      {
+        "run": "gemini-300-strict2",
+        "verdict": "short"
+      }
+    ]
+  }
+}

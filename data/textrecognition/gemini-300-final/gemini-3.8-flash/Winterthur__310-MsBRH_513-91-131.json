@@ -1,0 +1,80 @@
+{
+  "schema": "atr-batch/1",
+  "run": "gemini-300-final",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "Winterthur",
+  "source": {
+    "key": "Winterthur__310-MsBRH_513-91-131",
+    "doc_id": "Winterthur",
+    "bestand": "Winterthur",
+    "name": "310-MsBRH_513-91-131.jpg",
+    "bytes": 5565088,
+    "sha256": "baaa6323f40b94ddabd51e0c8f6db6bc28886e7d442056ed08d488c5f2122971",
+    "sha256_of": "original",
+    "remote": "digitalisate/Winterthur/310-MsBRH_513-91-131.jpg",
+    "working_copy": "310-MsBRH_513-91-131.jpg"
+  },
+  "text": "Trogen den 27. April 1831\n\n          Heute nur hochverehrter Freund! nur ein paar Zeilen, in\nder Hoffnung kommenden Samstag Ihnen meine Freude über\ndie trostreichen Nachrichten die Sie gaben, persönlich bezeugen\nzu können, denn der Arzt gibt mich nach Baden aus\nBesorgniß mein anhaltender Kopfschmerz könnte für mich\ngefährlich werden, wenn ich nicht vor eintretender\nHitze mich stärkte. Ich reise dahin mit meiner Tochter\nFrau Graf und ihrem Kind, bei welchem Anlaß ich Sie\nmöchte um eine Schale Caffee in Breitenbühl bitten,\nwährend der Kutscher im Wirthshaus seinen Pferden\nein Futter gibt, dann haben wir doch eine kleine\nStunde Zeit uns zu besprechen, und machen schneller und\nmehrers ins Reine als durch lange Briefe.\n          Ich freue mich Ihnen wieder einmahl meine\nGefühle von Hochachtung und Freundschaft mündlich\ndarbringen zu können\n                                                    Justiz Rath Zellweger\n\n          Wäre es gar schlecht Wetter so\nkann ich nicht.",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 5849,
+  "truncated": false,
+  "settings": "prompt-9e0503e8+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 978,
+    "lines": 20,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 43.75,
+    "deliberation_ratio": 0.0
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-9e0503e8+think-low",
+  "recognised_at": "2026-10-11T17:39:30+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "gemini-strict2-repeat",
+    "source": {
+      "key": "Winterthur__310-MsBRH_513-91-131",
+      "doc_id": "Winterthur",
+      "bestand": "Winterthur",
+      "name": "310-MsBRH_513-91-131.jpg",
+      "bytes": 5565088,
+      "sha256": "baaa6323f40b94ddabd51e0c8f6db6bc28886e7d442056ed08d488c5f2122971",
+      "sha256_of": "original",
+      "remote": "digitalisate/Winterthur/310-MsBRH_513-91-131.jpg",
+      "working_copy": "310-MsBRH_513-91-131.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-9e0503e8+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-10-11T17:39:30+00:00"
+  },
+  "merged_from": {
+    "run": "gemini-strict2-repeat",
+    "attempt": 2,
+    "verdict": "ok",
+    "of": 2,
+    "considered": [
+      {
+        "run": "gemini-300-strict2",
+        "verdict": "empty"
+      },
+      {
+        "run": "gemini-strict2-repeat",
+        "verdict": "ok"
+      }
+    ]
+  }
+}

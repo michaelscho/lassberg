@@ -1,0 +1,84 @@
+{
+  "schema": "atr-batch/1",
+  "run": "gemini-300-final",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "Weimar/FA Hodel 236/Weimar",
+  "source": {
+    "key": "Weimar__FA Hodel 236__Weimar__GSA_96_2725_Seite574",
+    "doc_id": "Weimar/FA Hodel 236/Weimar",
+    "bestand": "Weimar",
+    "name": "GSA_96_2725_Seite574.jpg",
+    "bytes": 6997226,
+    "sha256": "0af479e8db2fb51bf2ad2723b1d03fe063e7072cf8b2be5470570d17210594e6",
+    "sha256_of": "original",
+    "remote": "digitalisate/Weimar/FA Hodel 236/Weimar/GSA_96_2725_Seite574.jpg",
+    "working_copy": "GSA_96_2725_Seite574.jpg"
+  },
+  "text": "",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 5525,
+  "truncated": false,
+  "settings": "prompt-9e0503e8+think-low|max8192",
+  "quality": {
+    "verdict": "empty",
+    "chars": 0,
+    "lines": 0,
+    "longest_char_run": 0,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 0.0,
+    "deliberation_ratio": 0.0
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-9e0503e8+think-low",
+  "recognised_at": "2026-10-11T14:40:04+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "gemini-300-strict2",
+    "source": {
+      "key": "Weimar__FA Hodel 236__Weimar__GSA_96_2725_Seite574",
+      "doc_id": "Weimar/FA Hodel 236/Weimar",
+      "bestand": "Weimar",
+      "name": "GSA_96_2725_Seite574.jpg",
+      "bytes": 6997226,
+      "sha256": "0af479e8db2fb51bf2ad2723b1d03fe063e7072cf8b2be5470570d17210594e6",
+      "sha256_of": "original",
+      "remote": "digitalisate/Weimar/FA Hodel 236/Weimar/GSA_96_2725_Seite574.jpg",
+      "working_copy": "GSA_96_2725_Seite574.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-9e0503e8+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-10-11T14:40:04+00:00"
+  },
+  "merged_from": {
+    "run": "gemini-300-strict2",
+    "attempt": 1,
+    "verdict": "empty",
+    "of": 3,
+    "considered": [
+      {
+        "run": "gemini-300-strict2",
+        "verdict": "empty"
+      },
+      {
+        "run": "gemini-strict2-repeat",
+        "verdict": "empty"
+      },
+      {
+        "run": "gemini-strict2-third",
+        "verdict": "empty"
+      }
+    ]
+  }
+}
