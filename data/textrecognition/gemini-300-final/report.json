@@ -1,0 +1,84 @@
+{
+  "schema": "atr-batch/1",
+  "run": "gemini-300-final",
+  "pages": 300,
+  "started_at": "2026-10-11T14:03:34+00:00",
+  "elapsed_s": 14458.0,
+  "rebuilt": true,
+  "skipped_files": [],
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "gemini-300-final",
+    "source": null,
+    "gateway": null,
+    "runner": {
+      "name": "agentic-historian",
+      "version": "0.1.0",
+      "commit": "4ad28b041d0e0cc358ef3b6d5bd5edc7b75f7a24",
+      "commit_source": "git"
+    },
+    "started_at": "2026-10-11T14:03:34+00:00",
+    "ended_at": null,
+    "models": [
+      {
+        "model": "gemini-3.8-flash",
+        "engine": null,
+        "level": null,
+        "revision": null,
+        "revision_kind": "unreported",
+        "weights": null,
+        "base_model": null
+      }
+    ]
+  },
+  "models": [
+    {
+      "model": "gemini-3.8-flash",
+      "done": 300,
+      "skipped": 0,
+      "failed": 0,
+      "chars": 264783,
+      "lines": 0,
+      "truncated": 0,
+      "truncated_keys": [],
+      "empty": 19,
+      "empty_keys": [
+        "Donaueschingen (via UB Freiburg)__lassberg-letter-0180__002",
+        "Donaueschingen (via UB Freiburg)__lassberg-letter-0299__002",
+        "Donaueschingen (via UB Freiburg)__lassberg-letter-0346__003",
+        "Marbach__HS00755433_150dpi__HS00755433_150dpi0005",
+        "Marbach__HS00787953_150dpi__HS00787953_150dpi_0094",
+        "Marbach__HS00787953_150dpi__HS00787953_150dpi_0290",
+        "Marbach__HS00926844_150dpi__HS00926844_0007",
+        "Staatsarchiv Thurgau__lassberg-letter-1383__DERIVAT_StATG_9-45__1-1___75-1_00109",
+        "Staatsarchiv Zürrich__499_hs_evan_scch_erledigt__Autogr_Bebler_G_135__Autogr_Bebler_G_135_0004",
+        "Staatsarchiv Zürrich__499_hs_evan_scch_erledigt__Ms_M_8_35__Ms_M_8_32_35_0035",
+        "Staatsarchiv Zürrich__499_hs_evan_scch_erledigt__Ms_V_312_78__Ms_V_312_78_0008",
+        "UB Bern__Mss_h_h_XLIV_180_32_169",
+        "UB Bern__Mss_h_h_XLIV_180_32_77",
+        "UB Bern__Mss_h_h_XXVI_105_5_40",
+        "Weimar__FA Hodel 236__Weimar__GSA_96_2725_Seite132",
+        "Weimar__FA Hodel 236__Weimar__GSA_96_2725_Seite574",
+        "blb lassberg__K 2911,107__page_0002",
+        "blb lassberg__K 2911,16__page_0052",
+        "blb lassberg__K 2911,93__page_0001"
+      ],
+      "repetitive": 0,
+      "repetitive_keys": [],
+      "deliberated": 0,
+      "deliberation_keys": [],
+      "verdicts": {
+        "short": 29,
+        "ok": 252,
+        "empty": 19
+      },
+      "recognition_ms": 2534193,
+      "elapsed_s": 14458.0,
+      "aborted": "",
+      "source_errors": 0,
+      "source_missing": 0,
+      "source_missing_keys": [],
+      "errors": []
+    }
+  ]
+}
