@@ -1,0 +1,84 @@
+{
+  "schema": "atr-batch/1",
+  "run": "gemini-300-final",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "Staatsarchiv Zürrich/499_hs_evan_scch_erledigt/Ms_M_8_35",
+  "source": {
+    "key": "Staatsarchiv Zürrich__499_hs_evan_scch_erledigt__Ms_M_8_35__Ms_M_8_32_35_0035",
+    "doc_id": "Staatsarchiv Zürrich/499_hs_evan_scch_erledigt/Ms_M_8_35",
+    "bestand": "Staatsarchiv Zürrich",
+    "name": "Ms_M_8_32_35_0035.tif",
+    "bytes": 40542808,
+    "sha256": "cda0f6ccf667b7e8c908d719eadde8b34c911331109fe16255765c675ab7c009",
+    "sha256_of": "original",
+    "remote": "digitalisate/Staatsarchiv Zürrich/499_hs_evan_scch_erledigt/Ms_M_8_35/Ms_M_8_32_35_0035.tif",
+    "working_copy": "Ms_M_8_32_35_0035.jpg"
+  },
+  "text": "",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 11452,
+  "truncated": false,
+  "settings": "prompt-9e0503e8+think-low|max8192",
+  "quality": {
+    "verdict": "empty",
+    "chars": 0,
+    "lines": 0,
+    "longest_char_run": 0,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 0.0,
+    "deliberation_ratio": 0.0
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-9e0503e8+think-low",
+  "recognised_at": "2026-10-11T14:26:37+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "gemini-300-strict2",
+    "source": {
+      "key": "Staatsarchiv Zürrich__499_hs_evan_scch_erledigt__Ms_M_8_35__Ms_M_8_32_35_0035",
+      "doc_id": "Staatsarchiv Zürrich/499_hs_evan_scch_erledigt/Ms_M_8_35",
+      "bestand": "Staatsarchiv Zürrich",
+      "name": "Ms_M_8_32_35_0035.tif",
+      "bytes": 40542808,
+      "sha256": "cda0f6ccf667b7e8c908d719eadde8b34c911331109fe16255765c675ab7c009",
+      "sha256_of": "original",
+      "remote": "digitalisate/Staatsarchiv Zürrich/499_hs_evan_scch_erledigt/Ms_M_8_35/Ms_M_8_32_35_0035.tif",
+      "working_copy": "Ms_M_8_32_35_0035.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-9e0503e8+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-10-11T14:26:37+00:00"
+  },
+  "merged_from": {
+    "run": "gemini-300-strict2",
+    "attempt": 1,
+    "verdict": "empty",
+    "of": 3,
+    "considered": [
+      {
+        "run": "gemini-300-strict2",
+        "verdict": "empty"
+      },
+      {
+        "run": "gemini-strict2-repeat",
+        "verdict": "empty"
+      },
+      {
+        "run": "gemini-strict2-third",
+        "verdict": "empty"
+      }
+    ]
+  }
+}
