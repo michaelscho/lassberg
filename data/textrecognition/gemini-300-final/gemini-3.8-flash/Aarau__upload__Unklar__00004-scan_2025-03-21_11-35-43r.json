@@ -1,0 +1,76 @@
+{
+  "schema": "atr-batch/1",
+  "run": "gemini-300-final",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "Aarau/upload/Unklar",
+  "source": {
+    "key": "Aarau__upload__Unklar__00004-scan_2025-03-21_11-35-43r",
+    "doc_id": "Aarau/upload/Unklar",
+    "bestand": "Aarau",
+    "name": "00004-scan_2025-03-21_11-35-43r.tif",
+    "bytes": 25704254,
+    "sha256": "c7ab40f9ebeee2564aaa1b9e4894765d001e6eb989e6dcd5b6095a93a4d113d4",
+    "sha256_of": "original",
+    "remote": "digitalisate/Aarau/upload/Unklar/00004-scan_2025-03-21_11-35-43r.tif",
+    "working_copy": "00004-scan_2025-03-21_11-35-43r.jpg"
+  },
+  "text": "[fremde hand: 79]",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 21594,
+  "truncated": false,
+  "settings": "prompt-9e0503e8+think-low|max8192",
+  "quality": {
+    "verdict": "short",
+    "chars": 17,
+    "lines": 1,
+    "longest_char_run": 1,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 17.0,
+    "deliberation_ratio": 0.0
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-9e0503e8+think-low",
+  "recognised_at": "2026-10-11T14:03:55+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "gemini-300-strict2",
+    "source": {
+      "key": "Aarau__upload__Unklar__00004-scan_2025-03-21_11-35-43r",
+      "doc_id": "Aarau/upload/Unklar",
+      "bestand": "Aarau",
+      "name": "00004-scan_2025-03-21_11-35-43r.tif",
+      "bytes": 25704254,
+      "sha256": "c7ab40f9ebeee2564aaa1b9e4894765d001e6eb989e6dcd5b6095a93a4d113d4",
+      "sha256_of": "original",
+      "remote": "digitalisate/Aarau/upload/Unklar/00004-scan_2025-03-21_11-35-43r.tif",
+      "working_copy": "00004-scan_2025-03-21_11-35-43r.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-9e0503e8+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-10-11T14:03:55+00:00"
+  },
+  "merged_from": {
+    "run": "gemini-300-strict2",
+    "attempt": 1,
+    "verdict": "short",
+    "of": 1,
+    "considered": [
+      {
+        "run": "gemini-300-strict2",
+        "verdict": "short"
+      }
+    ]
+  }
+}

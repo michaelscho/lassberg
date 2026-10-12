@@ -1,0 +1,76 @@
+{
+  "schema": "atr-batch/1",
+  "run": "gemini-300-final",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "Aarau/upload/Unklar",
+  "source": {
+    "key": "Aarau__upload__Unklar__00003-scan_2025-03-21_11-35-42l",
+    "doc_id": "Aarau/upload/Unklar",
+    "bestand": "Aarau",
+    "name": "00003-scan_2025-03-21_11-35-42l.tif",
+    "bytes": 26921138,
+    "sha256": "000ade0a9cf1600f60cb5ea6215887d95ed1c3bd9db55f9ee897f23727926968",
+    "sha256_of": "original",
+    "remote": "digitalisate/Aarau/upload/Unklar/00003-scan_2025-03-21_11-35-42l.tif",
+    "working_copy": "00003-scan_2025-03-21_11-35-42l.jpg"
+  },
+  "text": "[fremde hand: 78]\n\n[stempel: KANTONSBIBLIOTHEK AARGAU]\n\n[unlesbar]",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 4800,
+  "truncated": false,
+  "settings": "prompt-9e0503e8+think-low|max8192",
+  "quality": {
+    "verdict": "short",
+    "chars": 66,
+    "lines": 3,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 20.67,
+    "deliberation_ratio": 0.0
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-9e0503e8+think-low",
+  "recognised_at": "2026-10-11T14:03:34+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "gemini-300-strict2",
+    "source": {
+      "key": "Aarau__upload__Unklar__00003-scan_2025-03-21_11-35-42l",
+      "doc_id": "Aarau/upload/Unklar",
+      "bestand": "Aarau",
+      "name": "00003-scan_2025-03-21_11-35-42l.tif",
+      "bytes": 26921138,
+      "sha256": "000ade0a9cf1600f60cb5ea6215887d95ed1c3bd9db55f9ee897f23727926968",
+      "sha256_of": "original",
+      "remote": "digitalisate/Aarau/upload/Unklar/00003-scan_2025-03-21_11-35-42l.tif",
+      "working_copy": "00003-scan_2025-03-21_11-35-42l.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-9e0503e8+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-10-11T14:03:34+00:00"
+  },
+  "merged_from": {
+    "run": "gemini-300-strict2",
+    "attempt": 1,
+    "verdict": "short",
+    "of": 1,
+    "considered": [
+      {
+        "run": "gemini-300-strict2",
+        "verdict": "short"
+      }
+    ]
+  }
+}

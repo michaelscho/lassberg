@@ -1,0 +1,76 @@
+{
+  "schema": "atr-batch/1",
+  "run": "gemini-300-final",
+  "model": "gemini-3.8-flash",
+  "engine": "external",
+  "doc_id": "Aarau/upload/lassberg-letter-1558",
+  "source": {
+    "key": "Aarau__upload__lassberg-letter-1558__00063-scan_2025-03-21_11-16-32l",
+    "doc_id": "Aarau/upload/lassberg-letter-1558",
+    "bestand": "Aarau",
+    "name": "00063-scan_2025-03-21_11-16-32l.tif",
+    "bytes": 30416198,
+    "sha256": "826d4b6d65afc6b83011df60cc2601e0bf4288807b5c73b26c3c9a5889b0ac3c",
+    "sha256_of": "original",
+    "remote": "digitalisate/Aarau/upload/lassberg-letter-1558/00063-scan_2025-03-21_11-16-32l.tif",
+    "working_copy": "00063-scan_2025-03-21_11-16-32l.jpg"
+  },
+  "text": "[fremde hand: 58]\n\n[stempel: ARAU]\nSeiner Hochwohlgeboren,\ndem Freyherrn von Laßberg\nauf\nEppishausen\nKanton Thurgau.\n2",
+  "lines": [],
+  "confidence": 0.0,
+  "segmented_by": null,
+  "timing_ms": 28941,
+  "truncated": false,
+  "settings": "prompt-9e0503e8+think-low|max8192",
+  "quality": {
+    "verdict": "ok",
+    "chars": 118,
+    "lines": 8,
+    "longest_char_run": 2,
+    "repeat_ratio": 0.0,
+    "mean_line_chars": 13.75,
+    "deliberation_ratio": 0.0
+  },
+  "second_opinion": null,
+  "gateway_version": "gemini-3.8-flash@prompt-9e0503e8+think-low",
+  "recognised_at": "2026-10-11T14:05:17+00:00",
+  "provenance": {
+    "schema": "ah-provenance/1",
+    "run": "gemini-300-strict2",
+    "source": {
+      "key": "Aarau__upload__lassberg-letter-1558__00063-scan_2025-03-21_11-16-32l",
+      "doc_id": "Aarau/upload/lassberg-letter-1558",
+      "bestand": "Aarau",
+      "name": "00063-scan_2025-03-21_11-16-32l.tif",
+      "bytes": 30416198,
+      "sha256": "826d4b6d65afc6b83011df60cc2601e0bf4288807b5c73b26c3c9a5889b0ac3c",
+      "sha256_of": "original",
+      "remote": "digitalisate/Aarau/upload/lassberg-letter-1558/00063-scan_2025-03-21_11-16-32l.tif",
+      "working_copy": "00063-scan_2025-03-21_11-16-32l.jpg"
+    },
+    "model": {
+      "model": "gemini-3.8-flash",
+      "engine": null,
+      "level": null,
+      "revision": null,
+      "revision_kind": "unreported",
+      "weights": null,
+      "base_model": null
+    },
+    "gateway_version": "gemini-3.8-flash@prompt-9e0503e8+think-low",
+    "segmented_by": null,
+    "recognised_at": "2026-10-11T14:05:17+00:00"
+  },
+  "merged_from": {
+    "run": "gemini-300-strict2",
+    "attempt": 1,
+    "verdict": "ok",
+    "of": 1,
+    "considered": [
+      {
+        "run": "gemini-300-strict2",
+        "verdict": "ok"
+      }
+    ]
+  }
+}
