@@ -17,6 +17,7 @@
                   <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
                   <li class="nav-item"><a class="nav-link" href="../persons.html">Persons</a></li>
                   <li class="nav-item"><a class="nav-link" href="../places.html">Places</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../manuscripts.html">Manuscripts</a></li>
                   <li class="nav-item"><a class="nav-link" href="../explore.html">Explore</a></li>
                   <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
                   <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
@@ -62,6 +63,13 @@
                            <span class="legend-dot ms-2" style="background:#b57cc0"></span> places mentioned
                            </p>
                      </section>
+                     <section id="mentioned" class="mb-4">
+                        <h2 class="h5">Mentioned in this letter</h2>
+                        <h3 class="h6 mt-3">Manuscripts</h3>
+                        <ul class="list-unstyled small mb-2">
+                           <li class="mb-1"><a href="../manuscripts.html?q=Karlsburger%20Codex%20des%20Gedichts%20auf%20Karl%20d.%20Gr.">Karlsburger Codex des Gedichts auf Karl d. Gr.</a></li>
+                        </ul>
+                     </section>
                   </aside>
                </div>
                <div class="col-lg-8 order-lg-1">
@@ -75,23 +83,22 @@
                            fortfare, erhielt ich ein Schreiben des Graven Johann Mayláth aus Wien; er trägt mir
                            auf Sie freundlich zu grüßen und Ihnen zu sagen daß Sie ihm der Liebste unter den
                            jezt lebenden teutschen Dichtern seien. Er meint, es wäre gut, wenn ich seine Abschrift
-                           des Carlsburger Codex von dem Gedichte auf Karl d. Gr. besonders in Bezug auf die
-                           Frage durchsehen würde, ob mir kein mit diesem stammverwandtes Ged. auf diesen Kaiser
-                           bekannt seie? Er hat zu diesem Ende an die Cotta'sche Buchhandlung geschrieben, und
-                           ich nehme mir die Freiheit Sie um Besorgung des Briefes zu bitten. Dieser Tage kam
-                           Iemand aus Tübingen hier über Nacht, der von einer Schweizer Reise zurükkehrte und
-                           ein Verwandter von Ihnen sein will, ein entschloßener und wie mir schien, mit sich
-                           selten im Streite befindlicher Mann. Es tat mir leid, ihm wegen seiner schnellen Abreise
-                           gar nichts Freundliches erweisen zu können. Hoffentlich sind ( Sie ) gesund und wolbehalten
-                           wieder bei Ihrem eigenen Herde angekommen; grüßen 3 * Sie freundlich von mir Ihre
-                           liebenswürdige Hauswirtin, und behalten Sie mich in Ihrem mir so teuren Angedenken.
-                           Recht sehr bedauerte ich, daß Ihr mir so lieber Besuch mich nicht allein traf und
-                           ich Sie nicht auf die Sängerburgen meiner Nachbarschaft begleiten konnte; laßen Sie
-                           sich den Gang auf ein ander Mal nicht veuen. Grüßen Sie unsern Conz von mir, suchen
-                           Sie ihn zu bereden in den Herbstferien die längst versprochene Reise nach der Villa
-                           Epponis anzutreten: ich will ihn dann mit Ittner zusamen bringen, und wir wollen einmal
-                           Tage leben, wie man sie vor 300 Saren lebte. Gott befolen! Ihr aufrichtiger Verehrer
-                           und Diener I. v. Laßberg.</p>
+                           des <span class="rs-witness" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Karlsburger Codex des Gedichts auf Karl d. Gr.</strong&gt;">Carlsburger Codex</span> von dem Gedichte auf Karl d. Gr. besonders in Bezug auf die Frage durchsehen würde,
+                           ob mir kein mit diesem stammverwandtes Ged. auf diesen Kaiser bekannt seie? Er hat
+                           zu diesem Ende an die Cotta'sche Buchhandlung geschrieben, und ich nehme mir die Freiheit
+                           Sie um Besorgung des Briefes zu bitten. Dieser Tage kam Iemand aus Tübingen hier über
+                           Nacht, der von einer Schweizer Reise zurükkehrte und ein Verwandter von Ihnen sein
+                           will, ein entschloßener und wie mir schien, mit sich selten im Streite befindlicher
+                           Mann. Es tat mir leid, ihm wegen seiner schnellen Abreise gar nichts Freundliches
+                           erweisen zu können. Hoffentlich sind ( Sie ) gesund und wolbehalten wieder bei Ihrem
+                           eigenen Herde angekommen; grüßen 3 * Sie freundlich von mir Ihre liebenswürdige Hauswirtin,
+                           und behalten Sie mich in Ihrem mir so teuren Angedenken. Recht sehr bedauerte ich,
+                           daß Ihr mir so lieber Besuch mich nicht allein traf und ich Sie nicht auf die Sängerburgen
+                           meiner Nachbarschaft begleiten konnte; laßen Sie sich den Gang auf ein ander Mal nicht
+                           veuen. Grüßen Sie unsern Conz von mir, suchen Sie ihn zu bereden in den Herbstferien
+                           die längst versprochene Reise nach der Villa Epponis anzutreten: ich will ihn dann
+                           mit Ittner zusamen bringen, und wir wollen einmal Tage leben, wie man sie vor 300
+                           Saren lebte. Gott befolen! Ihr aufrichtiger Verehrer und Diener I. v. Laßberg.</p>
                         </div>
                   </section>
                   <div id="related-letters"></div>
@@ -113,11 +120,9 @@
                         document.getElementById('map').style.display = 'none';
                     } else {
                         var map = L.map('mapid', { scrollWheelZoom: false });
-                        // Muted basemap (CARTO Positron) instead of the default colourful OSM
-                        // tiles, to match the edition's restrained palette.
-                        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-                            attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
-                            subdomains: 'abcd',
+                        // OpenStreetMap standard tiles (CARTO basemaps now require an API key).
+                        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
                             maxZoom: 19
                         }).addTo(map);
 

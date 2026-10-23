@@ -17,6 +17,7 @@
                   <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
                   <li class="nav-item"><a class="nav-link" href="../persons.html">Persons</a></li>
                   <li class="nav-item"><a class="nav-link" href="../places.html">Places</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../manuscripts.html">Manuscripts</a></li>
                   <li class="nav-item"><a class="nav-link" href="../explore.html">Explore</a></li>
                   <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
                   <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
@@ -51,6 +52,7 @@
                         <p><strong>Registernummer (Laßberg): </strong></p>
                         <p><strong>Registernummer (Harris): </strong>2637</p>
                         <p><strong>Gedruck in: </strong><a href=""></a></p>
+                        <p><strong>Digitalisat: </strong><a href="https://dls.staatsarchiv.bs.ch/records/416589/4186313/preview">https://dls.staatsarchiv.bs.ch/records/416589/4186313/preview</a></p>
                      </section>
                      <section id="map" class="mb-4">
                         <h2 class="h5">Places</h2>
@@ -87,8 +89,8 @@
                            Herr Baron, <br>hier endlich nach langer Verzögerung, aber doch gleich <br>nach meiner
                            Rückkehr aus dem Bade abgesendet, die <br>drey Bücher die Sie mir vor nun bald Einem Jahre <br>so gutig waren zu
                            leihen: <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Rudolf von Ems: Barlaam und Josaphat.</strong&gt;">Rudolfs
-                              Barlaam<a href="https://handschriftencensus.de/werke/321https://d-nb.info/gnd/4303311-8">📖</a></span>, cod. <br><span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Hugo von Montfort: Gedichte.</strong&gt;">Hugo v
-                              Montfort<a href="https://handschriftencensus.de/werke/948">📖</a></span>. , Abschrift, <br><span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Translationen.</strong&gt;">Niclas v.
+                              Barlaam<a href="https://handschriftencensus.de/werke/321https://d-nb.info/gnd/4303311-8">📖</a></span>, cod. <br><span class="rs-witness" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;.</strong&gt;">Hugo v
+                              Montfort</span>. , Abschrift, <br><span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Translationen.</strong&gt;">Niclas v.
                               Wyle<a href="https://www.gesamtkatalogderwiegendrucke.de/docs/M51838.htm">📖</a></span>, Druck <br>alle drey mit Dank von mir benützt (obschon die beiden <br>letzteren leider
                            nun nicht vollständig), mit Dank <br>und mit Bitte um wohlwollende Verzeihung von mir <br>begleitet. <br>Mit einem
                            mehreren will ich Sie diessmal nicht <br>aufhalten: Sie werden den Kopf u. alle Hände <br>voll zu thun
@@ -106,8 +108,8 @@
                            Herr Baron, hier endlich nach langer Verzögerung, aber doch gleich nach meiner
                            Rückkehr aus dem Bade abgesendet, die drey Bücher die Sie mir vor nun bald Einem Jahre so gutig waren zu
                            leihen: <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Rudolf von Ems: Barlaam und Josaphat.</strong&gt;">Rudolfs
-                              Barlaam<a href="https://handschriftencensus.de/werke/321https://d-nb.info/gnd/4303311-8">📖</a></span>, cod. <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Hugo von Montfort: Gedichte.</strong&gt;">Hugo v
-                              Montfort<a href="https://handschriftencensus.de/werke/948">📖</a></span>. , Abschrift, <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Translationen.</strong&gt;">Niclas v.
+                              Barlaam<a href="https://handschriftencensus.de/werke/321https://d-nb.info/gnd/4303311-8">📖</a></span>, cod. <span class="rs-witness" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;.</strong&gt;">Hugo v
+                              Montfort</span>. , Abschrift, <span class="rs-bibl" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Translationen.</strong&gt;">Niclas v.
                               Wyle<a href="https://www.gesamtkatalogderwiegendrucke.de/docs/M51838.htm">📖</a></span>, Druck alle drey mit Dank von mir benützt (obschon die beiden letzteren leider
                            nun nicht vollständig), mit Dank und mit Bitte um wohlwollende Verzeihung von mir begleitet. Mit einem
                            mehreren will ich Sie diessmal nicht aufhalten: Sie werden den Kopf u. alle Hände voll zu thun
@@ -171,11 +173,9 @@
                         document.getElementById('map').style.display = 'none';
                     } else {
                         var map = L.map('mapid', { scrollWheelZoom: false });
-                        // Muted basemap (CARTO Positron) instead of the default colourful OSM
-                        // tiles, to match the edition's restrained palette.
-                        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-                            attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
-                            subdomains: 'abcd',
+                        // OpenStreetMap standard tiles (CARTO basemaps now require an API key).
+                        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
                             maxZoom: 19
                         }).addTo(map);
 

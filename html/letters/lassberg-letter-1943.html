@@ -17,6 +17,7 @@
                   <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
                   <li class="nav-item"><a class="nav-link" href="../persons.html">Persons</a></li>
                   <li class="nav-item"><a class="nav-link" href="../places.html">Places</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../manuscripts.html">Manuscripts</a></li>
                   <li class="nav-item"><a class="nav-link" href="../explore.html">Explore</a></li>
                   <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
                   <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
@@ -62,6 +63,13 @@
                            <span class="legend-dot ms-2" style="background:#b57cc0"></span> places mentioned
                            </p>
                      </section>
+                     <section id="mentioned" class="mb-4">
+                        <h2 class="h5">Mentioned in this letter</h2>
+                        <h3 class="h6 mt-3">Manuscripts</h3>
+                        <ul class="list-unstyled small mb-2">
+                           <li class="mb-1"><a href="../manuscripts.html?q=La%C3%9Fbergs%20altes%20Liederbuch%20%28Musikalienbuch%29">Laßbergs altes Liederbuch (Musikalienbuch)</a></li>
+                        </ul>
+                     </section>
                   </aside>
                </div>
                <div class="col-lg-8 order-lg-1">
@@ -95,8 +103,7 @@
                            wenn es überstanden ist. In 10 Tagen wird es sich entscheiden, ob ich die alte Dagobertsburg
                            zu Meersburg für mein Eigentum und leztes Nest erhalte; sollte nichts daraus werden;
                            so ziehe ich war scheinlich nach Herblingen nahe bei Schafhausen, in eine große aber
-                           ser schöne Einsamkeit, wo auch noch guter Wein wächst. Wenn Sie mein altes Liederbuch
-                           nicht mer brauchen, so bitte ich es mir wieder zu senden; meine Frau möchte gerne
+                           ser schöne Einsamkeit, wo auch noch guter Wein wächst. Wenn Sie <span class="rs-witness" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Laßbergs altes Liederbuch (Musikalienbuch)</strong&gt;">mein altes Liederbuch</span> nicht mer brauchen, so bitte ich es mir wieder zu senden; meine Frau möchte gerne
                            einige Lieder für eine Freundin daraus abschreiben. Wir sind Alle wol, die Kinder
                            gedeihen zusehends; Rötel kann schon lesen und schreiben, wenigstens bildet sie sichs
                            ein. Die gute sanfte Hildegard übt sich fleißig im Tanzen und hat eine ware Freude
@@ -126,11 +133,9 @@
                         document.getElementById('map').style.display = 'none';
                     } else {
                         var map = L.map('mapid', { scrollWheelZoom: false });
-                        // Muted basemap (CARTO Positron) instead of the default colourful OSM
-                        // tiles, to match the edition's restrained palette.
-                        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-                            attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
-                            subdomains: 'abcd',
+                        // OpenStreetMap standard tiles (CARTO basemaps now require an API key).
+                        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
                             maxZoom: 19
                         }).addTo(map);
 
