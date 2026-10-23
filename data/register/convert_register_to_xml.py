@@ -91,7 +91,7 @@ for index, row in df.iterrows():
         'ana': str(wiki_person)
     })
     persName_sent.text = row['SENT_FROM_NAME']
-    persName_sent.text = re.sub("([a-z])([A-Z])", "$1 $2", persName_sent.text)
+    persName_sent.text = re.sub("([a-z])([A-Z])", r"\1 \2", persName_sent.text)
     if persName_sent.text.endswith('-'):
         persName_sent.text = persName_sent.text[:-1]
     
@@ -152,7 +152,7 @@ for index, row in df.iterrows():
         })
     
     persName_received.text = row['RECIVED_BY_NAME']
-    persName_received.text = re.sub("([a-z])([A-Z])", "$1 $2", persName_received.text)
+    persName_received.text = re.sub("([a-z])([A-Z])", r"\1 \2", persName_received.text)
     if persName_received.text.endswith('-'):
         persName_received.text = persName_received.text[:-1]
 

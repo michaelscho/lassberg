@@ -17,6 +17,7 @@
                   <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
                   <li class="nav-item"><a class="nav-link" href="../persons.html">Persons</a></li>
                   <li class="nav-item"><a class="nav-link" href="../places.html">Places</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../manuscripts.html">Manuscripts</a></li>
                   <li class="nav-item"><a class="nav-link" href="../explore.html">Explore</a></li>
                   <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
                   <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
@@ -62,6 +63,13 @@
                            <span class="legend-dot ms-2" style="background:#b57cc0"></span> places mentioned
                            </p>
                      </section>
+                     <section id="mentioned" class="mb-4">
+                        <h2 class="h5">Mentioned in this letter</h2>
+                        <h3 class="h6 mt-3">Manuscripts</h3>
+                        <ul class="list-unstyled small mb-2">
+                           <li class="mb-1"><a href="../manuscripts.html?q=Lautentabulatur-Bl%C3%A4tter%20%28Benzenauer%20Tanz%2C%20Schwarzer%20Knab%29%2C%2016.%20Jh.">Lautentabulatur-Blätter (Benzenauer Tanz, Schwarzer Knab), 16. Jh.</a></li>
+                        </ul>
+                     </section>
                   </aside>
                </div>
                <div class="col-lg-8 order-lg-1">
@@ -95,20 +103,19 @@
                            und Handschriften 2c. in einem schönen, hellen, gewölbten ( ehemaligen Archiv- ) Saale
                            beisammen aufstellen und durch die Glastüre eines anstoßenden geräumigen Arbeitszimmers
                            alles übersehen. Hoc erat in votis: dii melius et auctius fecere! bene est! nil amplius
-                           oro! Ich habe 6 Querfolioblätter Manuscript aus dem XVI. Sarhundert erhalten. Sie
-                           enthalten: Der Benzenauer in Tanz weis. Der Schwarz Knab, Tank weis geflorieret. Sankt
-                           Jacobis Danz. Der Moristgen Danny. Der Hoppen Dank. Die Weisen sind blos für die Laute
-                           gesezt; oder Zither. Aber der Text felet überall, es stehen immer nur ein paar Verse,
-                           der Anfang, unter den Noten. Die Noten selbst bestehen nur aus Buchstaben und Ziffern.
-                           Wer kann diese alte Musik lesen? Dann habe ich bekommen: Lautenbuch vieler neuer,
-                           erlesener, fleißiger schöner Lautenstuk, von artlichen Fantaseien, künstlichen Musikartlichen
-                           lateinischen Muteten 2c. durch Sixtum Kargel fürstlich bischöflich Straßburgischen
-                           Lautenisten. Gedrukt zu Straßburg, durch Bernhard Jobin. 1586. in Folio. Wer die jezt
-                           nicht mer gangbare Notenschrift entziffern könnte, würde vielleicht auf manche liebliche
-                           Entdekung geraten. Sie wissen nun mein Freund! wo Sie uns wieder finden können; hiemit
-                           sage ich Ade! Herzliche Grüße von Jenny und mir an Frau Emma. Wälzen Sie indessen
-                           den Stein des Sysiphus und lassen Sie es sich nicht verdrießen, quand même Ir treuer
-                           Freund 96.</p>
+                           oro! Ich habe <span class="rs-witness" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Lautentabulatur-Blätter (Benzenauer Tanz, Schwarzer Knab), 16. Jh.</strong&gt;">6 Querfolioblätter Manuscript</span> aus dem XVI. Sarhundert erhalten. Sie enthalten: Der Benzenauer in Tanz weis. Der
+                           Schwarz Knab, Tank weis geflorieret. Sankt Jacobis Danz. Der Moristgen Danny. Der
+                           Hoppen Dank. Die Weisen sind blos für die Laute gesezt; oder Zither. Aber der Text
+                           felet überall, es stehen immer nur ein paar Verse, der Anfang, unter den Noten. Die
+                           Noten selbst bestehen nur aus Buchstaben und Ziffern. Wer kann diese alte Musik lesen?
+                           Dann habe ich bekommen: Lautenbuch vieler neuer, erlesener, fleißiger schöner Lautenstuk,
+                           von artlichen Fantaseien, künstlichen Musikartlichen lateinischen Muteten 2c. durch
+                           Sixtum Kargel fürstlich bischöflich Straßburgischen Lautenisten. Gedrukt zu Straßburg,
+                           durch Bernhard Jobin. 1586. in Folio. Wer die jezt nicht mer gangbare Notenschrift
+                           entziffern könnte, würde vielleicht auf manche liebliche Entdekung geraten. Sie wissen
+                           nun mein Freund! wo Sie uns wieder finden können; hiemit sage ich Ade! Herzliche Grüße
+                           von Jenny und mir an Frau Emma. Wälzen Sie indessen den Stein des Sysiphus und lassen
+                           Sie es sich nicht verdrießen, quand même Ir treuer Freund 96.</p>
                         </div>
                   </section>
                   <div id="related-letters"></div>
@@ -130,11 +137,9 @@
                         document.getElementById('map').style.display = 'none';
                     } else {
                         var map = L.map('mapid', { scrollWheelZoom: false });
-                        // Muted basemap (CARTO Positron) instead of the default colourful OSM
-                        // tiles, to match the edition's restrained palette.
-                        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-                            attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
-                            subdomains: 'abcd',
+                        // OpenStreetMap standard tiles (CARTO basemaps now require an API key).
+                        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
                             maxZoom: 19
                         }).addTo(map);
 

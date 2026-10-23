@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lassberg-letter-1246">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Brief von Niklaus Friedrich von Mülinen an Joseph von Laßberg (21.09.1828). ENTWURF / DRAFT: vorläufige, unkorrigierte Transkription.</title>
+                <respStmt xml:id="MiS">
+                    <resp>Encoding to TEI</resp>
+                    <resp>Processing, NER and Topic Modelling</resp>
+                    <name>Michael Schonhardt</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Correspondence data based on <bibl>Harris, Martin: Joseph Maria Christoph
+                    Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                    Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                    geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                    Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</bibl></p>
+                <p><hi rend="bold">DRAFT:</hi> Vorläufige, nicht korrigierte Texterkennung (Transkribus)
+                    und nur rudimentäres Markup, erstellt für einen Vortrag. Nicht zitierfähig.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Bern</settlement>
+                        <repository>Burgerbibliothek</repository>
+                        <idno type="signature">Mss.h.h.XXVI.105.6</idno>
+                        <idno type="register-harris">2215</idno>
+                        <idno type="register-lassberg"/>
+                    </msIdentifier>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- Description of correspondence, based on https://correspsearch.net/de/dokumentation.html -->
+            <correspDesc xml:id="correspDesc-lassberg-letter-1246">
+                <correspAction type="sent">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0075"
+                        ref="https://d-nb.info/gnd/117166111">Niklaus Friedrich von Mülinen</persName>
+                    <placeName key="../register/lassberg-places.xml#lassberg-place-0149">Thun</placeName>
+                    <date when="1828-09-21">21.09.1828</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="../register/lassberg-persons.xml#lassberg-correspondent-0373"
+                        ref="https://d-nb.info/gnd/118778862">Joseph von Laßberg</persName>
+                </correspAction>
+
+                <!-- modelled using https://encoding-correspondence.bbaw.de/v1/CMIF.html as reference -->
+                <note type="mentioned">
+                    <ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0159"><rs>Weissenburg</rs></ref>
+                    <ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0221"><rs>Waßerburg</rs></ref>
+                    <ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0090"><rs>Lindau</rs></ref>
+                    <ref type="cmif:mentionsPlace" target="../register/lassberg-places.xml#lassberg-place-0163"><rs>Winterthur</rs></ref>
+                    <ref type="cmif:mentionsBibl" target="../register/lassberg-manuscripts.xml#lassberg-witness-0089"><rs>Wasserburger Codex</rs></ref>
+                </note>
+            </correspDesc>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2026-09-30" who="#MiS" status="draft">DRAFT: Preliminary uncorrected HTR transcription from Transkribus (Bern, Burgerbibliothek, scans 34-36), minimal markup (places, Wasserburger Codex) added for a presentation; not proofread, no normalization, translation or summary</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="original" resp="#transkribus #MiS">
+                <p>
+                    <pb n="1"/>
+                    <fw type="pageNum">1</fw>
+                    <lb xml:id="lassberg-letter-1246-1-2" n="1" corresp="tr_2_tl_1"/>erhalten den 29 Septl. 1828.
+                    <lb xml:id="lassberg-letter-1246-1-3" n="2" corresp="tr_2_tl_2"/>Karthause bey <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0149">Thun</rs> d. 21. 7. 1828
+                    <lb xml:id="lassberg-letter-1246-1-4" n="3" corresp="tr_2_tl_3"/>Hochwohlgeborne Freyherr.
+                    <lb xml:id="lassberg-letter-1246-1-5" n="4" corresp="tr_2_tl_4"/>Verehrtester Freund
+                    <lb xml:id="lassberg-letter-1246-1-6" n="5" corresp="tr_2_tl_5"/>Er freute mich sehr mein lieber Baron, Ihre glückliche Nachhause
+                    <lb xml:id="lassberg-letter-1246-1-7" n="6" corresp="tr_2_tl_6"/>"kunft in Ihre mit so vielen alterthümlichen Schätzen angefüllte
+                    <lb xml:id="lassberg-letter-1246-1-8" n="7" corresp="tr_2_tl_7"/>Wohnung zu vernehmen, und hoffe daß Sie durch Luftveränderung
+                    <lb xml:id="lassberg-letter-1246-1-9" n="8" corresp="tr_2_tl_8"/>und Reise gestärkt, Sie sich nun wieder frohen Muther mit Ihren
+                    <lb xml:id="lassberg-letter-1246-1-10" n="9" corresp="tr_2_tl_9"/>lieben Münnsängern beschäftigen können, der Besuch einer
+                    <lb xml:id="lassberg-letter-1246-1-11" n="10" corresp="tr_2_tl_10"/>Männer der wie Sie mit Kopf und Hertz große Wißenschaft
+                    <lb xml:id="lassberg-letter-1246-1-12" n="11" corresp="tr_2_tl_11"/>in einem Sache verbindet, welcher für mich so vielen Reitz
+                    <lb xml:id="lassberg-letter-1246-1-13" n="12" corresp="tr_2_tl_12"/>hat, war mir äußerst angenehm, und ich verdanke Ihnen
+                    <lb xml:id="lassberg-letter-1246-1-14" n="13" corresp="tr_2_tl_13"/>herzlich die intereſsanten Stunden die ich mit Ihnen
+                    <lb xml:id="lassberg-letter-1246-1-15" n="14" corresp="tr_2_tl_14"/>in den Verschlechten von <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0159">Weissenburg</rs> und an den
+                    <lb xml:id="lassberg-letter-1246-1-16" n="15" corresp="tr_2_tl_15"/>lachenden Zustaden unserer Saar verlebt habe
+                    <lb xml:id="lassberg-letter-1246-1-17" n="16" corresp="tr_2_tl_16"/>Wie ich nach Ihrer Abreise mich noch einige Tage in <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0159">Weissenburg</rs>
+                    <lb xml:id="lassberg-letter-1246-1-18" n="17" corresp="tr_2_tl_17"/>aufhielt, so fühlte ich mich schon unwohl, und seither habe ich
+                    <lb xml:id="lassberg-letter-1246-1-19" n="18" corresp="tr_2_tl_18"/>beim gute Folgen meiner Brunnenbur verspührt. Ich bin immer
+                    <lb xml:id="lassberg-letter-1246-1-20" n="19" corresp="tr_2_tl_19"/>sehr geplagt mit immer wiederkehrenden Knampfen und war
+                    <lb xml:id="lassberg-letter-1246-1-21" n="20" corresp="tr_2_tl_20"/>mich vorzüglich beelendet, ist daß ich gäntzlich oft mehrere
+                    <lb xml:id="lassberg-letter-1246-1-22" n="21" corresp="tr_2_tl_21"/>tage müßig zubringen muß, indem so bald ich habe ich
+                    <lb xml:id="lassberg-letter-1246-1-23" n="22" corresp="tr_2_tl_22"/>er versuche, eine Vierthel Stunde lang zu schreiben, ein fürchterliche
+                    <lb xml:id="lassberg-letter-1246-1-24" n="23" corresp="tr_2_tl_23"/>Schweid
+                    <pb n="2"/>
+                    <lb xml:id="lassberg-letter-1246-2-26" n="1" corresp="tr_1_tl_1"/>Schweis mit Schwindel verbunden, mich wiedrum zum Nichtsthum
+                    <lb xml:id="lassberg-letter-1246-2-27" n="2" corresp="tr_1_tl_2"/>nöthigt. Da dieser vorzüglich nervös zu sein scheint, so hoffe ich
+                    <lb xml:id="lassberg-letter-1246-2-28" n="3" corresp="tr_1_tl_3"/>daß izt da die entsetzlich elebtrische Luft durch viele Gewitter
+                    <lb xml:id="lassberg-letter-1246-2-29" n="4" corresp="tr_1_tl_4"/>gereinigt ist, diese Uebel nach und nach verschwinden oder
+                    <lb xml:id="lassberg-letter-1246-2-30" n="5" corresp="tr_1_tl_5"/>wenigsteme sich erleichtern werden.
+                    <lb xml:id="lassberg-letter-1246-2-31" n="6" corresp="tr_1_tl_6"/>Sonst haben neben der Militærschule in thun, ein Zusammenzug
+                    <lb xml:id="lassberg-letter-1246-2-32" n="7" corresp="tr_1_tl_7"/>von Cantonal Truppen zu einer Eydgenössischen Institution,
+                    <lb xml:id="lassberg-letter-1246-2-33" n="8" corresp="tr_1_tl_8"/>und ein Heer von Reisenden unsre Gegenden sehr lebhaft,
+                    <lb xml:id="lassberg-letter-1246-2-34" n="9" corresp="tr_1_tl_9"/>bißweilen sogar etwas stürmisch gemacht. Vor einigen Tagen hatte
+                    <lb xml:id="lassberg-letter-1246-2-35" n="10" corresp="tr_1_tl_10"/>mann kleine Karthause die Ehre die schöne Großfürstin haben
+                    <lb xml:id="lassberg-letter-1246-2-36" n="11" corresp="tr_1_tl_11"/>einige Stunden lang in ihren Mauren zu sehen. Ich vermuthe
+                    <lb xml:id="lassberg-letter-1246-2-37" n="12" corresp="tr_1_tl_12"/>daß die Nachrichten die Sie denselben Tag con Odesta erhielt, nicht
+                    <lb xml:id="lassberg-letter-1246-2-38" n="13" corresp="tr_1_tl_13"/>sehr erfreulichen Inhalte gewesen sind. Sie werden gewiß den Quel¬
+                    <lb xml:id="lassberg-letter-1246-2-39" n="14" corresp="tr_1_tl_14"/>Bentendorf der vorhin in Stutzard war persönlich bekannt haben
+                    <lb xml:id="lassberg-letter-1246-2-40" n="15" corresp="tr_1_tl_15"/>ich habe ihn sehr gut gekannt und bedaure seinen Tod. Mein
+                    <lb xml:id="lassberg-letter-1246-2-41" n="16" corresp="tr_1_tl_16"/>Stoffe schreibt mir von Wien, "quil etoit mort de maladie &amp; de
+                    <lb xml:id="lassberg-letter-1246-2-42" n="17" corresp="tr_1_tl_17"/>miſére ſur la Route de Seſium la a Siliſtrii. Fürchterlicſarar-
+                    <lb xml:id="lassberg-letter-1246-2-43" n="18" corresp="tr_1_tl_18"/>Aber die Erthöpfung von Butgarien soll mann sich nicht denken
+                    <lb xml:id="lassberg-letter-1246-2-44" n="19" corresp="tr_1_tl_19"/>v
+                    <lb xml:id="lassberg-letter-1246-2-45" n="20" corresp="tr_1_tl_20"/>bonen.
+                    <lb xml:id="lassberg-letter-1246-2-46" n="21" corresp="tr_1_tl_21"/>Vor einigen Tagen sah ich sie einen Reisenden der mir sagte
+                    <lb xml:id="lassberg-letter-1246-2-47" n="22" corresp="tr_1_tl_22"/>er habe zu <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0221">Waßerburg</rs> bey <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0090">Lindau</rs>, bey einem alten Pfarrer
+                    <lb xml:id="lassberg-letter-1246-2-48" n="23" corresp="tr_1_tl_23"/>einen uralten <rs type="witness" key="../register/lassberg-manuscripts.xml#lassberg-witness-0089" resp="#manuscript-scan">Codex alt deutscher dichter</rs> gesehn. Ist Ihnen dieser
+                    <lb xml:id="lassberg-letter-1246-2-49" n="24" corresp="tr_1_tl_24"/>bekannt?
+                    <lb xml:id="lassberg-letter-1246-2-50" n="25" corresp="tr_1_tl_25"/>Sie sagten mir, lieber Baron, Sie glaubten der Münſänger com
+                    <lb xml:id="lassberg-letter-1246-2-51" n="26" corresp="tr_1_tl_26"/>Ober sich aus dem Hause Westerstuhl gewesen. Beym Durchblattern
+                    <lb xml:id="lassberg-letter-1246-2-52" n="27" corresp="tr_1_tl_27"/>einige - Excripten fand ich im Jahrzeitbuch zu <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0163">Winterthur</rs> einen
+                    <lb xml:id="lassberg-letter-1246-2-53" n="1" corresp="tr_2_tl_1"/>Joh. v. Wissersputzl. Nielen. Caff. d. Wesp. et An̄a filia, und einen
+                    <lb xml:id="lassberg-letter-1246-2-54" n="2" corresp="tr_2_tl_2"/>Red. de Weſp. Sacerdos &amp; Rector Ecclesie de Buiz
+                    <lb xml:id="lassberg-letter-1246-2-55" n="3" corresp="tr_2_tl_3"/>Nach einer Jahrzeitstiftung Rudolf Schultheißen unter dem
+                    <lb xml:id="lassberg-letter-1246-2-56" n="4" corresp="tr_2_tl_4"/>Schopf zu <rs type="place" key="../register/lassberg-places.xml#lassberg-place-0163">Winterthur</rs>, von 1368. stiftete derselbe Seelmessen
+                    <lb xml:id="lassberg-letter-1246-2-57" n="5" corresp="tr_2_tl_5"/>für seine Eltern Stud. u. Margareth, für Joh. von Wasterspühl Ritter
+                    <lb xml:id="lassberg-letter-1246-2-58" n="6" corresp="tr_2_tl_6"/>und Rud. deßen Sohn Kilchfl. zu Buch. Diese scheinen Margareth
+                    <lb xml:id="lassberg-letter-1246-2-59" n="7" corresp="tr_2_tl_7"/>Peter und Bruder gewesen zu seyn, und bestimmen als ihr das zu
+                    <lb xml:id="lassberg-letter-1246-2-60" n="8" corresp="tr_2_tl_8"/>in die ersten Dezemberin der 14t Jahrhunderts. Er wird Ihnen bekannt
+                    <lb xml:id="lassberg-letter-1246-2-61" n="9" corresp="tr_2_tl_9"/>sein, daß Fäsi in seiner Schweizer Geographie die Erbtochter der letzten
+                    <lb xml:id="lassberg-letter-1246-2-62" n="10" corresp="tr_2_tl_10"/>Herrn u. Mitteur von Wasperspühl einen Biberli von Zürich heirathen
+                    <lb xml:id="lassberg-letter-1246-2-63" n="11" corresp="tr_2_tl_11"/>läßt, der durch sie Herr zu Wasserstuhl geworden sein sole.
+                    <lb xml:id="lassberg-letter-1246-2-64" n="12" corresp="tr_2_tl_12"/>die Geneat der Rambache, die ich Ihnen versprach, finden Sie
+                    <lb xml:id="lassberg-letter-1246-2-65" n="13" corresp="tr_2_tl_13"/>beykommend, wohl Sie aber glauben, daß die Marffelben von
+                    <lb xml:id="lassberg-letter-1246-2-66" n="14" corresp="tr_2_tl_14"/>Rapperschwyl von ihrem Hause waren, ist mir nicht bekannt geworden
+                    <lb xml:id="lassberg-letter-1246-2-67" n="15" corresp="tr_2_tl_15"/>Ich finde 2. Wappen u Rambach und 2. der Marschalte die einander
+                    <lb xml:id="lassberg-letter-1246-2-68" n="16" corresp="tr_2_tl_16"/>alle ungleich sind. Der Wappen der Munsangier ist mir nicht
+                    <lb xml:id="lassberg-letter-1246-2-69" n="17" corresp="tr_2_tl_17"/>debant
+                    <lb xml:id="lassberg-letter-1246-2-70" n="18" corresp="tr_2_tl_18"/>Sie werden mein verehrtester Freund nur sonst Münchs Programm
+                    <lb xml:id="lassberg-letter-1246-2-71" n="19" corresp="tr_2_tl_19"/>über die Geschichte den Fürsten von Fürstenberg gesehen haben, daß sein
+                    <lb xml:id="lassberg-letter-1246-2-72" n="20" corresp="tr_2_tl_20"/>Bezeichnung als Professor zu Köwen in den Schweizerburgen ein
+                    <lb xml:id="lassberg-letter-1246-2-73" n="21" corresp="tr_2_tl_21"/>drükfehler ist. Es ist zu Lüttich angestellt, von woher ich lezthin einen
+                    <lb xml:id="lassberg-letter-1246-2-74" n="22" corresp="tr_2_tl_22"/>Brief von ihm erhalten haben. Es war vorhaben meine unbedeutend
+                    <lb xml:id="lassberg-letter-1246-2-75" n="23" corresp="tr_2_tl_23"/>Bebengeschichte für die Zeitgenoßen zu bearbeiten, ich habe mir aber
+                    <lb xml:id="lassberg-letter-1246-2-76" n="24" corresp="tr_2_tl_24"/>diese Walpierung höflichst verboten.
+                    <lb xml:id="lassberg-letter-1246-2-77" n="25" corresp="tr_2_tl_25"/>Ist etwa Poppihhofer geschichte der Thurgaur noch nicht im Buchsender
+                    <lb xml:id="lassberg-letter-1246-2-78" n="26" corresp="tr_2_tl_26"/>ich habe gleich nach Ihrer Abreise dem Buchsändler Immer den
+                    <lb xml:id="lassberg-letter-1246-2-79" n="27" corresp="tr_2_tl_27"/>auftrag gegeben mir dieser Werk kommen zu laßen, er aber noch
+                    <lb xml:id="lassberg-letter-1246-2-80" n="28" corresp="tr_2_tl_28"/>nicht erhalten.
+                    <pb n="3"/>
+                    <fw type="pageNum">1</fw>
+                    <lb xml:id="lassberg-letter-1246-3-83" n="1" corresp="tr_2_tl_1"/>Ist er keine Indisbration der Werle über Schwaben, welcher ich
+                    <lb xml:id="lassberg-letter-1246-3-84" n="2" corresp="tr_2_tl_2"/>bey Ihnen sah, und welches ich mir von Ihrer Gefälligkeit zum
+                    <lb xml:id="lassberg-letter-1246-3-85" n="3" corresp="tr_2_tl_3"/>excerpieren ausgebeten hatte, nun aber geschenk anzunehmen
+                    <lb xml:id="lassberg-letter-1246-3-86" n="4" corresp="tr_2_tl_4"/>so werde ich er alle ein Plazbarck Andenken Ihrer Freundschaft
+                    <lb xml:id="lassberg-letter-1246-3-87" n="5" corresp="tr_2_tl_5"/>ansehen, und Ihnen dafür vielen Dank wissen. Am schicklichsten
+                    <lb xml:id="lassberg-letter-1246-3-88" n="6" corresp="tr_2_tl_6"/>könnte der Ristchen durch einen Frachtwagen an meine Adresse
+                    <lb xml:id="lassberg-letter-1246-3-89" n="7" corresp="tr_2_tl_7"/>nach Bern übermacht werden.
+                    <lb xml:id="lassberg-letter-1246-3-90" n="8" corresp="tr_2_tl_8"/>haben Sie einige Nachrichten aus Italien von unserem Wissenberg
+                    <lb xml:id="lassberg-letter-1246-3-91" n="9" corresp="tr_2_tl_9"/>und wissen Sie nicht ob er seine Rükreise über Bien zu nehmen
+                    <lb xml:id="lassberg-letter-1246-3-92" n="10" corresp="tr_2_tl_10"/>gedankt?
+                    <lb xml:id="lassberg-letter-1246-3-93" n="11" corresp="tr_2_tl_11"/>Leben Sie recht wohl lieber Laßberg in Ihrer schönen Einkombut
+                    <lb xml:id="lassberg-letter-1246-3-94" n="12" corresp="tr_2_tl_12"/>gedenken Sie meine mit dem Wohlwollen, das meine aufrichtige
+                    <lb xml:id="lassberg-letter-1246-3-95" n="13" corresp="tr_2_tl_13"/>freundschaft und Hochachtung gegen Sie verdient
+                    <lb xml:id="lassberg-letter-1246-3-96" n="14" corresp="tr_2_tl_14"/>Ihr ganz ergebener
+                    <lb xml:id="lassberg-letter-1246-3-97" n="15" corresp="tr_2_tl_15"/>dieni und denn
+                    <lb xml:id="lassberg-letter-1246-3-98" n="16" corresp="tr_2_tl_16"/>Mülinen
+                </p>
+            </div>
+        </body>
+    </text>
+</TEI>

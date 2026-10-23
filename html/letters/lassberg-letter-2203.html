@@ -17,6 +17,7 @@
                   <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
                   <li class="nav-item"><a class="nav-link" href="../persons.html">Persons</a></li>
                   <li class="nav-item"><a class="nav-link" href="../places.html">Places</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../manuscripts.html">Manuscripts</a></li>
                   <li class="nav-item"><a class="nav-link" href="../explore.html">Explore</a></li>
                   <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
                   <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
@@ -62,6 +63,13 @@
                            <span class="legend-dot ms-2" style="background:#b57cc0"></span> places mentioned
                            </p>
                      </section>
+                     <section id="mentioned" class="mb-4">
+                        <h2 class="h5">Mentioned in this letter</h2>
+                        <h3 class="h6 mt-3">Manuscripts</h3>
+                        <ul class="list-unstyled small mb-2">
+                           <li class="mb-1"><a href="../manuscripts.html?q=Liederbuch%2C%202.%20H%C3%A4lfte%2016.%20Jh.%20%28Autographen%2C%20u.%20a.%20Eberwin%20Droste%201579%29">Liederbuch, 2. Hälfte 16. Jh. (Autographen, u. a. Eberwin Droste 1579)</a></li>
+                        </ul>
+                     </section>
                   </aside>
                </div>
                <div class="col-lg-8 order-lg-1">
@@ -71,22 +79,22 @@
                      <div>
                         
                         <p>Hochverehrter Freund! Ir I. v. Laßberg. Tübingen, d. 1. Sept. 1840. In der Anlage
-                           stelle ich das Drostesche Liederbuch nebst den Leben der Minnesinger zurück und danke
-                           für die lange getragene Geduld, der ich unter den manigfachen Abhaltungen der letzten
-                           Zeit so sehr bedurfte. Die von der Hagenschen Minnesinger, die nun endlich im Buchhandel
-                           erschienen, habe ich mir jetzt selbst angeschafft. Ob das Lied: Venus du und dein
-                           Kind 2c. von dem Sammler selbst herrühre, scheint mir doch zweifelhaft, denn auch
-                           die übrigen Lieder sind meist solche, die um jene Zeit viel verbreitet waren; eher
-                           möchte ich einzelne, den Liedern angehängte Sprüche für Zuthat des ehemaligen Besizers
-                           der Handschrift ansehen. Professor Reyscher hat uns erfreuliche Nachricht von Ihrem
-                           und der Ihrigen Befinden gebracht, auch daß Sie viel 16 * leicht noch das Wildbad
-                           gebrauchen würden, und dieß gab uns Hoffnung, Sie wenigstens auf der Hin- oder Herreise
-                           bei uns zu sehen; bis jetzt aber fand ich Ihren Namen nicht auf der Liste der Wildbader
-                           Kurgäste. Meine Arbeit über das Volkslied rückt allmählich vor. Die Sammlung ist der
-                           Hauptsache nach geordnet, auch ein Stück Einleitung geschrieben, doch bleibt auch
-                           noch Vieles zu thun. Ich denke diesen Herbst noch einen Ausflug nach Frankfurt und
-                           in die Rheingegend zu machen, um etwa noch einige alte Liederdrucke zu erhaschen.
-                           Unter herzlichen Grüßen hochschätzend der Ihrige L. Uhland.</p>
+                           stelle ich das <span class="rs-witness" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Liederbuch, 2. Hälfte 16. Jh. (Autographen, u. a. Eberwin Droste 1579)</strong&gt;">Drostesche Liederbuch</span> nebst den Leben der Minnesinger zurück und danke für die lange getragene Geduld,
+                           der ich unter den manigfachen Abhaltungen der letzten Zeit so sehr bedurfte. Die von
+                           der Hagenschen Minnesinger, die nun endlich im Buchhandel erschienen, habe ich mir
+                           jetzt selbst angeschafft. Ob das Lied: Venus du und dein Kind 2c. von dem Sammler
+                           selbst herrühre, scheint mir doch zweifelhaft, denn auch die übrigen Lieder sind meist
+                           solche, die um jene Zeit viel verbreitet waren; eher möchte ich einzelne, den Liedern
+                           angehängte Sprüche für Zuthat des ehemaligen Besizers der Handschrift ansehen. Professor
+                           Reyscher hat uns erfreuliche Nachricht von Ihrem und der Ihrigen Befinden gebracht,
+                           auch daß Sie viel 16 * leicht noch das Wildbad gebrauchen würden, und dieß gab uns
+                           Hoffnung, Sie wenigstens auf der Hin- oder Herreise bei uns zu sehen; bis jetzt aber
+                           fand ich Ihren Namen nicht auf der Liste der Wildbader Kurgäste. Meine Arbeit über
+                           das Volkslied rückt allmählich vor. Die Sammlung ist der Hauptsache nach geordnet,
+                           auch ein Stück Einleitung geschrieben, doch bleibt auch noch Vieles zu thun. Ich denke
+                           diesen Herbst noch einen Ausflug nach Frankfurt und in die Rheingegend zu machen,
+                           um etwa noch einige alte Liederdrucke zu erhaschen. Unter herzlichen Grüßen hochschätzend
+                           der Ihrige L. Uhland.</p>
                         </div>
                   </section>
                   <div id="related-letters"></div>
@@ -108,11 +116,9 @@
                         document.getElementById('map').style.display = 'none';
                     } else {
                         var map = L.map('mapid', { scrollWheelZoom: false });
-                        // Muted basemap (CARTO Positron) instead of the default colourful OSM
-                        // tiles, to match the edition's restrained palette.
-                        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-                            attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
-                            subdomains: 'abcd',
+                        // OpenStreetMap standard tiles (CARTO basemaps now require an API key).
+                        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
                             maxZoom: 19
                         }).addTo(map);
 

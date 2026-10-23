@@ -30,3 +30,574 @@
 - lassberg-letter-2319: „codex“ → None (0.6)
 - lassberg-letter-3266: „Ufenauer iarzeitenbuchs“ → None (0.6)
 
+## Lauf 2026-09-30T09:28:55+00:00 (45 Briefe)
+
+- angewandt: 3 (retype 3, wrap 0)
+- übersprungen: 41
+
+## Übersprungen
+
+- lassberg-letter-1064: „Weingartner Codex“ – already applied
+- lassberg-letter-1064: „Kolmarer Handschrift“ – already applied
+- lassberg-letter-1064: „Manessische Codex“ – already applied
+- lassberg-letter-1064: „Handschrift des trojan. Kriegs von Konrad“ – unresolved (ambiguous)
+- lassberg-letter-1730: „Colmarer lieder codex“ – already applied
+- lassberg-letter-1730: „papier handschrift“ – already applied
+- lassberg-letter-1737: „Colmarer codex“ – already applied
+- lassberg-letter-1737: „Schwabenspiegels“ – already applied
+- lassberg-letter-1741: „Colmarer Codex“ – already applied
+- lassberg-letter-1743: „Colmarer liedercodex“ – already applied
+- lassberg-letter-1766: „schönen carolingischen Codex“ – already applied
+- lassberg-letter-1766: „Berliner codex“ – unresolved (ambiguous)
+- lassberg-letter-1768: „Karolinger“ – already applied
+- lassberg-letter-1776: „Würzb. HS.“ – already applied
+- lassberg-letter-1779: „münchner codex“ – unresolved (ambiguous)
+- lassberg-letter-1779: „codex“ – already applied
+- lassberg-letter-1781: „Wienerischen“ – already applied
+- lassberg-letter-1781: „Pariser Bilder“ – already applied
+- lassberg-letter-1783: „Codex gemmens argentens“ – already applied
+- lassberg-letter-1784: „pariser codex“ – already applied
+- lassberg-letter-1787: „Manessischen Codex“ – already applied
+- lassberg-letter-1787: „meine handschrift“ – unresolved (ambiguous)
+- lassberg-letter-1787: „meiner eigenen Handschrift“ – unresolved (low-confidence)
+- lassberg-letter-1802: „seinen codex“ – already applied
+- lassberg-letter-1802: „altteutsches fragment“ – unresolved (ambiguous)
+- lassberg-letter-1952: „Weingartner Codes“ – already applied
+- lassberg-letter-1959: „Weingartner Codex“ – already applied
+- lassberg-letter-1959: „Weingarter codex“ – already applied
+- lassberg-letter-1961: „Weingartner Codex“ – already applied
+- lassberg-letter-1999: „Weingartner codex“ – already applied
+- lassberg-letter-1999: „eine pergament handschrift des XIV. Jarhunderts“ – already applied
+- lassberg-letter-2052: „Hugo v Montfort“ – unresolved (ambiguous)
+- lassberg-letter-2214: „Eine gute handschrift“ – already applied
+- lassberg-letter-2214: „Vita sanctorum seculi XIV“ – already applied
+- lassberg-letter-2214: „späte aber gute handschrift“ – already applied
+- lassberg-letter-2262: „Weingartner Codex“ – already applied
+- lassberg-letter-2263: „Weingarter Codex“ – already applied
+- lassberg-letter-2263: „ein altes liederbuch“ – unresolved (ambiguous)
+- lassberg-letter-2319: „codex“ – unresolved (ambiguous)
+- lassberg-letter-2319: „codex“ – unresolved (ambiguous)
+- lassberg-letter-3267: „Frauendienst“ – unresolved (low-confidence)
+
+## Konfidenz < 0.7
+
+- lassberg-letter-2214: „sammlung Westphaelischer Lieder 1579“ → lassberg-witness-0295 (0.6)
+- lassberg-letter-2319: „Merseburger Missale“ → lassberg-witness-0296 (0.6)
+- lassberg-letter-3266: „Ufenauer iarzeitenbuchs“ → lassberg-witness-0297 (0.6)
+
+## Lauf 2026-09-30T10:00:49+00:00 (279 Briefe)
+
+- angewandt: 297 (retype 20, wrap 277)
+- übersprungen: 53
+
+## Übersprungen
+
+- lassberg-letter-1064: „Weingartner Codex“ – already applied
+- lassberg-letter-1064: „Kolmarer Handschrift“ – already applied
+- lassberg-letter-1064: „Manessische Codex“ – already applied
+- lassberg-letter-1064: „Handschrift des trojan. Kriegs von Konrad“ – already applied
+- lassberg-letter-1143: „Heidelberg. Membrane“ – quote not found
+- lassberg-letter-1166: „das älteste Protokoll von Dießenhofen“ – overlaps existing rs
+- lassberg-letter-1296: „kleine Handschrift“ – unresolved (low-confidence)
+- lassberg-letter-1311: „neuaufgefundenen Liederhandschrift“ – unresolved (low-confidence)
+- lassberg-letter-1323: „cod.“ – quote/rs not found
+- lassberg-letter-1468: „Handschrift von Konrads v. Ammenhausen Schachzabel“ – overlaps existing rs
+- lassberg-letter-1472: „französischer Schwabenspiegel“ – overlaps existing rs
+- lassberg-letter-1498: „Schultheiß Kollektaneen“ – quote/rs not found
+- lassberg-letter-1523: „Schultheß Kollektaneen“ – overlaps existing rs
+- lassberg-letter-1523: „Schulth. Kollektaneen“ – overlaps existing rs
+- lassberg-letter-1541: „alten Münchner Codex“ – unresolved (low-confidence)
+- lassberg-letter-1578: „Codex aregenteus“ – quote/rs not found
+- lassberg-letter-1730: „Colmarer lieder codex“ – already applied
+- lassberg-letter-1730: „papier handschrift“ – already applied
+- lassberg-letter-1737: „Colmarer codex“ – already applied
+- lassberg-letter-1737: „Schwabenspiegels“ – already applied
+- lassberg-letter-1741: „Colmarer Codex“ – already applied
+- lassberg-letter-1743: „Colmarer liedercodex“ – already applied
+- lassberg-letter-1766: „schönen carolingischen Codex“ – already applied
+- lassberg-letter-1766: „Berliner codex“ – already applied
+- lassberg-letter-1768: „Karolinger“ – already applied
+- lassberg-letter-1776: „Würzb. HS.“ – already applied
+- lassberg-letter-1779: „codex“ – already applied
+- lassberg-letter-1781: „Wienerischen“ – already applied
+- lassberg-letter-1781: „Pariser Bilder“ – already applied
+- lassberg-letter-1783: „Codex gemmens argentens“ – already applied
+- lassberg-letter-1784: „pariser codex“ – already applied
+- lassberg-letter-1787: „Manessischen Codex“ – already applied
+- lassberg-letter-1787: „meine handschrift“ – already applied
+- lassberg-letter-1787: „meiner eigenen Handschrift“ – unresolved (low-confidence)
+- lassberg-letter-1802: „seinen codex“ – already applied
+- lassberg-letter-1802: „altteutsches fragment“ – already applied
+- lassberg-letter-1952: „Weingartner Codes“ – already applied
+- lassberg-letter-1959: „Weingartner Codex“ – already applied
+- lassberg-letter-1959: „Weingarter codex“ – already applied
+- lassberg-letter-1961: „Weingartner Codex“ – already applied
+- lassberg-letter-1999: „Weingartner codex“ – already applied
+- lassberg-letter-1999: „eine pergament handschrift des XIV. Jarhunderts“ – already applied
+- lassberg-letter-2052: „Hugo v Montfort“ – already applied
+- lassberg-letter-2214: „Eine gute handschrift“ – already applied
+- lassberg-letter-2214: „Vita sanctorum seculi XIV“ – already applied
+- lassberg-letter-2214: „späte aber gute handschrift“ – already applied
+- lassberg-letter-2214: „sammlung Westphaelischer Lieder 1579“ – already applied
+- lassberg-letter-2262: „Weingartner Codex“ – already applied
+- lassberg-letter-2263: „Weingarter Codex“ – already applied
+- lassberg-letter-2263: „ein altes liederbuch“ – already applied
+- lassberg-letter-2319: „Merseburger Missale“ – already applied
+- lassberg-letter-3266: „Ufenauer iarzeitenbuchs“ – already applied
+- lassberg-letter-3267: „Frauendienst“ – unresolved (low-confidence)
+
+## Konfidenz < 0.7
+
+- lassberg-letter-0627: „Handschrift des Gedichtes“ → lassberg-witness-0325 (0.6)
+- lassberg-letter-0639: „Manessischen“ → lassberg-witness-0292 (0.65)
+- lassberg-letter-0654: „Lieder - Kodex“ → lassberg-witness-0327 (0.6)
+- lassberg-letter-0706: „Eine meiner Handschriften“ → None (0.5)
+- lassberg-letter-0743: „Handschrift hat“ → lassberg-witness-0332 (0.6)
+- lassberg-letter-0859: „Mailathsche Handschrift“ → lassberg-witness-0334 (0.65)
+- lassberg-letter-0916: „Abschrift der Pfälzer ) Liederhandschrift“ → lassberg-witness-0082 (0.65)
+- lassberg-letter-0918: „Sinzendorfischen Codex“ → lassberg-witness-0337 (0.6)
+- lassberg-letter-0971: „Handschrift“ → lassberg-witness-0389 (0.6)
+- lassberg-letter-1053: „hiesigen Handschrift“ → lassberg-witness-0300 (0.65)
+- lassberg-letter-1055: „Handschrift Nr. 69“ → None (0.55)
+- lassberg-letter-1055: „Manuscript vom II. Teile von Trutpert Neugarts Episcopatus Constantiensis“ → None (0.5)
+- lassberg-letter-1140: „provenzalischen Fierabras“ → lassberg-witness-0302 (0.65)
+- lassberg-letter-1154: „Maness. Codex“ → lassberg-witness-0292 (0.65)
+- lassberg-letter-1168: „alte Liederbuch“ → lassberg-witness-0340 (0.6)
+- lassberg-letter-1175: „anniversario Sulgensi“ → lassberg-witness-0393 (0.6)
+- lassberg-letter-1202: „Stadtbuch“ → lassberg-witness-0395 (0.6)
+- lassberg-letter-1222: „wirzburger Codex“ → lassberg-witness-0342 (0.6)
+- lassberg-letter-1261: „Hdschr. des Rosengartenliedes“ → None (0.55)
+- lassberg-letter-1263: „meiner Handschrift“ → lassberg-witness-0345 (0.6)
+- lassberg-letter-1263: „teutsches Rossarzneybuch“ → None (0.55)
+- lassberg-letter-1263: „Bruchstük eines Wächterliedes“ → None (0.55)
+- lassberg-letter-1292: „Weltchronik des Rudolf v. Ems“ → None (0.55)
+- lassberg-letter-1296: „Berner Codex“ → None (0.55)
+- lassberg-letter-1311: „altfranzös. Parcival“ → lassberg-witness-0306 (0.6)
+- lassberg-letter-1311: „Straßburger Handschrift“ → lassberg-witness-0307 (0.6)
+- lassberg-letter-1311: „Heidelberger Codex“ → lassberg-witness-0308 (0.6)
+- lassberg-letter-1311: „altes Pergamentblatt“ → lassberg-witness-0309 (0.6)
+- lassberg-letter-1317: „codex picturatus vom voeu du paon“ → lassberg-witness-0341 (0.65)
+- lassberg-letter-1317: „Liedercodex aus dem XIV. Jarhundert aus Wien“ → lassberg-witness-0353 (0.55)
+- lassberg-letter-1321: „Parcisal“ → lassberg-witness-0306 (0.65)
+- lassberg-letter-1321: „Parzifal“ → lassberg-witness-0306 (0.6)
+- lassberg-letter-1321: „teutsche Handschrift“ → lassberg-witness-0354 (0.6)
+- lassberg-letter-1346: „Codex Bernensis“ → lassberg-witness-0306 (0.6)
+- lassberg-letter-1346: „pergamentenen Concepte dieser Chronik“ → None (0.5)
+- lassberg-letter-1346: „ausgeführten Werke des Joh. Müller“ → None (0.5)
+- lassberg-letter-1346: „meine Handschrift“ → lassberg-witness-0310 (0.6)
+- lassberg-letter-1346: „Heidelberger Handschrift“ → None (0.5)
+- lassberg-letter-1350: „Pergamentcodex“ → lassberg-witness-0356 (0.6)
+- lassberg-letter-1353: „Freiburger Codex“ → lassberg-witness-0358 (0.6)
+- lassberg-letter-1370: „chartulario“ → None (0.55)
+- lassberg-letter-1374: „Liederbuch der Häzlerin 1470“ → lassberg-witness-0351 (0.65)
+- lassberg-letter-1403: „Membrane des Hrn. Buchhändler Koller in London“ → lassberg-witness-0360 (0.6)
+- lassberg-letter-1403: „Liederbuch der Häzlerin“ → lassberg-witness-0351 (0.6)
+- lassberg-letter-1412: „anniversarium Arowiense“ → None (0.5)
+- lassberg-letter-1429: „Heidelberg. Membrane“ → None (0.5)
+- lassberg-letter-1429: „Donauesch. Parcival“ → lassberg-witness-0085 (0.6)
+- lassberg-letter-1430: „Papier- Codex“ → lassberg-witness-0312 (0.6)
+- lassberg-letter-1430: „Berner Codex“ → lassberg-witness-0306 (0.55)
+- lassberg-letter-1445: „ser alte Handschrift des Schwabenspiegels“ → lassberg-witness-0365 (0.65)
+- lassberg-letter-1445: „Schafhauser Handschrift“ → lassberg-witness-0366 (0.65)
+- lassberg-letter-1448: „Gregor im Steine des Hartmann von Owe“ → lassberg-witness-0369 (0.6)
+- lassberg-letter-1465: „den ältesten Necrolog“ → None (0.55)
+- lassberg-letter-1483: „Schwabenspiegel“ → lassberg-witness-0365 (0.6)
+- lassberg-letter-1504: „Juniusschen Codex“ → lassberg-witness-0373 (0.6)
+- lassberg-letter-1509: „handschriftl. Karl d. Gr.“ → lassberg-witness-0125 (0.6)
+- lassberg-letter-1514: „Meistergesangbuch“ → lassberg-witness-0375 (0.6)
+- lassberg-letter-1518: „alte Liederbuch“ → lassberg-witness-0376 (0.6)
+- lassberg-letter-1518: „Handschrift von Ecken Ausfahrt“ → lassberg-witness-0377 (0.6)
+- lassberg-letter-1531: „Wysschen Schweizerlieder“ → lassberg-witness-0319 (0.65)
+- lassberg-letter-1531: „Abschrift des Ulrich von Liechtenstein“ → lassberg-witness-0378 (0.6)
+- lassberg-letter-1531: „Schwabenspiegel“ → lassberg-witness-0370 (0.5)
+- lassberg-letter-1531: „Weissenauer“ → lassberg-witness-0317 (0.65)
+- lassberg-letter-1536: „Frauendienst“ → None (0.55)
+- lassberg-letter-1541: „Wyssischen Liedersammlung“ → lassberg-witness-0319 (0.65)
+- lassberg-letter-1541: „Wyssischen Liedersammlung“ → lassberg-witness-0319 (0.65)
+- lassberg-letter-1556: „Würzburger Codex“ → lassberg-witness-0402 (0.65)
+- lassberg-letter-1563: „Würzburger Handschrift“ → lassberg-witness-0402 (0.55)
+- lassberg-letter-1685: „Schultheissischen handschriften“ → lassberg-witness-0400 (0.6)
+- lassberg-letter-1779: „münchner codex“ → lassberg-witness-0380 (0.6)
+- lassberg-letter-1797: „beiliegendes Copialbuch“ → lassberg-witness-0403 (0.6)
+- lassberg-letter-1874: „Münchner Bruchstük aus dem Ekenliet“ → lassberg-witness-0404 (0.65)
+- lassberg-letter-1874: „meiner Handschrift des XIII. Jarhunderts“ → lassberg-witness-0405 (0.6)
+- lassberg-letter-1943: „mein altes Liederbuch“ → lassberg-witness-0376 (0.6)
+- lassberg-letter-1965: „meiner handschrift“ → lassberg-witness-0298 (0.55)
+- lassberg-letter-2144: „Tanzweise des schwarzen Knaben“ → lassberg-witness-0407 (0.6)
+- lassberg-letter-2319: „codex“ → lassberg-witness-0387 (0.6)
+- lassberg-letter-2319: „codex“ → lassberg-witness-0387 (0.6)
+- lassberg-letter-2431: „dicken Handschrift des Domkapitular von Vanotti“ → lassberg-witness-0409 (0.65)
+- lassberg-letter-2667: „Chronik“ → lassberg-witness-0410 (0.6)
+
+## Lauf 2026-09-30T10:00:52+00:00 (279 Briefe)
+
+- angewandt: 0 (retype 0, wrap 0)
+- übersprungen: 350
+
+## Übersprungen
+
+- lassberg-letter-0627: „Manesischen Kodex“ – already applied
+- lassberg-letter-0627: „Handschrift des Gedichtes“ – already applied
+- lassberg-letter-0639: „Handschrift auf der hiesigen Königl. Privatbibliothek“ – already applied
+- lassberg-letter-0639: „Weingartner Codex“ – already applied
+- lassberg-letter-0639: „Manessischen“ – already applied
+- lassberg-letter-0654: „Handschrift ( von 1440 )“ – already applied
+- lassberg-letter-0654: „Lieder - Kodex“ – already applied
+- lassberg-letter-0660: „zweite Handschrift der teutschen Übersetzung“ – already applied
+- lassberg-letter-0660: „gleichzeitigen Codex des Chronikons“ – already applied
+- lassberg-letter-0660: „zugekommenen Handschrift“ – already applied
+- lassberg-letter-0660: „in Zürch gekaufte Handschrift“ – already applied
+- lassberg-letter-0706: „Pariser Codex der Maneßischen Sammelung“ – already applied
+- lassberg-letter-0706: „Eine meiner Handschriften“ – already applied
+- lassberg-letter-0706: „Handschrift in Heiligenberg“ – already applied
+- lassberg-letter-0737: „Maneßische Codex“ – already applied
+- lassberg-letter-0737: „Handschrift von Tschachtlans Chronik“ – already applied
+- lassberg-letter-0743: „Codex Weingartensis“ – already applied
+- lassberg-letter-0743: „Pfälzische Handschrift Nr. 357“ – already applied
+- lassberg-letter-0743: „Weingartner“ – already applied
+- lassberg-letter-0743: „Handschrift hat“ – already applied
+- lassberg-letter-0743: „Helfensteinischen Codex“ – already applied
+- lassberg-letter-0743: „Handschrift des Liedes der Nibelungen“ – already applied
+- lassberg-letter-0743: „Weingartner“ – already applied
+- lassberg-letter-0743: „Pfälzische Nr. 357“ – already applied
+- lassberg-letter-0744: „Weingartner Handschrift“ – already applied
+- lassberg-letter-0744: „Heidelberg. Handschr. Nr. 329“ – already applied
+- lassberg-letter-0745: „Weingartner Handschrift“ – already applied
+- lassberg-letter-0745: „Maneßischen Handschrift“ – already applied
+- lassberg-letter-0745: „Liedersammlung des Graven Haug von Montfort“ – already applied
+- lassberg-letter-0852: „Carlsburger Codex“ – already applied
+- lassberg-letter-0859: „Weingartner“ – already applied
+- lassberg-letter-0859: „Maneß.“ – already applied
+- lassberg-letter-0859: „Mailathsche Handschrift“ – already applied
+- lassberg-letter-0862: „Abschrift des palatinischen Codex Nr. CCCLVII.“ – already applied
+- lassberg-letter-0862: „Maneßischen Handschrift“ – already applied
+- lassberg-letter-0862: „Weingartner Handschrift“ – already applied
+- lassberg-letter-0862: „Weingartner Codex“ – already applied
+- lassberg-letter-0862: „sogenannten Maneßschen“ – already applied
+- lassberg-letter-0862: „Heidelberger Codex CCCLVII.“ – already applied
+- lassberg-letter-0862: „Mayláths Handschrift“ – already applied
+- lassberg-letter-0862: „mein Gabriel von Montavel“ – already applied
+- lassberg-letter-0862: „Handschrift des Gedichts von dem Ritter von Staufenberg und der Meerfeye“ – already applied
+- lassberg-letter-0862: „Mayláths Handschrift“ – already applied
+- lassberg-letter-0916: „Abschrift der Pfälzer ) Liederhandschrift“ – already applied
+- lassberg-letter-0916: „Maness. Handschrift“ – already applied
+- lassberg-letter-0916: „der Weingartner“ – already applied
+- lassberg-letter-0916: „Mailaths Handschrift“ – already applied
+- lassberg-letter-0916: „Coloczaer Codex“ – already applied
+- lassberg-letter-0916: „Handschrift einer älteren, als Rudolfs, Alexandreis“ – already applied
+- lassberg-letter-0916: „Weing. Hds.“ – already applied
+- lassberg-letter-0918: „Pariser Handschrift“ – already applied
+- lassberg-letter-0918: „Weingartner Codex“ – already applied
+- lassberg-letter-0918: „Maneßische Codex“ – already applied
+- lassberg-letter-0918: „Sinzendorfischen Codex“ – already applied
+- lassberg-letter-0918: „Kodex zu Colocza“ – already applied
+- lassberg-letter-0971: „Handschrift“ – already applied
+- lassberg-letter-0982: „Handschrift der Zimberischen Chronik“ – already applied
+- lassberg-letter-0984: „Weingartner, Handschrift“ – already applied
+- lassberg-letter-0984: „Maness. Handschrift“ – already applied
+- lassberg-letter-0984: „Maness. Codex“ – already applied
+- lassberg-letter-0990: „Nibelungenhandschrift“ – already applied
+- lassberg-letter-0990: „Weingartner Codex“ – already applied
+- lassberg-letter-0990: „Manessischen Sammlung“ – already applied
+- lassberg-letter-0995: „Weingartner Codex“ – already applied
+- lassberg-letter-1032: „Weingartner Handschrift“ – already applied
+- lassberg-letter-1053: „Weingartner Codex“ – already applied
+- lassberg-letter-1053: „Weing. Handschrift“ – already applied
+- lassberg-letter-1053: „hiesigen Handschrift“ – already applied
+- lassberg-letter-1055: „Weingartner Codex“ – already applied
+- lassberg-letter-1055: „Codex Weingartensis“ – already applied
+- lassberg-letter-1055: „Weingartner Codex“ – already applied
+- lassberg-letter-1055: „Handschrift Nr. 69“ – already applied
+- lassberg-letter-1055: „zweiten Hohen Emser Handschrift“ – already applied
+- lassberg-letter-1055: „Manuscript vom II. Teile von Trutpert Neugarts Episcopatus Constantiensis“ – already applied
+- lassberg-letter-1059: „Pergament Codex des X. Jarhunderts“ – already applied
+- lassberg-letter-1064: „Weingartner Codex“ – already applied
+- lassberg-letter-1064: „Kolmarer Handschrift“ – already applied
+- lassberg-letter-1064: „Manessische Codex“ – already applied
+- lassberg-letter-1064: „Handschrift des trojan. Kriegs von Konrad“ – already applied
+- lassberg-letter-1100: „Weingartner Codex“ – already applied
+- lassberg-letter-1100: „Weingartner Codex“ – already applied
+- lassberg-letter-1100: „Weingartner Membrane“ – already applied
+- lassberg-letter-1100: „Münchner Codex“ – already applied
+- lassberg-letter-1103: „Weingartner Codex“ – already applied
+- lassberg-letter-1104: „Weingartner Handschrift“ – already applied
+- lassberg-letter-1104: „Codex palatinus No. 357“ – already applied
+- lassberg-letter-1107: „Codex Weingartensis“ – already applied
+- lassberg-letter-1115: „Codex weingartensis“ – already applied
+- lassberg-letter-1115: „Heidelberger Codex Nr. CCCLVII“ – already applied
+- lassberg-letter-1140: „Weingartner Codex“ – already applied
+- lassberg-letter-1140: „wallerstein. Nibelungenhandschrift“ – already applied
+- lassberg-letter-1140: „provenzalischen Fierabras“ – already applied
+- lassberg-letter-1143: „Weingartner Codex“ – already applied
+- lassberg-letter-1143: „Codex Weingartensis“ – already applied
+- lassberg-letter-1143: „Nibelungen Codex“ – already applied
+- lassberg-letter-1143: „Heidelberg. Membrane“ – quote not found
+- lassberg-letter-1154: „Maness. Codex“ – already applied
+- lassberg-letter-1166: „das älteste Protokoll von Dießenhofen“ – overlaps existing rs
+- lassberg-letter-1168: „alte Liederbuch“ – already applied
+- lassberg-letter-1168: „Roman de la Rose de Vinne de Volce“ – already applied
+- lassberg-letter-1175: „anniversario Sulgensi“ – already applied
+- lassberg-letter-1175: „Anniversarium Hütlingense“ – already applied
+- lassberg-letter-1202: „Stadtbuch“ – already applied
+- lassberg-letter-1204: „Tobelschen Nekrolog“ – already applied
+- lassberg-letter-1214: „französischen Alexandreis“ – already applied
+- lassberg-letter-1222: „franz: mscrpt.“ – already applied
+- lassberg-letter-1222: „franz. handschrift“ – already applied
+- lassberg-letter-1222: „wirzburger Codex“ – already applied
+- lassberg-letter-1247: „uralten codex altteutscher gedichte“ – already applied
+- lassberg-letter-1261: „späte Papierhandschrift“ – already applied
+- lassberg-letter-1261: „Hdschr. des Rosengartenliedes“ – already applied
+- lassberg-letter-1261: „Cod. membr. des Parcival“ – already applied
+- lassberg-letter-1261: „kleinen Tractat auf Pergament“ – already applied
+- lassberg-letter-1263: „Handschrift des Rosengartenliedes“ – already applied
+- lassberg-letter-1263: „Handschrift des Parcifal“ – already applied
+- lassberg-letter-1263: „Weingartner Codex“ – already applied
+- lassberg-letter-1263: „Pariser Cod.“ – already applied
+- lassberg-letter-1263: „Handschrift des Liedes vom heil. Anno“ – already applied
+- lassberg-letter-1263: „meiner Handschrift“ – already applied
+- lassberg-letter-1263: „teutsches Rossarzneybuch“ – already applied
+- lassberg-letter-1263: „Bruchstük eines Wächterliedes“ – already applied
+- lassberg-letter-1270: „comentationes fatales“ – already applied
+- lassberg-letter-1292: „Weltchronik des Rudolf v. Ems“ – already applied
+- lassberg-letter-1292: „Cod. Nro. 113“ – already applied
+- lassberg-letter-1292: „Nr. 296“ – already applied
+- lassberg-letter-1292: „Nr. 349“ – already applied
+- lassberg-letter-1292: „Nr. 573“ – already applied
+- lassberg-letter-1292: „Nr. 354“ – already applied
+- lassberg-letter-1296: „Handschrift meines Nibelungenliedes“ – already applied
+- lassberg-letter-1296: „Berner Codex“ – already applied
+- lassberg-letter-1296: „kleine Handschrift“ – unresolved (low-confidence)
+- lassberg-letter-1296: „Handschrift von merern hundert Seiten über die alten Dichter“ – already applied
+- lassberg-letter-1302: „Manes. Cod.“ – already applied
+- lassberg-letter-1302: „Weingartner Codex“ – already applied
+- lassberg-letter-1302: „einzigen Codex“ – already applied
+- lassberg-letter-1311: „altfranzös. Parcival“ – already applied
+- lassberg-letter-1311: „neuaufgefundenen Liederhandschrift“ – unresolved (low-confidence)
+- lassberg-letter-1311: „Eppishauser Handschrift von den alten Dichtern“ – already applied
+- lassberg-letter-1311: „Straßburger Handschrift“ – already applied
+- lassberg-letter-1311: „Heidelberger Codex“ – already applied
+- lassberg-letter-1311: „altes Pergamentblatt“ – already applied
+- lassberg-letter-1317: „ser alten Codex alt teutscher Gedichte“ – already applied
+- lassberg-letter-1317: „Weingartner Codex“ – already applied
+- lassberg-letter-1317: „codex picturatus vom voeu du paon“ – already applied
+- lassberg-letter-1317: „Liedercodex aus dem XIV. Jarhundert aus Wien“ – already applied
+- lassberg-letter-1321: „Parcisal“ – already applied
+- lassberg-letter-1321: „Parzifal“ – already applied
+- lassberg-letter-1321: „teutsche Handschrift“ – already applied
+- lassberg-letter-1321: „codex Wasserburgensis“ – already applied
+- lassberg-letter-1321: „Wasserburger Codex“ – already applied
+- lassberg-letter-1323: „cod.“ – quote/rs not found
+- lassberg-letter-1324: „Parcifal“ – already applied
+- lassberg-letter-1324: „Parcifal“ – already applied
+- lassberg-letter-1324: „Parcifal“ – already applied
+- lassberg-letter-1324: „Weingartner Codex“ – already applied
+- lassberg-letter-1342: „Berner Handschr.“ – already applied
+- lassberg-letter-1342: „Berner Hdschr.“ – already applied
+- lassberg-letter-1342: „Berner Hdschr.“ – already applied
+- lassberg-letter-1342: „Berner Hdschr.“ – already applied
+- lassberg-letter-1342: „Berner Parc.“ – already applied
+- lassberg-letter-1342: „Bern. Parcival“ – already applied
+- lassberg-letter-1342: „Donaueschinger Parcival“ – already applied
+- lassberg-letter-1342: „Donauesch. Parcival“ – already applied
+- lassberg-letter-1346: „Codex Bernensis“ – already applied
+- lassberg-letter-1346: „pergamentenen Concepte dieser Chronik“ – already applied
+- lassberg-letter-1346: „ausgeführten Werke des Joh. Müller“ – already applied
+- lassberg-letter-1346: „meine Handschrift“ – already applied
+- lassberg-letter-1346: „Codex Wasserburgensis“ – already applied
+- lassberg-letter-1346: „Heidelberger Handschrift“ – already applied
+- lassberg-letter-1350: „Cod. Bernens.“ – already applied
+- lassberg-letter-1350: „Berner Hdschr.“ – already applied
+- lassberg-letter-1350: „Pergamentcodex“ – already applied
+- lassberg-letter-1350: „Königinhofer Hdschrift“ – already applied
+- lassberg-letter-1350: „Cod. Wasserburg.“ – already applied
+- lassberg-letter-1353: „Berner Parcival“ – already applied
+- lassberg-letter-1353: „Liederbuch der Häzlerin“ – already applied
+- lassberg-letter-1353: „wasserburgischen Codex“ – already applied
+- lassberg-letter-1353: „codex Wasserburgensis“ – already applied
+- lassberg-letter-1353: „manessischen Codex von Paris“ – already applied
+- lassberg-letter-1353: „Freiburger Codex“ – already applied
+- lassberg-letter-1359: „Berner Parcival“ – already applied
+- lassberg-letter-1359: „Berner Hdschr.“ – already applied
+- lassberg-letter-1359: „Liederbuchs der Häzlerin“ – already applied
+- lassberg-letter-1359: „Cod. Wasserburg.“ – already applied
+- lassberg-letter-1360: „Codex Wasserburgensis“ – already applied
+- lassberg-letter-1360: „Codex Wasserburgensis“ – already applied
+- lassberg-letter-1360: „Handschrift der Klara Häzlerin“ – already applied
+- lassberg-letter-1360: „französischen Codex“ – already applied
+- lassberg-letter-1370: „chartulario“ – already applied
+- lassberg-letter-1374: „Handschrift von Wasserburg“ – already applied
+- lassberg-letter-1374: „Liederbuch der Häzlerin 1470“ – already applied
+- lassberg-letter-1403: „Membrane des Hrn. Buchhändler Koller in London“ – already applied
+- lassberg-letter-1403: „Liederbuch der Häzlerin“ – already applied
+- lassberg-letter-1410: „Königinhofer Handschrift“ – already applied
+- lassberg-letter-1410: „Maneßschen Codex“ – already applied
+- lassberg-letter-1412: „anniversarium Arowiense“ – already applied
+- lassberg-letter-1420: „Häzlerin“ – already applied
+- lassberg-letter-1420: „Häzlerin“ – already applied
+- lassberg-letter-1420: „Cod. Wasserburg.“ – already applied
+- lassberg-letter-1420: „Parcifal“ – already applied
+- lassberg-letter-1429: „Cod. Wasserburg.“ – already applied
+- lassberg-letter-1429: „Cod. Wasserburg.“ – already applied
+- lassberg-letter-1429: „Liederbuch der Häzlerin“ – already applied
+- lassberg-letter-1429: „Mailathsche Manuscript“ – already applied
+- lassberg-letter-1429: „Heidelberg. Membrane“ – already applied
+- lassberg-letter-1429: „Donauesch. Parcival“ – already applied
+- lassberg-letter-1430: „codex wasserburg.“ – already applied
+- lassberg-letter-1430: „codex wasserburgensis“ – already applied
+- lassberg-letter-1430: „codex wasserburgensis“ – already applied
+- lassberg-letter-1430: „le voeu du paön“ – already applied
+- lassberg-letter-1430: „Papier- Codex“ – already applied
+- lassberg-letter-1430: „Klausenburger Handschrift“ – already applied
+- lassberg-letter-1430: „Donauöschinger Parcifal“ – already applied
+- lassberg-letter-1430: „Berner Codex“ – already applied
+- lassberg-letter-1439: „Mediceische Codex“ – already applied
+- lassberg-letter-1445: „codex trad. augie albae“ – already applied
+- lassberg-letter-1445: „Schwabenspiegels von 1287“ – already applied
+- lassberg-letter-1445: „codex picturatus der vadianischen Bibliothek“ – already applied
+- lassberg-letter-1445: „Nibelungen Codex auf der Klosterbibliotheke“ – already applied
+- lassberg-letter-1445: „Pergamentcodex des Nithart“ – already applied
+- lassberg-letter-1445: „ser alte Handschrift des Schwabenspiegels“ – already applied
+- lassberg-letter-1445: „Schafhauser Handschrift“ – already applied
+- lassberg-letter-1448: „Codex 184“ – already applied
+- lassberg-letter-1448: „Codex 1010“ – already applied
+- lassberg-letter-1448: „Codex 1027“ – already applied
+- lassberg-letter-1448: „Codex 1028“ – already applied
+- lassberg-letter-1448: „Codex insignis auf der Stadtbibliothek“ – already applied
+- lassberg-letter-1448: „Nibelungen Codex auf der Stifts Bibliotheke“ – already applied
+- lassberg-letter-1448: „Handschrift von Parthenopier und Meliure“ – already applied
+- lassberg-letter-1448: „Nithart mit den Singweisen“ – already applied
+- lassberg-letter-1448: „Gregor im Steine des Hartmann von Owe“ – already applied
+- lassberg-letter-1449: „codex traditionum augiae albae“ – already applied
+- lassberg-letter-1452: „Weißenauer Codex“ – already applied
+- lassberg-letter-1455: „cod. weissenaugiae“ – already applied
+- lassberg-letter-1456: „codex Weissenaugiensis“ – already applied
+- lassberg-letter-1465: „den ältesten Necrolog“ – already applied
+- lassberg-letter-1465: „Schwabenspiegels“ – already applied
+- lassberg-letter-1468: „Schwabenspiegels“ – already applied
+- lassberg-letter-1468: „Handschrift von Konrads v. Ammenhausen Schachzabel“ – overlaps existing rs
+- lassberg-letter-1472: „französischer Schwabenspiegel“ – overlaps existing rs
+- lassberg-letter-1476: „Weißenauer Codex“ – already applied
+- lassberg-letter-1476: „Codex weissenaugiensis“ – already applied
+- lassberg-letter-1476: „Handschrift des Schwabenspiegels“ – already applied
+- lassberg-letter-1476: „Codex. Num. 455“ – already applied
+- lassberg-letter-1483: „Schwabenspiegel“ – already applied
+- lassberg-letter-1485: „Berner Handschrift“ – already applied
+- lassberg-letter-1498: „Schultheiß Kollektaneen“ – quote/rs not found
+- lassberg-letter-1504: „8 Quartbände und einen Folioband“ – already applied
+- lassberg-letter-1504: „Juniusschen Codex“ – already applied
+- lassberg-letter-1509: „Liederbüchlein der Ottilia Fenchlerin“ – already applied
+- lassberg-letter-1509: „Ottil. Fenchlerin“ – already applied
+- lassberg-letter-1509: „Liederschatze des Wysschen Nachlasses“ – already applied
+- lassberg-letter-1509: „handschriftl. Karl d. Gr.“ – already applied
+- lassberg-letter-1514: „Maximilianischen Codex“ – already applied
+- lassberg-letter-1514: „Meistergesangbuch“ – already applied
+- lassberg-letter-1514: „Wyssische Liedersammlung“ – already applied
+- lassberg-letter-1518: „alte Liederbuch“ – already applied
+- lassberg-letter-1518: „Handschrift von Ecken Ausfahrt“ – already applied
+- lassberg-letter-1521: „Schultheiss: collectaneen“ – already applied
+- lassberg-letter-1523: „Schultheß Kollektaneen“ – overlaps existing rs
+- lassberg-letter-1523: „Schulth. Kollektaneen“ – overlaps existing rs
+- lassberg-letter-1524: „Wyssische Liedersammlung“ – already applied
+- lassberg-letter-1524: „Wyssischen Liedersammlung“ – already applied
+- lassberg-letter-1528: „Schultheẞ Kollektaneen“ – already applied
+- lassberg-letter-1531: „Wysschen Schweizerlieder“ – already applied
+- lassberg-letter-1531: „Liedersammlung im Besitze des Herrn Schultheißen von Mülinen“ – already applied
+- lassberg-letter-1531: „Abschrift des Ulrich von Liechtenstein“ – already applied
+- lassberg-letter-1531: „Schwabenspiegel“ – already applied
+- lassberg-letter-1531: „Wasserburger Codex“ – already applied
+- lassberg-letter-1531: „Weissenauer“ – already applied
+- lassberg-letter-1531: „meiner Handschrift“ – already applied
+- lassberg-letter-1536: „Wyßscher Schweizerlieder“ – already applied
+- lassberg-letter-1536: „Frauendienst“ – already applied
+- lassberg-letter-1541: „Wyssischen Liedersammlung“ – already applied
+- lassberg-letter-1541: „Wyssischen Liedersammlung“ – already applied
+- lassberg-letter-1541: „alten Münchner Codex“ – unresolved (low-confidence)
+- lassberg-letter-1541: „codex picturatus auf Pergament“ – already applied
+- lassberg-letter-1554: „Schultheiß. Kollektaneen“ – already applied
+- lassberg-letter-1556: „Würzburger Codex“ – already applied
+- lassberg-letter-1556: „codex picturatus“ – already applied
+- lassberg-letter-1563: „Würzburger Handschrift“ – already applied
+- lassberg-letter-1578: „Codex aregenteus“ – quote/rs not found
+- lassberg-letter-1586: „Wyssischen Lieder“ – already applied
+- lassberg-letter-1586: „Clausenburger Codex“ – already applied
+- lassberg-letter-1588: „Wyssischen Liedern“ – already applied
+- lassberg-letter-1588: „Berner Hdschr.“ – already applied
+- lassberg-letter-1620: „Handschrift von dem Liede auf den heiligen Anno“ – already applied
+- lassberg-letter-1685: „Schultheissischen handschriften“ – already applied
+- lassberg-letter-1730: „Colmarer lieder codex“ – already applied
+- lassberg-letter-1730: „papier handschrift“ – already applied
+- lassberg-letter-1737: „Colmarer codex“ – already applied
+- lassberg-letter-1737: „Schwabenspiegels“ – already applied
+- lassberg-letter-1741: „Colmarer Codex“ – already applied
+- lassberg-letter-1743: „Colmarer liedercodex“ – already applied
+- lassberg-letter-1766: „schönen carolingischen Codex“ – already applied
+- lassberg-letter-1766: „Berliner codex“ – already applied
+- lassberg-letter-1768: „Karolinger“ – already applied
+- lassberg-letter-1773: „Münchner Codex“ – already applied
+- lassberg-letter-1776: „Würzb. HS.“ – already applied
+- lassberg-letter-1779: „münchner codex“ – already applied
+- lassberg-letter-1779: „codex“ – already applied
+- lassberg-letter-1781: „Wienerischen“ – already applied
+- lassberg-letter-1781: „Pariser Bilder“ – already applied
+- lassberg-letter-1782: „Bruchstück vom h. Ulrich“ – already applied
+- lassberg-letter-1782: „Dehringen befindlichen Hdschrift“ – already applied
+- lassberg-letter-1782: „Straßburger Hds.“ – already applied
+- lassberg-letter-1783: „Codex gemmens argentens“ – already applied
+- lassberg-letter-1784: „pariser codex“ – already applied
+- lassberg-letter-1787: „Manessischen Codex“ – already applied
+- lassberg-letter-1787: „meine handschrift“ – already applied
+- lassberg-letter-1787: „meiner eigenen Handschrift“ – unresolved (low-confidence)
+- lassberg-letter-1797: „beiliegendes Copialbuch“ – already applied
+- lassberg-letter-1802: „seinen codex“ – already applied
+- lassberg-letter-1802: „altteutsches fragment“ – already applied
+- lassberg-letter-1856: „Münchner Bruchstück des Ecken - Liedes“ – already applied
+- lassberg-letter-1856: „St. Georger Handschrift“ – already applied
+- lassberg-letter-1864: „Kretschmarschen Codex“ – already applied
+- lassberg-letter-1864: „französchen Schwaben Spiegel“ – already applied
+- lassberg-letter-1864: „Codex von 1287“ – already applied
+- lassberg-letter-1874: „Münchner Bruchstük aus dem Ekenliet“ – already applied
+- lassberg-letter-1874: „meiner Handschrift des XIII. Jarhunderts“ – already applied
+- lassberg-letter-1943: „mein altes Liederbuch“ – already applied
+- lassberg-letter-1952: „Weingartner Codes“ – already applied
+- lassberg-letter-1959: „Weingartner Codex“ – already applied
+- lassberg-letter-1959: „Weingarter codex“ – already applied
+- lassberg-letter-1961: „Weingartner Codex“ – already applied
+- lassberg-letter-1965: „cod: chart: Sec: XV“ – already applied
+- lassberg-letter-1965: „meiner handschrift“ – already applied
+- lassberg-letter-1981: „6 Querfolioblätter Manuscript“ – already applied
+- lassberg-letter-1999: „Weingartner codex“ – already applied
+- lassberg-letter-1999: „eine pergament handschrift des XIV. Jarhunderts“ – already applied
+- lassberg-letter-2052: „Hugo v Montfort“ – already applied
+- lassberg-letter-2144: „Tanzweise des schwarzen Knaben“ – already applied
+- lassberg-letter-2191: „Liederbuch des Eberwin Droste“ – already applied
+- lassberg-letter-2203: „Drostesche Liederbuch“ – already applied
+- lassberg-letter-2214: „Eine gute handschrift“ – already applied
+- lassberg-letter-2214: „Vita sanctorum seculi XIV“ – already applied
+- lassberg-letter-2214: „späte aber gute handschrift“ – already applied
+- lassberg-letter-2214: „sammlung Westphaelischer Lieder 1579“ – already applied
+- lassberg-letter-2262: „Weingartner Codex“ – already applied
+- lassberg-letter-2263: „Weingarter Codex“ – already applied
+- lassberg-letter-2263: „ein altes liederbuch“ – already applied
+- lassberg-letter-2319: „Merseburger Missale“ – already applied
+- lassberg-letter-2319: „codex“ – already applied
+- lassberg-letter-2319: „codex“ – already applied
+- lassberg-letter-2431: „dicken Handschrift des Domkapitular von Vanotti“ – already applied
+- lassberg-letter-2667: „Chronik“ – already applied
+- lassberg-letter-3086: „Handschrift der Regesta Constantiensia“ – already applied
+- lassberg-letter-3266: „Ufenauer iarzeitenbuchs“ – already applied
+- lassberg-letter-3267: „Frauendienst“ – unresolved (low-confidence)
+
+## Konfidenz < 0.7
+
+
+## Lauf 2026-09-30T10:01:09+00:00 (1 Briefe)
+
+- angewandt: 1 (retype 1, wrap 0)
+- übersprungen: 0
+
+## Übersprungen
+
+
+## Konfidenz < 0.7
+
+

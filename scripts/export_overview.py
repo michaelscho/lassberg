@@ -61,6 +61,7 @@ def main() -> None:
     contemporary_mentions = collections.Counter()
     work_mentions = collections.Counter()
     mentioned_place_letters = collections.Counter()
+    manuscript_mentions = collections.Counter()
     dated = fulltext = published = 0
 
     for letter in letters:
@@ -95,6 +96,8 @@ def main() -> None:
                 contemporary_mentions[pid] += 1
         for wid in set(letter["mentions"]["works"]):
             work_mentions[wid] += 1
+        for mid in set(letter["mentions"]["witnesses"]):
+            manuscript_mentions[mid] += 1
         for plid in set(letter["mentions"]["places"]):
             mentioned_place_letters[plid] += 1
 
@@ -131,6 +134,16 @@ def main() -> None:
     work_rows = [{"id": wid, "label": works.get(wid, {}).get("label") or wid, "letters": n}
                  for wid, n in work_mentions.most_common()]
 
+    witnesses = entities["witnesses"]
+    manuscript_rows = []
+    for mid, n in manuscript_mentions.most_common():
+        w = witnesses.get(mid, {})
+        manuscript_rows.append({
+            "id": mid, "label": w.get("label") or mid, "letters": n,
+            "where": ", ".join(x for x in (w.get("settlement"), w.get("repository"), w.get("signature")) if x),
+            "hsp_id": w.get("hsp_id"),
+        })
+
     mentioned_place_rows = []
     for plid, n in mentioned_place_letters.most_common():
         coords = places.get(plid, {}).get("coords")
@@ -152,6 +165,7 @@ def main() -> None:
             "published": published,
             "correspondents": len(corr_letters),
             "places_mapped": len(place_rows),
+            "manuscripts": len(manuscript_rows),
         },
         "years": {str(y): n for y, n in sorted(years.items())},
         "correspondents": correspondents,
@@ -160,6 +174,7 @@ def main() -> None:
         "historical_persons": person_rows(historical_mentions),
         "contemporary_persons": person_rows(contemporary_mentions),
         "works": work_rows,
+        "manuscripts": manuscript_rows,
     }
     out_path = repo_root / "json/explore/overview.json"
     out_path.write_text(json.dumps(out, ensure_ascii=False), encoding="utf-8")

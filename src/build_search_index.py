@@ -201,23 +201,26 @@ def build_manuscript_records():
         return []
     tree = etree.parse(str(path))
     records = []
-    for witness in tree.findall(".//t:witness", NS):
-        wid = witness.get("{http://www.w3.org/XML/1998/namespace}id")
-        bibl = witness.find("t:bibl", NS)
-        if not wid or bibl is None:
+    for ms in tree.findall(".//t:msDesc", NS):
+        wid = ms.get("{http://www.w3.org/XML/1998/namespace}id")
+        ident = ms.find("t:msIdentifier", NS)
+        if not wid or ident is None:
             continue
-        settlement = text_of(bibl.find("t:settlement", NS))
-        repository = text_of(bibl.find("t:repository", NS))
-        signature = text_of(bibl.find('t:idno[@type="signature"]', NS))
-        title = ", ".join(filter(None, [settlement, repository, signature])) or wid
+        settlement = text_of(ident.find("t:settlement", NS))
+        repository = text_of(ident.find("t:repository", NS))
+        signature = text_of(ident.find('t:idno[@type="shelfmark"]', NS))
+        ms_name = text_of(ident.find("t:msName", NS))
+        where = ", ".join(filter(None, [settlement, repository, signature]))
+        title = ms_name or where or wid
+        hsp = text_of(ident.find('t:altIdentifier[@type="hsp"]/t:idno', NS))
         records.append({
             "kind": "manuscript",
             "id": wid,
-            "title": title,
+            "title": f"{title} ({where})" if ms_name and where else title,
             "date": "",
-            "text": title,
-            "url": f"letters.html?q={quote(title)}",
-            "external": "",
+            "text": " ".join(filter(None, [ms_name, where])),
+            "url": f"manuscripts.html?q={quote(title)}",
+            "external": f"https://handschriftenportal.de/search?hspobjectid={hsp}" if hsp else "",
         })
     return records
 

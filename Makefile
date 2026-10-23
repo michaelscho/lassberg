@@ -6,7 +6,7 @@
 
 PYTHON := .venv-infra/bin/python
 
-.PHONY: hsp hsp-mirror hsp-index hsp-export test-network all parse embed cluster graph rdf sparql explore frontend cmif graph-json status status-write test clean
+.PHONY: blb-harvest blb-alto blb-match blb-download blb-apply hsp hsp-mirror hsp-index hsp-export test-network all parse embed cluster graph rdf sparql explore frontend cmif graph-json status status-write test clean
 
 all: parse embed cluster graph rdf explore
 
@@ -81,6 +81,23 @@ hsp-export:
 	$(PYTHON) scripts/export_manuscripts.py --local
 
 hsp: hsp-mirror hsp-index hsp-export
+
+# --- BLB Karlsruhe letters: images + ALTO/PAGE (network; NOT part of `make all`; data/blb/ is gitignored, ~12 GB) ---
+# harvest -> alto -> match (review build/blb/matches.tsv: accept=y) -> download -> apply (writes the register)
+blb-harvest:
+	$(PYTHON) scripts/blb/harvest.py
+
+blb-alto:
+	$(PYTHON) scripts/blb/fetch_alto.py
+
+blb-match:
+	$(PYTHON) scripts/blb/match.py
+
+blb-download:
+	$(PYTHON) scripts/blb/download.py
+
+blb-apply:
+	$(PYTHON) scripts/blb/apply_register.py --write
 
 # --- Status model (docs/TEI.md "Letter status model") ---
 status:

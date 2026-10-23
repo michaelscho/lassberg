@@ -17,6 +17,7 @@
                   <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
                   <li class="nav-item"><a class="nav-link" href="../persons.html">Persons</a></li>
                   <li class="nav-item"><a class="nav-link" href="../places.html">Places</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../manuscripts.html">Manuscripts</a></li>
                   <li class="nav-item"><a class="nav-link" href="../explore.html">Explore</a></li>
                   <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
                   <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
@@ -63,6 +64,13 @@
                            <span class="legend-dot ms-2" style="background:#b57cc0"></span> places mentioned
                            </p>
                      </section>
+                     <section id="mentioned" class="mb-4">
+                        <h2 class="h5">Mentioned in this letter</h2>
+                        <h3 class="h6 mt-3">Manuscripts</h3>
+                        <ul class="list-unstyled small mb-2">
+                           <li class="mb-1"><a href="../manuscripts.html?q=Freiburger%20%28Schweiz%29%20Schwabenspiegel-Handschrift">Freiburger (Schweiz) Schwabenspiegel-Handschrift</a><span class="text-muted"> (Freiburg (Schweiz), Staatsarchiv)</span></li>
+                        </ul>
+                     </section>
                   </aside>
                </div>
                <div class="col-lg-8 order-lg-1">
@@ -106,7 +114,7 @@
                            ein ser gefälliger Prof: <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Drechsel<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> angestellt ist, der mir mit aller treue an die hand gehet: allein das stadt Leben
                            will mir so wenig gefallen, daß ich schon anfange zuweilen zwischen den zänen zu murmeln:
                            O rus! quando ego te aspiciam quandoque licebit etc. Ende der woche kommt <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">H. v. Múlinen<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> nach der stadt, dann wird mein weiterer reise plan verabredet werden. wenn ich die
-                           offnung des staatsarchives zu <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">freiburg<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> erhalte; so gehe ich nach <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">freiburg<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> um den dortigen <span class="rs-misc" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">Schwabenspiegel</span> zu sehen. Jezt aber neme ich abschied von <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Inen<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>; denn die bibliothekstunde schlägt und die darf nicht versäumt werden. viele herzliche
+                           offnung des staatsarchives zu <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">freiburg<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> erhalte; so gehe ich nach <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">freiburg<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> um den dortigen <span class="rs-witness" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Freiburger (Schweiz) Schwabenspiegel-Handschrift – Freiburg (Schweiz), Staatsarchiv</strong&gt;">Schwabenspiegel</span> zu sehen. Jezt aber neme ich abschied von <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Inen<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span>; denn die bibliothekstunde schlägt und die darf nicht versäumt werden. viele herzliche
                            grüße an Sie und alle die Irigen; auch bitte ich mich im Scherb: hause und zu Hauptwil
                            nicht zu vergessen. aus der Wyssischen auction habe ich eine große kiste voll bücher
                            erstanden. nun guten tag und baldiges wiedersehen.
@@ -178,11 +186,9 @@
                         document.getElementById('map').style.display = 'none';
                     } else {
                         var map = L.map('mapid', { scrollWheelZoom: false });
-                        // Muted basemap (CARTO Positron) instead of the default colourful OSM
-                        // tiles, to match the edition's restrained palette.
-                        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-                            attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
-                            subdomains: 'abcd',
+                        // OpenStreetMap standard tiles (CARTO basemaps now require an API key).
+                        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
                             maxZoom: 19
                         }).addTo(map);
 

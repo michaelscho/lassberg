@@ -17,6 +17,7 @@
                   <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
                   <li class="nav-item"><a class="nav-link" href="../persons.html">Persons</a></li>
                   <li class="nav-item"><a class="nav-link" href="../places.html">Places</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../manuscripts.html">Manuscripts</a></li>
                   <li class="nav-item"><a class="nav-link" href="../explore.html">Explore</a></li>
                   <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
                   <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
@@ -61,6 +62,13 @@
                         <p class="map-legend small text-muted mt-1 mb-0"><span class="legend-dot" style="background:#1d4e89"></span> place of sending
                            <span class="legend-dot ms-2" style="background:#b57cc0"></span> places mentioned
                            </p>
+                     </section>
+                     <section id="mentioned" class="mb-4">
+                        <h2 class="h5">Mentioned in this letter</h2>
+                        <h3 class="h6 mt-3">Manuscripts</h3>
+                        <ul class="list-unstyled small mb-2">
+                           <li class="mb-1"><a href="../manuscripts.html?q=M%C3%BCnchner%20Handschrift%20des%20Ulrichsgedichts%20%2812.%20Jh.%29">Münchner Handschrift des Ulrichsgedichts (12. Jh.)</a><span class="text-muted"> (München)</span></li>
+                        </ul>
                      </section>
                   </aside>
                </div>
@@ -138,11 +146,10 @@
                            um die Post nicht zu versäumen. Lieber Uhland! der Himmel erhalte sie und die liebe
                            eheliche Wirtinne gesund und wol, Ir unveränderlicher Freund Laßberg. Mit der Vita
                            S. Udalrici des Marcus Welser, Augustae. 1595. sandte ich Inen auch eine Abschrift
-                           eines altteutschen Gedichtes auf diesen Bischof, aus einem Münchner Codex des XII.
-                           Jarhunderts. Das Format ist in 8º und hinten ist auch ein Gedicht auf die Jungfrau
-                           Maria beigefügt. Ich bitte Sie gefälligst nachzusehen, ob dieses apographum sich nicht
-                           unter Iren Schriften verschoben hat: unter den zurükgesandten Sachen befindet es sich
-                           nicht.</p>
+                           eines altteutschen Gedichtes auf diesen Bischof, aus einem <span class="rs-witness" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Münchner Handschrift des Ulrichsgedichts (12. Jh.) – München</strong&gt;">Münchner Codex</span> des XII. Jarhunderts. Das Format ist in 8º und hinten ist auch ein Gedicht auf die
+                           Jungfrau Maria beigefügt. Ich bitte Sie gefälligst nachzusehen, ob dieses apographum
+                           sich nicht unter Iren Schriften verschoben hat: unter den zurükgesandten Sachen befindet
+                           es sich nicht.</p>
                         </div>
                   </section>
                   <div id="related-letters"></div>
@@ -164,11 +171,9 @@
                         document.getElementById('map').style.display = 'none';
                     } else {
                         var map = L.map('mapid', { scrollWheelZoom: false });
-                        // Muted basemap (CARTO Positron) instead of the default colourful OSM
-                        // tiles, to match the edition's restrained palette.
-                        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-                            attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
-                            subdomains: 'abcd',
+                        // OpenStreetMap standard tiles (CARTO basemaps now require an API key).
+                        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
                             maxZoom: 19
                         }).addTo(map);
 

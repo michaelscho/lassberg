@@ -144,3 +144,18 @@ def test_licence_gate_lets_free_descriptions_through(mini_mirror):
     e = {"id": "lassberg-witness-0001", "hsp_id": "HSP-kod-1"}
     public = ex.witness_doc("lassberg-witness-0001", e, [], gate=True, manifest={})
     assert "Testmann" in str(public["descriptions"][0]["content"])
+
+
+def test_mcp_manuscript_tools_smoke():
+    """Uses the real build/ artifacts (register + letters); skipped if not built."""
+    if not (REPO / "build" / "entities.json").exists():
+        pytest.skip("build/ not generated")
+    sys.path.insert(0, str(REPO / "mcp_server"))
+    from tools import manuscripts as mt
+    top = mt.find_manuscript("", 5)
+    assert top and top[0]["n_letters"] >= top[-1]["n_letters"]
+    wid = top[0]["witness_id"]
+    letters = mt.manuscript_mentions(wid)
+    assert letters and all(l["letter_id"].startswith("lassberg-letter-") for l in letters)
+    back = mt.manuscripts_in_letter(letters[0]["letter_id"])
+    assert wid in [b["witness_id"] for b in back]

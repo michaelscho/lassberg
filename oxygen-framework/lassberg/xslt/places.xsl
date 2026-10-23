@@ -44,6 +44,7 @@
                                 <li class="nav-item"><a class="nav-link" href="letters.html">Letters</a></li>
                                 <li class="nav-item"><a class="nav-link" href="persons.html">Persons</a></li>
                                 <li class="nav-item"><a class="nav-link active" href="#">Places</a></li>
+                                <li class="nav-item"><a class="nav-link" href="manuscripts.html">Manuscripts</a></li>
                                 <li class="nav-item"><a class="nav-link" href="explore.html">Explore</a></li>
                                 <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
                                 <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
@@ -137,9 +138,8 @@
                      build the popup text in JS is safe by construction. -->
                 <script>
                     var map = L.map('places-map', { scrollWheelZoom: false }).setView([47.6, 9.2], 7);
-                    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-                        attribution: '&amp;copy; <a href="https://carto.com/attributions">CARTO</a> &amp;copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
-                        subdomains: 'abcd', maxZoom: 19
+                    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                        attribution: '&amp;copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors', maxZoom: 19
                     }).addTo(map);
                 </script>
             </body>

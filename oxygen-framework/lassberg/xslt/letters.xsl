@@ -48,6 +48,7 @@
                                 <li class="nav-item"><a class="nav-link active" href="#">Letters</a></li>
                                 <li class="nav-item"><a class="nav-link" href="persons.html">Persons</a></li>
                                 <li class="nav-item"><a class="nav-link" href="places.html">Places</a></li>
+                                <li class="nav-item"><a class="nav-link" href="manuscripts.html">Manuscripts</a></li>
                                 <li class="nav-item"><a class="nav-link" href="explore.html">Explore</a></li>
                                 <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
                                 <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
@@ -190,6 +191,14 @@
             </xsl:for-each>
         </xsl:variable>
         
+        <xsl:variable name="msNames" as="xs:string*">
+            <xsl:for-each select="$mentionedLiterature[contains(@target, 'lassberg-manuscripts.xml')]">
+                <xsl:variable name="id" select="substring-after(@target, '#')"/>
+                <xsl:variable name="ms" select="doc($manuscripts-register)//tei:msDesc[@xml:id=$id]/tei:msIdentifier"/>
+                <xsl:sequence select="normalize-space(string-join(($ms/tei:msName, $ms/tei:settlement, $ms/tei:repository, $ms/tei:idno[@type='shelfmark']), ' '))"/>
+            </xsl:for-each>
+        </xsl:variable>
+
         <xsl:variable name="objectTexts" as="xs:string*">
             <xsl:for-each select="$mentionedManuscripts">
                 <xsl:sequence select="normalize-space(.)"/>
@@ -200,7 +209,7 @@
         
         <!-- One combined index for DataTables global search -->
         <xsl:variable name="searchIndex"
-            select="normalize-space(string-join(($personNames, $placeNames, $litTitles, $objectTexts, $summaryText), ' '))"/>
+            select="normalize-space(string-join(($personNames, $placeNames, $litTitles, $msNames, $objectTexts, $summaryText), ' '))"/>
         
         
         
@@ -280,10 +289,10 @@
             </xsl:for-each>
         </xsl:variable>
 
-        <xsl:variable name="resolvedWitnesses" as="element(tei:witness)*">
+        <xsl:variable name="resolvedWitnesses" as="element(tei:msDesc)*">
             <xsl:for-each select="$mentionedManuscripts">
                 <xsl:variable name="targetId" select="substring-after(@target,'#')"/>
-                <xsl:sequence select="doc($manuscripts-register)//tei:witness[@xml:id=$targetId]"/>
+                <xsl:sequence select="doc($manuscripts-register)//tei:msDesc[@xml:id=$targetId]"/>
             </xsl:for-each>
         </xsl:variable>
         
@@ -464,22 +473,19 @@
                                 <!-- Legacy witnesses from lassberg-manuscripts.xml (never actually
                                      populated in practice, see docs/TEI.md) -->
                                 <xsl:for-each select="$resolvedWitnesses">
+                                    <xsl:variable name="ident" select="tei:msIdentifier"/>
+                                    <xsl:variable name="hspId" select="normalize-space($ident/tei:altIdentifier[@type='hsp']/tei:idno)"/>
+                                    <xsl:variable name="where" select="string-join(($ident/tei:settlement, $ident/tei:repository, $ident/tei:idno[@type='shelfmark'])[normalize-space(.) != ''], ', ')"/>
                                     <li class="mb-2">
-                                        <xsl:value-of select="tei:bibl/tei:settlement"/>
-                                        <xsl:if test="tei:bibl/tei:settlement and tei:bibl/tei:repository"><xsl:text>, </xsl:text></xsl:if>
-                                        <xsl:value-of select="tei:bibl/tei:repository"/>
-                                        <xsl:if test="normalize-space(tei:bibl/tei:idno[@type='signature'])">
-                                            <xsl:text> (</xsl:text><xsl:value-of select="tei:bibl/tei:idno[@type='signature']"/><xsl:text>)</xsl:text>
+                                        <a href="manuscripts.html?q={encode-for-uri(if (normalize-space($ident/tei:msName) != '') then normalize-space($ident/tei:msName) else $where)}">
+                                            <xsl:value-of select="if (normalize-space($ident/tei:msName) != '') then normalize-space($ident/tei:msName) else $where"/>
+                                        </a>
+                                        <xsl:if test="normalize-space($ident/tei:msName) != '' and $where != ''">
+                                            <span class="text-muted"> (<xsl:value-of select="$where"/>)</span>
                                         </xsl:if>
-                                        <xsl:variable name="workId" select="substring-after(@corresp, '#')"/>
-                                        <xsl:if test="$workId">
-                                            <xsl:variable name="work" select="doc($literature-register)//tei:bibl[@xml:id=$workId]"/>
-                                            <xsl:if test="$work/tei:title">
-                                                <span class="text-muted"> — <xsl:value-of select="$work/tei:title"/></span>
-                                            </xsl:if>
-                                        </xsl:if>
-                                        <xsl:if test="tei:bibl/tei:note">
-                                            <div class="text-muted small"><xsl:value-of select="tei:bibl/tei:note"/></div>
+                                        <xsl:if test="$hspId != ''">
+                                            <xsl:text> </xsl:text>
+                                            <a href="https://handschriftenportal.de/search?hspobjectid={$hspId}" target="_blank" rel="noopener noreferrer">(HSP)</a>
                                         </xsl:if>
                                     </li>
                                 </xsl:for-each>

@@ -26,6 +26,7 @@ OUT = reg.REPO / "build" / "manuscripts"
 PROPOSALS = OUT / "proposals"
 LOG = OUT / "applied.jsonl"
 THRESHOLD = 92
+MIN_CREATE_CONFIDENCE = 0.6   # register entries even without HSP hit
 MIN_CONFIDENCE = 0.5   # below this a proposal is too speculative to touch the TEI or the register
 
 
@@ -137,9 +138,9 @@ def resolve_mention(m: dict, letter_id: str, entries: dict, dry: bool) -> dict:
     strong = [c for c in cands if c["snippet"] == "signature match" or name_matches(name, c["msname"])]
     if len(strong) == 1:
         return {"witness_id": strong[0]["witness_id"], "how": "local-index"}
-    if len(strong) > 1 or cands:
+    if len(strong) > 1:
         return {"witness_id": None, "how": "ambiguous", "candidates": [
-            {k: c[k] for k in ("hsp_id", "witness_id", "shelfmark", "msname", "snippet")} for c in (strong or cands)[:5]]}
+            {k: c[k] for k in ("hsp_id", "witness_id", "shelfmark", "msname", "snippet")} for c in strong[:5]]}
 
     live_hits = []
     for q in dict.fromkeys(queries):
@@ -149,7 +150,7 @@ def resolve_mention(m: dict, letter_id: str, entries: dict, dry: bool) -> dict:
             return {"witness_id": None, "how": "ambiguous", "note": f"HSP-Fehler: {exc}"}
     live_hits = list({k["id"]: k for k in live_hits}.values())
     exact = [k for k in live_hits if shelf and norm(k.get("idno-display")) == norm(shelf)]
-    named = [k for k in live_hits if name_matches(name, hsp.clean_kod_title(k.get("title-display")))]
+    named = [k for k in live_hits if any(_name_matches(v, hsp.clean_kod_title(k.get("title-display"))) for v in variants(name)[:2])]
     if len(exact) == 1:
         return {"witness_id": reg.find_by_hsp_or_signature(entries, exact[0]["id"], None)
                 or create_from_hsp(exact[0], letter_id, "exact-shelfmark", dry), "how": "hsp-live"}
@@ -162,10 +163,14 @@ def resolve_mention(m: dict, letter_id: str, entries: dict, dry: bool) -> dict:
              "place": f"{k.get('settlement-display')}, {k.get('repository-display')}", "date": k.get("orig-date-lang-display")}
             for k in (exact or named)[:6]]}
 
-    if name and conf >= 0.8:
+    if name and conf >= MIN_CREATE_CONFIDENCE:
+        # Manuscripts need not be in the HSP (lost, private, unpublished, Laßberg's own): register them anyway.
+        owner = prop.get("owner")
         entry = {"msname": name, "settlement": prop.get("settlement"), "repository": prop.get("repository"),
                  "shelfmark": shelf, "needs_review": True,
-                 "note": f"Ohne HSP-Treffer angelegt beim Handschriften-Scan (Brief {letter_id.split('-')[-1]})."}
+                 "provenance": (f"Besitz/Verbleib laut Brief: {owner}" if owner else None),
+                 "note": f"Nicht im HSP gefunden, beim Handschriften-Scan angelegt (Brief {letter_id.split('-')[-1]}). "
+                         + (prop.get("description") or "")}
         if dry:
             return {"witness_id": "(new)", "how": "created-needs-review"}
         wid = reg.add_msdesc(entry)
@@ -178,6 +183,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("letters", nargs="*")
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--redo-key-empty", action="store_true", help="re-resolve mentions previously left with key=\"\"")
     args = ap.parse_args()
     OUT.mkdir(parents=True, exist_ok=True)
     files = sorted(PROPOSALS.glob("*.json"))
@@ -190,7 +196,8 @@ def main():
         prop = json.loads(f.read_text(encoding="utf-8"))
         changed = False
         for m in prop.get("mentions", []):
-            if m.get("resolved") and m["resolved"].get("how") != "ambiguous" and "decision" not in m:
+            redo = args.redo_key_empty and m.get("resolved", {}).get("how") == "key-empty"
+            if m.get("resolved") and m["resolved"].get("how") != "ambiguous" and "decision" not in m and not redo:
                 continue
             m["resolved"] = resolve_mention(m, prop["letter_id"], entries, args.dry_run)
             changed = True

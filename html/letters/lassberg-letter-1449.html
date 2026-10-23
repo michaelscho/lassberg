@@ -17,6 +17,7 @@
                   <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
                   <li class="nav-item"><a class="nav-link" href="../persons.html">Persons</a></li>
                   <li class="nav-item"><a class="nav-link" href="../places.html">Places</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../manuscripts.html">Manuscripts</a></li>
                   <li class="nav-item"><a class="nav-link" href="../explore.html">Explore</a></li>
                   <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
                   <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
@@ -87,6 +88,10 @@
                            <li><a href="../places.html?q=Tannenberg%20bei%20Waldkirch">Tannenberg bei Waldkirch</a></li>
                            <li><a href="../places.html?q=Hauptwil">Hauptwil</a></li>
                         </ul>
+                        <h3 class="h6 mt-3">Manuscripts</h3>
+                        <ul class="list-unstyled small mb-2">
+                           <li class="mb-1"><a href="../manuscripts.html?q=Wei%C3%9Fenauer%20Codex">Weißenauer Codex</a></li>
+                        </ul>
                         <h3 class="h6 mt-3">Literature</h3>
                         <ul class="list-unstyled small mb-0">
                            <li class="mb-1">Angela <a href="../explore.html?node=lassberg-literature-0158" title="Show in the knowledge graph" class="small">graph</a></li>
@@ -115,7 +120,7 @@
                            dieser gestalt noch kein so eigentliches <br>gedicht zu sein scheint und einer völligen
                            Umarbeitung <br>bedarf; welche Sie sich bei einem so schönen und <br>wirklich
                            poetischen Stoffe, nicht werden reuen lassen. <br>auch das dem <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Adolf Ludwig Follen</strong&gt;">H. Follen<a href="https://d-nb.info/gnd/116646772"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> gegebene versprechen macht es <br>Inen
-                           gewissermaßen zum cathegorischen imperativ. <br>Der <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">codex traditionum augiae albae</span> hält mich ser vest und <br>freut mich alle
+                           gewissermaßen zum cathegorischen imperativ. <br>Der <span class="rs-witness" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Weißenauer Codex</strong&gt;">codex traditionum augiae albae</span> hält mich ser vest und <br>freut mich alle
                            tage mer; ich habe bereits 130 seiten abgeschrieben <br>aber ich habe
                            noch 60 weitere bis zur hälfte; dann mache <br>ich eine pause;
                            daneben arbeiten tapezirer, sattler, <br>maurer und Schlosser auf wenige schritte von mir,
@@ -172,7 +177,7 @@
                            dieser gestalt noch kein so eigentliches gedicht zu sein scheint und einer völligen
                            Umarbeitung bedarf; welche Sie sich bei einem so schönen und wirklich
                            poetischen Stoffe, nicht werden reuen lassen. auch das dem <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Adolf Ludwig Follen</strong&gt;">H. Follen<a href="https://d-nb.info/gnd/116646772"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> gegebene versprechen macht es Inen
-                           gewissermaßen zum cathegorischen imperativ. Der <span class="rs-object" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Unknown</strong&gt;">codex traditionum augiae albae</span> hält mich ser vest und freut mich alle
+                           gewissermaßen zum cathegorischen imperativ. Der <span class="rs-witness" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Weißenauer Codex</strong&gt;">codex traditionum augiae albae</span> hält mich ser vest und freut mich alle
                            tage mer; ich habe bereits 130 seiten abgeschrieben aber ich habe
                            noch 60 weitere bis zur hälfte; dann mache ich eine pause;
                            daneben arbeiten tapezirer, sattler, maurer und Schlosser auf wenige schritte von mir,
@@ -341,11 +346,9 @@
                         document.getElementById('map').style.display = 'none';
                     } else {
                         var map = L.map('mapid', { scrollWheelZoom: false });
-                        // Muted basemap (CARTO Positron) instead of the default colourful OSM
-                        // tiles, to match the edition's restrained palette.
-                        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-                            attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
-                            subdomains: 'abcd',
+                        // OpenStreetMap standard tiles (CARTO basemaps now require an API key).
+                        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
                             maxZoom: 19
                         }).addTo(map);
 

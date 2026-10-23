@@ -169,6 +169,14 @@ export async function initGraphUI() {
           cc.slice(0, 10).map((x) => `<li>${x.id} (${x.date}, ${x.daysApart} days)</li>`).join("") + "</ul>");
       }
       resultsBox.innerHTML = parts.join("");
+      if (index.nodesByKey.get(nodeId)?.attributes?.type === "witness") {
+        const link = document.createElement("p");
+        const a = document.createElement("a");
+        a.href = `explore.html?ms=${encodeURIComponent(nodeId)}`;
+        a.textContent = "Manuscript description and letters (Manuscripts tab)";
+        link.appendChild(a);
+        resultsBox.prepend(link);
+      }
     } catch (err) {
       status.textContent = `Error: ${err.message}`;
       console.error(err);

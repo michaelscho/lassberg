@@ -47,6 +47,7 @@
                                 <li class="nav-item"><a class="nav-link" href="letters.html">Letters</a></li>
                                 <li class="nav-item"><a class="nav-link active" href="#">Persons</a></li>
                                 <li class="nav-item"><a class="nav-link" href="places.html">Places</a></li>
+                                <li class="nav-item"><a class="nav-link" href="manuscripts.html">Manuscripts</a></li>
                                 <li class="nav-item"><a class="nav-link" href="explore.html">Explore</a></li>
                                 <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
                                 <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>

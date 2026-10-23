@@ -17,6 +17,7 @@
                   <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
                   <li class="nav-item"><a class="nav-link" href="../persons.html">Persons</a></li>
                   <li class="nav-item"><a class="nav-link" href="../places.html">Places</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../manuscripts.html">Manuscripts</a></li>
                   <li class="nav-item"><a class="nav-link" href="../explore.html">Explore</a></li>
                   <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
                   <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
@@ -62,6 +63,13 @@
                            <span class="legend-dot ms-2" style="background:#b57cc0"></span> places mentioned
                            </p>
                      </section>
+                     <section id="mentioned" class="mb-4">
+                        <h2 class="h5">Mentioned in this letter</h2>
+                        <h3 class="h6 mt-3">Manuscripts</h3>
+                        <ul class="list-unstyled small mb-2">
+                           <li class="mb-1"><a href="../manuscripts.html?q=Zimmerische%20Chronik%20%28Handschrift%20La%C3%9Fbergs%29">Zimmerische Chronik (Handschrift Laßbergs)</a></li>
+                        </ul>
+                     </section>
                   </aside>
                </div>
                <div class="col-lg-8 order-lg-1">
@@ -84,25 +92,25 @@
                            ich gar keinen Umgang mer, weder auf dem Lande noch in der Stadt. Das sind die Zweige,
                            Blätter und Blüten, die vom Baume des Lebens abfallen und denen der Stamm bald selbst
                            nachfolget. Er hatte im lezten Herbste von mir einen Stof zu einer Winterarbeit verlangt,
-                           und ich gab jm aus der Handschrift der Zimberischen Chronik die höchst romantische
-                           Legende: wie Grav Albrecht von Werdenberg eines Königs Tochter aus Portugal erwarb
-                           die auch im Thomas Lyrer stehet; aber mit veränderter Lection. Er sagte mir einige
-                           male, dies werde seine lezte Arbeit sein: wenige Tage vor seiner Krankheit vollendete
-                           er sie, und ich sollte nun historische Noten dazu machen, da starb er. Eine erfreuliche
-                           Nachricht schrieb mir kürzlich der H. Minister von Stein aus Nassau. Der erste Band
-                           der Monumenta historiae Germaniae medii aevi wird nun endlich auf Michaelis bei Hahn
-                           zu Hannover in Folio erscheinen: die Armut unserer Gesellschaft erlaubte nicht, so
-                           wünschenswert es gewesen wäre, den Selbstverlag zu übernemen, und so ist nun das Fortschreiten
-                           der Unternemung absolut an den Absaz ge bunden, was mich für die Zukunft manchen Stillstand
-                           befürchten lässt. Die teutschen Regierungen haben so viel wie nichts für die Sache
-                           getan! Conzius macht mir neuerdings Hofnung in diesen Herbst in meiner Einsiedelei
-                           zu sehen: allein, ich fürchte diese spes 4 * longa möchte wieder an irgend einem unvorgesehenen
-                           Hindernisse scheitern. Nach Beendigung des Landtages vermute ich Sie mein verertester
-                           Freund! wieder der Theotisca zugewendet und näre die süße Hofnung bald wieder Etwas
-                           über den alten Gesang und die Sänger von Inen zu lesen; auch habe ich von einer neuen
-                           und vermerten Ausgabe Irer Gedichte sprechen gehört; mögen Sie fortfaren auch hierin
-                           die Freude und Ere Ires Vaterlandes zu meren! Behalten Sie mich in Irem freundschaftlichen
-                           Andenken und seien Sie herzlich gegrüßt Von Irem ergebensten I. v. Laßberg.</p>
+                           und ich gab jm aus der <span class="rs-witness" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Zimmerische Chronik (Handschrift Laßbergs)</strong&gt;">Handschrift der Zimberischen Chronik</span> die höchst romantische Legende: wie Grav Albrecht von Werdenberg eines Königs Tochter
+                           aus Portugal erwarb die auch im Thomas Lyrer stehet; aber mit veränderter Lection.
+                           Er sagte mir einige male, dies werde seine lezte Arbeit sein: wenige Tage vor seiner
+                           Krankheit vollendete er sie, und ich sollte nun historische Noten dazu machen, da
+                           starb er. Eine erfreuliche Nachricht schrieb mir kürzlich der H. Minister von Stein
+                           aus Nassau. Der erste Band der Monumenta historiae Germaniae medii aevi wird nun endlich
+                           auf Michaelis bei Hahn zu Hannover in Folio erscheinen: die Armut unserer Gesellschaft
+                           erlaubte nicht, so wünschenswert es gewesen wäre, den Selbstverlag zu übernemen, und
+                           so ist nun das Fortschreiten der Unternemung absolut an den Absaz ge bunden, was mich
+                           für die Zukunft manchen Stillstand befürchten lässt. Die teutschen Regierungen haben
+                           so viel wie nichts für die Sache getan! Conzius macht mir neuerdings Hofnung in diesen
+                           Herbst in meiner Einsiedelei zu sehen: allein, ich fürchte diese spes 4 * longa möchte
+                           wieder an irgend einem unvorgesehenen Hindernisse scheitern. Nach Beendigung des Landtages
+                           vermute ich Sie mein verertester Freund! wieder der Theotisca zugewendet und näre
+                           die süße Hofnung bald wieder Etwas über den alten Gesang und die Sänger von Inen zu
+                           lesen; auch habe ich von einer neuen und vermerten Ausgabe Irer Gedichte sprechen
+                           gehört; mögen Sie fortfaren auch hierin die Freude und Ere Ires Vaterlandes zu meren!
+                           Behalten Sie mich in Irem freundschaftlichen Andenken und seien Sie herzlich gegrüßt
+                           Von Irem ergebensten I. v. Laßberg.</p>
                         </div>
                   </section>
                   <div id="related-letters"></div>
@@ -124,11 +132,9 @@
                         document.getElementById('map').style.display = 'none';
                     } else {
                         var map = L.map('mapid', { scrollWheelZoom: false });
-                        // Muted basemap (CARTO Positron) instead of the default colourful OSM
-                        // tiles, to match the edition's restrained palette.
-                        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-                            attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
-                            subdomains: 'abcd',
+                        // OpenStreetMap standard tiles (CARTO basemaps now require an API key).
+                        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
                             maxZoom: 19
                         }).addTo(map);
 

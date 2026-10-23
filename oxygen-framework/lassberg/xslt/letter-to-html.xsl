@@ -47,6 +47,9 @@
                                     <a class="nav-link" href="../places.html">Places</a>
                                 </li>
                                 <li class="nav-item">
+                                    <a class="nav-link" href="../manuscripts.html">Manuscripts</a>
+                                </li>
+                                <li class="nav-item">
                                     <a class="nav-link" href="../explore.html">Explore</a>
                                 </li>
                                 <li class="nav-item">
@@ -151,8 +154,9 @@
                         <!-- Mentioned entities (from teiHeader note[type=mentioned]) -->
                         <xsl:variable name="mentionedPersons" select="//tei:note[@type='mentioned']/tei:ref[@type='cmif:mentionsPerson']"/>
                         <xsl:variable name="mentionedPlaces" select="//tei:note[@type='mentioned']/tei:ref[@type='cmif:mentionsPlace']"/>
-                        <xsl:variable name="mentionedBibl" select="//tei:note[@type='mentioned']/tei:ref[@type='cmif:mentionsBibl']"/>
-                        <xsl:if test="$mentionedPersons or $mentionedPlaces or $mentionedBibl">
+                        <xsl:variable name="mentionedBibl" select="//tei:note[@type='mentioned']/tei:ref[@type='cmif:mentionsBibl'][not(contains(@target, 'lassberg-manuscripts.xml'))]"/>
+                        <xsl:variable name="mentionedManuscripts" select="//tei:note[@type='mentioned']/tei:ref[@type='cmif:mentionsBibl'][contains(@target, 'lassberg-manuscripts.xml')]"/>
+                        <xsl:if test="$mentionedPersons or $mentionedPlaces or $mentionedBibl or $mentionedManuscripts">
                             <section id="mentioned" class="mb-4">
                                 <h2 class="h5">Mentioned in this letter</h2>
                                 <xsl:if test="$mentionedPersons">
@@ -175,6 +179,26 @@
                                                 <a href="../places.html?q={encode-for-uri(normalize-space(tei:rs))}">
                                                     <xsl:value-of select="normalize-space(tei:rs)"/>
                                                 </a>
+                                            </li>
+                                        </xsl:for-each>
+                                    </ul>
+                                </xsl:if>
+                                <xsl:if test="$mentionedManuscripts">
+                                    <h3 class="h6 mt-3">Manuscripts</h3>
+                                    <ul class="list-unstyled small mb-2">
+                                        <xsl:for-each select="$mentionedManuscripts">
+                                            <xsl:variable name="msId" select="substring-after(@target, '#')"/>
+                                            <xsl:variable name="ms" select="document('../../../data/register/lassberg-manuscripts.xml')//tei:msDesc[@xml:id = $msId]"/>
+                                            <xsl:variable name="msName" select="if (normalize-space($ms/tei:msIdentifier/tei:msName) != '') then normalize-space($ms/tei:msIdentifier/tei:msName) else normalize-space(tei:rs)"/>
+                                            <xsl:variable name="where" select="string-join(($ms/tei:msIdentifier/tei:settlement, $ms/tei:msIdentifier/tei:repository, $ms/tei:msIdentifier/tei:idno[@type = 'shelfmark'])[normalize-space(.) != ''], ', ')"/>
+                                            <xsl:variable name="hspId" select="normalize-space($ms/tei:msIdentifier/tei:altIdentifier[@type = 'hsp']/tei:idno)"/>
+                                            <li class="mb-1">
+                                                <a href="../manuscripts.html?q={encode-for-uri($msName)}"><xsl:value-of select="$msName"/></a>
+                                                <xsl:if test="$where != ''"><span class="text-muted"> (<xsl:value-of select="$where"/>)</span></xsl:if>
+                                                <xsl:if test="$hspId != ''">
+                                                    <xsl:text> </xsl:text>
+                                                    <a href="https://handschriftenportal.de/search?hspobjectid={$hspId}" target="_blank" rel="noopener noreferrer">(HSP)</a>
+                                                </xsl:if>
                                             </li>
                                         </xsl:for-each>
                                     </ul>
@@ -352,11 +376,9 @@
                         document.getElementById('map').style.display = 'none';
                     } else {
                         var map = L.map('mapid', { scrollWheelZoom: false });
-                        // Muted basemap (CARTO Positron) instead of the default colourful OSM
-                        // tiles, to match the edition's restrained palette.
-                        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-                            attribution: '&amp;copy; <a href="https://carto.com/attributions">CARTO</a> &amp;copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
-                            subdomains: 'abcd',
+                        // OpenStreetMap standard tiles (CARTO basemaps now require an API key).
+                        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                            attribution: '&amp;copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
                             maxZoom: 19
                         }).addTo(map);
 
@@ -571,7 +593,7 @@
                 <xsl:when test="$rsType = 'witness' and starts-with($rsKey, 'lassberg-witness-')">
                     <xsl:variable name="hspId" select="document('../../../data/register/lassberg-manuscripts.xml')//tei:msDesc[@xml:id = $rsKey]/tei:msIdentifier/tei:altIdentifier[@type = 'hsp']/tei:idno"/>
                     <xsl:if test="$hspId">
-                        <a href="https://handschriftenportal.de/search?hspobjectid={$hspId}">📜</a>
+                        <xsl:text> </xsl:text><a href="https://handschriftenportal.de/search?hspobjectid={$hspId}" target="_blank" rel="noopener noreferrer">(HSP)</a>
                     </xsl:if>
                 </xsl:when>
 

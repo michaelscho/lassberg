@@ -63,6 +63,9 @@ def find_manuscript(query: str, limit: int = 10) -> list[dict]:
     from rapidfuzz import fuzz
     q = _norm(query)
     mentions = _mention_counts()
+    if not q:  # empty query: the most-mentioned manuscripts
+        top = sorted(_witnesses().items(), key=lambda kv: (-len(mentions.get(kv[0], [])), kv[0]))[:limit]
+        return [{**_summary_row(wid, e, mentions), "score": None} for wid, e in top if mentions.get(wid)]
     scored = []
     for wid, e in _witnesses().items():
         if query.strip() in (wid, e.get("hsp_id")):
@@ -105,6 +108,32 @@ def manuscript_mentions(witness_id: str) -> list[dict]:
     return out
 
 
+def manuscripts_in_letter(letter_id: str) -> list[dict]:
+    """Manuscripts mentioned in one letter (register entries), with HSP ids and the annotated
+    passages from the transcription."""
+    from tei_text import load_letter
+    lid = letter_id if str(letter_id).startswith("lassberg-letter-") else f"lassberg-letter-{int(re.sub(r'\\D', '', str(letter_id))):04d}"
+    ws = _witnesses()
+    mentioned = None
+    for l in _load("letters.jsonl"):
+        if l["id"] == lid:
+            mentioned = (l.get("mentions") or {}).get("witnesses", [])
+            break
+    if mentioned is None:
+        return [{"error": f"unknown letter id {lid}"}]
+    passages: dict[str, list[str]] = {}
+    try:
+        _, _, toks, rng, lin = load_letter(lid)
+        for r in (lin.rs if lin else []):
+            if r["attrs"].get("type") == "witness" and "#" in (r["attrs"].get("key") or ""):
+                passages.setdefault(r["attrs"]["key"].split("#")[-1], []).append(r["text"])
+    except Exception:
+        pass
+    mentions = _mention_counts()
+    return [{**_summary_row(wid, ws[wid], mentions), "passages": passages.get(wid, [])}
+            for wid in mentioned if wid in ws]
+
+
 def hsp_search(query: str, limit: int = 10, live: bool = False) -> list[dict]:
     """Search the local HSP description index (content, author, former shelfmark, provenance);
     live=True adds hits from the live HSP Kulturobjekt search (spell correction: verify hits)."""
@@ -123,9 +152,10 @@ def hsp_search(query: str, limit: int = 10, live: bool = False) -> list[dict]:
     return hits
 
 
-def hsp_manuscript(id: str, description: str = "summary") -> dict:
+def hsp_manuscript(id: str, description: str = "summary", max_chars: int = 0) -> dict:
     """Core data, portal URL and catalogue description(s) of a manuscript from the local HSP mirror
-    (fetched live and mirrored if missing). `id` = lassberg-witness-NNNN or an HSP id."""
+    (fetched live and mirrored if missing). `id` = lassberg-witness-NNNN or an HSP id.
+    description="full" returns the complete cleaned description text; max_chars > 0 limits it (0 = no limit)."""
     wid = None
     if id.startswith("lassberg-witness-"):
         e = _witnesses().get(id)
@@ -170,7 +200,13 @@ def hsp_manuscript(id: str, description: str = "summary") -> dict:
                           "items": d["items"][:30], "history": d["history"][:2000],
                           "former_shelfmarks": d["msidentifier"].get("former_shelfmarks", [])})
         elif description == "full":
-            entry["fulltext"] = d["fulltext"][:30000]
-            entry["truncated"] = len(d["fulltext"]) > 30000
+            text = d["fulltext"]
+            entry["length"] = len(text)
+            if max_chars and max_chars > 0:
+                entry["truncated"] = len(text) > max_chars
+                text = text[:max_chars]
+            else:
+                entry["truncated"] = False
+            entry["fulltext"] = text
         res["descriptions"].append(entry)
     return res

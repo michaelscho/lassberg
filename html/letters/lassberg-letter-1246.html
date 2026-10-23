@@ -1,0 +1,358 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0" lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>The Lassberg Letters</title>
+      <link href="../../css/styles.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script><link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"><script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script></head>
+   <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+         <div class="container"><a class="navbar-brand" href="../../index.html">The Laßberg Letters</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link" href="../../index.html">Welcome</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../persons.html">Persons</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../places.html">Places</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../manuscripts.html">Manuscripts</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../explore.html">Explore</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <header class="page-header py-4">
+         <div class="container">
+            <h1 class="mb-2">Brief von Niklaus Friedrich von Mülinen an Joseph von Laßberg (21.09.1828). ENTWURF
+               / DRAFT: vorläufige, unkorrigierte Transkription.</h1>
+            <p class="lead mb-0">
+               
+               <p>Correspondence data based on Harris, Martin: Joseph Maria Christoph
+                  Freiherr von Lassberg 1770-1855. Briefinventar und Prosopographie. Mit einer
+                  Abhandlung zu Lassbergs Entwicklung zum Altertumsforscher. Die erste
+                  geschlossene, wissenschaftlich fundierte Würdigung von Lassbergs Wirken und
+                  Werk. Beihefte zum Euphorion Heft 25/C. Heidelberg 1991.</p>
+               
+               <p>DRAFT: Vorläufige, nicht korrigierte Texterkennung (Transkribus)
+                  und nur rudimentäres Markup, erstellt für einen Vortrag. Nicht zitierfähig.</p>
+               </p>
+         </div>
+      </header>
+      <main class="py-4">
+         <div class="container">
+            <div class="alert alert-warning letter-preview-banner" role="alert"><strong>Unreviewed working text.</strong> The encoding of this letter
+               has not yet been editorially reviewed
+               (status: draft).
+               The text may contain transcription or OCR errors — please cite with caution.
+               </div>
+            <div class="row g-4">
+               <div class="col-lg-4 order-lg-2">
+                  <aside class="letter-sidebar">
+                     <section id="metadata" class="mb-4">
+                        <h2 class="h5">Metadata</h2>
+                        <p><strong>Signatur: </strong>Bern, Burgerbibliothek, Mss.h.h.XXVI.105.6</p>
+                        <p><strong>Registernummer (Laßberg): </strong></p>
+                        <p><strong>Registernummer (Harris): </strong>2215</p>
+                        <p><strong>Gedruck in: </strong><a href=""></a></p>
+                     </section>
+                     <section id="map" class="mb-4">
+                        <h2 class="h5">Places</h2>
+                        <div id="mapid"></div>
+                        <p class="map-legend small text-muted mt-1 mb-0"><span class="legend-dot" style="background:#1d4e89"></span> place of sending
+                           <span class="legend-dot ms-2" style="background:#b57cc0"></span> places mentioned
+                           </p>
+                     </section>
+                     <section id="mentioned" class="mb-4">
+                        <h2 class="h5">Mentioned in this letter</h2>
+                        <h3 class="h6 mt-3">Places</h3>
+                        <ul class="list-unstyled small mb-2">
+                           <li><a href="../places.html?q=Weissenburg">Weissenburg</a></li>
+                           <li><a href="../places.html?q=Wa%C3%9Ferburg">Waßerburg</a></li>
+                           <li><a href="../places.html?q=Lindau">Lindau</a></li>
+                           <li><a href="../places.html?q=Winterthur">Winterthur</a></li>
+                        </ul>
+                        <h3 class="h6 mt-3">Manuscripts</h3>
+                        <ul class="list-unstyled small mb-2">
+                           <li class="mb-1"><a href="../manuscripts.html?q=Wasserburger%20Codex">Wasserburger Codex</a><span class="text-muted"> (Karlsruhe, Badische Landesbibliothek, Cod. Donaueschingen 74)</span> <a href="https://handschriftenportal.de/search?hspobjectid=HSP-58bc2371-1364-31bf-b940-2959267f60ab" target="_blank" rel="noopener noreferrer">(HSP)</a></li>
+                        </ul>
+                     </section>
+                  </aside>
+               </div>
+               <div class="col-lg-8 order-lg-1">
+                  <section id="original-text" class="mb-4">
+                     <h2>Original Text
+                        <span class="transcription-source badge-manuscript" title="Diplomatische Transkription der Handschrift">Transcribed from the manuscript (Transkribus)</span></h2>
+                     <div class="btn-group btn-group-sm mb-2" role="group" aria-label="Textansicht"><button type="button" id="view-lines-btn" class="btn btn-outline-secondary active" onclick="document.getElementById('view-lines').classList.remove('d-none'); document.getElementById('view-flow').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-flow-btn').classList.remove('active');">Zeilengenau</button><button type="button" id="view-flow-btn" class="btn btn-outline-secondary" onclick="document.getElementById('view-flow').classList.remove('d-none'); document.getElementById('view-lines').classList.add('d-none'); this.classList.add('active'); document.getElementById('view-lines-btn').classList.remove('active');">Fließtext</button></div>
+                     <div id="view-lines">
+                        
+                        <p>
+                           
+                           
+                           <div class="letter-fw">1</div>
+                           <br>erhalten den 29 Septl. 1828.
+                           <br>Karthause bey <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Thun</strong&gt;">Thun<a href="https://www.wikidata.org/wiki/Q68978"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> d. 21. 7. 1828
+                           <br>Hochwohlgeborne Freyherr.
+                           <br>Verehrtester Freund
+                           <br>Er freute mich sehr mein lieber Baron, Ihre glückliche Nachhause
+                           <br>"kunft in Ihre mit so vielen alterthümlichen Schätzen angefüllte
+                           <br>Wohnung zu vernehmen, und hoffe daß Sie durch Luftveränderung
+                           <br>und Reise gestärkt, Sie sich nun wieder frohen Muther mit Ihren
+                           <br>lieben Münnsängern beschäftigen können, der Besuch einer
+                           <br>Männer der wie Sie mit Kopf und Hertz große Wißenschaft
+                           <br>in einem Sache verbindet, welcher für mich so vielen Reitz
+                           <br>hat, war mir äußerst angenehm, und ich verdanke Ihnen
+                           <br>herzlich die intereſsanten Stunden die ich mit Ihnen
+                           <br>in den Verschlechten von <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Weissenburg</strong&gt;">Weissenburg<a href="https://www.wikidata.org/wiki/Q22636"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> und an den
+                           <br>lachenden Zustaden unserer Saar verlebt habe
+                           <br>Wie ich nach Ihrer Abreise mich noch einige Tage in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Weissenburg</strong&gt;">Weissenburg<a href="https://www.wikidata.org/wiki/Q22636"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>
+                           <br>aufhielt, so fühlte ich mich schon unwohl, und seither habe ich
+                           <br>beim gute Folgen meiner Brunnenbur verspührt. Ich bin immer
+                           <br>sehr geplagt mit immer wiederkehrenden Knampfen und war
+                           <br>mich vorzüglich beelendet, ist daß ich gäntzlich oft mehrere
+                           <br>tage müßig zubringen muß, indem so bald ich habe ich
+                           <br>er versuche, eine Vierthel Stunde lang zu schreiben, ein fürchterliche
+                           <br>Schweid
+                           
+                           <br>Schweis mit Schwindel verbunden, mich wiedrum zum Nichtsthum
+                           <br>nöthigt. Da dieser vorzüglich nervös zu sein scheint, so hoffe ich
+                           <br>daß izt da die entsetzlich elebtrische Luft durch viele Gewitter
+                           <br>gereinigt ist, diese Uebel nach und nach verschwinden oder
+                           <br>wenigsteme sich erleichtern werden.
+                           <br>Sonst haben neben der Militærschule in thun, ein Zusammenzug
+                           <br>von Cantonal Truppen zu einer Eydgenössischen Institution,
+                           <br>und ein Heer von Reisenden unsre Gegenden sehr lebhaft,
+                           <br>bißweilen sogar etwas stürmisch gemacht. Vor einigen Tagen hatte
+                           <br>mann kleine Karthause die Ehre die schöne Großfürstin haben
+                           <br>einige Stunden lang in ihren Mauren zu sehen. Ich vermuthe
+                           <br>daß die Nachrichten die Sie denselben Tag con Odesta erhielt, nicht
+                           <br>sehr erfreulichen Inhalte gewesen sind. Sie werden gewiß den Quel¬
+                           <br>Bentendorf der vorhin in Stutzard war persönlich bekannt haben
+                           <br>ich habe ihn sehr gut gekannt und bedaure seinen Tod. Mein
+                           <br>Stoffe schreibt mir von Wien, "quil etoit mort de maladie &amp; de
+                           <br>miſére ſur la Route de Seſium la a Siliſtrii. Fürchterlicſarar-
+                           <br>Aber die Erthöpfung von Butgarien soll mann sich nicht denken
+                           <br>v
+                           <br>bonen.
+                           <br>Vor einigen Tagen sah ich sie einen Reisenden der mir sagte
+                           <br>er habe zu <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wasserburg</strong&gt;">Waßerburg<a href="https://www.wikidata.org/wiki/Q522272"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> bey <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Lindau</strong&gt;">Lindau<a href="https://www.wikidata.org/wiki/Q153969"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, bey einem alten Pfarrer
+                           <br>einen uralten <span class="rs-witness" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wasserburger Codex – Karlsruhe, Badische Landesbibliothek, Cod. Donaueschingen 74</strong&gt;">Codex alt deutscher dichter <a href="https://handschriftenportal.de/search?hspobjectid=HSP-58bc2371-1364-31bf-b940-2959267f60ab" target="_blank" rel="noopener noreferrer">(HSP)</a></span> gesehn. Ist Ihnen dieser
+                           <br>bekannt?
+                           <br>Sie sagten mir, lieber Baron, Sie glaubten der Münſänger com
+                           <br>Ober sich aus dem Hause Westerstuhl gewesen. Beym Durchblattern
+                           <br>einige - Excripten fand ich im Jahrzeitbuch zu <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Winterthur</strong&gt;">Winterthur<a href="https://www.wikidata.org/wiki/Q9125"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> einen
+                           <br>Joh. v. Wissersputzl. Nielen. Caff. d. Wesp. et An̄a filia, und einen
+                           <br>Red. de Weſp. Sacerdos &amp; Rector Ecclesie de Buiz
+                           <br>Nach einer Jahrzeitstiftung Rudolf Schultheißen unter dem
+                           <br>Schopf zu <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Winterthur</strong&gt;">Winterthur<a href="https://www.wikidata.org/wiki/Q9125"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, von 1368. stiftete derselbe Seelmessen
+                           <br>für seine Eltern Stud. u. Margareth, für Joh. von Wasterspühl Ritter
+                           <br>und Rud. deßen Sohn Kilchfl. zu Buch. Diese scheinen Margareth
+                           <br>Peter und Bruder gewesen zu seyn, und bestimmen als ihr das zu
+                           <br>in die ersten Dezemberin der 14t Jahrhunderts. Er wird Ihnen bekannt
+                           <br>sein, daß Fäsi in seiner Schweizer Geographie die Erbtochter der letzten
+                           <br>Herrn u. Mitteur von Wasperspühl einen Biberli von Zürich heirathen
+                           <br>läßt, der durch sie Herr zu Wasserstuhl geworden sein sole.
+                           <br>die Geneat der Rambache, die ich Ihnen versprach, finden Sie
+                           <br>beykommend, wohl Sie aber glauben, daß die Marffelben von
+                           <br>Rapperschwyl von ihrem Hause waren, ist mir nicht bekannt geworden
+                           <br>Ich finde 2. Wappen u Rambach und 2. der Marschalte die einander
+                           <br>alle ungleich sind. Der Wappen der Munsangier ist mir nicht
+                           <br>debant
+                           <br>Sie werden mein verehrtester Freund nur sonst Münchs Programm
+                           <br>über die Geschichte den Fürsten von Fürstenberg gesehen haben, daß sein
+                           <br>Bezeichnung als Professor zu Köwen in den Schweizerburgen ein
+                           <br>drükfehler ist. Es ist zu Lüttich angestellt, von woher ich lezthin einen
+                           <br>Brief von ihm erhalten haben. Es war vorhaben meine unbedeutend
+                           <br>Bebengeschichte für die Zeitgenoßen zu bearbeiten, ich habe mir aber
+                           <br>diese Walpierung höflichst verboten.
+                           <br>Ist etwa Poppihhofer geschichte der Thurgaur noch nicht im Buchsender
+                           <br>ich habe gleich nach Ihrer Abreise dem Buchsändler Immer den
+                           <br>auftrag gegeben mir dieser Werk kommen zu laßen, er aber noch
+                           <br>nicht erhalten.
+                           
+                           
+                           <div class="letter-fw">1</div>
+                           <br>Ist er keine Indisbration der Werle über Schwaben, welcher ich
+                           <br>bey Ihnen sah, und welches ich mir von Ihrer Gefälligkeit zum
+                           <br>excerpieren ausgebeten hatte, nun aber geschenk anzunehmen
+                           <br>so werde ich er alle ein Plazbarck Andenken Ihrer Freundschaft
+                           <br>ansehen, und Ihnen dafür vielen Dank wissen. Am schicklichsten
+                           <br>könnte der Ristchen durch einen Frachtwagen an meine Adresse
+                           <br>nach Bern übermacht werden.
+                           <br>haben Sie einige Nachrichten aus Italien von unserem Wissenberg
+                           <br>und wissen Sie nicht ob er seine Rükreise über Bien zu nehmen
+                           <br>gedankt?
+                           <br>Leben Sie recht wohl lieber Laßberg in Ihrer schönen Einkombut
+                           <br>gedenken Sie meine mit dem Wohlwollen, das meine aufrichtige
+                           <br>freundschaft und Hochachtung gegen Sie verdient
+                           <br>Ihr ganz ergebener
+                           <br>dieni und denn
+                           <br>Mülinen
+                           </p>
+                        </div>
+                     <div id="view-flow" class="d-none">
+                        
+                        <p>
+                           
+                           
+                           <div class="letter-fw">1</div>
+                           erhalten den 29 Septl. 1828.
+                           Karthause bey <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Thun</strong&gt;">Thun<a href="https://www.wikidata.org/wiki/Q68978"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> d. 21. 7. 1828
+                           Hochwohlgeborne Freyherr.
+                           Verehrtester Freund
+                           Er freute mich sehr mein lieber Baron, Ihre glückliche Nachhause
+                           "kunft in Ihre mit so vielen alterthümlichen Schätzen angefüllte
+                           Wohnung zu vernehmen, und hoffe daß Sie durch Luftveränderung
+                           und Reise gestärkt, Sie sich nun wieder frohen Muther mit Ihren
+                           lieben Münnsängern beschäftigen können, der Besuch einer
+                           Männer der wie Sie mit Kopf und Hertz große Wißenschaft
+                           in einem Sache verbindet, welcher für mich so vielen Reitz
+                           hat, war mir äußerst angenehm, und ich verdanke Ihnen
+                           herzlich die intereſsanten Stunden die ich mit Ihnen
+                           in den Verschlechten von <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Weissenburg</strong&gt;">Weissenburg<a href="https://www.wikidata.org/wiki/Q22636"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> und an den
+                           lachenden Zustaden unserer Saar verlebt habe
+                           Wie ich nach Ihrer Abreise mich noch einige Tage in <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Weissenburg</strong&gt;">Weissenburg<a href="https://www.wikidata.org/wiki/Q22636"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>
+                           aufhielt, so fühlte ich mich schon unwohl, und seither habe ich
+                           beim gute Folgen meiner Brunnenbur verspührt. Ich bin immer
+                           sehr geplagt mit immer wiederkehrenden Knampfen und war
+                           mich vorzüglich beelendet, ist daß ich gäntzlich oft mehrere
+                           tage müßig zubringen muß, indem so bald ich habe ich
+                           er versuche, eine Vierthel Stunde lang zu schreiben, ein fürchterliche
+                           Schweid
+                           
+                           Schweis mit Schwindel verbunden, mich wiedrum zum Nichtsthum
+                           nöthigt. Da dieser vorzüglich nervös zu sein scheint, so hoffe ich
+                           daß izt da die entsetzlich elebtrische Luft durch viele Gewitter
+                           gereinigt ist, diese Uebel nach und nach verschwinden oder
+                           wenigsteme sich erleichtern werden.
+                           Sonst haben neben der Militærschule in thun, ein Zusammenzug
+                           von Cantonal Truppen zu einer Eydgenössischen Institution,
+                           und ein Heer von Reisenden unsre Gegenden sehr lebhaft,
+                           bißweilen sogar etwas stürmisch gemacht. Vor einigen Tagen hatte
+                           mann kleine Karthause die Ehre die schöne Großfürstin haben
+                           einige Stunden lang in ihren Mauren zu sehen. Ich vermuthe
+                           daß die Nachrichten die Sie denselben Tag con Odesta erhielt, nicht
+                           sehr erfreulichen Inhalte gewesen sind. Sie werden gewiß den Quel¬
+                           Bentendorf der vorhin in Stutzard war persönlich bekannt haben
+                           ich habe ihn sehr gut gekannt und bedaure seinen Tod. Mein
+                           Stoffe schreibt mir von Wien, "quil etoit mort de maladie &amp; de
+                           miſére ſur la Route de Seſium la a Siliſtrii. Fürchterlicſarar-
+                           Aber die Erthöpfung von Butgarien soll mann sich nicht denken
+                           v
+                           bonen.
+                           Vor einigen Tagen sah ich sie einen Reisenden der mir sagte
+                           er habe zu <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wasserburg</strong&gt;">Waßerburg<a href="https://www.wikidata.org/wiki/Q522272"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> bey <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Lindau</strong&gt;">Lindau<a href="https://www.wikidata.org/wiki/Q153969"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, bey einem alten Pfarrer
+                           einen uralten <span class="rs-witness" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wasserburger Codex – Karlsruhe, Badische Landesbibliothek, Cod. Donaueschingen 74</strong&gt;">Codex alt deutscher dichter <a href="https://handschriftenportal.de/search?hspobjectid=HSP-58bc2371-1364-31bf-b940-2959267f60ab" target="_blank" rel="noopener noreferrer">(HSP)</a></span> gesehn. Ist Ihnen dieser
+                           bekannt?
+                           Sie sagten mir, lieber Baron, Sie glaubten der Münſänger com
+                           Ober sich aus dem Hause Westerstuhl gewesen. Beym Durchblattern
+                           einige - Excripten fand ich im Jahrzeitbuch zu <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Winterthur</strong&gt;">Winterthur<a href="https://www.wikidata.org/wiki/Q9125"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span> einen
+                           Joh. v. Wissersputzl. Nielen. Caff. d. Wesp. et An̄a filia, und einen
+                           Red. de Weſp. Sacerdos &amp; Rector Ecclesie de Buiz
+                           Nach einer Jahrzeitstiftung Rudolf Schultheißen unter dem
+                           Schopf zu <span class="rs-place" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Winterthur</strong&gt;">Winterthur<a href="https://www.wikidata.org/wiki/Q9125"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="WIKIDATA Icon" height="12"></a></span>, von 1368. stiftete derselbe Seelmessen
+                           für seine Eltern Stud. u. Margareth, für Joh. von Wasterspühl Ritter
+                           und Rud. deßen Sohn Kilchfl. zu Buch. Diese scheinen Margareth
+                           Peter und Bruder gewesen zu seyn, und bestimmen als ihr das zu
+                           in die ersten Dezemberin der 14t Jahrhunderts. Er wird Ihnen bekannt
+                           sein, daß Fäsi in seiner Schweizer Geographie die Erbtochter der letzten
+                           Herrn u. Mitteur von Wasperspühl einen Biberli von Zürich heirathen
+                           läßt, der durch sie Herr zu Wasserstuhl geworden sein sole.
+                           die Geneat der Rambache, die ich Ihnen versprach, finden Sie
+                           beykommend, wohl Sie aber glauben, daß die Marffelben von
+                           Rapperschwyl von ihrem Hause waren, ist mir nicht bekannt geworden
+                           Ich finde 2. Wappen u Rambach und 2. der Marschalte die einander
+                           alle ungleich sind. Der Wappen der Munsangier ist mir nicht
+                           debant
+                           Sie werden mein verehrtester Freund nur sonst Münchs Programm
+                           über die Geschichte den Fürsten von Fürstenberg gesehen haben, daß sein
+                           Bezeichnung als Professor zu Köwen in den Schweizerburgen ein
+                           drükfehler ist. Es ist zu Lüttich angestellt, von woher ich lezthin einen
+                           Brief von ihm erhalten haben. Es war vorhaben meine unbedeutend
+                           Bebengeschichte für die Zeitgenoßen zu bearbeiten, ich habe mir aber
+                           diese Walpierung höflichst verboten.
+                           Ist etwa Poppihhofer geschichte der Thurgaur noch nicht im Buchsender
+                           ich habe gleich nach Ihrer Abreise dem Buchsändler Immer den
+                           auftrag gegeben mir dieser Werk kommen zu laßen, er aber noch
+                           nicht erhalten.
+                           
+                           
+                           <div class="letter-fw">1</div>
+                           Ist er keine Indisbration der Werle über Schwaben, welcher ich
+                           bey Ihnen sah, und welches ich mir von Ihrer Gefälligkeit zum
+                           excerpieren ausgebeten hatte, nun aber geschenk anzunehmen
+                           so werde ich er alle ein Plazbarck Andenken Ihrer Freundschaft
+                           ansehen, und Ihnen dafür vielen Dank wissen. Am schicklichsten
+                           könnte der Ristchen durch einen Frachtwagen an meine Adresse
+                           nach Bern übermacht werden.
+                           haben Sie einige Nachrichten aus Italien von unserem Wissenberg
+                           und wissen Sie nicht ob er seine Rükreise über Bien zu nehmen
+                           gedankt?
+                           Leben Sie recht wohl lieber Laßberg in Ihrer schönen Einkombut
+                           gedenken Sie meine mit dem Wohlwollen, das meine aufrichtige
+                           freundschaft und Hochachtung gegen Sie verdient
+                           Ihr ganz ergebener
+                           dieni und denn
+                           Mülinen
+                           </p>
+                        </div>
+                  </section>
+                  <div id="related-letters"></div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer class="bg-dark text-white text-center py-3">
+         <div class="container">
+            <p class="mb-0"><a href="../letters.html">Back to the Letters</a></p>
+         </div>
+      </footer><script src="../../js/related.js"></script><script src="https://unpkg.com/leaflet/dist/leaflet.js"></script><script>
+                    var letterPlaces = [];
+                    
+                    letterPlaces.push({ coords: [46.76666667,7.63333333], label: "Thun", kind: "sent" });
+                    
+                    letterPlaces.push({ coords: [49.0375,7.946111], label: "Weissenburg", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [47.566944444444, 9.6261111111111], label: "Waßerburg", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [47.54583333,9.68333333], label: "Lindau", kind: "mentioned" });
+                        
+                    letterPlaces.push({ coords: [47.49888889,8.72861111], label: "Winterthur", kind: "mentioned" });
+                        
+
+                    if (letterPlaces.length === 0) {
+                        document.getElementById('map').style.display = 'none';
+                    } else {
+                        var map = L.map('mapid', { scrollWheelZoom: false });
+                        // OpenStreetMap standard tiles (CARTO basemaps now require an API key).
+                        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+                            maxZoom: 19
+                        }).addTo(map);
+
+                        var bounds = [];
+                        letterPlaces.forEach(function (p) {
+                            var isSent = p.kind === 'sent';
+                            var marker = L.circleMarker(p.coords, isSent
+                                ? { radius: 8, color: '#143761', weight: 2, fillColor: '#1d4e89', fillOpacity: 0.85 }
+                                : { radius: 6, color: '#8a3a91', weight: 1.5, fillColor: '#b57cc0', fillOpacity: 0.75 }
+                            ).addTo(map).bindPopup((isSent ? 'Sent from: ' : 'Mentioned: ') + p.label);
+                            bounds.push(p.coords);
+                        });
+                        if (bounds.length > 1) {
+                            map.fitBounds(bounds, { padding: [25, 25], maxZoom: 9 });
+                        } else {
+                            map.setView(bounds[0], 8);
+                        }
+                    }
+                </script><script>
+                    // Initialize all tooltips
+                    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+                    new bootstrap.Tooltip(tooltipTriggerEl)
+                    })
+                </script></body>
+</html>

@@ -17,6 +17,7 @@
                   <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
                   <li class="nav-item"><a class="nav-link" href="../persons.html">Persons</a></li>
                   <li class="nav-item"><a class="nav-link" href="../places.html">Places</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../manuscripts.html">Manuscripts</a></li>
                   <li class="nav-item"><a class="nav-link" href="../explore.html">Explore</a></li>
                   <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
                   <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
@@ -62,6 +63,14 @@
                            <span class="legend-dot ms-2" style="background:#b57cc0"></span> places mentioned
                            </p>
                      </section>
+                     <section id="mentioned" class="mb-4">
+                        <h2 class="h5">Mentioned in this letter</h2>
+                        <h3 class="h6 mt-3">Manuscripts</h3>
+                        <ul class="list-unstyled small mb-2">
+                           <li class="mb-1"><a href="../manuscripts.html?q=La%C3%9Fbergs%20altes%20Liederbuch%20%28Musikalienbuch%29">Laßbergs altes Liederbuch (Musikalienbuch)</a></li>
+                           <li class="mb-1"><a href="../manuscripts.html?q=La%C3%9Fbergs%20Handschrift%20des%20Eckenliedes%20%28Ecken%20Ausfahrt%29">Laßbergs Handschrift des Eckenliedes (Ecken Ausfahrt)</a></li>
+                        </ul>
+                     </section>
                   </aside>
                </div>
                <div class="col-lg-8 order-lg-1">
@@ -74,14 +83,13 @@
                            wie mit jedem, wieder viel Erfreuliches und Dankwerthes zugegangen. Die Doceniana
                            habe ich mir sogleich abgeschrieben und sende sie sehr dankbar hiebei zurück. Ich
                            werde nun diese Notizen erst genauer mit den meinigen vergleichen und dann auf dem
-                           mir von Ihnen so gütig gezeigten und gebahnten Wege das Weitere versuchen. Das alte
-                           Liederbuch behalte ich noch bei Handen, um mir Auszüge daraus zu machen. Im Vergleich
-                           mit mehrern alten Musikalienbüchern dieser Art, die ich zuletzt in Basel benützt,
-                           finde ich in dem Ihrigen manches für mich Neue und Interessante, Auch stehen darin
-                           manchmal 2 oder mehr Strophen, wo die andern nur eine geben, und so kommt man doch
-                           immer um einen Zug weiter. Musikalisch erwarten diese Sammlungen auch erst ihre Würdigung;
-                           die Lieder scheinen zwar von den benannten Meistern neu componirt zu seyn, aber es
-                           bleibt doch die Frage: ob die neuen Compositionen etwa doch nur Umsetzungen und Ausstaffierungen
+                           mir von Ihnen so gütig gezeigten und gebahnten Wege das Weitere versuchen. Das <span class="rs-witness" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Laßbergs altes Liederbuch (Musikalienbuch)</strong&gt;">alte Liederbuch</span> behalte ich noch bei Handen, um mir Auszüge daraus zu machen. Im Vergleich mit mehrern
+                           alten Musikalienbüchern dieser Art, die ich zuletzt in Basel benützt, finde ich in
+                           dem Ihrigen manches für mich Neue und Interessante, Auch stehen darin manchmal 2 oder
+                           mehr Strophen, wo die andern nur eine geben, und so kommt man doch immer um einen
+                           Zug weiter. Musikalisch erwarten diese Sammlungen auch erst ihre Würdigung; die Lieder
+                           scheinen zwar von den benannten Meistern neu componirt zu seyn, aber es bleibt doch
+                           die Frage: ob die neuen Compositionen etwa doch nur Umsetzungen und Ausstaffierungen
                            alter Volksweisen seien. Was Sie über das Lied vom Tanhäuser schreiben, ist mir sehr
                            merkwürdig; es ist mir nicht bekannt, daß man schon eine Melodie davon kenne, und
                            wohl möglich, daß das Lied selbst im Volksmunde sich theilweise besser erhalten hat,
@@ -115,8 +123,7 @@
                            Ersten mit einem Zwerge ( nanus ) vorkommt. " V. d. Hagen hat im Grundriß, Einleit.
                            S. XXIV. Nr. III., diese Notiz aufgenommen und in dem latein. Gedichte die Uebertragung
                            eines deutschen Heldenliedes vermuthet. W. Grimm führt in seiner d. Heldensage die
-                           Namen Rudlieb und Immunch nicht auf. Nun zeigt aber Ihre Handschrift von Ecken Ausfahrt,
-                           in den beiden Strophen, welche den bisher bekannten Recensionen des Liedes fehlen,
+                           Namen Rudlieb und Immunch nicht auf. Nun zeigt aber Ihre <span class="rs-witness" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Laßbergs Handschrift des Eckenliedes (Ecken Ausfahrt)</strong&gt;">Handschrift von Ecken Ausfahrt</span>, in den beiden Strophen, welche den bisher bekannten Recensionen des Liedes fehlen,
                            pag. 137: De sw't de was vil lank u'holn etc. und: Sus wůhs h'port ze ainē mā etc.
                            den rechten Zusammenhang. Hier finden wir den König Rudlieb zusammt dem nanus. Wir
                            erfahren aber auch, daß Rudlieb der Vater Herborts war, und damit ergiebt sich die
@@ -160,11 +167,9 @@
                         document.getElementById('map').style.display = 'none';
                     } else {
                         var map = L.map('mapid', { scrollWheelZoom: false });
-                        // Muted basemap (CARTO Positron) instead of the default colourful OSM
-                        // tiles, to match the edition's restrained palette.
-                        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-                            attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
-                            subdomains: 'abcd',
+                        // OpenStreetMap standard tiles (CARTO basemaps now require an API key).
+                        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
                             maxZoom: 19
                         }).addTo(map);
 

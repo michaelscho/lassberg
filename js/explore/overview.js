@@ -43,6 +43,7 @@ function renderStats(container, totals) {
     ["Full text online", totals.fulltext],
     ["Reviewed editions", totals.published],
     ["Correspondents", totals.correspondents],
+    ["Manuscripts mentioned", totals.manuscripts || 0],
   ];
   for (const [label, value] of stats) {
     const tile = el("div", { class: "stat-tile" });
@@ -216,6 +217,36 @@ function renderMentionTable(container, rows, { entityHeader, registerPage, count
   container.appendChild(table);
 }
 
+// --- manuscripts mentioned (register entries with HSP link) ---------------------------------
+
+function renderManuscripts(container, rows) {
+  container.textContent = "";
+  if (!rows || rows.length === 0) {
+    container.appendChild(el("p", { class: "status" }, "No manuscripts linked yet."));
+    return;
+  }
+  const table = el("table", { class: "overview-table" });
+  const head = el("tr");
+  for (const h of ["Manuscript", "Mentioned in"]) head.appendChild(el("th", {}, h));
+  table.appendChild(head);
+  for (const r of rows) {
+    const tr = el("tr");
+    const td = el("td");
+    td.appendChild(el("a", { href: `explore.html?ms=${encodeURIComponent(r.id)}`, title: "Description and letters" }, r.label));
+    if (r.where) td.appendChild(el("span", { class: "status" }, ` (${r.where})`));
+    if (r.hsp_id) {
+      td.appendChild(document.createTextNode(" "));
+      td.appendChild(el("a", { href: `https://handschriftenportal.de/search?hspobjectid=${encodeURIComponent(r.hsp_id)}`, target: "_blank", rel: "noopener" }, "(HSP)"));
+    }
+    td.appendChild(document.createTextNode(" "));
+    td.appendChild(el("a", { href: `explore.html?node=${encodeURIComponent(r.id)}`, class: "badge", title: "Show network graph" }, "graph"));
+    tr.appendChild(td);
+    tr.appendChild(el("td", {}, `${r.letters} ${r.letters === 1 ? "letter" : "letters"}`));
+    table.appendChild(tr);
+  }
+  container.appendChild(table);
+}
+
 // --- map: sending places + mentioned places ---------------------------------------------------
 
 const MENTIONED = "#8a3a91"; // matches the rs-place underline and the letter-page map
@@ -235,10 +266,9 @@ async function renderMap(container, sendingPlaces, mentionedPlaces) {
       });
     }
     const map = L.map(container).setView([47.8, 8.8], 6);
-    // Same muted CARTO basemap as the letter pages
-    L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
-      attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
-      subdomains: "abcd",
+    // Same OpenStreetMap basemap as the letter pages
+    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
       maxZoom: 19,
     }).addTo(map);
     // guard against the container having been laid out late (grid, cached CSS): re-measure once
@@ -321,5 +351,6 @@ export async function initOverviewUI() {
     { entityHeader: "Person", registerPage: "persons.html", countLabel: "Mentioned in" });
   renderMentionTable(document.getElementById("overview-works"), d.works,
     { entityHeader: "Work", registerPage: null, countLabel: "Discussed in" });
+  renderManuscripts(document.getElementById("overview-manuscripts"), d.manuscripts);
   await renderMap(document.getElementById("overview-map"), d.places, d.mentioned_places);
 }

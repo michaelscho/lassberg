@@ -17,6 +17,7 @@
                   <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
                   <li class="nav-item"><a class="nav-link" href="../persons.html">Persons</a></li>
                   <li class="nav-item"><a class="nav-link" href="../places.html">Places</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../manuscripts.html">Manuscripts</a></li>
                   <li class="nav-item"><a class="nav-link" href="../explore.html">Explore</a></li>
                   <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
                   <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
@@ -63,6 +64,13 @@
                            <span class="legend-dot ms-2" style="background:#b57cc0"></span> places mentioned
                            </p>
                      </section>
+                     <section id="mentioned" class="mb-4">
+                        <h2 class="h5">Mentioned in this letter</h2>
+                        <h3 class="h6 mt-3">Manuscripts</h3>
+                        <ul class="list-unstyled small mb-2">
+                           <li class="mb-1"><a href="../manuscripts.html?q=Schulthei%C3%9F-Collectaneen">Schultheiß-Collectaneen</a><span class="text-muted"> (Konstanz)</span></li>
+                        </ul>
+                     </section>
                   </aside>
                </div>
                <div class="col-lg-8 order-lg-1">
@@ -74,12 +82,12 @@
                         <p>E: am 15. Hornung 1831.
                            P: P:
                            Ungeachtet Sie mein vererter Herr und Freund! eben kein großes verlangen nach den
-                           Schultheiss: collectaneen sehen liessen; sende ich sie Inen dennoch; weil ich mich
-                           beim durchgehen derselben überzeugt habe, daß dieselben manches enthalten, was Sie
-                           bei einer neuen bearbeitung Irer Thurgauer geschichte, zu vermissen bereuen würden.
-                           ich habe es versucht in beiligendem muster zu zeigen, wie man ein brauchbares register
-                           über den vorliegenden band anfertigen könnte; wollten Sie sich dieser bemühung unterziehen;
-                           so konnte ich nach und nach alle bånde von <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Constanz<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> kommen lassen, und wir hatten dann ein vollständiges repertorium über die ganze scházbare
+                           <span class="rs-witness" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Schultheiß-Collectaneen – Konstanz</strong&gt;">Schultheiss: collectaneen</span> sehen liessen; sende ich sie Inen dennoch; weil ich mich beim durchgehen derselben
+                           überzeugt habe, daß dieselben manches enthalten, was Sie bei einer neuen bearbeitung
+                           Irer Thurgauer geschichte, zu vermissen bereuen würden. ich habe es versucht in beiligendem
+                           muster zu zeigen, wie man ein brauchbares register über den vorliegenden band anfertigen
+                           könnte; wollten Sie sich dieser bemühung unterziehen; so konnte ich nach und nach
+                           alle bånde von <span class="rs-person" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;</strong&gt;">Constanz<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Gemeinsame_Normdatei_%28GND%29.svg" alt="GND Icon" height="12"></a></span> kommen lassen, und wir hatten dann ein vollständiges repertorium über die ganze scházbare
                            sammlung; welche für die Thurgauische geschichte eine ergiebige fundgrube zu sein
                            scheint. Manche bånde, welche ziemlich aphoristisch geschrieben sind, müsste man freilich
                            zum großen teile ausziehen; aber das würde ja bei benuzung derselben zu irgend einer
@@ -159,11 +167,9 @@
                         document.getElementById('map').style.display = 'none';
                     } else {
                         var map = L.map('mapid', { scrollWheelZoom: false });
-                        // Muted basemap (CARTO Positron) instead of the default colourful OSM
-                        // tiles, to match the edition's restrained palette.
-                        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-                            attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
-                            subdomains: 'abcd',
+                        // OpenStreetMap standard tiles (CARTO basemaps now require an API key).
+                        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
                             maxZoom: 19
                         }).addTo(map);
 

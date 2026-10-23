@@ -27,6 +27,22 @@ SELECT ?year (COUNT(?letter) AS ?n) WHERE {
   ?ts csvoc:startsOn ?date .
   BIND(SUBSTR(STR(?date), 1, 4) AS ?year)
 } GROUP BY ?year ORDER BY ?year`,
+  "Manuscripts mentioned in letters (with HSP link)": `PREFIX csvoc: <https://lod.academy/correspsearch/vocab/terms#>
+PREFIX voc: <https://michaelscho.github.io/lassberg/vocab/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?label ?hsp (COUNT(DISTINCT ?letter) AS ?letters) WHERE {
+  ?letter csvoc:mentions ?ms .
+  ?ms a <http://schema.org/ArchiveComponent> ; rdfs:label ?label .
+  OPTIONAL { ?ms voc:hspId ?hsp }
+} GROUP BY ?label ?hsp ORDER BY DESC(?letters) LIMIT 30`,
+  "Letters mentioning manuscripts of a library": `PREFIX csvoc: <https://lod.academy/correspsearch/vocab/terms#>
+PREFIX voc: <https://michaelscho.github.io/lassberg/vocab/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?letter ?label WHERE {
+  ?letter csvoc:mentions ?ms .
+  ?ms voc:repository ?repo ; rdfs:label ?label .
+  FILTER(CONTAINS(STR(?repo), "Landesbibliothek"))
+} LIMIT 30`,
   "All persons with a GND link": `PREFIX csvoc: <https://lod.academy/correspsearch/vocab/terms#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>

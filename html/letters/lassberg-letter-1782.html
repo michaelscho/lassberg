@@ -17,6 +17,7 @@
                   <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
                   <li class="nav-item"><a class="nav-link" href="../persons.html">Persons</a></li>
                   <li class="nav-item"><a class="nav-link" href="../places.html">Places</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../manuscripts.html">Manuscripts</a></li>
                   <li class="nav-item"><a class="nav-link" href="../explore.html">Explore</a></li>
                   <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
                   <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
@@ -61,6 +62,15 @@
                         <p class="map-legend small text-muted mt-1 mb-0"><span class="legend-dot" style="background:#1d4e89"></span> place of sending
                            <span class="legend-dot ms-2" style="background:#b57cc0"></span> places mentioned
                            </p>
+                     </section>
+                     <section id="mentioned" class="mb-4">
+                        <h2 class="h5">Mentioned in this letter</h2>
+                        <h3 class="h6 mt-3">Manuscripts</h3>
+                        <ul class="list-unstyled small mb-2">
+                           <li class="mb-1"><a href="../manuscripts.html?q=Altdeutsches%20Bruchst%C3%BCck%20vom%20h.%20Ulrich">Altdeutsches Bruchstück vom h. Ulrich</a></li>
+                           <li class="mb-1"><a href="../manuscripts.html?q=%C3%96hringer%20Hug-%20und%20Wolfdietrich-Handschrift">Öhringer Hug- und Wolfdietrich-Handschrift</a><span class="text-muted"> (Öhringen)</span></li>
+                           <li class="mb-1"><a href="../manuscripts.html?q=Stra%C3%9Fburger%20Hug-%20und%20Wolfdietrich-Handschrift">Straßburger Hug- und Wolfdietrich-Handschrift</a><span class="text-muted"> (Straßburg)</span></li>
+                        </ul>
                      </section>
                   </aside>
                </div>
@@ -112,20 +122,17 @@
                            norddeutschen Volksliedern gesammelt habe. Da Ihre Reise gewiß auch zu ihm gerichtet
                            ist, so könnte vielleicht Ihr Zuspruch ihn bewegen, seine Sammlung zur Kunde der Freunde
                            des deutschen Volksgesanges zu bringen. Mit einigem Erschrecken habe ich aus Ihrem
-                           werthen Briefe ersehen, daß Sie unter meiner Rücksendung das altdeutsche Bruchstück
-                           vom h. Ulrich vermissen. Sollte ich dasselbe nicht mit dem, gleichfalls von Hrn. Braun
-                           gefertigten Verzeichniß des Docenschen Nachlasses früher zurückgeschickt haben, so
-                           muß es sich allerdings noch unter meinen Papieren befinden, in denen ich jedoch bis
-                           jetzt ohne Erfolg nachgesehen habe. Verloren kann es in keinem Falle seyn, da ich
-                           es weder nach Stuttgart mitgenommen, noch irgend Iemand mitgetheilt habe. Nur muß
-                           ich vorläufig bitten, die lange getragene Geduld noch um etwas zu verlängern. Herr
-                           Prof. Öchsle in Dehringen wünscht den Hug- und Wolfdietrich herauszugeben und hat
-                           vorläufig ein ansehnliches Stück des ersten aus der zu Dehringen befindlichen Hdschrift
-                           bekannt gemacht. Er sieht jedoch die ungenügende Beschaffenheit dieser späten Hds.
-                           selbst ein und würde der Ausgabe des Ganzen vermuthlich die Straßburger Hds. zu Grunde
-                           legen, wenn er überhaupt durch Subscription, zu höchstens 3 fl. für etwa 25 Bogen,
-                           dazu in Stand gesetzt würde. Voll freundschaftlicher Verehrung L. Uhland. 10. März.
-                           2. August 1836.</p>
+                           werthen Briefe ersehen, daß Sie unter meiner Rücksendung das altdeutsche <span class="rs-witness" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Altdeutsches Bruchstück vom h. Ulrich</strong&gt;">Bruchstück vom h. Ulrich</span> vermissen. Sollte ich dasselbe nicht mit dem, gleichfalls von Hrn. Braun gefertigten
+                           Verzeichniß des Docenschen Nachlasses früher zurückgeschickt haben, so muß es sich
+                           allerdings noch unter meinen Papieren befinden, in denen ich jedoch bis jetzt ohne
+                           Erfolg nachgesehen habe. Verloren kann es in keinem Falle seyn, da ich es weder nach
+                           Stuttgart mitgenommen, noch irgend Iemand mitgetheilt habe. Nur muß ich vorläufig
+                           bitten, die lange getragene Geduld noch um etwas zu verlängern. Herr Prof. Öchsle
+                           in Dehringen wünscht den Hug- und Wolfdietrich herauszugeben und hat vorläufig ein
+                           ansehnliches Stück des ersten aus der zu <span class="rs-witness" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Öhringer Hug- und Wolfdietrich-Handschrift – Öhringen</strong&gt;">Dehringen befindlichen Hdschrift</span> bekannt gemacht. Er sieht jedoch die ungenügende Beschaffenheit dieser späten Hds.
+                           selbst ein und würde der Ausgabe des Ganzen vermuthlich die <span class="rs-witness" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Straßburger Hug- und Wolfdietrich-Handschrift – Straßburg</strong&gt;">Straßburger Hds.</span> zu Grunde legen, wenn er überhaupt durch Subscription, zu höchstens 3 fl. für etwa
+                           25 Bogen, dazu in Stand gesetzt würde. Voll freundschaftlicher Verehrung L. Uhland.
+                           10. März. 2. August 1836.</p>
                         </div>
                   </section>
                   <div id="related-letters"></div>
@@ -147,11 +154,9 @@
                         document.getElementById('map').style.display = 'none';
                     } else {
                         var map = L.map('mapid', { scrollWheelZoom: false });
-                        // Muted basemap (CARTO Positron) instead of the default colourful OSM
-                        // tiles, to match the edition's restrained palette.
-                        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-                            attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
-                            subdomains: 'abcd',
+                        // OpenStreetMap standard tiles (CARTO basemaps now require an API key).
+                        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
                             maxZoom: 19
                         }).addTo(map);
 

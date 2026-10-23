@@ -17,6 +17,7 @@
                   <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
                   <li class="nav-item"><a class="nav-link" href="../persons.html">Persons</a></li>
                   <li class="nav-item"><a class="nav-link" href="../places.html">Places</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../manuscripts.html">Manuscripts</a></li>
                   <li class="nav-item"><a class="nav-link" href="../explore.html">Explore</a></li>
                   <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
                   <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
@@ -61,6 +62,14 @@
                         <p class="map-legend small text-muted mt-1 mb-0"><span class="legend-dot" style="background:#1d4e89"></span> place of sending
                            <span class="legend-dot ms-2" style="background:#b57cc0"></span> places mentioned
                            </p>
+                     </section>
+                     <section id="mentioned" class="mb-4">
+                        <h2 class="h5">Mentioned in this letter</h2>
+                        <h3 class="h6 mt-3">Manuscripts</h3>
+                        <ul class="list-unstyled small mb-2">
+                           <li class="mb-1"><a href="../manuscripts.html?q=Weingartner%20Liederhandschrift">Weingartner Liederhandschrift</a><span class="text-muted"> (Stuttgart, Württembergische Landesbibliothek, HB XIII 1)</span> <a href="https://handschriftenportal.de/search?hspobjectid=HSP-b4834bbe-f848-336d-b90e-8325d333b3e4" target="_blank" rel="noopener noreferrer">(HSP)</a></li>
+                           <li class="mb-1"><a href="../manuscripts.html?q=Kleine%20Heidelberger%20Liederhandschrift">Kleine Heidelberger Liederhandschrift</a><span class="text-muted"> (Heidelberg, Universitätsbibliothek Heidelberg, Cod. Pal. germ. 357)</span> <a href="https://handschriftenportal.de/search?hspobjectid=HSP-4b0160e9-263b-347b-8c23-528960bebf90" target="_blank" rel="noopener noreferrer">(HSP)</a></li>
+                        </ul>
                      </section>
                   </aside>
                </div>
@@ -107,11 +116,9 @@
                            von mir beizusezen. Mit Irem Schreiben erhielt ich zugleich eines von Herrn Prof.
                            Schwab von demselben Tage; welches ich mündlich beantworten will, da keine Gefar auf
                            dem Verzug haftet. Wie viel Dank bin ich Inen, verertester Freund! und jme schuldig,
-                           für die große Mühe, die Sie um meinetwillen mit der Weingartner Handschrift auf sich
-                           genommen haben! ich hoffe es soll ein gutes Werk werden; denn ich lasse auf den Herbst
-                           den Codex palatinus No. 357 auch kommen, um in noch einmal recht genau zu vergleichen.
-                           Leben Sie wol und jmmer mir möglich wird. nun komme ich sobald als es nur Herzlich
-                           gegrüßt Von Frem I. Laßberg.</p>
+                           für die große Mühe, die Sie um meinetwillen mit der <span class="rs-witness" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Weingartner Liederhandschrift – Stuttgart, Württembergische Landesbibliothek, HB XIII 1</strong&gt;">Weingartner Handschrift <a href="https://handschriftenportal.de/search?hspobjectid=HSP-b4834bbe-f848-336d-b90e-8325d333b3e4" target="_blank" rel="noopener noreferrer">(HSP)</a></span> auf sich genommen haben! ich hoffe es soll ein gutes Werk werden; denn ich lasse
+                           auf den Herbst den <span class="rs-witness" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Kleine Heidelberger Liederhandschrift – Heidelberg, Universitätsbibliothek Heidelberg, Cod. Pal. germ. 357</strong&gt;">Codex palatinus No. 357 <a href="https://handschriftenportal.de/search?hspobjectid=HSP-4b0160e9-263b-347b-8c23-528960bebf90" target="_blank" rel="noopener noreferrer">(HSP)</a></span> auch kommen, um in noch einmal recht genau zu vergleichen. Leben Sie wol und jmmer
+                           mir möglich wird. nun komme ich sobald als es nur Herzlich gegrüßt Von Frem I. Laßberg.</p>
                         </div>
                   </section>
                   <div id="related-letters"></div>
@@ -133,11 +140,9 @@
                         document.getElementById('map').style.display = 'none';
                     } else {
                         var map = L.map('mapid', { scrollWheelZoom: false });
-                        // Muted basemap (CARTO Positron) instead of the default colourful OSM
-                        // tiles, to match the edition's restrained palette.
-                        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-                            attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
-                            subdomains: 'abcd',
+                        // OpenStreetMap standard tiles (CARTO basemaps now require an API key).
+                        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
                             maxZoom: 19
                         }).addTo(map);
 

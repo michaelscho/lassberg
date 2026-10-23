@@ -17,6 +17,7 @@
                   <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
                   <li class="nav-item"><a class="nav-link" href="../persons.html">Persons</a></li>
                   <li class="nav-item"><a class="nav-link" href="../places.html">Places</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../manuscripts.html">Manuscripts</a></li>
                   <li class="nav-item"><a class="nav-link" href="../explore.html">Explore</a></li>
                   <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
                   <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
@@ -62,6 +63,13 @@
                            <span class="legend-dot ms-2" style="background:#b57cc0"></span> places mentioned
                            </p>
                      </section>
+                     <section id="mentioned" class="mb-4">
+                        <h2 class="h5">Mentioned in this letter</h2>
+                        <h3 class="h6 mt-3">Manuscripts</h3>
+                        <ul class="list-unstyled small mb-2">
+                           <li class="mb-1"><a href="../manuscripts.html?q=Weingartner%20Liederhandschrift">Weingartner Liederhandschrift</a><span class="text-muted"> (Stuttgart, Württembergische Landesbibliothek, HB XIII 1)</span> <a href="https://handschriftenportal.de/search?hspobjectid=HSP-b4834bbe-f848-336d-b90e-8325d333b3e4" target="_blank" rel="noopener noreferrer">(HSP)</a></li>
+                        </ul>
+                     </section>
                   </aside>
                </div>
                <div class="col-lg-8 order-lg-1">
@@ -73,19 +81,18 @@
                         <p>Constanz am 30. May 1825. Mein lieber Freund! Explicit feliciter Liedersaals dritter
                            Band; dies habe ich mit Vergnügen ausgerufen, als mir der Buchdruker vorgestern den
                            lezten Bogen brachte. Vorrede und Titelkupfer werde ich nachsenden; indessen kann
-                           man das Buch lesen. Die Nachricht, welche Sie mir geben, daß von der Hagen den Weingartner
-                           Codex sollicitirt hat, macht, daß ich Morgen in die Villa Epponis zurüffere, um ein
-                           Exemplar des Liedersaales zusamenzupaken und bei Irem Könige ebenfalls um besagte
-                           Handschrift zu werben. Er ist ja der König der Schwaben und wird wol einem schwäbischen
-                           Manne lieber diese Arbeit gönnen, als einem Ausländer. Können Sie durch Freunde und
-                           Bekannte Etwas hiebei zu meinen Gunsten wirken; so weiß ich daß Sie es nicht unterlassen
-                           werden: es seie denn, daß Sie selbst Absichten auf den Codex hätten, dann tue ich
-                           mit Freuden Verzicht auf denselben. Wie wird mir meine liebe Villa vorkommen, one
-                           meinen teuren Ittnerus? quis desiderio sit pudor, aut modus, tam chari capitis? incorrupta
-                           fides, nudaque veritas! Was machen Sie, wie leben Sie, wo gehen Sie diesen Sommer
-                           hin? wüste ichs, ich würde Sie manchmal in Gedanken begleiten. Da ist Jemanden eingefallen,
-                           daß in unsern trübseligen Zeiten so gar nichts für die Gemütserheiterung des Volkes
-                           getan wird; der meint folgende drei Büchlein in Druk ausgehen zu lassen: I. Eine schöne
+                           man das Buch lesen. Die Nachricht, welche Sie mir geben, daß von der Hagen den <span class="rs-witness" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Weingartner Liederhandschrift – Stuttgart, Württembergische Landesbibliothek, HB XIII 1</strong&gt;">Weingartner Codex <a href="https://handschriftenportal.de/search?hspobjectid=HSP-b4834bbe-f848-336d-b90e-8325d333b3e4" target="_blank" rel="noopener noreferrer">(HSP)</a></span> sollicitirt hat, macht, daß ich Morgen in die Villa Epponis zurüffere, um ein Exemplar
+                           des Liedersaales zusamenzupaken und bei Irem Könige ebenfalls um besagte Handschrift
+                           zu werben. Er ist ja der König der Schwaben und wird wol einem schwäbischen Manne
+                           lieber diese Arbeit gönnen, als einem Ausländer. Können Sie durch Freunde und Bekannte
+                           Etwas hiebei zu meinen Gunsten wirken; so weiß ich daß Sie es nicht unterlassen werden:
+                           es seie denn, daß Sie selbst Absichten auf den Codex hätten, dann tue ich mit Freuden
+                           Verzicht auf denselben. Wie wird mir meine liebe Villa vorkommen, one meinen teuren
+                           Ittnerus? quis desiderio sit pudor, aut modus, tam chari capitis? incorrupta fides,
+                           nudaque veritas! Was machen Sie, wie leben Sie, wo gehen Sie diesen Sommer hin? wüste
+                           ichs, ich würde Sie manchmal in Gedanken begleiten. Da ist Jemanden eingefallen, daß
+                           in unsern trübseligen Zeiten so gar nichts für die Gemütserheiterung des Volkes getan
+                           wird; der meint folgende drei Büchlein in Druk ausgehen zu lassen: I. Eine schöne
                            neue Historia, von einer Künigs - Tochter aus Portugal und einem Graven von Werdenberg,
                            wie er dieselbe aus jres Vaters Hof entfürt, und nach viel ausgestandenen Abenteuern,
                            glüklich in sein Haimat nach Sargans bracht hett. Lustig und anmutig zu lesen, und
@@ -127,11 +134,9 @@
                         document.getElementById('map').style.display = 'none';
                     } else {
                         var map = L.map('mapid', { scrollWheelZoom: false });
-                        // Muted basemap (CARTO Positron) instead of the default colourful OSM
-                        // tiles, to match the edition's restrained palette.
-                        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-                            attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
-                            subdomains: 'abcd',
+                        // OpenStreetMap standard tiles (CARTO basemaps now require an API key).
+                        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
                             maxZoom: 19
                         }).addTo(map);
 

@@ -2,6 +2,105 @@
 
 - lassberg-witness-0293 (Evangeliar Ludwigs des Frommen (Laßbergs karolingischer Codex)): keine HSP-ID
 - lassberg-witness-0294 (Hundeshagensche Nibelungenhandschrift): keine HSP-ID
+- lassberg-witness-0295 (Sammlung westfälischer Lieder, 1579): keine HSP-ID
+- lassberg-witness-0296 (Merseburger Missale (Fund Jacob Grimms)): keine HSP-ID
+- lassberg-witness-0297 (Ufenauer Jahrzeitenbuch): keine HSP-ID
+- lassberg-witness-0298 (Zürcher Schachzabelbuch-Handschrift Konrads von Ammenhusen): keine HSP-ID
+- lassberg-witness-0299 (Koloczaer Codex altdeutscher Gedichte): keine HSP-ID
+- lassberg-witness-0300 (Stuttgarter Handschrift mit Psalmenübersetzung und Gedichten (Mezen Hochzeit)): keine HSP-ID
+- lassberg-witness-0302 (Provenzalischer Fierabras (Hs. Kohler, Wallerstein)): keine HSP-ID
+- lassberg-witness-0303 (Wallersteiner Nibelungenlied-Handschrift): keine HSP-ID
+- lassberg-witness-0304 (Kollers Pergamenttraktat (Roßarznei, Wächterlied an Maria)): keine HSP-ID
+- lassberg-witness-0305 (Rosengartenlied-Handschrift von Wallerstein): keine HSP-ID
+- lassberg-witness-0306 (Berner Handschrift des altfranzösischen Perceval): keine HSP-ID
+- lassberg-witness-0307 (Straßburger Handschrift des Rolandsliedes): keine HSP-ID
+- lassberg-witness-0308 (Heidelberger Handschrift des Rolandsliedes): keine HSP-ID
+- lassberg-witness-0309 (Rolandslied-Fragment (Kausler/Uhland)): keine HSP-ID
+- lassberg-witness-0310 (Laßbergs Quintilian-Handschrift): keine HSP-ID
+- lassberg-witness-0311 (Königinhofer Handschrift): keine HSP-ID
+- lassberg-witness-0312 (Laßbergs Papierhandschrift des Willehalm von Orlens): keine HSP-ID
+- lassberg-witness-0313 (Klausenburger Handschrift des Gedichts über Karl den Großen): keine HSP-ID
+- lassberg-witness-0314 (Riedegger Nithart-Handschrift): keine HSP-ID
+- lassberg-witness-0315 (St. Galler Codex 1028: Sermones sacri): keine HSP-ID
+- lassberg-witness-0316 (St. Florianer Handschrift des Partonopier und Meliur): keine HSP-ID
+- lassberg-witness-0317 (Weißenauer Codex): keine HSP-ID
+- lassberg-witness-0319 (Wyß'sche Sammlung handschriftlicher Schweizer Lieder): keine HSP-ID
+- lassberg-witness-0322 (Mülinens Liedersammlung): keine HSP-ID
+- lassberg-witness-0324 (Öhringer Hug- und Wolfdietrich-Handschrift): keine HSP-ID
+- lassberg-witness-0325 (Laßbergs Handschrift des Herzog Friedrich von Schwaben): keine HSP-ID
+- lassberg-witness-0326 (Laßbergs Hartlieb-Handschrift (De arte amandi, 1440)): keine HSP-ID
+- lassberg-witness-0327 (Laßbergs Lieder-Kodex): keine HSP-ID
+- lassberg-witness-0328 (Laßbergs zweite Hartlieb-Handschrift (De arte amandi)): keine HSP-ID
+- lassberg-witness-0329 (Laßbergs Twinger-Codex (Chronik)): keine HSP-ID
+- lassberg-witness-0331 (Tschachtlan: Berner Chronik (Bern)): keine HSP-ID
+- lassberg-witness-0332 (Conzens Minneburg-Handschrift): keine HSP-ID
+- lassberg-witness-0334 (Mailáths Handschrift): keine HSP-ID
+- lassberg-witness-0335 (Staufenberger Handschrift des Altstatthalters Gallatin (Sargans)): keine HSP-ID
+- lassberg-witness-0336 (Straßburger Alexander (Handschrift des protestantischen Seminars)): keine HSP-ID
+- lassberg-witness-0337 (Sinzendorfischer Codex (Suchenwirt)): keine HSP-ID
+- lassberg-witness-0338 (Kalocsaer Codex (Kodex zu Colocza)): keine HSP-ID
+- lassberg-witness-0340 (Liederbuch der Zimmerischen Chronik (verschollen)): keine HSP-ID
+- lassberg-witness-0341 (Le Voeu du paon (französische Handschrift)): keine HSP-ID
+- lassberg-witness-0342 (Würzburger Codex (Zwikower-Lesart)): keine HSP-ID
+- lassberg-witness-0343 (Donaueschinger Parzival-Handschrift): keine HSP-ID
+- lassberg-witness-0344 (Annolied-Handschrift des Franz Junius (Oxford)): keine HSP-ID
+- lassberg-witness-0345 (Laßbergs Alexandreis-Handschrift): keine HSP-ID
+- lassberg-witness-0346 (Bern, Burgerbibliothek, Cod. 296: Les faits de Guillaume d'Orange): keine HSP-ID
+- lassberg-witness-0347 (Bern, Burgerbibliothek, Cod. 349: Chansons diverses): keine HSP-ID
+- lassberg-witness-0348 (Bern, Burgerbibliothek, Cod. 573: Vers sur Charlemagne): keine HSP-ID
+- lassberg-witness-0349 (Bern, Burgerbibliothek, Cod. 354: Altfranzösischer Parcival (verloren)): keine HSP-ID
+- lassberg-witness-0350 (Laßbergs Eppishauser Handschrift von den alten Dichtern): keine HSP-ID
+- lassberg-witness-0354 (Laßbergs Parzival-Handschrift): keine HSP-ID
+- lassberg-witness-0356 (Freiburger Pergamentcodex des kleinen Rosengartens (Laurin)): keine HSP-ID
+- lassberg-witness-0358 (Freiburger Codex): keine HSP-ID
+- lassberg-witness-0360 (Frauenlob-Fragment (Koller)): keine HSP-ID
+- lassberg-witness-0361 (Weissenauer Traditionscodex (Codex traditionum Augiae Albae)): keine HSP-ID
+- lassberg-witness-0363 (Vadianische Handschrift A 8: Rudolf von Ems, Weltchronik; Stricker, Karl der Große): keine HSP-ID
+- lassberg-witness-0364 (St. Galler Nibelungen-Handschrift): keine HSP-ID
+- lassberg-witness-0365 (Freiburger (Schweiz) Schwabenspiegel-Handschrift): keine HSP-ID
+- lassberg-witness-0366 (Schaffhauser Handschrift des Gedichts von König Oswald): keine HSP-ID
+- lassberg-witness-0367 (St. Galler Codex 184: Prosper in psalmos): keine HSP-ID
+- lassberg-witness-0368 (St. Galler Codex 1010: Das Leiden des Herren, Von der Müllerin): keine HSP-ID
+- lassberg-witness-0369 (Straßburger Handschrift von Hartmanns Gregorius (verschollen)): keine HSP-ID
+- lassberg-witness-0370 (Laßbergs Schwabenspiegel-Handschrift): keine HSP-ID
+- lassberg-witness-0371 (Bern, Burgerbibliothek, Cod. 455): keine HSP-ID
+- lassberg-witness-0373 (Codex Junius (Oxford), Altteutsche Hymnen): keine HSP-ID
+- lassberg-witness-0374 (Ambraser Heldenbuch): keine HSP-ID
+- lassberg-witness-0375 (Meistergesangbuch des Peham (München)): keine HSP-ID
+- lassberg-witness-0376 (Laßbergs altes Liederbuch (Musikalienbuch)): keine HSP-ID
+- lassberg-witness-0377 (Laßbergs Handschrift des Eckenliedes (Ecken Ausfahrt)): keine HSP-ID
+- lassberg-witness-0378 (Braunsche Abschrift des Frauendienstes): keine HSP-ID
+- lassberg-witness-0379 (Laßbergs Codex picturatus (Christus und die Nonne)): keine HSP-ID
+- lassberg-witness-0380 (Münchner Handschrift des Ulrichsgedichts (12. Jh.)): keine HSP-ID
+- lassberg-witness-0381 (Altdeutsches Bruchstück vom h. Ulrich): keine HSP-ID
+- lassberg-witness-0382 (Straßburger Hug- und Wolfdietrich-Handschrift): keine HSP-ID
+- lassberg-witness-0383 (Münchner Bruchstück des Eckenliedes): keine HSP-ID
+- lassberg-witness-0384 (St. Georgener Liederhandschrift (15. Jh.)): keine HSP-ID
+- lassberg-witness-0385 (Kretschmarscher Codex (Lochamer-Liederbuch)): keine HSP-ID
+- lassberg-witness-0386 (Französischer Schwabenspiegel des Bischofs Heinrich von Verdun (Bern)): keine HSP-ID
+- lassberg-witness-0387 (Codex aus dem Dominikanerkloster Bamberg (aus Würzburg erhalten)): keine HSP-ID
+- lassberg-witness-0388 (Karlsburger Codex des Gedichts auf Karl d. Gr.): keine HSP-ID
+- lassberg-witness-0389 (Trudpert Neugart: Episcopatus Constantiensis, Bd. II (Handschrift bei Graf Mülinen)): keine HSP-ID
+- lassberg-witness-0390 (Zimmerische Chronik (Handschrift Laßbergs)): keine HSP-ID
+- lassberg-witness-0391 (Pergamentcodex des 10. Jh. mit lateinischen weltlichen Volksliedern): keine HSP-ID
+- lassberg-witness-0393 (Anniversarium (Jahrzeitbuch) von Sulgen): keine HSP-ID
+- lassberg-witness-0394 (Anniversarium Hütlingense): keine HSP-ID
+- lassberg-witness-0395 (Stadtbuch von Herford): keine HSP-ID
+- lassberg-witness-0396 (Nekrolog der Kommende Tobel): keine HSP-ID
+- lassberg-witness-0397 (Rütiner: Commentationes fatales (Diarium)): keine HSP-ID
+- lassberg-witness-0398 (Codex Mediceus (Ciceros Briefe)): keine HSP-ID
+- lassberg-witness-0399 (Zürcher Schwabenspiegel-Handschrift (Antistitialarchiv)): keine HSP-ID
+- lassberg-witness-0400 (Schultheiß' Kollektaneen (Konstanzer Sammlung)): keine HSP-ID
+- lassberg-witness-0401 (Schultheiß-Collectaneen): keine HSP-ID
+- lassberg-witness-0403 (Copialbuch zu Eppishausen (Pupikofer)): keine HSP-ID
+- lassberg-witness-0404 (Laßbergs Eckenlied-Fragment (Münchner Bruchstück)): keine HSP-ID
+- lassberg-witness-0405 (Laßbergs Eckenlied-Handschrift (13. Jh.)): keine HSP-ID
+- lassberg-witness-0406 (Liebenaus Schachzabelbuch-Handschrift Konrads von Ammenhusen): keine HSP-ID
+- lassberg-witness-0407 (Lautentabulatur-Blätter (Benzenauer Tanz, Schwarzer Knab), 16. Jh.): keine HSP-ID
+- lassberg-witness-0408 (Liederbuch, 2. Hälfte 16. Jh. (Autographen, u. a. Eberwin Droste 1579)): keine HSP-ID
+- lassberg-witness-0409 (Vanotti: Geschichte der Häuser Montfort und Werdenberg (Manuskript)): keine HSP-ID
+- lassberg-witness-0410 (Laßbergs Handschrift der Edlibach-Chronik): keine HSP-ID
+- lassberg-witness-0411 (Laßbergs Handschrift der Regesta Constantiensia): keine HSP-ID
 
 # Abweichungen Register vs. HSP
 

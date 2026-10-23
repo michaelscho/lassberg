@@ -17,6 +17,7 @@
                   <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
                   <li class="nav-item"><a class="nav-link" href="../persons.html">Persons</a></li>
                   <li class="nav-item"><a class="nav-link" href="../places.html">Places</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../manuscripts.html">Manuscripts</a></li>
                   <li class="nav-item"><a class="nav-link" href="../explore.html">Explore</a></li>
                   <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
                   <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
@@ -62,6 +63,13 @@
                            <span class="legend-dot ms-2" style="background:#b57cc0"></span> places mentioned
                            </p>
                      </section>
+                     <section id="mentioned" class="mb-4">
+                        <h2 class="h5">Mentioned in this letter</h2>
+                        <h3 class="h6 mt-3">Manuscripts</h3>
+                        <ul class="list-unstyled small mb-2">
+                           <li class="mb-1"><a href="../manuscripts.html?q=Annolied-Handschrift%20des%20Franz%20Junius%20%28Oxford%29">Annolied-Handschrift des Franz Junius (Oxford)</a><span class="text-muted"> (Oxford)</span></li>
+                        </ul>
+                     </section>
                   </aside>
                </div>
                <div class="col-lg-8 order-lg-1">
@@ -105,10 +113,9 @@
                            mit meinen Arbeiten; sondern auch mit meiner Correspondenz in Nükstand gekommen, was
                            ich nun den Winter über nachzuholen habe. Ich habe Herren Cleasby wärend seinem Hiersein
                            ser aufgemuntert in der Bodleyanischen Bibliotheke zu Oxford nachzuforschen, ob die
-                           von Franciscus Junius dahin geschenkte Handschrift von dem Liede auf den heiligen
-                           Anno noch vorhanden seie? und bin so glüklich gewesen von jm nachfolgende von einem
-                           Bibliothekare daselbst mitgeteilte Notizen zu erhalten. Annonis archiepiscopi coloniensis
-                           vita. Rhitmice. 1. The manuscript does exist in the Bodleian Library. 2. It is suppos'd
+                           von Franciscus Junius dahin geschenkte <span class="rs-witness" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Annolied-Handschrift des Franz Junius (Oxford) – Oxford</strong&gt;">Handschrift von dem Liede auf den heiligen Anno</span> noch vorhanden seie? und bin so glüklich gewesen von jm nachfolgende von einem Bibliothekare
+                           daselbst mitgeteilte Notizen zu erhalten. Annonis archiepiscopi coloniensis vita.
+                           Rhitmice. 1. The manuscript does exist in the Bodleian Library. 2. It is suppos'd
                            by the Librarian to be in the hand writing of the Author. 3. It contains abrut 46
                            Pages with perhaps 30 lines on each page. 4. A Stranger would be allow'd to examine
                            it minutely ( of course in the Library ) or even to take a Copy, if introduc'd by
@@ -153,11 +160,9 @@
                         document.getElementById('map').style.display = 'none';
                     } else {
                         var map = L.map('mapid', { scrollWheelZoom: false });
-                        // Muted basemap (CARTO Positron) instead of the default colourful OSM
-                        // tiles, to match the edition's restrained palette.
-                        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-                            attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
-                            subdomains: 'abcd',
+                        // OpenStreetMap standard tiles (CARTO basemaps now require an API key).
+                        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
                             maxZoom: 19
                         }).addTo(map);
 

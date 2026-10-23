@@ -14,6 +14,7 @@ correspondence graph, and SPARQL queries against the CMIF/correspSearch-style RD
 | `sparql_query(query)` | Oxigraph (`make sparql`) | SELECT/ASK SPARQL over `rdf/edition.ttl` |
 | `find_manuscript(query, limit=10)` | No | Fuzzy search in the manuscript register (name, shelfmark, place, HSP id) |
 | `manuscript_mentions(witness_id)` | No | Letters mentioning a manuscript, with sender/recipient and text excerpts |
+| `manuscripts_in_letter(letter_id)` | No | Manuscripts mentioned in one letter, with the annotated passages |
 | `hsp_search(query, limit=10, live=False)` | No (`live=True`: network) | Handschriftenportal: local description index; optional live search |
 | `hsp_manuscript(id, description="summary")` | No (missing data is fetched live) | HSP core data + catalogue description(s) with licence, from `data/hsp/` |
 

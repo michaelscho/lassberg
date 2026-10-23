@@ -17,6 +17,7 @@
                   <li class="nav-item"><a class="nav-link" href="../letters.html">Letters</a></li>
                   <li class="nav-item"><a class="nav-link" href="../persons.html">Persons</a></li>
                   <li class="nav-item"><a class="nav-link" href="../places.html">Places</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../manuscripts.html">Manuscripts</a></li>
                   <li class="nav-item"><a class="nav-link" href="../explore.html">Explore</a></li>
                   <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg/blob/main/analysis/Jupyter%20Notebooks/lassberg-letters.ipynb" target="_blank">Data Analysis</a></li>
                   <li class="nav-item"><a class="nav-link" href="https://github.com/michaelscho/lassberg" target="_blank">Repository</a></li>
@@ -62,6 +63,14 @@
                            <span class="legend-dot ms-2" style="background:#b57cc0"></span> places mentioned
                            </p>
                      </section>
+                     <section id="mentioned" class="mb-4">
+                        <h2 class="h5">Mentioned in this letter</h2>
+                        <h3 class="h6 mt-3">Manuscripts</h3>
+                        <ul class="list-unstyled small mb-2">
+                           <li class="mb-1"><a href="../manuscripts.html?q=Wy%C3%9F%27sche%20Sammlung%20handschriftlicher%20Schweizer%20Lieder">Wyß'sche Sammlung handschriftlicher Schweizer Lieder</a><span class="text-muted"> (Bern)</span></li>
+                           <li class="mb-1"><a href="../manuscripts.html?q=Codex%20Junius%20%28Oxford%29%2C%20Altteutsche%20Hymnen">Codex Junius (Oxford), Altteutsche Hymnen</a><span class="text-muted"> (Oxford, Bodleian Library)</span></li>
+                        </ul>
+                     </section>
                   </aside>
                </div>
                <div class="col-lg-8 order-lg-1">
@@ -82,8 +91,7 @@
                            weniger als 20, sage zwanzig Aerzte und Tierärzte in den großen Rat gewälet hat. Gott
                            habe den armen Pazienten in seiner gnädigen Obhut! Mich verlangt ser zu hören, was
                            Sie auf Irer Liederjagd für Beute gemacht haben? - Wenige Tage nach Trer Abreise erhielt
-                           ich aus der Verlassenschaft des Prof. Rudolf Wyß zu Bern 8 Quartbände und einen Folioband
-                           handschriftlicher Schweizer Lieder, welche er vom Jare 1809 an gesammelt hat. Seine
+                           ich aus der Verlassenschaft des Prof. Rudolf Wyß zu Bern <span class="rs-witness" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Wyß'sche Sammlung handschriftlicher Schweizer Lieder – Bern</strong&gt;">8 Quartbände und einen Folioband</span> handschriftlicher Schweizer Lieder, welche er vom Jare 1809 an gesammelt hat. Seine
                            Wittwe sendet mir solche, um meinen Rat zu vernemen, wie sie am vorteilhaftesten für
                            seine Kinder könnten verwertet werden? Ich habe nur erst eine ser flüchtige Durchsicht
                            derselben vornemen können; es sind meist historische und großenteils Kriegs- und Schlachtgesänge;
@@ -98,14 +106,14 @@
                            Lieder gezählt und ser hübsche Sachen darinnen gefunden. Soll ich Inen diesen Band
                            schiken? Jezt aber hätte ich Les Poëts français wieder auf kurze Zeit nötig und bitte
                            Sie mir sobald Sie solche entberen können, zu schiken. I. Grimm hat mir seine aus
-                           einem Juniusschen Codex zu Oxford herausgegebenen Altteutschen Hymnen geschikt, welche
-                           eine ganz Notkersche Phisiognomie haben. Dies ist eine schöne invitatio ad lectiones;
-                           aber ich möchte lieber bei Inen die Nibelungen hören. Dem Episcopatus Constantiensis
-                           ſtellen 12 * sich aufs neue Hindernisse entgegen; Herr von Cotta, der sich so bereitwillig
-                           zeigte, hat dem Buchdruker noch immer den Contract nicht unterzeichnet,. den er doch
-                           in einem Schreiben an mich gebilliget hatte; aber, ich lasse nicht nach, es muß doch
-                           zum Druke kommen. Leben Sie wol, grüßen Sie aufs freundlichste die Frigen von mir
-                           und bleiben Sie auch im neuen wie im alten Jare gewogen Frem I. Laßberg.</p>
+                           einem <span class="rs-witness" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="auto" title="<strong&gt;Codex Junius (Oxford), Altteutsche Hymnen – Oxford, Bodleian Library</strong&gt;">Juniusschen Codex</span> zu Oxford herausgegebenen Altteutschen Hymnen geschikt, welche eine ganz Notkersche
+                           Phisiognomie haben. Dies ist eine schöne invitatio ad lectiones; aber ich möchte lieber
+                           bei Inen die Nibelungen hören. Dem Episcopatus Constantiensis ſtellen 12 * sich aufs
+                           neue Hindernisse entgegen; Herr von Cotta, der sich so bereitwillig zeigte, hat dem
+                           Buchdruker noch immer den Contract nicht unterzeichnet,. den er doch in einem Schreiben
+                           an mich gebilliget hatte; aber, ich lasse nicht nach, es muß doch zum Druke kommen.
+                           Leben Sie wol, grüßen Sie aufs freundlichste die Frigen von mir und bleiben Sie auch
+                           im neuen wie im alten Jare gewogen Frem I. Laßberg.</p>
                         </div>
                   </section>
                   <div id="related-letters"></div>
@@ -127,11 +135,9 @@
                         document.getElementById('map').style.display = 'none';
                     } else {
                         var map = L.map('mapid', { scrollWheelZoom: false });
-                        // Muted basemap (CARTO Positron) instead of the default colourful OSM
-                        // tiles, to match the edition's restrained palette.
-                        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-                            attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
-                            subdomains: 'abcd',
+                        // OpenStreetMap standard tiles (CARTO basemaps now require an API key).
+                        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
                             maxZoom: 19
                         }).addTo(map);
 

@@ -40,6 +40,17 @@ Handschriftenportal, Achtung Rechtschreibkorrektur: Signatur/Titel selbst prüfe
    `hsp_id`, `shelfmark`, `msname`); das ersetzt aber nicht die Prüfung durch `resolve.py`.
 8. **Nicht raten.** Im Zweifel `confidence` < 0.7 und `witness_id: null`.
 
+## Handschriften außerhalb des HSP
+
+Das Register nimmt **auch Handschriften auf, die es im Handschriftenportal nicht gibt** (verschollen,
+privat, nur aus dem Brief bekannt, z. B. Laßbergs eigene oder fremde Privathandschriften). Sie werden
+über `proposed` angelegt, sobald sie **spezifisch** sind (ein bestimmter Codex mit Namen, Inhalt, Besitzer
+oder Ort). Fülle dafür `proposed` so genau wie der Brief hergibt: `name` (sprechende Bezeichnung, z. B.
+„Neukirchs Liederhandschrift“), `owner` (Besitzer/Verbleib laut Brief), `settlement`/`repository`/`shelfmark`
+falls genannt, `description` (ein Satz: Inhalt, Alter, Umfang). Ohne HSP-Treffer ist das kein Grund, auf
+`witness_id: null` und `confidence < 0.6` auszuweichen; die Konfidenz betrifft nur, ob es sich um eine
+bestimmte Handschrift handelt. Dieselbe Handschrift in mehreren Briefen bekommt **denselben** `name`.
+
 ## Ausgabe
 
 Pro Brief **eine** Datei `build/manuscripts/proposals/<Brief-ID>.json` (auch leer):

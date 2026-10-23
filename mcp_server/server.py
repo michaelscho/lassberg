@@ -12,6 +12,7 @@ MCP-independent functions, importable from other agent frameworks or scripts too
   sparql_query(query)              - SPARQL against Oxigraph (needs `make sparql` running).
   find_manuscript(query)           - fuzzy search in the manuscript register (name/shelfmark/place/HSP id).
   manuscript_mentions(witness_id)  - letters mentioning a manuscript, with text excerpts.
+  manuscripts_in_letter(letter_id) - manuscripts mentioned in one letter, with the passages.
   hsp_search(query, limit, live)   - Handschriftenportal: local description index (+ live search).
   hsp_manuscript(id, description)  - HSP core data + catalogue description(s) from the local mirror.
 
@@ -37,12 +38,22 @@ from tools.manuscripts import find_manuscript as _find_manuscript
 from tools.manuscripts import hsp_manuscript as _hsp_manuscript
 from tools.manuscripts import hsp_search as _hsp_search
 from tools.manuscripts import manuscript_mentions as _manuscript_mentions
+from tools.manuscripts import manuscripts_in_letter as _manuscripts_in_letter
 from tools.graph_query import get_letter as _get_letter
 from tools.graph_query import graph_query as _graph_query
 from tools.semantic_search import semantic_search as _semantic_search
 from tools.sparql_query import sparql_query as _sparql_query
 
-mcp = FastMCP("lassberg-edition")
+INSTRUCTIONS = """Digital edition of the correspondence of Joseph von Laßberg (1770-1855): 3,268 letters, registers of
+persons, places, works and MANUSCRIPTS, linked to the Handschriftenportal (HSP).
+Use these tools for ANY question about Laßberg, his letters, correspondents, or manuscripts he owned or the
+letters mention (e.g. Kolmarer Liederhandschrift, Weingartner Liederhandschrift, Codex Manesse, Donaueschinger
+Handschriften): call find_manuscript first, then manuscript_mentions (letters and passages) and hsp_manuscript
+(catalogue data; description="full" for provenance/history text from the HSP catalogue, its licence is in the
+result). For letters: semantic_search, get_letter. Structured queries: sparql_query / graph_query.
+Ids are canonical strings (lassberg-letter-NNNN, lassberg-witness-NNNN); cite letters by id."""
+
+mcp = FastMCP("lassberg-edition", instructions=INSTRUCTIONS)
 
 
 @mcp.tool
@@ -161,6 +172,18 @@ def manuscript_mentions(witness_id: str) -> list[dict]:
 
 
 @mcp.tool
+def manuscripts_in_letter(letter_id: str) -> list[dict]:
+    """Manuscripts mentioned in one letter (register entries lassberg-witness-NNNN), with shelfmark,
+    HSP id, number of letters mentioning each and the annotated passages of this letter.
+
+    Args:
+        letter_id: canonical id, e.g. "lassberg-letter-1743" (bare numbers are normalized).
+    Follow up with hsp_manuscript(witness_id) for the catalogue data.
+    """
+    return _manuscripts_in_letter(letter_id)
+
+
+@mcp.tool
 def hsp_search(query: str, limit: int = 10, live: bool = False) -> list[dict]:
     """Search the Handschriftenportal (HSP) data mirrored locally for the registered manuscripts:
     by shelfmark or former shelfmark (e.g. "Cod. Donaueschingen 63"), or by content, author,
@@ -173,18 +196,19 @@ def hsp_search(query: str, limit: int = 10, live: bool = False) -> list[dict]:
 
 
 @mcp.tool
-def hsp_manuscript(id: str, description: str = "summary") -> dict:
+def hsp_manuscript(id: str, description: str = "summary", max_chars: int = 0) -> dict:
     """Handschriftenportal data for one manuscript: core data (place, repository, shelfmark, date,
     origin, extent), portal URL, and its catalogue descriptions with citation and licence.
 
     Args:
         id: "lassberg-witness-NNNN" (resolved via the register) or an HSP id ("HSP-...").
-        description: "summary" (headline, summary, contents, history), "full" (cleaned full text,
-            max 30,000 chars) or "none". Descriptions may be licence-restricted (in copyright):
+        description: "summary" (headline, summary, contents, history), "full" (the complete cleaned
+            description text, no length limit unless max_chars > 0) or "none". Descriptions may be licence-restricted (in copyright):
             the licence is always returned, use accordingly. Data is a snapshot (fetched_at).
+        max_chars: optional cap for the full text (0 = unlimited, the default).
     Missing manuscripts are fetched live and mirrored.
     """
-    return _hsp_manuscript(id, description=description)
+    return _hsp_manuscript(id, description=description, max_chars=max_chars)
 
 
 if __name__ == "__main__":
