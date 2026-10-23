@@ -7,7 +7,8 @@ data/blb/<letter-key>/ and convert ALTO 3 to PAGE 2019:
                                0001.page.xml    PAGE 2019, converted (lib_blb.alto_to_page)
                                blb.json         shelfmark, record/IIIF links, page ids, licences
 
-Existing files are kept (resumable); --force re-fetches. data/blb/ is gitignored (~12 GB).
+Rows with accept=b are enclosures (Beilagen) of letter_key and go to
+data/blb/<letter-key>/beilage-<unit_id>/ (same layout). Existing files are kept (resumable); --force re-fetches. data/blb/ is gitignored (~12 GB).
 
 Usage:  python scripts/blb/download.py [--only lassberg-letter-XXXX ...] [--no-images] [--force]
 """
@@ -37,6 +38,12 @@ def accepted() -> list[dict]:
     return rows
 
 
+def enclosures() -> list[dict]:
+    with MATCHES.open(encoding="utf-8") as f:
+        return [r for r in csv.DictReader(f, delimiter="\t")
+                if r["accept"].strip().lower() == "b" and r["letter_key"] and r["unit_id"]]
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--only", nargs="*", help="letter keys to download")
@@ -44,11 +51,13 @@ def main():
     ap.add_argument("--force", action="store_true", help="re-fetch existing files")
     args = ap.parse_args()
     units = {u["unit_id"]: u for u in lib_blb.load_units()}
-    rows = [r for r in accepted() if not args.only or r["letter_key"] in args.only]
+    rows = [r for r in accepted() + enclosures() if not args.only or r["letter_key"] in args.only]
     stats = Counter()
     for n, r in enumerate(rows, 1):
         u = units[r["unit_id"]]
         d = lib_blb.BLB_DIR / r["letter_key"]
+        if r["accept"].strip().lower() == "b":
+            d = d / f"beilage-{r['unit_id']}"
         d.mkdir(parents=True, exist_ok=True)
         pages = []
         for i, p in enumerate(u["pages"], 1):

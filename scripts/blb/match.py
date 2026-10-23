@@ -279,7 +279,9 @@ RX_SHELF = re.compile(r"K\s*\d+(?:\s*,\s*\d+[a-z]?)*")
 
 def is_letter(u) -> bool:
     label = u["file_label"] or ""
-    return bool(u["in_folder"]) or "Brief" in label or "Korrespondenz" in label
+    # "Bearbeitung von X an Y": BLB's label for some letters (e.g. K 2911,112, K 2911,134)
+    return bool(u["in_folder"]) or "Brief" in label or "Korrespondenz" in label \
+        or bool(re.search(r": Bearbeitung von .+ an ", label))
 
 
 def main():

@@ -354,6 +354,29 @@
                                 <xsl:otherwise><span class="text-muted"> - </span></xsl:otherwise>
                             </xsl:choose>
                         </div>
+                        
+                        <xsl:if test="tei:note[@type='transcription']">
+                            <div class="detail-section mb-3">
+                                <strong>Transkription: </strong>
+                                <xsl:for-each select="tei:note[@type='transcription']">
+                                    <xsl:if test="position() &gt; 1"><br/></xsl:if>
+                                    <xsl:choose>
+                                        <xsl:when test="@target">
+                                            <a href="{@target}"><xsl:value-of select="normalize-space(.)"/></a>
+                                        </xsl:when>
+                                        <xsl:otherwise><xsl:value-of select="normalize-space(.)"/></xsl:otherwise>
+                                    </xsl:choose>
+                                    <xsl:choose>
+                                        <xsl:when test="@ana = 'gt'">
+                                            <span class="badge bg-success ms-2" title="Jede Zeile am Scan geprüft und korrigiert">Ground Truth</span>
+                                        </xsl:when>
+                                        <xsl:when test="@ana = 'silver'">
+                                            <span class="badge bg-secondary ms-2" title="Vollständiger Text, nicht zeilenweise am Scan geprüft">Silberstandard (ungeprüft)</span>
+                                        </xsl:when>
+                                    </xsl:choose>
+                                </xsl:for-each>
+                            </div>
+                        </xsl:if>
                     </div>
                 </div>
                 

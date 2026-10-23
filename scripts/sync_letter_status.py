@@ -15,6 +15,10 @@ The model has three axes, each with exactly one hand-maintained home:
                     online_print           published, OCR source
                     online_transcription   published, manuscript source
   The register additionally carries the hand-maintained <note type="scan"> (none|internal|online).
+  Optional <note type="transcription" subtype="external" target="…">: a full text exists that the edition did
+  not make (BLB Karlsruhe ALTO), subtype="own" = the edition's Transkribus transcription
+  (scripts/transkribus/sync_gt.py); @ana = text quality gt|silver. Validated: subtype, @ana,
+  @target + scan=online (external), scan!=none (own), at most one note per subtype.
 
 Usage:
   python scripts/sync_letter_status.py            # --check: validate, report, exit 1 on conflict
@@ -46,6 +50,12 @@ FILE_STATUSES = ["draft", "done", "reviewed", "published"]
 REGISTER_STATUSES = {"in_register", "preview_print", "preview_transcription",
                      "online_print", "online_transcription"}
 SCAN_VALUES = {"none", "internal", "online"}
+# <note type="transcription" subtype="external" target="…">: a full text exists, but not made by
+# the edition (BLB Karlsruhe ALTO, CC BY 4.0); it needs a public scan/record to point to
+TRANSCRIPTION_SUBTYPES = {"external", "own"}  # own = the edition's Transkribus document (no @target)
+# text quality: gt = every line checked/corrected against the scan (ground truth, usable for
+# training/evaluation); silver = complete text, not checked line by line (e.g. BLB HTR as delivered)
+TRANSCRIPTION_QUALITY = {"gt", "silver"}
 
 
 def load_letter_facts() -> dict[str, dict]:
@@ -72,7 +82,9 @@ def load_register_facts() -> dict[str, dict]:
     for cd in tree.findall(".//tei:correspDesc", NS):
         scan = cd.find("tei:note[@type='scan']", NS)
         url = cd.find("tei:note[@type='url_facsimile']", NS)
+        trs = cd.findall("tei:note[@type='transcription']", NS)
         facts[cd.get("key")] = {
+            "transcriptions": [(tr.get("subtype"), tr.get("target"), tr.get("ana")) for tr in trs],
             "change": cd.get("change"),
             "scan": scan.text.strip() if scan is not None and scan.text else None,
             "url_filled": bool(url is not None and (url.text or "").strip()),
@@ -120,6 +132,22 @@ def check(letters: dict, register: dict) -> tuple[list[str], list[str]]:
         elif reg["scan"] == "none" and letters.get(lid, {}).get("source") == "original":
             conflicts.append(f"scan-implied: {lid} has a manuscript transcription (a scan must exist) "
                              f"but scan='none' - set to 'internal' or 'online'")
+        for subtype, target, quality in reg["transcriptions"]:
+            if quality not in TRANSCRIPTION_QUALITY:
+                conflicts.append(f"unknown-transcription-quality: {lid} ana='{quality}' "
+                                 f"(allowed: {sorted(TRANSCRIPTION_QUALITY)})")
+            if subtype not in TRANSCRIPTION_SUBTYPES:
+                conflicts.append(f"unknown-transcription-subtype: {lid} subtype='{subtype}' "
+                                 f"(allowed: {sorted(TRANSCRIPTION_SUBTYPES)})")
+            elif subtype == "external" and not (target or "").startswith("http"):
+                conflicts.append(f"transcription-target-missing: {lid} external transcription without @target")
+            elif subtype == "external" and reg["scan"] != "online":
+                conflicts.append(f"transcription-scan-mismatch: {lid} external transcription but scan='{reg['scan']}'")
+            elif subtype == "own" and reg["scan"] == "none":
+                conflicts.append(f"transcription-scan-mismatch: {lid} own transcription implies a scan, "
+                                 f"but scan='none' (set 'internal' or 'online')")
+        if [t[0] for t in reg["transcriptions"]].count("own") > 1 or [t[0] for t in reg["transcriptions"]].count("external") > 1:
+            conflicts.append(f"duplicate-transcription-note: {lid} has several transcription notes of one subtype")
     return conflicts, infos
 
 

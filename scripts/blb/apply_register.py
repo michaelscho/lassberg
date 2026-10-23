@@ -8,6 +8,12 @@
   <note type="iiif_manifest">…/i3f/v20/<recordId>/manifest</note>
   <note type="iiif_canvas">…/canvas/<pageId></note>             first page; only for letters inside
                                                                  a folder (manifest covers the folder)
+  <note type="transcription" subtype="external" target="…/titleinfo/<id>">…</note>
+                                                                 only if the BLB delivers ALTO full text:
+                                                                 the text exists, but is the BLB's, not ours;
+                                                                 ana="silver" (complete, not checked line by
+                                                                 line); an existing note (e.g. ana="gt" after
+                                                                 full correction) is never overwritten
   aufbewahrungsort/-institution are filled (Karlsruhe / Badische Landesbibliothek) only if empty.
 
 Edits are line-based inside the entry's <correspDesc>…</correspDesc>, so the rest of the file
@@ -34,10 +40,24 @@ def note_rx(typ: str) -> re.Pattern:
     return re.compile(rf'^(?P<ind>[ \t]*)<note type="{typ}"(?P<attrs>[^>]*?)(?:/>|>(?P<val>.*?)</note>)[ \t]*$', re.M)
 
 
-def set_note(block: str, typ: str, value: str, target: bool = False, overwrite: bool = True,
-             after: str = "scan") -> tuple[str, str | None]:
-    """-> (new block, message if an existing different value was kept)"""
-    attrs = f' target="{escape(value)}"' if target else ""
+TRANSCRIPTION_NOTE = "Volltext der Badischen Landesbibliothek Karlsruhe (CC BY 4.0), nicht von der Edition erstellt"
+
+
+def has_fulltext(u: dict) -> bool:
+    """True if the BLB's ALTO of the unit contains text (some folders have empty ALTO pages)"""
+    for p in u["pages"]:
+        data = lib_blb.cached_alto(p["page_id"], fetch=False) if p["alto"] else None
+        if data and len(lib_blb.alto_text(data).strip()) > 20:
+            return True
+    return False
+
+
+def set_note(block: str, typ: str, value: str, target: bool | str = False, overwrite: bool = True,
+             after: str = "scan", subtype: str = "", ana: str = "") -> tuple[str, str | None]:
+    """-> (new block, message if an existing different value was kept). `target` True: the value
+    itself, a string: that URL."""
+    attrs = (f' subtype="{subtype}"' if subtype else "") + (f' ana="{ana}"' if ana else "") + (
+        f' target="{escape(value if target is True else target)}"' if target else "")
     m = note_rx(typ).search(block)
     if m:
         cur = (m.group("val") or "").strip()
@@ -66,7 +86,7 @@ def main():
             kept.append(f"{r['letter_key']}: not in register")
             continue
         b = m.group(0)
-        edits = [("signatur", u["shelfmark"], False, False, "aufbewahrungsinstitution"),
+        edits = [("signatur", " ".join(u["shelfmark"].split()), False, False, "aufbewahrungsinstitution"),
                  ("url_facsimile", lib_blb.record_url(u["unit_id"]), True, False, "signatur"),
                  ("scan", "online", False, True, "url_facsimile"),
                  ("iiif_manifest", lib_blb.manifest_url(u["record_id"]), False, True, "scan")]
@@ -77,6 +97,12 @@ def main():
                   ("aufbewahrungsinstitution", "Badische Landesbibliothek", False, False, "aufbewahrungsort")]
         for typ, val, target, overwrite, after in edits:
             b, msg = set_note(b, typ, val, target, overwrite, after)
+            if msg:
+                kept.append(f"{r['letter_key']}: {msg}")
+        if has_fulltext(u):
+            last = "iiif_canvas" if note_rx("iiif_canvas").search(b) else "iiif_manifest"
+            b, msg = set_note(b, "transcription", TRANSCRIPTION_NOTE, lib_blb.record_url(u["unit_id"]),
+                              False, last, subtype="external", ana="silver")
             if msg:
                 kept.append(f"{r['letter_key']}: {msg}")
         if b != m.group(0):

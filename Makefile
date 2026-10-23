@@ -6,7 +6,7 @@
 
 PYTHON := .venv-infra/bin/python
 
-.PHONY: blb-harvest blb-alto blb-match blb-download blb-apply hsp hsp-mirror hsp-index hsp-export test-network all parse embed cluster graph rdf sparql explore frontend cmif graph-json status status-write test clean
+.PHONY: blb-harvest blb-alto blb-match blb-download blb-apply transkribus-gt hsp hsp-mirror hsp-index hsp-export test-network all parse embed cluster graph rdf sparql explore frontend cmif graph-json status status-write test clean
 
 all: parse embed cluster graph rdf explore
 
@@ -98,6 +98,10 @@ blb-download:
 
 blb-apply:
 	$(PYTHON) scripts/blb/apply_register.py --write
+
+# Ground Truth = Transkribus documents titled done_* (needs src/config.py credentials; main .venv)
+transkribus-gt:
+	.venv/bin/python scripts/transkribus/sync_gt.py --write
 
 # --- Status model (docs/TEI.md "Letter status model") ---
 status:

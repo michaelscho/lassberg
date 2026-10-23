@@ -356,6 +356,21 @@ def _valid_url_or_none(value: str | None, field: str, letter_id: str, warnings: 
     return None
 
 
+def transcription_fields(cd: etree._Element, letter_id: str, warnings: Warnings) -> dict:
+    out = {"own_transcription_quality": None, "external_transcription": None,
+           "external_transcription_quality": None, "external_transcription_url": None}
+    for n in cd.findall(tei("note")):
+        if n.get("type") != "transcription":
+            continue
+        if n.get("subtype") == "own":
+            out["own_transcription_quality"] = n.get("ana")
+        elif n.get("subtype") == "external":
+            out["external_transcription"] = text_content(n) or None
+            out["external_transcription_quality"] = n.get("ana")
+            out["external_transcription_url"] = _valid_url_or_none(n.get("target"), "transcription", letter_id, warnings)
+    return out
+
+
 def parse_register_notes(cd: etree._Element, letter_id: str, warnings: Warnings) -> dict:
     """Flattens correspDesc's flat `<note type="...">` list (archival/citation metadata, only
     present in the overall register lassberg-letters.xml, not the individual letter files) into
@@ -384,6 +399,9 @@ def parse_register_notes(cd: etree._Element, letter_id: str, warnings: Warnings)
         "comment": note_text("comment"),
         "iiif_manifest": note_url("iiif_manifest"),
         "iiif_canvas": note_url("iiif_canvas"),
+        # <note type="transcription" subtype="own|external" ana="gt|silver">: the edition's own
+        # Transkribus transcription and/or a full text it did not make (BLB Karlsruhe ALTO, CC BY 4.0)
+        **transcription_fields(cd, letter_id, warnings),
     }
 
 

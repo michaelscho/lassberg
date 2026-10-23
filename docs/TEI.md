@@ -291,6 +291,33 @@ eigenes Briefjournal), `aufbewahrungsort`/`aufbewahrungsinstitution`/`signatur` 
 Vereinzelt kommen `comment`, `iiif_manifest`, `iiif_canvas` hinzu. Leere Notes bleiben als leere
 Elemente stehen (Pipeline liest sie als „unbekannt", nicht als leeren String).
 
+**Transkription und Textqualität** (seit 2026-10-23): `<note type="transcription">` hält fest, dass
+zu einem Brief ein Volltext existiert, von wem er stammt (`@subtype`) und wie verlässlich er ist
+(`@ana`). Höchstens ein Vermerk je `subtype`; beide können nebeneinander stehen.
+
+```xml
+<note type="transcription" subtype="own" ana="gt">Transkription der Edition (Transkribus), Ground Truth; Dokument 9985431</note>
+<note type="transcription" subtype="external" ana="silver" target="https://digital.blb-karlsruhe.de/lassberg/content/titleinfo/8042271">Volltext der Badischen Landesbibliothek Karlsruhe (CC BY 4.0), nicht von der Edition erstellt</note>
+```
+
+| `@subtype` | Herkunft | geschrieben von |
+|---|---|---|
+| `own` | eigene Transkription in der Transkribus-Collection (Dokumentnummer im Text) | `scripts/transkribus/sync_gt.py` (`make transkribus-gt`): alle Dokumente mit Titelpräfix `done_` sind Ground Truth; impliziert einen Scan (`scan` `none` → `internal`) |
+| `external` | Volltext, den nicht die Edition erstellt hat: BLB Karlsruhe, ALTO aus dem Laßberg-Nachlass, CC BY 4.0; `@target` = BLB-Datensatz | `scripts/blb/apply_register.py`, nur wenn die BLB-ALTO Text enthält; Bild/ALTO/PAGE lokal in `data/blb/<key>/` (gitignored) |
+
+| `@ana` | Bedeutung |
+|---|---|
+| `gt` | Ground Truth: jede Zeile am Scan geprüft und korrigiert (für Training/Evaluation verwendbar) |
+| `silver` | vollständiger Text, nicht zeilenweise geprüft (BLB-Volltext wie geliefert; vereinzelte Korrekturen ändern daran nichts) |
+
+Kein Vermerk heißt: keine Aussage (z. B. Transkribus-Dokumente ohne `done_`). Beide Skripte
+ergänzen oder aktualisieren nur, sie entfernen nichts; `sync_gt.py` meldet Briefe, die in
+Transkribus kein `done_` mehr tragen, und Titel, die es keinem Registereintrag zuordnen kann
+(Liste: `build/transkribus/done_documents.tsv`). Ein BLB-Text, der vollständig korrigiert wurde,
+bekommt `ana="gt"` von Hand. Der Vermerk ist **kein** Bearbeitungs- oder Publikationsstand:
+`@change` bleibt `in_register`, solange es keine eigene Briefdatei gibt. `make status` prüft
+`subtype`, `@ana`, bei `external` `@target` und `scan=online`, bei `own` `scan` ≠ `none`.
+
 **Maschinell geschrieben, nie von Hand ändern**: `@change` — der abgeleitete Publikationsstand
 (`scripts/sync_letter_status.py --write`, Details im Abschnitt „Statusmodell").
 
